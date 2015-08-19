@@ -29,7 +29,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -110,7 +109,6 @@ public class XmppConnection implements Runnable {
 	private OnMessagePacketReceived messageListener = null;
 	private OnStatusChanged statusListener = null;
 	private OnBindListener bindListener = null;
-	private OnUpdateFoundConferences updateKnownConferenceNames = null;
 	private final ArrayList<OnAdvancedStreamFeaturesLoaded> advancedStreamFeaturesLoadedListeners = new ArrayList<>();
 	private OnMessageAcknowledged acknowledgedListener = null;
 	private XmppConnectionService mXmppConnectionService = null;
@@ -357,9 +355,6 @@ public class XmppConnection implements Runnable {
 									}
 								} catch (final NumberFormatException ignored) {
 								}
-								sendServiceDiscoveryInfo(account.getServer());
-								sendServiceDiscoveryInfo(account.getJid().toBareJid());
-								sendServiceDiscoveryItems(account.getServer());
 								Log.d(Config.LOGTAG, account.getJid().toBareJid()+ ": online with resource " + account.getResource());
 								changeStatus(Account.State.ONLINE);
 							} else if (nextTag.isStart("r")) {
@@ -789,8 +784,7 @@ public class XmppConnection implements Runnable {
 			if (account.getServer().equals(jid)) {
 				enableAdvancedStreamFeatures();
 			}
-		}
-		if (!disco.containsKey(jid)) {
+		} else {
 			final IqPacket iq = new IqPacket(IqPacket.TYPE.GET);
 			iq.setTo(jid);
 			iq.query("http://jabber.org/protocol/disco#info");
@@ -805,30 +799,7 @@ public class XmppConnection implements Runnable {
 							String type = element.getAttribute("type");
 							String category = element.getAttribute("category");
 							if (type != null && category != null) {
-								info.identities.add(new Pair<>(category, type));
-								if (category.equals("conference")) {
-									if (jid.hasLocalpart()) {
-										try {
-											Jid conferenceServerJid = Jid.fromString(jid.getDomainpart());
-											Info inf = disco.get(conferenceServerJid);
-											if (inf == null) {
-												disco.put(conferenceServerJid,new Info());
-												inf = disco.get(conferenceServerJid);
-											}
-											ArrayList<String> c = inf.hostedConferences;
-											c.add(jid.getLocalpart());
-											Collections.sort(inf.hostedConferences);
-											if (updateKnownConferenceNames != null) {
-												ArrayList<String> conferences = getKnownConferenceNames(Jid.fromString(jid.getDomainpart()));
-												updateKnownConferenceNames.onUpdateFoundConferences(conferences,Jid.fromString(jid.getDomainpart()));
-											}
-										} catch (InvalidJidException e) {
-											//wont happen;)
-										}
-									} else {
-										sendServiceDiscoveryItems(jid);
-									}
-								}
+								info.identities.add(new Pair<>(category,type));
 							}
 						} else if (element.getName().equals("feature")) {
 							info.features.add(element.getAttribute("var"));
@@ -847,13 +818,12 @@ public class XmppConnection implements Runnable {
 		}
 	}
 
-
 	private void enableAdvancedStreamFeatures() {
 		if (getFeatures().carbons() && !features.carbonsEnabled) {
 			sendEnableCarbons();
 		}
 		if (getFeatures().blocking() && !features.blockListRequested) {
-			Log.d(Config.LOGTAG, account.getJid().toBareJid() + ": Requesting block list");
+			Log.d(Config.LOGTAG,account.getJid().toBareJid()+": Requesting block list");
 			this.sendIqPacket(getIqGenerator().generateGetBlockList(), mXmppConnectionService.getIqParser());
 		}
 	}
@@ -952,10 +922,6 @@ public class XmppConnection implements Runnable {
 		this.sendPacket(packet);
 	}
 
-	public void sendSverviceDiscoveryToAlienServer(Jid server) {
-		sendServiceDiscoveryItems(server);
-	}
-
 	private synchronized void sendPacket(final AbstractStanza packet) {
 		if (stanzasSent == Integer.MAX_VALUE) {
 			resetStreamId();
@@ -999,9 +965,6 @@ public class XmppConnection implements Runnable {
 		this.unregisteredIqListener = listener;
 			}
 
-	public void setOnKnownConferenceNamesUpdatedListener(final OnUpdateFoundConferences listener) {
-		this.updateKnownConferenceNames = listener;
-	}
 	public void setOnPresencePacketReceivedListener(
 			final OnPresencePacketReceived listener) {
 		this.presenceListener = listener;
@@ -1076,13 +1039,6 @@ public class XmppConnection implements Runnable {
 			}
 		}
 		return items;
-	}
-
-	public ArrayList<String> getKnownConferenceNames(Jid jid){
-		if (!disco.containsKey(jid)) {
-			return new ArrayList<String>();
-		}
-		return disco.get(jid).hostedConferences;
 	}
 
 	public Jid findDiscoItemByFeature(final String feature) {
@@ -1161,7 +1117,6 @@ public class XmppConnection implements Runnable {
 	private class Info {
 		public final ArrayList<String> features = new ArrayList<>();
 		public final ArrayList<Pair<String,String>> identities = new ArrayList<>();
-		public final ArrayList<String> hostedConferences = new ArrayList<>();
 	}
 
 	private class UnauthorizedException extends IOException {

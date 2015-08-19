@@ -229,11 +229,8 @@
 	<string name="create">Create</string>
 	<string name="contact_already_exists">The contact already exists</string>
 	<string name="join">Join</string>
-	<string name="conference_address">Conference server address</string>
-	<string name="conference_address_example">conference.example.com</string>
-	<string name="conference_name">Conference name</string>
-	<string name="conference_name_example">Conference name</string>
-	<string name="conference_names_found">Found conferences on server</string>
+	<string name="conference_address">Conference address</string>
+	<string name="conference_address_example">room@conference.example.com</string>
 	<string name="save_as_bookmark">Save as bookmark</string>
 	<string name="delete_bookmark">Delete bookmark</string>
 	<string name="bookmark_already_exists">This bookmark already exists</string>

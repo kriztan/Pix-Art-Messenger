@@ -24,7 +24,6 @@ import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.util.LruCache;
-import android.widget.ArrayAdapter;
 
 import net.java.otr4j.OtrException;
 import net.java.otr4j.session.Session;
@@ -91,7 +90,6 @@ import eu.siacs.conversations.xmpp.OnKeyStatusUpdated;
 import eu.siacs.conversations.xmpp.OnPresencePacketReceived;
 import eu.siacs.conversations.xmpp.OnStatusChanged;
 import eu.siacs.conversations.xmpp.OnUpdateBlocklist;
-import eu.siacs.conversations.xmpp.OnUpdateFoundConferences;
 import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.forms.Data;
@@ -1477,24 +1475,6 @@ public class XmppConnectionService extends Service implements OnPhoneContactsLoa
 		}
 	}
 
-	public void getConferenceNames(OnUpdateFoundConferences listener, Jid jid, String server, boolean updateKnownConferences) {
-		Account account = findAccountByJid(jid);
-		try{
-			Jid serverJid = Jid.fromString(server);
-			ArrayList<String> knownConferences = account.getXmppConnection().getKnownConferenceNames(serverJid);
-			if (knownConferences.size() > 0) {
-				listener.onUpdateFoundConferences(knownConferences, serverJid);
-			}
-
-			if (updateKnownConferences) {
-				//get new information about conferences
-				account.getXmppConnection().setOnKnownConferenceNamesUpdatedListener(listener);
-				account.getXmppConnection().sendSverviceDiscoveryToAlienServer(serverJid);
-			}
-		} catch (InvalidJidException e) {
-			Log.d(Config.LOGTAG, "Invalid Jid for known conferences query");
-		}
-	}
 
 	public void joinMuc(Conversation conversation) {
 		Account account = conversation.getAccount();

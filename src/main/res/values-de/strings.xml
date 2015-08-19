@@ -226,10 +226,8 @@
   <string name="create">Erstellen</string>
   <string name="contact_already_exists">Der Kontakt existiert bereits</string>
   <string name="join">Beitreten</string>
-  <string name="conference_address">Konferenzserver-Adresse</string>
-  <string name="conference_address_example">conference.domain.de</string>
-  <string name="conference_name">Raumname</string>
-  <string name="conference_name_example">Raumname</string>
+  <string name="conference_address">Konferenz-Adresse</string>
+  <string name="conference_address_example">raum@conference.domain.de</string>
   <string name="save_as_bookmark">Zur Kontaktliste hinzufügen</string>
   <string name="delete_bookmark">Von Kontaktliste entfernen</string>
   <string name="bookmark_already_exists">Die Konferenz befindet sich bereits auf deiner Kontaktliste</string>
