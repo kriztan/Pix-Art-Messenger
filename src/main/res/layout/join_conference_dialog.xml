@@ -18,8 +18,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
+
     <TextView
-        android:id="@+id/jabber_id"
+        android:id="@+id/conference_server"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -28,20 +29,59 @@
         android:textSize="?attr/TextSizeBody" />
 
     <AutoCompleteTextView
-        android:id="@+id/jid"
+        android:id="@+id/jid_server"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/conference_address_example"
-        android:inputType="textEmailAddress"
+        android:inputType="none"
         android:textColor="@color/black87"
         android:textColorHint="@color/black54" />
 
-    <CheckBox
-        android:id="@+id/bookmark"
+    <TextView
+        android:id="@+id/conference_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:checked="true"
-        android:text="@string/save_as_bookmark" />
+        android:text="@string/conference_name"
+        android:textColor="@color/black87"
+        android:textSize="?attr/TextSizeBody" />
+
+    <AutoCompleteTextView
+        android:id="@+id/jid_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/conference_name_example"
+        android:inputType="none"
+        android:textColor="@color/black87"
+        android:textColorHint="@color/black54" />
+
+    <TextView
+        android:id="@+id/found_conferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/conference_names_found"
+        android:textColor="@color/black87"
+        android:textSize="?attr/TextSizeBody" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@+id/conferences_on_server"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bookmark"/>
+
+        <CheckBox
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:text="@string/save_as_bookmark"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
 
 </LinearLayout>
