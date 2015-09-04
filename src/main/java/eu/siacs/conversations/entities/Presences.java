@@ -52,6 +52,21 @@ public class Presences {
 		return status;
 	}
 
+	public String getMostAvailableResource() {
+		int status = OFFLINE;
+		String resource = "";
+		synchronized (this.presences) {
+			Iterator<Entry<String, Integer>> it = presences.entrySet().iterator();
+			while (it.hasNext()) {
+				Entry<String, Integer> entry = it.next();
+				if (entry.getValue() < status)
+					status = entry.getValue();
+					resource = entry.getKey();
+			}
+		}
+		return resource;
+	}
+
 	public static int parseShow(Element show) {
 		if ((show == null) || (show.getContent() == null)) {
 			return Presences.ONLINE;
