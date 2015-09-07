@@ -46,6 +46,14 @@
             android:orientation="horizontal">
         </LinearLayout>
         <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black54"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:textSize="?attr/TextSizeBody" />
+        <TextView
             android:id="@+id/key"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

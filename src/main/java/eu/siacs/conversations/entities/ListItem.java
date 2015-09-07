@@ -11,6 +11,8 @@ public interface ListItem extends Comparable<ListItem> {
 
 	public List<Tag> getTags();
 
+	public String getStatusMessage();
+
 	public final class Tag {
 		private final String name;
 		private final int color;

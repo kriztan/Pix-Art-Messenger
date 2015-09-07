@@ -102,6 +102,7 @@ public class ContactDetailsActivity extends XmppActivity implements OnAccountUpd
 	private Jid contactJid;
 	private TextView contactJidTv;
 	private TextView accountJidTv;
+	private TextView statusMessageTv;
 	private TextView lastseen;
 	private CheckBox send;
 	private CheckBox receive;
@@ -198,6 +199,7 @@ public class ContactDetailsActivity extends XmppActivity implements OnAccountUpd
 
 		contactJidTv = (TextView) findViewById(R.id.details_contactjid);
 		accountJidTv = (TextView) findViewById(R.id.details_account);
+		statusMessageTv = (TextView) findViewById(R.id.status_message);
 		lastseen = (TextView) findViewById(R.id.details_lastseen);
 		send = (CheckBox) findViewById(R.id.details_send_presence);
 		receive = (CheckBox) findViewById(R.id.details_receive_presence);
@@ -345,6 +347,14 @@ public class ContactDetailsActivity extends XmppActivity implements OnAccountUpd
 			addContactButton.setVisibility(View.VISIBLE);
 			send.setVisibility(View.GONE);
 			receive.setVisibility(View.GONE);
+		}
+
+		if (contact.getStatusMessage()!=null) {
+			statusMessageTv.setText(contact.getStatusMessage());
+			statusMessageTv.setVisibility(View.VISIBLE);
+		}
+		else {
+			statusMessageTv.setVisibility(View.GONE);
 		}
 
 		if (contact.isBlocked() && !this.showDynamicTags) {

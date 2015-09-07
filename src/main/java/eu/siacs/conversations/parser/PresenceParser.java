@@ -1,7 +1,10 @@
 package eu.siacs.conversations.parser;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
+import eu.siacs.conversations.Config;
 import eu.siacs.conversations.crypto.PgpEngine;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.entities.Contact;
@@ -69,7 +72,15 @@ public class PresenceParser extends AbstractParser implements
 				}
 			}
 			int sizeBefore = contact.getPresences().size();
-			contact.updatePresence(presence, Presences.parseShow(packet.findChild("show")));
+			String statusMessage = null;
+			if (packet.findChild("status")!=null) {
+				Log.d(Config.LOGTAG, packet.findChild("status").toString());
+				if (packet.findChild("status").getContent()!=null) {
+					statusMessage = packet.findChild("status").getContent();
+					Log.d(Config.LOGTAG, packet.findChild("status").getContent());
+				}
+			}
+			contact.updatePresence(presence, Presences.parseShow(packet.findChild("show")),statusMessage);
 			PgpEngine pgp = mXmppConnectionService.getPgpEngine();
 			Element x = packet.findChild("x", "jabber:x:signed");
 			if (pgp != null && x != null) {

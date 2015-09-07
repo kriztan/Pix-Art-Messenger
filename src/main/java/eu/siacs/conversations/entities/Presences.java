@@ -21,9 +21,14 @@ public class Presences {
 		return this.presences;
 	}
 
-	public void updatePresence(String resource, int status) {
+	public String getStatusMessage() { return this.statusMessage; }
+
+	private String statusMessage;
+
+	public void updatePresence(String resource, int status, String statusMessage) {
 		synchronized (this.presences) {
 			this.presences.put(resource, status);
+			this.statusMessage = statusMessage;
 		}
 	}
 

@@ -221,12 +221,14 @@ public class Contact implements ListItem, Blockable {
 		return this.presences;
 	}
 
+	public String getStatusMessage() { return this.presences.getStatusMessage(); }
+
 	public void setPresences(Presences pres) {
 		this.presences = pres;
 	}
 
-	public void updatePresence(final String resource, final int status) {
-		this.presences.updatePresence(resource, status);
+	public void updatePresence(final String resource, final int status, final String statusMessage) {
+		this.presences.updatePresence(resource, status, statusMessage);
 	}
 
 	public void removePresence(final String resource) {
