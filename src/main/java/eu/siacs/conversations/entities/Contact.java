@@ -229,8 +229,8 @@ public class Contact implements ListItem, Blockable {
 		this.presences = pres;
 	}
 
-	public void updatePresence(final String resource, final int status) {
-		this.presences.updatePresence(resource, status);
+	public void updatePresence(final String resource, final int status, final String SoftwareVersion) {
+		this.presences.updatePresence(resource, status, SoftwareVersion);
 	}
 
 	public void removePresence(final String resource) {
