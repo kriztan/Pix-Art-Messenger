@@ -63,6 +63,11 @@ public class Bookmark extends Element implements ListItem {
 	}
 
 	@Override
+	public String getSoftwareVersion() {
+		return null;
+	}
+
+	@Override
 	public List<Tag> getTags() {
 		ArrayList<Tag> tags = new ArrayList<Tag>();
 		for (Element element : getChildren()) {
