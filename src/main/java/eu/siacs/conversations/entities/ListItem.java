@@ -10,6 +10,8 @@ public interface ListItem extends Comparable<ListItem> {
 	public Jid getJid();
 
 	public List<Tag> getTags();
+	
+	public String getSoftwareVersion();
 
 	public final class Tag {
 		private final String name;
