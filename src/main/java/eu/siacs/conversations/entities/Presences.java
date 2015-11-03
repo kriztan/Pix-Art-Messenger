@@ -21,9 +21,16 @@ public class Presences {
 		return this.presences;
 	}
 
-	public void updatePresence(String resource, int status) {
+	public String getSoftwareVersion() {
+		return this.statusMessage;
+	}
+	
+	private String SoftwareVersion;
+	
+	public void updatePresence(String resource, int status, String SoftwareVersion) {
 		synchronized (this.presences) {
 			this.presences.put(resource, status);
+			this.SoftwareVersion = SoftwareVersion;
 		}
 	}
 
