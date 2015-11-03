@@ -221,6 +221,10 @@ public class Contact implements ListItem, Blockable {
 		return this.presences;
 	}
 
+	public String getSoftwareVersion() { 
+		return this.presences.getSoftwareVersion();
+	}
+	
 	public void setPresences(Presences pres) {
 		this.presences = pres;
 	}
