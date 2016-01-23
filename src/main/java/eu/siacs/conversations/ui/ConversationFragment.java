@@ -13,11 +13,14 @@ import android.content.IntentSender.SendIntentException;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.InputType;
+import android.view.ActionMode;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -69,6 +72,9 @@ import eu.siacs.conversations.xmpp.jid.Jid;
 
 public class ConversationFragment extends Fragment implements EditMessage.KeyboardListener {
 
+
+
+
 	protected Conversation conversation;
 	private OnClickListener leaveMuc = new OnClickListener() {
 
@@ -105,7 +111,7 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 	};
 	protected ListView messagesView;
 	final protected List<Message> messageList = new ArrayList<>();
-	protected MessageAdapter messageListAdapter;
+	public MessageAdapter messageListAdapter;
 	private EditMessage mEditMessage;
 	private ImageButton mSendButton;
 	private RelativeLayout snackbar;
@@ -396,6 +402,39 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 		}
 	}
 
+	private class MultiChoiceMessageCallback implements ListView.MultiChoiceModeListener{
+
+		@Override
+		public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
+			mode.setSubtitle("Item "+id+" selected.");
+		}
+
+		@Override
+		public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+			MenuInflater inflater = activity.getMenuInflater();
+			inflater.inflate(R.menu.message_multichoice, menu);
+			mode.setTitle("Select messages");
+			return true;
+		}
+
+		@Override
+		public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+			return true;
+		}
+
+		@Override
+		public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+			mode.setSubtitle(item.getTitle());
+			return true;
+		}
+
+		@Override
+		public void onDestroyActionMode(ActionMode mode) {
+
+		}
+	}
+
+
 	@Override
 	public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		final View view = inflater.inflate(R.layout.fragment_conversation, container, false);
@@ -418,7 +457,6 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 		snackbar = (RelativeLayout) view.findViewById(R.id.snackbar);
 		snackbarMessage = (TextView) view.findViewById(R.id.snackbar_message);
 		snackbarAction = (TextView) view.findViewById(R.id.snackbar_action);
-
 		messagesView = (ListView) view.findViewById(R.id.messages_view);
 		messagesView.setOnScrollListener(mOnScrollListener);
 		messagesView.setTranscriptMode(ListView.TRANSCRIPT_MODE_NORMAL);
@@ -432,7 +470,7 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 						if (message.getCounterpart() != null) {
 							String user = message.getCounterpart().isBareJid() ? message.getCounterpart().toString() : message.getCounterpart().getResourcepart();
 							if (!message.getConversation().getMucOptions().isUserInRoom(user)) {
-								Toast.makeText(activity,activity.getString(R.string.user_has_left_conference,user),Toast.LENGTH_SHORT).show();
+								Toast.makeText(activity, activity.getString(R.string.user_has_left_conference, user), Toast.LENGTH_SHORT).show();
 							}
 							highlightInConference(user);
 						}
@@ -473,7 +511,8 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 				});
 		messagesView.setAdapter(messageListAdapter);
 
-		registerForContextMenu(messagesView);
+
+		//registerForContextMenu(messagesView);
 
 		return view;
 	}

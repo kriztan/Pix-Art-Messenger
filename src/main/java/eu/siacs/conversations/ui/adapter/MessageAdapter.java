@@ -1,5 +1,6 @@
 package eu.siacs.conversations.ui.adapter;
 
+import android.app.ActionBar;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,6 +20,10 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.util.DisplayMetrics;
 import android.util.Patterns;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -27,10 +32,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.ref.WeakReference;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.regex.Matcher;
@@ -72,10 +85,129 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	private boolean mIndicateReceived = false;
 	private boolean mUseWhiteBackground = false;
 
+	private HashSet<Message> selected;
+	private OnMessageBoxClicked mOnMessageBoxClickedListener = new OnMessageBoxClicked() {
+		private ShareActionProvider mShareActionProvider;
+		private ActionMode.Callback mActionModeCallback (){
+			return(new ActionMode.Callback() {
+
+				@Override
+				public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+					//Inflate menu resource file.
+					MenuInflater inflater = mode.getMenuInflater();
+					inflater.inflate(R.menu.share_messages, menu);
+					//Fetch the ShareActionProvider
+					MenuItem item = menu.findItem(R.id.share);
+					mShareActionProvider = (ShareActionProvider) item.getActionProvider();
+					return true;
+				}
+
+				@Override
+				public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+					return false;
+				}
+
+				@Override
+				public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+
+
+					switch(item.getItemId()){
+						case R.id.share:
+							android.util.Log.d("Debug", "sharing");
+							//shareCurrentItem();
+							selected.clear();
+							mode.finish();
+							activity.mConversationFragment.messageListAdapter.notifyDataSetChanged();
+							return(true);
+						default:
+							return(false);
+					}
+				}
+
+				@Override
+				public void onDestroyActionMode(ActionMode mode) {
+					am=null;
+					selected.clear();
+					activity.mConversationFragment.messageListAdapter.notifyDataSetChanged();
+				}
+			});
+		}
+
+		private ShareActionProvider.OnShareTargetSelectedListener mOnShareTargetSelectedListener(){
+			return(new ShareActionProvider.OnShareTargetSelectedListener(){
+				@Override
+				public boolean onShareTargetSelected(ShareActionProvider source, Intent intent) {
+					selected.clear();
+					am.finish();
+					return false;
+				}
+			});
+		};
+
+		private Comparator<Message> message_time_comparator(){
+			return(new Comparator<Message>() {
+				@Override
+				public int compare(Message m1, Message m2) {
+					return(m1.getTimeSent()-m2.getTimeSent() < 0 ? -1 : 1);
+				}
+			});
+		}
+
+		private void updateShareIntent(){
+			if(mShareActionProvider!=null) {
+				final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd. MMM, HH:mm");
+				Intent shareIntent = new Intent();
+				shareIntent.setAction(Intent.ACTION_SEND);
+				//Sort the messages, so that the one with the lowest timestampt comes first.
+				List<Message> messages = new ArrayList<Message>(selected);
+				Collections.sort(messages,message_time_comparator());
+
+				StringBuilder msg = new StringBuilder();
+				for (Message m : messages) {
+					if (m.getType() == Message.TYPE_TEXT || m.getType() == Message.TYPE_PRIVATE) {
+						msg.append("[" + simpleDateFormat.format(new Date(m.getTimeSent())) + "] " + UIHelper.getMessageDisplayName(m) + ":\r\n" + m.getBody() + "\r\n");
+					}
+				}
+				msg.delete(msg.length()-2, msg.length());//Remove the last two \r\n
+				shareIntent.putExtra(Intent.EXTRA_TEXT, msg.toString());
+				shareIntent.setType("text/plain");
+				mShareActionProvider.setOnShareTargetSelectedListener(mOnShareTargetSelectedListener());
+				mShareActionProvider.setShareIntent(shareIntent);
+			}
+		}
+
+		ActionMode am;
+
+		@Override
+		public void onMessageBodyClicked(Message message){
+			if(selected.size()==0){
+				am = activity.startActionMode(mActionModeCallback());
+			}
+			if(selected.contains(message)){
+				android.util.Log.d("Debug", "Removing message: "+message);
+				selected.remove(message);
+			}else {
+				android.util.Log.d("Debug", "Adding message: " + message);
+				selected.add(message);
+			}
+			if(selected.size()==0){
+				if(am!=null){
+					am.finish();
+				}
+			}else{
+				//We must only update the share intent if there are messages, if we removed the last one, the button wont show up.
+				updateShareIntent();
+			}
+			activity.mConversationFragment.messageListAdapter.notifyDataSetChanged();
+		}
+	};
+
+
 	public MessageAdapter(ConversationActivity activity, List<Message> messages) {
 		super(activity, 0, messages);
 		this.activity = activity;
 		metrics = getContext().getResources().getDisplayMetrics();
+		selected = new HashSet<Message>();
 		updatePreferences();
 	}
 
@@ -128,7 +260,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 		if (message.getType() == Message.TYPE_IMAGE || message.getType() == Message.TYPE_FILE || message.getTransferable() != null) {
 			FileParams params = message.getFileParams();
 			if (params.size > (1.5 * 1024 * 1024)) {
-				filesize = params.size / (1024 * 1024)+ " MiB";
+				filesize = params.size / (1024 * 1024) + " MiB";
 			} else if (params.size > 0) {
 				filesize = params.size / 1024 + " KiB";
 			}
@@ -174,7 +306,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 		if (error && type == SENT) {
 			viewHolder.time.setTextColor(activity.getWarningTextColor());
 		} else {
-			viewHolder.time.setTextColor(this.getMessageTextColor(darkBackground,false));
+			viewHolder.time.setTextColor(this.getMessageTextColor(darkBackground, false));
 		}
 		if (message.getEncryption() == Message.ENCRYPTION_NONE) {
 			viewHolder.indicator.setVisibility(View.GONE);
@@ -512,6 +644,17 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 			loadAvatar(message,viewHolder.contact_picture);
 		}
 
+		viewHolder.message_box
+			.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					if(MessageAdapter.this.mOnMessageBoxClickedListener != null){
+						MessageAdapter.this.mOnMessageBoxClickedListener
+								.onMessageBodyClicked(message);
+					}
+				}
+			});
+
 		viewHolder.contact_picture
 			.setOnClickListener(new OnClickListener() {
 
@@ -542,7 +685,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 		final Transferable transferable = message.getTransferable();
 		if (transferable != null && transferable.getStatus() != Transferable.STATUS_UPLOADING) {
 			if (transferable.getStatus() == Transferable.STATUS_OFFER) {
-				displayDownloadableMessage(viewHolder,message,activity.getString(R.string.download_x_file, UIHelper.getFileDescriptionString(activity, message)));
+				displayDownloadableMessage(viewHolder, message, activity.getString(R.string.download_x_file, UIHelper.getFileDescriptionString(activity, message)));
 			} else if (transferable.getStatus() == Transferable.STATUS_OFFER_CHECK_FILESIZE) {
 				displayDownloadableMessage(viewHolder, message, activity.getString(R.string.check_x_filesize, UIHelper.getFileDescriptionString(activity, message)));
 			} else {
@@ -589,7 +732,6 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 				displayTextMessage(viewHolder, message, darkBackground);
 			}
 		}
-
 		if (type == RECEIVED) {
 			if(isInValidSession) {
 				if (mUseWhiteBackground) {
@@ -603,7 +745,19 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 				viewHolder.encryption.setVisibility(View.VISIBLE);
 				viewHolder.encryption.setText(CryptoHelper.encryptionTypeToText(message.getEncryption()));
 			}
+			if(selected.contains(message)){
+				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_received_blue);
+			}
 		}
+		if(type == SENT){
+			if(selected.contains(message)) {
+				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_received_blue);
+			}else{
+				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_sent);
+			}
+		}
+
+
 
 		displayStatus(viewHolder, message, type, darkBackground);
 
@@ -657,6 +811,10 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 
 	public interface OnContactPictureLongClicked {
 		void onContactPictureLongClicked(Message message);
+	}
+
+	public interface OnMessageBoxClicked {
+		void onMessageBodyClicked(Message message);
 	}
 
 	private static class ViewHolder {

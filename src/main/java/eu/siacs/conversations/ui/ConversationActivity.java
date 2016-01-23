@@ -20,9 +20,11 @@ import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v4.widget.SlidingPaneLayout.PanelSlideListener;
 import android.util.Log;
 import android.util.Pair;
+import android.view.ActionMode;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Surface;
 import android.view.View;
@@ -30,6 +32,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
@@ -108,7 +111,7 @@ public class ConversationActivity extends XmppActivity
 	private Conversation swipedConversation = null;
 	private Conversation mSelectedConversation = null;
 	private EnhancedListView listView;
-	private ConversationFragment mConversationFragment;
+	public ConversationFragment mConversationFragment;
 
 	private ArrayAdapter<Conversation> listAdapter;
 
