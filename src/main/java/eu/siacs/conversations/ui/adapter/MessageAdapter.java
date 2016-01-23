@@ -113,7 +113,6 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 
 					switch(item.getItemId()){
 						case R.id.share:
-							android.util.Log.d("Debug", "sharing");
 							//shareCurrentItem();
 							selected.clear();
 							mode.finish();
@@ -184,10 +183,8 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 				am = activity.startActionMode(mActionModeCallback());
 			}
 			if(selected.contains(message)){
-				android.util.Log.d("Debug", "Removing message: "+message);
 				selected.remove(message);
 			}else {
-				android.util.Log.d("Debug", "Adding message: " + message);
 				selected.add(message);
 			}
 			if(selected.size()==0){
@@ -751,7 +748,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 		}
 		if(type == SENT){
 			if(selected.contains(message)) {
-				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_received_blue);
+				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_sent_blue);
 			}else{
 				viewHolder.message_box.setBackgroundResource(R.drawable.message_bubble_sent);
 			}
