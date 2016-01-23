@@ -164,10 +164,12 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 				StringBuilder msg = new StringBuilder();
 				for (Message m : messages) {
 					if (m.getType() == Message.TYPE_TEXT || m.getType() == Message.TYPE_PRIVATE) {
-						msg.append("[" + simpleDateFormat.format(new Date(m.getTimeSent())) + "] " + UIHelper.getMessageDisplayName(m) + ":\r\n" + m.getBody() + "\r\n");
+						msg.append("[" + simpleDateFormat.format(new Date(m.getMergedTimeSent())) + "] " + UIHelper.getMessageDisplayName(m) + ":\r\n" + m.getMergedBody() + "\r\n\r\n");
 					}
 				}
-				msg.delete(msg.length()-2, msg.length());//Remove the last two \r\n
+				if(msg.length()>4) {
+					msg.delete(msg.length() - 4, msg.length());//Remove the last two \r\n
+				}
 				shareIntent.putExtra(Intent.EXTRA_TEXT, msg.toString());
 				shareIntent.setType("text/plain");
 				mShareActionProvider.setOnShareTargetSelectedListener(mOnShareTargetSelectedListener());
