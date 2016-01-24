@@ -402,39 +402,6 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 		}
 	}
 
-	private class MultiChoiceMessageCallback implements ListView.MultiChoiceModeListener{
-
-		@Override
-		public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
-			mode.setSubtitle("Item "+id+" selected.");
-		}
-
-		@Override
-		public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-			MenuInflater inflater = activity.getMenuInflater();
-			inflater.inflate(R.menu.message_multichoice, menu);
-			mode.setTitle("Select messages");
-			return true;
-		}
-
-		@Override
-		public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-			return true;
-		}
-
-		@Override
-		public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-			mode.setSubtitle(item.getTitle());
-			return true;
-		}
-
-		@Override
-		public void onDestroyActionMode(ActionMode mode) {
-
-		}
-	}
-
-
 	@Override
 	public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		final View view = inflater.inflate(R.layout.fragment_conversation, container, false);
@@ -510,9 +477,6 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 					}
 				});
 		messagesView.setAdapter(messageListAdapter);
-
-
-		//registerForContextMenu(messagesView);
 
 		return view;
 	}
