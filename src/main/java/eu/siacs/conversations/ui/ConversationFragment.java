@@ -8,7 +8,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentSender;
 import android.content.IntentSender.SendIntentException;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -40,12 +39,9 @@ import net.java.otr4j.session.SessionStatus;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.concurrent.ConcurrentLinkedQueue;
 
 import eu.siacs.conversations.Config;
 import eu.siacs.conversations.R;
-import eu.siacs.conversations.crypto.PgpEngine;
 import eu.siacs.conversations.crypto.axolotl.AxolotlService;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.entities.Contact;
@@ -304,6 +300,17 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 			}
 		}
 	};
+	private View.OnLongClickListener mSendButtonLongClickListener = new View.OnLongClickListener() {
+		@Override
+		public boolean onLongClick(View v) {
+			if (mEditMessage.getText().length() == 0) {
+				mEditMessage.getText().insert(0, "/me ");
+				InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+				imm.showSoftInput(mEditMessage, InputMethodManager.SHOW_IMPLICIT);
+			}
+			return true;
+		}
+	};
 	private OnClickListener clickToMuc = new OnClickListener() {
 
 		@Override
@@ -414,6 +421,7 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 
 		mSendButton = (ImageButton) view.findViewById(R.id.textSendButton);
 		mSendButton.setOnClickListener(this.mSendButtonListener);
+		mSendButton.setOnLongClickListener(this.mSendButtonLongClickListener);
 
 		snackbar = (RelativeLayout) view.findViewById(R.id.snackbar);
 		snackbarMessage = (TextView) view.findViewById(R.id.snackbar_message);
@@ -656,6 +664,8 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 			mEditMessage.getText().insert(mEditMessage.getSelectionStart(),
 					nick + " ");
 		}
+		InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.showSoftInput(mEditMessage, InputMethodManager.SHOW_IMPLICIT);
 	}
 
 	@Override
