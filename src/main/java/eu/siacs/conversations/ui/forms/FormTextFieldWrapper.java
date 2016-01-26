@@ -1,9 +1,9 @@
 package eu.siacs.conversations.ui.forms;
 
 import android.content.Context;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.StyleSpan;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -20,29 +20,57 @@ public class FormTextFieldWrapper extends FormFieldWrapper {
 	protected FormTextFieldWrapper(Context context, Field field) {
 		super(context, field);
 		editText = (EditText) view.findViewById(R.id.field);
-		editText.setSingleLine("text-single".equals(field.getType()));
+		editText.setSingleLine(!"text-multi".equals(field.getType()));
+		if ("text-private".equals(field.getType())) {
+			editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+		}
+		editText.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				editText.setError(null);
+				invokeOnFormFieldValuesEdited();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+			}
+		});
 	}
 
 	@Override
 	protected void setLabel(String label, boolean required) {
 		TextView textView = (TextView) view.findViewById(R.id.label);
-		SpannableString spannableString = new SpannableString(label + (required ? " *" : ""));
-		if (required) {
-			int start = label.length();
-			int end = label.length() + 2;
-			spannableString.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), start, end, 0);
-			spannableString.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.accent)), start, end, 0);
-		}
-		textView.setText(spannableString);
+		textView.setText(createSpannableLabelString(label, required));
+	}
+
+	protected String getValue() {
+		return editText.getText().toString();
 	}
 
 	@Override
-	List<String> getValues() {
+	public List<String> getValues() {
 		List<String> values = new ArrayList<>();
-		for (String line : editText.getText().toString().split("\\n")) {
-			values.add(line);
+		for (String line : getValue().split("\\n")) {
+			if (line.length() > 0) {
+				values.add(line);
+			}
 		}
 		return values;
+	}
+
+	@Override
+	public boolean validates() {
+		if (getValue().trim().length() > 0 || !field.isRequired()) {
+			return true;
+		} else {
+			editText.setError(context.getString(R.string.this_field_is_required));
+			editText.requestFocus();
+			return false;
+		}
 	}
 
 	@Override
