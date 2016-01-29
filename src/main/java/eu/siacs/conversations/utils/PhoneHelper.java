@@ -133,4 +133,8 @@ public class PhoneHelper {
 			return "unknown";
 		}
 	}
+
+    public static  String getOSVersion(Context context) {
+         return "Android/" + android.os.Build.MODEL + "/" + android.os.Build.VERSION.RELEASE;
+    }
 }

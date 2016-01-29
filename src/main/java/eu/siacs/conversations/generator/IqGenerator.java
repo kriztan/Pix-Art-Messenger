@@ -57,6 +57,7 @@ public class IqGenerator extends AbstractGenerator {
 		Element query = packet.query("jabber:iq:version");
 		query.addChild("name").setContent(IDENTITY_NAME);
 		query.addChild("version").setContent(getIdentityVersion());
+		query.addChild("os").setContent(getIdentityVersionOs());
 		return packet;
 	}
 

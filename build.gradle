@@ -49,20 +49,17 @@ dependencies {
 android {
 	compileSdkVersion 23
 	buildToolsVersion "23.0.2"
-
 	defaultConfig {
 		minSdkVersion 14
 		targetSdkVersion 23
 		versionCode 121
-		versionName "1.9.2"
+		versionName '1.9.2'
 		project.ext.set(archivesBaseName, archivesBaseName + "-" + versionName);
 	}
-
 	compileOptions {
 		sourceCompatibility JavaVersion.VERSION_1_7
 		targetCompatibility JavaVersion.VERSION_1_7
 	}
-
 	//
 	// To sign release builds, create the file `gradle.properties` in
 	// $HOME/.gradle or in your project directory with this content:
@@ -79,16 +76,15 @@ android {
 		signingConfigs {
 			release {
 				storeFile file(mStoreFile)
-					storePassword mStorePassword
-					keyAlias mKeyAlias
-					keyPassword mKeyPassword
+				storePassword mStorePassword
+				keyAlias mKeyAlias
+				keyPassword mKeyPassword
 			}
 		}
 		buildTypes.release.signingConfig = signingConfigs.release
 	} else {
 		buildTypes.release.signingConfig = null
 	}
-
 	applicationVariants.all { variant ->
 		if (variant.name.equals('release')) {
 			variant.outputs.each { output ->
@@ -98,11 +94,9 @@ android {
 			}
 		}
 	}
-
 	lintOptions {
 		disable 'ExtraTranslation', 'MissingTranslation', 'InvalidPackage', 'MissingQuantity', 'AppCompatResource'
 	}
-
 	subprojects {
 
 		afterEvaluate {
@@ -115,5 +109,7 @@ android {
 			}
 
 		}
+	}
+	productFlavors {
 	}
 }
