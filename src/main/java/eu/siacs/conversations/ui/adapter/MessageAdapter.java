@@ -1,6 +1,7 @@
 package eu.siacs.conversations.ui.adapter;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -19,6 +20,7 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.util.DisplayMetrics;
 import android.util.Patterns;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -47,6 +49,7 @@ import eu.siacs.conversations.ui.ConversationActivity;
 import eu.siacs.conversations.utils.CryptoHelper;
 import eu.siacs.conversations.utils.GeoHelper;
 import eu.siacs.conversations.utils.UIHelper;
+import nl.changer.audiowife.AudioWife;
 
 public class MessageAdapter extends ArrayAdapter<Message> {
 
@@ -237,6 +240,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	}
 
 	private void displayInfoMessage(ViewHolder viewHolder, String text, boolean darkBackground) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		if (viewHolder.download_button != null) {
 			viewHolder.download_button.setVisibility(View.GONE);
 		}
@@ -249,6 +253,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	}
 
 	private void displayDecryptionFailed(ViewHolder viewHolder, boolean darkBackground) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		if (viewHolder.download_button != null) {
 			viewHolder.download_button.setVisibility(View.GONE);
 		}
@@ -262,6 +267,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	}
 
 	private void displayHeartMessage(final ViewHolder viewHolder, final String body) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		if (viewHolder.download_button != null) {
 			viewHolder.download_button.setVisibility(View.GONE);
 		}
@@ -275,6 +281,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	}
 
 	private void displayTextMessage(final ViewHolder viewHolder, final Message message, boolean darkBackground) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		if (viewHolder.download_button != null) {
 			viewHolder.download_button.setVisibility(View.GONE);
 		}
@@ -352,6 +359,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 
 	private void displayDownloadableMessage(ViewHolder viewHolder,
 			final Message message, String text) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		viewHolder.image.setVisibility(View.GONE);
 		viewHolder.messageBody.setVisibility(View.GONE);
 		viewHolder.download_button.setVisibility(View.VISIBLE);
@@ -366,7 +374,21 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 		viewHolder.download_button.setOnLongClickListener(openContextMenu);
 	}
 
+	private void displayAudioMessage(ViewHolder viewHolder, final Message message) {
+		viewHolder.image.setVisibility(View.GONE);
+		viewHolder.messageBody.setVisibility(View.GONE);
+		viewHolder.download_button.setVisibility(View.GONE);
+		viewHolder.aw_player.setVisibility(View.VISIBLE); // Hier kommt der Player rein
+		Uri audioFile = Uri.fromFile(activity.xmppConnectionService.getFileBackend().getFile(message)); // Uri von der Datei
+		LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE); // LayoutInflater, whs optional
+
+		AudioWife audioWife = new AudioWife();
+		audioWife.init(getContext(), audioFile)
+				.useDefaultUi(viewHolder.aw_player, layoutInflater);
+	}
+
 	private void displayOpenableMessage(ViewHolder viewHolder,final Message message) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		viewHolder.image.setVisibility(View.GONE);
 		viewHolder.messageBody.setVisibility(View.GONE);
 		viewHolder.download_button.setVisibility(View.VISIBLE);
@@ -384,6 +406,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 	private void displayLocationMessage(ViewHolder viewHolder, final Message message) {
 		viewHolder.image.setVisibility(View.GONE);
 		viewHolder.messageBody.setVisibility(View.GONE);
+		viewHolder.aw_player.setVisibility(View.GONE);
 		viewHolder.download_button.setVisibility(View.VISIBLE);
 		viewHolder.download_button.setText(R.string.show_location);
 		viewHolder.download_button.setOnClickListener(new OnClickListener() {
@@ -398,6 +421,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 
 	private void displayImageMessage(ViewHolder viewHolder,
 			final Message message) {
+		viewHolder.aw_player.setVisibility(View.GONE);
 		if (viewHolder.download_button != null) {
 			viewHolder.download_button.setVisibility(View.GONE);
 		}
@@ -446,6 +470,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 						.findViewById(R.id.message_box);
 					viewHolder.contact_picture = (ImageView) view
 						.findViewById(R.id.message_photo);
+					viewHolder.aw_player = (ViewGroup) view.findViewById(R.id.aw_player);
 					viewHolder.download_button = (Button) view
 						.findViewById(R.id.download_button);
 					viewHolder.indicator = (ImageView) view
@@ -466,6 +491,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 						.findViewById(R.id.message_box);
 					viewHolder.contact_picture = (ImageView) view
 						.findViewById(R.id.message_photo);
+					viewHolder.aw_player = (ViewGroup) view.findViewById(R.id.aw_player);
 					viewHolder.download_button = (Button) view
 						.findViewById(R.id.download_button);
 					viewHolder.indicator = (ImageView) view
@@ -554,7 +580,11 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 			if (message.getFileParams().width > 0) {
 				displayImageMessage(viewHolder,message);
 			} else {
-				displayOpenableMessage(viewHolder, message);
+				if (message.getMimeType().startsWith("audio/")) {
+					displayAudioMessage(viewHolder, message);
+				} else {
+					displayOpenableMessage(viewHolder, message);
+				}
 			}
 		} else if (message.getEncryption() == Message.ENCRYPTION_PGP) {
 			if (activity.hasPgp()) {
@@ -663,6 +693,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
 
 		protected LinearLayout message_box;
 		protected Button download_button;
+		protected ViewGroup aw_player;
 		protected ImageView image;
 		protected ImageView indicator;
 		protected ImageView indicatorReceived;
