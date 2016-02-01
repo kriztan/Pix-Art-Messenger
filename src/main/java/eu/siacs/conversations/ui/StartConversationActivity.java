@@ -286,7 +286,7 @@ public class StartConversationActivity extends XmppActivity implements OnRosterU
 		if (!conversation.getMucOptions().online()) {
 			xmppConnectionService.joinMuc(conversation);
 		}
-		if (!bookmark.autojoin()) {
+		if (!bookmark.autojoin() && getPreferences().getBoolean("autojoin", true)) {
 			bookmark.setAutojoin(true);
 			xmppConnectionService.pushBookmarks(bookmark.getAccount());
 		}
@@ -426,7 +426,7 @@ public class StartConversationActivity extends XmppActivity implements OnRosterU
 								jid.setError(getString(R.string.bookmark_already_exists));
 							} else {
 								final Bookmark bookmark = new Bookmark(account, conferenceJid.toBareJid());
-								bookmark.setAutojoin(true);
+								bookmark.setAutojoin(getPreferences().getBoolean("autojoin", true));
 								String nick = conferenceJid.getResourcepart();
 								if (nick != null && !nick.isEmpty()) {
 									bookmark.setNick(nick);
@@ -803,7 +803,7 @@ public class StartConversationActivity extends XmppActivity implements OnRosterU
 			final AdapterView.AdapterContextMenuInfo acmi = (AdapterContextMenuInfo) menuInfo;
 			if (mResContextMenu == R.menu.conference_context) {
 				activity.conference_context_id = acmi.position;
-			} else {
+			} else if (mResContextMenu == R.menu.contact_context){
 				activity.contact_context_id = acmi.position;
 				final Blockable contact = (Contact) activity.contacts.get(acmi.position);
 				final MenuItem blockUnblockItem = menu.findItem(R.id.context_contact_block_unblock);
