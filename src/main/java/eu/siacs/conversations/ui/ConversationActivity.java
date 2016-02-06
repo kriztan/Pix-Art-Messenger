@@ -854,7 +854,7 @@ public class ConversationActivity extends XmppActivity
 			MenuItem pgp = popup.getMenu().findItem(R.id.encryption_choice_pgp);
 			MenuItem axolotl = popup.getMenu().findItem(R.id.encryption_choice_axolotl);
 			pgp.setVisible(!Config.HIDE_PGP_IN_UI && !Config.X509_VERIFICATION);
-			none.setVisible(!Config.FORCE_E2E_ENCRYPTION);
+			none.setVisible(!Config.FORCE_E2E_ENCRYPTION || conversation.getMode() == Conversation.MODE_MULTI);
 			otr.setVisible(!Config.X509_VERIFICATION);
 			if (conversation.getMode() == Conversation.MODE_MULTI) {
 				otr.setVisible(false);
@@ -1601,5 +1601,11 @@ public class ConversationActivity extends XmppActivity
 
 	public boolean highlightSelectedConversations() {
 		return !isConversationsOverviewHideable() || this.conversationWasSelectedByKeyboard;
+	}
+
+	public void setMessagesLoaded() {
+		if (mConversationFragment != null) {
+			mConversationFragment.setMessagesLoaded();
+		}
 	}
 }

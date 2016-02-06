@@ -81,6 +81,7 @@ public class Conversation extends AbstractEntity implements Blockable {
 	private ChatState mOutgoingChatState = Config.DEFAULT_CHATSTATE;
 	private ChatState mIncomingChatState = Config.DEFAULT_CHATSTATE;
 	private String mLastReceivedOtrMessageId = null;
+	private String mFirstMamReference = null;
 
 	public boolean hasMessagesLeftOnServer() {
 		return messagesLeftOnServer;
@@ -275,6 +276,22 @@ public class Conversation extends AbstractEntity implements Blockable {
 		synchronized (this.messages) {
 			return this.messages.size();
 		}
+	}
+
+	public void setFirstMamReference(String reference) {
+		this.mFirstMamReference = reference;
+	}
+
+	public String getFirstMamReference() {
+		return this.mFirstMamReference;
+	}
+
+	public void setLastClearHistory(long time) {
+		setAttribute("last_clear_history",String.valueOf(time));
+	}
+
+	public long getLastClearHistory() {
+		return getLongAttribute("last_clear_history", 0);
 	}
 
 	public interface OnMessageFound {
@@ -711,6 +728,10 @@ public class Conversation extends AbstractEntity implements Blockable {
 	}
 
 	public long getLastMessageTransmitted() {
+		long last_clear = getLastClearHistory();
+		if (last_clear != 0) {
+			return last_clear;
+		}
 		synchronized (this.messages) {
 			for(int i = this.messages.size() - 1; i >= 0; --i) {
 				Message message = this.messages.get(i);
@@ -731,7 +752,7 @@ public class Conversation extends AbstractEntity implements Blockable {
 	}
 
 	public boolean alwaysNotify() {
-		return mode == MODE_SINGLE || getBooleanAttribute(ATTRIBUTE_ALWAYS_NOTIFY,Config.ALWAYS_NOTIFY_BY_DEFAULT || isPnNA());
+		return mode == MODE_SINGLE || getBooleanAttribute(ATTRIBUTE_ALWAYS_NOTIFY, Config.ALWAYS_NOTIFY_BY_DEFAULT || isPnNA());
 	}
 
 	public boolean setAttribute(String key, String value) {
@@ -790,6 +811,13 @@ public class Conversation extends AbstractEntity implements Blockable {
 		message.setConversation(this);
 		synchronized (this.messages) {
 			this.messages.add(message);
+		}
+	}
+
+	public void prepend(Message message) {
+		message.setConversation(this);
+		synchronized (this.messages) {
+			this.messages.add(0,message);
 		}
 	}
 

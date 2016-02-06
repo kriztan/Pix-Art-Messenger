@@ -13,13 +13,16 @@ import eu.siacs.conversations.entities.Contact;
 import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.entities.Message;
 import eu.siacs.conversations.entities.MucOptions;
-import eu.siacs.conversations.entities.Presences;
+import eu.siacs.conversations.entities.Presence;
+import eu.siacs.conversations.entities.ServiceDiscoveryResult;
 import eu.siacs.conversations.generator.PresenceGenerator;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.xml.Element;
+import eu.siacs.conversations.xmpp.OnIqPacketReceived;
 import eu.siacs.conversations.xmpp.OnPresencePacketReceived;
 import eu.siacs.conversations.xmpp.jid.Jid;
 import eu.siacs.conversations.xmpp.pep.Avatar;
+import eu.siacs.conversations.xmpp.stanzas.IqPacket;
 import eu.siacs.conversations.xmpp.stanzas.PresencePacket;
 
 public class PresenceParser extends AbstractParser implements
@@ -39,7 +42,6 @@ public class PresenceParser extends AbstractParser implements
 			processConferencePresence(packet, mucOptions);
 			final List<MucOptions.User> tileUserAfter = mucOptions.getUsers(5);
 			if (!tileUserAfter.equals(tileUserBefore)) {
-				Log.d(Config.LOGTAG,account.getJid().toBareJid()+": update tiles for "+conversation.getName());
 				mXmppConnectionService.getAvatarService().clear(mucOptions);
 			}
 			if (before != mucOptions.online() || (mucOptions.online() && count != mucOptions.getUserCount())) {
@@ -167,7 +169,7 @@ public class PresenceParser extends AbstractParser implements
 		final String type = packet.getAttribute("type");
 		final Contact contact = account.getRoster().getContact(from);
 		if (type == null) {
-			String presence = from.isBareJid() ? "" : from.getResourcepart();
+			final String resource = from.isBareJid() ? "" : from.getResourcepart();
 			contact.setPresenceName(packet.findChildContent("nick", "http://jabber.org/protocol/nick"));
 			Avatar avatar = Avatar.parsePresence(packet.findChild("x", "vcard-temp:x:update"));
 			if (avatar != null && !contact.isSelf()) {
@@ -183,7 +185,15 @@ public class PresenceParser extends AbstractParser implements
 				}
 			}
 			int sizeBefore = contact.getPresences().size();
-			contact.updatePresence(presence, Presences.parseShow(packet.findChild("show")));
+
+			final Element show = packet.findChild("show");
+			final Element caps = packet.findChild("c", "http://jabber.org/protocol/caps");
+			final Presence presence = Presence.parse(show, caps);
+			contact.updatePresence(resource, presence);
+			if (presence.hasCaps() && Config.REQUEST_DISCO) {
+				mXmppConnectionService.fetchCaps(account, from, presence);
+			}
+
 			PgpEngine pgp = mXmppConnectionService.getPgpEngine();
 			Element x = packet.findChild("x", "jabber:x:signed");
 			if (pgp != null && x != null) {
