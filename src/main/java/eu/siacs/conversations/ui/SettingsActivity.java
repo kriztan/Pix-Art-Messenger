@@ -12,7 +12,6 @@ import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.security.KeyStoreException;
@@ -173,6 +172,8 @@ public class SettingsActivity extends XmppActivity implements
 			xmppConnectionService.updateMemorizingTrustmanager();
 			reconnectAccounts();
 		} else if (name.equals("use_tor")) {
+			reconnectAccounts();
+		} else if (name.equals("hide_client_version")) {
 			reconnectAccounts();
 		}
 

@@ -1,6 +1,8 @@
 package eu.siacs.conversations.generator;
 
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.util.Log;
 
@@ -57,8 +59,15 @@ public class IqGenerator extends AbstractGenerator {
 		Element query = packet.query("jabber:iq:version");
 		query.addChild("name").setContent(IDENTITY_NAME);
 		query.addChild("version").setContent(getIdentityVersion());
-		query.addChild("os").setContent(getIdentityVersionOs());
+		if (!getPreferences().getBoolean("hide_client_version", false)) {
+			query.addChild("os").setContent(getIdentityVersionOs());
+		}
 		return packet;
+	}
+
+	private SharedPreferences getPreferences() {
+		return PreferenceManager
+				.getDefaultSharedPreferences(mXmppConnectionService);
 	}
 
 	protected IqPacket publish(final String node, final Element item) {
@@ -308,4 +317,6 @@ public class IqGenerator extends AbstractGenerator {
 
 		return register;
 	}
+
+
 }

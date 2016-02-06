@@ -588,4 +588,6 @@
 	<string name="selection_too_large">The selected area is too large</string>
 	<string name="no_accounts">(No activated accounts)</string>
 	<string name="this_field_is_required">This field is required</string>
+	<string name="hide_device_version">Hide device version</string>
+	<string name="hide_device_version_summary">Don\'t show device version of the client device</string>
 </resources>

@@ -37,3 +37,4 @@ proguard/
 
 import-summary.txt
 .navigation/
+*.gradle

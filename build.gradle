@@ -52,14 +52,8 @@ android {
 	defaultConfig {
 		minSdkVersion 14
 		targetSdkVersion 23
-<<<<<<< HEAD
-		versionCode 121
-		versionName '1.9.2'
-=======
 		versionCode 122
 		versionName "1.9.3"
->>>>>>> refs/remotes/siacs/master
-		project.ext.set(archivesBaseName, archivesBaseName + "-" + versionName);
 	}
 	compileOptions {
 		sourceCompatibility JavaVersion.VERSION_1_7

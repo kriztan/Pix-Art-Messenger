@@ -77,7 +77,7 @@
   <string name="delete_messages">Удалить сообщения</string>
   <string name="also_end_conversation">Закончить эту беседу впоследствии</string>
   <string name="choose_presence">Укажите статус для контакта</string>
-  <string name="send_unencrypted_message">Отправить незащифрованное сообщение</string>
+  <string name="send_unencrypted_message">Отправить незашифрованное сообщение</string>
   <string name="send_otr_message">Отправить OTR защифрованное сообщение</string>
   <string name="send_omemo_message">Отправить OMEMO защифрованное сообщение</string>
   <string name="send_omemo_x509_message">Послать v\\OMEMO зашифрованное сообщение</string>
@@ -540,4 +540,11 @@
   <string name="battery_optimizations_enabled">Оптимизации энергопотребления разрешены</string>
   <string name="disable">Запретить</string>
   <string name="selection_too_large">Выбранная область слишком большая</string>
+  <string name="notify_only_when_highlighted">Уведомлять только при обращениях</string>
+  <string name="pref_autojoin">Автоматический вход в конференции</string>
+  <string name="pref_show_connection_options_summary">Показывать имя сервера и порт в настройках аккаунта</string>
+  <string name="pref_show_connection_options">Расширенные настройки подключния</string>
+  <string name="this_field_is_required">Необходимо заполнить</string>
+  <string name="hide_device_version">Скрывать версию устройства</string>
+  <string name="hide_device_version_summary">Не показывать версию устройства клиентам</string>
 </resources>
