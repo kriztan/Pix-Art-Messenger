@@ -548,7 +548,7 @@
     <string name="sharing_files_please_wait">Teile Dateien. Bitte warten…</string>
     <string name="delete_x_file">%s löschen</string>
     <string name="security_error_invalid_file_access">Sicherheitsfehler: Dateizugriff nicht erlaubt</string>
-    <string name="mgmt_account_reconnect">neu verbinden</string>
+    <string name="mgmt_account_reconnect">Neu verbinden</string>
     <string name="no_application_to_share_uri">Keine Anwendung zum Teilen der URI gefunden</string>
     <string name="share_uri_with">Teile URI mit…</string>
     <string name="shared_text_with_x">Text mit %s geteilt</string>
