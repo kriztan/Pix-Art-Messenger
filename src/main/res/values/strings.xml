@@ -613,7 +613,7 @@
     <string name="security_error_invalid_file_access">Security error: Invalid file access</string>
     <string name="no_application_to_share_uri">No application found to share URI</string>
     <string name="share_uri_with">Share URI with…</string>
-    <string name="mgmt_account_reconnect">reconnect</string>
+    <string name="mgmt_account_reconnect">Reconnect</string>
     <string name="welcome_header" translatable="false">Pix-Art Messenger</string>
     <string name="welcome_text">…is a free and secure XMPP/Jabber client for the use with pix-art.de</string>
     <string name="magic_create_text">We will guide you through the process of creating an account on pix-art.de with a random password, which you can use or change to your own password on the next page. \nThan you will be able to communicate with users of this and other providers by giving them your full Jabber-ID.</string>
@@ -743,7 +743,7 @@
     <string name="timeout_30_days">30 days</string>
     <string name="timeout_6_months">6 months</string>
     <string name="today">Today</string>
-    <string name="start_chatting">Start chtatting…</string>
+    <string name="start_chatting">Start chatting…</string>
     <string name="pref_use_max_brightness_summary">Switch to maximum brightness while watching videos or images in fullscreen.</string>
     <string name="pref_use_max_brightness">Maximum brightness</string>
     <string name="block_jabber_id">Block Jabber-ID</string>
