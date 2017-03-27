@@ -760,7 +760,7 @@
     <string name="block_stranger">Block stranger</string>
     <string name="block_entire_domain">Block entire domain</string>
     <string name="pref_use_auto_rotate_summary">Rotate images and videos in fullscreen to fit screensize</string>
-    <string name="pref_use_auto_rotate">rotate media in fullscreen</string>
+    <string name="pref_use_auto_rotate">Rotate media in fullscreen</string>
     <string name="pref_use_tor">Connect via Tor</string>
     <string name="pref_use_tor_summary">Tunnel all connections through the Tor network.</string>
     <string name="pref_connection_options">Connection options</string>
