@@ -376,9 +376,9 @@
     <string name="smp_requested">Contact requested SMP verification</string>
     <string name="no_otr_session_found">No valid OTR session has been found!</string>
     <string name="conversations_foreground_service">Pix-Art Messenger</string>
-    <string name="pref_export_logs">Export Logs</string>
-    <string name="pref_export_logs_summary">Write logs to SD card</string>
-    <string name="notification_export_logs_title">Writing backup to SD card</string>
+    <string name="pref_export_logs">Export history</string>
+    <string name="pref_export_logs_summary">Write conversations history logs to SD card</string>
+    <string name="notification_export_logs_title">Writing conversations to SD card</string>
     <string name="choose_file">Choose file</string>
     <string name="receiving_x_file">Receiving %1$s (%2$d%% completed)</string>
     <string name="download_x_file">Download %s</string>
