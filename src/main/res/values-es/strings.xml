@@ -87,6 +87,7 @@
   <string name="your_nick_has_been_changed">Tu apodo se ha modificado</string>
   <string name="send_unencrypted">Enviar sin cifrar</string>
   <string name="decryption_failed">Falló el descifrado. Tal vez no tengas la clave privada apropiada.</string>
+  <string name="openkeychain_required">OpenKeychain</string>
   <string name="openkeychain_required_long">Pix-Art Messenger utiliza una aplicación de terceros llamada <b>OpenKeychain</b> para cifrar y descifrar mensajes y gestionar tus claves públicas.\n\nOpenKeychain está publicado bajo licencia GPLv3 y disponible on F-Droid y Google Play.\n\n<small>(Por favor, reinicie Pix-Art Messenger después.)</small></string>
   <string name="restart">Reiniciar</string>
   <string name="install">Instalar</string>
