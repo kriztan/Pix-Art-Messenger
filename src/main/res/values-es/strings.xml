@@ -562,7 +562,6 @@
   <string name="data_saver_enabled">Optimización de datos habilitado</string>
   <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo a Pix-Art Messenger acceder a internet cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceder a internet cuando la optimización de datos está habilitada.\nPix-Art Messenger realizará igualmente optimizaciones para ahorrar datos cuando sea posible.</string>
   <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
-  <string name="contact">Contacto</string>
   <string name="error_unable_to_create_temporary_file">No se ha podido crear el fichero temporal</string>
   <string name="this_device_has_been_verified">Este dispositivo ha sido verificado</string>
   <string name="copy_fingerprint">Copiar huella digital</string>
@@ -602,7 +601,6 @@
   <string name="received_message_from_stranger">Mensaje recibido de un contacto desconocido</string>
   <string name="contacts_are_typing">%s están escribiendo...</string>
   <string name="contact_is_typing">%s está escribiendo...</string>
-  <string name="presence_offline">Desconectado</string>
   <string name="block_stranger">Bloquear desconocido</string>
   <string name="block_entire_domain">Bloquear el dominio completo</string>
   <string name="pref_use_tor">Conectar via Tor</string>
