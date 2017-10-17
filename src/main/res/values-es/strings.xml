@@ -108,6 +108,7 @@
   <string name="pref_led_summary">La luz parpadea cuando llega un nuevo mensaje</string>
   <string name="pref_sound">Tono</string>
   <string name="pref_sound_summary">Reproduce tono con la notificación</string>
+  <string name="pref_send_crash">Enviar informes de errores</string>
   <string name="pref_confirm_messages">Confirmar mensajes</string>
   <string name="pref_confirm_messages_summary">Permitir a tus contactos saber cuando has recibido y leído sus mensajes</string>
   <string name="pref_ui_options">Pantalla</string>
@@ -142,6 +143,10 @@
   <string name="account_status_tls_error">Error de negociación TLS</string>
   <string name="account_status_incompatible_server">Servidor incompatible</string>
   <string name="encryption_choice_unencrypted">Sin cifrado</string>
+  <string name="encryption_choice_otr">OTR</string>
+  <string name="encryption_choice_pgp">OpenPGP</string>
+  <string name="encryption_choice_omemo">OMEMO</string>
+  <string name="mgmt_account_edit">Editar cuenta</string>
   <string name="mgmt_account_delete">Eliminar cuenta</string>
   <string name="mgmt_account_publish_avatar">Imagen de perfil</string>
   <string name="mgmt_account_publish_pgp">Publicar clave pública OpenPGP</string>
@@ -163,6 +168,15 @@
   <string name="error_out_of_memory">Sin memoria. La imagen es demasiado grande</string>
   <string name="add_phone_book_text">¿Quieres añadir a %s a tus contactos?</string>
   <string name="server_info_show_more">Información de servidor</string>
+  <string name="server_info_mam">XEP-0313: MAM</string>
+  <string name="server_info_carbon_messages">XEP-0280: Message Carbons</string>
+  <string name="server_info_csi">XEP-0352: Client State Indication</string>
+  <string name="server_info_blocking">XEP-0191: Blocking Command</string>
+  <string name="server_info_roster_version">XEP-0237: Roster Versioning</string>
+  <string name="server_info_stream_management">XEP-0198: Stream Management</string>
+  <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
+  <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
+  <string name="server_info_push">XEP-0357: Push</string>
   <string name="server_info_available">Sí</string>
   <string name="server_info_unavailable">No</string>
   <string name="missing_public_keys">Se han perdido las claves de anuncio públicas</string>
@@ -478,6 +492,7 @@
   <string name="certificate_issuer">Editor</string>
   <string name="certificate_cn">Nombre</string>
   <string name="certificate_o">Organización</string>
+  <string name="certificate_sha1">SHA-1</string>
   <string name="certicate_info_not_available">(No disponible)</string>
   <string name="certificate_not_found">Certificado no encontrado</string>
   <string name="notify_on_all_messages">Notificar para todos los mensajes</string>
@@ -486,6 +501,7 @@
   <string name="notify_paused">Notificaciones pausadas</string>
   <string name="pref_picture_compression">Comprimir imágenes</string>
   <string name="pref_picture_compression_summary">Redimensionar y comprimir las imágenes</string>
+  <string name="pref_video_compression_summary">Redimensionar y comprimir el Vídeo</string>
   <string name="always">Siempre</string>
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
   <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
