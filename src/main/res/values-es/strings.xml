@@ -340,6 +340,7 @@
   <string name="distrust_omemo_key_text">¿Estás seguro que quieres eliminar la verificación de este dispositivo?\nEste dispositivo y los mensajes que lleguen desde allí serán marcados como no confiables.</string>
   <string name="error_no_keys_to_trust_server_error">No hay claves disponibles para este contacto. La búsqueda de nuevas claves al servidor ha fallado. Puede que exista un problema con el servidor de tu contacto.</string>
   <string name="error_no_keys_to_trust">No hay claves disponibles para este contacto. Si has eliminado alguna de sus claves, tus contactos necesitarán generar nuevas claves.</string>
+  <string name="error_trustkeys_title">Error</string>
   <string name="fetching_history_from_server">Buscando historial en el servidor</string>
   <string name="no_more_history_on_server">No hay más historial en el servidor</string>
   <string name="updating">Actualizando…</string>
@@ -587,6 +588,9 @@
   <string name="data_saver_enabled">Optimización de datos habilitado</string>
   <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo a Pix-Art Messenger acceder a internet cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceder a internet cuando la optimización de datos está habilitada.\nPix-Art Messenger realizará igualmente optimizaciones para ahorrar datos cuando sea posible.</string>
   <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
+  <string name="add_to_contact_list">Añadir a contactos</string>
+  <string name="contact">Contacto</string>
+  <string name="unable_to_start_recording">No se puede iniciar la grabación</string>
   <string name="error_unable_to_create_temporary_file">No se ha podido crear el fichero temporal</string>
   <string name="this_device_has_been_verified">Este dispositivo ha sido verificado</string>
   <string name="copy_fingerprint">Copiar huella digital</string>
@@ -608,6 +612,7 @@
   <string name="verify_omemo_keys">Verificar claves OMEMO</string>
   <string name="show_inactive_devices">Mostrar dispositivos inactivos</string>
   <string name="hide_inactive_devices">Ocultar dispositivos inactivos</string>
+  <string name="reply">Responder</string>
   <string name="encrypting_message">Cifrando mensaje</string>
   <string name="transcoding_video">Comprimiendo video</string>
   <string name="pref_automatically_delete_messages_description">Automáticamente borrar mensajes del dispositivo más antiguos que el configurado en el marco de tiempo.</string>
@@ -617,7 +622,9 @@
   <string name="timeout_7_days">7 días</string>
   <string name="timeout_30_days">30 días</string>
   <string name="timeout_6_months">6 meses</string>
+  <string name="timeout_12_months">12 meses</string>
   <string name="today">Hoy</string>
+  <string name="pref_use_max_brightness">Brillo máximo</string>
   <string name="block_jabber_id">Bloquear Identificador Jabber</string>
   <string name="corresponding_conversations_closed">Conversación correspondiente cerrada.</string>
   <string name="contact_blocked_past_tense">Contacto bloqueado.</string>
@@ -626,6 +633,9 @@
   <string name="received_message_from_stranger">Mensaje recibido de un contacto desconocido</string>
   <string name="contacts_are_typing">%s están escribiendo...</string>
   <string name="contact_is_typing">%s está escribiendo...</string>
+  <string name="one_participant">un Participante</string>
+  <string name="more_participants">%d participantes</string>
+  <string name="presence_offline">Desconectado</string>
   <string name="block_stranger">Bloquear desconocido</string>
   <string name="block_entire_domain">Bloquear el dominio completo</string>
   <string name="pref_use_tor">Conectar via Tor</string>
