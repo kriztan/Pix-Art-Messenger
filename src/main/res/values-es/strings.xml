@@ -522,6 +522,7 @@
   <string name="presence_dnd">Ocupado</string>
   <string name="secure_password_generated">Se ha generado una contraseña segura</string>
   <string name="device_does_not_support_battery_op">Tu dispositivo no soporta la opción de optimización de batería</string>
+  <string name="share">Compartir</string>
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
@@ -612,6 +613,7 @@
   <string name="pref_show_connection_options">Opciones de conexión</string>
   <string name="retry_decryption">Reintentar descifrado</string>
   <string name="session_failure">Fallo de sesión</string>
+  <string name="action_take_video">grabar un Vídeo</string>
   <string name="account_status_regis_web">El servidor requiere registro en su página web</string>
   <string name="application_found_to_open_website">No se ha encontrado aplicación para abrir la página web</string>
   <string name="open_website">Abrir página web</string>
@@ -625,4 +627,5 @@
   <string name="error_no_keys_to_trust_presence">No hay claves disponibles para este contacto.\n Asegúrate que tenéis suscripción de presencia mutua. </string>
   <string name="mark_as_read">Marcar como leído</string>
   <string name="server_info_partial">Parcial</string>
+  <string name="install_update">¿Instalar actualización?</string>
 </resources>
