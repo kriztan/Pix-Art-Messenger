@@ -57,13 +57,13 @@
   <string name="unblock">Entsperren</string>
   <string name="save">Speichern</string>
   <string name="crash_report_title">Pix-Art Messenger ist abgestürzt</string>
-  <string name="crash_report_message">\"Durch das Einsenden von Fehlerberichten hilfst du bei der stetigen Verbesserung von Pix-Art Messenger.
-&lt;b&gt;Achtung:&lt;/b&gt; Dies wird eines deiner XMPP-Profile benutzen, um den Entwickler zu kontaktieren.\"</string>
+  <string name="crash_report_message">Durch das Einsenden von Fehlerberichten hilfst du bei der stetigen Verbesserung von Pix-Art Messenger.
+\n<b>Achtung:</b>Dies wird eines deiner XMPP-Profile benutzen, um den Entwickler zu kontaktieren.</string>
   <string name="send_now">Jetzt abschicken</string>
   <string name="send_never">Nie mehr nachfragen</string>
   <string name="problem_connecting_to_account">Es gibt Probleme beim Verbindungsaufbau mit einem Profil</string>
   <string name="problem_connecting_to_accounts">Es gibt Probleme beim Verbindungsaufbau mit mehreren Profilen</string>
-  <string name="touch_to_fix">Hier antippen, um deine Profile zu verwalten</string>
+  <string name="touch_to_fix">Hier tippen, um deine Profile zu verwalten</string>
   <string name="attach_file">Datei anfügen</string>
   <string name="not_in_roster">Der Kontakt ist nicht in deiner Kontaktliste. Möchtest du ihn hinzufügen?</string>
   <string name="add_contact">Kontakt hinzufügen</string>
@@ -73,9 +73,8 @@
   <string name="sharing_files_please_wait">Teile Dateien. Bitte warten…</string>
   <string name="action_clear_history">Verlauf löschen</string>
   <string name="clear_conversation_history">Verlauf löschen</string>
-  <string name="clear_histor_msg">\"Möchtest du alle Nachrichten in dieser Unterhaltung löschen?
-
-&lt;b&gt;Achtung:&lt;/b&gt; Dies beeinflusst nicht Nachrichten, die auf anderen Geräten oder Servern gespeichert sind.\"</string>
+  <string name="clear_histor_msg">Möchtest du alle Nachrichten in dieser Unterhaltung löschen?
+\n\n<b>Achtung:</b>Dies beeinflusst nicht Nachrichten, die auf anderen Geräten oder Servern gespeichert sind.</string>
   <string name="delete_messages">Nachrichten löschen</string>
   <string name="also_end_conversation">Diese Unterhaltung danach beenden</string>
   <string name="choose_presence">Ressource des Kontakts auswählen</string>
@@ -88,11 +87,7 @@
   <string name="your_nick_has_been_changed">Dein Nickname wurde geändert</string>
   <string name="send_unencrypted">Normal verschicken</string>
   <string name="decryption_failed">Entschlüsselung fehlgeschlagen. Vielleicht hast du nicht den richtigen privaten Schlüssel.</string>
-  <string name="openkeychain_required_long">\"Pix-Art Messenger benutzt eine Drittanwendung namens &lt;b&gt;OpenKeychain&lt;/b&gt;, um Nachrichten zu ver- und entschlüsseln und um deine Schlüssel zu verwalten.
-
-OpenKeychain ist GPLv3-lizenziert und kann über F-Droid oder Google Play bezogen werden.
-
-&lt;small&gt;(Bitte starte Pix-Art Messenger danach neu.)&lt;/small&gt;\"</string>
+  <string name="openkeychain_required_long">Pix-Art Messenger benutzt eine Drittanwendung namens <b>OpenKeychain</b>, um Nachrichten zu ver- und entschlüsseln und um deine Schlüssel zu verwalten.\n\nOpenKeychain ist GPLv3-lizenziert und kann über F-Droid oder Google Play bezogen werden.\n\n<small>(Bitte starte Pix-Art Messenger danach neu.)</small></string>
   <string name="restart">Neu starten</string>
   <string name="install">Installieren</string>
   <string name="openkeychain_not_installed">Bitte OpenKeychain installieren</string>
