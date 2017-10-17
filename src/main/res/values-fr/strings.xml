@@ -600,7 +600,6 @@
   <string name="received_message_from_stranger">Message d\'un inconnu reçu</string>
   <string name="contacts_are_typing">%s sont en train d\'écrire...</string>
   <string name="contact_is_typing">%s est en train d\'écrire</string>
-  <string name="presence_offline">Hors-ligne</string>
   <string name="block_stranger">Bloquer l\'inconnu</string>
   <string name="block_entire_domain">Bloquer le domaine entier</string>
   <string name="pref_use_tor">Connexion via Tor</string>
