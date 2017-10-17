@@ -376,6 +376,7 @@
   <string name="password_should_not_be_empty">Das Passwort darf nicht leer sein</string>
   <string name="perform_action_with">Aktion durchführen mit</string>
   <string name="no_affiliation">Keine Zugehörigkeit</string>
+  <string name="no_role">Offline</string>
   <string name="outcast">Ausgeschlossen</string>
   <string name="member">Mitglied</string>
   <string name="advanced_mode">Erweiterter Modus</string>
@@ -572,6 +573,7 @@
   <string name="status_message">Statusnachricht</string>
   <string name="all_accounts_on_this_device">Für alle Profile dieses Gerätes festlegen</string>
   <string name="presence_chat">Frei zum chatten</string>
+  <string name="presence_online">Online</string>
   <string name="presence_away">Weg</string>
   <string name="presence_xa">Nicht verfügbar</string>
   <string name="presence_dnd">Beschäftigt</string>
@@ -693,6 +695,7 @@
   <string name="contact_is_typing">%s schreibt…</string>
   <string name="one_participant">Ein Teilnehmer</string>
   <string name="more_participants">%d Teilnehmer</string>
+  <string name="presence_offline">Offline</string>
   <string name="block_stranger">Unbekannten sperren</string>
   <string name="block_entire_domain">Gesamte Domain sperren</string>
   <string name="pref_use_auto_rotate_summary">Bilder und Videos in Vollbildanzeige automatisch ausrichten</string>
