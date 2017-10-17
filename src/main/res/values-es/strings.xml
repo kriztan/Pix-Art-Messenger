@@ -428,6 +428,7 @@
   <string name="download_failed_file_not_found">Error al descargar: Archivo no encontrado</string>
   <string name="download_failed_could_not_connect">Error al descargar: No se ha podido conectar con el servidor</string>
   <string name="download_failed_could_not_write_file">Falló la descarga: No se puede escribir el fichero</string>
+  <string name="no_update_available">No hay actualizaciones disponibles</string>
   <string name="account_status_tor_unavailable">Red Tor no disponible.</string>
   <string name="account_status_bind_failure">Fallo de enlace</string>
   <string name="account_status_host_unknown">El servidor no es responsable del dominio</string>
