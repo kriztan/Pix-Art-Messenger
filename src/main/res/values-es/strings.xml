@@ -193,6 +193,7 @@
   <string name="your_fingerprint">Tu huella digital</string>
   <string name="otr_fingerprint">Huella digital OTR</string>
   <string name="otr_fingerprint_selected_message">Huella digital del mensaje OTR</string>
+  <string name="openpgp_key_id">ID de clave de OpenPGP</string>
   <string name="omemo_fingerprint">Huella digital OMEMO</string>
   <string name="omemo_fingerprint_x509">Huella digital v\\OMEMO</string>
   <string name="omemo_fingerprint_selected_message">Huella digital OMEMO del mensaje</string>
@@ -301,12 +302,14 @@
   <string name="confirm">Confirmar</string>
   <string name="in_progress">En progreso</string>
   <string name="respond">Responder</string>
+  <string name="failed">Fallado</string>
   <string name="secrets_do_not_match">Los secretos no coinciden</string>
   <string name="try_again">Intentar de nuevo</string>
   <string name="finish">Terminar</string>
   <string name="verified">¡Verificado!</string>
   <string name="smp_requested">El contacto solicita verificación SMP</string>
   <string name="no_otr_session_found">¡No se ha encontrado una sesión OTR válida!</string>
+  <string name="conversations_foreground_service">Pix-Art Mensajero</string>
   <string name="pref_export_logs">Exportar historial</string>
   <string name="pref_export_logs_summary">Escribir historial de conversación en la tarjeta SD</string>
   <string name="notification_export_logs_title">Escribiendo logs en la tarjeta SD</string>
@@ -443,8 +446,15 @@
   <string name="download_failed_server_not_found">Error al descargar: Servidor no encontrado</string>
   <string name="download_failed_file_not_found">Error al descargar: Archivo no encontrado</string>
   <string name="download_failed_could_not_connect">Error al descargar: No se ha podido conectar con el servidor</string>
+  <string name="elv_undo">Deshacer</string>
   <string name="download_failed_could_not_write_file">Falló la descarga: No se puede escribir el fichero</string>
+  <string name="pref_use_white_background">Usar Fondo blanco</string>
+  <string name="action_check_update">Comprobar Actualizaciones</string>
+  <string name="title_activity_updater">Servicio de actualización</string>
+  <string name="remind_later">después</string>
+  <string name="update">Actualizar</string>
   <string name="no_update_available">No hay actualizaciones disponibles</string>
+  <string name="download_started">Se ha iniciado la descarga</string>
   <string name="account_status_tor_unavailable">Red Tor no disponible.</string>
   <string name="account_status_bind_failure">Fallo de enlace</string>
   <string name="account_status_host_unknown">El servidor no es responsable del dominio</string>
@@ -472,6 +482,8 @@
   <string name="error_fetching_omemo_key">¡Error buscando clave OMEMO!</string>
   <string name="verified_omemo_key_with_certificate">¡Clave OMEMO con certificado verificada!</string>
   <string name="device_does_not_support_certificates">¡Tu dispositivo no soporta la elección de certificados de cliente!</string>
+  <string name="changelog">Modificaciones</string>
+  <string name="account_settings_hostname">Nombre del host</string>
   <string name="account_settings_port">Puerto</string>
   <string name="not_a_valid_port">Éste no es un número de puerto válido</string>
   <string name="not_valid_hostname">Éste no es un hostame válido</string>
