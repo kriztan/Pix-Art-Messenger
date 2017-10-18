@@ -515,6 +515,7 @@
   <string name="notify_paused">Notificaciones pausadas</string>
   <string name="pref_picture_compression">Comprimir imágenes</string>
   <string name="pref_picture_compression_summary">Redimensionar y comprimir las imágenes</string>
+  <string name="pref_video_compression">Comprimir vídeos</string>
   <string name="pref_video_compression_summary">Redimensionar y comprimir el Vídeo</string>
   <string name="always">Siempre</string>
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
