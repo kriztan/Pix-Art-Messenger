@@ -56,7 +56,7 @@
   <string name="unblock">Débloquer</string>
   <string name="save">Enregistrer</string>
   <string name="crash_report_title">Pix-Art Messenger a planté</string>
-  <string name="crash_report_message">En envoyant des logs, vous aidez le développement de Pix-Art Messenger.\n\n<b>Attention :</b> Votre compte XMPP sera utilisé pour envoyer les logs aux développeurs.</string>
+  <string name="crash_report_message">En envoyant des logs, vous aidez le développement de Pix-Art Messenger.\n<b>Attention:</b> Votre compte XMPP sera utilisé pour envoyer les logs aux développeurs.</string>
   <string name="send_now">Envoyer</string>
   <string name="send_never">Ne plus me demander</string>
   <string name="problem_connecting_to_account">Impossible de se connecter au compte.</string>
@@ -71,7 +71,7 @@
   <string name="sharing_files_please_wait">Partage des fichiers. Veuillez patienter...</string>
   <string name="action_clear_history">Vider l\'historique</string>
   <string name="clear_conversation_history">Vider l\'historique de la conversation</string>
-  <string name="clear_histor_msg">Voulez-vous supprimer tous les messages de cette conversation ?\n\n<b>Attention :</b> Les messages seront supprimés uniquement sur cet appareil.</string>
+  <string name="clear_histor_msg">Voulez-vous supprimer tous les messages de cette conversation?\n\n<b>Attention:</b> Les messages seront supprimés uniquement sur cet appareil.</string>
   <string name="delete_messages">Supprimer les messages</string>
   <string name="also_end_conversation">Fermer cette conversation ensuite</string>
   <string name="choose_presence">Choisir l\'appareil</string>
@@ -79,7 +79,7 @@
   <string name="send_message_to_x">Envoyer un message à %s</string>
   <string name="send_otr_message">Envoyer un message chiffré avec OTR</string>
   <string name="send_omemo_message">Envoyer un message chiffré avec OMEMO</string>
-  <string name="send_omemo_x509_message">Envoyer un message chiffré avec \\OMEMO</string>
+  <string name="send_omemo_x509_message">Envoyer un message chiffré avec v\\OMEMO</string>
   <string name="send_pgp_message">Envoyer un message chiffré avec OpenPGP</string>
   <string name="your_nick_has_been_changed">Votre identifiant a été changé</string>
   <string name="send_unencrypted">Envoyer en clair</string>
@@ -121,7 +121,7 @@
   <string name="error_not_an_image_file">Le fichier choisi n\'est pas une image</string>
   <string name="error_compressing_image">Une erreur s\'est produite en convertissant l\'image</string>
   <string name="error_file_not_found">Impossible de trouver le fichier</string>
-  <string name="error_io_exception">Erreur générale d\'E/S. Avez-vous encore de l\'espace libre ?</string>
+  <string name="error_io_exception">Erreur générale d\'E/S. Avez-vous encore de l\'espace libre?</string>
   <string name="error_security_exception_during_image_copy">L\'application utilisée ne nous donne pas la permission de lire l\'image.\n\n<small>Utilisez une autre application pour choisir une image.</small></string>
   <string name="account_status_unknown">Inconnu</string>
   <string name="account_status_disabled">Désactivé temporairement</string>
@@ -144,10 +144,10 @@
   <string name="mgmt_account_publish_avatar">Publier un avatar</string>
   <string name="mgmt_account_publish_pgp">Publier la clef publique OpenPGP</string>
   <string name="unpublish_pgp">Supprimer la clef publique OpenPGP</string>
-  <string name="unpublish_pgp_message">Êtes vous sûr de vouloir supprimer votre clef publique OpenPGP de votre annonce de présence ?\nVos contacts ne pourront plus vous envoyer de message chiffrés avec OpenPGP.</string>
+  <string name="unpublish_pgp_message">Êtes vous sûr de vouloir supprimer votre clef publique OpenPGP de votre annonce de présence?\nVos contacts ne pourront plus vous envoyer de message chiffrés avec OpenPGP.</string>
   <string name="openpgp_has_been_published">La clef publique OpenPGP a été publiée</string>
-  <string name="republish_pgp_keys">N\'oubliez pas de republier votre clef publique OpenPGP !</string>
-  <string name="mgmt_account_are_you_sure">Êtes-vous sûr ?</string>
+  <string name="republish_pgp_keys">N\'oubliez pas de republier votre clef publique OpenPGP!</string>
+  <string name="mgmt_account_are_you_sure">Êtes-vous sûr?</string>
   <string name="mgmt_account_delete_confirm_text">Si vous supprimez votre compte ainsi que tout votre historique de conversation sera perdu</string>
   <string name="attach_record_voice">Enregistrer un son</string>
   <string name="account_settings_jabber_id">Identifiant</string>
