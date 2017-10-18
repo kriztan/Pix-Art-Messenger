@@ -602,7 +602,9 @@
   <string name="data_saver_enabled">Optimización de datos habilitado</string>
   <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo a Pix-Art Messenger acceder a internet cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceder a internet cuando la optimización de datos está habilitada.\nPix-Art Messenger realizará igualmente optimizaciones para ahorrar datos cuando sea posible.</string>
   <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
+  <string name="navigate">Navegar hasta la ubicación</string>
   <string name="add_to_contact_list">Añadir a contactos</string>
+  <string name="received_contact">Recibir contacto</string>
   <string name="contact">Contacto</string>
   <string name="unable_to_start_recording">No se puede iniciar la grabación</string>
   <string name="error_unable_to_create_temporary_file">No se ha podido crear el fichero temporal</string>
