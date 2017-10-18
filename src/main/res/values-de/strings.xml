@@ -733,4 +733,5 @@
   <string name="pref_show_foreground_service">Nutze Vordergrunddienst</string>
   <string name="update_service">Pix-Art Messenger Update Dienst</string>
   <string name="install_update">Update installieren?</string>
+  <string name="highlight_in_muc">Benutzer erwähnen</string>
 </resources>
