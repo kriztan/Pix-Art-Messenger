@@ -99,6 +99,9 @@
   <string name="no_pgp_keys">Claves OpenPGP no encontradas</string>
   <string name="pref_xmpp_resource">Recurso</string>
   <string name="pref_xmpp_resource_summary">El nombre que identifica el cliente que estás utilizando</string>
+  <string name="pref_accept_files_wifi">Aceptar archivos en conexiones WiFi</string>
+  <string name="pref_accept_files_mobile">Aceptar archivos en conexiones red móvil</string>
+  <string name="pref_accept_files_mobileroaming">Aceptar archivos en conexiones de roaming móvil</string>
   <string name="pref_attachments">Adjuntos</string>
   <string name="pref_notification_settings">Notificaciones</string>
   <string name="pref_notifications">Notificaciones</string>
@@ -408,6 +411,7 @@
   <string name="sending_x_file">Enviando %s</string>
   <string name="offering_x_file">Ofreciendo %s</string>
   <string name="hide_offline">Ocultar desconectados</string>
+  <string name="is_typing">está escribiendo...</string>
   <string name="pref_chat_states">Notificación de escritura</string>
   <string name="pref_chat_states_summary">Permitir a tus contactos saber cuando estás escribiendo un mensaje</string>
   <string name="send_location">Enviar ubicación</string>
