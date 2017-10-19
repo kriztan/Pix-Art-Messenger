@@ -99,6 +99,9 @@
   <string name="no_pgp_keys">Claves OpenPGP no encontradas</string>
   <string name="pref_xmpp_resource">Recurso</string>
   <string name="pref_xmpp_resource_summary">El nombre que identifica el cliente que estás utilizando</string>
+  <string name="pref_accept_files_wifi">Aceptar archivos en conexiones WiFi</string>
+  <string name="pref_accept_files_mobile">Aceptar archivos en conexiones red móvil</string>
+  <string name="pref_accept_files_mobileroaming">Aceptar archivos en conexiones de roaming red móvil</string>
   <string name="pref_attachments">Adjuntos</string>
   <string name="pref_notification_settings">Notificaciones</string>
   <string name="pref_notifications">Notificaciones</string>
@@ -397,6 +400,7 @@
   <string name="pref_enter_is_send_summary">Usar la tecla intro para enviar el mensaje</string>
   <string name="pref_display_enter_key">Mostrar tecla Intro</string>
   <string name="pref_display_enter_key_summary">Cambiar la tecla de emoticonos por la tecla Intro</string>
+  <string name="audio">Sonido</string>
   <string name="video">vídeo</string>
   <string name="image">imagen</string>
   <string name="pdf_document">documento PDF</string>
@@ -408,6 +412,7 @@
   <string name="sending_x_file">Enviando %s</string>
   <string name="offering_x_file">Ofreciendo %s</string>
   <string name="hide_offline">Ocultar desconectados</string>
+  <string name="is_typing">está escribiendo...</string>
   <string name="pref_chat_states">Notificación de escritura</string>
   <string name="pref_chat_states_summary">Permitir a tus contactos saber cuando estás escribiendo un mensaje</string>
   <string name="send_location">Enviar ubicación</string>
@@ -515,6 +520,7 @@
   <string name="notify_paused">Notificaciones pausadas</string>
   <string name="pref_picture_compression">Comprimir imágenes</string>
   <string name="pref_picture_compression_summary">Redimensionar y comprimir las imágenes</string>
+  <string name="pref_video_compression">Comprimir vídeos</string>
   <string name="pref_video_compression_summary">Redimensionar y comprimir el Vídeo</string>
   <string name="always">Siempre</string>
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
@@ -536,6 +542,7 @@
   <string name="security_error_invalid_file_access">Error de seguridad: Acceso a fichero inválido</string>
   <string name="no_application_to_share_uri">No se ha encontrado ninguna aplicación para compartir la URI</string>
   <string name="share_uri_with">Compartir URI con...</string>
+  <string name="mgmt_account_reconnect">Reconectar</string>
   <string name="welcome_text">XMPP es un protocolo independiente del proveedor. Puedes usar este cliente con cualquier servidor de XMPP que elijas.\nDe todas formas, para tu comodidad, hemos facilitado la creación de una cuenta en conversations.im¹; un proveedor alojado especialmente para su uso con Pix-Art Messenger.</string>
   <string name="magic_create_text">Te guiaremos durante el proceso de creación de la cuenta en conversations.im.¹\nCuando selecciones conversations.im como proveedor, podrás comunicarte con usuarios de otros servidores mediante tu identificador Jabber.</string>
   <string name="your_full_jid_will_be">Tu identificador Jabber será: %s</string>
@@ -568,6 +575,7 @@
   <string name="invite_again">Invitar de nuevo</string>
   <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
   <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
+  <string name="invite_user">Invitar a Pix-Art mensajería libre (XMPP)</string>
   <string name="unable_to_connect_to_keychain">No se ha podido conectar a OpenKeychain</string>
   <string name="send_image">¿Enviar imagen?</string>
   <string name="this_device_is_no_longer_in_use">Este dispositivo ya no está en uso</string>
