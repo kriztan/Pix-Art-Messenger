@@ -671,6 +671,7 @@
   <string name="pref_show_connection_options">Opciones de conexión</string>
   <string name="retry_decryption">Reintentar descifrado</string>
   <string name="session_failure">Fallo de sesión</string>
+  <string name="action_take_photo">Hacer una foto</string>
   <string name="action_take_video">grabar un Vídeo</string>
   <string name="account_status_regis_web">El servidor requiere registro en su página web</string>
   <string name="application_found_to_open_website">No se ha encontrado aplicación para abrir la página web</string>
