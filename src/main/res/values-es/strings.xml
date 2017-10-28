@@ -102,7 +102,7 @@
   <string name="pref_xmpp_resource_summary">El nombre que identifica el cliente que estás utilizando</string>
   <string name="pref_accept_files_wifi">Aceptar archivos en conexiones WiFi</string>
   <string name="pref_accept_files_mobile">Aceptar archivos en conexiones red móvil</string>
-  <string name="pref_accept_files_mobileroaming">Aceptar archivos en conexiones de roaming red móvil</string>
+  <string name="pref_accept_files_mobileroaming">Aceptar archivos en conexiones roaming</string>
   <string name="pref_attachments">Adjuntos</string>
   <string name="pref_notification_settings">Notificaciones</string>
   <string name="pref_notifications">Notificaciones</string>
