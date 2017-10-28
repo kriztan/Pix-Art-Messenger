@@ -522,7 +522,7 @@
   <string name="pref_picture_compression">Comprimir imágenes</string>
   <string name="pref_picture_compression_summary">Redimensionar y comprimir las imágenes</string>
   <string name="pref_video_compression">Comprimir vídeos</string>
-  <string name="pref_video_compression_summary">Redimensionar y comprimir el Vídeo</string>
+  <string name="pref_video_compression_summary">Redimensionar y comprimir los Vídeos</string>
   <string name="always">Siempre</string>
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
   <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
