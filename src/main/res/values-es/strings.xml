@@ -274,6 +274,7 @@
   <string name="pref_use_larger_font">Tamaño de fuente grande</string>
   <string name="pref_use_larger_font_summary">Usar fuentes grandes en toda la aplicación</string>
   <string name="pref_use_send_button_to_indicate_status">Botón enviar indica estado</string>
+  <string name="pref_use_colored_names_to_indicate_status">Los nombres coloreados indican el estado</string>
   <string name="pref_use_indicate_received">Solicitar entrega de mensaje</string>
   <string name="pref_use_indicate_received_summary">Cuando el contacto reciba el mensaje será indicado con una marca verde. Cuidado, esto podría no funcionar en todos los casos.</string>
   <string name="pref_use_send_button_to_indicate_status_summary">El color del botón enviar indica el estado del contacto</string>
