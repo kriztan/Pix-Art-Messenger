@@ -596,6 +596,7 @@
   <string name="attach_choose_video">Elija el Vídeo</string>
   <string name="no_permission_to_access_x">Sin permiso de acceso a %s</string>
   <string name="remote_server_not_found">Servidor no encontrado</string>
+  <string name="error_file_corrupt">Este archivo parece estar dañado.</string>
   <string name="unable_to_update_account">No se ha podido actualizar la cuenta</string>
   <string name="missing_presence_subscription_with_x">Se ha perdido la suscripción de presencia con %s.</string>
   <string name="missing_keys_from_x">Se ha perdido la clave OMEMO de %s.</string>
@@ -655,6 +656,7 @@
   <string name="timeout_6_months">6 meses</string>
   <string name="timeout_12_months">12 meses</string>
   <string name="today">Hoy</string>
+  <string name="pref_use_max_brightness_summary">Cambie al brillo máximo mientras mira videos o imágenes en pantalla completa.</string>
   <string name="pref_use_max_brightness">Brillo máximo</string>
   <string name="block_jabber_id">Bloquear Identificador Jabber</string>
   <string name="corresponding_conversations_closed">Conversación correspondiente cerrada.</string>
@@ -669,6 +671,7 @@
   <string name="presence_offline">Desconectado</string>
   <string name="block_stranger">Bloquear desconocido</string>
   <string name="block_entire_domain">Bloquear el dominio completo</string>
+  <string name="pref_use_auto_rotate_summary">Girar imágenes y videos en pantalla completa para ajustarse al tamaño de la pantalla</string>
   <string name="pref_use_tor">Conectar via Tor</string>
   <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
   <string name="pref_connection_options">Conexión</string>
