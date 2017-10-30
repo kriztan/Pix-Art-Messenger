@@ -566,6 +566,8 @@
   <string name="device_does_not_support_battery_op">Tu dispositivo no soporta la opción de optimización de batería</string>
   <string name="share">Compartir</string>
   <string name="share_location">Compartir ubicación</string>
+  <string name="locating">Localizando...</string>
+  <string name="action_end_conversation_muc">Dejar la conferencia</string>
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
@@ -634,6 +636,7 @@
   <string name="pref_blind_trust_before_verification_summary">Automáticamente confiar en los nuevos dispositivos de tus contactos que no han sido verificados todavía, y solicitar confirmación manual cada vez que un contacto verificado añade un dispositivo nuevo.</string>
   <string name="not_trusted">No confiables</string>
   <string name="invalid_barcode">Código QR inválido</string>
+  <string name="verify_with_qr_code">verificar con código de barras</string>
   <string name="i_followed_this_link_from_a_trusted_source">Enlace desde una fuente de confianza</string>
   <string name="verifying_omemo_keys_trusted_source">Vas a verificar las claves OMEMO de %1$s después de hacer click en el enlace. Esto solo es seguro si conseguiste este enlace desde una fuente de confianza donde solo %2$s pudo haber publicado el enlace</string>
   <string name="verify_omemo_keys">Verificar claves OMEMO</string>
@@ -668,6 +671,7 @@
   <string name="pref_use_tor">Conectar via Tor</string>
   <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
   <string name="pref_connection_options">Conexión</string>
+  <string name="last_seen_just_away">recientemente</string>
   <string name="send_message">Enviar mensaje</string>
   <string name="pref_show_connection_options_summary">Mostrar el hostname y el puerto cuando se está creando una cuenta</string>
   <string name="pref_show_connection_options">Opciones de conexión</string>
