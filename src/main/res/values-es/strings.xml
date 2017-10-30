@@ -494,6 +494,7 @@
   <string name="changelog">Modificaciones</string>
   <string name="account_settings_hostname">Nombre del host</string>
   <string name="account_settings_port">Puerto</string>
+  <string name="hostname_or_onion">Dirección del servidor o .onion</string>
   <string name="not_a_valid_port">Éste no es un número de puerto válido</string>
   <string name="not_valid_hostname">Éste no es un hostame válido</string>
   <string name="connected_accounts">%1$d de %2$d cuentas conectadas</string>
