@@ -130,6 +130,7 @@
   <string name="receive_presence_updates">Recibir actualizaciones de presencia</string>
   <string name="ask_for_presence_updates">Solicitar actualizaciones de presencia</string>
   <string name="attach_choose_picture">Seleccionar imagen</string>
+  <string name="attach_take_from_camera">Tomar foto</string>
   <string name="preemptively_grant">De forma automática conceder suscripción de presencia</string>
   <string name="error_not_an_image_file">El archivo seleccionado no es una imagen</string>
   <string name="error_compressing_image">Error comprimiendo el archivo de imagen</string>
@@ -529,6 +530,9 @@
   <string name="pref_picture_compression_summary">Redimensionar y comprimir las imágenes</string>
   <string name="pref_video_compression">Comprimir vídeos</string>
   <string name="pref_video_compression_summary">Redimensionar y comprimir los vídeos</string>
+  <string name="video_low">bajo (144p)</string>
+  <string name="video_mid">medio (360p)</string>
+  <string name="video_high">alto (720p)</string>
   <string name="always">Siempre</string>
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
   <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
@@ -540,6 +544,7 @@
   <string name="no">No</string>
   <string name="no_accounts">(No hay cuentas activas)</string>
   <string name="this_field_is_required">Este campo es requerido</string>
+  <string name="no_participants">No participantes</string>
   <string name="correct_message">Corregir mensaje</string>
   <string name="send_corrected_message">Enviar mensaje corregido</string>
   <string name="no_keys_just_confirm">Ya confías en este contacto. Seleccionando \'hecho\', estás confirmando que %s es parte de esta conversación.</string>
@@ -570,8 +575,10 @@
   <string name="device_does_not_support_battery_op">Tu dispositivo no soporta la opción de optimización de batería</string>
   <string name="share">Compartir</string>
   <string name="share_location">Compartir ubicación</string>
+  <string name="location_sharing_disabled">La ubicación compartida está deshabilitada en la configuración</string>
   <string name="locating">Localizando...</string>
   <string name="action_end_conversation_muc">Dejar la conferencia</string>
+  <string name="leave_conference_warning">¿De verdad quieres salir de esta conferencia? Ya no se le notificarán los mensajes nuevos hasta que vuelva a unirse a la conferencia.</string>
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
@@ -684,6 +691,9 @@
   <string name="pref_use_tor">Conectar via Tor</string>
   <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
   <string name="pref_connection_options">Conexión</string>
+  <string name="image_low">bajo (720p)</string>
+  <string name="image_mid">medio (1920p)</string>
+  <string name="image_high">alto (3840p)</string>
   <string name="last_seen_just_away">recientemente</string>
   <string name="send_message">Enviar mensaje</string>
   <string name="send_failed_resend">entrega fallida, reenvío…</string>
