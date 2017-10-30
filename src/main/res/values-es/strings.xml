@@ -147,7 +147,7 @@
   <string name="account_status_regis_not_sup">El servidor no soporta registros</string>
   <string name="account_status_tls_error">Error de negociación TLS</string>
   <string name="account_status_incompatible_server">Servidor incompatible</string>
-  <string name="account_status_stream_error">Error de la sesión</string>
+  <string name="account_status_stream_error">Error de flujo</string>
   <string name="encryption_choice_unencrypted">Sin cifrado</string>
   <string name="encryption_choice_otr">OTR</string>
   <string name="encryption_choice_pgp">OpenPGP</string>
