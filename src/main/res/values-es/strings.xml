@@ -678,7 +678,7 @@
   <string name="pref_show_connection_options">Opciones de conexión</string>
   <string name="retry_decryption">Reintentar descifrado</string>
   <string name="session_failure">Fallo de sesión</string>
-  <string name="sasl_downgrade">Mecanismo SASL degradado</string>
+  <string name="sasl_downgrade">Mecanismo de autentificación SASL degradado</string>
   <string name="action_take_photo">Hacer una foto</string>
   <string name="action_take_video">grabar un Vídeo</string>
   <string name="account_status_regis_web">El servidor requiere registro en su página web</string>
@@ -695,5 +695,6 @@
   <string name="mark_as_read">Marcar como leído</string>
   <string name="server_info_partial">Parcial</string>
   <string name="pref_show_foreground_service">Usar servicio en primer plano</string>
+  <string name="update_service">Pix-Art Mensajero servicio de actualización</string>
   <string name="install_update">¿Instalar actualización?</string>
 </resources>
