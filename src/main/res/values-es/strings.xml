@@ -673,10 +673,12 @@
   <string name="pref_connection_options">Conexión</string>
   <string name="last_seen_just_away">recientemente</string>
   <string name="send_message">Enviar mensaje</string>
+  <string name="send_failed_resend">entrega fallida, reenvío…</string>
   <string name="pref_show_connection_options_summary">Mostrar el hostname y el puerto cuando se está creando una cuenta</string>
   <string name="pref_show_connection_options">Opciones de conexión</string>
   <string name="retry_decryption">Reintentar descifrado</string>
   <string name="session_failure">Fallo de sesión</string>
+  <string name="sasl_downgrade">Mecanismo SASL degradado</string>
   <string name="action_take_photo">Hacer una foto</string>
   <string name="action_take_video">grabar un Vídeo</string>
   <string name="account_status_regis_web">El servidor requiere registro en su página web</string>
@@ -692,5 +694,6 @@
   <string name="error_no_keys_to_trust_presence">No hay claves disponibles para este contacto.\n Asegúrate que tenéis suscripción de presencia mutua. </string>
   <string name="mark_as_read">Marcar como leído</string>
   <string name="server_info_partial">Parcial</string>
+  <string name="pref_show_foreground_service">Usar servicio en primer plano</string>
   <string name="install_update">¿Instalar actualización?</string>
 </resources>
