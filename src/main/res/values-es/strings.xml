@@ -588,6 +588,8 @@
   <string name="import_canceled">Importación cancelada</string>
   <string name="Password_wrong">Contraseña incorrecta, inténtalo de nuevo</string>
   <string name="please_wait">Espere, por favor…</string>
+  <string name="pref_export_plain_text_logs_summary">Habilita la exportación de chats como archivos de texto legibles</string>
+  <string name="pref_export_plain_text_logs">Exportar chats como archivos de texto legibles</string>
   <string name="payment_required">Pago requerido</string>
   <string name="missing_internet_permission">Falta permiso de acceso a internet</string>
   <string name="me">Yo</string>
@@ -672,6 +674,7 @@
   <string name="block_stranger">Bloquear desconocido</string>
   <string name="block_entire_domain">Bloquear el dominio completo</string>
   <string name="pref_use_auto_rotate_summary">Girar imágenes y videos en pantalla completa para ajustarse al tamaño de la pantalla</string>
+  <string name="pref_use_auto_rotate">Girar medios en pantalla completa</string>
   <string name="pref_use_tor">Conectar via Tor</string>
   <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
   <string name="pref_connection_options">Conexión</string>
