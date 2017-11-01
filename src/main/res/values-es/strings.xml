@@ -117,6 +117,7 @@
   <string name="pref_sound">Tono</string>
   <string name="pref_sound_summary">Reproduce tono con la notificación</string>
   <string name="pref_send_crash">Enviar informes de errores</string>
+  <string name="pref_send_crash_summary">Si envías informes de errores, puedes ayudar a Pix-Art Messenger a mejorar constantemente</string>
   <string name="pref_confirm_messages">Confirmar mensajes</string>
   <string name="pref_confirm_messages_summary">Permitir a tus contactos saber cuando has recibido y leído sus mensajes</string>
   <string name="pref_ui_options">Pantalla</string>
@@ -283,6 +284,7 @@
   <string name="pref_use_indicate_received">Solicitar entrega de mensaje</string>
   <string name="pref_use_indicate_received_summary">Cuando el contacto reciba el mensaje será indicado con una marca verde. Cuidado, esto podría no funcionar en todos los casos.</string>
   <string name="pref_use_send_button_to_indicate_status_summary">El color del botón enviar indica el estado del contacto</string>
+  <string name="pref_use_colored_names_to_indicate_status_summary">Colorear el nombre del contacto para mostrar su estado en línea</string>
   <string name="pref_expert_options_other">Otros</string>
   <string name="pref_autojoin">Unirse a conversaciones en grupo automáticamente</string>
   <string name="pref_autojoin_summary">Respetar la opción de unirse automáticamente de los marcadores de las conversaciones en grupo</string>
@@ -592,6 +594,7 @@
   <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
   <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
   <string name="invite_user">Invitar a Pix-Art mensajería libre (XMPP)</string>
+  <string name="request_permissions_message">Pix-Art Messenger le pedirá que conceda algunos permisos. Es importante que permitas que todos estos permisos usen todas las características de este mensajero. Si usted niega cualquiera de estos permisos, la aplicación se cerrará sola.</string>
   <string name="request_permissions_message_again">Usted ha negado uno o todos los permisos requeridos para Pix-Art Messenger. ¿Desea ir a la configuración para permitir estos permisos? Si rechaza uno de estos permisos, la aplicación se cerrará.</string>
   <string name="unable_to_connect_to_keychain">No se ha podido conectar a OpenKeychain</string>
   <string name="no_permission">Pix-Art Messenger no tiene permisos</string>
