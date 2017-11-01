@@ -151,6 +151,7 @@
   <string name="account_status_regis_success">Registro completado</string>
   <string name="account_status_regis_not_sup">El servidor no soporta registros</string>
   <string name="account_status_tls_error">Error de negociación TLS</string>
+  <string name="account_status_policy_violation">Violación de política</string>
   <string name="account_status_incompatible_server">Servidor incompatible</string>
   <string name="account_status_stream_error">Error de flujo</string>
   <string name="encryption_choice_unencrypted">Sin cifrado</string>
@@ -478,6 +479,7 @@
   <string name="pref_away_when_screen_off">Ausente con pantalla apagada</string>
   <string name="pref_away_when_screen_off_summary">Cambia tu estado a ausente cuando la pantalla está apagada</string>
   <string name="pref_dnd_on_silent_mode">\"No molestar\" en modo silencio</string>
+  <string name="update_info">Pix-Art Messenger está descargando e instalando la nueva versión automáticamente.\n\nPor favor, espere…</string>
   <string name="pref_dnd_on_silent_mode_summary">Cambia tu estado a \"no molestar\" cuando el dispositivo está en modo silencio</string>
   <string name="pref_treat_vibrate_as_silent">Modo vibración como modo silencio</string>
   <string name="pref_treat_vibrate_as_dnd_summary">Cambia tu estado a \"no molestar\" cuando el dispositivo está en modo vibración</string>
