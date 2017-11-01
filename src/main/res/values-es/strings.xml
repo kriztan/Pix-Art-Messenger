@@ -592,7 +592,9 @@
   <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
   <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
   <string name="invite_user">Invitar a Pix-Art mensajería libre (XMPP)</string>
+  <string name="request_permissions_message_again">Usted ha negado uno o todos los permisos requeridos para Pix-Art Messenger. ¿Desea ir a la configuración para permitir estos permisos? Si rechaza uno de estos permisos, la aplicación se cerrará.</string>
   <string name="unable_to_connect_to_keychain">No se ha podido conectar a OpenKeychain</string>
+  <string name="no_permission">Pix-Art Messenger no tiene permisos</string>
   <string name="send_image">¿Enviar imagen?</string>
   <string name="this_device_is_no_longer_in_use">Este dispositivo ya no está en uso</string>
   <string name="import_canceled">Importación cancelada</string>
