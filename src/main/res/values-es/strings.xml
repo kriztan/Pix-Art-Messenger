@@ -717,7 +717,9 @@
   <string name="error_no_keys_to_trust_presence">No hay claves disponibles para este contacto.\n Asegúrate que tenéis suscripción de presencia mutua. </string>
   <string name="mark_as_read">Marcar como leído</string>
   <string name="server_info_partial">Parcial</string>
+  <string name="pref_show_foreground_service_summary">Algunos dispositivos Android cerrarán algunas aplicaciones al cabo de un tiempo y no podrás recibir nuevos mensajes. Si tiene estos problemas, intente activar el servicio de primer plano. Pero tenga en cuenta que tendrá una notificación permanente con esta opción marcada.</string>
   <string name="pref_show_foreground_service">Usar servicio en primer plano</string>
   <string name="update_service">Pix-Art Mensajero servicio de actualización</string>
   <string name="install_update">¿Instalar actualización?</string>
+  <string name="highlight_in_muc">menciona usuario</string>
 </resources>
