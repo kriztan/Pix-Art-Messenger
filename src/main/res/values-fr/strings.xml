@@ -554,7 +554,6 @@
   <string name="missing_presence_subscription">La notification de présence est manquante </string>
   <string name="missing_omemo_keys">Clefs OMEMO manquantes</string>
   <string name="error_publish_avatar_offline">Vous devez être connecté pour publier votre avatar.</string>
-  <string name="select_text">Sélectionnez le texte</string>
   <string name="quote">Citation</string>
   <string name="show_error_message">Afficher le message d\'erreur</string>
   <string name="error_message">Message d\'erreur</string>
