@@ -619,7 +619,7 @@
   <string name="me">Yo</string>
   <string name="contact_asks_for_presence_subscription">El contacto solicita ver tus actualizaciones de estado</string>
   <string name="allow">Permitir</string>
-  <string name="attach_choose_video">Elija el Vídeo</string>
+  <string name="attach_choose_video">Elige un vídeo</string>
   <string name="no_permission_to_access_x">Sin permiso de acceso a %s</string>
   <string name="remote_server_not_found">Servidor no encontrado</string>
   <string name="error_file_corrupt">Este archivo parece estar dañado.</string>
@@ -636,6 +636,8 @@
   <string name="missing_presence_subscription">Se ha perdido la suscripción de presencia</string>
   <string name="missing_omemo_keys">Se han perdido las claves OMEMO</string>
   <string name="error_publish_avatar_offline">Debes estar conectado para publicar la imagen de perfil</string>
+  <string name="copy_to_clipboard">Copiar al portapapeles</string>
+  <string name="message_copied_to_clipboard">Mensaje copiado al portapapeles</string>
   <string name="message">Mensaje</string>
   <string name="quote">Citar</string>
   <string name="show_error_message">Mostrar mensaje de error</string>
@@ -734,4 +736,9 @@
   <string name="install_update">¿Instalar actualización?</string>
   <string name="highlight_in_muc">menciona usuario</string>
   <string name="no_application_found_to_open_link">No se ha encontrado aplicación para abrir la página web</string>
+  <string name="contacts_have_read_up_to_this_point">%s han leído hasta este punto</string>
+  <string name="contact_has_read_up_to_this_point">%s ha leído hasta este punto</string>
+  <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s +%2$d% más han leído hasta este punto</string>
+  <string name="pref_return_to_previous">Compartir rápido</string>
+  <string name="pref_return_to_previous_summary">Después de compartir, vuelve inmediatamente a la aplicación anterior en lugar de abrir el chat</string>
 </resources>
