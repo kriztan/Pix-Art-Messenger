@@ -84,6 +84,7 @@
   <string name="your_nick_has_been_changed">Votre identifiant a été changé</string>
   <string name="send_unencrypted">Envoyer en clair</string>
   <string name="decryption_failed">Echec du déchiffrement. Avez-vous la bonne clef privée ?</string>
+  <string name="openkeychain_required">OpenKeychain</string>
   <string name="openkeychain_required_long">Pix-Art Messenger requiert une application tierce nommée <b>OpenKeychain</b> pour chiffrer et déchiffrer les messages.\n\nOpenKeychain est sous licence GPLv3 et est disponible sur F-Droid et Google Play.\n\n<small>(Veuillez redémarrer Pix-Art Messenger après l\'installation de l\'app)</small></string>
   <string name="restart">Redémarrer</string>
   <string name="install">Installer</string>
@@ -140,6 +141,9 @@
   <string name="account_status_incompatible_server">Serveur incompatible</string>
   <string name="account_status_stream_error">Erreur de flux</string>
   <string name="encryption_choice_unencrypted">Non chiffré</string>
+  <string name="encryption_choice_otr">OTR</string>
+  <string name="encryption_choice_pgp">OpenPGP</string>
+  <string name="encryption_choice_omemo">OMEMO</string>
   <string name="mgmt_account_delete">Supprimer</string>
   <string name="mgmt_account_publish_avatar">Publier un avatar</string>
   <string name="mgmt_account_publish_pgp">Publier la clef publique OpenPGP</string>
@@ -301,6 +305,7 @@
   <string name="verified">Vérifié !</string>
   <string name="smp_requested">Le contact requiert la vérification du SMP</string>
   <string name="no_otr_session_found">Aucune session OTR valide n\'a été trouvée !</string>
+  <string name="conversations_foreground_service">Pix-Art Messenger</string>
   <string name="pref_export_logs">Exporter l\'historique</string>
   <string name="pref_export_logs_summary">Sauvegarder l\'historique des conversations sur la carte SD</string>
   <string name="notification_export_logs_title">Sauvegarde des historiques sur la carte SD...</string>
@@ -480,6 +485,7 @@
   <string name="certificate_issuer">Émetteur</string>
   <string name="certificate_cn">Nom commun</string>
   <string name="certificate_o">Organisation</string>
+  <string name="certificate_sha1">SHA-1</string>
   <string name="certicate_info_not_available">(Non disponible)</string>
   <string name="certificate_not_found">Aucun certificat trouvé</string>
   <string name="notify_on_all_messages">Notifier pour tous les messages</string>
@@ -554,7 +560,7 @@
   <string name="missing_presence_subscription">La notification de présence est manquante </string>
   <string name="missing_omemo_keys">Clefs OMEMO manquantes</string>
   <string name="error_publish_avatar_offline">Vous devez être connecté pour publier votre avatar.</string>
-    <string name="quote">Citation</string>
+  <string name="quote">Citation</string>
   <string name="show_error_message">Afficher le message d\'erreur</string>
   <string name="error_message">Message d\'erreur</string>
   <string name="data_saver_enabled">Économiseur de données activé</string>
