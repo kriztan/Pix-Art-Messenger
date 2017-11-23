@@ -636,6 +636,7 @@
   <string name="missing_presence_subscription">Se ha perdido la suscripción de presencia</string>
   <string name="missing_omemo_keys">Se han perdido las claves OMEMO</string>
   <string name="error_publish_avatar_offline">Debes estar conectado para publicar la imagen de perfil</string>
+  <string name="message">Mensaje</string>
   <string name="quote">Citar</string>
   <string name="show_error_message">Mostrar mensaje de error</string>
   <string name="error_message">Mensaje de error</string>
@@ -732,4 +733,5 @@
   <string name="update_service">Pix-Art Mensajero servicio de actualización</string>
   <string name="install_update">¿Instalar actualización?</string>
   <string name="highlight_in_muc">menciona usuario</string>
+  <string name="no_application_found_to_open_link">No se ha encontrado aplicación para abrir la página web</string>
 </resources>
