@@ -637,7 +637,10 @@
   <string name="missing_presence_subscription">Online-Status nicht vorhanden</string>
   <string name="missing_omemo_keys">OMEMO-Fingerabdrücke fehlen</string>
   <string name="error_publish_avatar_offline">Du musst verbunden sein, um dein Profilbild hochzuladen.</string>
-    <string name="quote">Zitieren</string>
+  <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
+  <string name="message_copied_to_clipboard">Nachricht in Zwischenablage kopiert</string>
+  <string name="message">Nachricht</string>
+  <string name="quote">Zitieren</string>
   <string name="show_error_message">Zeige Fehlermeldung</string>
   <string name="error_message">Fehlermeldung</string>
   <string name="data_saver_enabled">Datensparmodus aktiviert</string>
@@ -733,4 +736,10 @@
   <string name="update_service">Pix-Art Messenger Update Dienst</string>
   <string name="install_update">Update installieren?</string>
   <string name="highlight_in_muc">Benutzer erwähnen</string>
+  <string name="no_application_found_to_open_link">Keine Anwendung zum Öffnen von Webseiten gefunden</string>
+  <string name="contacts_have_read_up_to_this_point">%s haben bis hierher gelesen</string>
+  <string name="contact_has_read_up_to_this_point">%s hat bis hierher gelesen</string>
+  <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s und %2$d% haben bis hierher gelesen</string>
+  <string name="pref_return_to_previous">Schnell teilen</string>
+  <string name="pref_return_to_previous_summary">Nach dem Teilen sofort wieder zur vorherigen App zurückkehren anstatt den Chat zu öffnen</string>
 </resources>
