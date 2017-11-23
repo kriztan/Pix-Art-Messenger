@@ -636,7 +636,7 @@
   <string name="missing_presence_subscription">Se ha perdido la suscripción de presencia</string>
   <string name="missing_omemo_keys">Se han perdido las claves OMEMO</string>
   <string name="error_publish_avatar_offline">Debes estar conectado para publicar la imagen de perfil</string>
-    <string name="quote">Citar</string>
+  <string name="quote">Citar</string>
   <string name="show_error_message">Mostrar mensaje de error</string>
   <string name="error_message">Mensaje de error</string>
   <string name="data_saver_enabled">Optimización de datos habilitado</string>
