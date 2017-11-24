@@ -741,4 +741,5 @@
   <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s +%2$d% más han leído hasta este punto</string>
   <string name="pref_return_to_previous">Compartir rápido</string>
   <string name="pref_return_to_previous_summary">Después de compartir, vuelve inmediatamente a la aplicación anterior en lugar de abrir el chat</string>
+  <string name="conversation_unencrypted_hint">Este chat no está cifrado, por razones de seguridad, debes activar el cifrado de mensajes mediante el icono de bloqueo. El cifrado preferible es OMEMO.</string>
 </resources>
