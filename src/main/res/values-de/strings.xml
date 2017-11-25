@@ -742,4 +742,5 @@
   <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s und %2$d% weitere haben bis hierher gelesen</string>
   <string name="pref_return_to_previous">Schnell teilen</string>
   <string name="pref_return_to_previous_summary">Nach dem Teilen sofort wieder zur vorherigen App zurückkehren anstatt den Chat zu öffnen</string>
+  <string name="conversation_unencrypted_hint">Dieser Chat ist unverschlüsselt, aus Sicherheitsgründen sollte eine Nachrichtenverschlüsselung über das Schloss Symbol aktiviert werden. Die bevorzugte Verschlüsselung ist OMEMO.</string>
 </resources>
