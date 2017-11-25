@@ -743,4 +743,6 @@
   <string name="pref_return_to_previous">Schnell teilen</string>
   <string name="pref_return_to_previous_summary">Nach dem Teilen sofort wieder zur vorherigen App zurückkehren anstatt den Chat zu öffnen</string>
   <string name="conversation_unencrypted_hint">Dieser Chat ist unverschlüsselt, aus Sicherheitsgründen sollte eine Nachrichtenverschlüsselung über das Schloss Symbol aktiviert werden. Die bevorzugte Verschlüsselung ist OMEMO.</string>
+  <string name="pref_warn_unencrypted_chat">Warnen, wenn der Chat unverschlüsselt ist</string>
+  <string name="pref_warn_unencrypted_chat_summary">Wenn Nachrichtenverschlüsselung verfügbar ist, solltest du diese nutzen. Falls du keine Nachrichtenverschlüsselung nutzt, zeige eine Warnung im Chat.</string>
 </resources>
