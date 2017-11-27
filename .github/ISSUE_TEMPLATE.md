@@ -1,19 +1,21 @@
 #### General information
 
-* **Version:** eg 1.12.2
-* **Device:** eg Google Nexus 5
-* **Android Version:** eg Android 6.0 Stock or Android 5.1 Cyanogenmod
+* **Version:** eg 1.20.1
+* **Device:** eg Google Pixel
+* **Android Version:** eg Android 7.1.2 Stock or Android 6.0.1 LineageOS
 
 #### Steps to reproduce
 
 1. …
 2. …
 
-
 #### Expected result
 
-What is the expected output? What do you see instead?
+What is the expected output?
 
+#### Actual result
+
+What do you see instead?
 
 #### Debug output
 
