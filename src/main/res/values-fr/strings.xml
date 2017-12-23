@@ -227,7 +227,6 @@
   <string name="add_back">Ré-ajouter</string>
   <string name="publish">Publier</string>
   <string name="touch_to_choose_picture">Toucher l\'avatar pour choisir une image depuis la galerie.</string>
-  <string name="publish_avatar_explanation">Note : toutes les personnes ayant souscrit à vos mises jour de disponibilité verront cette image.</string>
   <string name="publishing">Mise à jour…</string>
   <string name="error_publish_avatar_server_reject">Le serveur a rejeté votre publication</string>
   <string name="error_publish_avatar_converting">Une erreur s\'est produite pendant la conversion de votre image.</string>
