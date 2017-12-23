@@ -242,7 +242,6 @@
   <string name="add_back">Añadir contacto</string>
   <string name="publish">Publicar</string>
   <string name="touch_to_choose_picture">Pulsa para seleccionar una imagen de la galería</string>
-  <string name="publish_avatar_explanation">Nota: Todos tus contactos podrán ver esta imagen.</string>
   <string name="publishing">Publicando…</string>
   <string name="error_publish_avatar_server_reject">El servidor rechazó la publicación</string>
   <string name="error_publish_avatar_converting">Se ha producido un error mientras se convertía la imagen</string>
