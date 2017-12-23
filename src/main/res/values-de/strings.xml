@@ -242,7 +242,6 @@
   <string name="add_back">Auch hinzufügen</string>
   <string name="publish">Veröffentlichen</string>
   <string name="touch_to_choose_picture">Profilbild antippen, um Bild aus Galerie auszuwählen</string>
-  <string name="publish_avatar_explanation">Achtung: Jeder, der deinen Status sehen darf, sieht auch dein Profilbild.</string>
   <string name="publishing">Veröffentliche…</string>
   <string name="error_publish_avatar_server_reject">Der Server hat die Veröffentlichung des Profilbildes abgelehnt.</string>
   <string name="error_publish_avatar_converting">Bei der Konvertierung des Profilbildes lief etwas schief.</string>
