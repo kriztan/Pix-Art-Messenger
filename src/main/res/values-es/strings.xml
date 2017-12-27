@@ -242,7 +242,7 @@
   <string name="add_back">Añadir contacto</string>
   <string name="publish">Publicar</string>
   <string name="touch_to_choose_picture">Pulsa para seleccionar una imagen de la galería</string>
-    <string name="publishing">Publicando…</string>
+  <string name="publishing">Publicando…</string>
   <string name="error_publish_avatar_server_reject">El servidor rechazó la publicación</string>
   <string name="error_publish_avatar_converting">Se ha producido un error mientras se convertía la imagen</string>
   <string name="error_saving_avatar">No se ha podido guardar la imagen de perfil en disco</string>
@@ -738,7 +738,6 @@
   <string name="no_application_found_to_open_link">No se ha encontrado aplicación para abrir la página web</string>
   <string name="contacts_have_read_up_to_this_point">%s han leído hasta este punto</string>
   <string name="contact_has_read_up_to_this_point">%s ha leído hasta este punto</string>
-  <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s y %2$d más han leído hasta este punto</string>
   <string name="pref_return_to_previous">Compartir rápido</string>
   <string name="pref_return_to_previous_summary">Después de compartir, vuelve inmediatamente a la aplicación anterior en lugar de abrir el chat</string>
   <string name="conversation_unencrypted_hint">Este chat no está cifrado, por razones de seguridad, debes activar el cifrado de mensajes mediante el icono de bloqueo. El cifrado preferible es OMEMO.</string>
