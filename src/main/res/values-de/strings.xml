@@ -242,7 +242,7 @@
   <string name="add_back">Auch hinzufügen</string>
   <string name="publish">Veröffentlichen</string>
   <string name="touch_to_choose_picture">Profilbild antippen, um Bild aus Galerie auszuwählen</string>
-    <string name="publishing">Veröffentliche…</string>
+  <string name="publishing">Veröffentliche…</string>
   <string name="error_publish_avatar_server_reject">Der Server hat die Veröffentlichung des Profilbildes abgelehnt.</string>
   <string name="error_publish_avatar_converting">Bei der Konvertierung des Profilbildes lief etwas schief.</string>
   <string name="error_saving_avatar">Avatar kann nicht gespeichert werden</string>
@@ -744,4 +744,8 @@
   <string name="conversation_unencrypted_hint">Dieser Chat ist unverschlüsselt, aus Sicherheitsgründen sollte eine Nachrichtenverschlüsselung über das Schloss Symbol aktiviert werden. Die bevorzugte Verschlüsselung ist OMEMO.</string>
   <string name="pref_warn_unencrypted_chat">Warnen, wenn der Chat unverschlüsselt ist</string>
   <string name="pref_warn_unencrypted_chat_summary">Wenn Nachrichtenverschlüsselung verfügbar ist, solltest du diese nutzen. Falls du keine Nachrichtenverschlüsselung nutzt, zeige eine Warnung im Chat.</string>
+  <string name="pref_use_bundled_emoji">Nutze integrierte Emojis</string>
+  <string name="pref_use_bundled_emoji_summary">Nutze die in die App integrierten Emojis anstatt der von deinem Gerät. Die Änderungen werden nach dem nächsten Öffnen der App wirksam.</string>
+  <string name="invalid_muc_nick">Nickname ungültig</string>
+  <string name="title_activity_share_via_account">Teilen mit Profil</string>
 </resources>
