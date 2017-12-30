@@ -745,7 +745,7 @@
   <string name="pref_warn_unencrypted_chat">Avisar si el chat no está cifrado</string>
   <string name="pref_warn_unencrypted_chat_summary">Si el cifrado de mensajes está disponible, debe utilizarlo. Si no está utilizando el cifrado de mensajes, muestre una advertencia en el chat.</string>
   <string name="pref_use_bundled_emoji">Usar emojis integrados</string>
-  <string name="pref_use_bundled_emoji_summary">Utilice la librería emoji integrada en lugar de utilizar los dispositivos. Los cambios estarán disponibles después de volver a abrir la aplicación.</string>
+  <string name="pref_use_bundled_emoji_summary">Utilice la librería emoji integrada en lugar de utilizar la de su dispositivo. Los cambios estarán disponibles después de volver a abrir la aplicación.</string>
   <string name="invalid_muc_nick">Apodo inválido</string>
   <string name="title_activity_share_via_account">Compartir a través de cuenta</string>
 </resources>
