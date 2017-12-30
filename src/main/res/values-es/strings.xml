@@ -599,7 +599,7 @@
   <string name="InviteText">Hola,\n\n%s te ha invitado a una conversación con Pix-Art Messenger. Si eres usuario de Android, pruébalo y haz clic en el siguiente enlace...</string>
   <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
   <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
-  <string name="invite_user">Invitar a Pix-Art mensajería libre (XMPP)</string>
+  <string name="invite_user">Invitar a Pix-Art Messenger</string>
   <string name="request_permissions_message">Pix-Art Messenger le pedirá que conceda algunos permisos. Es importante que permitas que todos estos permisos usen todas las características de este mensajero. Si usted niega cualquiera de estos permisos, la aplicación se cerrará sola.</string>
   <string name="request_permissions_message_again">Usted ha negado uno o todos los permisos requeridos para Pix-Art Messenger. ¿Desea ir a la configuración para permitir estos permisos? Si rechaza uno de estos permisos, la aplicación se cerrará.</string>
   <string name="unable_to_connect_to_keychain">No se ha podido conectar a OpenKeychain</string>
@@ -700,7 +700,7 @@
   <string name="block_stranger">Bloquear desconocido</string>
   <string name="block_entire_domain">Bloquear el dominio completo</string>
   <string name="pref_use_auto_rotate_summary">Girar imágenes y videos en pantalla completa para ajustarse al tamaño de la pantalla</string>
-  <string name="pref_use_auto_rotate">Girar medios en pantalla completa</string>
+  <string name="pref_use_auto_rotate">Girar multimedia en pantalla completa</string>
   <string name="pref_use_tor">Conectar via Tor</string>
   <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
   <string name="pref_connection_options">Conexión</string>
