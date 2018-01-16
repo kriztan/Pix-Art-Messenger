@@ -254,4 +254,27 @@
   <string name="remind_later">sonra</string>
   <string name="no_update_available">Güncelleme mevcut değil</string>
   <string name="download_started">İndirme başlatıldı</string>
+  <string name="update_info">Pix-Art Messenger\'ın yeni sürümü otomatik olarak indiriliyor ve yükleniyor.\n\nLütfen bekleyin…</string>
+  <string name="no_storage_permission">Pix-Art Messenger\'ın harici depolama alanına erişimi gerekiyor</string>
+  <string name="certificate_information">Sertifika Bilgisi</string>
+  <string name="certificate_subject">Konu</string>
+  <string name="certificate_o">Organizasyon</string>
+  <string name="certicate_info_not_available">(Mevcut değil)</string>
+  <string name="certificate_not_found">Sertifika bulunamadı</string>
+  <string name="pref_video_compression_summary">Videoları yeniden boyutlandırma ve sıkıştırma</string>
+  <string name="selection_too_large">Seçilen alan çok büyük</string>
+  <string name="yes">Evet</string>
+  <string name="no">Hayır</string>
+  <string name="this_field_is_required">Bu alan gerekli</string>
+  <string name="this_account_is_disabled">Bu hesabı devre dışı bıraktınız</string>
+  <string name="mgmt_account_reconnect">Yeniden bağlan</string>
+  <string name="create_account">Yeni hesap oluştur</string>
+  <string name="share">Paylaş</string>
+  <string name="share_location">Konumu paylaş</string>
+  <string name="action_end_conversation_muc">Konferanstan ayrıl</string>
+  <string name="leave_conference_warning">Bu konferanstan gerçekten ayrılmak istiyor musunuz? Konferansa tekrar katılana kadar yeni mesajlar size bildirilmez.</string>
+  <string name="show_password">Parolayı göster</string>
+  <string name="registration_please_wait">Kayıt başarısız: Daha sonra tekrar deneyin</string>
+  <string name="registration_password_too_weak">Kayıt başarısız oldu: Şifre çok zayıf</string>
+  <string name="create_conference">Konferans oluştur</string>
 </resources>
