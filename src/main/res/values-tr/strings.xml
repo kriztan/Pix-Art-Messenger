@@ -112,12 +112,14 @@
   <string name="pref_notifications_summary">Yeni bir ileti geldiğinde bildir</string>
   <string name="pref_vibrate">Titreşim</string>
   <string name="pref_vibrate_summary">Yeni bir mesaj geldiğinde titret</string>
+  <string name="pref_led">LED bildirimleri</string>
   <string name="pref_led_summary">Yeni bir mesaj geldiğinde uyarı ışığını yak söndür</string>
   <string name="pref_sound">Zil sesi</string>
   <string name="pref_sound_summary">Yeni bir mesaj geldiğinde ses çıkar</string>
   <string name="pref_send_crash">Çökme raporlarını gönder</string>
   <string name="pref_confirm_messages">Mesajları Onayla</string>
   <string name="pref_confirm_messages_summary">Kişilerinize onların mesajlarını ne zaman aldığınızı ve okuduğunuzu bilmelerini sağlayın</string>
+  <string name="openpgp_error">OpenKeychain bir hata raporladı</string>
   <string name="accept">Kabul et</string>
   <string name="error">Bir hata oluştu</string>
   <string name="your_account">Hesabınız</string>
@@ -151,7 +153,12 @@
   <string name="mgmt_account_edit">Hesabı düzenle</string>
   <string name="mgmt_account_delete">Hesabı sil</string>
   <string name="mgmt_account_publish_avatar">Avatarı yayınla</string>
+  <string name="mgmt_account_publish_pgp">OpenPGP genel anahtarı yayınla</string>
+  <string name="unpublish_pgp">OpenPGP genel anahtarını kaldır</string>
   <string name="unpublish_pgp_message">OpenPGP genel anahtarınızı varlığınızın duyurusundan kaldırmak istediğinizden emin misiniz?\nKişileriniz artık size OpenPGP şifrelenmiş mesajlar gönderemeyecek.</string>
+  <string name="openpgp_has_been_published">OpenPGP genel anahtarı yayınlandı.</string>
+  <string name="republish_pgp_keys">OpenPGP genel anahtarlarınızı yeniden yayınlamayı unutmayın!</string>
+  <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
   <string name="password">Parola</string>
   <string name="confirm_password">Parolayı onayla</string>
   <string name="passwords_do_not_match">Parolalar uyuşmuyor</string>
