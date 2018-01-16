@@ -234,10 +234,12 @@
   <string name="pref_use_colored_names_to_indicate_status_summary">Kişi durumunu belirtmek için kişi adlarını renklendirin</string>
   <string name="pref_expert_options_other">Diğer</string>
   <string name="pref_autojoin">Konferanslara otomatik olarak katılın</string>
+  <string name="toast_message_omemo_fingerprint">OMEMO parmak izi Panoya kopyalandı!</string>
   <string name="conference_banned">Bu konferanstan yasaklandın</string>
   <string name="conference_members_only">Bu konferans yalnızca üyeler için</string>
   <string name="conference_kicked">Bu konferanstan atıldın</string>
   <string name="conference_shutdown">Konferans kapandı</string>
+  <string name="using_account">%s hesabını kullanıyor</string>
   <string name="not_connected_try_again">Bağlı değilsin. Daha sonra tekrar deneyin</string>
   <string name="message_options">Mesaj seçenekleri</string>
   <string name="copy_original_url">Orijinal URL\'yi kopyala</string>
@@ -248,6 +250,8 @@
   <string name="show_qr_code">Barkodu göster</string>
   <string name="show_block_list">Engelli listesini göster</string>
   <string name="account_details">Hesap Detayları</string>
+  <string name="verify_otr">OTR\'yi doğrula</string>
+  <string name="shared_secret_hint">İpucu ya da soru</string>
   <string name="confirm">Onayla</string>
   <string name="in_progress">Devam ediyor</string>
   <string name="respond">Yanıtla</string>
@@ -257,9 +261,15 @@
   <string name="verified">Doğrulandı!</string>
   <string name="conversations_foreground_service">Pix-Art Messenger</string>
   <string name="pref_export_logs_summary">Sohbet geçmişini SD karta yaz</string>
+  <string name="notification_export_logs_title">Sohbetler SD karta yazılıyor</string>
   <string name="choose_file">Dosya seç</string>
   <string name="file">dosya</string>
+  <string name="preparing_file">Aktarım için hazırlanıyor</string>
+  <string name="cancel_transmission">Aktarımı iptal et</string>
+  <string name="file_transmission_failed">dosya aktarımı başarısız</string>
   <string name="file_deleted">Dosya silindi</string>
+  <string name="no_application_found_to_open_file">Dosyayı açmak için uygulama bulunamadı</string>
+  <string name="could_not_verify_fingerprint">Parmak izi doğrulanamıyor</string>
   <string name="manually_verify">Manuel olarak doğrulama</string>
   <string name="no_conference_server_found">Hiçbir konferans sunucusu bulunamadı</string>
   <string name="conference_creation_failed">Konferans oluşturulamadı!</string>
