@@ -283,7 +283,14 @@
   <string name="conference_subject">Konu</string>
   <string name="choose_participants">Katılımcıları seç</string>
   <string name="creating_conference">Konferans oluşturuluyor…</string>
+  <string name="import_text">Cihazınızda içe aktarılabilir bir yedek bulunuyor. \nMuhtemelen eski versiyonu yada konuşmaları kaldırmanız istenecektir ve messenger\'ınız yedekleme işlemi sırasında yeniden başlatılacaktır. Yedek içe aktarılsın mı? </string>
+  <string name="import_database">Yedeği içeri aktar</string>
   <string name="invite_again">Tekrar davet et</string>
+  <string name="pref_broadcast_last_activity">Son kullanıcı etkileşimlerini yayınla</string>
+  <string name="pref_broadcast_last_activity_summary">Pix-Art messenger kullandığında tüm kişilerene haber ver</string>
+  <string name="invite_user">Pix-Art Messenger\'a davet et</string>
+  <string name="request_permissions_message">Pix-Art Messenger sizden bir kaç izin vermenizi isteyecek. Messenger\'ın bütün özelliklerini kullanabilmeniz için bu izinleri vermeniz önemli.
+Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="no_permission">Pix-Art Messenger\'ın izni yok</string>
   <string name="this_device_is_no_longer_in_use">Bu cihaz artık kullanılmıyor</string>
 </resources>
