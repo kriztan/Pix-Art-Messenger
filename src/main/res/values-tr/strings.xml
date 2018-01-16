@@ -36,4 +36,27 @@
   <string name="remove_contact_text">%s\'u kendi listenizden kaldırmak ister misiniz? Bu kişiyle ilişkili görüşme kaldırılamaz.</string>
   <string name="block_contact_text">%s adlı kullanıcıdan mesaj gönderilmesini engellemek ister misiniz?</string>
   <string name="unblock_contact_text">%s engelini kaldırmak ve size mesaj göndermelerine izin vermek ister misiniz?</string>
+  <string name="block_domain_text">%s\'deki tüm kişileri engellensin mi?</string>
+  <string name="unblock_domain_text">%s\'deki tüm kişilerin engeli kaldırılsın mı?</string>
+  <string name="contact_blocked">Kişi engellendi</string>
+  <string name="register_account">Sunucuya yeni hesap kaydet</string>
+  <string name="change_password_on_server">Sunucudaki şifreyi değiştir</string>
+  <string name="share_with">... ile paylaş</string>
+  <string name="start_conversation">Konuşma Başlat</string>
+  <string name="invite_contact">Kişileri Davet Et</string>
+  <string name="contacts">Kişiler</string>
+  <string name="cancel">İptal</string>
+  <string name="set">Belirle</string>
+  <string name="add">Ekle</string>
+  <string name="edit">Düzenle</string>
+  <string name="delete">Sil</string>
+  <string name="block">Engelle</string>
+  <string name="unblock">Engeli kaldır</string>
+  <string name="save">Kaydet</string>
+  <string name="ok">Tamam</string>
+  <string name="crash_report_title">Pix-Art Messenger çöktü</string>
+  <string name="crash_report_message">Yığın izlerini göndererek Pix-Art Messenger\'ın devam eden geliştirilmesine yardımcı oluyorsunuz. \n<b>Uyarı:</b> Bu, yığın izini geliştiriciye göndermek için XMPP hesabınızı kullanacak.</string>
+  <string name="send_now">Şimdi Gönder</string>
+  <string name="send_never">Bir daha sorma</string>
+  <string name="problem_connecting_to_account">Hesaba bağlanılamıyor</string>
 </resources>
