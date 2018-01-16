@@ -115,4 +115,22 @@
   <string name="unblock_contact">Kişinin engelini kaldır</string>
   <string name="create">Oluştur</string>
   <string name="select">Seç</string>
+  <string name="contact_already_exists">Kişi zaten mevcut</string>
+  <string name="join">Katıl</string>
+  <string name="conference_address">Konferans adresi</string>
+  <string name="conference_address_example">conference@room.pix-art.de</string>
+  <string name="save_as_bookmark">Yer imi olarak kaydet</string>
+  <string name="delete_bookmark">Yer imini sil</string>
+  <string name="bookmark_already_exists">Bu yer imi zaten var</string>
+  <string name="action_edit_subject">Konferans konusunu düzenle</string>
+  <string name="joining_conference">Konferansa katılınıyor…</string>
+  <string name="leave">Ayrıl</string>
+  <string name="contact_added_you">Kişi sizi kişi listesine ekledi</string>
+  <string name="add_back">Geri ekle</string>
+  <string name="publish">Yayınla</string>
+  <string name="touch_to_choose_picture">Galeriden resim seçmek için avatara dokunun</string>
+  <string name="publishing">Yayınlanıyor…</string>
+  <string name="error_publish_avatar_server_reject">Sunucu yayınınızı reddetti</string>
+  <string name="error_publish_avatar_converting">Resminizi dönüştürürken bir şeyler ters gitti</string>
+  <string name="error_saving_avatar">Avatar diske kaydedilemedi</string>
 </resources>
