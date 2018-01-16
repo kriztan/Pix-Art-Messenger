@@ -16,4 +16,24 @@
   <string name="action_block_domain">Domaini engelle</string>
   <string name="action_unblock_domain">Domainin engelini kaldır</string>
   <string name="title_activity_manage_accounts">Hesapları Yönet</string>
+  <string name="title_activity_settings">Ayarlar</string>
+  <string name="title_activity_conference_details">Konferans Detayları</string>
+  <string name="title_activity_contact_details">Kişi Detayları</string>
+  <string name="title_activity_start_conversation">Konuşma Başlat</string>
+  <string name="title_activity_choose_contact">Kişi seç</string>
+  <string name="title_activity_block_list">Engelli listesi</string>
+  <string name="just_now">şimdi</string>
+  <string name="minute_ago">1 dakika önce</string>
+  <string name="minutes_ago">%d dakika önce</string>
+  <string name="unread_conversations">okunmamış Konuşma</string>
+  <string name="sending">gönderiliyor…</string>
+  <string name="nick_in_use">Kullanıcı adı zaten kullanılıyor</string>
+  <string name="admin">Yönetici</string>
+  <string name="owner">Sahip</string>
+  <string name="moderator">Moderatör</string>
+  <string name="participant">Katılımcı</string>
+  <string name="visitor">Ziyaretçi</string>
+  <string name="remove_contact_text">%s\'u kendi listenizden kaldırmak ister misiniz? Bu kişiyle ilişkili görüşme kaldırılamaz.</string>
+  <string name="block_contact_text">%s adlı kullanıcıdan mesaj gönderilmesini engellemek ister misiniz?</string>
+  <string name="unblock_contact_text">%s engelini kaldırmak ve size mesaj göndermelerine izin vermek ister misiniz?</string>
 </resources>
