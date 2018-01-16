@@ -78,7 +78,16 @@
   <string name="delete_messages">Mesajları sil</string>
   <string name="also_end_conversation">Bu sohbeti daha sonra bitir</string>
   <string name="choose_presence">Cihaz seç</string>
+  <string name="send_unencrypted_message">Şifresiz ileti gönder</string>
+  <string name="send_message_to_x">%s kişisine ileti gönder</string>
+  <string name="send_otr_message">OTR şifrelenmiş ileti gönder</string>
+  <string name="send_omemo_message">OMEMO şifrelenmiş ileti gönder</string>
+  <string name="send_omemo_x509_message">V\\OMEMO şifrelenmiş ileti gönder</string>
+  <string name="send_pgp_message">OpenPGP şifrelenmiş ileti gönder</string>
   <string name="your_nick_has_been_changed">Takma adınız değiştirildi</string>
+  <string name="send_unencrypted">Şifrelenmemiş gönder</string>
+  <string name="decryption_failed">Şifre çözme başarısız. Belki de uygun özel anahtara sahip değilsinizdir.</string>
+  <string name="openkeychain_required">OpenKeychain</string>
   <string name="restart">Yeniden başlat</string>
   <string name="install">Yükle</string>
   <string name="waiting">Bekleniyor…</string>
