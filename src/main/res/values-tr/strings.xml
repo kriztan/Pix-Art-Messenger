@@ -42,6 +42,7 @@
   <string name="block_domain_text">%s\'deki tüm kişileri engellensin mi?</string>
   <string name="unblock_domain_text">%s\'deki tüm kişilerin engeli kaldırılsın mı?</string>
   <string name="contact_blocked">Kişi engellendi</string>
+  <string name="remove_bookmark_text">%s\'u yer imi olarak silmek ister misiniz? Yer imi ile bağlantılı sohbet silinmeyecektir.</string>
   <string name="register_account">Sunucuya yeni hesap kaydet</string>
   <string name="change_password_on_server">Sunucudaki şifreyi değiştir</string>
   <string name="share_with">... ile paylaş</string>
@@ -68,10 +69,14 @@
   <string name="not_in_roster">Kişi listenizde değil. Eklemek ister misiniz?</string>
   <string name="add_contact">Kişi ekle</string>
   <string name="send_failed">gönderme başarısız</string>
+  <string name="preparing_image">Aktarım için resim hazırlanıyor</string>
+  <string name="preparing_images">Aktarım için resimler hazırlanıyor</string>
+  <string name="sharing_files_please_wait">Dosyalar paylaşılıyor. Lütfen bekleyin…</string>
   <string name="action_clear_history">Geçmişi temizle</string>
   <string name="clear_conversation_history">Konuşma Geçmişini Temizle</string>
   <string name="clear_histor_msg">Bu İleti Dizisindeki tüm iletileri silmek istiyor musunuz?\n\n<b>Uyarı:</b> Bu, diğer cihazlarda veya sunucularda saklanan iletileri etkilemeyecektir.</string>
   <string name="delete_messages">Mesajları sil</string>
+  <string name="also_end_conversation">Bu sohbeti daha sonra bitir</string>
   <string name="choose_presence">Cihaz seç</string>
   <string name="your_nick_has_been_changed">Takma adınız değiştirildi</string>
   <string name="restart">Yeniden başlat</string>
