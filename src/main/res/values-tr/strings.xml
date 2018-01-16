@@ -59,4 +59,22 @@
   <string name="send_now">Şimdi Gönder</string>
   <string name="send_never">Bir daha sorma</string>
   <string name="problem_connecting_to_account">Hesaba bağlanılamıyor</string>
+  <string name="problem_connecting_to_accounts">Birden fazla hesaba bağlanılamıyor</string>
+  <string name="touch_to_fix">Hesaplarınızı yönetmek için buraya dokunun</string>
+  <string name="attach_file">Dosya ekle</string>
+  <string name="not_in_roster">Kişi listenizde değil. Eklemek ister misiniz?</string>
+  <string name="add_contact">Kişi ekle</string>
+  <string name="send_failed">gönderme başarısız</string>
+  <string name="pref_sound_summary">Yeni bir mesaj geldiğinde ses çıkar</string>
+  <string name="pref_send_crash">Çökme raporlarını gönder</string>
+  <string name="pref_confirm_messages">Mesajları Onayla</string>
+  <string name="pref_confirm_messages_summary">Kişilerinize onların mesajlarını ne zaman aldığınızı ve okuduğunuzu bilmelerini sağlayın</string>
+  <string name="accept">Kabul et</string>
+  <string name="error">Bir hata oluştu</string>
+  <string name="your_account">Hesabınız</string>
+  <string name="send_presence_updates">Durum güncellemelerini gönder</string>
+  <string name="receive_presence_updates">Durum güncellemelerini al</string>
+  <string name="ask_for_presence_updates">Durum güncellemelerini iste</string>
+  <string name="attach_choose_picture">Resim seç</string>
+  <string name="attach_take_from_camera">Kameradan al</string>
 </resources>
