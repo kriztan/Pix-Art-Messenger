@@ -205,4 +205,11 @@
   <string name="conversations_foreground_service">Pix-Art Messenger</string>
   <string name="pref_export_logs_summary">Sohbet geçmişini SD karta yaz</string>
   <string name="choose_file">Dosya seç</string>
+  <string name="file">dosya</string>
+  <string name="file_deleted">Dosya silindi</string>
+  <string name="manually_verify">Manuel olarak doğrulama</string>
+  <string name="no_conference_server_found">Hiçbir konferans sunucusu bulunamadı</string>
+  <string name="conference_creation_failed">Konferans oluşturulamadı!</string>
+  <string name="account_image_description">Hesap avatarı</string>
+  <string name="ask_question">Soru Sor</string>
 </resources>
