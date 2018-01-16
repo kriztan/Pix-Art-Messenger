@@ -159,6 +159,8 @@
   <string name="openpgp_has_been_published">OpenPGP genel anahtarı yayınlandı.</string>
   <string name="republish_pgp_keys">OpenPGP genel anahtarlarınızı yeniden yayınlamayı unutmayın!</string>
   <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
+  <string name="mgmt_account_delete_confirm_text">Hesabınızı silerseniz, Tüm sohbet geçmişiniz kaybolacak</string>
+  <string name="attach_record_voice">Kayıt sesi</string>
   <string name="password">Parola</string>
   <string name="confirm_password">Parolayı onayla</string>
   <string name="passwords_do_not_match">Parolalar uyuşmuyor</string>
@@ -211,6 +213,8 @@
   <string name="account_already_exists">Bu hesap zaten kullanılıyor</string>
   <string name="next">Sonraki</string>
   <string name="skip">Geç</string>
+  <string name="sure_delete_fingerprint">Bu parmak izini silmek istediğinizden emin misiniz?</string>
+  <string name="ignore">Yoksay</string>
   <string name="pref_use_larger_font">Yazı tipi boyutunu arttır</string>
   <string name="pref_use_larger_font_summary">Tüm uygulama boyunca daha büyük yazı tipi boyutları kullanın</string>
   <string name="pref_use_indicate_received_summary">Alınan mesajlar destekleniyorsa, yeşil bir işaret ile işaretlenecektir</string>
