@@ -277,8 +277,10 @@
   <string name="registration_please_wait">Kayıt başarısız: Daha sonra tekrar deneyin</string>
   <string name="registration_password_too_weak">Kayıt başarısız oldu: Şifre çok zayıf</string>
   <string name="create_conference">Konferans oluştur</string>
+  <string name="join_or_create_conference">Konferansa katıl veya oluştur</string>
   <string name="conference_subject">Konu</string>
   <string name="creating_conference">Konferans oluşturuluyor…</string>
+  <string name="invite_again">Tekrar davet et</string>
   <string name="no_permission">Pix-Art Messenger\'ın izni yok</string>
   <string name="this_device_is_no_longer_in_use">Bu cihaz artık kullanılmıyor</string>
 </resources>
