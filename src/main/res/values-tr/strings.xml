@@ -291,6 +291,16 @@
   <string name="invite_user">Pix-Art Messenger\'a davet et</string>
   <string name="request_permissions_message">Pix-Art Messenger sizden bir kaç izin vermenizi isteyecek. Messenger\'ın bütün özelliklerini kullanabilmeniz için bu izinleri vermeniz önemli.
 Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
+  <string name="request_permissions_message_again">Pix-Art messenger için gerekli bazı ya da bütün izinleri reddettiniz. Ayarlara giderek bu izinleri vermek ister misiniz?
+Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
+  <string name="unable_to_connect_to_keychain">OpenKeyChain\'e bağlanılamıyor</string>
   <string name="no_permission">Pix-Art Messenger\'ın izni yok</string>
+  <string name="send_image">Resim gönder?</string>
   <string name="this_device_is_no_longer_in_use">Bu cihaz artık kullanılmıyor</string>
+  <string name="import_canceled">İçe aktarım iptal edildi</string>
+  <string name="Import_failed">Veritabanı içe aktarım başarısız, İçe aktarım mümkün değil</string>
+  <string name="Password_wrong">Yanlış parola, yeniden dene</string>
+  <string name="enter_account_password">Lütfen yedeğinizi içe aktarmak için hesap şifrenizi giriniz.</string>
+  <string name="please_wait">Lütfen bekleyin…</string>
+  <string name="databaseimport_started">Yedek içe aktarılacak, bu biraz zaman alabilir.</string>
 </resources>
