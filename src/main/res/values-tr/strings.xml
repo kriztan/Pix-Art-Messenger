@@ -19,6 +19,7 @@
   <string name="title_activity_settings">Ayarlar</string>
   <string name="title_activity_conference_details">Konferans Detayları</string>
   <string name="title_activity_contact_details">Kişi Detayları</string>
+  <string name="title_activity_sharewith">Sohbetle paylaş</string>
   <string name="title_activity_start_conversation">Konuşma Başlat</string>
   <string name="title_activity_choose_contact">Kişi seç</string>
   <string name="title_activity_block_list">Engelli listesi</string>
@@ -27,6 +28,8 @@
   <string name="minutes_ago">%d dakika önce</string>
   <string name="unread_conversations">okunmamış Konuşma</string>
   <string name="sending">gönderiliyor…</string>
+  <string name="message_decrypting">İleti çözülüyor. Lütfen bekleyin…</string>
+  <string name="pgp_message">OpenPGP şifreli ileti</string>
   <string name="nick_in_use">Kullanıcı adı zaten kullanılıyor</string>
   <string name="admin">Yönetici</string>
   <string name="owner">Sahip</string>
@@ -303,4 +306,19 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="enter_account_password">Lütfen yedeğinizi içe aktarmak için hesap şifrenizi giriniz.</string>
   <string name="please_wait">Lütfen bekleyin…</string>
   <string name="databaseimport_started">Yedek içe aktarılacak, bu biraz zaman alabilir.</string>
+  <string name="missing_internet_permission">Eksik internet izni</string>
+  <string name="allow">İzin ver</string>
+  <string name="attach_choose_video">Video seç</string>
+  <string name="no_permission_to_access_x">%s\'a erişim izni yok</string>
+  <string name="remote_server_not_found">Uzak sunucu bulunamadı</string>
+  <string name="error_file_corrupt">Dosya bozuk gibi görünüyor.</string>
+  <string name="unable_to_update_account">Hesap güncellenemiyor</string>
+  <string name="this_conference_has_no_members">Konferansta hiç üye bulunmuyor.</string>
+  <string name="create_issue">Bir sorun bildir</string>
+  <string name="pref_delete_omemo_identities">OMEMO kimliklerini sil</string>
+  <string name="pref_delete_omemo_identities_summary">OMEMO anahtarlarınızı yeniden oluşturun. Bütün kişileriniz sizi tekrar onaylamak zorunda. Bunu sadece son çözüm olarak kullanın.</string>
+  <string name="delete_selected_keys">Seçilen anahtarları sil</string>
+  <string name="error_publish_avatar_offline">Avatarınızı yayınlayabilmek için bağlı olmanız gerekiyor.</string>
+  <string name="copy_to_clipboard">Panoya kopyala</string>
+  <string name="message_copied_to_clipboard">İleti panoya kopyalandı</string>
 </resources>
