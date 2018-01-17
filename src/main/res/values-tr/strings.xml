@@ -422,4 +422,9 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="pref_use_max_brightness_summary">Videoları ya da resimleri tam ekran izlerken en yüksek parlaklığa geç.</string>
   <string name="pref_use_max_brightness">En yüksek parlaklık</string>
   <string name="pref_notifications_from_strangers">Yabancılardan gelen bildirimler</string>
+  <string name="pref_notifications_from_strangers_summary">Yabancılardan gelen iletileri bildir.</string>
+  <string name="received_message_from_stranger">Yabancıdan gelen ileti</string>
+  <string name="contacts_are_typing">%s yazıyor…</string>
+  <string name="pref_use_auto_rotate_summary">Tam ekrana sığacak şekilde resimleri ve videoları döndür</string>
+  <string name="no_application_found_to_open_link">Link\'i açmak için uyguluma bulunamadı</string>
 </resources>
