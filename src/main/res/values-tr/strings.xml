@@ -318,6 +318,7 @@
   <string name="recently_used">En son kullanılanlar</string>
   <string name="search_for_contacts_or_groups">Kişileri veya grupları ara</string>
   <string name="send_private_message">Özel mesaj gönder</string>
+  <string name="user_has_left_conference">%s Konferanstan ayrıldı!</string>
   <string name="username">Kullanıcı Adı</string>
   <string name="username_hint">Kullanıcı Adı</string>
   <string name="invalid_username">Bu geçerli bir kullanıcı adı değil</string>
@@ -332,7 +333,11 @@
   <string name="remind_later">sonra</string>
   <string name="no_update_available">Güncelleme mevcut değil</string>
   <string name="download_started">İndirme başlatıldı</string>
+  <string name="server_info_broken">Bozuk</string>
   <string name="update_info">Pix-Art Messenger\'ın yeni sürümü otomatik olarak indiriliyor ve yükleniyor.\n\nLütfen bekleyin…</string>
+  <string name="captcha_required">Captcha gerekiyor</string>
+  <string name="captcha_hint">Yukarıda bulunan resimde ki metni giriniz</string>
+  <string name="certificate_chain_is_not_trusted">Sertifika zinciri güvenilir değil</string>
   <string name="no_storage_permission">Pix-Art Messenger\'ın harici depolama alanına erişimi gerekiyor</string>
   <string name="certificate_information">Sertifika Bilgisi</string>
   <string name="certificate_subject">Konu</string>
