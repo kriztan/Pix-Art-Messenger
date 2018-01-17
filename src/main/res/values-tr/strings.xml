@@ -294,6 +294,8 @@
   <string name="conference_options">Konferans seçenekleri</string>
   <string name="members_only">Özel, yalnızca üyeler</string>
   <string name="you_are_not_participating">Katılım sağlamıyorsun</string>
+  <string name="modified_conference_options">Düzenlenmiş konferans ayarları!</string>
+  <string name="could_not_modify_conference_options">Konferans ayaları değiştirilemiyor</string>
   <string name="never">Hiçbir zaman</string>
   <string name="thirty_minutes">30 dakika</string>
   <string name="one_hour">1 saat</string>
