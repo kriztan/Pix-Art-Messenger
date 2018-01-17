@@ -351,13 +351,16 @@
   <string name="certicate_info_not_available">(Mevcut değil)</string>
   <string name="certificate_not_found">Sertifika bulunamadı</string>
   <string name="pref_video_compression_summary">Videoları yeniden boyutlandırma ve sıkıştırma</string>
+  <string name="battery_optimizations_enabled_explained">Cihazınız Pix-Art üzerinde gecikmiş bildirimlere ya da ileti kayıplarına bile yol açabilecek ağır batarya optimizasyonu yapıyor.\nBunları devre dışı bırakmanız öneriliyor.</string>
   <string name="selection_too_large">Seçilen alan çok büyük</string>
   <string name="yes">Evet</string>
   <string name="no">Hayır</string>
   <string name="this_field_is_required">Bu alan gerekli</string>
+  <string name="send_corrected_message">Düzeltilmiş mesaj gönder</string>
   <string name="this_account_is_disabled">Bu hesabı devre dışı bıraktınız</string>
   <string name="mgmt_account_reconnect">Yeniden bağlan</string>
   <string name="create_account">Yeni hesap oluştur</string>
+  <string name="secure_password_generated">Güvenli bir parola oluşturuldu</string>
   <string name="share">Paylaş</string>
   <string name="share_location">Konumu paylaş</string>
   <string name="location_sharing_disabled">Konum paylaşımı ayarlarda devre dışı bırakıldı</string>
@@ -407,4 +410,16 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="error_publish_avatar_offline">Avatarınızı yayınlayabilmek için bağlı olmanız gerekiyor.</string>
   <string name="copy_to_clipboard">Panoya kopyala</string>
   <string name="message_copied_to_clipboard">İleti panoya kopyalandı</string>
+  <string name="this_device_has_been_verified">Bu cihaz onaylanmıştr</string>
+  <string name="copy_fingerprint">Parmak izini kopyala</string>
+  <string name="all_omemo_keys_have_been_verified">Tüm OMEMO anahtarları onaylandı</string>
+  <string name="use_camera_icon_to_scan_barcode">Bir Kişi barkodunu taratmak için kamerayı kullan</string>
+  <string name="share_as_barcode">Barkod olarak paylaş</string>
+  <string name="pref_blind_trust_before_verification_summary">Daha önce doğrulanmamış kişilerden gelen tüm cihazlara otomatik olarak güven.</string>
+  <string name="invalid_barcode">Geçersiz barkod</string>
+  <string name="transcoding_video">Video sıkıştırılıyor</string>
+  <string name="pref_automatically_delete_messages">Otomatik ileti silme</string>
+  <string name="pref_use_max_brightness_summary">Videoları ya da resimleri tam ekran izlerken en yüksek parlaklığa geç.</string>
+  <string name="pref_use_max_brightness">En yüksek parlaklık</string>
+  <string name="pref_notifications_from_strangers">Yabancılardan gelen bildirimler</string>
 </resources>
