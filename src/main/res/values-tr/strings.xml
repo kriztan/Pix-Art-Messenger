@@ -306,6 +306,7 @@
   <string name="pref_display_enter_key">Enter tuşunu göster</string>
   <string name="audio">ses</string>
   <string name="video">video</string>
+  <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
   <string name="pref_remove_trusted_certificates_summary">El ile onaylanan sertifikaları sil</string>
   <string name="dialog_manage_certs_positivebutton">Seçileni sil</string>
   <string name="dialog_manage_certs_negativebutton">İptal</string>
