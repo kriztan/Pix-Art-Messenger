@@ -443,6 +443,7 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="pref_blind_trust_before_verification_summary">Daha önce doğrulanmamış kişilerden gelen tüm cihazlara otomatik olarak güven.</string>
   <string name="invalid_barcode">Geçersiz barkod</string>
   <string name="verify_with_qr_code">barkod ile doğrula</string>
+  <string name="show_inactive_devices">Etkin olmayan cihazları göster</string>
   <string name="transcoding_video">Video sıkıştırılıyor</string>
   <string name="pref_automatically_delete_messages">Otomatik ileti silme</string>
   <string name="pref_use_max_brightness_summary">Videoları ya da resimleri tam ekran izlerken en yüksek parlaklığa geç.</string>
@@ -452,6 +453,8 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="received_message_from_stranger">Yabancıdan gelen ileti</string>
   <string name="contacts_are_typing">%s yazıyor…</string>
   <string name="pref_use_auto_rotate_summary">Tam ekrana sığacak şekilde resimleri ve videoları döndür</string>
+  <string name="application_found_to_open_website">Web sitesini açmak için uygulama bulunamadı</string>
+  <string name="update_service">Pix-Art Messenger güncelleme servisi</string>
   <string name="no_application_found_to_open_link">Link\'i açmak için uyguluma bulunamadı</string>
   <string name="conversation_unencrypted_hint">Bu sohbet şifrelenmemiş. Güvenlik nedenleri sebebiyle kilit ikonunu kullanarak ileti şifrelemeyi aktif etmelisiniz. Tercih edilen şifreleme OMEMO.</string>
   <string name="pref_warn_unencrypted_chat">Sohbet şifrelenmemişse uyar</string>
