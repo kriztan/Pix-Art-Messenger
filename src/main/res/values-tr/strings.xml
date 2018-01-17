@@ -338,6 +338,12 @@
   <string name="captcha_required">Captcha gerekiyor</string>
   <string name="captcha_hint">Yukarıda bulunan resimde ki metni giriniz</string>
   <string name="certificate_chain_is_not_trusted">Sertifika zinciri güvenilir değil</string>
+  <string name="action_renew_certificate">Sertifikayı yenile</string>
+  <string name="verified_omemo_key_with_certificate">Sertifikalı onaylanmış OMEMO anahtarı!</string>
+  <string name="not_a_valid_port">Bu geçerli bir port numarası değil</string>
+  <string name="load_more_messages">Daha fazla ileti yükle</string>
+  <string name="shared_file_with_x">%s ile paylaşılan dosya</string>
+  <string name="shared_image_with_x">%s ile paylaşılan resim</string>
   <string name="no_storage_permission">Pix-Art Messenger\'ın harici depolama alanına erişimi gerekiyor</string>
   <string name="certificate_information">Sertifika Bilgisi</string>
   <string name="certificate_subject">Konu</string>
