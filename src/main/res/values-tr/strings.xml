@@ -161,6 +161,7 @@
   <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
   <string name="mgmt_account_delete_confirm_text">Hesabınızı silerseniz, Tüm sohbet geçmişiniz kaybolacak</string>
   <string name="attach_record_voice">Kayıt sesi</string>
+  <string name="account_settings_example_jabber_id">kullanıcıadı@pix-art.de</string>
   <string name="password">Parola</string>
   <string name="confirm_password">Parolayı onayla</string>
   <string name="passwords_do_not_match">Parolalar uyuşmuyor</string>
@@ -176,7 +177,9 @@
   <string name="last_seen_hours">%d saat önce</string>
   <string name="last_seen_day">1 gün önce</string>
   <string name="last_seen_days">%d gün önce</string>
+  <string name="your_fingerprint">Sizin parmak iziniz</string>
   <string name="other_devices">Diğer cihazlar</string>
+  <string name="trust_omemo_fingerprints">OMEMO parmak izlerine güven</string>
   <string name="done">Bitti</string>
   <string name="verify">Doğrula</string>
   <string name="conferences">Konferans</string>
@@ -213,6 +216,8 @@
   <string name="account_already_exists">Bu hesap zaten kullanılıyor</string>
   <string name="next">Sonraki</string>
   <string name="skip">Geç</string>
+  <string name="conference_requires_password">Konferans parola gerektiriyor</string>
+  <string name="delete_fingerprint">Parmak izini sil</string>
   <string name="sure_delete_fingerprint">Bu parmak izini silmek istediğinizden emin misiniz?</string>
   <string name="ignore">Yoksay</string>
   <string name="without_mutual_presence_updates"><b>Uyarı</b>Bunu ortak varlık güncellemesi olmadan göndermek beklenmeyen problemlere yol açabilir.\n\n<small>İletişim detaylarına giderek varlık üyeliklerinizi onaylayın</small></string>
@@ -278,6 +283,7 @@
   <string name="conference_creation_failed">Konferans oluşturulamadı!</string>
   <string name="account_image_description">Hesap avatarı</string>
   <string name="copy_otr_clipboard_description">OTR parmak izini panoya kopyala</string>
+  <string name="distrust_omemo_key_text">Bu cihazın doğrulamasını silmek istediğinize emin misiniz?\nBu cihaz ve cihazdan gelen iletiler güvenilmez olarak işaretlenecektir.</string>
   <string name="ask_question">Soru Sor</string>
   <string name="smp_explain_question">Siz ve kontağınız arasında hiç kimsenin bilmediği bir sırrınız varsa (aranızdaki bir şaka veya en son öğle yemeğinde yediğiniz yemek), bu sırrı birbirinizin parmak izlerini doğrulamak için kullanabilirsiniz.\n\nKontağınız için büyük küçük harfle duyarlı bir cevap ile cevaba dair bir ipucu veya soru oluşturabilirsiniz.</string>
   <string name="manual_verification_explanation">Aşağıda gösterilen parmak izini kişilerinizin parmak iziyle dikkatlice karşılaştırın.\nBunları değiştirmek için şifreli bir e-posta ya da telefon görüşmesi gibi güvenilir herhangi bir iletişim biçimini kullanabilirsiniz.</string>
@@ -427,4 +433,7 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="contacts_are_typing">%s yazıyor…</string>
   <string name="pref_use_auto_rotate_summary">Tam ekrana sığacak şekilde resimleri ve videoları döndür</string>
   <string name="no_application_found_to_open_link">Link\'i açmak için uyguluma bulunamadı</string>
+  <string name="conversation_unencrypted_hint">Bu sohbet şifrelenmemiş. Güvenlik nedenleri sebebiyle kilit ikonunu kullanarak ileti şifrelemeyi aktif etmelisiniz. Tercih edilen şifreleme OMEMO.</string>
+  <string name="pref_warn_unencrypted_chat">Sohbet şifrelenmemişse uyar</string>
+  <string name="pref_warn_unencrypted_chat_summary">Eğer ileti şifreleme mevcut ise, kullanmalısınız. Eğer ileti şifreleme kullanılmıyorsa, sohbet içinde bir uyarı göster.</string>
 </resources>
