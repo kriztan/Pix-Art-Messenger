@@ -309,6 +309,8 @@
   <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
   <string name="title_undo_swipe_out_conversation">Sohbet kapandı</string>
   <string name="title_undo_swipe_out_muc">Konferanstan ayrıl</string>
+  <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar elle onaylanmalıdır</string>
+  <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
   <string name="pref_remove_trusted_certificates_summary">El ile onaylanan sertifikaları sil</string>
   <string name="dialog_manage_certs_positivebutton">Seçileni sil</string>
   <string name="dialog_manage_certs_negativebutton">İptal</string>
