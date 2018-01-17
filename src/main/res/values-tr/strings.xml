@@ -312,6 +312,7 @@
   <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar elle onaylanmalıdır</string>
   <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
   <string name="pref_remove_trusted_certificates_summary">El ile onaylanan sertifikaları sil</string>
+  <string name="toast_no_trusted_certs">El ile onaylanan sertifika bulunmuyor</string>
   <string name="dialog_manage_certs_positivebutton">Seçileni sil</string>
   <string name="dialog_manage_certs_negativebutton">İptal</string>
   <string name="recently_used">En son kullanılanlar</string>
