@@ -727,7 +727,6 @@
   <string name="pref_validate_hostname_summary">Serverzertifikate, die den überprüften Hostnamen enthalten, werden als verifiziert betrachtet</string>
   <string name="network_is_unreachable">Netzwerk nicht verfügbar</string>
   <string name="certificate_does_not_contain_jid">Zertifikat enthält keine Jabber-ID</string>
-  <string name="error_no_keys_to_trust_presence">Für diesen Kontakt sind keine benutzbaren Schlüssel verfügbar.\nStelle sicher, dass du den gegenseitigen Online-Status aktiviert hast.</string>
   <string name="mark_as_read">Als gelesen markieren</string>
   <string name="server_info_partial">teilweise</string>
   <string name="pref_show_foreground_service_summary">Einige Android Geräte schließen manche Apps nach einer gewissen Zeitspanne automatisch und du wirst keine neuen Nachrichten mehr empfangen können. Falls du solche Probleme hast, versuche den Vordergrunddienst zu aktivieren. Bitte beachte, dass dadurch ein permanenter Eintrag in der Benachrichtigungsleiste erscheint.</string>
