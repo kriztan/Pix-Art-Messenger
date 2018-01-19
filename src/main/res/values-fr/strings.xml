@@ -625,6 +625,5 @@
   <string name="pref_validate_hostname_summary">Les certificats serveur qui comportent le nom de domaine validé sont considérés comme validés</string>
   <string name="network_is_unreachable">Réseau inaccessible</string>
   <string name="certificate_does_not_contain_jid">Le certificat ne contient pas d\'ID Jabber</string>
-  <string name="error_no_keys_to_trust_presence">Il n\'y a aucune clé utilisable disponible pour ce contact.\nAssurez-vous d\'avoir un abonnement de présence mutuelle.</string>
   <string name="server_info_partial">partiel</string>
 </resources>
