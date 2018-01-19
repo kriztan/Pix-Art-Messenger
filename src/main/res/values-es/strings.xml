@@ -727,7 +727,7 @@
   <string name="pref_validate_hostname_summary">Los certificados del servidor que contienen el hostname validado son considerados verificados</string>
   <string name="network_is_unreachable">La red es inaccesible</string>
   <string name="certificate_does_not_contain_jid">El certificado no contiene un identificador Jabber</string>
-  <string name="error_no_keys_to_trust_presence">No hay claves disponibles para este contacto.\n Asegúrate que tenéis suscripción de presencia mutua. </string>
+  <string name="error_no_keys_to_trust_presence">No hay claves disponibles para este contacto.\n Asegúrate que tenéis suscripción de presencia mutua.</string>
   <string name="mark_as_read">Marcar como leído</string>
   <string name="server_info_partial">Parcial</string>
   <string name="pref_show_foreground_service_summary">Algunos dispositivos Android cerrarán algunas aplicaciones al cabo de un tiempo y no podrás recibir nuevos mensajes. Si tiene estos problemas, intente activar el servicio de primer plano. Pero tenga en cuenta que tendrá una notificación permanente con esta opción marcada.</string>
