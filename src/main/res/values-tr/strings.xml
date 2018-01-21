@@ -393,7 +393,15 @@
     <item quantity="one">%d sertifika silindi</item>
     <item quantity="other">%d sertifikalar silindi</item>
   </plurals>
+  <plurals name="select_contact">
+    <item quantity="one">Bağlantı %d seçin</item>
+    <item quantity="other">Bağlantılar %d seçin</item>
+  </plurals>
+  <string name="pref_quick_action_summary">Gönderme düğmesini hızlı etkiyle değiştirin</string>
+  <string name="pref_quick_action">Hızlı İşlem</string>
+  <string name="none">Yok</string>
   <string name="recently_used">En son kullanılanlar</string>
+  <string name="choose_quick_action">Hızlı işlemi seçin</string>
   <string name="search_for_contacts_or_groups">Kişileri veya grupları ara</string>
   <string name="send_private_message">Özel mesaj gönder</string>
   <string name="user_has_left_conference">%s Konferanstan ayrıldı!</string>
@@ -403,14 +411,20 @@
   <string name="download_failed_server_not_found">İndirilemedi: Sunucu bulunamadı</string>
   <string name="download_failed_file_not_found">İndirilemedi: Dosya bulunamadı</string>
   <string name="download_failed_could_not_connect">İndirilemedi: Ana bilgisayara bağlanılamadı</string>
+  <string name="elv_undo">geri al</string>
   <string name="download_failed_could_not_write_file">İndirilemedi: Dosya yazılamadı</string>
   <string name="pref_use_white_background">Beyaz arka planı kullan</string>
   <string name="pref_use_white_background_summary">Alınan mesajları beyaz arka plan üzerine siyah metin olarak göster</string>
   <string name="action_check_update">Güncellemeleri kontrol et</string>
   <string name="title_activity_updater">Servisi güncelle</string>
+  <string name="update_available">Versiyon %1$s mevcuttur.\n\nDosya boyutu:%2$s\n\nŞimdi %1$s versiyonuna güncelleşsin mi?</string>
   <string name="remind_later">sonra</string>
+  <string name="update">güncelle</string>
   <string name="no_update_available">Güncelleme mevcut değil</string>
   <string name="download_started">İndirme başlatıldı</string>
+  <string name="account_status_tor_unavailable">Tor ağ kullanılamıyor</string>
+  <string name="account_status_bind_failure">Bağlanma hatası</string>
+  <string name="account_status_host_unknown">Sunucu, alan adı için sorumlu değil</string>
   <string name="server_info_broken">Bozuk</string>
   <string name="pref_away_when_screen_off_summary">Ekran kapalıyken kaynağınızı uzakta olarak işaretler</string>
   <string name="pref_dnd_on_silent_mode">Sessiz modda \'\'Rahatsız etme\'\'</string>
