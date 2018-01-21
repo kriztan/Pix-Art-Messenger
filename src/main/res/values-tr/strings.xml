@@ -545,7 +545,13 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="show_error_message">Hata mesajını göster</string>
   <string name="error_message">Hata Mesajı</string>
   <string name="data_saver_enabled">Veri kaydedici etkin</string>
+  <string name="data_saver_enabled_explained">İşletim sisteminiz, Pix-Art Messenger arka plandayken internet\'e erişmesini kısıtlıyor. Yeni mesaj bildirimlerini almak için, veri koruyucu açıkken Pix-Art Messenger\'a sınırsız erişime izin vermelisiniz.\\nPix-Art Messenger mümkün olduğunca veri kaydetmek için çaba gösterecektir.</string>
   <string name="device_does_not_support_data_saver">Cihazınız Pix-Art messenger\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
+  <string name="navigate">Konuma gidin</string>
+  <string name="add_to_contact_list">Bağlantı listesine ekle</string>
+  <string name="received_contact">Bağlantı kabul edildi</string>
+  <string name="contact">Bağlantı</string>
+  <string name="unable_to_start_recording">Kayıt başlatılamıyor</string>
   <string name="this_device_has_been_verified">Bu cihaz onaylanmıştr</string>
   <string name="copy_fingerprint">Parmak izini kopyala</string>
   <string name="all_omemo_keys_have_been_verified">Tüm OMEMO anahtarları onaylandı</string>
