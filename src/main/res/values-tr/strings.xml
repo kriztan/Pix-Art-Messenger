@@ -748,4 +748,7 @@ Herhangi bir izni reddederseniz uygulama kendini kapatacak.</string>
   <string name="pref_warn_unencrypted_chat_summary">Eğer ileti şifreleme mevcut ise, kullanmalısınız. Eğer ileti şifreleme kullanılmıyorsa, sohbet içinde bir uyarı göster.</string>
   <string name="pref_use_bundled_emoji">Birleşik emoji kullan</string>
   <string name="pref_use_bundled_emoji_summary">Cihazlarınızın yerine emoji kitaplığını kullanın. Değişiklikler, uygulamayı yeniden açtıktan sonra kullanılabilir olacaktır.</string>
+  <string name="invalid_muc_nick">Geçersiz kullanıcı adı</string>
+  <string name="title_activity_share_via_account">Hesap yoluyla paylaş</string>
+  <string name="private_messages_are_disabled">Özel mesajlar devre dışı</string>
 </resources>
