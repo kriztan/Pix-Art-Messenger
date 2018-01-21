@@ -542,6 +542,8 @@
   <string name="battery_optimizations_enabled">Pil optimizasyonları etkin</string>
   <string name="battery_optimizations_enabled_explained">Cihazınız Pix-Art üzerinde gecikmiş bildirimlere ya da ileti kayıplarına bile yol açabilecek ağır batarya optimizasyonu yapıyor.\nBunları devre dışı bırakmanız öneriliyor.</string>
   <string name="battery_optimizations_enabled_dialog">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli iletiyor hatta mesaj kaybına sebep olabilecek bazı ağır pil optimizasyonları yapıyor.\n\nBunları devre dışı bırakmanız istenecektir.</string>
+  <string name="install_from_unknown_sources_disabled">Bilinmeyen kaynaklardan yüklemeleri devre dışı bırak</string>
+  <string name="install_from_unknown_sources_disabled_explained">Cihazınız, bilinmeyen kaynaklardan gelen uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı; bu da, uygulama güncelleyicisinde sorunlara neden oluyor.\nBilinmeyen kaynaklardan gelen yüklemelere izin verilmesi önerilir.</string>
   <string name="disable">Devre dışı</string>
   <string name="selection_too_large">Seçilen alan çok büyük</string>
   <string name="cancel_update">Güncellemeyi iptal et?</string>
