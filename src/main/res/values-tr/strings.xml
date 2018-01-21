@@ -544,6 +544,7 @@
   <string name="battery_optimizations_enabled_dialog">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli iletiyor hatta mesaj kaybına sebep olabilecek bazı ağır pil optimizasyonları yapıyor.\n\nBunları devre dışı bırakmanız istenecektir.</string>
   <string name="install_from_unknown_sources_disabled">Bilinmeyen kaynaklardan yüklemeleri devre dışı bırak</string>
   <string name="install_from_unknown_sources_disabled_explained">Cihazınız, bilinmeyen kaynaklardan gelen uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı; bu da, uygulama güncelleyicisinde sorunlara neden oluyor.\nBilinmeyen kaynaklardan gelen yüklemelere izin verilmesi önerilir.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">Cihazınız, Google PlayStore dışında bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı. Bu, uygulama güncelleyicisinde sorunlara neden olur.\n\nArtıkbilinmeyen kaynaklardan uygulama yüklemelerine izin vermeniz istenecektir.</string>
   <string name="disable">Devre dışı</string>
   <string name="selection_too_large">Seçilen alan çok büyük</string>
   <string name="cancel_update">Güncellemeyi iptal et?</string>
@@ -580,6 +581,7 @@
   <string name="presence_dnd">Meşgul</string>
   <string name="secure_password_generated">Güvenli bir parola oluşturuldu</string>
   <string name="device_does_not_support_battery_op">Cihazınız, pil optimizasyonunun devre dışı bırakılmasını desteklemiyor</string>
+  <string name="device_does_not_support_unknown_source_op">Cihazınız, bilinmeyen kaynaklardan gelen uygulama yüklemelerine izin vermeyi desteklemiyor</string>
   <string name="share">Paylaş</string>
   <string name="share_location">Konumu paylaş</string>
   <string name="location_sharing_disabled">Konum paylaşımı ayarlarda devre dışı bırakıldı</string>
