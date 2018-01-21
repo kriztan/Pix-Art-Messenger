@@ -561,7 +561,7 @@
   <string name="share_uri_with">Compartir URI con...</string>
   <string name="mgmt_account_reconnect">Reconectar</string>
   <string name="welcome_text">... es una aplicación XMPP/Jabber gratuita y segura.</string>
-  <string name="magic_create_text">Te guiaremos durante el proceso de creación de la cuenta en conversations.im.¹\nCuando selecciones conversations.im como proveedor, podrás comunicarte con usuarios de otros servidores mediante tu identificador Jabber.</string>
+  <string name="magic_create_text">A continuación crearemos un perfil con una contraseña generada aleatoriamente que podrás utilizar o cambiar en la página siguiente\ny posteriormente podrás ponerte en contacto con los contactos de este y otros servidores dándoles tu Jabber-ID.</string>
   <string name="your_full_jid_will_be">Tu identificador Jabber será: %s</string>
   <string name="create_account">Crear cuenta</string>
   <string name="use_existing_accout">Conectase con una cuenta ya existente</string>
