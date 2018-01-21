@@ -124,15 +124,19 @@
   <string name="openpgp_error">OpenKeychain bir hata raporladı</string>
   <string name="accept">Kabul et</string>
   <string name="error">Bir hata oluştu</string>
+  <string name="pref_grant_presence_updates">Durum güncellemelerini ver</string>
+  <string name="pref_grant_presence_updates_summary">Öncelikle oluşturduğunuz kişilere abone olma ve üyelik talep edin</string>
   <string name="your_account">Hesabınız</string>
   <string name="send_presence_updates">Durum güncellemelerini gönder</string>
   <string name="receive_presence_updates">Durum güncellemelerini al</string>
   <string name="ask_for_presence_updates">Durum güncellemelerini iste</string>
   <string name="attach_choose_picture">Resim seç</string>
   <string name="attach_take_from_camera">Kameradan al</string>
+  <string name="preemptively_grant">Öncelikle abone talep isteğinde bulunun</string>
   <string name="error_not_an_image_file">Seçtiğiniz dosya bir görüntü değil</string>
   <string name="error_compressing_image">Görüntü dosyasını dönüştürürken hata oluştu</string>
   <string name="error_file_not_found">Dosya bulunamadı</string>
+  <string name="error_io_exception">Genel I/O hatası. Depolama alanınız bitmiş olabilir mi?</string>
   <string name="error_security_exception_during_image_copy">Bu resmi seçmek için kullandığınız uygulama bize dosyayı okumak için yeterli izin vermedi.\n\n<small>Bir resim seçmek için farklı bir dosya yöneticisi kullanın</small></string>
   <string name="account_status_unknown">Bilinmeyen</string>
   <string name="account_status_disabled">Geçici olarak devre dışı bırakıldı</string>
@@ -151,7 +155,9 @@
   <string name="account_status_incompatible_server">Uyumsuz sunucu</string>
   <string name="account_status_stream_error">Akış hatası</string>
   <string name="encryption_choice_unencrypted">Şifresiz</string>
+  <string name="encryption_choice_otr">OTR</string>
   <string name="encryption_choice_pgp">OpenPGP</string>
+  <string name="encryption_choice_omemo">OMEMO</string>
   <string name="mgmt_account_edit">Hesabı düzenle</string>
   <string name="mgmt_account_delete">Hesabı sil</string>
   <string name="mgmt_account_publish_avatar">Avatarı yayınla</string>
@@ -163,6 +169,7 @@
   <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
   <string name="mgmt_account_delete_confirm_text">Hesabınızı silerseniz, Tüm sohbet geçmişiniz kaybolacak</string>
   <string name="attach_record_voice">Kayıt sesi</string>
+  <string name="account_settings_jabber_id">Jabber-ID</string>
   <string name="account_settings_example_jabber_id">kullanıcıadı@pix-art.de</string>
   <string name="password">Parola</string>
   <string name="confirm_password">Parolayı onayla</string>
