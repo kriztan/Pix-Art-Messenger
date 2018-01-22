@@ -748,4 +748,5 @@
   <string name="pref_use_bundled_emoji_summary">Utilice la librería emoji integrada en lugar de utilizar la de su dispositivo. Los cambios estarán disponibles después de volver a abrir la aplicación.</string>
   <string name="invalid_muc_nick">Apodo inválido</string>
   <string name="title_activity_share_via_account">Compartir a través de cuenta</string>
+  <string name="private_messages_are_disabled">Los mensajes privados están desactivados</string>
 </resources>
