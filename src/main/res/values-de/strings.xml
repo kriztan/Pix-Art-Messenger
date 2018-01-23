@@ -542,6 +542,7 @@
   <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
   <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
   <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
+  <string name="install_from_unknown_sources_disabled">Installation von unbekannter Quelle ist nicht erlaubt</string>
   <string name="disable">Deaktivieren</string>
   <string name="selection_too_large">Der ausgewählte Bereich ist zu groß</string>
   <string name="cancel_update">Update abbrechen?</string>
