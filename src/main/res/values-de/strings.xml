@@ -543,6 +543,8 @@
   <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
   <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
   <string name="install_from_unknown_sources_disabled">Installation von unbekannter Quelle ist nicht erlaubt</string>
+  <string name="install_from_unknown_sources_disabled_explained">Dein Gerät erlaubt keine Installationen von Apps aus unbekannten Quellen, was Probleme mit automatischen Updates des Messengers verursacht.\nEs ist empfehlenswert, die Installation von Apps aus unbekannten Quellen zu erlauben.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">Dein Gerät erlaubt keine Installationen von Apps aus unbekannten Quellen außer über Google PlayStore. Dies verursacht Probleme mit automatischen Updates des Messengers.\n\nDu wirst nun gefragt, die Installation von Apps aus unbekannten Quellen zu erlauben.</string>
   <string name="disable">Deaktivieren</string>
   <string name="selection_too_large">Der ausgewählte Bereich ist zu groß</string>
   <string name="cancel_update">Update abbrechen?</string>
@@ -579,6 +581,7 @@
   <string name="presence_dnd">Beschäftigt</string>
   <string name="secure_password_generated">Ein sicheres Passwort wurde erstellt</string>
   <string name="device_does_not_support_battery_op">Dein Gerät unterstützt kein Ausschalten der Batterieoptimierung</string>
+  <string name="device_does_not_support_unknown_source_op">Dein Gerät bietet keine Einstellung an, um die Installation aus unbekannten Quellen zu erlauben</string>
   <string name="share">Teilen</string>
   <string name="share_location">Standort teilen</string>
   <string name="location_sharing_disabled">GPS ist in den Android-Einstellungen deaktiviert</string>
@@ -749,4 +752,5 @@
   <string name="pref_use_bundled_emoji_summary">Nutze die in die App integrierten Emojis anstatt der von deinem Gerät. Die Änderungen werden nach dem nächsten Öffnen der App wirksam.</string>
   <string name="invalid_muc_nick">Nickname ungültig</string>
   <string name="title_activity_share_via_account">Teilen mit Profil</string>
+  <string name="private_messages_are_disabled">Private Nachrichten sind deaktiviert</string>
 </resources>
