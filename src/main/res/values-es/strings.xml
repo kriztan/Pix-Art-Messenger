@@ -542,6 +542,7 @@
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
   <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
   <string name="battery_optimizations_enabled_dialog">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\n\nEl sistema te preguntará ahora para deshabilitarlas.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">El dispositivo está configurado para no permitir la instalación de aplicaciones de fuentes desconocidas, excepto en Google PlayStore.\n\nAhora se le pedirá que permita la instalación de aplicaciones desde fuentes desconocidas.</string>
   <string name="disable">Deshabilitar</string>
   <string name="selection_too_large">El área seleccionada es demasiado grande</string>
   <string name="cancel_update">¿Cancelar actualización?</string>
@@ -578,6 +579,7 @@
   <string name="presence_dnd">Ocupado</string>
   <string name="secure_password_generated">Se ha generado una contraseña segura</string>
   <string name="device_does_not_support_battery_op">Tu dispositivo no soporta la opción de optimización de batería</string>
+  <string name="device_does_not_support_unknown_source_op">El dispositivo no admite instalaciones de aplicaciones de origen desconocido</string>
   <string name="share">Compartir</string>
   <string name="share_location">Compartir ubicación</string>
   <string name="location_sharing_disabled">La ubicación compartida está deshabilitada en la configuración</string>
