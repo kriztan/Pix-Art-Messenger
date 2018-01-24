@@ -215,9 +215,11 @@
   <string name="done">Hecho</string>
   <string name="verify">Verificar</string>
   <string name="decrypt">Descifrar</string>
+  <string name="conferences">Chats de grupo</string>
   <string name="search">Buscar</string>
   <string name="create_contact">Crear Contacto</string>
   <string name="enter_contact">Introducir contacto</string>
+  <string name="join_conference">Únete al grupo</string>
   <string name="delete_contact">Eliminar Contacto</string>
   <string name="view_contact_details">Ver detalles del contacto</string>
   <string name="block_contact">Bloquear contacto</string>
