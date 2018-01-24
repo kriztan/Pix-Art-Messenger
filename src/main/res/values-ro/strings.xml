@@ -17,7 +17,7 @@
   <string name="action_unblock_domain">Deblochează domeniu</string>
   <string name="title_activity_manage_accounts">Configurează conturile</string>
   <string name="title_activity_settings">Setări</string>
-  <string name="title_activity_sharewith">Distribuie cu o conversație</string>
+  <string name="title_activity_sharewith">Partajează într-o conversație</string>
   <string name="title_activity_start_conversation">Pornește o conversație</string>
   <string name="title_activity_choose_contact">Alege contact</string>
   <string name="title_activity_block_list">Listă contacte blocate</string>
@@ -56,8 +56,8 @@
   <string name="unblock">Deblochează</string>
   <string name="save">Salvează</string>
   <string name="ok">BINE</string>
-  <string name="crash_report_title">Conversations s-a oprit neașteptat</string>
-  <string name="crash_report_message">Trimițând datele despre erori ajutați la continuarea dezvoltării aplicației Conversations\n<b>Atenție:</b> Se va utiliza contul XMPP pentru a trimite informațiile din jurnal către programatori.</string>
+  <string name="crash_report_title">Pix-Art s-a oprit neașteptat</string>
+  <string name="crash_report_message">Trimițând datele despre erori ajutați la continuarea dezvoltării aplicației Pix-Art\n<b>Atenție:</b> Se va utiliza contul XMPP pentru a trimite informațiile din jurnal către programatori.</string>
   <string name="send_now">Trimite acum</string>
   <string name="send_never">Nu mă mai întreba</string>
   <string name="problem_connecting_to_account">Nu mă pot conecta la cont</string>
