@@ -232,6 +232,7 @@
   <string name="save_as_bookmark">Guardar en marcadores</string>
   <string name="delete_bookmark">Eliminar marcador</string>
   <string name="bookmark_already_exists">Este marcador ya existe</string>
+  <string name="joining_conference">Unirse al chat de grupo…</string>
   <string name="leave">Salir</string>
   <string name="contact_added_you">El contacto te ha añadido a su lista de contactos</string>
   <string name="add_back">Añadir contacto</string>
@@ -372,10 +373,12 @@
   <string name="could_not_change_affiliation">No se puede cambiar la afiliación de %s</string>
   <string name="ban_now">Prohibir ahora</string>
   <string name="could_not_change_role">No se puede cambiar el rol de %s</string>
+  <string name="conference_options">Opciones de chat de grupo</string>
   <string name="members_only">Privada, solo miembros</string>
   <string name="non_anonymous">No anónima</string>
   <string name="moderated">Moderada</string>
   <string name="you_are_not_participating">No estás participando</string>
+  <string name="modified_conference_options">¡Opciones de chat de grupo modificadas!</string>
   <string name="never">Nunca</string>
   <string name="thirty_minutes">30 minutos</string>
   <string name="one_hour">1 hora</string>
