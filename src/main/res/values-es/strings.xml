@@ -17,6 +17,7 @@
   <string name="action_unblock_domain">Desbloquear dominio</string>
   <string name="title_activity_manage_accounts">Gestionar Cuentas</string>
   <string name="title_activity_settings">Ajustes</string>
+  <string name="title_activity_conference_details">Detalles del chat de grupo</string>
   <string name="title_activity_contact_details">Detalles del contacto</string>
   <string name="title_activity_sharewith">Compartir con Conversación</string>
   <string name="title_activity_start_conversation">Comenzar conversación</string>
@@ -228,6 +229,7 @@
   <string name="select">Seleccionar</string>
   <string name="contact_already_exists">El contacto ya existe</string>
   <string name="join">Unirse</string>
+  <string name="conference_address">Dirección del chat de grupo</string>
   <string name="conference_address_example">grupo@room.pix-art.de</string>
   <string name="save_as_bookmark">Guardar en marcadores</string>
   <string name="delete_bookmark">Eliminar marcador</string>
