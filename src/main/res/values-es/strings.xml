@@ -561,6 +561,8 @@
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
+  <string name="create_conference">Crear chat de grupo</string>
+  <string name="join_or_create_conference">Unirse o crear chat de grupo</string>
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
   <string name="creating_conference">Crear chat de grupo…</string>
