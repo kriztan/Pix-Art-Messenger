@@ -220,6 +220,7 @@
   <string name="search">Suchen</string>
   <string name="create_contact">Kontakt hinzufügen</string>
   <string name="enter_contact">Kontakt eingeben</string>
+  <string name="join_conference">Gruppenchat beitreten</string>
   <string name="delete_contact">Kontakt löschen</string>
   <string name="view_contact_details">Kontakt-Details anzeigen</string>
   <string name="block_contact">Kontakt sperren</string>
@@ -228,9 +229,14 @@
   <string name="select">Auswählen</string>
   <string name="contact_already_exists">Der Kontakt existiert bereits</string>
   <string name="join">Beitreten</string>
+  <string name="conference_address">Gruppenchat-Adresse</string>
+  <string name="conference_address_example">gruppenchat@room.pix-art.de</string>
   <string name="save_as_bookmark">Zur Kontaktliste hinzufügen</string>
   <string name="delete_bookmark">Von Kontaktliste entfernen</string>
   <string name="bookmark_already_exists">Die Konferenz befindet sich bereits auf deiner Kontaktliste</string>
+  <string name="action_edit_subject">Betreff dieses Gruppenchats ändern</string>
+  <string name="edit_subject_hint">Betreff dieses Gruppenchats</string>
+  <string name="joining_conference">Gruppenchat beitreten…</string>
   <string name="leave">Verlassen</string>
   <string name="contact_added_you">Der Kontakt hat dich zur Kontaktliste hinzugefügt</string>
   <string name="add_back">Auch hinzufügen</string>
@@ -252,6 +258,7 @@
   <string name="skip">Überspringen</string>
   <string name="disable_notifications">Benachrichtigungen deaktivieren</string>
   <string name="enable">Aktivieren</string>
+  <string name="conference_requires_password">Gruppenchat verlangt ein Passwort</string>
   <string name="enter_password">Passwort eingeben</string>
   <string name="request_presence_updates">Bitte erst Online-Status vom Kontakt anfragen.\n\n<small>Dies wird verwendet, um festzustellen, welche Client(s) der Kontakt benutzt.</small></string>
   <string name="request_now">Jetzt anfordern</string>
@@ -279,8 +286,14 @@
   <string name="pref_use_send_button_to_indicate_status_summary">Senden-Schaltfläche einfärben, um den Online-Status des Kontakts anzuzeigen</string>
   <string name="pref_use_colored_names_to_indicate_status_summary">Kontaktnamen einfärben, um den Online-Status des Kontakts anzuzeigen</string>
   <string name="pref_expert_options_other">Sonstiges</string>
+  <string name="pref_autojoin">Gruppenchats automatisch beitreten</string>
+  <string name="pref_autojoin_summary">Gruppenchats automatisch beitreten, wenn in der Kontaktliste aktiviert</string>
   <string name="toast_message_otr_fingerprint">OTR-Fingerabdruck in die Zwischenablage kopiert!</string>
   <string name="toast_message_omemo_fingerprint">OMEMO-Fingerabdruck in die Zwischenablage kopiert!</string>
+  <string name="conference_banned">Du wurdest von dem Gruppenchat ausgeschlossen</string>
+  <string name="conference_members_only">Dieser Gruppenchat ist nur für Mitglieder</string>
+  <string name="conference_kicked">Du wurdest aus dem Gruppenchat geworfen</string>
+  <string name="conference_shutdown">Dieser Gruppenchat wurde geschlossen</string>
   <string name="using_account">Verwendetes Profil: %s</string>
   <string name="checking_x">%s auf HTTP-Host wird überprüft</string>
   <string name="not_connected_try_again">Nicht verbunden, bitte später versuchen</string>
