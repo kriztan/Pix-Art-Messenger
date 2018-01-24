@@ -558,10 +558,11 @@
   <string name="share_location">Compartir ubicación</string>
   <string name="location_sharing_disabled">La ubicación compartida está deshabilitada en la configuración</string>
   <string name="locating">Localizando...</string>
+  <string name="leave_conference_warning">¿Realmente quieres dejar este grupo de chat? Ya no se le notificarán los mensajes nuevos hasta que vuelva a unirse al grupo de chat.</string>
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
-  <string name="create_conference">Crear chat de grupo</string>
+  <string name="create_conference">Crear grupo</string>
   <string name="join_or_create_conference">Unirse o crear chat de grupo</string>
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
