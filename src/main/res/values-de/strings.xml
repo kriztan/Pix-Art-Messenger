@@ -17,6 +17,7 @@
   <string name="action_unblock_domain">Domain entsperren</string>
   <string name="title_activity_manage_accounts">Profile verwalten</string>
   <string name="title_activity_settings">Einstellungen</string>
+  <string name="title_activity_conference_details">Gruppenchat-Details</string>
   <string name="title_activity_contact_details">Kontakt-Details</string>
   <string name="title_activity_sharewith">Mit Unterhaltung teilen</string>
   <string name="title_activity_start_conversation">Unterhaltung beginnen</string>
@@ -215,6 +216,7 @@
   <string name="done">Fertig</string>
   <string name="verify">Überprüfen</string>
   <string name="decrypt">Entschlüsseln</string>
+  <string name="conferences">Gruppenchats</string>
   <string name="search">Suchen</string>
   <string name="create_contact">Kontakt hinzufügen</string>
   <string name="enter_contact">Kontakt eingeben</string>
