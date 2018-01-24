@@ -371,8 +371,12 @@
   <string name="grant_admin_privileges">Conceder privilegios de administrador</string>
   <string name="remove_admin_privileges">Revocar privilegios de administrador</string>
   <string name="could_not_change_affiliation">No se puede cambiar la afiliación de %s</string>
+  <string name="ban_from_conference">Desterrar del grupo</string>
+  <string name="removing_from_public_conference">Estás intentando expulsar a %s de un grupo de acceso público. La única forma de hacer esto es prohibir su entrada para siempre.</string>
   <string name="ban_now">Prohibir ahora</string>
   <string name="could_not_change_role">No se puede cambiar el rol de %s</string>
+  <string name="public_conference">Grupo accesible al público</string>
+  <string name="private_conference">Privado, sólo miembros del grupo</string>
   <string name="conference_options">Opciones de chat de grupo</string>
   <string name="members_only">Privada, solo miembros</string>
   <string name="non_anonymous">No anónima</string>
