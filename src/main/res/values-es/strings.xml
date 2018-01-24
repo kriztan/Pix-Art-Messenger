@@ -598,6 +598,7 @@
   <string name="unable_to_update_account">No se ha podido actualizar la cuenta</string>
   <string name="missing_presence_subscription_with_x">Se ha perdido la suscripción de presencia con %s.</string>
   <string name="missing_keys_from_x">Se ha perdido la clave OMEMO de %s.</string>
+  <string name="wrong_conference_configuration">Esto no es un chat de grupo privado, no anónimo.</string>
   <string name="this_conference_has_no_members">No hay miembros en este grupo.</string>
   <string name="report_jid_as_spammer">Reportar a este Id Jabber por enviar mensajes no deseados</string>
   <string name="create_issue">Notificar una incidencia</string>
