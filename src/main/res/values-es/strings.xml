@@ -232,6 +232,7 @@
   <string name="save_as_bookmark">Guardar en marcadores</string>
   <string name="delete_bookmark">Eliminar marcador</string>
   <string name="bookmark_already_exists">Este marcador ya existe</string>
+  <string name="action_edit_subject">Editar tema del grupo</string>
   <string name="joining_conference">Unirse al chat de grupo…</string>
   <string name="leave">Salir</string>
   <string name="contact_added_you">El contacto te ha añadido a su lista de contactos</string>
@@ -333,6 +334,7 @@
   <string name="are_you_sure_verify_fingerprint">¿Estás seguro de que quieres verificar la huella digital OTR de tu contacto?</string>
   <string name="pref_show_dynamic_tags">Mostrar etiquetas</string>
   <string name="pref_show_dynamic_tags_summary">Mostrar información en forma de etiquetas debajo de los contactos</string>
+  <string name="conference_creation_failed">¡Creación de grupo fallado!</string>
   <string name="account_image_description">Imagen de perfil</string>
   <string name="copy_otr_clipboard_description">Copiar huella digital OTR al portapapeles</string>
   <string name="copy_omemo_clipboard_description">Copiar huella digital OMEMO al portapapeles</string>
