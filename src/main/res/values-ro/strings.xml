@@ -56,8 +56,8 @@
   <string name="unblock">Deblochează</string>
   <string name="save">Salvează</string>
   <string name="ok">BINE</string>
-  <string name="crash_report_title">Pix-Art s-a oprit neașteptat</string>
-  <string name="crash_report_message">Trimițând datele despre erori ajutați la continuarea dezvoltării aplicației Pix-Art\n<b>Atenție:</b> Se va utiliza contul XMPP pentru a trimite informațiile din jurnal către programatori.</string>
+  <string name="crash_report_title">Pix-Art Messenger s-a oprit neașteptat</string>
+  <string name="crash_report_message">Trimițând datele despre erori ajutați la continuarea dezvoltării aplicației Pix-Art Messenger\n<b>Atenție:</b> Se va utiliza contul XMPP pentru a trimite informațiile din jurnal către programatori.</string>
   <string name="send_now">Trimite acum</string>
   <string name="send_never">Nu mă mai întreba</string>
   <string name="problem_connecting_to_account">Nu mă pot conecta la cont</string>
@@ -86,14 +86,14 @@
   <string name="send_unencrypted">Trimite necriptat</string>
   <string name="decryption_failed">Decriptarea a eșuat. Poate nu ai cheia privată corectă.</string>
   <string name="openkeychain_required">OpenKeychain</string>
-  <string name="openkeychain_required_long">Conversations utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți Conversations după)</small></string>
+  <string name="openkeychain_required_long">Pix-Art Messenger utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți Pix-Art Messenger după)</small></string>
   <string name="restart">Repornește</string>
   <string name="install">Instalare</string>
   <string name="openkeychain_not_installed">Va rugăm să instalați OpenKeychain</string>
   <string name="offering">transmit...</string>
   <string name="waiting">în așteptare...</string>
   <string name="no_pgp_key">Nu am găsit cheia OpenPGP</string>
-  <string name="contact_has_no_pgp_key">Conversations nu a putut să cripteze mesajele tale deoarece contactul nu își anunță cheia publică.\n\n<small>Rugați contactul să își configureze OpenPGP.</small></string>
+  <string name="contact_has_no_pgp_key">Pix-Art Messenger nu a putut să cripteze mesajele tale deoarece contactul nu își anunță cheia publică.\n\n<small>Rugați contactul să își configureze OpenPGP.</small></string>
   <string name="no_pgp_keys">Nu am găsit chei OpenPGP</string>
   <string name="pref_general">General</string>
   <string name="pref_xmpp_resource">Nume client XMPP</string>
@@ -159,7 +159,7 @@
   <string name="attach_record_voice">Înregistrare voce</string>
   <string name="account_settings_jabber_id">ID-ul Jabber</string>
   <string name="account_settings_password">Parolă</string>
-  <string name="account_settings_example_jabber_id">username@example.com</string>
+  <string name="account_settings_example_jabber_id">username@pix-art.de</string>
   <string name="account_settings_confirm_password">Confirmă parola</string>
   <string name="password">Parolă</string>
   <string name="invalid_jid">Acesta nu este un ID Jabber valabil</string>
@@ -216,7 +216,7 @@
   <string name="contact_already_exists">Contactul exista deja</string>
   <string name="join">Alatura-te</string>
   <string name="conference_address">Adresă discuție de grup</string>
-  <string name="conference_address_example">camera@conferinta.exemplu.ro/nume_utilizator</string>
+  <string name="conference_address_example">grupchat@room.pix-art.de</string>
   <string name="save_as_bookmark">Salvează semn de carte</string>
   <string name="delete_bookmark">Șterge semn de carte</string>
   <string name="bookmark_already_exists">Acest semn de carte exista</string>
@@ -256,7 +256,7 @@
   <string name="pref_allow_message_correction">Permite corecția mesajelor</string>
   <string name="pref_allow_message_correction_summary">Contactele pot să își editeze mesajele scrise în trecut</string>
   <string name="pref_expert_options">Opțiuni expert</string>
-  <string name="title_activity_about">Despre Conversations</string>
+  <string name="title_activity_about">Despre</string>
   <string name="pref_about_conversations_summary">Informații despre versiune și licență</string>
   <string name="title_pref_quiet_hours">Ore de liniște</string>
   <string name="title_pref_quiet_hours_start_time">Ora de începere</string>
@@ -305,7 +305,7 @@
   <string name="verified">Verificat!</string>
   <string name="smp_requested">Contactul a cerut verificare SMP</string>
   <string name="no_otr_session_found">Nu s-a găsit nici o sesiune OTR validă</string>
-  <string name="conversations_foreground_service">Conversations</string>
+  <string name="conversations_foreground_service">Pix-Art Messenger</string>
   <string name="pref_export_logs">Exportă istoric</string>
   <string name="pref_export_logs_summary">Scrie istoricul conversațiilor pe cardul SD</string>
   <string name="notification_export_logs_title">Se scrie jurnal pe card SD</string>
@@ -399,7 +399,7 @@
   <string name="apk">Aplicație Android</string>
   <string name="vcard">Contact</string>
   <string name="received_x_file">Primit %s</string>
-  <string name="touch_to_open_conversations">Atinge pentru a deschide Conversations</string>
+  <string name="touch_to_open_conversations">Atingeți pentru a deschide Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatarul a fost publicat!</string>
   <string name="sending_x_file">Trimit %s</string>
   <string name="offering_x_file">Ofer %s</string>
@@ -487,11 +487,11 @@
   <string name="load_more_messages">Încarcă mai multe mesaje</string>
   <string name="shared_file_with_x">Partajează fișierul cu %s...</string>
   <string name="shared_image_with_x">Partajează imaginea cu %s.</string>
-  <string name="no_storage_permission">Conversations are nevoie de acces la stocarea externa</string>
+  <string name="no_storage_permission">Pix-Art Messenger are nevoie de acces la stocarea externa</string>
   <string name="shared_images_with_x">Partajează imaginile cu %s.</string>
   <string name="shared_text_with_x">Partajează textul cu %s</string>
   <string name="sync_with_contacts">Sincronizează cu contactele</string>
-  <string name="sync_with_contacts_long">Conversations dorește să potrivească lista de contacte XMPP cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nConversations doar va citi și potrivi local fără să le încarce pe vreun server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
+  <string name="sync_with_contacts_long">Pix-Art Messenger dorește să potrivească lista de contacte XMPP cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nPix-Art Messenger doar va citi și potrivi local fără să le încarce pe vreun server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
   <string name="certificate_information">Informații despre certificat</string>
   <string name="certificate_subject">Subiect</string>
   <string name="certificate_issuer">
@@ -509,7 +509,7 @@ Emitent</string>
   <string name="pref_picture_compression_summary">Redimensionează și comprimă imaginile</string>
   <string name="always">Mereu</string>
   <string name="battery_optimizations_enabled">Optimizare baterie activată</string>
-  <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru Conversations, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
+  <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru Pix-Art Messenger, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
   <string name="battery_optimizations_enabled_dialog">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul 
 bateriei pentru Conversations, asta poate duce la notificări întârziate 
 sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
