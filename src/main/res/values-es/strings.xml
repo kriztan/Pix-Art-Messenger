@@ -563,6 +563,7 @@
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
+  <string name="creating_conference">Crear chat de grupo…</string>
   <string name="import_text">Se ha encontrado una copia de seguridad que se puede importar,\ny es posible que se le pregunte si desea desinstalar una versión anterior o Conversaciones y su Messenger se reiniciará durante el proceso de importación. ¿Desea importar la copia de seguridad? </string>
   <string name="import_database">Importar copia de seguridad</string>
   <string name="invite_again">Invitar de nuevo</string>
@@ -597,6 +598,7 @@
   <string name="unable_to_update_account">No se ha podido actualizar la cuenta</string>
   <string name="missing_presence_subscription_with_x">Se ha perdido la suscripción de presencia con %s.</string>
   <string name="missing_keys_from_x">Se ha perdido la clave OMEMO de %s.</string>
+  <string name="this_conference_has_no_members">No hay miembros en este grupo.</string>
   <string name="report_jid_as_spammer">Reportar a este Id Jabber por enviar mensajes no deseados</string>
   <string name="create_issue">Notificar una incidencia</string>
   <string name="pref_delete_omemo_identities">Eliminar identidades OMEMO</string>
