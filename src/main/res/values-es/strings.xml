@@ -428,6 +428,7 @@
   <string name="choose_quick_action">Elegir acción rápida</string>
   <string name="search_for_contacts_or_groups">Buscar contactos o grupos</string>
   <string name="send_private_message">Enviar mensaje privado</string>
+  <string name="user_has_left_conference">¡%s ha dejado el grupo!</string>
   <string name="username">Usuario</string>
   <string name="username_hint">Usuario</string>
   <string name="invalid_username">Esto no es un usuario válido</string>
@@ -558,7 +559,8 @@
   <string name="share_location">Compartir ubicación</string>
   <string name="location_sharing_disabled">La ubicación compartida está deshabilitada en la configuración</string>
   <string name="locating">Localizando...</string>
-  <string name="leave_conference_warning">¿Realmente quieres dejar este grupo de chat? Ya no se le notificarán los mensajes nuevos hasta que vuelva a unirse al grupo de chat.</string>
+  <string name="action_end_conversation_muc">Salir del grupo</string>
+  <string name="leave_conference_warning">¿Realmente quieres dejar este grupo de chat? Ya no se te notificaran los mensajes nuevos hasta que te vuelvas a unir al grupo.</string>
   <string name="show_password">Mostrar contraseña</string>
   <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
   <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
