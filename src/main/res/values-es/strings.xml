@@ -379,6 +379,7 @@
   <string name="moderated">Moderada</string>
   <string name="you_are_not_participating">No estás participando</string>
   <string name="modified_conference_options">¡Opciones de chat de grupo modificadas!</string>
+  <string name="could_not_modify_conference_options">Las opciones del grupo no se pudon cambiar</string>
   <string name="never">Nunca</string>
   <string name="thirty_minutes">30 minutos</string>
   <string name="one_hour">1 hora</string>
@@ -535,6 +536,7 @@
   <string name="no_participants">No participantes</string>
   <string name="correct_message">Corregir mensaje</string>
   <string name="send_corrected_message">Enviar mensaje corregido</string>
+  <string name="no_keys_just_confirm">Ya confías en este contacto. Seleccionando \'hecho\', estás confirmando que %s es parte de este grupo.</string>
   <string name="select_image_and_crop">Seleccionar imagen y recortar</string>
   <string name="contacts_have_no_pgp_keys">Pix-Art Messenger no ha podido cifrar tus mensajes porque tus contactos no están anunciando su clave publica.\n\n<small>Por favor, pide a tus contactos que configuren OpenPGP.</small></string>
   <string name="this_account_is_disabled">Has deshabilitado esta cuenta</string>
