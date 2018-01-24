@@ -289,6 +289,9 @@
   <string name="toast_message_otr_fingerprint">¡Huella digital OTR copiada al portapapeles!</string>
   <string name="toast_message_omemo_fingerprint">¡Huella digital OMEMO copiada al portapapeles!</string>
   <string name="conference_banned">Tu entrada a este grupo ha sido prohibido</string>
+  <string name="conference_members_only">Este grupo es sólo para miembros</string>
+  <string name="conference_kicked">Te echaron de este grupo</string>
+  <string name="conference_shutdown">El grupo se cerró</string>
   <string name="using_account">Usando cuenta %s</string>
   <string name="checking_x">Comprobando %s en servidor HTTP</string>
   <string name="not_connected_try_again">No estás conectado. Inténtalo más tarde</string>
@@ -378,6 +381,7 @@
   <string name="remove_membership">Revocar privilegios de miembro</string>
   <string name="grant_admin_privileges">Conceder privilegios de administrador</string>
   <string name="remove_admin_privileges">Revocar privilegios de administrador</string>
+  <string name="remove_from_room">Eliminar del grupo</string>
   <string name="could_not_change_affiliation">No se puede cambiar la afiliación de %s</string>
   <string name="ban_from_conference">Desterrar del grupo</string>
   <string name="removing_from_public_conference">Estás intentando expulsar a %s de un grupo de acceso público. La única forma de hacer esto es prohibir su entrada para siempre.</string>
@@ -424,6 +428,7 @@
   <string name="location">Ubicación</string>
   <string name="received_location">Ubicación recibida</string>
   <string name="title_undo_swipe_out_conversation">Conversación cerrada</string>
+  <string name="title_undo_swipe_out_muc">Salir del grupo</string>
   <string name="pref_dont_trust_system_cas_title">No confiar en los CAs del sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos los certificados deben ser aprobados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
