@@ -233,6 +233,7 @@
   <string name="delete_bookmark">Eliminar marcador</string>
   <string name="bookmark_already_exists">Este marcador ya existe</string>
   <string name="action_edit_subject">Editar tema del grupo</string>
+  <string name="edit_subject_hint">El tema de este grupo</string>
   <string name="joining_conference">Unirse al chat de grupo…</string>
   <string name="leave">Salir</string>
   <string name="contact_added_you">El contacto te ha añadido a su lista de contactos</string>
@@ -255,6 +256,7 @@
   <string name="skip">Omitir</string>
   <string name="disable_notifications">Deshabilitar notificaciones</string>
   <string name="enable">Habilitar</string>
+  <string name="conference_requires_password">El chat de grupo requiere contraseña</string>
   <string name="enter_password">Introduce la contraseña</string>
   <string name="request_presence_updates">Por favor, solicita la suscripción de presencia a tu contacto primero.\n\n<small>Esto se usará para determinar qué cliente(s) está usando tu contacto.</small></string>
   <string name="request_now">Solicitar ahora</string>
@@ -282,8 +284,11 @@
   <string name="pref_use_send_button_to_indicate_status_summary">El color del botón enviar indica el estado del contacto</string>
   <string name="pref_use_colored_names_to_indicate_status_summary">Colorear el nombre del contacto para mostrar su estado en línea</string>
   <string name="pref_expert_options_other">Otros</string>
+  <string name="pref_autojoin">Unirse automáticamente a los chats de grupo</string>
+  <string name="pref_autojoin_summary">Respetar la opción de unirse automáticamente de los marcadores de las conversaciones en grupo</string>
   <string name="toast_message_otr_fingerprint">¡Huella digital OTR copiada al portapapeles!</string>
   <string name="toast_message_omemo_fingerprint">¡Huella digital OMEMO copiada al portapapeles!</string>
+  <string name="conference_banned">Tu entrada a este grupo ha sido prohibido</string>
   <string name="using_account">Usando cuenta %s</string>
   <string name="checking_x">Comprobando %s en servidor HTTP</string>
   <string name="not_connected_try_again">No estás conectado. Inténtalo más tarde</string>
