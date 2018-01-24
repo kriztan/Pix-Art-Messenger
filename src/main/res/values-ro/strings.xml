@@ -521,13 +521,13 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="send_corrected_message">Trimite text corectat</string>
   <string name="no_keys_just_confirm">Deja aveți încredere în acest contact. Selectând \'gata\' doar confirmați că %s ia parte la această discuție de grup.</string>
   <string name="select_image_and_crop">Selectează imaginea și decupează</string>
-  <string name="contacts_have_no_pgp_keys">Conversations nu poate cripta mesajele tale către contactele tale care nu își anunță cheia publică.\n\n<small>Vă rugăm să cereți contactelor să configureze OpenPGP.</small></string>
+  <string name="contacts_have_no_pgp_keys">Pix-Art Messenger nu poate cripta mesajele tale către contactele tale care nu își anunță cheia publică.\n\n</string>
   <string name="this_account_is_disabled">Ați dezactivat acest cont</string>
   <string name="security_error_invalid_file_access">Eroare de securitate.: Acces fișier invalid</string>
   <string name="no_application_to_share_uri">Nu s-a găsit nici o aplicație care să partajeze adresa</string>
   <string name="share_uri_with">Partajează adresa cu...</string>
   <string name="welcome_text">XMPP este un protocol independent ce nu depinde de un anume furnizor. Aveți posibilitatea să utilizați acest client cu orice server XMPP doriți.\nTotuși, pentru confortul dumneavoastră, am facilitat crearea unui cont pe conversations.im¹; un furnizor potrivit pentru utilizarea cu aplicația Conversations.</string>
-  <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont pe conversations.im.¹\nCând alegeți conversations.im ca furnizor veți putea comunica cu utilizatorii altor furnizori oferindu-le ID-ul dumneavoastră Jabber.</string>
+  <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți păstra sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le ID-ul dumneavoastră Jabber.</string>
   <string name="your_full_jid_will_be">ID-ul Jabber va fi: %s</string>
   <string name="create_account">Creează cont</string>
   <string name="pick_your_username">Alege un nume de utilizator</string>
@@ -553,7 +553,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="creating_conference">Se creează discuția de grup...</string>
   <string name="invite_again">Trimite din nou invitația</string>
   <string name="pref_broadcast_last_activity">Anunță ultima interacțiune</string>
-  <string name="pref_broadcast_last_activity_summary">Anunță contactele când folosești Conversations</string>
+  <string name="pref_broadcast_last_activity_summary">Anunță contactele când folosiți Pix-Art Messenger</string>
   <string name="unable_to_connect_to_keychain">Nu s-a putut contacta OpenKeychain</string>
   <string name="this_device_is_no_longer_in_use">Acest dispozitiv nu mai este in uz</string>
   <string name="payment_required">Este necesar să efectuați o plată</string>
@@ -582,8 +582,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="show_error_message">Arată mesaj de eroare</string>
   <string name="error_message">Mesaj de eroare</string>
   <string name="data_saver_enabled">Economizorul de date este activat</string>
-  <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Conversations atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Conversations atunci când Economizorul de date este activ.\nConversations totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
-  <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru Conversations.</string>
+  <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Pix-Art Messenger atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Pix-Art Messenger atunci când Economizorul de date este activ.\nPix-Art Messenger totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
+  <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru Pix-Art Messenger.</string>
   <string name="error_unable_to_create_temporary_file">Nu se poate crea un fișier temporar</string>
   <string name="this_device_has_been_verified">Acest dispozitiv a fost verificat</string>
   <string name="copy_fingerprint">Copiază amprenta</string>
