@@ -55,8 +55,8 @@
   <string name="unblock">Odblokuj</string>
   <string name="save">Zapisz</string>
   <string name="ok">Ok</string>
-  <string name="crash_report_title">Conversations uległo awarii</string>
-  <string name="crash_report_message">Wysyłając ślady stosu pomagasz rozwijać Conversations\n<b>Uwaga:</b> Ślad stosu zostanie przesłany deweloperowi przy użyciu twojego konta XMPP.</string>
+  <string name="crash_report_title">Pix-Art Messenger uległo awarii</string>
+  <string name="crash_report_message">Wysyłając ślady stosu pomagasz rozwijać Pix-Art Messenger\n<b>Uwaga:</b> Ślad stosu zostanie przesłany deweloperowi przy użyciu twojego konta XMPP.</string>
   <string name="send_now">Wyślij teraz</string>
   <string name="send_never">Nie pytaj ponownie</string>
   <string name="problem_connecting_to_account">Nie można połączyć się z kontem</string>
@@ -85,14 +85,14 @@
   <string name="send_unencrypted">Wyślij bez szyfrowania</string>
   <string name="decryption_failed">Nie można odszyfrować. Sprawdź poprawność klucza prywatnego.</string>
   <string name="openkeychain_required">OpenKeychain</string>
-  <string name="openkeychain_required_long">Conversations używa zewnętrznej aplikacji <b>OpenKeychain</b> do szyfrowania wiadomości i zarządzania kluczami publicznymi.\n\nOpenKeychain rozpowszechniany jest na licencji GPLv3 przez F-Droid lub Google Play.\n\n<small>(Zrestartuj Conversations po instalacji).</small></string>
+  <string name="openkeychain_required_long">Pix-Art Messenger używa zewnętrznej aplikacji <b>OpenKeychain</b> do szyfrowania wiadomości i zarządzania kluczami publicznymi.\n\nOpenKeychain rozpowszechniany jest na licencji GPLv3 przez F-Droid lub Google Play.\n\n<small>(Zrestartuj Pix-Art Messenger po instalacji).</small></string>
   <string name="restart">Zrestartuj</string>
   <string name="install">Zainstaluj</string>
   <string name="openkeychain_not_installed">Proszę zainstalować OpenKeychain</string>
   <string name="offering">oferowanie...</string>
   <string name="waiting">oczekiwanie...</string>
   <string name="no_pgp_key">Nie znaleziono klucza OpenPGP</string>
-  <string name="contact_has_no_pgp_key">Conversations nie może zaszyfrować wiadomości, ponieważ kontakt nie udostępnia klucza publicznego.\n\n<small>Zasugeruj rozmówcy instalację OpenPGP.</small></string>
+  <string name="contact_has_no_pgp_key">Pix-Art Messenger nie może zaszyfrować wiadomości, ponieważ kontakt nie udostępnia klucza publicznego.\n\n<small>Zasugeruj rozmówcy instalację OpenPGP.</small></string>
   <string name="no_pgp_keys">Nie znaleziono kluczy OpenPGP</string>
   <string name="pref_general">Główne</string>
   <string name="pref_xmpp_resource">Zasób XMPP</string>
@@ -246,7 +246,7 @@
   <string name="pref_allow_message_correction">Pozwól na poprawianie wiadomości</string>
   <string name="pref_allow_message_correction_summary">Pozwól swoim kontaktom poprawiać wiadomości</string>
   <string name="pref_expert_options">Ustawienia zaawansowane</string>
-  <string name="title_activity_about">O Conversations</string>
+  <string name="title_activity_about">O Pix-Art Messenger</string>
   <string name="pref_about_conversations_summary">Informacje o kompilacji i licencji</string>
   <string name="title_pref_quiet_hours">Godziny ciszy</string>
   <string name="title_pref_quiet_hours_start_time">Początek</string>
@@ -373,7 +373,7 @@
   <string name="apk">Aplikacja Androida</string>
   <string name="vcard">Kontakt</string>
   <string name="received_x_file">Odebrano %s</string>
-  <string name="touch_to_open_conversations">Dotknij, aby otworzyć Conversations</string>
+  <string name="touch_to_open_conversations">Dotknij, aby otworzyć Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar został pomyślnie opublikowany!</string>
   <string name="sending_x_file">Wysyłanie %s</string>
   <string name="offering_x_file">Oferowanie %s</string>
@@ -459,11 +459,11 @@
   <string name="load_more_messages">Załaduj wiecej wiadomości</string>
   <string name="shared_file_with_x">Dzielony plik z %s</string>
   <string name="shared_image_with_x">Dzielony obraz z %s</string>
-  <string name="no_storage_permission">Conversations potrzebuje dostęp do zewnętrznego magazynu</string>
+  <string name="no_storage_permission">Pix-Art Messenger potrzebuje dostęp do zewnętrznego magazynu</string>
   <string name="shared_images_with_x">Obraz udostępniony %s</string>
   <string name="shared_text_with_x">Tekst udostępniony %s</string>
   <string name="sync_with_contacts">Synchronizuj z kontaktami</string>
-  <string name="sync_with_contacts_long">Conversations chce dopasować Twoje kontakty XMPP z listą kontaktów w telefonie, by uzupełnić ich pełne imiona oraz awatary.\nConversations jedynie przeczyta Twoje kontakty i dopasuje je lokalnie, bez wysyłania na Twój serwer.\n\nZostaniesz teraz poproszony o przydzielenie pozwolenia na odczyt Twoich kontaktów.</string>
+  <string name="sync_with_contacts_long">Pix-Art Messenger chce dopasować Twoje kontakty XMPP z listą kontaktów w telefonie, by uzupełnić ich pełne imiona oraz awatary.\n\nPix-Art Messenger jedynie przeczyta Twoje kontakty i dopasuje je lokalnie, bez wysyłania na Twój serwer.\n\nZostaniesz teraz poproszony o przydzielenie pozwolenia na odczyt Twoich kontaktów.</string>
   <string name="certificate_information">Informacja o certyfikacie</string>
   <string name="certificate_subject">Temat</string>
   <string name="certificate_issuer">Wystawca</string>
@@ -480,8 +480,8 @@
   <string name="pref_picture_compression_summary">Zmień rozmiar i kompresuj obrazki</string>
   <string name="always">Zawsze</string>
   <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
-  <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Conversations, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
-  <string name="battery_optimizations_enabled_dialog">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Conversations, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZostaniesz teraz poproszony o ich wyłączenie</string>
+  <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
+  <string name="battery_optimizations_enabled_dialog">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\n\nZostaniesz teraz poproszony o ich wyłączenie.</string>
   <string name="disable">Wyłącz</string>
   <string name="selection_too_large">Zaznaczony obszar jest zbyt duży</string>
   <string name="no_accounts">(Brak aktywynych kont)</string>
@@ -489,13 +489,10 @@
   <string name="correct_message">Popraw wiadomość</string>
   <string name="send_corrected_message">Wyślij poprawioną wiadomość</string>
   <string name="select_image_and_crop">Wybierz i przytnij obraz</string>
-  <string name="contacts_have_no_pgp_keys">Conversations nie może zaszyfrować wiadomości, ponieważ kontakty nie udostępniają kluczy publicznych.\n\n<small>Zasugeruj rozmówcom instalację OpenPGP.</small></string>
   <string name="this_account_is_disabled">Wyłączyłeś to konto</string>
   <string name="security_error_invalid_file_access">Błąd bezpieczeństwa: nieprawidłowy dostęp do pliku</string>
   <string name="no_application_to_share_uri">Nie odnaleziono aplikacji skojarzonej z URI</string>
   <string name="share_uri_with">Udostępnij URI za pomocą...</string>
-  <string name="welcome_text">XMPP jest protokołem niezależnym od dostawcy usług. Możesz używać tego klienta z dowolnym serwerem XMPP.\nJednak dla Twojej wygody ułatwiliśmy Ci stworzenie konta na conversations.im, serwerze specjalnie przystosowanym do używania z Conversations.</string>
-  <string name="magic_create_text">Przeprowadzimy Cię przez proces tworzenia konta na conversations.im.\nKiedy wybierzesz konto na serwerze conversations.im, będziesz mógł komunikować się z użytkownikami na innych serwerach podając im swój pełen Jabber ID.</string>
   <string name="your_full_jid_will_be">Twój pełen Jabber ID będzie następujący: %s</string>
   <string name="create_account">Utwórz Konto</string>
   <string name="pick_your_username">Wybierz nazwę użytkownika</string>
@@ -518,7 +515,7 @@
   <string name="choose_participants">Wybierz członków</string>
   <string name="invite_again">Zaproś ponownie</string>
   <string name="pref_broadcast_last_activity">Dziel się ostatnią interakcją.</string>
-  <string name="pref_broadcast_last_activity_summary">Powiadamiaj kontakty, że używasz Conversations</string>
+  <string name="pref_broadcast_last_activity_summary">Powiadamiaj kontakty, że używasz Pix-Art Messenger</string>
   <string name="unable_to_connect_to_keychain">Nie można połączyć się z OpenKeychain</string>
   <string name="this_device_is_no_longer_in_use">Urządzenie to nie jest już używane</string>
   <string name="payment_required">Płatność wymagana</string>
@@ -545,9 +542,9 @@
   <string name="show_error_message">Pokaż komunikaty błędów</string>
   <string name="error_message">Komunikat o Błędzie</string>
   <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
-  <string name="data_saver_enabled_explained">Twój system operacyjny blokuje dostęp do internetu Conversations, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Conversations nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
-Conversations będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe.</string>
-  <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Conversations.</string>
+  <string name="data_saver_enabled_explained">Twój system operacyjny blokuje dostęp do internetu Pix-Art Messenger, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Pix-Art Messenger nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
+Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe.</string>
+  <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
   <string name="error_unable_to_create_temporary_file">Niemożna utworzyć pliku tymczasowego</string>
   <string name="this_device_has_been_verified">To urządzenie zostało zweryfikowane</string>
   <string name="copy_fingerprint">Skopiuj odcisk</string>
