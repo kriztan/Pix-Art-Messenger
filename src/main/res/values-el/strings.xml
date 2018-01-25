@@ -50,8 +50,8 @@
   <string name="unblock">Άρση αποκλεισμού</string>
   <string name="save">Αποθήκευση</string>
   <string name="ok">Εντάξει</string>
-  <string name="crash_report_title">Το Conversations έκλεισε απροσδόκητα</string>
-  <string name="crash_report_message">Στέλνοντας ίχνη στοίβας προωθείτε την συνεχή ανάπτυξη του Conversations\n<b>Προειδοποίηση:</b> Για την αποστολή του ίχνους στοίβας θα χρησιμοποιηθεί ο XMPP λογαριασμός σας.</string>
+  <string name="crash_report_title">Το Pix-Art Messenger έκλεισε απροσδόκητα</string>
+  <string name="crash_report_message">Στέλνοντας ίχνη στοίβας προωθείτε την συνεχή ανάπτυξη του Pix-Art Messenger\n<b>Προειδοποίηση:</b> Για την αποστολή του ίχνους στοίβας θα χρησιμοποιηθεί ο XMPP λογαριασμός σας.</string>
   <string name="send_now">Αποστολή τώρα</string>
   <string name="send_never">Χωρίς ερώτηση την επόμενη φορά</string>
   <string name="problem_connecting_to_account">Αδύνατη η σύνδεση στον λογαριασμό</string>
@@ -72,13 +72,13 @@
   <string name="send_unencrypted">Αποστολή χωρίς κρυπτογράφηση</string>
   <string name="decryption_failed">Η αποκρυπτογράφηση απέτυχε. Ίσως δεν κατέχετε το σωστό ιδιωτικό κλειδί.</string>
   <string name="openkeychain_required">OpenKeychain</string>
-  <string name="openkeychain_required_long">Το Conversations χρησιμοποιεί μια τρίτη εφαρμογή που ονομάζεται <b>OpenKeychain</b> για να κρυπτογραφεί και να αποκρυπτογραφεί μηνύματα και να διαχειρίζεται τα δημόσια κλειδιά σας.\n\nΤο OpenKeychain δημοσιεύεται με την άδεια GPLv3 και είναι διαθέσιμο στο F-Droid και το Google Play.\n\n<small>(Παρακαλώ επανεκκινήστε το Conversations αμέσως μετά.)</small></string>
+  <string name="openkeychain_required_long">Το Pix-Art Messenger χρησιμοποιεί μια τρίτη εφαρμογή που ονομάζεται <b>OpenKeychain</b> για να κρυπτογραφεί και να αποκρυπτογραφεί μηνύματα και να διαχειρίζεται τα δημόσια κλειδιά σας.\n\nΤο OpenKeychain δημοσιεύεται με την άδεια GPLv3 και είναι διαθέσιμο στο F-Droid και το Google Play.\n\n<small>(Παρακαλώ επανεκκινήστε το Pix-Art Messenger αμέσως μετά.)</small></string>
   <string name="restart">Επανεκκίνηση</string>
   <string name="install">Εγκατάσταση</string>
   <string name="offering">προσφορά...</string>
   <string name="waiting">αναμονή...</string>
   <string name="no_pgp_key">Δεν βρέθηκε κλειδί OpenPGP</string>
-  <string name="contact_has_no_pgp_key">Το Conversations αδυνατεί να κρυπτογραφήσει τα μηνύματά σας γιατί η επαφή σας δεν ανακοινώνει το δημόσιο κλειδί της.\n\n<small>Παρακαλώ ζητήστε από την επαφή σας να εγκαταστήσει το OpenPGP.</small></string>
+  <string name="contact_has_no_pgp_key">Το Pix-Art Messenger αδυνατεί να κρυπτογραφήσει τα μηνύματά σας γιατί η επαφή σας δεν ανακοινώνει το δημόσιο κλειδί της.\n\n<small>Παρακαλώ ζητήστε από την επαφή σας να εγκαταστήσει το OpenPGP.</small></string>
   <string name="no_pgp_keys">Δεν βρέθηκαν κλειδιά OpenPGP</string>
   <string name="pref_general">Γενικά</string>
   <string name="pref_xmpp_resource">πόρος XMPP</string>
@@ -191,7 +191,7 @@
   <string name="sure_delete_fingerprint">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το αποτύπωμα;</string>
   <string name="ignore">Αγνόηση</string>
   <string name="without_mutual_presence_updates"><b>Προειδοποίηση:</b> Η αποστολή αυτού χωρίς αμφίδρομες ενημερώσεις παρουσίας μπορεί να προκαλέσει απροσδόκητα προβλήματα.\n\n<small>Πηγαίνετε στις λεπτομέρειες επαφής για να επαληθεύσετε τις συνδρομές παρουσίας σας.</small></string>
-  <string name="title_activity_about">Σχετικά με το Conversations</string>
+  <string name="title_activity_about">Σχετικά με το Pix-Art Messenger</string>
   <string name="pref_about_conversations_summary">Πληροφορίες δημιουργίας και αδειών</string>
   <string name="title_pref_quiet_hours">Ώρες ησυχίας</string>
   <string name="title_pref_quiet_hours_start_time">Ώρα έναρξης</string>
@@ -291,7 +291,7 @@
   <string name="apk">Εφαρμογή Android</string>
   <string name="vcard">Επαφή</string>
   <string name="received_x_file">Λήψη του %s</string>
-  <string name="touch_to_open_conversations">Επιλέξτε για να ανοίξετε το Conversations</string>
+  <string name="touch_to_open_conversations">Επιλέξτε για να ανοίξετε το Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Η εικόνα προφίλ έχει δημοσιευτεί!</string>
   <string name="sending_x_file">Αποστολή του %s</string>
   <string name="offering_x_file">Προσφορά του %s</string>
@@ -319,6 +319,5 @@
     <item quantity="one">Επιλογή %d επαφής</item>
     <item quantity="other">Επιλογή %d επαφών</item>
   </plurals>
-  <string name="contacts_have_no_pgp_keys">Το Conversations αδυνατεί να κρυπτογραφήσει τα μηνύματά σας γιατί οι επαφές σας δεν ανακοινώνουν το δημόσιο κλειδί τους.\n\n<small>Παρακαλώ ζητήστε από τις επαφές σας να εγκαταστήσουν το OpenPGP.</small></string>
   <string name="contact_has_read_up_to_this_point">Η επαφή %s έχει διαβάσει μέχρι αυτό το σημείο</string>
 </resources>
