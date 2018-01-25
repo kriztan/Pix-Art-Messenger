@@ -238,7 +238,7 @@
   <string name="pref_allow_message_correction">Povolit opravu zpráv</string>
   <string name="pref_allow_message_correction_summary">Povolí kontaktům zpětné upravování jejich zpráv</string>
   <string name="pref_expert_options">Expertní nastavení</string>
-  <string name="title_activity_about">O aplikaci Conversations</string>
+  <string name="title_activity_about">O aplikaci Pix-Art Messenger</string>
   <string name="pref_about_conversations_summary">Informace o sestavení a licenci</string>
   <string name="title_pref_quiet_hours">Tichý režim</string>
   <string name="title_pref_quiet_hours_start_time">Odkdy</string>
@@ -358,7 +358,7 @@
   <string name="apk">Aplikace pro Android</string>
   <string name="vcard">Kontakt</string>
   <string name="received_x_file">%s přijat</string>
-  <string name="touch_to_open_conversations">Ťuknout pro otevření Konverzace</string>
+  <string name="touch_to_open_conversations">Ťuknout pro otevření Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar byl zveřejněn!</string>
   <string name="sending_x_file">Odesílám %s</string>
   <string name="offering_x_file">Nabízím %s</string>
@@ -440,11 +440,11 @@
   <string name="load_more_messages">Načíst více zpráv</string>
   <string name="shared_file_with_x">Soubor sdílen s %s</string>
   <string name="shared_image_with_x">Obrázek sdílen s %s</string>
-  <string name="no_storage_permission">Conversations vyžaduje přístup k externímu úložišti</string>
+  <string name="no_storage_permission">Pix-Art Messenger vyžaduje přístup k externímu úložišti</string>
   <string name="shared_images_with_x">Obrázky sdíleny s %s</string>
   <string name="shared_text_with_x">Text sdílen s %s</string>
   <string name="sync_with_contacts">Synchronizovat s kontakty</string>
-  <string name="sync_with_contacts_long">Aplikace Conversations by ráda porovnala svůj XMPP seznam s vašimi kontakty, aby mohla zobrazit plná jména a avatary.\n\nConversations načte a porovná kontakty pouze lokálně, bez jejich nahrávání na server.\n\nNyní budete dotázáni na udělení práv pro přístup k seznamu kontaktů.</string>
+  <string name="sync_with_contacts_long">Aplikace Pix-Art Messenger by ráda porovnala svůj XMPP seznam s vašimi kontakty, aby mohla zobrazit plná jména a avatary.\n\nPix-Art Messenger načte a porovná kontakty pouze lokálně, bez jejich nahrávání na server.\n\nNyní budete dotázáni na udělení práv pro přístup k seznamu kontaktů.</string>
   <string name="certificate_information">Informace certifikátu</string>
   <string name="certificate_subject">Předmět</string>
   <string name="certificate_issuer">Vydavatel</string>
@@ -460,8 +460,8 @@
   <string name="pref_picture_compression_summary">Upravit velikost a komprimovat obrázky</string>
   <string name="always">Vždy</string>
   <string name="battery_optimizations_enabled">Povolena optimalizace využití baterie</string>
-  <string name="battery_optimizations_enabled_explained">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci Conversations. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nJe doporučeno tyto vypnout.</string>
-  <string name="battery_optimizations_enabled_dialog">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci Conversations. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nnyní budete vyzváni k jejich vypnutí.</string>
+  <string name="battery_optimizations_enabled_explained">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci Pix-Art Messenger. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nJe doporučeno tyto vypnout.</string>
+  <string name="battery_optimizations_enabled_dialog">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci Pix-Art Messenger. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nnyní budete vyzváni k jejich vypnutí.</string>
   <string name="disable">Vypnout</string>
   <string name="selection_too_large">Vybraný obsah je příliš dlouhý</string>
   <string name="no_accounts">(Žádné aktivované účty)</string>
@@ -474,8 +474,6 @@
   <string name="security_error_invalid_file_access">Chyba zabezpečení: Neplatný přístup k souboru</string>
   <string name="no_application_to_share_uri">Nebyla nalezena aplikace pro sdílení URI</string>
   <string name="share_uri_with">Sdílet URI s...</string>
-  <string name="welcome_text">XMPP je protokol nezávislý na poskytovateli. Tohoto klienta můžete použít s jakýmkoliv XMPP serverem dle svého výběru.\nPro lepší uživatelskou přívětivost jsme připravili možnost vytvořit účet u conversations.im¹; poskytovatele speciálné připraveného pro použití s aplikací Conversations.</string>
-  <string name="magic_create_text">Provedeme vás procesem založení uživatelského účtu u conversations.im.¹\nVybráním conversations.im za svého poskytovatele budete moci komunikovat s uživateli u jiných poskytovatelů, poté co jim sdělíte své Jabber ID.</string>
   <string name="your_full_jid_will_be">Vaše celé Jabber ID bude: %s</string>
   <string name="create_account">Vytvořit účet</string>
   <string name="pick_your_username">Zadejte své uživatelské jméno</string>
@@ -498,7 +496,7 @@
   <string name="choose_participants">Vybrat účastníky</string>
   <string name="invite_again">Pozvat znovu</string>
   <string name="pref_broadcast_last_activity">Odeslat poslední uživatelskou interakci</string>
-  <string name="pref_broadcast_last_activity_summary">Dát vědět všem kontaktům kdy používáte Conversations</string>
+  <string name="pref_broadcast_last_activity_summary">Dát vědět všem kontaktům kdy používáte Pix-Art Messenger</string>
   <string name="unable_to_connect_to_keychain">Nelze se spojit s OpenKeychain</string>
   <string name="this_device_is_no_longer_in_use">Tento přístoj již není používán</string>
   <string name="payment_required">Vyžadována platba</string>
@@ -521,8 +519,8 @@
   <string name="show_error_message">Zobrazit chybovou zprávu</string>
   <string name="error_message">Chybová zpráva</string>
   <string name="data_saver_enabled">Zapnuta úspora dat</string>
-  <string name="data_saver_enabled_explained">Váš operační systém zabraňuje aplikaci Conversations v přístupu na Internet, pokud tato běží na pozadí. Pro příjem upozornění na nové zprávy musíte Conversations povolit neomezený přístup při zapnuté úspoře dat.\nConversations se bude i přesto snažit omezovat přenos dat.</string>
-  <string name="device_does_not_support_data_saver">Tento přístroj nepodporuje vypnutí šetření dat pro aplikaci Conversations.</string>
+  <string name="data_saver_enabled_explained">Váš operační systém zabraňuje aplikaci Pix-Art Messenger v přístupu na Internet, pokud tato běží na pozadí. Pro příjem upozornění na nové zprávy musíte Pix-Art Messenger povolit neomezený přístup při zapnuté úspoře dat.\nPix-Art Messenger se bude i přesto snažit omezovat přenos dat.</string>
+  <string name="device_does_not_support_data_saver">Tento přístroj nepodporuje vypnutí šetření dat pro aplikaci Pix-Art Messenger.</string>
   <string name="error_unable_to_create_temporary_file">Nelze vytvořit dočasný soubor</string>
   <string name="this_device_has_been_verified">Tento přístroj byl ověřen</string>
   <string name="copy_fingerprint">Kopírovat identifikátor</string>
