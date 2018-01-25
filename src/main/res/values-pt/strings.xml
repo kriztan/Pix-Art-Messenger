@@ -53,7 +53,7 @@
   <string name="unblock">Desbloquear</string>
   <string name="save">Guardar</string>
   <string name="ok">OK</string>
-  <string name="crash_report_title">Conversations teve um problema e deixou de funcionar</string>
+  <string name="crash_report_title">Pix-Art Messenger teve um problema e deixou de funcionar</string>
   <string name="crash_report_message">Ao enviar os stack traces você ajudará o desenvolvimento do aplicativo\n<b>Atenção:</b> Isso usará a sua conta XMPP para enviar o stack trace para o desenvolvedor.</string>
   <string name="send_now">Enviar agora</string>
   <string name="send_never">Não perguntar novamente</string>
@@ -83,14 +83,14 @@
   <string name="send_unencrypted">Enviar não cifrada</string>
   <string name="decryption_failed">A decifragem falhou. Talvez  não tenha a chave privada correta.</string>
   <string name="openkeychain_required">OpenKeychain</string>
-  <string name="openkeychain_required_long">Conversations utiliza uma aplicação de terceiros chamada <b>OpenKeychain</b> para cifrar e decifrar mensagens e gerir as suas chaves públicas.\n\nOpenKeychain é licenciado sob a licença GPLv3 e está disponível no F-Droid e Google Play.\n\n<small>(Por favor reinicie Conversations em seguida)</small></string>
+  <string name="openkeychain_required_long">Pix-Art Messenger utiliza uma aplicação de terceiros chamada <b>OpenKeychain</b> para cifrar e decifrar mensagens e gerir as suas chaves públicas.\n\nOpenKeychain é licenciado sob a licença GPLv3 e está disponível no F-Droid e Google Play.\n\n<small>(Por favor reinicie Pix-Art Messenger em seguida)</small></string>
   <string name="restart">Reiniciar</string>
   <string name="install">Instalar</string>
   <string name="openkeychain_not_installed">Por favor instale o OpenKeychain</string>
   <string name="offering">oferecendo...</string>
   <string name="waiting">aguardando...</string>
   <string name="no_pgp_key">Nenhuma chave OpenPGP encontrada</string>
-  <string name="contact_has_no_pgp_key">Conversations não é capaz de cifrar as suas mensagens porque o seu contacto não está a anunciar a sua chave pública.\n\n<small>Por favor peça ao seu contacto para configurar o OpenPGP.</small></string>
+  <string name="contact_has_no_pgp_key">Pix-Art Messenger não é capaz de cifrar as suas mensagens porque o seu contacto não está a anunciar a sua chave pública.\n\n<small>Por favor peça ao seu contacto para configurar o OpenPGP.</small></string>
   <string name="no_pgp_keys">Não foram encontradas chaves OpenPGP</string>
   <string name="pref_general">Geral</string>
   <string name="pref_xmpp_resource">Recurso XMPP</string>
@@ -231,7 +231,7 @@
   <string name="pref_allow_message_correction">Permitir a correção de mensagens</string>
   <string name="pref_allow_message_correction_summary">Permitir que os seus contactos editem as suas mensagens depois de enviadas</string>
   <string name="pref_expert_options">Definições avançadas</string>
-  <string name="title_activity_about">Sobre Conversations</string>
+  <string name="title_activity_about">Sobre Pix-Art Messenger</string>
   <string name="pref_about_conversations_summary">Informação de licença e construção</string>
   <string name="title_pref_quiet_hours">Horas de tranquilidade</string>
   <string name="title_pref_quiet_hours_start_time">Hora de início</string>
@@ -349,7 +349,7 @@
   <string name="apk">Aplicação Android</string>
   <string name="vcard">Contacto</string>
   <string name="received_x_file">Recebeu %s</string>
-  <string name="touch_to_open_conversations">Toque para abrir Conversations</string>
+  <string name="touch_to_open_conversations">Toque para abrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">O avatar foi publicado!</string>
   <string name="sending_x_file">Enviando %s</string>
   <string name="offering_x_file">Oferecendo %s</string>
@@ -424,11 +424,11 @@
   <string name="load_more_messages">Carregar mais mensagens</string>
   <string name="shared_file_with_x">Ficheiro partilhado com %s</string>
   <string name="shared_image_with_x">Imagem partilhada com %s</string>
-  <string name="no_storage_permission">Conversations necessita de acesso ao armazenamento externo</string>
+  <string name="no_storage_permission">Pix-Art Messenger necessita de acesso ao armazenamento externo</string>
   <string name="shared_images_with_x">Imagens partilhadas com %s</string>
   <string name="shared_text_with_x">Mensagem partilhada com %s</string>
   <string name="sync_with_contacts">Sincronizar com contactos</string>
-  <string name="sync_with_contacts_long">A aplicação Conversations deseja fazer a correspondência entre a sua lista de contactos XMPP e os seus contactos para mostrar os seus nomes completos e os seus avatares.\n\nA aplicação Conversations irá apenas ler os seus contactos e fazer a correspondência localmente sem enviar os dados para o seu servidor.\n\nIrá agora ser-lhe pedido para dar permissão para aceder aos seus contactos.</string>
+  <string name="sync_with_contacts_long">A aplicação Pix-Art Messenger deseja fazer a correspondência entre a sua lista de contactos XMPP e os seus contactos para mostrar os seus nomes completos e os seus avatares.\n\nA aplicação Pix-Art Messenger irá apenas ler os seus contactos e fazer a correspondência localmente sem enviar os dados para o seu servidor.\n\nIrá agora ser-lhe pedido para dar permissão para aceder aos seus contactos.</string>
   <string name="certificate_information">Informação do Certificado</string>
   <string name="certificate_subject">Assunto</string>
   <string name="certificate_issuer">Emissor</string>
@@ -444,8 +444,8 @@
   <string name="pref_picture_compression_summary">Redimensionar e comprimir fotografias</string>
   <string name="always">Sempre</string>
   <string name="battery_optimizations_enabled">Otimizações da bateria ativadas</string>
-  <string name="battery_optimizations_enabled_explained">O seu dispositivo está a fazer otimizações de bateria bastante agressivas na aplicação Conversations que poderão levar a notificações atrasadas ou até mesmo a perda de mensagens.\nÉ recomendado que as desative.</string>
-  <string name="battery_optimizations_enabled_dialog">O seu dispositivo está a fazer otimizações de bateria bastantes agressivas na aplicação Conversations que poderão levar a notificações atrasadas ou até mesmo perda de mensagens.\n\nIrá-lhe agora ser pedido para desativá-las.</string>
+  <string name="battery_optimizations_enabled_explained">O seu dispositivo está a fazer otimizações de bateria bastante agressivas na aplicação Pix-Art Messenger que poderão levar a notificações atrasadas ou até mesmo a perda de mensagens.\nÉ recomendado que as desative.</string>
+  <string name="battery_optimizations_enabled_dialog">O seu dispositivo está a fazer otimizações de bateria bastantes agressivas na aplicação Pix-Art Messenger que poderão levar a notificações atrasadas ou até mesmo perda de mensagens.\n\nIrá-lhe agora ser pedido para desativá-las.</string>
   <string name="disable">Desativar</string>
   <string name="selection_too_large">A área selecionada é demasiado grande</string>
   <string name="no_accounts">(Nenhuma conta ativada)</string>
@@ -453,7 +453,6 @@
   <string name="correct_message">Corrigir mensagem</string>
   <string name="send_corrected_message">Enviar mensagem corrigida</string>
   <string name="select_image_and_crop">Selecione imagem e corte</string>
-  <string name="contacts_have_no_pgp_keys">Conversations não é capaz de cifrar as suas mensagens porque os seus contactos não estão a anunciar as suas chaves públicas.\n\n<small>Por favor peça aos seus contactos para configurarem o OpenPGP.</small></string>
   <string name="this_account_is_disabled">Desativou esta conta</string>
   <string name="security_error_invalid_file_access">Erro de segurança: Acesso ao ficheiro inválido</string>
   <string name="no_application_to_share_uri">Não foi encontrada nenhuma aplicação para partilhar o URI</string>
