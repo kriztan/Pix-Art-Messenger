@@ -752,6 +752,8 @@
   <string name="invalid_muc_nick">Apodo inválido</string>
   <string name="title_activity_share_via_account">Compartir a través de cuenta</string>
   <string name="private_messages_are_disabled">Los mensajes privados están desactivados</string>
+  <string name="destroy_muc">Eliminar el chat de grupo</string>
+  <string name="conference_unknown_error">Ya no estás en este chat de grupo</string>
   <string name="action_destroy_muc">Destruye el chat de grupo</string>
   <string name="destroy_muc_text">¿Quieres eliminar el grupo %s? Esto eliminará este grupo de chat permanentemente.</string>
 </resources>
