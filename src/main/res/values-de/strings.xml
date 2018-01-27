@@ -753,6 +753,5 @@
   <string name="title_activity_share_via_account">Teilen mit Profil</string>
   <string name="private_messages_are_disabled">Private Nachrichten sind deaktiviert</string>
   <string name="conference_unknown_error">Du bist nicht länger in diesem Gruppenchat</string>
-  <string name="action_destroy_muc">Gruppenchat auflösen</string>
   <string name="destroy_muc_text">Möchtest du den Gruppenchat %s auflösen? Dies wird den Gruppenchat dauerhaft entfernen.</string>
 </resources>
