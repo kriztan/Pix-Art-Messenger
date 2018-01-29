@@ -17,6 +17,8 @@
   <string name="action_unblock_domain">Deblochează domeniu</string>
   <string name="title_activity_manage_accounts">Configurează conturile</string>
   <string name="title_activity_settings">Setări</string>
+  <string name="title_activity_conference_details">Detalii discuție de grup</string>
+  <string name="title_activity_contact_details">Detalii contact</string>
   <string name="title_activity_sharewith">Partajează într-o conversație</string>
   <string name="title_activity_start_conversation">Pornește o conversație</string>
   <string name="title_activity_choose_contact">Alege contact</string>
@@ -108,6 +110,7 @@
   <string name="pref_led_summary">Clipește lumina de notificare atunci când este primit un mesaj nou</string>
   <string name="pref_sound">Sunet de notificare</string>
   <string name="pref_sound_summary">Notificare sonoră atunci când este primit un mesaj nou</string>
+  <string name="pref_send_crash">Trimite rapoartele de eroare</string>
   <string name="pref_confirm_messages">Confirmă mesajele</string>
   <string name="pref_confirm_messages_summary">Contactele sunt notificate atunci când ați primit un mesaj și l-ați citit</string>
   <string name="pref_ui_options">Opțiuni interfață</string>
@@ -147,6 +150,7 @@
   <string name="encryption_choice_otr">OTR</string>
   <string name="encryption_choice_pgp">OpenGPG</string>
   <string name="encryption_choice_omemo">OMEMO</string>
+  <string name="mgmt_account_edit">Editare cont</string>
   <string name="mgmt_account_delete">Șterge cont</string>
   <string name="mgmt_account_publish_avatar">Publică avatar</string>
   <string name="mgmt_account_publish_pgp">Publică cheia publică OpenPGP</string>
@@ -299,6 +303,7 @@
   <string name="confirm">Confirmă</string>
   <string name="in_progress">În desfășurare</string>
   <string name="respond">Raspunde</string>
+  <string name="failed">Eșuat</string>
   <string name="secrets_do_not_match">Secretele nu se potrivesc</string>
   <string name="try_again">Încearcă din nou</string>
   <string name="finish">Încheie</string>
@@ -403,6 +408,7 @@
   <string name="sending_x_file">Trimit %s</string>
   <string name="offering_x_file">Ofer %s</string>
   <string name="hide_offline">Ascunde deconectat</string>
+  <string name="is_typing">tastează…</string>
   <string name="pref_chat_states">Notificare tastare</string>
   <string name="pref_chat_states_summary">Anunță contactul când scrii un nou mesaj</string>
   <string name="send_location">Trimite locația</string>
@@ -444,7 +450,10 @@
   <string name="download_failed_server_not_found">Descărcare eșuată: Serverul nu a fost găsit</string>
   <string name="download_failed_file_not_found">Descărcare eșuată: Fișierul nu a fost găsit</string>
   <string name="download_failed_could_not_connect">Descărcare eșuată: Nu s-a putut realiza conexiunea cu gazda.</string>
+  <string name="elv_undo">anulează</string>
   <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
+  <string name="remind_later">mai târziu</string>
+  <string name="update">actualizează</string>
   <string name="account_status_tor_unavailable">Rețeaua Tor nu este disponibilă</string>
   <string name="account_status_bind_failure">Eroare de conexiune</string>
   <string name="account_status_host_unknown">Gazdă fără domeniu</string>
@@ -472,6 +481,7 @@
   <string name="error_fetching_omemo_key">Eroare la preluarea cheii OMEMO!</string>
   <string name="verified_omemo_key_with_certificate">Verifica cheia OMEMO cu un certificat</string>
   <string name="device_does_not_support_certificates">Dispozitivul nu permite selectia unui certificat pentru client!</string>
+  <string name="changelog">Istoric schimbări</string>
   <string name="account_settings_hostname">Nume gazdă</string>
   <string name="account_settings_port">Port</string>
   <string name="hostname_or_onion">Adresă server sau .onion</string>
@@ -514,6 +524,8 @@ bateriei pentru Conversations, asta poate duce la notificări întârziate
 sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
   <string name="disable">Dezactivează</string>
   <string name="selection_too_large">Zona selectată este prea mare</string>
+  <string name="yes">Da</string>
+  <string name="no">Nu</string>
   <string name="no_accounts">(Nici un cont activat)</string>
   <string name="this_field_is_required">Acest câmp este obligatoriu</string>
   <string name="correct_message">Corecție mesaj</string>
@@ -525,10 +537,12 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="security_error_invalid_file_access">Eroare de securitate.: Acces fișier invalid</string>
   <string name="no_application_to_share_uri">Nu s-a găsit nici o aplicație care să partajeze adresa</string>
   <string name="share_uri_with">Partajează adresa cu...</string>
+  <string name="mgmt_account_reconnect">Reconectare</string>
   <string name="welcome_text">XMPP este un protocol independent ce nu depinde de un anume furnizor. Aveți posibilitatea să utilizați acest client cu orice server XMPP doriți.\nTotuși, pentru confortul dumneavoastră, am facilitat crearea unui cont pe conversations.im¹; un furnizor potrivit pentru utilizarea cu aplicația Conversations.</string>
   <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți păstra sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le ID-ul dumneavoastră Jabber.</string>
   <string name="your_full_jid_will_be">ID-ul Jabber va fi: %s</string>
   <string name="create_account">Creează cont</string>
+  <string name="use_existing_accout">Folosește un cont existent</string>
   <string name="pick_your_username">Alege un nume de utilizator</string>
   <string name="pref_manually_change_presence">Schimbă manual setarea de prezență</string>
   <string name="pref_manually_change_presence_summary">Atinge-ți avatarul pentru a-ți schimba starea de prezență</string>
@@ -542,6 +556,9 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="presence_dnd">Ocupat/ă</string>
   <string name="secure_password_generated">O parolă sigură a fost generată</string>
   <string name="device_does_not_support_battery_op">Dispozitivul dumneavoastră nu suportă dezactivarea optimizării de baterie pentru această aplicație</string>
+  <string name="share">Partajează</string>
+  <string name="share_location">Partajează locația</string>
+  <string name="action_end_conversation_muc">Părăsește discuția de grup</string>
   <string name="show_password">Arată parola</string>
   <string name="registration_please_wait">Înregistrare eșuată: Încercați din nou mai târziu</string>
   <string name="registration_password_too_weak">Înregistrare eșuată: Parolă nesigură</string>
