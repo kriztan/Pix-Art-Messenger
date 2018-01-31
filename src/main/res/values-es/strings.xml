@@ -595,7 +595,7 @@
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
   <string name="creating_conference">Crear chat de grupo…</string>
-  <string name="import_text">Se ha encontrado una copia de seguridad que se puede importar,\ny es posible que se le pregunte si desea desinstalar una versión anterior o Conversaciones y su Messenger se reiniciará durante el proceso de importación. ¿Desea importar la copia de seguridad? </string>
+  <string name="import_text">Se ha encontrado una copia de seguridad que se puede importar,\ny es posible que te preguntan si desea desinstalar una versión anterior o Pix-Art Messenger y el Mensajero se reiniciará durante el proceso de importación. ¿Desea importar la copia de seguridad? </string>
   <string name="import_database">Importar copia de seguridad</string>
   <string name="invite_again">Invitar de nuevo</string>
   <string name="inviteUser_Subject">te ha invitado a través de</string>
