@@ -17,6 +17,7 @@
   <string name="action_unblock_domain">Domainin engelini kaldır</string>
   <string name="title_activity_manage_accounts">Hesapları Yönet</string>
   <string name="title_activity_settings">Ayarlar</string>
+  <string name="title_activity_conference_details">Grup sohbeti detayı</string>
   <string name="title_activity_contact_details">Kişi Detayları</string>
   <string name="title_activity_sharewith">Sohbetle paylaş</string>
   <string name="title_activity_start_conversation">Konuşma Başlat</string>
@@ -215,9 +216,11 @@
   <string name="done">Bitti</string>
   <string name="verify">Doğrula</string>
   <string name="decrypt">Şifreyi çöz</string>
+  <string name="conferences">Grup sohbeti</string>
   <string name="search">Ara</string>
   <string name="create_contact">Kişi oluştur</string>
   <string name="enter_contact">İletişim Kur</string>
+  <string name="join_conference">Grup sohbetine katıl</string>
   <string name="delete_contact">Kişiyi sil</string>
   <string name="view_contact_details">Kişi ayrıntılarını gör</string>
   <string name="block_contact">Kişiyi engelle</string>
@@ -226,6 +229,8 @@
   <string name="select">Seç</string>
   <string name="contact_already_exists">Kişi zaten mevcut</string>
   <string name="join">Katıl</string>
+  <string name="conference_address">Grup sohbeti adresi</string>
+  <string name="conference_address_example">groupchat@room.pix-art.de</string>
   <string name="save_as_bookmark">Yer imi olarak kaydet</string>
   <string name="delete_bookmark">Yer imini sil</string>
   <string name="bookmark_already_exists">Bu yer imi zaten var</string>
