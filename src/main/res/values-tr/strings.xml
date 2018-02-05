@@ -234,6 +234,9 @@
   <string name="save_as_bookmark">Yer imi olarak kaydet</string>
   <string name="delete_bookmark">Yer imini sil</string>
   <string name="bookmark_already_exists">Bu yer imi zaten var</string>
+  <string name="action_edit_subject">Grup sohbeti konusunu düzenle</string>
+  <string name="edit_subject_hint">Grubun konusu</string>
+  <string name="joining_conference">Sohbet Grubuna bağlanılıyor…</string>
   <string name="leave">Ayrıl</string>
   <string name="contact_added_you">Kişi sizi kişi listesine ekledi</string>
   <string name="add_back">Geri ekle</string>
@@ -255,6 +258,7 @@
   <string name="skip">Geç</string>
   <string name="disable_notifications">Bildirimleri devre dışı bırak</string>
   <string name="enable">Etkinleştir</string>
+  <string name="conference_requires_password">Grup sohbeti için şifre gerekiyor</string>
   <string name="enter_password">Şifreyi girin</string>
   <string name="request_presence_updates">Lütfen öncelikle iletişim bilgilerinizden durum güncellemeleri isteğinde bulunun.\n\n<small>Bu, görüşmenin hangi alıcı(lar) ile kullandığını belirlemek için kullanılacaktır.</small></string>
   <string name="request_now">Şimdi isteyin</string>
@@ -282,8 +286,10 @@
   <string name="pref_use_send_button_to_indicate_status_summary">Kişi durumunu belirtmek için gönder butonunu renklendir</string>
   <string name="pref_use_colored_names_to_indicate_status_summary">Kişi durumunu belirtmek için kişi adlarını renklendirin</string>
   <string name="pref_expert_options_other">Diğer</string>
+  <string name="pref_autojoin">Otomatik olarak grup sohbetine bağlan</string>
   <string name="toast_message_otr_fingerprint">OTR parmak izi panoya kopyalandı!</string>
   <string name="toast_message_omemo_fingerprint">OMEMO parmak izi Panoya kopyalandı!</string>
+  <string name="conference_banned">Bu sohbet grubundan yasaklandınız</string>
   <string name="using_account">%s hesabını kullanıyor</string>
   <string name="checking_x">HTTP sunucusunda %s denetleniyor</string>
   <string name="not_connected_try_again">Bağlı değilsin. Daha sonra tekrar deneyin</string>
