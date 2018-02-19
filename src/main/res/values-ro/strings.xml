@@ -86,7 +86,7 @@
   <string name="send_pgp_message">Trimite mesaj criptat cu OpenPGP</string>
   <string name="your_nick_has_been_changed">Numele tău a fost schimbat</string>
   <string name="send_unencrypted">Trimite necriptat</string>
-  <string name="decryption_failed">Decriptarea a eșuat. Poate nu ai cheia privată corectă.</string>
+  <string name="decryption_failed">Decriptarea a eșuat. Poate nu aveți cheia privată corectă.</string>
   <string name="openkeychain_required">OpenKeychain</string>
   <string name="openkeychain_required_long">Pix-Art Messenger utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți Pix-Art Messenger după)</small></string>
   <string name="restart">Repornește</string>
@@ -128,7 +128,7 @@
   <string name="error_not_an_image_file">Fișierul selectat nu este o imagine</string>
   <string name="error_compressing_image">Eroare la conversia fișierului de imagine</string>
   <string name="error_file_not_found">Fișierul nu a fost găsit</string>
-  <string name="error_io_exception">Eroare I/O generala. Poate ai rămas fără spațiu liber?</string>
+  <string name="error_io_exception">Eroare I/O generala. Poate ați rămas fără spațiu liber?</string>
   <string name="error_security_exception_during_image_copy">Aplicația folosită pentru selecția acestei imagini nu a oferit destule permisiuni pentru a putea citi fișierul.\n\n<small>Folosește un alt manager de fișiere pentru a alege o imagine</small></string>
   <string name="account_status_unknown">Necunoscut</string>
   <string name="account_status_disabled">Dezactivat temporar</string>
@@ -183,13 +183,13 @@
   <string name="server_info_unavailable">indisponibil</string>
   <string name="missing_public_keys">Cheile publice ce nu au fost anunțate</string>
   <string name="last_seen_now">văzut/ă ultima dată adineauri</string>
-  <string name="last_seen_min">văzut/ă ultima dată acum un minut</string>
-  <string name="last_seen_mins">văzut/ă ultima dată acum %d minute</string>
+  <string name="last_seen_min">în urmă cu 1 minut</string>
+  <string name="last_seen_mins">în urmă cu %d minute</string>
   <string name="last_seen_hour">vazut ultima data acum o ora</string>
   <string name="last_seen_hours">vazut ultima data acum %d ore</string>
   <string name="last_seen_day">vazut ultima data acum o zi</string>
   <string name="last_seen_days">vazut ultima data acum %d zile</string>
-  <string name="install_openkeychain">Mesaj criptat. Te rog instalează OpenKeychain pentru a-l putea decripta.</string>
+  <string name="install_openkeychain">Mesaj criptat. Vă rog să instalați OpenKeychain pentru a-l putea decripta.</string>
   <string name="unknown_otr_fingerprint">Amprenta OTR necunoscuta</string>
   <string name="openpgp_messages_found">A fost găsit un mesaj criptat cu OpenPGP</string>
   <string name="your_fingerprint">Amprenta dumneavoastră</string>
@@ -355,7 +355,7 @@
   <string name="smp_explain_answer">Contactul dumneavoastră dorește să vă verifice amprenta provocându-vă cu un secret împărtășit. Contactul a furnizat următorul indiciu sau întrebare legat de acel secret.</string>
   <string name="shared_secret_hint_should_not_be_empty">Indiciul tău nu ar trebui să fie gol</string>
   <string name="shared_secret_can_not_be_empty">Secretul tău împărtășit nu poate fi gol</string>
-  <string name="manual_verification_explanation">Compară cu grijă amprenta afișata mai jos cu amprenta contactului.\nPoți folosi orice formă de comunicare de încredere precum un e-mail criptat sau o convorbire telefonică pentru a face schimb de amprente.</string>
+  <string name="manual_verification_explanation">Comparați cu grijă amprenta afișata mai jos cu amprenta contactului.\nPuteți folosi orice formă de comunicare de încredere precum un e-mail criptat sau o convorbire telefonică pentru a face schimb de amprente.</string>
   <string name="change_password">Schimbare parolă</string>
   <string name="current_password">Parolă curentă</string>
   <string name="new_password">Parolă nouă</string>
@@ -465,7 +465,7 @@
   <string name="pref_dnd_on_silent_mode_summary">Prezintă clientul drept \"Nu deranja\" atunci când dispozitivul este în mod silențios</string>
   <string name="pref_treat_vibrate_as_silent">Tratează modul vibrație ca silențios</string>
   <string name="pref_treat_vibrate_as_dnd_summary">Prezintă clientul drept \"Nu deranja\" atunci când dispozitivul este în mod vibrație</string>
-  <string name="hostname_example">xmpp.example.com</string>
+  <string name="hostname_example">xmpp.pix-art.de</string>
   <string name="action_add_account_with_certificate">Adaugă un cont cu certificat</string>
   <string name="unable_to_parse_certificate">Nu se poate analiza certificatul</string>
   <string name="authenticate_with_certificate">Lăsați gol pentru a autentifica cu un certificat</string>
@@ -538,7 +538,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="no_application_to_share_uri">Nu s-a găsit nici o aplicație care să partajeze adresa</string>
   <string name="share_uri_with">Partajează adresa cu...</string>
   <string name="mgmt_account_reconnect">Reconectare</string>
-  <string name="welcome_text">XMPP este un protocol independent ce nu depinde de un anume furnizor. Aveți posibilitatea să utilizați acest client cu orice server XMPP doriți.\nTotuși, pentru confortul dumneavoastră, am facilitat crearea unui cont pe conversations.im¹; un furnizor potrivit pentru utilizarea cu aplicația Conversations.</string>
+  <string name="welcome_text">…este un client XMPP/Jabber gratis și securizat.</string>
   <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți păstra sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le ID-ul dumneavoastră Jabber.</string>
   <string name="your_full_jid_will_be">ID-ul Jabber va fi: %s</string>
   <string name="create_account">Creează cont</string>
@@ -667,7 +667,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="contact_has_read_up_to_this_point">%s a citit până aici</string>
   <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s și încă %2$d au citit până aici</string>
   <string name="pref_return_to_previous">Partajare rapidă</string>
-  <string name="pref_return_to_previous_summary">După ce ai partajat ceva, întoarce-te la activitatea precedentă în loc să deschizi conversația</string>
+  <string name="pref_return_to_previous_summary">După ce ați partajat ceva, întoarce-te la activitatea precedentă în loc să deschizi conversația</string>
   <string name="invalid_muc_nick">Nume invalid</string>
   <string name="title_activity_share_via_account">Partajează cu cont</string>
 </resources>
