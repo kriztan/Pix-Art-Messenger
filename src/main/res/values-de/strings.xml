@@ -59,7 +59,7 @@
   <string name="save">Speichern</string>
   <string name="ok">OK</string>
   <string name="crash_report_title">Pix-Art Messenger ist abgestürzt</string>
-  <string name="crash_report_message">Durch das Einsenden von Fehlerberichten hilfst du bei der stetigen Verbesserung von Pix-Art Messenger.\n<b>Achtung:</b> Dies wird eines deiner XMPP-Profile benutzen, um den Entwickler zu kontaktieren.</string>
+  <string name="crash_report_message">Durch das Einsenden von Fehlerberichten hilfst du bei der stetigen Verbesserung von Pix-Art Messenger.\n<b>Achtung:</b> Dies wird dein XMPP-Profil benutzen, um den Entwickler zu kontaktieren.</string>
   <string name="send_now">Jetzt abschicken</string>
   <string name="send_never">Nie mehr nachfragen</string>
   <string name="problem_connecting_to_account">Es gibt Probleme beim Verbindungsaufbau mit einem Profil</string>
@@ -595,7 +595,7 @@
   <string name="conference_subject">Titel</string>
   <string name="choose_participants">Mitglieder auswählen</string>
   <string name="creating_conference">Gruppenchat wird erstellt…</string>
-  <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nMöglicherweise wirst du gefragt, ob du eine ältere Version oder Conversations deinstallieren möchtest und dein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden?</string>
+  <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nDein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden? </string>
   <string name="import_database">Backup importieren</string>
   <string name="invite_again">Erneut einladen</string>
   <string name="inviteUser_Subject">hat dich eingeladen über</string>
