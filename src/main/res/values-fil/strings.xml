@@ -63,5 +63,17 @@
   <string name="send_now">Ipadala ngayon</string>
   <string name="send_never">Huwat magtanong ulit</string>
   <string name="problem_connecting_to_account">Hindi makakonek ta sa account</string>
-  <string name="problem_connecting_to_accounts">Hindi makakonek sa maraminhang account</string>
+  <string name="problem_connecting_to_accounts">Hindi makakonek ta sa maramihang accounts</string>
+  <string name="touch_to_fix">Hawak dito para mamahala sa iyong account</string>
+  <string name="attach_file">Maglakip ng mga file</string>
+  <string name="not_in_roster">Ang kontak na ito ay wala pa sa iyong listahan. Gusto mo bang i-dagdag?</string>
+  <string name="add_contact">Magdagdag ng kontak</string>
+  <string name="send_failed">nabigo na paghatid</string>
+  <string name="preparing_image">Ihanda ang imahi para sa transmisyon</string>
+  <string name="preparing_images">Ihanda ang mga imahi para sa transmisyon</string>
+  <string name="sharing_files_please_wait">Pagbahagi ng mga dokumento. Pakiusap maghinay…</string>
+  <string name="action_clear_history">Linisin ang kasaysayan</string>
+  <string name="clear_conversation_history">Linisin ang napagusapan</string>
+  <string name="clear_histor_msg">Gusto mo bang e delete lahat ng mga mensahi sa loob ng usapang ito? <b>Babala:</b> Ito ay hindi mga mensahing implowensya na nakaimbak sa ibang mga aparato o servers.</string>
+  <string name="delete_messages">Tangalin ang mga mensahe</string>
 </resources>
