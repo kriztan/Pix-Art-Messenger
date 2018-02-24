@@ -94,11 +94,14 @@
   <string name="openkeychain_not_installed">Paki lagay ng OpenKeychain</string>
   <string name="offering">handog…</string>
   <string name="waiting">maghintay…</string>
-  <string name="no_pgp_key">Walang OpenPGP Key na nakita</string>
-  <string name="contact_has_no_pgp_key">Ang iyong mga mensahi sa Pix-Art Messenger ay hindi na encrypt dahil sa iyong contact na hindi nagpasabi sa public key. <small> Pakitanong sa iyong kontat na i-setup ang OpenPGP.</small></string>
-  <string name="no_pgp_keys">Walang OpenPGP na nakita</string>
-  <string name="pref_general">Pangkahalatan</string>
-  <string name="pref_xmpp_resource">XMPP resource</string>
+  <string name="no_pgp_key">Walang OpenPGP Key na natagpuan</string>
+  <string name="contact_has_no_pgp_key">Pix-Art Messenger ay hindi na encrypt sa iyong mensahe dahil sa iyong kontak na hindi nagpasabi sa public key.\n\n<small>Pakitanong sa iyo\nng kontat na i-setup ang OpenPGP.</small></string>
+  <string name="no_pgp_keys">Walang OpenPGP na natagpuan</string>
+  <string name="pref_general">Heneral</string>
+  <string name="pref_xmpp_resource">XMPP magkukunan</string>
   <string name="pref_xmpp_resource_summary">Ang pangalan ng cliyenting ito ay kinikilala sa</string>
   <string name="pref_accept_files_wifi">Tumangap ng mga dokumento gamit ang Wifi na koneksyon</string>
+  <string name="pref_accept_files_summary_wifi">Kapag nakonektado sa wifi automatikong tanggapin ang mga dokumento mas maliit sa…</string>
+  <string name="pref_accept_files_mobile">Tumanggap ng mga dokumento gamit ang mobile na koneksyon</string>
+  <string name="pref_accept_files_summary_mobile">Kapag nakonektado sa mobile data ito ay automatikong tumanggap ng maliliit na dokumento…</string>
 </resources>
