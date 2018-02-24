@@ -67,13 +67,16 @@
   <string name="touch_to_fix">Hawak dito para mamahala sa iyong account</string>
   <string name="attach_file">Maglakip ng mga file</string>
   <string name="not_in_roster">Ang kontak na ito ay wala pa sa iyong listahan. Gusto mo bang i-dagdag?</string>
-  <string name="add_contact">Magdagdag ng kontak</string>
-  <string name="send_failed">nabigo na paghatid</string>
-  <string name="preparing_image">Ihanda ang imahi para sa transmisyon</string>
-  <string name="preparing_images">Ihanda ang mga imahi para sa transmisyon</string>
-  <string name="sharing_files_please_wait">Pagbahagi ng mga dokumento. Pakiusap maghinay…</string>
+  <string name="add_contact">Dagdag kontak</string>
+  <string name="send_failed">nabigo ang paghahatid</string>
+  <string name="preparing_image">Paghahanda ng imahe para sa transmisyon</string>
+  <string name="preparing_images">Paghahanda ng mga imahi para sa transmisyon</string>
+  <string name="sharing_files_please_wait">Pagbahagi ng mga dokumento. Pakihintay…</string>
   <string name="action_clear_history">Linisin ang kasaysayan</string>
   <string name="clear_conversation_history">Linisin ang napagusapan</string>
   <string name="clear_histor_msg">Gusto mo bang e delete lahat ng mga mensahi sa loob ng usapang ito? <b>Babala:</b> Ito ay hindi mga mensahing implowensya na nakaimbak sa ibang mga aparato o servers.</string>
   <string name="delete_messages">Tangalin ang mga mensahe</string>
+  <string name="also_end_conversation">Tapusin itong kwentohan pagkatapos</string>
+  <string name="choose_presence">Pili ng aparato</string>
+  <string name="send_unencrypted_message">Magpadala ng unencrypted na mensahe</string>
 </resources>
