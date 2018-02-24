@@ -103,9 +103,9 @@
   <string name="pref_accept_files_wifi">Aceptar archivos en conexiones WiFi</string>
   <string name="pref_accept_files_summary_wifi">Cuando se conecta a wifi acepta automáticamente el descargo de archivos más pequeños que…</string>
   <string name="pref_accept_files_mobile">Aceptar archivos en conexiones de red móvil</string>
-  <string name="pref_accept_files_summary_mobile">Cuando se conecta a la red móvil acepta automáticamente el descargo de archivos más pequeños que…</string>
+  <string name="pref_accept_files_summary_mobile">Cuando se conecta a la red móvil acepta automáticamente descargar archivos más pequeños de…</string>
   <string name="pref_accept_files_mobileroaming">Aceptar archivos en conexiones roaming</string>
-  <string name="pref_accept_files_summary_mobileroaming">Cuando se conecta a la red móvil por roaming acepta automáticamente el descargo de archivos más pequeños que…</string>
+  <string name="pref_accept_files_summary_mobileroaming">Cuando se conecta a la red móvil por roaming acepta automáticamente descargar archivos más pequeños de…</string>
   <string name="pref_attachments">Adjuntos</string>
   <string name="pref_notification_settings">Notificación</string>
   <string name="pref_notifications">Notificaciones</string>
