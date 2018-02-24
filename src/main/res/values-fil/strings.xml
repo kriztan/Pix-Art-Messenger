@@ -79,7 +79,7 @@
   <string name="also_end_conversation">Tapusin itong kwentohan pagkatapos</string>
   <string name="choose_presence">Pili ng aparato</string>
   <string name="send_unencrypted_message">Magpadala ng unencrypted na mensahe</string>
-  <string name="send_message_to_x">Maghatid ng mensahi kay %s</string>
+  <string name="send_message_to_x">Ipadala ang mensahi kay %s</string>
   <string name="send_otr_message">Magpadala ng OTR encrypted message</string>
   <string name="send_omemo_message">Magpadala ng OMEMO encrypted message</string>
   <string name="send_omemo_x509_message">Magpadala v\\OMEMO encrypted message</string>
@@ -204,4 +204,27 @@
   <string name="openpgp_messages_found">OpenPGP encrypted na mga mensahe ay hindi na kita</string>
   <string name="your_fingerprint">Iyong fingerprint</string>
   <string name="otr_fingerprint">Bakas ng daliri para sa OTR</string>
+  <string name="otr_fingerprint_selected_message">Bakas ng dalire sa OTR ng mensahe</string>
+  <string name="openpgp_key_id">OpenPGP Key ID</string>
+  <string name="omemo_fingerprint">Bakas ng daliri para sa OMEMO</string>
+  <string name="omemo_fingerprint_x509">v\\OMEMO bakas ng daliri</string>
+  <string name="omemo_fingerprint_selected_message">OMEMO bakas ng daliri ng mensahe</string>
+  <string name="omemo_fingerprint_x509_selected_message">v\\OMEMO bakas ng daliri ng mensahe</string>
+  <string name="other_devices">Ibang aparato</string>
+  <string name="trust_omemo_fingerprints">Magtiwala sa OMEMO bakas ng daliri</string>
+  <string name="fetching_keys">Pagkuha ng keys…</string>
+  <string name="done">Natapos</string>
+  <string name="verify">I-verify</string>
+  <string name="decrypt">Decrypt</string>
+  <string name="conferences">Chat sa grupo</string>
+  <string name="search">Magsaliksik</string>
+  <string name="create_contact">Gumawa ng kontak</string>
+  <string name="enter_contact">Ipasok na kontak</string>
+  <string name="join_conference">Sumali sa pang-grupong chat</string>
+  <string name="delete_contact">Burahin ang kontak</string>
+  <string name="view_contact_details">Tingnan ang mga detalye sa kontak</string>
+  <string name="block_contact">Harangan ang kontak</string>
+  <string name="unblock_contact">Wag harangan ang kontak</string>
+  <string name="create">Lumikha</string>
+  <string name="select">Piliin</string>
 </resources>
