@@ -125,4 +125,15 @@
   <string name="accept">Taggapin</string>
   <string name="error">Isang mali ang naganap</string>
   <string name="pref_grant_presence_updates">Magbigay ng mga presensya sa pagbabago</string>
+  <string name="pref_grant_presence_updates_summary">Magbigay at mag hiling ng presensya sa suskripsyon para sa mga kontak na iyong nilikha</string>
+  <string name="your_account">Iyong account</string>
+  <string name="send_presence_updates">Magpadala ng mga presensya sa pagbabago</string>
+  <string name="receive_presence_updates">Tumanggap ng mga presensya sa pagbabago</string>
+  <string name="ask_for_presence_updates">Humingi ng mga presensya sa pagbabago</string>
+  <string name="attach_choose_picture">Mamili ng larawan</string>
+  <string name="attach_take_from_camera">Kumuha galing sa kamera</string>
+  <string name="preemptively_grant">Magbigay ng suskrisyong hiling</string>
+  <string name="error_not_an_image_file">Ang napili mong dokumento ay hindi imahe</string>
+  <string name="error_compressing_image">Nagkamali habang nagko-convert ng dokumentong imahe</string>
+  <string name="error_file_not_found">Hindi mahanap na file</string>
 </resources>
