@@ -236,4 +236,9 @@
   <string name="bookmark_already_exists">Umiiral na ang bookmark</string>
   <string name="action_edit_subject">I-edit ang paksa sa grupo ng chat</string>
   <string name="edit_subject_hint">Ang paksa ng pang grupong chat</string>
+  <string name="joining_conference">Sumali sa pang grupong chat…</string>
+  <string name="leave">Iwanan</string>
+  <string name="contact_added_you">Ikaw ay idinagdag ni kontak sa listahan ng kontak</string>
+  <string name="add_back">Idagdag ulit</string>
+  <string name="publish">I-publish</string>
 </resources>
