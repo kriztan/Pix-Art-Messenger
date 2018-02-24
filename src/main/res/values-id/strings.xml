@@ -582,10 +582,13 @@
   <string name="pref_delete_omemo_identities_summary">Regenerasi kunci OMEMO Anda. Semua kontak Anda harus memverifikasi Anda lagi. Gunakan ini hanya sebagai upaya terakhir.</string>
   <string name="delete_selected_keys">Hapus kunci yang dipilih</string>
   <string name="missing_presence_subscription">Langganan kehadiran hilang</string>
+  <string name="missing_omemo_keys">Kunci OMEMO yang hilang</string>
   <string name="error_publish_avatar_offline">Anda harus terhubung untuk mempublikasikan avatar Anda.</string>
   <string name="copy_to_clipboard">Menyalin ke clipboard</string>
   <string name="message_copied_to_clipboard">Pesan disalin ke clipboard</string>
   <string name="message">Pesan</string>
+  <string name="quote">Kutipan</string>
+  <string name="show_error_message">Tampilkan pesan kesalahan</string>
   <string name="data_saver_enabled">Penghemat data diaktifkan</string>
   <string name="data_saver_enabled_explained">Sistem operasi Anda membatasi Pix-Art Messenger untuk mengakses Internet saat berada di latar belakang. Untuk menerima notifikasi pesan baru, Anda harus mengizinkan akses Pix-Art Messenger tidak terbatas saat Penghemat data aktif. \\n Pix-Art Messenger masih akan berusaha untuk menyimpan data bila memungkinkan.</string>
   <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
