@@ -179,4 +179,24 @@
   <string name="receiving_x_file">Dawata %1$s(%2$d%% kumpleto)</string>
   <string name="download_x_file">Pag-download %s</string>
   <string name="delete_x_file">Tangtanga %s</string>
+  <string name="file">file</string>
+  <string name="open_x_file">Abli %s</string>
+  <string name="sending_file">pagpadala (%1$d%% kumpleto)</string>
+  <string name="preparing_file">Pagpreparar sa file para transmission</string>
+  <string name="x_file_offered_for_download">%s ang gitanyag alang sa pag-download</string>
+  <string name="cancel_transmission">Ayaw i-dayun ang transmission</string>
+  <string name="file_transmission_failed">napakyas ang tranmission sa file</string>
+  <string name="file_deleted">Ang file kay natangtang na</string>
+  <string name="no_application_found_to_open_file">Walay aplikasyun ang nakita para ablihan ang file</string>
+  <string name="could_not_verify_fingerprint">Dili ma tino ang fingerprint</string>
+  <string name="manually_verify">Tino-a kanunay</string>
+  <string name="are_you_sure_verify_fingerprint">Sigurado ka nga gusto nimu tinuon ang imuhang mga kontak sa OTR fingerprint?</string>
+  <string name="pref_show_dynamic_tags">Ipakita ang mga dinamikong tag</string>
+  <string name="pref_show_dynamic_tags_summary">Ipakita ang mabasa ra nga mga tag ilawon sa mga kontak</string>
+  <string name="no_conference_server_found">Walay grupo nga chat nga serber ang nakita</string>
+  <string name="conference_creation_failed">Napakyas ang pagbuhat sa Grupo nga chat!</string>
+  <string name="account_image_description">Avatar sa account</string>
+  <string name="copy_otr_clipboard_description">Kopya ang OTR fingerprint adto sa clipboard</string>
+  <string name="copy_omemo_clipboard_description">Kopya ang OMEMO fingerprint adto sa clipboard</string>
+  <string name="regenerate_omemo_key">Pag-usab sa OMEMO nga yawe</string>
 </resources>
