@@ -265,4 +265,7 @@
   <string name="delete_fingerprint">Burahin ang tatak ng daliri</string>
   <string name="sure_delete_fingerprint">Sigurado ka ba na gusto mong tanggalin itong fingerprint?</string>
   <string name="ignore">Balewalain</string>
+  <string name="without_mutual_presence_updates"><b>Babala:</b> Ang pagpapadala ng walang presensya sa kapwa na mga update ay maaring magdulot ng mga problema.\n\n<small>Magtungo sa kontak mg detalye upang everifika ang presensya ng iyong subskripsyons.</small></string>
+  <string name="pref_security_settings">Seguridad at datos proteksyon</string>
+  <string name="pref_allow_message_correction">Ipahintulot ang coreksyon ng mensahe</string>
 </resources>
