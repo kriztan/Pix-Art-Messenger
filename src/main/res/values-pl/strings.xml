@@ -394,16 +394,6 @@
   <string name="dialog_manage_certs_title">Usuń certyfikaty</string>
   <string name="dialog_manage_certs_positivebutton">Usuń zaznaczone</string>
   <string name="dialog_manage_certs_negativebutton">Anuluj</string>
-  <plurals name="toast_delete_certificates">
-    <item quantity="one">Usunięto %d certyfikat</item>
-    <item quantity="few">Usunięto %d certyfikaty</item>
-    <item quantity="other">Usunięto %d certyfikatów</item>
-  </plurals>
-  <plurals name="select_contact">
-    <item quantity="one">%d kontakt wybrany</item>
-    <item quantity="few">%d kontakty wybrane</item>
-    <item quantity="other">%d kontaktów wybranych</item>
-  </plurals>
   <string name="pref_quick_action_summary">Zastąp przycisk wysyłania szybką akcją</string>
   <string name="pref_quick_action">Szybka akcja</string>
   <string name="none">Brak</string>
@@ -451,11 +441,6 @@
   <string name="not_a_valid_port">To nie jest prawidłowy numer portu</string>
   <string name="not_valid_hostname">To nie jest prawidłowa nazwa hosta</string>
   <string name="connected_accounts">%1$d z %2$d kont połączonych</string>
-  <plurals name="x_messages">
-    <item quantity="one">%d wiadomość</item>
-    <item quantity="few">%d wiadomości</item>
-    <item quantity="other">%d wiadomości</item>
-  </plurals>
   <string name="load_more_messages">Załaduj wiecej wiadomości</string>
   <string name="shared_file_with_x">Dzielony plik z %s</string>
   <string name="shared_image_with_x">Dzielony obraz z %s</string>
