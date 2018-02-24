@@ -31,4 +31,19 @@
   <string name="message_decrypting">Mendeskripsi pesan. Mohon tunggu…</string>
   <string name="pgp_message">Pesan terenskripsi OpenPGP</string>
   <string name="nick_in_use">Nama panggilan ini sudah digunakan</string>
+  <string name="admin">Pengelola</string>
+  <string name="owner">Pemilik</string>
+  <string name="moderator">Penengah</string>
+  <string name="participant">Peserta</string>
+  <string name="visitor">Pengunjung</string>
+  <string name="remove_contact_text">Apakah anda ingin menghapus %s dari daftar anda? percakapan yang terkait dengan kontak ini tidak akan dihapus.</string>
+  <string name="block_contact_text">Apakah anda ingin memblokir %s agar tidak mengirimi anda pesan?</string>
+  <string name="unblock_contact_text">Apakah anda ingin membuka blokir %s dan mengizinkan mereka mengirimi anda pesan?</string>
+  <string name="block_domain_text">Blokir semua kontak dari %s?</string>
+  <string name="unblock_domain_text">Buka blokir semua kontak dari %s?</string>
+  <string name="contact_blocked">Kontak diblokir</string>
+  <string name="remove_bookmark_text">Apakah anda ingin menghapus %s sebagai penanda? percakapan yang terkait dengan penanda ini tidak akan dihapus.</string>
+  <string name="register_account">Daftar akun baru di server</string>
+  <string name="change_password_on_server">Ganti kata kunci di server</string>
+  <string name="share_with">Berbagi dengan…</string>
 </resources>
