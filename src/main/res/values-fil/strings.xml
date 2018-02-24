@@ -227,4 +227,13 @@
   <string name="unblock_contact">Wag harangan ang kontak</string>
   <string name="create">Lumikha</string>
   <string name="select">Piliin</string>
+  <string name="contact_already_exists">Mayroon ng kontak na umiiral</string>
+  <string name="join">Sumali</string>
+  <string name="conference_address">Address ng grupong chat</string>
+  <string name="conference_address_example">groupchat@room.pix-art.de</string>
+  <string name="save_as_bookmark">I-save bilang bookmark</string>
+  <string name="delete_bookmark">Burahin na bookmark</string>
+  <string name="bookmark_already_exists">Umiiral na ang bookmark</string>
+  <string name="action_edit_subject">I-edit ang paksa sa grupo ng chat</string>
+  <string name="edit_subject_hint">Ang paksa ng pang grupong chat</string>
 </resources>
