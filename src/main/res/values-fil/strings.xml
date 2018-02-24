@@ -99,9 +99,11 @@
   <string name="no_pgp_keys">Walang OpenPGP na natagpuan</string>
   <string name="pref_general">Heneral</string>
   <string name="pref_xmpp_resource">XMPP magkukunan</string>
-  <string name="pref_xmpp_resource_summary">Ang pangalan ng cliyenting ito ay kinikilala sa</string>
-  <string name="pref_accept_files_wifi">Tumangap ng mga dokumento gamit ang Wifi na koneksyon</string>
+  <string name="pref_xmpp_resource_summary">Ang pangalan ng cliyenting ito ay nagpapakilala sa kanyang sarili</string>
+  <string name="pref_accept_files_wifi">Tanggapin ang mga dokumento sa pamamagitan ng wifi koneksyon</string>
   <string name="pref_accept_files_summary_wifi">Kapag nakonektado sa wifi automatikong tanggapin ang mga dokumento mas maliit sa…</string>
   <string name="pref_accept_files_mobile">Tumanggap ng mga dokumento gamit ang mobile na koneksyon</string>
   <string name="pref_accept_files_summary_mobile">Kapag nakonektado sa mobile data ito ay automatikong tumanggap ng maliliit na dokumento…</string>
+  <string name="pref_accept_files_mobileroaming">Tumanggap ng mga dokumento gamit ang mobile roaming na mga koneksyon</string>
+  <string name="pref_accept_files_summary_mobileroaming">Kapag nakakonektado sa mobile data na roaming ito ay automatikong tumanggap ng mga dokumentong maliliit…</string>
 </resources>
