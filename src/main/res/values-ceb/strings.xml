@@ -199,4 +199,8 @@
   <string name="copy_otr_clipboard_description">Kopya ang OTR fingerprint adto sa clipboard</string>
   <string name="copy_omemo_clipboard_description">Kopya ang OMEMO fingerprint adto sa clipboard</string>
   <string name="regenerate_omemo_key">Pag-usab sa OMEMO nga yawe</string>
+  <string name="clear_other_devices">Klaruha ang mga device</string>
+  <string name="clear_other_devices_desc">Sigurado ka nga gusto nimu limpyuhan ang uban nga mga device gekan sa OMEMO nga pahibalo? Ang sunod oras sa imung mga device masumpay, mu pahibalo lang sila mismo balik, pero basin wala sila kadawat sa mga mensahe sa pagkakarun.</string>
+  <string name="distrust_omemo_key">Dili makasaligan nga device</string>
+  <string name="distrust_omemo_key_text">Sigurado ka nga gusto nimu tanggalun ang pag tino sa kini nga device?\n Kini nga device ug mga mensahe nga naggikan sa maong device markahan nga dili matuohan.</string>
 </resources>
