@@ -10,4 +10,23 @@
   <string name="action_add_account">Mag dagdag ng account</string>
   <string name="action_edit_contact">I-edit ang pangalan</string>
   <string name="action_add_phone_book">Mag dagdag sa address book</string>
+  <string name="action_delete_contact">Burahin sa listahan</string>
+  <string name="action_block_contact">Harangan ang kontak</string>
+  <string name="action_unblock_contact">Wag harangan ang kontak</string>
+  <string name="action_block_domain">Harangan ang domain</string>
+  <string name="action_unblock_domain">Wag harangan ang domain</string>
+  <string name="title_activity_manage_accounts">Mamahala ng mga account</string>
+  <string name="title_activity_settings">Mga setting</string>
+  <string name="title_activity_conference_details">Grupo ng detalye sa chat</string>
+  <string name="title_activity_contact_details">Mga detalyi sa kontak</string>
+  <string name="title_activity_sharewith">Ibahagi ang pag-uusap</string>
+  <string name="title_activity_start_conversation">Simulan ang pag-uusap</string>
+  <string name="title_activity_choose_contact">Pumili ng kontak</string>
+  <string name="title_activity_block_list">Lista ng naharang</string>
+  <string name="just_now">ngayon lang</string>
+  <string name="minute_ago">1 minutong lumipas</string>
+  <string name="minutes_ago">%d minutong lumipas</string>
+  <string name="unread_conversations">hindi nabasang pag-uusap</string>
+  <string name="sending">pinapadala…</string>
+  <string name="message_decrypting">Nag gawa ng mga mensahi. Pakiusap maghintay…</string>
 </resources>
