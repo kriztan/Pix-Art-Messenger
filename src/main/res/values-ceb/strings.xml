@@ -134,4 +134,26 @@
   <string name="save_as_bookmark">Sagupa ingun sa bookmark</string>
   <string name="delete_bookmark">Tangtanga ang bookmark</string>
   <string name="bookmark_already_exists">Ang kini nga bookmark kay naa na daan</string>
+  <string name="action_edit_subject">I-edit ang subject sa grupo nga chat</string>
+  <string name="edit_subject_hint">Ang subject sa kini nga grupo sa chat</string>
+  <string name="joining_conference">Pag-apil sa grupo sa chat…</string>
+  <string name="leave">Hawa</string>
+  <string name="contact_added_you">Ang kontak ge puno ka sa lista sa kontak</string>
+  <string name="add_back">Pun-e pabalik</string>
+  <string name="touch_to_choose_picture">Hikapa ang avatar para makapili ug litrato gekan sa gallery</string>
+  <string name="error_publish_avatar_server_reject">Ang serber kay wala dawata ang imung publikasyon</string>
+  <string name="error_publish_avatar_converting">Naay butang nga nahitabo ug sayop samtang nagkabig sa imung litrato</string>
+  <string name="error_saving_avatar">Dili maluwas ang avatar padong sa disk</string>
+  <string name="or_long_press_for_default">(O dugay nga mapislet para sa pagdala balik nga default)</string>
+  <string name="error_publish_avatar_no_server_support">Ang imung serber kay wala nag supporta sa publikasyon sa imung mga avatar</string>
+  <string name="private_message">hong-hong</string>
+  <string name="private_message_to">para %s</string>
+  <string name="send_private_message_to">Pagpadala ug pribado nga mensahe sa %s</string>
+  <string name="connect">Sumpay</string>
+  <string name="account_already_exists">Ang kini nga account kay naa na daan</string>
+  <string name="next">Sunod</string>
+  <string name="server_info_session_established">Kasamatangang natukod ang sesyon</string>
+  <string name="skip">Laktawi</string>
+  <string name="disable_notifications">Ayaw ipakita ang mga pahibalo</string>
+  <string name="show_qr_code">Ipakita ang barcode</string>
 </resources>
