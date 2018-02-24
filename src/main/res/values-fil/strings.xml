@@ -257,4 +257,12 @@
   <string name="server_info_session_established">Kasalukuyong sesyon na itinatag</string>
   <string name="skip">Laktawan</string>
   <string name="disable_notifications">Hindi gumagan na notipikasyon</string>
+  <string name="enable">Pagpapagana</string>
+  <string name="conference_requires_password">Ang group chat na ito ay nangangailangan ng password</string>
+  <string name="enter_password">Ilagay ang password</string>
+  <string name="request_presence_updates">Paki hiling ng presensyang pagbabago galing sa iyong kontak. Ito ay magagamitpara matukoy kung anong kontak ang ginamit ng iyong kliyente</string>
+  <string name="request_now">Humiling ngayon</string>
+  <string name="delete_fingerprint">Burahin ang tatak ng daliri</string>
+  <string name="sure_delete_fingerprint">Sigurado ka ba na gusto mong tanggalin itong fingerprint?</string>
+  <string name="ignore">Balewalain</string>
 </resources>
