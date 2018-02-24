@@ -73,5 +73,20 @@
   <string name="pref_ui_options">UI</string>
   <string name="openpgp_error">OpenKeychain mitaho nga dunay sayop</string>
   <string name="accept">Dawata</string>
-  <string name="error">Naay di-mao nga nahitabo</string>
+  <string name="error">Naay di-mao nga nigawas</string>
+  <string name="pref_grant_presence_updates">Mga update sa presensiya sa Grant</string>
+  <string name="pref_grant_presence_updates_summary">Sa unang grant ug hangyo nga presensya nga mga subscription sa mga kontak nga imung gebuhat</string>
+  <string name="your_account">Imuhang account</string>
+  <string name="send_presence_updates">Pagpadala ug mga presensya nga update</string>
+  <string name="receive_presence_updates">Dawat sa mga presensya nga update</string>
+  <string name="ask_for_presence_updates">Mangayu ug mga presensya nga update</string>
+  <string name="attach_choose_picture">Pili ug litrato</string>
+  <string name="attach_take_from_camera">Kuha gekan sa kamera</string>
+  <string name="preemptively_grant">Sa unang grant nga subscription nga hangyo</string>
+  <string name="error_not_an_image_file">Ang file nga imung gepili kay dili litrato</string>
+  <string name="error_compressing_image">Sayop samtang pagkakabig sa litrato nga file</string>
+  <string name="error_file_not_found">Ang file wala makit-e</string>
+  <string name="error_io_exception">Tanan I/O kay sayop. Basin mahitungod nga ikaw kay wala nay bakante nga tapiganan?</string>
+  <string name="error_security_exception_during_image_copy">Ang app nga gigamit nimu pag pili sa kini nga litrato kay wala nakahatag ug saktong mga permiso para basahun ang file.\n\n<small>Gamit ug lahi nga file manager pra sa pagpili ug litrato</small></string>
+  <string name="account_status_unknown">Wa mailhi</string>
 </resources>
