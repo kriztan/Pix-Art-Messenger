@@ -170,4 +170,13 @@
   <string name="try_again">Suwayi usab</string>
   <string name="finish">Humana</string>
   <string name="verified">Tinu-a!</string>
+  <string name="smp_requested">Hangyu-a ang kontak ug SMP nga pag-tinu</string>
+  <string name="no_otr_session_found">Walay balido nga OTR nga sesyon nga nakita!</string>
+  <string name="pref_export_logs">Pag-eksport nga kasaysayan</string>
+  <string name="pref_export_logs_summary">Paguswat ug panag-estorya sa kasaysayan nga mga log adto sa SD card</string>
+  <string name="notification_export_logs_title">Buhat ug mga panag-estorya adto sa SD card</string>
+  <string name="choose_file">Pili ug file</string>
+  <string name="receiving_x_file">Dawata %1$s(%2$d%% kumpleto)</string>
+  <string name="download_x_file">Pag-download %s</string>
+  <string name="delete_x_file">Tangtanga %s</string>
 </resources>
