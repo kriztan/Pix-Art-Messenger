@@ -463,7 +463,6 @@
   <string name="elv_undo">geri al</string>
   <string name="download_failed_could_not_write_file">İndirilemedi: Dosya yazılamadı</string>
   <string name="pref_use_white_background">Beyaz arka planı kullan</string>
-  <string name="pref_use_white_background_summary">Alınan mesajları beyaz arka plan üzerine siyah metin olarak göster</string>
   <string name="action_check_update">Güncellemeleri kontrol et</string>
   <string name="title_activity_updater">Servisi güncelle</string>
   <string name="update_available">Versiyon %1$s mevcuttur.\n\nDosya boyutu:%2$s\n\nŞimdi %1$s versiyonuna güncelleşsin mi?</string>
