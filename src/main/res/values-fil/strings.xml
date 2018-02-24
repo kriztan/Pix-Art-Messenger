@@ -137,4 +137,13 @@
   <string name="error_compressing_image">Nagkamali habang nagko-convert ng dokumentong imahe</string>
   <string name="error_file_not_found">Hindi mahanap na file</string>
   <string name="error_io_exception">General I/O error. Marahil naubusan ng espasyo ang imbakan?</string>
+  <string name="error_security_exception_during_image_copy">Ang ginamit mo na app para pumili nitong imahe ay hindi nag bigay ng sapat na pahintulot para bumasa sa file. <small>Gumamit ng ibang file manager para pumili ng imahe</small></string>
+  <string name="account_status_unknown">Hindi alam</string>
+  <string name="account_status_disabled">Pansamantalang hindi gumana</string>
+  <string name="account_status_online">Online</string>
+  <string name="account_status_connecting">Komukonekta\u2026</string>
+  <string name="account_status_offline">Offline</string>
+  <string name="account_status_unauthorized">Hindi awtorisado</string>
+  <string name="account_status_not_found">Hindi mahanap na server</string>
+  <string name="account_status_no_internet">Walang pagkakakonekta</string>
 </resources>
