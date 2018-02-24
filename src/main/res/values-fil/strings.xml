@@ -29,4 +29,16 @@
   <string name="unread_conversations">hindi nabasang pag-uusap</string>
   <string name="sending">pinapadala…</string>
   <string name="message_decrypting">Nag gawa ng mga mensahi. Pakiusap maghintay…</string>
+  <string name="pgp_message">OpenPGP encrypted na mensahe</string>
+  <string name="nick_in_use">Palayaw ay nagamit na</string>
+  <string name="admin">Admin</string>
+  <string name="owner">May-ari</string>
+  <string name="moderator">Tagapayo</string>
+  <string name="participant">Nakilahok</string>
+  <string name="visitor">Bisita</string>
+  <string name="remove_contact_text">Gusto mo bang alisin ang %s sa iyong listahan? Ang mga napagusapan sa kontak na ito ay hindi ma alis.</string>
+  <string name="block_contact_text">Gusto mo bang e block %s kapag sinendan ka niya ng mensahe?</string>
+  <string name="unblock_contact_text">Gusto mo bang e unblock %s at maari na silang magpadala ng mga mensahi?</string>
+  <string name="block_domain_text">I-block lahat ng kontak galing %s?</string>
+  <string name="unblock_domain_text">I-unblock lahat ng kontak galing %s?</string>
 </resources>
