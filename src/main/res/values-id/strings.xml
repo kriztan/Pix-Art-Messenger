@@ -236,10 +236,47 @@
   <string name="pref_remove_trusted_certificates_summary">Hapus sertifikat yang disetujui secara manual</string>
   <string name="toast_no_trusted_certs">Tidak ada sertifikat yang disetujui secara manual</string>
   <string name="dialog_manage_certs_title">Hapus sertifikat</string>
+  <string name="dialog_manage_certs_positivebutton">Hapus yang dipilih</string>
+  <string name="dialog_manage_certs_negativebutton">Batal</string>
+  <plurals name="toast_delete_certificates">
+    <item quantity="other">%d hapus sertifikat</item>
+  </plurals>
+  <plurals name="select_contact">
+    <item quantity="other">Pilih %d kontak</item>
+  </plurals>
+  <string name="pref_quick_action_summary">Ganti tombol kirim dengan tindakan cepat</string>
+  <string name="pref_quick_action">Tindakan cepat</string>
+  <string name="none">Tidak ada</string>
+  <string name="recently_used">Terakhir digunakan</string>
+  <string name="choose_quick_action">Pilih aksi cepat</string>
+  <string name="search_for_contacts_or_groups">Cari dari kontak atau kelompok</string>
+  <string name="send_private_message">Kirim pesan pribadi</string>
+  <string name="user_has_left_conference">%s keluar dari obrolan kelompok!</string>
+  <string name="username">Nama pengguna</string>
+  <string name="username_hint">Nama pengguna</string>
+  <string name="invalid_username">Bukan nama pengguna yang valid</string>
+  <string name="download_failed_server_not_found">Unduh gagal: server tidak ditemukan</string>
+  <string name="shared_file_with_x">Berbagi berkas dengan %s</string>
+  <string name="shared_image_with_x">Berbagi gambar dengan %s</string>
+  <string name="no_storage_permission">Pix-Art Messenger membutuhkan akses ke penyimpanan eksternal</string>
+  <string name="shared_images_with_x">Berbagi gambar dengan %s</string>
+  <string name="shared_text_with_x">Berbagi teks dengan %s</string>
+  <string name="sync_with_contacts">Sesuaikan dengan kontak</string>
+  <string name="sync_with_contacts_long">Pix-Art Messenger ingin mencocokkan daftar XMPP anda dengan kontak anda untuk menunjukkan nama lengkap dan avatar mereka.\n\nPix-Art Messenger hanya akan membaca kontak anda dan mencocokkannya secara lokal tanpa mengunggahnya ke server anda.\n\nAnda sekarang diminta izin untuk mengakses kontak anda.</string>
+  <string name="certificate_information">Informasi sertifikat</string>
+  <string name="certificate_subject">Perihal</string>
+  <string name="certificate_issuer">Penerbit</string>
+  <string name="certificate_cn">Nama umum</string>
   <string name="send_message">Mengirim pesan</string>
   <string name="action_take_video">merekam video</string>
   <string name="application_found_to_open_website">Tidak ada aplikasi yang ditemukan untuk membuka situs web</string>
   <string name="yesterday">Kemarin</string>
   <string name="network_is_unreachable">Jaringan tidak terjangkau</string>
   <string name="mark_as_read">Tandai sudah dibaca</string>
+  <string name="pref_show_foreground_service_summary">Beberapa perangkat Android akan menutup beberapa aplikasi setelah jangka waktu tertentu dan Anda tidak akan dapat menerima pesan baru. Jika Anda memiliki masalah seperti itu, cobalah untuk mengaktifkan layanan latar depan. Namun perlu diingat, bahwa Anda akan memiliki pemberitahuan permanen dengan opsi ini dicentang.</string>
+  <string name="pref_show_foreground_service">Gunakan layanan latar depan</string>
+  <string name="install_update">Memasang pembaharuan?</string>
+  <string name="conversation_unencrypted_hint">Chat ini tidak terenkripsi, untuk alasan keamanan Anda harus mengaktifkan enkripsi pesan dengan menggunakan ikon kunci. Enkripsi yang lebih baik adalah OMEMO.</string>
+  <string name="pref_warn_unencrypted_chat_summary">Jika enkripsi pesan tersedia, Anda harus menggunakannya. Jika Anda tidak menggunakan enkripsi pesan, tampilkan pesan peringatan di dalam obrolan.</string>
+  <string name="invalid_muc_nick">Nama panggilan tidak valid</string>
 </resources>
