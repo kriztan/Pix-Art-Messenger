@@ -230,4 +230,28 @@
   <string name="title_undo_swipe_out_conversation">Sirado na ang panag-estorya</string>
   <string name="title_undo_swipe_out_muc">Hawa sa grupo nga chat</string>
   <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
+  <string name="pref_dont_trust_system_cas_summary">Tanang mga sertipiko dapat manually nga mga aprobado</string>
+  <string name="pref_remove_trusted_certificates_title">Tangtanga ang mga sertipiko</string>
+  <string name="pref_remove_trusted_certificates_summary">Tanggala ang mga aprobado nga mga certificate</string>
+  <string name="toast_no_trusted_certs">Walay manual nga aprobado nga mga sertipiko</string>
+  <string name="dialog_manage_certs_title">Tanggala ang mga sertipiko</string>
+  <string name="dialog_manage_certs_positivebutton">Tangtanga ang pilianan</string>
+  <string name="dialog_manage_certs_negativebutton">Ayaw ipadayun</string>
+  <plurals name="toast_delete_certificates">
+    <item quantity="one">%d sertipiko na natanggal
+%d sertipiko na natanggal</item>
+    <item quantity="other">%d sertipiko na natanggal
+%d sertipiko na natanggal</item>
+  </plurals>
+  <plurals name="select_contact">
+    <item quantity="one">Pili %d kontak
+Pili %d mga kontak</item>
+    <item quantity="other">Pili %d kontak
+Pili %d mga kontak</item>
+  </plurals>
+  <string name="pref_quick_action_summary">Ilisi ang napadala nga button nga naay paspas nga lihok</string>
+  <string name="pref_quick_action">Paspas nga Lihok</string>
+  <string name="none">Wala</string>
+  <string name="recently_used">Kasagaran ginagamit karun</string>
+  <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
 </resources>
