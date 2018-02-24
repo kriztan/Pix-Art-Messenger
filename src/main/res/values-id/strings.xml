@@ -285,6 +285,9 @@
   <string name="always">Selalu</string>
   <string name="battery_optimizations_enabled">Optimalisasi baterai diaktifkan</string>
   <string name="battery_optimizations_enabled_explained">Perangkat anda melakukan beberapa pengoptimalan baterai pada Pix-Art Messenger yang mungkin menyebabkan pemberitahuan tertunda atau bahkan kehilangan pesan.\nDianjurkan untuk tidak mengaktifkannya.</string>
+  <string name="message_copied_to_clipboard">Pesan disalin ke clipboard</string>
+  <string name="message">Pesan</string>
+  <string name="data_saver_enabled">Penghemat data diaktifkan</string>
   <string name="timeout_24_hours">24 jam</string>
   <string name="timeout_7_days">7 hari</string>
   <string name="timeout_30_days">30 hari</string>
@@ -301,6 +304,7 @@
   <string name="pref_connection_options">Pilihan koneksi</string>
   <string name="image_low">rendah (720p)</string>
   <string name="image_mid">tengah (1920p)</string>
+  <string name="image_high">tinggi (3840 p)</string>
   <string name="send_message">Mengirim pesan</string>
   <string name="action_take_video">merekam video</string>
   <string name="application_found_to_open_website">Tidak ada aplikasi yang ditemukan untuk membuka situs web</string>
