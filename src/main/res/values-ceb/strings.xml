@@ -113,4 +113,25 @@
   <string name="other_devices">Lahi nga mga devices</string>
   <string name="trust_omemo_fingerprints">Salig sa OMEMO ng Fingerprint</string>
   <string name="fetching_keys">Namasol ug mga yawe…</string>
+  <string name="done">Humana</string>
+  <string name="verify">Tinu-a</string>
+  <string name="decrypt">Determinado</string>
+  <string name="conferences">Grupo sa mga ka chat</string>
+  <string name="search">Pangita</string>
+  <string name="create_contact">Buhat ug kontak</string>
+  <string name="enter_contact">Isulod ang kontak</string>
+  <string name="join_conference">Apil sa group chat</string>
+  <string name="delete_contact">Tangtanga ang kontak</string>
+  <string name="view_contact_details">Tan-awa ang mga detayi sa kontak</string>
+  <string name="block_contact">I-block ang kontak</string>
+  <string name="unblock_contact">Ayaw i-block ang kontak</string>
+  <string name="create">Pagbuhat</string>
+  <string name="select">Pili</string>
+  <string name="contact_already_exists">Ang kontak kay naa na daan</string>
+  <string name="join">Apil</string>
+  <string name="conference_address">Address sa group chat</string>
+  <string name="conference_address_example">groupchat@room.pix-art.de</string>
+  <string name="save_as_bookmark">Sagupa ingun sa bookmark</string>
+  <string name="delete_bookmark">Tangtanga ang bookmark</string>
+  <string name="bookmark_already_exists">Ang kini nga bookmark kay naa na daan</string>
 </resources>
