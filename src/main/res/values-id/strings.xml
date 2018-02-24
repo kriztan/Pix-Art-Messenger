@@ -53,4 +53,10 @@
   <string name="set">Ubah</string>
   <string name="pref_accept_files_summary_wifi">Saat terhubung ke wifi otomatis menerima berkas lebih kecil dari…</string>
   <string name="pref_accept_files_mobile">Terima berkas dari jaringan telepon genggam</string>
+  <string name="pref_accept_files_summary_mobile">Saat terhubung dengan data telepon genggam otomatis menerima berkas lebih kecil dari…</string>
+  <string name="pref_accept_files_mobileroaming">Terima berkas dari jaringan jelajah telepon genggam</string>
+  <string name="pref_accept_files_summary_mobileroaming">Saat terhubung dengan data telepon genggam otomatis menjelajah dan menerima berkas lebih kecil dari…</string>
+  <string name="pref_attachments">Lampiran</string>
+  <string name="pref_notification_settings">Pemberitahuan</string>
+  <string name="pref_notifications">Pemberitahuan</string>
 </resources>
