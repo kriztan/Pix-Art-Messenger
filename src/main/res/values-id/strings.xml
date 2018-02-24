@@ -189,6 +189,18 @@
   <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
   <string name="server_info_http_upload">XEP-0363: Upload Berkas HTTP</string>
   <string name="server_info_push">XEP-0357: Dorong</string>
+  <string name="server_info_available">tersedia</string>
+  <string name="server_info_unavailable">tidak tersedia</string>
+  <string name="missing_public_keys">Pengumuman kunci publik yang tidak ada</string>
+  <string name="last_seen_now">online</string>
+  <string name="last_seen_min">1 menit yang lalu</string>
+  <string name="last_seen_mins">%d menit yang lalu</string>
+  <string name="last_seen_hour">1 jam yang lalu</string>
+  <string name="last_seen_hours">%d jam yang lalu</string>
+  <string name="last_seen_day">1 hari yang lalu</string>
+  <string name="last_seen_days">%d hari yang lalu</string>
+  <string name="install_openkeychain">Pesan terenkripsi Silahkan install OpenKeychain untuk mendekripsi.</string>
+  <string name="unknown_otr_fingerprint">Sidik jari OTR tidak diketahui</string>
   <string name="openpgp_messages_found">Pesan terenskripsi OpenPGP ditemukan</string>
   <string name="your_fingerprint">Sidik jari anda</string>
   <string name="otr_fingerprint">OTR sidik jari</string>
@@ -239,6 +251,7 @@
   <string name="private_message">berbisik</string>
   <string name="private_message_to">untuk %s</string>
   <string name="send_private_message_to">Kirim pesan pribadi untuk %s</string>
+  <string name="connect">Menghubungkan</string>
   <string name="account_already_exists">Akun ini sudah ada</string>
   <string name="next">Berikutnya</string>
   <string name="server_info_session_established">Sesi saat ini didirikan</string>
@@ -441,6 +454,7 @@
   <string name="not_a_valid_port">Ini bukan nomor port yang valid</string>
   <string name="not_valid_hostname">Ini bukan nama host yang valid</string>
   <string name="connected_accounts">% 1 $ d dari% 2 $ d akun terhubung</string>
+  <string name="load_more_messages">Muat lebih banyak pesan</string>
   <string name="shared_file_with_x">Berbagi berkas dengan %s</string>
   <string name="shared_image_with_x">Berbagi gambar dengan %s</string>
   <string name="no_storage_permission">Pix-Art Messenger membutuhkan akses ke penyimpanan eksternal</string>
