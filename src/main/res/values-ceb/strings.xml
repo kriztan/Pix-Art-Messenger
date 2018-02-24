@@ -254,4 +254,18 @@ Pili %d mga kontak</item>
   <string name="none">Wala</string>
   <string name="recently_used">Kasagaran ginagamit karun</string>
   <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
+  <string name="search_for_contacts_or_groups">Pangita sa mga kontak o sa mga grupo</string>
+  <string name="send_private_message">Ipadala ang pribado nga mensahe</string>
+  <string name="user_has_left_conference">%s mao nalang ang nahabilin sa gupo nga chat!</string>
+  <string name="username">Pangan sa user</string>
+  <string name="username_hint">Pangan sa user</string>
+  <string name="invalid_username">Dili ni balido nga pangan sa user</string>
+  <string name="download_failed_server_not_found">Ang ge-download kay napakyas: Serber kay wala nakita</string>
+  <string name="download_failed_file_not_found">Ang ge-download kay napakyas: File kay wala nakita</string>
+  <string name="download_failed_could_not_connect">Ang ge-download kay napakyas: Dili maka sumpay sa host</string>
+  <string name="elv_undo">balika</string>
+  <string name="no_storage_permission">Ang Pix-Art Messenger nagkinahanglan og access sa external nga storage</string>
+  <string name="shared_images_with_x">Ipa-ambit ang mga litrato uban sa %s</string>
+  <string name="shared_text_with_x">Ipa-ambit ang mga teks uban sa %s</string>
+  <string name="sync_with_contacts">Synchronize sa mga kontak</string>
 </resources>
