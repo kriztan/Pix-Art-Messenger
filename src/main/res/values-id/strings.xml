@@ -46,4 +46,11 @@
   <string name="register_account">Daftar akun baru di server</string>
   <string name="change_password_on_server">Ganti kata kunci di server</string>
   <string name="share_with">Berbagi dengan…</string>
+  <string name="start_conversation">Mulai percakapan</string>
+  <string name="invite_contact">Undang kontak</string>
+  <string name="contacts">Kontak</string>
+  <string name="cancel">Batal</string>
+  <string name="set">Ubah</string>
+  <string name="pref_accept_files_summary_wifi">Saat terhubung ke wifi otomatis menerima berkas lebih kecil dari…</string>
+  <string name="pref_accept_files_mobile">Terima berkas dari jaringan telepon genggam</string>
 </resources>
