@@ -541,8 +541,8 @@
   <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
   <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
   <string name="battery_optimizations_enabled_dialog">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\n\nEl sistema te preguntará ahora para deshabilitarlas.</string>
-  <string name="install_from_unknown_sources_disabled">Instalación de fuentes desconocidas desactivada</string>
-  <string name="install_from_unknown_sources_disabled_explained">Tu dispositivo está configurado para que no permita la instalación de aplicaciones de fuentes desconocidas, lo que causa problemas con la aplicación.\nSe recomienda permitir instalaciones de fuentes desconocidas.</string>
+  <string name="install_from_unknown_sources_disabled">Instalación desde orígenes desconocidos desactivada</string>
+  <string name="install_from_unknown_sources_disabled_explained">Tu dispositivo está configurado para que no permita la instalación de aplicaciones desde origenes desconocidos, lo que causa problemas con las actualizaciones de la aplicación.\nSe recomienda permitir la instalación desde origenes desconocidos.</string>
   <string name="install_from_unknown_sources_disabled_dialog">El dispositivo está configurado para no permitir la instalación de aplicaciones de fuentes desconocidas, excepto en Google PlayStore.\n\nAhora se le pedirá que permita la instalación de aplicaciones desde fuentes desconocidas.</string>
   <string name="disable">Deshabilitar</string>
   <string name="selection_too_large">El área seleccionada es demasiado grande</string>
