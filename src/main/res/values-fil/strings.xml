@@ -106,4 +106,13 @@
   <string name="pref_accept_files_summary_mobile">Kapag nakonektado sa mobile data ito ay automatikong tumanggap ng maliliit na dokumento…</string>
   <string name="pref_accept_files_mobileroaming">Tumanggap ng mga dokumento gamit ang mobile roaming na mga koneksyon</string>
   <string name="pref_accept_files_summary_mobileroaming">Kapag nakakonektado sa mobile data na roaming ito ay automatikong tumanggap ng mga dokumentong maliliit…</string>
+  <string name="pref_attachments">Mga payl</string>
+  <string name="pref_notification_settings">Ang notipikasyon</string>
+  <string name="pref_notifications">Mga notipikasyon</string>
+  <string name="pref_notifications_summary">Pakinotify kapay mayroong bagong mensahe na dumating</string>
+  <string name="pref_vibrate">Vibrate</string>
+  <string name="pref_vibrate_summary">Pakivibrate kapay maroong bagong mensahe na dumating</string>
+  <string name="pref_led">Notipikasyon gamit ang LED</string>
+  <string name="pref_led_summary">Paki kumisap ang ilaw kapag may bagong mensahe na dumating</string>
+  <string name="pref_sound">Ringtone</string>
 </resources>
