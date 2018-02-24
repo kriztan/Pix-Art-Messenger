@@ -88,11 +88,17 @@
   <string name="send_unencrypted">Maghatid ng unencrypted</string>
   <string name="decryption_failed">Dekripsyon ay nabigo. Baka wala kang tamang pribadong susi.</string>
   <string name="openkeychain_required">BukasSusikadena</string>
-  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng third party na aplikasyon kung tawagin ay <b>OpenKeychain</b? para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
-  <string name="restart">I-restart</string>
-  <string name="install">I-install</string>
-  <string name="openkeychain_not_installed">Paki install ng OpenKeychain</string>
-  <string name="offering">paghahandog…</string>
-  <string name="waiting">naghihintay…</string>
+  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b? para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
+  <string name="restart">Ibalik sa simula</string>
+  <string name="install">I-lagay</string>
+  <string name="openkeychain_not_installed">Paki lagay ng OpenKeychain</string>
+  <string name="offering">handog…</string>
+  <string name="waiting">maghintay…</string>
   <string name="no_pgp_key">Walang OpenPGP Key na nakita</string>
+  <string name="contact_has_no_pgp_key">Ang iyong mga mensahi sa Pix-Art Messenger ay hindi na encrypt dahil sa iyong contact na hindi nagpasabi sa public key. <small> Pakitanong sa iyong kontat na i-setup ang OpenPGP.</small></string>
+  <string name="no_pgp_keys">Walang OpenPGP na nakita</string>
+  <string name="pref_general">Pangkahalatan</string>
+  <string name="pref_xmpp_resource">XMPP resource</string>
+  <string name="pref_xmpp_resource_summary">Ang pangalan ng cliyenting ito ay kinikilala sa</string>
+  <string name="pref_accept_files_wifi">Tumangap ng mga dokumento gamit ang Wifi na koneksyon</string>
 </resources>
