@@ -51,6 +51,7 @@
   <string name="contacts">Kontak</string>
   <string name="cancel">Batal</string>
   <string name="set">Ubah</string>
+  <string name="delete">Menghapus</string>
   <string name="pref_accept_files_summary_wifi">Saat terhubung ke wifi otomatis menerima berkas lebih kecil dari…</string>
   <string name="pref_accept_files_mobile">Terima berkas dari jaringan telepon genggam</string>
   <string name="pref_accept_files_summary_mobile">Saat terhubung dengan data telepon genggam otomatis menerima berkas lebih kecil dari…</string>
@@ -181,4 +182,24 @@
   <string name="delete_x_file">Hapus %s</string>
   <string name="file">berkas</string>
   <string name="open_x_file">Buka %s</string>
+  <string name="sending_file">mengirim (%1$d%% lengkap)</string>
+  <string name="preparing_file">Menyiapkan berkas untuk pemindahan</string>
+  <string name="x_file_offered_for_download">%s ditawarkan untuk diunduh</string>
+  <string name="cancel_transmission">Batalkan pemindahan</string>
+  <string name="file_transmission_failed">pemindahan berkas gagal</string>
+  <string name="file_deleted">Berkas telah dihapus</string>
+  <string name="no_application_found_to_open_file">Tidak ada aplikasi yang ditemukan untuk membuka berkas</string>
+  <string name="could_not_verify_fingerprint">Tidak bisa memverifikasi sidik jari</string>
+  <string name="manually_verify">Verifikasi secara manual</string>
+  <string name="are_you_sure_verify_fingerprint">Apakah kamu yakin ingin memverifikasi kontak OTR anda dengan sidik jari?</string>
+  <string name="pref_show_dynamic_tags">Tampilkan tanda dinamis</string>
+  <string name="pref_show_dynamic_tags_summary">Tampilkan tanda hanya-baca dibawah kontak</string>
+  <string name="no_conference_server_found">Tidak ada server obrolan kelompok yang ditemukan</string>
+  <string name="conference_creation_failed">Obrolan kelompok gagal dibuat!</string>
+  <string name="account_image_description">Avatar akun</string>
+  <string name="copy_otr_clipboard_description">Salin OTR sidik jari ke clipboard</string>
+  <string name="copy_omemo_clipboard_description">Salin OMEMO sidik jari ke clipboard</string>
+  <string name="regenerate_omemo_key">Tombol OMEMO diperbarui</string>
+  <string name="clear_other_devices">Hapus perangkat</string>
+  <string name="send_message">Mengirim pesan</string>
 </resources>
