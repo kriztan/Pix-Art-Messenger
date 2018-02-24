@@ -136,4 +136,5 @@
   <string name="error_not_an_image_file">Ang napili mong dokumento ay hindi imahe</string>
   <string name="error_compressing_image">Nagkamali habang nagko-convert ng dokumentong imahe</string>
   <string name="error_file_not_found">Hindi mahanap na file</string>
+  <string name="error_io_exception">General I/O error. Marahil naubusan ng espasyo ang imbakan?</string>
 </resources>
