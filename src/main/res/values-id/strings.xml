@@ -8,4 +8,27 @@
   <string name="action_contact_details">Rincian kontak</string>
   <string name="action_secure">Amankan percakapan</string>
   <string name="action_add_account">Tambah akun</string>
+  <string name="action_edit_contact">Ubah nama</string>
+  <string name="action_add_phone_book">Tambah ke buku alamat</string>
+  <string name="action_delete_contact">Hapus dari daftar</string>
+  <string name="action_block_contact">Blokir kontak</string>
+  <string name="action_unblock_contact">Buka blokir kontak</string>
+  <string name="action_block_domain">Blokir halaman</string>
+  <string name="action_unblock_domain">Buka blokir halaman</string>
+  <string name="title_activity_manage_accounts">Kelola akun</string>
+  <string name="title_activity_settings">Pengaturan</string>
+  <string name="title_activity_conference_details">Rincian obrolan kelompok</string>
+  <string name="title_activity_contact_details">Rincian kontak</string>
+  <string name="title_activity_sharewith">Berbagi dengan percakapan</string>
+  <string name="title_activity_start_conversation">Mulai percakapan</string>
+  <string name="title_activity_choose_contact">Pilih kontak</string>
+  <string name="title_activity_block_list">Daftar blokir</string>
+  <string name="just_now">baru saja</string>
+  <string name="minute_ago">1 menit yang lalu</string>
+  <string name="minutes_ago">%d menit yang lalu</string>
+  <string name="unread_conversations">percakapan yang belum dibaca</string>
+  <string name="sending">mengirimkan…</string>
+  <string name="message_decrypting">Mendeskripsi pesan. Mohon tunggu…</string>
+  <string name="pgp_message">Pesan terenskripsi OpenPGP</string>
+  <string name="nick_in_use">Nama panggilan ini sudah digunakan</string>
 </resources>
