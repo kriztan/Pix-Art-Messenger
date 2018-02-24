@@ -200,4 +200,8 @@
   <string name="last_seen_day">1 araw na nakalipas</string>
   <string name="last_seen_days">%d araw na nakalipas</string>
   <string name="install_openkeychain">Encrypted na mensahe. Paki install ng OpenKeychain sa decrypt.</string>
+  <string name="unknown_otr_fingerprint">Hindi kilala na tatak ng daliri sa OTR</string>
+  <string name="openpgp_messages_found">OpenPGP encrypted na mga mensahe ay hindi na kita</string>
+  <string name="your_fingerprint">Iyong fingerprint</string>
+  <string name="otr_fingerprint">Bakas ng daliri para sa OTR</string>
 </resources>
