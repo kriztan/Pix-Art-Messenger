@@ -378,16 +378,6 @@
   <string name="dialog_manage_certs_title">Odstranit certifikáty</string>
   <string name="dialog_manage_certs_positivebutton">Smazat výběr</string>
   <string name="dialog_manage_certs_negativebutton">Zrušit</string>
-  <plurals name="toast_delete_certificates">
-    <item quantity="one">%d certifikát smazán</item>
-    <item quantity="few">%d certifikáty smazány</item>
-    <item quantity="other">%d certifikátů smazáno</item>
-  </plurals>
-  <plurals name="select_contact">
-    <item quantity="one">Vybrat %d kontakt</item>
-    <item quantity="few">Vybrat %d kontakty</item>
-    <item quantity="other">Vybrat %d kontaktů</item>
-  </plurals>
   <string name="pref_quick_action_summary">Nahradit tlačítko odeslání rychlou akcí</string>
   <string name="pref_quick_action">Rychlá akce</string>
   <string name="none">Žádná</string>
@@ -432,11 +422,6 @@
   <string name="not_a_valid_port">Toto není platné číslo portu</string>
   <string name="not_valid_hostname">Toto není platné hostname</string>
   <string name="connected_accounts">%1$d z %2$d účtů připojeno</string>
-  <plurals name="x_messages">
-    <item quantity="one">%d zpráva</item>
-    <item quantity="few">%d zprávy</item>
-    <item quantity="other">%d zpráv</item>
-  </plurals>
   <string name="load_more_messages">Načíst více zpráv</string>
   <string name="shared_file_with_x">Soubor sdílen s %s</string>
   <string name="shared_image_with_x">Obrázek sdílen s %s</string>
