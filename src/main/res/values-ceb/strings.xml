@@ -156,4 +156,18 @@
   <string name="skip">Laktawi</string>
   <string name="disable_notifications">Ayaw ipakita ang mga pahibalo</string>
   <string name="show_qr_code">Ipakita ang barcode</string>
+  <string name="show_block_list">Ipakita ang na block nga listahan</string>
+  <string name="account_details">Mga detalyi sa account</string>
+  <string name="verify_otr">Tinu-a ang OTR</string>
+  <string name="remote_fingerprint">Layo ang Fingerprint</string>
+  <string name="shared_secret_hint">Tagnaa o Pangutana</string>
+  <string name="shared_secret_secret">Gipa-ambit and sekreto</string>
+  <string name="confirm">Ipamatuod</string>
+  <string name="in_progress">Kasamatang naa sa proseso</string>
+  <string name="respond">Tubag</string>
+  <string name="failed">Napakyas</string>
+  <string name="secrets_do_not_match">Ang mga sekreto kay wala nagkapareha</string>
+  <string name="try_again">Suwayi usab</string>
+  <string name="finish">Humana</string>
+  <string name="verified">Tinu-a!</string>
 </resources>
