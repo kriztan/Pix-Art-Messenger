@@ -690,7 +690,9 @@
   <string name="install_update">Memasang pembaharuan?</string>
   <string name="pref_return_to_previous">Berbagi Cepat</string>
   <string name="conversation_unencrypted_hint">Chat ini tidak terenkripsi, untuk alasan keamanan Anda harus mengaktifkan enkripsi pesan dengan menggunakan ikon kunci. Enkripsi yang lebih baik adalah OMEMO.</string>
+  <string name="pref_warn_unencrypted_chat">Peringatkan jika obrolan tidak terenkripsi</string>
   <string name="pref_warn_unencrypted_chat_summary">Jika enkripsi pesan tersedia, Anda harus menggunakannya. Jika Anda tidak menggunakan enkripsi pesan, tampilkan pesan peringatan di dalam obrolan.</string>
+  <string name="pref_use_bundled_emoji_summary">Gunakan perpustakaan emoji yang terintegrasi daripada menggunakan perangkat Anda. Perubahan akan tersedia setelah membuka kembali aplikasi.</string>
   <string name="invalid_muc_nick">Nama panggilan tidak sah</string>
   <string name="title_activity_share_via_account">Bagikan melalui akun</string>
   <string name="private_messages_are_disabled">Pesan pribadi dinonaktifkan</string>
