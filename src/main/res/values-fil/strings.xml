@@ -446,4 +446,10 @@
     <item quantity="one">Piliin %d kontak</item>
     <item quantity="other">Piliin %d kontaks</item>
   </plurals>
+  <string name="pref_quick_action_summary">Palitan ang pindutan ng pagpapadala sa mabilis na aksyon</string>
+  <string name="pref_quick_action">Mabilis na aksyon</string>
+  <string name="none">Wala</string>
+  <string name="recently_used">Pinaka-pinakamakailang ginamit</string>
+  <string name="choose_quick_action">Pumili ng mabilis na aksyon</string>
+  <string name="search_for_contacts_or_groups">Maghanap ng mga kontak o mga grupo</string>
 </resources>
