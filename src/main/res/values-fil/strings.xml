@@ -385,4 +385,5 @@
   <string name="remove_from_room">Tinanggal mula sa group chat</string>
   <string name="could_not_change_affiliation">Hindi na mababagong ugnayan sa %s</string>
   <string name="ban_from_conference">Ipinagbawal sa grupo ng chat</string>
+  <string name="removing_from_public_conference">Gusto mong burahin %s mula pampublikong grupo ng chat. Ang isang paraan upang gawin ito ay ang pagbawal sa user kailanman.</string>
 </resources>
