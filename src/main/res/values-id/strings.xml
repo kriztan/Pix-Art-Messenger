@@ -623,6 +623,8 @@
   <string name="copy_fingerprint">Salin sidik jari</string>
   <string name="all_omemo_keys_have_been_verified">Semua kunci OMEMO telah diverifikasi</string>
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
+  <string name="reply">Balas</string>
+  <string name="encrypting_message">Enkripsi pesan</string>
   <string name="pref_automatically_delete_messages_description">Secara otomatis menghapus pesan dari perangkat ini yang lebih lama dari jangka waktu yang dikonfigurasi.</string>
   <string name="timeout_24_hours">24 jam</string>
   <string name="timeout_7_days">7 hari</string>
