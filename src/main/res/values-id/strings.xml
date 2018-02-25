@@ -594,6 +594,10 @@
   <string name="no_permission">Pix-Art Messenger tidak memiliki izin</string>
   <string name="send_image">Kirim gambar?</string>
   <string name="this_device_is_no_longer_in_use">Perangkat ini tidak lagi digunakan</string>
+  <string name="Password_wrong">Kata sandi salah, coba lagi</string>
+  <string name="enter_account_password">Masukkan kata sandi akun Anda untuk mengimpor cadangan Anda.</string>
+  <string name="please_wait">Harap tunggu…</string>
+  <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
   <string name="allow">Mengizinkan</string>
   <string name="attach_choose_video">Pilih video</string>
   <string name="no_permission_to_access_x">Tidak ada izin untuk mengakses %s</string>
