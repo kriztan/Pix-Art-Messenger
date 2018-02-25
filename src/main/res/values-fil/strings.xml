@@ -391,4 +391,15 @@
   <string name="public_conference">Malalapitang pampublikong grupo ng chat</string>
   <string name="private_conference">Pribadong, kasapi lamang ang grupo ng chat</string>
   <string name="conference_options">Mga pagpilian sa grupo ng chat</string>
+  <string name="members_only">Pribadong, kasapi lamang</string>
+  <string name="non_anonymous">Hindi kilala</string>
+  <string name="moderated">Katamtaman</string>
+  <string name="you_are_not_participating">Hindi ka nakikilahok</string>
+  <string name="modified_conference_options">Binagong pagpilian ng grupo ng chat!</string>
+  <string name="could_not_modify_conference_options">Hindi mabago ang mga pagpipilian sa grupo ng chat</string>
+  <string name="never">Tunay na hindi</string>
+  <string name="thirty_minutes">Tatlumpung minuto</string>
+  <string name="one_hour">Isang oras</string>
+  <string name="two_hours">Dalawang oras</string>
+  <string name="eight_hours">Walong oras</string>
 </resources>
