@@ -673,7 +673,7 @@
   <string name="received_message_from_stranger">Menerima pesan dari orang yang tak dikenal</string>
   <string name="contacts_are_typing">%s sedang mengetik…</string>
   <string name="presence_offline">Tidak terhubung</string>
-  <string name="block_stranger">Blokir orang asing</string>
+  <string name="block_stranger">Blokir orang yang tak dikenal</string>
   <string name="pref_use_auto_rotate_summary">Putar gambar dan video di layar penuh agar sesuai dengan ukuran</string>
   <string name="pref_use_auto_rotate">Putar media dalam layar penuh</string>
   <string name="pref_connection_options">Pilihan koneksi</string>
