@@ -282,4 +282,5 @@
   <string name="pref_use_send_button_to_indicate_status">Magpadala ng boton na nagpapahiwatig ng istado</string>
   <string name="pref_use_colored_names_to_indicate_status">Ang may kulay na mga pangalan ay nagpahiwatig ng istado</string>
   <string name="pref_use_indicate_received">Hiling na mensahe ay natanggap</string>
+  <string name="pref_use_indicate_received_summary">Natanggap na mga mensahe ay mamarkahan ng berde na tik kung supportado</string>
 </resources>
