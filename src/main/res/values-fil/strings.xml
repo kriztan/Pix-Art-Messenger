@@ -327,4 +327,11 @@
   <string name="no_role">Walang koneksyon</string>
   <string name="outcast">Pinabayaan</string>
   <string name="member">Kasapi</string>
+  <string name="advanced_mode">Maunlad na pamamaraan</string>
+  <string name="grant_membership">Pagiging kasapi</string>
+  <string name="remove_membership">Binawi ang pagiging miyembro</string>
+  <string name="grant_admin_privileges">Pinagkalooban ng administratibong prebilihiyo</string>
+  <string name="remove_admin_privileges">Binawian ng administratibong prebilihiyo</string>
+  <string name="remove_from_room">Tinanggal mula sa group chat</string>
+  <string name="could_not_change_affiliation">Hindi na mababagong ugnayan sa %s</string>
 </resources>
