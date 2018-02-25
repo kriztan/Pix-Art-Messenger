@@ -561,6 +561,7 @@
   <string name="your_full_jid_will_be">Jabber-ID Anda adalah: %s</string>
   <string name="create_account">Buat akun baru</string>
   <string name="use_existing_accout">Gunakan akun yang ada</string>
+  <string name="pick_your_username">Pilih nama pengguna Anda</string>
   <string name="secure_password_generated">Kata sandi yang aman telah dibuat</string>
   <string name="device_does_not_support_unknown_source_op">Perangkat Anda tidak mendukung mengizinkan pemasangan aplikasi dari sumber yang tidak dikenal</string>
   <string name="share">Bagikan</string>
