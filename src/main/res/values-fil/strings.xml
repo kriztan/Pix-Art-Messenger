@@ -335,6 +335,11 @@
   <string name="preparing_file">Paghahanda sa kikil para sa transmisyon</string>
   <string name="x_file_offered_for_download">%s inaalok para idownload</string>
   <string name="cancel_transmission">Kansel transmisyon</string>
+  <string name="file_transmission_failed">nabigong tranmisyon ng kikil</string>
+  <string name="file_deleted">Ang kikil ay binura</string>
+  <string name="no_application_found_to_open_file">Walang pag-uukol na nakita para magbukas ng kikil</string>
+  <string name="could_not_verify_fingerprint">Hindi maberipikang bakas ng daliri</string>
+  <string name="manually_verify">Manu-manong na-verify</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
