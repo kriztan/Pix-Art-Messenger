@@ -418,4 +418,12 @@
   <string name="touch_to_open_conversations">Pindotin para mabuksan ang Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar ay nailathala!</string>
   <string name="sending_x_file">Nagpapadala %s</string>
+  <string name="offering_x_file">Pag-aalay %s</string>
+  <string name="hide_offline">Itago ang offline</string>
+  <string name="is_typing">ay nagta-type…</string>
+  <string name="pref_chat_states">Mga notipikasyon ng nagta-type</string>
+  <string name="pref_chat_states_summary">Hayaan ang iyong kontaks na malaman na ikaw ang nagsusulat ng mga mensahe sa kanila</string>
+  <string name="send_location">Ipadala ang kinaroroonan</string>
+  <string name="show_location">Ipakita ang kinaroroonan</string>
+  <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
 </resources>
