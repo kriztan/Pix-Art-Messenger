@@ -584,6 +584,7 @@
   <string name="creating_conference">Membuat obrolan grup…</string>
   <string name="invite_again">Undang lagi</string>
   <string name="InviteText">Halo, \n\n pengguna %s telah mengundang Anda ke Pix-Art Messenger. Jika Anda menggunakan Android, cobalah dan klik tautan berikut untuk memulai kembali...</string>
+  <string name="invite_user">Mengundang ke Pix-Art Messenger</string>
   <string name="request_permissions_message">Pix-Art Messenger akan meminta Anda mengizinkan beberapa izin. Penting bahwa Anda mengizinkan semua hak akses ini untuk menggunakan semua fitur messenger ini. Jika Anda menolak izin ini, aplikasi akan menutup dengan sendiri.</string>
   <string name="request_permissions_message_again">Anda telah menolak beberapa atau semua izin yang dibutuhkan untuk Pix-Art Messenger. Apakah Anda ingin beralih ke pengaturan dan mengizinkan izin ini? Jika Anda menolak semua izin ini, aplikasi akan menutup dengan sendiri.</string>
   <string name="no_permission">Pix-Art Messenger tidak memiliki izin</string>
@@ -626,6 +627,7 @@
   <string name="copy_fingerprint">Salin sidik jari</string>
   <string name="all_omemo_keys_have_been_verified">Semua kunci OMEMO telah diverifikasi</string>
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
+  <string name="i_followed_this_link_from_a_trusted_source">Saya mengikuti tautan ini dari sumber terpercaya</string>
   <string name="reply">Balas</string>
   <string name="encrypting_message">Enkripsi pesan</string>
   <string name="pref_automatically_delete_messages_description">Secara otomatis menghapus pesan dari perangkat ini yang lebih lama dari jangka waktu yang dikonfigurasi.</string>
