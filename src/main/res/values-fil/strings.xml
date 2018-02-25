@@ -305,5 +305,14 @@
   <string name="file_url">Kikilin na URL</string>
   <string name="url_copied_to_clipboard">URL ay nakopya sa clipboard</string>
   <string name="scan_qr_code">Suriin ang barcode</string>
-  <string name="show_qr_code">Ipakita ang barcode</string>
+  <string name="show_qr_code">Ilabas ang barcode</string>
+  <string name="show_block_list">Ipakita ang block list</string>
+  <string name="account_details">Mga detalye sa account</string>
+  <string name="verify_otr">Beripikahin ang OTR</string>
+  <string name="remote_fingerprint">Bahagyang bakas ng daliri</string>
+  <string name="shared_secret_hint">Pahiwatig o tanong</string>
+  <string name="shared_secret_secret">Ibinahaging lihim</string>
+  <string name="confirm">Patunayan</string>
+  <string name="in_progress">Nasa progreso</string>
+  <string name="respond">Tugon</string>
 </resources>
