@@ -628,6 +628,7 @@
   <string name="all_omemo_keys_have_been_verified">Semua kunci OMEMO telah diverifikasi</string>
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
   <string name="i_followed_this_link_from_a_trusted_source">Saya mengikuti tautan ini dari sumber terpercaya</string>
+  <string name="verifying_omemo_keys_trusted_source">Anda akan memverifikasi kunci OMEMO dari %1$s setelah mengeklik tautan. Ini hanya aman jika Anda mengikuti tautan ini dari sumber terpercaya yang hanya memiliki %2$s yang bisa menerbitkan tautan ini.</string>
   <string name="reply">Balas</string>
   <string name="encrypting_message">Enkripsi pesan</string>
   <string name="pref_automatically_delete_messages_description">Secara otomatis menghapus pesan dari perangkat ini yang lebih lama dari jangka waktu yang dikonfigurasi.</string>
