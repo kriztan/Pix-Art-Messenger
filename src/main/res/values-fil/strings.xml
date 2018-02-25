@@ -433,4 +433,17 @@
   <string name="pref_dont_trust_system_cas_title">Wag maniwala sa sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Lahat ng mga katibayan ay dapat naaproba ng mano-mano</string>
   <string name="pref_remove_trusted_certificates_title">Tagalin ang mga katibayan</string>
+  <string name="pref_remove_trusted_certificates_summary">Burahin ang mga katibayang mano-mano na aproba</string>
+  <string name="toast_no_trusted_certs">Walang mano-manong mga katibayan ang naaprobahan</string>
+  <string name="dialog_manage_certs_title">Tangalin ang mga katibayan</string>
+  <string name="dialog_manage_certs_positivebutton">Burahin ang seksyon</string>
+  <string name="dialog_manage_certs_negativebutton">Kanselahin</string>
+  <plurals name="toast_delete_certificates">
+    <item quantity="one">%d naburang katibayan</item>
+    <item quantity="other">%d naburang mga katibayan</item>
+  </plurals>
+  <plurals name="select_contact">
+    <item quantity="one">Piliin %d kontak</item>
+    <item quantity="other">Piliin %d kontaks</item>
+  </plurals>
 </resources>
