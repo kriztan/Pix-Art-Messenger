@@ -268,4 +268,9 @@
   <string name="without_mutual_presence_updates"><b>Babala:</b> Ang pagpapadala ng walang presensya sa kapwa na mga update ay maaring magdulot ng mga problema.\n\n<small>Magtungo sa kontak mg detalye upang everifika ang presensya ng iyong subskripsyons.</small></string>
   <string name="pref_security_settings">Seguridad at datos proteksyon</string>
   <string name="pref_allow_message_correction">Ipahintulot ang coreksyon ng mensahe</string>
+  <string name="pref_allow_message_correction_summary">Ipahintulot ang mga kontak upang magretroaktibly iedit ang kanilang mga mensahe</string>
+  <string name="pref_expert_options">Eksperto ng mga setting</string>
+  <string name="title_activity_about">Tungkol</string>
+  <string name="pref_about_conversations_summary">Pagawaan at lisensyahan impormasyon</string>
+  <string name="title_pref_quiet_hours">Tahimik na mga Oras</string>
 </resources>
