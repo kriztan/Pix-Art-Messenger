@@ -278,4 +278,5 @@
   <string name="title_pref_enable_quiet_hours">Ipahintulot ang tahimik na mga oras</string>
   <string name="pref_quiet_hours_summary">Ang pagbibigay alam ay patahimikin tuwing oras ng pahinga</string>
   <string name="pref_use_larger_font">Dagdagan ang laki ng font</string>
+  <string name="pref_use_larger_font_summary">Gamiting mas malaki ang mga sukat ng font sa kabila ng kabuuan ng app</string>
 </resources>
