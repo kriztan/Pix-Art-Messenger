@@ -350,6 +350,8 @@
   <string name="copy_omemo_clipboard_description">Kopyahin ang OMEMO ng bakas ng daliri sa clipboard</string>
   <string name="regenerate_omemo_key">Muling buuin ang OMEMO key</string>
   <string name="clear_other_devices">Linawin ang mga aparato</string>
+  <string name="clear_other_devices_desc">Sigurado ka bang gusto mong linawin lahat ng mga aparato mula sa anunsyo ng OMEMO? Sa susunod na magkonekta ka ng mga aparato, sila ay muling magpapahayag ng kanilang sarili, pero baka hindi sila makatanggap ng mga na ipinadalang mensahe pansamantala.</string>
+  <string name="distrust_omemo_key">Hindi kapani-paniwalang aparato</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
