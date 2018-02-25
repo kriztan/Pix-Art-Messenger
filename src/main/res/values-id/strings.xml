@@ -568,6 +568,8 @@
   <string name="status_message">Status pesan</string>
   <string name="all_accounts_on_this_device">Tetapkan untuk semua akun di perangkat ini</string>
   <string name="presence_online">Terhubung</string>
+  <string name="presence_xa">Tidak tersedia</string>
+  <string name="presence_dnd">Sibuk</string>
   <string name="secure_password_generated">Kata sandi yang aman telah dibuat</string>
   <string name="device_does_not_support_unknown_source_op">Perangkat Anda tidak mendukung mengizinkan pemasangan aplikasi dari sumber yang tidak dikenal</string>
   <string name="share">Bagikan</string>
@@ -584,9 +586,11 @@
   <string name="creating_conference">Membuat obrolan grup…</string>
   <string name="invite_again">Undang lagi</string>
   <string name="InviteText">Halo, \n\n pengguna %s telah mengundang Anda ke Pix-Art Messenger. Jika Anda menggunakan Android, cobalah dan klik tautan berikut untuk memulai kembali...</string>
+  <string name="pref_broadcast_last_activity_summary">Biarkan semua kontak Anda tahu saat menggunakan Pix-Art Messenger</string>
   <string name="invite_user">Mengundang ke Pix-Art Messenger</string>
   <string name="request_permissions_message">Pix-Art Messenger akan meminta Anda mengizinkan beberapa izin. Penting bahwa Anda mengizinkan semua hak akses ini untuk menggunakan semua fitur messenger ini. Jika Anda menolak izin ini, aplikasi akan menutup dengan sendiri.</string>
   <string name="request_permissions_message_again">Anda telah menolak beberapa atau semua izin yang dibutuhkan untuk Pix-Art Messenger. Apakah Anda ingin beralih ke pengaturan dan mengizinkan izin ini? Jika Anda menolak semua izin ini, aplikasi akan menutup dengan sendiri.</string>
+  <string name="unable_to_connect_to_keychain">Tidak dapat terhubung ke OpenKeychain</string>
   <string name="no_permission">Pix-Art Messenger tidak memiliki izin</string>
   <string name="send_image">Kirim gambar?</string>
   <string name="this_device_is_no_longer_in_use">Perangkat ini tidak lagi digunakan</string>
