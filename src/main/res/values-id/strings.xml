@@ -589,8 +589,11 @@
   <string name="message">Pesan</string>
   <string name="quote">Kutipan</string>
   <string name="show_error_message">Tampilkan pesan kesalahan</string>
+  <string name="error_message">Pesan eror</string>
   <string name="data_saver_enabled">Penghemat data diaktifkan</string>
   <string name="data_saver_enabled_explained">Sistem operasi Anda membatasi Pix-Art Messenger untuk mengakses Internet saat berada di latar belakang. Untuk menerima notifikasi pesan baru, Anda harus mengizinkan akses Pix-Art Messenger tidak terbatas saat Penghemat data aktif. \\n Pix-Art Messenger masih akan berusaha untuk menyimpan data bila memungkinkan.</string>
+  <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan penghemat data untuk Pix-Art Messenger.</string>
+  <string name="navigate">Arahkan ke lokasi</string>
   <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
   <string name="received_contact">Menerima kontak</string>
   <string name="contact">Kontak</string>
@@ -634,4 +637,5 @@
   <string name="private_messages_are_disabled">Pesan pribadi dinonaktifkan</string>
   <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
   <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
+  <string name="huawei_protected_apps_summary">Agar tetap menerima pemberitahuan, bahkan saat layar dimatikan, Anda perlu menambahkan Pix-Art Messenger ke daftar aplikasi yang dilindungi.</string>
 </resources>
