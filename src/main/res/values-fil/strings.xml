@@ -428,4 +428,9 @@
   <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
   <string name="location">Kinalalagyan</string>
   <string name="received_location">Natanggap na lokasyon</string>
+  <string name="title_undo_swipe_out_conversation">Pagpapanayam sinirado</string>
+  <string name="title_undo_swipe_out_muc">Lumayas sa pang-grupong chat</string>
+  <string name="pref_dont_trust_system_cas_title">Wag maniwala sa sistema CAs</string>
+  <string name="pref_dont_trust_system_cas_summary">Lahat ng mga katibayan ay dapat naaproba ng mano-mano</string>
+  <string name="pref_remove_trusted_certificates_title">Tagalin ang mga katibayan</string>
 </resources>
