@@ -273,4 +273,7 @@
   <string name="title_activity_about">Tungkol</string>
   <string name="pref_about_conversations_summary">Pagawaan at lisensyahan impormasyon</string>
   <string name="title_pref_quiet_hours">Tahimik na mga Oras</string>
+  <string name="title_pref_quiet_hours_start_time">Simulang oras</string>
+  <string name="title_pref_quiet_hours_end_time">Oras ng pagtatapos</string>
+  <string name="title_pref_enable_quiet_hours">Ipahintulot ang tahimik na mga oras</string>
 </resources>
