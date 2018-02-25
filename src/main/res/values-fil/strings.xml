@@ -315,6 +315,7 @@
   <string name="confirm">Patunayan</string>
   <string name="in_progress">Nasa progreso</string>
   <string name="respond">Tugon</string>
+  <string name="failed">Nabigo</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
