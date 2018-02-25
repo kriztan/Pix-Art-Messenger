@@ -323,6 +323,13 @@
   <string name="smp_requested">Ang kontak hinihiling ang beripikasyon ng SMP</string>
   <string name="no_otr_session_found">Walang napatunayang OTR na sesyon ang nakita!</string>
   <string name="pref_export_logs">I-export ang kasaysayan</string>
+  <string name="pref_export_logs_summary">Isulat ang kasaysayan ng pag-uusap sa SD kard</string>
+  <string name="notification_export_logs_title">Pagsulat ng pinag-usapan sa SD kard</string>
+  <string name="choose_file">Pumili ng hilira</string>
+  <string name="receiving_x_file">Pagtanggap %1$s (%2$d%% nakumpleto)</string>
+  <string name="download_x_file">I-download %s</string>
+  <string name="delete_x_file">Burahin %s</string>
+  <string name="file">kikil</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
