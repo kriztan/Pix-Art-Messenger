@@ -17,7 +17,7 @@
   <string name="action_unblock_domain">Buka blokir halaman</string>
   <string name="title_activity_manage_accounts">Kelola akun</string>
   <string name="title_activity_settings">Pengaturan</string>
-  <string name="title_activity_conference_details">Rincian obrolan kelompok</string>
+  <string name="title_activity_conference_details">Rincian chat kelompok</string>
   <string name="title_activity_contact_details">Rincian kontak</string>
   <string name="title_activity_sharewith">Berbagi dengan percakapan</string>
   <string name="title_activity_start_conversation">Mulai percakapan</string>
