@@ -297,4 +297,13 @@
   <string name="using_account">gamitin ang account %s</string>
   <string name="checking_x">Etsek%s sa HTTP host</string>
   <string name="not_connected_try_again">Ikaw ay hindi konektado. Subukan ulit mamaya</string>
+  <string name="check_x_filesize">Suriin %s na laki</string>
+  <string name="check_x_filesize_on_host">Siyasatin %1$s na laki sa %2$s</string>
+  <string name="message_options">Pagpipilian na mensahi</string>
+  <string name="copy_original_url">Kopyahin ang orihinal na URL</string>
+  <string name="send_again">Ipadala ulit</string>
+  <string name="file_url">Kikilin na URL</string>
+  <string name="url_copied_to_clipboard">URL ay nakopya sa clipboard</string>
+  <string name="scan_qr_code">Suriin ang barcode</string>
+  <string name="show_qr_code">Ipakita ang barcode</string>
 </resources>
