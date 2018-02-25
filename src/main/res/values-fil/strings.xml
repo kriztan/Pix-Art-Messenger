@@ -286,4 +286,6 @@
   <string name="pref_use_send_button_to_indicate_status_summary">May color na panghatid na pindutan para magpahiwatig ng estado</string>
   <string name="pref_use_colored_names_to_indicate_status_summary">May color na pangalan sa kontak ay nagpapahiwatig ng estado sa kontak</string>
   <string name="pref_expert_options_other">Iba pa</string>
+  <string name="pref_autojoin">Automatikong pagsali sa grupo ng chat</string>
+  <string name="pref_autojoin_summary">Paggalang sa awtomatikong bandira sa pagsali sa grupo ng chat bookmarks</string>
 </resources>
