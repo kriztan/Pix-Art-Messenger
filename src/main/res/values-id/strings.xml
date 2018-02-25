@@ -630,5 +630,8 @@
   <string name="conversation_unencrypted_hint">Chat ini tidak terenkripsi, untuk alasan keamanan Anda harus mengaktifkan enkripsi pesan dengan menggunakan ikon kunci. Enkripsi yang lebih baik adalah OMEMO.</string>
   <string name="pref_warn_unencrypted_chat_summary">Jika enkripsi pesan tersedia, Anda harus menggunakannya. Jika Anda tidak menggunakan enkripsi pesan, tampilkan pesan peringatan di dalam obrolan.</string>
   <string name="invalid_muc_nick">Nama panggilan tidak sah</string>
+  <string name="title_activity_share_via_account">Bagikan melalui akun</string>
   <string name="private_messages_are_disabled">Pesan pribadi dinonaktifkan</string>
+  <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
+  <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
 </resources>
