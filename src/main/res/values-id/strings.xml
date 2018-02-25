@@ -598,6 +598,8 @@
   <string name="enter_account_password">Masukkan kata sandi akun Anda untuk mengimpor cadangan Anda.</string>
   <string name="please_wait">Harap tunggu…</string>
   <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
+  <string name="payment_required">Pembayaran dibutuhkan</string>
+  <string name="me">Saya</string>
   <string name="allow">Mengizinkan</string>
   <string name="attach_choose_video">Pilih video</string>
   <string name="no_permission_to_access_x">Tidak ada izin untuk mengakses %s</string>
