@@ -567,6 +567,7 @@
   <string name="change_presence">Ubah Kehadiran</string>
   <string name="status_message">Status pesan</string>
   <string name="all_accounts_on_this_device">Tetapkan untuk semua akun di perangkat ini</string>
+  <string name="presence_chat">Gratis untuk obrolan</string>
   <string name="presence_online">Terhubung</string>
   <string name="presence_xa">Tidak tersedia</string>
   <string name="presence_dnd">Sibuk</string>
@@ -584,7 +585,9 @@
   <string name="join_or_create_conference">Bergabung atau buat obrolan grup</string>
   <string name="choose_participants">Pilih peserta</string>
   <string name="creating_conference">Membuat obrolan grup…</string>
+  <string name="import_database">Impor cadangan</string>
   <string name="invite_again">Undang lagi</string>
+  <string name="inviteUser_Subject">telah mengundang Anda melalui</string>
   <string name="InviteText">Halo, \n\n pengguna %s telah mengundang Anda ke Pix-Art Messenger. Jika Anda menggunakan Android, cobalah dan klik tautan berikut untuk memulai kembali...</string>
   <string name="pref_broadcast_last_activity_summary">Biarkan semua kontak Anda tahu saat menggunakan Pix-Art Messenger</string>
   <string name="invite_user">Mengundang ke Pix-Art Messenger</string>
@@ -600,6 +603,7 @@
   <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
   <string name="payment_required">Pembayaran dibutuhkan</string>
   <string name="me">Saya</string>
+  <string name="contact_asks_for_presence_subscription">Kontak meminta langganan kehadiran</string>
   <string name="allow">Mengizinkan</string>
   <string name="attach_choose_video">Pilih video</string>
   <string name="no_permission_to_access_x">Tidak ada izin untuk mengakses %s</string>
