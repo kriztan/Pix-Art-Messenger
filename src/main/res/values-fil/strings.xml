@@ -276,4 +276,6 @@
   <string name="title_pref_quiet_hours_start_time">Simulang oras</string>
   <string name="title_pref_quiet_hours_end_time">Oras ng pagtatapos</string>
   <string name="title_pref_enable_quiet_hours">Ipahintulot ang tahimik na mga oras</string>
+  <string name="pref_quiet_hours_summary">Ang pagbibigay alam ay patahimikin tuwing oras ng pahinga</string>
+  <string name="pref_use_larger_font">Dagdagan ang laki ng font</string>
 </resources>
