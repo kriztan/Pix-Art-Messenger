@@ -426,4 +426,6 @@
   <string name="send_location">Ipadala ang kinaroroonan</string>
   <string name="show_location">Ipakita ang kinaroroonan</string>
   <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
+  <string name="location">Kinalalagyan</string>
+  <string name="received_location">Natanggap na lokasyon</string>
 </resources>
