@@ -642,7 +642,11 @@
   <string name="this_device_has_been_verified">Perangkat ini telah diverifikasi</string>
   <string name="copy_fingerprint">Salin sidik jari</string>
   <string name="all_omemo_keys_have_been_verified">Semua kunci OMEMO telah diverifikasi</string>
+  <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Kode batang tidak mengandung sidik jari untuk percakapan ini.</string>
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
+  <string name="use_camera_icon_to_scan_barcode">Gunakan kamera untuk memindai kontak kode batang</string>
+  <string name="share_as_barcode">Bagikan sebagai kode batang</string>
+  <string name="share_as_http">Bagikan sebagai tautan HTTP</string>
   <string name="pref_blind_trust_before_verification_summary">Secara otomatis mempercayai semua perangkat baru dari kontak yang belum diverifikasi sebelumnya.</string>
   <string name="not_trusted">Tidak terpercaya</string>
   <string name="invalid_barcode">Kode batang tidak valid</string>
@@ -689,9 +693,13 @@
   <string name="yesterday">Kemarin</string>
   <string name="network_is_unreachable">Jaringan tidak terjangkau</string>
   <string name="mark_as_read">Tandai sudah dibaca</string>
+  <string name="server_info_partial">sebagian</string>
   <string name="pref_show_foreground_service_summary">Beberapa perangkat Android akan menutup beberapa aplikasi setelah jangka waktu tertentu dan Anda tidak akan dapat menerima pesan baru. Jika Anda memiliki masalah seperti itu, cobalah untuk mengaktifkan layanan latar depan. Namun perlu diingat, bahwa Anda akan memiliki pemberitahuan permanen dengan opsi ini dicentang.</string>
   <string name="pref_show_foreground_service">Gunakan layanan latar depan</string>
+  <string name="update_service">Layanan memperbarui Pix-Art Messenger</string>
   <string name="install_update">Memasang pembaharuan?</string>
+  <string name="highlight_in_muc">sorot pengguna</string>
+  <string name="no_application_found_to_open_link">Tidak ada aplikasi yang ditemukan untuk membuka tautan</string>
   <string name="pref_return_to_previous">Berbagi Cepat</string>
   <string name="conversation_unencrypted_hint">Chat ini tidak terenkripsi, untuk alasan keamanan Anda harus mengaktifkan enkripsi pesan dengan menggunakan ikon kunci. Enkripsi yang lebih baik adalah OMEMO.</string>
   <string name="pref_warn_unencrypted_chat">Peringatkan jika obrolan tidak terenkripsi</string>
