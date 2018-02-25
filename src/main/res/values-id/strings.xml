@@ -581,6 +581,11 @@
   <string name="join_or_create_conference">Bergabung atau buat obrolan grup</string>
   <string name="choose_participants">Pilih peserta</string>
   <string name="creating_conference">Membuat obrolan grup…</string>
+  <string name="request_permissions_message">Pix-Art Messenger akan meminta Anda mengizinkan beberapa izin. Penting bahwa Anda mengizinkan semua hak akses ini untuk menggunakan semua fitur messenger ini. Jika Anda menolak izin ini, aplikasi akan menutup dengan sendiri.</string>
+  <string name="request_permissions_message_again">Anda telah menolak beberapa atau semua izin yang dibutuhkan untuk Pix-Art Messenger. Apakah Anda ingin beralih ke pengaturan dan mengizinkan izin ini? Jika Anda menolak semua izin ini, aplikasi akan menutup dengan sendiri.</string>
+  <string name="no_permission">Pix-Art Messenger tidak memiliki izin</string>
+  <string name="send_image">Kirim gambar?</string>
+  <string name="this_device_is_no_longer_in_use">Perangkat ini tidak lagi digunakan</string>
   <string name="allow">Mengizinkan</string>
   <string name="attach_choose_video">Pilih video</string>
   <string name="no_permission_to_access_x">Tidak ada izin untuk mengakses %s</string>
