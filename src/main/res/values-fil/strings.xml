@@ -387,4 +387,5 @@
   <string name="ban_from_conference">Ipinagbawal sa grupo ng chat</string>
   <string name="removing_from_public_conference">Gusto mong burahin %s mula pampublikong grupo ng chat. Ang isang paraan upang gawin ito ay ang pagbawal sa user kailanman.</string>
   <string name="ban_now">Bawal ngayon</string>
+  <string name="could_not_change_role">Hindi mabago ang tungkulin ng %s</string>
 </resources>
