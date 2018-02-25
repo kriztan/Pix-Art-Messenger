@@ -330,6 +330,11 @@
   <string name="download_x_file">I-download %s</string>
   <string name="delete_x_file">Burahin %s</string>
   <string name="file">kikil</string>
+  <string name="open_x_file">Buksan %s</string>
+  <string name="sending_file">pagpapadala (%1$d% nakumpleto)</string>
+  <string name="preparing_file">Paghahanda sa kikil para sa transmisyon</string>
+  <string name="x_file_offered_for_download">%s inaalok para idownload</string>
+  <string name="cancel_transmission">Kansel transmisyon</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
