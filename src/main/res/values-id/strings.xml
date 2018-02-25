@@ -665,7 +665,9 @@
   <string name="corresponding_conversations_closed">Percakapan yang bersamaan ditutup.</string>
   <string name="contact_blocked_past_tense">Kontak diblokir.</string>
   <string name="pref_notifications_from_strangers">Pemberitahuan dari orang tak dikenal</string>
+  <string name="pref_notifications_from_strangers_summary">Beritahu pesan yang diterima dari orang yang tak dikenal.</string>
   <string name="received_message_from_stranger">Menerima pesan dari orang asing</string>
+  <string name="contacts_are_typing">%s sedang mengetik…</string>
   <string name="presence_offline">Tidak terhubung</string>
   <string name="block_stranger">Blokir orang asing</string>
   <string name="pref_use_auto_rotate_summary">Putar gambar dan video di layar penuh agar sesuai dengan ukuran</string>
@@ -681,7 +683,9 @@
   <string name="session_failure">Kegagalan sesi</string>
   <string name="action_take_photo">ambil foto</string>
   <string name="action_take_video">merekam video</string>
+  <string name="account_status_regis_web">Server membutuhkan registrasi di situs web</string>
   <string name="application_found_to_open_website">Tidak ada aplikasi yang ditemukan untuk membuka situs web</string>
+  <string name="open_website">Buka situs web</string>
   <string name="yesterday">Kemarin</string>
   <string name="network_is_unreachable">Jaringan tidak terjangkau</string>
   <string name="mark_as_read">Tandai sudah dibaca</string>
@@ -697,6 +701,7 @@
   <string name="title_activity_share_via_account">Bagikan melalui akun</string>
   <string name="private_messages_are_disabled">Pesan pribadi dinonaktifkan</string>
   <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
+  <string name="no_write_access_in_public_muc">Anda tidak berpartisipasi obrolan grup ini dan tidak memiliki akses tulis saat ini. \nSilakan pergi ke obrolan grup dengan menekan <b>OK</b> dan mengirim pesan pribadi ke moderator, administator atau pemilik dengan mengklik lama satu dari nama anggota di bagian atas daftar untuk meminta akses tulis.</string>
   <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
   <string name="huawei_protected_apps_summary">Agar tetap menerima pemberitahuan, bahkan saat layar dimatikan, Anda perlu menambahkan Pix-Art Messenger ke daftar aplikasi yang dilindungi.</string>
 </resources>
