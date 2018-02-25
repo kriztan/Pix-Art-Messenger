@@ -670,7 +670,7 @@
   <string name="contact_blocked_past_tense">Kontak diblokir.</string>
   <string name="pref_notifications_from_strangers">Pemberitahuan dari orang tak dikenal</string>
   <string name="pref_notifications_from_strangers_summary">Beritahu pesan yang diterima dari orang yang tak dikenal.</string>
-  <string name="received_message_from_stranger">Menerima pesan dari orang asing</string>
+  <string name="received_message_from_stranger">Menerima pesan dari orang yang tak dikenal</string>
   <string name="contacts_are_typing">%s sedang mengetik…</string>
   <string name="presence_offline">Tidak terhubung</string>
   <string name="block_stranger">Blokir orang asing</string>
