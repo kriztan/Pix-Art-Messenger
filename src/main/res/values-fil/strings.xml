@@ -293,4 +293,8 @@
   <string name="conference_banned">Ikaw ay pinagbawalan dito sa grupo ng chat</string>
   <string name="conference_members_only">Ang grupo ng chat na ito ay para sa mga miyembro lamang</string>
   <string name="conference_kicked">Ikaw ay pinatalsik sa grupo ng chat</string>
+  <string name="conference_shutdown">Ang grupo ng chat ay itinigil</string>
+  <string name="using_account">gamitin ang account %s</string>
+  <string name="checking_x">Etsek%s sa HTTP host</string>
+  <string name="not_connected_try_again">Ikaw ay hindi konektado. Subukan ulit mamaya</string>
 </resources>
