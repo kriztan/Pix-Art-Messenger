@@ -567,6 +567,7 @@
   <string name="change_presence">Ubah Kehadiran</string>
   <string name="status_message">Status pesan</string>
   <string name="all_accounts_on_this_device">Tetapkan untuk semua akun di perangkat ini</string>
+  <string name="presence_online">Terhubung</string>
   <string name="secure_password_generated">Kata sandi yang aman telah dibuat</string>
   <string name="device_does_not_support_unknown_source_op">Perangkat Anda tidak mendukung mengizinkan pemasangan aplikasi dari sumber yang tidak dikenal</string>
   <string name="share">Bagikan</string>
@@ -581,6 +582,8 @@
   <string name="join_or_create_conference">Bergabung atau buat obrolan grup</string>
   <string name="choose_participants">Pilih peserta</string>
   <string name="creating_conference">Membuat obrolan grup…</string>
+  <string name="invite_again">Undang lagi</string>
+  <string name="InviteText">Halo, \n\n pengguna %s telah mengundang Anda ke Pix-Art Messenger. Jika Anda menggunakan Android, cobalah dan klik tautan berikut untuk memulai kembali...</string>
   <string name="request_permissions_message">Pix-Art Messenger akan meminta Anda mengizinkan beberapa izin. Penting bahwa Anda mengizinkan semua hak akses ini untuk menggunakan semua fitur messenger ini. Jika Anda menolak izin ini, aplikasi akan menutup dengan sendiri.</string>
   <string name="request_permissions_message_again">Anda telah menolak beberapa atau semua izin yang dibutuhkan untuk Pix-Art Messenger. Apakah Anda ingin beralih ke pengaturan dan mengizinkan izin ini? Jika Anda menolak semua izin ini, aplikasi akan menutup dengan sendiri.</string>
   <string name="no_permission">Pix-Art Messenger tidak memiliki izin</string>
@@ -634,7 +637,9 @@
   <string name="today">Hari ini</string>
   <string name="pref_use_max_brightness_summary">Beralih ke kecerahan maksimum saat menonton video atau gambar di layar penuh.</string>
   <string name="pref_use_max_brightness">Kecerahan maksimum</string>
+  <string name="corresponding_conversations_closed">Percakapan yang bersamaan ditutup.</string>
   <string name="contact_blocked_past_tense">Kontak diblokir.</string>
+  <string name="pref_notifications_from_strangers">Pemberitahuan dari orang tak dikenal</string>
   <string name="received_message_from_stranger">Menerima pesan dari orang asing</string>
   <string name="block_stranger">Blokir orang asing</string>
   <string name="pref_use_auto_rotate_summary">Putar gambar dan video di layar penuh agar sesuai dengan ukuran</string>
