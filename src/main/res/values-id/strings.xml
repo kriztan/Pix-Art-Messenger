@@ -572,7 +572,15 @@
   <string name="share">Bagikan</string>
   <string name="share_location">Berbagi lokasi</string>
   <string name="location_sharing_disabled">Berbagi lokasi dinonaktifkan dalam pengaturan</string>
+  <string name="action_end_conversation_muc">Tinggalkan obrolan grup</string>
   <string name="leave_conference_warning">Apakah Anda benar ingin meninggalkan obrolan grup ini? Anda tidak akan lagi diberi tahu tentang pesan baru sampai bergabung dengan obrolan grup lagi.</string>
+  <string name="show_password">Tampilkan kata sandi</string>
+  <string name="registration_please_wait">Pendaftaran gagal: Coba lagi nanti</string>
+  <string name="registration_password_too_weak">Pendaftaran gagal: Kata sandi terlalu lemah</string>
+  <string name="create_conference">Buat obrolan grup</string>
+  <string name="join_or_create_conference">Bergabung atau buat obrolan grup</string>
+  <string name="choose_participants">Pilih peserta</string>
+  <string name="creating_conference">Membuat obrolan grup…</string>
   <string name="allow">Mengizinkan</string>
   <string name="attach_choose_video">Pilih video</string>
   <string name="no_permission_to_access_x">Tidak ada izin untuk mengakses %s</string>
