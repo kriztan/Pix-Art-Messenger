@@ -363,6 +363,8 @@
   <string name="could_not_change_password">Ang kontrasenyas ay hindi mababago</string>
   <string name="otr_session_not_started">Magpadala ng mensahe upang makapagsimula ng enkrypted chat</string>
   <string name="ask_question">Magtanong</string>
+  <string name="smp_explain_question">Kung kayo ng iyong kontak ay may karaniwang lihim na walang ibang nakakaalam (gaya ng biro o kung ano ang inyong tanghalian noong huling beses kayong nagkita) magamit mo ang lihim na ito upang eperipika ang inyong bakas ng mga daliri.\n\nMakapagbigay ka ng pahiwatig o tanong para sa iyong kontak upang magtugon sa mga sagot ng sensitibong kaso.</string>
+  <string name="smp_explain_answer">Ang iyong kontak ay gustong eberipika ang bakas ng iyong daliri sa pamamagitan ng pagsasabi sayo ng sekreto. Ang iyong kontak ang nagbigay ng pahiwatig o katanungan para sa naturang sekreto.</string>
   <string name="shared_secret_hint_should_not_be_empty">Ang iyong pahiwatig ay dapat hindi walang saysay</string>
   <string name="shared_secret_can_not_be_empty">Ang iyong ibinahaging lihim ay di pwedeng walang saysay</string>
   <string name="manual_verification_explanation">E-kumpara ng mabuti ang bahid ng kamay na ipinabakita sa baba sa mga bahid ng kamay na nasa iyong kontak.\nPwede kang gumamit ng kahit anong pinagkakatiwalaang porma ng komunikasyon gaya ng encrypted na e-mail o tumawag sa telepono para ipagpalit sa mga iyon.</string>
