@@ -568,4 +568,15 @@
   <string name="invalid_barcode">Di-wastong barcode</string>
   <string name="verify_with_qr_code">e-verify sa barcode</string>
   <string name="i_followed_this_link_from_a_trusted_source">Sinundan ko ang link na ito mula sa pinagkakatiwalaang pinagmulan</string>
+  <string name="verifying_omemo_keys_trusted_source">Susubukan mong i-verify ang mga key ng OMEMO ng %1$s pagkatapos ng pag-click sa isang link. Ligtas na lamang ito kung sinunod mo ang link na ito mula sa pinagkakatiwalaang pinagmulan kung saan maaaring ma-publish lamang ang %2$s sa link na ito.</string>
+  <string name="verify_omemo_keys">I-verify ang mga fingerprint ng OMEMO</string>
+  <string name="show_inactive_devices">Ipakita ang hindi aktibong mga aparato</string>
+  <string name="hide_inactive_devices">Itago ang hindi aktibong mga aparato</string>
+  <string name="reply">Sumagot</string>
+  <string name="encrypting_message">Pag-encrypt ng mensahe</string>
+  <string name="transcoding_video">Pag-compress ng video</string>
+  <string name="pref_automatically_delete_messages_description">Awtomatikong tanggalin ang mga mensahe mula sa aparatong ito na mas luma kaysa sa naka-configure na time frame.</string>
+  <string name="pref_automatically_delete_messages">Awtomatikong pagtanggal ng mensahe</string>
+  <string name="not_fetching_history_retention_period">Hindi nakakakuha ng mga mensahe dahil sa lokal na panahon ng pagpapanatili.</string>
+  <string name="timeout_24_hours">24 na oras</string>
 </resources>
