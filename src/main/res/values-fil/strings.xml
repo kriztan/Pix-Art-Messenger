@@ -558,4 +558,14 @@
   <string name="verified_fingerprints">Na-verify na mga tatak ng kamay</string>
   <string name="use_camera_icon_to_scan_barcode">Gamitin ang camera upang i-scan ang isang barcode ng mga contact</string>
   <string name="please_wait_for_keys_to_be_fetched">Mangyaring maghintay para sa mga key na makuha</string>
+  <string name="share_as_barcode">Ibahagi bilang Barcode</string>
+  <string name="share_as_uri">Ibahagi bilang XMPP URI</string>
+  <string name="share_as_http">Ibahagi bilang HTTP na link</string>
+  <string name="blindly_trusted_omemo_keys">Nagwawalang-bahala ang mga key ng OMEMO</string>
+  <string name="pref_blind_trust_before_verification">Blind Trust Bago Pag-verify</string>
+  <string name="pref_blind_trust_before_verification_summary">Awtomatikong pinagkakatiwalaan ang lahat ng mga bagong device mula sa mga contact na hindi pa napatotohanan bago.</string>
+  <string name="not_trusted">Walang sinuman</string>
+  <string name="invalid_barcode">Di-wastong barcode</string>
+  <string name="verify_with_qr_code">e-verify sa barcode</string>
+  <string name="i_followed_this_link_from_a_trusted_source">Sinundan ko ang link na ito mula sa pinagkakatiwalaang pinagmulan</string>
 </resources>
