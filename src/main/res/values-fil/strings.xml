@@ -544,4 +544,18 @@
   <string name="creating_conference">Paglikha ng grupo ng chat…</string>
   <string name="import_text">Mayroong isang backup sa iyong device na maaaring ma-import. \nMalamang maaari kang hilingin na i-uninstall ang lumang bersyon o Mga Pag-uusap at ang iyong Messenger ay i-restart sa panahon ng backup na proseso. Mag-i-import ba ang backup? </string>
   <string name="import_database">Mag-import ng backup</string>
+  <string name="invite_again">Mag-imbita muli</string>
+  <string name="inviteUser_Subject">ay inanyayahan ka sa pamamagitan ng</string>
+  <string name="InviteText">Kumusta, \n\ninanyayahan ka ng user %s sa Pix-Art Messenger. Kung gumagamit ka ng Android, subukan ito at i-click ang sumusunod na link upang magsimula...</string>
+  <string name="pref_broadcast_last_activity">Broadcast Last User Interaction</string>
+  <string name="pref_broadcast_last_activity_summary">Hayaan ang lahat ng iyong mga contact malaman kapag gumagamit ng Pix-Art Messenger</string>
+  <string name="invite_user">Mag-imbita sa Pix-Art Messenger</string>
+  <string name="request_permissions_message">Hinihiling ka ng Pix-Art Messenger na pahintulutan ang ilang mga pahintulot. Mahalaga na payagan mo ang lahat ng mga pahintulot na gamitin ang lahat ng mga tampok ng sugo na ito. Kung tinatanggihan mo ang alinman sa mga pahintulot na ito ay sarhan ang app mismo.</string>
+  <string name="request_permissions_message_again">Tinanggihan mo ang ilan o lahat ng mga pahintulot na kinakailangan para sa Pix-Art Messenger. Gusto mo bang tumalon sa mga setting at payagan ang mga pahintulot na ito? Kung tinanggihan mo ang alinman sa mga pahintulot na ito, tutuparin ng app ang sarili nito.</string>
+  <string name="copy_fingerprint">Kopyahin ang tatak ng daliri</string>
+  <string name="all_omemo_keys_have_been_verified">Na-verify ang lahat ng mga key ng OMEMO</string>
+  <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Ang barcode ay hindi naglalaman ng mga fingerprint para sa pag-uusap na ito.</string>
+  <string name="verified_fingerprints">Na-verify na mga tatak ng kamay</string>
+  <string name="use_camera_icon_to_scan_barcode">Gamitin ang camera upang i-scan ang isang barcode ng mga contact</string>
+  <string name="please_wait_for_keys_to_be_fetched">Mangyaring maghintay para sa mga key na makuha</string>
 </resources>
