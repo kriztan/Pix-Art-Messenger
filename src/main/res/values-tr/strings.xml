@@ -351,7 +351,7 @@
   <string name="distrust_omemo_key">Şüpheli cihaz</string>
   <string name="distrust_omemo_key_text">Bu cihaz için doğrulamayı kaldırmak istediğinizden emin misiniz?\nBu cihaz ve bu cihazdan gelen mesajlar güvenilmez olarak işaretlenecek.</string>
   <string name="error_no_keys_to_trust_server_error">Bu bağlantıda kullanılabilen kullanılabilir bir anahtar yok.\nSunucudan yeni anahtarlar getirme başarısız oldu. Belki rehber sunucunuzda bir sorun var.</string>
-  <string name="error_no_keys_to_trust">Bu bağlantıda kullanılabilir bir anahtar yok. Anahtarlarından herhangi birini temizlediyseniz, yenilerini üretmeleri gerekir.</string>
+  <string name="error_no_keys_to_trust">Bu bağlantı da kullanılabilen kullanılabilir bir anahtar yok. Anahtarlarından herhangi birini temizlediyseniz, yenilerini üretmelidirler.</string>
   <string name="error_trustkeys_title">Hata</string>
   <string name="fetching_history_from_server">Geçmişi sunucudan getir</string>
   <string name="no_more_history_on_server">Sunucuda daha fazla geçmişi yok</string>
@@ -364,7 +364,7 @@
   <string name="smp_explain_answer">Bağlantınız, paylaşılan bir şifre ile size kimlik sorarak parmak izinizi doğrulamak istiyor. Kişiniz, bu şifre için aşağıdaki ipucu veya soruyu hazırlamıştır.</string>
   <string name="shared_secret_hint_should_not_be_empty">İpucunuz boş olmamalıdır</string>
   <string name="shared_secret_can_not_be_empty">Paylaşılan şifreler boş olamaz</string>
-  <string name="manual_verification_explanation">Aşağıda gösterilen parmak izini kişilerinizin parmak iziyle dikkatlice karşılaştırın.\nBunları değiştirmek için şifreli bir e-posta ya da telefon görüşmesi gibi güvenilir herhangi bir iletişim biçimini kullanabilirsiniz.</string>
+  <string name="manual_verification_explanation">Aşağıda gösterilen parmak izini kontağınızın parmak iziyle dikkatlice karşılaştırın. \nBunları değiştirmek için şifreli bir e-posta veya telefon görüşmesi gibi güvenilir bir iletişim biçimini kullanabilirsiniz.</string>
   <string name="change_password">Parolayı değiştir</string>
   <string name="current_password">Güncel parola</string>
   <string name="new_password">Yeni parola</string>
@@ -382,18 +382,18 @@
   <string name="remove_from_room">Sohbet grubunu sil</string>
   <string name="could_not_change_affiliation">%s kullanıcısının üyeliği değiştirilemedi</string>
   <string name="ban_from_conference">Grup sohbetini yasakla</string>
-  <string name="removing_from_public_conference">%s adlı kullanıcıyı herkese açık bir konferanstan kaldırılmaya çalışıyorsunuz. Bunu yapmanın tek yolu kullanıcıyı sonsuza dek yasaklamaktır.</string>
+  <string name="removing_from_public_conference">%s adlı kullanıcıyı bir genel grup sohbetinden kaldırılmaya çalışılıyorsunuz. Bunu yapmanın tek yolu kullanıcıyı sonsuza dek yasaklamaktır.</string>
   <string name="ban_now">Şimdi yasakla</string>
   <string name="could_not_change_role">%s görevini değiştiremedim</string>
   <string name="public_conference">Herkese açık sohbet grubu</string>
-  <string name="private_conference">Özel sadece grup üyeleri</string>
+  <string name="private_conference">Özel, sadece grup üyeleri</string>
   <string name="conference_options">Grup sohbeti seçenekleri</string>
   <string name="members_only">Özel, yalnızca üyeler</string>
   <string name="non_anonymous">İsimsiz</string>
   <string name="moderated">Denetlenen</string>
   <string name="you_are_not_participating">Katılım sağlamıyorsun</string>
   <string name="modified_conference_options">Grup sohbeti seçeneklerini düzenle!</string>
-  <string name="could_not_modify_conference_options">Grup sohbeti ayarları değiştirilemedi</string>
+  <string name="could_not_modify_conference_options">Grup sohbeti seçenekleri değiştirilemedi</string>
   <string name="never">Hiçbir zaman</string>
   <string name="thirty_minutes">30 dakika</string>
   <string name="one_hour">1 saat</string>
@@ -418,8 +418,8 @@
   <string name="offering_x_file">Öneri %s</string>
   <string name="hide_offline">Çevrimdışı gizle</string>
   <string name="is_typing">yazıyor…</string>
-  <string name="pref_chat_states">Yazıyor bildirimleri</string>
-  <string name="pref_chat_states_summary">Kişilerinizin onlara ne zaman ileti yazdığınızı bilmelerine izin verin</string>
+  <string name="pref_chat_states">Bildirimleri yazma</string>
+  <string name="pref_chat_states_summary">Kişilerinize ne zaman mesaj yazdığınızı bilmelerine izin verin</string>
   <string name="send_location">Konum gönder</string>
   <string name="show_location">Konumu göster</string>
   <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
@@ -428,10 +428,10 @@
   <string name="title_undo_swipe_out_conversation">Sohbet kapandı</string>
   <string name="title_undo_swipe_out_muc">Sohbet grubundan ayrıl</string>
   <string name="pref_dont_trust_system_cas_title">Sistem CAs\'larına güvenme</string>
-  <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar elle onaylanmalıdır</string>
+  <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar manuel onaylanmalıdır</string>
   <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
-  <string name="pref_remove_trusted_certificates_summary">El ile onaylanan sertifikaları sil</string>
-  <string name="toast_no_trusted_certs">El ile onaylanan sertifika bulunmuyor</string>
+  <string name="pref_remove_trusted_certificates_summary">Manuel onaylanan sertifikaları sil</string>
+  <string name="toast_no_trusted_certs">Manuel onaylanan sertifika bulunmuyor</string>
   <string name="dialog_manage_certs_title">Sertifikaları kaldır</string>
   <string name="dialog_manage_certs_positivebutton">Seçileni sil</string>
   <string name="dialog_manage_certs_negativebutton">İptal</string>
@@ -443,7 +443,7 @@
     <item quantity="one">Bağlantı %d seçin</item>
     <item quantity="other">Bağlantılar %d seçin</item>
   </plurals>
-  <string name="pref_quick_action_summary">Gönderme düğmesini hızlı etkiyle değiştirin</string>
+  <string name="pref_quick_action_summary">Gönderme düğmesini hızlı eylemle değiştirin</string>
   <string name="pref_quick_action">Hızlı İşlem</string>
   <string name="none">Yok</string>
   <string name="recently_used">En son kullanılanlar</string>
@@ -456,9 +456,9 @@
   <string name="invalid_username">Bu geçerli bir kullanıcı adı değil</string>
   <string name="download_failed_server_not_found">İndirilemedi: Sunucu bulunamadı</string>
   <string name="download_failed_file_not_found">İndirilemedi: Dosya bulunamadı</string>
-  <string name="download_failed_could_not_connect">İndirilemedi: Ana bilgisayara bağlanılamadı</string>
+  <string name="download_failed_could_not_connect">İndirme başarısız: Ana bilgisayara bağlanılamadı</string>
   <string name="elv_undo">geri al</string>
-  <string name="download_failed_could_not_write_file">İndirilemedi: Dosya yazılamadı</string>
+  <string name="download_failed_could_not_write_file">İndirme başarısız: Dosya yazılamadı</string>
   <string name="pref_use_white_background">Beyaz arka planı kullan</string>
   <string name="pref_use_white_background_summary">Gönderilen mesajları siyah arka planda siyah metin olarak göster</string>
   <string name="action_check_update">Güncellemeleri kontrol et</string>
@@ -474,7 +474,7 @@
   <string name="server_info_broken">Bozuk</string>
   <string name="pref_presence_settings">Bulunma</string>
   <string name="pref_away_when_screen_off">Uzakta ekran kapalıyken</string>
-  <string name="pref_away_when_screen_off_summary">Ekran kapalıyken kaynağınızı uzakta olarak işaretler</string>
+  <string name="pref_away_when_screen_off_summary">Ekran kapalıyken kaynağını uzakta olarak işaretler</string>
   <string name="pref_dnd_on_silent_mode">Sessiz modda \'\'Rahatsız etme\'\'</string>
   <string name="update_info">Pix-Art Messenger\'ın yeni sürümü otomatik olarak indiriliyor ve yükleniyor.\n\nLütfen bekleyin…</string>
   <string name="pref_dnd_on_silent_mode_summary">Cihaz sessiz moddayken kaynağınızı \'\'Rahatsız etme\'\' olarak işaretler</string>
@@ -486,8 +486,8 @@
   <string name="authenticate_with_certificate">Sertifikanın kimliğini doğrulamak için boş bırakın</string>
   <string name="mam_prefs">Arşivleme tercihleri</string>
   <string name="server_side_mam_prefs">Sunucu tarafında arşivleme tercihleri</string>
-  <string name="fetching_mam_prefs">Arşivleme tercihlerini geri getirme. Lütfen bekleyin…</string>
-  <string name="unable_to_fetch_mam_prefs">Arşivleme tercihleri getirilemiyor</string>
+  <string name="fetching_mam_prefs">Arşivleme tercihlerini geri getirme. Lütfen bekleyiniz…</string>
+  <string name="unable_to_fetch_mam_prefs">Arşivleme tercihleri ​​getirilemiyor</string>
   <string name="captcha_required">Captcha gerekiyor</string>
   <string name="captcha_hint">Yukarıda bulunan resimde ki metni giriniz</string>
   <string name="certificate_chain_is_not_trusted">Sertifika zinciri güvenilir değil</string>
