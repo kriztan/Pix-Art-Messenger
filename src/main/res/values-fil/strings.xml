@@ -503,4 +503,24 @@
   <string name="account_settings_hostname">Hostname</string>
   <string name="account_settings_port">Port</string>
   <string name="select_image_and_crop">Pumili ng imahe at i-crop</string>
+  <string name="contacts_have_no_pgp_keys">Hindi ma-encrypt ng Pix-Art Messenger ang iyong mga mensahe dahil hindi nagpapahayag ng iyong mga contact ang kanilang mga pampublikong key. \n\n</string>
+  <string name="this_account_is_disabled">Pinigilan mo ang account na ito</string>
+  <string name="security_error_invalid_file_access">Error sa seguridad: Di-wastong pag-access ng file</string>
+  <string name="no_application_to_share_uri">Walang nahanap na application upang maibahagi ang URI</string>
+  <string name="share_uri_with">Ibahagi ang URI sa…</string>
+  <string name="mgmt_account_reconnect">Kumonekta muli</string>
+  <string name="welcome_text">…ay isang libre at ligtas na XMPP / Jabber client.</string>
+  <string name="magic_create_text">Gagabayan ka namin sa pamamagitan ng proseso ng paglikha ng isang account na may isang random na password, na maaari mong gamitin o baguhin sa iyong sariling password sa susunod na pahina.\nKaysa makakausap mo ang mga gumagamit ng ito at iba pang mga provider sa pamamagitan ng pagbibigay sa kanila ng iyong buong Jabber-ID.</string>
+  <string name="your_full_jid_will_be">Ang iyong Jabber-ID ay magiging: %s</string>
+  <string name="create_account">Lumikha ng bagong account</string>
+  <string name="use_existing_accout">Gumamit ng isang umiiral na account</string>
+  <string name="pick_your_username">Piliin ang iyong username</string>
+  <string name="pref_manually_change_presence">Manu-manong baguhin ang presensya</string>
+  <string name="pref_manually_change_presence_summary">Baguhin ang iyong presensya sa loob ng iyong account</string>
+  <string name="change_presence">Baguhin ang Presensya</string>
+  <string name="status_message">Katayuan ng mensahe</string>
+  <string name="all_accounts_on_this_device">Itakda para sa lahat ng mga account sa aparato na ito</string>
+  <string name="presence_chat">Libre para sa Chat</string>
+  <string name="presence_online">Online</string>
+  <string name="presence_away">Malayo</string>
 </resources>
