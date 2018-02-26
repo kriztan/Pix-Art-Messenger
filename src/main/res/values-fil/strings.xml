@@ -455,4 +455,16 @@
   <string name="send_private_message">Magpadala ng pribadong mensahe</string>
   <string name="user_has_left_conference">%s ay umalis sa grupo ng chat!</string>
   <string name="username">Pangalang ginagamit</string>
+  <string name="username_hint">Panggalang ginagamit</string>
+  <string name="invalid_username">Hindi ito isang wastong username</string>
+  <string name="download_failed_server_not_found">Nabigo ang pag-download: Hindi nakita ang server</string>
+  <string name="download_failed_file_not_found">Nabigo ang pag-download: Hindi nakita ang file</string>
+  <string name="download_failed_could_not_connect">Nabigo ang pag-download: Hindi nakakonekta sa host</string>
+  <string name="elv_undo">pawalang-bisa</string>
+  <string name="download_failed_could_not_write_file">Nabigo ang pag-download: Hindi ma-isulat ang file</string>
+  <string name="pref_use_white_background">Gumamit ng puting background</string>
+  <string name="pref_use_white_background_summary">Ipakita ang mga ipinadalang mensahe bilang itim na teksto sa isang puting background</string>
+  <string name="action_check_update">Tingnan ang Mga Update</string>
+  <string name="title_activity_updater">I-update ang serbisyo</string>
+  <string name="update_available">Ang bersyon na %1$s ay magagamit. \n\nFilipino:%2$s\n\nUpdate sa bersyon na %1$s ngayon?</string>
 </resources>
