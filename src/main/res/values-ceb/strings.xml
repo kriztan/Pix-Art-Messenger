@@ -57,6 +57,11 @@
   <string name="block">I-block</string>
   <string name="unblock">Ayaw i-block</string>
   <string name="save">Luwasa</string>
+  <string name="ok">OK</string>
+  <string name="crash_report_title">Pix-Art Messenger kay naguba</string>
+  <string name="crash_report_message">Sa pamaagi nga pagpadala sa stack traces ikaw naktabang sa nagpadayun sa paglambo sa Pix-Art Messenger\n<b>Pasidaan:</b> Kini mugamit sa imung XMPP nga account para makapadala ug stack trace ngadto sa developer.</string>
+  <string name="send_now">Ipadala karun</string>
+  <string name="send_never">Ayaw nag pangutana balik</string>
   <string name="pref_notification_settings">Pagpahibalo</string>
   <string name="pref_notifications">Mga pagpahibalo</string>
   <string name="pref_notifications_summary">Pahibal-a ko kung naay bag-o nga mensahe ang maabot</string>
