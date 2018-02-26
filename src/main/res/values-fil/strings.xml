@@ -523,4 +523,25 @@
   <string name="presence_chat">Libre para sa Chat</string>
   <string name="presence_online">Online</string>
   <string name="presence_away">Malayo</string>
+  <string name="presence_xa">Hindi magagamit</string>
+  <string name="presence_dnd">Abala</string>
+  <string name="secure_password_generated">Ang isang ligtas na password ay nabuo</string>
+  <string name="device_does_not_support_battery_op">Hindi sinusuportahan ng iyong device ang pag-opt out sa pag-optimize ng baterya</string>
+  <string name="device_does_not_support_unknown_source_op">Ang iyong aparato ay hindi sumusuporta na nagpapahintulot sa pag-install ng app mula sa hindi kilalang pinagmulan</string>
+  <string name="share">Ibahagi</string>
+  <string name="share_location">Ibahagi ang lokasyon</string>
+  <string name="location_sharing_disabled">Hindi pinagana ang pagbabahagi ng lokasyon sa mga setting</string>
+  <string name="locating">Hinahanap…</string>
+  <string name="action_end_conversation_muc">Iwanan ang chat ng grupo</string>
+  <string name="leave_conference_warning">Gusto mo ba talagang umalis sa grupo ng chat na ito? Hindi ka na i-notify ng mga bagong mensahe hanggang sa muling sumali sa pangkat ng chat.</string>
+  <string name="show_password">Ipakita ang password</string>
+  <string name="registration_please_wait">Nabigo ang pagpaparehistro: Subukang muli sa ibang pagkakataon</string>
+  <string name="registration_password_too_weak">Nabigo ang pagpaparehistro: Mahina ang password</string>
+  <string name="create_conference">Lumikha ng grupo ng chat</string>
+  <string name="join_or_create_conference">Sumali o lumikha ng grupo ng chat</string>
+  <string name="conference_subject">Paksa</string>
+  <string name="choose_participants">Pumili ng mga kalahok</string>
+  <string name="creating_conference">Paglikha ng grupo ng chat…</string>
+  <string name="import_text">Mayroong isang backup sa iyong device na maaaring ma-import. \nMalamang maaari kang hilingin na i-uninstall ang lumang bersyon o Mga Pag-uusap at ang iyong Messenger ay i-restart sa panahon ng backup na proseso. Mag-i-import ba ang backup? </string>
+  <string name="import_database">Mag-import ng backup</string>
 </resources>
