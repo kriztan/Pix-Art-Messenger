@@ -233,6 +233,10 @@
   <string name="pref_use_colored_names_to_indicate_status">Ang di-kolor nga mga pangan nagpasabot sa status</string>
   <string name="pref_use_indicate_received">Mga resibo sa hangyo nga mensahe</string>
   <string name="pref_use_indicate_received_summary">Ang nakadawat ug mensahe markahan sa usa ka berdeng color kong gisuportahan</string>
+  <string name="pref_use_send_button_to_indicate_status_summary">Di-kolor pagpadala ug button para pagpasabot sa kontak nga status</string>
+  <string name="pref_use_colored_names_to_indicate_status_summary">Di-kolor nga pangan sa kontak para pagpahibalo sa kontak status</string>
+  <string name="pref_expert_options_other">Uban pa</string>
+  <string name="pref_autojoin">Awtomatik ang pag apil sa grupo nga chat</string>
   <string name="show_qr_code">Ipakita ang barcode</string>
   <string name="show_block_list">Ipakita ang na block nga listahan</string>
   <string name="account_details">Mga detalyi sa account</string>
