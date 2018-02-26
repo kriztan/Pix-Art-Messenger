@@ -451,4 +451,23 @@ Pili %d mga kontak</item>
   <string name="battery_optimizations_enabled_dialog">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa Pix-Art Messenger nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\n\nKani kay ge recomend mga dili na.</string>
   <string name="join_or_create_conference">Pag-apil o paghimo og chat sa grupo</string>
   <string name="conference_subject">Subject</string>
+  <string name="choose_participants">Pili ug mga partisipante</string>
+  <string name="creating_conference">Nagbuhat ug grupo sa chat…</string>
+  <string name="import_text">Naay mutabang sa imong device nga mahimong i-import.\n Posible ikaw hangyoon nga ibalhin ang daan nga bersyon o Pag-istoryahanay ug ang imong Sinugo ibalik pag-usab sa proseso sa pag-backup. Uyon baka nga i-import ang tabang? </string>
+  <string name="import_database">Import nga tabang</string>
+  <string name="invite_again">Pagdapit pag-usab</string>
+  <string name="inviteUser_Subject">nagdapit kanimo pinaagi sa</string>
+  <string name="InviteText">Hello,\n\n ang user %s nag-imbitar sa imuha nga sa Pix-Art Messenger. kung ikaw naggamit ug Android, suwayi dayun ug pislite ang mga nagsunod nga link para sugod ug balik...</string>
+  <string name="pref_broadcast_last_activity">Broadcast Last Interaction sa Gumagamit</string>
+  <string name="pref_broadcast_last_activity_summary">Hibal-i ang tanan nimong contact kung gamiton ang Pix-Art Messenger</string>
+  <string name="invite_user">Pagdapit sa Pix-Art Messenger</string>
+  <string name="request_permissions_message">Pix-Art Messenger mangutana sa imuha kung musugyot ka gayud sa pipila ka mga permiso. Importante nga imong tugotan ang tanan nga mga permiso nga gamiton ang tanang bahin niini nga mensahero. Kung imu ilimod bisag asa niini nga mga permiso ang app musira sa iyang kaugalingon.</string>
+  <string name="request_permissions_message_again">Imuhang gelimod ang uban o tanang permisong kinahanglanun para sa Pix-Art Messenger. Gusto ka bang moambak sa mga setting ug tugotan kini nga mga permiso? Kung imu ilimod bisag unsa ining mag permiso, ang app mismo musira sa iyang kaugalingun.</string>
+  <string name="unable_to_connect_to_keychain">Dili maka konek sa OpenKeychain</string>
+  <string name="no_permission">Ang Pix-Art Messenger kay walay permiso</string>
+  <string name="send_image">Magpadala umg hulagway?</string>
+  <string name="this_device_is_no_longer_in_use">Ang kini nga device kay wala na ginagamit</string>
+  <string name="import_canceled">Wa madayun ang pag-import</string>
+  <string name="Import_failed">Ang pag-import sa database napakyas, ang import dili posible</string>
+  <string name="Password_wrong">Sayop ang password, suwayi pag-usab</string>
 </resources>
