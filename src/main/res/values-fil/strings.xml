@@ -516,6 +516,11 @@
   <string name="no_storage_permission">Kailangan ng Pix-Art Messenger ng access sa panlabas na imbakan</string>
   <string name="shared_images_with_x">Ibinahagi ang mga larawan na may %s</string>
   <string name="shared_text_with_x">Ibinahagi ang teksto %s</string>
+  <string name="sync_with_contacts">I-synchronize ang mga kontak</string>
+  <string name="sync_with_contacts_long">Nais ng Pix-Art Messenger na tumugma sa iyong XMPP roster sa iyong mga kontak upang maipakita ang kanilang mga buong pangalan at avatar. \n\nPix-Art Messenger ay magbabasa lamang ng iyong mga contact at itugma ang mga ito nang lokal nang hindi na-upload ang mga ito sa iyong server. hihiling na magbigay ng pahintulot na ma-access ang iyong mga contact.</string>
+  <string name="certificate_information">Impormasyon sa Sertipiko</string>
+  <string name="certificate_subject">Paksa</string>
+  <string name="certificate_issuer">Tagapag-isyu</string>
   <string name="select_image_and_crop">Pumili ng imahe at i-crop</string>
   <string name="contacts_have_no_pgp_keys">Hindi ma-encrypt ng Pix-Art Messenger ang iyong mga mensahe dahil hindi nagpapahayag ng iyong mga contact ang kanilang mga pampublikong key. \n\n</string>
   <string name="this_account_is_disabled">Pinigilan mo ang account na ito</string>
