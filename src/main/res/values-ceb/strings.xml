@@ -511,4 +511,14 @@ Pili %d mga kontak</item>
   <string name="block_stranger">I-block ang estranghero</string>
   <string name="block_entire_domain">Pag-block sa tibuok nga domain</string>
   <string name="pref_use_auto_rotate_summary">Pag-tuyok sa mga hulagway ug mga video sa tibuokscreen aron mohaum sa sukod sa screen</string>
+  <string name="pref_use_auto_rotate">Pag-tuyok sa media sa tibuok nga screen</string>
+  <string name="pref_use_tor">Konek pinaagi Tor</string>
+  <string name="pref_use_tor_summary">I-tunel ang tanan nga koneksyon pinaagi sa Tor network.</string>
+  <string name="pref_connection_options">Mga kapilian sa koneksyon</string>
+  <string name="image_low">ubos (720p)</string>
+  <string name="image_mid">tunga (1920p)</string>
+  <string name="image_high">taas (3840p)</string>
+  <string name="last_seen_just_away">bag-uhay ra</string>
+  <string name="send_message">Pagpadala ug mensahe</string>
+  <string name="send_failed_resend">napakyas ang pag deliver, nag send ug usab…</string>
 </resources>
