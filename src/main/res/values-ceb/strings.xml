@@ -207,6 +207,14 @@
   <string name="server_info_session_established">Kasamatangang natukod ang sesyon</string>
   <string name="skip">Laktawi</string>
   <string name="disable_notifications">Ayaw ipakita ang mga pahibalo</string>
+  <string name="enable">Gipagana</string>
+  <string name="conference_requires_password">Grupo nga chat nag kinahanglan ug password</string>
+  <string name="enter_password">Isud ang password</string>
+  <string name="request_presence_updates">Palihug hangyo-a ang presensya sa mga update gekan sa imung unang kontak.\n\n<small> Kini magamit sa pag tino unsang kontak gamit ang imung (mga) kliyente.</small></string>
+  <string name="request_now">Hangyo-a karun</string>
+  <string name="delete_fingerprint">Tanggala ang Fingerprint</string>
+  <string name="sure_delete_fingerprint">Sigurado kaba nga ganahan nimu tanggalon ang kini nga fingerprint?</string>
+  <string name="ignore">Ayaw pansina</string>
   <string name="show_qr_code">Ipakita ang barcode</string>
   <string name="show_block_list">Ipakita ang na block nga listahan</string>
   <string name="account_details">Mga detalyi sa account</string>
