@@ -467,4 +467,20 @@
   <string name="action_check_update">Tingnan ang Mga Update</string>
   <string name="title_activity_updater">I-update ang serbisyo</string>
   <string name="update_available">Ang bersyon na %1$s ay magagamit. \n\nFilipino:%2$s\n\nUpdate sa bersyon na %1$s ngayon?</string>
+  <string name="remind_later">mamaya</string>
+  <string name="update">magpabago</string>
+  <string name="no_update_available">Walang available na update</string>
+  <string name="download_started">Nagsimula ang pag-download</string>
+  <string name="account_status_tor_unavailable">Hindi magagamit ang network ng Tor</string>
+  <string name="account_status_bind_failure">Bind failure</string>
+  <string name="account_status_host_unknown">Hindi mananagot ang server para sa domain</string>
+  <string name="server_info_broken">Nasira</string>
+  <string name="pref_presence_settings">Pagharap</string>
+  <string name="pref_away_when_screen_off">Lumayo kapag naka-off ang screen</string>
+  <string name="pref_away_when_screen_off_summary">Tinitiyak ang iyong mapagkukunan bilang malayo kapag naka-off ang screen</string>
+  <string name="pref_dnd_on_silent_mode">\"Huwag abalahin\" sa tahimik na mode</string>
+  <string name="update_info">Ang Pix-Art Messenger ay awtomatikong nagda-download at nag-install ng bagong bersyon. \n\nMangyari lamang na maghintay…</string>
+  <string name="pref_dnd_on_silent_mode_summary">Markahan ang iyong mapagkukunan bilang \"Huwag abalahin\" kapag ang aparato ay nasa tahimik na mode</string>
+  <string name="pref_treat_vibrate_as_silent">Tratuhin ang vibrate bilang silent mode</string>
+  <string name="pref_treat_vibrate_as_dnd_summary">Binibigyang marka ang iyong mapagkukunan bilang \"Huwag mang-istorbo\" kapag ang aparato ay nasa vibrate</string>
 </resources>
