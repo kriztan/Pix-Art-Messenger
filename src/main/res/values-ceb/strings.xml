@@ -497,4 +497,18 @@ Pili %d mga kontak</item>
   <string name="missing_presence_subscription">Nawala ang presensya sa subscripsiyon</string>
   <string name="missing_omemo_keys">Nawala ang OMEO nga mga yawe</string>
   <string name="error_publish_avatar_offline">Kinahanglan nga ikaw mahimong konektado sa pagmantala sa imong avatar.</string>
+  <string name="copy_to_clipboard">Kopyaha ngato sa clipboard</string>
+  <string name="message_copied_to_clipboard">Mensahe ge-kopya ngadto sa clipboard</string>
+  <string name="contact_blocked_past_tense">Ang kontak naka-block.</string>
+  <string name="pref_notifications_from_strangers">Mga pahibalo gekan sa mga estranghero</string>
+  <string name="pref_notifications_from_strangers_summary">Pagpahibalo alang sa mga mensahe nga nadawat gikan sa mga estranghero.</string>
+  <string name="received_message_from_stranger">Nadawat nga mga mensahe gekan sa estranghero</string>
+  <string name="contacts_are_typing">%s nag type…</string>
+  <string name="contact_is_typing">%s ang pagtype…</string>
+  <string name="one_participant">usa ka partisipante</string>
+  <string name="more_participants">%d mga partisipante</string>
+  <string name="presence_offline">Dili-online</string>
+  <string name="block_stranger">I-block ang estranghero</string>
+  <string name="block_entire_domain">Pag-block sa tibuok nga domain</string>
+  <string name="pref_use_auto_rotate_summary">Pag-tuyok sa mga hulagway ug mga video sa tibuokscreen aron mohaum sa sukod sa screen</string>
 </resources>
