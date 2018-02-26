@@ -483,4 +483,24 @@
   <string name="pref_dnd_on_silent_mode_summary">Markahan ang iyong mapagkukunan bilang \"Huwag abalahin\" kapag ang aparato ay nasa tahimik na mode</string>
   <string name="pref_treat_vibrate_as_silent">Tratuhin ang vibrate bilang silent mode</string>
   <string name="pref_treat_vibrate_as_dnd_summary">Binibigyang marka ang iyong mapagkukunan bilang \"Huwag mang-istorbo\" kapag ang aparato ay nasa vibrate</string>
+  <string name="hostname_example">xmpp.pix-art.de</string>
+  <string name="action_add_account_with_certificate">Magdagdag ng account na may sertipiko</string>
+  <string name="unable_to_parse_certificate">Hindi ma-parse ang certificate</string>
+  <string name="authenticate_with_certificate">Mag-iwan ng walang laman upang mapatunayan ang w / certificate</string>
+  <string name="mam_prefs">Pag-archive ng mga kagustuhan</string>
+  <string name="server_side_mam_prefs">Mga kagustuhan sa pag-archive ng server-side</string>
+  <string name="fetching_mam_prefs">Pagkuha ng mga kagustuhan sa pag-archive. Mangyaring maghintay…</string>
+  <string name="unable_to_fetch_mam_prefs">Hindi nakakuha ng mga kagustuhan sa pag-archive</string>
+  <string name="captcha_required">Kinakailangan ang Captcha</string>
+  <string name="captcha_hint">Ipasok ang teksto mula sa imahe sa itaas</string>
+  <string name="certificate_chain_is_not_trusted">Ang kadena ng sertipiko ay hindi pinagkakatiwalaan</string>
+  <string name="jid_does_not_match_certificate">Hindi tumutugma ang Jabber-ID sa sertipiko</string>
+  <string name="action_renew_certificate">I-renew ang sertipiko</string>
+  <string name="error_fetching_omemo_key">Error sa pagkuha ng key ng OMEMO!</string>
+  <string name="verified_omemo_key_with_certificate">Na-verify na key ng OMEMO na may sertipiko!</string>
+  <string name="device_does_not_support_certificates">Ang iyong aparato ay hindi sumusuporta sa pagpili ng mga sertipiko ng kliyente!</string>
+  <string name="changelog">Mga pagbabago</string>
+  <string name="account_settings_hostname">Hostname</string>
+  <string name="account_settings_port">Port</string>
+  <string name="select_image_and_crop">Pumili ng imahe at i-crop</string>
 </resources>
