@@ -215,6 +215,17 @@
   <string name="delete_fingerprint">Tanggala ang Fingerprint</string>
   <string name="sure_delete_fingerprint">Sigurado kaba nga ganahan nimu tanggalon ang kini nga fingerprint?</string>
   <string name="ignore">Ayaw pansina</string>
+  <string name="without_mutual_presence_updates"><b>Pasidaan:</b> Ang pagpadala niini nga walay pag-updanay sa presensya sa usa ka tawo mahimong hinungdan sa wala damha nga mga problema.\n\n<small> Adto sa kontak nga mga detalyi para ma tino nimu ang presensya sa mga subscription.</small></string>
+  <string name="pref_security_settings">Seguridad ug data nga proteksiyon</string>
+  <string name="pref_allow_message_correction">Tugti ang tig-korek sa mensahe</string>
+  <string name="pref_allow_message_correction_summary">Tugti ang imung mga kontak nga retroactively i-edit ilang mga mensahe</string>
+  <string name="pref_expert_options">Ekspert nga mga pahimutang</string>
+  <string name="title_activity_about">Mahitungod</string>
+  <string name="pref_about_conversations_summary">Buhat ug impormasyon sa lisensya</string>
+  <string name="title_pref_quiet_hours">Hilom nga mga Oras</string>
+  <string name="title_pref_quiet_hours_start_time">Sugod nga oras</string>
+  <string name="title_pref_quiet_hours_end_time">Kutob sa oras</string>
+  <string name="title_pref_enable_quiet_hours">Gepagana ang hilom nga mga oras</string>
   <string name="show_qr_code">Ipakita ang barcode</string>
   <string name="show_block_list">Ipakita ang na block nga listahan</string>
   <string name="account_details">Mga detalyi sa account</string>
