@@ -599,6 +599,25 @@ Pili %d mga kontak</item>
   <string name="error_publish_avatar_offline">Kinahanglan nga ikaw mahimong konektado sa pagmantala sa imong avatar.</string>
   <string name="copy_to_clipboard">Kopyaha ngato sa clipboard</string>
   <string name="message_copied_to_clipboard">Mensahe ge-kopya ngadto sa clipboard</string>
+  <string name="message">Mensahe</string>
+  <string name="quote">Quote</string>
+  <string name="show_error_message">Ipakita ang error nga mensahe</string>
+  <string name="error_message">Error nga Mensahe</string>
+  <string name="data_saver_enabled">Tigluwas sa Data gipagana</string>
+  <string name="data_saver_enabled_explained">Ang imuhang operata nga sistema kay nagpugong sa Pix-Art Messenger gikan sa pag-access sa Internet kon anaa sa luyo. Para makadawat sa mga pagpahibalo sa bag-ong mga mensahe kinahanglan imong tugotan ang Pix-Art Messenger nga walay pugong nga access kon ang Data saver anaa.\\n Ang Pix-Art Messenger magpadayon pa sa paningkamot aron makaluwas sa datos kung posible.</string>
+  <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa Pix-Art Messenger.</string>
+  <string name="navigate">Pagdala sa lokasyon</string>
+  <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
+  <string name="received_contact">Nadawat nga kontak</string>
+  <string name="contact">Kontak</string>
+  <string name="unable_to_start_recording">Dili makasugod sa pagrekord</string>
+  <string name="error_unable_to_create_temporary_file">Dili makagama og temporaryo nga file</string>
+  <string name="this_device_has_been_verified">Ang kini nga device kay napamatud-an na</string>
+  <string name="copy_fingerprint">Kopyaha ang fingerprint</string>
+  <string name="all_omemo_keys_have_been_verified">Tanan OMEMO nga mga yawe napamatud-an na</string>
+  <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Ang barcode wala\'y mga fingerprints alang sa kini nga pag-istoryahanay.</string>
+  <string name="verified_fingerprints">Pamatuod nga mga fingerprint</string>
+  <string name="use_camera_icon_to_scan_barcode">Gamita ang camera sa pag-scan sa mga contact nga barcode</string>
   <string name="contact_blocked_past_tense">Ang kontak naka-block.</string>
   <string name="pref_notifications_from_strangers">Mga pahibalo gekan sa mga estranghero</string>
   <string name="pref_notifications_from_strangers_summary">Pagpahibalo alang sa mga mensahe nga nadawat gikan sa mga estranghero.</string>
@@ -667,4 +686,6 @@ Pili %d mga kontak</item>
   <string name="destroy_muc_failed">Ang grupo sa chat dili pwedi gub-on</string>
   <string name="no_write_access_in_public_muc">Wala ka moapil niining grupo nga chat ug wala kay paagsuwat nga access nga kasamtangan.\nPalihog adto sa grupo sa chat nga mga detalyin pinaagi sa pag pislet ug <b>OK</b> ug ipadala nga pribado nga mensahe sa moderator, administrador o tag-iya pinaagi sa taas nga pag-klik sa usa sa mga ngalan sa mga miyembro sa ibabaw sa lista aron mangayo sa access. alang sa pagsulat.</string>
   <string name="snooze">Snooze</string>
+  <string name="huawei_protected_apps">Protektado nga mga App</string>
+  <string name="huawei_protected_apps_summary">Para kanunay nga makadawat ug pagpahibalo, bisag ang screen nimu kay palong, kinahanglan ka adto sa Pix-Art Messenger para sa lista sa mga protektado nga mga app.</string>
 </resources>
