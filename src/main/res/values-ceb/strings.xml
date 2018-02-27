@@ -649,4 +649,12 @@ Pili %d mga kontak</item>
   <string name="no_application_found_to_open_link">Walay aplikasyon nakita para ablihan ang link</string>
   <string name="contacts_have_read_up_to_this_point">%s ang nabasa kutob dire nga punto</string>
   <string name="contact_has_read_up_to_this_point">%s ang nabasa kutob dire nga punto</string>
+  <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s ug %2$d uban pang nakabasa hantud diri nga punto</string>
+  <string name="pref_return_to_previous">Paspas sa Pagpakigbahin</string>
+  <string name="pref_return_to_previous_summary">Diha-diha dayon mobalik sa gelabyang mga kalihokan inay nga ablihan ang panag-istoryahan human sa pagpaambit sa usa ka butang</string>
+  <string name="conversation_unencrypted_hint">Ang kini nga chat kay naka-encrypt, para sa seguridad kinahanglan ug mga rason para ma aktibo ang mensahe nga naka-encrypt gamit ug lock nga icon. Ang mas maayo nga encryption mao ang OMEMO.</string>
+  <string name="pref_warn_unencrypted_chat">Pasidan-i kung ang chat wala naka-encrypt</string>
+  <string name="pref_warn_unencrypted_chat_summary">Kon ang mensahe nga naka-encrypt kay anaa, kinahanglan nimo kini gamiton. Kon dili ka magamit sa pag-encrypt sa mensahe, ipakita ang usa ka pasidaan nga mensahe sulod sa chat.</string>
+  <string name="pref_use_bundled_emoji">Gamit sa mga integrated nga emojis</string>
+  <string name="pref_use_bundled_emoji_summary">Gamita ang integrated library sa emoji imbis nga gamiton ang imong mga gamit. Ang mga pagbag-o mahimong makuha human sa pag-abli pag-usab sa app.</string>
 </resources>
