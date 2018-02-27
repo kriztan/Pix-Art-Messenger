@@ -605,6 +605,7 @@
   <string name="send_image">Kirim gambar?</string>
   <string name="this_device_is_no_longer_in_use">Perangkat ini tidak lagi digunakan</string>
   <string name="import_canceled">Impor dibatalkan</string>
+  <string name="Import_failed">Impor basis data gagal, impor tidak memungkinkan</string>
   <string name="Password_wrong">Kata sandi salah, coba lagi</string>
   <string name="enter_account_password">Masukkan kata sandi akun Anda untuk mengimpor cadangan Anda.</string>
   <string name="please_wait">Harap tunggu…</string>
