@@ -583,8 +583,10 @@
   <string name="registration_password_too_weak">Pendaftaran gagal: Kata sandi terlalu lemah</string>
   <string name="create_conference">Buat obrolan grup</string>
   <string name="join_or_create_conference">Bergabung atau buat obrolan grup</string>
+  <string name="conference_subject">Perihal</string>
   <string name="choose_participants">Pilih peserta</string>
   <string name="creating_conference">Membuat obrolan grup…</string>
+  <string name="import_text">Ada cadangan pada perangkat Anda yang bisa diimpor. \nMungkin Anda akan diminta untuk menghapus versi lama atau Percakapan dan Messenger Anda akan dimulai ulang saat proses mencadangkan. Haruskah cadangan diimpor? </string>
   <string name="import_database">Impor cadangan</string>
   <string name="invite_again">Undang lagi</string>
   <string name="inviteUser_Subject">telah mengundang Anda melalui</string>
@@ -603,6 +605,7 @@
   <string name="enter_account_password">Masukkan kata sandi akun Anda untuk mengimpor cadangan Anda.</string>
   <string name="please_wait">Harap tunggu…</string>
   <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
+  <string name="pref_export_plain_text_logs_summary">Aktifkan ekspor catatan obrolan sebagai file teks yang mudah dibaca</string>
   <string name="payment_required">Pembayaran dibutuhkan</string>
   <string name="me">Saya</string>
   <string name="contact_asks_for_presence_subscription">Kontak meminta langganan kehadiran</string>
@@ -646,6 +649,7 @@
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
   <string name="use_camera_icon_to_scan_barcode">Gunakan kamera untuk memindai kontak kode batang</string>
   <string name="share_as_barcode">Bagikan sebagai kode batang</string>
+  <string name="share_as_uri">Bagikan sebagai XMPP URI</string>
   <string name="share_as_http">Bagikan sebagai tautan HTTP</string>
   <string name="pref_blind_trust_before_verification_summary">Secara otomatis mempercayai semua perangkat baru dari kontak yang belum diverifikasi sebelumnya.</string>
   <string name="not_trusted">Tidak terpercaya</string>
@@ -658,6 +662,7 @@
   <string name="reply">Balas</string>
   <string name="encrypting_message">Enkripsi pesan</string>
   <string name="pref_automatically_delete_messages_description">Secara otomatis menghapus pesan dari perangkat ini yang lebih lama dari jangka waktu yang dikonfigurasi.</string>
+  <string name="pref_automatically_delete_messages">Menghapus pesan secara otomatis</string>
   <string name="timeout_24_hours">24 jam</string>
   <string name="timeout_7_days">7 hari</string>
   <string name="timeout_30_days">30 hari</string>
