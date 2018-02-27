@@ -22,11 +22,11 @@
   <string name="title_activity_sharewith">Sohbetle Paylaş</string>
   <string name="title_activity_start_conversation">Konuşmayı Başlat</string>
   <string name="title_activity_choose_contact">Kişi seç</string>
-  <string name="title_activity_block_list">Engelli listesi</string>
+  <string name="title_activity_block_list">Engelli liste</string>
   <string name="just_now">şimdi</string>
   <string name="minute_ago">1 dakika önce</string>
   <string name="minutes_ago">%d dakika önce</string>
-  <string name="unread_conversations">okunmamış Konuşma</string>
+  <string name="unread_conversations">okunmamış Konuşmalar</string>
   <string name="sending">gönderiliyor…</string>
   <string name="message_decrypting">Mesaj çözülüyor. Lütfen bekleyin…</string>
   <string name="pgp_message">OpenPGP şifrelenmiş mesaj</string>
