@@ -635,4 +635,10 @@ Pili %d mga kontak</item>
   <string name="pref_headsup_notifications_summary">Ipakita ang Mga Pagpangulo sa mga Pagpahibalo</string>
   <string name="yesterday">Kagahapon</string>
   <string name="pref_validate_hostname">I-balido ang hostname kauban sa DNSSEC</string>
+  <string name="pref_validate_hostname_summary">Ang mga sertipiko sa mga server nga naglangkob sa balido nga hostname giisip nga napamatud-an</string>
+  <string name="network_is_unreachable">Ang network dili ma-abot</string>
+  <string name="certificate_does_not_contain_jid">Ang sertipiko wala maglangkob sa Jabber ID</string>
+  <string name="error_no_keys_to_trust_presence">Walay mga yawe nga magamit alang niining kontak.\nSiguraduha nga ikaw adunay subskripsyon sa presensya sa usag usa.</string>
+  <string name="mark_as_read">Markahi ug nabasa na</string>
+  <string name="server_info_partial">parsyal</string>
 </resources>
