@@ -648,6 +648,7 @@
   <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Kode batang tidak mengandung sidik jari untuk percakapan ini.</string>
   <string name="verified_fingerprints">Sidik jari terverifikasi</string>
   <string name="use_camera_icon_to_scan_barcode">Gunakan kamera untuk memindai kontak kode batang</string>
+  <string name="please_wait_for_keys_to_be_fetched">Mohon tunggu sampai kunci didapatkan</string>
   <string name="share_as_barcode">Bagikan sebagai kode batang</string>
   <string name="share_as_uri">Bagikan sebagai XMPP URI</string>
   <string name="share_as_http">Bagikan sebagai tautan HTTP</string>
@@ -661,6 +662,7 @@
   <string name="hide_inactive_devices">Sembunyikan perangkat yang tidak aktif</string>
   <string name="reply">Balas</string>
   <string name="encrypting_message">Enkripsi pesan</string>
+  <string name="transcoding_video">Pemampatan video</string>
   <string name="pref_automatically_delete_messages_description">Secara otomatis menghapus pesan dari perangkat ini yang lebih lama dari jangka waktu yang dikonfigurasi.</string>
   <string name="pref_automatically_delete_messages">Menghapus pesan secara otomatis</string>
   <string name="timeout_24_hours">24 jam</string>
@@ -697,7 +699,9 @@
   <string name="application_found_to_open_website">Tidak ada aplikasi yang ditemukan untuk membuka situs web</string>
   <string name="open_website">Buka situs web</string>
   <string name="yesterday">Kemarin</string>
+  <string name="pref_validate_hostname_summary">Sertifikat server yang berisi nama perangkat yang divalidasi dianggap telah diverifikasi</string>
   <string name="network_is_unreachable">Jaringan tidak terjangkau</string>
+  <string name="certificate_does_not_contain_jid">Sertifikat tidak mengandung ID Jabber</string>
   <string name="error_no_keys_to_trust_presence">Tidak ada kunci yang bisa digunakan untuk kontak ini.\nPastikan Anda memiliki langganan kehadiran bersama.</string>
   <string name="mark_as_read">Tandai sudah dibaca</string>
   <string name="server_info_partial">sebagian</string>
@@ -707,6 +711,9 @@
   <string name="install_update">Memasang pembaharuan?</string>
   <string name="highlight_in_muc">sorot pengguna</string>
   <string name="no_application_found_to_open_link">Tidak ada aplikasi yang ditemukan untuk membuka tautan</string>
+  <string name="contacts_have_read_up_to_this_point">%s telah membaca sampai saat ini</string>
+  <string name="contact_has_read_up_to_this_point">%s telah membaca sampai saat ini</string>
+  <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s dan %2$d lebih banyak membaca sampai saat ini</string>
   <string name="pref_return_to_previous">Berbagi Cepat</string>
   <string name="conversation_unencrypted_hint">Chat ini tidak terenkripsi, untuk alasan keamanan Anda harus mengaktifkan enkripsi pesan dengan menggunakan ikon kunci. Enkripsi yang lebih baik adalah OMEMO.</string>
   <string name="pref_warn_unencrypted_chat">Peringatkan jika obrolan tidak terenkripsi</string>
