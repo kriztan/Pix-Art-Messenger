@@ -17,7 +17,7 @@
   <string name="action_unblock_domain">Domainin engelini kaldır</string>
   <string name="title_activity_manage_accounts">Hesapları Yönet</string>
   <string name="title_activity_settings">Ayarlar</string>
-  <string name="title_activity_conference_details">Grup sohbeti detayı</string>
+  <string name="title_activity_conference_details">Grup sohbeti Detayları</string>
   <string name="title_activity_contact_details">Kişi Detayları</string>
   <string name="title_activity_sharewith">Sohbetle Paylaş</string>
   <string name="title_activity_start_conversation">Konuşmayı Başlat</string>
