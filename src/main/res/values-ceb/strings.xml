@@ -641,4 +641,12 @@ Pili %d mga kontak</item>
   <string name="error_no_keys_to_trust_presence">Walay mga yawe nga magamit alang niining kontak.\nSiguraduha nga ikaw adunay subskripsyon sa presensya sa usag usa.</string>
   <string name="mark_as_read">Markahi ug nabasa na</string>
   <string name="server_info_partial">parsyal</string>
+  <string name="pref_show_foreground_service_summary">Ang ubang mga device sa Android magsarado sa pipila ka mga oras ug dili naka makadawat ug mga bag-o nga mensahe. Kung naa kay ing ana nga problema, suwayi ug pag-aktibo sa foreground nga serbisyo. Pero timan-e, nga maana-a kay permamente nga pagpahibalo kauban niini nga opsiyong gitan-aw.</string>
+  <string name="pref_show_foreground_service">Gamit ug serbisyo sa foreground</string>
+  <string name="update_service">Pix-Art Messenger nabag-o nga serbisyo</string>
+  <string name="install_update">I-install ang pagbag-o?</string>
+  <string name="highlight_in_muc">ipaklaro ang user</string>
+  <string name="no_application_found_to_open_link">Walay aplikasyon nakita para ablihan ang link</string>
+  <string name="contacts_have_read_up_to_this_point">%s ang nabasa kutob dire nga punto</string>
+  <string name="contact_has_read_up_to_this_point">%s ang nabasa kutob dire nga punto</string>
 </resources>
