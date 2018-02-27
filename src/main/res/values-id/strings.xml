@@ -629,7 +629,7 @@
   <string name="message">Pesan</string>
   <string name="quote">Kutipan</string>
   <string name="show_error_message">Tampilkan pesan kesalahan</string>
-  <string name="error_message">Pesan eror</string>
+  <string name="error_message">Pesan kesalahan</string>
   <string name="data_saver_enabled">Penghemat data diaktifkan</string>
   <string name="data_saver_enabled_explained">Sistem operasi Anda membatasi Pix-Art Messenger untuk mengakses Internet saat berada di latar belakang. Untuk menerima notifikasi pesan baru, Anda harus mengizinkan akses Pix-Art Messenger tidak terbatas saat hemat data aktif. \\n Pix-Art Messenger masih akan berusaha untuk menyimpan data bila memungkinkan.</string>
   <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan hemat data untuk Pix-Art Messenger.</string>
