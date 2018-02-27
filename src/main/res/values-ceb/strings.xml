@@ -544,6 +544,11 @@ Pili %d mga kontak</item>
   <string name="location_sharing_disabled">Pagpakigbahin sa lokasyon kay wala gipagana sa mga kahimtang</string>
   <string name="locating">Gepangita…</string>
   <string name="action_end_conversation_muc">Biyai ang chat nga grupo</string>
+  <string name="leave_conference_warning">Gusto jud ka muhawa sa kini nga grupo sa chat? Dili mapahibalo sa imuha ang mga bag-ong mensahe hangtud nga moapil ka ug pag-usab sa grupo nga chat.</string>
+  <string name="show_password">Ipakita ang password</string>
+  <string name="registration_please_wait">Napakyas ang pagrehistro: Sulayi pag-usab taud-taud</string>
+  <string name="registration_password_too_weak">Ang pag-rehistro napakyas: Ang password sobra ra ka-huyang</string>
+  <string name="create_conference">Buhat ug grupo sa chat</string>
   <string name="join_or_create_conference">Pag-apil o paghimo og chat sa grupo</string>
   <string name="conference_subject">Subject</string>
   <string name="choose_participants">Pili ug mga partisipante</string>
@@ -616,4 +621,18 @@ Pili %d mga kontak</item>
   <string name="last_seen_just_away">bag-uhay ra</string>
   <string name="send_message">Pagpadala ug mensahe</string>
   <string name="send_failed_resend">napakyas ang pag deliver, nag send ug usab…</string>
+  <string name="pref_show_connection_options_summary">Ipakita ang hostname ug port nga mga setting sa dihang nag-set up og account</string>
+  <string name="pref_show_connection_options">Gepatas-an ang koneksiyon sa mga kahimtang</string>
+  <string name="retry_decryption">Usaba ang pag-decryption</string>
+  <string name="session_failure">Napakyas ang sesyon</string>
+  <string name="sasl_downgrade">Gipaubos ang mekanismo sa SASL</string>
+  <string name="action_take_photo">kuha ug litrato</string>
+  <string name="action_take_video">irekord ang bidyo</string>
+  <string name="account_status_regis_web">Kinahanglan sa server ang pagrehistro sa website</string>
+  <string name="application_found_to_open_website">Walay aplikasyon nga makita sa pag-abli sa website</string>
+  <string name="open_website">Abli ug website</string>
+  <string name="pref_headsup_notifications">Mga Pagpangulo sa mga Pagpahibalo</string>
+  <string name="pref_headsup_notifications_summary">Ipakita ang Mga Pagpangulo sa mga Pagpahibalo</string>
+  <string name="yesterday">Kagahapon</string>
+  <string name="pref_validate_hostname">I-balido ang hostname kauban sa DNSSEC</string>
 </resources>
