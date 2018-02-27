@@ -657,4 +657,14 @@ Pili %d mga kontak</item>
   <string name="pref_warn_unencrypted_chat_summary">Kon ang mensahe nga naka-encrypt kay anaa, kinahanglan nimo kini gamiton. Kon dili ka magamit sa pag-encrypt sa mensahe, ipakita ang usa ka pasidaan nga mensahe sulod sa chat.</string>
   <string name="pref_use_bundled_emoji">Gamit sa mga integrated nga emojis</string>
   <string name="pref_use_bundled_emoji_summary">Gamita ang integrated library sa emoji imbis nga gamiton ang imong mga gamit. Ang mga pagbag-o mahimong makuha human sa pag-abli pag-usab sa app.</string>
+  <string name="invalid_muc_nick">Dili balido nga angga nga pangan</string>
+  <string name="title_activity_share_via_account">Pakigbahin pinaagi sa account</string>
+  <string name="private_messages_are_disabled">Ang mga pribadong mensahe wala pansina</string>
+  <string name="destroy_muc">Guba-a ang grupo sa chat</string>
+  <string name="conference_unknown_error">Wala nakay labot diri nga grupo sa chat</string>
+  <string name="destroy_muc_text">Gusto ba nimu gubaun ang kini nga grupo sa chat%s? Kini grupoha kay makanunay na nga matangtang.</string>
+  <string name="destroy_muc_succeed">Ang grupo sa chat nilampos sa pag-guba</string>
+  <string name="destroy_muc_failed">Ang grupo sa chat dili pwedi gub-on</string>
+  <string name="no_write_access_in_public_muc">Wala ka moapil niining grupo nga chat ug wala kay paagsuwat nga access nga kasamtangan.\nPalihog adto sa grupo sa chat nga mga detalyin pinaagi sa pag pislet ug <b>OK</b> ug ipadala nga pribado nga mensahe sa moderator, administrador o tag-iya pinaagi sa taas nga pag-klik sa usa sa mga ngalan sa mga miyembro sa ibabaw sa lista aron mangayo sa access. alang sa pagsulat.</string>
+  <string name="snooze">Snooze</string>
 </resources>
