@@ -8,4 +8,5 @@
   <string name="action_contact_details">Mga detalye ng kontak</string>
   <string name="action_secure">Ligtas na pag-uusap</string>
   <string name="action_add_account">Magdagdag ng account</string>
+  <string name="action_edit_contact">Idet na pangalan</string>
 </resources>
