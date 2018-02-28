@@ -3,4 +3,6 @@
 <resources>
   <string name="action_settings">Mga setting</string>
   <string name="action_add">Bagong pag-uusap</string>
+  <string name="action_accounts">Ang account ay pamahalaan</string>
+  <string name="action_end_conversation">Ang pag-uusap ay tapos na</string>
 </resources>
