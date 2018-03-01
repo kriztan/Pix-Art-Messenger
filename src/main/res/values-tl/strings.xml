@@ -19,4 +19,7 @@
   <string name="title_activity_settings">Settings</string>
   <string name="title_activity_conference_details">Mga detalye ng kagrupo sa chat</string>
   <string name="title_activity_contact_details">Mga detalye ng pagkontak</string>
+  <string name="title_activity_sharewith">Pag-uusap ay binahagi</string>
+  <string name="title_activity_start_conversation">Simula na pag-uusap</string>
+  <string name="title_activity_choose_contact">Pumili ng kontak</string>
 </resources>
