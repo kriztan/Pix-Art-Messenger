@@ -22,4 +22,5 @@
   <string name="title_activity_sharewith">Pag-uusap ay binahagi</string>
   <string name="title_activity_start_conversation">Simula na pag-uusap</string>
   <string name="title_activity_choose_contact">Pumili ng kontak</string>
+  <string name="title_activity_block_list">Block list</string>
 </resources>
