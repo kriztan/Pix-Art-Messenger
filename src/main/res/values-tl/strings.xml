@@ -23,4 +23,8 @@
   <string name="title_activity_start_conversation">Simula na pag-uusap</string>
   <string name="title_activity_choose_contact">Pumili ng kontak</string>
   <string name="title_activity_block_list">Block list</string>
+  <string name="just_now">ngayon lang</string>
+  <string name="minute_ago">1 min nakalipas</string>
+  <string name="minutes_ago">%d minuto nakalipas</string>
+  <string name="unread_conversations">hindi nabasa Pag-uusap</string>
 </resources>
