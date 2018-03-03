@@ -29,4 +29,11 @@
   <string name="unread_conversations">hindi nabasa Pag-uusap</string>
   <string name="sending">pagpapadala…</string>
   <string name="message_decrypting">Decrypting message. Mangyaring maghintay…</string>
+  <string name="pgp_message">Ang naka-encrypt na mensahe ng OpenPGP</string>
+  <string name="nick_in_use">Nagamit na ang palayaw</string>
+  <string name="admin">Admin</string>
+  <string name="owner">May-ari</string>
+  <string name="moderator">Tagapamagitan</string>
+  <string name="participant">Kalahok</string>
+  <string name="visitor">Bisita</string>
 </resources>
