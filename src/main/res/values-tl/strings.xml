@@ -39,4 +39,10 @@
   <string name="remove_contact_text">Gusto mo bang alisin ang %s mula sa iyong roster? Hindi maaalis ang pag-uusap na nauugnay sa contact na ito.</string>
   <string name="block_contact_text">Gusto mo bang harangan ang %s mula sa pagpapadala sa iyo ng mga mensahe?</string>
   <string name="unblock_contact_text">Gusto mo bang i-unblock ang %s at hayaan silang magpadala sa iyo ng mga mensahe?</string>
+  <string name="block_domain_text">Harangin ang lahat ng mga contact mula sa %s?</string>
+  <string name="unblock_domain_text">I-unblock lahat ng mga contact mula sa %s?</string>
+  <string name="contact_blocked">Na-block ang contact</string>
+  <string name="remove_bookmark_text">Gusto mong alisin ang %s bilang isang bookmark? Hindi maaalis ang pag-uusap na nauugnay sa bookmark na ito.</string>
+  <string name="register_account">Magrehistro ng isang bagong server account</string>
+  <string name="change_password_on_server">Baguhin ang password sa server</string>
 </resources>
