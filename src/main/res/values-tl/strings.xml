@@ -36,4 +36,7 @@
   <string name="moderator">Tagapamagitan</string>
   <string name="participant">Kalahok</string>
   <string name="visitor">Bisita</string>
+  <string name="remove_contact_text">Gusto mo bang alisin ang %s mula sa iyong roster? Hindi maaalis ang pag-uusap na nauugnay sa contact na ito.</string>
+  <string name="block_contact_text">Gusto mo bang harangan ang %s mula sa pagpapadala sa iyo ng mga mensahe?</string>
+  <string name="unblock_contact_text">Gusto mo bang i-unblock ang %s at hayaan silang magpadala sa iyo ng mga mensahe?</string>
 </resources>
