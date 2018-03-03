@@ -463,11 +463,11 @@
   <string name="pref_use_white_background">Gunakan latar belakang putih</string>
   <string name="pref_use_white_background_summary">Tampilkan pesan terkirim sebagai teks hitam di latar belakang putih</string>
   <string name="action_check_update">Periksa pembaruan</string>
-  <string name="title_activity_updater">Perbarui layanan</string>
+  <string name="title_activity_updater">Perbaruan layanan</string>
   <string name="update_available">Versi% 1 $ s tersedia. \ N \ nFilesize:% 2 $ s \ n \ nUpdate ke versi% 1 $ s sekarang?</string>
   <string name="remind_later">kemudian</string>
   <string name="update">memperbarui</string>
-  <string name="no_update_available">Tidak ada update yang tersedia</string>
+  <string name="no_update_available">Tidak ada pembaruan yang tersedia</string>
   <string name="download_started">Download dimulai</string>
   <string name="account_status_tor_unavailable">Jaringan Tor tidak tersedia</string>
   <string name="account_status_bind_failure">Bind failure</string>
