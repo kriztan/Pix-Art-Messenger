@@ -720,7 +720,7 @@
   <string name="error_no_keys_to_trust_presence">Tidak ada kunci yang bisa digunakan untuk kontak ini.\nPastikan Anda memiliki langganan kehadiran bersama.</string>
   <string name="mark_as_read">Tandai sudah dibaca</string>
   <string name="server_info_partial">sebagian</string>
-  <string name="pref_show_foreground_service_summary">Beberapa perangkat Android akan menutup beberapa aplikasi setelah jangka waktu tertentu dan Anda tidak akan dapat menerima pesan baru. Jika Anda memiliki masalah seperti itu, cobalah untuk mengaktifkan layanan latar depan. Namun perlu diingat, bahwa Anda akan memiliki pemberitahuan permanen dengan opsi ini dicentang.</string>
+  <string name="pref_show_foreground_service_summary">Beberapa perangkat Android akan menutup beberapa aplikasi setelah jangka waktu tertentu dan Anda tidak akan dapat menerima pesan baru. Jika Anda memiliki masalah seperti itu, cobalah untuk mengaktifkan layanan latar depan. Namun perlu diingat, bahwa Anda akan memiliki pemberitahuan permanen dengan pilihan ini dicentang.</string>
   <string name="pref_show_foreground_service">Gunakan layanan latar depan</string>
   <string name="update_service">Layanan memperbarui Pix-Art Messenger</string>
   <string name="install_update">Memasang pembaharuan?</string>
@@ -738,7 +738,7 @@
   <string name="pref_use_bundled_emoji_summary">Gunakan perpustakaan emoji yang terintegrasi daripada menggunakan perangkat Anda. Perubahan akan tersedia setelah membuka kembali aplikasi.</string>
   <string name="invalid_muc_nick">Nama panggilan tidak sah</string>
   <string name="title_activity_share_via_account">Bagikan melalui akun</string>
-  <string name="private_messages_are_disabled">Pesan pribadi dinonaktifkan</string>
+  <string name="private_messages_are_disabled">Pesan pribadi dimatikan</string>
   <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
   <string name="no_write_access_in_public_muc">Anda tidak berpartisipasi obrolan grup ini dan tidak memiliki akses tulis saat ini. \nSilakan pergi ke obrolan grup dengan menekan <b>OK</b> dan mengirim pesan pribadi ke moderator, administator atau pemilik dengan mengklik lama satu dari nama anggota di bagian atas daftar untuk meminta akses tulis.</string>
   <string name="snooze">Menunda</string>
