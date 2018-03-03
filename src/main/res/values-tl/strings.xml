@@ -69,4 +69,8 @@
   <string name="not_in_roster">Ang contact ay wala sa iyong listahan. Gusto mo bang idagdag ito?</string>
   <string name="add_contact">Magdagdag ng contact</string>
   <string name="send_failed">nabigo ang paghahatid</string>
+  <string name="preparing_image">Paghahanda ng imahe para sa pagpapadala</string>
+  <string name="preparing_images">Paghahanda ng mga imahe para sa paghahatid</string>
+  <string name="sharing_files_please_wait">Pagbabahagi ng mga file. Mangyaring maghintay…</string>
+  <string name="action_clear_history">Linisin ang kasaysayan</string>
 </resources>
