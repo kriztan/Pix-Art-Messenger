@@ -27,4 +27,6 @@
   <string name="minute_ago">1 min nakalipas</string>
   <string name="minutes_ago">%d minuto nakalipas</string>
   <string name="unread_conversations">hindi nabasa Pag-uusap</string>
+  <string name="sending">pagpapadala…</string>
+  <string name="message_decrypting">Decrypting message. Mangyaring maghintay…</string>
 </resources>
