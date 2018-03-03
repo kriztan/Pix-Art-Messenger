@@ -45,4 +45,13 @@
   <string name="remove_bookmark_text">Gusto mong alisin ang %s bilang isang bookmark? Hindi maaalis ang pag-uusap na nauugnay sa bookmark na ito.</string>
   <string name="register_account">Magrehistro ng isang bagong server account</string>
   <string name="change_password_on_server">Baguhin ang password sa server</string>
+  <string name="share_with">Ibahagi sa…</string>
+  <string name="start_conversation">Simulan ang Pag-uusap</string>
+  <string name="invite_contact">Imbitahan ang Contact</string>
+  <string name="contacts">Mga Contact</string>
+  <string name="cancel">Kanselahin</string>
+  <string name="set">Itakda</string>
+  <string name="add">Dagdag</string>
+  <string name="edit">I-edit</string>
+  <string name="delete">Tanggalin</string>
 </resources>
