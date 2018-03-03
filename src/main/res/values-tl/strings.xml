@@ -54,4 +54,19 @@
   <string name="add">Dagdag</string>
   <string name="edit">I-edit</string>
   <string name="delete">Tanggalin</string>
+  <string name="block">I-block</string>
+  <string name="unblock">I-unblock</string>
+  <string name="save">I-save</string>
+  <string name="ok">OK</string>
+  <string name="crash_report_title">Ang Pix-Art Messenger ay nag-crash</string>
+  <string name="crash_report_message">Sa pamamagitan ng pagpapadala ng mga walang laman na stack na tumutulong sa iyo na ipagpatuloy ang pagpapaunlad ng Pix-Art Messenger\n<b>Babala:</b> Gagamitin nito ang iyong XMPP account upang maipadala ang stack trace sa developer.</string>
+  <string name="send_now">Ipadala ngayon</string>
+  <string name="send_never">Wag kang magtanong ulit</string>
+  <string name="problem_connecting_to_account">Hindi makakonekta sa iyong account</string>
+  <string name="problem_connecting_to_accounts">Hindi makakonekta sa maraming mga account</string>
+  <string name="touch_to_fix">Pindutin dito upang pamahalaan ang iyong mga account</string>
+  <string name="attach_file">Maglakip ng file</string>
+  <string name="not_in_roster">Ang contact ay wala sa iyong listahan. Gusto mo bang idagdag ito?</string>
+  <string name="add_contact">Magdagdag ng contact</string>
+  <string name="send_failed">nabigo ang paghahatid</string>
 </resources>
