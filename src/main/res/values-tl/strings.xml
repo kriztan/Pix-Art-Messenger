@@ -73,4 +73,9 @@
   <string name="preparing_images">Paghahanda ng mga imahe para sa paghahatid</string>
   <string name="sharing_files_please_wait">Pagbabahagi ng mga file. Mangyaring maghintay…</string>
   <string name="action_clear_history">Linisin ang kasaysayan</string>
+  <string name="clear_conversation_history">I-clear ang Kasaysayan ng Pag-uusap</string>
+  <string name="clear_histor_msg">Gusto mo bang tanggalin ang lahat ng mga mensahe sa loob ng Pag-uusap na ito?\n\n<b>Babala:</b> Hindi ito makakaapekto sa mga mensahe na nakaimbak sa iba pang mga device o server.</string>
+  <string name="delete_messages">Tanggalin ang mga mensahe</string>
+  <string name="also_end_conversation">Tapusin ang pag-uusap na ito pagkatapos</string>
+  <string name="choose_presence">Pumili ng device</string>
 </resources>
