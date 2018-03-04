@@ -382,11 +382,11 @@
   <string name="remove_membership">Üyeliğini iptal et</string>
   <string name="grant_admin_privileges">Yönetici ayrıcalıkları ver</string>
   <string name="remove_admin_privileges">Yönetici ayrıcalıklarını iptal et</string>
-  <string name="remove_from_room">Sohbet grubunu sil</string>
+  <string name="remove_from_room">Sohbet grubunu silin</string>
   <string name="could_not_change_affiliation">%s kullanıcısının üyeliği değiştirilemedi</string>
-  <string name="ban_from_conference">Grup sohbetini yasakla</string>
+  <string name="ban_from_conference">Grup sohbetini engelle</string>
   <string name="removing_from_public_conference">%s adlı kullanıcıyı bir genel grup sohbetinden kaldırılmaya çalışılıyorsunuz. Bunu yapmanın tek yolu kullanıcıyı sonsuza dek yasaklamaktır.</string>
-  <string name="ban_now">Şimdi yasakla</string>
+  <string name="ban_now">Şimdi engelle</string>
   <string name="could_not_change_role">%s görevini değiştiremedim</string>
   <string name="public_conference">Herkese açık sohbet grubu</string>
   <string name="private_conference">Özel, sadece grup üyeleri</string>
@@ -407,7 +407,7 @@
   <string name="pref_enter_is_send">Giriş gönder</string>
   <string name="pref_enter_is_send_summary">Mesaj göndermek için enter tuşunu kullanın</string>
   <string name="pref_display_enter_key">Enter tuşunu göster</string>
-  <string name="pref_display_enter_key_summary">İfadeler tuşunu bir giriş tuşu olarak değiştirin</string>
+  <string name="pref_display_enter_key_summary">İfadeler tuşunu bir giriş tuşu olarak değiştir</string>
   <string name="audio">ses</string>
   <string name="video">video</string>
   <string name="image">resim</string>
