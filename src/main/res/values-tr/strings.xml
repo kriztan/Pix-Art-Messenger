@@ -378,7 +378,7 @@
   <string name="outcast">Uzaklaştır</string>
   <string name="member">Üye</string>
   <string name="advanced_mode">Gelişmiş mod</string>
-  <string name="grant_membership">Üyelik iznini ver</string>
+  <string name="grant_membership">Üyelik iznini vermek</string>
   <string name="remove_membership">Üyeliğini iptal et</string>
   <string name="grant_admin_privileges">Yönetici ayrıcalıkları ver</string>
   <string name="remove_admin_privileges">Yönetici ayrıcalıklarını iptal et</string>
