@@ -65,14 +65,14 @@
   <string name="problem_connecting_to_account">Sunucuya bağlanılamıyor</string>
   <string name="problem_connecting_to_accounts">Birden fazla hesaba bağlanılamıyor</string>
   <string name="touch_to_fix">Hesaplarınızı yönetmek için buraya dokunun</string>
-  <string name="attach_file">Dosya ekle</string>
-  <string name="not_in_roster">Kişi listenizde değil. Eklemek ister misiniz?</string>
+  <string name="attach_file">Dosya ekleyin</string>
+  <string name="not_in_roster">Kişi listenizde değil. Kişiyi eklemek ister misiniz?</string>
   <string name="add_contact">Kişi ekle</string>
   <string name="send_failed">gönderme başarısız</string>
   <string name="preparing_image">Aktarım için resim hazırlanıyor</string>
   <string name="preparing_images">Aktarım için resimler hazırlanıyor</string>
   <string name="sharing_files_please_wait">Dosyalar paylaşılıyor. Lütfen bekleyin…</string>
-  <string name="action_clear_history">Geçmişi temizle</string>
+  <string name="action_clear_history">Geçmişi sil</string>
   <string name="clear_conversation_history">Konuşma Geçmişini Temizle</string>
   <string name="clear_histor_msg">Bu İleti Dizisindeki tüm iletileri silmek istiyor musunuz? \n\n<b> Uyarı: </b> Bu, diğer cihazlarda veya sunucularda saklanan iletileri etkilemeyecektir.</string>
   <string name="delete_messages">Mesajları sil</string>
