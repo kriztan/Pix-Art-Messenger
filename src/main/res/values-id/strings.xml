@@ -575,6 +575,7 @@
   <string name="presence_xa">Tidak tersedia</string>
   <string name="presence_dnd">Sibuk</string>
   <string name="secure_password_generated">Kata sandi yang aman telah dibuat</string>
+  <string name="device_does_not_support_battery_op">Perangkat Anda tidak mendukung pengoptimalan baterai</string>
   <string name="device_does_not_support_unknown_source_op">Perangkat Anda tidak mendukung mengizinkan pemasangan aplikasi dari sumber yang tidak dikenal</string>
   <string name="share">Bagikan</string>
   <string name="share_location">Berbagi lokasi</string>
@@ -611,6 +612,7 @@
   <string name="please_wait">Harap tunggu…</string>
   <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
   <string name="pref_export_plain_text_logs_summary">Aktifkan ekspor catatan obrolan sebagai file teks yang mudah dibaca</string>
+  <string name="pref_export_plain_text_logs">Ekspor catatan obrolan yang dapat dibaca</string>
   <string name="payment_required">Pembayaran dibutuhkan</string>
   <string name="me">Saya</string>
   <string name="contact_asks_for_presence_subscription">Kontak meminta langganan kehadiran</string>
