@@ -540,10 +540,10 @@
   <string name="always">Her zaman</string>
   <string name="battery_optimizations_enabled">Pil optimizasyonları etkin</string>
   <string name="battery_optimizations_enabled_explained">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli hatta mesaj kaybına yol açabilecek bazı ağır pil optimizasyonları yapıyor. \n Bunları devre dışı bırakmanız önerilir.</string>
-  <string name="battery_optimizations_enabled_dialog">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli iletiyor hatta mesaj kaybına sebep olabilecek bazı ağır pil optimizasyonları yapıyor.\n\nBunları devre dışı bırakmanız istenecektir.</string>
-  <string name="install_from_unknown_sources_disabled">Bilinmeyen kaynaklardan yüklemeleri devre dışı bırak</string>
-  <string name="install_from_unknown_sources_disabled_explained">Cihazınız, bilinmeyen kaynaklardan gelen uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı; bu da, uygulama güncelleyicisinde sorunlara neden oluyor.\nBilinmeyen kaynaklardan gelen yüklemelere izin verilmesi önerilir.</string>
-  <string name="install_from_unknown_sources_disabled_dialog">Cihazınız, Google PlayStore dışında bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı. Bu, uygulama güncelleyicisinde sorunlara neden olur.\n\nArtıkbilinmeyen kaynaklardan uygulama yüklemelerine izin vermeniz istenecektir.</string>
+  <string name="battery_optimizations_enabled_dialog">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli hatta mesaj kaybına yol açabilecek bazı ağır pil optimizasyonları yapıyor. \n\nBu işlemi devre dışı bırakmanız istendi.</string>
+  <string name="install_from_unknown_sources_disabled">Bilinmeyen açık kaynaklardan yüklemeleri devre dışı bırak</string>
+  <string name="install_from_unknown_sources_disabled_explained">Cihazınız, bilinmeyen kaynaklardan gelen uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı; bu da, uygulama güncelleyicisinde sorunlara neden oluyor. \n Bilinmeyen kaynaklardan yüklemelere izin verilmesi önerilir.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">Cihazınız, Google PlayStore dışında bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı. Bu, uygulama güncelleyicisinde sorunlara neden olur. \n\n Bundan sonra bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeniz istenecektir.</string>
   <string name="disable">Devre dışı</string>
   <string name="selection_too_large">Seçilen alan çok büyük</string>
   <string name="cancel_update">Güncellemeyi iptal et?</string>
@@ -569,7 +569,7 @@
   <string name="use_existing_accout">Mevcut bir hesap kullanın</string>
   <string name="pick_your_username">Kullanıcı adınızı seçin</string>
   <string name="pref_manually_change_presence">Manuel olarak durumu değiştir</string>
-  <string name="pref_manually_change_presence_summary">Hesabınızdaki durumunuzu değiştirin</string>
+  <string name="pref_manually_change_presence_summary">Hesabınızdaki durumu değiştirin</string>
   <string name="change_presence">Durum Değiştir</string>
   <string name="status_message">Durum mesajı</string>
   <string name="all_accounts_on_this_device">Bu cihazdaki tüm hesapları ayarla</string>
@@ -595,11 +595,11 @@
   <string name="conference_subject">Konu</string>
   <string name="choose_participants">Katılımcıları seç</string>
   <string name="creating_conference">Grup sohbeti oluşturuluyor…</string>
-  <string name="import_text">Cihazınızda içe aktarılabilir bir yedek bulunuyor. \nMuhtemelen eski versiyonu yada konuşmaları kaldırmanız istenecektir ve messenger\'ınız yedekleme işlemi sırasında yeniden başlatılacaktır. Yedek içe aktarılsın mı? </string>
+  <string name="import_text">Cihazınızda içe akatarılabilir bir yedekleme var. \nMuhtemelen eski sürümü veya Sohbetlerini kaldırmanız istenecektir ve yedekleme işlemi sırasında Messenger\'ınız yeniden başlatılacaktır. Yedek ithal edilecek mi? </string>
   <string name="import_database">Yedeği içeri aktar</string>
   <string name="invite_again">Tekrar davet et</string>
   <string name="inviteUser_Subject">sizi davet etti</string>
-  <string name="InviteText">Merhaba,\n\n kullanıcı %s sizi Pix-Art Messenger\'a davet etti. Android kullanıyorsanız, bir deneme yapın ve baştan başlamak için aşağıdaki bağlantıyı tıklayın...</string>
+  <string name="InviteText">Merhaba, \n\n kullanıcı %s sizi Pix-Art Messenger\'a davet etti. Android kullanıyorsanız, bir deneme yapın ve baştan başlamak için aşağıdaki bağlantıyı tıklayın...</string>
   <string name="pref_broadcast_last_activity">Son kullanıcı etkileşimlerini yayınla</string>
   <string name="pref_broadcast_last_activity_summary">Pix-Art Messenger\'ı kullanırken tüm kişilerinize haber verin</string>
   <string name="invite_user">Pix-Art Messenger\'a davet et</string>
