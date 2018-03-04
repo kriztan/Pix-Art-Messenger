@@ -614,6 +614,7 @@
   <string name="pref_export_plain_text_logs_summary">Aktifkan ekspor catatan obrolan sebagai file teks yang mudah dibaca</string>
   <string name="pref_export_plain_text_logs">Ekspor catatan obrolan yang dapat dibaca</string>
   <string name="payment_required">Pembayaran dibutuhkan</string>
+  <string name="missing_internet_permission">Tidak memiliki izin internet</string>
   <string name="me">Saya</string>
   <string name="contact_asks_for_presence_subscription">Kontak meminta langganan kehadiran</string>
   <string name="allow">Mengizinkan</string>
@@ -659,12 +660,14 @@
   <string name="share_as_barcode">Bagikan sebagai kode batang</string>
   <string name="share_as_uri">Bagikan sebagai XMPP URI</string>
   <string name="share_as_http">Bagikan sebagai tautan HTTP</string>
+  <string name="blindly_trusted_omemo_keys">Menyembunyikan kunci OMEMO secara terpercaya</string>
   <string name="pref_blind_trust_before_verification_summary">Secara otomatis mempercayai semua perangkat baru dari kontak yang belum diverifikasi sebelumnya.</string>
   <string name="not_trusted">Tidak terpercaya</string>
   <string name="invalid_barcode">Kode batang tidak valid</string>
   <string name="verify_with_qr_code">verifikasi dengan kode batang</string>
   <string name="i_followed_this_link_from_a_trusted_source">Saya mengikuti tautan ini dari sumber terpercaya</string>
   <string name="verifying_omemo_keys_trusted_source">Anda akan memverifikasi kunci OMEMO dari %1$s setelah mengeklik tautan. Ini hanya aman jika Anda mengikuti tautan ini dari sumber terpercaya yang hanya memiliki %2$s yang bisa menerbitkan tautan ini.</string>
+  <string name="verify_omemo_keys">Memeriksa OMEMO dengan sidik jari</string>
   <string name="show_inactive_devices">Tampilkan perangkat yang tidak aktif</string>
   <string name="hide_inactive_devices">Sembunyikan perangkat yang tidak aktif</string>
   <string name="reply">Balas</string>
@@ -681,12 +684,14 @@
   <string name="today">Hari ini</string>
   <string name="pref_use_max_brightness_summary">Beralih ke kecerahan maksimum saat menonton video atau gambar di layar penuh.</string>
   <string name="pref_use_max_brightness">Kecerahan maksimum</string>
+  <string name="block_jabber_id">Blok Obrolan-Data diri</string>
   <string name="corresponding_conversations_closed">Percakapan yang bersamaan ditutup.</string>
   <string name="contact_blocked_past_tense">Kontak diblokir.</string>
   <string name="pref_notifications_from_strangers">Pemberitahuan dari orang tak dikenal</string>
   <string name="pref_notifications_from_strangers_summary">Beritahu pesan yang diterima dari orang yang tak dikenal.</string>
   <string name="received_message_from_stranger">Menerima pesan dari orang yang tak dikenal</string>
   <string name="contacts_are_typing">%s sedang mengetik…</string>
+  <string name="contact_is_typing">%s sedang mengetik…</string>
   <string name="one_participant">satu peserta</string>
   <string name="more_participants">%d peserta</string>
   <string name="presence_offline">Tidak terhubung</string>
@@ -707,6 +712,7 @@
   <string name="pref_show_connection_options">Pengaturan koneksi yang diperluas</string>
   <string name="retry_decryption">Deskripsi kembali</string>
   <string name="session_failure">Kegagalan sesi</string>
+  <string name="sasl_downgrade">Menurunkan mekanisme SASL</string>
   <string name="action_take_photo">ambil foto</string>
   <string name="action_take_video">merekam video</string>
   <string name="account_status_regis_web">Server membutuhkan registrasi di situs web</string>
@@ -741,6 +747,7 @@
   <string name="invalid_muc_nick">Nama panggilan tidak sah</string>
   <string name="title_activity_share_via_account">Bagikan melalui akun</string>
   <string name="private_messages_are_disabled">Pesan pribadi dimatikan</string>
+  <string name="destroy_muc">Menghilangkan obrolan kelompok</string>
   <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
   <string name="no_write_access_in_public_muc">Anda tidak berpartisipasi obrolan grup ini dan tidak memiliki akses tulis saat ini. \nSilakan pergi ke obrolan grup dengan menekan <b>OK</b> dan mengirim pesan pribadi ke moderator, administator atau pemilik dengan mengklik lama satu dari nama anggota di bagian atas daftar untuk meminta akses tulis.</string>
   <string name="snooze">Menunda</string>
