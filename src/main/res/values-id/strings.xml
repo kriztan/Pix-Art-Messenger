@@ -55,10 +55,10 @@
   <string name="edit">Ubah</string>
   <string name="delete">Menghapus</string>
   <string name="block">Blok</string>
-  <string name="unblock">Bebaskan</string>
-  <string name="save">Menyimpan</string>
-  <string name="ok">Baik</string>
-  <string name="crash_report_title">Pix-Art Messenger telah jatuh</string>
+  <string name="unblock">Tidak diblok</string>
+  <string name="save">Simpan</string>
+  <string name="ok">OK</string>
+  <string name="crash_report_title">Pix-Art Messenger mengalami kegagalan</string>
   <string name="crash_report_message">Dengan mengirimkan jejak stack, Anda membantu pengembangan Pix-Art Messenger yang sedang berlangsung \ n <b> Peringatan: </ b> Ini akan menggunakan akun XMPP Anda untuk mengirim jejak stack ke pengembang.</string>
   <string name="send_now">Kirim Sekarang</string>
   <string name="send_never">Jangan pernah bertanya lagi</string>
@@ -575,7 +575,7 @@
   <string name="presence_xa">Tidak tersedia</string>
   <string name="presence_dnd">Sibuk</string>
   <string name="secure_password_generated">Kata sandi yang aman telah dibuat</string>
-  <string name="device_does_not_support_battery_op">Perangkat Anda tidak mendukung pengoptimalan baterai</string>
+  <string name="device_does_not_support_battery_op">Perangkat anda tidak mendukung pengoptimalan baterai</string>
   <string name="device_does_not_support_unknown_source_op">Perangkat Anda tidak mendukung mengizinkan pemasangan aplikasi dari sumber yang tidak dikenal</string>
   <string name="share">Bagikan</string>
   <string name="share_location">Berbagi lokasi</string>
@@ -749,6 +749,9 @@
   <string name="private_messages_are_disabled">Pesan pribadi dimatikan</string>
   <string name="destroy_muc">Menghilangkan obrolan kelompok</string>
   <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
+  <string name="destroy_muc_text">Apakah anda ingin menghilangkan obrolan kelompok %s? Tindakan ini akan menghapus obrolan kelompok secara permanen.</string>
+  <string name="destroy_muc_succeed">Obrolan kelompok berhasil dihapus</string>
+  <string name="destroy_muc_failed">Obrolan kelompok tidak dapat dihapus</string>
   <string name="no_write_access_in_public_muc">Anda tidak berpartisipasi obrolan grup ini dan tidak memiliki akses tulis saat ini. \nSilakan pergi ke obrolan grup dengan menekan <b>OK</b> dan mengirim pesan pribadi ke moderator, administator atau pemilik dengan mengklik lama satu dari nama anggota di bagian atas daftar untuk meminta akses tulis.</string>
   <string name="snooze">Menunda</string>
   <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
