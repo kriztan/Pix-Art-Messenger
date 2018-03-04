@@ -62,7 +62,7 @@
   <string name="crash_report_message">Yığın izlerini göndererek Pix-Art Messenger\'ın devam eden geliştirilmesine yardımcı oluyorsunuz. \n<b>Uyarı:</b> Bu, yığın izini geliştiriciye göndermek için XMPP hesabınızı kullanacak.</string>
   <string name="send_now">Şimdi Gönder</string>
   <string name="send_never">Bir daha sorma</string>
-  <string name="problem_connecting_to_account">Hesaba bağlanılamıyor</string>
+  <string name="problem_connecting_to_account">Sunucuya bağlanılamıyor</string>
   <string name="problem_connecting_to_accounts">Birden fazla hesaba bağlanılamıyor</string>
   <string name="touch_to_fix">Hesaplarınızı yönetmek için buraya dokunun</string>
   <string name="attach_file">Dosya ekle</string>
