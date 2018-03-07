@@ -98,4 +98,6 @@
   <string name="pref_general">Pangkalahatan</string>
   <string name="pref_xmpp_resource">Pinanggalingan ng XMPP</string>
   <string name="pref_xmpp_resource_summary">Ang pangalan ng kliyente kinikilala ang sarili nito na</string>
+  <string name="pref_accept_files_wifi">Natanggap ang mga payl sa koneksyon sa waypay</string>
+  <string name="pref_accept_files_summary_wifi">Kapag naka konek kana sa waypi ay kusang natatanggap ang mga payl na mas maliit sa…</string>
 </resources>
