@@ -14,4 +14,20 @@
   <string name="action_block_contact">كتلة الاتصال</string>
   <string name="action_unblock_contact">إلغاء حظر جهة الإتصال</string>
   <string name="action_block_domain">حظر المجال</string>
+  <string name="action_unblock_domain">إلغاء حظر المجال</string>
+  <string name="title_activity_manage_accounts">إدارة الحسابات</string>
+  <string name="title_activity_settings">الإعدادات</string>
+  <string name="title_activity_conference_details">تفاصيل مجموعة الدردشة</string>
+  <string name="title_activity_contact_details">تفاصيل الإتصال</string>
+  <string name="title_activity_sharewith">مشاركة مع المحادثة</string>
+  <string name="title_activity_start_conversation">بدء محادثة</string>
+  <string name="title_activity_choose_contact">إختر جهة اتصال</string>
+  <string name="title_activity_block_list">قائمة الحظر</string>
+  <string name="just_now">الآن</string>
+  <string name="minute_ago">منذ دقيقة</string>
+  <string name="minutes_ago">منذ%d دقيقة</string>
+  <string name="unread_conversations">محادثة غير مقروءة</string>
+  <string name="sending">إرسال…</string>
+  <string name="message_decrypting">فك تشفير الرسالة. الرجاء الإنتظار…</string>
+  <string name="pgp_message">OpenPGP رسالة مشفرة</string>
 </resources>
