@@ -91,4 +91,10 @@
   <string name="restart">I-restart</string>
   <string name="install">I-instal</string>
   <string name="openkeychain_not_installed">Paki-instal ang OpenKeychain</string>
+  <string name="offering">Hain…</string>
+  <string name="waiting">Hintayin…</string>
+  <string name="no_pgp_key">Walang OpenPGP key ang nakita</string>
+  <string name="no_pgp_keys">Walang OpenPGP keys ang nakita</string>
+  <string name="pref_general">Pangkalahatan</string>
+  <string name="pref_xmpp_resource">Pinanggalingan ng XMPP</string>
 </resources>
