@@ -12,4 +12,5 @@
   <string name="action_add_phone_book">إضافة إلى دفتر العناوين</string>
   <string name="action_delete_contact">حذف من القائمة</string>
   <string name="action_block_contact">كتلة الاتصال</string>
+  <string name="action_unblock_contact">إلغاء حظر جهة الإتصال</string>
 </resources>
