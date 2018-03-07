@@ -86,4 +86,9 @@
   <string name="send_pgp_message">Magpadala ng naka-encrypt na mensahe ng OpenPGP</string>
   <string name="your_nick_has_been_changed">Ang itong palayaw ay nabago</string>
   <string name="send_unencrypted">Magpadala ng hindi naka-encrypt</string>
+  <string name="decryption_failed">Nabigo ang decryption. Dahil Maaring hindi mo hawag ang tamang key.</string>
+  <string name="openkeychain_required">OpenKeychain</string>
+  <string name="restart">I-restart</string>
+  <string name="install">I-instal</string>
+  <string name="openkeychain_not_installed">Paki-instal ang OpenKeychain</string>
 </resources>
