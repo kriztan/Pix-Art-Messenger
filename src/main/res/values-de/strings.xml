@@ -761,4 +761,6 @@
   <string name="snooze">Schlummern</string>
   <string name="huawei_protected_apps">Geschützte Apps</string>
   <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
+  <string name="pref_enable_multi_accounts_title">Mehrprofil-Modus aktivieren</string>
+  <string name="pref_enable_multi_accounts_summary">Sofern du mehrere Profile nutzen möchtest musst du ein Passwort zur Verschlüsselung der Datensicherung angeben.</string>
 </resources>
