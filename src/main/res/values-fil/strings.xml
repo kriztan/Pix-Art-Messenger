@@ -88,7 +88,7 @@
   <string name="send_unencrypted">Maghatid ng unencrypted</string>
   <string name="decryption_failed">Dekripsyon ay nabigo. Baka wala kang tamang pribadong susi.</string>
   <string name="openkeychain_required">BukasSusikadena</string>
-  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
+  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b? para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
   <string name="restart">Ibalik sa simula</string>
   <string name="install">I-lagay</string>
   <string name="openkeychain_not_installed">Paki lagay ng OpenKeychain</string>
