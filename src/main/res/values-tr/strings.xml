@@ -260,7 +260,7 @@
   <string name="enable">Etkinleştir</string>
   <string name="conference_requires_password">Grup sohbeti için şifre gerekiyor</string>
   <string name="enter_password">Şifreyi girin</string>
-  <string name="request_presence_updates">Lütfen öncelikle iletişim bilgilerinizden durum güncellemeleri isteğinde bulunun.\n\n<small>Bu, alıcı(lar) ınızın hangi müşteriyi kullandığını belirlemek için kullanılacaktır</string>
+  <string name="request_presence_updates">Lütfen öncelikle iletişim bilgilerinizden durum güncellemeleri isteğinde bulunun.\n\n<small>Bu, alıcı(lar) ınızın hangi müşteriyi kullandığını belirlemek için kullanılacaktır</small></string>
   <string name="request_now">Şimdi isteyin</string>
   <string name="delete_fingerprint">Parmak izini sil</string>
   <string name="sure_delete_fingerprint">Bu parmak izini silmek istediğinizden emin misiniz?</string>
