@@ -410,8 +410,6 @@
   <string name="no_application_found_to_display_location">Non se atopou un aplicativo para mostrar a localización</string>
   <string name="location">Localización</string>
   <string name="received_location">Localización recibida</string>
-  <string name="title_undo_swipe_out_conversation">Pechouse a conversa</string>
-  <string name="title_undo_swipe_out_muc">Deixar a conversa en grupo</string>
   <string name="pref_dont_trust_system_cas_title">Non confiar nas CAs do sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos os certificados deberán ser aprovados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
