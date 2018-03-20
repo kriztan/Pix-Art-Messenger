@@ -378,8 +378,6 @@
   <string name="no_application_found_to_display_location">Walay aplikasyon ang nakita para ipakita ang lokasyun</string>
   <string name="location">Lokasyun</string>
   <string name="received_location">Nadawat nga lokasyun</string>
-  <string name="title_undo_swipe_out_conversation">Sirado na ang panag-estorya</string>
-  <string name="title_undo_swipe_out_muc">Hawa sa grupo nga chat</string>
   <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Tanang mga sertipiko dapat manually nga mga aprobado</string>
   <string name="pref_remove_trusted_certificates_title">Tangtanga ang mga sertipiko</string>
@@ -414,7 +412,6 @@ Pili %d mga kontak</item>
   <string name="download_failed_server_not_found">Ang ge-download kay napakyas: Serber kay wala nakita</string>
   <string name="download_failed_file_not_found">Ang ge-download kay napakyas: File kay wala nakita</string>
   <string name="download_failed_could_not_connect">Ang ge-download kay napakyas: Dili maka sumpay sa host</string>
-  <string name="elv_undo">balika</string>
   <string name="download_failed_could_not_write_file">Napkayas pag-download: Dili makasuwat sa file</string>
   <string name="pref_use_white_background">Gamit ug puti nga background</string>
   <string name="pref_use_white_background_summary">Ipakita ang gepdala nga mensahe ingon nga itom nga teksto sa puti nga background</string>
