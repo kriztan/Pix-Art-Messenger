@@ -413,8 +413,6 @@ mentrestant.</string>
   <string name="no_application_found_to_display_location">No s\'ha trobat cap aplicació per mostrar la localització</string>
   <string name="location">Localització</string>
   <string name="received_location">Localització rebuda</string>
-  <string name="title_undo_swipe_out_conversation">Conversa tancada</string>
-  <string name="title_undo_swipe_out_muc">Sortir del xat en grup</string>
   <string name="pref_dont_trust_system_cas_title">No confiar en les CAs del sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Tots els certificats han de ser aprovats manualment</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificats</string>
