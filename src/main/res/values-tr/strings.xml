@@ -428,8 +428,6 @@
   <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
   <string name="location">Konum</string>
   <string name="received_location">Alınan konum</string>
-  <string name="title_undo_swipe_out_conversation">Sohbet kapandı</string>
-  <string name="title_undo_swipe_out_muc">Sohbet grubundan ayrıl</string>
   <string name="pref_dont_trust_system_cas_title">Sistem CAs\'larına güvenme</string>
   <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar manuel onaylanmalıdır</string>
   <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
@@ -460,7 +458,6 @@
   <string name="download_failed_server_not_found">İndirileme başarısız oldu: Sunucu bulunamadı</string>
   <string name="download_failed_file_not_found">İndirileme başarısız oldu:: Dosya bulunamadı</string>
   <string name="download_failed_could_not_connect">İndirme başarısız: Ana bilgisayara bağlanılamadı</string>
-  <string name="elv_undo">geri al</string>
   <string name="download_failed_could_not_write_file">İndirme başarısız: Dosya yazılamadı</string>
   <string name="pref_use_white_background">Beyaz arka planı kullan</string>
   <string name="pref_use_white_background_summary">Gönderilen mesajları siyah arka planda siyah metin olarak göster</string>
