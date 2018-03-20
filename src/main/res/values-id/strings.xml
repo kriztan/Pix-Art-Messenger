@@ -428,8 +428,6 @@
   <string name="no_application_found_to_display_location">Tidak ada aplikasi yang ditemukan untuk menampilkan lokasi</string>
   <string name="location">Lokasi</string>
   <string name="received_location">Lokasi yang diterima</string>
-  <string name="title_undo_swipe_out_conversation">Percakapan ditutup</string>
-  <string name="title_undo_swipe_out_muc">Obrolan kelompok kiri</string>
   <string name="pref_dont_trust_system_cas_title">Jangan percaya sistem CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Semua sertifikat harus disetujui secara manual</string>
   <string name="pref_remove_trusted_certificates_title">Hapus sertifikat</string>
@@ -458,7 +456,6 @@
   <string name="download_failed_server_not_found">Unduh gagal: server tidak ditemukan</string>
   <string name="download_failed_file_not_found">Unduh gagal: berkas tidak ditemukan</string>
   <string name="download_failed_could_not_connect">Unduh gagal: tidak dapat terhubung ke sistem</string>
-  <string name="elv_undo">kembali</string>
   <string name="download_failed_could_not_write_file">Unduh gagal: tidak bisa menulis berkas</string>
   <string name="pref_use_white_background">Gunakan latar belakang putih</string>
   <string name="pref_use_white_background_summary">Tampilkan pesan terkirim sebagai teks hitam di latar belakang putih</string>
