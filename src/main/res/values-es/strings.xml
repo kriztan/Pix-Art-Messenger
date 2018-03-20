@@ -428,8 +428,6 @@
   <string name="no_application_found_to_display_location">No se ha encontrado ninguna aplicación para mostrar la ubicación</string>
   <string name="location">Ubicación</string>
   <string name="received_location">Ubicación recibida</string>
-  <string name="title_undo_swipe_out_conversation">Conversación cerrada</string>
-  <string name="title_undo_swipe_out_muc">Salir del grupo</string>
   <string name="pref_dont_trust_system_cas_title">No confiar en los CAs del sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos los certificados deben ser aprobados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
@@ -460,7 +458,6 @@
   <string name="download_failed_server_not_found">Error al descargar: Servidor no encontrado</string>
   <string name="download_failed_file_not_found">Error al descargar: Archivo no encontrado</string>
   <string name="download_failed_could_not_connect">Error al descargar: No se ha podido conectar con el servidor</string>
-  <string name="elv_undo">Deshacer</string>
   <string name="download_failed_could_not_write_file">Falló la descarga: No se puede escribir el fichero</string>
   <string name="pref_use_white_background">Usar fondo blanco</string>
   <string name="pref_use_white_background_summary">Mostrar los mensajes enviados como texto negro sobre fondo blanco</string>
