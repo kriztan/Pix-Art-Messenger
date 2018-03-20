@@ -428,8 +428,6 @@
   <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
   <string name="location">Kinalalagyan</string>
   <string name="received_location">Natanggap na lokasyon</string>
-  <string name="title_undo_swipe_out_conversation">Pagpapanayam sinirado</string>
-  <string name="title_undo_swipe_out_muc">Lumayas sa pang-grupong chat</string>
   <string name="pref_dont_trust_system_cas_title">Wag maniwala sa sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Lahat ng mga katibayan ay dapat naaproba ng mano-mano</string>
   <string name="pref_remove_trusted_certificates_title">Tagalin ang mga katibayan</string>
@@ -460,7 +458,6 @@
   <string name="download_failed_server_not_found">Nabigo ang pag-download: Hindi nakita ang server</string>
   <string name="download_failed_file_not_found">Nabigo ang pag-download: Hindi nakita ang file</string>
   <string name="download_failed_could_not_connect">Nabigo ang pag-download: Hindi nakakonekta sa host</string>
-  <string name="elv_undo">pawalang-bisa</string>
   <string name="download_failed_could_not_write_file">Nabigo ang pag-download: Hindi ma-isulat ang file</string>
   <string name="pref_use_white_background">Gumamit ng puting background</string>
   <string name="pref_use_white_background_summary">Ipakita ang mga ipinadalang mensahe bilang itim na teksto sa isang puting background</string>
