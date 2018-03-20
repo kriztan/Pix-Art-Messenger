@@ -385,7 +385,6 @@
   <string name="no_application_found_to_display_location">Nie odnaleziono aplikacji do wyświetlenia lokalizacji</string>
   <string name="location">Lokalizacja</string>
   <string name="received_location">Otrzymano lokalizację</string>
-  <string name="title_undo_swipe_out_conversation">Zamknięto konwersację</string>
   <string name="pref_dont_trust_system_cas_title">Nie ufaj certyfikatom systemowym</string>
   <string name="pref_dont_trust_system_cas_summary">Wymagaj ręcznego potwierdzania certyfikatów</string>
   <string name="pref_remove_trusted_certificates_title">Usuń certyfikat</string>
