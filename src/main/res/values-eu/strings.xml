@@ -410,8 +410,6 @@
   <string name="no_application_found_to_display_location">Kokapena erakutsi dezakeen aplikaziorik ez da aurkitu</string>
   <string name="location">Kokapena</string>
   <string name="received_location">Kokapena jaso da</string>
-  <string name="title_undo_swipe_out_conversation">Elkarrizketa itxi egin da</string>
-  <string name="title_undo_swipe_out_muc">Taldea utzi egin da</string>
   <string name="pref_dont_trust_system_cas_title">Sistemaren CAtaz ez fidatu</string>
   <string name="pref_dont_trust_system_cas_summary">Ziurtagiri guztiak eskuz onartu behar dira</string>
   <string name="pref_remove_trusted_certificates_title">Ziurtagiriak kendu</string>
