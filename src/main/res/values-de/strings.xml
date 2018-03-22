@@ -760,4 +760,14 @@
   <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
   <string name="pref_enable_multi_accounts_title">Mehrprofil-Modus aktivieren</string>
   <string name="pref_enable_multi_accounts_summary">Sofern du mehrere Profile nutzen möchtest musst du ein Passwort zur Verschlüsselung der Datensicherung angeben.</string>
+  <string name="mtm_accept_cert">Unbekanntes Zertifikat akzeptieren?</string>
+  <string name="mtm_trust_anchor">Das Serverzertifikat wurde nicht von einer bekannten Zertifizierungsstelle signiert.</string>
+  <string name="mtm_cert_expired">Das Serverzertifikat ist abgelaufen.</string>
+  <string name="mtm_accept_servername">Nicht übereinstimmenden Servernamen akzeptieren?</string>
+  <string name="mtm_hostname_mismatch">Server konnte sich nicht als \"%s\" authentifizieren. Das Zertifikat ist nur gültig für:</string>
+  <string name="mtm_connect_anyway">Möchtest du trotzdem eine Verbindung herstellen?</string>
+  <string name="mtm_cert_details">Zertifikatdetails:</string>
+  <string name="mtm_notification">Zertifikatsüberprüfung</string>
+  <string name="once">Einmalig</string>
+  <string name="theme">Design</string>
 </resources>
