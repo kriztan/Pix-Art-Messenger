@@ -451,7 +451,6 @@
   <string name="choose_quick_action">Elegir acción rápida</string>
   <string name="search_for_contacts_or_groups">Buscar contactos o grupos</string>
   <string name="send_private_message">Enviar mensaje privado</string>
-  <string name="user_has_left_conference">¡%s ha dejado el grupo!</string>
   <string name="username">Usuario</string>
   <string name="username_hint">Usuario</string>
   <string name="invalid_username">Esto no es un usuario válido</string>
