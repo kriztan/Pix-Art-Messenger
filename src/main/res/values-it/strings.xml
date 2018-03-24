@@ -433,7 +433,6 @@
   <string name="choose_quick_action">Scegli azione rapida</string>
   <string name="search_for_contacts_or_groups">Cerca contatti o gruppi</string>
   <string name="send_private_message">Invia messaggio privato</string>
-  <string name="user_has_left_conference">%s ha lasciato la chat di gruppo!</string>
   <string name="username">Utente</string>
   <string name="username_hint">Utente</string>
   <string name="invalid_username">Questo non è un nome utente valido</string>
