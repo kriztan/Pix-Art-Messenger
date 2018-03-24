@@ -451,7 +451,6 @@
   <string name="choose_quick_action">Pumili ng mabilis na aksyon</string>
   <string name="search_for_contacts_or_groups">Maghanap ng mga kontak o mga grupo</string>
   <string name="send_private_message">Magpadala ng pribadong mensahe</string>
-  <string name="user_has_left_conference">%s ay umalis sa grupo ng chat!</string>
   <string name="username">Pangalang ginagamit</string>
   <string name="username_hint">Panggalang ginagamit</string>
   <string name="invalid_username">Hindi ito isang wastong username</string>
