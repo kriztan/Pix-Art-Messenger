@@ -451,7 +451,6 @@
   <string name="choose_quick_action">Hızlı işlemi seçin</string>
   <string name="search_for_contacts_or_groups">Kişileri veya gruplar için arama</string>
   <string name="send_private_message">Özel mesaj gönder</string>
-  <string name="user_has_left_conference">%s grup sohbetini terk etti!</string>
   <string name="username">Kullanıcı Adı</string>
   <string name="username_hint">Kullanıcı Adı</string>
   <string name="invalid_username">Bu geçerli bir kullanıcı adı değil</string>
