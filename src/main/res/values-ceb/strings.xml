@@ -405,7 +405,6 @@ Pili %d mga kontak</item>
   <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
   <string name="search_for_contacts_or_groups">Pangita sa mga kontak o sa mga grupo</string>
   <string name="send_private_message">Ipadala ang pribado nga mensahe</string>
-  <string name="user_has_left_conference">%s mao nalang ang nahabilin sa gupo nga chat!</string>
   <string name="username">Pangan sa user</string>
   <string name="username_hint">Pangan sa user</string>
   <string name="invalid_username">Dili ni balido nga pangan sa user</string>
