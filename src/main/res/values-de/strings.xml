@@ -451,7 +451,6 @@
   <string name="choose_quick_action">Schnell-Taste auswähle</string>
   <string name="search_for_contacts_or_groups">Nach Kontakten oder Konferenzen suchen</string>
   <string name="send_private_message">Private Nachricht senden</string>
-  <string name="user_has_left_conference">%s hat den Gruppenchat verlassen!</string>
   <string name="username">Benutzername</string>
   <string name="username_hint">Benutzername</string>
   <string name="invalid_username">Ungültiger Benutzername</string>
@@ -764,7 +763,6 @@
   <string name="mtm_trust_anchor">Das Serverzertifikat wurde nicht von einer bekannten Zertifizierungsstelle signiert.</string>
   <string name="mtm_cert_expired">Das Serverzertifikat ist abgelaufen.</string>
   <string name="mtm_accept_servername">Nicht übereinstimmenden Servernamen akzeptieren?</string>
-  <string name="mtm_hostname_mismatch">Server konnte sich nicht als \"%s\" authentifizieren. Das Zertifikat ist nur gültig für:</string>
   <string name="mtm_connect_anyway">Möchtest du trotzdem eine Verbindung herstellen?</string>
   <string name="mtm_cert_details">Zertifikatdetails:</string>
   <string name="mtm_notification">Zertifikatsüberprüfung</string>
