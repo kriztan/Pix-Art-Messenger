@@ -433,7 +433,6 @@
   <string name="choose_quick_action">Escolla a acción rápida</string>
   <string name="search_for_contacts_or_groups">Buscar contactos e grupos</string>
   <string name="send_private_message">Enviar mensaxe privada</string>
-  <string name="user_has_left_conference">¡%sdeixou a conversa en grupo!</string>
   <string name="username">Identificador</string>
   <string name="username_hint">Nome de usuaria</string>
   <string name="invalid_username">Este non é un identificador válido</string>
