@@ -449,7 +449,6 @@
   <string name="choose_quick_action">Pilih aksi cepat</string>
   <string name="search_for_contacts_or_groups">Cari dari kontak atau kelompok</string>
   <string name="send_private_message">Kirim pesan pribadi</string>
-  <string name="user_has_left_conference">%s keluar dari obrolan kelompok!</string>
   <string name="username">Nama pengguna</string>
   <string name="username_hint">Nama pengguna</string>
   <string name="invalid_username">Bukan nama pengguna yang valid</string>
