@@ -433,7 +433,6 @@
   <string name="choose_quick_action">Snelle actie kiezen</string>
   <string name="search_for_contacts_or_groups">Zoeken naar contacten of groepen</string>
   <string name="send_private_message">Privébericht sturen</string>
-  <string name="user_has_left_conference">%s heeft het groepsgesprek verlaten!</string>
   <string name="username">Gebruikersnaam</string>
   <string name="username_hint">Gebruikersnaam</string>
   <string name="invalid_username">Dit is geen geldige gebruikersnaam</string>
