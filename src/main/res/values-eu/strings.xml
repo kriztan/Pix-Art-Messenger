@@ -433,7 +433,6 @@
   <string name="choose_quick_action">Ekintza azkarra aukeratu</string>
   <string name="search_for_contacts_or_groups">Kontaktuak edo taldeak bilatu</string>
   <string name="send_private_message">Mezu pribatua bidali</string>
-  <string name="user_has_left_conference">%s(e)k taldea utzi egin du</string>
   <string name="username">Erabiltzaile izena</string>
   <string name="username_hint">Erabiltzaile izena</string>
   <string name="invalid_username">Hau ez da erabiltzaile izen baliodun bat</string>
