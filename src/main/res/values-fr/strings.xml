@@ -380,7 +380,6 @@
   <string name="no_application_found_to_display_location">Aucune application trouvée pour afficher la position</string>
   <string name="location">Position</string>
   <string name="received_location">Position reçue</string>
-  <string name="title_undo_swipe_out_conversation">Conversation fermée</string>
   <string name="pref_dont_trust_system_cas_title">Ne pas utiliser les CAs système</string>
   <string name="pref_dont_trust_system_cas_summary">Tous les certificats doivent être approuvés manuellement.</string>
   <string name="pref_remove_trusted_certificates_title">Retirer les certificats</string>

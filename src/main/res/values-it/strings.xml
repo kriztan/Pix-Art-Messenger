@@ -410,8 +410,6 @@
   <string name="no_application_found_to_display_location">Non è stata trovata alcuna applicazione per mostrare la posizione</string>
   <string name="location">Posizione</string>
   <string name="received_location">Posizione ricevuta</string>
-  <string name="title_undo_swipe_out_conversation">Conversazione interrotta</string>
-  <string name="title_undo_swipe_out_muc">Chat di gruppo abbandonata</string>
   <string name="pref_dont_trust_system_cas_title">Non ti fidare delle CA di sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Tutti i certificati devono essere accettati manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Elimina i certificati</string>
@@ -435,7 +433,6 @@
   <string name="choose_quick_action">Scegli azione rapida</string>
   <string name="search_for_contacts_or_groups">Cerca contatti o gruppi</string>
   <string name="send_private_message">Invia messaggio privato</string>
-  <string name="user_has_left_conference">%s ha lasciato la chat di gruppo!</string>
   <string name="username">Utente</string>
   <string name="username_hint">Utente</string>
   <string name="invalid_username">Questo non è un nome utente valido</string>

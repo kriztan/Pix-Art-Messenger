@@ -410,8 +410,6 @@
   <string name="no_application_found_to_display_location">Kokapena erakutsi dezakeen aplikaziorik ez da aurkitu</string>
   <string name="location">Kokapena</string>
   <string name="received_location">Kokapena jaso da</string>
-  <string name="title_undo_swipe_out_conversation">Elkarrizketa itxi egin da</string>
-  <string name="title_undo_swipe_out_muc">Taldea utzi egin da</string>
   <string name="pref_dont_trust_system_cas_title">Sistemaren CAtaz ez fidatu</string>
   <string name="pref_dont_trust_system_cas_summary">Ziurtagiri guztiak eskuz onartu behar dira</string>
   <string name="pref_remove_trusted_certificates_title">Ziurtagiriak kendu</string>
@@ -435,7 +433,6 @@
   <string name="choose_quick_action">Ekintza azkarra aukeratu</string>
   <string name="search_for_contacts_or_groups">Kontaktuak edo taldeak bilatu</string>
   <string name="send_private_message">Mezu pribatua bidali</string>
-  <string name="user_has_left_conference">%s(e)k taldea utzi egin du</string>
   <string name="username">Erabiltzaile izena</string>
   <string name="username_hint">Erabiltzaile izena</string>
   <string name="invalid_username">Hau ez da erabiltzaile izen baliodun bat</string>

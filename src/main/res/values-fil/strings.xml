@@ -88,7 +88,7 @@
   <string name="send_unencrypted">Maghatid ng unencrypted</string>
   <string name="decryption_failed">Dekripsyon ay nabigo. Baka wala kang tamang pribadong susi.</string>
   <string name="openkeychain_required">BukasSusikadena</string>
-  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
+  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi.\n\nOpenkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play.\n\n<small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
   <string name="restart">Ibalik sa simula</string>
   <string name="install">I-lagay</string>
   <string name="openkeychain_not_installed">Paki lagay ng OpenKeychain</string>
@@ -428,8 +428,6 @@
   <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
   <string name="location">Kinalalagyan</string>
   <string name="received_location">Natanggap na lokasyon</string>
-  <string name="title_undo_swipe_out_conversation">Pagpapanayam sinirado</string>
-  <string name="title_undo_swipe_out_muc">Lumayas sa pang-grupong chat</string>
   <string name="pref_dont_trust_system_cas_title">Wag maniwala sa sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Lahat ng mga katibayan ay dapat naaproba ng mano-mano</string>
   <string name="pref_remove_trusted_certificates_title">Tagalin ang mga katibayan</string>
@@ -453,14 +451,12 @@
   <string name="choose_quick_action">Pumili ng mabilis na aksyon</string>
   <string name="search_for_contacts_or_groups">Maghanap ng mga kontak o mga grupo</string>
   <string name="send_private_message">Magpadala ng pribadong mensahe</string>
-  <string name="user_has_left_conference">%s ay umalis sa grupo ng chat!</string>
   <string name="username">Pangalang ginagamit</string>
   <string name="username_hint">Panggalang ginagamit</string>
   <string name="invalid_username">Hindi ito isang wastong username</string>
   <string name="download_failed_server_not_found">Nabigo ang pag-download: Hindi nakita ang server</string>
   <string name="download_failed_file_not_found">Nabigo ang pag-download: Hindi nakita ang file</string>
   <string name="download_failed_could_not_connect">Nabigo ang pag-download: Hindi nakakonekta sa host</string>
-  <string name="elv_undo">pawalang-bisa</string>
   <string name="download_failed_could_not_write_file">Nabigo ang pag-download: Hindi ma-isulat ang file</string>
   <string name="pref_use_white_background">Gumamit ng puting background</string>
   <string name="pref_use_white_background_summary">Ipakita ang mga ipinadalang mensahe bilang itim na teksto sa isang puting background</string>

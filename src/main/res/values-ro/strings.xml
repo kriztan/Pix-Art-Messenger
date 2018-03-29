@@ -416,8 +416,6 @@
   <string name="no_application_found_to_display_location">Nu s-a găsit nici o aplicație care să afișeze locația</string>
   <string name="location">Locatie</string>
   <string name="received_location">Locație primită</string>
-  <string name="title_undo_swipe_out_conversation">Conversație închisă</string>
-  <string name="title_undo_swipe_out_muc">A părăsit discuția de grup</string>
   <string name="pref_dont_trust_system_cas_title">Nu ai încredere în CA din sistem</string>
   <string name="pref_dont_trust_system_cas_summary">Toate certificatele trebuie aprobate manual</string>
   <string name="pref_remove_trusted_certificates_title">Înlătură certificatele</string>
@@ -443,14 +441,12 @@
   <string name="choose_quick_action">Alege actiunea rapida</string>
   <string name="search_for_contacts_or_groups">Caută contacte sau grupuri</string>
   <string name="send_private_message">trimite mesaj privat</string>
-  <string name="user_has_left_conference">%s a părăsit discuția de grup!</string>
   <string name="username">Nume utilizator</string>
   <string name="username_hint">Nume utilizator</string>
   <string name="invalid_username">Acesta nu este un nume de utilizator valabil</string>
   <string name="download_failed_server_not_found">Descărcare eșuată: Serverul nu a fost găsit</string>
   <string name="download_failed_file_not_found">Descărcare eșuată: Fișierul nu a fost găsit</string>
   <string name="download_failed_could_not_connect">Descărcare eșuată: Nu s-a putut realiza conexiunea cu gazda.</string>
-  <string name="elv_undo">anulează</string>
   <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
   <string name="remind_later">mai târziu</string>
   <string name="update">actualizează</string>
