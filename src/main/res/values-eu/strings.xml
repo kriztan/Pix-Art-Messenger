@@ -96,8 +96,6 @@
   <string name="contact_has_no_pgp_key">Pix-Art Messenger ez da zure mezuak enkriptatzeko gai zure kontaktua bere gako publikoa jakinarazten ez dagoelako.\n\n<small>Mesedez eskatu ezaiozu zure kontaktuari openPGP konfigura dezan.</small></string>
   <string name="no_pgp_keys">Ez da OpenPGP gakorik aurkitu</string>
   <string name="pref_general">Orokorrak</string>
-  <string name="pref_xmpp_resource">XMPP baliabidea</string>
-  <string name="pref_xmpp_resource_summary">Bezero honek bere burua aurkezteko erabiltzen duen izena</string>
   <string name="pref_attachments">Eranskinak</string>
   <string name="pref_notification_settings">Jakinarazpena</string>
   <string name="pref_notifications">Jakinarazpenak</string>
@@ -114,8 +112,6 @@
   <string name="openpgp_error">OpenKeychainek akats baten berri eman du</string>
   <string name="accept">Onartu</string>
   <string name="error">Akats bat gertatu da</string>
-  <string name="pref_grant_presence_updates">Presentzia eguneraketak eman</string>
-  <string name="pref_grant_presence_updates_summary">Prebentiboki presentzia eguneraketak eman eta eskatu sortu dituzun kontaktuetarako</string>
   <string name="your_account">Zure kontua</string>
   <string name="send_presence_updates">Presentzia eguneraketak bidali</string>
   <string name="receive_presence_updates">Presentzia eguneraketak jaso</string>
@@ -153,14 +149,12 @@
   <string name="unpublish_pgp">OpenPGP gako publikoa kendu</string>
   <string name="unpublish_pgp_message">Ziur zure OpenPGP gako publikoa zure presentzia eguneraketetatik kendu nahi duzula?\nZure kontaktuek ezin dizute gehiago OpenPGPz enkriptatutako mezuak bidali.</string>
   <string name="openpgp_has_been_published">OpenPGP gako publikoa argitaratu da.</string>
-  <string name="republish_pgp_keys">Gogoratu ezazu zure OpenPGP gako publikoak birrargitaratzeaz!</string>
   <string name="mgmt_account_are_you_sure">Ziur al zaude?</string>
   <string name="mgmt_account_delete_confirm_text">Zure kontua ezabatzen baduzu, zure elkarrizketen historia guztia galduko da</string>
   <string name="attach_record_voice">Ahotsa grabatu</string>
   <string name="account_settings_jabber_id">Jabber IDa</string>
   <string name="account_settings_password">Pasahitza</string>
   <string name="account_settings_example_jabber_id">erabiltzailea@adibidea.com</string>
-  <string name="account_settings_confirm_password">Pasahitza berretsi</string>
   <string name="password">Pasahitza</string>
   <string name="invalid_jid">Hau ez da Jabber ID baliodun bat</string>
   <string name="error_out_of_memory">Memoriarik gabe. Irudia handiegia da</string>
@@ -381,10 +375,6 @@
   <string name="modified_conference_options">Taldearen aukerak aldatu dira</string>
   <string name="could_not_modify_conference_options">Ezin izan dira taldearen aukerak aldatu</string>
   <string name="never">Inoiz</string>
-  <string name="thirty_minutes">30 minutu</string>
-  <string name="one_hour">ordu 1</string>
-  <string name="two_hours">2 ordu</string>
-  <string name="eight_hours">8 ordu</string>
   <string name="until_further_notice">abisatu arte</string>
   <string name="pref_input_options">Sarrera</string>
   <string name="pref_enter_is_send">Sartu teklak bidaltzen du</string>
@@ -444,7 +434,6 @@
   <string name="account_status_bind_failure">Estekatzeak hust egin du</string>
   <string name="account_status_host_unknown">Zerbitzaria ez da domeinuaren erantzule</string>
   <string name="server_info_broken">Hondatuta</string>
-  <string name="pref_presence_settings">Presentzia</string>
   <string name="pref_away_when_screen_off">Urrun pantaila itzalita dagoenean</string>
   <string name="pref_away_when_screen_off_summary">Zure baliabidea urrun bezala markatzen du pantaila itzalita dagoenean</string>
   <string name="pref_dnd_on_silent_mode">\"Ez gogaitu\" modu isilean</string>
@@ -485,14 +474,6 @@
   <string name="shared_text_with_x">Testua %s(r)ekin partekatu da</string>
   <string name="sync_with_contacts">Kontaktuekin sinkronizatu</string>
   <string name="sync_with_contacts_long">Pix-Art Messenger ek zure XMPP zerrenda eta zure kontaktuak uztartu nahi ditu haien izenak eta argazkiak erakusteko.\n\nPix-Art Messenger ek zure kontaktuak modu lokalean soilik irakurri eta uztartuko ditu, zure zerbitzarira kargatu gabe.\n\nJarraian baimenak eskatuko zaizkizu zure kontaktuetara sartu ahal izateko.</string>
-  <string name="certificate_information">Ziurtagiriaren informazioa</string>
-  <string name="certificate_subject">Subjektua</string>
-  <string name="certificate_issuer">Igorlea</string>
-  <string name="certificate_cn">Izen arrunta</string>
-  <string name="certificate_o">Erakundea</string>
-  <string name="certificate_sha1">SHA-1</string>
-  <string name="certicate_info_not_available">(Ez eskuragarri)</string>
-  <string name="certificate_not_found">Ez da ziurtagiririk aurkitu</string>
   <string name="notify_on_all_messages">Mezu guztiak jakinarazi</string>
   <string name="notify_only_when_highlighted">Jakinarazi aipatua izaterakoan soilik</string>
   <string name="notify_never">Jakinarazpenak ezgaituta</string>
@@ -521,11 +502,7 @@
   <string name="your_full_jid_will_be">Zure Jabber ID osoa %s izango da</string>
   <string name="create_account">Kontua sortu</string>
   <string name="pick_your_username">Aukeratu zure erabiltzaile izena</string>
-  <string name="pref_manually_change_presence">Presentzia eskuz aldatu</string>
-  <string name="pref_manually_change_presence_summary">Ukitu zure profileko argazkia zure presentzia aldatzeko</string>
-  <string name="change_presence">Presentzia aldatu</string>
   <string name="status_message">Egoera mezua</string>
-  <string name="all_accounts_on_this_device">Gailu honetako kontu guztietarako ezarri</string>
   <string name="presence_chat">Hitzegiteko aske</string>
   <string name="presence_online">Konektatuta</string>
   <string name="presence_away">Kanpoan</string>
@@ -537,7 +514,6 @@
   <string name="registration_please_wait">Erregistroak huts egin du: saiatu berriz beranduago</string>
   <string name="registration_password_too_weak">Erregistroa huts egin du: pasahitza ahulegia da</string>
   <string name="create_conference">Taldea sortu</string>
-  <string name="join_or_create_conference">Talde batera batu edo sortu</string>
   <string name="conference_subject">Gaia</string>
   <string name="choose_participants">Parte hartzaileak hautatu</string>
   <string name="creating_conference">Taldea sortzen…</string>
@@ -554,16 +530,10 @@
   <string name="no_permission_to_access_x">%s(e)ra sartzeko baimenik ez</string>
   <string name="remote_server_not_found">Urruneko zerbitzaria ez da aurkitu</string>
   <string name="unable_to_update_account">Ezin izan da kontua eguneratu</string>
-  <string name="missing_presence_subscription_with_x">%s(r)ekin presentzia harpidetza falta da</string>
-  <string name="missing_keys_from_x">%s(r)en OMEMO gakoak falta dira.</string>
-  <string name="wrong_conference_configuration">Hau ez da talde pribatu, ez anonimo bat.</string>
-  <string name="this_conference_has_no_members">Ez dago kiderik talde honetan.</string>
   <string name="report_jid_as_spammer">JIDa nahi gabeko mezuen bidaltzaile gisa salatu</string>
   <string name="pref_delete_omemo_identities">OMEMO nortasunak ezabatu</string>
   <string name="pref_delete_omemo_identities_summary">Zure OMEMO gakoak birsortu. Zure kontaktu guztiak zu egiaztatu beharko zaituzte berriz. Soilik azken aukera bezala erabili hau.</string>
   <string name="delete_selected_keys">Hautatutako gakoak ezabatu</string>
-  <string name="missing_presence_subscription">Presentzia harpidetza falta da</string>
-  <string name="missing_omemo_keys">OMEMO gakoak falta dira</string>
   <string name="error_publish_avatar_offline">Konektatuta egon behar zara zure profileko argazkia argitaratzeko.</string>
   <string name="copy_to_clipboard">Arbelera kopiatu</string>
   <string name="message_copied_to_clipboard">Mezua arbelera kopiatu da</string>
@@ -593,17 +563,9 @@
   <string name="i_followed_this_link_from_a_trusted_source">Lotura hau jatorri fidagarri batetik jarraitu dut</string>
   <string name="verifying_omemo_keys_trusted_source">%1$s(r)en OMEMO gakoak egiaztatuko dira lotura batean sakatu ondoren. Hau segurua da soilik lotura hau jatorri fidagarri batetik jarraitu baduzu eta soilik %2$s(e)k argitaratu izan ahal badu.</string>
   <string name="verify_omemo_keys">OMEMO gakoak egiaztatu</string>
-  <string name="show_inactive_devices">Erabiltzen ez diren gailuak erakutsi</string>
-  <string name="hide_inactive_devices">Erabiltzen ez diren gailuak ezkutatu</string>
   <string name="encrypting_message">Mezua enkriptatzen</string>
   <string name="transcoding_video">Bideoa konprimatzen</string>
-  <string name="pref_automatically_delete_messages_description">Ezarritako denbora tartea baino zaharragoak diren mezuak gailu honetatik automatikoki ezabatu.</string>
-  <string name="pref_automatically_delete_messages">Mezuen ezabatze automatikoa</string>
   <string name="not_fetching_history_retention_period">Mezurik ez eskuratzen gelditze tarte lokalarengatik.</string>
-  <string name="timeout_24_hours">24 ordu</string>
-  <string name="timeout_7_days">7 egun</string>
-  <string name="timeout_30_days">30 egun</string>
-  <string name="timeout_6_months">6 hilabete</string>
   <string name="today">Gaur</string>
   <string name="block_jabber_id">Jabber IDa blokeatu</string>
   <string name="corresponding_conversations_closed">Dagokion elkarrizketa itxi egin da.</string>
@@ -644,4 +606,5 @@
   <string name="pref_return_to_previous_summary">Zuzenean aurreko aktibitatera itzuli elkarrizketa ireki beharrean zerbait partekatu ondoren</string>
   <string name="invalid_muc_nick">Ezizen ez balioduna</string>
   <string name="title_activity_share_via_account">Kontu bidez partekatu</string>
+  <string name="all_accounts_on_this_device">Gailu honetako kontu guztietarako ezarri</string>
 </resources>
