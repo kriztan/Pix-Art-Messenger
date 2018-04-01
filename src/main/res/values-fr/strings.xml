@@ -94,8 +94,6 @@
   <string name="contact_has_no_pgp_key">Pix-Art Messenger ne peut pas chiffrer vos messages car votre contact n\'a pas communiqué sa clef publique.\n\n<small>Demandez-lui de configurer OpenPGP.</small></string>
   <string name="no_pgp_keys">Aucune clef OpenPGP n\'a été trouvée.</string>
   <string name="pref_general">Général</string>
-  <string name="pref_xmpp_resource">Ressource XMPP</string>
-  <string name="pref_xmpp_resource_summary">Nom utilisé par ce client pour s\'identifier</string>
   <string name="pref_attachments">Pièces jointes</string>
   <string name="pref_notifications_summary">Notifier lors de la réception d\'un message</string>
   <string name="pref_vibrate">Vibration</string>
@@ -110,8 +108,6 @@
   <string name="openpgp_error">OpenKeychain a signalé une erreur</string>
   <string name="accept">Accepter</string>
   <string name="error">Une erreur s\'est produite</string>
-  <string name="pref_grant_presence_updates">Autoriser les màj de disponibilité</string>
-  <string name="pref_grant_presence_updates_summary">Accorder et demander par avance les mises à jour de présence aux contacts que vous avez ajoutés</string>
   <string name="your_account">Votre compte</string>
   <string name="send_presence_updates">Envoyer mes màj de disponibilité</string>
   <string name="receive_presence_updates">Recevoir ses màj de disponibilité</string>
@@ -149,14 +145,12 @@
   <string name="unpublish_pgp">Supprimer la clef publique OpenPGP</string>
   <string name="unpublish_pgp_message">Êtes vous sûr de vouloir supprimer votre clef publique OpenPGP de votre annonce de présence?\nVos contacts ne pourront plus vous envoyer de message chiffrés avec OpenPGP.</string>
   <string name="openpgp_has_been_published">La clef publique OpenPGP a été publiée</string>
-  <string name="republish_pgp_keys">N\'oubliez pas de republier votre clef publique OpenPGP!</string>
   <string name="mgmt_account_are_you_sure">Êtes-vous sûr?</string>
   <string name="mgmt_account_delete_confirm_text">Si vous supprimez votre compte ainsi que tout votre historique de conversation sera perdu</string>
   <string name="attach_record_voice">Enregistrer un son</string>
   <string name="account_settings_jabber_id">Identifiant</string>
   <string name="account_settings_password">Mot de passe</string>
   <string name="account_settings_example_jabber_id">nom@exemple.com</string>
-  <string name="account_settings_confirm_password">Confirmer le mot de passe</string>
   <string name="password">Mot de passe</string>
   <string name="confirm_password">Confirmer le mot de passe</string>
   <string name="passwords_do_not_match">Les deux mots de passe ne correspondent pas.</string>
@@ -355,9 +349,6 @@
   <string name="moderated">Modéré</string>
   <string name="you_are_not_participating">Vous ne participez pas</string>
   <string name="never">Jamais</string>
-  <string name="one_hour">1 heure</string>
-  <string name="two_hours">2 heures</string>
-  <string name="eight_hours">8 heures</string>
   <string name="until_further_notice">Jusqu\'à nouvel ordre</string>
   <string name="pref_input_options">Saisie</string>
   <string name="pref_enter_is_send">Touche Entrée pour envoyer</string>
@@ -414,7 +405,6 @@
   <string name="account_status_bind_failure">La liaison a échoué</string>
   <string name="account_status_host_unknown">Le serveur n\'est pas responsable du domaine</string>
   <string name="server_info_broken">Détraqué</string>
-  <string name="pref_presence_settings">Disponibilité</string>
   <string name="pref_away_when_screen_off">Absent quand l\'écran est éteint</string>
   <string name="pref_away_when_screen_off_summary">Marquer cette ressource comme absente quand l\'écran est éteint.</string>
   <string name="pref_dnd_on_silent_mode">Indisponible en mode silencieux</string>
@@ -450,14 +440,6 @@
   <string name="shared_text_with_x">Texte partagé avec %s</string>
   <string name="sync_with_contacts">Synchroniser avec contacts</string>
   <string name="sync_with_contacts_long">Pix-Art Messenger souhaite associer vos contacts XMPP avec les contacts de votre appareil, pour utiliser leur nom complet et leur avatar.\n\nPix-Art Messenger va uniquement lire vos contacts et les associer localement, sans les envoyer sur le serveur XMPP.\n\nVotre appareil va maintenant vous demander la permission d\'accéder à vos contacts.</string>
-  <string name="certificate_information">Informations du certificat</string>
-  <string name="certificate_subject">Sujet</string>
-  <string name="certificate_issuer">Émetteur</string>
-  <string name="certificate_cn">Nom commun</string>
-  <string name="certificate_o">Organisation</string>
-  <string name="certificate_sha1">SHA-1</string>
-  <string name="certicate_info_not_available">(Non disponible)</string>
-  <string name="certificate_not_found">Aucun certificat trouvé</string>
   <string name="notify_on_all_messages">Notifier pour tous les messages</string>
   <string name="notify_only_when_highlighted">Notifier seulement en cas de mention</string>
   <string name="notify_never">Notifications désactivées</string>
@@ -485,11 +467,7 @@
   <string name="your_full_jid_will_be">Votre Jabber ID complet sera : %s</string>
   <string name="create_account">Créer un compte</string>
   <string name="pick_your_username">Choisissez votre nom d\'utilisateur</string>
-  <string name="pref_manually_change_presence">Changer votre disponibilité</string>
-  <string name="pref_manually_change_presence_summary">Cliquez sur votre avatar pour modifier votre disponibilité</string>
-  <string name="change_presence">Changer votre disponibilité</string>
   <string name="status_message">Message de statut</string>
-  <string name="all_accounts_on_this_device">Configurer pour tous les comptes sur cet appareil</string>
   <string name="presence_chat">Disponible</string>
   <string name="presence_online">En ligne</string>
   <string name="presence_away">Absent</string>
@@ -515,14 +493,10 @@
   <string name="no_permission_to_access_x">Permission d\'accéder à %s refusée</string>
   <string name="remote_server_not_found">Serveur distant non trouvé</string>
   <string name="unable_to_update_account">Mise à jour du compte impossible</string>
-  <string name="missing_presence_subscription_with_x">La notification de présence pour %s est manquante.</string>
-  <string name="missing_keys_from_x">La clef OMEMO de %s est manquante.</string>
   <string name="report_jid_as_spammer">Signaler ce JID comme envoyant des messages non sollicités.</string>
   <string name="pref_delete_omemo_identities">Effacer les identités OMEMO</string>
   <string name="pref_delete_omemo_identities_summary">Régénérer vos clefs OMEMO. Tous vos contacts devront vous vérifier à nouveau. À n\'utiliser qu\'en dernier recours.</string>
   <string name="delete_selected_keys">Supprimer les clefs sélectionnées</string>
-  <string name="missing_presence_subscription">La notification de présence est manquante </string>
-  <string name="missing_omemo_keys">Clefs OMEMO manquantes</string>
   <string name="error_publish_avatar_offline">Vous devez être connecté pour publier votre avatar.</string>
   <string name="quote">Citation</string>
   <string name="show_error_message">Afficher le message d\'erreur</string>
@@ -549,17 +523,9 @@
   <string name="i_followed_this_link_from_a_trusted_source">J\'ai obtenu ce lien d\'une source de confiance</string>
   <string name="verifying_omemo_keys_trusted_source">Vous êtes sur le point de vérifier les clefs OMEMO de %1$s en cliquant sur un lien. Cette procédure n\'est sécurisée que si le lien en question n\'a pu être publié que par %2$s et que vous l\'avez obtenu d\'une source digne de confiance.</string>
   <string name="verify_omemo_keys">Vérifier les clefs OMEMO</string>
-  <string name="show_inactive_devices">Montrer les appareils inactifs</string>
-  <string name="hide_inactive_devices">Masquer les appareils inactifs</string>
   <string name="encrypting_message">Chiffrement du message en cours</string>
   <string name="transcoding_video">Compression de la vidéo en cours</string>
-  <string name="pref_automatically_delete_messages_description">Efface automatiquement de cet appareil les messages plus anciens que l\'intervalle choisi.</string>
-  <string name="pref_automatically_delete_messages">Suppression messages auto</string>
   <string name="not_fetching_history_retention_period">Aucun message récupéré, en raison de la configuration de rétention de l\'appareil.</string>
-  <string name="timeout_24_hours">24 heures</string>
-  <string name="timeout_7_days">7 jours</string>
-  <string name="timeout_30_days">30 jours</string>
-  <string name="timeout_6_months">6 mois</string>
   <string name="today">Aujourd\'hui</string>
   <string name="block_jabber_id">Bloquer l\'ID Jabber</string>
   <string name="corresponding_conversations_closed">Conversations correspondantes fermées.</string>
@@ -592,4 +558,5 @@
   <string name="certificate_does_not_contain_jid">Le certificat ne contient pas d\'ID Jabber</string>
   <string name="error_no_keys_to_trust_presence">Il n\'y a aucune clé utilisable disponible pour ce contact.\nAssurez-vous d\'avoir un abonnement de présence mutuelle.</string>
   <string name="server_info_partial">partiel</string>
+  <string name="all_accounts_on_this_device">Configurer pour tous les comptes sur cet appareil</string>
 </resources>
