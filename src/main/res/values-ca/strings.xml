@@ -96,8 +96,6 @@
   <string name="contact_has_no_pgp_key">Conversations no ha pogut xifrar els teus missatges perquè el teu contacte no està anunciant la seva clau pública.\n\n<small>Si us plau, demana al teu contacte que configuri OpenPGP.</small></string>
   <string name="no_pgp_keys">No hi ha claus OPENPGP trobades</string>
   <string name="pref_general">General</string>
-  <string name="pref_xmpp_resource">Recursos XMPP</string>
-  <string name="pref_xmpp_resource_summary">El nom que identifica aquest client amb</string>
   <string name="pref_attachments">Fitxers adjunts</string>
   <string name="pref_notification_settings">Notificació</string>
   <string name="pref_notifications">Notificacions</string>
@@ -114,8 +112,6 @@
   <string name="openpgp_error">OpenKeychain ha reportat un error</string>
   <string name="accept">Acceptar</string>
   <string name="error">Un error ha passat</string>
-  <string name="pref_grant_presence_updates">Concedir actualitzacions</string>
-  <string name="pref_grant_presence_updates_summary">Concedeix i sol·liciteu preferentment subscripcions de presència per als contactes que hàgiu creat</string>
   <string name="your_account">El teu compte</string>
   <string name="send_presence_updates">Enviar actualitzacions de presència</string>
   <string name="receive_presence_updates">Rebre actualitzacions</string>
@@ -153,14 +149,12 @@
   <string name="unpublish_pgp">Treu la clau pública OpenPGP</string>
   <string name="unpublish_pgp_message">Esteu segur que voleu eliminar la vostra clau pública OpenPGP de l\'anunci de la vostra presència?\nEls vostres contactes ja no podran enviar missatges xifrats amb OpenPGP.</string>
   <string name="openpgp_has_been_published">S\'ha publicat la clau pública OpenPGP.</string>
-  <string name="republish_pgp_keys">Recordeu tornar a publicar les vostres claus públiques de OpenPGP.</string>
   <string name="mgmt_account_are_you_sure">Estàs segur?</string>
   <string name="mgmt_account_delete_confirm_text">Si suprimiu el vostre compte, es perdrà tot l\'historial de la conversa</string>
   <string name="attach_record_voice">Registre de veu</string>
   <string name="account_settings_jabber_id">Identificació de Jabber</string>
   <string name="account_settings_password">Contrasenya</string>
   <string name="account_settings_example_jabber_id">username@example.com</string>
-  <string name="account_settings_confirm_password">Confirma la contrasenya</string>
   <string name="password">Contrasenya</string>
   <string name="invalid_jid">Aquesta identificació de Jabber no és vàlida</string>
   <string name="error_out_of_memory">Fora de la capacitat de la mèmoria. L\'imatge és massa gran</string>
@@ -384,10 +378,6 @@ mentrestant.</string>
   <string name="modified_conference_options">S\'han modificat les opcions de xat en grup.</string>
   <string name="could_not_modify_conference_options">No s\'han pogut modificar les opcions de xat de grup</string>
   <string name="never">Mai</string>
-  <string name="thirty_minutes">30 minuts</string>
-  <string name="one_hour">1 hora</string>
-  <string name="two_hours">2 Hores</string>
-  <string name="eight_hours">8 Hores</string>
   <string name="until_further_notice">Fins nou avís</string>
   <string name="pref_input_options">Entrada</string>
   <string name="pref_enter_is_send">Entra per enviar</string>
@@ -447,7 +437,6 @@ mentrestant.</string>
   <string name="account_status_bind_failure"> Vincular el error</string>
   <string name="account_status_host_unknown">El servidor no es fa responsable del domini</string>
   <string name="server_info_broken">Trencat</string>
-  <string name="pref_presence_settings">Presència</string>
   <string name="pref_away_when_screen_off">Fora quan la pantalla està apagada</string>
   <string name="pref_away_when_screen_off_summary">Marqueu el vostre recurs quan la pantalla estigui desactivada</string>
   <string name="pref_dnd_on_silent_mode">\"No molesteu\" en modo silenciós</string>
@@ -492,14 +481,6 @@ mostrar els noms i avatars complets.\n\nConversations només
 llegeix els vostres contactes i els relacionaran localment sense haver
  de penjar-les al vostre servidor.\n\nAra se us demanarà que 
 concediu permís per accedir als teus contactes.</string>
-  <string name="certificate_information">Informació del certificat</string>
-  <string name="certificate_subject">Subjecte</string>
-  <string name="certificate_issuer">Emissor</string>
-  <string name="certificate_cn">Nom comú</string>
-  <string name="certificate_o">Organització</string>
-  <string name="certificate_sha1">SHA-1</string>
-  <string name="certicate_info_not_available">(No està disponible)</string>
-  <string name="certificate_not_found">No s\'ha trobat cap certificat</string>
   <string name="notify_on_all_messages">Notifica a tots els missatges</string>
   <string name="notify_only_when_highlighted">Notifica només quan s\'esmenta</string>
   <string name="notify_never">S\'han desactivat les notificacions</string>
@@ -534,11 +515,7 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="your_full_jid_will_be">La vostra Jabber ID completa serà: %s</string>
   <string name="create_account">Crear compte</string>
   <string name="pick_your_username">Tria el teu nom d\'usuari</string>
-  <string name="pref_manually_change_presence">Canvia la presència manualment</string>
-  <string name="pref_manually_change_presence_summary">Toca el teu avatar per canviar la teva presència</string>
-  <string name="change_presence">Canvi de presència</string>
   <string name="status_message">Missatge d\'estat</string>
-  <string name="all_accounts_on_this_device">Estableix per a tots els comptes d\'aquest dispositiu</string>
   <string name="presence_chat">Lliure per xatejar</string>
   <string name="presence_online">En línia</string>
   <string name="presence_away">Lluny</string>
@@ -550,7 +527,6 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="registration_please_wait">Error de registre: torna-ho a provar més tard</string>
   <string name="registration_password_too_weak">Ha fallat la inscripció: la contrasenya és massa feble</string>
   <string name="create_conference">Crea un xat en grup</string>
-  <string name="join_or_create_conference">Uniu-vos o creeu un xat en grup</string>
   <string name="conference_subject">Subjecte</string>
   <string name="choose_participants">Tria els participants</string>
   <string name="creating_conference">S\'està creant el xat en grup...</string>
@@ -567,16 +543,10 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="no_permission_to_access_x">No hi ha permís per accedir %s</string>
   <string name="remote_server_not_found">El servidor remot no s\'ha trobat</string>
   <string name="unable_to_update_account">No es pot actualitzar el compte</string>
-  <string name="missing_presence_subscription_with_x">Falta la subscripció a la presència amb %s</string>
-  <string name="missing_keys_from_x">S\'han perdut les claus OMEMO de %s</string>
-  <string name="wrong_conference_configuration">No és un xat en grup privat i no anònim.</string>
-  <string name="this_conference_has_no_members">No hi ha membres en aquest xat en grup.</string>
   <string name="report_jid_as_spammer">Informar d\'aquest JID com l\'enviament de missatges no desitjats.</string>
   <string name="pref_delete_omemo_identities">Elimineu les identitats OMEMO</string>
   <string name="pref_delete_omemo_identities_summary">Regenereu les vostres claus OMEMO. Tots els contactes hauran de tornar-vos a verificar. Utilitzeu això només com a últim recurs.</string>
   <string name="delete_selected_keys">Elimineu les tecles seleccionades</string>
-  <string name="missing_presence_subscription">Falta la subscripció a la presència</string>
-  <string name="missing_omemo_keys">Falten les claus OMEMO</string>
   <string name="error_publish_avatar_offline">Cal que us connecteu per publicar el vostre avatar.</string>
   <string name="copy_to_clipboard">Copiar al portapapers</string>
   <string name="message_copied_to_clipboard">Missatge copiat al portapapers</string>
@@ -607,17 +577,9 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="i_followed_this_link_from_a_trusted_source">He seguit aquest enllaç des d\'una font de confiança</string>
   <string name="verifying_omemo_keys_trusted_source">Esteu a punt de verificar les claus OMEMO de %1$sdesprés de fer clic a un enllaç. Això només és segur si seguiu aquest enllaç des d\'una font de confiança on només %2$s podria haver publicat aquest enllaç.</string>
   <string name="verify_omemo_keys">Comproveu les claus OMEMO</string>
-  <string name="show_inactive_devices">Mostra dispositius inactius</string>
-  <string name="hide_inactive_devices">Amaga els dispositius inactius</string>
   <string name="encrypting_message">Xifrant el missatge</string>
   <string name="transcoding_video">S\'està comprimint el vídeo</string>
-  <string name="pref_automatically_delete_messages_description">Suprimiu automàticament missatges d\'aquest dispositiu que són més grans que el marc de temps configurat.</string>
-  <string name="pref_automatically_delete_messages">Supressió de missatge automàtic</string>
   <string name="not_fetching_history_retention_period">No es recullen missatges deguts al període de retenció local.</string>
-  <string name="timeout_24_hours">24 hores</string>
-  <string name="timeout_7_days">7 dies</string>
-  <string name="timeout_30_days">30 dies</string>
-  <string name="timeout_6_months">6 mesos</string>
   <string name="today">Avui</string>
   <string name="block_jabber_id">Bloqueja la identificació de Jabber</string>
   <string name="corresponding_conversations_closed">S\'han tancat les converses corresponents.</string>
@@ -654,4 +616,5 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="contact_has_read_up_to_this_point">%s ha llegit fins aquest punt</string>
   <string name="pref_return_to_previous">Compartició ràpida</string>
   <string name="pref_return_to_previous_summary">Torneu immediatament a l\'activitat anterior en comptes d\'obrir la conversa després d\'haver compartit alguna cosa</string>
+  <string name="all_accounts_on_this_device">Estableix per a tots els comptes d\'aquest dispositiu</string>
 </resources>
