@@ -462,6 +462,7 @@
   <string name="account_status_bind_failure">Bindungsfehler</string>
   <string name="account_status_host_unknown">Host unbekannt</string>
   <string name="server_info_broken">Fehlerhaft</string>
+  <string name="pref_presence_settings">Verfügbarkeit</string>
   <string name="pref_away_when_screen_off">Abwesend bei abgeschaltetem Bildschirm</string>
   <string name="pref_away_when_screen_off_summary">Setzt deinen Status auf abwesend, solange dein Bildschirm abgeschaltet ist</string>
   <string name="pref_dnd_on_silent_mode">Bitte nicht stören bei Stummschaltung</string>
@@ -636,10 +637,36 @@
   <string name="i_followed_this_link_from_a_trusted_source">Ich bin diesem Link von einer vertrauenswürdigen Quelle gefolgt</string>
   <string name="verifying_omemo_keys_trusted_source">Du bestätigst den OMEMO Fingerabdruck von %1$s nachdem du diesen Link angeklickt hast. Dies ist nur dann sicher, wenn du den Link von einer vertrauenswürdigen Quelle hast, auf die %2$s den Link veröffentlichen konnte.</string>
   <string name="verify_omemo_keys">Verifiziere OMEMO Fingerabdrücke</string>
+  <string name="show_inactive_devices">Inaktive anzeigen</string>
+  <string name="hide_inactive_devices">Verberge inaktive</string>
   <string name="reply">Antworten</string>
   <string name="encrypting_message">Nachricht wird verschlüsselt</string>
   <string name="transcoding_video">Video wird komprimiert</string>
   <string name="not_fetching_history_retention_period">Nachrichten werden aufgrund der eingestellten lokalen Speicherfrist nicht abgerufen.</string>
+  <plurals name="seconds">
+    <item quantity="one">%d Sekunde</item>
+    <item quantity="other">%d Sekunden</item>
+  </plurals>
+  <plurals name="minutes">
+    <item quantity="one">%d Minute</item>
+    <item quantity="other">%d Minuten</item>
+  </plurals>
+  <plurals name="hours">
+    <item quantity="one">%d Stunde</item>
+    <item quantity="other">%d Stunden</item>
+  </plurals>
+  <plurals name="days">
+    <item quantity="one">%d Tag</item>
+    <item quantity="other">%d Tage</item>
+  </plurals>
+  <plurals name="weeks">
+    <item quantity="one">%d Woche</item>
+    <item quantity="other">%d Wochen</item>
+  </plurals>
+  <plurals name="months">
+    <item quantity="one">%d Monat</item>
+    <item quantity="other">%d Monate</item>
+  </plurals>
   <string name="today">Heute</string>
   <string name="pref_use_max_brightness_summary">Maximale Helligkeit aktivieren, wenn Videos oder Bilder im Vollbild betracht werden.</string>
   <string name="pref_use_max_brightness">Maximale Helligkeit</string>
@@ -725,5 +752,9 @@
   <string name="mtm_cert_details">Zertifikatdetails:</string>
   <string name="once">Einmalig</string>
   <string name="theme">Design</string>
+  <string name="qr_code_scanner_needs_access_to_camera">Der QR-Code Scanner benötigt Zugriff auf die Kamera</string>
+  <string name="pref_scroll_to_bottom_summary">Nach dem abschicken einer Nachricht zum Ende springen</string>
+  <string name="pref_scroll_to_bottom">Zum Ende springen</string>
+  <string name="no_camera_permission">Pix-Art Messenger benötigt Zugriff auf die Kamera</string>
   <string name="all_accounts_on_this_device">Für alle Profile dieses Gerätes festlegen</string>
 </resources>
