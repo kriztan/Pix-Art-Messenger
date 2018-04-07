@@ -757,4 +757,6 @@
   <string name="pref_scroll_to_bottom">Zum Ende springen</string>
   <string name="no_camera_permission">Pix-Art Messenger benötigt Zugriff auf die Kamera</string>
   <string name="all_accounts_on_this_device">Für alle Profile dieses Gerätes festlegen</string>
+  <string name="pref_automatically_delete_messages_description">Nachrichten von diesem Gerät nach dem eingestellten Zeitfenster automatisch löschen.</string>
+  <string name="pref_automatically_delete_messages">Nachrichten automatisch löschen</string>
 </resources>
