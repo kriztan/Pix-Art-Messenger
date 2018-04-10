@@ -332,7 +332,6 @@
   <string name="distrust_omemo_key_text">Está segura de que quere retirar a verificación de este dispositivo?\nEste dispositivo e as mensaxes que del proveñan serán marcadas como non confiables.</string>
   <string name="error_no_keys_to_trust_server_error">Non hai chaves dispoñibles que se poidan usar con este contacto.\nNon se puideron obter novas chaves do servidor. Quizáis hai algún problema coas chaves do seu contacto.</string>
   <string name="error_no_keys_to_trust">Non hai chaves utilizables dispoñibles para este contacto. Si eliminou algunha das chaves do contacto, precisan xerar unhas novas.</string>
-  <string name="error_trustkeys_title">Fallo</string>
   <string name="fetching_history_from_server">Obtendo historial desde o servidor</string>
   <string name="no_more_history_on_server">Non hai máis historial no servidor</string>
   <string name="updating">Actualizando....</string>
@@ -423,7 +422,6 @@
   <string name="choose_quick_action">Escolla a acción rápida</string>
   <string name="search_for_contacts_or_groups">Buscar contactos e grupos</string>
   <string name="send_private_message">Enviar mensaxe privada</string>
-  <string name="user_has_left_conference">¡%sdeixou a conversa en grupo!</string>
   <string name="username">Identificador</string>
   <string name="username_hint">Nome de usuaria</string>
   <string name="invalid_username">Este non é un identificador válido</string>
@@ -435,7 +433,6 @@
   <string name="account_status_bind_failure">Fallou a ligazón</string>
   <string name="account_status_host_unknown">O servidor non é responsable do dominio</string>
   <string name="server_info_broken">Roto</string>
-  <string name="pref_presence_settings">Presenza</string>
   <string name="pref_away_when_screen_off">Non dispoñible cando se apaga a pantalla</string>
   <string name="pref_away_when_screen_off_summary">Marca o seu recurso como non dipoñíble cando se apaga a pantalla</string>
   <string name="pref_dnd_on_silent_mode">\"Non molestar\" en modo silencioso</string>
@@ -504,8 +501,6 @@
   <string name="your_full_jid_will_be">O seu ID Jabber será: %s</string>
   <string name="create_account">Crear conta</string>
   <string name="pick_your_username">Escolla un identificador</string>
-  <string name="pref_manually_change_presence">Cambiar manualmente a presenza</string>
-  <string name="pref_manually_change_presence_summary">Toque o seu avatar para cambiar a presenza</string>
   <string name="status_message">Mensaxe de estado</string>
   <string name="presence_chat">Dispoñible para conversar</string>
   <string name="presence_online">En liña</string>
@@ -567,8 +562,6 @@
   <string name="i_followed_this_link_from_a_trusted_source">Seguín esta ligazón desde unha fonte de confianza</string>
   <string name="verifying_omemo_keys_trusted_source">Vai verificar as chaves OMEMO de %1$s despois de pulsar na ligazón. Esto só é seguro si sigueu esta ligazón desde unha fonte de confianza onde só %2$s a podería ter publicado.</string>
   <string name="verify_omemo_keys">Validar chaves OMEMO</string>
-  <string name="show_inactive_devices">Mostrar dispositivos non activos</string>
-  <string name="hide_inactive_devices">Ocultar dispositivos non activos</string>
   <string name="encrypting_message">Cifrando mensaxe</string>
   <string name="transcoding_video">Comprimindo vídeo</string>
   <string name="not_fetching_history_retention_period">Sen obtención de mensaxes debido ao período de retención local.</string>
@@ -612,4 +605,5 @@
   <string name="pref_return_to_previous_summary">Voltar inmediatamente a actividade anterior no lugar de abrir a conversa despois de compartir algo</string>
   <string name="invalid_muc_nick">Alcume non válido</string>
   <string name="title_activity_share_via_account">Compartir coa conta</string>
+  <string name="all_accounts_on_this_device">Establecer para todas as contas en este dipositivo</string>
 </resources>
