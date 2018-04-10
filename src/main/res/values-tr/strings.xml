@@ -59,7 +59,7 @@
   <string name="save">Kaydet</string>
   <string name="ok">Tamam</string>
   <string name="crash_report_title">Pix-Art Messenger çöktü</string>
-  <string name="crash_report_message">Yığın izlerini göndererek Pix-Art Messenger\'ın devam eden geliştirilmesine yardımcı oluyorsunuz. \n<b>Uyarı:</b> Bu, yığın izini geliştiriciye göndermek için XMPP hesabınızı kullanacak.</string>
+  <string name="crash_report_message">Yığın izlerini göndererek Pix-Art Messenger\'ın devam eden geliştirilmesine yardımcı oluyorsunuz.\n<b>Uyarı:</b> Bu, yığın izini geliştiriciye göndermek için XMPP hesabınızı kullanacak.</string>
   <string name="send_now">Şimdi Gönder</string>
   <string name="send_never">Bir daha sorma</string>
   <string name="problem_connecting_to_account">Sunucuya bağlanılamıyor</string>
@@ -74,7 +74,7 @@
   <string name="sharing_files_please_wait">Dosyalar paylaşılıyor. Lütfen bekleyin…</string>
   <string name="action_clear_history">Geçmişi sil</string>
   <string name="clear_conversation_history">Konuşma Geçmişini Sil</string>
-  <string name="clear_histor_msg">Bu İleti Dizisindeki tüm iletileri silmek istiyor musunuz? \n\n<b> Uyarı: </b> Bu, diğer cihazlarda veya sunucularda saklanan iletileri etkilemeyecektir.</string>
+  <string name="clear_histor_msg">Bu İleti Dizisindeki tüm iletileri silmek istiyor musunuz?\n\n<b>Uyarı:</b> Bu, diğer cihazlarda veya sunucularda saklanan iletileri etkilemeyecektir.</string>
   <string name="delete_messages">Mesajları silin</string>
   <string name="also_end_conversation">Bu sohbeti daha sonra sonlandır</string>
   <string name="choose_presence">Cihazı seçin</string>
@@ -259,7 +259,7 @@
   <string name="delete_fingerprint">Parmak izini sil</string>
   <string name="sure_delete_fingerprint">Bu parmak izini silmek istediğinizden emin misiniz?</string>
   <string name="ignore">Yoksay</string>
-  <string name="without_mutual_presence_updates"><b>Uyarı:</b> Karşılıklı durum güncellemeleri olmadan göndermek, beklenmedik sorunlara neden olabilir.\n\n<small> Durum aboneliklerinizi doğrulamak için iletişim bilgilerine gidin.</small></string>
+  <string name="without_mutual_presence_updates"><b>Uyarı:</b>Karşılıklı durum güncellemeleri olmadan göndermek, beklenmedik sorunlara neden olabilir.\n\n <small>Durum aboneliklerinizi doğrulamak için iletişim bilgilerine gidin.</small></string>
   <string name="pref_security_settings">Güvenlik ve veri koruması</string>
   <string name="pref_allow_message_correction">İleti düzeltmeye izin ver</string>
   <string name="pref_allow_message_correction_summary">Kişilerinizin iletilerini geriye dönük olarak düzenlemelerine izin ver</string>
@@ -349,7 +349,6 @@
   <string name="distrust_omemo_key_text">Bu cihaz için doğrulamayı kaldırmak istediğinizden emin misiniz?\nBu cihaz ve bu cihazdan gelen mesajlar güvenilmez olarak işaretlenecek.</string>
   <string name="error_no_keys_to_trust_server_error">Bu bağlantıda kullanılabilen kullanılabilir bir anahtar yok.\nSunucudan yeni anahtarlar getirme başarısız oldu. Belki rehber sunucunuzda bir sorun var.</string>
   <string name="error_no_keys_to_trust">Bu bağlantı da kullanılabilen kullanılabilir bir anahtar yok. Anahtarlarından herhangi birini temizlediyseniz, yenilerini üretmelidirler.</string>
-  <string name="error_trustkeys_title">Hata</string>
   <string name="fetching_history_from_server">Geçmişi sunucudan geri getir</string>
   <string name="no_more_history_on_server">Sunucuda daha fazla geçmiş yok</string>
   <string name="updating">Güncelleniyor…</string>
@@ -441,7 +440,6 @@
   <string name="choose_quick_action">Hızlı işlemi seçin</string>
   <string name="search_for_contacts_or_groups">Kişileri veya gruplar için arama</string>
   <string name="send_private_message">Özel mesaj gönder</string>
-  <string name="user_has_left_conference">%s grup sohbetini terk etti!</string>
   <string name="username">Kullanıcı Adı</string>
   <string name="username_hint">Kullanıcı Adı</string>
   <string name="invalid_username">Bu geçerli bir kullanıcı adı değil</string>
@@ -462,7 +460,6 @@
   <string name="account_status_bind_failure">Bağlanma hatası</string>
   <string name="account_status_host_unknown">Sunucu, alan adı için sorumlu değil</string>
   <string name="server_info_broken">Bozuk</string>
-  <string name="pref_presence_settings">Bulunma</string>
   <string name="pref_away_when_screen_off">Uzakta ekran kapalıyken</string>
   <string name="pref_away_when_screen_off_summary">Ekran kapalıyken kaynağını uzakta olarak işaretler</string>
   <string name="pref_dnd_on_silent_mode">Sessiz modda \'\'Rahatsız etme\'\'</string>
@@ -546,8 +543,6 @@
   <string name="create_account">Yeni hesap oluştur</string>
   <string name="use_existing_accout">Mevcut bir hesap kullanın</string>
   <string name="pick_your_username">Kullanıcı adınızı seçin</string>
-  <string name="pref_manually_change_presence">Manuel olarak durumu değiştir</string>
-  <string name="pref_manually_change_presence_summary">Hesabınızdaki durumu değiştirin</string>
   <string name="status_message">Durum mesajı</string>
   <string name="presence_chat">Sohbet için Ücretsiz</string>
   <string name="presence_online">Çevrimiçi</string>
@@ -639,8 +634,6 @@
   <string name="i_followed_this_link_from_a_trusted_source">Bu bağlantıyı güvenilir bir kaynaktan takip ettim</string>
   <string name="verifying_omemo_keys_trusted_source">Bir bağlantıyı tıkladıktan sonra %1$s ürününün OMEMO tuşlarını doğrulamak üzeresin. Yalnızca %2$s tarafından bu bağlantıyı yayınlayabildiğiniz güvenilir bir kaynaktan bu bağlantıyı izlerseniz güvenli olur.</string>
   <string name="verify_omemo_keys">OMEMO parmak izlerini doğrulayın</string>
-  <string name="show_inactive_devices">Etkin olmayan cihazları göster</string>
-  <string name="hide_inactive_devices">Etkin olmayan cihazları gizle</string>
   <string name="reply">Yanıtla</string>
   <string name="encrypting_message">Mesajı şifrele</string>
   <string name="transcoding_video">Video sıkıştırılıyor</string>
@@ -716,8 +709,8 @@
   <string name="destroy_muc_text">%s grubunu gerçekten silmek istiyor musunuz? Grup sohbeti kalıcı olarak silinecektir.</string>
   <string name="destroy_muc_succeed">Grup sohbeti başarıyla silindi</string>
   <string name="destroy_muc_failed">Grup sohbeti silinemedi</string>
-  <string name="no_write_access_in_public_muc">Bu grup sohbetine katılmazsınız ve şu an için bir yazma erişiminiz yok.\nLütfen<b>Tamam</b> tuşuna basarak grup sohbeti ayrıntılarına gidin ve bir kişiye uzun tıklayarak bir moderatör, yönetici ya da sahibine özel mesaj gönderin. yazma erişimi istemek için listenin başında üyelerin adını yazın.</string>
   <string name="snooze">Ertele</string>
   <string name="huawei_protected_apps">Korunan uygulamalar</string>
   <string name="huawei_protected_apps_summary">Bildirim almaya devam etmek için, ekran kapalı olduğunda bile, korunan uygulamalar listesine Pix-Art Messenger\'ı eklemeniz gerekir.</string>
+  <string name="all_accounts_on_this_device">Bu cihazdaki tüm hesapları ayarla</string>
 </resources>
