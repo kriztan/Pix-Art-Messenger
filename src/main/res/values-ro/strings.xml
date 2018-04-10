@@ -98,7 +98,7 @@
   <string name="contact_has_no_pgp_key">Pix-Art Messenger nu a putut să cripteze mesajele tale deoarece contactul nu își anunță cheia publică.\n\n<small>Rugați contactul să își configureze OpenPGP.</small></string>
   <string name="no_pgp_keys">Nu am găsit chei OpenPGP</string>
   <string name="pref_general">General</string>
-    <string name="pref_attachments">Atașamente</string>
+  <string name="pref_attachments">Atașamente</string>
   <string name="pref_notification_settings">Notificare</string>
   <string name="pref_notifications">Notificări</string>
   <string name="pref_notifications_summary">Notifică atunci când este primit un mesaj nou</string>
@@ -115,7 +115,7 @@
   <string name="openpgp_error">OpenKeychain a raportat o eroare</string>
   <string name="accept">Acceptă</string>
   <string name="error">A apărut o eroare</string>
-    <string name="your_account">Contul tău</string>
+  <string name="your_account">Contul tău</string>
   <string name="send_presence_updates">Trimite actualizări de prezență</string>
   <string name="receive_presence_updates">Primește actualizări de prezență</string>
   <string name="ask_for_presence_updates">Cere actualizări de prezență</string>
@@ -159,7 +159,7 @@
   <string name="account_settings_jabber_id">ID-ul Jabber</string>
   <string name="account_settings_password">Parolă</string>
   <string name="account_settings_example_jabber_id">username@pix-art.de</string>
-    <string name="password">Parolă</string>
+  <string name="password">Parolă</string>
   <string name="invalid_jid">Acesta nu este un ID Jabber valabil</string>
   <string name="error_out_of_memory">Memorie epuizată. Imaginea este prea mare.</string>
   <string name="add_phone_book_text">Vreți să adăugați pe %s în lista de contacte?</string>
@@ -337,7 +337,6 @@
   <string name="distrust_omemo_key_text">Sigur doriți să ștergeți datele de verificare pentru acest dispozitiv?\nAcest dispozitiv precum și mesajele venind de la el vor fi marcate ca ne fiind de încredere.</string>
   <string name="error_no_keys_to_trust_server_error">Nu există chei utilizabile pentru acest contact.\nÎncercarea de a descărca chei noi de pe server a eșuat. Se poate ca serverul contactului dumneavoastră să aibă o problemă.</string>
   <string name="error_no_keys_to_trust">Nu exista chei disponibile și utilizabile pentru acest contact. Dacă ați șters vreuna din cheile contactului, acesta va trebuii să genereze una noua.</string>
-  <string name="error_trustkeys_title">Eroare</string>
   <string name="fetching_history_from_server">Descarc istoric de pe server</string>
   <string name="no_more_history_on_server">Nu mai exista istoric pe server</string>
   <string name="updating">Actualizare...</string>
@@ -380,7 +379,7 @@
   <string name="modified_conference_options">Opțiuni discuție de grup modificate!</string>
   <string name="could_not_modify_conference_options">Nu s-au putut modifica opțiunile discuției de grup</string>
   <string name="never">Niciodată</string>
-    <string name="until_further_notice">Până la noi ordine</string>
+  <string name="until_further_notice">Până la noi ordine</string>
   <string name="pref_input_options">Opțiuni introducere text</string>
   <string name="pref_enter_is_send">ENTER trimite</string>
   <string name="pref_enter_is_send_summary">Apasă tasta ENTER pentru a trimite mesajul</string>
@@ -406,7 +405,7 @@
   <string name="no_application_found_to_display_location">Nu s-a găsit nici o aplicație care să afișeze locația</string>
   <string name="location">Locatie</string>
   <string name="received_location">Locație primită</string>
-    <string name="pref_dont_trust_system_cas_title">Nu ai încredere în CA din sistem</string>
+  <string name="pref_dont_trust_system_cas_title">Nu ai încredere în CA din sistem</string>
   <string name="pref_dont_trust_system_cas_summary">Toate certificatele trebuie aprobate manual</string>
   <string name="pref_remove_trusted_certificates_title">Înlătură certificatele</string>
   <string name="pref_remove_trusted_certificates_summary">Șterge certificatele aprobate manual</string>
@@ -431,21 +430,19 @@
   <string name="choose_quick_action">Alege actiunea rapida</string>
   <string name="search_for_contacts_or_groups">Caută contacte sau grupuri</string>
   <string name="send_private_message">trimite mesaj privat</string>
-  <string name="user_has_left_conference">%s a părăsit discuția de grup!</string>
   <string name="username">Nume utilizator</string>
   <string name="username_hint">Nume utilizator</string>
   <string name="invalid_username">Acesta nu este un nume de utilizator valabil</string>
   <string name="download_failed_server_not_found">Descărcare eșuată: Serverul nu a fost găsit</string>
   <string name="download_failed_file_not_found">Descărcare eșuată: Fișierul nu a fost găsit</string>
   <string name="download_failed_could_not_connect">Descărcare eșuată: Nu s-a putut realiza conexiunea cu gazda.</string>
-    <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
+  <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
   <string name="remind_later">mai târziu</string>
   <string name="update">actualizează</string>
   <string name="account_status_tor_unavailable">Rețeaua Tor nu este disponibilă</string>
   <string name="account_status_bind_failure">Eroare de conexiune</string>
   <string name="account_status_host_unknown">Gazdă fără domeniu</string>
   <string name="server_info_broken">Deteriorat</string>
-  <string name="pref_presence_settings">Setări de prezență</string>
   <string name="pref_away_when_screen_off">Plecat când ecranul este oprit</string>
   <string name="pref_away_when_screen_off_summary">Declară clientul drept plecat atunci când ecranul este oprit</string>
   <string name="pref_dnd_on_silent_mode">\"Nu deranja\" în modul silențios</string>
@@ -488,7 +485,7 @@
   <string name="shared_text_with_x">Partajează textul cu %s</string>
   <string name="sync_with_contacts">Sincronizează cu contactele</string>
   <string name="sync_with_contacts_long">Pix-Art Messenger dorește să potrivească lista de contacte XMPP cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nPix-Art Messenger doar va citi și potrivi local fără să le încarce pe vreun server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
-    <string name="notify_on_all_messages">Notifică la toate mesajele</string>
+  <string name="notify_on_all_messages">Notifică la toate mesajele</string>
   <string name="notify_only_when_highlighted">Notifică doar atunci când cineva vă menționează numele</string>
   <string name="notify_never">Notificări dezactivate</string>
   <string name="notify_paused">Notificări suspendate</string>
@@ -522,10 +519,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="create_account">Creează cont</string>
   <string name="use_existing_accout">Folosește un cont existent</string>
   <string name="pick_your_username">Alege un nume de utilizator</string>
-  <string name="pref_manually_change_presence">Schimbă manual setarea de prezență</string>
-  <string name="pref_manually_change_presence_summary">Atinge-ți avatarul pentru a-ți schimba starea de prezență</string>
-    <string name="status_message">Mesaj de stare</string>
-    <string name="presence_chat">Disponibil/ă pentru conversație</string>
+  <string name="status_message">Mesaj de stare</string>
+  <string name="presence_chat">Disponibil/ă pentru conversație</string>
   <string name="presence_online">Conectat/ă</string>
   <string name="presence_away">Plecat/ă</string>
   <string name="presence_xa">Indisponibil/ă</string>
@@ -539,7 +534,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="registration_please_wait">Înregistrare eșuată: Încercați din nou mai târziu</string>
   <string name="registration_password_too_weak">Înregistrare eșuată: Parolă nesigură</string>
   <string name="create_conference">Creează discuție de grup</string>
-    <string name="conference_subject">Subiect</string>
+  <string name="conference_subject">Subiect</string>
   <string name="choose_participants">Alege participanți</string>
   <string name="creating_conference">Se creează discuția de grup...</string>
   <string name="invite_again">Trimite din nou invitația</string>
@@ -555,11 +550,11 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="no_permission_to_access_x">Nu există permisiunea de a accesa %s</string>
   <string name="remote_server_not_found">Serverul nu a fost găsit</string>
   <string name="unable_to_update_account">Nu se poate actualiza contul</string>
-    <string name="report_jid_as_spammer">Raportează că această identitate trimite mesaje nedorite.</string>
+  <string name="report_jid_as_spammer">Raportează că această identitate trimite mesaje nedorite.</string>
   <string name="pref_delete_omemo_identities">Șterge identitățile OEMO</string>
   <string name="pref_delete_omemo_identities_summary">Regenerează cheile personale OMEMO. Toate contactele vor fi obligate să verifice cheile dumneavoastră din nou. Folosește asta doar ca o ultimă opțiune.</string>
   <string name="delete_selected_keys">Șterge cheile selectate</string>
-    <string name="error_publish_avatar_offline">Pentru a putea publica avatarul trebuie să existe o conexiune.</string>
+  <string name="error_publish_avatar_offline">Pentru a putea publica avatarul trebuie să existe o conexiune.</string>
   <string name="copy_to_clipboard">Copiază în clipboard</string>
   <string name="message_copied_to_clipboard">Mesaj copiat în clipboard</string>
   <string name="message">Mesaj</string>
@@ -588,12 +583,10 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="i_followed_this_link_from_a_trusted_source">Am urmat aceasta legătură de la o sursă de încredere</string>
   <string name="verifying_omemo_keys_trusted_source">Urmează să verificați cheile OMEMO pentru %1$s după ce veți deschide legătura. Acest lucru se poate face în siguranță doar dacă ați primit legătura de la o sursă de încredere unde doar %2$s putea publica.</string>
   <string name="verify_omemo_keys">Verifica cheile OMEMO</string>
-  <string name="show_inactive_devices">Arată dispozitivele inactive</string>
-  <string name="hide_inactive_devices">Ascunde dispozitivele inactive</string>
   <string name="encrypting_message">Mesajul se criptează</string>
   <string name="transcoding_video">Se comprimă clipul video</string>
-    <string name="not_fetching_history_retention_period">Politica de retenție locală împiedică descărcarea altor mesaje.</string>
-    <string name="today">Azi</string>
+  <string name="not_fetching_history_retention_period">Politica de retenție locală împiedică descărcarea altor mesaje.</string>
+  <string name="today">Azi</string>
   <string name="block_jabber_id">Blochează ID Jabber</string>
   <string name="corresponding_conversations_closed">Conversațiile corespunzătoare au fost închise</string>
   <string name="contact_blocked_past_tense">Contact blocat.</string>
@@ -633,4 +626,5 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="pref_return_to_previous_summary">După ce ați partajat ceva, întoarce-te la activitatea precedentă în loc să deschizi conversația</string>
   <string name="invalid_muc_nick">Nume invalid</string>
   <string name="title_activity_share_via_account">Partajează cu cont</string>
+  <string name="all_accounts_on_this_device">Setează pentru toate conturile de pe acest dispozitiv</string>
 </resources>
