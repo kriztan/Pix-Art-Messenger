@@ -93,7 +93,7 @@
   <string name="contact_has_no_pgp_key">Pix-Art Messenger não é capaz de cifrar as suas mensagens porque o seu contacto não está a anunciar a sua chave pública.\n\n<small>Por favor peça ao seu contacto para configurar o OpenPGP.</small></string>
   <string name="no_pgp_keys">Não foram encontradas chaves OpenPGP</string>
   <string name="pref_general">Geral</string>
-    <string name="pref_attachments">Anexos</string>
+  <string name="pref_attachments">Anexos</string>
   <string name="pref_notification_settings">Notificação</string>
   <string name="pref_notifications">Notificações</string>
   <string name="pref_notifications_summary">Notificar quando uma nova mensagem for recebida</string>
@@ -108,7 +108,7 @@
   <string name="openpgp_error">O OpenKeychain reportou um erro</string>
   <string name="accept">Aceitar</string>
   <string name="error">Ocorreu um erro</string>
-    <string name="your_account">A sua conta</string>
+  <string name="your_account">A sua conta</string>
   <string name="send_presence_updates">Enviar atualizações de presença</string>
   <string name="receive_presence_updates">Receber atualizações de presença</string>
   <string name="ask_for_presence_updates">Pedir atualizações de presença</string>
@@ -144,7 +144,7 @@
   <string name="account_settings_jabber_id">ID Jabber</string>
   <string name="account_settings_password">Palavra-passe</string>
   <string name="account_settings_example_jabber_id">nomedeutilizador@exemplo.com</string>
-    <string name="password">Palavra-passe</string>
+  <string name="password">Palavra-passe</string>
   <string name="invalid_jid">Esse não é um ID Jabber válido</string>
   <string name="error_out_of_memory">Memória insuficiente. A imagem é muito grande</string>
   <string name="add_phone_book_text">Deseja adicionar %s aos seus contactos?</string>
@@ -294,7 +294,6 @@
   <string name="clear_other_devices">Apagar dispositivos</string>
   <string name="clear_other_devices_desc">Tem a certeza que quer apagar todos os outros dispositivos do anúncio OMEMO? A próxima vez que os seus dispositivos se conectem, irão ser eles mesmos a fazerem o anúncio novamente, mas podem não receber as mensagems enviadas entretanto.</string>
   <string name="error_no_keys_to_trust">Não existem chaves disponíveis para serem utilizadas para este contacto. Se removeu alguma das chaves dele, ele irá necessitar de gerar chaves novas. </string>
-  <string name="error_trustkeys_title">Erro</string>
   <string name="fetching_history_from_server">Obtendo o histórico do servidor</string>
   <string name="no_more_history_on_server">Não existe mais histórico no servidor</string>
   <string name="updating">A atualizar...</string>
@@ -328,7 +327,7 @@
   <string name="moderated">Moderado</string>
   <string name="you_are_not_participating">Não está a participar</string>
   <string name="never">Nunca</string>
-    <string name="until_further_notice">Até segunda ordem</string>
+  <string name="until_further_notice">Até segunda ordem</string>
   <string name="pref_input_options">Introdução</string>
   <string name="pref_enter_is_send">O enter envia</string>
   <string name="pref_enter_is_send_summary">Use o enter para enviar a mensagem</string>
@@ -352,7 +351,7 @@
   <string name="no_application_found_to_display_location">Não foi encontrada nenhuma aplicação para mostrar a localização</string>
   <string name="location">Localização</string>
   <string name="received_location">Localização recebida</string>
-    <string name="pref_dont_trust_system_cas_title">Não confiar nas CAs do sistema</string>
+  <string name="pref_dont_trust_system_cas_title">Não confiar nas CAs do sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos os certificados têm que ser aprovados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Remover certificados</string>
   <string name="pref_remove_trusted_certificates_summary">Apagar certificados aprovados manualmente</string>
@@ -383,7 +382,6 @@
   <string name="download_failed_could_not_connect">Transferência falhou: Não foi possível conectar ao host</string>
   <string name="account_status_tor_unavailable">Rede Tor indisponível</string>
   <string name="server_info_broken">Existe um problema</string>
-  <string name="pref_presence_settings">Presença</string>
   <string name="pref_away_when_screen_off">Ausente quando o ecrã está desligado</string>
   <string name="pref_away_when_screen_off_summary">Define o seu recurso como ausente quando o ecrã está desligado</string>
   <string name="pref_treat_vibrate_as_silent">Tratar vibrar como modo silencioso</string>
@@ -420,7 +418,7 @@
   <string name="shared_text_with_x">Mensagem partilhada com %s</string>
   <string name="sync_with_contacts">Sincronizar com contactos</string>
   <string name="sync_with_contacts_long">A aplicação Pix-Art Messenger deseja fazer a correspondência entre a sua lista de contactos XMPP e os seus contactos para mostrar os seus nomes completos e os seus avatares.\n\nA aplicação Pix-Art Messenger irá apenas ler os seus contactos e fazer a correspondência localmente sem enviar os dados para o seu servidor.\n\nIrá agora ser-lhe pedido para dar permissão para aceder aos seus contactos.</string>
-    <string name="notify_on_all_messages">Notificar em todas as mensagens</string>
+  <string name="notify_on_all_messages">Notificar em todas as mensagens</string>
   <string name="notify_never">Notificações desativadas</string>
   <string name="notify_paused">Notificações interrompidas</string>
   <string name="pref_picture_compression">Comprimir Imagens</string>
