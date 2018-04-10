@@ -167,7 +167,7 @@
   <string name="account_settings_jabber_id">Jabber-ID</string>
   <string name="account_settings_password">Passwort</string>
   <string name="account_settings_example_jabber_id">benutzer@pix-art.de</string>
-    <string name="password">Passwort</string>
+  <string name="password">Passwort</string>
   <string name="confirm_password">Passwort bestätigen</string>
   <string name="passwords_do_not_match">Passwörter stimmen nicht überein</string>
   <string name="invalid_jid">Ungültige Jabber-ID</string>
@@ -349,7 +349,6 @@
   <string name="distrust_omemo_key_text">Bist du sicher, dass du die Verifizierung dieses Gerätes misstrauen möchtest? Dieses Gerät und Nachrichten von dem Gerät werden als unverifiziert markiert.</string>
   <string name="error_no_keys_to_trust_server_error">Für diesen Kontakt sind keine benutzbaren Fingerabdrücke verfügbar.\nNeuen Fingerabdruck vom Server herunterzuladen war nicht erfolgreich. Vielleicht stimmt etwas mit dem Server deines Kontakts nicht.</string>
   <string name="error_no_keys_to_trust">Es sind keine Fingerabdrücke für diesen Kontakt verfügbar. Falls sie gelöscht wurden, müssen diese neu erstellt werden.</string>
-  <string name="error_trustkeys_title">Fehler</string>
   <string name="fetching_history_from_server">Lade Chatverlauf…</string>
   <string name="no_more_history_on_server">Keine weiteren Nachrichten vorhanden</string>
   <string name="updating">Aktualisieren…</string>
@@ -392,7 +391,7 @@
   <string name="modified_conference_options">Gruppenchat-Optionen geändert!</string>
   <string name="could_not_modify_conference_options">Gruppenchat-Optionen konnten nicht geändert werden</string>
   <string name="never">Niemals</string>
-    <string name="until_further_notice">Bis auf Weiteres</string>
+  <string name="until_further_notice">Bis auf Weiteres</string>
   <string name="pref_input_options">Eingabe</string>
   <string name="pref_enter_is_send">Eingabe-Taste (Enter) sendet Nachricht</string>
   <string name="pref_enter_is_send_summary">Eingabe-Taste (Enter) zum Versenden einer Nachricht verwenden</string>
@@ -418,7 +417,7 @@
   <string name="no_application_found_to_display_location">Keine App für die Standort-Anzeige gefunden</string>
   <string name="location">Standort</string>
   <string name="received_location">Standort empfangen</string>
-    <string name="pref_dont_trust_system_cas_title">Zertifizierungsstellen misstrauen</string>
+  <string name="pref_dont_trust_system_cas_title">Zertifizierungsstellen misstrauen</string>
   <string name="pref_dont_trust_system_cas_summary">Alle Zertifikate müssen manuell bestätigt werden</string>
   <string name="pref_remove_trusted_certificates_title">Zertifikate löschen</string>
   <string name="pref_remove_trusted_certificates_summary">Als vertrauenswürdig bestätigte Zertifikate löschen</string>
@@ -441,14 +440,14 @@
   <string name="choose_quick_action">Schnell-Taste auswähle</string>
   <string name="search_for_contacts_or_groups">Nach Kontakten oder Konferenzen suchen</string>
   <string name="send_private_message">Private Nachricht senden</string>
-  <string name="user_has_left_conference">%s hat den Gruppenchat verlassen!</string>
+  <string name="user_has_left_conference">%1$s hat den Gruppenchat verlassen!</string>
   <string name="username">Benutzername</string>
   <string name="username_hint">Benutzername</string>
   <string name="invalid_username">Ungültiger Benutzername</string>
   <string name="download_failed_server_not_found">Download fehlgeschlagen: Server nicht gefunden</string>
   <string name="download_failed_file_not_found">Download fehlgeschlagen: Datei nicht gefunden</string>
   <string name="download_failed_could_not_connect">Download fehlgeschlagen: keine Verbindung zum Host</string>
-    <string name="download_failed_could_not_write_file">Download fehlgeschlagen: Datei kann nicht gespeichert werden</string>
+  <string name="download_failed_could_not_write_file">Download fehlgeschlagen: Datei kann nicht gespeichert werden</string>
   <string name="pref_use_white_background">Weißen Hintergrund benutzen</string>
   <string name="pref_use_white_background_summary">Gesendete Nachrichten als schwarzen Text auf weißem Hintergrund anzeigen</string>
   <string name="action_check_update">Auf Updates prüfen</string>
@@ -462,7 +461,7 @@
   <string name="account_status_bind_failure">Bindungsfehler</string>
   <string name="account_status_host_unknown">Host unbekannt</string>
   <string name="server_info_broken">Fehlerhaft</string>
-  <string name="pref_presence_settings">Status</string>
+  <string name="pref_presence_settings">Verfügbarkeit</string>
   <string name="pref_away_when_screen_off">Abwesend bei abgeschaltetem Bildschirm</string>
   <string name="pref_away_when_screen_off_summary">Setzt deinen Status auf abwesend, solange dein Bildschirm abgeschaltet ist</string>
   <string name="pref_dnd_on_silent_mode">Bitte nicht stören bei Stummschaltung</string>
@@ -505,7 +504,7 @@
   <string name="shared_text_with_x">Text mit %s geteilt</string>
   <string name="sync_with_contacts">Mit Kontakten synchronisieren</string>
   <string name="sync_with_contacts_long">Pix-Art Messenger möchte deine XMPP-Kontaktliste mit deinen Kontakten abgleichen, um deren vollständige Namen und Profilbilder anzuzeigen.\n\nPix-Art Messenger wird deine Kontakte nur lokal lesen und abgleichen und überträgt diese nicht auf den Server.\n\nDu wirst nun gefragt, ob du den Zugriff auf deine Kontakte erlauben möchtest.</string>
-    <string name="notify_on_all_messages">Bei allen Nachrichten benachrichtigen</string>
+  <string name="notify_on_all_messages">Bei allen Nachrichten benachrichtigen</string>
   <string name="notify_only_when_highlighted">Nur benachrichtigen, wenn ich erwähnt werde</string>
   <string name="notify_never">Benachrichtigungen deaktiviert</string>
   <string name="notify_paused">Benachrichtigungen pausiert</string>
@@ -521,7 +520,7 @@
   <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
   <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
   <string name="install_from_unknown_sources_disabled">Installation von unbekannter Quelle ist nicht erlaubt</string>
-    <string name="install_from_unknown_sources_disabled_dialog">Dein Gerät erlaubt keine Installationen von Apps aus unbekannten Quellen außer über Google PlayStore. Dies verursacht Probleme mit automatischen Updates des Messengers.\n\nDu wirst nun gefragt, die Installation von Apps aus unbekannten Quellen zu erlauben.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">Dein Gerät erlaubt keine Installationen von Apps aus unbekannten Quellen außer über Google PlayStore. Dies verursacht Probleme mit automatischen Updates des Messengers.\n\nDu wirst nun gefragt, die Installation von Apps aus unbekannten Quellen zu erlauben.</string>
   <string name="disable">Deaktivieren</string>
   <string name="selection_too_large">Der ausgewählte Bereich ist zu groß</string>
   <string name="cancel_update">Update abbrechen?</string>
@@ -546,17 +545,17 @@
   <string name="create_account">Neues Profil erstellen</string>
   <string name="use_existing_accout">Nutze ein bestehendes Profil</string>
   <string name="pick_your_username">Wähle deinen Benutzernamen</string>
-  <string name="pref_manually_change_presence">Status manuell festlegen</string>
-  <string name="pref_manually_change_presence_summary">Ändere deinen Status in deinem Profil</string>
-    <string name="status_message">Statusnachricht</string>
-    <string name="presence_chat">Frei zum chatten</string>
+  <string name="pref_manually_change_presence">Status manuell ändern</string>
+  <string name="pref_manually_change_presence_summary">Lege deinen Status fest, wenn du deine Statusnachricht bearbeitest.</string>
+  <string name="status_message">Statusnachricht</string>
+  <string name="presence_chat">Frei zum chatten</string>
   <string name="presence_online">Online</string>
   <string name="presence_away">Weg</string>
   <string name="presence_xa">Nicht verfügbar</string>
   <string name="presence_dnd">Beschäftigt</string>
   <string name="secure_password_generated">Ein sicheres Passwort wurde erstellt</string>
   <string name="device_does_not_support_battery_op">Dein Gerät unterstützt kein Ausschalten der Batterieoptimierung</string>
-    <string name="share">Teilen</string>
+  <string name="share">Teilen</string>
   <string name="share_location">Standort teilen</string>
   <string name="location_sharing_disabled">GPS ist in den Android-Einstellungen deaktiviert</string>
   <string name="locating">Lokalisiere…</string>
@@ -566,7 +565,7 @@
   <string name="registration_please_wait">Registrierung fehlgeschlagen: Bitte später versuchen</string>
   <string name="registration_password_too_weak">Registrierung fehlgeschlagen: Passwort zu schwach</string>
   <string name="create_conference">Gruppenchat erstellen</string>
-    <string name="conference_subject">Titel</string>
+  <string name="conference_subject">Titel</string>
   <string name="choose_participants">Mitglieder auswählen</string>
   <string name="creating_conference">Gruppenchat wird erstellt…</string>
   <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nDein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden? </string>
@@ -580,7 +579,7 @@
   <string name="request_permissions_message">Pix-Art Messenger wird dich nach ein paar Berechtigungen fragen. Es ist wichtig, dass du alle Berechtigungen erlaubst, um alle Funktionen nutzen zu können. Falls du eine dieser Berechtigungen ablehnst wird sich die App schließen.</string>
   <string name="request_permissions_message_again">Du hast eine oder alle Berechtigungen, welche für Pix-Art Messenger benötigt werden abgelehnt. Willst du zu den Einstellungen springen, um diese Berechtigungen zu erlauben? Falls du eine dieser Berechtigungen ablehnst wird sich die App schließen.</string>
   <string name="unable_to_connect_to_keychain">Keine Verbindung zu OpenKeychain</string>
-    <string name="send_image">Bild senden?</string>
+  <string name="send_image">Bild senden?</string>
   <string name="this_device_is_no_longer_in_use">Dieses Gerät wird nicht länger verwendet</string>
   <string name="import_canceled">Import abgebrochen</string>
   <string name="Import_failed">Datenbankimport ist fehlgeschlagen und nicht möglich.</string>
@@ -595,16 +594,16 @@
   <string name="me">Ich</string>
   <string name="contact_asks_for_presence_subscription">Kontakt möchte deinen Online-Status sehen</string>
   <string name="allow">Erlauben</string>
-    <string name="no_permission_to_access_x">Keine Berechtigung, um auf %s zuzugreifen</string>
+  <string name="no_permission_to_access_x">Keine Berechtigung, um auf %s zuzugreifen</string>
   <string name="remote_server_not_found">Entfernter Server konnte nicht gefunden werden</string>
   <string name="error_file_corrupt">Die Datei scheint defekt zu sein.</string>
   <string name="unable_to_update_account">Profil kann nicht aktualisiert werden.</string>
-    <string name="report_jid_as_spammer">Melde die JID als Sender unerwünschter Nachrichten.</string>
+  <string name="report_jid_as_spammer">Melde die JID als Sender unerwünschter Nachrichten.</string>
   <string name="create_issue">Einen Fehler melden</string>
   <string name="pref_delete_omemo_identities">OMEMO Identitäten zurücksetzen</string>
   <string name="pref_delete_omemo_identities_summary">Regeneriere deine OMEMO-Fingerabdrücke. Alle deine Kontakte müssen dich neu verifizieren. Nutze dies als letzten Ausweg.</string>
   <string name="delete_selected_keys">Ausgewählte Fingerabdrücke löschen</string>
-    <string name="error_publish_avatar_offline">Du musst verbunden sein, um dein Profilbild hochzuladen.</string>
+  <string name="error_publish_avatar_offline">Du musst verbunden sein, um dein Profilbild hochzuladen.</string>
   <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
   <string name="message_copied_to_clipboard">Nachricht in Zwischenablage kopiert</string>
   <string name="message">Nachricht</string>
@@ -639,13 +638,37 @@
   <string name="i_followed_this_link_from_a_trusted_source">Ich bin diesem Link von einer vertrauenswürdigen Quelle gefolgt</string>
   <string name="verifying_omemo_keys_trusted_source">Du bestätigst den OMEMO Fingerabdruck von %1$s nachdem du diesen Link angeklickt hast. Dies ist nur dann sicher, wenn du den Link von einer vertrauenswürdigen Quelle hast, auf die %2$s den Link veröffentlichen konnte.</string>
   <string name="verify_omemo_keys">Verifiziere OMEMO Fingerabdrücke</string>
-  <string name="show_inactive_devices">Zeige inaktive Geräte</string>
-  <string name="hide_inactive_devices">Verstecke inaktive Geräte</string>
+  <string name="show_inactive_devices">Inaktive anzeigen</string>
+  <string name="hide_inactive_devices">Verberge inaktive</string>
   <string name="reply">Antworten</string>
   <string name="encrypting_message">Nachricht wird verschlüsselt</string>
   <string name="transcoding_video">Video wird komprimiert</string>
-    <string name="not_fetching_history_retention_period">Nachrichten werden aufgrund der eingestellten lokalen Speicherfrist nicht abgerufen.</string>
-    <string name="today">Heute</string>
+  <string name="not_fetching_history_retention_period">Nachrichten werden aufgrund der eingestellten lokalen Speicherfrist nicht abgerufen.</string>
+  <plurals name="seconds">
+    <item quantity="one">%d Sekunde</item>
+    <item quantity="other">%d Sekunden</item>
+  </plurals>
+  <plurals name="minutes">
+    <item quantity="one">%d Minute</item>
+    <item quantity="other">%d Minuten</item>
+  </plurals>
+  <plurals name="hours">
+    <item quantity="one">%d Stunde</item>
+    <item quantity="other">%d Stunden</item>
+  </plurals>
+  <plurals name="days">
+    <item quantity="one">%d Tag</item>
+    <item quantity="other">%d Tage</item>
+  </plurals>
+  <plurals name="weeks">
+    <item quantity="one">%d Woche</item>
+    <item quantity="other">%d Wochen</item>
+  </plurals>
+  <plurals name="months">
+    <item quantity="one">%d Monat</item>
+    <item quantity="other">%d Monate</item>
+  </plurals>
+  <string name="today">Heute</string>
   <string name="pref_use_max_brightness_summary">Maximale Helligkeit aktivieren, wenn Videos oder Bilder im Vollbild betracht werden.</string>
   <string name="pref_use_max_brightness">Maximale Helligkeit</string>
   <string name="block_jabber_id">Jabber-ID</string>
@@ -716,8 +739,27 @@
   <string name="destroy_muc_text">Möchtest du den Gruppenchat %s auflösen? Dies wird den Gruppenchat dauerhaft entfernen.</string>
   <string name="destroy_muc_succeed">Gruppenchat erfolgreich aufgelöst</string>
   <string name="destroy_muc_failed">Gruppenchat konnte nicht aufgelöst werden</string>
-  <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
   <string name="snooze">Schlummern</string>
   <string name="huawei_protected_apps">Geschützte Apps</string>
   <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
+  <string name="pref_enable_multi_accounts_title">Mehrprofil-Modus aktivieren</string>
+  <string name="pref_enable_multi_accounts_summary">Sofern du mehrere Profile nutzen möchtest musst du ein Passwort zur Verschlüsselung der Datensicherung angeben.</string>
+  <string name="mtm_accept_cert">Unbekanntes Zertifikat akzeptieren?</string>
+  <string name="mtm_trust_anchor">Das Serverzertifikat wurde nicht von einer bekannten Zertifizierungsstelle signiert.</string>
+  <string name="mtm_accept_servername">Nicht übereinstimmenden Servernamen akzeptieren?</string>
+  <string name="mtm_hostname_mismatch">Server konnte sich nicht als \"%s\" authentifizieren. Das Zertifikat ist nur gültig für:</string>
+  <string name="mtm_connect_anyway">Möchtest du trotzdem eine Verbindung herstellen?</string>
+  <string name="mtm_cert_details">Zertifikatdetails:</string>
+  <string name="once">Einmalig</string>
+  <string name="theme">Design</string>
+  <string name="qr_code_scanner_needs_access_to_camera">Der QR-Code Scanner benötigt Zugriff auf die Kamera</string>
+  <string name="pref_scroll_to_bottom_summary">Nach dem abschicken einer Nachricht zum Ende springen</string>
+  <string name="pref_scroll_to_bottom">Zum Ende springen</string>
+  <string name="no_camera_permission">Pix-Art Messenger benötigt Zugriff auf die Kamera</string>
+  <string name="edit_status_message_title">Statusnachricht bearbeiten</string>
+  <string name="edit_status_message">Statusnachricht bearbeiten</string>
+  <string name="all_accounts_on_this_device">Für alle Profile dieses Gerätes festlegen</string>
+  <string name="change_presence">Status manuell ändern</string>
+  <string name="pref_automatically_delete_messages_description">Nachrichten von diesem Gerät nach dem eingestellten Zeitfenster automatisch löschen.</string>
+  <string name="pref_automatically_delete_messages">Nachrichten automatisch löschen</string>
 </resources>
