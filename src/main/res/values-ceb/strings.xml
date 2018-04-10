@@ -98,7 +98,7 @@
   <string name="contact_has_no_pgp_key">Ang Pix-Art Messenger dili makahimo sa pag-encrypt sa imong mga mensahe tungod kay ang imong contact wala magpahibalo sa iyang public yawe.\n\n<small>Palihog pangutana sa imung kontak nga e-setup ang OpenPGP.</small></string>
   <string name="no_pgp_keys">Walay OpenPGP nga mga Yawe ang nakita</string>
   <string name="pref_general">General</string>
-    <string name="pref_accept_files_wifi">Dawat nga mga file sa WiFi nga mga koneksiyon</string>
+  <string name="pref_accept_files_wifi">Dawat nga mga file sa WiFi nga mga koneksiyon</string>
   <string name="pref_accept_files_summary_wifi">Kung naka konek sa WiFi automatic ma accept ang mga file nga mas gamay pa sa…</string>
   <string name="pref_accept_files_mobile">Dawat sa mga file sa mobile nga mga koneksiyon</string>
   <string name="pref_accept_files_summary_mobile">Kung kanus-a nakakonek sa mobile nga data mo awtomatik ra madawat ang mga file nga mas gamay pa sa…</string>
@@ -122,7 +122,7 @@
   <string name="openpgp_error">OpenKeychain mitaho nga dunay sayop</string>
   <string name="accept">Dawata</string>
   <string name="error">Naay di-mao nga nigawas</string>
-    <string name="your_account">Imuhang account</string>
+  <string name="your_account">Imuhang account</string>
   <string name="send_presence_updates">Pagpadala ug mga presensya nga update</string>
   <string name="receive_presence_updates">Dawat sa mga presensya nga update</string>
   <string name="ask_for_presence_updates">Mangayu ug mga presensya nga update</string>
@@ -167,7 +167,7 @@
   <string name="account_settings_jabber_id">Jabber-ID</string>
   <string name="account_settings_password">Password</string>
   <string name="account_settings_example_jabber_id">username@pix-art.de</string>
-    <string name="password">Password</string>
+  <string name="password">Password</string>
   <string name="confirm_password">Kumpirmasyun sa password</string>
   <string name="passwords_do_not_match">Ang password kay wala nagkapareha</string>
   <string name="invalid_jid">Dili kini balido nga Jabber-ID</string>
@@ -372,7 +372,7 @@
   <string name="no_application_found_to_display_location">Walay aplikasyon ang nakita para ipakita ang lokasyun</string>
   <string name="location">Lokasyun</string>
   <string name="received_location">Nadawat nga lokasyun</string>
-    <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
+  <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Tanang mga sertipiko dapat manually nga mga aprobado</string>
   <string name="pref_remove_trusted_certificates_title">Tangtanga ang mga sertipiko</string>
   <string name="pref_remove_trusted_certificates_summary">Tanggala ang mga aprobado nga mga certificate</string>
@@ -399,14 +399,13 @@ Pili %d mga kontak</item>
   <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
   <string name="search_for_contacts_or_groups">Pangita sa mga kontak o sa mga grupo</string>
   <string name="send_private_message">Ipadala ang pribado nga mensahe</string>
-  <string name="user_has_left_conference">%s mao nalang ang nahabilin sa gupo nga chat!</string>
   <string name="username">Pangan sa user</string>
   <string name="username_hint">Pangan sa user</string>
   <string name="invalid_username">Dili ni balido nga pangan sa user</string>
   <string name="download_failed_server_not_found">Ang ge-download kay napakyas: Serber kay wala nakita</string>
   <string name="download_failed_file_not_found">Ang ge-download kay napakyas: File kay wala nakita</string>
   <string name="download_failed_could_not_connect">Ang ge-download kay napakyas: Dili maka sumpay sa host</string>
-    <string name="download_failed_could_not_write_file">Napkayas pag-download: Dili makasuwat sa file</string>
+  <string name="download_failed_could_not_write_file">Napkayas pag-download: Dili makasuwat sa file</string>
   <string name="pref_use_white_background">Gamit ug puti nga background</string>
   <string name="pref_use_white_background_summary">Ipakita ang gepdala nga mensahe ingon nga itom nga teksto sa puti nga background</string>
   <string name="action_check_update">Susiha ang mga Kausaban</string>
@@ -420,7 +419,6 @@ Pili %d mga kontak</item>
   <string name="account_status_bind_failure">Pugong kapakyasan</string>
   <string name="account_status_host_unknown">Serber dili responsabli sa domain</string>
   <string name="server_info_broken">Guba</string>
-  <string name="pref_presence_settings">Presensya</string>
   <string name="pref_away_when_screen_off">Layo kung ang screen kay gepalong</string>
   <string name="pref_away_when_screen_off_summary">Markahe ang imung gepanguhaan ingon nga layo kong ang screen gipalong</string>
   <string name="pref_dnd_on_silent_mode">\"Ayaw ug samoka\" sa hilom nga mode</string>
@@ -467,7 +465,7 @@ Pili %d mga kontak</item>
   <string name="shared_text_with_x">Ipa-ambit ang mga teks uban sa %s</string>
   <string name="sync_with_contacts">Synchronize sa mga kontak</string>
   <string name="sync_with_contacts_long">Ang Pix-Art Messenger kay gusto mo pareha sa XMPP roster uban sa imung mga kontak para mapakita ang tubuok nga mga pangan ug mga avatar.\n\nPix-Art Messenger kay mubasa ra sa imong mga kontak ug iparehas sila sa lokal bisan walay pag-upload sa imung serber.\n\nIkaw gina pangutana namu nga mu grant ka ug permiso para e-access ang imung mga kontak.</string>
-    <string name="notify_on_all_messages">Pahibal-a sa tanang mga mensahe</string>
+  <string name="notify_on_all_messages">Pahibal-a sa tanang mga mensahe</string>
   <string name="notify_only_when_highlighted">Pahibal-a kung ge-hisgutan</string>
   <string name="notify_never">Mga pahibalo kay baldado</string>
   <string name="notify_paused">Mga pahibalo kay gipa ungot</string>
@@ -483,7 +481,7 @@ Pili %d mga kontak</item>
   <string name="battery_optimizations_enabled_explained">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa Pix-Art Messenger nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\nKani kay ge recomend mga dili na.</string>
   <string name="battery_optimizations_enabled_dialog">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa Pix-Art Messenger nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\n\nKani kay ge recomend mga dili na.</string>
   <string name="install_from_unknown_sources_disabled">Pag-install gikan sa wala mailhi nga mga tinubdan wala tugoti</string>
-    <string name="install_from_unknown_sources_disabled_dialog">Ang imong device gi-configure aron dili sugtan ang mga app i-install gikan sa wala mailhi nga mga tinubdan gawas sa Google PlayStore. Kini maoy hinungdan sa mga problema uban sa updater sa app.\n\nIkaw kay pangutan-on kung mutugot ba sa app nga i-install gekan sa wa mailhing mga tinubdan.</string>
+  <string name="install_from_unknown_sources_disabled_dialog">Ang imong device gi-configure aron dili sugtan ang mga app i-install gikan sa wala mailhi nga mga tinubdan gawas sa Google PlayStore. Kini maoy hinungdan sa mga problema uban sa updater sa app.\n\nIkaw kay pangutan-on kung mutugot ba sa app nga i-install gekan sa wa mailhing mga tinubdan.</string>
   <string name="disable">Wala gipagana</string>
   <string name="selection_too_large">Ang mga gipili nga lugar kay sobra ra kadako</string>
   <string name="cancel_update">Ayaw ipadayun ang pagbag-o?</string>
@@ -508,17 +506,15 @@ Pili %d mga kontak</item>
   <string name="create_account">Buhat ug bag-o nga account</string>
   <string name="use_existing_accout">Paggamit ug kasamtangan nga account</string>
   <string name="pick_your_username">Pili ug imung username</string>
-  <string name="pref_manually_change_presence">Mano-mano nga usbon ang presensya</string>
-  <string name="pref_manually_change_presence_summary">Usba ang imong presensya sulod sa imong account</string>
-    <string name="status_message">Status ang mensahe</string>
-    <string name="presence_chat">Libre alang sa Chat</string>
+  <string name="status_message">Status ang mensahe</string>
+  <string name="presence_chat">Libre alang sa Chat</string>
   <string name="presence_online">Online</string>
   <string name="presence_away">Layo</string>
   <string name="presence_xa">Walay anaa</string>
   <string name="presence_dnd">Daghan gibuhat</string>
   <string name="secure_password_generated">Usa ka kasaligang password ang nakuha</string>
   <string name="device_does_not_support_battery_op">Ang imong device wala mosuporta sa pagpili gikan sa pag-optimize sa imong baterya</string>
-    <string name="share">Ipakigbahin</string>
+  <string name="share">Ipakigbahin</string>
   <string name="share_location">Iapkigbahin ang lokasyon</string>
   <string name="location_sharing_disabled">Pagpakigbahin sa lokasyon kay wala gipagana sa mga kahimtang</string>
   <string name="locating">Gepangita…</string>
@@ -528,7 +524,7 @@ Pili %d mga kontak</item>
   <string name="registration_please_wait">Napakyas ang pagrehistro: Sulayi pag-usab taud-taud</string>
   <string name="registration_password_too_weak">Ang pag-rehistro napakyas: Ang password sobra ra ka-huyang</string>
   <string name="create_conference">Buhat ug grupo sa chat</string>
-    <string name="conference_subject">Subject</string>
+  <string name="conference_subject">Subject</string>
   <string name="choose_participants">Pili ug mga partisipante</string>
   <string name="creating_conference">Nagbuhat ug grupo sa chat…</string>
   <string name="import_text">Naay mutabang sa imong device nga mahimong i-import.\n Posible ikaw hangyoon nga ibalhin ang daan nga bersyon o Pag-istoryahanay ug ang imong Sinugo ibalik pag-usab sa proseso sa pag-backup. Uyon baka nga i-import ang tabang? </string>
@@ -542,7 +538,7 @@ Pili %d mga kontak</item>
   <string name="request_permissions_message">Pix-Art Messenger mangutana sa imuha kung musugyot ka gayud sa pipila ka mga permiso. Importante nga imong tugotan ang tanan nga mga permiso nga gamiton ang tanang bahin niini nga mensahero. Kung imu ilimod bisag asa niini nga mga permiso ang app musira sa iyang kaugalingon.</string>
   <string name="request_permissions_message_again">Imuhang gelimod ang uban o tanang permisong kinahanglanun para sa Pix-Art Messenger. Gusto ka bang moambak sa mga setting ug tugotan kini nga mga permiso? Kung imu ilimod bisag unsa ining mag permiso, ang app mismo musira sa iyang kaugalingun.</string>
   <string name="unable_to_connect_to_keychain">Dili maka konek sa OpenKeychain</string>
-    <string name="send_image">Magpadala umg hulagway?</string>
+  <string name="send_image">Magpadala umg hulagway?</string>
   <string name="this_device_is_no_longer_in_use">Ang kini nga device kay wala na ginagamit</string>
   <string name="import_canceled">Wa madayun ang pag-import</string>
   <string name="Import_failed">Ang pag-import sa database napakyas, ang import dili posible</string>
@@ -557,16 +553,16 @@ Pili %d mga kontak</item>
   <string name="me">Ako</string>
   <string name="contact_asks_for_presence_subscription">Ang kontak nagapangayu ug presensiya sa subscription</string>
   <string name="allow">Itugyot</string>
-    <string name="no_permission_to_access_x">Walay permiso nga maka-acces %s</string>
+  <string name="no_permission_to_access_x">Walay permiso nga maka-acces %s</string>
   <string name="remote_server_not_found">Ang layo nga server wala makita</string>
   <string name="error_file_corrupt">Ang kini nga file kay basin na korakot.</string>
   <string name="unable_to_update_account">Dili mabag-o ang account</string>
-    <string name="report_jid_as_spammer">I-report kini nga JID isip pagpadala sa mga mensahe nga dili kinahanglan.</string>
+  <string name="report_jid_as_spammer">I-report kini nga JID isip pagpadala sa mga mensahe nga dili kinahanglan.</string>
   <string name="create_issue">I-report ang usa ka isyu</string>
   <string name="pref_delete_omemo_identities">Pagtangtang sa OMEMO nga mga pakaila sa ilaha</string>
   <string name="pref_delete_omemo_identities_summary">Usaba ang imong mga yawe sa OMEMO. Ang tanan nimong mga contact kinahanglan nga motino kanimo pag-usab. Gamita kini ingon nga usa ka katapusan nga pamaagi.</string>
   <string name="delete_selected_keys">Tangtanga ang napili nga mga yawe</string>
-    <string name="error_publish_avatar_offline">Kinahanglan nga ikaw mahimong konektado sa pagmantala sa imong avatar.</string>
+  <string name="error_publish_avatar_offline">Kinahanglan nga ikaw mahimong konektado sa pagmantala sa imong avatar.</string>
   <string name="copy_to_clipboard">Kopyaha ngato sa clipboard</string>
   <string name="message_copied_to_clipboard">Mensahe ge-kopya ngadto sa clipboard</string>
   <string name="message">Mensahe</string>
@@ -667,8 +663,8 @@ Pili %d mga kontak</item>
   <string name="destroy_muc_text">Gusto ba nimu gubaun ang kini nga grupo sa chat%s? Kini grupoha kay makanunay na nga matangtang.</string>
   <string name="destroy_muc_succeed">Ang grupo sa chat nilampos sa pag-guba</string>
   <string name="destroy_muc_failed">Ang grupo sa chat dili pwedi gub-on</string>
-  <string name="no_write_access_in_public_muc">Wala ka moapil niining grupo nga chat ug wala kay paagsuwat nga access nga kasamtangan.\nPalihog adto sa grupo sa chat nga mga detalyin pinaagi sa pag pislet ug <b>OK</b> ug ipadala nga pribado nga mensahe sa moderator, administrador o tag-iya pinaagi sa taas nga pag-klik sa usa sa mga ngalan sa mga miyembro sa ibabaw sa lista aron mangayo sa access. alang sa pagsulat.</string>
   <string name="snooze">Snooze</string>
   <string name="huawei_protected_apps">Protektado nga mga App</string>
   <string name="huawei_protected_apps_summary">Para kanunay nga makadawat ug pagpahibalo, bisag ang screen nimu kay palong, kinahanglan ka adto sa Pix-Art Messenger para sa lista sa mga protektado nga mga app.</string>
+  <string name="all_accounts_on_this_device">Ibutang ang tanan nga mga account niini nga device</string>
 </resources>
