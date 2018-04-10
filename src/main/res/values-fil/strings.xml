@@ -564,7 +564,6 @@
   <string name="conference_subject">Paksa</string>
   <string name="choose_participants">Pumili ng mga kalahok</string>
   <string name="creating_conference">Paglikha ng grupo ng chat…</string>
-  <string name="import_text">Mayroong isang backup sa iyong device na maaaring ma-import. \nMalamang maaari kang hilingin na i-uninstall ang lumang bersyon o Mga Pag-uusap at ang iyong Messenger ay i-restart sa panahon ng backup na proseso. Mag-i-import ba ang backup? </string>
   <string name="import_database">Mag-import ng backup</string>
   <string name="invite_again">Mag-imbita muli</string>
   <string name="inviteUser_Subject">ay inanyayahan ka sa pamamagitan ng</string>
