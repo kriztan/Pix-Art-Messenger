@@ -560,7 +560,6 @@
   <string name="conference_subject">Perihal</string>
   <string name="choose_participants">Pilih peserta</string>
   <string name="creating_conference">Membuat obrolan kelompok…</string>
-  <string name="import_text">Ada cadangan pada perangkat Anda yang bisa diimpor. \nMungkin Anda akan diminta untuk menghapus versi lama atau Percakapan dan Messenger Anda akan dimulai ulang saat proses mencadangkan. Haruskah cadangan diimpor? </string>
   <string name="import_database">Impor cadangan</string>
   <string name="invite_again">Undang lagi</string>
   <string name="inviteUser_Subject">telah mengundang Anda melalui</string>
