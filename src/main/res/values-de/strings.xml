@@ -349,6 +349,7 @@
   <string name="distrust_omemo_key_text">Bist du sicher, dass du die Verifizierung dieses Gerätes misstrauen möchtest? Dieses Gerät und Nachrichten von dem Gerät werden als unverifiziert markiert.</string>
   <string name="error_no_keys_to_trust_server_error">Für diesen Kontakt sind keine benutzbaren Fingerabdrücke verfügbar.\nNeuen Fingerabdruck vom Server herunterzuladen war nicht erfolgreich. Vielleicht stimmt etwas mit dem Server deines Kontakts nicht.</string>
   <string name="error_no_keys_to_trust">Es sind keine Fingerabdrücke für diesen Kontakt verfügbar. Falls sie gelöscht wurden, müssen diese neu erstellt werden.</string>
+  <string name="error_trustkeys_title">Es ist leider ein Fehler aufgetreten.</string>
   <string name="fetching_history_from_server">Lade Chatverlauf…</string>
   <string name="no_more_history_on_server">Keine weiteren Nachrichten vorhanden</string>
   <string name="updating">Aktualisieren…</string>
@@ -568,7 +569,6 @@
   <string name="conference_subject">Titel</string>
   <string name="choose_participants">Mitglieder auswählen</string>
   <string name="creating_conference">Gruppenchat wird erstellt…</string>
-  <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nDein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden? </string>
   <string name="import_database">Backup importieren</string>
   <string name="invite_again">Erneut einladen</string>
   <string name="inviteUser_Subject">hat dich eingeladen über</string>
@@ -739,6 +739,7 @@
   <string name="destroy_muc_text">Möchtest du den Gruppenchat %s auflösen? Dies wird den Gruppenchat dauerhaft entfernen.</string>
   <string name="destroy_muc_succeed">Gruppenchat erfolgreich aufgelöst</string>
   <string name="destroy_muc_failed">Gruppenchat konnte nicht aufgelöst werden</string>
+  <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
   <string name="snooze">Schlummern</string>
   <string name="huawei_protected_apps">Geschützte Apps</string>
   <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
@@ -762,4 +763,12 @@
   <string name="change_presence">Status manuell ändern</string>
   <string name="pref_automatically_delete_messages_description">Nachrichten von diesem Gerät nach dem eingestellten Zeitfenster automatisch löschen.</string>
   <string name="pref_automatically_delete_messages">Nachrichten automatisch löschen</string>
+  <string name="disable_encryption">Verschlüsselung deaktivieren</string>
+  <string name="error_trustkey_general">Pix-Art Messenger ist nicht in der Lage verschlüsselte Nachrichten an  %1$s zu senden. Dies kann daran liegen, dass dein Kontakt einen veralteten Server oder Client verwendet, der die OMEMO -Verschlüsselung nicht unterstützt.</string>
+  <string name="error_trustkey_device_list">Geräteliste konnte nicht abgerufen werden</string>
+  <string name="error_trustkey_bundle">Gerätebündel konnten nicht abgerufen werden</string>
+  <string name="error_trustkey_hint_mutual">Tipp: In manchen Fällen kann dies behoben werden, indem man sich gegenseitig in die Kontaktlisten hinzufügt.</string>
+  <string name="disable_encryption_message">Bist du sicher, dass du die OMEMO-Verschlüsselung für diesen Chat deaktivieren möchtest?\nDies wird es deinem Serveradministrator ermöglichen, deine Nachrichten zu lesen, aber es könnte die einzige Möglichkeit sein, mit Personen zu kommunizieren, die veraltete Clients verwenden.</string>
+  <string name="disable_now">Jetzt deaktivieren</string>
+  <string name="draft">Entwurf:</string>
 </resources>
