@@ -564,7 +564,6 @@
   <string name="conference_subject">Konu</string>
   <string name="choose_participants">Katılımcıları seç</string>
   <string name="creating_conference">Grup sohbeti oluşturuluyor…</string>
-  <string name="import_text">Cihazınızda içe akatarılabilir bir yedekleme var. \nMuhtemelen eski sürümü veya Sohbetlerini kaldırmanız istenecektir ve yedekleme işlemi sırasında Messenger\'ınız yeniden başlatılacaktır. Yedek ithal edilecek mi? </string>
   <string name="import_database">Yedeği içeri aktar</string>
   <string name="invite_again">Tekrar davet et</string>
   <string name="inviteUser_Subject">sizi davet etti</string>
