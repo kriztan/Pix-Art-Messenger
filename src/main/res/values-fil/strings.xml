@@ -88,7 +88,7 @@
   <string name="send_unencrypted">Maghatid ng unencrypted</string>
   <string name="decryption_failed">Dekripsyon ay nabigo. Baka wala kang tamang pribadong susi.</string>
   <string name="openkeychain_required">BukasSusikadena</string>
-  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi. Openkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play. <small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
+  <string name="openkeychain_required_long">Ang Pix-Art Messenger ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi.\n\nOpenkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play.\n\n<small> (Paki restart ng Pix-Art Messenger pagkatapos.)</small></string>
   <string name="restart">Ibalik sa simula</string>
   <string name="install">I-lagay</string>
   <string name="openkeychain_not_installed">Paki lagay ng OpenKeychain</string>
@@ -349,7 +349,6 @@
   <string name="distrust_omemo_key_text">Segurado ka bang gusto mong tanggalin ang beripikasyon mula sa aparatong ito?\nAng aparato at mga mensahe mula sa aparato ay malalagyan ng hindi kapani-paniwalang marka.</string>
   <string name="error_no_keys_to_trust_server_error">Walang magagamit na susi para sa kontak na ito.\nAng pagkuha ng bagong susi mula sa serber ay hindi matagumpay. Baka mayroong mali sa mga kontak ng iyong serber.</string>
   <string name="error_no_keys_to_trust">Walang magagamit na susi para sa kontak na ito. Kung mayroon kang nilinis sa kahit anong susi, kailangan nitong bumuo ng mga bago.</string>
-  <string name="error_trustkeys_title">Kamalian</string>
   <string name="fetching_history_from_server">Kumuha ng kasaysayan mula sa serber</string>
   <string name="no_more_history_on_server">Wala ng kasaysayan sa serber</string>
   <string name="updating">Pag-update…</string>
@@ -441,7 +440,6 @@
   <string name="choose_quick_action">Pumili ng mabilis na aksyon</string>
   <string name="search_for_contacts_or_groups">Maghanap ng mga kontak o mga grupo</string>
   <string name="send_private_message">Magpadala ng pribadong mensahe</string>
-  <string name="user_has_left_conference">%s ay umalis sa grupo ng chat!</string>
   <string name="username">Pangalang ginagamit</string>
   <string name="username_hint">Panggalang ginagamit</string>
   <string name="invalid_username">Hindi ito isang wastong username</string>
@@ -462,7 +460,6 @@
   <string name="account_status_bind_failure">Bind failure</string>
   <string name="account_status_host_unknown">Hindi mananagot ang server para sa domain</string>
   <string name="server_info_broken">Nasira</string>
-  <string name="pref_presence_settings">Pagharap</string>
   <string name="pref_away_when_screen_off">Lumayo kapag naka-off ang screen</string>
   <string name="pref_away_when_screen_off_summary">Tinitiyak ang iyong mapagkukunan bilang malayo kapag naka-off ang screen</string>
   <string name="pref_dnd_on_silent_mode">\"Huwag abalahin\" sa tahimik na mode</string>
@@ -546,8 +543,6 @@
   <string name="create_account">Lumikha ng bagong account</string>
   <string name="use_existing_accout">Gumamit ng isang umiiral na account</string>
   <string name="pick_your_username">Piliin ang iyong username</string>
-  <string name="pref_manually_change_presence">Manu-manong baguhin ang presensya</string>
-  <string name="pref_manually_change_presence_summary">Baguhin ang iyong presensya sa loob ng iyong account</string>
   <string name="status_message">Katayuan ng mensahe</string>
   <string name="presence_chat">Libre para sa Chat</string>
   <string name="presence_online">Online</string>
@@ -639,8 +634,6 @@
   <string name="i_followed_this_link_from_a_trusted_source">Sinundan ko ang link na ito mula sa pinagkakatiwalaang pinagmulan</string>
   <string name="verifying_omemo_keys_trusted_source">Susubukan mong i-verify ang mga key ng OMEMO ng %1$s pagkatapos ng pag-click sa isang link. Ligtas na lamang ito kung sinunod mo ang link na ito mula sa pinagkakatiwalaang pinagmulan kung saan maaaring ma-publish lamang ang %2$s sa link na ito.</string>
   <string name="verify_omemo_keys">I-verify ang mga fingerprint ng OMEMO</string>
-  <string name="show_inactive_devices">Ipakita ang hindi aktibong mga aparato</string>
-  <string name="hide_inactive_devices">Itago ang hindi aktibong mga aparato</string>
   <string name="reply">Sumagot</string>
   <string name="encrypting_message">Pag-encrypt ng mensahe</string>
   <string name="transcoding_video">Pag-compress ng video</string>
@@ -716,8 +709,8 @@
   <string name="destroy_muc_text">Gusto mo bang sirain ang %s chat ng grupo? Tatanggalin nito ang permanenteng grupo ng chat na ito.</string>
   <string name="destroy_muc_succeed">Matagumpay na nawasak ang grupo ng chat</string>
   <string name="destroy_muc_failed">Hindi maaaring sirain ang grupo ng chat</string>
-  <string name="no_write_access_in_public_muc">Hindi ka sumasali sa pangkat na ito ng chat at walang sumulat ng access sa sandaling ito. \nMangyaring pumunta sa mga detalye ng pangkat ng chat sa pamamagitan ng pagpindot sa <b>OK</b> at magpadala ng isang pribadong mensahe sa isang moderator, tagapangasiwa o may-ari sa pamamagitan ng mahabang pag-click sa isa ng mga pangalan ng mga miyembro sa tuktok ng listahan upang humingi ng write access.</string>
   <string name="snooze">I-snooze</string>
   <string name="huawei_protected_apps">Mga Protektadong Apps</string>
   <string name="huawei_protected_apps_summary">Upang patuloy na makatanggap ng mga abiso, kahit na naka-off ang screen, kailangan mong magdagdag ng Pix-Art Messenger sa listahan ng mga protektadong apps.</string>
+  <string name="all_accounts_on_this_device">Itakda para sa lahat ng mga account sa aparato na ito</string>
 </resources>
