@@ -96,7 +96,7 @@
   <string name="contact_has_no_pgp_key">Pix-Art Messenger non è in grado di cifrare i tuoi messaggi perché il contatto non sta annunciando la sua chiave pubblica.\n\n<small>Per favore chiedi al tuo contatto di configurare OpenPGP.</small></string>
   <string name="no_pgp_keys">Nessuna chiave OpenPGP trovata</string>
   <string name="pref_general">Generale</string>
-    <string name="pref_attachments">Allegati</string>
+  <string name="pref_attachments">Allegati</string>
   <string name="pref_notification_settings">Notifiche</string>
   <string name="pref_notifications">Notifiche</string>
   <string name="pref_notifications_summary">Notifica quando arriva un nuovo messaggio</string>
@@ -112,7 +112,7 @@
   <string name="openpgp_error">OpenKeychain ha riportato un errore</string>
   <string name="accept">Accetta</string>
   <string name="error">Si è verificato un errore</string>
-    <string name="your_account">Il tuo account</string>
+  <string name="your_account">Il tuo account</string>
   <string name="send_presence_updates">Invia aggiornamenti della presenza</string>
   <string name="receive_presence_updates">Ricevi aggiornamenti della presenza</string>
   <string name="ask_for_presence_updates">Chiedi aggiornamenti della presenza</string>
@@ -155,7 +155,7 @@
   <string name="account_settings_jabber_id">ID Jabber</string>
   <string name="account_settings_password">Password</string>
   <string name="account_settings_example_jabber_id">utente@esempio.com</string>
-    <string name="password">Password</string>
+  <string name="password">Password</string>
   <string name="invalid_jid">Questo non è un ID Jabber valido</string>
   <string name="error_out_of_memory">Memoria esaurita. L’immagine è tropppo grande</string>
   <string name="add_phone_book_text">Vuoi aggiungere %s alla tua rubrica?</string>
@@ -332,7 +332,6 @@
   <string name="distrust_omemo_key_text">Sei sicuro di volere rimuovere la verifica per questo dispositivo?\nIl dispositivo e i messaggi provenienti da esso verranno segnati come non fidati.</string>
   <string name="error_no_keys_to_trust_server_error">Non ci sono chiavi utilizzabili per questo contatto.\nRicezione di nuovi chiavi dal server non riuscita. Forse qualcosa non va con il server del tuo contatto.</string>
   <string name="error_no_keys_to_trust">Non ci sono chiavi usabili per questo contatto. Se hai cancellato qualsiasi loro chiave, devono generarne di nuove.</string>
-  <string name="error_trustkeys_title">Errore</string>
   <string name="fetching_history_from_server">Caricamento della cronologia dal server</string>
   <string name="no_more_history_on_server">Fine cronologia sul server</string>
   <string name="updating">Caricamento…</string>
@@ -375,7 +374,7 @@
   <string name="modified_conference_options">Opzioni della chat di gruppo modificate!</string>
   <string name="could_not_modify_conference_options">Impossibile modificare le opzioni della chat di gruppo</string>
   <string name="never">Mai</string>
-    <string name="until_further_notice">Fino a nuovo avviso</string>
+  <string name="until_further_notice">Fino a nuovo avviso</string>
   <string name="pref_input_options">Input</string>
   <string name="pref_enter_is_send">Invio spedisce</string>
   <string name="pref_enter_is_send_summary">Il tasto invio spedisce il messaggio</string>
@@ -400,7 +399,7 @@
   <string name="no_application_found_to_display_location">Non è stata trovata alcuna applicazione per mostrare la posizione</string>
   <string name="location">Posizione</string>
   <string name="received_location">Posizione ricevuta</string>
-    <string name="pref_dont_trust_system_cas_title">Non ti fidare delle CA di sistema</string>
+  <string name="pref_dont_trust_system_cas_title">Non ti fidare delle CA di sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Tutti i certificati devono essere accettati manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Elimina i certificati</string>
   <string name="pref_remove_trusted_certificates_summary">Cancella manualmente i certificati già accettati</string>
@@ -423,7 +422,6 @@
   <string name="choose_quick_action">Scegli azione rapida</string>
   <string name="search_for_contacts_or_groups">Cerca contatti o gruppi</string>
   <string name="send_private_message">Invia messaggio privato</string>
-  <string name="user_has_left_conference">%s ha lasciato la chat di gruppo!</string>
   <string name="username">Utente</string>
   <string name="username_hint">Utente</string>
   <string name="invalid_username">Questo non è un nome utente valido</string>
@@ -435,7 +433,6 @@
   <string name="account_status_bind_failure">Bind fallito</string>
   <string name="account_status_host_unknown">Server non responsabile per il dominio</string>
   <string name="server_info_broken">Rotto</string>
-  <string name="pref_presence_settings">Presenza</string>
   <string name="pref_away_when_screen_off">\"Non disponibile\" a schermo spento</string>
   <string name="pref_away_when_screen_off_summary">Imposta la tua risorsa come non disponibile quando lo schermo è spento</string>
   <string name="pref_dnd_on_silent_mode">\"Non disturbare\" in modalità silenziosa</string>
@@ -476,7 +473,7 @@
   <string name="shared_text_with_x">Testo condiviso con %s</string>
   <string name="sync_with_contacts">Sincronizza con i contatti</string>
   <string name="sync_with_contacts_long">Pix-Art Messenger vuole confrontare il tuo roster XMPP con i tuoi contatti per mostrare i loro nomi ed avatar.\n\nPix-Art Messenger leggerà solamente i contatti e li confronterà localmente senza caricarli sul server.\n\nTi verrà ora chiesto il permesso di accedere ai tuoi contatti.</string>
-    <string name="notify_on_all_messages">Notifica per tutti i messaggi</string>
+  <string name="notify_on_all_messages">Notifica per tutti i messaggi</string>
   <string name="notify_only_when_highlighted">Notifica solo quando menzionato</string>
   <string name="notify_never">Notifiche disabilitate</string>
   <string name="notify_paused">Notifiche in pausa</string>
@@ -501,10 +498,8 @@
   <string name="your_full_jid_will_be">Il tuo ID Jabber completo sarà: %s</string>
   <string name="create_account">Crea account</string>
   <string name="pick_your_username">Scegli il tuo nome utente</string>
-  <string name="pref_manually_change_presence">Cambia la presenza manualmente</string>
-  <string name="pref_manually_change_presence_summary">Tocca il tuo avatar per cambiare la presenza</string>
-    <string name="status_message">Messaggio di stato</string>
-    <string name="presence_chat">Disponibile a chattare</string>
+  <string name="status_message">Messaggio di stato</string>
+  <string name="presence_chat">Disponibile a chattare</string>
   <string name="presence_online">Online</string>
   <string name="presence_away">Assente</string>
   <string name="presence_xa">Non disponibile</string>
@@ -515,7 +510,7 @@
   <string name="registration_please_wait">Registrazione fallita: riprova più tardi</string>
   <string name="registration_password_too_weak">Registrazione fallita: password troppo debole</string>
   <string name="create_conference">Crea chat di gruppo</string>
-    <string name="conference_subject">Soggetto</string>
+  <string name="conference_subject">Soggetto</string>
   <string name="choose_participants">Scegli i partecipanti</string>
   <string name="creating_conference">Creazione chat di gruppo...</string>
   <string name="invite_again">Invita di nuovo</string>
@@ -531,11 +526,11 @@
   <string name="no_permission_to_access_x">Nessuna autorizzazione per accedere a %s</string>
   <string name="remote_server_not_found">Server remoto non trovato</string>
   <string name="unable_to_update_account">Impossibile aggiornare l\'account</string>
-    <string name="report_jid_as_spammer">Questo JID invia messaggi non richiesti.</string>
+  <string name="report_jid_as_spammer">Questo JID invia messaggi non richiesti.</string>
   <string name="pref_delete_omemo_identities">Elimina identità OMEMO</string>
   <string name="pref_delete_omemo_identities_summary">Rigenera le tue chiavi OMEMO. I tuoi contatti dovranno verificare un\'altra volta la tua identità. Solo come ultima possibilità.</string>
   <string name="delete_selected_keys">Cancella le chiavi selezionate</string>
-    <string name="error_publish_avatar_offline">Devi essere connesso per pubblicare l\'avatar.</string>
+  <string name="error_publish_avatar_offline">Devi essere connesso per pubblicare l\'avatar.</string>
   <string name="copy_to_clipboard">Copia negli appunti</string>
   <string name="message_copied_to_clipboard">Messaggio copiato negli appunti</string>
   <string name="message">Messaggio</string>
@@ -564,12 +559,10 @@
   <string name="i_followed_this_link_from_a_trusted_source">Ho seguito questo link da una fonte fidata</string>
   <string name="verifying_omemo_keys_trusted_source">Stai per verificare le chiavi OMEMO di %1$s cliccando un link. Questo metodo è sicuro solo se hai seguito il link da una fonte fidata dove solo %2$s può averlo pubblicato.</string>
   <string name="verify_omemo_keys">Verifica chiavi OMEMO</string>
-  <string name="show_inactive_devices">Mostra dispositivi inattivi</string>
-  <string name="hide_inactive_devices">Nascondi dispositivi inattivi</string>
   <string name="encrypting_message">Cifratura del messaggio</string>
   <string name="transcoding_video">Compressione video in corso</string>
-    <string name="not_fetching_history_retention_period">Nessun recupero di messaggi a causa del periodo di conservazione locale.</string>
-    <string name="today">Oggi</string>
+  <string name="not_fetching_history_retention_period">Nessun recupero di messaggi a causa del periodo di conservazione locale.</string>
+  <string name="today">Oggi</string>
   <string name="block_jabber_id">Blocca ID Jabber</string>
   <string name="corresponding_conversations_closed">Chiuse le relative conversazioni.</string>
   <string name="contact_blocked_past_tense">Contatto bloccato.</string>
@@ -609,4 +602,5 @@
   <string name="pref_return_to_previous_summary">Torna subito all\'attività precedente invece di aprire la conversazione dopo avere condiviso qualcosa</string>
   <string name="invalid_muc_nick">Nickname non valido</string>
   <string name="title_activity_share_via_account">Condividi via account</string>
+  <string name="all_accounts_on_this_device">Imposta per tutti gli account del dispositivo</string>
 </resources>
