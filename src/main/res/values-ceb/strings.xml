@@ -527,7 +527,6 @@ Pili %d mga kontak</item>
   <string name="conference_subject">Subject</string>
   <string name="choose_participants">Pili ug mga partisipante</string>
   <string name="creating_conference">Nagbuhat ug grupo sa chat…</string>
-  <string name="import_text">Naay mutabang sa imong device nga mahimong i-import.\n Posible ikaw hangyoon nga ibalhin ang daan nga bersyon o Pag-istoryahanay ug ang imong Sinugo ibalik pag-usab sa proseso sa pag-backup. Uyon baka nga i-import ang tabang? </string>
   <string name="import_database">Import nga tabang</string>
   <string name="invite_again">Pagdapit pag-usab</string>
   <string name="inviteUser_Subject">nagdapit kanimo pinaagi sa</string>
