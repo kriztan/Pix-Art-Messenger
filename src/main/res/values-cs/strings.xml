@@ -93,7 +93,7 @@
   <string name="contact_has_no_pgp_key">Není možné zašifrovat zprávu v aplikaci Konverzace, protože druhá strana neoznamuje svůj veřejný klíč.\n\n<small>Požádejte svůj kontakt ať si nastaví OpenPGP.</small></string>
   <string name="no_pgp_keys">Nebyly nalezeny žádné OpenPGP klíče</string>
   <string name="pref_general">Obecné</string>
-    <string name="pref_attachments">Přílohy</string>
+  <string name="pref_attachments">Přílohy</string>
   <string name="pref_notification_settings">Upozornění</string>
   <string name="pref_notifications">Upozornění</string>
   <string name="pref_notifications_summary">Upozornit při přijetí nové zprávy</string>
@@ -108,7 +108,7 @@
   <string name="openpgp_error">OpenKeychain nahlásil chybu</string>
   <string name="accept">Přijmout</string>
   <string name="error">Došlo k chybě</string>
-    <string name="your_account">Váš účet</string>
+  <string name="your_account">Váš účet</string>
   <string name="send_presence_updates">Zasílat změny stavu</string>
   <string name="receive_presence_updates">Přijímat změny stavu</string>
   <string name="ask_for_presence_updates">Zažádat o změny stavu</string>
@@ -147,7 +147,7 @@
   <string name="account_settings_jabber_id">Jabber ID</string>
   <string name="account_settings_password">Heslo</string>
   <string name="account_settings_example_jabber_id">jmeno@server.cz</string>
-    <string name="password">Heslo</string>
+  <string name="password">Heslo</string>
   <string name="invalid_jid">Toto není platné Jabber ID</string>
   <string name="error_out_of_memory">Nedostatek paměti. Obrázek je příliš velký</string>
   <string name="add_phone_book_text">Chcete přidat %s do svého adresáře?</string>
@@ -301,7 +301,6 @@
   <string name="clear_other_devices">Smazat přístroje</string>
   <string name="clear_other_devices_desc">Opravdu chcete vymazat ostatní přístroje z OMEMO upozornění? Až se příště tyto přístroje připojí, znovu se ohlásí, ale pravděpodobně neobdrží zprávy odeslané v mezičase mezi přihlášeními.</string>
   <string name="error_no_keys_to_trust">Pro tento kontakt nejsou dostupné žádné použitelné klíče. Pokud jste smazali jakýkoliv z jeho klíčů bude třeba vygenerovat nové.</string>
-  <string name="error_trustkeys_title">Chyba</string>
   <string name="fetching_history_from_server">Načíst historii ze serveru</string>
   <string name="no_more_history_on_server">Na serveru není žádná další historie</string>
   <string name="updating">Aktualizuji...</string>
@@ -336,7 +335,7 @@
   <string name="moderated">Moderováno</string>
   <string name="you_are_not_participating">Neúčastníte se</string>
   <string name="never">Nikdy</string>
-    <string name="until_further_notice">Než opět změním</string>
+  <string name="until_further_notice">Než opět změním</string>
   <string name="pref_input_options">Vstup</string>
   <string name="pref_enter_is_send">Enter odesílá</string>
   <string name="pref_enter_is_send_summary">Použít klávesu enter pro odesílání zpráv</string>
@@ -360,7 +359,7 @@
   <string name="no_application_found_to_display_location">Nebyla nalezena aplikace pro zobrazení pozice</string>
   <string name="location">Pozice</string>
   <string name="received_location">Přijmout pozici</string>
-    <string name="pref_dont_trust_system_cas_title">Nedůvěřovat systémovým CA</string>
+  <string name="pref_dont_trust_system_cas_title">Nedůvěřovat systémovým CA</string>
   <string name="pref_dont_trust_system_cas_summary">Všechny certifikáty musí být schváleny ručně</string>
   <string name="pref_remove_trusted_certificates_title">Odstranit certifikáty</string>
   <string name="pref_remove_trusted_certificates_summary">Smazat ručně povolené certifikáty</string>
@@ -386,7 +385,6 @@
   <string name="account_status_bind_failure">Bind chyba</string>
   <string name="account_status_host_unknown">Server není zodpovědný za doménu</string>
   <string name="server_info_broken">Rozbité</string>
-  <string name="pref_presence_settings">Stav</string>
   <string name="pref_away_when_screen_off">Pryč při vypnuté obrazovce</string>
   <string name="pref_away_when_screen_off_summary">Při vypnuté obrazovce označí váš stav jako pryč</string>
   <string name="pref_treat_vibrate_as_silent">Vibrační mód brát stejně jako tichý</string>
@@ -420,7 +418,7 @@
   <string name="shared_text_with_x">Text sdílen s %s</string>
   <string name="sync_with_contacts">Synchronizovat s kontakty</string>
   <string name="sync_with_contacts_long">Aplikace Pix-Art Messenger by ráda porovnala svůj XMPP seznam s vašimi kontakty, aby mohla zobrazit plná jména a avatary.\n\nPix-Art Messenger načte a porovná kontakty pouze lokálně, bez jejich nahrávání na server.\n\nNyní budete dotázáni na udělení práv pro přístup k seznamu kontaktů.</string>
-    <string name="notify_on_all_messages">Upozorňovat na všechny zprávy</string>
+  <string name="notify_on_all_messages">Upozorňovat na všechny zprávy</string>
   <string name="notify_never">Upozornění vypnuta</string>
   <string name="notify_paused">Upozornění pozastavena</string>
   <string name="pref_picture_compression">Komprimovat obrázky</string>
@@ -444,10 +442,8 @@
   <string name="your_full_jid_will_be">Vaše celé Jabber ID bude: %s</string>
   <string name="create_account">Vytvořit účet</string>
   <string name="pick_your_username">Zadejte své uživatelské jméno</string>
-  <string name="pref_manually_change_presence">Ručně změnit dostupnost</string>
-  <string name="pref_manually_change_presence_summary">Dotykem na avatar změnit svou dostupnost</string>
-    <string name="status_message">Stavová zpráva</string>
-    <string name="presence_chat">Volný pro chat</string>
+  <string name="status_message">Stavová zpráva</string>
+  <string name="presence_chat">Volný pro chat</string>
   <string name="presence_online">Online</string>
   <string name="presence_away">Pryč</string>
   <string name="presence_xa">Nedostupný</string>
@@ -472,11 +468,11 @@
   <string name="no_permission_to_access_x">Chybí oprávnění přistupovat k %s</string>
   <string name="remote_server_not_found">Vzdálený server nebyl nalezen</string>
   <string name="unable_to_update_account">Nelze aktualizovat účet</string>
-    <string name="report_jid_as_spammer">Nahlásit toto JID jako odesilatele nevyžádaného obsahu.</string>
+  <string name="report_jid_as_spammer">Nahlásit toto JID jako odesilatele nevyžádaného obsahu.</string>
   <string name="pref_delete_omemo_identities">Smazat OMEMO identity</string>
   <string name="pref_delete_omemo_identities_summary">Znovu vygenerovat OMEMO klíče. Vyžaduje potvrzení od všech vašich kontaktů. POužijte pouze jako poslední řešení.</string>
   <string name="delete_selected_keys">Smazat vybrané klíče</string>
-    <string name="error_publish_avatar_offline">Pro zveřejnění svého avatara musíte být online.</string>
+  <string name="error_publish_avatar_offline">Pro zveřejnění svého avatara musíte být online.</string>
   <string name="show_error_message">Zobrazit chybovou zprávu</string>
   <string name="error_message">Chybová zpráva</string>
   <string name="data_saver_enabled">Zapnuta úspora dat</string>
@@ -495,4 +491,5 @@
   <string name="contact_has_read_up_to_this_point">%s dočetl(a) až sem</string>
   <string name="pref_return_to_previous">Rychlé sdílení</string>
   <string name="pref_return_to_previous_summary">Okamžitě se vrátit k předchozí aktivitě místo otevření konverzace po nasdílení</string>
+  <string name="all_accounts_on_this_device">Nastavit pro všechny účty na tomto přístroji</string>
 </resources>
