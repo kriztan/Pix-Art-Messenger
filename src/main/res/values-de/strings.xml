@@ -753,7 +753,6 @@
   <string name="mtm_connect_anyway">Möchtest du trotzdem eine Verbindung herstellen?</string>
   <string name="mtm_cert_details">Zertifikatdetails:</string>
   <string name="once">Einmalig</string>
-  <string name="theme">Design</string>
   <string name="qr_code_scanner_needs_access_to_camera">Der QR-Code Scanner benötigt Zugriff auf die Kamera</string>
   <string name="pref_scroll_to_bottom_summary">Nach dem abschicken einer Nachricht zum Ende springen</string>
   <string name="pref_scroll_to_bottom">Zum Ende springen</string>
