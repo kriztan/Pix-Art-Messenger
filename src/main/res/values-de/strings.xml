@@ -771,4 +771,12 @@
   <string name="disable_encryption_message">Bist du sicher, dass du die OMEMO-Verschlüsselung für diesen Chat deaktivieren möchtest?\nDies wird es deinem Serveradministrator ermöglichen, deine Nachrichten zu lesen, aber es könnte die einzige Möglichkeit sein, mit Personen zu kommunizieren, die veraltete Clients verwenden.</string>
   <string name="disable_now">Jetzt deaktivieren</string>
   <string name="draft">Entwurf:</string>
+  <string name="pref_omemo_setting">OMEMO Verschlüsselung</string>
+  <string name="pref_omemo_setting_summary_always">OMEMO Verschlüsselung wird immer für Einzelchats und private Gruppenchats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_on">OMEMO Verschlüsselung wird standardmäßig für alle neuen Chats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_off">OMEMO Verschlüsselung muss manuell für neue Chats aktiviert werden.</string>
+  <string name="default_on">Standarmäßig aktiviert</string>
+  <string name="default_off">Standardmäßig deaktiviert</string>
+  <string name="pref_theme_light">Helles Theme</string>
+  <string name="pref_theme_dark">Dunkles Theme</string>
 </resources>
