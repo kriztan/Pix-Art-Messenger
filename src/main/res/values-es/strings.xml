@@ -640,6 +640,10 @@
   <string name="encrypting_message">Cifrando mensaje</string>
   <string name="transcoding_video">Comprimiendo video</string>
   <string name="not_fetching_history_retention_period">No buscar mensajes más antiguos que el establecido en el marco de tiempo.</string>
+  <plurals name="months">
+    <item quantity="one">%d mes</item>
+    <item quantity="other">%d meses</item>
+  </plurals>
   <string name="today">Hoy</string>
   <string name="pref_use_max_brightness_summary">Cambiar el brillo al máximo cuando esté viendo videos o imágenes en pantalla completa.</string>
   <string name="pref_use_max_brightness">Brillo al máximo</string>
@@ -714,8 +718,20 @@
   <string name="snooze">Dormitar</string>
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
+  <string name="pref_enable_multi_accounts_title">Habilitar múltiples cuentas</string>
+  <string name="mtm_connect_anyway">¿Desea conectarse de todas formas?</string>
+  <string name="mtm_cert_details">Detalles del certificado:</string>
+  <string name="once">Una vez</string>
+  <string name="pref_scroll_to_bottom_summary">Desplazarse hacia abajo después de enviar un mensaje</string>
+  <string name="pref_scroll_to_bottom">Desplazarse hacia abajo</string>
+  <string name="edit_status_message_title">Editar el mensaje de estado</string>
+  <string name="edit_status_message">Editar el mensaje de estado</string>
   <string name="all_accounts_on_this_device">Establecer para todas mis cuentas en este dispositivo</string>
+  <string name="change_presence">Cambiar manualmente tu estado</string>
+  <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
   <string name="disable_encryption">Desactivar cifrado</string>
+  <string name="error_trustkey_device_list">No se pudo obtener la lista de dispositivos</string>
+  <string name="disable_now">Deshabilitar ahora</string>
   <string name="draft">Borrador:</string>
   <string name="pref_omemo_setting">Cifrado OMEMO</string>
   <string name="pref_omemo_setting_summary_always">OMEMO se usará siempre en conversaciones de uno a uno y en grupos privados.</string>
