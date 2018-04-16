@@ -186,13 +186,13 @@
   <string name="server_info_available">Sí</string>
   <string name="server_info_unavailable">No</string>
   <string name="missing_public_keys">Se han perdido las claves de anuncio públicas</string>
-  <string name="last_seen_now">Visto última vez ahora</string>
-  <string name="last_seen_min">Visto última vez hace 1 minuto</string>
-  <string name="last_seen_mins">Visto última vez hace %d minutos</string>
-  <string name="last_seen_hour">Visto última vez hace 1 hora</string>
-  <string name="last_seen_hours">Visto última vez hace %d horas</string>
-  <string name="last_seen_day">Visto última vez hace 1 día</string>
-  <string name="last_seen_days">Visto última vez hace %d días</string>
+  <string name="last_seen_now">en línea</string>
+  <string name="last_seen_min">hace 1 minuto</string>
+  <string name="last_seen_mins">hace %d minutos</string>
+  <string name="last_seen_hour">hace 1 hora</string>
+  <string name="last_seen_hours">hace %d horas</string>
+  <string name="last_seen_day">hace 1 día</string>
+  <string name="last_seen_days">hace %d días</string>
   <string name="install_openkeychain">Mensaje cifrado. Por favor instala OpenKeychain para descifrar.</string>
   <string name="unknown_otr_fingerprint">Huella digital OTR desconocida</string>
   <string name="openpgp_messages_found">Encontrado mensaje cifrado con OpenPGP</string>
@@ -640,6 +640,26 @@
   <string name="encrypting_message">Cifrando mensaje</string>
   <string name="transcoding_video">Comprimiendo video</string>
   <string name="not_fetching_history_retention_period">No buscar mensajes más antiguos que el establecido en el marco de tiempo.</string>
+  <plurals name="seconds">
+    <item quantity="one">%d segundo</item>
+    <item quantity="other">%d segundos</item>
+  </plurals>
+  <plurals name="minutes">
+    <item quantity="one">%d minuto</item>
+    <item quantity="other">%d minutos</item>
+  </plurals>
+  <plurals name="hours">
+    <item quantity="one">%d hora</item>
+    <item quantity="other">%d horas</item>
+  </plurals>
+  <plurals name="days">
+    <item quantity="one">%d día</item>
+    <item quantity="other">%d dias</item>
+  </plurals>
+  <plurals name="weeks">
+    <item quantity="one">%d semana</item>
+    <item quantity="other">%d semanas</item>
+  </plurals>
   <plurals name="months">
     <item quantity="one">%d mes</item>
     <item quantity="other">%d meses</item>
