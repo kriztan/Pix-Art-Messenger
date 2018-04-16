@@ -349,6 +349,7 @@
   <string name="distrust_omemo_key_text">¿Estás seguro que quieres eliminar la verificación de este dispositivo?\nEste dispositivo y los mensajes que lleguen desde allí serán marcados como no confiables.</string>
   <string name="error_no_keys_to_trust_server_error">No hay claves disponibles para este contacto. La búsqueda de nuevas claves al servidor ha fallado. Puede que exista un problema con el servidor de tu contacto.</string>
   <string name="error_no_keys_to_trust">No hay claves disponibles para este contacto. Si has eliminado alguna de sus claves, tus contactos necesitarán generar nuevas claves.</string>
+  <string name="error_trustkeys_title">Algo salió mal</string>
   <string name="fetching_history_from_server">Buscando historial en el servidor</string>
   <string name="no_more_history_on_server">No hay más historial en el servidor</string>
   <string name="updating">Actualizando…</string>
@@ -440,6 +441,7 @@
   <string name="choose_quick_action">Elegir acción rápida</string>
   <string name="search_for_contacts_or_groups">Buscar contactos o grupos</string>
   <string name="send_private_message">Enviar mensaje privado</string>
+  <string name="user_has_left_conference">¡%1$s ha dejado el grupo!</string>
   <string name="username">Usuario</string>
   <string name="username_hint">Usuario</string>
   <string name="invalid_username">Esto no es un usuario válido</string>
@@ -460,6 +462,7 @@
   <string name="account_status_bind_failure">Fallo de enlace</string>
   <string name="account_status_host_unknown">El servidor no es responsable del dominio</string>
   <string name="server_info_broken">Error</string>
+  <string name="pref_presence_settings">Disponibilidad</string>
   <string name="pref_away_when_screen_off">Ausente con pantalla apagada</string>
   <string name="pref_away_when_screen_off_summary">Cambia tu estado a ausente cuando la pantalla está apagada</string>
   <string name="pref_dnd_on_silent_mode">\"No molestar\" en modo silencio</string>
@@ -712,4 +715,14 @@
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
   <string name="all_accounts_on_this_device">Establecer para todas mis cuentas en este dispositivo</string>
+  <string name="disable_encryption">Desactivar cifrado</string>
+  <string name="draft">Borrador:</string>
+  <string name="pref_omemo_setting">Cifrado OMEMO</string>
+  <string name="pref_omemo_setting_summary_always">OMEMO se usará siempre en conversaciones de uno a uno y en grupos privados.</string>
+  <string name="pref_omemo_setting_summary_default_on">OMEMO se usará por defecto en nuevas conversaciones.</string>
+  <string name="pref_omemo_setting_summary_default_off">OMEMO tendrá que ser activado explícitamente en nuevas conversaciones.</string>
+  <string name="default_on">Activo por defecto</string>
+  <string name="default_off">Desactivado por defecto</string>
+  <string name="pref_theme_light">Tema claro</string>
+  <string name="pref_theme_dark">Tema oscuro</string>
 </resources>
