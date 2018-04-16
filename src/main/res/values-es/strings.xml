@@ -546,6 +546,7 @@
   <string name="create_account">Crear cuenta</string>
   <string name="use_existing_accout">Conectase con una cuenta ya existente</string>
   <string name="pick_your_username">Selecciona tu nombre de usuario</string>
+  <string name="pref_manually_change_presence">Cambiar el estado manualmente</string>
   <string name="status_message">Mensaje de estado</string>
   <string name="presence_chat">Libre para hablar</string>
   <string name="presence_online">Disponible</string>
@@ -567,6 +568,7 @@
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
   <string name="creating_conference">Crear chat de grupo…</string>
+  <string name="import_text">Hay una copia de seguridad en tu dispositivo que se puede importar.\nTu aplicación se reiniciará durante el proceso. ¿Quieres importar la copia de seguridad?</string>
   <string name="import_database">Importar copia de seguridad</string>
   <string name="invite_again">Invitar de nuevo</string>
   <string name="inviteUser_Subject">te ha invitado a través de</string>
@@ -636,6 +638,8 @@
   <string name="i_followed_this_link_from_a_trusted_source">Enlace desde una fuente de confianza</string>
   <string name="verifying_omemo_keys_trusted_source">Vas a verificar las claves OMEMO de %1$s después de hacer click en el enlace. Esto solo es seguro si conseguiste este enlace desde una fuente de confianza donde solo %2$s pudo haber publicado el enlace</string>
   <string name="verify_omemo_keys">Verificar claves OMEMO</string>
+  <string name="show_inactive_devices">Mostrar desconectados</string>
+  <string name="hide_inactive_devices">Ocultar desconectados</string>
   <string name="reply">Responder</string>
   <string name="encrypting_message">Cifrando mensaje</string>
   <string name="transcoding_video">Comprimiendo video</string>
@@ -739,6 +743,7 @@
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
   <string name="pref_enable_multi_accounts_title">Habilitar múltiples cuentas</string>
+  <string name="mtm_accept_cert">¿Aceptar certificado desconocido?</string>
   <string name="mtm_connect_anyway">¿Desea conectarse de todas formas?</string>
   <string name="mtm_cert_details">Detalles del certificado:</string>
   <string name="once">Una vez</string>
@@ -761,4 +766,6 @@
   <string name="default_off">Desactivado por defecto</string>
   <string name="pref_theme_light">Tema claro</string>
   <string name="pref_theme_dark">Tema oscuro</string>
+  <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
+  <string name="pref_theme_options">Tema</string>
 </resources>
