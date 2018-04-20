@@ -740,6 +740,7 @@
   <string name="destroy_muc_text">¿Quieres eliminar el grupo %s? Esto eliminará este grupo de chat permanentemente.</string>
   <string name="destroy_muc_succeed">El chat de grupo se ha eliminado correctamente</string>
   <string name="destroy_muc_failed">El chat de grupo no se pudo eliminar</string>
+  <string name="no_write_access_in_public_muc">De momento no estás participando en este grupo y no puedes escribir en él\nPor favor, ve a los detalles del grupo presionando <b>OK</b> y envía un mensaje privado a un moderador, administrador o propietario haciendo un clic largo en el nombre de los miembros en la parte superior de la lista para solicitar acceso de escritura en el grupo.</string>
   <string name="snooze">Dormitar</string>
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
