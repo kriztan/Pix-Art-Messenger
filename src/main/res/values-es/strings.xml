@@ -746,11 +746,16 @@
   <string name="pref_enable_multi_accounts_title">Habilitar múltiples cuentas</string>
   <string name="pref_enable_multi_accounts_summary">Para utilizar varias cuentas debe establecer una contraseña para las copias de seguridad diarias.</string>
   <string name="mtm_accept_cert">¿Aceptar certificado desconocido?</string>
+  <string name="mtm_trust_anchor">El certificado del servidor no está firmado por una Autoridad Certificadora conocida.</string>
+  <string name="mtm_accept_servername">¿Aceptar el nombre del servidor que no coincide?</string>
+  <string name="mtm_hostname_mismatch">El servidor no pudo autenticarse como \"%s\". El certificado es solo válido para:</string>
   <string name="mtm_connect_anyway">¿Desea conectarse de todas formas?</string>
   <string name="mtm_cert_details">Detalles del certificado:</string>
   <string name="once">Una vez</string>
+  <string name="qr_code_scanner_needs_access_to_camera">El escáner de código QR necesita acceso a la cámara</string>
   <string name="pref_scroll_to_bottom_summary">Desplazarse hacia abajo después de enviar un mensaje</string>
   <string name="pref_scroll_to_bottom">Desplazarse hacia abajo</string>
+  <string name="no_camera_permission">Pix-Art Messenger necesita acceder a la cámara</string>
   <string name="edit_status_message_title">Editar el mensaje de estado</string>
   <string name="edit_status_message">Editar el mensaje de estado</string>
   <string name="all_accounts_on_this_device">Establecer para todas mis cuentas en este dispositivo</string>
@@ -758,6 +763,7 @@
   <string name="pref_automatically_delete_messages_description">Eliminar automáticamente los mensajes del dispositivo que sean anteriores al tiempo seleccionado.</string>
   <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
   <string name="disable_encryption">Desactivar cifrado</string>
+  <string name="error_trustkey_general">Pix-Art Messenger no puede enviar mensajes cifrados a %1$s. Esto puede ser debido a que tu contacto está usando un servidor o un cliente desactualizado que no puede manejar las claves OMEMO.</string>
   <string name="error_trustkey_device_list">No se pudo obtener la lista de dispositivos</string>
   <string name="error_trustkey_bundle">No se ha podido conseguir las claves del dispositivo</string>
   <string name="error_trustkey_hint_mutual">Consejo: En algunas ocasiones esto se puede arreglar al agregarse cada uno a su lista de contactos.</string>
