@@ -744,6 +744,7 @@
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
   <string name="pref_enable_multi_accounts_title">Habilitar múltiples cuentas</string>
+  <string name="pref_enable_multi_accounts_summary">Para utilizar varias cuentas debe establecer una contraseña para las copias de seguridad diarias.</string>
   <string name="mtm_accept_cert">¿Aceptar certificado desconocido?</string>
   <string name="mtm_connect_anyway">¿Desea conectarse de todas formas?</string>
   <string name="mtm_cert_details">Detalles del certificado:</string>
@@ -754,9 +755,13 @@
   <string name="edit_status_message">Editar el mensaje de estado</string>
   <string name="all_accounts_on_this_device">Establecer para todas mis cuentas en este dispositivo</string>
   <string name="change_presence">Cambiar manualmente tu estado</string>
+  <string name="pref_automatically_delete_messages_description">Eliminar automáticamente los mensajes del dispositivo que sean anteriores al tiempo seleccionado.</string>
   <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
   <string name="disable_encryption">Desactivar cifrado</string>
   <string name="error_trustkey_device_list">No se pudo obtener la lista de dispositivos</string>
+  <string name="error_trustkey_bundle">No se ha podido conseguir las claves del dispositivo</string>
+  <string name="error_trustkey_hint_mutual">Consejo: En algunas ocasiones esto se puede arreglar al agregarse cada uno a su lista de contactos.</string>
+  <string name="disable_encryption_message">¿Estás seguro de que quieres deshabilitar el cifrado OMEMO en esta conversación?\nEsto permitirá al administrador de tu servidor leer tus mensajes, aunque esta podría ser la única via de comunicación con personas que usen clientes desactualizados.</string>
   <string name="disable_now">Deshabilitar ahora</string>
   <string name="draft">Borrador:</string>
   <string name="pref_omemo_setting">Cifrado OMEMO</string>
