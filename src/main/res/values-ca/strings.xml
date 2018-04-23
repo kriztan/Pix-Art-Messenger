@@ -257,8 +257,6 @@
   <string name="title_pref_quiet_hours_end_time">Hora de finalització</string>
   <string name="title_pref_enable_quiet_hours">Habilitar hores de silenci</string>
   <string name="pref_quiet_hours_summary">Les notificacions seràn silenciades a les hores de silenci</string>
-  <string name="pref_use_larger_font">Augmentar el tamany de la font.</string>
-  <string name="pref_use_larger_font_summary">Utilitzar la mida més gran de les lletres per a tota l\'aplicació</string>
   <string name="pref_use_send_button_to_indicate_status">Botó d\'indicació de l\'estatus enviar</string>
   <string name="pref_use_indicate_received">Rebuts de sol.licituds dels missatges</string>
   <string name="pref_use_indicate_received_summary">Els missatges rebuts seràn marcats amb uns ticks verds si ho admet</string>
@@ -334,7 +332,6 @@ mentrestant.</string>
   <string name="distrust_omemo_key">Dispositiu no confiable</string>
   <string name="distrust_omemo_key_text">Estàs segur que vols eliminar la verificació d\'aquest dispositiu?\nAquest dispositiu i missatges procedents d\'aquest dispositiu es marcaran com a no confiables.</string>
   <string name="error_no_keys_to_trust_server_error">No hi ha claus utilitzables per a aquest contacte.\nEls fitxers noves del servidor no han tingut èxit. Potser hi ha alguna cosa malament amb el servidor del vostre contacte.</string>
-  <string name="error_no_keys_to_trust">No hi ha claus disponibles per a aquest contacte. Si heu purgat qualsevol de les claus, heu de generar-ne de noves.</string>
   <string name="fetching_history_from_server">Anar a cercar la història als servidors</string>
   <string name="no_more_history_on_server">No hi ha més histories al servidor</string>
   <string name="updating">Actualitzant</string>
@@ -615,5 +612,4 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
   <string name="contact_has_read_up_to_this_point">%s ha llegit fins aquest punt</string>
   <string name="pref_return_to_previous">Compartició ràpida</string>
   <string name="pref_return_to_previous_summary">Torneu immediatament a l\'activitat anterior en comptes d\'obrir la conversa després d\'haver compartit alguna cosa</string>
-  <string name="all_accounts_on_this_device">Estableix per a tots els comptes d\'aquest dispositiu</string>
 </resources>
