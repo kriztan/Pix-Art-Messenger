@@ -535,7 +535,7 @@
   <string name="no_keys_just_confirm">Du vertraust diesem Kontakt bereits. Durch Auswählen von Fertig bestätigst du, dass %s Teil dieses Gruppenchats ist.</string>
   <string name="select_image_and_crop">Bild auswählen und zuschneiden</string>
   <string name="contacts_have_no_pgp_keys">Pix-Art Messenger ist nicht in der Lage, deine Nachrichten zu verschlüsseln, weil deine Kontakte ihren öffentlichen Schlüssel nicht preisgeben.\n\n<small>Bitte sage deinen Kontakten, sie mögen OpenPGP einrichten.</small></string>
-  <string name="this_account_is_disabled">Du hast diesen Account deaktiviert</string>
+  <string name="this_account_is_disabled">Du hast dieses Profil deaktiviert</string>
   <string name="security_error_invalid_file_access">Sicherheitsfehler: Dateizugriff nicht erlaubt</string>
   <string name="no_application_to_share_uri">Keine Anwendung zum Teilen der URI gefunden</string>
   <string name="share_uri_with">Teile URI mit…</string>
@@ -569,6 +569,7 @@
   <string name="conference_subject">Titel</string>
   <string name="choose_participants">Mitglieder auswählen</string>
   <string name="creating_conference">Gruppenchat wird erstellt…</string>
+  <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nDein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden?</string>
   <string name="import_database">Backup importieren</string>
   <string name="invite_again">Erneut einladen</string>
   <string name="inviteUser_Subject">hat dich eingeladen über</string>
@@ -695,7 +696,7 @@
   <string name="last_seen_just_away">kürzlich</string>
   <string name="send_message">Nachricht senden</string>
   <string name="send_failed_resend">Zustellung fehlgeschlagen, sende erneut…</string>
-  <string name="pref_show_connection_options_summary">Hostname- und Port-Optionen bei Kontoeinrichtung anzeigen</string>
+  <string name="pref_show_connection_options_summary">Hostname- und Port-Optionen bei Profileinrichtung anzeigen</string>
   <string name="pref_show_connection_options">Erweiterte Verbindungsoptionen</string>
   <string name="retry_decryption">Entschlüsseln wiederholen</string>
   <string name="session_failure">Sitzungsfehler</string>
@@ -770,4 +771,15 @@
   <string name="disable_encryption_message">Bist du sicher, dass du die OMEMO-Verschlüsselung für diesen Chat deaktivieren möchtest?\nDies wird es deinem Serveradministrator ermöglichen, deine Nachrichten zu lesen, aber es könnte die einzige Möglichkeit sein, mit Personen zu kommunizieren, die veraltete Clients verwenden.</string>
   <string name="disable_now">Jetzt deaktivieren</string>
   <string name="draft">Entwurf:</string>
+  <string name="pref_omemo_setting">OMEMO Verschlüsselung</string>
+  <string name="pref_omemo_setting_summary_always">OMEMO Verschlüsselung wird immer für Einzelchats und private Gruppenchats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_on">OMEMO Verschlüsselung wird standardmäßig für alle neuen Chats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_off">OMEMO Verschlüsselung muss manuell für neue Chats aktiviert werden.</string>
+  <string name="default_on">Standarmäßig aktiviert</string>
+  <string name="default_off">Standardmäßig deaktiviert</string>
+  <string name="pref_theme_light">Helle Farben</string>
+  <string name="pref_theme_dark">Dunkle Farben</string>
+  <string name="pref_theme_options_summary">Wähle das Farbschema</string>
+  <string name="pref_theme_options">Design</string>
+  <string name="chooce_account">Profil wählen</string>
 </resources>
