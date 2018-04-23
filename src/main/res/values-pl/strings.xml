@@ -247,8 +247,6 @@
   <string name="title_pref_quiet_hours_end_time">Koniec</string>
   <string name="title_pref_enable_quiet_hours">Włącz godziny ciszy</string>
   <string name="pref_quiet_hours_summary">Powiadomienia będą wyciszone w wybranym przedziale czasu</string>
-  <string name="pref_use_larger_font">Większy rozmiar czcionki</string>
-  <string name="pref_use_larger_font_summary">Używaj większego rozmiaru czcionki w aplikacji</string>
   <string name="pref_use_send_button_to_indicate_status">Przycisk wysyłania wskazuje status</string>
   <string name="pref_use_indicate_received">Raporty dostarczenia</string>
   <string name="pref_use_indicate_received_summary">Jeżeli to możliwe, oznaczaj dostarczone wiadomości zielonym haczykiem</string>
@@ -314,7 +312,6 @@
   <string name="distrust_omemo_key">Przestań ufać urządzeniu</string>
   <string name="distrust_omemo_key_text">Czy jesteś pewien, że chcesz cofnąć weryfikację tego urządzenia?\nUrządzenie to, i wiadomości z niego przychodzące będą oznaczane jako niezaufane.</string>
   <string name="error_no_keys_to_trust_server_error">Nie ma dostępnych kluczy dla tego kontaktu.\nPobieranie nowych kluczy z serwera nie powiodło się. Być może jest coś nie tak z serwerem kontaktu?</string>
-  <string name="error_no_keys_to_trust">Nie ma dostępnych żadnych użytecznych kluczy dla tego kontaktu. Jeśli usunąłeś jakieś jego klucze, kontakt będzie musiał wygenerować nowe.</string>
   <string name="fetching_history_from_server">Pobieranie historii z serwera</string>
   <string name="no_more_history_on_server">Koniec historii na serwerze</string>
   <string name="updating">Aktualizowanie...</string>
@@ -558,5 +555,4 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
   <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
   <string name="pref_return_to_previous">Szybkie Udostępnianie</string>
   <string name="pref_return_to_previous_summary">Po udostępnieniu obiektu natychmiastowo powróć do poprzedniej aktywności zamiast otwierać konwersację</string>
-  <string name="all_accounts_on_this_device">Ustaw na wszystkich kontach na tym urządzeniu</string>
 </resources>
