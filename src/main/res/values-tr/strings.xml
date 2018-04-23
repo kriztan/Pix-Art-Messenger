@@ -271,8 +271,6 @@
   <string name="title_pref_quiet_hours_end_time">Bitirme zamanı</string>
   <string name="title_pref_enable_quiet_hours">Sessiz saatleri etkinleştirin</string>
   <string name="pref_quiet_hours_summary">Bildirimler sessiz saatlerde susturulacak</string>
-  <string name="pref_use_larger_font">Yazı tipi boyutunu arttır</string>
-  <string name="pref_use_larger_font_summary">Tüm uygulama boyunca daha büyük yazı tipi boyutları kullanınız</string>
   <string name="pref_use_send_button_to_indicate_status">Gönder butonu durumu gösterir</string>
   <string name="pref_use_colored_names_to_indicate_status">Renkli isimler durumu gösterir</string>
   <string name="pref_use_indicate_received">İleti okundu bilgilerini iste</string>
@@ -348,7 +346,6 @@
   <string name="distrust_omemo_key">Şüpheli cihaz</string>
   <string name="distrust_omemo_key_text">Bu cihaz için doğrulamayı kaldırmak istediğinizden emin misiniz?\nBu cihaz ve bu cihazdan gelen mesajlar güvenilmez olarak işaretlenecek.</string>
   <string name="error_no_keys_to_trust_server_error">Bu bağlantıda kullanılabilen kullanılabilir bir anahtar yok.\nSunucudan yeni anahtarlar getirme başarısız oldu. Belki rehber sunucunuzda bir sorun var.</string>
-  <string name="error_no_keys_to_trust">Bu bağlantı da kullanılabilen kullanılabilir bir anahtar yok. Anahtarlarından herhangi birini temizlediyseniz, yenilerini üretmelidirler.</string>
   <string name="fetching_history_from_server">Geçmişi sunucudan geri getir</string>
   <string name="no_more_history_on_server">Sunucuda daha fazla geçmiş yok</string>
   <string name="updating">Güncelleniyor…</string>
@@ -447,8 +444,6 @@
   <string name="download_failed_file_not_found">İndirileme başarısız oldu:: Dosya bulunamadı</string>
   <string name="download_failed_could_not_connect">İndirme başarısız: Ana bilgisayara bağlanılamadı</string>
   <string name="download_failed_could_not_write_file">İndirme başarısız: Dosya yazılamadı</string>
-  <string name="pref_use_white_background">Beyaz arka planı kullan</string>
-  <string name="pref_use_white_background_summary">Gönderilen mesajları siyah arka planda siyah metin olarak göster</string>
   <string name="action_check_update">Güncellemeleri kontrol et</string>
   <string name="title_activity_updater">Servisi güncelle</string>
   <string name="update_available">Sürüm% 1 $ s mevcut. \ N \ nFilesize:% 2 $ s \ n \ n% 1 $ s sürümüne şimdi mi güncelleştiniz?</string>
@@ -711,5 +706,4 @@
   <string name="snooze">Ertele</string>
   <string name="huawei_protected_apps">Korunan uygulamalar</string>
   <string name="huawei_protected_apps_summary">Bildirim almaya devam etmek için, ekran kapalı olduğunda bile, korunan uygulamalar listesine Pix-Art Messenger\'ı eklemeniz gerekir.</string>
-  <string name="all_accounts_on_this_device">Bu cihazdaki tüm hesapları ayarla</string>
 </resources>
