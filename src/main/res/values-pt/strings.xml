@@ -234,8 +234,6 @@
   <string name="title_pref_quiet_hours_end_time">Hora de fim</string>
   <string name="title_pref_enable_quiet_hours">Ativar horas de tranquilidade</string>
   <string name="pref_quiet_hours_summary">Notificações serão silenciadas nas horas de tranquilidade</string>
-  <string name="pref_use_larger_font">Aumentar o tamanho da fonte</string>
-  <string name="pref_use_larger_font_summary">Usar fontes maiores para toda a aplicação</string>
   <string name="pref_use_send_button_to_indicate_status">O botão de enviar indica o estado</string>
   <string name="pref_use_indicate_received">Solicitar recibo de mensagem</string>
   <string name="pref_use_indicate_received_summary">Mensagens recebidas serão marcadas com um visto verde se suportado</string>
@@ -293,7 +291,6 @@
   <string name="regenerate_omemo_key">Regenerar a chave OMEMO</string>
   <string name="clear_other_devices">Apagar dispositivos</string>
   <string name="clear_other_devices_desc">Tem a certeza que quer apagar todos os outros dispositivos do anúncio OMEMO? A próxima vez que os seus dispositivos se conectem, irão ser eles mesmos a fazerem o anúncio novamente, mas podem não receber as mensagems enviadas entretanto.</string>
-  <string name="error_no_keys_to_trust">Não existem chaves disponíveis para serem utilizadas para este contacto. Se removeu alguma das chaves dele, ele irá necessitar de gerar chaves novas. </string>
   <string name="fetching_history_from_server">Obtendo o histórico do servidor</string>
   <string name="no_more_history_on_server">Não existe mais histórico no servidor</string>
   <string name="updating">A atualizar...</string>
