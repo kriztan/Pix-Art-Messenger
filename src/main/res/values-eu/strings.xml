@@ -257,8 +257,6 @@
   <string name="title_pref_quiet_hours_end_time">Amaiera ordua</string>
   <string name="title_pref_enable_quiet_hours">Ordu lasaiak gaitu</string>
   <string name="pref_quiet_hours_summary">Jakinarazpenak isilaraziko dira ordu lasaiak iraun bitartean </string>
-  <string name="pref_use_larger_font">Letraren tamaina handitu</string>
-  <string name="pref_use_larger_font_summary">Letra tamaina handiagoa erabili aplikazio osoan zehar</string>
   <string name="pref_use_send_button_to_indicate_status">Bidaltze botoiak egoera adierazten du</string>
   <string name="pref_use_indicate_received">Mezuen jasotzea eskatu</string>
   <string name="pref_use_indicate_received_summary">Jasotako mezuak marka berde batekin markatuko dira. Baliteke kasu guztietan ez funtzionatzea.</string>
@@ -331,7 +329,6 @@
   <string name="distrust_omemo_key">Gailu ez fidagarria</string>
   <string name="distrust_omemo_key_text">Gailu honen egiaztapena ezabatu nahi duzulaz ziur al zaude?\nGailu hau eta beregandik datozen mezuak ez fidagarriak bezala markatuko dira.</string>
   <string name="error_no_keys_to_trust_server_error">Ez dago gako erabilgarririk kontaktu honetarako.\nEzin izan da zerbitzaritik gako berririk eskuratu. Agian akatsen bat dago zure kontaktuaren zerbitzariarekin.</string>
-  <string name="error_no_keys_to_trust">Kontaktu honetarako gako erabilgarririk ez dago. Bere gakoak purgatu badituzu, berri batzuk sortu behar dituzte.</string>
   <string name="fetching_history_from_server">Mezuak zerbitzaritik eskuratzen</string>
   <string name="no_more_history_on_server">Mezu gehiagorik ez zerbitzarian</string>
   <string name="updating">Eguneratzen...</string>
@@ -605,5 +602,4 @@
   <string name="pref_return_to_previous_summary">Zuzenean aurreko aktibitatera itzuli elkarrizketa ireki beharrean zerbait partekatu ondoren</string>
   <string name="invalid_muc_nick">Ezizen ez balioduna</string>
   <string name="title_activity_share_via_account">Kontu bidez partekatu</string>
-  <string name="all_accounts_on_this_device">Gailu honetako kontu guztietarako ezarri</string>
 </resources>
