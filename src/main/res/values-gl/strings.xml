@@ -257,8 +257,6 @@
   <string name="title_pref_quiet_hours_end_time">Hora de finalización</string>
   <string name="title_pref_enable_quiet_hours">Establecer horario sen notificacións</string>
   <string name="pref_quiet_hours_summary">As notificacións serán silenciadas durante estas horas</string>
-  <string name="pref_use_larger_font">Aumentar o tamaño do texto</string>
-  <string name="pref_use_larger_font_summary">Utilizar texto máis grande en toda a app</string>
   <string name="pref_use_send_button_to_indicate_status">O botón Enviar indica o estado</string>
   <string name="pref_use_indicate_received">Solicitar avisos de recepción</string>
   <string name="pref_use_indicate_received_summary">As mensaxes recibidas marcaránse cun sinal verde si este está admitido</string>
@@ -331,7 +329,6 @@
   <string name="distrust_omemo_key">Retirar confianza a dispositivo</string>
   <string name="distrust_omemo_key_text">Está segura de que quere retirar a verificación de este dispositivo?\nEste dispositivo e as mensaxes que del proveñan serán marcadas como non confiables.</string>
   <string name="error_no_keys_to_trust_server_error">Non hai chaves dispoñibles que se poidan usar con este contacto.\nNon se puideron obter novas chaves do servidor. Quizáis hai algún problema coas chaves do seu contacto.</string>
-  <string name="error_no_keys_to_trust">Non hai chaves utilizables dispoñibles para este contacto. Si eliminou algunha das chaves do contacto, precisan xerar unhas novas.</string>
   <string name="fetching_history_from_server">Obtendo historial desde o servidor</string>
   <string name="no_more_history_on_server">Non hai máis historial no servidor</string>
   <string name="updating">Actualizando....</string>
@@ -605,5 +602,4 @@
   <string name="pref_return_to_previous_summary">Voltar inmediatamente a actividade anterior no lugar de abrir a conversa despois de compartir algo</string>
   <string name="invalid_muc_nick">Alcume non válido</string>
   <string name="title_activity_share_via_account">Compartir coa conta</string>
-  <string name="all_accounts_on_this_device">Establecer para todas as contas en este dipositivo</string>
 </resources>
