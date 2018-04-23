@@ -271,8 +271,6 @@
   <string name="title_pref_quiet_hours_end_time">Hora de fin</string>
   <string name="title_pref_enable_quiet_hours">Habilitar horario de silencio</string>
   <string name="pref_quiet_hours_summary">Las notificaciones serán silenciadas durante el horario de silencio</string>
-  <string name="pref_use_larger_font">Tamaño de fuente grande</string>
-  <string name="pref_use_larger_font_summary">Usar fuentes grandes en toda la aplicación</string>
   <string name="pref_use_send_button_to_indicate_status">Botón enviar indica estado</string>
   <string name="pref_use_colored_names_to_indicate_status">Los nombres coloreados indican el estado</string>
   <string name="pref_use_indicate_received">Solicitar entrega de mensaje</string>
@@ -348,7 +346,6 @@
   <string name="distrust_omemo_key">Desconfiar de este dispositivo</string>
   <string name="distrust_omemo_key_text">¿Estás seguro que quieres eliminar la verificación de este dispositivo?\nEste dispositivo y los mensajes que lleguen desde allí serán marcados como no confiables.</string>
   <string name="error_no_keys_to_trust_server_error">No hay claves disponibles para este contacto. La búsqueda de nuevas claves al servidor ha fallado. Puede que exista un problema con el servidor de tu contacto.</string>
-  <string name="error_no_keys_to_trust">No hay claves disponibles para este contacto. Si has eliminado alguna de sus claves, tus contactos necesitarán generar nuevas claves.</string>
   <string name="error_trustkeys_title">Algo salió mal</string>
   <string name="fetching_history_from_server">Buscando historial en el servidor</string>
   <string name="no_more_history_on_server">No hay más historial en el servidor</string>
@@ -449,8 +446,6 @@
   <string name="download_failed_file_not_found">Error al descargar: Archivo no encontrado</string>
   <string name="download_failed_could_not_connect">Error al descargar: No se ha podido conectar con el servidor</string>
   <string name="download_failed_could_not_write_file">Falló la descarga: No se puede escribir el fichero</string>
-  <string name="pref_use_white_background">Usar fondo blanco</string>
-  <string name="pref_use_white_background_summary">Mostrar los mensajes enviados como texto negro sobre fondo blanco</string>
   <string name="action_check_update">Comprobar actualizaciones</string>
   <string name="title_activity_updater">Servicio de actualización</string>
   <string name="update_available">Versión %1$s está disponible.\n\nTamaño archivo: %2$s\n\nActualización a la versión %1$s ahora?</string>
@@ -759,8 +754,6 @@
   <string name="no_camera_permission">Pix-Art Messenger necesita acceder a la cámara</string>
   <string name="edit_status_message_title">Editar el mensaje de estado</string>
   <string name="edit_status_message">Editar el mensaje de estado</string>
-  <string name="all_accounts_on_this_device">Establecer para todas mis cuentas en este dispositivo</string>
-  <string name="change_presence">Cambiar manualmente tu estado</string>
   <string name="pref_automatically_delete_messages_description">Eliminar automáticamente los mensajes del dispositivo que sean anteriores al tiempo seleccionado.</string>
   <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
   <string name="disable_encryption">Desactivar cifrado</string>
