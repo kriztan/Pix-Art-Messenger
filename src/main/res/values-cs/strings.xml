@@ -240,8 +240,6 @@
   <string name="title_pref_quiet_hours_end_time">Dokdy</string>
   <string name="title_pref_enable_quiet_hours">Povolit tichý režim</string>
   <string name="pref_quiet_hours_summary">Upozornění budou během tichého režimu ztlumena</string>
-  <string name="pref_use_larger_font">Zvětšit písmo</string>
-  <string name="pref_use_larger_font_summary">Používat v celé aplikaci větší velikost písma</string>
   <string name="pref_use_send_button_to_indicate_status">Tlačítko pro odeslání zobrazuje stav</string>
   <string name="pref_use_indicate_received">Požadovat oznámení o přijetí</string>
   <string name="pref_use_indicate_received_summary">Přijaté zprávy budou označeny zeleně, pokud je funkce podporována</string>
@@ -300,7 +298,6 @@
   <string name="regenerate_omemo_key">Znovu vytvořit OMEMO klíč</string>
   <string name="clear_other_devices">Smazat přístroje</string>
   <string name="clear_other_devices_desc">Opravdu chcete vymazat ostatní přístroje z OMEMO upozornění? Až se příště tyto přístroje připojí, znovu se ohlásí, ale pravděpodobně neobdrží zprávy odeslané v mezičase mezi přihlášeními.</string>
-  <string name="error_no_keys_to_trust">Pro tento kontakt nejsou dostupné žádné použitelné klíče. Pokud jste smazali jakýkoliv z jeho klíčů bude třeba vygenerovat nové.</string>
   <string name="fetching_history_from_server">Načíst historii ze serveru</string>
   <string name="no_more_history_on_server">Na serveru není žádná další historie</string>
   <string name="updating">Aktualizuji...</string>
@@ -491,5 +488,4 @@
   <string name="contact_has_read_up_to_this_point">%s dočetl(a) až sem</string>
   <string name="pref_return_to_previous">Rychlé sdílení</string>
   <string name="pref_return_to_previous_summary">Okamžitě se vrátit k předchozí aktivitě místo otevření konverzace po nasdílení</string>
-  <string name="all_accounts_on_this_device">Nastavit pro všechny účty na tomto přístroji</string>
 </resources>
