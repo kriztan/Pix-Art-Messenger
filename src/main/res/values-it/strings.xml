@@ -257,8 +257,6 @@
   <string name="title_pref_quiet_hours_end_time">Orario fine</string>
   <string name="title_pref_enable_quiet_hours">Abilita ore di quiete</string>
   <string name="pref_quiet_hours_summary">Le notifiche verranno silenziate durante le ore di quiete</string>
-  <string name="pref_use_larger_font">Aumenta la dimensione dei caratteri</string>
-  <string name="pref_use_larger_font_summary">Usa font più grandi in tutta l’app</string>
   <string name="pref_use_send_button_to_indicate_status">Il pulsante di invio indica lo stato</string>
   <string name="pref_use_indicate_received">Richiedi la ricevuta di ritorno</string>
   <string name="pref_use_indicate_received_summary">I messaggi ricevuti verranno contrassegnati con una spunta verde se supportato</string>
@@ -331,7 +329,6 @@
   <string name="distrust_omemo_key">Diffida il dispositvo</string>
   <string name="distrust_omemo_key_text">Sei sicuro di volere rimuovere la verifica per questo dispositivo?\nIl dispositivo e i messaggi provenienti da esso verranno segnati come non fidati.</string>
   <string name="error_no_keys_to_trust_server_error">Non ci sono chiavi utilizzabili per questo contatto.\nRicezione di nuovi chiavi dal server non riuscita. Forse qualcosa non va con il server del tuo contatto.</string>
-  <string name="error_no_keys_to_trust">Non ci sono chiavi usabili per questo contatto. Se hai cancellato qualsiasi loro chiave, devono generarne di nuove.</string>
   <string name="fetching_history_from_server">Caricamento della cronologia dal server</string>
   <string name="no_more_history_on_server">Fine cronologia sul server</string>
   <string name="updating">Caricamento…</string>
@@ -602,5 +599,4 @@
   <string name="pref_return_to_previous_summary">Torna subito all\'attività precedente invece di aprire la conversazione dopo avere condiviso qualcosa</string>
   <string name="invalid_muc_nick">Nickname non valido</string>
   <string name="title_activity_share_via_account">Condividi via account</string>
-  <string name="all_accounts_on_this_device">Imposta per tutti gli account del dispositivo</string>
 </resources>
