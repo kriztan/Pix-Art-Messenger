@@ -244,8 +244,6 @@
   <string name="title_pref_quiet_hours_end_time">Sluttid</string>
   <string name="title_pref_enable_quiet_hours">Aktivera tysta timmar</string>
   <string name="pref_quiet_hours_summary">Notifieringar kommer vara tysta under tysta timmar</string>
-  <string name="pref_use_larger_font">Öka teckenstorlek</string>
-  <string name="pref_use_larger_font_summary">Använd större teckenstorlek för hela applikationen</string>
   <string name="pref_use_send_button_to_indicate_status">Skickaknappen indikerar status</string>
   <string name="pref_use_indicate_received">Begär mottagningskvitto</string>
   <string name="pref_use_indicate_received_summary">Mottagna meddelanden markeras med en grön bock om det stöds</string>
@@ -309,7 +307,6 @@
   <string name="clear_other_devices_desc">Är du säker på att du vill rensa alla andra enheter från OMEMO-annonsering? Nästa gång dina enheter ansluter kommer de att återannonsera sig, men de kanske inte tar emot enheter under tiden.</string>
   <string name="distrust_omemo_key">Lita ej på enhet</string>
   <string name="distrust_omemo_key_text">Är du säker på att du vill ta bort verifieringen av denna enhet?\nDenna enhet och meddelanden som kommer från enheten kommer att markeras som ej pålitliga.</string>
-  <string name="error_no_keys_to_trust">Det finns inga användbara nycklar tillgängliga för den här kontakten. Om du har rensat någon av dennes nycklar behöver de generera nya.</string>
   <string name="fetching_history_from_server">Hämtar historik från server</string>
   <string name="no_more_history_on_server">Ingen mer historik på server</string>
   <string name="updating">Uppdaterar…</string>
@@ -542,5 +539,4 @@
   <string name="contact_has_read_up_to_this_point">%s har läst hit</string>
   <string name="pref_return_to_previous">Snabbdelning</string>
   <string name="pref_return_to_previous_summary">Återvänd genast till föregående aktivitet istället för att öppna konversationen efter att ha delat något</string>
-  <string name="all_accounts_on_this_device">Använd för alla konton på den här enheten</string>
 </resources>
