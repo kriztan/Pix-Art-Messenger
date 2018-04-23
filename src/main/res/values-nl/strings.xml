@@ -257,8 +257,6 @@
   <string name="title_pref_quiet_hours_end_time">Eindtijd</string>
   <string name="title_pref_enable_quiet_hours">Stille uren inschakelen</string>
   <string name="pref_quiet_hours_summary">Tijdens stille uren worden meldingen onderdrukt</string>
-  <string name="pref_use_larger_font">Vergroot lettergrootte</string>
-  <string name="pref_use_larger_font_summary">Gebruik grotere lettertypes over de hele app</string>
   <string name="pref_use_send_button_to_indicate_status">Verstuur-knop toont status aan</string>
   <string name="pref_use_indicate_received">Vraag ontvangstbevestigingen</string>
   <string name="pref_use_indicate_received_summary">Indien ondersteund, worden ontvangen berichten met een groen vinkje aangeduid</string>
@@ -331,7 +329,6 @@
   <string name="distrust_omemo_key">Apparaat niet meer vertrouwen</string>
   <string name="distrust_omemo_key_text">Weet je zeker dat je de verificatie voor dit apparaat wil verwijderen?\nHet apparaat en alle berichten die het verstuurt zullen als niet-vertrouwd worden weergegeven.</string>
   <string name="error_no_keys_to_trust_server_error">Er zijn geen bruikbare sleutels beschikbaar voor dit contact.\nOphalen van nieuwe sleutels van de server is mislukt. Misschien is er iets mis met de server van je contact.</string>
-  <string name="error_no_keys_to_trust">Er zijn geen bruikbare sleutels beschikbaar voor dit contact. Als je zijn/haar sleutels hebt verwijderd dient hij/zij nieuwe aan te maken.</string>
   <string name="fetching_history_from_server">Geschiedenis van server halen</string>
   <string name="no_more_history_on_server">Geen verdere geschiedenis op server</string>
   <string name="updating">Bijwerken…</string>
@@ -602,5 +599,4 @@
   <string name="pref_return_to_previous_summary">Keer na iets te delen onmiddellijk terug naar de vorige activiteit in plaats van het gesprek te openen</string>
   <string name="invalid_muc_nick">Ongeldige bijnaam</string>
   <string name="title_activity_share_via_account">Delen via account</string>
-  <string name="all_accounts_on_this_device">Instellen voor alle accounts op dit apparaat</string>
 </resources>
