@@ -261,8 +261,6 @@
   <string name="title_pref_quiet_hours_end_time">Ora de terminare</string>
   <string name="title_pref_enable_quiet_hours">Activează orar de liniște</string>
   <string name="pref_quiet_hours_summary">Notificările vor fi reduse la tăcere în timpul orelor de liniște</string>
-  <string name="pref_use_larger_font">Mărește fontul</string>
-  <string name="pref_use_larger_font_summary">Folosește o mărime de text mai mare în toată aplicația</string>
   <string name="pref_use_send_button_to_indicate_status">Butonul de trimitere indică starea</string>
   <string name="pref_use_indicate_received">Cere raport de primire</string>
   <string name="pref_use_indicate_received_summary">Mesajele primite vor fi marcate cu o bifa verde, dacă este suportat</string>
@@ -336,7 +334,6 @@
   <string name="distrust_omemo_key">Pierde încrederea în acest dispozitiv</string>
   <string name="distrust_omemo_key_text">Sigur doriți să ștergeți datele de verificare pentru acest dispozitiv?\nAcest dispozitiv precum și mesajele venind de la el vor fi marcate ca ne fiind de încredere.</string>
   <string name="error_no_keys_to_trust_server_error">Nu există chei utilizabile pentru acest contact.\nÎncercarea de a descărca chei noi de pe server a eșuat. Se poate ca serverul contactului dumneavoastră să aibă o problemă.</string>
-  <string name="error_no_keys_to_trust">Nu exista chei disponibile și utilizabile pentru acest contact. Dacă ați șters vreuna din cheile contactului, acesta va trebuii să genereze una noua.</string>
   <string name="fetching_history_from_server">Descarc istoric de pe server</string>
   <string name="no_more_history_on_server">Nu mai exista istoric pe server</string>
   <string name="updating">Actualizare...</string>
@@ -626,5 +623,4 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="pref_return_to_previous_summary">După ce ați partajat ceva, întoarce-te la activitatea precedentă în loc să deschizi conversația</string>
   <string name="invalid_muc_nick">Nume invalid</string>
   <string name="title_activity_share_via_account">Partajează cu cont</string>
-  <string name="all_accounts_on_this_device">Setează pentru toate conturile de pe acest dispozitiv</string>
 </resources>
