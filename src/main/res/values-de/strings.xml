@@ -781,4 +781,5 @@
   <string name="medium">Mittel</string>
   <string name="large">Groß</string>
   <string name="create_shortcut">Verknüpfung erstellen</string>
+  <string name="not_encrypted_for_this_device">Die Nachricht wurde für dieses Gerät nicht verschlüsselt.</string>
 </resources>
