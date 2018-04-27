@@ -106,6 +106,57 @@
                                 android:src="@drawable/ic_notifications_black_24dp" />
                         </RelativeLayout>
 
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="2dp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/your_photo"
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_alignParentEnd="false"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentRight="false"
+                                    android:padding="1dp"
+                                    app:riv_border_color="?attr/color_border"
+                                    app:riv_border_width="1dp"
+                                    app:riv_corner_radius="36dp"/>
+
+                            <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/your_photo"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="@dimen/avatar_item_distance">
+
+                                <android.support.text.emoji.widget.EmojiTextView
+                                        android:id="@+id/muc_your_nick"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:textAppearance="@style/TextAppearance.Conversations.Subhead"/>
+
+                                <TextView
+                                        android:id="@+id/muc_role"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:textAppearance="@style/TextAppearance.Conversations.Body1.Secondary"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                    android:id="@+id/edit_nick_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:alpha="?attr/icon_alpha"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:padding="@dimen/image_button_padding"
+                                    android:src="?attr/icon_edit_body"/>
+                        </RelativeLayout>
                         <TextView
                             android:id="@+id/muc_jabberid"
                             android:layout_width="wrap_content"
@@ -143,58 +194,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="@dimen/card_padding_list">
-
-                        <RelativeLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="32dp">
-
-                            <com.makeramen.roundedimageview.RoundedImageView
-                                android:id="@+id/your_photo"
-                                android:layout_width="72dp"
-                                android:layout_height="72dp"
-                                android:layout_alignParentEnd="false"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentRight="false"
-                                android:padding="1dp"
-                                app:riv_border_color="?attr/color_border"
-                                app:riv_border_width="1dp"
-                                app:riv_corner_radius="36dp" />
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_toRightOf="@+id/your_photo"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/avatar_item_distance">
-
-                                <android.support.text.emoji.widget.EmojiTextView
-                                    android:id="@+id/muc_your_nick"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:singleLine="true"
-                                    android:textAppearance="@style/TextAppearance.Conversations.Subhead" />
-
-                                <TextView
-                                    android:id="@+id/muc_role"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:singleLine="true"
-                                    android:textAppearance="@style/TextAppearance.Conversations.Body1.Secondary" />
-                            </LinearLayout>
-
-                            <ImageButton
-                                android:id="@+id/edit_nick_button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:alpha="?attr/icon_alpha"
-                                android:background="?attr/selectableItemBackgroundBorderless"
-                                android:padding="@dimen/image_button_padding"
-                                android:src="?attr/icon_edit_body" />
-                        </RelativeLayout>
 
                         <LinearLayout
                             android:id="@+id/muc_members"
