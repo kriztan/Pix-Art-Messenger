@@ -383,7 +383,6 @@
   <string name="pdf_document">PDF dokumentua</string>
   <string name="apk">Android aplikazioa</string>
   <string name="vcard">Kontaktua</string>
-  <string name="received_x_file">%s jaso da</string>
   <string name="touch_to_open_conversations">Ikutu Pix-Art Messenger irekitzeko</string>
   <string name="avatar_has_been_published">Profileko argazkia argitaratu da</string>
   <string name="sending_x_file">%s bidaltzen</string>
@@ -395,7 +394,6 @@
   <string name="show_location">Kokapena erakutsi</string>
   <string name="no_application_found_to_display_location">Kokapena erakutsi dezakeen aplikaziorik ez da aurkitu</string>
   <string name="location">Kokapena</string>
-  <string name="received_location">Kokapena jaso da</string>
   <string name="pref_dont_trust_system_cas_title">Sistemaren CAtaz ez fidatu</string>
   <string name="pref_dont_trust_system_cas_summary">Ziurtagiri guztiak eskuz onartu behar dira</string>
   <string name="pref_remove_trusted_certificates_title">Ziurtagiriak kendu</string>
@@ -417,7 +415,6 @@
   <string name="none">Bat ere ez</string>
   <string name="recently_used">Azkenengo aldiz erabilitakoa</string>
   <string name="choose_quick_action">Ekintza azkarra aukeratu</string>
-  <string name="search_for_contacts_or_groups">Kontaktuak edo taldeak bilatu</string>
   <string name="send_private_message">Mezu pribatua bidali</string>
   <string name="username">Erabiltzaile izena</string>
   <string name="username_hint">Erabiltzaile izena</string>
