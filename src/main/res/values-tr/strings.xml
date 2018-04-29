@@ -400,7 +400,6 @@
   <string name="pdf_document">PDF belgesi</string>
   <string name="apk">Android Uygulaması</string>
   <string name="vcard">Bağlantı</string>
-  <string name="received_x_file">Alındı %s</string>
   <string name="touch_to_open_conversations">Pix-Art Messenger\'ı açmak için dokunun</string>
   <string name="avatar_has_been_published">Avatar yayınlandı!</string>
   <string name="sending_x_file">Gönderiliyor %s</string>
@@ -413,7 +412,6 @@
   <string name="show_location">Konumu göster</string>
   <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
   <string name="location">Konum</string>
-  <string name="received_location">Alınan konum</string>
   <string name="pref_dont_trust_system_cas_title">Sistem CAs\'larına güvenme</string>
   <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar manuel onaylanmalıdır</string>
   <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
@@ -435,7 +433,6 @@
   <string name="none">Yok</string>
   <string name="recently_used">En son kullanılanlar</string>
   <string name="choose_quick_action">Hızlı işlemi seçin</string>
-  <string name="search_for_contacts_or_groups">Kişileri veya gruplar için arama</string>
   <string name="send_private_message">Özel mesaj gönder</string>
   <string name="username">Kullanıcı Adı</string>
   <string name="username_hint">Kullanıcı Adı</string>
@@ -605,7 +602,6 @@
   <string name="device_does_not_support_data_saver">Cihazınız Pix-Art messenger\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
   <string name="navigate">Konuma gidin</string>
   <string name="add_to_contact_list">Bağlantı listesine ekle</string>
-  <string name="received_contact">Bağlantı kabul edildi</string>
   <string name="contact">Bağlantı</string>
   <string name="unable_to_start_recording">Kayıt başlatılamıyor</string>
   <string name="error_unable_to_create_temporary_file">Geçici dosya oluşturulamadı</string>
