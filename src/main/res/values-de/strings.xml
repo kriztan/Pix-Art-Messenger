@@ -401,7 +401,6 @@
   <string name="pdf_document">PDF-Dokument</string>
   <string name="apk">Android App</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">%s empfangen</string>
   <string name="touch_to_open_conversations">Antippen, um Pix-Art Messenger zu öffnen</string>
   <string name="avatar_has_been_published">Profilbild wurde gespeichert</string>
   <string name="sending_x_file">%s wird gesendet</string>
@@ -414,7 +413,6 @@
   <string name="show_location">Standort anzeigen</string>
   <string name="no_application_found_to_display_location">Keine App für die Standort-Anzeige gefunden</string>
   <string name="location">Standort</string>
-  <string name="received_location">Standort empfangen</string>
   <string name="pref_dont_trust_system_cas_title">Zertifizierungsstellen misstrauen</string>
   <string name="pref_dont_trust_system_cas_summary">Alle Zertifikate müssen manuell bestätigt werden</string>
   <string name="pref_remove_trusted_certificates_title">Zertifikate löschen</string>
@@ -436,7 +434,6 @@
   <string name="none">keine</string>
   <string name="recently_used">zuletzt verwendet</string>
   <string name="choose_quick_action">Schnell-Taste auswähle</string>
-  <string name="search_for_contacts_or_groups">Nach Kontakten oder Konferenzen suchen</string>
   <string name="send_private_message">Private Nachricht senden</string>
   <string name="user_has_left_conference">%1$s hat den Gruppenchat verlassen!</string>
   <string name="username">Benutzername</string>
@@ -611,7 +608,6 @@
   <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
   <string name="navigate">Zum Standort navigieren</string>
   <string name="add_to_contact_list">Zur Kontaktliste hinzufügen</string>
-  <string name="received_contact">Kontakt empfangen</string>
   <string name="contact">Kontakt</string>
   <string name="unable_to_start_recording">Aufnahme kann nicht gestartet werden</string>
   <string name="error_unable_to_create_temporary_file">Temporäre Datei kann nicht erstellt werden</string>
