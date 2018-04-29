@@ -344,7 +344,6 @@
   <string name="pdf_document">dokument PDF</string>
   <string name="apk">Aplikace pro Android</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">%s přijat</string>
   <string name="touch_to_open_conversations">Ťuknout pro otevření Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar byl zveřejněn!</string>
   <string name="sending_x_file">Odesílám %s</string>
@@ -355,7 +354,6 @@
   <string name="show_location">Zobrazit pozici</string>
   <string name="no_application_found_to_display_location">Nebyla nalezena aplikace pro zobrazení pozice</string>
   <string name="location">Pozice</string>
-  <string name="received_location">Přijmout pozici</string>
   <string name="pref_dont_trust_system_cas_title">Nedůvěřovat systémovým CA</string>
   <string name="pref_dont_trust_system_cas_summary">Všechny certifikáty musí být schváleny ručně</string>
   <string name="pref_remove_trusted_certificates_title">Odstranit certifikáty</string>
@@ -369,7 +367,6 @@
   <string name="none">Žádná</string>
   <string name="recently_used">Naposledy použitá</string>
   <string name="choose_quick_action">Vybrat rychlou akci</string>
-  <string name="search_for_contacts_or_groups">Hledat kontakty či skupiny</string>
   <string name="send_private_message">Poslat soukromou zprávu</string>
   <string name="username">Uživatelské jméno</string>
   <string name="username_hint">Uživatelské jméno</string>
