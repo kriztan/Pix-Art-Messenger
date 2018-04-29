@@ -355,7 +355,6 @@
   <string name="pdf_document">PDF nga dokumento</string>
   <string name="apk">Android App</string>
   <string name="vcard">Kontak</string>
-  <string name="received_x_file">Nadawat %s</string>
   <string name="touch_to_open_conversations">Hikapa para ma abli ang Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Ang avatar kay gelahad!</string>
   <string name="sending_x_file">Pagpadala %s</string>
@@ -368,7 +367,6 @@
   <string name="show_location">Ipakita ang lokasyon</string>
   <string name="no_application_found_to_display_location">Walay aplikasyon ang nakita para ipakita ang lokasyun</string>
   <string name="location">Lokasyun</string>
-  <string name="received_location">Nadawat nga lokasyun</string>
   <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Tanang mga sertipiko dapat manually nga mga aprobado</string>
   <string name="pref_remove_trusted_certificates_title">Tangtanga ang mga sertipiko</string>
@@ -394,7 +392,6 @@ Pili %d mga kontak</item>
   <string name="none">Wala</string>
   <string name="recently_used">Kasagaran ginagamit karun</string>
   <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
-  <string name="search_for_contacts_or_groups">Pangita sa mga kontak o sa mga grupo</string>
   <string name="send_private_message">Ipadala ang pribado nga mensahe</string>
   <string name="username">Pangan sa user</string>
   <string name="username_hint">Pangan sa user</string>
@@ -568,7 +565,6 @@ Pili %d mga kontak</item>
   <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa Pix-Art Messenger.</string>
   <string name="navigate">Pagdala sa lokasyon</string>
   <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
-  <string name="received_contact">Nadawat nga kontak</string>
   <string name="contact">Kontak</string>
   <string name="unable_to_start_recording">Dili makasugod sa pagrekord</string>
   <string name="error_unable_to_create_temporary_file">Dili makagama og temporaryo nga file</string>
