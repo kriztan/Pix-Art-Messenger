@@ -354,7 +354,6 @@
   <string name="video">vidéo</string>
   <string name="pdf_document">document PDF</string>
   <string name="apk">Application Android</string>
-  <string name="received_x_file">%s reçu(e)</string>
   <string name="touch_to_open_conversations">Cliquez pour ouvrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">L\'avatar a été publié !</string>
   <string name="sending_x_file">%s en cours d\'envoi</string>
@@ -366,7 +365,6 @@
   <string name="show_location">Afficher la position</string>
   <string name="no_application_found_to_display_location">Aucune application trouvée pour afficher la position</string>
   <string name="location">Position</string>
-  <string name="received_location">Position reçue</string>
   <string name="pref_dont_trust_system_cas_title">Ne pas utiliser les CAs système</string>
   <string name="pref_dont_trust_system_cas_summary">Tous les certificats doivent être approuvés manuellement.</string>
   <string name="pref_remove_trusted_certificates_title">Retirer les certificats</string>
@@ -388,7 +386,6 @@
   <string name="none">Aucune</string>
   <string name="recently_used">Dernière utilisée</string>
   <string name="choose_quick_action">Sélectionner l\'action rapide</string>
-  <string name="search_for_contacts_or_groups">Rechercher des contacts ou des groupes</string>
   <string name="send_private_message">Envoyer un message privé</string>
   <string name="username">Identifiant</string>
   <string name="username_hint">Identifiant</string>
