@@ -401,7 +401,6 @@
   <string name="pdf_document">documento PDF</string>
   <string name="apk">Aplicación de Android</string>
   <string name="vcard">Contacto</string>
-  <string name="received_x_file">Recibido %s</string>
   <string name="touch_to_open_conversations">Pulsa para abrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">¡La imagen de perfil ha sido publicada!</string>
   <string name="sending_x_file">Enviando %s</string>
@@ -414,7 +413,6 @@
   <string name="show_location">Mostrar ubicación</string>
   <string name="no_application_found_to_display_location">No se ha encontrado ninguna aplicación para mostrar la ubicación</string>
   <string name="location">Ubicación</string>
-  <string name="received_location">Ubicación recibida</string>
   <string name="pref_dont_trust_system_cas_title">No confiar en los CAs del sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos los certificados deben ser aprobados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
@@ -436,7 +434,6 @@
   <string name="none">Ninguna</string>
   <string name="recently_used">Usada más recientemente</string>
   <string name="choose_quick_action">Elegir acción rápida</string>
-  <string name="search_for_contacts_or_groups">Buscar contactos o grupos</string>
   <string name="send_private_message">Enviar mensaje privado</string>
   <string name="user_has_left_conference">¡%1$s ha dejado el grupo!</string>
   <string name="username">Usuario</string>
@@ -611,7 +608,6 @@
   <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
   <string name="navigate">Navegar hasta la ubicación</string>
   <string name="add_to_contact_list">Añadir a contactos</string>
-  <string name="received_contact">Recibir contacto</string>
   <string name="contact">Contacto</string>
   <string name="unable_to_start_recording">No se puede iniciar la grabación</string>
   <string name="error_unable_to_create_temporary_file">No se ha podido crear el fichero temporal</string>
