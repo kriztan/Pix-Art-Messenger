@@ -782,4 +782,5 @@
   <string name="not_encrypted_for_this_device">Die Nachricht wurde für dieses Gerät nicht verschlüsselt.</string>
   <string name="search_messages">Nachrichten suchen</string>
   <string name="gif">GIF</string>
+  <string name="view_conversation">Unterhaltung öffnen</string>
 </resources>
