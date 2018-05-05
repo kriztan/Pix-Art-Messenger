@@ -244,7 +244,7 @@
   <string name="title_pref_quiet_hours_end_time">Sluttid</string>
   <string name="title_pref_enable_quiet_hours">Aktivera tysta timmar</string>
   <string name="pref_quiet_hours_summary">Notifieringar kommer vara tysta under tysta timmar</string>
-    <string name="pref_use_send_button_to_indicate_status">Skickaknappen indikerar status</string>
+  <string name="pref_use_send_button_to_indicate_status">Skickaknappen indikerar status</string>
   <string name="pref_use_indicate_received">Begär mottagningskvitto</string>
   <string name="pref_use_indicate_received_summary">Mottagna meddelanden markeras med en grön bock om det stöds</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Färglägg skickaknappen för att indikera kontaktens status</string>
@@ -307,7 +307,7 @@
   <string name="clear_other_devices_desc">Är du säker på att du vill rensa alla andra enheter från OMEMO-annonsering? Nästa gång dina enheter ansluter kommer de att återannonsera sig, men de kanske inte tar emot enheter under tiden.</string>
   <string name="distrust_omemo_key">Lita ej på enhet</string>
   <string name="distrust_omemo_key_text">Är du säker på att du vill ta bort verifieringen av denna enhet?\nDenna enhet och meddelanden som kommer från enheten kommer att markeras som ej pålitliga.</string>
-    <string name="fetching_history_from_server">Hämtar historik från server</string>
+  <string name="fetching_history_from_server">Hämtar historik från server</string>
   <string name="no_more_history_on_server">Ingen mer historik på server</string>
   <string name="updating">Uppdaterar…</string>
   <string name="password_changed">Lösenord bytt!</string>
@@ -353,7 +353,6 @@
   <string name="pdf_document">PDF-dokument</string>
   <string name="apk">Android-app</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">Tagit emot %s</string>
   <string name="touch_to_open_conversations">Tryck för att öppna Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatarbild har publicerats!</string>
   <string name="sending_x_file">Skickar %s</string>
@@ -365,7 +364,6 @@
   <string name="show_location">Visa position</string>
   <string name="no_application_found_to_display_location">Kunde inte hitta applikation för att visa position</string>
   <string name="location">Position</string>
-  <string name="received_location">Mottog position</string>
   <string name="pref_dont_trust_system_cas_title">Lita inte på systemets CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Alla certifikat måste manuellt godkännas</string>
   <string name="pref_remove_trusted_certificates_title">Ta bort certifikat</string>
@@ -387,7 +385,6 @@
   <string name="none">Ingen</string>
   <string name="recently_used">Senast använd</string>
   <string name="choose_quick_action">Välj snabbfunktion</string>
-  <string name="search_for_contacts_or_groups">Sök efter kontakter eller grupper</string>
   <string name="send_private_message">Skicka privat meddelande</string>
   <string name="username">Användarnamn</string>
   <string name="username_hint">Användarnamn</string>
