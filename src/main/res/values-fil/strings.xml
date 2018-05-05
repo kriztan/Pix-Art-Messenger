@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Oras ng pagtatapos</string>
   <string name="title_pref_enable_quiet_hours">Ipahintulot ang tahimik na mga oras</string>
   <string name="pref_quiet_hours_summary">Ang pagbibigay alam ay patahimikin tuwing oras ng pahinga</string>
-    <string name="pref_use_send_button_to_indicate_status">Magpadala ng boton na nagpapahiwatig ng istado</string>
+  <string name="pref_use_send_button_to_indicate_status">Magpadala ng boton na nagpapahiwatig ng istado</string>
   <string name="pref_use_colored_names_to_indicate_status">Ang may kulay na mga pangalan ay nagpahiwatig ng istado</string>
   <string name="pref_use_indicate_received">Hiling na mensahe ay natanggap</string>
   <string name="pref_use_indicate_received_summary">Natanggap na mga mensahe ay mamarkahan ng berde na tik kung supportado</string>
@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Hindi kapani-paniwalang aparato</string>
   <string name="distrust_omemo_key_text">Segurado ka bang gusto mong tanggalin ang beripikasyon mula sa aparatong ito?\nAng aparato at mga mensahe mula sa aparato ay malalagyan ng hindi kapani-paniwalang marka.</string>
   <string name="error_no_keys_to_trust_server_error">Walang magagamit na susi para sa kontak na ito.\nAng pagkuha ng bagong susi mula sa serber ay hindi matagumpay. Baka mayroong mali sa mga kontak ng iyong serber.</string>
-    <string name="fetching_history_from_server">Kumuha ng kasaysayan mula sa serber</string>
+  <string name="fetching_history_from_server">Kumuha ng kasaysayan mula sa serber</string>
   <string name="no_more_history_on_server">Wala ng kasaysayan sa serber</string>
   <string name="updating">Pag-update…</string>
   <string name="password_changed">Kontrasenyas ay nabago na!</string>
@@ -400,7 +400,6 @@
   <string name="pdf_document">Kodumentong PDF</string>
   <string name="apk">Android App</string>
   <string name="vcard">Pakikipag-ugnayan</string>
-  <string name="received_x_file">Natanggap %s</string>
   <string name="touch_to_open_conversations">Pindotin para mabuksan ang Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar ay nailathala!</string>
   <string name="sending_x_file">Nagpapadala %s</string>
@@ -413,7 +412,6 @@
   <string name="show_location">Ipakita ang kinaroroonan</string>
   <string name="no_application_found_to_display_location">Walang nakitang aplikasyon sa lokasyon ng display</string>
   <string name="location">Kinalalagyan</string>
-  <string name="received_location">Natanggap na lokasyon</string>
   <string name="pref_dont_trust_system_cas_title">Wag maniwala sa sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Lahat ng mga katibayan ay dapat naaproba ng mano-mano</string>
   <string name="pref_remove_trusted_certificates_title">Tagalin ang mga katibayan</string>
@@ -435,7 +433,6 @@
   <string name="none">Wala</string>
   <string name="recently_used">Pinaka-pinakamakailang ginamit</string>
   <string name="choose_quick_action">Pumili ng mabilis na aksyon</string>
-  <string name="search_for_contacts_or_groups">Maghanap ng mga kontak o mga grupo</string>
   <string name="send_private_message">Magpadala ng pribadong mensahe</string>
   <string name="username">Pangalang ginagamit</string>
   <string name="username_hint">Panggalang ginagamit</string>
@@ -444,7 +441,7 @@
   <string name="download_failed_file_not_found">Nabigo ang pag-download: Hindi nakita ang file</string>
   <string name="download_failed_could_not_connect">Nabigo ang pag-download: Hindi nakakonekta sa host</string>
   <string name="download_failed_could_not_write_file">Nabigo ang pag-download: Hindi ma-isulat ang file</string>
-    <string name="action_check_update">Tingnan ang Mga Update</string>
+  <string name="action_check_update">Tingnan ang Mga Update</string>
   <string name="title_activity_updater">I-update ang serbisyo</string>
   <string name="update_available">Ang bersyon na %1$s ay magagamit. \n\nFilipino:%2$s\n\nUpdate sa bersyon na %1$s ngayon?</string>
   <string name="remind_later">mamaya</string>
@@ -605,7 +602,6 @@
   <string name="device_does_not_support_data_saver">Hindi sinusuportahan ng iyong aparato ang hindi pagpapagana ng data saver para sa Pix-Art Messenger.</string>
   <string name="navigate">Mag-navigate sa lokasyon</string>
   <string name="add_to_contact_list">Idagdag sa listahan ng kontak</string>
-  <string name="received_contact">Tumanggap ng kontak</string>
   <string name="contact">Kontak</string>
   <string name="unable_to_start_recording">Hindi nagawang magsimulang mag-record</string>
   <string name="error_unable_to_create_temporary_file">Hindi makalikha ng pansamantalang file</string>
