@@ -240,7 +240,7 @@
   <string name="title_pref_quiet_hours_end_time">Dokdy</string>
   <string name="title_pref_enable_quiet_hours">Povolit tichý režim</string>
   <string name="pref_quiet_hours_summary">Upozornění budou během tichého režimu ztlumena</string>
-    <string name="pref_use_send_button_to_indicate_status">Tlačítko pro odeslání zobrazuje stav</string>
+  <string name="pref_use_send_button_to_indicate_status">Tlačítko pro odeslání zobrazuje stav</string>
   <string name="pref_use_indicate_received">Požadovat oznámení o přijetí</string>
   <string name="pref_use_indicate_received_summary">Přijaté zprávy budou označeny zeleně, pokud je funkce podporována</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Obarvit tlačítko odesílání barvou indikující stavu kontaktu</string>
@@ -298,7 +298,7 @@
   <string name="regenerate_omemo_key">Znovu vytvořit OMEMO klíč</string>
   <string name="clear_other_devices">Smazat přístroje</string>
   <string name="clear_other_devices_desc">Opravdu chcete vymazat ostatní přístroje z OMEMO upozornění? Až se příště tyto přístroje připojí, znovu se ohlásí, ale pravděpodobně neobdrží zprávy odeslané v mezičase mezi přihlášeními.</string>
-    <string name="fetching_history_from_server">Načíst historii ze serveru</string>
+  <string name="fetching_history_from_server">Načíst historii ze serveru</string>
   <string name="no_more_history_on_server">Na serveru není žádná další historie</string>
   <string name="updating">Aktualizuji...</string>
   <string name="password_changed">Heslo změněno!</string>
@@ -344,7 +344,6 @@
   <string name="pdf_document">dokument PDF</string>
   <string name="apk">Aplikace pro Android</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">%s přijat</string>
   <string name="touch_to_open_conversations">Ťuknout pro otevření Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar byl zveřejněn!</string>
   <string name="sending_x_file">Odesílám %s</string>
@@ -355,7 +354,6 @@
   <string name="show_location">Zobrazit pozici</string>
   <string name="no_application_found_to_display_location">Nebyla nalezena aplikace pro zobrazení pozice</string>
   <string name="location">Pozice</string>
-  <string name="received_location">Přijmout pozici</string>
   <string name="pref_dont_trust_system_cas_title">Nedůvěřovat systémovým CA</string>
   <string name="pref_dont_trust_system_cas_summary">Všechny certifikáty musí být schváleny ručně</string>
   <string name="pref_remove_trusted_certificates_title">Odstranit certifikáty</string>
@@ -369,7 +367,6 @@
   <string name="none">Žádná</string>
   <string name="recently_used">Naposledy použitá</string>
   <string name="choose_quick_action">Vybrat rychlou akci</string>
-  <string name="search_for_contacts_or_groups">Hledat kontakty či skupiny</string>
   <string name="send_private_message">Poslat soukromou zprávu</string>
   <string name="username">Uživatelské jméno</string>
   <string name="username_hint">Uživatelské jméno</string>
