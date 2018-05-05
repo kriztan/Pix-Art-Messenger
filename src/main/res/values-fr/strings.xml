@@ -247,7 +247,7 @@
   <string name="title_pref_quiet_hours_end_time">Heure de fin</string>
   <string name="title_pref_enable_quiet_hours">Activer les heures tranquilles</string>
   <string name="pref_quiet_hours_summary">Les notifications seront muettes pendant les heures tranquilles.</string>
-    <string name="pref_use_send_button_to_indicate_status">Statut sur le bouton Envoyer</string>
+  <string name="pref_use_send_button_to_indicate_status">Statut sur le bouton Envoyer</string>
   <string name="pref_use_indicate_received">Accusés de réception</string>
   <string name="pref_use_indicate_received_summary">Les messages reçus seront marqués d\'une coche verte (si supporté).</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Le bouton Envoyer change de couleur pour indiquer le statut du contact.</string>
@@ -311,7 +311,7 @@
   <string name="distrust_omemo_key">Ne plus faire confiance à cet appareil</string>
   <string name="distrust_omemo_key_text">Êtes-vous sûr de vouloir supprimer la vérification pour cet appareil ?\nCet appareil et les messages qui en proviennent seront marqués comme n\'étant pas dignes de confiance.</string>
   <string name="error_no_keys_to_trust_server_error">Il n\'y a aucune clef utilisable disponible pour ce contact.\nLa récupération de nouvelles clefs sur le serveur a échoué. Peut-être y a-t-il un problème avec votre serveur de contacts ?</string>
-    <string name="fetching_history_from_server">Récupération de l\'historique sur le serveur</string>
+  <string name="fetching_history_from_server">Récupération de l\'historique sur le serveur</string>
   <string name="no_more_history_on_server">Plus d\'historique sur le serveur</string>
   <string name="updating">Mise à jour…</string>
   <string name="password_changed">Mot de passe modifié !</string>
@@ -354,7 +354,6 @@
   <string name="video">vidéo</string>
   <string name="pdf_document">document PDF</string>
   <string name="apk">Application Android</string>
-  <string name="received_x_file">%s reçu(e)</string>
   <string name="touch_to_open_conversations">Cliquez pour ouvrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">L\'avatar a été publié !</string>
   <string name="sending_x_file">%s en cours d\'envoi</string>
@@ -366,7 +365,6 @@
   <string name="show_location">Afficher la position</string>
   <string name="no_application_found_to_display_location">Aucune application trouvée pour afficher la position</string>
   <string name="location">Position</string>
-  <string name="received_location">Position reçue</string>
   <string name="pref_dont_trust_system_cas_title">Ne pas utiliser les CAs système</string>
   <string name="pref_dont_trust_system_cas_summary">Tous les certificats doivent être approuvés manuellement.</string>
   <string name="pref_remove_trusted_certificates_title">Retirer les certificats</string>
@@ -388,7 +386,6 @@
   <string name="none">Aucune</string>
   <string name="recently_used">Dernière utilisée</string>
   <string name="choose_quick_action">Sélectionner l\'action rapide</string>
-  <string name="search_for_contacts_or_groups">Rechercher des contacts ou des groupes</string>
   <string name="send_private_message">Envoyer un message privé</string>
   <string name="username">Identifiant</string>
   <string name="username_hint">Identifiant</string>
