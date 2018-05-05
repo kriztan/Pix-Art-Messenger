@@ -234,7 +234,7 @@
   <string name="title_pref_quiet_hours_end_time">Hora de fim</string>
   <string name="title_pref_enable_quiet_hours">Ativar horas de tranquilidade</string>
   <string name="pref_quiet_hours_summary">Notificações serão silenciadas nas horas de tranquilidade</string>
-    <string name="pref_use_send_button_to_indicate_status">O botão de enviar indica o estado</string>
+  <string name="pref_use_send_button_to_indicate_status">O botão de enviar indica o estado</string>
   <string name="pref_use_indicate_received">Solicitar recibo de mensagem</string>
   <string name="pref_use_indicate_received_summary">Mensagens recebidas serão marcadas com um visto verde se suportado</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Colorir o botão de enviar para indicar o estado do contacto</string>
@@ -291,7 +291,7 @@
   <string name="regenerate_omemo_key">Regenerar a chave OMEMO</string>
   <string name="clear_other_devices">Apagar dispositivos</string>
   <string name="clear_other_devices_desc">Tem a certeza que quer apagar todos os outros dispositivos do anúncio OMEMO? A próxima vez que os seus dispositivos se conectem, irão ser eles mesmos a fazerem o anúncio novamente, mas podem não receber as mensagems enviadas entretanto.</string>
-    <string name="fetching_history_from_server">Obtendo o histórico do servidor</string>
+  <string name="fetching_history_from_server">Obtendo o histórico do servidor</string>
   <string name="no_more_history_on_server">Não existe mais histórico no servidor</string>
   <string name="updating">A atualizar...</string>
   <string name="password_changed">Palavra-passe alterada!</string>
@@ -336,7 +336,6 @@
   <string name="pdf_document">Documento PDF</string>
   <string name="apk">Aplicação Android</string>
   <string name="vcard">Contacto</string>
-  <string name="received_x_file">Recebeu %s</string>
   <string name="touch_to_open_conversations">Toque para abrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">O avatar foi publicado!</string>
   <string name="sending_x_file">Enviando %s</string>
@@ -347,7 +346,6 @@
   <string name="show_location">Exibir localização</string>
   <string name="no_application_found_to_display_location">Não foi encontrada nenhuma aplicação para mostrar a localização</string>
   <string name="location">Localização</string>
-  <string name="received_location">Localização recebida</string>
   <string name="pref_dont_trust_system_cas_title">Não confiar nas CAs do sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos os certificados têm que ser aprovados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Remover certificados</string>
@@ -369,7 +367,6 @@
   <string name="none">Nenhum</string>
   <string name="recently_used">Usados mais recentemente</string>
   <string name="choose_quick_action">Escolher ação rápida</string>
-  <string name="search_for_contacts_or_groups">Procurar contactos ou grupos</string>
   <string name="send_private_message">Enviar mensagem privada</string>
   <string name="username">Nome de utilizador</string>
   <string name="username_hint">Nome de utilizador</string>
