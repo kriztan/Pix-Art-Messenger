@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Bitirme zamanı</string>
   <string name="title_pref_enable_quiet_hours">Sessiz saatleri etkinleştirin</string>
   <string name="pref_quiet_hours_summary">Bildirimler sessiz saatlerde susturulacak</string>
-    <string name="pref_use_send_button_to_indicate_status">Gönder butonu durumu gösterir</string>
+  <string name="pref_use_send_button_to_indicate_status">Gönder butonu durumu gösterir</string>
   <string name="pref_use_colored_names_to_indicate_status">Renkli isimler durumu gösterir</string>
   <string name="pref_use_indicate_received">İleti okundu bilgilerini iste</string>
   <string name="pref_use_indicate_received_summary">Alınan mesajlar destekleniyorsa, yeşil bir işaret ile işaretlenecektir</string>
@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Şüpheli cihaz</string>
   <string name="distrust_omemo_key_text">Bu cihaz için doğrulamayı kaldırmak istediğinizden emin misiniz?\nBu cihaz ve bu cihazdan gelen mesajlar güvenilmez olarak işaretlenecek.</string>
   <string name="error_no_keys_to_trust_server_error">Bu bağlantıda kullanılabilen kullanılabilir bir anahtar yok.\nSunucudan yeni anahtarlar getirme başarısız oldu. Belki rehber sunucunuzda bir sorun var.</string>
-    <string name="fetching_history_from_server">Geçmişi sunucudan geri getir</string>
+  <string name="fetching_history_from_server">Geçmişi sunucudan geri getir</string>
   <string name="no_more_history_on_server">Sunucuda daha fazla geçmiş yok</string>
   <string name="updating">Güncelleniyor…</string>
   <string name="password_changed">Şifre değiştirildi!</string>
@@ -400,7 +400,6 @@
   <string name="pdf_document">PDF belgesi</string>
   <string name="apk">Android Uygulaması</string>
   <string name="vcard">Bağlantı</string>
-  <string name="received_x_file">Alındı %s</string>
   <string name="touch_to_open_conversations">Pix-Art Messenger\'ı açmak için dokunun</string>
   <string name="avatar_has_been_published">Avatar yayınlandı!</string>
   <string name="sending_x_file">Gönderiliyor %s</string>
@@ -413,7 +412,6 @@
   <string name="show_location">Konumu göster</string>
   <string name="no_application_found_to_display_location">Konum gösterecek hiç bir uygulama bulunamadı</string>
   <string name="location">Konum</string>
-  <string name="received_location">Alınan konum</string>
   <string name="pref_dont_trust_system_cas_title">Sistem CAs\'larına güvenme</string>
   <string name="pref_dont_trust_system_cas_summary">Tüm sertifikalar manuel onaylanmalıdır</string>
   <string name="pref_remove_trusted_certificates_title">Sertifikaları kaldır</string>
@@ -435,7 +433,6 @@
   <string name="none">Yok</string>
   <string name="recently_used">En son kullanılanlar</string>
   <string name="choose_quick_action">Hızlı işlemi seçin</string>
-  <string name="search_for_contacts_or_groups">Kişileri veya gruplar için arama</string>
   <string name="send_private_message">Özel mesaj gönder</string>
   <string name="username">Kullanıcı Adı</string>
   <string name="username_hint">Kullanıcı Adı</string>
@@ -444,7 +441,7 @@
   <string name="download_failed_file_not_found">İndirileme başarısız oldu:: Dosya bulunamadı</string>
   <string name="download_failed_could_not_connect">İndirme başarısız: Ana bilgisayara bağlanılamadı</string>
   <string name="download_failed_could_not_write_file">İndirme başarısız: Dosya yazılamadı</string>
-    <string name="action_check_update">Güncellemeleri kontrol et</string>
+  <string name="action_check_update">Güncellemeleri kontrol et</string>
   <string name="title_activity_updater">Servisi güncelle</string>
   <string name="update_available">Sürüm% 1 $ s mevcut. \ N \ nFilesize:% 2 $ s \ n \ n% 1 $ s sürümüne şimdi mi güncelleştiniz?</string>
   <string name="remind_later">sonra</string>
@@ -605,7 +602,6 @@
   <string name="device_does_not_support_data_saver">Cihazınız Pix-Art messenger\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
   <string name="navigate">Konuma gidin</string>
   <string name="add_to_contact_list">Bağlantı listesine ekle</string>
-  <string name="received_contact">Bağlantı kabul edildi</string>
   <string name="contact">Bağlantı</string>
   <string name="unable_to_start_recording">Kayıt başlatılamıyor</string>
   <string name="error_unable_to_create_temporary_file">Geçici dosya oluşturulamadı</string>
