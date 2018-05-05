@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Ende</string>
   <string name="title_pref_enable_quiet_hours">Ruhige Stunden aktivieren</string>
   <string name="pref_quiet_hours_summary">Benachrichtigungen sind während der ruhigen Stunden stumm.</string>
-    <string name="pref_use_send_button_to_indicate_status">Senden-Schaltfläche zeigt Online-Status an</string>
+  <string name="pref_use_send_button_to_indicate_status">Senden-Schaltfläche zeigt Online-Status an</string>
   <string name="pref_use_colored_names_to_indicate_status">Kontaktnamen-Farbe zeigt Online-Status an</string>
   <string name="pref_use_indicate_received">Empfangsbestätigungen anfragen</string>
   <string name="pref_use_indicate_received_summary">Empfangene Nachrichten werden mit einem grünen Häkchen markiert. Bitte beachte, dass dies nicht in allen Fällen funktioniert.</string>
@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Gerät misstrauen</string>
   <string name="distrust_omemo_key_text">Bist du sicher, dass du die Verifizierung dieses Gerätes misstrauen möchtest? Dieses Gerät und Nachrichten von dem Gerät werden als unverifiziert markiert.</string>
   <string name="error_no_keys_to_trust_server_error">Für diesen Kontakt sind keine benutzbaren Fingerabdrücke verfügbar.\nNeuen Fingerabdruck vom Server herunterzuladen war nicht erfolgreich. Vielleicht stimmt etwas mit dem Server deines Kontakts nicht.</string>
-    <string name="error_trustkeys_title">Es ist leider ein Fehler aufgetreten.</string>
+  <string name="error_trustkeys_title">Es ist ein Fehler aufgetreten</string>
   <string name="fetching_history_from_server">Lade Chatverlauf…</string>
   <string name="no_more_history_on_server">Keine weiteren Nachrichten vorhanden</string>
   <string name="updating">Aktualisieren…</string>
@@ -401,7 +401,6 @@
   <string name="pdf_document">PDF-Dokument</string>
   <string name="apk">Android App</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">%s empfangen</string>
   <string name="touch_to_open_conversations">Antippen, um Pix-Art Messenger zu öffnen</string>
   <string name="avatar_has_been_published">Profilbild wurde gespeichert</string>
   <string name="sending_x_file">%s wird gesendet</string>
@@ -414,7 +413,6 @@
   <string name="show_location">Standort anzeigen</string>
   <string name="no_application_found_to_display_location">Keine App für die Standort-Anzeige gefunden</string>
   <string name="location">Standort</string>
-  <string name="received_location">Standort empfangen</string>
   <string name="pref_dont_trust_system_cas_title">Zertifizierungsstellen misstrauen</string>
   <string name="pref_dont_trust_system_cas_summary">Alle Zertifikate müssen manuell bestätigt werden</string>
   <string name="pref_remove_trusted_certificates_title">Zertifikate löschen</string>
@@ -435,8 +433,9 @@
   <string name="pref_quick_action">Schnell-Tasten</string>
   <string name="none">keine</string>
   <string name="recently_used">zuletzt verwendet</string>
+  <string name="search_contacts">Kontakte suchen</string>
+  <string name="search_groups">Gruppenchats suchen</string>
   <string name="choose_quick_action">Schnell-Taste auswähle</string>
-  <string name="search_for_contacts_or_groups">Nach Kontakten oder Konferenzen suchen</string>
   <string name="send_private_message">Private Nachricht senden</string>
   <string name="user_has_left_conference">%1$s hat den Gruppenchat verlassen!</string>
   <string name="username">Benutzername</string>
@@ -446,7 +445,7 @@
   <string name="download_failed_file_not_found">Download fehlgeschlagen: Datei nicht gefunden</string>
   <string name="download_failed_could_not_connect">Download fehlgeschlagen: keine Verbindung zum Host</string>
   <string name="download_failed_could_not_write_file">Download fehlgeschlagen: Datei kann nicht gespeichert werden</string>
-    <string name="action_check_update">Auf Updates prüfen</string>
+  <string name="action_check_update">Auf Updates prüfen</string>
   <string name="title_activity_updater">Update Dienst</string>
   <string name="update_available">Version %1$s ist verfügbar.\n\nDateigröße: %2$s\n\nJetzt auf Version %1$s aktualisieren?</string>
   <string name="remind_later">später</string>
@@ -530,7 +529,7 @@
   <string name="no_keys_just_confirm">Du vertraust diesem Kontakt bereits. Durch Auswählen von Fertig bestätigst du, dass %s Teil dieses Gruppenchats ist.</string>
   <string name="select_image_and_crop">Bild auswählen und zuschneiden</string>
   <string name="contacts_have_no_pgp_keys">Pix-Art Messenger ist nicht in der Lage, deine Nachrichten zu verschlüsseln, weil deine Kontakte ihren öffentlichen Schlüssel nicht preisgeben.\n\n<small>Bitte sage deinen Kontakten, sie mögen OpenPGP einrichten.</small></string>
-  <string name="this_account_is_disabled">Du hast diesen Account deaktiviert</string>
+  <string name="this_account_is_disabled">Du hast dieses Profil deaktiviert</string>
   <string name="security_error_invalid_file_access">Sicherheitsfehler: Dateizugriff nicht erlaubt</string>
   <string name="no_application_to_share_uri">Keine Anwendung zum Teilen der URI gefunden</string>
   <string name="share_uri_with">Teile URI mit…</string>
@@ -564,6 +563,7 @@
   <string name="conference_subject">Titel</string>
   <string name="choose_participants">Mitglieder auswählen</string>
   <string name="creating_conference">Gruppenchat wird erstellt…</string>
+  <string name="import_text">Es wurde ein Backup gefunden, welches importiert werden kann.\nDein Messenger startet während des Importvorgangs neu. Soll das Backup importiert werden?</string>
   <string name="import_database">Backup importieren</string>
   <string name="invite_again">Erneut einladen</string>
   <string name="inviteUser_Subject">hat dich eingeladen über</string>
@@ -610,7 +610,6 @@
   <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
   <string name="navigate">Zum Standort navigieren</string>
   <string name="add_to_contact_list">Zur Kontaktliste hinzufügen</string>
-  <string name="received_contact">Kontakt empfangen</string>
   <string name="contact">Kontakt</string>
   <string name="unable_to_start_recording">Aufnahme kann nicht gestartet werden</string>
   <string name="error_unable_to_create_temporary_file">Temporäre Datei kann nicht erstellt werden</string>
@@ -690,7 +689,7 @@
   <string name="last_seen_just_away">kürzlich</string>
   <string name="send_message">Nachricht senden</string>
   <string name="send_failed_resend">Zustellung fehlgeschlagen, sende erneut…</string>
-  <string name="pref_show_connection_options_summary">Hostname- und Port-Optionen bei Kontoeinrichtung anzeigen</string>
+  <string name="pref_show_connection_options_summary">Hostname- und Port-Optionen bei Profileinrichtung anzeigen</string>
   <string name="pref_show_connection_options">Erweiterte Verbindungsoptionen</string>
   <string name="retry_decryption">Entschlüsseln wiederholen</string>
   <string name="session_failure">Sitzungsfehler</string>
@@ -753,7 +752,7 @@
   <string name="no_camera_permission">Pix-Art Messenger benötigt Zugriff auf die Kamera</string>
   <string name="edit_status_message_title">Statusnachricht bearbeiten</string>
   <string name="edit_status_message">Statusnachricht bearbeiten</string>
-    <string name="pref_automatically_delete_messages_description">Nachrichten von diesem Gerät nach dem eingestellten Zeitfenster automatisch löschen.</string>
+  <string name="pref_automatically_delete_messages_description">Nachrichten von diesem Gerät nach dem eingestellten Zeitfenster automatisch löschen.</string>
   <string name="pref_automatically_delete_messages">Nachrichten automatisch löschen</string>
   <string name="disable_encryption">Verschlüsselung deaktivieren</string>
   <string name="error_trustkey_general">Pix-Art Messenger ist nicht in der Lage verschlüsselte Nachrichten an  %1$s zu senden. Dies kann daran liegen, dass dein Kontakt einen veralteten Server oder Client verwendet, der die OMEMO -Verschlüsselung nicht unterstützt.</string>
@@ -763,4 +762,30 @@
   <string name="disable_encryption_message">Bist du sicher, dass du die OMEMO-Verschlüsselung für diesen Chat deaktivieren möchtest?\nDies wird es deinem Serveradministrator ermöglichen, deine Nachrichten zu lesen, aber es könnte die einzige Möglichkeit sein, mit Personen zu kommunizieren, die veraltete Clients verwenden.</string>
   <string name="disable_now">Jetzt deaktivieren</string>
   <string name="draft">Entwurf:</string>
+  <string name="pref_omemo_setting">OMEMO Verschlüsselung</string>
+  <string name="pref_omemo_setting_summary_always">OMEMO Verschlüsselung wird immer für Einzelchats und private Gruppenchats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_on">OMEMO Verschlüsselung wird standardmäßig für alle neuen Chats verwendet.</string>
+  <string name="pref_omemo_setting_summary_default_off">OMEMO Verschlüsselung muss manuell für neue Chats aktiviert werden.</string>
+  <string name="default_on">Standarmäßig aktiviert</string>
+  <string name="default_off">Standardmäßig deaktiviert</string>
+  <string name="pref_theme_light">Helle Farben</string>
+  <string name="pref_theme_dark">Dunkle Farben</string>
+  <string name="pref_theme_options_summary">Wähle das Farbschema</string>
+  <string name="pref_theme_options">Design</string>
+  <string name="chooce_account">Profil wählen</string>
+  <string name="pref_font_size">Schriftgröße</string>
+  <string name="pref_font_size_summary">Die verwendete relative Schriftgröße innerhalb der App.</string>
+  <string name="small">Klein</string>
+  <string name="medium">Mittel</string>
+  <string name="large">Groß</string>
+  <string name="create_shortcut">Verknüpfung erstellen</string>
+  <string name="not_encrypted_for_this_device">Die Nachricht wurde für dieses Gerät nicht verschlüsselt.</string>
+  <string name="no_microphone_permission">Pix-Art Messenger benötigt Zugriff auf das Mikrofon</string>
+  <string name="search_messages">Nachrichten suchen</string>
+  <string name="gif">GIF</string>
+  <string name="view_conversation">Unterhaltung öffnen</string>
+  <string name="web_address">Webadresse</string>
+  <string name="jabber_id_copied_to_clipboard">JID in die Zwischenablage kopiert</string>
+  <string name="copy_jabber_id">JID kopieren</string>
+  <string name="copy_link">Webadresse kopieren</string>
 </resources>
