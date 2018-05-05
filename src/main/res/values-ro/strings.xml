@@ -261,7 +261,7 @@
   <string name="title_pref_quiet_hours_end_time">Ora de terminare</string>
   <string name="title_pref_enable_quiet_hours">Activează orar de liniște</string>
   <string name="pref_quiet_hours_summary">Notificările vor fi reduse la tăcere în timpul orelor de liniște</string>
-    <string name="pref_use_send_button_to_indicate_status">Butonul de trimitere indică starea</string>
+  <string name="pref_use_send_button_to_indicate_status">Butonul de trimitere indică starea</string>
   <string name="pref_use_indicate_received">Cere raport de primire</string>
   <string name="pref_use_indicate_received_summary">Mesajele primite vor fi marcate cu o bifa verde, dacă este suportat</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Colorează butonul de trimitere pentru a indica starea contactului</string>
@@ -334,7 +334,7 @@
   <string name="distrust_omemo_key">Pierde încrederea în acest dispozitiv</string>
   <string name="distrust_omemo_key_text">Sigur doriți să ștergeți datele de verificare pentru acest dispozitiv?\nAcest dispozitiv precum și mesajele venind de la el vor fi marcate ca ne fiind de încredere.</string>
   <string name="error_no_keys_to_trust_server_error">Nu există chei utilizabile pentru acest contact.\nÎncercarea de a descărca chei noi de pe server a eșuat. Se poate ca serverul contactului dumneavoastră să aibă o problemă.</string>
-    <string name="fetching_history_from_server">Descarc istoric de pe server</string>
+  <string name="fetching_history_from_server">Descarc istoric de pe server</string>
   <string name="no_more_history_on_server">Nu mai exista istoric pe server</string>
   <string name="updating">Actualizare...</string>
   <string name="password_changed">Parolă schimbată</string>
@@ -388,7 +388,6 @@
   <string name="pdf_document">document PDF</string>
   <string name="apk">Aplicație Android</string>
   <string name="vcard">Contact</string>
-  <string name="received_x_file">Primit %s</string>
   <string name="touch_to_open_conversations">Atingeți pentru a deschide Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatarul a fost publicat!</string>
   <string name="sending_x_file">Trimit %s</string>
@@ -401,7 +400,6 @@
   <string name="show_location">Arată locația</string>
   <string name="no_application_found_to_display_location">Nu s-a găsit nici o aplicație care să afișeze locația</string>
   <string name="location">Locatie</string>
-  <string name="received_location">Locație primită</string>
   <string name="pref_dont_trust_system_cas_title">Nu ai încredere în CA din sistem</string>
   <string name="pref_dont_trust_system_cas_summary">Toate certificatele trebuie aprobate manual</string>
   <string name="pref_remove_trusted_certificates_title">Înlătură certificatele</string>
@@ -425,7 +423,6 @@
   <string name="none">Nimic</string>
   <string name="recently_used">Folosit recent</string>
   <string name="choose_quick_action">Alege actiunea rapida</string>
-  <string name="search_for_contacts_or_groups">Caută contacte sau grupuri</string>
   <string name="send_private_message">trimite mesaj privat</string>
   <string name="username">Nume utilizator</string>
   <string name="username_hint">Nume utilizator</string>
