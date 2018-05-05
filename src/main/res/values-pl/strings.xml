@@ -247,7 +247,7 @@
   <string name="title_pref_quiet_hours_end_time">Koniec</string>
   <string name="title_pref_enable_quiet_hours">Włącz godziny ciszy</string>
   <string name="pref_quiet_hours_summary">Powiadomienia będą wyciszone w wybranym przedziale czasu</string>
-    <string name="pref_use_send_button_to_indicate_status">Przycisk wysyłania wskazuje status</string>
+  <string name="pref_use_send_button_to_indicate_status">Przycisk wysyłania wskazuje status</string>
   <string name="pref_use_indicate_received">Raporty dostarczenia</string>
   <string name="pref_use_indicate_received_summary">Jeżeli to możliwe, oznaczaj dostarczone wiadomości zielonym haczykiem</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Koloruj przycisk wysyłania w zależności od statusu kontaktu</string>
@@ -312,7 +312,7 @@
   <string name="distrust_omemo_key">Przestań ufać urządzeniu</string>
   <string name="distrust_omemo_key_text">Czy jesteś pewien, że chcesz cofnąć weryfikację tego urządzenia?\nUrządzenie to, i wiadomości z niego przychodzące będą oznaczane jako niezaufane.</string>
   <string name="error_no_keys_to_trust_server_error">Nie ma dostępnych kluczy dla tego kontaktu.\nPobieranie nowych kluczy z serwera nie powiodło się. Być może jest coś nie tak z serwerem kontaktu?</string>
-    <string name="fetching_history_from_server">Pobieranie historii z serwera</string>
+  <string name="fetching_history_from_server">Pobieranie historii z serwera</string>
   <string name="no_more_history_on_server">Koniec historii na serwerze</string>
   <string name="updating">Aktualizowanie...</string>
   <string name="password_changed">Hasło zostało zmienione!</string>
@@ -358,7 +358,6 @@
   <string name="pdf_document">Dokument PDF</string>
   <string name="apk">Aplikacja Androida</string>
   <string name="vcard">Kontakt</string>
-  <string name="received_x_file">Odebrano %s</string>
   <string name="touch_to_open_conversations">Dotknij, aby otworzyć Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar został pomyślnie opublikowany!</string>
   <string name="sending_x_file">Wysyłanie %s</string>
@@ -370,7 +369,6 @@
   <string name="show_location">Pokaż lokalizację</string>
   <string name="no_application_found_to_display_location">Nie odnaleziono aplikacji do wyświetlenia lokalizacji</string>
   <string name="location">Lokalizacja</string>
-  <string name="received_location">Otrzymano lokalizację</string>
   <string name="pref_dont_trust_system_cas_title">Nie ufaj certyfikatom systemowym</string>
   <string name="pref_dont_trust_system_cas_summary">Wymagaj ręcznego potwierdzania certyfikatów</string>
   <string name="pref_remove_trusted_certificates_title">Usuń certyfikat</string>
@@ -384,7 +382,6 @@
   <string name="none">Brak</string>
   <string name="recently_used">Ostatnio używana</string>
   <string name="choose_quick_action">Wybierz szybką akcję</string>
-  <string name="search_for_contacts_or_groups">Szukaj kontaktów i grup</string>
   <string name="send_private_message">Wyślij wiadomość prywatną</string>
   <string name="username">Nazwa użytkownika</string>
   <string name="username_hint">Nazwa użytkownika</string>
