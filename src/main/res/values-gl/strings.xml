@@ -257,7 +257,7 @@
   <string name="title_pref_quiet_hours_end_time">Hora de finalización</string>
   <string name="title_pref_enable_quiet_hours">Establecer horario sen notificacións</string>
   <string name="pref_quiet_hours_summary">As notificacións serán silenciadas durante estas horas</string>
-    <string name="pref_use_send_button_to_indicate_status">O botón Enviar indica o estado</string>
+  <string name="pref_use_send_button_to_indicate_status">O botón Enviar indica o estado</string>
   <string name="pref_use_indicate_received">Solicitar avisos de recepción</string>
   <string name="pref_use_indicate_received_summary">As mensaxes recibidas marcaránse cun sinal verde si este está admitido</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Boton de enviar de cor para indicar o estado do contacto</string>
@@ -329,7 +329,7 @@
   <string name="distrust_omemo_key">Retirar confianza a dispositivo</string>
   <string name="distrust_omemo_key_text">Está segura de que quere retirar a verificación de este dispositivo?\nEste dispositivo e as mensaxes que del proveñan serán marcadas como non confiables.</string>
   <string name="error_no_keys_to_trust_server_error">Non hai chaves dispoñibles que se poidan usar con este contacto.\nNon se puideron obter novas chaves do servidor. Quizáis hai algún problema coas chaves do seu contacto.</string>
-    <string name="fetching_history_from_server">Obtendo historial desde o servidor</string>
+  <string name="fetching_history_from_server">Obtendo historial desde o servidor</string>
   <string name="no_more_history_on_server">Non hai máis historial no servidor</string>
   <string name="updating">Actualizando....</string>
   <string name="password_changed">Mudou o contrasinal!</string>
@@ -383,7 +383,6 @@
   <string name="pdf_document">documento PDF</string>
   <string name="apk">App Android</string>
   <string name="vcard">Contacto</string>
-  <string name="received_x_file">Recibido %s</string>
   <string name="touch_to_open_conversations">Toque para abrir Conversations</string>
   <string name="avatar_has_been_published">Publicouse o avatar</string>
   <string name="sending_x_file">Enviando %s</string>
@@ -395,7 +394,6 @@
   <string name="show_location">Mostrar localización</string>
   <string name="no_application_found_to_display_location">Non se atopou un aplicativo para mostrar a localización</string>
   <string name="location">Localización</string>
-  <string name="received_location">Localización recibida</string>
   <string name="pref_dont_trust_system_cas_title">Non confiar nas CAs do sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos os certificados deberán ser aprovados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
@@ -417,7 +415,6 @@
   <string name="none">Ningunha</string>
   <string name="recently_used">Utilizadas recentemente</string>
   <string name="choose_quick_action">Escolla a acción rápida</string>
-  <string name="search_for_contacts_or_groups">Buscar contactos e grupos</string>
   <string name="send_private_message">Enviar mensaxe privada</string>
   <string name="username">Identificador</string>
   <string name="username_hint">Nome de usuaria</string>
