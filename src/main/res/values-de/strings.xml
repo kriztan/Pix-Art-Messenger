@@ -783,4 +783,8 @@
   <string name="search_messages">Nachrichten suchen</string>
   <string name="gif">GIF</string>
   <string name="view_conversation">Unterhaltung öffnen</string>
+  <string name="web_address">Webadresse</string>
+  <string name="jabber_id_copied_to_clipboard">JID in die Zwischenablage kopiert</string>
+  <string name="copy_jabber_id">JID kopieren</string>
+  <string name="copy_link">Webadresse kopieren</string>
 </resources>
