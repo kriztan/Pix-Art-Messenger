@@ -10,7 +10,7 @@
   <string name="action_add_account">Añadir cuenta</string>
   <string name="action_edit_contact">Editar contacto</string>
   <string name="action_add_phone_book">Añadir a contactos</string>
-  <string name="action_delete_contact">Eliminar contacto de la lista</string>
+  <string name="action_delete_contact">Eliminar de la lista de contactos</string>
   <string name="action_block_contact">Bloquear contacto</string>
   <string name="action_unblock_contact">Desbloquear contacto</string>
   <string name="action_block_domain">Bloquear dominio</string>
@@ -186,13 +186,13 @@
   <string name="server_info_available">Sí</string>
   <string name="server_info_unavailable">No</string>
   <string name="missing_public_keys">Se han perdido las claves de anuncio públicas</string>
-  <string name="last_seen_now">Visto última vez ahora</string>
-  <string name="last_seen_min">Visto última vez hace 1 minuto</string>
-  <string name="last_seen_mins">Visto última vez hace %d minutos</string>
-  <string name="last_seen_hour">Visto última vez hace 1 hora</string>
-  <string name="last_seen_hours">Visto última vez hace %d horas</string>
-  <string name="last_seen_day">Visto última vez hace 1 día</string>
-  <string name="last_seen_days">Visto última vez hace %d días</string>
+  <string name="last_seen_now">en línea</string>
+  <string name="last_seen_min">hace 1 minuto</string>
+  <string name="last_seen_mins">hace %d minutos</string>
+  <string name="last_seen_hour">hace 1 hora</string>
+  <string name="last_seen_hours">hace %d horas</string>
+  <string name="last_seen_day">hace 1 día</string>
+  <string name="last_seen_days">hace %d días</string>
   <string name="install_openkeychain">Mensaje cifrado. Por favor instala OpenKeychain para descifrar.</string>
   <string name="unknown_otr_fingerprint">Huella digital OTR desconocida</string>
   <string name="openpgp_messages_found">Encontrado mensaje cifrado con OpenPGP</string>
@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Hora de fin</string>
   <string name="title_pref_enable_quiet_hours">Habilitar horario de silencio</string>
   <string name="pref_quiet_hours_summary">Las notificaciones serán silenciadas durante el horario de silencio</string>
-    <string name="pref_use_send_button_to_indicate_status">Botón enviar indica estado</string>
+  <string name="pref_use_send_button_to_indicate_status">Botón enviar indica estado</string>
   <string name="pref_use_colored_names_to_indicate_status">Los nombres coloreados indican el estado</string>
   <string name="pref_use_indicate_received">Solicitar entrega de mensaje</string>
   <string name="pref_use_indicate_received_summary">Cuando el contacto reciba el mensaje será indicado con una marca verde. Cuidado, esto podría no funcionar en todos los casos.</string>
@@ -346,7 +346,8 @@
   <string name="distrust_omemo_key">Desconfiar de este dispositivo</string>
   <string name="distrust_omemo_key_text">¿Estás seguro que quieres eliminar la verificación de este dispositivo?\nEste dispositivo y los mensajes que lleguen desde allí serán marcados como no confiables.</string>
   <string name="error_no_keys_to_trust_server_error">No hay claves disponibles para este contacto. La búsqueda de nuevas claves al servidor ha fallado. Puede que exista un problema con el servidor de tu contacto.</string>
-    <string name="fetching_history_from_server">Buscando historial en el servidor</string>
+  <string name="error_trustkeys_title">Algo salió mal</string>
+  <string name="fetching_history_from_server">Buscando historial en el servidor</string>
   <string name="no_more_history_on_server">No hay más historial en el servidor</string>
   <string name="updating">Actualizando…</string>
   <string name="password_changed">¡Contraseña cambiada!</string>
@@ -400,7 +401,6 @@
   <string name="pdf_document">documento PDF</string>
   <string name="apk">Aplicación de Android</string>
   <string name="vcard">Contacto</string>
-  <string name="received_x_file">Recibido %s</string>
   <string name="touch_to_open_conversations">Pulsa para abrir Pix-Art Messenger</string>
   <string name="avatar_has_been_published">¡La imagen de perfil ha sido publicada!</string>
   <string name="sending_x_file">Enviando %s</string>
@@ -413,7 +413,6 @@
   <string name="show_location">Mostrar ubicación</string>
   <string name="no_application_found_to_display_location">No se ha encontrado ninguna aplicación para mostrar la ubicación</string>
   <string name="location">Ubicación</string>
-  <string name="received_location">Ubicación recibida</string>
   <string name="pref_dont_trust_system_cas_title">No confiar en los CAs del sistema</string>
   <string name="pref_dont_trust_system_cas_summary">Todos los certificados deben ser aprobados manualmente</string>
   <string name="pref_remove_trusted_certificates_title">Eliminar certificados</string>
@@ -435,8 +434,8 @@
   <string name="none">Ninguna</string>
   <string name="recently_used">Usada más recientemente</string>
   <string name="choose_quick_action">Elegir acción rápida</string>
-  <string name="search_for_contacts_or_groups">Buscar contactos o grupos</string>
   <string name="send_private_message">Enviar mensaje privado</string>
+  <string name="user_has_left_conference">¡%1$s ha dejado el grupo!</string>
   <string name="username">Usuario</string>
   <string name="username_hint">Usuario</string>
   <string name="invalid_username">Esto no es un usuario válido</string>
@@ -444,7 +443,7 @@
   <string name="download_failed_file_not_found">Error al descargar: Archivo no encontrado</string>
   <string name="download_failed_could_not_connect">Error al descargar: No se ha podido conectar con el servidor</string>
   <string name="download_failed_could_not_write_file">Falló la descarga: No se puede escribir el fichero</string>
-    <string name="action_check_update">Comprobar actualizaciones</string>
+  <string name="action_check_update">Comprobar actualizaciones</string>
   <string name="title_activity_updater">Servicio de actualización</string>
   <string name="update_available">Versión %1$s está disponible.\n\nTamaño archivo: %2$s\n\nActualización a la versión %1$s ahora?</string>
   <string name="remind_later">después</string>
@@ -455,6 +454,7 @@
   <string name="account_status_bind_failure">Fallo de enlace</string>
   <string name="account_status_host_unknown">El servidor no es responsable del dominio</string>
   <string name="server_info_broken">Error</string>
+  <string name="pref_presence_settings">Disponibilidad</string>
   <string name="pref_away_when_screen_off">Ausente con pantalla apagada</string>
   <string name="pref_away_when_screen_off_summary">Cambia tu estado a ausente cuando la pantalla está apagada</string>
   <string name="pref_dnd_on_silent_mode">\"No molestar\" en modo silencio</string>
@@ -538,6 +538,8 @@
   <string name="create_account">Crear cuenta</string>
   <string name="use_existing_accout">Conectase con una cuenta ya existente</string>
   <string name="pick_your_username">Selecciona tu nombre de usuario</string>
+  <string name="pref_manually_change_presence">Cambiar disponibilidad manualmente</string>
+  <string name="pref_manually_change_presence_summary">Establezca su disponibilidad cuando edite su mensaje de estado.</string>
   <string name="status_message">Mensaje de estado</string>
   <string name="presence_chat">Libre para hablar</string>
   <string name="presence_online">Disponible</string>
@@ -559,6 +561,7 @@
   <string name="conference_subject">Asunto</string>
   <string name="choose_participants">Elige a los participantes</string>
   <string name="creating_conference">Crear chat de grupo…</string>
+  <string name="import_text">Hay una copia de seguridad en tu dispositivo que se puede importar.\nTu aplicación se reiniciará durante el proceso. ¿Quieres importar la copia de seguridad?</string>
   <string name="import_database">Importar copia de seguridad</string>
   <string name="invite_again">Invitar de nuevo</string>
   <string name="inviteUser_Subject">te ha invitado a través de</string>
@@ -605,7 +608,6 @@
   <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
   <string name="navigate">Navegar hasta la ubicación</string>
   <string name="add_to_contact_list">Añadir a contactos</string>
-  <string name="received_contact">Recibir contacto</string>
   <string name="contact">Contacto</string>
   <string name="unable_to_start_recording">No se puede iniciar la grabación</string>
   <string name="error_unable_to_create_temporary_file">No se ha podido crear el fichero temporal</string>
@@ -628,10 +630,36 @@
   <string name="i_followed_this_link_from_a_trusted_source">Enlace desde una fuente de confianza</string>
   <string name="verifying_omemo_keys_trusted_source">Vas a verificar las claves OMEMO de %1$s después de hacer click en el enlace. Esto solo es seguro si conseguiste este enlace desde una fuente de confianza donde solo %2$s pudo haber publicado el enlace</string>
   <string name="verify_omemo_keys">Verificar claves OMEMO</string>
+  <string name="show_inactive_devices">Mostrar desconectados</string>
+  <string name="hide_inactive_devices">Ocultar desconectados</string>
   <string name="reply">Responder</string>
   <string name="encrypting_message">Cifrando mensaje</string>
   <string name="transcoding_video">Comprimiendo video</string>
   <string name="not_fetching_history_retention_period">No buscar mensajes más antiguos que el establecido en el marco de tiempo.</string>
+  <plurals name="seconds">
+    <item quantity="one">%d segundo</item>
+    <item quantity="other">%d segundos</item>
+  </plurals>
+  <plurals name="minutes">
+    <item quantity="one">%d minuto</item>
+    <item quantity="other">%d minutos</item>
+  </plurals>
+  <plurals name="hours">
+    <item quantity="one">%d hora</item>
+    <item quantity="other">%d horas</item>
+  </plurals>
+  <plurals name="days">
+    <item quantity="one">%d día</item>
+    <item quantity="other">%d dias</item>
+  </plurals>
+  <plurals name="weeks">
+    <item quantity="one">%d semana</item>
+    <item quantity="other">%d semanas</item>
+  </plurals>
+  <plurals name="months">
+    <item quantity="one">%d mes</item>
+    <item quantity="other">%d meses</item>
+  </plurals>
   <string name="today">Hoy</string>
   <string name="pref_use_max_brightness_summary">Cambiar el brillo al máximo cuando esté viendo videos o imágenes en pantalla completa.</string>
   <string name="pref_use_max_brightness">Brillo al máximo</string>
@@ -703,7 +731,43 @@
   <string name="destroy_muc_text">¿Quieres eliminar el grupo %s? Esto eliminará este grupo de chat permanentemente.</string>
   <string name="destroy_muc_succeed">El chat de grupo se ha eliminado correctamente</string>
   <string name="destroy_muc_failed">El chat de grupo no se pudo eliminar</string>
+  <string name="no_write_access_in_public_muc">De momento no estás participando en este grupo y no puedes escribir en él\nPor favor, ve a los detalles del grupo presionando <b>OK</b> y envía un mensaje privado a un moderador, administrador o propietario haciendo un clic largo en el nombre de los miembros en la parte superior de la lista para solicitar acceso de escritura en el grupo.</string>
   <string name="snooze">Dormitar</string>
   <string name="huawei_protected_apps">Aplicaciones protegidas</string>
   <string name="huawei_protected_apps_summary">Para recibir notificaciones incluso cuando la pantalla está apagada, por favor añade Pix-Art Messenger a la lista de aplicaciones protegidas.</string>
+  <string name="pref_enable_multi_accounts_title">Habilitar múltiples cuentas</string>
+  <string name="pref_enable_multi_accounts_summary">Para utilizar varias cuentas debe establecer una contraseña para las copias de seguridad diarias.</string>
+  <string name="mtm_accept_cert">¿Aceptar certificado desconocido?</string>
+  <string name="mtm_trust_anchor">El certificado del servidor no está firmado por una Autoridad Certificadora conocida.</string>
+  <string name="mtm_accept_servername">¿Aceptar el nombre del servidor que no coincide?</string>
+  <string name="mtm_hostname_mismatch">El servidor no pudo autenticarse como \"%s\". El certificado es solo válido para:</string>
+  <string name="mtm_connect_anyway">¿Desea conectarse de todas formas?</string>
+  <string name="mtm_cert_details">Detalles del certificado:</string>
+  <string name="once">Una vez</string>
+  <string name="qr_code_scanner_needs_access_to_camera">El escáner de código QR necesita acceso a la cámara</string>
+  <string name="pref_scroll_to_bottom_summary">Desplazarse hasta abajo después de enviar un mensaje</string>
+  <string name="pref_scroll_to_bottom">Desplazarse hasta abajo</string>
+  <string name="no_camera_permission">Pix-Art Messenger necesita acceder a la cámara</string>
+  <string name="edit_status_message_title">Editar el mensaje de estado</string>
+  <string name="edit_status_message">Editar el mensaje de estado</string>
+  <string name="pref_automatically_delete_messages_description">Eliminar automáticamente los mensajes del dispositivo que sean anteriores al tiempo seleccionado.</string>
+  <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
+  <string name="disable_encryption">Desactivar cifrado</string>
+  <string name="error_trustkey_general">Pix-Art Messenger no puede enviar mensajes cifrados a %1$s. Esto puede ser debido a que tu contacto está usando un servidor o un cliente desactualizado que no puede manejar las claves OMEMO.</string>
+  <string name="error_trustkey_device_list">No se pudo obtener la lista de dispositivos</string>
+  <string name="error_trustkey_bundle">No se ha podido conseguir las claves del dispositivo</string>
+  <string name="error_trustkey_hint_mutual">Consejo: En algunas ocasiones esto se puede arreglar al agregarse cada uno a su lista de contactos.</string>
+  <string name="disable_encryption_message">¿Estás seguro de que quieres deshabilitar el cifrado OMEMO en esta conversación?\nEsto permitirá al administrador de tu servidor leer tus mensajes, aunque esta podría ser la única via de comunicación con personas que usen clientes desactualizados.</string>
+  <string name="disable_now">Deshabilitar ahora</string>
+  <string name="draft">Borrador:</string>
+  <string name="pref_omemo_setting">Cifrado OMEMO</string>
+  <string name="pref_omemo_setting_summary_always">OMEMO se usará siempre en conversaciones de uno a uno y en grupos privados.</string>
+  <string name="pref_omemo_setting_summary_default_on">OMEMO se usará por defecto en nuevas conversaciones.</string>
+  <string name="pref_omemo_setting_summary_default_off">OMEMO tendrá que ser activado explícitamente en nuevas conversaciones.</string>
+  <string name="default_on">Activo por defecto</string>
+  <string name="default_off">Desactivado por defecto</string>
+  <string name="pref_theme_light">Tema claro</string>
+  <string name="pref_theme_dark">Tema oscuro</string>
+  <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
+  <string name="pref_theme_options">Tema</string>
 </resources>
