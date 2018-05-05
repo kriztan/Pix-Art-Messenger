@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Gerät misstrauen</string>
   <string name="distrust_omemo_key_text">Bist du sicher, dass du die Verifizierung dieses Gerätes misstrauen möchtest? Dieses Gerät und Nachrichten von dem Gerät werden als unverifiziert markiert.</string>
   <string name="error_no_keys_to_trust_server_error">Für diesen Kontakt sind keine benutzbaren Fingerabdrücke verfügbar.\nNeuen Fingerabdruck vom Server herunterzuladen war nicht erfolgreich. Vielleicht stimmt etwas mit dem Server deines Kontakts nicht.</string>
-  <string name="error_trustkeys_title">Es ist leider ein Fehler aufgetreten.</string>
+  <string name="error_trustkeys_title">Es ist ein Fehler aufgetreten</string>
   <string name="fetching_history_from_server">Lade Chatverlauf…</string>
   <string name="no_more_history_on_server">Keine weiteren Nachrichten vorhanden</string>
   <string name="updating">Aktualisieren…</string>
@@ -780,6 +780,7 @@
   <string name="large">Groß</string>
   <string name="create_shortcut">Verknüpfung erstellen</string>
   <string name="not_encrypted_for_this_device">Die Nachricht wurde für dieses Gerät nicht verschlüsselt.</string>
+  <string name="no_microphone_permission">Pix-Art Messenger benötigt Zugriff auf das Mikrofon</string>
   <string name="search_messages">Nachrichten suchen</string>
   <string name="gif">GIF</string>
   <string name="view_conversation">Unterhaltung öffnen</string>
