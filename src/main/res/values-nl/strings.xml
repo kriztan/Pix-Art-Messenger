@@ -257,7 +257,7 @@
   <string name="title_pref_quiet_hours_end_time">Eindtijd</string>
   <string name="title_pref_enable_quiet_hours">Stille uren inschakelen</string>
   <string name="pref_quiet_hours_summary">Tijdens stille uren worden meldingen onderdrukt</string>
-    <string name="pref_use_send_button_to_indicate_status">Verstuur-knop toont status aan</string>
+  <string name="pref_use_send_button_to_indicate_status">Verstuur-knop toont status aan</string>
   <string name="pref_use_indicate_received">Vraag ontvangstbevestigingen</string>
   <string name="pref_use_indicate_received_summary">Indien ondersteund, worden ontvangen berichten met een groen vinkje aangeduid</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Kleur verstuur-knop in om status van contact weer te geven</string>
@@ -329,7 +329,7 @@
   <string name="distrust_omemo_key">Apparaat niet meer vertrouwen</string>
   <string name="distrust_omemo_key_text">Weet je zeker dat je de verificatie voor dit apparaat wil verwijderen?\nHet apparaat en alle berichten die het verstuurt zullen als niet-vertrouwd worden weergegeven.</string>
   <string name="error_no_keys_to_trust_server_error">Er zijn geen bruikbare sleutels beschikbaar voor dit contact.\nOphalen van nieuwe sleutels van de server is mislukt. Misschien is er iets mis met de server van je contact.</string>
-    <string name="fetching_history_from_server">Geschiedenis van server halen</string>
+  <string name="fetching_history_from_server">Geschiedenis van server halen</string>
   <string name="no_more_history_on_server">Geen verdere geschiedenis op server</string>
   <string name="updating">Bijwerken…</string>
   <string name="password_changed">Wachtwoord gewijzigd!</string>
@@ -383,7 +383,6 @@
   <string name="pdf_document">PDF-document</string>
   <string name="apk">Android-applicatie</string>
   <string name="vcard">Contact</string>
-  <string name="received_x_file">%s ontvangen</string>
   <string name="touch_to_open_conversations">Tik om Pix-Art Messenger te openen</string>
   <string name="avatar_has_been_published">Avatar is gepubliceerd!</string>
   <string name="sending_x_file">Bezig met versturen van %s</string>
@@ -395,7 +394,6 @@
   <string name="show_location">Locatie weergeven</string>
   <string name="no_application_found_to_display_location">Geen applicatie om locatie weer te geven</string>
   <string name="location">Locatie</string>
-  <string name="received_location">Locatie ontvangen</string>
   <string name="pref_dont_trust_system_cas_title">Systeem-CA\'s niet vertrouwen</string>
   <string name="pref_dont_trust_system_cas_summary">Alle certificaten moeten handmatig goedgekeurd worden</string>
   <string name="pref_remove_trusted_certificates_title">Certificaten verwijderen</string>
@@ -417,7 +415,6 @@
   <string name="none">Geen</string>
   <string name="recently_used">Recent gebruikt</string>
   <string name="choose_quick_action">Snelle actie kiezen</string>
-  <string name="search_for_contacts_or_groups">Zoeken naar contacten of groepen</string>
   <string name="send_private_message">Privébericht sturen</string>
   <string name="username">Gebruikersnaam</string>
   <string name="username_hint">Gebruikersnaam</string>
