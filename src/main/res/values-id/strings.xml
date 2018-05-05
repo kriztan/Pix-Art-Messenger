@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Waktu berakhir</string>
   <string name="title_pref_enable_quiet_hours">Aktifkan jam tenang</string>
   <string name="pref_quiet_hours_summary">Pemberitahuan akan didiamkan selama jam tenang</string>
-    <string name="pref_use_send_button_to_indicate_status">Tombol kirim menunjukkan status</string>
+  <string name="pref_use_send_button_to_indicate_status">Tombol kirim menunjukkan status</string>
   <string name="pref_use_colored_names_to_indicate_status">Warna nama menunjukkan status</string>
   <string name="pref_use_indicate_received">Meminta penerimaan pesan</string>
   <string name="pref_use_indicate_received_summary">Pesan yang diterima akan ditandai dengan centang hijau jika didukung</string>
@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Ketidakpercayaan perangkat</string>
   <string name="distrust_omemo_key_text">Yakin ingin menghapus verifikasi untuk perangkat ini?\nPerangkat dan pesan yang berasal dari perangkat tersebut akan ditandai sebagai tidak tepercaya.</string>
   <string name="error_no_keys_to_trust_server_error">Tidak ada kunci yang dapat digunakan untuk kontak ini.\nMengambil kunci baru dari server tidak berhasil. Mungkin ada yang salah dengan server kontak Anda.</string>
-    <string name="fetching_history_from_server">Mengambil riwayat dari server</string>
+  <string name="fetching_history_from_server">Mengambil riwayat dari server</string>
   <string name="no_more_history_on_server">Tidak ada lagi riwayat di server</string>
   <string name="updating">Memperbarui…</string>
   <string name="password_changed">Kata sandi berubah!</string>
@@ -400,7 +400,6 @@
   <string name="pdf_document">Dokumen PDF</string>
   <string name="apk">Aplikasi Android</string>
   <string name="vcard">Kontak</string>
-  <string name="received_x_file">Diterima %s</string>
   <string name="touch_to_open_conversations">Sentuh untuk buka Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Avatar telah diterbitkan!</string>
   <string name="sending_x_file">Mengirimkan %s</string>
@@ -413,7 +412,6 @@
   <string name="show_location">Tampilkan lokasi</string>
   <string name="no_application_found_to_display_location">Tidak ada aplikasi yang ditemukan untuk menampilkan lokasi</string>
   <string name="location">Lokasi</string>
-  <string name="received_location">Lokasi yang diterima</string>
   <string name="pref_dont_trust_system_cas_title">Jangan percaya sistem CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Semua sertifikat harus disetujui secara manual</string>
   <string name="pref_remove_trusted_certificates_title">Hapus sertifikat</string>
@@ -433,7 +431,6 @@
   <string name="none">Tidak ada</string>
   <string name="recently_used">Terakhir digunakan</string>
   <string name="choose_quick_action">Pilih aksi cepat</string>
-  <string name="search_for_contacts_or_groups">Cari dari kontak atau kelompok</string>
   <string name="send_private_message">Kirim pesan pribadi</string>
   <string name="username">Nama pengguna</string>
   <string name="username_hint">Nama pengguna</string>
@@ -442,7 +439,7 @@
   <string name="download_failed_file_not_found">Unduh gagal: berkas tidak ditemukan</string>
   <string name="download_failed_could_not_connect">Unduh gagal: tidak dapat terhubung ke sistem</string>
   <string name="download_failed_could_not_write_file">Unduh gagal: tidak bisa menulis berkas</string>
-    <string name="action_check_update">Periksa pembaruan</string>
+  <string name="action_check_update">Periksa pembaruan</string>
   <string name="title_activity_updater">Perbaruan layanan</string>
   <string name="update_available">Versi %1$s tersedia.\n\nUkuran berkas: %2$s\n\nPerbarui ke versi %1$s sekarang?</string>
   <string name="remind_later">kemudian</string>
@@ -601,7 +598,6 @@
   <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan hemat data untuk Pix-Art Messenger.</string>
   <string name="navigate">Arahkan ke lokasi</string>
   <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
-  <string name="received_contact">Menerima kontak</string>
   <string name="contact">Kontak</string>
   <string name="unable_to_start_recording">Tidak dapat mulai merekam</string>
   <string name="error_unable_to_create_temporary_file">Tidak dapat membuat file sementara</string>
