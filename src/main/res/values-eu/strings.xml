@@ -257,7 +257,7 @@
   <string name="title_pref_quiet_hours_end_time">Amaiera ordua</string>
   <string name="title_pref_enable_quiet_hours">Ordu lasaiak gaitu</string>
   <string name="pref_quiet_hours_summary">Jakinarazpenak isilaraziko dira ordu lasaiak iraun bitartean </string>
-    <string name="pref_use_send_button_to_indicate_status">Bidaltze botoiak egoera adierazten du</string>
+  <string name="pref_use_send_button_to_indicate_status">Bidaltze botoiak egoera adierazten du</string>
   <string name="pref_use_indicate_received">Mezuen jasotzea eskatu</string>
   <string name="pref_use_indicate_received_summary">Jasotako mezuak marka berde batekin markatuko dira. Baliteke kasu guztietan ez funtzionatzea.</string>
   <string name="pref_use_send_button_to_indicate_status_summary">Bidaltze botoia koloreztatu kontaktu baten egoera adierazteko</string>
@@ -329,7 +329,7 @@
   <string name="distrust_omemo_key">Gailu ez fidagarria</string>
   <string name="distrust_omemo_key_text">Gailu honen egiaztapena ezabatu nahi duzulaz ziur al zaude?\nGailu hau eta beregandik datozen mezuak ez fidagarriak bezala markatuko dira.</string>
   <string name="error_no_keys_to_trust_server_error">Ez dago gako erabilgarririk kontaktu honetarako.\nEzin izan da zerbitzaritik gako berririk eskuratu. Agian akatsen bat dago zure kontaktuaren zerbitzariarekin.</string>
-    <string name="fetching_history_from_server">Mezuak zerbitzaritik eskuratzen</string>
+  <string name="fetching_history_from_server">Mezuak zerbitzaritik eskuratzen</string>
   <string name="no_more_history_on_server">Mezu gehiagorik ez zerbitzarian</string>
   <string name="updating">Eguneratzen...</string>
   <string name="password_changed">Pasahitza aldatu da</string>
@@ -383,7 +383,6 @@
   <string name="pdf_document">PDF dokumentua</string>
   <string name="apk">Android aplikazioa</string>
   <string name="vcard">Kontaktua</string>
-  <string name="received_x_file">%s jaso da</string>
   <string name="touch_to_open_conversations">Ikutu Pix-Art Messenger irekitzeko</string>
   <string name="avatar_has_been_published">Profileko argazkia argitaratu da</string>
   <string name="sending_x_file">%s bidaltzen</string>
@@ -395,7 +394,6 @@
   <string name="show_location">Kokapena erakutsi</string>
   <string name="no_application_found_to_display_location">Kokapena erakutsi dezakeen aplikaziorik ez da aurkitu</string>
   <string name="location">Kokapena</string>
-  <string name="received_location">Kokapena jaso da</string>
   <string name="pref_dont_trust_system_cas_title">Sistemaren CAtaz ez fidatu</string>
   <string name="pref_dont_trust_system_cas_summary">Ziurtagiri guztiak eskuz onartu behar dira</string>
   <string name="pref_remove_trusted_certificates_title">Ziurtagiriak kendu</string>
@@ -417,7 +415,6 @@
   <string name="none">Bat ere ez</string>
   <string name="recently_used">Azkenengo aldiz erabilitakoa</string>
   <string name="choose_quick_action">Ekintza azkarra aukeratu</string>
-  <string name="search_for_contacts_or_groups">Kontaktuak edo taldeak bilatu</string>
   <string name="send_private_message">Mezu pribatua bidali</string>
   <string name="username">Erabiltzaile izena</string>
   <string name="username_hint">Erabiltzaile izena</string>
