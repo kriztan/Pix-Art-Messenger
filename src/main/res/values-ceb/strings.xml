@@ -271,7 +271,7 @@
   <string name="title_pref_quiet_hours_end_time">Kutob sa oras</string>
   <string name="title_pref_enable_quiet_hours">Gepagana ang hilom nga mga oras</string>
   <string name="pref_quiet_hours_summary">Mag pahibalo kay ma hinay inig ka hilom sa mga oras</string>
-    <string name="pref_use_send_button_to_indicate_status">Pagpadala ug button nga nagpasabot sa status</string>
+  <string name="pref_use_send_button_to_indicate_status">Pagpadala ug button nga nagpasabot sa status</string>
   <string name="pref_use_colored_names_to_indicate_status">Ang di-kolor nga mga pangan nagpasabot sa status</string>
   <string name="pref_use_indicate_received">Mga resibo sa hangyo nga mensahe</string>
   <string name="pref_use_indicate_received_summary">Ang nakadawat ug mensahe markahan sa usa ka berdeng color kong gisuportahan</string>
@@ -346,7 +346,7 @@
   <string name="distrust_omemo_key">Dili makasaligan nga device</string>
   <string name="distrust_omemo_key_text">Sigurado ka nga gusto nimu tanggalun ang pag tino sa kini nga device?\n Kini nga device ug mga mensahe nga naggikan sa maong device markahan nga dili matuohan.</string>
   <string name="error_no_keys_to_trust_server_error">Wala ju\'y magamit nga mga yawe nga anaa para sa kini nga kontak.\nPamasol ug bag-o nga mga yawe gekan sa serber kay wala nagmalampuson. Tingali naay bati nga nahitabo sa imung mga kontak nga serber.</string>
-    <string name="pref_enter_is_send_summary">Gamit ug yawe nga pisletunon para maka padala ug mensahe</string>
+  <string name="pref_enter_is_send_summary">Gamit ug yawe nga pisletunon para maka padala ug mensahe</string>
   <string name="pref_display_enter_key">Ipakita ang pisletunon nga yawe</string>
   <string name="pref_display_enter_key_summary">Ilisi ang mga emotikon nga yawe para pislet sa yawe</string>
   <string name="audio">audio</string>
@@ -355,7 +355,6 @@
   <string name="pdf_document">PDF nga dokumento</string>
   <string name="apk">Android App</string>
   <string name="vcard">Kontak</string>
-  <string name="received_x_file">Nadawat %s</string>
   <string name="touch_to_open_conversations">Hikapa para ma abli ang Pix-Art Messenger</string>
   <string name="avatar_has_been_published">Ang avatar kay gelahad!</string>
   <string name="sending_x_file">Pagpadala %s</string>
@@ -368,7 +367,6 @@
   <string name="show_location">Ipakita ang lokasyon</string>
   <string name="no_application_found_to_display_location">Walay aplikasyon ang nakita para ipakita ang lokasyun</string>
   <string name="location">Lokasyun</string>
-  <string name="received_location">Nadawat nga lokasyun</string>
   <string name="pref_dont_trust_system_cas_title">Ayaw pagsalig nga sistema CAs</string>
   <string name="pref_dont_trust_system_cas_summary">Tanang mga sertipiko dapat manually nga mga aprobado</string>
   <string name="pref_remove_trusted_certificates_title">Tangtanga ang mga sertipiko</string>
@@ -394,7 +392,6 @@ Pili %d mga kontak</item>
   <string name="none">Wala</string>
   <string name="recently_used">Kasagaran ginagamit karun</string>
   <string name="choose_quick_action">Pilia ang paspas nga lihok</string>
-  <string name="search_for_contacts_or_groups">Pangita sa mga kontak o sa mga grupo</string>
   <string name="send_private_message">Ipadala ang pribado nga mensahe</string>
   <string name="username">Pangan sa user</string>
   <string name="username_hint">Pangan sa user</string>
@@ -403,7 +400,7 @@ Pili %d mga kontak</item>
   <string name="download_failed_file_not_found">Ang ge-download kay napakyas: File kay wala nakita</string>
   <string name="download_failed_could_not_connect">Ang ge-download kay napakyas: Dili maka sumpay sa host</string>
   <string name="download_failed_could_not_write_file">Napkayas pag-download: Dili makasuwat sa file</string>
-    <string name="action_check_update">Susiha ang mga Kausaban</string>
+  <string name="action_check_update">Susiha ang mga Kausaban</string>
   <string name="title_activity_updater">Kausaban sa serbisyo</string>
   <string name="update_available">Bersiyon %1$s kay wala.\n\n Sukod sa File:%2$s\n\nKausaban sa bersiyon %1$s karun?</string>
   <string name="remind_later">taud-taud</string>
@@ -568,7 +565,6 @@ Pili %d mga kontak</item>
   <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa Pix-Art Messenger.</string>
   <string name="navigate">Pagdala sa lokasyon</string>
   <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
-  <string name="received_contact">Nadawat nga kontak</string>
   <string name="contact">Kontak</string>
   <string name="unable_to_start_recording">Dili makasugod sa pagrekord</string>
   <string name="error_unable_to_create_temporary_file">Dili makagama og temporaryo nga file</string>
