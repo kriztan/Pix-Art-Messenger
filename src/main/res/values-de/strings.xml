@@ -788,4 +788,6 @@
   <string name="jabber_id_copied_to_clipboard">JID in die Zwischenablage kopiert</string>
   <string name="copy_jabber_id">JID kopieren</string>
   <string name="copy_link">Webadresse kopieren</string>
+  <string name="server_hint">Wähle Anbieter</string>
+  <string name="choose_your_server">Wähle deinen Jabber Anbieter</string>
 </resources>
