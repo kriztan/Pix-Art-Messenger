@@ -222,6 +222,7 @@
         <item>xmpp.slack.com</item>
         <item>chat.hipchat.com</item>
         <item>googlemail.com</item>
+	<item>nsa.li</item>
     </string-array>
 </resources>
 
