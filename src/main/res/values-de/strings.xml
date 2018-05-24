@@ -790,4 +790,6 @@
   <string name="copy_link">Webadresse kopieren</string>
   <string name="server_hint">Wähle Anbieter</string>
   <string name="choose_your_server">Wähle deinen Jabber Anbieter</string>
+  <string name="show_privacy">Datenschutzerklärung</string>
+  <string name="show_termsofuse">Nutzungsbedingungen</string>
 </resources>
