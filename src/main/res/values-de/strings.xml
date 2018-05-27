@@ -792,4 +792,5 @@
   <string name="choose_your_server">Wähle deinen Jabber Anbieter</string>
   <string name="show_privacy">Datenschutzerklärung</string>
   <string name="show_termsofuse">Nutzungsbedingungen</string>
+  <string name="p1_s3_filetransfer">HTTP Dateitransfer für S3</string>
 </resources>
