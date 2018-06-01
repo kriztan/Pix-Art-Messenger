@@ -496,7 +496,6 @@ Pili %d mga kontak</item>
   <string name="magic_create_text">Giyahan ka namo sa pag proseso sa pagmugna og usa ka account gamit ang random nga password, nga mahimo nimong gamiton o usbon sa imong kaugalingong password sa sunod nga pahina. \nLabaw kay makahimo ka sa pagpakig-estorya sa mga tiggamit niini ug sa ubang mga tighatag pinaagi sa paghatag kanila sa imong full Jabber-ID.</string>
   <string name="your_full_jid_will_be">Ang imong Jabber-ID mahimong: %s</string>
   <string name="create_account">Buhat ug bag-o nga account</string>
-  <string name="welcome_advanced_mode">Paggamit ug kasamtangan nga account</string>
   <string name="pick_your_username">Pili ug imung username</string>
   <string name="status_message">Status ang mensahe</string>
   <string name="presence_chat">Libre alang sa Chat</string>
