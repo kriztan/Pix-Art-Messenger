@@ -3862,6 +3862,17 @@ public class XmppConnectionService extends Service {
         updateConversationUi();
     }
 
+    public void deleteMessage(final Conversation conversation, Message message) {
+        conversation.deleteMessage(message);
+        conversation.setHasMessagesLeftOnServer(false); //avoid messages getting loaded through mam
+        Runnable runnable = () -> {
+            databaseBackend.deleteMessageInConversation(message);
+            databaseBackend.updateConversation(conversation);
+
+        };
+        mDatabaseWriterExecutor.execute(runnable);
+    }
+
     public void clearConversationHistory(final Conversation conversation) {
         final long clearDate;
         final String reference;

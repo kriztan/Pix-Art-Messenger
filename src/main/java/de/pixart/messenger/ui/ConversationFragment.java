@@ -1844,6 +1844,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     private void deleteMessage(Message message) {
+        final Conversation conversation = (Conversation) message.getConversation();
+        activity.xmppConnectionService.deleteMessage(conversation, message);
+        activity.onConversationsListItemUpdated();
+        refresh();
     }
 
     private void deleteFile(Message message) {

@@ -917,6 +917,18 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": persisted roster in " + duration + "ms");
     }
 
+    public void deleteMessageInConversation(Message message) {
+        long start = SystemClock.elapsedRealtime();
+        final SQLiteDatabase db = this.getWritableDatabase();
+        db.beginTransaction();
+        String[] args = {message.getUuid()};
+        db.delete("messages_index", "uuid in (select uuid from messages where conversationUuid=?)", args);
+        int num = db.delete(Message.TABLENAME, Message.UUID + "=?", args);
+        db.setTransactionSuccessful();
+        db.endTransaction();
+        //Log.d(Config.LOGTAG, "deleted " + num + " messages for " + conversation.getJid().asBareJid() + " in " + (SystemClock.elapsedRealtime() - start) + "ms");
+    }
+
     public void deleteMessagesInConversation(Conversation conversation) {
         long start = SystemClock.elapsedRealtime();
         final SQLiteDatabase db = this.getWritableDatabase();
