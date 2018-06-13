@@ -26,6 +26,10 @@
         android:title="@string/correct_message"
         android:visible="false" />
     <item
+        android:id="@+id/delete_message"
+        android:title="@string/delete_message"
+        android:visible="false" />
+    <item
         android:id="@+id/copy_url"
         android:title="@string/copy_original_url"
         android:visible="false" />
