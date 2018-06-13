@@ -1843,6 +1843,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         builder.create().show();
     }
 
+    private void deleteMessage(Message message) {
+    }
+
     private void deleteFile(Message message) {
         if (activity.xmppConnectionService.getFileBackend().deleteFile(message)) {
             message.setTransferable(new TransferablePlaceholder(Transferable.STATUS_DELETED));
