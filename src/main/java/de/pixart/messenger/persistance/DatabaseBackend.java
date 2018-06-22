@@ -922,7 +922,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         final SQLiteDatabase db = this.getWritableDatabase();
         db.beginTransaction();
         String[] args = {message.getUuid()};
-        db.delete("messages_index", "uuid in (select uuid from messages where conversationUuid=?)", args);
+        db.delete("messages_index", "uuid =?", args);
         int num = db.delete(Message.TABLENAME, Message.UUID + "=?", args);
         db.setTransactionSuccessful();
         db.endTransaction();
