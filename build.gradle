@@ -13,11 +13,9 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
+    google()
     jcenter()
     mavenCentral()
-    maven {
-        url 'https://maven.google.com'
-    }
     maven {
         url "https://jitpack.io"
     }
@@ -84,8 +82,8 @@ android {
         minSdkVersion 16
         targetSdkVersion 25
 
-        versionCode 233
-        versionName "2.0.2"
+        versionCode 234
+        versionName "2.0.3 (beta 2018-06-03)"
 
         archivesBaseName += "-$versionName"
         applicationId "de.pixart.messenger"

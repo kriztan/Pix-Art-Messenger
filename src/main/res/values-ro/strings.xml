@@ -511,7 +511,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
   <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți păstra sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le ID-ul dumneavoastră Jabber.</string>
   <string name="your_full_jid_will_be">ID-ul Jabber va fi: %s</string>
   <string name="create_account">Creează cont</string>
-  <string name="welcome_advanced_mode">Folosește un cont existent</string>
   <string name="pick_your_username">Alege un nume de utilizator</string>
   <string name="status_message">Mesaj de stare</string>
   <string name="presence_chat">Disponibil/ă pentru conversație</string>

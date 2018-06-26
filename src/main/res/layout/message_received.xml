@@ -18,7 +18,7 @@
         android:scaleType="fitXY"
         app:riv_border_color="?attr/color_border"
         app:riv_border_width="1dip"
-        app:riv_corner_radius="24dp" />
+        app:riv_corner_radius="@dimen/rounded_image_border" />
 
     <LinearLayout
         android:id="@+id/message_box"

@@ -530,7 +530,6 @@
   <string name="magic_create_text">Kami akan memandu anda dalam proses pembuatan akun dengan kata kunci acak, yang dapat anda gunakan atau ubah ke kata sandi anda sendiri di halaman berikutnya.\nAnda akan dapat berkomunikasi dengan pengguna dan penyedia layanan lainnya dengan memberi mereka Jabber-ID anda.</string>
   <string name="your_full_jid_will_be">Jabber-ID anda adalah: %s</string>
   <string name="create_account">Buat akun baru</string>
-  <string name="welcome_advanced_mode">Gunakan akun yang ada</string>
   <string name="pick_your_username">Pilih nama pengguna Anda</string>
   <string name="status_message">Status pesan</string>
   <string name="presence_chat">Gratis untuk obrolan</string>

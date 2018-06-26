@@ -49,12 +49,13 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginBottom="16dp"
                             android:adjustViewBounds="true"
-                            android:background="@drawable/message_border"
                             android:contentDescription="@string/account_image_description"
                             android:maxHeight="384dp"
                             android:maxWidth="384dp"
                             android:padding="1dp"
-                            app:riv_corner_radius="5dp" />
+                            app:riv_border_color="?attr/message_border"
+                            app:riv_border_width="1dp"
+                            app:riv_corner_radius="@dimen/rounded_image_border" />
 
                         <LinearLayout
                             android:id="@+id/jid_password_box"

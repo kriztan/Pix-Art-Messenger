@@ -595,15 +595,6 @@ public class FileBackend {
         return context.getPackageName() + FILE_PROVIDER;
     }
 
-    public static Uri getIndexableTakePhotoUri(Uri original) {
-        if ("file".equals(original.getScheme())) {
-            return original;
-        } else {
-            List<String> segments = original.getPathSegments();
-            return Uri.parse("file://" + getTakeFromCameraPath() + segments.get(segments.size() - 1));
-        }
-    }
-
     public Uri getTakeVideoUri() {
         File file = new File(getTakeFromCameraPath() + "VID_" + this.fileDateFormat.format(new Date()) + ".mp4");
         file.getParentFile().mkdirs();
@@ -877,7 +868,7 @@ public class FileBackend {
         return calcSampleSize(options, size);
     }
 
-    public static int calcSampleSize(BitmapFactory.Options options, int size) {
+    private static int calcSampleSize(BitmapFactory.Options options, int size) {
         int height = options.outHeight;
         int width = options.outWidth;
         int inSampleSize = 1;

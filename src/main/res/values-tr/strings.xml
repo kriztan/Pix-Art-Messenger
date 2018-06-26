@@ -533,7 +533,6 @@
   <string name="magic_create_text">Bir sonraki sayfada kendi şifrenizi değiştirebileceğiniz veya kullanabileceğiniz rastgele bir şifreyle bir hesap oluşturma sürecinde size yol göstereceğiz.\n Bu kişilere ve diğer sağlayıcıların kullanıcılarına tam Jabber Kimliği vererek iletişime geçebileceksiniz.</string>
   <string name="your_full_jid_will_be">Jabber-ID\'niz şu şekilde olacaktır: %s</string>
   <string name="create_account">Yeni hesap oluştur</string>
-  <string name="welcome_advanced_mode">Mevcut bir hesap kullanın</string>
   <string name="pick_your_username">Kullanıcı adınızı seçin</string>
   <string name="status_message">Durum mesajı</string>
   <string name="presence_chat">Sohbet için Ücretsiz</string>

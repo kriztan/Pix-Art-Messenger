@@ -1,5 +1,11 @@
 ### Changelog
 
+#### Version 2.0.3 (not yet released)
+* show avatar for group chats in group details
+* fade in image previews and avatars
+* UI improvements
+* bug fixes
+
 #### Version 2.0.2
 * bug fixes especially for Android 4
 

@@ -31,7 +31,12 @@ public abstract class ConversationsFileObserver {
             String parent = stack.pop();
             mObservers.add(new SingleFileObserver(parent, FileObserver.DELETE | FileObserver.MOVED_FROM));
             final File path = new File(parent);
-            final File[] files = path.listFiles();
+            File[] files = new File[0];
+            try {
+                files = path.listFiles();
+            } catch (OutOfMemoryError e) {
+                e.printStackTrace();
+            }
             if (files == null) {
                 continue;
             }
