@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,9 +43,8 @@ public class AccountAdapter extends ArrayAdapter<Account> {
         this.showStateButton = true;
     }
 
-    @NonNull
     @Override
-    public View getView(int position, View view, @NonNull ViewGroup parent) {
+    public View getView(int position, View view, ViewGroup parent) {
         final Account account = getItem(position);
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) getContext()

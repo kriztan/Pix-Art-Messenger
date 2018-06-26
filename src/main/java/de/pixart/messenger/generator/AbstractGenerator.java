@@ -15,7 +15,6 @@ import java.util.TimeZone;
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
 import de.pixart.messenger.crypto.axolotl.AxolotlService;
-import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.utils.Namespace;
 import de.pixart.messenger.utils.PhoneHelper;
@@ -74,7 +73,7 @@ public abstract class AbstractGenerator {
         return mXmppConnectionService.getString(R.string.app_name) + " " + getIdentityVersion();
     }
 
-    String getIdentityType() {
+    public String getIdentityType() {
         if ("chromium".equals(android.os.Build.BRAND)) {
             return "pc";
         } else {
@@ -82,9 +81,9 @@ public abstract class AbstractGenerator {
         }
     }
 
-    String getCapHash(final Account account) {
+    public String getCapHash() {
         StringBuilder s = new StringBuilder();
-        s.append("client/").append(getIdentityType()).append("//").append(getIdentityName()).append('<');
+        s.append("client/" + getIdentityType() + "//" + getIdentityName() + "<");
         MessageDigest md;
         try {
             md = MessageDigest.getInstance("SHA-1");
@@ -92,8 +91,8 @@ public abstract class AbstractGenerator {
             return null;
         }
 
-        for (String feature : getFeatures(account)) {
-            s.append(feature).append('<');
+        for (String feature : getFeatures()) {
+            s.append(feature + "<");
         }
         byte[] sha1 = md.digest(s.toString().getBytes());
         return new String(Base64.encode(sha1, Base64.DEFAULT)).trim();
@@ -104,8 +103,8 @@ public abstract class AbstractGenerator {
         return DATE_FORMAT.format(time);
     }
 
-    public List<String> getFeatures(Account account) {
-        ArrayList<String> features = new ArrayList<>(Arrays.asList(FEATURES));
+    public List<String> getFeatures() {
+        ArrayList<String> features = new ArrayList<>();
         features.addAll(Arrays.asList(FEATURES));
         if (mXmppConnectionService.confirmMessages()) {
             features.addAll(Arrays.asList(MESSAGE_CONFIRMATION_FEATURES));
@@ -116,7 +115,7 @@ public abstract class AbstractGenerator {
         if (Config.supportOmemo()) {
             features.add(AxolotlService.PEP_DEVICE_LIST_NOTIFY);
         }
-        if (!mXmppConnectionService.useTorToConnect() && !account.isOnion()) {
+        if (!mXmppConnectionService.useTorToConnect()) {
             features.addAll(Arrays.asList(PRIVACY_SENSITIVE));
         }
         if (Config.supportOtr()) {

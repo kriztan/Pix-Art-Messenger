@@ -13,7 +13,7 @@
         android:top="2dp" />
     <stroke
         android:width="1dp"
-        android:color="@color/grey800">
+        android:color="@color/grey500">
     </stroke>
     <solid
         android:color="@color/lightwhite">

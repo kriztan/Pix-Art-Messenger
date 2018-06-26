@@ -215,7 +215,9 @@ public class MessageGenerator extends AbstractGenerator {
         MessagePacket packet = new MessagePacket();
         packet.setType(MessagePacket.TYPE_GROUPCHAT);
         packet.setTo(conversation.getJid().asBareJid());
-        packet.addChild("subject").setContent(subject);
+        Element subjectChild = new Element("subject");
+        subjectChild.setContent(subject);
+        packet.addChild(subjectChild);
         packet.setFrom(conversation.getAccount().getJid().asBareJid());
         return packet;
     }

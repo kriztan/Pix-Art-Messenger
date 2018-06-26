@@ -289,7 +289,7 @@ public class XmppConnection implements Runnable {
             } else if (useTor) {
                 String destination;
                 if (account.getHostname().isEmpty()) {
-                    destination = account.getServer();
+                    destination = account.getServer().toString();
                 } else {
                     destination = account.getHostname();
                     this.verifiedHostname = destination;
@@ -1862,7 +1862,7 @@ public class XmppConnection implements Runnable {
                                 return false;
                             }
                         } catch (Exception e) {
-                            return true;
+                            //ignored
                         }
                     }
                 }
