@@ -20,4 +20,6 @@
     <dimen name="scan_dot_size">8dp</dimen>
 
     <dimen name="background_image_opacity">0.12</dimen>
+    
+    <dimen name="rounded_image_border">5dp</dimen>
 </resources>

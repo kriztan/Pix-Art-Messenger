@@ -27,6 +27,7 @@
         <item name="color_bubble_warning">@color/lightred</item>
 
         <item name="color_border">@color/grey800</item>
+        <item name="message_border">@drawable/message_border</item>
 
         <item name="windowActionModeOverlay">true</item>
         <item name="android:actionModeBackground">@color/accent</item>
@@ -139,8 +140,8 @@
         <item name="colorControlActivated">@color/accent</item>
         <item name="text_Color_Main">@color/realwhite</item>
 
-        <item name="color_background_primary">@color/grey900</item>
-        <item name="color_background_secondary">@color/realblack</item>
+        <item name="color_background_primary">@color/grey800</item>
+        <item name="color_background_secondary">@color/grey900</item>
         <item name="color_warning">@color/red_a700</item>
         <item name="TextColorOnline">@color/green500</item>
         <item name="TextColorError">@color/red500</item>
@@ -155,7 +156,8 @@
         <item name="color_bubble_date">@color/darkgreen</item>
         <item name="color_bubble_warning">@color/darkred</item>
 
-        <item name="color_border">@color/grey800</item>
+        <item name="color_border">@color/grey500</item>
+        <item name="message_border">@drawable/message_border_dark</item>
 
         <item name="windowActionModeOverlay">true</item>
         <item name="android:actionModeBackground">@color/accent</item>

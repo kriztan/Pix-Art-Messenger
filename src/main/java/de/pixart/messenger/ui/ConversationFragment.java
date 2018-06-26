@@ -98,6 +98,7 @@ import de.pixart.messenger.ui.util.ActivityResult;
 import de.pixart.messenger.ui.util.AttachmentTool;
 import de.pixart.messenger.ui.util.ConversationMenuConfigurator;
 import de.pixart.messenger.ui.util.DateSeparator;
+import de.pixart.messenger.ui.util.EditMessageActionModeCallback;
 import de.pixart.messenger.ui.util.ListViewUtils;
 import de.pixart.messenger.ui.util.PendingItem;
 import de.pixart.messenger.ui.util.PresenceSelector;
@@ -313,7 +314,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 }
             }
             if (hasPermissions(REQUEST_ADD_EDITOR_CONTENT, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                attachImageToConversation(inputContentInfo.getContentUri());
+                attachEditorContentToConversation(inputContentInfo.getContentUri());
             } else {
                 mPendingEditorContent = inputContentInfo.getContentUri();
             }
@@ -785,8 +786,8 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 });
     }
 
-    public void attachImageToConversation(Uri uri) {
-        this.attachImageToConversation(conversation, uri, true);
+    public void attachEditorContentToConversation(Uri uri) {
+        this.attachFileToConversation(conversation, uri, null);
     }
 
     private void attachImageToConversation(Conversation conversation, Uri uri, boolean sendAsIs) {
@@ -814,7 +815,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
+            orientation = exif != null ? exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL) : 0;
         }
         Log.d(Config.LOGTAG, "EXIF: " + orientation);
         Bitmap rotated_image = null;
@@ -1220,6 +1221,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         binding.messagesView.setAdapter(messageListAdapter);
 
         registerForContextMenu(binding.messagesView);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            this.binding.textinput.setCustomInsertionActionModeCallback(new EditMessageActionModeCallback(this.binding.textinput));
+        }
+
         return binding.getRoot();
     }
 
@@ -1235,20 +1241,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     private void quoteText(String text) {
         if (binding.textinput.isEnabled()) {
-            text = text.replaceAll("(\n *){2,}", "\n").replaceAll("(^|\n)", "$1> ").replaceAll("\n$", "");
-            Editable editable = binding.textinput.getEditableText();
-            int position = binding.textinput.getSelectionEnd();
-            if (position == -1) position = editable.length();
-            if (position > 0 && editable.charAt(position - 1) != '\n') {
-                editable.insert(position++, "\n");
-            }
-            editable.insert(position, text);
-            position += text.length();
-            editable.insert(position++, "\n");
-            if (position < editable.length() && editable.charAt(position) != '\n') {
-                editable.insert(position, "\n");
-            }
-            binding.textinput.setSelection(position);
+            binding.textinput.insertAsQuote(text);
             binding.textinput.requestFocus();
             InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
             if (inputMethodManager != null) {
@@ -1612,7 +1605,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     }
                 } else if (requestCode == REQUEST_ADD_EDITOR_CONTENT) {
                     if (this.mPendingEditorContent != null) {
-                        attachImageToConversation(this.mPendingEditorContent);
+                        attachEditorContentToConversation(this.mPendingEditorContent);
                     }
                 } else {
                     attachFile(requestCode);

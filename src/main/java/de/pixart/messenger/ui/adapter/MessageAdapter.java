@@ -15,6 +15,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.preference.PreferenceManager;
 import android.support.annotation.ColorInt;
 import android.support.v4.app.ActivityCompat;
@@ -116,7 +117,43 @@ public class MessageAdapter extends ArrayAdapter<Message> implements CopyTextVie
         }
     };
 
-    private static final Linkify.MatchFilter WEBURL_MATCH_FILTER = (cs, start, end) -> start < 1 || (cs.charAt(start - 1) != '@' && cs.charAt(start - 1) != '.' && !cs.subSequence(Math.max(0, start - 3), start).equals("://"));
+    private static String removeTrailingBracket(final String url) {
+        int numOpenBrackets = 0;
+        for (char c : url.toCharArray()) {
+            if (c == '(') {
+                ++numOpenBrackets;
+            } else if (c == ')') {
+                --numOpenBrackets;
+            }
+        }
+        if (numOpenBrackets != 0 && url.charAt(url.length() - 1) == ')') {
+            return url.substring(0, url.length() - 1);
+        } else {
+            return url;
+        }
+    }
+
+    private static final Linkify.MatchFilter WEBURL_MATCH_FILTER = (cs, start, end) -> {
+        if (start > 0) {
+            if (cs.charAt(start - 1) == '@' || cs.charAt(start - 1) == '.'
+                    || cs.subSequence(Math.max(0, start - 3), start).equals("://")) {
+                return false;
+            }
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (end < cs.length()) {
+                // Reject strings that were probably matched only because they contain a dot followed by
+                // by some known TLD (see also comment for WORD_BOUNDARY in Patterns.java)
+                if (Character.isAlphabetic(cs.charAt(end - 1)) && Character.isAlphabetic(cs.charAt(end))) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    };
+
     private static final Linkify.MatchFilter XMPPURI_MATCH_FILTER = (s, start, end) -> {
         XmppUri uri = new XmppUri(s.subSequence(start, end).toString());
         return uri.isJidValid();
@@ -138,22 +175,6 @@ public class MessageAdapter extends ArrayAdapter<Message> implements CopyTextVie
         this.activity = activity;
         metrics = getContext().getResources().getDisplayMetrics();
         updatePreferences();
-    }
-
-    private static String removeTrailingBracket(final String url) {
-        int numOpenBrackets = 0;
-        for (char c : url.toCharArray()) {
-            if (c == '(') {
-                ++numOpenBrackets;
-            } else if (c == ')') {
-                --numOpenBrackets;
-            }
-        }
-        if (numOpenBrackets != 0 && url.charAt(url.length() - 1) == ')') {
-            return url.substring(0, url.length() - 1);
-        } else {
-            return url;
-        }
     }
 
     public static boolean cancelPotentialWork(Message message, ImageView imageView) {

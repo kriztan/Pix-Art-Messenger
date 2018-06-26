@@ -1219,6 +1219,8 @@ public class XmppConnectionService extends Service {
             alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, timeToWake, pendingIntent);
         } catch (RuntimeException e) {
             Log.e(Config.LOGTAG, "unable to schedule alarm for ping", e);
+        } catch (Exception e) {
+            Log.e(Config.LOGTAG, "unable to schedule alarm for ping", e);
         }
     }
 

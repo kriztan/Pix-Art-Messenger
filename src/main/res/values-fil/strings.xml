@@ -533,7 +533,6 @@
   <string name="magic_create_text">Gagabayan ka namin sa pamamagitan ng proseso ng paglikha ng isang account na may isang random na password, na maaari mong gamitin o baguhin sa iyong sariling password sa susunod na pahina.\nKaysa makakausap mo ang mga gumagamit ng ito at iba pang mga provider sa pamamagitan ng pagbibigay sa kanila ng iyong buong Jabber-ID.</string>
   <string name="your_full_jid_will_be">Ang iyong Jabber-ID ay magiging: %s</string>
   <string name="create_account">Lumikha ng bagong account</string>
-  <string name="welcome_advanced_mode">Gumamit ng isang umiiral na account</string>
   <string name="pick_your_username">Piliin ang iyong username</string>
   <string name="status_message">Katayuan ng mensahe</string>
   <string name="presence_chat">Libre para sa Chat</string>

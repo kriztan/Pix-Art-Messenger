@@ -384,7 +384,6 @@ public class Patterns {
             + "(?:" + PORT_NUMBER + ")?"
             + ")"
             + "(?:" + PATH_AND_QUERY + ")?"
-            + WORD_BOUNDARY
             + ")";
     /**
      * Regular expression to match strings that start with a supported protocol. Rules for domain
@@ -398,7 +397,6 @@ public class Patterns {
             + "(?:" + PORT_NUMBER + ")?"
             + ")"
             + "(?:" + PATH_AND_QUERY + ")?"
-            + WORD_BOUNDARY
             + ")";
     /**
      * Regular expression pattern to match IRIs. If a string starts with http(s):// the expression

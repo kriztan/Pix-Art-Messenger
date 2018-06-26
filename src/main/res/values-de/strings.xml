@@ -42,6 +42,7 @@
   <string name="block_domain_text">Alle Kontakte von %s sperren?</string>
   <string name="unblock_domain_text">Alle Kontakte von %s entsperren?</string>
   <string name="contact_blocked">Kontakt gesperrt</string>
+  <string name="blocked">Gesperrt</string>
   <string name="remove_bookmark_text">Möchtest du %s von deiner Kontaktliste entfernen? Die Unterhaltung mit dieser Konferenz wird dabei nicht entfernt.</string>
   <string name="register_account">Neues Profil auf Server erstellen</string>
   <string name="change_password_on_server">Passwort ändern</string>
@@ -538,7 +539,7 @@
   <string name="magic_create_text">Wir erstellen nun mit dir gemeinsam ein Profil mit einem zufällig generierten Passwort, welches du benutzen oder auf der nächsten Seite ändern kannst\nDanach kannst du mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
   <string name="your_full_jid_will_be">Deine Jabber-ID lautet: %s</string>
   <string name="create_account">Neues Profil erstellen</string>
-  <string name="welcome_advanced_mode">Nutze ein bestehendes Profil</string>
+  <string name="welcome_advanced_mode">Erweiterter Modus</string>
   <string name="pick_your_username">Wähle deinen Benutzernamen</string>
   <string name="pref_manually_change_presence">Status manuell ändern</string>
   <string name="pref_manually_change_presence_summary">Lege deinen Status fest, wenn du deine Statusnachricht bearbeitest.</string>
@@ -793,4 +794,7 @@
   <string name="show_privacy">Datenschutzerklärung</string>
   <string name="show_termsofuse">Nutzungsbedingungen</string>
   <string name="p1_s3_filetransfer">HTTP Dateitransfer für S3</string>
+  <string name="pref_start_search">Direktsuche</string>
+  <string name="pref_start_search_summary">Bei \'Unterhaltung beginnen\' direkt die Suche starten</string>
+  <string name="paste_as_quote">Als Zitat einfügen</string>
 </resources>

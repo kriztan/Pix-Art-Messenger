@@ -56,7 +56,7 @@
                             android:layout_below="@+id/contact_display_name"
                             android:layout_centerHorizontal="true"
                             android:adjustViewBounds="true"
-                            android:background="@drawable/message_border"
+                            android:background="?attr/message_border"
                             android:maxHeight="384dp"
                             android:maxWidth="384dp"
                             android:padding="1dp"

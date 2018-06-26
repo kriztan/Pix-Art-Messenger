@@ -19,7 +19,7 @@ import de.pixart.messenger.ui.ShowLocationActivity;
 
 public class GeoHelper {
 
-    public static Pattern GEO_URI = Pattern.compile("geo:([\\-0-9.]+),([\\-0-9.]+)(?:,([\\-0-9.]+))?(?:\\?(.*))?", Pattern.CASE_INSENSITIVE);
+    public static Pattern GEO_URI = Pattern.compile("geo:(-?\\d+(?:\\.\\d+)?),(-?\\d+(?:\\.\\d+)?)(?:,-?\\d+(?:\\.\\d+)?)?(?:;crs=[\\w-]+)?(?:;u=\\d+(?:\\.\\d+)?)?(?:;[\\w-]+=(?:[\\w-_.!~*'()]|%[\\da-f][\\da-f])+)*", Pattern.CASE_INSENSITIVE);
 
     public static String MapPreviewUri(Message message) {
         Matcher matcher = GEO_URI.matcher(message.getBody());

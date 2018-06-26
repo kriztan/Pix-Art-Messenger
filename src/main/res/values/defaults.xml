@@ -106,6 +106,7 @@
     <string name="omemo_setting_default">default_off</string>
     <string name="theme">light</string>
     <string name="default_font_size">small</string>
+    <bool name="start_searching">false</bool>
 
     <string-array name="domains">
         <item>pix-art.de</item>
