@@ -111,7 +111,7 @@ public class ListItemAdapter extends ArrayAdapter<ListItem> {
             viewHolder.tags.setAlpha(INACTIVE_ALPHA);
         } else {
             if (ShowPresenceColoredNames()) {
-                viewHolder.name.setTextColor(color);
+                viewHolder.name.setTextColor(color != 0 ? color : Color.get(activity, R.attr.text_Color_Main));
             } else {
                 viewHolder.name.setTextColor(Color.get(activity, R.attr.text_Color_Main));
             }
