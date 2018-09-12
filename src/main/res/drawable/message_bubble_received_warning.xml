@@ -12,8 +12,8 @@
         android:right="6dp"
         android:top="4dp" />
     <stroke
-        android:width="1dp"
-        android:color="@color/grey500">
+        android:width="1.5dp"
+        android:color="@color/grey300">
     </stroke>
     <solid
         android:color="@color/lightred">

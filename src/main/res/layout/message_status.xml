@@ -29,8 +29,6 @@
         android:padding="0dp"
         android:scaleType="fitXY"
         android:visibility="gone"
-        app:riv_border_color="?attr/color_border"
-        app:riv_border_width="1dp"
         app:riv_corner_radius="@dimen/rounded_image_border" />
 
     <TextView
