@@ -53,8 +53,6 @@
                             android:maxHeight="384dp"
                             android:maxWidth="384dp"
                             android:padding="1dp"
-                            app:riv_border_color="?attr/color_border"
-                            app:riv_border_width="1dp"
                             app:riv_corner_radius="@dimen/rounded_image_border" />
 
                         <LinearLayout
