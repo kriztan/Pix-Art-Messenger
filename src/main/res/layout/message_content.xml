@@ -13,8 +13,6 @@
         android:maxHeight="500dp"
         android:maxWidth="500dp"
         android:scaleType="centerCrop"
-        app:riv_border_color="?attr/color_border"
-        app:riv_border_width="1dp"
         app:riv_corner_radius="@dimen/rounded_image_border" />
 
     <de.pixart.messenger.ui.widget.CopyTextView
