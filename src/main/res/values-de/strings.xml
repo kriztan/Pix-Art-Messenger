@@ -833,6 +833,6 @@
   <string name="delete_file_dialog">Datei löschen</string>
   <string name="delete_file_dialog_msg">Bist du sicher, dass du diese Datei löschen möchtest?\n\n<b>Achtung:</b>Dies löscht keine Dateien, die auf anderen Geräten oder Servern gespeichert sind.</string>
   <string name="cancelled">abgebrochen</string>
-  <string name="remote_server_timeout">Timeout des Servers</string>
-  <string name="already_drafting_message">Du bist bereits dabei, eine Nachricht zu schreiben.</string>
+  <string name="remote_server_timeout">Timeout des Remote-Servers</string>
+  <string name="already_drafting_message">Du bist bereits dabei, eine Nachricht zu entwerfen.</string>
 </resources>
