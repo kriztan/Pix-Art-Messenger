@@ -9,7 +9,7 @@
   <string name="action_secure">Verschlüsselte Unterhaltung</string>
   <string name="action_add_account">Profil hinzufügen</string>
   <string name="action_edit_contact">Namen bearbeiten</string>
-  <string name="action_add_phone_book">Zu Telefonbuch hinzufügen</string>
+  <string name="action_add_phone_book">Zu Adressbuch hinzufügen</string>
   <string name="action_delete_contact">Aus Kontaktliste entfernen</string>
   <string name="action_block_contact">Kontakt sperren</string>
   <string name="action_unblock_contact">Kontakt entsperren</string>
@@ -28,7 +28,7 @@
   <string name="minute_ago">vor einer Minute</string>
   <string name="minutes_ago">vor %d Minuten</string>
   <string name="unread_conversations">ungelesene Unterhaltungen</string>
-  <string name="sending">senden…</string>
+  <string name="sending">wird gesendet…</string>
   <string name="message_decrypting">Nachricht wird entschlüsselt. Bitte warten …</string>
   <string name="pgp_message">OpenPGP-verschlüsselte Nachricht</string>
   <string name="nick_in_use">Nickname wird bereits verwendet</string>
