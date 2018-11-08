@@ -97,7 +97,7 @@
     <string name="offering">angeboten…</string>
     <string name="waiting">warten…</string>
     <string name="no_pgp_key">Kein OpenPGP-Schlüssel gefunden</string>
-    <string name="contact_has_no_pgp_key">Pix-Art Messenger ist nicht in der Lage, deine Nachrichten zu verschlüsseln, weil dein Kontakt seinen Schlüssel nicht preisgibt.\n\n<small>Bitte deinen Kontakt darum, OpenPGP zu installieren.</small></string>
+    <string name="contact_has_no_pgp_key">Pix-Art Messenger ist nicht in der Lage, deine Nachrichten zu verschlüsseln, weil dein Kontakt seinen Schlüssel nicht preisgibt.\n\n<small>Bitte deinen Kontakt darum, OpenPGP zu installieren.</small> </string>
     <string name="no_pgp_keys">Keine OpenPGP-Schlüssel gefunden</string>
     <string name="pref_general">Allgemeines</string>
     <string name="pref_accept_files_wifi">Dateien im WLAN annehmen</string>
@@ -183,8 +183,6 @@
     <string name="server_info_pep">XEP-0163: PEP (Profilbilder/OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
-    <string name="server_info_available">ja</string>
-    <string name="server_info_unavailable">nein</string>
     <string name="missing_public_keys">Öffentlicher Schlüssel fehlt</string>
     <string name="last_seen_now">online</string>
     <string name="last_seen_min">zul. online vor 1 Min.</string>
@@ -201,7 +199,7 @@
     <string name="otr_fingerprint_selected_message">OTR Fingerabdruck der Nachricht</string>
     <string name="openpgp_key_id">OpenPGP Schlüssel ID</string>
     <string name="omemo_fingerprint">OMEMO-Fingerabdruck</string>
-    <string name="omemo_fingerprint_x509">v\\OMEMO-Fingerabdruck</string>
+    <string name="omemo_fingerprint_x509">v\\OMEMO-Fingerabdruck </string>
     <string name="omemo_fingerprint_selected_message">OMEMO-Fingerabdruck der Nachricht</string>
     <string name="omemo_fingerprint_x509_selected_message">v\\OMEMO-Fingerabdruck der Nachricht</string>
     <string name="other_devices">Andere Geräte</string>
