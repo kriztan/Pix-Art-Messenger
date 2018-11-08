@@ -181,6 +181,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">да</string>
+    <string name="server_info_unavailable">нет</string>
     <string name="missing_public_keys">Потеряны анонсы публичного ключа</string>
     <string name="last_seen_now">oнлайн</string>
     <string name="last_seen_min">1 минуту назад</string>
@@ -322,4 +324,8 @@
     <string name="account_status_stream_opening_error">Ошибка открытия потока</string>
     <string name="action_open">Открыть</string>
     <string name="action_delete">Удалить</string>
+    <string name="delete_file_dialog">Удалить файл</string>
+    <string name="cancelled">отменён</string>
+    <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
+    <string name="server_info_available_with">да, %s</string>
 </resources>
