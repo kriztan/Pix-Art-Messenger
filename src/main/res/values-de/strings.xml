@@ -183,6 +183,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Profilbilder/OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">ja</string>
+    <string name="server_info_unavailable">nein</string>
     <string name="missing_public_keys">Öffentlicher Schlüssel fehlt</string>
     <string name="last_seen_now">online</string>
     <string name="last_seen_min">zul. online vor 1 Min.</string>
@@ -833,4 +835,5 @@
     <string name="cancelled">abgebrochen</string>
     <string name="remote_server_timeout">Timeout des Remote-Servers</string>
     <string name="already_drafting_message">Du bist bereits dabei, eine Nachricht zu entwerfen.</string>
+    <string name="server_info_available_with">ja, %s</string>
 </resources>
