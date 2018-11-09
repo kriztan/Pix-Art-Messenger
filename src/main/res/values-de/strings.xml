@@ -835,5 +835,6 @@
     <string name="cancelled">abgebrochen</string>
     <string name="remote_server_timeout">Timeout des Remote-Servers</string>
     <string name="already_drafting_message">Du bist bereits dabei, eine Nachricht zu entwerfen.</string>
+    <string name="bad_key_for_encryption">Ungültiger Schlüssel für die Verschlüsselung.</string>
     <string name="server_info_available_with">ja, %s</string>
 </resources>
