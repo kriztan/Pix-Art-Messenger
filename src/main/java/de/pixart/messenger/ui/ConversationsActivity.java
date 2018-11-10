@@ -299,8 +299,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
     }
 
     private void openBatteryOptimizationDialogIfNeeded() {
-        if (hasAccountWithoutPush()
-                && isOptimizingBattery()
+        if (isOptimizingBattery()
                 && getPreferences().getBoolean(getBatteryOptimizationPreferenceKey(), true)) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle(R.string.battery_optimizations_enabled);
@@ -323,16 +322,6 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
             dialog.show();
         }
     }
-
-    private boolean hasAccountWithoutPush() {
-        for (Account account : xmppConnectionService.getAccounts()) {
-            if (account.getStatus() == Account.State.ONLINE && !xmppConnectionService.getPushManagementService().available(account)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
 
     private void notifyFragmentOfBackendConnected(@IdRes int id) {
         final Fragment fragment = getFragmentManager().findFragmentById(id);

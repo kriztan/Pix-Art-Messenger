@@ -1008,7 +1008,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
         if (this.mAccount.isOnlineAndConnected() && !this.mFetchingAvatar) {
             Features features = this.mAccount.getXmppConnection().getFeatures();
             this.binding.stats.setVisibility(View.VISIBLE);
-            boolean showBatteryWarning = !xmppConnectionService.getPushManagementService().available(mAccount) && isOptimizingBattery();
+            boolean showBatteryWarning = isOptimizingBattery();
             boolean showDataSaverWarning = isAffectedByDataSaver();
             showOsOptimizationWarning(showBatteryWarning, showDataSaverWarning);
             this.binding.sessionEst.setText(UIHelper.readableTimeDifferenceFull(this, this.mAccount.getXmppConnection()
@@ -1068,13 +1068,6 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 this.binding.serverInfoHttpUpload.setText(R.string.server_info_unavailable);
             }
 
-            this.binding.pushRow.setVisibility(xmppConnectionService.getPushManagementService().isStub() ? View.GONE : View.VISIBLE);
-
-            if (xmppConnectionService.getPushManagementService().available(mAccount)) {
-                this.binding.serverInfoPush.setText(R.string.server_info_available);
-            } else {
-                this.binding.serverInfoPush.setText(R.string.server_info_unavailable);
-            }
             final long pgpKeyId = this.mAccount.getPgpId();
             if (pgpKeyId != 0 && Config.supportOpenPgp()) {
                 OnClickListener openPgp = view -> launchOpenKeyChain(pgpKeyId);

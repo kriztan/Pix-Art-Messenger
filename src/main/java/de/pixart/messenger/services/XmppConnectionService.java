@@ -172,8 +172,6 @@ public class XmppConnectionService extends Service {
     public static final String ACTION_TRY_AGAIN = "try_again";
     public static final String ACTION_DISMISS_ERROR_NOTIFICATIONS = "dismiss_error";
     public static final String ACTION_IDLE_PING = "idle_ping";
-    public static final String ACTION_FCM_TOKEN_REFRESH = "fcm_token_refresh";
-    public static final String ACTION_FCM_MESSAGE_RECEIVED = "fcm_message_received";
     public static final String FDroid = "org.fdroid.fdroid";
     public static final String PlayStore = "com.android.vending";
     private static final String SETTING_LAST_ACTIVITY_TS = "last_activity_timestamp";
@@ -285,7 +283,6 @@ public class XmppConnectionService extends Service {
     };
     private AvatarService mAvatarService = new AvatarService(this);
     private MessageArchiveService mMessageArchiveService = new MessageArchiveService(this);
-    private PushManagementService mPushManagementService = new PushManagementService(this);
     private final OnBindListener mOnBindListener = new OnBindListener() {
 
         @Override
@@ -319,9 +316,6 @@ public class XmppConnectionService extends Service {
                 });
             }
             sendPresence(account);
-            if (mPushManagementService.available(account)) {
-                mPushManagementService.registerPushTokenOnServer(account);
-            }
             connectMultiModeConversations(account);
             syncDirtyContacts(account);
         }
@@ -665,17 +659,10 @@ public class XmppConnectionService extends Service {
                         refreshAllPresences();
                     }
                     break;
-                case ACTION_FCM_TOKEN_REFRESH:
-                    refreshAllFcmTokens();
-                    break;
                 case ACTION_IDLE_PING:
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         scheduleNextIdlePing();
                     }
-                    break;
-                case ACTION_FCM_MESSAGE_RECEIVED:
-                    pushedAccountHash = intent.getStringExtra("account");
-                    Log.d(Config.LOGTAG, "push message arrived in service. account=" + pushedAccountHash);
                     break;
                 case Intent.ACTION_SEND:
                     Uri uri = intent.getData();
@@ -4016,14 +4003,6 @@ public class XmppConnectionService extends Service {
         }
     }
 
-    private void refreshAllFcmTokens() {
-        for (Account account : getAccounts()) {
-            if (account.isOnlineAndConnected() && mPushManagementService.available(account)) {
-                mPushManagementService.registerPushTokenOnServer(account);
-            }
-        }
-    }
-
     private void sendOfflinePresence(final Account account) {
         Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": sending offline presence");
         sendPresencePacket(account, mPresenceGenerator.sendOfflinePresence(account));
@@ -4279,10 +4258,6 @@ public class XmppConnectionService extends Service {
                 callback.onPreferencesFetchFailed();
             }
         });
-    }
-
-    public PushManagementService getPushManagementService() {
-        return mPushManagementService;
     }
 
     public Account getPendingAccount() {
