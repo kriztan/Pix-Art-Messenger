@@ -7,9 +7,6 @@ import android.util.Log;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,11 +22,8 @@ import de.measite.minidns.hla.DnssecResolverApi;
 import de.measite.minidns.hla.ResolverApi;
 import de.measite.minidns.hla.ResolverResult;
 import de.measite.minidns.iterative.ReliableDNSClient;
-import de.measite.minidns.record.A;
-import de.measite.minidns.record.AAAA;
 import de.measite.minidns.record.CNAME;
 import de.measite.minidns.record.Data;
-import de.measite.minidns.record.InternetAddressRR;
 import de.measite.minidns.record.SRV;
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
@@ -39,7 +33,7 @@ public class Resolver {
 
     public static final int DEFAULT_PORT_XMPP = 5222;
     private static final String DIRECT_TLS_SERVICE = "_xmpps-client";
-    private static final String STARTTLS_SERICE = "_xmpp-client";
+    private static final String STARTTLS_SERVICE = "_xmpp-client";
 
     private static XmppConnectionService SERVICE = null;
 
@@ -151,91 +145,41 @@ public class Resolver {
         if (!IP.matches(domain)) {
             return Collections.emptyList();
         }
-        try {
-            Result result = new Result();
-            result.ip = InetAddress.getByName(domain);
-            result.port = DEFAULT_PORT_XMPP;
-            return Collections.singletonList(result);
-        } catch (UnknownHostException e) {
-            return Collections.emptyList();
-        }
+        return Collections.singletonList(Result.createDefault(DNSName.from(domain)));
     }
 
     private static List<Result> resolveSrv(String domain, final boolean directTls) throws IOException {
-        DNSName dnsName = DNSName.from((directTls ? DIRECT_TLS_SERVICE : STARTTLS_SERICE) + "._tcp." + domain);
+        DNSName dnsName = DNSName.from((directTls ? DIRECT_TLS_SERVICE : STARTTLS_SERVICE) + "._tcp." + domain);
         ResolverResult<SRV> result = resolveWithFallback(dnsName, SRV.class);
         final List<Result> results = new ArrayList<>();
-        final List<Thread> threads = new ArrayList<>();
         for (SRV record : result.getAnswersOrEmptySet()) {
             if (record.name.length() == 0 && record.priority == 0) {
                 continue;
             }
-            threads.add(new Thread(() -> {
-                final List<Result> ipv4s = resolveIp(record, A.class, result.isAuthenticData(), directTls);
-                if (ipv4s.size() == 0) {
-                    Result resolverResult = Result.fromRecord(record, directTls);
-                    resolverResult.authenticated = resolverResult.isAuthenticated();
-                    ipv4s.add(resolverResult);
-                }
-                synchronized (results) {
-                    results.addAll(ipv4s);
-                }
+            Result resolverResult = Result.fromRecord(record, directTls);
+            resolverResult.authenticated = result.isAuthenticData();
+            results.add(resolverResult);
+        }
 
-            }));
-            threads.add(new Thread(() -> {
-                final List<Result> ipv6s = resolveIp(record, AAAA.class, result.isAuthenticData(), directTls);
-                synchronized (results) {
-                    results.addAll(ipv6s);
-                }
-            }));
-        }
-        for (Thread thread : threads) {
-            thread.start();
-        }
-        for (Thread thread : threads) {
-            try {
-                thread.join();
-            } catch (InterruptedException e) {
-                return Collections.emptyList();
-            }
-        }
         return results;
-    }
-
-    private static <D extends InternetAddressRR> List<Result> resolveIp(SRV srv, Class<D> type, boolean authenticated, boolean directTls) {
-        List<Result> list = new ArrayList<>();
-        try {
-            ResolverResult<D> results = resolveWithFallback(srv.name, type, authenticated);
-            for (D record : results.getAnswersOrEmptySet()) {
-                Result resolverResult = Result.fromRecord(srv, directTls);
-                resolverResult.authenticated = results.isAuthenticData() && authenticated;
-                resolverResult.ip = record.getInetAddress();
-                list.add(resolverResult);
-            }
-        } catch (Throwable t) {
-            Log.d(Config.LOGTAG, Resolver.class.getSimpleName() + ": error resolving " + type.getSimpleName() + " " + t.getMessage());
-        }
-        return list;
     }
 
     private static List<Result> resolveNoSrvRecords(DNSName dnsName, boolean withCnames) {
         List<Result> results = new ArrayList<>();
+        Boolean resolveCNAME = false;
         try {
-            for (A a : resolveWithFallback(dnsName, A.class, false).getAnswersOrEmptySet()) {
-                results.add(Result.createDefault(dnsName, a.getInetAddress()));
-            }
-            for (AAAA aaaa : resolveWithFallback(dnsName, AAAA.class, false).getAnswersOrEmptySet()) {
-                results.add(Result.createDefault(dnsName, aaaa.getInetAddress()));
-            }
-            if (results.size() == 0 && withCnames) {
+            if (withCnames) {
                 for (CNAME cname : resolveWithFallback(dnsName, CNAME.class, false).getAnswersOrEmptySet()) {
                     results.addAll(resolveNoSrvRecords(cname.name, false));
+                    resolveCNAME = true;
                 }
             }
         } catch (Throwable throwable) {
             Log.d(Config.LOGTAG, Resolver.class.getSimpleName() + "error resolving fallback records", throwable);
         }
-        results.add(Result.createDefault(dnsName));
+        if(!resolveCNAME) {
+            results.add(Result.createDefault(dnsName));
+        }
         return results;
     }
 
@@ -266,13 +210,11 @@ public class Resolver {
 
     public static class Result implements Comparable<Result> {
         public static final String DOMAIN = "domain";
-        public static final String IP = "ip";
         public static final String HOSTNAME = "hostname";
         public static final String PORT = "port";
         public static final String PRIORITY = "priority";
         public static final String DIRECT_TLS = "directTls";
         public static final String AUTHENTICATED = "authenticated";
-        private InetAddress ip;
         private DNSName hostname;
         private int port = DEFAULT_PORT_XMPP;
         private boolean directTls = false;
@@ -288,25 +230,15 @@ public class Resolver {
             return result;
         }
 
-        static Result createDefault(DNSName hostname, InetAddress ip) {
+        static Result createDefault(DNSName hostname) {
             Result result = new Result();
             result.port = DEFAULT_PORT_XMPP;
             result.hostname = hostname;
-            result.ip = ip;
             return result;
-        }
-
-        static Result createDefault(DNSName hostname) {
-            return createDefault(hostname, null);
         }
 
         public static Result fromCursor(Cursor cursor) {
             final Result result = new Result();
-            try {
-                result.ip = InetAddress.getByAddress(cursor.getBlob(cursor.getColumnIndex(IP)));
-            } catch (UnknownHostException e) {
-                result.ip = null;
-            }
             final String hostname = cursor.getString(cursor.getColumnIndex(HOSTNAME));
             result.hostname = hostname == null ? null : DNSName.from(hostname);
             result.port = cursor.getInt(cursor.getColumnIndex(PORT));
@@ -327,23 +259,17 @@ public class Resolver {
             if (directTls != result.directTls) return false;
             if (authenticated != result.authenticated) return false;
             if (priority != result.priority) return false;
-            if (ip != null ? !ip.equals(result.ip) : result.ip != null) return false;
             return hostname != null ? hostname.equals(result.hostname) : result.hostname == null;
         }
 
         @Override
         public int hashCode() {
-            int result = ip != null ? ip.hashCode() : 0;
-            result = 31 * result + (hostname != null ? hostname.hashCode() : 0);
+            int result = hostname != null ? hostname.hashCode() : 0;
             result = 31 * result + port;
             result = 31 * result + (directTls ? 1 : 0);
             result = 31 * result + (authenticated ? 1 : 0);
             result = 31 * result + priority;
             return result;
-        }
-
-        public InetAddress getIp() {
-            return ip;
         }
 
         public int getPort() {
@@ -365,7 +291,6 @@ public class Resolver {
         @Override
         public String toString() {
             return "Result{" +
-                    "ip='" + (ip == null ? null : ip.getHostAddress()) + '\'' +
                     ", hostame='" + hostname.toString() + '\'' +
                     ", port=" + port +
                     ", directTls=" + directTls +
@@ -378,17 +303,7 @@ public class Resolver {
         public int compareTo(@NonNull Result result) {
             if (result.priority == priority) {
                 if (directTls == result.directTls) {
-                    if (ip == null && result.ip == null) {
                         return 0;
-                    } else if (ip != null && result.ip != null) {
-                        if (ip instanceof Inet4Address && result.ip instanceof Inet4Address) {
-                            return 0;
-                        } else {
-                            return ip instanceof Inet4Address ? -1 : 1;
-                        }
-                    } else {
-                        return ip != null ? -1 : 1;
-                    }
                 } else {
                     return directTls ? -1 : 1;
                 }
@@ -399,7 +314,6 @@ public class Resolver {
 
         public ContentValues toContentValues() {
             final ContentValues contentValues = new ContentValues();
-            contentValues.put(IP, ip == null ? null : ip.getAddress());
             contentValues.put(HOSTNAME, hostname == null ? null : hostname.toString());
             contentValues.put(PORT, port);
             contentValues.put(PRIORITY, priority);
@@ -408,4 +322,5 @@ public class Resolver {
             return contentValues;
         }
     }
+
 }

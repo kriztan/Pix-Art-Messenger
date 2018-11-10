@@ -152,7 +152,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
     private static String CREATE_RESOLVER_RESULTS_TABLE = "create table " + RESOLVER_RESULTS_TABLENAME + "("
             + Resolver.Result.DOMAIN + " TEXT,"
             + Resolver.Result.HOSTNAME + " TEXT,"
-            + Resolver.Result.IP + " BLOB,"
             + Resolver.Result.PRIORITY + " NUMBER,"
             + Resolver.Result.DIRECT_TLS + " NUMBER,"
             + Resolver.Result.AUTHENTICATED + " NUMBER,"

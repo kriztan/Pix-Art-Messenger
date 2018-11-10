@@ -351,18 +351,10 @@ public class XmppConnection implements Runnable {
                         features.encryptionEnabled = result.isDirectTls();
                         verifiedHostname = result.isAuthenticated() ? result.getHostname().toString() : null;
                         Log.d(Config.LOGTAG, "verified hostname " + verifiedHostname);
-                        final InetSocketAddress addr;
-                        if (result.getIp() != null) {
-                            addr = new InetSocketAddress(result.getIp(), result.getPort());
-                            Log.d(Config.LOGTAG, account.getJid().asBareJid().toString()
-                                    + ": using values from resolver " + (result.getHostname() == null ? "" : result.getHostname().toString()
-                                    + "/") + result.getIp().getHostAddress() + ":" + result.getPort() + " tls: " + features.encryptionEnabled);
-                        } else {
-                            addr = new InetSocketAddress(IDN.toASCII(result.getHostname().toString()), result.getPort());
-                            Log.d(Config.LOGTAG, account.getJid().asBareJid().toString()
-                                    + ": using values from resolver "
-                                    + result.getHostname().toString() + ":" + result.getPort() + " tls: " + features.encryptionEnabled);
-                        }
+                        final InetSocketAddress addr = new InetSocketAddress(IDN.toASCII(result.getHostname().toString()), result.getPort());
+                        Log.d(Config.LOGTAG, account.getJid().asBareJid().toString()
+                                + ": using values from resolver "
+                                + result.getHostname().toString() + ":" + result.getPort() + " tls: " + features.encryptionEnabled);
 
                         localSocket = new Socket();
                         localSocket.connect(addr, Config.SOCKET_TIMEOUT * 1000);
