@@ -831,9 +831,12 @@
     <string name="action_delete">Löschen</string>
     <string name="security_violation_not_attaching_file">Datei aufgrund von Sicherheitsverletzungen ausgelassen.</string>
     <string name="delete_file_dialog">Datei löschen</string>
+    <string name="delete_file_dialog_msg">Bist du sicher, dass du diese Datei löschen möchtest?\n\n<b>Achtung:</b>Dies wird keine Kopien dieser Datei löschen, die auf anderen Geräten oder Servern gespeichert sind.</string>
     <string name="cancelled">abgebrochen</string>
     <string name="remote_server_timeout">Timeout des Remote-Servers</string>
     <string name="already_drafting_message">Du bist bereits dabei, eine Nachricht zu entwerfen.</string>
     <string name="bad_key_for_encryption">Ungültiger Schlüssel für die Verschlüsselung.</string>
     <string name="server_info_available_with">ja, %s</string>
+    <string name="delete_message_dialog">Nachricht löschen</string>
+    <string name="delete_message_dialog_msg">Bist du sicher, dass du diese Nachricht löschen möchtest?\n\n<b>Achtung:</b>Dies wird keine Kopien dieser Nachricht löschen, die auf anderen Geräten oder Servern gespeichert sind.</string>
 </resources>
