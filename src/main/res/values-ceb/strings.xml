@@ -151,7 +151,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">AbliPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">I-edit ang account</string>
     <string name="mgmt_account_delete">Tangtanga ang account</string>
     <string name="mgmt_account_publish_avatar">I-publikar ang avatar</string>
     <string name="mgmt_account_publish_pgp">I-publikar sa OpenPGP ang publikong yawe</string>
