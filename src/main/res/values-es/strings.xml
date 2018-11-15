@@ -151,7 +151,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">Editar cuenta</string>
     <string name="mgmt_account_delete">Eliminar cuenta</string>
     <string name="mgmt_account_publish_avatar">Imagen de perfil</string>
     <string name="mgmt_account_publish_pgp">Publicar clave pública OpenPGP</string>
