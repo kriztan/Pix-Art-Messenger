@@ -151,7 +151,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">Hesabı düzenle</string>
     <string name="mgmt_account_delete">Hesabı silin</string>
     <string name="mgmt_account_publish_avatar">Avatarı paylaş</string>
     <string name="mgmt_account_publish_pgp">OpenPGP genel anahtarı paylaş</string>
