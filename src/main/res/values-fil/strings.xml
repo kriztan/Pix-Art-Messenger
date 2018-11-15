@@ -151,7 +151,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">I-edit ang account</string>
     <string name="mgmt_account_delete">Tanggalin ang account</string>
     <string name="mgmt_account_publish_avatar">Magpublish ng kahit anong larawan</string>
     <string name="mgmt_account_publish_pgp">Magpublish ng OpenPGP public key</string>
