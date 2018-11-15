@@ -151,7 +151,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">Sunting akun</string>
     <string name="mgmt_account_delete">Hapus akun</string>
     <string name="mgmt_account_publish_avatar">Menampilkan avatar</string>
     <string name="mgmt_account_publish_pgp">Menampilkan kunci terbuka OpenPGP</string>
