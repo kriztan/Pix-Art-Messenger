@@ -143,7 +143,6 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenGPG</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="mgmt_account_edit">Editare cont</string>
     <string name="mgmt_account_delete">Șterge cont</string>
     <string name="mgmt_account_publish_avatar">Publică avatar</string>
     <string name="mgmt_account_publish_pgp">Publică cheia publică OpenPGP</string>
