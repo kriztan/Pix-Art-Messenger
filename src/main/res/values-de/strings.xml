@@ -154,7 +154,7 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="action_account">Konto bearbeiten</string>
+    <string name="action_account">Profil bearbeiten</string>
     <string name="mgmt_account_delete">Löschen</string>
     <string name="mgmt_account_publish_avatar">Profilbild veröffentlichen</string>
     <string name="mgmt_account_publish_pgp">Öffentlichen OpenPGP-Schlüssel veröffentlichen</string>
@@ -839,5 +839,5 @@
     <string name="server_info_available_with">ja, %s</string>
     <string name="delete_message_dialog">Nachricht löschen</string>
     <string name="delete_message_dialog_msg">Bist du sicher, dass du diese Nachricht löschen möchtest?\n\n<b>Achtung:</b> Dies wird keine Kopien dieser Nachricht löschen, die auf anderen Geräten oder Servern gespeichert sind.</string>
-    <string name="feature_not_implemented">Funktionalität nicht implementiert</string>
+    <string name="feature_not_implemented">Funktion ist nicht implementiert</string>
 </resources>
