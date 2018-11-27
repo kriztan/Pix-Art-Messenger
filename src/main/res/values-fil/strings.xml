@@ -168,7 +168,7 @@
     <string name="passwords_do_not_match">Ang password ay hindi magkatugma</string>
     <string name="invalid_jid">Hindi ito balido na Jabber-ID</string>
     <string name="error_out_of_memory">Wala ng memorya. Ang imahe ay napakalaki</string>
-    <string name="add_phone_book_text">Gusto mo bang magdagdag %s sa iyong address book?</string>
+    <string name="add_phone_book_text">Gusto mo bang magdagdag sa iyong address book?</string>
     <string name="server_info_show_more">Impormasyon sa server</string>
     <string name="server_info_mam">XEP-0313: MAM</string>
     <string name="server_info_carbon_messages">XEP-0280: Mensagheng karbon</string>
