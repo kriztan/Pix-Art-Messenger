@@ -839,7 +839,7 @@
     <string name="delete_message_dialog">Nachricht löschen</string>
     <string name="delete_message_dialog_msg">Bist du sicher, dass du diese Nachricht löschen möchtest?\n\n<b>Achtung:</b> Dies wird keine Kopien dieser Nachricht löschen, die auf anderen Geräten oder Servern gespeichert sind.</string>
     <string name="feature_not_implemented">Funktion ist nicht implementiert</string>
-    <string name="device_does_not_support_unknown_source_op">Dein Gerät unterstützt nicht, Installationen von Apps aus unbekannten Quellen zu erlauben.</string>
+    <string name="device_does_not_support_unknown_source_op">Dein Gerät bietet keine Einstellung an, um die Installation aus unbekannten Quellen zu erlauben.</string>
     <string name="reject_request">Anfrage ablehnen</string>
     <string name="error_message_copied_to_clipboard">Fehlermeldung in die Zwischenablage kopiert</string>
 </resources>
