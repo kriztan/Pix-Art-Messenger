@@ -842,4 +842,6 @@
     <string name="device_does_not_support_unknown_source_op">Dein Gerät bietet keine Einstellung an, um die Installation aus unbekannten Quellen zu erlauben.</string>
     <string name="reject_request">Anfrage ablehnen</string>
     <string name="error_message_copied_to_clipboard">Fehlermeldung in die Zwischenablage kopiert</string>
+    <string name="pref_screen_security_summary">Behandele den Inhalt als sicher und verhindere, dass er in Screenshots erscheint.</string>
+    <string name="pref_screen_security">Screenshots verbieten</string>
 </resources>
