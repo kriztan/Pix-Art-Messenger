@@ -75,6 +75,7 @@
     <string name="sharing_files_please_wait">Compartiendo ficheros. Por favor, espera...</string>
     <string name="action_clear_history">Limpiar historial</string>
     <string name="clear_conversation_history">Limpiar historial de conversación</string>
+    <string name="clear_histor_msg">¿Quieres borrar todos los mensajes de esta conversación?\n\n<b>Atención:</b> Esto no afectará a los mensajes guardados en otros dispositivos o servidores.</string>
     <string name="delete_messages">Borrar mensajes</string>
     <string name="also_end_conversation">Además, terminar esta conversación</string>
     <string name="choose_presence">Seleccionar dispositivo</string>
@@ -181,6 +182,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">sí</string>
+    <string name="server_info_unavailable">no</string>
     <string name="missing_public_keys">Se han perdido las claves de anuncio públicas</string>
     <string name="last_seen_now">en línea</string>
     <string name="last_seen_min">hace 1 minuto</string>
@@ -756,5 +759,6 @@
     <string name="pref_theme_dark">Tema oscuro</string>
     <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
+    <string name="pref_font_size">Tamaño de tipografía</string>
     <string name="no_microphone_permission">Pix-Art Messenger necesita acceder al micrófono</string>
 </resources>
