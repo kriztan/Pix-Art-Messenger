@@ -787,4 +787,5 @@
     <string name="action_group_details">Detalles del grupo</string>
     <string name="cancelled">cancelado</string>
     <string name="feature_not_implemented">Característica no implementada</string>
+    <string name="reject_request">Rechazar petición</string>
 </resources>
