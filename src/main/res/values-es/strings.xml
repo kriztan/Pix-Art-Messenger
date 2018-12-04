@@ -772,11 +772,19 @@
     <string name="no_microphone_permission">Pix-Art Messenger necesita acceder al micrófono</string>
     <string name="search_messages">Buscar mensajes</string>
     <string name="view_conversation">Ver conversación</string>
+    <string name="jabber_id_copied_to_clipboard">Copiado JID en el portapapeles</string>
     <string name="copy_jabber_id">Copiar JID</string>
+    <string name="group_chat_name">Nombre</string>
     <string name="providing_a_name_is_optional">Proporcionar un nombre es opcional</string>
     <string name="delete_message">Borrar mensaje</string>
+    <string name="conference_destroyed">Este grupo de chat ha sido destruido</string>
+    <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
+    <string name="unable_to_save_recording">Imposible guardar la grabación</string>
+    <string name="notification_group_messages">Mensajes</string>
+    <string name="messages_channel_name">Mensajes</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
     <string name="backup_channel_name">Copia de seguridad de base de datos</string>
     <string name="action_group_details">Detalles del grupo</string>
     <string name="cancelled">cancelado</string>
+    <string name="feature_not_implemented">Característica no implementada</string>
 </resources>
