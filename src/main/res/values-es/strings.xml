@@ -764,9 +764,15 @@
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Elegir cuenta</string>
     <string name="pref_font_size">Tamaño de tipografía</string>
+    <string name="pref_font_size_summary">Tamaño de tipografía usado en la aplicación.</string>
+    <string name="small">Pequeño</string>
+    <string name="medium">Mediano</string>
+    <string name="large">Grande</string>
     <string name="not_encrypted_for_this_device">El mensaje no fue cifrado para este dispositivo.</string>
     <string name="no_microphone_permission">Pix-Art Messenger necesita acceder al micrófono</string>
+    <string name="search_messages">Buscar mensajes</string>
     <string name="view_conversation">Ver conversación</string>
+    <string name="copy_jabber_id">Copiar JID</string>
     <string name="providing_a_name_is_optional">Proporcionar un nombre es opcional</string>
     <string name="delete_message">Borrar mensaje</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
