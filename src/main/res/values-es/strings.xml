@@ -22,6 +22,7 @@
     <string name="title_activity_sharewith">Compartir con Conversación</string>
     <string name="title_activity_start_conversation">Comenzar conversación</string>
     <string name="title_activity_choose_contact">Elegir contacto</string>
+    <string name="title_activity_choose_contacts">Elegir Contactos</string>
     <string name="title_activity_block_list">Lista de contactos bloqueados</string>
     <string name="just_now">ahora mismo</string>
     <string name="minute_ago">hace 1 min</string>
@@ -610,6 +611,7 @@
     <string name="this_device_has_been_verified">Este dispositivo ha sido verificado</string>
     <string name="copy_fingerprint">Copiar huella digital</string>
     <string name="all_omemo_keys_have_been_verified">Todas las huellas digitales OMEMO han sido verificadas</string>
+    <string name="barcode_does_not_contain_fingerprints_for_this_conversation">El código QR no contiene huellas para esta conversación.</string>
     <string name="verified_fingerprints">Huellas digitales verificadas</string>
     <string name="use_camera_icon_to_scan_barcode">Use la cámara para escanear el código QR del contacto</string>
     <string name="please_wait_for_keys_to_be_fetched">Por favor, espera a que las claves sean recuperadas</string>
@@ -768,16 +770,26 @@
     <string name="small">Pequeño</string>
     <string name="medium">Mediano</string>
     <string name="large">Grande</string>
+    <string name="create_shortcut">Crear atajo</string>
     <string name="not_encrypted_for_this_device">El mensaje no fue cifrado para este dispositivo.</string>
     <string name="no_microphone_permission">Pix-Art Messenger necesita acceder al micrófono</string>
     <string name="search_messages">Buscar mensajes</string>
+    <string name="gif">GIF</string>
     <string name="view_conversation">Ver conversación</string>
+    <string name="web_address">dirección web</string>
     <string name="jabber_id_copied_to_clipboard">Copiado JID en el portapapeles</string>
     <string name="copy_jabber_id">Copiar JID</string>
+    <string name="copy_link">Copiar dirección web</string>
+    <string name="server_hint">Elegir proveedor</string>
+    <string name="choose_your_server">Elegir su servidor jabber</string>
+    <string name="show_privacy">Política de Privacidad</string>
+    <string name="show_termsofuse">Términos y condiciones de uso</string>
     <string name="group_chat_name">Nombre</string>
     <string name="providing_a_name_is_optional">Proporcionar un nombre es opcional</string>
+    <string name="everyone_has_read_up_to_this_point">Todos han leído hasta aquí</string>
     <string name="delete_message">Borrar mensaje</string>
     <string name="conference_destroyed">Este grupo de chat ha sido destruido</string>
+    <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
     <string name="notification_group_messages">Mensajes</string>
@@ -785,9 +797,14 @@
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
     <string name="backup_channel_name">Copia de seguridad de base de datos</string>
     <string name="action_group_details">Detalles del grupo</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_delete">Borrar</string>
+    <string name="delete_file_dialog">Borrar archivo</string>
     <string name="cancelled">cancelado</string>
     <string name="feature_not_implemented">Característica no implementada</string>
     <string name="reject_request">Rechazar petición</string>
+    <string name="omemo_decryption_failed">El descifrado del mensaje OMEMO ha fallado.</string>
     <string name="install_orbot">Instalar Orbot</string>
     <string name="start_orbot">Arrancar Orbot</string>
+    <string name="no_market_app_installed">Aplicación no instalada.</string>
 </resources>
