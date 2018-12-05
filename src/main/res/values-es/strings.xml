@@ -792,6 +792,7 @@
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
+    <string name="foreground_service_channel_name">Servicio en primer plano</string>
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
@@ -800,9 +801,13 @@
     <string name="action_open">Abrir</string>
     <string name="action_delete">Borrar</string>
     <string name="delete_file_dialog">Borrar archivo</string>
+    <string name="delete_file_dialog_msg">¿Está seguro de que quiere borrar este archivo?\n\n<b>Atención:</b> Esto no afectará a las copias guardadas en otros dispositivos o servidores.</string>
     <string name="cancelled">cancelado</string>
+    <string name="delete_message_dialog">Borrar mensaje</string>
+    <string name="delete_message_dialog_msg">¿Está seguro de que quiere borrar este mensaje?\n\n<b>Atención:</b> Esto no afectará a las copias guardadas en otros dispositivos o servidores.</string>
     <string name="feature_not_implemented">Característica no implementada</string>
     <string name="reject_request">Rechazar petición</string>
+    <string name="error_message_copied_to_clipboard">Mensaje de error copiado al portapapeles</string>
     <string name="omemo_decryption_failed">El descifrado del mensaje OMEMO ha fallado.</string>
     <string name="install_orbot">Instalar Orbot</string>
     <string name="start_orbot">Arrancar Orbot</string>
