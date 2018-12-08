@@ -467,7 +467,7 @@
     <string name="mam_prefs">Preferencias de archivado</string>
     <string name="server_side_mam_prefs">Preferencias de archivado en servidor</string>
     <string name="fetching_mam_prefs">Buscando preferencias de archivado. Por favor, espera...</string>
-    <string name="unable_to_fetch_mam_prefs">No se ha podido conseguir las preferencias de archivado</string>
+    <string name="unable_to_fetch_mam_prefs">No se han podido conseguir las preferencias de archivado</string>
     <string name="captcha_required">Captcha requerido</string>
     <string name="captcha_hint">Introduce el texto de la imagen de arriba</string>
     <string name="certificate_chain_is_not_trusted">La cadena de certificados no es de confianza</string>
@@ -749,7 +749,7 @@
     <string name="disable_encryption">Desactivar cifrado</string>
     <string name="error_trustkey_general">Pix-Art Messenger no puede enviar mensajes cifrados a %1$s. Esto puede ser debido a que tu contacto está usando un servidor o un cliente desactualizado que no puede manejar las claves OMEMO.</string>
     <string name="error_trustkey_device_list">No se pudo obtener la lista de dispositivos</string>
-    <string name="error_trustkey_bundle">No se ha podido conseguir las claves del dispositivo</string>
+    <string name="error_trustkey_bundle">No se han podido conseguir las claves del dispositivo</string>
     <string name="error_trustkey_hint_mutual">Consejo: En algunas ocasiones esto se puede arreglar al agregarse cada uno a su lista de contactos.</string>
     <string name="disable_encryption_message">¿Estás seguro de que quieres deshabilitar el cifrado OMEMO en esta conversación?\nEsto permitirá al administrador de tu servidor leer tus mensajes, aunque esta podría ser la única via de comunicación con personas que usen clientes desactualizados.</string>
     <string name="disable_now">Deshabilitar ahora</string>
