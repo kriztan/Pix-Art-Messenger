@@ -97,7 +97,7 @@
     <string name="offering">ofreciendo…</string>
     <string name="waiting">esperando…</string>
     <string name="no_pgp_key">Clave OpenPGP no encontrada</string>
-    <string name="contact_has_no_pgp_key">Pix-Art Messenger no ha podido cifrar tus mensajes porque tu contacto no está anunciando su clave publica.\n\n<small>Por favor, pide a tu contacto que configure OpenPGP.</small></string>
+    <string name="contact_has_no_pgp_key">Pix-Art Messenger no ha podido cifrar tus mensajes porque tu contacto no está anunciando su clave pública.\n\n<small>Por favor, pide a tu contacto que configure OpenPGP.</small></string>
     <string name="no_pgp_keys">Claves OpenPGP no encontradas</string>
     <string name="pref_general">General</string>
     <string name="pref_accept_files_wifi">Aceptar archivos en conexiones WiFi</string>
@@ -523,7 +523,7 @@
     <string name="correct_message">Corregir mensaje</string>
     <string name="send_corrected_message">Enviar mensaje corregido</string>
     <string name="no_keys_just_confirm">Ya confías en este contacto. Seleccionando \'hecho\', estás confirmando que %s es parte de este grupo.</string>
-    <string name="contacts_have_no_pgp_keys">Pix-Art Messenger no ha podido cifrar tus mensajes porque tus contactos no están anunciando su clave publica.\n\n<small>Por favor, pide a tus contactos que configuren OpenPGP.</small></string>
+    <string name="contacts_have_no_pgp_keys">Pix-Art Messenger no ha podido cifrar tus mensajes porque tus contactos no están anunciando su clave pública.\n\n<small>Por favor, pide a tus contactos que configuren OpenPGP.</small></string>
     <string name="this_account_is_disabled">Has deshabilitado esta cuenta</string>
     <string name="security_error_invalid_file_access">Error de seguridad: Acceso a fichero inválido</string>
     <string name="no_application_to_share_uri">No se ha encontrado ninguna aplicación para compartir la URI</string>
@@ -789,6 +789,7 @@
     <string name="everyone_has_read_up_to_this_point">Todos han leído hasta aquí</string>
     <string name="delete_message">Borrar mensaje</string>
     <string name="conference_destroyed">Este grupo de chat ha sido destruido</string>
+    <string name="welcome_server_info">Recomendamos el uso de blabber.im como tu proveedor.</string>
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
@@ -807,6 +808,7 @@
     <string name="delete_message_dialog">Borrar mensaje</string>
     <string name="delete_message_dialog_msg">¿Está seguro de que quiere borrar este mensaje?\n\n<b>Atención:</b> Esto no afectará a las copias guardadas en otros dispositivos o servidores.</string>
     <string name="feature_not_implemented">Característica no implementada</string>
+    <string name="device_does_not_support_unknown_source_op">Tu dispositivo no soporta instalar aplicaciones desde orígenes desconocidos.</string>
     <string name="reject_request">Rechazar petición</string>
     <string name="error_message_copied_to_clipboard">Mensaje de error copiado al portapapeles</string>
     <string name="omemo_decryption_failed">El descifrado del mensaje OMEMO ha fallado.</string>
