@@ -804,6 +804,7 @@
     <string name="delete_file_dialog">Borrar archivo</string>
     <string name="delete_file_dialog_msg">¿Está seguro de que quiere borrar este archivo?\n\n<b>Atención:</b> Esto no afectará a las copias guardadas en otros dispositivos o servidores.</string>
     <string name="cancelled">cancelado</string>
+    <string name="already_drafting_message">Todavía estás redactando un mensaje.</string>
     <string name="bad_key_for_encryption">Bad key for encryption.</string>
     <string name="delete_message_dialog">Borrar mensaje</string>
     <string name="delete_message_dialog_msg">¿Está seguro de que quiere borrar este mensaje?\n\n<b>Atención:</b> Esto no afectará a las copias guardadas en otros dispositivos o servidores.</string>
