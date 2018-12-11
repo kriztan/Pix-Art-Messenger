@@ -784,11 +784,14 @@
     <string name="choose_your_server">Elegir su servidor jabber</string>
     <string name="show_privacy">Política de Privacidad</string>
     <string name="show_termsofuse">Términos y condiciones de uso</string>
+    <string name="group_chat_avatar">Imagen de perfil del grupo</string>
+    <string name="host_does_not_support_group_chat_avatars">El servidor no soporta imágenes de perfil de grupos de chat</string>
     <string name="group_chat_name">Nombre</string>
     <string name="providing_a_name_is_optional">Proporcionar un nombre es opcional</string>
     <string name="everyone_has_read_up_to_this_point">Todos han leído hasta aquí</string>
     <string name="delete_message">Borrar mensaje</string>
     <string name="conference_destroyed">Este grupo de chat ha sido destruido</string>
+    <string name="no_application_found_to_view_contact">No se ha encontrado ninguna aplicación con la que ver este contacto</string>
     <string name="welcome_server_info">Recomendamos el uso de blabber.im como tu proveedor.</string>
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
@@ -797,6 +800,7 @@
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
+    <string name="video_compression_channel_name">Compresión de vídeo</string>
     <string name="backup_channel_name">Copia de seguridad de base de datos</string>
     <string name="action_group_details">Detalles del grupo</string>
     <string name="action_open">Abrir</string>
