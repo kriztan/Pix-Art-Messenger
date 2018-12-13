@@ -801,9 +801,11 @@
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
     <string name="foreground_service_channel_name">Servicio en primer plano</string>
     <string name="notification_group_status_information">Información de estado</string>
+    <string name="error_channel_name">Problemas de conectividad</string>
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
+    <string name="pref_more_notification_settings_summary">Importancia, Sonido, Vibración</string>
     <string name="video_compression_channel_name">Compresión de vídeo</string>
     <string name="backup_channel_name">Copia de seguridad de base de datos</string>
     <string name="action_group_details">Detalles del grupo</string>
