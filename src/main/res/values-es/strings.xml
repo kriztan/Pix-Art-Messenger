@@ -802,6 +802,7 @@
     <string name="foreground_service_channel_name">Servicio en primer plano</string>
     <string name="notification_group_status_information">Información de estado</string>
     <string name="error_channel_name">Problemas de conectividad</string>
+    <string name="error_channel_description">Esta categoría se usa para mostrar una notificación en el caso de que exista algún problema conectando a una cuenta.</string>
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
