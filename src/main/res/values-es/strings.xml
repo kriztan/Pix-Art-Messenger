@@ -789,6 +789,9 @@
     <string name="paste_as_quote">Pegar como cita</string>
     <string name="group_chat_avatar">Imagen de perfil del grupo</string>
     <string name="host_does_not_support_group_chat_avatars">El servidor no soporta imágenes de perfil de grupos de chat</string>
+    <string name="only_the_owner_can_change_group_chat_avatar">Únicamente el propietario puede cambiar la imagen de perfil de un grupo de conversación</string>
+    <string name="contact_name">Nombre de contacto</string>
+    <string name="nickname">Apodo para este grupo de conversación</string>
     <string name="group_chat_name">Nombre</string>
     <string name="providing_a_name_is_optional">Proporcionar un nombre es opcional</string>
     <string name="everyone_has_read_up_to_this_point">Todos han leído hasta aquí</string>
@@ -798,6 +801,7 @@
     <string name="welcome_server_info">Recomendamos el uso de blabber.im como tu proveedor.</string>
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
+    <string name="phone_book">Libreta de direcciones</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
     <string name="foreground_service_channel_name">Servicio en primer plano</string>
     <string name="notification_group_status_information">Información de estado</string>
