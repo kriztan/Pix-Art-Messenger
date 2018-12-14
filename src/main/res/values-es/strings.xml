@@ -804,6 +804,7 @@
     <string name="phone_book">Libreta de direcciones</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
     <string name="foreground_service_channel_name">Servicio en primer plano</string>
+    <string name="foreground_service_channel_description">Esta categoría se usa para mostrar una notificación permanente indicando que Pix-Art Messenger se está ejecutando.</string>
     <string name="notification_group_status_information">Información de estado</string>
     <string name="error_channel_name">Problemas de conectividad</string>
     <string name="error_channel_description">Esta categoría se usa para mostrar una notificación en el caso de que exista algún problema conectando a una cuenta.</string>
@@ -829,6 +830,7 @@
     <string name="device_does_not_support_unknown_source_op">Tu dispositivo no soporta instalar aplicaciones desde orígenes desconocidos.</string>
     <string name="reject_request">Rechazar petición</string>
     <string name="error_message_copied_to_clipboard">Mensaje de error copiado al portapapeles</string>
+    <string name="pref_screen_security">Capturas de pantalla no permitidas</string>
     <string name="omemo_decryption_failed">El descifrado del mensaje OMEMO ha fallado.</string>
     <string name="install_orbot">Instalar Orbot</string>
     <string name="start_orbot">Arrancar Orbot</string>
