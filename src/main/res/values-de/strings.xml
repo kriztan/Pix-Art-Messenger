@@ -848,4 +848,5 @@
     <string name="install_orbot">Orbot installieren</string>
     <string name="start_orbot">Orbot starten</string>
     <string name="no_market_app_installed">Kein App-Store installiert.</string>
+    <string name="group_chat_will_make_your_jabber_id_public">Dieser Gruppen-Chat wird Deine Jabber-ID öffentlich zugänglich machen</string>
 </resources>
