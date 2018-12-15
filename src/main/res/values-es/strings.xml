@@ -811,6 +811,7 @@
     <string name="error_channel_description">Esta categoría se usa para mostrar una notificación en el caso de que exista algún problema conectando a una cuenta.</string>
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
+    <string name="silent_messages_channel_description">Esta categoría se usa para mostrar notificaciones que no deberían activar ningún sonido. Por ejemplo, cuando está activo en otro dispositivo (Periodo de gracia).</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
     <string name="pref_more_notification_settings_summary">Importancia, Sonido, Vibración</string>
     <string name="video_compression_channel_name">Compresión de vídeo</string>
