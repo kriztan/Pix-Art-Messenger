@@ -802,6 +802,7 @@
     <string name="welcome_server_info">Recomendamos el uso de blabber.im como tu proveedor.</string>
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
+    <string name="pref_quick_share_attachment_choice">Seleccionar adjunto</string>
     <string name="phone_book">Libreta de direcciones</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
     <string name="foreground_service_channel_name">Servicio en primer plano</string>
