@@ -804,6 +804,7 @@
     <string name="no_location_permission">Pix-Art Messenger necesita acceder a los servicios de ubicación</string>
     <string name="pref_show_record_voice_btn_summary">Mostrar el botón de grabación de voz en conversaciones como acción rápida</string>
     <string name="pref_show_record_voice_btn">Mostrar botón de grabación de voz</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Reemplazar el botón de enviar con selección de adjunto si no se está tecleando un mensaje. En otro caso mostrar acciones rápidas, que pueden ser configuradas en la siguiente opción.</string>
     <string name="pref_quick_share_attachment_choice">Seleccionar adjunto</string>
     <string name="phone_book">Libreta de direcciones</string>
     <string name="unable_to_save_recording">Imposible guardar la grabación</string>
@@ -814,6 +815,7 @@
     <string name="error_channel_description">Esta categoría se usa para mostrar una notificación en el caso de que exista algún problema conectando a una cuenta.</string>
     <string name="notification_group_messages">Mensajes</string>
     <string name="messages_channel_name">Mensajes</string>
+    <string name="silent_messages_channel_name">Mensajes silenciosos</string>
     <string name="silent_messages_channel_description">Esta categoría se usa para mostrar notificaciones que no deberían activar ningún sonido. Por ejemplo, cuando está activo en otro dispositivo (Periodo de gracia).</string>
     <string name="pref_more_notification_settings">Configuración de notificaciones</string>
     <string name="pref_more_notification_settings_summary">Importancia, Sonido, Vibración</string>
@@ -835,6 +837,7 @@
     <string name="device_does_not_support_unknown_source_op">Tu dispositivo no soporta instalar aplicaciones desde orígenes desconocidos.</string>
     <string name="reject_request">Rechazar petición</string>
     <string name="error_message_copied_to_clipboard">Mensaje de error copiado al portapapeles</string>
+    <string name="pref_screen_security_summary">Tratar el contenido como seguro y evitar que aparezca en capturas de pantalla.</string>
     <string name="pref_screen_security">Capturas de pantalla no permitidas</string>
     <string name="omemo_decryption_failed">El descifrado del mensaje OMEMO ha fallado.</string>
     <string name="install_orbot">Instalar Orbot</string>
