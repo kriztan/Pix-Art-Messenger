@@ -822,6 +822,8 @@
     <string name="video_compression_channel_name">Compresión de vídeo</string>
     <string name="backup_channel_name">Copia de seguridad de base de datos</string>
     <string name="action_group_details">Detalles del grupo</string>
+    <string name="view_media">Visualizar multimedia</string>
+    <string name="media_browser">Navegador multimedia</string>
     <string name="action_open">Abrir</string>
     <string name="action_delete">Borrar</string>
     <string name="security_violation_not_attaching_file">Fichero omitido por violación de seguridad.</string>
