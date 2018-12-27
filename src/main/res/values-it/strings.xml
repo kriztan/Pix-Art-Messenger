@@ -100,6 +100,11 @@
     <string name="no_pgp_keys">Nessuna chiave OpenPGP trovata</string>
     <string name="pref_general">Generale</string>
     <string name="pref_accept_files_wifi">Accetta files con connessioni WiFi</string>
+    <string name="pref_accept_files_summary_wifi">Quando connesso al wifi, accetta automaticamente file più piccoli di…</string>
+    <string name="pref_accept_files_mobile">Accetta files con connessioni dati</string>
+    <string name="pref_accept_files_summary_mobile">Quando connesso con connessione dati, accetta automaticamente file più piccoli di…</string>
+    <string name="pref_accept_files_mobileroaming">Accetta files con connessioni roaming</string>
+    <string name="pref_accept_files_summary_mobileroaming">Quando connesso con connessione dati in roaming, accetta automaticamente file più piccoli di…</string>
     <string name="pref_attachments">Allegati</string>
     <string name="pref_notification_settings">Notifiche</string>
     <string name="pref_vibrate">Vibra</string>
@@ -108,6 +113,7 @@
     <string name="pref_led_summary">Luce di notifica lampeggiante quando arriva un nuovo messaggio</string>
     <string name="pref_sound">Suono di notifica</string>
     <string name="pref_sound_summary">Esegui un suono quando arriva un nuovo messaggio</string>
+    <string name="pref_send_crash">Invia riepiloghi dei problemi</string>
     <string name="pref_confirm_messages">Conferma messaggi</string>
     <string name="pref_confirm_messages_summary">Fai sapere ai tuoi contatti quando hai ricevuto e letto i loro messaggi</string>
     <string name="pref_ui_options">Interfaccia utente</string>
@@ -119,6 +125,7 @@
     <string name="receive_presence_updates">Ricevi aggiornamenti della presenza</string>
     <string name="ask_for_presence_updates">Chiedi aggiornamenti della presenza</string>
     <string name="attach_choose_picture">Scegli un’immagine</string>
+    <string name="attach_take_from_camera">Scatta dalla fotocamera</string>
     <string name="preemptively_grant">Concedi aggiornamenti della presenza preventivamente</string>
     <string name="error_not_an_image_file">Il file selezionato non è un’immagine</string>
     <string name="error_compressing_image">Errore durante la conversione dell’immagine</string>
@@ -145,6 +152,7 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
+    <string name="action_account">Modifica account</string>
     <string name="mgmt_account_delete">Elimina utente</string>
     <string name="mgmt_account_publish_avatar">Pubblica avatar</string>
     <string name="mgmt_account_publish_pgp">Pubblica chiave pubblica OpenPGP</string>
@@ -158,6 +166,8 @@
     <string name="account_settings_password">Password</string>
     <string name="account_settings_example_jabber_id">utente@esempio.com</string>
     <string name="password">Password</string>
+    <string name="confirm_password">Conferma password</string>
+    <string name="passwords_do_not_match">Le password non corrispondono</string>
     <string name="invalid_jid">Questo non è un ID Jabber valido</string>
     <string name="error_out_of_memory">Memoria esaurita. L’immagine è tropppo grande</string>
     <string name="add_phone_book_text">Vuoi aggiungere %s alla tua rubrica?</string>
@@ -171,6 +181,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">si</string>
+    <string name="server_info_unavailable">no</string>
     <string name="missing_public_keys">Annuncio chiave pubblica non effettuato</string>
     <string name="last_seen_now">visto adesso</string>
     <string name="last_seen_min">visto 1 minuto fa</string>
@@ -215,6 +227,7 @@
     <string name="delete_bookmark">Elimina segnalibro</string>
     <string name="bookmark_already_exists">Questo segnalibro esiste già</string>
     <string name="action_edit_subject">Modifica titolo chat di gruppo</string>
+    <string name="topic">Argomento</string>
     <string name="joining_conference">Ingresso nella chat di gruppo...</string>
     <string name="leave">Abbandona</string>
     <string name="contact_added_you">Il contatto ti ha aggiunto alla sua lista contatti</string>
@@ -257,9 +270,11 @@
     <string name="title_pref_enable_quiet_hours">Abilita ore di quiete</string>
     <string name="pref_quiet_hours_summary">Le notifiche verranno silenziate durante le ore di quiete</string>
     <string name="pref_use_send_button_to_indicate_status">Il pulsante di invio indica lo stato</string>
+    <string name="pref_use_colored_names_to_indicate_status">Nomi colorati indicano gli stati</string>
     <string name="pref_use_indicate_received">Richiedi la ricevuta di ritorno</string>
     <string name="pref_use_indicate_received_summary">I messaggi ricevuti verranno contrassegnati con una spunta verde se supportato</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Colora il pulsante di invio per indicare lo stato del contatto</string>
+    <string name="pref_use_colored_names_to_indicate_status_summary">Colora i nomi dei contatti per indicare lo stato dei contatti</string>
     <string name="pref_expert_options_other">Altro</string>
     <string name="pref_autojoin">Unisciti automaticamente alle chat di gruppo</string>
     <string name="pref_autojoin_summary">Rispetta l\'opzione di entrata automatica nei segnalibri di chat di gruppo</string>
@@ -279,6 +294,8 @@
     <string name="send_again">Invia di nuovo</string>
     <string name="file_url">URL del file</string>
     <string name="url_copied_to_clipboard">URL copiato</string>
+    <string name="scan_qr_code">Scansiona codice QR</string>
+    <string name="show_qr_code">Mostra codice QR</string>
     <string name="show_block_list">Mostra la lista nera</string>
     <string name="account_details">Dettagli account</string>
     <string name="verify_otr">Verifica OTR</string>
@@ -288,6 +305,7 @@
     <string name="confirm">Conferma</string>
     <string name="in_progress">In corso</string>
     <string name="respond">Rispondi</string>
+    <string name="failed">Fallito</string>
     <string name="secrets_do_not_match">I segreti non corrispondono</string>
     <string name="try_again">Prova di nuovo</string>
     <string name="finish">Fine</string>
@@ -326,6 +344,7 @@
     <string name="distrust_omemo_key">Diffida il dispositvo</string>
     <string name="distrust_omemo_key_text">Sei sicuro di volere rimuovere la verifica per questo dispositivo?\nIl dispositivo e i messaggi provenienti da esso verranno segnati come non fidati.</string>
     <string name="error_no_keys_to_trust_server_error">Non ci sono chiavi utilizzabili per questo contatto.\nRicezione di nuovi chiavi dal server non riuscita. Forse qualcosa non va con il server del tuo contatto.</string>
+    <string name="error_trustkeys_title">Qualcosa è andato storto</string>
     <string name="fetching_history_from_server">Caricamento della cronologia dal server</string>
     <string name="no_more_history_on_server">Fine cronologia sul server</string>
     <string name="updating">Caricamento…</string>
@@ -385,6 +404,7 @@
     <string name="sending_x_file">Invio %s</string>
     <string name="offering_x_file">Offrendo %s</string>
     <string name="hide_offline">Nascondi i contatti offline</string>
+    <string name="is_typing">sta scrivendo…</string>
     <string name="pref_chat_states">Notifiche di composizione</string>
     <string name="pref_chat_states_summary">Fai sapere ai tuoi contatti quando stai scrivendo loro un messaggio</string>
     <string name="send_location">Invia la posizione</string>
@@ -407,6 +427,8 @@
     <string name="pref_quick_action">Azione rapida</string>
     <string name="none">Nessuno</string>
     <string name="recently_used">Usati recentemente</string>
+    <string name="search_contacts">Cerca contatti</string>
+    <string name="search_groups">Cerca conversazioni di gruppo</string>
     <string name="choose_quick_action">Scegli azione rapida</string>
     <string name="send_private_message">Invia messaggio privato</string>
     <string name="username">Utente</string>
