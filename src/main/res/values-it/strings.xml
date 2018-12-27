@@ -17,7 +17,7 @@
     <string name="action_unblock_domain">Sblocca dominio</string>
     <string name="title_activity_manage_accounts">Gestisci account</string>
     <string name="title_activity_settings">Impostazioni</string>
-    <string name="title_activity_conference_details">Dettagli della chat di gruppo</string>
+    <string name="title_activity_conference_details">Dettagli della conversazione di gruppo</string>
     <string name="title_activity_contact_details">Dettagli del Contatto</string>
     <string name="title_activity_sharewith">Condividi con Conversation</string>
     <string name="title_activity_start_conversation">Inizia una conversazione</string>
@@ -431,6 +431,7 @@
     <string name="search_groups">Cerca conversazioni di gruppo</string>
     <string name="choose_quick_action">Scegli azione rapida</string>
     <string name="send_private_message">Invia messaggio privato</string>
+    <string name="user_has_left_conference">%1$s ha lasciato la conversazione di gruppo!</string>
     <string name="username">Utente</string>
     <string name="username_hint">Utente</string>
     <string name="invalid_username">Questo non è un nome utente valido</string>
@@ -438,10 +439,18 @@
     <string name="download_failed_file_not_found">Scaricamento fallito: file non trovato</string>
     <string name="download_failed_could_not_connect">Scaricamento fallito: impossibile connettersi all\'host</string>
     <string name="download_failed_could_not_write_file">Scaricamento fallito: scrittura del file impossibile</string>
+    <string name="action_check_update">Controlla Aggiornamenti</string>
+    <string name="title_activity_updater">Servizio di aggiornamento</string>
+    <string name="update_available">La versione %1$s è disponibile.\n\nDimensione: %2$s\n\nAggiornare alla versione %1$s ora?</string>
+    <string name="remind_later">più tardi</string>
+    <string name="update">aggiorna</string>
+    <string name="no_update_available">Nessun aggiornamento disponibile</string>
+    <string name="download_started">Scaricamento iniziato</string>
     <string name="account_status_tor_unavailable">Rete Tor non disponibile</string>
     <string name="account_status_bind_failure">Bind fallito</string>
     <string name="account_status_host_unknown">Server non responsabile per il dominio</string>
     <string name="server_info_broken">Rotto</string>
+    <string name="pref_presence_settings">Disponibilità</string>
     <string name="pref_away_when_screen_off">\"Non disponibile\" a schermo spento</string>
     <string name="pref_away_when_screen_off_summary">Imposta la tua risorsa come non disponibile quando lo schermo è spento</string>
     <string name="pref_dnd_on_silent_mode">\"Non disturbare\" in modalità silenziosa</string>
@@ -464,6 +473,7 @@
     <string name="error_fetching_omemo_key">Errore ricezione chiave OMEMO!</string>
     <string name="verified_omemo_key_with_certificate">Chiave OMEMO verificata con certificato!</string>
     <string name="device_does_not_support_certificates">Il tuo dispositivo non supporta la selezione di certificati utente!</string>
+    <string name="changelog">Cambiamenti</string>
     <string name="account_settings_hostname">Nome host</string>
     <string name="account_settings_port">Porta</string>
     <string name="hostname_or_onion">Indirizzo server o .onion</string>
@@ -488,12 +498,21 @@
     <string name="notify_paused">Notifiche in pausa</string>
     <string name="pref_picture_compression">Comprimi immagini</string>
     <string name="pref_picture_compression_summary">Ridimensiona e comprimi immagini</string>
+    <string name="pref_video_compression">Comprimi video</string>
+    <string name="pref_video_compression_summary">Riduci e comprimi video</string>
+    <string name="video_low">bassa (144p)</string>
+    <string name="video_mid">media (360p)</string>
+    <string name="video_high">alta (720p)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
     <string name="battery_optimizations_enabled_explained">Il tuo dispositivo sta facendo delle ingenti ottimizzazioni della batteria per Pix-Art Messenger che potrebbero portare ritardi alle notifiche o anche perdita di messaggi.\nSi consiglia di disabilitarle.</string>
     <string name="battery_optimizations_enabled_dialog">Il tuo dispositivo sta facendo delle ingenti ottimizzazioni della batteria per Pix-Art Messenger che potrebbero portare ritardi alle notifiche o anche perdita di messaggi.\n\nTi verrà ora chiesto di disabilitarle.</string>
+    <string name="install_from_unknown_sources_disabled">L\'installazione da sorgenti sconosciute è disabilitata</string>
     <string name="disable">Disabilita</string>
     <string name="selection_too_large">L\'area selezionata è troppo grande</string>
+    <string name="cancel_update">Annullare aggiornamento?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
     <string name="no_accounts">(Nessun account attivo)</string>
     <string name="this_field_is_required">Questo campo è obbligatorio</string>
     <string name="correct_message">Correggi messaggio</string>
@@ -566,7 +585,25 @@
     <string name="encrypting_message">Cifratura del messaggio</string>
     <string name="transcoding_video">Compressione video in corso</string>
     <string name="not_fetching_history_retention_period">Nessun recupero di messaggi a causa del periodo di conservazione locale.</string>
+    <plurals name="hours">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d settimana</item>
+        <item quantity="other">%d settimane</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d mese</item>
+        <item quantity="other">%d mesi</item>
+    </plurals>
     <string name="today">Oggi</string>
+    <string name="pref_use_max_brightness_summary">Imposta la luminosità al massimo quando guardi video o immagini a schermo intero.</string>
+    <string name="pref_use_max_brightness">Luminosità massima</string>
     <string name="block_jabber_id">Blocca ID Jabber</string>
     <string name="corresponding_conversations_closed">Chiuse le relative conversazioni.</string>
     <string name="contact_blocked_past_tense">Contatto bloccato.</string>
