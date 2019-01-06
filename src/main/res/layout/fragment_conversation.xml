@@ -5,6 +5,7 @@
     <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/main_activity_root_view"
         android:background="?attr/color_background_tertiary"
         android:clickable="false">
 
@@ -102,6 +103,20 @@
                     app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                     tools:listitem="@layout/media_preview" />
 
+                <ImageButton
+                    android:id="@+id/main_activity_emoji"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toEndOf="@+id/recordVoiceButton"
+                    android:layout_toRightOf="@+id/recordVoiceButton"
+                    android:background="?attr/color_background_tertiary"
+                    android:contentDescription="@string/attach_record_voice"
+                    android:src="@drawable/emoji_google_category_smileysandpeople"
+                    android:visibility="visible" />
+
                 <de.pixart.messenger.ui.widget.EditMessage
                     android:id="@+id/textinput"
                     style="@style/Widget.Conversations.EditText"
@@ -109,8 +124,8 @@
                     android:layout_height="wrap_content"
                     android:layout_toStartOf="@+id/textSendButton"
                     android:layout_toLeftOf="@+id/textSendButton"
-                    android:layout_toEndOf="@+id/recordVoiceButton"
-                    android:layout_toRightOf="@+id/recordVoiceButton"
+                    android:layout_toEndOf="@+id/main_activity_emoji"
+                    android:layout_toRightOf="@+id/main_activity_emoji"
                     android:background="@drawable/message_bubble_sent"
                     android:ems="10"
                     android:imeOptions="flagNoExtractUi|actionSend"

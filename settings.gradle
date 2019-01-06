@@ -1,3 +1,4 @@
 include ':libs:android-transcoder'
 include ':libs:xmpp-addr'
+include ':emoji', ':emoji-google'
 rootProject.name = 'PixArtMessenger'

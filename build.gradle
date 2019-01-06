@@ -84,6 +84,8 @@ dependencies {
     implementation 'org.conscrypt:conscrypt-android:1.4.2'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15' // last working version for minSDK 16
     implementation 'me.drakeet.support:toastcompat:1.1.0'
+    implementation project(':emoji-google')
+    implementation project(':emoji')
 }
 
 ext {
@@ -96,7 +98,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
 
         versionCode 250
