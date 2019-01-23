@@ -153,6 +153,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
+    <string name="action_account">Edytuj konto</string>
     <string name="mgmt_account_delete">Usuń konto</string>
     <string name="mgmt_account_publish_avatar">Publikuj awatar</string>
     <string name="mgmt_account_publish_pgp">Udostępnij klucz publiczny OpenPGP</string>
@@ -389,6 +390,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="sending_x_file">Wysyłanie %s</string>
     <string name="offering_x_file">Oferowanie %s</string>
     <string name="hide_offline">Ukryj niedostępnych</string>
+    <string name="is_typing">pisze…</string>
     <string name="pref_chat_states">Powiadomienia pisania</string>
     <string name="pref_chat_states_summary">Powiadamiaj rozmówcę, kiedy rozpoczynasz nową wiadomość</string>
     <string name="send_location">Wyślij lokalizację</string>
@@ -407,6 +409,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_quick_action">Szybka akcja</string>
     <string name="none">Brak</string>
     <string name="recently_used">Ostatnio używana</string>
+    <string name="search_contacts">Wyszukiwanie kontaktów</string>
     <string name="choose_quick_action">Wybierz szybką akcję</string>
     <string name="send_private_message">Wyślij wiadomość prywatną</string>
     <string name="username">Nazwa użytkownika</string>
@@ -416,6 +419,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="download_failed_file_not_found">Pobieranie nieudane: Nie odnaleziono pliku</string>
     <string name="download_failed_could_not_connect">Pobieranie nieudane: Nie można połączyć z hostem</string>
     <string name="download_failed_could_not_write_file">Pobieranie niepowiodło się: brak możliwości zapisu pliku</string>
+    <string name="remind_later">później</string>
     <string name="account_status_tor_unavailable">Sieć TOR jest niedostepna</string>
     <string name="account_status_bind_failure">Błąd połączenia (zasób)</string>
     <string name="account_status_host_unknown">Serwer nie odpowiada domenie</string>
@@ -501,6 +505,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="invite_user">Zaproś do Pix-Art Messengera</string>
     <string name="unable_to_connect_to_keychain">Nie można połączyć się z OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Urządzenie to nie jest już używane</string>
+    <string name="Password_wrong">Niepoprawne hasło, spróbuj ponownie</string>
     <string name="please_wait">Proszę czekać…</string>
     <string name="payment_required">Płatność wymagana</string>
     <string name="missing_internet_permission">Brak pozwolenia na korzystanie z Internetu</string>
@@ -585,6 +590,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
+    <string name="copy_jabber_id">Skopiuj JID</string>
+    <string name="group_chat_name">Nazwa</string>
     <string name="delete_message">Usuń wiadomość</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
