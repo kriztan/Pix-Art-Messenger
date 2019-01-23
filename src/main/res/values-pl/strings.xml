@@ -179,6 +179,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="server_info_pep">XEP-0163: PEP (Awatary / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: Przesyłanie plików przez HTTP</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">tak</string>
+    <string name="server_info_unavailable">nie</string>
     <string name="missing_public_keys">Brak informacji o kluczu publicznym</string>
     <string name="last_seen_now">widziany chwilę temu</string>
     <string name="last_seen_min">widziany minutę temu</string>
@@ -204,8 +206,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="done">Ukończono</string>
     <string name="verify">Weryfikuj</string>
     <string name="decrypt">Odszyfruj</string>
+    <string name="conferences">Czat grupowy</string>
     <string name="search">Szukaj</string>
+    <string name="create_contact">Utwórz kontakt</string>
     <string name="enter_contact">Wpisz kontakt</string>
+    <string name="join_conference">Dołącz do chatu grupowego</string>
+    <string name="delete_contact">Usuń kontakt</string>
     <string name="view_contact_details">Szczegóły kontaktu</string>
     <string name="block_contact">Zablokuj kontakt</string>
     <string name="unblock_contact">Odblokuj kontakt</string>
@@ -213,10 +219,13 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="select">Wybierz</string>
     <string name="contact_already_exists">Kontakt już istnieje</string>
     <string name="join">Dołącz</string>
+    <string name="conference_address">Adres chatu grupowego</string>
     <string name="conference_address_example">konferencja@konferencje.example.com/nick</string>
     <string name="save_as_bookmark">Dodaj jako zakładkę</string>
     <string name="delete_bookmark">Usuń zakładkę</string>
     <string name="bookmark_already_exists">Zakładka już istnieje</string>
+    <string name="topic">Temat</string>
+    <string name="joining_conference">Dołączenie do chatu grupowego…</string>
     <string name="leave">Opuść pokój</string>
     <string name="contact_added_you">Kontakt został dodany do listy</string>
     <string name="add_back">Dodaj ponownie</string>
@@ -238,6 +247,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="skip">Pomiń</string>
     <string name="disable_notifications">Wyłącz powiadomienia</string>
     <string name="enable">Włącz</string>
+    <string name="conference_requires_password">Chat grupowy wymaga hasła</string>
     <string name="enter_password">Wprowadź hasło</string>
     <string name="request_presence_updates">Poproś kontakt o udostępnienie powiadomień o obecności.\n\n<small>Pozwoli to na ustalenie klienta, z którego korzysta rozmówca.</small></string>
     <string name="request_now">Zażądaj teraz</string>
@@ -309,6 +319,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="are_you_sure_verify_fingerprint">Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?</string>
     <string name="pref_show_dynamic_tags">Etykiety kontaktów</string>
     <string name="pref_show_dynamic_tags_summary">Wyświetlaj etykiety pod kontaktami</string>
+    <string name="conference_creation_failed">Utworzenie grupy nie powiodło się!</string>
     <string name="account_image_description">Awatar konta</string>
     <string name="copy_otr_clipboard_description">Skopiuj odcisk klucza OTR do schowka</string>
     <string name="copy_omemo_clipboard_description">Skopiuj odcisk klucza OMEMO do schowka</string>
@@ -318,6 +329,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="distrust_omemo_key">Przestań ufać urządzeniu</string>
     <string name="distrust_omemo_key_text">Czy jesteś pewien, że chcesz cofnąć weryfikację tego urządzenia?\nUrządzenie to, i wiadomości z niego przychodzące będą oznaczane jako niezaufane.</string>
     <string name="error_no_keys_to_trust_server_error">Nie ma dostępnych kluczy dla tego kontaktu.\nPobieranie nowych kluczy z serwera nie powiodło się. Być może jest coś nie tak z serwerem kontaktu?</string>
+    <string name="error_trustkeys_title">Coś poszło nie tak</string>
     <string name="fetching_history_from_server">Pobieranie historii z serwera</string>
     <string name="no_more_history_on_server">Koniec historii na serwerze</string>
     <string name="updating">Aktualizowanie...</string>
@@ -344,9 +356,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="remove_membership">Cofnij członkostwo</string>
     <string name="grant_admin_privileges">Przyznaj uprawnienia administratora</string>
     <string name="remove_admin_privileges">Odbierz uprawnienia administratora</string>
+    <string name="remove_from_room">Usuń z chatu grupowego</string>
     <string name="could_not_change_affiliation">Nie udało się zmienić stanowiska dla %s</string>
+    <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko zablokowanie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
     <string name="could_not_change_role">Nie udało się zmienić funkcji %s</string>
+    <string name="conference_options">Opcje chatu grupowego</string>
     <string name="members_only">Prywatne, tylko dla członków.</string>
     <string name="non_anonymous">Nieanonimowa</string>
     <string name="moderated">Moderowany</string>
