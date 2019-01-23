@@ -420,13 +420,16 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="download_failed_could_not_connect">Pobieranie nieudane: Nie można połączyć z hostem</string>
     <string name="download_failed_could_not_write_file">Pobieranie niepowiodło się: brak możliwości zapisu pliku</string>
     <string name="remind_later">później</string>
+    <string name="download_started">Rozpoczęto pobieranie</string>
     <string name="account_status_tor_unavailable">Sieć TOR jest niedostepna</string>
     <string name="account_status_bind_failure">Błąd połączenia (zasób)</string>
     <string name="account_status_host_unknown">Serwer nie odpowiada domenie</string>
     <string name="server_info_broken">Zepsute</string>
+    <string name="pref_presence_settings">Dostępność</string>
     <string name="pref_away_when_screen_off">Status \"Oddalony\" gdy wyświetlacz jest wyłączony</string>
     <string name="pref_away_when_screen_off_summary">Oznacza Twój zasób jako \"Oddalony\", gdy wyświetlacz jest wyłączony</string>
     <string name="pref_dnd_on_silent_mode">\"Nie przeszkadzać\" w trybie cichym</string>
+    <string name="update_info">Pix-Art Messenger pobiera i instaluje automatycznie nową wersję.\n\nPotrwa to chwilkę…</string>
     <string name="pref_dnd_on_silent_mode_summary">Oznacza Twój zasób jako \"Nie przeszkadzać\", gdy urządzenie jest w trybie cichym</string>
     <string name="pref_treat_vibrate_as_silent">Traktuj tryb wibracji jak tryb cichy</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Oznacza Twój zasób jako \"Nie przeszkadzać\", gdy urządzenie jest w trybie wibracji</string>
@@ -446,6 +449,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="error_fetching_omemo_key">Błąd pobierania klucza OMEMO!</string>
     <string name="verified_omemo_key_with_certificate">Zweryfikowano klucz OMEMO z certyfikatem</string>
     <string name="device_does_not_support_certificates">Twoje urządzenie nie wspiera wyboru certyfikatów klienckich</string>
+    <string name="changelog">Zmiany</string>
     <string name="account_settings_hostname">Nazwa hosta</string>
     <string name="account_settings_port">Port</string>
     <string name="hostname_or_onion">Adres serwera lub \".onion\" adres</string>
@@ -466,6 +470,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="notify_paused">Powiadomienia wstrzymane</string>
     <string name="pref_picture_compression">Kompresuj obrazki</string>
     <string name="pref_picture_compression_summary">Zmień rozmiar i kompresuj obrazki</string>
+    <string name="pref_video_compression">Skompresuj filmik</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
@@ -516,6 +521,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="remote_server_not_found">Nie znaleziono serwera</string>
     <string name="unable_to_update_account">Nie można zaktualizować konta</string>
     <string name="report_jid_as_spammer">Raportuj ten JID jako rozsyłający spam</string>
+    <string name="create_issue">Zgłoś problem</string>
     <string name="pref_delete_omemo_identities">Usuń tożsamości OMEMO</string>
     <string name="pref_delete_omemo_identities_summary">Wygeneruj jeszcze raz klucze OMEMO. Wszystkie Twoje kontakty będą musiały zweryfikować Twoje nowe klucze. Użyj tego tylko w ostateczności.</string>
     <string name="delete_selected_keys">Usuń zaznaczone klucze</string>
@@ -530,6 +536,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="data_saver_enabled_explained">Twój system operacyjny blokuje dostęp do internetu Pix-Art Messenger, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Pix-Art Messenger nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
 Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe.</string>
     <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
+    <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
     <string name="contact">Kontakt</string>
     <string name="error_unable_to_create_temporary_file">Niemożna utworzyć pliku tymczasowego</string>
     <string name="this_device_has_been_verified">To urządzenie zostało zweryfikowane</string>
