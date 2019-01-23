@@ -166,6 +166,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="account_settings_password">Hasło</string>
     <string name="account_settings_example_jabber_id">username@example.com</string>
     <string name="password">Hasło</string>
+    <string name="confirm_password">Potwierdź hasło</string>
+    <string name="passwords_do_not_match">Hasła nie zgadzają się</string>
     <string name="invalid_jid">Wprowadzono niepoprawny Jabber ID</string>
     <string name="error_out_of_memory">Brak pamięci, obraz jest za duży</string>
     <string name="add_phone_book_text">Czy chcesz dodać %s do listy kontaktów?</string>
@@ -466,6 +468,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="battery_optimizations_enabled_dialog">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\n\nZostaniesz teraz poproszony o ich wyłączenie.</string>
     <string name="disable">Wyłącz</string>
     <string name="selection_too_large">Zaznaczony obszar jest zbyt duży</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
     <string name="no_accounts">(Brak aktywynych kont)</string>
     <string name="this_field_is_required">To pole jest wymagane</string>
     <string name="correct_message">Popraw wiadomość</string>
@@ -497,6 +501,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="invite_user">Zaproś do Pix-Art Messengera</string>
     <string name="unable_to_connect_to_keychain">Nie można połączyć się z OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Urządzenie to nie jest już używane</string>
+    <string name="please_wait">Proszę czekać…</string>
     <string name="payment_required">Płatność wymagana</string>
     <string name="missing_internet_permission">Brak pozwolenia na korzystanie z Internetu</string>
     <string name="me">Ja</string>
@@ -536,6 +541,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="i_followed_this_link_from_a_trusted_source">Trafiłem na ten link w zaufanym źródle</string>
     <string name="verifying_omemo_keys_trusted_source">Zaraz zweryfikujesz klucz OMEMO %1$s klikając w link. Jest to bezpieczne jedynie, kiedy link pochodzi z zaufanego źródła gdzie tylko %2$s mógł go opublikować.</string>
     <string name="verify_omemo_keys">Zweryfikuj klucze OMEMO</string>
+    <string name="show_inactive_devices">Pokaż nieaktywne</string>
+    <string name="hide_inactive_devices">Ukryj nieaktywne</string>
     <string name="encrypting_message">Szyfrowanie wiadomości</string>
     <string name="transcoding_video">Kompresuję film</string>
     <string name="not_fetching_history_retention_period">Nie pobieram wiadomości przez lokalny okres retencji</string>
@@ -572,5 +579,16 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="error_no_keys_to_trust_presence">Brak dostępnych kluczy dla tego kontaktu.\nUpewnij się, że wzajemnie powiadamiacie się o obecności.</string>
     <string name="server_info_partial">częściowo</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
+    <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
     <string name="chooce_account">Wybierz konto</string>
+    <string name="small">Mały</string>
+    <string name="medium">Średni</string>
+    <string name="large">Duży</string>
+    <string name="create_shortcut">Utwórz skrót</string>
+    <string name="delete_message">Usuń wiadomość</string>
+    <string name="notification_group_messages">Wiadomości</string>
+    <string name="messages_channel_name">Wiadomości</string>
+    <string name="action_delete">Usuń</string>
+    <string name="delete_file_dialog">Usuń plik</string>
+    <string name="delete_message_dialog">Usuń wiadomość</string>
 </resources>
