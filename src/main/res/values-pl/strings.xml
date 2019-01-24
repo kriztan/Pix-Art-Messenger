@@ -663,7 +663,9 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
+    <string name="silent_messages_channel_name">Wycisz wiadomości</string>
     <string name="video_compression_channel_name">Kompresja wideo</string>
+    <string name="app_update_channel_name">Aktualizacja aplikacji</string>
     <string name="action_group_details">Szczegóły grupy</string>
     <string name="action_open">Otwórz</string>
     <string name="action_delete">Usuń</string>
