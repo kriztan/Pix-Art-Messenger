@@ -17,7 +17,7 @@
     <string name="action_unblock_domain">Odblokuj domenę</string>
     <string name="title_activity_manage_accounts">Zarządzaj kontami</string>
     <string name="title_activity_settings">Ustawienia</string>
-    <string name="title_activity_conference_details">Szczegóły chatu grupowego</string>
+    <string name="title_activity_conference_details">Szczegóły czatu grupowego</string>
     <string name="title_activity_contact_details">Szczegóły kontaktu</string>
     <string name="title_activity_sharewith">Udostępnij w konwersacji</string>
     <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
@@ -128,6 +128,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="receive_presence_updates">Otrzymuj powiadomienia obecności</string>
     <string name="ask_for_presence_updates">Poproś o powiadomienia obecności</string>
     <string name="attach_choose_picture">Wybierz obraz</string>
+    <string name="attach_take_from_camera">Wybierz z kamery</string>
     <string name="preemptively_grant">Automatyczne powiadomienia obecności</string>
     <string name="error_not_an_image_file">Wybrany plik nie jest obrazem</string>
     <string name="error_compressing_image">Błąd kompresji obrazu</string>
@@ -228,6 +229,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="save_as_bookmark">Dodaj jako zakładkę</string>
     <string name="delete_bookmark">Usuń zakładkę</string>
     <string name="bookmark_already_exists">Zakładka już istnieje</string>
+    <string name="action_edit_subject">Edytuj temat rozmowy grupowej</string>
     <string name="topic">Temat</string>
     <string name="joining_conference">Dołączenie do chatu grupowego…</string>
     <string name="leave">Opuść pokój</string>
@@ -558,6 +560,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="allow">Pozwól</string>
     <string name="no_permission_to_access_x">Brak pozwolenia na dostęp do %s</string>
     <string name="remote_server_not_found">Nie znaleziono serwera</string>
+    <string name="error_file_corrupt">Plik wygląda na uszkodzony.</string>
     <string name="unable_to_update_account">Nie można zaktualizować konta</string>
     <string name="report_jid_as_spammer">Raportuj ten JID jako rozsyłający spam</string>
     <string name="create_issue">Zgłoś problem</string>
@@ -681,7 +684,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
     <string name="title_activity_share_via_account">Udostępnij przez konto</string>
     <string name="private_messages_are_disabled">Prywatne wiadomości są wyłączone</string>
-    <string name="conference_unknown_error">Nie jesteś już w tej grupie </string>
+    <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
     <string name="mtm_accept_cert">Zaakceptować nieznany certyfikat?</string>
     <string name="mtm_connect_anyway">Czy połączyć mimo to?</string>
     <string name="mtm_cert_details">Szczegóły certyfikatu:</string>
@@ -707,7 +710,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
     <string name="contact_name">Nazwa kontaktu</string>
-    <string name="nickname">Przezwisko czatu grupowego</string>
+    <string name="nickname">Pseudonim czatu grupowego</string>
     <string name="group_chat_name">Nazwa</string>
     <string name="providing_a_name_is_optional">Podanie nazwy jest opcjonalne</string>
     <string name="create_dialog_group_chat_name">Nazwa czatu grupowego</string>
