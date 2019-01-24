@@ -288,6 +288,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="send_again">Wyślij ponownie</string>
     <string name="file_url">URL pliku</string>
     <string name="url_copied_to_clipboard">URL obrazu został skopiowany do schowka</string>
+    <string name="scan_qr_code">Zeskanuj kod QR</string>
     <string name="show_qr_code">Pokaż kod QR</string>
     <string name="show_block_list">Wyświetl listę banów</string>
     <string name="account_details">Szczegóły konta</string>
@@ -421,7 +422,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="download_failed_file_not_found">Pobieranie nieudane: Nie odnaleziono pliku</string>
     <string name="download_failed_could_not_connect">Pobieranie nieudane: Nie można połączyć z hostem</string>
     <string name="download_failed_could_not_write_file">Pobieranie niepowiodło się: brak możliwości zapisu pliku</string>
+    <string name="title_activity_updater">Usługa aktualizacji</string>
     <string name="remind_later">później</string>
+    <string name="update">aktualizacja</string>
     <string name="download_started">Rozpoczęto pobieranie</string>
     <string name="account_status_tor_unavailable">Sieć TOR jest niedostepna</string>
     <string name="account_status_bind_failure">Błąd połączenia (zasób)</string>
@@ -473,6 +476,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_compression">Kompresuj obrazki</string>
     <string name="pref_picture_compression_summary">Zmień rozmiar i kompresuj obrazki</string>
     <string name="pref_video_compression">Skompresuj filmik</string>
+    <string name="video_original">Oryginał (nieskompresowany)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
@@ -590,6 +594,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="session_failure">Błąd sesji</string>
     <string name="sasl_downgrade">Starszy mechanizm SASL</string>
     <string name="action_take_photo">zrób zdjęcie</string>
+    <string name="action_take_video">nagraj wideo</string>
     <string name="account_status_regis_web">Serwer wymaga rejestracji na stronie</string>
     <string name="application_found_to_open_website">Nie znaleziono aplikacji do otwarcia strony</string>
     <string name="open_website">Otwórz stronę</string>
@@ -600,11 +605,14 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_validate_hostname_summary">Certyfikaty serwera posiadające prawidłową nazwę hosta są uznawane za zweryfikowane</string>
     <string name="certificate_does_not_contain_jid">Certyfikat nie zawiera Jabber ID</string>
     <string name="error_no_keys_to_trust_presence">Brak dostępnych kluczy dla tego kontaktu.\nUpewnij się, że wzajemnie powiadamiacie się o obecności.</string>
+    <string name="mark_as_read">oznacz jako przeczytane</string>
     <string name="server_info_partial">częściowo</string>
+    <string name="install_update">Zainstalować aktualizację?</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
     <string name="private_messages_are_disabled">Prywatne wiadomości są wyłączone</string>
     <string name="conference_unknown_error">Nie jesteś już w tej grupie </string>
+    <string name="mtm_accept_cert">Zaakceptować nieznany certyfikat?</string>
     <string name="mtm_connect_anyway">Czy połączyć mimo to?</string>
     <string name="mtm_cert_details">Szczegóły certyfikatu:</string>
     <string name="once">Jednorazowo</string>
