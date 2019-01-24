@@ -116,6 +116,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_sound">Dzwonek</string>
     <string name="pref_sound_summary">Odtwórz dźwięk gdy nadejdzie wiadomość</string>
     <string name="pref_send_crash">Wyślij raporty o awariach</string>
+    <string name="pref_send_crash_summary">Przesyłając raporty o awariach, pomagasz stale ulepszać Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Potwierdzenia wiadomości</string>
     <string name="pref_confirm_messages_summary">Zezwól na wysyłanie do osób z twojej listy kontaktów informacji o tym, kiedy otrzymałeś i przeczytałeś wiadomość od nich</string>
     <string name="pref_ui_options">UI</string>
@@ -327,6 +328,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="are_you_sure_verify_fingerprint">Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?</string>
     <string name="pref_show_dynamic_tags">Etykiety kontaktów</string>
     <string name="pref_show_dynamic_tags_summary">Wyświetlaj etykiety pod kontaktami</string>
+    <string name="no_conference_server_found">Nie znaleziono serwera grupowych rozmów</string>
     <string name="conference_creation_failed">Utworzenie grupy nie powiodło się!</string>
     <string name="account_image_description">Awatar konta</string>
     <string name="copy_otr_clipboard_description">Skopiuj odcisk klucza OTR do schowka</string>
@@ -428,7 +430,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="download_failed_file_not_found">Pobieranie nieudane: Nie odnaleziono pliku</string>
     <string name="download_failed_could_not_connect">Pobieranie nieudane: Nie można połączyć z hostem</string>
     <string name="download_failed_could_not_write_file">Pobieranie niepowiodło się: brak możliwości zapisu pliku</string>
+    <string name="action_check_update">Sprawdź aktualizacje</string>
     <string name="title_activity_updater">Usługa aktualizacji</string>
+    <string name="update_available">Wersja %1$s jest udostępniona.\n\nWielkość pliku: %2$s\n\nZaktualizować na wersje %1$s?</string>
     <string name="remind_later">później</string>
     <string name="update">aktualizacja</string>
     <string name="no_update_available">Brak dostępnych aktualizacji</string>
@@ -498,6 +502,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
     <string name="battery_optimizations_enabled_dialog">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\n\nZostaniesz teraz poproszony o ich wyłączenie.</string>
+    <string name="install_from_unknown_sources_disabled">Instalowanie z nieznanych źródeł wyłączone</string>
     <string name="disable">Wyłącz</string>
     <string name="selection_too_large">Zaznaczony obszar jest zbyt duży</string>
     <string name="cancel_update">Anulować aktualizację?</string>
