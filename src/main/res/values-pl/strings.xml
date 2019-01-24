@@ -277,6 +277,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="toast_message_otr_fingerprint">Odcisk klucza OTR został skopiowany do schowka</string>
     <string name="toast_message_omemo_fingerprint">Odcisk klucza OMEMO został skopiowany do schowka!</string>
     <string name="conference_kicked">Zostałeś wyrzucony z danego czatu grupowego</string>
+    <string name="conference_shutdown">Czat grupowy został zamknięty</string>
     <string name="using_account">używając konta %s</string>
     <string name="checking_x">Sprawdzanie %s na hoście HTTP</string>
     <string name="not_connected_try_again">Brak połączenia. Spróbuj ponownie później</string>
@@ -412,6 +413,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="search_contacts">Wyszukiwanie kontaktów</string>
     <string name="choose_quick_action">Wybierz szybką akcję</string>
     <string name="send_private_message">Wyślij wiadomość prywatną</string>
+    <string name="user_has_left_conference">%1$s opuścił/a grupę!</string>
     <string name="username">Nazwa użytkownika</string>
     <string name="username_hint">Nazwa użytkownika</string>
     <string name="invalid_username">Błędna nazwa użytkownika</string>
@@ -477,10 +479,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="battery_optimizations_enabled_dialog">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\n\nZostaniesz teraz poproszony o ich wyłączenie.</string>
     <string name="disable">Wyłącz</string>
     <string name="selection_too_large">Zaznaczony obszar jest zbyt duży</string>
+    <string name="cancel_update">Anulować aktualizację?</string>
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
     <string name="no_accounts">(Brak aktywynych kont)</string>
     <string name="this_field_is_required">To pole jest wymagane</string>
+    <string name="no_participants">Brak uczestników</string>
     <string name="correct_message">Popraw wiadomość</string>
     <string name="send_corrected_message">Wyślij poprawioną wiadomość</string>
     <string name="this_account_is_disabled">Wyłączyłeś to konto</string>
