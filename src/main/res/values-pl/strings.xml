@@ -624,8 +624,15 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
     <string name="gif">GIF</string>
+    <string name="web_address">adres internetowy</string>
     <string name="copy_jabber_id">Skopiuj JID</string>
+    <string name="server_hint">Wybierz dostawce</string>
+    <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="contact_name">Nazwa kontaktu</string>
+    <string name="nickname">Przezwisko czatu grupowego</string>
     <string name="group_chat_name">Nazwa</string>
+    <string name="providing_a_name_is_optional">Podanie nazwy jest opcjonalne</string>
+    <string name="create_dialog_group_chat_name">Nazwa czatu grupowego</string>
     <string name="delete_message">Usuń wiadomość</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
     <string name="notification_group_messages">Wiadomości</string>
