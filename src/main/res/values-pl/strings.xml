@@ -425,6 +425,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="title_activity_updater">Usługa aktualizacji</string>
     <string name="remind_later">później</string>
     <string name="update">aktualizacja</string>
+    <string name="no_update_available">Brak dostępnych aktualizacji</string>
     <string name="download_started">Rozpoczęto pobieranie</string>
     <string name="account_status_tor_unavailable">Sieć TOR jest niedostepna</string>
     <string name="account_status_bind_failure">Błąd połączenia (zasób)</string>
@@ -476,6 +477,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_compression">Kompresuj obrazki</string>
     <string name="pref_picture_compression_summary">Zmień rozmiar i kompresuj obrazki</string>
     <string name="pref_video_compression">Skompresuj filmik</string>
+    <string name="pref_video_compression_summary">Zmień rozmiar i kompresuj wideo</string>
+    <string name="video_low">niski (144p)</string>
+    <string name="video_mid">średnie (360p)</string>
+    <string name="video_high">wysokie (720p)</string>
     <string name="video_original">Oryginał (nieskompresowany)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
@@ -626,6 +631,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="gif">GIF</string>
     <string name="web_address">adres internetowy</string>
     <string name="copy_jabber_id">Skopiuj JID</string>
+    <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
     <string name="contact_name">Nazwa kontaktu</string>
@@ -634,6 +640,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="providing_a_name_is_optional">Podanie nazwy jest opcjonalne</string>
     <string name="create_dialog_group_chat_name">Nazwa czatu grupowego</string>
     <string name="delete_message">Usuń wiadomość</string>
+    <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
+    <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
@@ -642,6 +650,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="action_open">Otwórz</string>
     <string name="action_delete">Usuń</string>
     <string name="delete_file_dialog">Usuń plik</string>
+    <string name="cancelled">anulowane</string>
     <string name="delete_message_dialog">Usuń wiadomość</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="your_name">Twoje miano</string>
