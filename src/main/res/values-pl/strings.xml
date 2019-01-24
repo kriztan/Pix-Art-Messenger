@@ -616,6 +616,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="server_info_partial">częściowo</string>
     <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
+    <string name="highlight_in_muc">wymień użytkownika</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
     <string name="private_messages_are_disabled">Prywatne wiadomości są wyłączone</string>
