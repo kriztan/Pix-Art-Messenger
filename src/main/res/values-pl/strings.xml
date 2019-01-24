@@ -522,6 +522,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="security_error_invalid_file_access">Błąd bezpieczeństwa: nieprawidłowy dostęp do pliku</string>
     <string name="no_application_to_share_uri">Nie odnaleziono aplikacji skojarzonej z URI</string>
     <string name="share_uri_with">Udostępnij URI za pomocą...</string>
+    <string name="mgmt_account_reconnect">Połącz ponownie</string>
     <string name="your_full_jid_will_be">Twój pełen Jabber ID będzie następujący: %s</string>
     <string name="create_account">Utwórz Konto</string>
     <string name="pick_your_username">Wybierz nazwę użytkownika</string>
@@ -536,10 +537,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="share">Udostępnić</string>
     <string name="share_location">Udostępnij lokalizację</string>
     <string name="location_sharing_disabled">Udostępnienie lokalizacji jest wyłączone w ustawieniach</string>
+    <string name="locating">Lokowanie…</string>
     <string name="action_end_conversation_muc">Opuść grupę</string>
     <string name="show_password">Pokaż hasło</string>
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
+    <string name="create_conference">Utwórz czat grupowy</string>
     <string name="conference_subject">Temat</string>
     <string name="choose_participants">Wybierz członków</string>
     <string name="import_database">Importować backup</string>
@@ -602,6 +605,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="verify_omemo_keys">Zweryfikuj klucze OMEMO</string>
     <string name="show_inactive_devices">Pokaż nieaktywne</string>
     <string name="hide_inactive_devices">Ukryj nieaktywne</string>
+    <string name="reply">Odpowiedzieć</string>
     <string name="encrypting_message">Szyfrowanie wiadomości</string>
     <string name="transcoding_video">Kompresuję film</string>
     <string name="not_fetching_history_retention_period">Nie pobieram wiadomości przez lokalny okres retencji</string>
@@ -650,7 +654,9 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="received_message_from_stranger">Odebrano wiadomość od nieznajomego</string>
     <string name="contacts_are_typing">1%s pisze...</string>
     <string name="contact_is_typing">%s pisze...</string>
+    <string name="one_participant">jeden uczestnik</string>
     <string name="more_participants">%d uczestników</string>
+    <string name="presence_offline">Nieaktywny</string>
     <string name="block_stranger">Zablokuj nieznajomego</string>
     <string name="block_entire_domain">Zablokuj całą domenę</string>
     <string name="pref_use_tor">Połącz przez sieć TOR</string>
@@ -684,11 +690,16 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
     <string name="highlight_in_muc">wymień użytkownika</string>
+    <string name="contacts_have_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
+    <string name="pref_warn_unencrypted_chat_summary">Jeśli dostępne jest szyfrowanie wiadomości, powinieneś go użyć. Jeśli nie używasz szyfrowania, wyświetl komunikat ostrzegawczy na czacie.</string>
+    <string name="pref_use_bundled_emoji">Użyj zintegrowanych emoji</string>
     <string name="title_activity_share_via_account">Udostępnij przez konto</string>
     <string name="private_messages_are_disabled">Prywatne wiadomości są wyłączone</string>
     <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
+    <string name="huawei_protected_apps">Chronione aplikacje</string>
+    <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
     <string name="mtm_accept_cert">Zaakceptować nieznany certyfikat?</string>
     <string name="mtm_connect_anyway">Czy połączyć mimo to?</string>
     <string name="mtm_cert_details">Szczegóły certyfikatu:</string>
@@ -700,6 +711,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="disable_encryption">Wyłącz szyfrowanie</string>
     <string name="error_trustkey_general">Pix-Art Messenger nie może wysyłać zaszyfrowanych wiadomości do %1$s. Może to być spowodowane nieaktualnym serwerem lub klientem użytkownika, który nie może obsłużyć OMEMO.</string>
     <string name="error_trustkey_device_list">Nie można pobrać listy urządzeń</string>
+    <string name="disable_encryption_message">Szyfrowanie OMEMO na pewno wyłączyć dla tej rozmowy?\nTo pozwoli administratorowi serwera na odczyt twoich wiadomości, jednak może to być jedyną możliwością aby komunikować z ludźmi używającymi nieaktualnych klientów.</string>
     <string name="disable_now">Wyłącz teraz</string>
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="chooce_account">Wybierz konto</string>
@@ -707,12 +719,15 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
+    <string name="search_messages">Znajdź Wiadomość</string>
     <string name="gif">GIF</string>
+    <string name="view_conversation">Wyświetl komunikację</string>
     <string name="web_address">adres internetowy</string>
     <string name="copy_jabber_id">Skopiuj JID</string>
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="group_chat_avatar">Awatara czatu grupowego</string>
     <string name="host_does_not_support_group_chat_avatars">Host nie obsługuje awatarów grupowych</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel grupy może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
@@ -741,6 +756,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="feature_not_implemented">Funkcja nie została zaimplementowana</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="start_orbot">Uruchom Orbot</string>
+    <string name="group_chat_will_make_your_jabber_id_public">Ten czat grupowy udostępnia publicznie Twój Jabber ID</string>
     <string name="your_name">Twoje miano</string>
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
