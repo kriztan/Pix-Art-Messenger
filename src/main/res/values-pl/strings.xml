@@ -407,6 +407,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="dialog_manage_certs_title">Usuń certyfikaty</string>
     <string name="dialog_manage_certs_positivebutton">Usuń zaznaczone</string>
     <string name="dialog_manage_certs_negativebutton">Anuluj</string>
+    <plurals name="toast_delete_certificates">
+        <item quantity="one">Usunięto %d certyfikat</item>
+        <item quantity="few">Usunięto %d certyfikaty</item>
+        <item quantity="many">Usunięto %d certyfikatów</item>
+        <item quantity="other">Usunięto %d certyfikatów</item>
+    </plurals>
     <string name="pref_quick_action_summary">Zastąp przycisk wysyłania szybką akcją</string>
     <string name="pref_quick_action">Szybka akcja</string>
     <string name="none">Brak</string>
@@ -633,6 +639,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="disable_encryption">Wyłącz szyfrowanie</string>
     <string name="error_trustkey_general">Pix-Art Messenger nie może wysyłać zaszyfrowanych wiadomości do %1$s. Może to być spowodowane nieaktualnym serwerem lub klientem użytkownika, który nie może obsłużyć OMEMO.</string>
     <string name="error_trustkey_device_list">Nie można pobrać listy urządzeń</string>
+    <string name="disable_now">Wyłącz teraz</string>
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="chooce_account">Wybierz konto</string>
     <string name="small">Mały</string>
