@@ -544,7 +544,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
     <string name="create_conference">Utwórz czat grupowy</string>
     <string name="conference_subject">Temat</string>
-    <string name="choose_participants">Wybierz członków</string>
+    <string name="choose_participants">Wybierz uczestnika</string>
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
