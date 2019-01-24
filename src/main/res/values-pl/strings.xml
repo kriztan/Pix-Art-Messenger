@@ -609,17 +609,26 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="mtm_cert_details">Szczegóły certyfikatu:</string>
     <string name="once">Jednorazowo</string>
     <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
+    <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="chooce_account">Wybierz konto</string>
     <string name="small">Mały</string>
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
+    <string name="gif">GIF</string>
     <string name="copy_jabber_id">Skopiuj JID</string>
     <string name="group_chat_name">Nazwa</string>
     <string name="delete_message">Usuń wiadomość</string>
+    <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
+    <string name="video_compression_channel_name">Kompresja wideo</string>
+    <string name="action_group_details">Szczegóły grupy</string>
+    <string name="action_open">Otwórz</string>
     <string name="action_delete">Usuń</string>
     <string name="delete_file_dialog">Usuń plik</string>
     <string name="delete_message_dialog">Usuń wiadomość</string>
+    <string name="install_orbot">Zainstaluj Orbot</string>
+    <string name="your_name">Twoje miano</string>
+    <string name="enter_your_name">Wprowadź swoje imię</string>
 </resources>
