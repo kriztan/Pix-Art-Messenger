@@ -498,6 +498,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="presence_dnd">Zajęty</string>
     <string name="secure_password_generated">Zostało wygenerowane bezpieczne hasło</string>
     <string name="device_does_not_support_battery_op">Twoje urządzenie nie pozwala na wyłączenie optymalizacji baterii</string>
+    <string name="share">Udostępnić</string>
+    <string name="share_location">Udostępnij lokalizację</string>
+    <string name="location_sharing_disabled">Udostępnienie lokalizacji jest wyłączone w ustawieniach</string>
     <string name="show_password">Pokaż hasło</string>
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
