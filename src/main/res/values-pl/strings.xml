@@ -583,6 +583,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="received_message_from_stranger">Odebrano wiadomość od nieznajomego</string>
     <string name="contacts_are_typing">1%s pisze...</string>
     <string name="contact_is_typing">%s pisze...</string>
+    <string name="more_participants">%d uczestników</string>
     <string name="block_stranger">Zablokuj nieznajomego</string>
     <string name="block_entire_domain">Zablokuj całą domenę</string>
     <string name="pref_use_tor">Połącz przez sieć TOR</string>
@@ -592,6 +593,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="image_mid">średnie (1920p)</string>
     <string name="image_high">wysokie (3840p)</string>
     <string name="image_original">oryginał (nieskompresowany)</string>
+    <string name="last_seen_just_away">ostatnio</string>
     <string name="send_message">Wyślij wiadomość</string>
     <string name="pref_show_connection_options_summary">Pokaż nazwę hosta i ustawienia portu przy dodawaniu konta</string>
     <string name="pref_show_connection_options">Rozszerzone ustawienia połączenia</string>
@@ -612,6 +614,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="error_no_keys_to_trust_presence">Brak dostępnych kluczy dla tego kontaktu.\nUpewnij się, że wzajemnie powiadamiacie się o obecności.</string>
     <string name="mark_as_read">oznacz jako przeczytane</string>
     <string name="server_info_partial">częściowo</string>
+    <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
