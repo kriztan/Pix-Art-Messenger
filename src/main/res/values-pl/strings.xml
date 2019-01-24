@@ -468,6 +468,12 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="not_a_valid_port">To nie jest prawidłowy numer portu</string>
     <string name="not_valid_hostname">To nie jest prawidłowa nazwa hosta</string>
     <string name="connected_accounts">%1$d z %2$d kont połączonych</string>
+    <plurals name="x_messages">
+        <item quantity="one">%d wiadomość</item>
+        <item quantity="few">%d wiadomości</item>
+        <item quantity="many">%d wiadomości</item>
+        <item quantity="other">%d wiadomości</item>
+    </plurals>
     <string name="load_more_messages">Załaduj wiecej wiadomości</string>
     <string name="shared_file_with_x">Dzielony plik z %s</string>
     <string name="shared_image_with_x">Dzielony obraz z %s</string>
@@ -580,6 +586,42 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="encrypting_message">Szyfrowanie wiadomości</string>
     <string name="transcoding_video">Kompresuję film</string>
     <string name="not_fetching_history_retention_period">Nie pobieram wiadomości przez lokalny okres retencji</string>
+    <plurals name="seconds">
+        <item quantity="one">%d sekundy</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="many">%d sekund</item>
+        <item quantity="other">%d sekundy</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minut</item>
+        <item quantity="many">%d minut</item>
+        <item quantity="other">%d minuty</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godzin</item>
+        <item quantity="many">%d godzin</item>
+        <item quantity="other">%d godziny</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+        <item quantity="other">after %d days - po %d dniach</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d tydzień</item>
+        <item quantity="few">%d tygodnie</item>
+        <item quantity="many">%d tygodni</item>
+        <item quantity="other">after %d weeks - po %d tygodniach</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d miesiąc</item>
+        <item quantity="few">%d miesięcy</item>
+        <item quantity="many">%d miesięcy</item>
+        <item quantity="other">%d miesięcy</item>
+    </plurals>
     <string name="today">Dzisiaj</string>
     <string name="block_jabber_id">Zablokuj Jabber ID</string>
     <string name="corresponding_conversations_closed">Odpowiadające rozmowy zostały zamknięte.</string>
@@ -675,7 +717,13 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="bad_key_for_encryption">Zły klucz do szyfrowania.</string>
     <string name="delete_message_dialog">Usuń wiadomość</string>
     <string name="delete_message_dialog_msg">Czy na pewno chcesz usunąć tą wiadomość?\n\n<b>Uwaga:</b> Nie spowoduje to usunięcia kopii tej wiadomości przechowywanej na innych urządzeniach lub serwerach.</string>
+    <string name="feature_not_implemented">Funkcja nie została zaimplementowana</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
+    <string name="start_orbot">Uruchom Orbot</string>
     <string name="your_name">Twoje miano</string>
     <string name="enter_your_name">Wprowadź swoje imię</string>
+    <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
+    <string name="no_name_set_instructions">Brak ustawionego pseudonimu.</string>
+    <string name="autojoin_groupchat">Automatycznie dołącz do tego czatu grupowego</string>
+    <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
 </resources>
