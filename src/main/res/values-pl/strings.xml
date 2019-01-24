@@ -536,6 +536,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="share">Udostępnić</string>
     <string name="share_location">Udostępnij lokalizację</string>
     <string name="location_sharing_disabled">Udostępnienie lokalizacji jest wyłączone w ustawieniach</string>
+    <string name="action_end_conversation_muc">Opuść grupę</string>
     <string name="show_password">Pokaż hasło</string>
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
@@ -712,6 +713,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="host_does_not_support_group_chat_avatars">Host nie obsługuje awatarów grupowych</string>
+    <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel grupy może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
     <string name="nickname">Pseudonim czatu grupowego</string>
     <string name="group_chat_name">Nazwa</string>
