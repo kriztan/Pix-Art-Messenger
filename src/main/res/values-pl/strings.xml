@@ -664,6 +664,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
     <string name="silent_messages_channel_name">Wycisz wiadomości</string>
+    <string name="pref_more_notification_settings_summary">Ważność, Dźwięk, Wibracja</string>
     <string name="video_compression_channel_name">Kompresja wideo</string>
     <string name="app_update_channel_name">Aktualizacja aplikacji</string>
     <string name="action_group_details">Szczegóły grupy</string>
@@ -671,7 +672,9 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="action_delete">Usuń</string>
     <string name="delete_file_dialog">Usuń plik</string>
     <string name="cancelled">anulowane</string>
+    <string name="bad_key_for_encryption">Zły klucz do szyfrowania.</string>
     <string name="delete_message_dialog">Usuń wiadomość</string>
+    <string name="delete_message_dialog_msg">Czy na pewno chcesz usunąć tą wiadomość?\n\n<b>Uwaga:</b> Nie spowoduje to usunięcia kopii tej wiadomości przechowywanej na innych urządzeniach lub serwerach.</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="your_name">Twoje miano</string>
     <string name="enter_your_name">Wprowadź swoje imię</string>
