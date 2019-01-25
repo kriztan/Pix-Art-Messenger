@@ -857,4 +857,5 @@
     <string name="enter_your_name_instructions">Por favor, escribe tu alias que será visible para tus contactos.</string>
     <string name="no_name_set_instructions">Alias no configurado.</string>
     <string name="autojoin_groupchat">Unirse automáticamente a este grupo de chat</string>
+    <string name="pref_play_gif_inside">Reproducir archivos GIF en la conversación</string>
 </resources>
