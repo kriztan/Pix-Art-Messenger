@@ -858,4 +858,7 @@
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
     <string name="autojoin_groupchat">Diesem Gruppenchat automatisch beitreten</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
+    <string name="open_with">Öffnen mit…</string>
+    <string name="choose_account">Profil wählen</string>
+    <string name="set_profile_picture">Pix-Art Messenger Profilbild</string>
 </resources>
