@@ -275,7 +275,6 @@
     <string name="pdf_document">έγγραφο PDF</string>
     <string name="apk">Εφαρμογή Android</string>
     <string name="vcard">Επαφή</string>
-    <string name="touch_to_open_conversations">Επιλέξτε για να ανοίξετε το Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Η εικόνα προφίλ έχει δημοσιευτεί!</string>
     <string name="sending_x_file">Αποστολή του %s</string>
     <string name="offering_x_file">Προσφορά του %s</string>
