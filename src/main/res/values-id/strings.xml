@@ -303,9 +303,6 @@
     <string name="verified">Diverifikasi!</string>
     <string name="smp_requested">Kontak meminta verifikasi SMP</string>
     <string name="no_otr_session_found">Tidak ada sesi OTR yang valid telah ditemukan!</string>
-    <string name="pref_export_logs">Ekspor riwayat</string>
-    <string name="pref_export_logs_summary">Tulis catatan riwayat percakapan ke kartu SD</string>
-    <string name="notification_export_logs_title">Menulis percakapan ke kartu SD</string>
     <string name="choose_file">Pilih berkas</string>
     <string name="receiving_x_file">Mengirimkan %1$s (%2$d%% lengkap)</string>
     <string name="download_x_file">Unduh %s</string>
@@ -389,7 +386,6 @@
     <string name="pdf_document">Dokumen PDF</string>
     <string name="apk">Aplikasi Android</string>
     <string name="vcard">Kontak</string>
-    <string name="touch_to_open_conversations">Sentuh untuk buka Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatar telah diterbitkan!</string>
     <string name="sending_x_file">Mengirimkan %s</string>
     <string name="offering_x_file">Penawaran %s</string>
@@ -551,9 +547,7 @@
     <string name="import_canceled">Impor dibatalkan</string>
     <string name="Import_failed">Gagal memasukkan penyimpanan data, masukan tidak mungkin dilakukan</string>
     <string name="Password_wrong">Kata sandi salah, coba lagi</string>
-    <string name="enter_account_password">Masukkan kata sandi akun Anda untuk mengimpor cadangan Anda.</string>
     <string name="please_wait">Harap tunggu…</string>
-    <string name="databaseimport_started">Cadangan akan diimpor, ini mungkin memakan waktu sebentar.</string>
     <string name="pref_export_plain_text_logs_summary">Aktifkan ekspor catatan obrolan sebagai berkas teks yang mudah dibaca</string>
     <string name="pref_export_plain_text_logs">Ekspor catatan obrolan yang dapat dibaca</string>
     <string name="payment_required">Pembayaran dibutuhkan</string>
