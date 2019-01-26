@@ -287,9 +287,6 @@
     <string name="verified">Verificat</string>
     <string name="smp_requested">Sol.licitar una verificació per SMP del contacte</string>
     <string name="no_otr_session_found">Cap sessió OTR ha estat trobada!</string>
-    <string name="pref_export_logs">Exportació de l\'historial</string>
-    <string name="pref_export_logs_summary">Escriviu el registre d\'històrial de converses a la targeta SD</string>
-    <string name="notification_export_logs_title">Escrivint registres a la targeta SD</string>
     <string name="choose_file">Escolliu un arxiu</string>
     <string name="receiving_x_file">Rebent %1$s (%2$d%% completat)</string>
     <string name="download_x_file">Descargat %s</string>
@@ -376,7 +373,6 @@ mentrestant.</string>
     <string name="pdf_document">Document PDF</string>
     <string name="apk">Aplicació d\'Android</string>
     <string name="vcard">Contacte</string>
-    <string name="touch_to_open_conversations">Tocar per obrir les conversacions</string>
     <string name="avatar_has_been_published">L\'avatar ha sigut publicat!</string>
     <string name="sending_x_file">Enviant %s</string>
     <string name="offering_x_file">Oferint %s</string>
