@@ -287,9 +287,6 @@
     <string name="verified">Egiaztatuta!</string>
     <string name="smp_requested">Kontaktuak SMP egiaztapena eskatu du</string>
     <string name="no_otr_session_found">Ez da OTR saio baliodunik aurkitu!</string>
-    <string name="pref_export_logs">Historia esportatu</string>
-    <string name="pref_export_logs_summary">Elkarrizketen historiaren erregistroak SD txartelean gorde</string>
-    <string name="notification_export_logs_title">Erregistroak SD txartelean gordetzen</string>
     <string name="choose_file">Fitxategia aukeratu</string>
     <string name="receiving_x_file">%1$s jasotzen (%2$d%% osatua)</string>
     <string name="download_x_file">%s deskargatu</string>
@@ -373,7 +370,6 @@
     <string name="pdf_document">PDF dokumentua</string>
     <string name="apk">Android aplikazioa</string>
     <string name="vcard">Kontaktua</string>
-    <string name="touch_to_open_conversations">Ikutu Pix-Art Messenger irekitzeko</string>
     <string name="avatar_has_been_published">Profileko argazkia argitaratu da</string>
     <string name="sending_x_file">%s bidaltzen</string>
     <string name="offering_x_file">%s eskeintzen...</string>
