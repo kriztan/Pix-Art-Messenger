@@ -291,9 +291,6 @@
     <string name="verified">Verificat!</string>
     <string name="smp_requested">Contactul a cerut verificare SMP</string>
     <string name="no_otr_session_found">Nu s-a găsit nici o sesiune OTR validă</string>
-    <string name="pref_export_logs">Exportă istoric</string>
-    <string name="pref_export_logs_summary">Scrie istoricul conversațiilor pe cardul SD</string>
-    <string name="notification_export_logs_title">Se scrie jurnal pe card SD</string>
     <string name="choose_file">Alege un fișier</string>
     <string name="receiving_x_file">Primesc %1$s (%2$d%% complet)</string>
     <string name="download_x_file">Descarca %s</string>
@@ -377,7 +374,6 @@
     <string name="pdf_document">document PDF</string>
     <string name="apk">Aplicație Android</string>
     <string name="vcard">Contact</string>
-    <string name="touch_to_open_conversations">Atingeți pentru a deschide Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatarul a fost publicat!</string>
     <string name="sending_x_file">Trimit %s</string>
     <string name="offering_x_file">Ofer %s</string>
