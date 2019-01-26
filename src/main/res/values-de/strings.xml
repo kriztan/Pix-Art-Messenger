@@ -314,9 +314,6 @@
     <string name="verified">Überprüft!</string>
     <string name="smp_requested">Kontakt fordert eine Überprüfung an</string>
     <string name="no_otr_session_found">Keine gültige OTR-Sitzung gefunden!</string>
-    <string name="pref_export_logs">Chats exportieren</string>
-    <string name="pref_export_logs_summary">Chats auf SD-Karte schreiben</string>
-    <string name="notification_export_logs_title">Backup wird auf SD-Karte geschrieben</string>
     <string name="choose_file">Datei auswählen</string>
     <string name="receiving_x_file">Empfange %1$s (%2$d%% abgeschlossen)</string>
     <string name="download_x_file">%s herunterladen</string>
@@ -401,7 +398,6 @@
     <string name="pdf_document">PDF-Dokument</string>
     <string name="apk">Android App</string>
     <string name="vcard">Kontakt</string>
-    <string name="touch_to_open_conversations">Antippen, um Pix-Art Messenger zu öffnen</string>
     <string name="avatar_has_been_published">Profilbild wurde gespeichert</string>
     <string name="sending_x_file">%s wird gesendet</string>
     <string name="offering_x_file">%s wird angeboten</string>
@@ -575,9 +571,7 @@
     <string name="import_canceled">Import abgebrochen</string>
     <string name="Import_failed">Datenbankimport ist fehlgeschlagen und nicht möglich.</string>
     <string name="Password_wrong">Falsches Passwort, erneut versuchen</string>
-    <string name="enter_account_password">Bitte gib das Passwort deines Profils ein, um das Backup zu importieren.</string>
     <string name="please_wait">Bitte warten…</string>
-    <string name="databaseimport_started">Backup wird importiert, dies wird eine Weile dauern.</string>
     <string name="pref_export_plain_text_logs_summary">Aktiviere den Export von Chats als lesbare Text-Dateien</string>
     <string name="pref_export_plain_text_logs">Exportiere Chats als lesbare Text-Dateien</string>
     <string name="payment_required">Bezahlung erforderlich</string>
@@ -732,7 +726,6 @@
     <string name="huawei_protected_apps">Geschützte Apps</string>
     <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
     <string name="pref_enable_multi_accounts_title">Mehrprofil-Modus aktivieren</string>
-    <string name="pref_enable_multi_accounts_summary">Sofern du mehrere Profile nutzen möchtest musst du ein Passwort zur Verschlüsselung der Datensicherung angeben.</string>
     <string name="mtm_accept_cert">Unbekanntes Zertifikat akzeptieren?</string>
     <string name="mtm_trust_anchor">Das Serverzertifikat wurde nicht von einer bekannten Zertifizierungsstelle signiert.</string>
     <string name="mtm_accept_servername">Nicht übereinstimmenden Servernamen akzeptieren?</string>
@@ -823,7 +816,6 @@
     <string name="pref_more_notification_settings">Benachrichtigungseinstellungen</string>
     <string name="pref_more_notification_settings_summary">Wichtigkeit, Töne, Vibration</string>
     <string name="video_compression_channel_name">Video-Komprimierung</string>
-    <string name="backup_channel_name">Datenbanksicherung</string>
     <string name="app_update_channel_name">App Aktualisierung</string>
     <string name="action_group_details">Gruppenchat-Details</string>
     <string name="view_media">Medien anzeigen</string>
