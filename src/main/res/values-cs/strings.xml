@@ -267,9 +267,6 @@
     <string name="verified">Ověřeno!</string>
     <string name="smp_requested">Kontakt zažádal o ověření SMP</string>
     <string name="no_otr_session_found">Nebylo nalezeno platné OTR sezení!</string>
-    <string name="pref_export_logs">Exportovat historii</string>
-    <string name="pref_export_logs_summary">Zapsat logy konverzací na SD kartu</string>
-    <string name="notification_export_logs_title">Zapisování logů na SD kartu</string>
     <string name="choose_file">Vybrat soubor</string>
     <string name="receiving_x_file">Přijímám %1$s (%2$d%% dokončeno)</string>
     <string name="download_x_file">Stáhnout %s</string>
@@ -339,7 +336,6 @@
     <string name="pdf_document">dokument PDF</string>
     <string name="apk">Aplikace pro Android</string>
     <string name="vcard">Kontakt</string>
-    <string name="touch_to_open_conversations">Ťuknout pro otevření Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatar byl zveřejněn!</string>
     <string name="sending_x_file">Odesílám %s</string>
     <string name="offering_x_file">Nabízím %s</string>
