@@ -303,9 +303,6 @@
     <string name="verified">Doğrulandı!</string>
     <string name="smp_requested">İstenilen SMP doğrulamayla bağlantıyı kurun</string>
     <string name="no_otr_session_found">Geçerli bir OTR oturumu bulunamadı!</string>
-    <string name="pref_export_logs">Dışa aktarım geçmişi</string>
-    <string name="pref_export_logs_summary">Sohbet geçmişini SD karta yazın</string>
-    <string name="notification_export_logs_title">Sohbet geçmişi SD karta yazılıyor</string>
     <string name="choose_file">Dosya seç</string>
     <string name="receiving_x_file">%1$s alındığında (%2$d%% tamamlandı)</string>
     <string name="download_x_file">%s indir</string>
@@ -389,7 +386,6 @@
     <string name="pdf_document">PDF belgesi</string>
     <string name="apk">Android Uygulaması</string>
     <string name="vcard">Bağlantı</string>
-    <string name="touch_to_open_conversations">Pix-Art Messenger\'ı açmak için dokunun</string>
     <string name="avatar_has_been_published">Avatar yayınlandı!</string>
     <string name="sending_x_file">Gönderiliyor %s</string>
     <string name="offering_x_file">Öneri %s</string>
@@ -554,9 +550,7 @@
     <string name="import_canceled">İçe aktarım iptal edildi</string>
     <string name="Import_failed">Veritabanı içe aktarma başarısız, içe aktarma mümkün değil</string>
     <string name="Password_wrong">Yanlış parola, yeniden dene</string>
-    <string name="enter_account_password">Yedeklemenizi içe aktarmak için lütfen hesap şifrenizi girin.</string>
     <string name="please_wait">Lütfen bekleyin…</string>
-    <string name="databaseimport_started">Yedekleme içe aktarılacaktır, bu biraz zaman alabilir.</string>
     <string name="pref_export_plain_text_logs_summary">Sohbet günlüklerini insan tarafından okunabilir metin dosyaları olarak dışa aktarmayı etkinleştir</string>
     <string name="pref_export_plain_text_logs">Insanlar tarafından okunabilir metin dosyalarını dışa aktarın</string>
     <string name="payment_required">Ödeme gerekli</string>
