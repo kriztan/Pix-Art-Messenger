@@ -307,9 +307,6 @@
     <string name="finish">Завершить</string>
     <string name="verified">Подтверждён!</string>
     <string name="no_otr_session_found">Не найдена действительная OTR сессия!</string>
-    <string name="pref_export_logs">Экспорт истории</string>
-    <string name="pref_export_logs_summary">Записать логи истории разговоров на SD карту</string>
-    <string name="notification_export_logs_title">Записываются разговоры на SD карту</string>
     <string name="choose_file">Выберите файл</string>
     <string name="barcode_does_not_contain_fingerprints_for_this_conversation">QR код не содержит отпечатки для этого разговора.</string>
     <string name="use_camera_icon_to_scan_barcode">Используйте камеру для сканирования QR кода контактов</string>
