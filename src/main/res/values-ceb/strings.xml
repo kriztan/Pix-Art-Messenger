@@ -303,9 +303,6 @@
     <string name="verified">Tinu-a!</string>
     <string name="smp_requested">Hangyu-a ang kontak ug SMP nga pag-tinu</string>
     <string name="no_otr_session_found">Walay balido nga OTR nga sesyon nga nakita!</string>
-    <string name="pref_export_logs">Pag-eksport nga kasaysayan</string>
-    <string name="pref_export_logs_summary">Paguswat ug panag-estorya sa kasaysayan nga mga log adto sa SD card</string>
-    <string name="notification_export_logs_title">Buhat ug mga panag-estorya adto sa SD card</string>
     <string name="choose_file">Pili ug file</string>
     <string name="receiving_x_file">Dawata %1$s(%2$d%% kumpleto)</string>
     <string name="download_x_file">Pag-download %s</string>
@@ -344,7 +341,6 @@
     <string name="pdf_document">PDF nga dokumento</string>
     <string name="apk">Android App</string>
     <string name="vcard">Kontak</string>
-    <string name="touch_to_open_conversations">Hikapa para ma abli ang Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Ang avatar kay gelahad!</string>
     <string name="sending_x_file">Pagpadala %s</string>
     <string name="offering_x_file">Ge-alay %s</string>
@@ -515,9 +511,7 @@
     <string name="import_canceled">Wa madayun ang pag-import</string>
     <string name="Import_failed">Ang pag-import sa database napakyas, ang import dili posible</string>
     <string name="Password_wrong">Sayop ang password, suwayi pag-usab</string>
-    <string name="enter_account_password">Palihog un pasulod sa imung account para ma-import sa imung tabang.</string>
     <string name="please_wait">Palihog paabot…</string>
-    <string name="databaseimport_started">Ang tabang kay ma-import ra gayud, mataudtauran lang jud.</string>
     <string name="pref_export_plain_text_logs_summary">Pagpagana sa eksport sa mga chat log ingon nga mabasa nga mga file sa text</string>
     <string name="pref_export_plain_text_logs">I-export ang mabasa nga mga log sa tawo</string>
     <string name="payment_required">Kinahanglan ug bayad</string>
