@@ -303,9 +303,6 @@
     <string name="verified">Napatunayan!</string>
     <string name="smp_requested">Ang kontak hinihiling ang beripikasyon ng SMP</string>
     <string name="no_otr_session_found">Walang napatunayang OTR na sesyon ang nakita!</string>
-    <string name="pref_export_logs">I-export ang kasaysayan</string>
-    <string name="pref_export_logs_summary">Isulat ang kasaysayan ng pag-uusap sa SD kard</string>
-    <string name="notification_export_logs_title">Pagsulat ng pinag-usapan sa SD kard</string>
     <string name="choose_file">Pumili ng hilira</string>
     <string name="receiving_x_file">Pagtanggap %1$s (%2$d%% nakumpleto)</string>
     <string name="download_x_file">I-download %s</string>
@@ -389,7 +386,6 @@
     <string name="pdf_document">Kodumentong PDF</string>
     <string name="apk">Android App</string>
     <string name="vcard">Pakikipag-ugnayan</string>
-    <string name="touch_to_open_conversations">Pindotin para mabuksan ang Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatar ay nailathala!</string>
     <string name="sending_x_file">Nagpapadala %s</string>
     <string name="offering_x_file">Pag-aalay %s</string>
@@ -554,9 +550,7 @@
     <string name="import_canceled">Kinansela ang pag-import</string>
     <string name="Import_failed">Nabigo ang pag-import ng database, imposible ang pag-import</string>
     <string name="Password_wrong">Maling password, subukang muli</string>
-    <string name="enter_account_password">Pakipasok ang password ng iyong account upang i-import ang iyong backup.</string>
     <string name="please_wait">Mangyaring maghintay…</string>
-    <string name="databaseimport_started">I-import ang backup, maaaring tumagal ito ng ilang sandali.</string>
     <string name="pref_export_plain_text_logs_summary">Paganahin ang isang pag-export ng mga log ng chat bilang mga nababasa na text file ng tao</string>
     <string name="pref_export_plain_text_logs">I-export ang mga tao na nagbabasa na mga chat log</string>
     <string name="payment_required">Kinakailangan ang pagbabayad</string>
