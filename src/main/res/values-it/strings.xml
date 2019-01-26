@@ -314,9 +314,6 @@
     <string name="verified">Verificato!</string>
     <string name="smp_requested">Il contatto ha richiesto la verifica SMP</string>
     <string name="no_otr_session_found">Non è stata trovata nessuna sessione OTR valida!</string>
-    <string name="pref_export_logs">Esporta la cronologia</string>
-    <string name="pref_export_logs_summary">Scrivi la cronologia delle conversazioni nella scheda SD</string>
-    <string name="notification_export_logs_title">Scrittura log su scheda SD</string>
     <string name="choose_file">Scegli un file</string>
     <string name="receiving_x_file">Ricezione di %1$s file (%2$d%% completato)</string>
     <string name="download_x_file">Scarica %s</string>
@@ -401,7 +398,6 @@
     <string name="pdf_document">Documento PDF</string>
     <string name="apk">Applicazione Android</string>
     <string name="vcard">Contatto</string>
-    <string name="touch_to_open_conversations">Tocca per avviare Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Il tuo avatar è stato pubblicato!</string>
     <string name="sending_x_file">Invio %s</string>
     <string name="offering_x_file">Offrendo %s</string>
@@ -575,9 +571,7 @@
     <string name="import_canceled">Importazione annullata</string>
     <string name="Import_failed">Importazione del database fallita, un\'importazione non è possibile</string>
     <string name="Password_wrong">Password non corretta, prova di nuovo</string>
-    <string name="enter_account_password">Per favore inserisci la password del tuo account per importare il tuo backup.</string>
     <string name="please_wait">Attendere prego…</string>
-    <string name="databaseimport_started">Il backup sarà importato, potrebbe volerci un po\'.</string>
     <string name="pref_export_plain_text_logs_summary">Abilita l\'esportazione della cronologia delle conversazioni come file di testo leggibili</string>
     <string name="pref_export_plain_text_logs">Esporta cronologia delle conversazioni in formato leggibile</string>
     <string name="payment_required">Necessario pagamento</string>
@@ -732,7 +726,6 @@
     <string name="huawei_protected_apps">App Protette</string>
     <string name="huawei_protected_apps_summary">Per continuare a ricevere notifiche, anche quando lo schermo è spento, è necessario inserire Pix-Art Messenger alla lista delle app protette.</string>
     <string name="pref_enable_multi_accounts_title">Abilita account multipli</string>
-    <string name="pref_enable_multi_accounts_summary">Se vuoi utilizzare account multipli devi impostare una password per backup giornalieri.</string>
     <string name="mtm_accept_cert">Accettare Certificato Sconosciuto?</string>
     <string name="mtm_trust_anchor">Il certificato del server non è firmato da un\'Autorità di Certificazione conosciuta.</string>
     <string name="mtm_accept_servername">Accettare nome server non corrispondente?</string>
@@ -823,7 +816,6 @@
     <string name="pref_more_notification_settings">Impostazioni delle notifiche</string>
     <string name="pref_more_notification_settings_summary">Importanza, Suono, Vibrazione</string>
     <string name="video_compression_channel_name">Compressione video</string>
-    <string name="backup_channel_name">Backup del database</string>
     <string name="app_update_channel_name">Aggiornamento app</string>
     <string name="action_group_details">Dettagli del gruppo</string>
     <string name="view_media">Vedi media</string>
