@@ -287,9 +287,6 @@
     <string name="verified">Geverifieerd!</string>
     <string name="smp_requested">Contact vraagt SMP-bevestiging</string>
     <string name="no_otr_session_found">Geen geldige OTR-sessie gevonden!</string>
-    <string name="pref_export_logs">Geschiedenis exporteren</string>
-    <string name="pref_export_logs_summary">Gespreksgeschiedenis schrijven naar SD-kaart</string>
-    <string name="notification_export_logs_title">Logs schrijven naar SD-kaart</string>
     <string name="choose_file">Bestand kiezen</string>
     <string name="receiving_x_file">Ontvangen van %1$s (%2$d%% voltooid)</string>
     <string name="download_x_file">%s downloaden</string>
@@ -373,7 +370,6 @@
     <string name="pdf_document">PDF-document</string>
     <string name="apk">Android-applicatie</string>
     <string name="vcard">Contact</string>
-    <string name="touch_to_open_conversations">Tik om Pix-Art Messenger te openen</string>
     <string name="avatar_has_been_published">Avatar is gepubliceerd!</string>
     <string name="sending_x_file">Bezig met versturen van %s</string>
     <string name="offering_x_file">Bezig met aanbieden van %s</string>
