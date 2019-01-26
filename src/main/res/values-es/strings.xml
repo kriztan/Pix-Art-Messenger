@@ -861,4 +861,5 @@
     <string name="pref_play_gif_inside_summary">Activando esto, ejecuta archivos GIF directamente en la conversación.</string>
     <string name="open_with">Abrir con…</string>
     <string name="choose_account">Elige cuenta</string>
+    <string name="set_profile_picture">Imagen de perfil de Pix-Art Messenger</string>
 </resources>
