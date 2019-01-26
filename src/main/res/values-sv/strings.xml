@@ -271,9 +271,6 @@
     <string name="verified">Verifierad</string>
     <string name="smp_requested">Kontakt begärde SMP-verifikation</string>
     <string name="no_otr_session_found">Ingen giltig OTR-session kunde hittas!</string>
-    <string name="pref_export_logs">Exportera historik</string>
-    <string name="pref_export_logs_summary">Skriv loggar av konversationer till SD-kort</string>
-    <string name="notification_export_logs_title">Skriver loggar till SD-kort</string>
     <string name="choose_file">Välj fil</string>
     <string name="receiving_x_file">Tar emot %1$s (%2$d%% klart)</string>
     <string name="download_x_file">Ladda ner %s</string>
@@ -346,7 +343,6 @@
     <string name="pdf_document">PDF-dokument</string>
     <string name="apk">Android-app</string>
     <string name="vcard">Kontakt</string>
-    <string name="touch_to_open_conversations">Tryck för att öppna Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatarbild har publicerats!</string>
     <string name="sending_x_file">Skickar %s</string>
     <string name="offering_x_file">Erbjuder %s</string>
