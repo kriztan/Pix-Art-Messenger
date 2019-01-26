@@ -311,9 +311,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="verified">Weryfikacja udana!</string>
     <string name="smp_requested">Kontakt zażądał weryfikacji SMP</string>
     <string name="no_otr_session_found">Brak ważnej sesji OTR!</string>
-    <string name="pref_export_logs">Wyeksportuj historię rozmów</string>
-    <string name="pref_export_logs_summary">Zapisz historię rozmów na karcie SD</string>
-    <string name="notification_export_logs_title">Zapisywanie historii na karcie SD...</string>
     <string name="choose_file">Wybierz plik</string>
     <string name="receiving_x_file">Odbieranie %1$s (ukończono %2$d%%)</string>
     <string name="download_x_file">Pobierz %s</string>
@@ -394,7 +391,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pdf_document">Dokument PDF</string>
     <string name="apk">Aplikacja Androida</string>
     <string name="vcard">Kontakt</string>
-    <string name="touch_to_open_conversations">Dotknij, aby otworzyć Pix-Art Messenger</string>
     <string name="avatar_has_been_published">Avatar został pomyślnie opublikowany!</string>
     <string name="sending_x_file">Wysyłanie %s</string>
     <string name="offering_x_file">Oferowanie %s</string>
@@ -557,9 +553,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="import_canceled">Anulowano import</string>
     <string name="Import_failed">Import bazy danych nie powiódł się, import nie jest możliwy</string>
     <string name="Password_wrong">Niepoprawne hasło, spróbuj ponownie</string>
-    <string name="enter_account_password">Proszę podaj hasło swojego konta, aby zaimportować backup.</string>
     <string name="please_wait">Proszę czekać…</string>
-    <string name="databaseimport_started">Backup zostanie zaimportowany, to zajmie chwilę.</string>
     <string name="payment_required">Płatność wymagana</string>
     <string name="missing_internet_permission">Brak pozwolenia na korzystanie z Internetu</string>
     <string name="me">Ja</string>
