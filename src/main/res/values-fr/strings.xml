@@ -312,9 +312,6 @@
     <string name="verified">Vérifié !</string>
     <string name="smp_requested">Le contact requiert la vérification du SMP</string>
     <string name="no_otr_session_found">Aucune session OTR valide n\'a été trouvée !</string>
-    <string name="pref_export_logs">Exporter l’historique</string>
-    <string name="pref_export_logs_summary">Sauvegarder l’historique des conversations sur la carte SD</string>
-    <string name="notification_export_logs_title">Sauvegarde des historiques des conversations sur la carte SD</string>
     <string name="choose_file">Choix du fichier</string>
     <string name="receiving_x_file">Réception %1$s (%2$d%% complété)</string>
     <string name="download_x_file">Télécharger %s</string>
@@ -399,7 +396,6 @@
     <string name="pdf_document">document PDF</string>
     <string name="apk">Application Android</string>
     <string name="vcard">Contact</string>
-    <string name="touch_to_open_conversations">Appuyez pour ouvrir Pix-Art Messenger</string>
     <string name="avatar_has_been_published">L’avatar a été publié !</string>
     <string name="sending_x_file">%s en cours d’envoi</string>
     <string name="offering_x_file">En train de proposer un(e) %s</string>
@@ -570,9 +566,7 @@
     <string name="import_canceled">Importation annulée</string>
     <string name="Import_failed">Échec d’import de la base de données, impossible d’effectuer l’importation</string>
     <string name="Password_wrong">Mot de passe erroné, essayez à nouveau</string>
-    <string name="enter_account_password">Veuillez saisir le mot de passe de votre compte pour pouvoir importer votre sauvegarde.</string>
     <string name="please_wait">Veuillez patienter …</string>
-    <string name="databaseimport_started">La sauvegarde sera importée. Ceci peut prendre un peu de temps.</string>
     <string name="pref_export_plain_text_logs">Exporter les journaux des conversations dans un format lisible</string>
     <string name="payment_required">Paiement requis</string>
     <string name="missing_internet_permission">Permission Internet manquante</string>
@@ -723,7 +717,6 @@
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
-    <string name="pref_enable_multi_accounts_summary">Si vous désirez utiliser plusieurs comptes, vous devez spécifier un mot de passe pour les sauvegardes quotidiennes.</string>
     <string name="mtm_accept_cert">Accepter ce certificat inconnu ?</string>
     <string name="mtm_trust_anchor">Le certificat serveur n’est signé par une Autorité de Certification connue.</string>
     <string name="mtm_accept_servername">Accepter même non-concordant avec le nom du serveur ?</string>
@@ -805,7 +798,6 @@
     <string name="pref_more_notification_settings">Paramètres des notifications</string>
     <string name="pref_more_notification_settings_summary">Importance, Sonnerie, Vibreur</string>
     <string name="video_compression_channel_name">Compression vidéo</string>
-    <string name="backup_channel_name">Sauvegarde de base de données</string>
     <string name="app_update_channel_name">Mise à jour de l’application</string>
     <string name="action_group_details">Détails du groupe</string>
     <string name="view_media">Afficher le média</string>
