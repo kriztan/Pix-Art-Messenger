@@ -319,7 +319,7 @@
     <string name="notification_create_backup_title">Sicherungsdateien werden erstellt</string>
     <string name="restoring_backup">Sicherung wird wieder hergestellt</string>
     <string name="notification_restored_backup_title">Deine Sicherung wurde wiederhergestellt</string>
-    <string name="notification_restored_backup_subtitle">Vergiss nicht, das Konto zu aktivieren.</string>
+    <string name="notification_restored_backup_subtitle">Vergiss nicht, das Profil zu aktivieren.</string>
     <string name="choose_file">Datei auswählen</string>
     <string name="receiving_x_file">Empfange %1$s (%2$d%% abgeschlossen)</string>
     <string name="download_x_file">%s herunterladen</string>
@@ -732,7 +732,7 @@
     <string name="huawei_protected_apps">Geschützte Apps</string>
     <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
     <string name="pref_enable_multi_accounts_title">Mehrprofil-Modus aktivieren</string>
-    <string name="pref_enable_multi_accounts_summary">Möchtest du mehrere Konten benutzen?</string>
+    <string name="pref_enable_multi_accounts_summary">Möchtest du mehrere Profile benutzen?</string>
     <string name="mtm_accept_cert">Unbekanntes Zertifikat akzeptieren?</string>
     <string name="mtm_trust_anchor">Das Serverzertifikat wurde nicht von einer bekannten Zertifizierungsstelle signiert.</string>
     <string name="mtm_accept_servername">Nicht übereinstimmenden Servernamen akzeptieren?</string>
@@ -864,4 +864,5 @@
     <string name="set_profile_picture">Pix-Art Messenger Profilbild</string>
     <string name="restore_backup">Sicherung wiederherstellen</string>
     <string name="restore">Wiederherstellen</string>
+    <string name="enter_password_to_restore">Um die Sicherung wiederherzustellen, gib für das Profil %s dein Kennwort ein.</string>
 </resources>
