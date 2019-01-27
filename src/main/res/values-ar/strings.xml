@@ -234,6 +234,7 @@
     <string name="try_again">أعد المحاولة</string>
     <string name="finish">إنهاء</string>
     <string name="verified">تم التحقق منه!</string>
+    <string name="pref_create_backup">إنشاء نسخة احتياطية</string>
     <string name="choose_file">إختر ملفا</string>
     <string name="download_x_file">تنزيل %s</string>
     <string name="delete_x_file">حذف %s</string>
@@ -428,6 +429,7 @@
     <string name="snooze">غفوة</string>
     <string name="huawei_protected_apps">التطبيقات المحمية</string>
     <string name="pref_enable_multi_accounts_title">السماح باستخدام عدة حسابات</string>
+    <string name="pref_enable_multi_accounts_summary">هل تريد استخدام حسابات أخرى؟</string>
     <string name="mtm_accept_cert">هل تريد تقبُّل الشهادة المجهولة؟</string>
     <string name="mtm_cert_details">تفاصيل الشهادة:</string>
     <string name="once">مرة واحدة</string>
@@ -478,6 +480,7 @@
     <string name="silent_messages_channel_name">رسائل صامتة</string>
     <string name="pref_more_notification_settings">إعدادات الإشعارات</string>
     <string name="video_compression_channel_name">ضغط الفيديو</string>
+    <string name="backup_channel_name">النسخ الاحتياطي والاستعادة</string>
     <string name="app_update_channel_name">تحديث التطبيق</string>
     <string name="action_group_details">تفاصيل الفريق</string>
     <string name="view_media">عرض الوسائط</string>
@@ -499,4 +502,7 @@
     <string name="autojoin_groupchat">إلتحق بفريق المحادثة هذا افتراضيا</string>
     <string name="pref_play_gif_inside">تشغيل صور جيف المتحركة في المحادثة</string>
     <string name="pref_play_gif_inside_summary">إن تم تنشيط هذه الميزة فسوف يتم تشغيل صور جيف المتحركة تلقائيا داخل نافذة المحادثة.</string>
+    <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
+    <string name="restore">إستعادة</string>
+    <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
 </resources>
