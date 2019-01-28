@@ -314,6 +314,12 @@
     <string name="verified">Verificato!</string>
     <string name="smp_requested">Il contatto ha richiesto la verifica SMP</string>
     <string name="no_otr_session_found">Non è stata trovata nessuna sessione OTR valida!</string>
+    <string name="pref_create_backup">Crea backup</string>
+    <string name="pref_create_backup_summary">Scrivi file di backup su %s</string>
+    <string name="notification_create_backup_title">Creazione dei file di backup in corso</string>
+    <string name="restoring_backup">Ripristino del backup in corso</string>
+    <string name="notification_restored_backup_title">Il tuo backup è stato ripristinato</string>
+    <string name="notification_restored_backup_subtitle">Non dimenticarti di abilitare l\'account.</string>
     <string name="choose_file">Scegli un file</string>
     <string name="receiving_x_file">Ricezione di %1$s file (%2$d%% completato)</string>
     <string name="download_x_file">Scarica %s</string>
@@ -726,6 +732,7 @@
     <string name="huawei_protected_apps">App Protette</string>
     <string name="huawei_protected_apps_summary">Per continuare a ricevere notifiche, anche quando lo schermo è spento, è necessario inserire Pix-Art Messenger alla lista delle app protette.</string>
     <string name="pref_enable_multi_accounts_title">Abilita account multipli</string>
+    <string name="pref_enable_multi_accounts_summary">Vuoi utilizzare account multipli?</string>
     <string name="mtm_accept_cert">Accettare Certificato Sconosciuto?</string>
     <string name="mtm_trust_anchor">Il certificato del server non è firmato da un\'Autorità di Certificazione conosciuta.</string>
     <string name="mtm_accept_servername">Accettare nome server non corrispondente?</string>
@@ -816,6 +823,7 @@
     <string name="pref_more_notification_settings">Impostazioni delle notifiche</string>
     <string name="pref_more_notification_settings_summary">Importanza, Suono, Vibrazione</string>
     <string name="video_compression_channel_name">Compressione video</string>
+    <string name="backup_channel_name">Backup &amp; Ripristino</string>
     <string name="app_update_channel_name">Aggiornamento app</string>
     <string name="action_group_details">Dettagli del gruppo</string>
     <string name="view_media">Vedi media</string>
@@ -851,4 +859,9 @@
     <string name="autojoin_groupchat">Unisciti automaticamente a questa conversazione di gruppo</string>
     <string name="pref_play_gif_inside">Riproduci file GIF nelle conversazioni</string>
     <string name="pref_play_gif_inside_summary">Attivando questa opzione, i file GIF verranno riprodotti direttamente nella conversazione.</string>
+    <string name="open_with">Apri con…</string>
+    <string name="choose_account">Scegli account</string>
+    <string name="set_profile_picture">Immagine di profilo Pix-Art Messenger</string>
+    <string name="restore_backup">Ripristino backup</string>
+    <string name="restore">Ripristino</string>
 </resources>
