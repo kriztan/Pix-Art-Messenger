@@ -804,6 +804,7 @@
     <string name="pref_more_notification_settings">Paramètres des notifications</string>
     <string name="pref_more_notification_settings_summary">Importance, Sonnerie, Vibreur</string>
     <string name="video_compression_channel_name">Compression vidéo</string>
+    <string name="backup_channel_name">Sauvegarde et restauration</string>
     <string name="app_update_channel_name">Mise à jour de l’application</string>
     <string name="action_group_details">Détails du groupe</string>
     <string name="view_media">Afficher le média</string>
@@ -840,4 +841,18 @@
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="pref_play_gif_inside_summary">L’activation de cette option permet d’animer les images GIF publiées dans la fenêtre de discussion.</string>
     <string name="open_with">Ouvrir avec …</string>
+    <string name="choose_account">Sélectionnez un compte</string>
+    <string name="set_profile_picture">Image du profil Pix-Art Messenger</string>
+    <string name="restore_backup">Restaurer une sauvegarde</string>
+    <string name="restore">Restaurer</string>
+    <string name="enter_password_to_restore">Entrez votre mot de passe pour le compte %s afin de procéder à la restauration de la sauvegarde.</string>
+    <string name="unable_to_restore_backup">Impossible de restaurer la sauvegarde.</string>
+    <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
+    <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
+    <string name="view_users">Afficher les membres</string>
+    <string name="group_chat_members">Grouper les membres de la discussion</string>
+    <string name="join_group_chat">Rejoindre une discussion</string>
+    <string name="create_group_chat">Créer un groupe de discussion</string>
+    <string name="message_deleted">Le message a été supprimé</string>
 </resources>
