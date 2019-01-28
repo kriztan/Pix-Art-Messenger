@@ -872,4 +872,7 @@
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
     <string name="view_users">Ver miembros</string>
     <string name="group_chat_members">Miembros del grupo</string>
+    <string name="join_group_chat">Unirse al grupo</string>
+    <string name="create_group_chat">Crear grupo de chat</string>
+    <string name="message_deleted">El mensaje fue eliminado</string>
 </resources>
