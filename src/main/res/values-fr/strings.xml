@@ -312,6 +312,11 @@
     <string name="verified">Vérifié !</string>
     <string name="smp_requested">Le contact requiert la vérification du SMP</string>
     <string name="no_otr_session_found">Aucune session OTR valide n\'a été trouvée !</string>
+    <string name="pref_create_backup">Créer une sauvegarde</string>
+    <string name="notification_create_backup_title">Création des fichiers de sauvegarde</string>
+    <string name="restoring_backup">Restauration de la sauvegarde</string>
+    <string name="notification_restored_backup_title">Votre sauvegarde a été restaurée</string>
+    <string name="notification_restored_backup_subtitle">N\'oubliez pas d\'activer le compte.</string>
     <string name="choose_file">Choix du fichier</string>
     <string name="receiving_x_file">Réception %1$s (%2$d%% complété)</string>
     <string name="download_x_file">Télécharger %s</string>
@@ -717,6 +722,7 @@
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
+    <string name="pref_enable_multi_accounts_summary">Désirez-vous activer l\'utilisation du multi-comptes ?</string>
     <string name="mtm_accept_cert">Accepter ce certificat inconnu ?</string>
     <string name="mtm_trust_anchor">Le certificat serveur n’est signé par une Autorité de Certification connue.</string>
     <string name="mtm_accept_servername">Accepter même non-concordant avec le nom du serveur ?</string>
@@ -833,4 +839,5 @@
     <string name="autojoin_groupchat">Rejoindre automatiquement cette conférence</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="pref_play_gif_inside_summary">L’activation de cette option permet d’animer les images GIF publiées dans la fenêtre de discussion.</string>
+    <string name="open_with">Ouvrir avec …</string>
 </resources>
