@@ -505,4 +505,8 @@
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
+    <string name="view_users">عرض الأعضاء</string>
+    <string name="join_group_chat">الالتحاق بفريق المحادثة</string>
+    <string name="create_group_chat">انشاء محادثة جماعية</string>
+    <string name="message_deleted">تم حذف الرسالة</string>
 </resources>
