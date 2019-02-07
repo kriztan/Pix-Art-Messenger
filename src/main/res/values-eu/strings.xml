@@ -15,16 +15,12 @@
     <string name="action_unblock_contact">Kontaktua desblokeatu</string>
     <string name="action_block_domain">Domeinua blokeatu</string>
     <string name="action_unblock_domain">Domeinua desblokeatu</string>
-    <string name="title_activity_manage_accounts">Kontuak kudeatu</string>
     <string name="title_activity_settings">Ezarpenak</string>
-    <string name="title_activity_sharewith">Elkarrizketa batekin partekatu</string>
-    <string name="title_activity_start_conversation">Elkarrizketa hasi</string>
     <string name="title_activity_choose_contact">Kontaktua hautatu</string>
     <string name="title_activity_block_list">Blokeatutakoen zerrenda</string>
     <string name="just_now">orain</string>
     <string name="minute_ago">min 1 lehenago</string>
     <string name="minutes_ago">%d min lehenago</string>
-    <string name="unread_conversations">irakurri gabeko elkarrizketak</string>
     <string name="sending">bidaltzen…</string>
     <string name="message_decrypting">Mezua desenkriptatzen. Mesedez itxaron…</string>
     <string name="pgp_message">OpenPGPz enkriptatutako mezua</string>
@@ -191,11 +187,9 @@
     <string name="done">Eginda</string>
     <string name="verify">Egiaztatu</string>
     <string name="decrypt">Desenkriptatu</string>
-    <string name="conferences">Taldeak</string>
     <string name="search">Bilatu</string>
     <string name="create_contact">Kontaktua sortu</string>
     <string name="enter_contact">Kontaktua sartu</string>
-    <string name="join_conference">Taldera batu</string>
     <string name="delete_contact">Kontaktua ezabatu</string>
     <string name="view_contact_details">Kontaktuaren xehetasunak ikusi</string>
     <string name="block_contact">Kontaktua blokeatu</string>
@@ -204,8 +198,6 @@
     <string name="select">Hautatu</string>
     <string name="contact_already_exists">Kontaktua existitzen da dagoeneko</string>
     <string name="join">Batu</string>
-    <string name="conference_address">Taldearen helbidea</string>
-    <string name="conference_address_example">gela@konferentzia.adibidea.eus/ezizena</string>
     <string name="save_as_bookmark">Gorde laster-marka bezala</string>
     <string name="delete_bookmark">Laster-marka ezabatu</string>
     <string name="bookmark_already_exists">Laster-marka hau existitzen da dagoeneko</string>
@@ -350,9 +342,7 @@
     <string name="could_not_change_role">%s(r)en rola ezin izan da aldatu</string>
     <string name="public_conference">Publikoki edonor sar daiteken taldea</string>
     <string name="private_conference">Talde pribatua, kideentzat soilik</string>
-    <string name="conference_options">Taldearen aukerak</string>
     <string name="members_only">Pribatua, kideentzat soilik</string>
-    <string name="non_anonymous">Ez anonimoa</string>
     <string name="moderated">Moderatua</string>
     <string name="you_are_not_participating">Ez zara parte hartzen ari</string>
     <string name="modified_conference_options">Taldearen aukerak aldatu dira</string>
@@ -487,7 +477,6 @@
     <string name="show_password">Pasahitza erakutsi</string>
     <string name="registration_please_wait">Erregistroak huts egin du: saiatu berriz beranduago</string>
     <string name="registration_password_too_weak">Erregistroa huts egin du: pasahitza ahulegia da</string>
-    <string name="create_conference">Taldea sortu</string>
     <string name="conference_subject">Gaia</string>
     <string name="choose_participants">Parte hartzaileak hautatu</string>
     <string name="creating_conference">Taldea sortzen…</string>
