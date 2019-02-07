@@ -317,7 +317,7 @@
     <string name="pref_create_backup">Sicherung erstellen</string>
     <string name="pref_create_backup_summary">Sicherungsdateien schreiben nach %s</string>
     <string name="notification_create_backup_title">Sicherungsdateien werden erstellt</string>
-    <string name="restoring_backup">Sicherung wird wieder hergestellt</string>
+    <string name="restoring_backup">Sicherung wird wiederhergestellt</string>
     <string name="notification_restored_backup_title">Deine Sicherung wurde wiederhergestellt</string>
     <string name="notification_restored_backup_subtitle">Vergiss nicht, das Profil zu aktivieren.</string>
     <string name="choose_file">Datei auswählen</string>
@@ -508,7 +508,6 @@
     <string name="video_low">niedrig (144p)</string>
     <string name="video_mid">mittelmäßig (360p)</string>
     <string name="video_high">hoch (720p)</string>
-    <string name="video_original">Original (unkomprimiert)</string>
     <string name="always">Immer</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
     <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
@@ -858,7 +857,7 @@
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
     <string name="autojoin_groupchat">Diesem Gruppenchat automatisch beitreten</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
-    <string name="pref_play_gif_inside_summary">Dies auf \"wahr\" zu setzen, spielt GIF-Dateien direkt in der Chat-Ansicht ab.</string>
+    <string name="pref_play_gif_inside_summary">Aktiviere dies, um GIF-Dateien direkt in der Chat-Ansicht abzuspielen.</string>
     <string name="open_with">Öffnen mit…</string>
     <string name="choose_account">Profil wählen</string>
     <string name="set_profile_picture">Pix-Art Messenger Profilbild</string>
