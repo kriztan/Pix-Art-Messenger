@@ -860,4 +860,6 @@
     <string name="join_group_chat">Unirse al grupo</string>
     <string name="create_group_chat">Crear grupo de chat</string>
     <string name="message_deleted">El mensaje fue eliminado</string>
+    <string name="grant_owner_privileges">Conceder privilegios de propietario</string>
+    <string name="remove_owner_privileges">Revocar privilegios de propietario</string>
 </resources>
