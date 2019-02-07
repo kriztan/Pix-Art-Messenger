@@ -15,18 +15,12 @@
     <string name="action_unblock_contact">Buka blokir kontak</string>
     <string name="action_block_domain">Blokir halaman</string>
     <string name="action_unblock_domain">Buka blokir halaman</string>
-    <string name="title_activity_manage_accounts">Kelola akun</string>
     <string name="title_activity_settings">Pengaturan</string>
-    <string name="title_activity_conference_details">Rincian chat kelompok</string>
-    <string name="title_activity_contact_details">Rincian kontak</string>
-    <string name="title_activity_sharewith">Berbagi dengan percakapan</string>
-    <string name="title_activity_start_conversation">Mulai percakapan</string>
     <string name="title_activity_choose_contact">Pilih kontak</string>
     <string name="title_activity_block_list">Daftar blokir</string>
     <string name="just_now">baru saja</string>
     <string name="minute_ago">1 menit yang lalu</string>
     <string name="minutes_ago">%d menit yang lalu</string>
-    <string name="unread_conversations">percakapan yang belum dibaca</string>
     <string name="sending">mengirimkan…</string>
     <string name="message_decrypting">Mendeskripsi pesan. Mohon tunggu…</string>
     <string name="pgp_message">Pesan terenskripsi OpenPGP</string>
@@ -204,11 +198,9 @@
     <string name="done">Selesai</string>
     <string name="verify">Memeriksa</string>
     <string name="decrypt">Terdeskripsi</string>
-    <string name="conferences">Obrolan kelompok</string>
     <string name="search">Pencarian</string>
     <string name="create_contact">Buat kontak</string>
     <string name="enter_contact">Masukkan kontak</string>
-    <string name="join_conference">Gabung kelompok obrolan</string>
     <string name="delete_contact">Menghapus kontak</string>
     <string name="view_contact_details">Lihat rincian kontak</string>
     <string name="block_contact">Blokir kontak</string>
@@ -217,8 +209,6 @@
     <string name="select">Pilih</string>
     <string name="contact_already_exists">Kontak sudah uda</string>
     <string name="join">Gabung</string>
-    <string name="conference_address">Alamat obrolan kelompok</string>
-    <string name="conference_address_example">obrolankelompok@room.pix-art.de</string>
     <string name="save_as_bookmark">Simpan sebagai penanda</string>
     <string name="delete_bookmark">Hapus penanda</string>
     <string name="bookmark_already_exists">Penanda ini sudah ada</string>
@@ -366,9 +356,7 @@
     <string name="could_not_change_role">Tidak dapat mengganti peran %s</string>
     <string name="public_conference">Obrolan kelompok yang dapat diakses publik</string>
     <string name="private_conference">Tertutup, obrolan kelompok hanya untuk anggota</string>
-    <string name="conference_options">Pilihan obrolan kelompok</string>
     <string name="members_only">Tertutup, anggota saja</string>
-    <string name="non_anonymous">Tidak anonim</string>
     <string name="moderated">Penengah</string>
     <string name="you_are_not_participating">Kamu tidak mengambil bagian</string>
     <string name="modified_conference_options">Mengubah pilihan obrolan kelompok!</string>
@@ -528,7 +516,6 @@
     <string name="show_password">Tampilkan kata sandi</string>
     <string name="registration_please_wait">Pendaftaran gagal: Coba lagi nanti</string>
     <string name="registration_password_too_weak">Pendaftaran gagal: Kata sandi terlalu lemah</string>
-    <string name="create_conference">Buat obrolan kelompok</string>
     <string name="conference_subject">Perihal</string>
     <string name="choose_participants">Pilih peserta</string>
     <string name="creating_conference">Membuat obrolan kelompok…</string>
