@@ -505,7 +505,6 @@
     <string name="video_low">basse (144p)</string>
     <string name="video_mid">moyenne (360p)</string>
     <string name="video_high">haute (720p)</string>
-    <string name="video_original">Original (non compressé)</string>
     <string name="always">Toujours</string>
     <string name="battery_optimizations_enabled">Optimisations de batterie activées</string>
     <string name="battery_optimizations_enabled_explained">Votre appareil applique sur Pix-Art Messenger des optimisations de batterie très strictes qui pourraient provoquer des retards dans les notifications, voire des pertes de messages.\nNous vous recommandons de les désactiver.</string>
@@ -848,7 +847,6 @@
     <string name="enter_password_to_restore">Entrez votre mot de passe pour le compte %s afin de procéder à la restauration de la sauvegarde.</string>
     <string name="unable_to_restore_backup">Impossible de restaurer la sauvegarde.</string>
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
-    <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
     <string name="view_users">Afficher les membres</string>
     <string name="group_chat_members">Grouper les membres de la discussion</string>
