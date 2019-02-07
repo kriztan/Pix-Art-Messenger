@@ -15,19 +15,13 @@
     <string name="action_unblock_contact">Desbloquear contacto</string>
     <string name="action_block_domain">Bloquear dominio</string>
     <string name="action_unblock_domain">Desbloquear dominio</string>
-    <string name="title_activity_manage_accounts">Gestionar Cuentas</string>
+    <string name="title_activity_manage_accounts">Gestionar cuentas</string>
     <string name="title_activity_settings">Ajustes</string>
-    <string name="title_activity_conference_details">Detalles del chat de grupo</string>
-    <string name="title_activity_contact_details">Detalles del contacto</string>
-    <string name="title_activity_sharewith">Compartir con Conversación</string>
-    <string name="title_activity_start_conversation">Comenzar conversación</string>
     <string name="title_activity_choose_contact">Elegir contacto</string>
-    <string name="title_activity_choose_contacts">Elegir Contactos</string>
     <string name="title_activity_block_list">Lista de contactos bloqueados</string>
     <string name="just_now">ahora mismo</string>
     <string name="minute_ago">hace 1 min</string>
     <string name="minutes_ago">hace %d min</string>
-    <string name="unread_conversations">conversaciones no leídas</string>
     <string name="sending">enviando…</string>
     <string name="message_decrypting">Descifrando mensaje. Por favor, espera...</string>
     <string name="pgp_message">Mensaje cifrado con OpenPGP</string>
@@ -210,11 +204,9 @@
     <string name="done">Hecho</string>
     <string name="verify">Verificar</string>
     <string name="decrypt">Descifrar</string>
-    <string name="conferences">Chats de grupo</string>
     <string name="search">Buscar</string>
     <string name="create_contact">Crear Contacto</string>
     <string name="enter_contact">Introducir contacto</string>
-    <string name="join_conference">Únete al grupo</string>
     <string name="delete_contact">Eliminar Contacto</string>
     <string name="view_contact_details">Ver detalles del contacto</string>
     <string name="block_contact">Bloquear contacto</string>
@@ -223,8 +215,6 @@
     <string name="select">Seleccionar</string>
     <string name="contact_already_exists">El contacto ya existe</string>
     <string name="join">Unirse</string>
-    <string name="conference_address">Dirección del chat de grupo</string>
-    <string name="conference_address_example">grupo@room.pix-art.de</string>
     <string name="save_as_bookmark">Guardar en marcadores</string>
     <string name="delete_bookmark">Eliminar marcador</string>
     <string name="bookmark_already_exists">Este marcador ya existe</string>
@@ -384,9 +374,7 @@
     <string name="could_not_change_role">No se puede cambiar el rol de %s</string>
     <string name="public_conference">Grupo accesible al público</string>
     <string name="private_conference">Privado, sólo miembros del grupo</string>
-    <string name="conference_options">Opciones de chat de grupo</string>
     <string name="members_only">Privada, solo miembros</string>
-    <string name="non_anonymous">No anónima</string>
     <string name="moderated">Moderada</string>
     <string name="you_are_not_participating">No estás participando</string>
     <string name="modified_conference_options">¡Opciones de chat de grupo modificadas!</string>
@@ -557,7 +545,6 @@
     <string name="show_password">Mostrar contraseña</string>
     <string name="registration_please_wait">El registro falló. Prueba de nuevo más tarde</string>
     <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
-    <string name="create_conference">Crear grupo</string>
     <string name="conference_subject">Asunto</string>
     <string name="choose_participants">Elige a los participantes</string>
     <string name="creating_conference">Crear chat de grupo…</string>
@@ -850,7 +837,6 @@
     <string name="install_orbot">Instalar Orbot</string>
     <string name="start_orbot">Arrancar Orbot</string>
     <string name="no_market_app_installed">Aplicación no instalada.</string>
-    <string name="group_chat_will_make_your_jabber_id_public">Esta conversación en grupo publicará tu identificador Jabber</string>
     <string name="ebook">e-book (libro electrónico)</string>
     <string name="your_name">Tu nombre</string>
     <string name="enter_your_name">Escribe tu nombre</string>
@@ -870,8 +856,7 @@
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
-    <string name="view_users">Ver miembros</string>
-    <string name="group_chat_members">Miembros del grupo</string>
+    <string name="group_chat_members">Participantes</string>
     <string name="join_group_chat">Unirse al grupo</string>
     <string name="create_group_chat">Crear grupo de chat</string>
     <string name="message_deleted">El mensaje fue eliminado</string>
