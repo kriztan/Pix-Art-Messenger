@@ -498,7 +498,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="video_low">niski (144p)</string>
     <string name="video_mid">średnie (360p)</string>
     <string name="video_high">wysokie (720p)</string>
-    <string name="video_original">Oryginał (nieskompresowany)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
