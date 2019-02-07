@@ -508,6 +508,7 @@
     <string name="video_low">bajo (144p)</string>
     <string name="video_mid">medio (360p)</string>
     <string name="video_high">alto (720p)</string>
+    <string name="video_original">original (sin comprimir)</string>
     <string name="always">Siempre</string>
     <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
     <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
@@ -867,6 +868,7 @@
     <string name="restore_warning">No use la característica de restaurar copia de seguridad para intentar clonar (ejecutar simultáneamente) una instalación. La restauración de copia de seguridad es solo para migraciones o para el caso de que haya perdido el dispositivo original.</string>
     <string name="unable_to_restore_backup">No se puede restaurar la copia de seguridad.</string>
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
     <string name="view_users">Ver miembros</string>
     <string name="group_chat_members">Miembros del grupo</string>
