@@ -15,16 +15,12 @@
     <string name="action_unblock_contact">Desbloquear contacto</string>
     <string name="action_block_domain">Bloquear dominio</string>
     <string name="action_unblock_domain">Desbloquear dominio</string>
-    <string name="title_activity_manage_accounts">Xestionar contas</string>
     <string name="title_activity_settings">Axustes</string>
-    <string name="title_activity_sharewith">Compartir na conversa</string>
-    <string name="title_activity_start_conversation">Iniciar conversa</string>
     <string name="title_activity_choose_contact">Escoller Contacto</string>
     <string name="title_activity_block_list">Lista de bloqueo</string>
     <string name="just_now">agora</string>
     <string name="minute_ago">Hai 1 min</string>
     <string name="minutes_ago">min</string>
-    <string name="unread_conversations">conversas sen ler</string>
     <string name="sending">enviando…</string>
     <string name="message_decrypting">Descifrando a mensaxe. Por favor agarde...</string>
     <string name="pgp_message">Mensaxe cifrado con OpenPGP</string>
@@ -191,11 +187,9 @@
     <string name="done">Feito</string>
     <string name="verify">Verificar</string>
     <string name="decrypt">Descifrar</string>
-    <string name="conferences">Conversas en grupo</string>
     <string name="search">Buscar</string>
     <string name="create_contact">Crear unha conta</string>
     <string name="enter_contact">Introducir contacto</string>
-    <string name="join_conference">Entrar nunha conversa en grupo</string>
     <string name="delete_contact">Eliminar contacto</string>
     <string name="view_contact_details">Ver os detalles do contacto</string>
     <string name="block_contact">Bloquear contacto</string>
@@ -204,8 +198,6 @@
     <string name="select">Selecionar</string>
     <string name="contact_already_exists">Xa existe o contacto</string>
     <string name="join">Unirse</string>
-    <string name="conference_address">Enderezo da conversa en grupo</string>
-    <string name="conference_address_example">sala@xuntanza.exemplo.com/nick</string>
     <string name="save_as_bookmark">Gardar como marcador</string>
     <string name="delete_bookmark">Eliminar marcador</string>
     <string name="bookmark_already_exists">Este marcador xa existe</string>
@@ -350,9 +342,7 @@
     <string name="could_not_change_role">Non se puido mudar o rol de %s</string>
     <string name="public_conference">Conversa en grupo de acceso público</string>
     <string name="private_conference">Conversa en grupo privada, só para membros</string>
-    <string name="conference_options">Opcións da conversa en grupo</string>
     <string name="members_only">Privada, só para membros</string>
-    <string name="non_anonymous">Non anónima</string>
     <string name="moderated">Moderada</string>
     <string name="you_are_not_participating">Vostede non está a participar</string>
     <string name="modified_conference_options">¡Opcións da conversa en grupo modificadas!</string>
@@ -487,7 +477,6 @@
     <string name="show_password">Mostar contrasinal</string>
     <string name="registration_please_wait">Fallo no rexistro: inténteo de novo</string>
     <string name="registration_password_too_weak">Fallo no rexistro: contrasinal moi feble</string>
-    <string name="create_conference">Crear conversa en grupo</string>
     <string name="conference_subject">Asunto</string>
     <string name="choose_participants">Escoller participantes</string>
     <string name="creating_conference">Creando unha conversa en grupo...</string>
