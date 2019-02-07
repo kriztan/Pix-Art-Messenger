@@ -15,19 +15,12 @@
     <string name="action_unblock_contact">Débloquer le contact</string>
     <string name="action_block_domain">Bloquer le domaine</string>
     <string name="action_unblock_domain">Débloquer le domaine</string>
-    <string name="title_activity_manage_accounts">Gestion des comptes</string>
     <string name="title_activity_settings">Paramètres</string>
-    <string name="title_activity_conference_details">Détails de la conférence</string>
-    <string name="title_activity_contact_details">Détails du contact</string>
-    <string name="title_activity_sharewith">Partager avec Conversation</string>
-    <string name="title_activity_start_conversation">Démarrer une conversation</string>
     <string name="title_activity_choose_contact">Choix du contact</string>
-    <string name="title_activity_choose_contacts">Choisie des contacts</string>
     <string name="title_activity_block_list">Bloquer la liste</string>
     <string name="just_now">à l’instant</string>
     <string name="minute_ago">Il y a 1 minute</string>
     <string name="minutes_ago">Il y a %d minutes</string>
-    <string name="unread_conversations">Conversations non lues</string>
     <string name="sending">Envoi…</string>
     <string name="message_decrypting">Déchiffrement du message. Veuillez patienter...</string>
     <string name="pgp_message">Message chiffré avec OpenPGP</string>
@@ -209,11 +202,9 @@
     <string name="done">Terminé</string>
     <string name="verify">Vérifier</string>
     <string name="decrypt">Déchiffrer</string>
-    <string name="conferences">Conférences</string>
     <string name="search">Rechercher</string>
     <string name="create_contact">Ajouter un contact</string>
     <string name="enter_contact">Ajouter contact</string>
-    <string name="join_conference">Rejoindre une conférence</string>
     <string name="delete_contact">Supprimer le contact</string>
     <string name="view_contact_details">Afficher les détails du contact</string>
     <string name="block_contact">Bloquer le contact</string>
@@ -222,8 +213,6 @@
     <string name="select">Sélectionner</string>
     <string name="contact_already_exists">Le contact existe déjà.</string>
     <string name="join">Rejoindre</string>
-    <string name="conference_address">Adresse de la conférence</string>
-    <string name="conference_address_example">groupchat@room.pix-art.de</string>
     <string name="save_as_bookmark">Enregistrer comme favori</string>
     <string name="delete_bookmark">Supprimer le favori</string>
     <string name="bookmark_already_exists">Le favori existe déjà</string>
@@ -381,9 +370,7 @@
     <string name="could_not_change_role">Impossible de changer le rôle de %s</string>
     <string name="public_conference">Conférence accessible publiquement</string>
     <string name="private_conference">Privée, accès réservé aux membres de la conférence uniquement</string>
-    <string name="conference_options">Options de la conférence</string>
     <string name="members_only">Privé, membres uniquement</string>
-    <string name="non_anonymous">Non anonyme</string>
     <string name="moderated">Modéré</string>
     <string name="you_are_not_participating">Vous ne participez pas</string>
     <string name="modified_conference_options">Les options de la conférence ont été modifiées !</string>
@@ -553,7 +540,6 @@
     <string name="show_password">Afficher le mot de passe</string>
     <string name="registration_please_wait">L’enregistrement a échoué : Réessayer plus tard</string>
     <string name="registration_password_too_weak">Échec de l’enregistrement : le mot de passe n’est pas assez fort</string>
-    <string name="create_conference">Créer une conférence</string>
     <string name="conference_subject">Objet</string>
     <string name="choose_participants">Choisir les participants</string>
     <string name="creating_conference">Création de la conférence …</string>
@@ -831,7 +817,6 @@
     <string name="install_orbot">Installer Orbot</string>
     <string name="start_orbot">Démarrer Orbot</string>
     <string name="no_market_app_installed">Aucun magasin d’applications n’est installé.</string>
-    <string name="group_chat_will_make_your_jabber_id_public">Cette conférence rendra visible publiquement votre ID Jabber</string>
     <string name="ebook">e-book</string>
     <string name="your_name">Votre nom</string>
     <string name="enter_your_name">Saisissez votre nom</string>
@@ -850,8 +835,6 @@
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
-    <string name="view_users">Afficher les membres</string>
-    <string name="group_chat_members">Grouper les membres de la discussion</string>
     <string name="join_group_chat">Rejoindre une discussion</string>
     <string name="create_group_chat">Créer un groupe de discussion</string>
     <string name="message_deleted">Le message a été supprimé</string>
