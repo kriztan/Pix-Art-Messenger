@@ -15,16 +15,12 @@
     <string name="action_unblock_contact">Desbloqueja contacte</string>
     <string name="action_block_domain">Bloqueja el domini</string>
     <string name="action_unblock_domain">Desbloqueja aquest domini</string>
-    <string name="title_activity_manage_accounts">Administrar comptes</string>
     <string name="title_activity_settings">Configuració</string>
-    <string name="title_activity_sharewith">Compartir amb converses</string>
-    <string name="title_activity_start_conversation">Començar una conversa</string>
     <string name="title_activity_choose_contact">Tria el contacte</string>
     <string name="title_activity_block_list">LLista bloqueix</string>
     <string name="just_now">Ara</string>
     <string name="minute_ago">1 min abans</string>
     <string name="minutes_ago">%de minuts abans</string>
-    <string name="unread_conversations">Converses sense llegir o no llegides</string>
     <string name="sending">enviant…</string>
     <string name="message_decrypting">Desxifrant missatge. Espereu ...</string>
     <string name="pgp_message">Missatge xifrat OpenPGP</string>
@@ -191,11 +187,9 @@
     <string name="done">Fet</string>
     <string name="verify">Verificar</string>
     <string name="decrypt">Desxifrar</string>
-    <string name="conferences">Xats de grup</string>
     <string name="search">Cercar</string>
     <string name="create_contact">Crea un contacte</string>
     <string name="enter_contact">Introduïu un contacte</string>
-    <string name="join_conference">Uniu-vos al xat en grup</string>
     <string name="delete_contact">Suprimeix el contacte</string>
     <string name="view_contact_details">Veure els detalls dels contactes</string>
     <string name="block_contact">Bloqueja contacte</string>
@@ -204,8 +198,6 @@
     <string name="select">Seleccioneu</string>
     <string name="contact_already_exists">El contacte ja existeix</string>
     <string name="join">Unir-se</string>
-    <string name="conference_address">Direcció del xat de grup</string>
-    <string name="conference_address_example">room@conference.example.com/nick</string>
     <string name="save_as_bookmark">Guardar com a favorits</string>
     <string name="delete_bookmark">Eliminar de favorits</string>
     <string name="bookmark_already_exists">Aquesta llista de favorits ja existeix</string>
@@ -353,9 +345,7 @@ mentrestant.</string>
     <string name="could_not_change_role">No s\'ha pogut canviar les regles de %s</string>
     <string name="public_conference">Xat de grup amb accés públic</string>
     <string name="private_conference">Xat en grup privat, només membres</string>
-    <string name="conference_options">Opcions de xat en grup</string>
     <string name="members_only">Privat, només membres</string>
-    <string name="non_anonymous">Sense anonimat</string>
     <string name="moderated">Moderat</string>
     <string name="you_are_not_participating">No esteu participant</string>
     <string name="modified_conference_options">S\'han modificat les opcions de xat en grup.</string>
@@ -500,7 +490,6 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
     <string name="show_password">Ensenya la contrasenya</string>
     <string name="registration_please_wait">Error de registre: torna-ho a provar més tard</string>
     <string name="registration_password_too_weak">Ha fallat la inscripció: la contrasenya és massa feble</string>
-    <string name="create_conference">Crea un xat en grup</string>
     <string name="conference_subject">Subjecte</string>
     <string name="choose_participants">Tria els participants</string>
     <string name="creating_conference">S\'està creant el xat en grup...</string>
