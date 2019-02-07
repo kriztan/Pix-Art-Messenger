@@ -325,7 +325,6 @@
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
     <string name="pref_picture_compression">ضغط الصور</string>
     <string name="pref_video_compression">ضغط الفيديوهات</string>
-    <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
     <string name="disable">تعطيل</string>
