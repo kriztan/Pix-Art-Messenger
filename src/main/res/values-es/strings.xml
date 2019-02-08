@@ -17,11 +17,16 @@
     <string name="action_unblock_domain">Desbloquear dominio</string>
     <string name="title_activity_manage_accounts">Gestionar cuentas</string>
     <string name="title_activity_settings">Ajustes</string>
+    <string name="conference_details">Detalles del grupo de chat</string>
+    <string name="title_activity_contact_details">Detalles del contacto</string>
+    <string name="title_activity_start_conversation">Iniciar conversación</string>
     <string name="title_activity_choose_contact">Elegir contacto</string>
+    <string name="title_activity_choose_contacts">Elegir contactos</string>
     <string name="title_activity_block_list">Lista de contactos bloqueados</string>
     <string name="just_now">ahora mismo</string>
     <string name="minute_ago">hace 1 min</string>
     <string name="minutes_ago">hace %d min</string>
+    <string name="unread_conversations">conversaciones no leídas</string>
     <string name="sending">enviando…</string>
     <string name="message_decrypting">Descifrando mensaje. Por favor, espera...</string>
     <string name="pgp_message">Mensaje cifrado con OpenPGP</string>
@@ -204,6 +209,7 @@
     <string name="done">Hecho</string>
     <string name="verify">Verificar</string>
     <string name="decrypt">Descifrar</string>
+    <string name="bookmarks">Marcadores</string>
     <string name="search">Buscar</string>
     <string name="create_contact">Crear Contacto</string>
     <string name="enter_contact">Introducir contacto</string>
@@ -375,6 +381,7 @@
     <string name="public_conference">Grupo accesible al público</string>
     <string name="private_conference">Privado, sólo miembros del grupo</string>
     <string name="members_only">Privada, solo miembros</string>
+    <string name="non_anonymous">Hacer identificación Jabber visible para cualquiera</string>
     <string name="moderated">Moderada</string>
     <string name="you_are_not_participating">No estás participando</string>
     <string name="modified_conference_options">¡Opciones de chat de grupo modificadas!</string>
@@ -856,10 +863,19 @@
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
+    <string name="view_users">Ver participantes</string>
     <string name="group_chat_members">Participantes</string>
     <string name="join_group_chat">Unirse al grupo</string>
     <string name="create_group_chat">Crear grupo de chat</string>
     <string name="message_deleted">El mensaje fue eliminado</string>
+    <string name="create_private_group_chat">Crear grupo de chat privado</string>
+    <string name="create_public_channel">Crear canal público</string>
+    <string name="create_dialog_channel_name">Nombre del canal</string>
+    <string name="xmpp_address">Dirección XMPP</string>
+    <string name="please_enter_name">Por favor, proporcione un nombre para el canal</string>
+    <string name="please_enter_xmpp_address">Por favor proporcione una dirección XMPP</string>
+    <string name="this_is_an_xmpp_address">Esto es una dirección XMPP. Por favor proporcione un nombre.</string>
+    <string name="creating_channel">Creando canal público…</string>
     <string name="grant_owner_privileges">Conceder privilegios de propietario</string>
     <string name="remove_owner_privileges">Revocar privilegios de propietario</string>
 </resources>
