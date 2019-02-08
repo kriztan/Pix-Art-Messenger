@@ -64,11 +64,8 @@
     <string name="add_contact">Engadir contacto</string>
     <string name="send_failed">Erro ao enviar</string>
     <string name="preparing_image">Preparando imaxe para enviar</string>
-    <string name="preparing_images">Preparando as imaxes para transmitilas</string>
-    <string name="sharing_files_please_wait">Compartindo ficheiros. Por favor agarde...</string>
     <string name="action_clear_history">Limpar historial</string>
     <string name="clear_conversation_history">Limpar historial de conversa</string>
-    <string name="delete_messages">Borrar mensaxes</string>
     <string name="also_end_conversation">Finalizar esta conversación tras o proceso</string>
     <string name="choose_presence">Escoller dispositivo</string>
     <string name="send_unencrypted_message">Enviar mensaxe non cifrada</string>
@@ -84,7 +81,6 @@
     <string name="openkeychain_required_long">Conversations emprega unha aplicación de terceiros chamada <b>OpenKeychain</b> para cifrar e descifrar mensaxes e xestionar as túas claves públicas.\n\nOpenKeychain está publicado baixo licencia GPLv3 e disponible en F-Droid e Google Play.\n\n<small>(Por favor, reinicie Conversations despois.)</small></string>
     <string name="restart">Reiniciar</string>
     <string name="install">Instalar</string>
-    <string name="openkeychain_not_installed">Por favor instale OpenKeychain</string>
     <string name="offering">ofrecendo…</string>
     <string name="waiting">agardando...</string>
     <string name="no_pgp_key">Clave OpenPGP non atopada</string>
@@ -146,7 +142,6 @@
     <string name="mgmt_account_delete_confirm_text">Si elimina a conta perderá todo o historial de conversas</string>
     <string name="attach_record_voice">Grabar audio</string>
     <string name="account_settings_jabber_id">ID Jabber</string>
-    <string name="account_settings_password">Contrasinal</string>
     <string name="account_settings_example_jabber_id">usuaria@exemplo.com</string>
     <string name="password">Contrasinal</string>
     <string name="invalid_jid">O identificador non é un identificador de Jabber válido</string>
@@ -188,7 +183,6 @@
     <string name="verify">Verificar</string>
     <string name="decrypt">Descifrar</string>
     <string name="search">Buscar</string>
-    <string name="create_contact">Crear unha conta</string>
     <string name="enter_contact">Introducir contacto</string>
     <string name="delete_contact">Eliminar contacto</string>
     <string name="view_contact_details">Ver os detalles do contacto</string>
@@ -201,7 +195,6 @@
     <string name="save_as_bookmark">Gardar como marcador</string>
     <string name="delete_bookmark">Eliminar marcador</string>
     <string name="bookmark_already_exists">Este marcador xa existe</string>
-    <string name="action_edit_subject">Editar o tema da conversa en grupo</string>
     <string name="joining_conference">Entrando na conversa en grupo</string>
     <string name="leave">Saír</string>
     <string name="contact_added_you">Contacto engadido a súa lista de contactos</string>
@@ -339,11 +332,6 @@
     <string name="ban_from_conference">Prohibición da conversa en grupo</string>
     <string name="removing_from_public_conference">Está intentando eliminar a %s dunha conversa en grupo pública. O único xeito de facelo é prohibir ese usuario para sempre.</string>
     <string name="ban_now">Rexeitar agora</string>
-    <string name="could_not_change_role">Non se puido mudar o rol de %s</string>
-    <string name="public_conference">Conversa en grupo de acceso público</string>
-    <string name="private_conference">Conversa en grupo privada, só para membros</string>
-    <string name="members_only">Privada, só para membros</string>
-    <string name="moderated">Moderada</string>
     <string name="you_are_not_participating">Vostede non está a participar</string>
     <string name="modified_conference_options">¡Opcións da conversa en grupo modificadas!</string>
     <string name="could_not_modify_conference_options">Non se puideron modificar as opcións da conversa en grupo</string>
@@ -432,11 +420,7 @@
         <item quantity="other">%d mensaxes</item>
     </plurals>
     <string name="load_more_messages">Cargar máis mensaxes</string>
-    <string name="shared_file_with_x">Ficheiro compartido con %s</string>
-    <string name="shared_image_with_x">Imaxe compartida con %s</string>
     <string name="no_storage_permission">Conversations precisa acceso ao almacenamento externo</string>
-    <string name="shared_images_with_x">Imaxes compartidas con %s</string>
-    <string name="shared_text_with_x">Texto compartido con %s</string>
     <string name="sync_with_contacts">Sincronice con todos os contactos</string>
     <string name="sync_with_contacts_long">Conversations quere comparar a súa lista XMPP cos seus contactos para mostrar os seus nomes completos e avatares.\n\nConversations só fará esta comprobación de xeito local sen subilos ao servidor.\n\nAgora pediráselle conceder permiso para acceder aos seus contactos.</string>
     <string name="notify_on_all_messages">Notificar todas as mensaxes</string>
@@ -450,7 +434,6 @@
     <string name="battery_optimizations_enabled_explained">O seu dispositivo está a realizar algunhas optimizacións de batería extremas en Conversations que poderían levar a notificacións con retraso o incluso perda dos mesmos.\nÉ recomendado deshabilitadas.</string>
     <string name="battery_optimizations_enabled_dialog">O seu dispositivo está facendo unhas optimizacións de batería moi fortes en Conversations que poderían facer que se retrasasen algunhas mensaxes ou incluso se perdesen.\n\nAgora pediráselle que se deshabiliten as mismas.</string>
     <string name="disable">Deshabilitar</string>
-    <string name="selection_too_large">O área selecionada é demasiado grande</string>
     <string name="no_accounts">(Contas non activadas)</string>
     <string name="this_field_is_required">Este campo é requerido</string>
     <string name="correct_message">Correxir mensaxe</string>
@@ -458,7 +441,6 @@
     <string name="no_keys_just_confirm">Xa confia neste contacto. Ao seleccionar \'feito\' só está confirmando que %s é parte deste chat grupal.</string>
     <string name="contacts_have_no_pgp_keys">Conversations non pode cifrar a súa mensaxe porque os seus contactos no publicaron a súa chave pública.\n\n <small>Por favor solicite aos seus contactos que configuren OpenPGP.</small></string>
     <string name="this_account_is_disabled">Deshabilitou esta conta</string>
-    <string name="security_error_invalid_file_access">Fallo na seguridade: Acceso non válido ao ficheiro</string>
     <string name="no_application_to_share_uri">Non se atopou un aplicativo para compartir URI</string>
     <string name="share_uri_with">Compartir URI con...</string>
     <string name="welcome_text">XMPP é un protocolo independente do proveedor. Pode utilizar este cliente con calquer servidor XMPP que escolla.\nPara a súa conveniencia facilitamos a creación de unha conta en conversations.im; un proveedor especialmente adaptado ao uso con Conversations.</string>
@@ -477,7 +459,6 @@
     <string name="show_password">Mostar contrasinal</string>
     <string name="registration_please_wait">Fallo no rexistro: inténteo de novo</string>
     <string name="registration_password_too_weak">Fallo no rexistro: contrasinal moi feble</string>
-    <string name="conference_subject">Asunto</string>
     <string name="choose_participants">Escoller participantes</string>
     <string name="creating_conference">Creando unha conversa en grupo...</string>
     <string name="invite_again">Invitar de novo</string>
@@ -522,7 +503,6 @@
     <string name="i_followed_this_link_from_a_trusted_source">Seguín esta ligazón desde unha fonte de confianza</string>
     <string name="verifying_omemo_keys_trusted_source">Vai verificar as chaves OMEMO de %1$s despois de pulsar na ligazón. Esto só é seguro si sigueu esta ligazón desde unha fonte de confianza onde só %2$s a podería ter publicado.</string>
     <string name="verify_omemo_keys">Validar chaves OMEMO</string>
-    <string name="encrypting_message">Cifrando mensaxe</string>
     <string name="transcoding_video">Comprimindo vídeo</string>
     <string name="not_fetching_history_retention_period">Sen obtención de mensaxes debido ao período de retención local.</string>
     <string name="today">Hoxe</string>
