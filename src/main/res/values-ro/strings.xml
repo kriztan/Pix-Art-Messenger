@@ -325,14 +325,11 @@
     <string name="outcast">proscris</string>
     <string name="member">Membru</string>
     <string name="advanced_mode">Mod avansat</string>
-    <string name="grant_membership">Acorda calitatea de membru</string>
-    <string name="remove_membership">Abroga calitatea de membru</string>
     <string name="grant_admin_privileges">Acordă privilegiile de administrator</string>
     <string name="remove_admin_privileges">Abrogă privilegiile de administrator</string>
     <string name="remove_from_room">Înlătură din discuția de grup</string>
     <string name="could_not_change_affiliation">Nu s-a putut schimba afilierea lui %s</string>
     <string name="ban_from_conference">Interzice accesul la discuția de grup</string>
-    <string name="removing_from_public_conference">Încercați să înlăturați pe %s dintr-o discuție de grup publică. Singurul mod în care puteți face asta este sa blocați contactul pentru totdeauna.</string>
     <string name="ban_now">Interzice accesul acum</string>
     <string name="you_are_not_participating">Nu participați</string>
     <string name="modified_conference_options">Opțiuni discuție de grup modificate!</string>
