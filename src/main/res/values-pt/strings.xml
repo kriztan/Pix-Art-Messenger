@@ -298,8 +298,6 @@
     <string name="outcast">Banido</string>
     <string name="member">Membro</string>
     <string name="advanced_mode">Modo avançado</string>
-    <string name="grant_membership">Conceder filiação</string>
-    <string name="remove_membership">Revogar filiação</string>
     <string name="grant_admin_privileges">Conceder privilégios de administração</string>
     <string name="remove_admin_privileges">Revogar privilégios de administração</string>
     <string name="could_not_change_affiliation">Não foi possível alterar a afiliação de %s</string>
