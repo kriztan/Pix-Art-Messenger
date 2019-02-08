@@ -64,11 +64,8 @@
     <string name="add_contact">Magdagdag ng contact</string>
     <string name="send_failed">nabigo ang paghahatid</string>
     <string name="preparing_image">Paghahanda ng imahe para sa pagpapadala</string>
-    <string name="preparing_images">Paghahanda ng mga imahe para sa paghahatid</string>
-    <string name="sharing_files_please_wait">Pagbabahagi ng mga file. Mangyaring maghintay…</string>
     <string name="action_clear_history">Linisin ang kasaysayan</string>
     <string name="clear_conversation_history">I-clear ang Kasaysayan ng Pag-uusap</string>
-    <string name="delete_messages">Tanggalin ang mga mensahe</string>
     <string name="also_end_conversation">Tapusin ang pag-uusap na ito pagkatapos</string>
     <string name="choose_presence">Pumili ng device</string>
     <string name="send_unencrypted_message">Magpadala ng hindi naka-encrypt na mensahe</string>
@@ -83,7 +80,6 @@
     <string name="openkeychain_required">OpenKeychain</string>
     <string name="restart">I-restart</string>
     <string name="install">I-instal</string>
-    <string name="openkeychain_not_installed">Paki-instal ang OpenKeychain</string>
     <string name="offering">Hain…</string>
     <string name="waiting">Hintayin…</string>
     <string name="no_pgp_key">Walang OpenPGP key ang nakita</string>
