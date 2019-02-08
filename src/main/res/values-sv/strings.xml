@@ -61,11 +61,8 @@
     <string name="add_contact">Lägg till kontakt</string>
     <string name="send_failed">sändning misslyckades</string>
     <string name="preparing_image">Förbereder bild för sändning</string>
-    <string name="preparing_images">Förbereder bilder för överföring</string>
-    <string name="sharing_files_please_wait">Delar filer. Vänta...</string>
     <string name="action_clear_history">Rensa historik</string>
     <string name="clear_conversation_history">Rensa konversationshistorik</string>
-    <string name="delete_messages">Ta bort meddelanden</string>
     <string name="also_end_conversation">Avsluta denna konversation efteråt</string>
     <string name="choose_presence">Välj enhet</string>
     <string name="send_unencrypted_message">Skicka okrypterat meddelande</string>
@@ -81,7 +78,6 @@
     <string name="openkeychain_required_long">Pix-Art Messenger använder en tredjeparts-applikation som heter <b>OpenKeychain</b> för att kryptera och avkryptera meddelanden och hantera dina publika nycklar.\n\nOpenKeychain är licensierad under GPLv3 och tillgänglig på F-Droid och Google Play.\n\n<small>(Starta om Pix-Art Messenger efter installation.)</small></string>
     <string name="restart">Starta om</string>
     <string name="install">Installera</string>
-    <string name="openkeychain_not_installed">Installera OpenKeychain</string>
     <string name="offering">erbjuder…</string>
     <string name="waiting">väntar…</string>
     <string name="no_pgp_key">Ingen OpenPGP-nyckel funnen</string>
@@ -142,7 +138,6 @@
     <string name="mgmt_account_delete_confirm_text">Om du tar bort ditt konto kommer hela konversationshistoriken att försvinna</string>
     <string name="attach_record_voice">Spela in röst</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_password">Lösenord</string>
     <string name="account_settings_example_jabber_id">användarnamn@exempel.se</string>
     <string name="password">Lösenord</string>
     <string name="invalid_jid">Detta är inte ett korrekt Jabber-ID</string>
@@ -320,9 +315,6 @@
     <string name="remove_admin_privileges">Återkalla administratörsbehörighet</string>
     <string name="could_not_change_affiliation">Kunde inte ändra tillhörigheten för %s</string>
     <string name="ban_now">Bannlys nu</string>
-    <string name="could_not_change_role">Kunde inte ändra rollen för %s</string>
-    <string name="members_only">Privat, medlemsskap krävs</string>
-    <string name="moderated">Modererad</string>
     <string name="you_are_not_participating">Du deltar ej</string>
     <string name="never">Aldrig</string>
     <string name="until_further_notice">Tills vidare</string>
@@ -406,11 +398,7 @@
         <item quantity="other">%d meddelanden</item>
     </plurals>
     <string name="load_more_messages">Ladda fler meddelanden</string>
-    <string name="shared_file_with_x">Delade fil med %s</string>
-    <string name="shared_image_with_x">Delade bild med %s</string>
     <string name="no_storage_permission">Pix-Art Messenger behöver access till extern lagring</string>
-    <string name="shared_images_with_x">Delade bilder med %s</string>
-    <string name="shared_text_with_x">Delade text med %s</string>
     <string name="sync_with_contacts">Synkronisera med kontakter</string>
     <string name="sync_with_contacts_long">Pix-Art Messenger vill matcha din XMPP-kontaktlista med dina kontakter för att visa deras namn och profilbild.\n\nPix-Art Messenger läser endast dina kontakter för att matcha dem lokalt utan att ladda upp dem till din server.\n\nDu kommer nu få frågan om tillåtelse för att använda kontakterna.</string>
     <string name="notify_on_all_messages">Notifiera för alla meddelanden</string>
@@ -423,13 +411,11 @@
     <string name="battery_optimizations_enabled_explained">Din enhet har kraftiga batterioptimeringar som påverkar Pix-Art Messenger på så sätt att inkommande meddelanden kan försenas eller kan till och med gå förlorade.\nDet är rekommenderat att deaktivera batterioptimeringarna.</string>
     <string name="battery_optimizations_enabled_dialog">Din enhet har kraftiga batterioptimeringar som påverkar Pix-Art Messenger på så sätt att inkommande meddelanden kan försenas eller kan till och med gå förlorade.\n\nDu kommer nu att bli ombedd att stänga av batterioptimeringarna för Pix-Art Messenger.</string>
     <string name="disable">Deaktivera</string>
-    <string name="selection_too_large">The valda området är för stort</string>
     <string name="no_accounts">(Inget konto aktiverat)</string>
     <string name="this_field_is_required">Detta fält måste fyllas i</string>
     <string name="correct_message">Korrigera meddelanden</string>
     <string name="send_corrected_message">Skicka korrigerat meddelande</string>
     <string name="this_account_is_disabled">Du har deaktiverat detta konto</string>
-    <string name="security_error_invalid_file_access">Säkerhetsfel: Ogiltig filaccess</string>
     <string name="no_application_to_share_uri">Ingen applikation kunde hittas för att dela URI</string>
     <string name="share_uri_with">Dela URI med...</string>
     <string name="your_full_jid_will_be">Ditt jabber ID blir: %s</string>
@@ -446,7 +432,6 @@
     <string name="show_password">Visa lösenord</string>
     <string name="registration_please_wait">Registreringfel: Försök igen senare</string>
     <string name="registration_password_too_weak">Registreringsfel: Lösenordet är för svagt</string>
-    <string name="conference_subject">Ämne</string>
     <string name="choose_participants">Välj deltagare</string>
     <string name="invite_again">Bjud in igen</string>
     <string name="pref_broadcast_last_activity">Meddela din senaste aktivit</string>
@@ -487,7 +472,6 @@
     <string name="i_followed_this_link_from_a_trusted_source">Jag följde denna länk från en trovärdig källa</string>
     <string name="verifying_omemo_keys_trusted_source">Du håller på att verifiera OMEMO-nyckeln för %1$s efter att du följt en länk. Detta är endast säkert om du följde länken från en trovärdig källa där endast %2$s kan ha publiserat denna länk.</string>
     <string name="verify_omemo_keys">Verifiera OMEMO-nycklar</string>
-    <string name="encrypting_message">Krypterar meddelande</string>
     <string name="not_fetching_history_retention_period">Hämtar inte meddelanden på grund av inställningen för borttagning av gamla meddelanden.</string>
     <string name="block_jabber_id">Blockera Jabber-ID</string>
     <string name="corresponding_conversations_closed">Motsvarande konversationer är stängda.</string>
