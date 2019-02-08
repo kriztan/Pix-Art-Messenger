@@ -876,6 +876,22 @@
     <string name="please_enter_xmpp_address">Por favor proporcione una dirección XMPP</string>
     <string name="this_is_an_xmpp_address">Esto es una dirección XMPP. Por favor proporcione un nombre.</string>
     <string name="creating_channel">Creando canal público…</string>
+    <string name="channel_already_exists">Este canal ya existe</string>
+    <string name="joined_an_existing_channel">Te has unido a un canal existente</string>
+    <string name="unable_to_set_channel_configuration">Imposible establecer configuración de canal</string>
+    <string name="back">Atrás</string>
+    <string name="conference_options">Configuración para grupo de chat privado</string>
+    <string name="channel_options">Configuración de canal público</string>
+    <string name="allow_participants_to_edit_subject">Permitir a cualquiera editar el tema</string>
+    <string name="allow_participants_to_invite_others">Permitir a cualquiera invitar a otros</string>
+    <string name="anyone_can_edit_subject">Cualquiera puede editar el tema.</string>
+    <string name="owners_can_edit_subject">Los propietarios pueden editar el tema.</string>
+    <string name="admins_can_edit_subject">Los administradores pueden editar el tema.</string>
+    <string name="owners_can_invite_others">Los propietarios pueden invitar a otros.</string>
+    <string name="anyone_can_invite_others">Cualquiera puede invitar a otros.</string>
+    <string name="jabber_ids_are_visible_to_admins">Los identificadores Jabber son visibles para los administradores.</string>
+    <string name="jabber_ids_are_visible_to_anyone">Los identificadores Jabber son visibles para cualquiera.</string>
+    <string name="no_users_hint_channel">Este canal público no tiene participantes.</string>
     <string name="grant_owner_privileges">Conceder privilegios de propietario</string>
     <string name="remove_owner_privileges">Revocar privilegios de propietario</string>
 </resources>
