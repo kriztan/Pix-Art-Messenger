@@ -65,11 +65,8 @@
     <string name="add_contact">Добавить контакт</string>
     <string name="send_failed">доставка не удалась</string>
     <string name="preparing_image">Подготовка изображения к передаче</string>
-    <string name="preparing_images">Подготовка изображений к передаче</string>
-    <string name="sharing_files_please_wait">Расшаривание файлов. Пожалуйста, подождите…</string>
     <string name="action_clear_history">Очистить историю</string>
     <string name="clear_conversation_history">Очистить Историю Разговора</string>
-    <string name="delete_messages">Удалить сообщения</string>
     <string name="also_end_conversation">Потом закончить этот разговор</string>
     <string name="choose_presence">Выбрать устройство</string>
     <string name="send_unencrypted_message">Отправить сообщение без шифрования</string>
@@ -85,7 +82,6 @@
     <string name="openkeychain_required_long">Pix-Art Messenger использует стороннее приложение <b>OpenKeychain</b> для шифрования и расшифровки сообщений, а также для управления вашими публичными ключами.\n\nOpenKeychain лицензирован под GPLv3 и доступен в F-Droid и Google Play.\n\n<small>(Пожалуйста, перезапустите Pix-Art Messenger впоследствии.)</small></string>
     <string name="restart">Перезапуск</string>
     <string name="install">Установка</string>
-    <string name="openkeychain_not_installed">Пожалуйста, установите OpenKeychain</string>
     <string name="offering">предложение…</string>
     <string name="waiting">ожидание…</string>
     <string name="no_pgp_key">Не найден ключ OpenPGP</string>
@@ -119,7 +115,6 @@
     <string name="receive_presence_updates">Принимать обновления присутствия</string>
     <string name="ask_for_presence_updates">Запрашивать обновления присутствия</string>
     <string name="attach_choose_picture">Выберите изображение</string>
-    <string name="attach_take_from_camera">Снять на камеру</string>
     <string name="error_not_an_image_file">Выбранный файл не является изображением</string>
     <string name="error_compressing_image">Ошибка конвертации изображения</string>
     <string name="error_file_not_found">Файл не найден</string>
@@ -155,11 +150,8 @@
     <string name="mgmt_account_delete_confirm_text">Если вы удалите свой аккаунт, то история разговора будет потеряна</string>
     <string name="attach_record_voice">Записать голосовое сообщение</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_password">Пароль</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
     <string name="password">Пароль</string>
-    <string name="confirm_password">Подтверждение пароля</string>
-    <string name="passwords_do_not_match">Пароли не совпадают</string>
     <string name="invalid_jid">Недействительный Jabber-ID</string>
     <string name="error_out_of_memory">Недостаточно памяти. Изображение слишком большое</string>
     <string name="add_phone_book_text">Хотите добавить %s в вашу адресную книгу?</string>
@@ -201,7 +193,6 @@
     <string name="verify">Подтверждение</string>
     <string name="decrypt">Расшифровать</string>
     <string name="search">Поиск</string>
-    <string name="create_contact">Создать Контакт</string>
     <string name="enter_contact">Введите Контакт</string>
     <string name="delete_contact">Удалить Контакт</string>
     <string name="view_contact_details">Просмотреть детали контакта</string>
@@ -214,7 +205,6 @@
     <string name="save_as_bookmark">Сохранить как закладку</string>
     <string name="delete_bookmark">Удалить закладку</string>
     <string name="bookmark_already_exists">Эта закладка уже создана</string>
-    <string name="action_edit_subject">Изменить тему группового чата</string>
     <string name="topic">Тема</string>
     <string name="joining_conference">Подключение к групповому чату…</string>
     <string name="leave">Покинуть</string>
@@ -306,7 +296,6 @@
     <string name="media_browser">Медиа браузер</string>
     <string name="account_status_stream_opening_error">Ошибка открытия потока</string>
     <string name="action_open">Открыть</string>
-    <string name="action_delete">Удалить</string>
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="cancelled">отменён</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
