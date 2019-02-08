@@ -15,19 +15,12 @@
     <string name="action_unblock_contact">Разблокировать контакт</string>
     <string name="action_block_domain">Заблокировать домен</string>
     <string name="action_unblock_domain">Разблокировать домен</string>
-    <string name="title_activity_manage_accounts">Управление аккаунтами</string>
     <string name="title_activity_settings">Настройки</string>
-    <string name="conference_details">Информация о конференции</string>
-    <string name="title_activity_contact_details">Сведения о контакте</string>
-    <string name="title_activity_sharewith">Поделиться с разговором</string>
-    <string name="title_activity_start_conversation">Начать Разговор</string>
     <string name="title_activity_choose_contact">Выбрать контакт</string>
-    <string name="title_activity_choose_contacts">Выбрать Контакты</string>
     <string name="title_activity_block_list">Черный список</string>
     <string name="just_now">только что</string>
     <string name="minute_ago">1 мин. назад</string>
     <string name="minutes_ago">%d мин. назад</string>
-    <string name="unread_conversations">непрочитанные Разговоры</string>
     <string name="sending">отправка…</string>
     <string name="message_decrypting">Расшифровка сообщения. Пожалуйста подождите…</string>
     <string name="pgp_message">Зашифрованное OpenPGP сообщение</string>
@@ -201,7 +194,6 @@
     <string name="decrypt">Расшифровать</string>
     <string name="search">Поиск</string>
     <string name="enter_contact">Введите Контакт</string>
-    <string name="join_public_channel">Присоединиться к групповому чату</string>
     <string name="delete_contact">Удалить Контакт</string>
     <string name="view_contact_details">Просмотреть детали контакта</string>
     <string name="block_contact">Заблокировать контакт</string>
@@ -210,7 +202,6 @@
     <string name="select">Выбрать</string>
     <string name="contact_already_exists">Контакт уже существует</string>
     <string name="join">Присоединиться</string>
-    <string name="channel_full_jid_example">groupchat@room.pix-art.de</string>
     <string name="save_as_bookmark">Сохранить как закладку</string>
     <string name="delete_bookmark">Удалить закладку</string>
     <string name="bookmark_already_exists">Эта закладка уже создана</string>
