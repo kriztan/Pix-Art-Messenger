@@ -309,8 +309,6 @@
     <string name="outcast">Utstött</string>
     <string name="member">Medlem</string>
     <string name="advanced_mode">Avancerat läge</string>
-    <string name="grant_membership">Bevilja medlemsskap</string>
-    <string name="remove_membership">Återkalla medlemskap</string>
     <string name="grant_admin_privileges">Bevilja administratörsbehörighet</string>
     <string name="remove_admin_privileges">Återkalla administratörsbehörighet</string>
     <string name="could_not_change_affiliation">Kunde inte ändra tillhörigheten för %s</string>
