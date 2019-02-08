@@ -16,11 +16,16 @@
     <string name="action_block_domain">Bloquer le domaine</string>
     <string name="action_unblock_domain">Débloquer le domaine</string>
     <string name="title_activity_settings">Paramètres</string>
+    <string name="conference_details">Détails du groupe de discussion</string>
+    <string name="title_activity_contact_details">Détails du contact</string>
+    <string name="title_activity_start_conversation">Démarrer une conversation</string>
     <string name="title_activity_choose_contact">Choix du contact</string>
+    <string name="title_activity_choose_contacts">Choisissez des contacts</string>
     <string name="title_activity_block_list">Bloquer la liste</string>
     <string name="just_now">à l’instant</string>
     <string name="minute_ago">Il y a 1 minute</string>
     <string name="minutes_ago">Il y a %d minutes</string>
+    <string name="unread_conversations">conversations non lues</string>
     <string name="sending">Envoi…</string>
     <string name="message_decrypting">Déchiffrement du message. Veuillez patienter...</string>
     <string name="pgp_message">Message chiffré avec OpenPGP</string>
@@ -194,6 +199,7 @@
     <string name="done">Terminé</string>
     <string name="verify">Vérifier</string>
     <string name="decrypt">Déchiffrer</string>
+    <string name="bookmarks">Signets</string>
     <string name="search">Rechercher</string>
     <string name="enter_contact">Ajouter contact</string>
     <string name="delete_contact">Supprimer le contact</string>
@@ -204,6 +210,8 @@
     <string name="select">Sélectionner</string>
     <string name="contact_already_exists">Le contact existe déjà.</string>
     <string name="join">Rejoindre</string>
+    <string name="channel_full_jid_example">canal@conference.example.com/psœudo</string>
+    <string name="channel_bare_jid_example">canal@conference.example.com</string>
     <string name="save_as_bookmark">Enregistrer comme favori</string>
     <string name="delete_bookmark">Supprimer le favori</string>
     <string name="bookmark_already_exists">Le favori existe déjà</string>
@@ -803,6 +811,16 @@
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
+    <string name="group_chat_members">Participants</string>
     <string name="message_deleted">Le message a été supprimé</string>
+    <string name="channel_details">Détails du canal</string>
+    <string name="join_public_channel">Rejoindre un canal public</string>
+    <string name="create_private_group_chat">Créer un groupe de discussion privé</string>
+    <string name="create_public_channel">Créer un canal public</string>
+    <string name="create_dialog_channel_name">Nom du canal</string>
+    <string name="xmpp_address">Adresse XMPP</string>
+    <string name="no_users_hint_channel">Ce canal public n\'a pas de participants. Invitez vos contacts ou utilisez le bouton de partage afin de transmettre l\'adresse du canal XMPP.</string>
+    <string name="remove_from_channel">Retirer du canal</string>
+    <string name="ban_from_channel">Bannir du canal</string>
     <string name="manage_permission">Gestion des autorisations</string>
 </resources>
