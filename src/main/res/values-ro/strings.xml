@@ -64,11 +64,8 @@
     <string name="add_contact">Adaugă contact</string>
     <string name="send_failed">trimitere eșuată</string>
     <string name="preparing_image">Pregătesc imaginea pentru transmisie</string>
-    <string name="preparing_images">Pregătesc imaginile pentru transmisie</string>
-    <string name="sharing_files_please_wait">Trimitere fișiere. Te rog asteaptă...</string>
     <string name="action_clear_history">Șterge istoric</string>
     <string name="clear_conversation_history">Șterge istoricul conversației</string>
-    <string name="delete_messages">Șterge mesajele</string>
     <string name="also_end_conversation">Închide conversația după ștergere</string>
     <string name="choose_presence">Alege dispozitiv</string>
     <string name="send_unencrypted_message">Trimite mesaje necriptate</string>
@@ -84,7 +81,6 @@
     <string name="openkeychain_required_long">Pix-Art Messenger utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți Pix-Art Messenger după)</small></string>
     <string name="restart">Repornește</string>
     <string name="install">Instalare</string>
-    <string name="openkeychain_not_installed">Va rugăm să instalați OpenKeychain</string>
     <string name="offering">transmit...</string>
     <string name="waiting">în așteptare...</string>
     <string name="no_pgp_key">Nu am găsit cheia OpenPGP</string>
@@ -147,7 +143,6 @@
     <string name="mgmt_account_delete_confirm_text">Dacă vă ștergeți contul, întregul istoric de conversații va fi pierdut</string>
     <string name="attach_record_voice">Înregistrare voce</string>
     <string name="account_settings_jabber_id">ID-ul Jabber</string>
-    <string name="account_settings_password">Parolă</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
     <string name="password">Parolă</string>
     <string name="invalid_jid">Acesta nu este un ID Jabber valabil</string>
@@ -189,7 +184,6 @@
     <string name="verify">Verifică</string>
     <string name="decrypt">Decriptează</string>
     <string name="search">Caută</string>
-    <string name="create_contact">Creează contact</string>
     <string name="enter_contact">Introdu contact</string>
     <string name="delete_contact">Șterge contact</string>
     <string name="view_contact_details">Arată detalii contact</string>
@@ -202,7 +196,6 @@
     <string name="save_as_bookmark">Salvează semn de carte</string>
     <string name="delete_bookmark">Șterge semn de carte</string>
     <string name="bookmark_already_exists">Acest semn de carte exista</string>
-    <string name="action_edit_subject">Editează subiectul discuției de grup</string>
     <string name="joining_conference">Vă alăturați discuției de grup...</string>
     <string name="leave">Paraseste</string>
     <string name="contact_added_you">Contactul a fost adăugat în listă</string>
@@ -341,11 +334,6 @@
     <string name="ban_from_conference">Interzice accesul la discuția de grup</string>
     <string name="removing_from_public_conference">Încercați să înlăturați pe %s dintr-o discuție de grup publică. Singurul mod în care puteți face asta este sa blocați contactul pentru totdeauna.</string>
     <string name="ban_now">Interzice accesul acum</string>
-    <string name="could_not_change_role">Nu s-a putut schimba rolul lui %s</string>
-    <string name="public_conference">Discuție de grup accesibilă public</string>
-    <string name="private_conference">Discuție de grup privată, accesibilă numai membrilor</string>
-    <string name="members_only">Privat, numai pentru membri</string>
-    <string name="moderated">Monitorizata</string>
     <string name="you_are_not_participating">Nu participați</string>
     <string name="modified_conference_options">Opțiuni discuție de grup modificate!</string>
     <string name="could_not_modify_conference_options">Nu s-au putut modifica opțiunile discuției de grup</string>
@@ -440,11 +428,7 @@
         <item quantity="other">%d mesaje</item>
     </plurals>
     <string name="load_more_messages">Încarcă mai multe mesaje</string>
-    <string name="shared_file_with_x">Partajează fișierul cu %s...</string>
-    <string name="shared_image_with_x">Partajează imaginea cu %s.</string>
     <string name="no_storage_permission">Pix-Art Messenger are nevoie de acces la stocarea externa</string>
-    <string name="shared_images_with_x">Partajează imaginile cu %s.</string>
-    <string name="shared_text_with_x">Partajează textul cu %s</string>
     <string name="sync_with_contacts">Sincronizează cu contactele</string>
     <string name="sync_with_contacts_long">Pix-Art Messenger dorește să potrivească lista de contacte XMPP cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nPix-Art Messenger doar va citi și potrivi local fără să le încarce pe vreun server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
     <string name="notify_on_all_messages">Notifică la toate mesajele</string>
@@ -460,7 +444,6 @@
 bateriei pentru Conversations, asta poate duce la notificări întârziate 
 sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
     <string name="disable">Dezactivează</string>
-    <string name="selection_too_large">Zona selectată este prea mare</string>
     <string name="yes">Da</string>
     <string name="no">Nu</string>
     <string name="no_accounts">(Nici un cont activat)</string>
@@ -470,7 +453,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="no_keys_just_confirm">Deja aveți încredere în acest contact. Selectând \'gata\' doar confirmați că %s ia parte la această discuție de grup.</string>
     <string name="contacts_have_no_pgp_keys">Pix-Art Messenger nu poate cripta mesajele tale către contactele tale care nu își anunță cheia publică.\n\n</string>
     <string name="this_account_is_disabled">Ați dezactivat acest cont</string>
-    <string name="security_error_invalid_file_access">Eroare de securitate.: Acces fișier invalid</string>
     <string name="no_application_to_share_uri">Nu s-a găsit nici o aplicație care să partajeze adresa</string>
     <string name="share_uri_with">Partajează adresa cu...</string>
     <string name="mgmt_account_reconnect">Reconectare</string>
@@ -493,7 +475,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="show_password">Arată parola</string>
     <string name="registration_please_wait">Înregistrare eșuată: Încercați din nou mai târziu</string>
     <string name="registration_password_too_weak">Înregistrare eșuată: Parolă nesigură</string>
-    <string name="conference_subject">Subiect</string>
     <string name="choose_participants">Alege participanți</string>
     <string name="creating_conference">Se creează discuția de grup...</string>
     <string name="invite_again">Trimite din nou invitația</string>
@@ -538,7 +519,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="i_followed_this_link_from_a_trusted_source">Am urmat aceasta legătură de la o sursă de încredere</string>
     <string name="verifying_omemo_keys_trusted_source">Urmează să verificați cheile OMEMO pentru %1$s după ce veți deschide legătura. Acest lucru se poate face în siguranță doar dacă ați primit legătura de la o sursă de încredere unde doar %2$s putea publica.</string>
     <string name="verify_omemo_keys">Verifica cheile OMEMO</string>
-    <string name="encrypting_message">Mesajul se criptează</string>
     <string name="transcoding_video">Se comprimă clipul video</string>
     <string name="not_fetching_history_retention_period">Politica de retenție locală împiedică descărcarea altor mesaje.</string>
     <string name="today">Azi</string>
