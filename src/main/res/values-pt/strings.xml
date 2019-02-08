@@ -61,11 +61,8 @@
     <string name="add_contact">Adicionar contato</string>
     <string name="send_failed">a entrega falhou</string>
     <string name="preparing_image">Preparando a imagem para envio</string>
-    <string name="preparing_images">Preparando as imagens para o envio</string>
-    <string name="sharing_files_please_wait">Compartilhando arquivos. Por favor aguarde...</string>
     <string name="action_clear_history">Limpar histórico</string>
     <string name="clear_conversation_history">Limpar o histórico de conversas</string>
-    <string name="delete_messages">Remover mensagens</string>
     <string name="also_end_conversation">Terminar esta conversa depois</string>
     <string name="choose_presence">Escolher dispositivo</string>
     <string name="send_unencrypted_message">Enviar mensagem não encriptada</string>
@@ -81,7 +78,6 @@
     <string name="openkeychain_required_long">Pix-Art Messenger utiliza uma aplicação de terceiros chamada <b>OpenKeychain</b> para encriptad e decriptar mensagens e gerenciar as suas chaves públicas.\n\nOpenKeychain é licenciado sob a licença GPLv3 e está disponível no F-Droid e Google Play.\n\n<small>(Por favor reinicie Pix-Art Messenger em seguida)</small></string>
     <string name="restart">Reiniciar</string>
     <string name="install">Instalar</string>
-    <string name="openkeychain_not_installed">Por favor instale o OpenKeychain</string>
     <string name="offering">oferecendo...</string>
     <string name="waiting">aguardando...</string>
     <string name="no_pgp_key">Nenhuma chave OpenPGP encontrada</string>
@@ -135,7 +131,6 @@
     <string name="mgmt_account_are_you_sure">Tem a certeza?</string>
     <string name="attach_record_voice">Gravar voz</string>
     <string name="account_settings_jabber_id">ID Jabber</string>
-    <string name="account_settings_password">Senha</string>
     <string name="account_settings_example_jabber_id">nomedeutilizador@exemplo.com</string>
     <string name="password">Senha</string>
     <string name="invalid_jid">Esse não é um ID Jabber válido</string>
@@ -309,9 +304,6 @@
     <string name="remove_admin_privileges">Revogar privilégios de administração</string>
     <string name="could_not_change_affiliation">Não foi possível alterar a afiliação de %s</string>
     <string name="ban_now">Banir agora</string>
-    <string name="could_not_change_role">Não foi possível alterar o papel de %s</string>
-    <string name="members_only">Privado, apenas membros</string>
-    <string name="moderated">Moderado</string>
     <string name="you_are_not_participating">Não está participando</string>
     <string name="never">Nunca</string>
     <string name="until_further_notice">Até segunda ordem</string>
@@ -390,11 +382,7 @@
         <item quantity="other">%d mensagens</item>
     </plurals>
     <string name="load_more_messages">Carregar mais mensagens</string>
-    <string name="shared_file_with_x">Arquivo compartilhado com %s</string>
-    <string name="shared_image_with_x">Imagem compartilhada com %s</string>
     <string name="no_storage_permission">Pix-Art Messenger necessita de acesso ao armazenamento externo</string>
-    <string name="shared_images_with_x">Imagens compartilhadas com %s</string>
-    <string name="shared_text_with_x">Mensagem compartilhada com %s</string>
     <string name="sync_with_contacts">Sincronizar com contatos</string>
     <string name="sync_with_contacts_long">A aplicação Pix-Art Messenger deseja fazer a correspondência entre a sua lista de contatos XMPP e os seus contatos para mostrar os seus nomes completos e os seus avatares.\n\nA aplicação Pix-Art Messenger irá apenas ler os seus contatos e fazer a correspondência localmente sem enviar os dados para o seu servidor.\n\nAgora será pedida permissão para acessar os seus contatos.</string>
     <string name="notify_on_all_messages">Notificar em todas as mensagens</string>
@@ -407,13 +395,11 @@
     <string name="battery_optimizations_enabled_explained">O seu dispositivo está fazendo otimizações de bateria bastante agressivas na aplicação Pix-Art Messenger que poderão levar a notificações atrasadas ou até mesmo a perda de mensagens.\nÉ recomendado que desative.</string>
     <string name="battery_optimizations_enabled_dialog">O seu dispositivo está fazendo otimizações de bateria bastantes agressivas na aplicação Pix-Art Messenger que poderão levar a notificações atrasadas ou até mesmo perda de mensagens.\n\nAgora será pedida permissão para desativá-las.</string>
     <string name="disable">Desativar</string>
-    <string name="selection_too_large">A área selecionada é muito grande</string>
     <string name="no_accounts">(Nenhuma conta ativada)</string>
     <string name="this_field_is_required">Este campo é obrigatório</string>
     <string name="correct_message">Corrigir mensagem</string>
     <string name="send_corrected_message">Enviar mensagem corrigida</string>
     <string name="this_account_is_disabled">Desativou esta conta</string>
-    <string name="security_error_invalid_file_access">Erro de segurança: Acesso ao arquivo inválido</string>
     <string name="no_application_to_share_uri">Não foi encontrada nenhuma aplicação para compartilhar o URI</string>
     <string name="share_uri_with">Compartilhar URI com...</string>
     <string name="create_account">Criar conta</string>
