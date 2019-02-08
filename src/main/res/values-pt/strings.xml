@@ -15,15 +15,11 @@
     <string name="action_unblock_contact">Desbloquear contato</string>
     <string name="action_block_domain">Bloquear domínio</string>
     <string name="action_unblock_domain">Desbloquear domínio</string>
-    <string name="title_activity_manage_accounts">Gerenciar contas</string>
     <string name="title_activity_settings">Configurações</string>
-    <string name="title_activity_sharewith">Compartilhar conversa</string>
-    <string name="title_activity_start_conversation">Iniciar conversa</string>
     <string name="title_activity_block_list">Bloquear lista</string>
     <string name="just_now">agora há pouco</string>
     <string name="minute_ago">1 minuto atrás</string>
     <string name="minutes_ago">%d minutos atrás</string>
-    <string name="unread_conversations">Conversas não lidas</string>
     <string name="sending">enviando...</string>
     <string name="message_decrypting">Decriptando a mensagem. Por favor aguarde...</string>
     <string name="pgp_message">Mensagem encriptada OpenPGP</string>
@@ -308,7 +304,6 @@
     <string name="remove_admin_privileges">Revogar privilégios de administração</string>
     <string name="could_not_change_affiliation">Não foi possível alterar a afiliação de %s</string>
     <string name="ban_now">Banir agora</string>
-    <string name="non_anonymous">Não-anónimo</string>
     <string name="you_are_not_participating">Não está participando</string>
     <string name="never">Nunca</string>
     <string name="until_further_notice">Até segunda ordem</string>
