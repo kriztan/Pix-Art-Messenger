@@ -19,6 +19,7 @@
     <string name="title_activity_settings">Einstellungen</string>
     <string name="conference_details">Gruppenchat-Details</string>
     <string name="title_activity_contact_details">Kontakt-Details</string>
+    <string name="title_activity_sharewith">Mit Unterhaltung teilen</string>
     <string name="title_activity_start_conversation">Unterhaltung beginnen</string>
     <string name="title_activity_choose_contact">Kontakt auswählen</string>
     <string name="title_activity_choose_contacts">Kontakte wählen</string>
@@ -48,7 +49,7 @@
     <string name="change_password_on_server">Passwort ändern</string>
     <string name="share_with">Teilen mit…</string>
     <string name="start_conversation">Unterhaltung beginnen</string>
-    <string name="invite_contact">Kontakt hinzufügen</string>
+    <string name="invite_contact">Kontakt einladen</string>
     <string name="contacts">Kontakte</string>
     <string name="cancel">Abbrechen</string>
     <string name="set">Einstellen</string>
@@ -820,6 +821,7 @@
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
     <string name="pref_play_gif_inside_summary">Aktiviere dies, um GIF-Dateien direkt in der Chat-Ansicht abzuspielen.</string>
     <string name="open_with">Öffnen mit…</string>
+    <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: Benutzer einladen</string>
     <string name="choose_account">Profil wählen</string>
     <string name="set_profile_picture">Pix-Art Messenger Profilbild</string>
     <string name="restore_backup">Sicherung wiederherstellen</string>
@@ -828,5 +830,8 @@
     <string name="unable_to_restore_backup">Sicherung kann nicht wiederhergestellt werden.</string>
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar">XMPP-Avatar bevorzugen</string>
+    <string name="view_users">Teilnehmer anzeigen</string>
+    <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
+    <string name="back">Zurück</string>
 </resources>
