@@ -81,6 +81,7 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15' // last working version for minSDK 16
     implementation 'me.drakeet.support:toastcompat:1.1.0'
     implementation 'org.osmdroid:osmdroid-android:6.0.3'
+    implementation "com.leinardi.android:speed-dial:2.0.1"
 }
 
 ext {
