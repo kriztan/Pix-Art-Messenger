@@ -15,19 +15,12 @@
     <string name="action_unblock_contact">Odblokuj kontakt</string>
     <string name="action_block_domain">Zablokuj domenę</string>
     <string name="action_unblock_domain">Odblokuj domenę</string>
-    <string name="title_activity_manage_accounts">Zarządzaj kontami</string>
     <string name="title_activity_settings">Ustawienia</string>
-    <string name="conference_details">Szczegóły czatu grupowego</string>
-    <string name="title_activity_contact_details">Szczegóły kontaktu</string>
-    <string name="title_activity_sharewith">Udostępnij w konwersacji</string>
-    <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
     <string name="title_activity_choose_contact">Wybierz kontakt</string>
-    <string name="title_activity_choose_contacts">Wybierz kontakt</string>
     <string name="title_activity_block_list">Czarna lista</string>
     <string name="just_now">przed chwilą</string>
     <string name="minute_ago">minutę temu</string>
     <string name="minutes_ago">%d minut temu</string>
-    <string name="unread_conversations">nieprzeczytanych konwersacji</string>
     <string name="sending">wysyłanie...</string>
     <string name="message_decrypting">Odszyfrowywanie wiadomości. To zajmie tylko chwilę...</string>
     <string name="pgp_message">Wiadomość zaszyfrowana OpenPGP</string>
@@ -205,7 +198,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="decrypt">Odszyfruj</string>
     <string name="search">Szukaj</string>
     <string name="enter_contact">Wpisz kontakt</string>
-    <string name="join_public_channel">Dołącz do czatu grupowego</string>
     <string name="delete_contact">Usuń kontakt</string>
     <string name="view_contact_details">Szczegóły kontaktu</string>
     <string name="block_contact">Zablokuj kontakt</string>
@@ -214,7 +206,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="select">Wybierz</string>
     <string name="contact_already_exists">Kontakt już istnieje</string>
     <string name="join">Dołącz</string>
-    <string name="channel_full_jid_example">konferencja@konferencje.example.com/nick</string>
     <string name="save_as_bookmark">Dodaj jako zakładkę</string>
     <string name="delete_bookmark">Usuń zakładkę</string>
     <string name="bookmark_already_exists">Zakładka już istnieje</string>
@@ -360,8 +351,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
     <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko zablokowanie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
-    <string name="conference_options">Opcje czatu grupowego</string>
-    <string name="non_anonymous">Nieanonimowa</string>
     <string name="you_are_not_participating">Nie bierzesz udziału</string>
     <string name="never">Nigdy</string>
     <string name="until_further_notice">Ręcznie</string>
@@ -479,7 +468,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="video_low">niski (144p)</string>
     <string name="video_mid">średnie (360p)</string>
     <string name="video_high">wysokie (720p)</string>
-    <string name="video_original">Oryginał (nieskompresowany)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
@@ -516,7 +504,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_password">Pokaż hasło</string>
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
-    <string name="create_private_group_chat">Utwórz czat grupowy</string>
     <string name="choose_participants">Wybierz uczestnika</string>
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
@@ -720,7 +707,6 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="feature_not_implemented">Funkcja nie została zaimplementowana</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="start_orbot">Uruchom Orbot</string>
-    <string name="group_chat_will_make_your_jabber_id_public">Ten czat grupowy udostępnia publicznie Twój Jabber ID</string>
     <string name="your_name">Twoje miano</string>
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
