@@ -342,14 +342,11 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="outcast">Wykluczony</string>
     <string name="member">Członek</string>
     <string name="advanced_mode">Tryb zaawansowany</string>
-    <string name="grant_membership">Przyznaj członkostwo</string>
-    <string name="remove_membership">Cofnij członkostwo</string>
     <string name="grant_admin_privileges">Przyznaj uprawnienia administratora</string>
     <string name="remove_admin_privileges">Odbierz uprawnienia administratora</string>
     <string name="remove_from_room">Usuń z czatu grupowego</string>
     <string name="could_not_change_affiliation">Nie udało się zmienić stanowiska dla %s</string>
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
-    <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko zablokowanie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
     <string name="you_are_not_participating">Nie bierzesz udziału</string>
     <string name="never">Nigdy</string>
