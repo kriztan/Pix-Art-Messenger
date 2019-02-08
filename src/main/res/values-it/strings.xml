@@ -865,6 +865,7 @@
     <string name="restore_warning">Non usare il ripristino del backup nel tentativo di clonare (avviare simultaneamente) un\'installazione. Il ripristino del backup è inteso solo per migrazioni o nel caso tu abbia perso il dispositivo originale.</string>
     <string name="unable_to_restore_backup">Impossibile ripristinare il backup.</string>
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'avatar XMPP</string>
     <string name="view_users">Vedi partecipanti</string>
     <string name="group_chat_members">Partecipanti</string>
@@ -890,4 +891,14 @@
     <string name="allow_participants_to_edit_subject">Consenti a chiunque di modificare l\'argomento</string>
     <string name="allow_participants_to_invite_others">Consenti a chiunque di invitare altri</string>
     <string name="anyone_can_edit_subject">Chiunque può modificare l\'argomento.</string>
+    <string name="owners_can_edit_subject">I proprietari possono modificare l\'argomento.</string>
+    <string name="admins_can_edit_subject">Gli amministratori possono modificare l\'argomento.</string>
+    <string name="owners_can_invite_others">I proprietari possono invitare altri.</string>
+    <string name="anyone_can_invite_others">Chiunque può invitare altri.</string>
+    <string name="jabber_ids_are_visible_to_admins">Gli ID Jabber sono visibili agli amministratori.</string>
+    <string name="jabber_ids_are_visible_to_anyone">Gli ID Jabber sono visibili a chiunque.</string>
+    <string name="no_users_hint_channel">Questo canale pubblico non ha partecipanti.</string>
+    <string name="no_users_hint_group_chat">Questa conversazione di gruppo privata non ha partecipanti.</string>
+    <string name="grant_owner_privileges">Concedi privilegi di proprietario</string>
+    <string name="remove_owner_privileges">Revoca privilegi di proprietario</string>
 </resources>
