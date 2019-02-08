@@ -19,11 +19,15 @@
     <string name="title_activity_settings">Impostazioni</string>
     <string name="conference_details">Dettagli della conversazione di gruppo</string>
     <string name="title_activity_contact_details">Dettagli del contato</string>
+    <string name="title_activity_sharewith">Condividi con la conversazione</string>
+    <string name="title_activity_start_conversation">Inizia conversazione</string>
     <string name="title_activity_choose_contact">Scegli un contatto</string>
+    <string name="title_activity_choose_contacts">Scegli contatti</string>
     <string name="title_activity_block_list">Lista nera</string>
     <string name="just_now">adesso</string>
     <string name="minute_ago">1 min fa</string>
     <string name="minutes_ago">%d min fa</string>
+    <string name="unread_conversations">conversazioni non lette</string>
     <string name="sending">invio…</string>
     <string name="message_decrypting">Decifrazione messaggio. Attendere prego...</string>
     <string name="pgp_message">Messaggio cifrato con OpenPGP</string>
@@ -206,6 +210,7 @@
     <string name="done">Fatto</string>
     <string name="verify">Verifica</string>
     <string name="decrypt">Decripta</string>
+    <string name="bookmarks">Segnalibri</string>
     <string name="search">Cerca</string>
     <string name="create_contact">Crea contatto</string>
     <string name="enter_contact">Inserisci contatto</string>
@@ -217,6 +222,8 @@
     <string name="select">Seleziona</string>
     <string name="contact_already_exists">Il contatto esiste già</string>
     <string name="join">Entra</string>
+    <string name="channel_full_jid_example">canale@conferenza.esempio.com/nick</string>
+    <string name="channel_bare_jid_example">canale@conferenza.esempio.com</string>
     <string name="save_as_bookmark">Salva come segnalibro</string>
     <string name="delete_bookmark">Elimina segnalibro</string>
     <string name="bookmark_already_exists">Questo segnalibro esiste già</string>
@@ -377,6 +384,7 @@
     <string name="public_conference">Conversazione di gruppo pubblicamente accessibile</string>
     <string name="private_conference">Conversazione di gruppo privata, solo per membri</string>
     <string name="members_only">Privato, solo membri</string>
+    <string name="non_anonymous">Imposta gli ID Jabber visibili a chiunque</string>
     <string name="moderated">Moderata</string>
     <string name="you_are_not_participating">Non stai partecipando</string>
     <string name="modified_conference_options">Opzioni della conversazione di gruppo modificate!</string>
@@ -498,6 +506,7 @@
     <string name="video_low">bassa (144p)</string>
     <string name="video_mid">media (360p)</string>
     <string name="video_high">alta (720p)</string>
+    <string name="video_original">originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
     <string name="battery_optimizations_enabled_explained">Il tuo dispositivo sta facendo delle ingenti ottimizzazioni della batteria per Pix-Art Messenger che potrebbero portare ritardi alle notifiche o anche perdita di messaggi.\nSi consiglia di disabilitarle.</string>
@@ -838,6 +847,7 @@
     <string name="install_orbot">Installa Orbot</string>
     <string name="start_orbot">Avvia Orbot</string>
     <string name="no_market_app_installed">Non ci sono app store installati.</string>
+    <string name="group_chat_will_make_your_jabber_id_public">Questo canale renderà il tuo ID Jabber pubblico</string>
     <string name="ebook">e-book</string>
     <string name="your_name">Il tuo nome</string>
     <string name="enter_your_name">Inserisci il tuo nome</string>
@@ -856,7 +866,28 @@
     <string name="unable_to_restore_backup">Impossibile ripristinare il backup.</string>
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'avatar XMPP</string>
+    <string name="view_users">Vedi partecipanti</string>
+    <string name="group_chat_members">Partecipanti</string>
     <string name="join_group_chat">Unisciti alla conversazione di gruppo</string>
     <string name="create_group_chat">Crea conversazione di gruppo</string>
     <string name="message_deleted">Il messaggio è stato eliminato</string>
+    <string name="channel_details">Dettagli canale</string>
+    <string name="join_public_channel">Unisciti al canale pubblico</string>
+    <string name="create_private_group_chat">Crea una conversazione di gruppo privata</string>
+    <string name="create_public_channel">Crea un canale pubblico</string>
+    <string name="create_dialog_channel_name">Nome del canale</string>
+    <string name="xmpp_address">Indirizzo XMPP</string>
+    <string name="please_enter_name">Per favore inserisci un nome per il canale</string>
+    <string name="please_enter_xmpp_address">Per favore inserisci un indirizzo XMPP</string>
+    <string name="this_is_an_xmpp_address">Questo è un indirizzo XMPP. Per favore inserisci un nome.</string>
+    <string name="creating_channel">Creando un canale pubblico…</string>
+    <string name="channel_already_exists">Questo canale esiste già</string>
+    <string name="joined_an_existing_channel">Ti sei unito ad un canale esistente</string>
+    <string name="unable_to_set_channel_configuration">Impossibile impostare la configurazione del canale</string>
+    <string name="back">Indietro</string>
+    <string name="conference_options">Configurazione della conversazione di gruppo privata</string>
+    <string name="channel_options">Configurazione del canale pubblico</string>
+    <string name="allow_participants_to_edit_subject">Consenti a chiunque di modificare l\'argomento</string>
+    <string name="allow_participants_to_invite_others">Consenti a chiunque di invitare altri</string>
+    <string name="anyone_can_edit_subject">Chiunque può modificare l\'argomento.</string>
 </resources>
