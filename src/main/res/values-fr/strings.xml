@@ -804,4 +804,5 @@
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
     <string name="message_deleted">Le message a été supprimé</string>
+    <string name="manage_permission">Gestion des autorisations</string>
 </resources>
