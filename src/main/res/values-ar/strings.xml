@@ -15,19 +15,12 @@
     <string name="action_unblock_contact">إلغاء حجب المُراسِل</string>
     <string name="action_block_domain">حجب اسم النطاق</string>
     <string name="action_unblock_domain">إلغاء حجب اسم النطاق</string>
-    <string name="title_activity_manage_accounts">إدارة الحسابات</string>
     <string name="title_activity_settings">الإعدادات</string>
-    <string name="conference_details">تفاصيل فريق المحادثة</string>
-    <string name="title_activity_contact_details">تفاصيل المُراسِل</string>
-    <string name="title_activity_sharewith">شارك بواسطة بيكسل آرت ماسنجر</string>
-    <string name="title_activity_start_conversation">الشروع في محادثة</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
-    <string name="title_activity_choose_contacts">اختر مُراسِليك</string>
     <string name="title_activity_block_list">قائمة الحظر</string>
     <string name="just_now">الآن</string>
     <string name="minute_ago">منذ دقيقة</string>
     <string name="minutes_ago">منذ %d دقيقة</string>
-    <string name="unread_conversations">محادثات غير مقروءة</string>
     <string name="sending">الإرسال جارٍ…</string>
     <string name="message_decrypting">جارٍ فك تشفير الرسالة. الرجاء الإنتظار…</string>
     <string name="pgp_message">OpenPGP رسالة مشفرة</string>
@@ -156,7 +149,6 @@
     <string name="decrypt">فك التشفير</string>
     <string name="search">بحث</string>
     <string name="enter_contact">أدخل مراسلا</string>
-    <string name="join_public_channel">الالتحاق بفريق المحادثة</string>
     <string name="delete_contact">حذف المراسِل</string>
     <string name="view_contact_details">عرض تفاصيل المُراسِل</string>
     <string name="block_contact">حجب مُراسِل</string>
@@ -164,7 +156,6 @@
     <string name="create">إنشاء</string>
     <string name="select">اختيار</string>
     <string name="join">الانضمام</string>
-    <string name="channel_full_jid_example">groupchat@room.pix-art.de</string>
     <string name="save_as_bookmark">أضفه كفاصلة مرجعية</string>
     <string name="delete_bookmark">حذف الفاصلة المرجعية</string>
     <string name="topic">الموضوع</string>
@@ -255,8 +246,6 @@
     <string name="remove_membership">إلغاء العضوية</string>
     <string name="grant_admin_privileges">منح صلاحيات المُشرِف</string>
     <string name="remove_admin_privileges">الغاء صلاحيات المُشرِف</string>
-    <string name="conference_options">خيارات المحادثة الجماعية</string>
-    <string name="non_anonymous">غير مجهول</string>
     <string name="never">أبدًا</string>
     <string name="pref_display_enter_key">أظهر زر الإدخال</string>
     <string name="video">فيديو</string>
@@ -311,7 +300,6 @@
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
     <string name="pref_picture_compression">ضغط الصور</string>
     <string name="pref_video_compression">ضغط الفيديوهات</string>
-    <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
     <string name="disable">تعطيل</string>
@@ -341,7 +329,6 @@
     <string name="action_end_conversation_muc">مغادرة المحادثة الجماعية</string>
     <string name="show_password">إظهار الكلمة السرية</string>
     <string name="registration_password_too_weak">فشلت عملية إنشاء الحساب: إنّ الكلمة السرية ضعيفة</string>
-    <string name="create_private_group_chat">انشاء محادثة جماعية</string>
     <string name="choose_participants">اختر المشاركين</string>
     <string name="creating_conference">عملية انشاء فريق المحادثة جارية…</string>
     <string name="import_text">إنّ جهازك يحتوي على نسخة احتياطية يمكنك استيرادها.\nسوف يتم إعادة تشغيل تطبيقك بعد عملية الإسترجاع. هل تريد استعادة تلك النسخة الإحتياطية؟ </string>
@@ -483,6 +470,5 @@
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
-    <string name="view_users">عرض الأعضاء</string>
     <string name="message_deleted">تم حذف الرسالة</string>
 </resources>
