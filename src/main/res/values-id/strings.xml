@@ -334,14 +334,11 @@
     <string name="outcast">Orang buang</string>
     <string name="member">Anggota</string>
     <string name="advanced_mode">Mode lanjutan</string>
-    <string name="grant_membership">Berikan keanggotaan</string>
-    <string name="remove_membership">Cabut keanggotaan</string>
     <string name="grant_admin_privileges">Berikan hak istimewa</string>
     <string name="remove_admin_privileges">Cabut hak istimewa</string>
     <string name="remove_from_room">Hapus dari obrolan berkelompok</string>
     <string name="could_not_change_affiliation">Tidak dapat mengubah afiliasi %s</string>
     <string name="ban_from_conference">Larangan dari obrolan berkelompok</string>
-    <string name="removing_from_public_conference">Anda mencoba menghapusnya s %s dari obrolan kelompok terbuka. Satu-satunya cara untuk melakukannya adalah dengan melarang pengguna itu selamanya.</string>
     <string name="ban_now">Larang sekarang</string>
     <string name="you_are_not_participating">Kamu tidak mengambil bagian</string>
     <string name="modified_conference_options">Mengubah pilihan obrolan kelompok!</string>
