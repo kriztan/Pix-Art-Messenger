@@ -357,14 +357,11 @@
     <string name="outcast">Banni</string>
     <string name="member">Membre</string>
     <string name="advanced_mode">Mode expert</string>
-    <string name="grant_membership">Accorder le statut de membre</string>
-    <string name="remove_membership">Révoquer le statut de membre</string>
     <string name="grant_admin_privileges">Accorder des privilèges d’administrateur</string>
     <string name="remove_admin_privileges">Révoquer les privilèges d’administrateur</string>
     <string name="remove_from_room">Retirer de la conférence</string>
     <string name="could_not_change_affiliation">Impossible de changer l’affiliation de %s</string>
     <string name="ban_from_conference">Bannir de la conférence</string>
-    <string name="removing_from_public_conference">Vous essayez d’éjecter %s d’une conférence publique. La seule façon de le faire consiste à bannir cet utilisateur définitivement.</string>
     <string name="ban_now">Bannir maintenant</string>
     <string name="you_are_not_participating">Vous ne participez pas</string>
     <string name="modified_conference_options">Les options de la conférence ont été modifiées !</string>
@@ -847,5 +844,4 @@
     <string name="remove_owner_privileges">Révoquer les privilèges de propriétaire</string>
     <string name="remove_from_channel">Retirer du canal</string>
     <string name="ban_from_channel">Bannir du canal</string>
-    <string name="manage_permission">Gestion des autorisations</string>
 </resources>
