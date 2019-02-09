@@ -464,7 +464,6 @@
     <string name="enter_your_name">أدخل اسمك</string>
     <string name="autojoin_groupchat">إلتحق بفريق المحادثة هذا افتراضيا</string>
     <string name="pref_play_gif_inside">تشغيل صور جيف المتحركة في المحادثة</string>
-    <string name="pref_play_gif_inside_summary">إن تم تنشيط هذه الميزة فسوف يتم تشغيل صور جيف المتحركة تلقائيا داخل نافذة المحادثة.</string>
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
