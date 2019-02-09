@@ -326,14 +326,11 @@ mentrestant.</string>
     <string name="outcast">Outcast</string>
     <string name="member">Membre</string>
     <string name="advanced_mode">Mode avançat</string>
-    <string name="grant_membership">Admetre l\'afiliació</string>
-    <string name="remove_membership">Rebocar l\'afiliació</string>
     <string name="grant_admin_privileges">Admetre privilegis d\'administrador</string>
     <string name="remove_admin_privileges">Rebocar privilegis d\'administrador</string>
     <string name="remove_from_room">Suprimeix del xat de grup</string>
     <string name="could_not_change_affiliation">No s\'ha pogut canviar l\'afiliació del %s</string>
     <string name="ban_from_conference">Prohibició del xat en grup</string>
-    <string name="removing_from_public_conference">Esteu intentant eliminar %s d\'un xat de grup públic. L\'única manera de fer-ho és prohibir l\'usuari per sempre.</string>
     <string name="ban_now">Banejat ara</string>
     <string name="you_are_not_participating">No esteu participant</string>
     <string name="modified_conference_options">S\'han modificat les opcions de xat en grup.</string>
