@@ -824,7 +824,6 @@
     <string name="no_name_set_instructions">Alias no configurado.</string>
     <string name="autojoin_groupchat">Unirse automáticamente a este grupo de chat</string>
     <string name="pref_play_gif_inside">Reproducir archivos GIF en la conversación</string>
-    <string name="pref_play_gif_inside_summary">Activando esto, ejecuta archivos GIF directamente en la conversación.</string>
     <string name="open_with">Abrir con…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: invitación de usuario</string>
     <string name="choose_account">Elige cuenta</string>
