@@ -242,8 +242,6 @@
     <string name="no_role">غير متصل</string>
     <string name="member">عضو</string>
     <string name="advanced_mode">الوضع المتقدم</string>
-    <string name="grant_membership">منحة صفة العضوية</string>
-    <string name="remove_membership">إلغاء العضوية</string>
     <string name="grant_admin_privileges">منح صلاحيات المُشرِف</string>
     <string name="remove_admin_privileges">الغاء صلاحيات المُشرِف</string>
     <string name="never">أبدًا</string>
