@@ -799,7 +799,6 @@
     <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
     <string name="autojoin_groupchat">Rejoindre automatiquement cette conférence</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
-    <string name="pref_play_gif_inside_summary">L’activation de cette option permet d’animer les images GIF publiées dans la fenêtre de discussion.</string>
     <string name="open_with">Ouvrir avec …</string>
     <string name="server_info_adhoc_invite">XEP-0050 : Commandes de circonstance : invitation utilisateur</string>
     <string name="choose_account">Sélectionnez un compte</string>
