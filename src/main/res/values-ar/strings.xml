@@ -389,7 +389,6 @@
     <string name="pref_warn_unencrypted_chat">التنبيه إن كانت المحادثة غير مشفّرة</string>
     <string name="invalid_muc_nick">الاسم المستعار غير صالح</string>
     <string name="title_activity_share_via_account">شاركه عبر حساب</string>
-    <string name="destroy_muc">حذف المحادثة الجماعية</string>
     <string name="conference_unknown_error">أنت لم تعد مِن ضمن فريق المحادثة هذا</string>
     <string name="snooze">غفوة</string>
     <string name="huawei_protected_apps">التطبيقات المحمية</string>
@@ -462,7 +461,6 @@
     <string name="ebook">كتاب إلكتروني</string>
     <string name="your_name">اسمك</string>
     <string name="enter_your_name">أدخل اسمك</string>
-    <string name="autojoin_groupchat">إلتحق بفريق المحادثة هذا افتراضيا</string>
     <string name="pref_play_gif_inside">تشغيل صور جيف المتحركة في المحادثة</string>
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
