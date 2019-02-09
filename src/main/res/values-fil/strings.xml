@@ -334,14 +334,11 @@
     <string name="outcast">Pinabayaan</string>
     <string name="member">Kasapi</string>
     <string name="advanced_mode">Maunlad na pamamaraan</string>
-    <string name="grant_membership">Pagiging kasapi</string>
-    <string name="remove_membership">Binawi ang pagiging miyembro</string>
     <string name="grant_admin_privileges">Pinagkalooban ng administratibong prebilihiyo</string>
     <string name="remove_admin_privileges">Binawian ng administratibong prebilihiyo</string>
     <string name="remove_from_room">Tinanggal mula sa group chat</string>
     <string name="could_not_change_affiliation">Hindi na mababagong ugnayan sa %s</string>
     <string name="ban_from_conference">Ipinagbawal sa grupo ng chat</string>
-    <string name="removing_from_public_conference">Gusto mong burahin %s mula pampublikong grupo ng chat. Ang isang paraan upang gawin ito ay ang pagbawal sa user kailanman.</string>
     <string name="ban_now">Bawal ngayon</string>
     <string name="you_are_not_participating">Hindi ka nakikilahok</string>
     <string name="modified_conference_options">Binagong pagpilian ng grupo ng chat!</string>
