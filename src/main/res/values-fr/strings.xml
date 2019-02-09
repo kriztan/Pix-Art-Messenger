@@ -676,11 +676,7 @@
     <string name="pref_use_bundled_emoji_summary">Utilise la libraire d’émojis intégrée au lieu de ceux de votre appareil. Les modifications seront prises en considération à la réouverture de l’application.</string>
     <string name="invalid_muc_nick">Psœudonyme invalide</string>
     <string name="title_activity_share_via_account">Partager via le compte</string>
-    <string name="destroy_muc">Supprimer complètement la conférence</string>
     <string name="conference_unknown_error">Vous ne faîtes plus partie de cette conférence</string>
-    <string name="destroy_muc_text">Désirez-vous supprimer complètement la conférence %s ? Ceci supprimera la conférence pour de bon.</string>
-    <string name="destroy_muc_succeed">La conférence a été supprimée avec succès</string>
-    <string name="destroy_muc_failed">Impossible de supprimer la conférence</string>
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
@@ -741,8 +737,6 @@
     <string name="pref_start_search_summary">Ouvre le clavier et place le curseur sur le champs de recherche dans la fenêtre « Démarrer une conversation »</string>
     <string name="paste_as_quote">Coller comme une citation</string>
     <string name="group_chat_avatar">Avatar de la conférence</string>
-    <string name="host_does_not_support_group_chat_avatars">L’hôte ne prend pas en charge les avatars de conférences</string>
-    <string name="only_the_owner_can_change_group_chat_avatar">Seul le propriétaire peut changer l’avatar de la conférence</string>
     <string name="contact_name">Nom du contact</string>
     <string name="nickname">Psœudonyme pour cette conférence</string>
     <string name="group_chat_name">Nom</string>
@@ -797,7 +791,6 @@
     <string name="enter_your_name">Saisissez votre nom</string>
     <string name="enter_your_name_instructions">Veuillez saisir le psœudonyme que vous désirez rendre visible à vos contacts.</string>
     <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
-    <string name="autojoin_groupchat">Rejoindre automatiquement cette conférence</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="open_with">Ouvrir avec …</string>
     <string name="server_info_adhoc_invite">XEP-0050 : Commandes de circonstance : invitation utilisateur</string>
