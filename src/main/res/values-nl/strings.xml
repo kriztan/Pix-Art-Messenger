@@ -323,14 +323,11 @@
     <string name="outcast">Verstoteling</string>
     <string name="member">Lid</string>
     <string name="advanced_mode">Geavanceerde modus</string>
-    <string name="grant_membership">Lidmaatschap verlenen</string>
-    <string name="remove_membership">Lidmaatschap ontzeggen</string>
     <string name="grant_admin_privileges">Beheerdersprivileges verlenen</string>
     <string name="remove_admin_privileges">Beheerdersprivileges ontzeggen</string>
     <string name="remove_from_room">Verwijderen uit groepsgesprek</string>
     <string name="could_not_change_affiliation">Kon aansluiting niet wijzigen</string>
     <string name="ban_from_conference">Verbannen uit groepsgesprek</string>
-    <string name="removing_from_public_conference">Je probeert %s te verwijderen uit een publiek groepsgesprek. De enige manier om dat te doen is door hem/haar voorgoed te verbannen.</string>
     <string name="ban_now">Nu verbannen</string>
     <string name="you_are_not_participating">Je neemt geen deel</string>
     <string name="modified_conference_options">Gespreksopties aangepast!</string>
