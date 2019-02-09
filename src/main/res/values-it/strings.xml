@@ -824,7 +824,6 @@
     <string name="no_name_set_instructions">Nessun nome impostato.</string>
     <string name="autojoin_groupchat">Unisciti automaticamente a questa conversazione di gruppo</string>
     <string name="pref_play_gif_inside">Riproduci file GIF nelle conversazioni</string>
-    <string name="pref_play_gif_inside_summary">Attivando questa opzione, i file GIF verranno riprodotti direttamente nella conversazione.</string>
     <string name="open_with">Apri con…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Comandi Ad-Hoc: invito utente</string>
     <string name="choose_account">Scegli account</string>
