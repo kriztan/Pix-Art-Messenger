@@ -249,8 +249,6 @@
     <string name="outcast">Απόκληρος</string>
     <string name="member">Μέλος</string>
     <string name="advanced_mode">Κατάσταση για προχωρημένους</string>
-    <string name="grant_membership">Απόδοση ιδιότητας μέλους</string>
-    <string name="remove_membership">Ανάκληση ιδιότητας μέλους</string>
     <string name="grant_admin_privileges">Απόδοση δικαιωμάτων διαχειριστή</string>
     <string name="remove_admin_privileges">Ανάκληση δικαιωμάτων διαχειριστή</string>
     <string name="could_not_change_affiliation">Δεν ήταν δυνατή η αλλαγή του δεσμού της επαφής %s</string>
