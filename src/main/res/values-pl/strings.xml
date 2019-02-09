@@ -677,8 +677,6 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
-    <string name="host_does_not_support_group_chat_avatars">Host nie obsługuje awatarów grupowych</string>
-    <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel grupy może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
     <string name="nickname">Pseudonim czatu grupowego</string>
     <string name="group_chat_name">Nazwa</string>
@@ -708,6 +706,5 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
     <string name="no_name_set_instructions">Brak ustawionego pseudonimu.</string>
-    <string name="autojoin_groupchat">Automatycznie dołącz do tego czatu grupowego</string>
     <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
 </resources>
