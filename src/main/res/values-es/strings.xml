@@ -690,11 +690,7 @@
     <string name="pref_use_bundled_emoji_summary">Utilice la librería emoji integrada en lugar de utilizar la de su dispositivo. Los cambios estarán disponibles después de volver a abrir la aplicación.</string>
     <string name="invalid_muc_nick">Apodo inválido</string>
     <string name="title_activity_share_via_account">Compartir a través de cuenta</string>
-    <string name="destroy_muc">Destruye el chat de grupo</string>
     <string name="conference_unknown_error">Ya no estás en este chat de grupo</string>
-    <string name="destroy_muc_text">¿Quieres eliminar el grupo %s? Esto eliminará este grupo de chat permanentemente.</string>
-    <string name="destroy_muc_succeed">El chat de grupo se ha eliminado correctamente</string>
-    <string name="destroy_muc_failed">El chat de grupo no se pudo eliminar</string>
     <string name="no_write_access_in_public_muc">De momento no estás participando en este grupo y no puedes escribir en él\nPor favor, ve a los detalles del grupo presionando <b>OK</b> y envía un mensaje privado a un moderador, administrador o propietario haciendo un clic largo en el nombre de los miembros en la parte superior de la lista para solicitar acceso de escritura en el grupo.</string>
     <string name="snooze">Dormitar</string>
     <string name="huawei_protected_apps">Aplicaciones protegidas</string>
@@ -759,8 +755,6 @@
     <string name="pref_start_search_summary">En la pantalla \'Comenzar conversación\', abrir el teclado y situar el cursor en el campo de búsqueda</string>
     <string name="paste_as_quote">Pegar como cita</string>
     <string name="group_chat_avatar">Imagen de perfil del grupo</string>
-    <string name="host_does_not_support_group_chat_avatars">El servidor no soporta imágenes de perfil de grupos de chat</string>
-    <string name="only_the_owner_can_change_group_chat_avatar">Únicamente el propietario puede cambiar la imagen de perfil de un grupo de conversación</string>
     <string name="contact_name">Nombre de contacto</string>
     <string name="nickname">Apodo para este grupo de conversación</string>
     <string name="group_chat_name">Nombre</string>
@@ -822,7 +816,6 @@
     <string name="enter_your_name">Escribe tu nombre</string>
     <string name="enter_your_name_instructions">Por favor, escribe tu alias que será visible para tus contactos.</string>
     <string name="no_name_set_instructions">Alias no configurado.</string>
-    <string name="autojoin_groupchat">Unirse automáticamente a este grupo de chat</string>
     <string name="pref_play_gif_inside">Reproducir archivos GIF en la conversación</string>
     <string name="open_with">Abrir con…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: invitación de usuario</string>
