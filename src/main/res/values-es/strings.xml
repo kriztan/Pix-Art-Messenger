@@ -690,6 +690,7 @@
     <string name="pref_use_bundled_emoji_summary">Utilice la librería emoji integrada en lugar de utilizar la de su dispositivo. Los cambios estarán disponibles después de volver a abrir la aplicación.</string>
     <string name="invalid_muc_nick">Apodo inválido</string>
     <string name="title_activity_share_via_account">Compartir a través de cuenta</string>
+    <string name="destroy_room">Destruir grupo de chat</string>
     <string name="conference_unknown_error">Ya no estás en este chat de grupo</string>
     <string name="no_write_access_in_public_muc">De momento no estás participando en este grupo y no puedes escribir en él\nPor favor, ve a los detalles del grupo presionando <b>OK</b> y envía un mensaje privado a un moderador, administrador o propietario haciendo un clic largo en el nombre de los miembros en la parte superior de la lista para solicitar acceso de escritura en el grupo.</string>
     <string name="snooze">Dormitar</string>
@@ -816,7 +817,10 @@
     <string name="enter_your_name">Escribe tu nombre</string>
     <string name="enter_your_name_instructions">Por favor, escribe tu alias que será visible para tus contactos.</string>
     <string name="no_name_set_instructions">Alias no configurado.</string>
+    <string name="pref_show_links_inside">Mostrar previsualizaciones de enlaces web en el chat</string>
+    <string name="pref_show_links_inside_summary">Mostrar previsualizaciones de enlaces web dentro de la vista de chat.</string>
     <string name="pref_play_gif_inside">Reproducir archivos GIF en la conversación</string>
+    <string name="pref_play_gif_inside_summary">Ejecutar archivos GIF dentro de la vista de chat.</string>
     <string name="open_with">Abrir con…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: invitación de usuario</string>
     <string name="choose_account">Elige cuenta</string>
