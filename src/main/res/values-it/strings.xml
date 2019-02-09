@@ -368,8 +368,10 @@
     <string name="remove_from_room">Rimuovi dalla conversazione di gruppo</string>
     <string name="could_not_change_affiliation">Impossibile cambiare l’affiliazione di %s</string>
     <string name="ban_from_conference">Bandisci dalla conversazione di gruppo</string>
+    <string name="removing_from_public_conference">Stai cercando di rimuovere %s da un canale pubblico. L\'unico modo di fare questo è di bandire quell\'utente per sempre.</string>
     <string name="ban_now">Bandisci</string>
     <string name="non_anonymous">Imposta gli ID Jabber visibili a chiunque</string>
+    <string name="moderated">Rendi moderato il canale</string>
     <string name="you_are_not_participating">Non stai partecipando</string>
     <string name="modified_conference_options">Opzioni della conversazione di gruppo modificate!</string>
     <string name="could_not_modify_conference_options">Impossibile modificare le opzioni della conversazione di gruppo</string>
@@ -824,6 +826,7 @@
     <string name="pref_play_gif_inside">Riproduci file GIF nelle conversazioni</string>
     <string name="pref_play_gif_inside_summary">Attivando questa opzione, i file GIF verranno riprodotti direttamente nella conversazione.</string>
     <string name="open_with">Apri con…</string>
+    <string name="server_info_adhoc_invite">XEP-0050: Comandi Ad-Hoc: invito utente</string>
     <string name="choose_account">Scegli account</string>
     <string name="set_profile_picture">Immagine di profilo Pix-Art Messenger</string>
     <string name="restore_backup">Ripristino backup</string>
@@ -862,7 +865,11 @@
     <string name="anyone_can_invite_others">Chiunque può invitare altri.</string>
     <string name="jabber_ids_are_visible_to_admins">Gli ID Jabber sono visibili agli amministratori.</string>
     <string name="jabber_ids_are_visible_to_anyone">Gli ID Jabber sono visibili a chiunque.</string>
+    <string name="no_users_hint_channel">Questo canale pubblico non ha partecipanti. Invita i tuoi contatti o usa il pulsante di condivisione per distribuire il suo indirizzo XMPP.</string>
     <string name="no_users_hint_group_chat">Questa conversazione di gruppo privata non ha partecipanti.</string>
     <string name="grant_owner_privileges">Concedi privilegi di proprietario</string>
     <string name="remove_owner_privileges">Revoca privilegi di proprietario</string>
+    <string name="remove_from_channel">Rimuovi dal canale</string>
+    <string name="ban_from_channel">Bandisci dal canale</string>
+    <string name="manage_permission">Gestisci privilegi</string>
 </resources>
