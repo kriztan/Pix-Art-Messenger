@@ -334,14 +334,11 @@
     <string name="outcast">Uzaklaştır</string>
     <string name="member">Üye</string>
     <string name="advanced_mode">Gelişmiş mod</string>
-    <string name="grant_membership">Üyelik iznini vermek</string>
-    <string name="remove_membership">Üyeliğini iptal et</string>
     <string name="grant_admin_privileges">Yönetici ayrıcalıkları ver</string>
     <string name="remove_admin_privileges">Yönetici ayrıcalıklarını iptal et</string>
     <string name="remove_from_room">Sohbet grubunu silin</string>
     <string name="could_not_change_affiliation">%s kullanıcısının üyeliği değiştirilemedi</string>
     <string name="ban_from_conference">Grup sohbetini engelle</string>
-    <string name="removing_from_public_conference">%s adlı kullanıcıyı bir genel grup sohbetinden kaldırılmaya çalışılıyorsunuz. Bunu yapmanın tek yolu kullanıcıyı sonsuza dek yasaklamaktır.</string>
     <string name="ban_now">Şimdi engelle</string>
     <string name="you_are_not_participating">Katılım sağlamıyorsun</string>
     <string name="modified_conference_options">Grup sohbeti seçeneklerini düzenle!</string>
