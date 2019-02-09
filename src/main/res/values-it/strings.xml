@@ -361,14 +361,13 @@
     <string name="outcast">Emarginato</string>
     <string name="member">Membro</string>
     <string name="advanced_mode">Modalità avanzata</string>
-    <string name="grant_membership">Concedi appartenenza</string>
-    <string name="remove_membership">Revoca appartenenza</string>
+    <string name="grant_membership">Concedi privilegi di membro</string>
+    <string name="remove_membership">Revoca privilegi di membro</string>
     <string name="grant_admin_privileges">Concedi i privilegi di amministratore</string>
     <string name="remove_admin_privileges">Revoca i privilegi di amministratore</string>
     <string name="remove_from_room">Rimuovi dalla conversazione di gruppo</string>
     <string name="could_not_change_affiliation">Impossibile cambiare l’affiliazione di %s</string>
     <string name="ban_from_conference">Bandisci dalla conversazione di gruppo</string>
-    <string name="removing_from_public_conference">Stai cercando di rimuovere %s da una conversazione di gruppo pubblica. L\'unico modo per farlo è bandire per sempre quell\'utente.</string>
     <string name="ban_now">Bandisci</string>
     <string name="non_anonymous">Imposta gli ID Jabber visibili a chiunque</string>
     <string name="you_are_not_participating">Non stai partecipando</string>
