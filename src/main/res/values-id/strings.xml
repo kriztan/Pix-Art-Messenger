@@ -613,11 +613,7 @@
     <string name="pref_use_bundled_emoji_summary">Gunakan perpustakaan emoji yang terintegrasi daripada menggunakan perangkat Anda. Perubahan akan tersedia setelah membuka kembali aplikasi.</string>
     <string name="invalid_muc_nick">Nama panggilan tidak sah</string>
     <string name="title_activity_share_via_account">Bagikan melalui akun</string>
-    <string name="destroy_muc">Menghilangkan obrolan kelompok</string>
     <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
-    <string name="destroy_muc_text">Apakah anda ingin menghilangkan obrolan kelompok %s? Tindakan ini akan menghapus obrolan kelompok secara permanen.</string>
-    <string name="destroy_muc_succeed">Obrolan kelompok berhasil dihapus</string>
-    <string name="destroy_muc_failed">Obrolan kelompok tidak dapat dihapus</string>
     <string name="snooze">Menunda</string>
     <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
     <string name="huawei_protected_apps_summary">Agar tetap menerima pemberitahuan, bahkan saat layar dimatikan, Anda perlu menambahkan Pix-Art Messenger ke daftar aplikasi yang dilindungi.</string>
