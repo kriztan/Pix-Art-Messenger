@@ -683,11 +683,7 @@
     <string name="pref_use_bundled_emoji_summary">Nutze die in die App integrierten Emojis anstatt der von deinem Gerät. Die Änderungen werden nach dem nächsten Öffnen der App wirksam.</string>
     <string name="invalid_muc_nick">Nickname ungültig</string>
     <string name="title_activity_share_via_account">Teilen mit Profil</string>
-    <string name="destroy_muc">Gruppenchat auflösen</string>
     <string name="conference_unknown_error">Du bist nicht länger in diesem Gruppenchat</string>
-    <string name="destroy_muc_text">Möchtest du den Gruppenchat %s auflösen? Dies wird den Gruppenchat dauerhaft entfernen.</string>
-    <string name="destroy_muc_succeed">Gruppenchat erfolgreich aufgelöst</string>
-    <string name="destroy_muc_failed">Gruppenchat konnte nicht aufgelöst werden</string>
     <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
     <string name="snooze">Schlummern</string>
     <string name="huawei_protected_apps">Geschützte Apps</string>
@@ -752,8 +748,6 @@
     <string name="pref_start_search_summary">Bei \'Unterhaltung beginnen\' direkt die Suche starten</string>
     <string name="paste_as_quote">Als Zitat einfügen</string>
     <string name="group_chat_avatar">Gruppenchat-Avatar</string>
-    <string name="host_does_not_support_group_chat_avatars">Host unterstützt keine Gruppenchat-Avatare</string>
-    <string name="only_the_owner_can_change_group_chat_avatar">Nur der Eigentümer kann den Gruppenchat-Avatar ändern</string>
     <string name="contact_name">Name des Kontaktes</string>
     <string name="nickname">Nickname für diesen Gruppenchat</string>
     <string name="group_chat_name">Name</string>
@@ -814,7 +808,6 @@
     <string name="enter_your_name">Gib deinen Namen ein</string>
     <string name="enter_your_name_instructions">Bitte gib deinen Nickname ein, der für deine Kontakte sichtbar sein wird.</string>
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
-    <string name="autojoin_groupchat">Diesem Gruppenchat automatisch beitreten</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
     <string name="open_with">Öffnen mit…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: Benutzer einladen</string>
