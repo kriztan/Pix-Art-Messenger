@@ -617,11 +617,7 @@
     <string name="pref_use_bundled_emoji_summary">Gamitin ang pinagsama-samang emoji library sa halip na gamitin ang iyong mga device. Available ang mga pagbabago pagkatapos muling buksan ang app.</string>
     <string name="invalid_muc_nick">Di-wastong palayaw</string>
     <string name="title_activity_share_via_account">Ibahagi sa pamamagitan ng account</string>
-    <string name="destroy_muc">Wasakin ang chat ng grupo</string>
     <string name="conference_unknown_error">Hindi ka na nasa grupong chat na ito</string>
-    <string name="destroy_muc_text">Gusto mo bang sirain ang %s chat ng grupo? Tatanggalin nito ang permanenteng grupo ng chat na ito.</string>
-    <string name="destroy_muc_succeed">Matagumpay na nawasak ang grupo ng chat</string>
-    <string name="destroy_muc_failed">Hindi maaaring sirain ang grupo ng chat</string>
     <string name="snooze">I-snooze</string>
     <string name="huawei_protected_apps">Mga Protektadong Apps</string>
     <string name="huawei_protected_apps_summary">Upang patuloy na makatanggap ng mga abiso, kahit na naka-off ang screen, kailangan mong magdagdag ng Pix-Art Messenger sa listahan ng mga protektadong apps.</string>
