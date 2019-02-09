@@ -580,11 +580,7 @@
     <string name="pref_use_bundled_emoji_summary">Gamita ang integrated library sa emoji imbis nga gamiton ang imong mga gamit. Ang mga pagbag-o mahimong makuha human sa pag-abli pag-usab sa app.</string>
     <string name="invalid_muc_nick">Dili balido nga angga nga pangan</string>
     <string name="title_activity_share_via_account">Pakigbahin pinaagi sa account</string>
-    <string name="destroy_muc">Guba-a ang grupo sa chat</string>
     <string name="conference_unknown_error">Wala nakay labot diri nga grupo sa chat</string>
-    <string name="destroy_muc_text">Gusto ba nimu gubaun ang kini nga grupo sa chat%s? Kini grupoha kay makanunay na nga matangtang.</string>
-    <string name="destroy_muc_succeed">Ang grupo sa chat nilampos sa pag-guba</string>
-    <string name="destroy_muc_failed">Ang grupo sa chat dili pwedi gub-on</string>
     <string name="snooze">Snooze</string>
     <string name="huawei_protected_apps">Protektado nga mga App</string>
     <string name="huawei_protected_apps_summary">Para kanunay nga makadawat ug pagpahibalo, bisag ang screen nimu kay palong, kinahanglan ka adto sa Pix-Art Messenger para sa lista sa mga protektado nga mga app.</string>
