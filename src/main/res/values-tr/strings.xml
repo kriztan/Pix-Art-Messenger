@@ -617,11 +617,7 @@
     <string name="pref_use_bundled_emoji_summary">Cihazlarınızın yerine emoji kitaplığını kullanın. Değişiklikler, uygulamayı yeniden açtıktan sonra kullanılabilir olacaktır.</string>
     <string name="invalid_muc_nick">Geçersiz kullanıcı adı</string>
     <string name="title_activity_share_via_account">Hesap yoluyla paylaş</string>
-    <string name="destroy_muc">Grup sohbetini sil</string>
     <string name="conference_unknown_error">Artık bu grupta değilsiniz</string>
-    <string name="destroy_muc_text">%s grubunu gerçekten silmek istiyor musunuz? Grup sohbeti kalıcı olarak silinecektir.</string>
-    <string name="destroy_muc_succeed">Grup sohbeti başarıyla silindi</string>
-    <string name="destroy_muc_failed">Grup sohbeti silinemedi</string>
     <string name="snooze">Ertele</string>
     <string name="huawei_protected_apps">Korunan uygulamalar</string>
     <string name="huawei_protected_apps_summary">Bildirim almaya devam etmek için, ekran kapalı olduğunda bile, korunan uygulamalar listesine Pix-Art Messenger\'ı eklemeniz gerekir.</string>
