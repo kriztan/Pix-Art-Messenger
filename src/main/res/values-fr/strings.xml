@@ -835,4 +835,9 @@
     <string name="remove_owner_privileges">Révoquer les privilèges de propriétaire</string>
     <string name="remove_from_channel">Retirer du canal</string>
     <string name="ban_from_channel">Bannir du canal</string>
+    <string name="manage_permission">Gestion des privilèges</string>
+    <string name="destroy_channel_succeed">Canal supprimé avec succès</string>
+    <string name="action_end_conversation_channel">Quitter le canal</string>
+    <string name="autojoin_channel">Rejoindre automatiquement ce canal</string>
+    <string name="no_attachments">Il n\'y a pas de pièces jointes</string>
 </resources>
