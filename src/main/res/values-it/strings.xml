@@ -824,7 +824,9 @@
     <string name="no_name_set_instructions">Nessun nome impostato.</string>
     <string name="autojoin_group_chat">Unisciti automaticamente a questa conversazione di gruppo</string>
     <string name="pref_show_links_inside">Mostra anteprime dei collegamenti web nella conversazione</string>
+    <string name="pref_show_links_inside_summary">Mostra anteprime dei collegamenti web direttamente all\'interno della schermata di conversazione.</string>
     <string name="pref_play_gif_inside">Riproduci file GIF nelle conversazioni</string>
+    <string name="pref_play_gif_inside_summary">Riproduci file GIF direttamente all\'interno della schermata di conversazione.</string>
     <string name="open_with">Apri con…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Comandi Ad-Hoc: invito utente</string>
     <string name="choose_account">Scegli account</string>
@@ -872,4 +874,11 @@
     <string name="remove_from_channel">Rimuovi dal canale</string>
     <string name="ban_from_channel">Bandisci dal canale</string>
     <string name="manage_permission">Gestisci privilegi</string>
+    <string name="destroy_channel">Elimina canale</string>
+    <string name="destroy_channel_dialog">Vuoi eliminare il canale %s? Questo rimuoverà questo canale permanentemente.</string>
+    <string name="destroy_channel_succeed">Canale eliminato con successo</string>
+    <string name="destroy_channel_failed">Non è stato possibile eliminare il canale</string>
+    <string name="action_end_conversation_channel">Lascia il canale</string>
+    <string name="autojoin_channel">Unisciti automaticamente a questo canale</string>
+    <string name="no_attachments">Non ci sono allegati</string>
 </resources>
