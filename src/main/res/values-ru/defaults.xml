@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="portrait_only">true</bool>
+    <bool name="enter_is_send">false</bool>
+    <bool name="dnd_on_silent_mode">false</bool>
+    <bool name="treat_vibrate_as_silent">false</bool>
+    <integer name="auto_accept_filesize_wifi">10485760</integer>
+    <integer name="auto_accept_filesize_mobile">524288</integer>
+    <integer name="auto_accept_filesize_roaming">0</integer>
+    <bool name="vibrate_on_notification">true</bool>
+    <bool name="led">true</bool>
+    <bool name="notifications_from_strangers">true</bool>
+    <bool name="headsup_notifications">true</bool>
+    <bool name="enable_quiet_hours">false</bool>
+    <bool name="manually_change_presence">true</bool>
+    <bool name="away_when_screen_off">false</bool>
+    <integer name="automatic_message_deletion">0</integer>
+    <bool name="confirm_messages">true</bool>
+    <bool name="allow_message_correction">true</bool>
+    <bool name="chat_states">true</bool>
+    <bool name="autojoin">true</bool>
+    <bool name="indicate_received">true</bool>
+    <bool name="use_tor">false</bool>
+    <bool name="show_connection_options">false</bool>
+    <bool name="last_activity">true</bool>
+    <bool name="dont_trust_system_cas">false</bool>
+    <bool name="btbv">true</bool>
+    <bool name="send_button_status">true</bool>
+    <bool name="display_enter_key">false</bool>
+    <bool name="show_dynamic_tags">false</bool>
+    <integer name="grace_period">144</integer>
+    <bool name="presence_colored_names">false</bool>
+    <bool name="use_max_brightness">true</bool>
+    <bool name="auto_rotate">true</bool>
+    <bool name="send_crashreport">true</bool>
+    <bool name="plain_text_logs">false</bool>
+    <bool name="validate_hostname">false</bool>
+    <bool name="show_foreground_service">true</bool>
+    <bool name="warn_unencrypted_chat">true</bool>
+    <bool name="use_bundled_emoji">true</bool>
+    <bool name="enable_multi_accounts">false</bool>
+    <bool name="show_qr_code_scan">true</bool>
+    <bool name="scroll_to_bottom">true</bool>
+    <string name="default_font_size">мелкий</string>
+    <bool name="start_searching">false</bool>
+    <bool name="show_record_voice_btn">true</bool>
+    <bool name="quick_share_attachment_choice">true</bool>
+    <bool name="screen_security">false</bool>
+    <bool name="play_gif_inside">false</bool>
+
+</resources>
