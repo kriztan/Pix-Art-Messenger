@@ -791,6 +791,8 @@
     <string name="enter_your_name">Saisissez votre nom</string>
     <string name="enter_your_name_instructions">Veuillez saisir le psœudonyme que vous désirez rendre visible à vos contacts.</string>
     <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
+    <string name="autojoin_group_chat">Rejoindre automatiquement ce groupe de discussion</string>
+    <string name="pref_show_links_inside">Afficher les aperçus des liens Web au sein de la discussion</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="open_with">Ouvrir avec …</string>
     <string name="server_info_adhoc_invite">XEP-0050 : Commandes de circonstance : invitation utilisateur</string>
