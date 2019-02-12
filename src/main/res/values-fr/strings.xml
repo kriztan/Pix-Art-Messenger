@@ -164,8 +164,8 @@
     <string name="error_out_of_memory">Plus de mémoire disponible. L’image est trop volumineuse</string>
     <string name="add_phone_book_text">Voulez-vous ajouter %s à votre carnet d’adresses ?</string>
     <string name="server_info_show_more">Infos sur le serveur</string>
-    <string name="server_info_mam">XEP-0313 : MAM</string>
-    <string name="server_info_carbon_messages">XEP-0280 : Copies carbone</string>
+    <string name="server_info_mam">XEP-0313 : Gestion des archives des messages</string>
+    <string name="server_info_carbon_messages">XEP-0280 : Copies carbones</string>
     <string name="server_info_csi">XEP-0352 : Indication statut client</string>
     <string name="server_info_blocking">XEP-0191 : Commande de bloquage</string>
     <string name="server_info_roster_version">XEP-0237 : Révision contacts</string>
@@ -795,7 +795,7 @@
     <string name="pref_show_links_inside">Afficher les aperçus des liens Web au sein de la discussion</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="open_with">Ouvrir avec …</string>
-    <string name="server_info_adhoc_invite">XEP-0050 : Commandes de circonstance : invitation utilisateur</string>
+    <string name="server_info_adhoc_invite">XEP-0050 : Commandes ad-hoc : invitation utilisateur</string>
     <string name="choose_account">Sélectionnez un compte</string>
     <string name="set_profile_picture">Image du profil Pix-Art Messenger</string>
     <string name="restore_backup">Restaurer une sauvegarde</string>
