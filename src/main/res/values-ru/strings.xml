@@ -398,10 +398,12 @@
     <string name="share_as_barcode">Поделиться QR кодом</string>
     <string name="invalid_barcode">Неверный QR-код</string>
     <string name="verify_with_qr_code">подтвердить QR кодом</string>
+    <string name="verify_omemo_keys">Проверить OMEMO-отпечатки</string>
     <string name="destroy_room">Закрыть групповой чат</string>
     <string name="conference_unknown_error">Вы больше не состоите в групповом чате</string>
     <string name="destroy_room_succeed">Групповой чат успешно закрыт</string>
     <string name="destroy_room_failed">Групповой чат не может быть закрыт</string>
+    <string name="pref_omemo_setting">OMEMO шифрование</string>
     <string name="pref_omemo_setting_summary_always">OMEMO всегда будет использоваться для личных бесед и приватных групповых чатов.</string>
     <string name="default_off">Выключено по умолчанию</string>
     <string name="pref_theme_light">Светлое оформление</string>
@@ -436,8 +438,14 @@
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="cancelled">отменён</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
+    <string name="install_orbot">Установить Orbot</string>
+    <string name="start_orbot">Запуск Orbot</string>
     <string name="group_chat_will_make_your_jabber_id_public">Этот канал будет создан с помощью вашего публичного Jabber ID</string>
+    <string name="ebook">электронная книга</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="enter_your_name">Введите ваше имя</string>
     <string name="autojoin_group_chat">Автоматически присоединяться к групповым чатам</string>
+    <string name="pref_play_gif_inside">Запускать GIF файлы в чате</string>
     <string name="pref_play_gif_inside_summary">Запускать GIF файлы немедленно при просмотре чата.</string>
     <string name="open_with">Открыть с помощью...</string>
     <string name="choose_account">Выберите аккаунт</string>
