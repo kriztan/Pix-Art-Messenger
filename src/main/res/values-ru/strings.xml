@@ -323,6 +323,8 @@
     <string name="clear_other_devices_desc">Вы уверены, что хотите очистить все остальные устройства из анонса ключей OMEMO? При соединении устройств в следующий раз новые ключи анонсируются автоматически, но устройства могут не получить сообщения, посланные до этого.</string>
     <string name="distrust_omemo_key">Недоверенное устройство</string>
     <string name="distrust_omemo_key_text">Вы действительно хотите удалить устройство из доверенных?\nУстройство и сообщения, полученные с этого устройства, будут помечаться как недоверенные.</string>
+    <string name="remove_from_room">Удален из группового чата</string>
+    <string name="ban_from_conference">Заблокирован групповым чатом</string>
     <string name="modified_conference_options">Настройки группового чата изменены!</string>
     <string name="could_not_modify_conference_options">Невозможно изменить настройки группового чата</string>
     <string name="never">Никогда</string>
@@ -345,6 +347,8 @@
     <string name="dialog_manage_certs_negativebutton">Отмена</string>
     <string name="none">Нет</string>
     <string name="search_contacts">Поиск контактов</string>
+    <string name="search_groups">Поиск групповых чатов</string>
+    <string name="user_has_left_conference">%1$s вышел из группы!</string>
     <string name="username">Имя пользователя</string>
     <string name="username_hint">Имя пользователя</string>
     <string name="download_failed_server_not_found">Загрузка прервана: сервер не найден</string>
@@ -364,11 +368,21 @@
     <string name="cancel_update">Отменить обновление?</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
+    <string name="action_end_conversation_muc">Покинул групповой чат</string>
+    <string name="creating_conference">Создание группового чата...</string>
     <string name="barcode_does_not_contain_fingerprints_for_this_conversation">QR код не содержит отпечатки для этого разговора.</string>
     <string name="use_camera_icon_to_scan_barcode">Используйте камеру для сканирования QR кода контактов</string>
     <string name="share_as_barcode">Поделиться QR кодом</string>
     <string name="invalid_barcode">Неверный QR-код</string>
     <string name="verify_with_qr_code">подтвердить QR кодом</string>
+    <string name="pref_omemo_setting_summary_always">OMEMO будет всегда использоваться для личных бесед и приватных групповых чатов.</string>
+    <string name="group_chat_avatar">Аватар группового чата</string>
+    <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары</string>
+    <string name="only_the_owner_can_change_group_chat_avatar">Только владелец может сменить аватар</string>
+    <string name="group_chat_name">Название</string>
+    <string name="create_dialog_group_chat_name">Название группового чата</string>
+    <string name="notification_group_messages">Сообщения</string>
+    <string name="action_group_details">Сведения о групповом чате</string>
     <string name="view_media">Просмотреть медиа</string>
     <string name="media_browser">Медиа браузер</string>
     <string name="account_status_stream_opening_error">Ошибка открытия потока</string>
@@ -376,4 +390,8 @@
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="cancelled">отменён</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
+    <string name="group_chat_will_make_your_jabber_id_public">Этот канал будет создан с помощью вашего публичного Jabber ID</string>
+    <string name="autojoin_group_chat">Автоматически присоединяться к групповым чатам</string>
+    <string name="create_private_group_chat">Создание приватного группового чата</string>
+    <string name="conference_options">Настройки приватности группового чата</string>
 </resources>
