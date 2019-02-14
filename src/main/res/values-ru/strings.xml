@@ -375,6 +375,12 @@
     <string name="dialog_manage_certs_title">Удалить сертификаты</string>
     <string name="dialog_manage_certs_positivebutton">Удалить выделение</string>
     <string name="dialog_manage_certs_negativebutton">Отмена</string>
+    <plurals name="toast_delete_certificates">
+        <item quantity="one">%d сертификат удален</item>
+        <item quantity="few">%d сертификата удалено</item>
+        <item quantity="many">%d сертификатов удалено</item>
+        <item quantity="other">%d сертификатов удалено</item>
+    </plurals>
     <string name="pref_quick_action">Быстрое действие</string>
     <string name="none">Нет</string>
     <string name="search_contacts">Поиск контактов</string>
@@ -406,6 +412,12 @@
     <string name="account_settings_port">Порт</string>
     <string name="hostname_or_onion">Сервер или .onion-адрес</string>
     <string name="not_valid_hostname">Некорректное имя хоста</string>
+    <plurals name="x_messages">
+        <item quantity="one">%d сообщение</item>
+        <item quantity="few">%d сообщения</item>
+        <item quantity="many">%d сообщений</item>
+        <item quantity="other">%d сообщений</item>
+    </plurals>
     <string name="load_more_messages">Загрузить больше сообщений</string>
     <string name="sync_with_contacts">Синхронизировать контакты</string>
     <string name="notify_on_all_messages">Уведомлять о всех сообщениях</string>
@@ -485,6 +497,42 @@
     <string name="show_inactive_devices">Показать неактивных</string>
     <string name="hide_inactive_devices">Скрыть неактивных</string>
     <string name="transcoding_video">Сжимание видео</string>
+    <plurals name="seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d секунд</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+        <item quantity="other">%d минут</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d час</item>
+        <item quantity="many">%d час</item>
+        <item quantity="other">%d часов</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d неделя</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+        <item quantity="other">%d недель</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+        <item quantity="other">%d месяцев</item>
+    </plurals>
     <string name="today">Сегодня</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
     <string name="contact_blocked_past_tense">Контакт заблокирован.</string>
