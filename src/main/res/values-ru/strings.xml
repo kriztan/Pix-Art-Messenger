@@ -15,8 +15,13 @@
     <string name="action_unblock_contact">Разблокировать контакт</string>
     <string name="action_block_domain">Заблокировать домен</string>
     <string name="action_unblock_domain">Разблокировать домен</string>
+    <string name="title_activity_manage_accounts">Управление аккаунтами</string>
     <string name="title_activity_settings">Настройки</string>
+    <string name="conference_details">Информация о конференции</string>
+    <string name="title_activity_contact_details">Сведения о контакте</string>
+    <string name="title_activity_start_conversation">Начать беседу</string>
     <string name="title_activity_choose_contact">Выбрать контакт</string>
+    <string name="title_activity_choose_contacts">Выберите контакты</string>
     <string name="title_activity_block_list">Черный список</string>
     <string name="just_now">только что</string>
     <string name="minute_ago">1 мин. назад</string>
