@@ -512,6 +512,10 @@
     <string name="destroy_room_succeed">Групповой чат успешно закрыт</string>
     <string name="destroy_room_failed">Групповой чат не может быть закрыт</string>
     <string name="huawei_protected_apps">Защищенные приложения</string>
+    <string name="mtm_cert_details">Сведения о сертификате:</string>
+    <string name="qr_code_scanner_needs_access_to_camera">Сканеру QR-кодов нужен доступ к камере</string>
+    <string name="pref_scroll_to_bottom">Прокрутить вниз</string>
+    <string name="disable_encryption">Отключить шифрование</string>
     <string name="pref_omemo_setting">OMEMO шифрование</string>
     <string name="pref_omemo_setting_summary_always">OMEMO всегда будет использоваться для личных бесед и приватных групповых чатов.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO будет по умолчанию использоваться для новых бесед.</string>
@@ -527,7 +531,9 @@
     <string name="large">Большой</string>
     <string name="search_messages">Поиск сообщений</string>
     <string name="gif">GIF</string>
+    <string name="view_conversation">Просмотр беседы</string>
     <string name="web_address">веб-адрес</string>
+    <string name="jabber_id_copied_to_clipboard">Скопировать JID в буфер обмена</string>
     <string name="copy_jabber_id">Копировать JID</string>
     <string name="copy_link">Копировать веб-адрес</string>
     <string name="show_privacy">Политика конфиденциальности</string>
@@ -535,6 +541,7 @@
     <string name="group_chat_avatar">Аватар группового чата</string>
     <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Только владелец может сменить аватар</string>
+    <string name="contact_name">Имя контакта</string>
     <string name="nickname">Наименование для этого группового чата</string>
     <string name="group_chat_name">Название</string>
     <string name="create_dialog_group_chat_name">Название группового чата</string>
@@ -543,6 +550,7 @@
     <string name="no_location_permission">Pix-Art Messenger нужен доступ к сервисам геолокации</string>
     <string name="notification_group_messages">Сообщения</string>
     <string name="messages_channel_name">Сообщения</string>
+    <string name="silent_messages_channel_name">Бесшумные сообщения</string>
     <string name="pref_more_notification_settings">Настройки уведомлений</string>
     <string name="pref_more_notification_settings_summary">Важность, звук, вибрация</string>
     <string name="video_compression_channel_name">Сжатие видео</string>
@@ -556,6 +564,8 @@
     <string name="cancelled">отменён</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
     <string name="delete_message_dialog">Удалить сообщение</string>
+    <string name="pref_screen_security">Запретить скриншоты</string>
+    <string name="omemo_decryption_failed">Ошибка расшифровки OMEMO-сообщения.</string>
     <string name="install_orbot">Установить Orbot</string>
     <string name="start_orbot">Запуск Orbot</string>
     <string name="group_chat_will_make_your_jabber_id_public">Этот канал будет создан с помощью вашего публичного Jabber ID</string>
@@ -584,17 +594,25 @@
     <string name="create_public_channel">Создать к публичный канал</string>
     <string name="create_dialog_channel_name">Название канала</string>
     <string name="xmpp_address">XMPP адрес</string>
+    <string name="creating_channel">Создание публичного канала...</string>
     <string name="back">Назад</string>
     <string name="conference_options">Настройки приватности группового чата</string>
     <string name="allow_participants_to_edit_subject">Разрешить всем изменять эту тему</string>
+    <string name="allow_participants_to_invite_others">Позволить всем приглашать других</string>
     <string name="anyone_can_edit_subject">Все могут изменять эту тему.</string>
     <string name="owners_can_edit_subject">Владельцы могут изменять эту тему.</string>
     <string name="admins_can_edit_subject">Админы могут изменять эту тему.</string>
+    <string name="owners_can_invite_others">Владельцы могут приглашать других.</string>
+    <string name="anyone_can_invite_others">Все могут приглашать других.</string>
+    <string name="jabber_ids_are_visible_to_admins">Jabber ID видим для админов.</string>
+    <string name="jabber_ids_are_visible_to_anyone">Jabber ID видим для всех.</string>
     <string name="no_users_hint_group_chat">В этой группе нет участников.</string>
     <string name="remove_from_channel">Удалить из канала</string>
     <string name="ban_from_channel">Заблокировать на канале</string>
+    <string name="manage_permission">Управление привилегиями</string>
     <string name="destroy_channel">Закрыть канал</string>
     <string name="destroy_channel_succeed">Канал успешно закрыт</string>
     <string name="destroy_channel_failed">Канал не может быть закрыт</string>
     <string name="action_end_conversation_channel">Покинуть канал</string>
+    <string name="autojoin_channel">Автоматически присоединяться к каналу</string>
 </resources>
