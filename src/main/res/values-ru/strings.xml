@@ -384,7 +384,6 @@
     <string name="pref_quick_action">Быстрое действие</string>
     <string name="none">Нет</string>
     <string name="search_contacts">Поиск контактов</string>
-    <string name="search_groups">Поиск групповых чатов</string>
     <string name="choose_quick_action">Выберите быстрое действие</string>
     <string name="user_has_left_conference">%1$s вышел из группы!</string>
     <string name="username">Имя пользователя</string>
