@@ -416,7 +416,6 @@
     <string name="none">Ninguna</string>
     <string name="recently_used">Usada más recientemente</string>
     <string name="search_contacts">Buscar contactos</string>
-    <string name="search_groups">Buscar grupos</string>
     <string name="choose_quick_action">Elegir acción rápida</string>
     <string name="send_private_message">Enviar mensaje privado</string>
     <string name="user_has_left_conference">¡%1$s ha dejado el grupo!</string>
@@ -852,7 +851,6 @@
     <string name="please_enter_xmpp_address">Por favor proporcione una dirección XMPP</string>
     <string name="this_is_an_xmpp_address">Esto es una dirección XMPP. Por favor proporcione un nombre.</string>
     <string name="creating_channel">Creando canal público…</string>
-    <string name="channel_already_exists">Este canal ya existe</string>
     <string name="joined_an_existing_channel">Te has unido a un canal existente</string>
     <string name="unable_to_set_channel_configuration">Imposible establecer configuración de canal</string>
     <string name="back">Atrás</string>
