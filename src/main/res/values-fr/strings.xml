@@ -407,7 +407,6 @@
     <string name="none">Aucune</string>
     <string name="recently_used">Dernière utilisée</string>
     <string name="search_contacts">Rechercher des contacts</string>
-    <string name="search_groups">Rechercher des conférences</string>
     <string name="choose_quick_action">Sélectionner l’action rapide</string>
     <string name="send_private_message">Envoyer un message privé</string>
     <string name="user_has_left_conference">%1$s a quitté la discussion !</string>
@@ -818,7 +817,6 @@
     <string name="please_enter_xmpp_address">Veuillez fournir une adresse XMPP</string>
     <string name="this_is_an_xmpp_address">Ceci est une adresse XMPP. Veuillez fournir un nom.</string>
     <string name="creating_channel">Canal public en cours de création …</string>
-    <string name="channel_already_exists">Ce canal existe déjà</string>
     <string name="joined_an_existing_channel">Vous venez de rejoindre un canal existant</string>
     <string name="back">Retour</string>
     <string name="conference_options">Configuration du groupe de discussion privé</string>
