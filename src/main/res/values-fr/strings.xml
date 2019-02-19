@@ -841,4 +841,7 @@
     <string name="action_end_conversation_channel">Quitter le canal</string>
     <string name="autojoin_channel">Rejoindre automatiquement ce canal</string>
     <string name="no_attachments">Il n\'y a pas de pièces jointes</string>
+    <string name="notification_backup_created_title">Archivé avec succès</string>
+    <string name="notification_backup_failed_title">Échec de la sauvegarde</string>
+    <string name="search_participants">Chercher des participants</string>
 </resources>
