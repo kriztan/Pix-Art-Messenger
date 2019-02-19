@@ -851,6 +851,7 @@
     <string name="please_enter_xmpp_address">Por favor proporcione una dirección XMPP</string>
     <string name="this_is_an_xmpp_address">Esto es una dirección XMPP. Por favor proporcione un nombre.</string>
     <string name="creating_channel">Creando canal público…</string>
+    <string name="channel_already_exists">Este canal ya existe</string>
     <string name="joined_an_existing_channel">Te has unido a un canal existente</string>
     <string name="unable_to_set_channel_configuration">Imposible establecer configuración de canal</string>
     <string name="back">Atrás</string>
@@ -879,4 +880,7 @@
     <string name="action_end_conversation_channel">Abandonar canal</string>
     <string name="autojoin_channel">Unirse automáticamente a este canal</string>
     <string name="no_attachments">No hay adjuntos</string>
+    <string name="notification_backup_created_title">Copia de seguridad realizada con éxito</string>
+    <string name="notification_backup_created_subtitle">Los archivos de copia de seguridad fueron almacenados en %s</string>
+    <string name="notification_backup_failed_title">La copia de seguridad ha fallado</string>
 </resources>
