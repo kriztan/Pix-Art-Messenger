@@ -416,6 +416,7 @@
     <string name="none">Nessuno</string>
     <string name="recently_used">Usati recentemente</string>
     <string name="search_contacts">Cerca contatti</string>
+    <string name="search_bookmarks">Cerca conversazioni multiutente</string>
     <string name="choose_quick_action">Scegli azione rapida</string>
     <string name="send_private_message">Invia messaggio privato</string>
     <string name="user_has_left_conference">%1$s ha lasciato la conversazione di gruppo!</string>
@@ -851,6 +852,7 @@
     <string name="please_enter_xmpp_address">Per favore inserisci un indirizzo XMPP</string>
     <string name="this_is_an_xmpp_address">Questo è un indirizzo XMPP. Per favore inserisci un nome.</string>
     <string name="creating_channel">Creando un canale pubblico…</string>
+    <string name="channel_already_exists">Questo canale esiste già</string>
     <string name="joined_an_existing_channel">Ti sei unito ad un canale esistente</string>
     <string name="unable_to_set_channel_configuration">Impossibile impostare la configurazione del canale</string>
     <string name="back">Indietro</string>
@@ -879,4 +881,9 @@
     <string name="action_end_conversation_channel">Lascia il canale</string>
     <string name="autojoin_channel">Unisciti automaticamente a questo canale</string>
     <string name="no_attachments">Non ci sono allegati</string>
+    <string name="notification_backup_created_title">Backup riuscito</string>
+    <string name="notification_backup_created_subtitle">I file di backup sono stati salvati in %s</string>
+    <string name="notification_backup_failed_title">Backup non riuscito</string>
+    <string name="notification_backup_failed_subtitle">I file di backup non possono essere salvati in %s</string>
+    <string name="search_participants">Cerca partecipanti</string>
 </resources>
