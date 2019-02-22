@@ -357,6 +357,8 @@
     <string name="outcast">Banni</string>
     <string name="member">Membre</string>
     <string name="advanced_mode">Mode expert</string>
+    <string name="grant_membership">Accorder les privilèges de membre</string>
+    <string name="remove_membership">Révoquer les privilèges de membre</string>
     <string name="grant_admin_privileges">Accorder des privilèges d’administrateur</string>
     <string name="remove_admin_privileges">Révoquer les privilèges d’administrateur</string>
     <string name="remove_from_room">Retirer de la conférence</string>
@@ -407,6 +409,7 @@
     <string name="none">Aucune</string>
     <string name="recently_used">Dernière utilisée</string>
     <string name="search_contacts">Rechercher des contacts</string>
+    <string name="search_bookmarks">Chercher des conférences</string>
     <string name="choose_quick_action">Sélectionner l’action rapide</string>
     <string name="send_private_message">Envoyer un message privé</string>
     <string name="user_has_left_conference">%1$s a quitté la discussion !</string>
@@ -531,7 +534,7 @@
     <string name="inviteUser_Subject">vous a invité via</string>
     <string name="InviteText">Bonjour,\n\nl’utilisateur·rice %s vous a invité sur Pix-Art Messenger. Si vous utilisez Android, essayez-le en cliquant sur le lien suivant pour continuer …</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur</string>
-    <string name="pref_broadcast_last_activity_summary">Informer tous vos contacts lorsque vous utitlisez Pix-Art Messenger</string>
+    <string name="pref_broadcast_last_activity_summary">Informer tous vos contacts lorsque vous utilisez Pix-Art Messenger</string>
     <string name="invite_user">Inviter à Pix-Art Messenger</string>
     <string name="unable_to_connect_to_keychain">Connection à OpenKeychain impossible</string>
     <string name="this_device_is_no_longer_in_use">Cet appareil n\'est plus utilisé</string>
@@ -844,4 +847,7 @@
     <string name="notification_backup_created_title">Archivé avec succès</string>
     <string name="notification_backup_failed_title">Échec de la sauvegarde</string>
     <string name="search_participants">Chercher des participants</string>
+    <string name="file_too_large">Fichier trop volumineux</string>
+    <string name="mgmt_account_password_forgotten">Mot de passe oublié</string>
+    <string name="password_forgotten_title">Mot de passe oublié</string>
 </resources>
