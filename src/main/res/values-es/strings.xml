@@ -886,4 +886,7 @@
     <string name="notification_backup_failed_title">La copia de seguridad ha fallado</string>
     <string name="notification_backup_failed_subtitle">No se han podido guardar los archivos de copia de seguridad en %s</string>
     <string name="search_participants">Buscar participantes</string>
+    <string name="mgmt_account_password_forgotten">Contraseña olvidada</string>
+    <string name="password_forgotten_title">Contraseña olvidada</string>
+    <string name="password_forgotten_text">¿Has olvidado la contraseña de tu cuenta? Ahora intentaremos abrir la web de soporte de tu proveedor.</string>
 </resources>
