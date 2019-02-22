@@ -886,4 +886,8 @@
     <string name="notification_backup_failed_title">Backup non riuscito</string>
     <string name="notification_backup_failed_subtitle">I file di backup non possono essere salvati in %s</string>
     <string name="search_participants">Cerca partecipanti</string>
+    <string name="file_too_large">File troppo grande</string>
+    <string name="mgmt_account_password_forgotten">Password dimenticata</string>
+    <string name="password_forgotten_title">Password dimenticata</string>
+    <string name="password_forgotten_text">Hai dimenticato la password del tuo account? Ora proveremo ad aprire la pagina di supporto del sito del tuo fornitore.</string>
 </resources>
