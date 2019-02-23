@@ -319,10 +319,10 @@ public class ExportBackupService extends Service {
                 final String uuid = account.getUuid();
                 accountExport(db, uuid, writer);
                 simpleExport(db, Conversation.TABLENAME, Conversation.ACCOUNT, uuid, writer);
-                messageExport(db, uuid, writer, progress);
                 for (String table : Arrays.asList(SQLiteAxolotlStore.PREKEY_TABLENAME, SQLiteAxolotlStore.SIGNED_PREKEY_TABLENAME, SQLiteAxolotlStore.SESSION_TABLENAME, SQLiteAxolotlStore.IDENTITIES_TABLENAME)) {
                     simpleExport(db, table, SQLiteAxolotlStore.ACCOUNT, uuid, writer);
                 }
+                messageExport(db, uuid, writer, progress);
                 writer.flush();
                 writer.close();
                 Log.d(Config.LOGTAG, "written backup to " + file.getAbsoluteFile());
