@@ -365,6 +365,8 @@
     <string name="could_not_change_affiliation">Impossible de changer l’affiliation de %s</string>
     <string name="ban_from_conference">Bannir de la conférence</string>
     <string name="ban_now">Bannir maintenant</string>
+    <string name="non_anonymous">Rendre l’identifiant Jabber visible à tout le monde</string>
+    <string name="moderated">Rendre le canal modéré</string>
     <string name="you_are_not_participating">Vous ne participez pas</string>
     <string name="modified_conference_options">Les options de la conférence ont été modifiées !</string>
     <string name="could_not_modify_conference_options">Impossible de modifier les options de la conférence</string>
@@ -678,7 +680,11 @@
     <string name="pref_use_bundled_emoji_summary">Utilise la libraire d’émojis intégrée au lieu de ceux de votre appareil. Les modifications seront prises en considération à la réouverture de l’application.</string>
     <string name="invalid_muc_nick">Psœudonyme invalide</string>
     <string name="title_activity_share_via_account">Partager via le compte</string>
+    <string name="destroy_room">Supprimer complètement la conférence</string>
     <string name="conference_unknown_error">Vous ne faîtes plus partie de cette conférence</string>
+    <string name="destroy_room_dialog">Désirez-vous supprimer complètement la conférence %s ? Ceci supprimera la conférence pour de bon.</string>
+    <string name="destroy_room_succeed">La conférence a été supprimée avec succès</string>
+    <string name="destroy_room_failed">Impossible de supprimer la conférence</string>
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
@@ -739,6 +745,8 @@
     <string name="pref_start_search_summary">Ouvre le clavier et place le curseur sur le champs de recherche dans la fenêtre « Démarrer une conversation »</string>
     <string name="paste_as_quote">Coller comme une citation</string>
     <string name="group_chat_avatar">Avatar de la conférence</string>
+    <string name="host_does_not_support_group_chat_avatars">L’hôte ne prend pas en charge les avatars</string>
+    <string name="only_the_owner_can_change_group_chat_avatar">Seul le propriétaire peut changer l’avatar</string>
     <string name="contact_name">Nom du contact</string>
     <string name="nickname">Psœudonyme pour cette conférence</string>
     <string name="group_chat_name">Nom</string>
@@ -796,6 +804,7 @@
     <string name="autojoin_group_chat">Rejoindre automatiquement ce groupe de discussion</string>
     <string name="pref_show_links_inside">Afficher les aperçus des liens Web au sein de la discussion</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
+    <string name="pref_play_gif_inside_summary">Animer les images GIF publiées directement dans la fenêtre de discussion.</string>
     <string name="open_with">Ouvrir avec …</string>
     <string name="server_info_adhoc_invite">XEP-0050 : Commandes ad-hoc : invitation utilisateur</string>
     <string name="choose_account">Sélectionnez un compte</string>
@@ -820,6 +829,7 @@
     <string name="please_enter_xmpp_address">Veuillez fournir une adresse XMPP</string>
     <string name="this_is_an_xmpp_address">Ceci est une adresse XMPP. Veuillez fournir un nom.</string>
     <string name="creating_channel">Canal public en cours de création …</string>
+    <string name="channel_already_exists">Ce canal existe déjà</string>
     <string name="joined_an_existing_channel">Vous venez de rejoindre un canal existant</string>
     <string name="back">Retour</string>
     <string name="conference_options">Configuration du groupe de discussion privé</string>
@@ -840,14 +850,20 @@
     <string name="remove_from_channel">Retirer du canal</string>
     <string name="ban_from_channel">Bannir du canal</string>
     <string name="manage_permission">Gestion des privilèges</string>
+    <string name="destroy_channel">Supprimer le canal</string>
+    <string name="destroy_channel_dialog">Désirez-vous supprimer complètement le canal %s ? Ceci supprimera le canal pour de bon.</string>
     <string name="destroy_channel_succeed">Canal supprimé avec succès</string>
+    <string name="destroy_channel_failed">Impossible de supprimer le canal</string>
     <string name="action_end_conversation_channel">Quitter le canal</string>
     <string name="autojoin_channel">Rejoindre automatiquement ce canal</string>
     <string name="no_attachments">Il n\'y a pas de pièces jointes</string>
     <string name="notification_backup_created_title">Archivé avec succès</string>
+    <string name="notification_backup_created_subtitle">Les fichiers de sauvegarde ont été stockés dans %s</string>
     <string name="notification_backup_failed_title">Échec de la sauvegarde</string>
+    <string name="notification_backup_failed_subtitle">Les fichiers de sauvegarde ne peuvent être stockés dans %s</string>
     <string name="search_participants">Chercher des participants</string>
     <string name="file_too_large">Fichier trop volumineux</string>
     <string name="mgmt_account_password_forgotten">Mot de passe oublié</string>
     <string name="password_forgotten_title">Mot de passe oublié</string>
+    <string name="password_forgotten_text">Vous avez oublié le mot de passe de votre compte ? Nous allons maintenant essayer d\'ouvrir le site Web d\'assistance de votre fournisseur.</string>
 </resources>
