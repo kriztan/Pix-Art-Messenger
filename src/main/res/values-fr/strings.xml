@@ -110,6 +110,7 @@
     <string name="pref_sound">Sonnerie</string>
     <string name="pref_sound_summary">Jouer un son lors de la réception d’un nouveau message</string>
     <string name="pref_send_crash">Envoyer les rapports de plantage</string>
+    <string name="pref_send_crash_summary">En envoyant des traces de pile, vous contribuez au développement continu de Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Confirmation de lecture</string>
     <string name="pref_confirm_messages_summary">Informer vos contacts quand vous avez reçu et lu leurs messages</string>
     <string name="pref_ui_options">Interface</string>
@@ -538,9 +539,11 @@
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur</string>
     <string name="pref_broadcast_last_activity_summary">Informer tous vos contacts lorsque vous utilisez Pix-Art Messenger</string>
     <string name="invite_user">Inviter à Pix-Art Messenger</string>
+    <string name="request_permissions_message_again">Vous avez refusé tout ou partie des permissions requises pour Pix-Art Messenger. Souhaitez-vous passer aux paramètres et autoriser ces permissions ? Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
     <string name="unable_to_connect_to_keychain">Connection à OpenKeychain impossible</string>
     <string name="this_device_is_no_longer_in_use">Cet appareil n\'est plus utilisé</string>
     <string name="please_wait">Veuillez patienter …</string>
+    <string name="pref_export_plain_text_logs_summary">Active l\'exportation des journaux de discussion sous forme de fichiers texte lisibles par l\'utilisateur</string>
     <string name="pref_export_plain_text_logs">Exporter les journaux des conversations dans un format lisible</string>
     <string name="payment_required">Paiement requis</string>
     <string name="missing_internet_permission">Permission Internet manquante</string>
@@ -665,6 +668,7 @@
     <string name="error_no_keys_to_trust_presence">Il n’y a aucune clé utilisable disponible pour ce contact.\nAssurez-vous d’avoir un abonnement de présence mutuelle.</string>
     <string name="mark_as_read">Marquer comme lu</string>
     <string name="server_info_partial">partiel</string>
+    <string name="pref_show_foreground_service_summary">Certains appareils Android fermeront certaines applications après un certain temps et vous ne pourrez plus recevoir de nouveaux messages. Si vous rencontrez de tels problèmes, essayez d\'activer le service en avant-plan. Mais gardez à l\'esprit que vous aurez une notification permanente avec cette option cochée.</string>
     <string name="pref_show_foreground_service">Utiliser le service en premier plan</string>
     <string name="update_service">Service de mise à jour de Pix-Art Messenger</string>
     <string name="install_update">Installer la mise à jour ?</string>
@@ -687,6 +691,7 @@
     <string name="destroy_room_failed">Impossible de supprimer la conférence</string>
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
+    <string name="huawei_protected_apps_summary">Pour continuer à recevoir des notifications, même lorsque l\'écran est éteint, vous devez ajouter Pix-Art Messenger à la liste des applications protégées.</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
     <string name="pref_enable_multi_accounts_summary">Désirez-vous activer l\'utilisation du multi-comptes ?</string>
     <string name="mtm_accept_cert">Accepter ce certificat inconnu ?</string>
@@ -709,11 +714,13 @@
     <string name="error_trustkey_device_list">Impossible d’obtenir la liste des appareils</string>
     <string name="error_trustkey_bundle">Impossible d’obtenir la liste des appareils</string>
     <string name="error_trustkey_hint_mutual">Astuce : Dans certains cas ceci peut être résolu en se rajoutant mutuellement dans les listes de contacts.</string>
+    <string name="disable_encryption_message">Êtes-vous sûr de vouloir désactiver le chiffrement OMEMO pour cette conversation ?\nCela permettra à l\'administrateur de votre serveur de lire vos messages, mais ce sera peut-être le seul moyen de communiquer avec des personnes utilisant des clients obsolètes.</string>
     <string name="disable_now">Désactiver maintenant</string>
     <string name="draft">Brouillon :</string>
     <string name="pref_omemo_setting">Chiffrement OMEMO</string>
     <string name="pref_omemo_setting_summary_always">OMEMO sera toujours utilisé dans les discussions privées à deux.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO sera utilisé par défaut dans les nouvelles discussions.</string>
+    <string name="pref_omemo_setting_summary_default_off">OMEMO devra être activé explicitement pour les nouvelles conversations.</string>
     <string name="default_on">Activé par défaut</string>
     <string name="default_off">Désactivé par défaut</string>
     <string name="pref_theme_light">Thème clair</string>
@@ -763,9 +770,11 @@
     <string name="pref_quick_share_attachment_choice">Choix des fichiers attachés</string>
     <string name="unable_to_save_recording">Impossible de sauvegarder l’enregistrement</string>
     <string name="foreground_service_channel_name">Service au premier plan</string>
+    <string name="foreground_service_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification permanente indiquant que Pix-Art Messenger est en cours d\'exécution.</string>
     <string name="error_channel_name">Problèmes de connexion</string>
     <string name="notification_group_messages">Messages</string>
     <string name="messages_channel_name">Messages</string>
+    <string name="silent_messages_channel_description">Cette catégorie de notification est utilisée pour afficher les notifications qui ne doivent pas déclencher de son. Par exemple, lorsque vous êtes actif sur un autre appareil (délai de grâce).</string>
     <string name="pref_more_notification_settings">Paramètres des notifications</string>
     <string name="pref_more_notification_settings_summary">Importance, Sonnerie, Vibreur</string>
     <string name="video_compression_channel_name">Compression vidéo</string>
@@ -803,6 +812,7 @@
     <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
     <string name="autojoin_group_chat">Rejoindre automatiquement ce groupe de discussion</string>
     <string name="pref_show_links_inside">Afficher les aperçus des liens Web au sein de la discussion</string>
+    <string name="pref_show_links_inside_summary">Afficher les aperçus des liens Web directement dans la fenêtre de discussion.</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="pref_play_gif_inside_summary">Animer les images GIF publiées directement dans la fenêtre de discussion.</string>
     <string name="open_with">Ouvrir avec …</string>
