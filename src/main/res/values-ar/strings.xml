@@ -15,12 +15,16 @@
     <string name="action_unblock_contact">إلغاء حجب المُراسِل</string>
     <string name="action_block_domain">حجب اسم النطاق</string>
     <string name="action_unblock_domain">إلغاء حجب اسم النطاق</string>
+    <string name="title_activity_manage_accounts">إدارة الحسابات</string>
     <string name="title_activity_settings">الإعدادات</string>
+    <string name="conference_details">تفاصيل فريق المحادثة</string>
+    <string name="title_activity_contact_details">بيانات المُراسِل</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
     <string name="title_activity_block_list">قائمة الحظر</string>
     <string name="just_now">الآن</string>
     <string name="minute_ago">منذ دقيقة</string>
     <string name="minutes_ago">منذ %d دقيقة</string>
+    <string name="unread_conversations">محادثات غير مقروءة</string>
     <string name="sending">الإرسال جارٍ…</string>
     <string name="message_decrypting">جارٍ فك تشفير الرسالة. الرجاء الإنتظار…</string>
     <string name="pgp_message">OpenPGP رسالة مشفرة</string>
