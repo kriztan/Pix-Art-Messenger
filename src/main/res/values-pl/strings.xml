@@ -15,12 +15,16 @@
     <string name="action_unblock_contact">Odblokuj kontakt</string>
     <string name="action_block_domain">Zablokuj domenę</string>
     <string name="action_unblock_domain">Odblokuj domenę</string>
+    <string name="title_activity_manage_accounts">Zarządzaj kontami</string>
     <string name="title_activity_settings">Ustawienia</string>
+    <string name="conference_details">Szczegóły czatu grupowego</string>
+    <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
     <string name="title_activity_choose_contact">Wybierz kontakt</string>
     <string name="title_activity_block_list">Czarna lista</string>
     <string name="just_now">przed chwilą</string>
     <string name="minute_ago">minutę temu</string>
     <string name="minutes_ago">%d minut temu</string>
+    <string name="unread_conversations">nieprzeczytane konwersacje</string>
     <string name="sending">wysyłanie...</string>
     <string name="message_decrypting">Odszyfrowywanie wiadomości. To zajmie tylko chwilę...</string>
     <string name="pgp_message">Wiadomość zaszyfrowana OpenPGP</string>
@@ -502,6 +506,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
     <string name="choose_participants">Wybierz uczestnika</string>
+    <string name="creating_conference">Utwórz czat grupowy…</string>
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
