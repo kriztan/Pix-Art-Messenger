@@ -527,6 +527,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
     <string name="choose_participants">Wybierz uczestnika</string>
     <string name="creating_conference">Utwórz czat grupowy…</string>
+    <string name="import_text">Znaleziono kopie zapasowa, którą można zaimportować. \nTwój messenger zostanie uruchomiony ponownie podczas procesu tworzenia kopii zapasowej. Czy kopia zapasowa ma zostać zaimportowana? </string>
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
