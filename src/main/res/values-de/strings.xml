@@ -809,7 +809,9 @@
     <string name="enter_your_name">Gib deinen Namen ein</string>
     <string name="enter_your_name_instructions">Bitte gib deinen Nickname ein, der für deine Kontakte sichtbar sein wird.</string>
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
+    <string name="autojoin_group_chat">Diesem Gruppenchat automatisch beitreten</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
+    <string name="pref_play_gif_inside_summary">GIF Dateien direkt im Chat abspielen.</string>
     <string name="open_with">Öffnen mit…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: Benutzer einladen</string>
     <string name="choose_account">Profil wählen</string>
@@ -837,7 +839,13 @@
     <string name="destroy_channel_failed">Kanal konnte nicht aufgelöst werden</string>
     <string name="action_end_conversation_channel">Kanal verlassen</string>
     <string name="autojoin_channel">Diesem Kanal automatisch beitreten</string>
+    <string name="no_attachments">Keine Anhänge verfügbar</string>
+    <string name="notification_backup_created_title">Sicherung erfolgreich</string>
+    <string name="notification_backup_created_subtitle">Sicherungsdateien wurden in %s gespeichert</string>
+    <string name="notification_backup_failed_title">Sicherung fehlgeschlagen</string>
+    <string name="notification_backup_failed_subtitle">Sicherungsdateien konnte in %s nicht gespeichert werden</string>
     <string name="file_too_large">Datei zu groß</string>
     <string name="mgmt_account_password_forgotten">Passwort vergessen</string>
     <string name="password_forgotten_title">Passwort vergessen</string>
+    <string name="password_forgotten_text">Haben Sie Ihr Passwort vergessen? Wir versuchen, die Support-Website Ihres Providers zu öffnen.</string>
 </resources>
