@@ -259,6 +259,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_indicate_received">Raporty dostarczenia</string>
     <string name="pref_use_indicate_received_summary">Jeżeli to możliwe, oznaczaj dostarczone wiadomości zielonym haczykiem</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Koloruj przycisk wysyłania w zależności od statusu kontaktu</string>
+    <string name="pref_use_colored_names_to_indicate_status_summary">Koloruj pseudonim aby wskazać statusu kontaktu</string>
     <string name="pref_expert_options_other">Inne opcje</string>
     <string name="toast_message_otr_fingerprint">Odcisk klucza OTR został skopiowany do schowka</string>
     <string name="toast_message_omemo_fingerprint">Odcisk klucza OMEMO został skopiowany do schowka!</string>
@@ -469,6 +470,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="video_low">niski (144p)</string>
     <string name="video_mid">średnie (360p)</string>
     <string name="video_high">wysokie (720p)</string>
+    <string name="video_original">oryginał (nieskompresowane)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
@@ -488,6 +490,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="mgmt_account_reconnect">Połącz ponownie</string>
     <string name="your_full_jid_will_be">Twój pełen Jabber ID będzie następujący: %s</string>
     <string name="create_account">Utwórz Konto</string>
+    <string name="welcome_advanced_mode">Tryb zaawansowany</string>
     <string name="pick_your_username">Wybierz nazwę użytkownika</string>
     <string name="status_message">Status</string>
     <string name="presence_chat">Chętny do rozmowy</string>
@@ -624,6 +627,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="image_original">oryginał (nieskompresowany)</string>
     <string name="last_seen_just_away">ostatnio</string>
     <string name="send_message">Wyślij wiadomość</string>
+    <string name="send_failed_resend">dostarczenie nie powiodło się, ponowne wysyłanie…</string>
     <string name="pref_show_connection_options_summary">Pokaż nazwę hosta i ustawienia portu przy dodawaniu konta</string>
     <string name="pref_show_connection_options">Rozszerzone ustawienia połączenia</string>
     <string name="retry_decryption">Ponownie spróbuj odszyfrować</string>
@@ -651,8 +655,12 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
     <string name="pref_warn_unencrypted_chat_summary">Jeśli dostępne jest szyfrowanie wiadomości, powinieneś go użyć. Jeśli nie używasz szyfrowania, wyświetl komunikat ostrzegawczy na czacie.</string>
     <string name="pref_use_bundled_emoji">Użyj zintegrowanych emoji</string>
+    <string name="invalid_muc_nick">Nieprawidłowy pseudonim</string>
     <string name="title_activity_share_via_account">Udostępnij przez konto</string>
+    <string name="destroy_room">Usuń czat grupowy</string>
     <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
+    <string name="destroy_room_dialog">Czy chcesz usunąć czat grupowy %s? Spowoduje to niezmienne usunięcie tego czatu grupowego.</string>
+    <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
     <string name="mtm_accept_cert">Zaakceptować nieznany certyfikat?</string>
@@ -682,6 +690,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="show_termsofuse">Warunki użytkowania</string>
+    <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
     <string name="contact_name">Nazwa kontaktu</string>
     <string name="nickname">Pseudonim czatu grupowego</string>
@@ -692,6 +702,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
+    <string name="pref_quick_share_attachment_choice">Wybór załącznika</string>
     <string name="error_channel_name">Problem z połączeniem</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
@@ -716,10 +727,15 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
     <string name="open_with">Otwórz za pomocą…</string>
     <string name="choose_account">Wybierz konto</string>
+    <string name="restore">Przywróć</string>
+    <string name="message_deleted">Wiadomość została usunięta</string>
     <string name="channel_details">Szczegóły kanału</string>
     <string name="join_public_channel">Dołącz do kanału publicznego</string>
     <string name="create_public_channel">Utwórz kanał publiczny</string>
     <string name="create_dialog_channel_name">Nazwa kanału</string>
     <string name="channel_already_exists">Ten kanał już istnieje</string>
+    <string name="back">Wstecz</string>
+    <string name="remove_from_channel">Usuń z kanału</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
+    <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
 </resources>
