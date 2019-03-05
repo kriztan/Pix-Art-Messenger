@@ -820,5 +820,12 @@
     <string name="view_users">Teilnehmer anzeigen</string>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
+    <string name="join_public_channel">Öffentlichem Kanal beitreten</string>
+    <string name="create_private_group_chat">Privaten Gruppenchat erstellen</string>
+    <string name="create_public_channel">Öffentliches Kanal erstellen</string>
+    <string name="create_dialog_channel_name">Kanalname</string>
+    <string name="xmpp_address">XMPP Adresse</string>
+    <string name="creating_channel">Öffentliches Kanal erstellen…</string>
+    <string name="channel_already_exists">Dieser Kanal existiert bereits</string>
     <string name="back">Zurück</string>
 </resources>
