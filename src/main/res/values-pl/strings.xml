@@ -601,6 +601,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
         <item quantity="other">%d miesięcy</item>
     </plurals>
     <string name="today">Dzisiaj</string>
+    <string name="pref_use_max_brightness">Maksymalna jasność</string>
     <string name="block_jabber_id">Zablokuj Jabber ID</string>
     <string name="corresponding_conversations_closed">Odpowiadające rozmowy zostały zamknięte.</string>
     <string name="contact_blocked_past_tense">Kontakt zablokowany</string>
@@ -691,6 +692,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
+    <string name="error_channel_name">Problem z połączeniem</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
     <string name="silent_messages_channel_name">Wycisz wiadomości</string>
@@ -712,4 +714,12 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
     <string name="no_name_set_instructions">Brak ustawionego pseudonimu.</string>
     <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
+    <string name="open_with">Otwórz za pomocą…</string>
+    <string name="choose_account">Wybierz konto</string>
+    <string name="channel_details">Szczegóły kanału</string>
+    <string name="join_public_channel">Dołącz do kanału publicznego</string>
+    <string name="create_public_channel">Utwórz kanał publiczny</string>
+    <string name="create_dialog_channel_name">Nazwa kanału</string>
+    <string name="channel_already_exists">Ten kanał już istnieje</string>
+    <string name="action_end_conversation_channel">Opuść kanał</string>
 </resources>
