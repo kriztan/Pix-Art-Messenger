@@ -681,6 +681,7 @@
     <string name="pref_use_bundled_emoji_summary">Nutze die in die App integrierten Emojis anstatt der von deinem Gerät. Die Änderungen werden nach dem nächsten Öffnen der App wirksam.</string>
     <string name="invalid_muc_nick">Nickname ungültig</string>
     <string name="title_activity_share_via_account">Teilen mit Profil</string>
+    <string name="destroy_room">Gruppenchat entfernen</string>
     <string name="conference_unknown_error">Du bist nicht länger in diesem Gruppenchat</string>
     <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
     <string name="snooze">Schlummern</string>
@@ -820,6 +821,7 @@
     <string name="view_users">Teilnehmer anzeigen</string>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
+    <string name="channel_details">Kanaldetails</string>
     <string name="join_public_channel">Öffentlichem Kanal beitreten</string>
     <string name="create_private_group_chat">Privaten Gruppenchat erstellen</string>
     <string name="create_public_channel">Öffentliches Kanal erstellen</string>
@@ -828,4 +830,11 @@
     <string name="creating_channel">Öffentliches Kanal erstellen…</string>
     <string name="channel_already_exists">Dieser Kanal existiert bereits</string>
     <string name="back">Zurück</string>
+    <string name="owners_can_invite_others">Eigentümer können andere einladen.</string>
+    <string name="destroy_channel">Kanal auflösen</string>
+    <string name="action_end_conversation_channel">Kanal verlassen</string>
+    <string name="autojoin_channel">Diesem Kanal automatisch beitreten</string>
+    <string name="file_too_large">Datei zu groß</string>
+    <string name="mgmt_account_password_forgotten">Passwort vergessen</string>
+    <string name="password_forgotten_title">Passwort vergessen</string>
 </resources>
