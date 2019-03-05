@@ -499,6 +499,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="create_account">Utwórz Konto</string>
     <string name="welcome_advanced_mode">Tryb zaawansowany</string>
     <string name="pick_your_username">Wybierz nazwę użytkownika</string>
+    <string name="pref_manually_change_presence_summary">Ustaw swoją dostępność podczas edytowania statusu.</string>
     <string name="status_message">Status</string>
     <string name="presence_chat">Chętny do rozmowy</string>
     <string name="presence_online">Dostępny</string>
@@ -683,6 +684,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_scroll_to_bottom_summary">Przewiń w dół po wysłaniu wiadomości</string>
     <string name="pref_scroll_to_bottom">Przewiń do dołu</string>
     <string name="no_camera_permission">Pix-Art Messenger potrzebuje dostęp do kamery</string>
+    <string name="edit_status_message_title">Edytuj info o statusie</string>
+    <string name="edit_status_message">Edytuj info o statusie</string>
     <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
     <string name="disable_encryption">Wyłącz szyfrowanie</string>
     <string name="error_trustkey_general">Pix-Art Messenger nie może wysyłać zaszyfrowanych wiadomości do %1$s. Może to być spowodowane nieaktualnym serwerem lub klientem użytkownika, który nie może obsłużyć OMEMO.</string>
@@ -719,6 +722,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
     <string name="pref_quick_share_attachment_choice">Wybór załącznika</string>
+    <string name="notification_group_status_information">Informacje statusu</string>
     <string name="error_channel_name">Problem z połączeniem</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
@@ -755,20 +759,25 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="join_public_channel">Dołącz do kanału publicznego</string>
     <string name="create_public_channel">Utwórz kanał publiczny</string>
     <string name="create_dialog_channel_name">Nazwa kanału</string>
+    <string name="creating_channel">Tworzenie publicznego kanału…</string>
     <string name="channel_already_exists">Ten kanał już istnieje</string>
     <string name="back">Wstecz</string>
     <string name="allow_participants_to_edit_subject">Zezwól wszystkim na edytowanie tematu</string>
     <string name="anyone_can_edit_subject">Każdy może edytować temat.</string>
     <string name="owners_can_edit_subject">Właściciele mogą edytować temat.</string>
     <string name="admins_can_edit_subject">Administratorzy mogą edytować temat.</string>
+    <string name="owners_can_invite_others">Właściciele mogą zapraszać inne osoby.</string>
+    <string name="anyone_can_invite_others">Każdy może zapraszać innych.</string>
     <string name="jabber_ids_are_visible_to_admins">Identyfikatory Jabber są widoczne dla administratorów.</string>
     <string name="jabber_ids_are_visible_to_anyone">Identyfikatory Jabber są widoczne dla każdego.</string>
     <string name="remove_from_channel">Usuń z kanału</string>
     <string name="destroy_channel">Usuń kanał</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
     <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
+    <string name="no_attachments">Brak załączników</string>
     <string name="notification_backup_created_title">Kopia zapasowa została utworzona</string>
     <string name="notification_backup_created_subtitle">Kopia zapasowa została zapisana do %s</string>
     <string name="notification_backup_failed_title">Tworzenie kopii zapasowej nie powiodło się</string>
     <string name="notification_backup_failed_subtitle">Nie udało się zapisać kopii zapasowej do %s</string>
+    <string name="file_too_large">Plik za duży</string>
 </resources>
