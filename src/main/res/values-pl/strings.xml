@@ -212,6 +212,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="select">Wybierz</string>
     <string name="contact_already_exists">Kontakt już istnieje</string>
     <string name="join">Dołącz</string>
+    <string name="channel_full_jid_example">channel@conference.example.com/nick</string>
+    <string name="channel_bare_jid_example">channel@conference.example.com</string>
     <string name="save_as_bookmark">Dodaj jako zakładkę</string>
     <string name="delete_bookmark">Usuń zakładkę</string>
     <string name="bookmark_already_exists">Zakładka już istnieje</string>
@@ -263,6 +265,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_send_button_to_indicate_status_summary">Koloruj przycisk wysyłania w zależności od statusu kontaktu</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Koloruj pseudonim aby wskazać statusu kontaktu</string>
     <string name="pref_expert_options_other">Inne opcje</string>
+    <string name="pref_autojoin">Synchronizuj z zakładkami</string>
     <string name="toast_message_otr_fingerprint">Odcisk klucza OTR został skopiowany do schowka</string>
     <string name="toast_message_omemo_fingerprint">Odcisk klucza OMEMO został skopiowany do schowka!</string>
     <string name="conference_banned">Zostałeś zbanowany z tego czatu grupowego</string>
@@ -298,6 +301,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="smp_requested">Kontakt zażądał weryfikacji SMP</string>
     <string name="no_otr_session_found">Brak ważnej sesji OTR!</string>
     <string name="pref_create_backup">Utwórz kopię zapasową</string>
+    <string name="pref_create_backup_summary">Wpisz kopie zapasową do %s</string>
     <string name="notification_create_backup_title">Tworzenie kopii zapasowej</string>
     <string name="restoring_backup">Przywracanie kopii zapasowej</string>
     <string name="notification_restored_backup_title">Kopia zapasowa została przywrócona</string>
@@ -359,8 +363,11 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="remove_from_room">Usuń z czatu grupowego</string>
     <string name="could_not_change_affiliation">Nie udało się zmienić stanowiska dla %s</string>
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
+    <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko wykluczenie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
     <string name="you_are_not_participating">Nie bierzesz udziału</string>
+    <string name="modified_conference_options">Zmodyfikowane opcje czatu grupowego!</string>
+    <string name="could_not_modify_conference_options">Nie można zmodyfikować opcji czatu grupowego</string>
     <string name="never">Nigdy</string>
     <string name="until_further_notice">Ręcznie</string>
     <string name="pref_input_options">Ustawienia wprowadzania</string>
@@ -499,6 +506,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="create_account">Utwórz Konto</string>
     <string name="welcome_advanced_mode">Tryb zaawansowany</string>
     <string name="pick_your_username">Wybierz nazwę użytkownika</string>
+    <string name="pref_manually_change_presence">Manualne zarządzanie dostępności</string>
     <string name="pref_manually_change_presence_summary">Ustaw swoją dostępność podczas edytowania statusu.</string>
     <string name="status_message">Status</string>
     <string name="presence_chat">Chętny do rozmowy</string>
@@ -513,6 +521,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="location_sharing_disabled">Udostępnienie lokalizacji jest wyłączone w ustawieniach</string>
     <string name="locating">Lokowanie…</string>
     <string name="action_end_conversation_muc">Opuść grupę</string>
+    <string name="leave_conference_warning">Czy na pewno chcesz opuścić ten czat grupowy? Nie będziesz już otrzymywać powiadomień o nowych wiadomościach do czasu ponownego dołączenia do czatu grupowego.</string>
     <string name="show_password">Pokaż hasło</string>
     <string name="registration_please_wait">Rejestracja nie powiodła się. Spróbuj później</string>
     <string name="registration_password_too_weak">Rejestracja nie powiodła się: hasło zbyt słabe</string>
@@ -705,6 +714,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="gif">GIF</string>
     <string name="view_conversation">Wyświetl komunikację</string>
     <string name="web_address">adres internetowy</string>
+    <string name="jabber_id_copied_to_clipboard">Skopiowano JID do schowka</string>
     <string name="copy_jabber_id">Skopiuj JID</string>
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
@@ -741,6 +751,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="feature_not_implemented">Funkcja nie została zaimplementowana</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="start_orbot">Uruchom Orbot</string>
+    <string name="group_chat_will_make_your_jabber_id_public">Ten kanał upubliczni Twój Jabber ID</string>
     <string name="your_name">Twoje miano</string>
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
@@ -771,6 +782,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="jabber_ids_are_visible_to_admins">Identyfikatory Jabber są widoczne dla administratorów.</string>
     <string name="jabber_ids_are_visible_to_anyone">Identyfikatory Jabber są widoczne dla każdego.</string>
     <string name="remove_from_channel">Usuń z kanału</string>
+    <string name="ban_from_channel">Wyklucz z kanału</string>
     <string name="destroy_channel">Usuń kanał</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
     <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
