@@ -736,6 +736,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="channel_already_exists">Ten kanał już istnieje</string>
     <string name="back">Wstecz</string>
     <string name="remove_from_channel">Usuń z kanału</string>
+    <string name="destroy_channel">Usuń kanał</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
     <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
 </resources>
