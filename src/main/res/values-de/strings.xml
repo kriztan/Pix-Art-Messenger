@@ -202,6 +202,7 @@
     <string name="done">Fertig</string>
     <string name="verify">Überprüfen</string>
     <string name="decrypt">Entschlüsseln</string>
+    <string name="bookmarks">Gruppen</string>
     <string name="search">Suchen</string>
     <string name="enter_contact">Kontakt eingeben</string>
     <string name="delete_contact">Kontakt löschen</string>
@@ -212,6 +213,8 @@
     <string name="select">Auswählen</string>
     <string name="contact_already_exists">Der Kontakt existiert bereits</string>
     <string name="join">Beitreten</string>
+    <string name="channel_full_jid_example">channel@conference.domain.de/Nickname</string>
+    <string name="channel_bare_jid_example">channel@conference.domain.de</string>
     <string name="save_as_bookmark">Zur Kontaktliste hinzufügen</string>
     <string name="delete_bookmark">Von Kontaktliste entfernen</string>
     <string name="bookmark_already_exists">Die Konferenz befindet sich bereits auf deiner Kontaktliste</string>
@@ -358,12 +361,17 @@
     <string name="outcast">Ausgeschlossen</string>
     <string name="member">Mitglied</string>
     <string name="advanced_mode">Erweiterter Modus</string>
+    <string name="grant_membership">Mitgliedsrechte gewähren</string>
+    <string name="remove_membership">Mitgliedsrechte entziehen</string>
     <string name="grant_admin_privileges">Administratorrechte gewähren</string>
     <string name="remove_admin_privileges">Administratorrechte entziehen</string>
     <string name="remove_from_room">Aus Gruppenchat entfernen</string>
     <string name="could_not_change_affiliation">Zugehörigkeit von %s konnte nicht verändert werden</string>
     <string name="ban_from_conference">Von Gruppenchat ausschließen</string>
+    <string name="removing_from_public_conference">Du versuchst %s aus einem öffentlichen Gruppenchat zu entfernen. Die einzige Möglichkeit ist, den Kontakt von diesem Gruppenchat auszuschließen.</string>
     <string name="ban_now">Kontakt ausschließen</string>
+    <string name="non_anonymous">JIDs für alle sichtbar machen</string>
+    <string name="moderated">Channel wird moderiert</string>
     <string name="you_are_not_participating">Du bist kein Mitglied</string>
     <string name="modified_conference_options">Gruppenchat-Optionen geändert!</string>
     <string name="could_not_modify_conference_options">Gruppenchat-Optionen konnten nicht geändert werden</string>
@@ -408,6 +416,7 @@
     <string name="none">keine</string>
     <string name="recently_used">zuletzt verwendet</string>
     <string name="search_contacts">Kontakte suchen</string>
+    <string name="search_bookmarks">Gruppen durchsuchen</string>
     <string name="choose_quick_action">Schnell-Taste auswähle</string>
     <string name="send_private_message">Private Nachricht senden</string>
     <string name="user_has_left_conference">%1$s hat den Gruppenchat verlassen!</string>
