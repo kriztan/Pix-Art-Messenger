@@ -15,18 +15,12 @@
     <string name="action_unblock_contact">Ayaw i-block ang kontak</string>
     <string name="action_block_domain">I-block ang domain</string>
     <string name="action_unblock_domain">Ayaw i-block ang domain</string>
-    <string name="title_activity_manage_accounts">Pagdumala sa mga account</string>
     <string name="title_activity_settings">Mga pagtakda</string>
-    <string name="conference_details">Mga detalyi sa Group chat</string>
-    <string name="title_activity_contact_details">Mga detalyi sa kontak</string>
-    <string name="title_activity_sharewith">Ipakigbahin ang gepanag-estoryahan</string>
-    <string name="title_activity_start_conversation">Pagsugod sa Panag-estorya</string>
     <string name="title_activity_choose_contact">Pili ug kontak</string>
     <string name="title_activity_block_list">Listahan sa block</string>
     <string name="just_now">karun ra jud</string>
     <string name="minute_ago">usa ka minuto and nilabay</string>
     <string name="minutes_ago">%d pipila ka minuto ang nilabay</string>
-    <string name="unread_conversations">wala nabasa nga Panag-estorya</string>
     <string name="sending">pagpadala…</string>
     <string name="message_decrypting">Pagdeklarar sa mensahe. Palihog paabot…</string>
     <string name="pgp_message">AbliPGP naka-encrypt nga mensahe</string>
@@ -198,7 +192,6 @@
     <string name="decrypt">Determinado</string>
     <string name="search">Pangita</string>
     <string name="enter_contact">Isulod ang kontak</string>
-    <string name="join_public_channel">Apil sa group chat</string>
     <string name="delete_contact">Tangtanga ang kontak</string>
     <string name="view_contact_details">Tan-awa ang mga detayi sa kontak</string>
     <string name="block_contact">I-block ang kontak</string>
@@ -207,7 +200,6 @@
     <string name="select">Pili</string>
     <string name="contact_already_exists">Ang kontak kay naa na daan</string>
     <string name="join">Apil</string>
-    <string name="channel_full_jid_example">groupchat@room.pix-art.de</string>
     <string name="save_as_bookmark">Sagupa ingun sa bookmark</string>
     <string name="delete_bookmark">Tangtanga ang bookmark</string>
     <string name="bookmark_already_exists">Ang kini nga bookmark kay naa na daan</string>
@@ -473,7 +465,6 @@
     <string name="show_password">Ipakita ang password</string>
     <string name="registration_please_wait">Napakyas ang pagrehistro: Sulayi pag-usab taud-taud</string>
     <string name="registration_password_too_weak">Ang pag-rehistro napakyas: Ang password sobra ra ka-huyang</string>
-    <string name="create_private_group_chat">Buhat ug grupo sa chat</string>
     <string name="choose_participants">Pili ug mga partisipante</string>
     <string name="creating_conference">Nagbuhat ug grupo sa chat…</string>
     <string name="import_database">Import nga tabang</string>
@@ -589,11 +580,7 @@
     <string name="pref_use_bundled_emoji_summary">Gamita ang integrated library sa emoji imbis nga gamiton ang imong mga gamit. Ang mga pagbag-o mahimong makuha human sa pag-abli pag-usab sa app.</string>
     <string name="invalid_muc_nick">Dili balido nga angga nga pangan</string>
     <string name="title_activity_share_via_account">Pakigbahin pinaagi sa account</string>
-    <string name="destroy_room">Guba-a ang grupo sa chat</string>
     <string name="conference_unknown_error">Wala nakay labot diri nga grupo sa chat</string>
-    <string name="destroy_room_dialog">Gusto ba nimu gubaun ang kini nga grupo sa chat%s? Kini grupoha kay makanunay na nga matangtang.</string>
-    <string name="destroy_room_succeed">Ang grupo sa chat nilampos sa pag-guba</string>
-    <string name="destroy_room_failed">Ang grupo sa chat dili pwedi gub-on</string>
     <string name="snooze">Snooze</string>
     <string name="huawei_protected_apps">Protektado nga mga App</string>
     <string name="huawei_protected_apps_summary">Para kanunay nga makadawat ug pagpahibalo, bisag ang screen nimu kay palong, kinahanglan ka adto sa Pix-Art Messenger para sa lista sa mga protektado nga mga app.</string>
