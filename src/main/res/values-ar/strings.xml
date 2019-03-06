@@ -18,11 +18,8 @@
     <string name="title_activity_manage_accounts">إدارة الحسابات</string>
     <string name="title_activity_settings">الإعدادات</string>
     <string name="conference_details">تفاصيل فريق المحادثة</string>
-    <string name="title_activity_contact_details">تفاصيل المُراسِل</string>
-    <string name="title_activity_sharewith">شارك بواسطة بيكسل آرت ماسنجر</string>
-    <string name="title_activity_start_conversation">الشروع في محادثة</string>
+    <string name="title_activity_contact_details">بيانات المُراسِل</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
-    <string name="title_activity_choose_contacts">اختر مُراسِليك</string>
     <string name="title_activity_block_list">قائمة الحظر</string>
     <string name="just_now">الآن</string>
     <string name="minute_ago">منذ دقيقة</string>
@@ -156,7 +153,6 @@
     <string name="decrypt">فك التشفير</string>
     <string name="search">بحث</string>
     <string name="enter_contact">أدخل مراسلا</string>
-    <string name="join_public_channel">الالتحاق بفريق المحادثة</string>
     <string name="delete_contact">حذف المراسِل</string>
     <string name="view_contact_details">عرض تفاصيل المُراسِل</string>
     <string name="block_contact">حجب مُراسِل</string>
@@ -164,7 +160,6 @@
     <string name="create">إنشاء</string>
     <string name="select">اختيار</string>
     <string name="join">الانضمام</string>
-    <string name="channel_full_jid_example">groupchat@room.pix-art.de</string>
     <string name="save_as_bookmark">أضفه كفاصلة مرجعية</string>
     <string name="delete_bookmark">حذف الفاصلة المرجعية</string>
     <string name="topic">الموضوع</string>
@@ -251,12 +246,8 @@
     <string name="no_role">غير متصل</string>
     <string name="member">عضو</string>
     <string name="advanced_mode">الوضع المتقدم</string>
-    <string name="grant_membership">منحة صفة العضوية</string>
-    <string name="remove_membership">إلغاء العضوية</string>
     <string name="grant_admin_privileges">منح صلاحيات المُشرِف</string>
     <string name="remove_admin_privileges">الغاء صلاحيات المُشرِف</string>
-    <string name="conference_options">خيارات المحادثة الجماعية</string>
-    <string name="non_anonymous">غير مجهول</string>
     <string name="never">أبدًا</string>
     <string name="pref_display_enter_key">أظهر زر الإدخال</string>
     <string name="video">فيديو</string>
@@ -278,7 +269,6 @@
     <string name="none">لا شيء</string>
     <string name="recently_used">الأكثر استخداما في الآونة الأخيرة</string>
     <string name="search_contacts">البحث عن مراسِلين</string>
-    <string name="search_bookmarks">البحث عن محادثات جماعية</string>
     <string name="choose_quick_action">اختر إجراءا سريعا</string>
     <string name="send_private_message">أرسل رسالة خاصة</string>
     <string name="username">اسم المستخدم</string>
@@ -311,7 +301,6 @@
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
     <string name="pref_picture_compression">ضغط الصور</string>
     <string name="pref_video_compression">ضغط الفيديوهات</string>
-    <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
     <string name="disable">تعطيل</string>
@@ -341,7 +330,6 @@
     <string name="action_end_conversation_muc">مغادرة المحادثة الجماعية</string>
     <string name="show_password">إظهار الكلمة السرية</string>
     <string name="registration_password_too_weak">فشلت عملية إنشاء الحساب: إنّ الكلمة السرية ضعيفة</string>
-    <string name="create_private_group_chat">انشاء محادثة جماعية</string>
     <string name="choose_participants">اختر المشاركين</string>
     <string name="creating_conference">عملية انشاء فريق المحادثة جارية…</string>
     <string name="import_text">إنّ جهازك يحتوي على نسخة احتياطية يمكنك استيرادها.\nسوف يتم إعادة تشغيل تطبيقك بعد عملية الإسترجاع. هل تريد استعادة تلك النسخة الإحتياطية؟ </string>
@@ -404,7 +392,6 @@
     <string name="pref_warn_unencrypted_chat">التنبيه إن كانت المحادثة غير مشفّرة</string>
     <string name="invalid_muc_nick">الاسم المستعار غير صالح</string>
     <string name="title_activity_share_via_account">شاركه عبر حساب</string>
-    <string name="destroy_room">حذف المحادثة الجماعية</string>
     <string name="conference_unknown_error">أنت لم تعد مِن ضمن فريق المحادثة هذا</string>
     <string name="snooze">غفوة</string>
     <string name="huawei_protected_apps">التطبيقات المحمية</string>
@@ -477,12 +464,9 @@
     <string name="ebook">كتاب إلكتروني</string>
     <string name="your_name">اسمك</string>
     <string name="enter_your_name">أدخل اسمك</string>
-    <string name="autojoin_group_chat">إلتحق بفريق المحادثة هذا افتراضيا</string>
     <string name="pref_play_gif_inside">تشغيل صور جيف المتحركة في المحادثة</string>
-    <string name="pref_play_gif_inside_summary">إن تم تنشيط هذه الميزة فسوف يتم تشغيل صور جيف المتحركة تلقائيا داخل نافذة المحادثة.</string>
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
-    <string name="view_users">عرض الأعضاء</string>
     <string name="message_deleted">تم حذف الرسالة</string>
 </resources>
