@@ -15,15 +15,11 @@
     <string name="action_unblock_contact">Odblokovat kontakt</string>
     <string name="action_block_domain">Zablokovat doménu</string>
     <string name="action_unblock_domain">Odblokovat doménu</string>
-    <string name="title_activity_manage_accounts">Nastavení účtů</string>
     <string name="title_activity_settings">Nastavení</string>
-    <string name="title_activity_sharewith">Sdílet s konverzací</string>
-    <string name="title_activity_start_conversation">Začít konverzaci</string>
     <string name="title_activity_block_list">Seznam blokovaných</string>
     <string name="just_now">právě teď</string>
     <string name="minute_ago">před minutou</string>
     <string name="minutes_ago">před %d minutami</string>
-    <string name="unread_conversations">nepřečtené konverzace</string>
     <string name="sending">odesílám…</string>
     <string name="message_decrypting">Dešifrování zprávy. Chvíli strpení...</string>
     <string name="pgp_message">OpenPGP šifrovaná zpráva</string>
@@ -187,7 +183,6 @@
     <string name="select">Vybrat</string>
     <string name="contact_already_exists">Kontakt již existuje</string>
     <string name="join">Vstoupit</string>
-    <string name="channel_full_jid_example">room@conference.example.com/nick</string>
     <string name="save_as_bookmark">Uložit jako záložku</string>
     <string name="delete_bookmark">Smazat záložku</string>
     <string name="bookmark_already_exists">Tato záložka již existuje</string>
@@ -307,13 +302,10 @@
     <string name="outcast">Vyloučený</string>
     <string name="member">Člen</string>
     <string name="advanced_mode">Pokročilý mód</string>
-    <string name="grant_membership">Povolit členství</string>
-    <string name="remove_membership">Odebrat členství</string>
     <string name="grant_admin_privileges">Povolit administrátorská oprávnění</string>
     <string name="remove_admin_privileges">Odebrat administrátorská oprávnění</string>
     <string name="could_not_change_affiliation">Nelze změnit připojení uživatele %s</string>
     <string name="ban_now">Vypovědět</string>
-    <string name="non_anonymous">Neanonymní</string>
     <string name="you_are_not_participating">Neúčastníte se</string>
     <string name="never">Nikdy</string>
     <string name="until_further_notice">Než opět změním</string>
