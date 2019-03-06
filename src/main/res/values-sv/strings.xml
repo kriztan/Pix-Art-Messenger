@@ -15,15 +15,11 @@
     <string name="action_unblock_contact">Avblockera kontakt</string>
     <string name="action_block_domain">Blockera domän</string>
     <string name="action_unblock_domain">Avblockera domän</string>
-    <string name="title_activity_manage_accounts">Hantera konton</string>
     <string name="title_activity_settings">Inställningar</string>
-    <string name="title_activity_sharewith">Dela med konversation</string>
-    <string name="title_activity_start_conversation">Starta konversation</string>
     <string name="title_activity_block_list">Blockeringslista</string>
     <string name="just_now">just nu</string>
     <string name="minute_ago">1 min sedan</string>
     <string name="minutes_ago">%d min sedan</string>
-    <string name="unread_conversations">olästa konversationer</string>
     <string name="sending">skickar…</string>
     <string name="message_decrypting">Avkrypterar meddelande. Vänta…</string>
     <string name="pgp_message">OpenPGP-krypterat meddelande</string>
@@ -191,7 +187,6 @@
     <string name="select">Välj</string>
     <string name="contact_already_exists">Kontakten finns redan</string>
     <string name="join">Gå med</string>
-    <string name="channel_full_jid_example">room@conference.example.com/nick</string>
     <string name="save_as_bookmark">Spara som bokmärke</string>
     <string name="delete_bookmark">Ta bort bokmärke</string>
     <string name="bookmark_already_exists">Detta bokmärke finns redan</string>
@@ -314,13 +309,10 @@
     <string name="outcast">Utstött</string>
     <string name="member">Medlem</string>
     <string name="advanced_mode">Avancerat läge</string>
-    <string name="grant_membership">Bevilja medlemsskap</string>
-    <string name="remove_membership">Återkalla medlemskap</string>
     <string name="grant_admin_privileges">Bevilja administratörsbehörighet</string>
     <string name="remove_admin_privileges">Återkalla administratörsbehörighet</string>
     <string name="could_not_change_affiliation">Kunde inte ändra tillhörigheten för %s</string>
     <string name="ban_now">Bannlys nu</string>
-    <string name="non_anonymous">Icke-anonymt</string>
     <string name="you_are_not_participating">Du deltar ej</string>
     <string name="never">Aldrig</string>
     <string name="until_further_notice">Tills vidare</string>
