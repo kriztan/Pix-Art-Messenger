@@ -19,6 +19,7 @@
     <string name="title_activity_settings">Ustawienia</string>
     <string name="conference_details">Szczegóły czatu grupowego</string>
     <string name="title_activity_contact_details">Szczegóły kontaktu</string>
+    <string name="title_activity_sharewith">Udostępnij w konwersacji</string>
     <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
     <string name="title_activity_choose_contact">Wybierz kontakt</string>
     <string name="title_activity_choose_contacts">Wybierz kontakty</string>
