@@ -261,6 +261,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="title_pref_enable_quiet_hours">Włącz godziny ciszy</string>
     <string name="pref_quiet_hours_summary">Powiadomienia będą wyciszone w wybranym przedziale czasu</string>
     <string name="pref_use_send_button_to_indicate_status">Przycisk wysyłania wskazuje status</string>
+    <string name="pref_use_colored_names_to_indicate_status">Kolor nazwy użytkownika wskazuje status</string>
     <string name="pref_use_indicate_received">Raporty dostarczenia</string>
     <string name="pref_use_indicate_received_summary">Jeżeli to możliwe, oznaczaj dostarczone wiadomości zielonym haczykiem</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Koloruj przycisk wysyłania w zależności od statusu kontaktu</string>
@@ -366,6 +367,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
     <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko wykluczenie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
+    <string name="non_anonymous">Spraw aby Jabber ID była widoczna dla każdego</string>
     <string name="you_are_not_participating">Nie bierzesz udziału</string>
     <string name="modified_conference_options">Zmodyfikowane opcje czatu grupowego!</string>
     <string name="could_not_modify_conference_options">Nie można zmodyfikować opcji czatu grupowego</string>
