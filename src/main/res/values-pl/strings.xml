@@ -689,6 +689,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
     <string name="destroy_room_dialog">Czy chcesz usunąć czat grupowy %s? Spowoduje to niezmienne usunięcie tego czatu grupowego.</string>
     <string name="destroy_room_succeed">Czat grupowy pomyślnie usunięty</string>
+    <string name="destroy_room_failed">Nie udało się usunąć czatu grupowego</string>
     <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
@@ -745,6 +746,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
     <string name="silent_messages_channel_name">Wycisz wiadomości</string>
+    <string name="pref_more_notification_settings">Ustawienia powiadomień</string>
     <string name="pref_more_notification_settings_summary">Ważność, Dźwięk, Wibracja</string>
     <string name="video_compression_channel_name">Kompresja wideo</string>
     <string name="backup_channel_name">Kopia zapasowa &amp; przywracanie</string>
@@ -764,8 +766,10 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
     <string name="no_name_set_instructions">Brak ustawionego pseudonimu.</string>
+    <string name="autojoin_group_chat">Automatycznie dołącz do tego czatu grupowego</string>
     <string name="pref_show_links_inside">Pokaż podgląd linków na czacie</string>
     <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
+    <string name="pref_play_gif_inside_summary">Odtwarzaj pliki GIF bezpośrednio w czacie.</string>
     <string name="open_with">Otwórz za pomocą…</string>
     <string name="choose_account">Wybierz konto</string>
     <string name="restore_backup">Przywróć kopię zapasową</string>
@@ -776,6 +780,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="message_deleted">Wiadomość została usunięta</string>
     <string name="channel_details">Szczegóły kanału</string>
     <string name="join_public_channel">Dołącz do kanału publicznego</string>
+    <string name="create_private_group_chat">Utwórz czat grupowy</string>
     <string name="create_public_channel">Utwórz kanał publiczny</string>
     <string name="create_dialog_channel_name">Nazwa kanału</string>
     <string name="creating_channel">Tworzenie publicznego kanału…</string>
@@ -791,7 +796,10 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="jabber_ids_are_visible_to_anyone">Identyfikatory Jabber są widoczne dla każdego.</string>
     <string name="remove_from_channel">Usuń z kanału</string>
     <string name="ban_from_channel">Wyklucz z kanału</string>
+    <string name="manage_permission">Zarządzanie uprawnieniami</string>
     <string name="destroy_channel">Usuń kanał</string>
+    <string name="destroy_channel_succeed">Kanał pomyślnie usunięty</string>
+    <string name="destroy_channel_failed">Nie udało się usunąć kanału</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
     <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
     <string name="no_attachments">Brak załączników</string>
@@ -800,4 +808,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="notification_backup_failed_title">Tworzenie kopii zapasowej nie powiodło się</string>
     <string name="notification_backup_failed_subtitle">Nie udało się zapisać kopii zapasowej do %s</string>
     <string name="file_too_large">Plik za duży</string>
+    <string name="mgmt_account_password_forgotten">Hasło zapomniane</string>
+    <string name="password_forgotten_title">Hasło zapomniane</string>
+    <string name="password_forgotten_text">Nie pamiętasz hasła do swojego konta? Spróbujemy teraz otworzyć stronę pomocy technicznej twojego operatora.</string>
 </resources>
