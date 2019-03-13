@@ -501,6 +501,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="this_field_is_required">To pole jest wymagane</string>
     <string name="correct_message">Popraw wiadomość</string>
     <string name="send_corrected_message">Wyślij poprawioną wiadomość</string>
+    <string name="contacts_have_no_pgp_keys">Pix-Art Messenger nie może zaszyfrować wiadomości, ponieważ kontakty nie udostępniają swoich kluczy publicznych.\n\n</string>
     <string name="this_account_is_disabled">Wyłączyłeś to konto</string>
     <string name="no_application_to_share_uri">Nie odnaleziono aplikacji skojarzonej z URI</string>
     <string name="share_uri_with">Udostępnij URI za pomocą...</string>
@@ -687,6 +688,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="destroy_room">Usuń czat grupowy</string>
     <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
     <string name="destroy_room_dialog">Czy chcesz usunąć czat grupowy %s? Spowoduje to niezmienne usunięcie tego czatu grupowego.</string>
+    <string name="destroy_room_succeed">Czat grupowy pomyślnie usunięty</string>
     <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
@@ -723,6 +725,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="show_privacy">Polityka prywatności</string>
     <string name="show_termsofuse">Warunki użytkowania</string>
     <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
@@ -732,6 +735,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="providing_a_name_is_optional">Podanie nazwy jest opcjonalne</string>
     <string name="create_dialog_group_chat_name">Nazwa czatu grupowego</string>
     <string name="delete_message">Usuń wiadomość</string>
+    <string name="conference_destroyed">Ten czat grupowy został usunięty</string>
     <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
