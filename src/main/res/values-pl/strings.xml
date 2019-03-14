@@ -19,6 +19,7 @@
     <string name="title_activity_settings">Ustawienia</string>
     <string name="conference_details">Szczegóły czatu grupowego</string>
     <string name="title_activity_contact_details">Szczegóły kontaktu</string>
+    <string name="title_activity_sharewith">Udostępnij w konwersacji</string>
     <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
     <string name="title_activity_choose_contact">Wybierz kontakt</string>
     <string name="title_activity_choose_contacts">Wybierz kontakty</string>
@@ -260,6 +261,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="title_pref_enable_quiet_hours">Włącz godziny ciszy</string>
     <string name="pref_quiet_hours_summary">Powiadomienia będą wyciszone w wybranym przedziale czasu</string>
     <string name="pref_use_send_button_to_indicate_status">Przycisk wysyłania wskazuje status</string>
+    <string name="pref_use_colored_names_to_indicate_status">Kolor nazwy użytkownika wskazuje status</string>
     <string name="pref_use_indicate_received">Raporty dostarczenia</string>
     <string name="pref_use_indicate_received_summary">Jeżeli to możliwe, oznaczaj dostarczone wiadomości zielonym haczykiem</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Koloruj przycisk wysyłania w zależności od statusu kontaktu</string>
@@ -365,6 +367,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
     <string name="removing_from_public_conference">Próbujesz usunąć %s z publicznego czatu grupowego. Możliwe jest tylko wykluczenie tego użytkownika na zawsze.</string>
     <string name="ban_now">Zbanuj teraz</string>
+    <string name="non_anonymous">Spraw aby Jabber ID była widoczna dla każdego</string>
     <string name="you_are_not_participating">Nie bierzesz udziału</string>
     <string name="modified_conference_options">Zmodyfikowane opcje czatu grupowego!</string>
     <string name="could_not_modify_conference_options">Nie można zmodyfikować opcji czatu grupowego</string>
@@ -498,6 +501,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="this_field_is_required">To pole jest wymagane</string>
     <string name="correct_message">Popraw wiadomość</string>
     <string name="send_corrected_message">Wyślij poprawioną wiadomość</string>
+    <string name="contacts_have_no_pgp_keys">Pix-Art Messenger nie może zaszyfrować wiadomości, ponieważ kontakty nie udostępniają swoich kluczy publicznych.\n\n</string>
     <string name="this_account_is_disabled">Wyłączyłeś to konto</string>
     <string name="no_application_to_share_uri">Nie odnaleziono aplikacji skojarzonej z URI</string>
     <string name="share_uri_with">Udostępnij URI za pomocą...</string>
@@ -684,6 +688,8 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="destroy_room">Usuń czat grupowy</string>
     <string name="conference_unknown_error">Nie jesteś już w tym czacie grupowym</string>
     <string name="destroy_room_dialog">Czy chcesz usunąć czat grupowy %s? Spowoduje to niezmienne usunięcie tego czatu grupowego.</string>
+    <string name="destroy_room_succeed">Czat grupowy pomyślnie usunięty</string>
+    <string name="destroy_room_failed">Nie udało się usunąć czatu grupowego</string>
     <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
@@ -720,15 +726,18 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="copy_link">Skopiuj adres interenetowy</string>
     <string name="server_hint">Wybierz dostawce</string>
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
+    <string name="show_privacy">Polityka prywatności</string>
     <string name="show_termsofuse">Warunki użytkowania</string>
     <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
+    <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
     <string name="nickname">Pseudonim czatu grupowego</string>
     <string name="group_chat_name">Nazwa</string>
     <string name="providing_a_name_is_optional">Podanie nazwy jest opcjonalne</string>
     <string name="create_dialog_group_chat_name">Nazwa czatu grupowego</string>
     <string name="delete_message">Usuń wiadomość</string>
+    <string name="conference_destroyed">Ten czat grupowy został usunięty</string>
     <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
     <string name="pref_show_record_voice_btn">Pokaż przycisk nagrywania głosu</string>
@@ -738,6 +747,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
     <string name="silent_messages_channel_name">Wycisz wiadomości</string>
+    <string name="pref_more_notification_settings">Ustawienia powiadomień</string>
     <string name="pref_more_notification_settings_summary">Ważność, Dźwięk, Wibracja</string>
     <string name="video_compression_channel_name">Kompresja wideo</string>
     <string name="backup_channel_name">Kopia zapasowa &amp; przywracanie</string>
@@ -750,6 +760,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="delete_message_dialog">Usuń wiadomość</string>
     <string name="delete_message_dialog_msg">Czy na pewno chcesz usunąć tą wiadomość?\n\n<b>Uwaga:</b> Nie spowoduje to usunięcia kopii tej wiadomości przechowywanej na innych urządzeniach lub serwerach.</string>
     <string name="feature_not_implemented">Funkcja nie została zaimplementowana</string>
+    <string name="reject_request">Odrzuć zapytanie</string>
     <string name="install_orbot">Zainstaluj Orbot</string>
     <string name="start_orbot">Uruchom Orbot</string>
     <string name="group_chat_will_make_your_jabber_id_public">Ten kanał upubliczni Twój Jabber ID</string>
@@ -757,22 +768,29 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="enter_your_name">Wprowadź swoje imię</string>
     <string name="enter_your_name_instructions">Wprowadź swój pseudonim, który będzie widoczny dla Twoich kontaktów.</string>
     <string name="no_name_set_instructions">Brak ustawionego pseudonimu.</string>
+    <string name="autojoin_group_chat">Automatycznie dołącz do tego czatu grupowego</string>
     <string name="pref_show_links_inside">Pokaż podgląd linków na czacie</string>
     <string name="pref_play_gif_inside">Odtwarzaj pliki GIF w czacie</string>
+    <string name="pref_play_gif_inside_summary">Odtwarzaj pliki GIF bezpośrednio w czacie.</string>
     <string name="open_with">Otwórz za pomocą…</string>
     <string name="choose_account">Wybierz konto</string>
+    <string name="set_profile_picture">Zdjęcie profilowe Pix-Art Messengera</string>
     <string name="restore_backup">Przywróć kopię zapasową</string>
     <string name="restore">Przywróć</string>
     <string name="enter_password_to_restore">Wprowadź hasło konta %s, aby przywrócić kopię zapasową.</string>
     <string name="unable_to_restore_backup">Nie udało się utworzyć kopi zapasowej.</string>
+    <string name="pref_prefer_xmpp_avatar">Preferuj awatar XMPP</string>
     <string name="group_chat_members">Uczestnicy</string>
     <string name="message_deleted">Wiadomość została usunięta</string>
     <string name="channel_details">Szczegóły kanału</string>
     <string name="join_public_channel">Dołącz do kanału publicznego</string>
+    <string name="create_private_group_chat">Utwórz czat grupowy</string>
     <string name="create_public_channel">Utwórz kanał publiczny</string>
     <string name="create_dialog_channel_name">Nazwa kanału</string>
+    <string name="xmpp_address">Adres XMPP</string>
     <string name="creating_channel">Tworzenie publicznego kanału…</string>
     <string name="channel_already_exists">Ten kanał już istnieje</string>
+    <string name="joined_an_existing_channel">Dołączyłeś do istniejącego kanału</string>
     <string name="back">Wstecz</string>
     <string name="allow_participants_to_edit_subject">Zezwól wszystkim na edytowanie tematu</string>
     <string name="anyone_can_edit_subject">Każdy może edytować temat.</string>
@@ -782,9 +800,13 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="anyone_can_invite_others">Każdy może zapraszać innych.</string>
     <string name="jabber_ids_are_visible_to_admins">Identyfikatory Jabber są widoczne dla administratorów.</string>
     <string name="jabber_ids_are_visible_to_anyone">Identyfikatory Jabber są widoczne dla każdego.</string>
+    <string name="no_users_hint_group_chat">Ten prywatny czat grupowy nie ma uczestników.</string>
     <string name="remove_from_channel">Usuń z kanału</string>
     <string name="ban_from_channel">Wyklucz z kanału</string>
+    <string name="manage_permission">Zarządzanie uprawnieniami</string>
     <string name="destroy_channel">Usuń kanał</string>
+    <string name="destroy_channel_succeed">Kanał pomyślnie usunięty</string>
+    <string name="destroy_channel_failed">Nie udało się usunąć kanału</string>
     <string name="action_end_conversation_channel">Opuść kanał</string>
     <string name="autojoin_channel">Automatycznie dołącz do tego kanału</string>
     <string name="no_attachments">Brak załączników</string>
@@ -793,4 +815,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="notification_backup_failed_title">Tworzenie kopii zapasowej nie powiodło się</string>
     <string name="notification_backup_failed_subtitle">Nie udało się zapisać kopii zapasowej do %s</string>
     <string name="file_too_large">Plik za duży</string>
+    <string name="mgmt_account_password_forgotten">Hasło zapomniane</string>
+    <string name="password_forgotten_title">Hasło zapomniane</string>
+    <string name="password_forgotten_text">Nie pamiętasz hasła do swojego konta? Spróbujemy teraz otworzyć stronę pomocy technicznej twojego operatora.</string>
 </resources>
