@@ -597,6 +597,7 @@
     <string name="image_original">оригинальное (без сжатия)</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="send_failed_resend">не удалось отправить, пробую снова…</string>
+    <string name="pref_show_connection_options_summary">Показывать имя хоста и порт при создании аккаунта</string>
     <string name="pref_show_connection_options">Расширенные настройки подключения</string>
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
@@ -613,6 +614,9 @@
     <string name="update_service">Служба обновления Pix-Art Messenger</string>
     <string name="install_update">Установить обновление?</string>
     <string name="no_application_found_to_open_link">Не удалось найти подходящее приложение для открытия ссылки</string>
+    <string name="contacts_have_read_up_to_this_point">%s прочитал до этого момента</string>
+    <string name="contact_has_read_up_to_this_point">%s прочитал до этого момента</string>
+    <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s и еще %2$d прочитали до этого момента</string>
     <string name="conversation_unencrypted_hint">Этот чат не зашифрован. Из соображений безопасности вам следует включить шифрование, используя значок замка. Рекомендуемый способ шифрования - OMEMO.</string>
     <string name="pref_warn_unencrypted_chat">Предупреждать если чат не защищен</string>
     <string name="pref_warn_unencrypted_chat_summary">Использовать шифрование, если доступно. Если вы не используете шифрование - отображать предупреждение в чате.</string>
@@ -669,6 +673,7 @@
     <string name="copy_link">Копировать веб-адрес</string>
     <string name="show_privacy">Политика конфиденциальности</string>
     <string name="show_termsofuse">Пользовательское соглашение</string>
+    <string name="paste_as_quote">Вставить как цитату</string>
     <string name="group_chat_avatar">Аватар группового чата</string>
     <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Только владелец может сменить аватар</string>
@@ -676,9 +681,19 @@
     <string name="nickname">Наименование для этого группового чата</string>
     <string name="group_chat_name">Название</string>
     <string name="create_dialog_group_chat_name">Название группового чата</string>
+    <string name="everyone_has_read_up_to_this_point">Все прочитали до этого момента</string>
     <string name="delete_message">Удалить сообщение</string>
     <string name="conference_destroyed">Данная группа была закрыта</string>
+    <string name="no_application_found_to_view_contact">Не найдено приложений для просмотра контакта</string>
     <string name="no_location_permission">Pix-Art Messenger нужен доступ к сервисам геолокации</string>
+    <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
+    <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если нет сообщения. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
+    <string name="pref_quick_share_attachment_choice">Выбор вложений</string>
+    <string name="unable_to_save_recording">Не удается сохранить запись</string>
+    <string name="foreground_service_channel_name">Фоновая служба</string>
+    <string name="notification_group_status_information">Статус</string>
+    <string name="error_channel_name">Проблемы с подключением</string>
     <string name="notification_group_messages">Сообщения</string>
     <string name="messages_channel_name">Сообщения</string>
     <string name="silent_messages_channel_name">Бесшумные сообщения</string>
@@ -693,6 +708,7 @@
     <string name="action_open">Открыть</string>
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="cancelled">отменён</string>
+    <string name="remote_server_timeout">Таймаут удаленного сервера</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
     <string name="delete_message_dialog">Удалить сообщение</string>
     <string name="delete_message_dialog_msg">Вы хотите удалить это сообщение?\n\n<b>Внимание:</b>Это не затронет сообщения, которые сохранены на других устройствах или серверах.</string>
