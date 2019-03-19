@@ -496,6 +496,7 @@
     <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать Pix-Art Messenger. Если вы используете Android - нажмите на ссылку, чтобы попробовать...</string>
     <string name="pref_broadcast_last_activity_summary">Позволяет вашим контактам видеть, когда вы пользуетесь Pix-Art Messenger</string>
     <string name="invite_user">Пригласить в Pix-Art Messenger</string>
+    <string name="request_permissions_message">Pix-Art Messenger запросит у вас несколько разрешений. Чтобы пользоваться всеми возможностями этого мессенджера, нужно дать эти разрешения. Если какое-то разрешение не будет получено - приложение будет закрыто.</string>
     <string name="unable_to_connect_to_keychain">Не удается подключиться к OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Устройство больше не используется</string>
     <string name="please_wait">Пожалуйста, подождите…</string>
@@ -509,12 +510,14 @@
     <string name="remote_server_not_found">Сервер не найден</string>
     <string name="error_file_corrupt">Возможно, файл поврежден.</string>
     <string name="unable_to_update_account">Не удается изменить учетную запись</string>
+    <string name="create_issue">Сообщить об ошибке</string>
     <string name="pref_delete_omemo_identities">Удалить OMEMO-отпечатки</string>
     <string name="delete_selected_keys">Удалить выбранные ключи</string>
     <string name="error_publish_avatar_offline">Вы должны быть подключены, чтобы опубликовать аватар.</string>
     <string name="copy_to_clipboard">Копировать в буфер обмена</string>
     <string name="message_copied_to_clipboard">Сообщение скопировано в буфер обмена</string>
     <string name="message">Сообщение</string>
+    <string name="quote">Цитата</string>
     <string name="show_error_message">Показать сообщения об ошибках</string>
     <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
@@ -538,6 +541,7 @@
     <string name="verify_omemo_keys">Проверить OMEMO-отпечатки</string>
     <string name="show_inactive_devices">Показать неактивных</string>
     <string name="hide_inactive_devices">Скрыть неактивных</string>
+    <string name="reply">Ответить</string>
     <string name="transcoding_video">Сжимание видео</string>
     <plurals name="seconds">
         <item quantity="one">%d секунда</item>
@@ -576,6 +580,7 @@
         <item quantity="other">%d месяцев</item>
     </plurals>
     <string name="today">Сегодня</string>
+    <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и картинок.</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
     <string name="contact_blocked_past_tense">Контакт заблокирован.</string>
     <string name="contacts_are_typing">%s набирают сообщение...</string>
@@ -584,11 +589,14 @@
     <string name="more_participants">%d участников</string>
     <string name="presence_offline">Оффлайн</string>
     <string name="pref_use_tor">Подключиться через Tor</string>
+    <string name="pref_use_tor_summary">Направлять все соединения через сеть Tor.</string>
+    <string name="pref_connection_options">Настройки соединения</string>
     <string name="image_low">низкое (720p)</string>
     <string name="image_mid">среднее (1920p)</string>
     <string name="image_high">высокое (3840p)</string>
     <string name="image_original">оригинальное (без сжатия)</string>
     <string name="send_message">Отправить сообщение</string>
+    <string name="send_failed_resend">не удалось отправить, пробую снова…</string>
     <string name="pref_show_connection_options">Расширенные настройки подключения</string>
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
