@@ -155,7 +155,6 @@
     <string name="unpublish_pgp_message">Êtes vous sûr de vouloir supprimer votre clef publique OpenPGP de votre annonce de présence?\nVos contacts ne pourront plus vous envoyer de message chiffrés avec OpenPGP.</string>
     <string name="openpgp_has_been_published">La clef publique OpenPGP a été publiée</string>
     <string name="mgmt_account_are_you_sure">Êtes-vous sûr?</string>
-    <string name="mgmt_account_delete_confirm_text">Si vous supprimez votre compte ainsi que tout votre historique de conversation sera perdu</string>
     <string name="attach_record_voice">Enregistrer une voix</string>
     <string name="account_settings_jabber_id">Identifiant</string>
     <string name="account_settings_example_jabber_id">nom@exemple.com</string>
@@ -504,7 +503,6 @@
     <string name="magic_create_text">Nous vous guiderons pendant toute la procédure de création d’un compte utilisateur avec un mot de passe aléatoire que vous pourrez utiliser ou modifier, au choix durant, la prochaine étape. \nEnsuite vous pourrez communiquer avec les utilisateur·trice·s des autres fournisseurs en leur transmettant votre identifiant complet de Jabber.</string>
     <string name="your_full_jid_will_be">Votre Jabber ID complet sera : %s</string>
     <string name="create_account">Création d’un nouveau compte</string>
-    <string name="welcome_advanced_mode">Mode expert</string>
     <string name="pick_your_username">Choisissez votre nom d’utilisateur</string>
     <string name="pref_manually_change_presence">Gérer la disponibilité manuellement</string>
     <string name="pref_manually_change_presence_summary">Paramètre votre disponibilité lorsque vous éditez votre message de statut.</string>
