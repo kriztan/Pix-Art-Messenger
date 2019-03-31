@@ -111,6 +111,7 @@
     <string name="pref_sound">Tono</string>
     <string name="pref_sound_summary">Reproduce tono con la notificación</string>
     <string name="pref_send_crash">Enviar informes de errores</string>
+    <string name="pref_send_crash_summary">Enviando informes de errores, puedes ayudar al desarrollo continuo de Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Confirmar mensajes</string>
     <string name="pref_confirm_messages_summary">Permitir a tus contactos saber cuando has recibido y leído sus mensajes</string>
     <string name="pref_ui_options">Pantalla</string>
@@ -889,4 +890,10 @@
     <string name="mgmt_account_password_forgotten">Contraseña olvidada</string>
     <string name="password_forgotten_title">Contraseña olvidada</string>
     <string name="password_forgotten_text">¿Has olvidado la contraseña de tu cuenta? Ahora intentaremos abrir la web de soporte de tu proveedor.</string>
+    <string name="set_settings_intro">Aquí puedes establecer algunas configuraciones de privacidad importantes. Todas las configuraciones pueden ser modificadas más tarde.</string>
+    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizaciones de mapa directamente en la ventana de chat</string>
+    <string name="pref_show_mappreview_inside">Mostrar previsualizaciones de localizaciones en el chat</string>
+    <string name="pref_use_internal_updater_summary">Permitir que la aplicación busque actualizaciones una vez al día</string>
+    <string name="pref_use_internal_updater">buscar actualizaciones</string>
+    <string name="attach">Adjuntar</string>
 </resources>
