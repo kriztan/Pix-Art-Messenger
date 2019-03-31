@@ -146,7 +146,6 @@
     <string name="unpublish_pgp_message">OpenPGP genel anahtarınızı varlığınızın duyurusundan kaldırmak istediğinize emin misiniz? \ N Kişileriniz artık size OpenPGP şifrelenmiş mesajlar gönderemeyecek.</string>
     <string name="openpgp_has_been_published">OpenPGP genel anahtarı paylaşıldı.</string>
     <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
-    <string name="mgmt_account_delete_confirm_text">Hesabınızı silerseniz, tüm görüşme geçmişiniz kaybolur</string>
     <string name="attach_record_voice">Kayıt sesi</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
     <string name="account_settings_example_jabber_id">kullanıcıadı@pix-art.de</string>
