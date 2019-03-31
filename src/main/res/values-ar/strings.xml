@@ -314,7 +314,6 @@
     <string name="mgmt_account_reconnect">إعادة الاتصال</string>
     <string name="welcome_text">… هو تطبيق محادثة حر و آمن لجابر و XMPP.</string>
     <string name="create_account">إنشاء حساب جديد</string>
-    <string name="welcome_advanced_mode">الوضع المتقدم</string>
     <string name="pick_your_username">قم باختيار اسم مستخدم خاص بك</string>
     <string name="status_message">رسالة حالة الحضور</string>
     <string name="presence_chat">حر للمحادثة</string>
