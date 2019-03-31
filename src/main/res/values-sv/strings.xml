@@ -402,8 +402,6 @@
     <string name="notify_on_all_messages">Notifiera för alla meddelanden</string>
     <string name="notify_never">Notifieringar deaktiverade</string>
     <string name="notify_paused">Notifieringar pausade</string>
-    <string name="pref_picture_compression">Komprimera bilder</string>
-    <string name="pref_picture_compression_summary">Storleksjustera och komprimera bilder</string>
     <string name="always">Alltid</string>
     <string name="battery_optimizations_enabled">Batterioptimeringar aktiverade</string>
     <string name="battery_optimizations_enabled_explained">Din enhet har kraftiga batterioptimeringar som påverkar Pix-Art Messenger på så sätt att inkommande meddelanden kan försenas eller kan till och med gå förlorade.\nDet är rekommenderat att deaktivera batterioptimeringarna.</string>
