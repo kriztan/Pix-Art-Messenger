@@ -481,6 +481,10 @@
     <string name="notify_only_when_highlighted">Notificar solo cuando eres mencionado</string>
     <string name="notify_never">Notificaciones deshabilitadas</string>
     <string name="notify_paused">Notificaciones pausadas</string>
+    <string name="pref_picture_quality">Calidad de imagen</string>
+    <string name="pref_picture_quality_summary">Redimensionar y comprimir las imágenes</string>
+    <string name="pref_video_quality">Calidad de vídeo</string>
+    <string name="pref_video_quality_summary">Redimensionar y comprimir los vídeos</string>
     <string name="video_low">bajo (144p)</string>
     <string name="video_mid">medio (360p)</string>
     <string name="video_high">alto (720p)</string>
@@ -820,6 +824,7 @@
     <string name="no_name_set_instructions">Alias no configurado.</string>
     <string name="autojoin_group_chat">Unirse automáticamente al grupo de chat</string>
     <string name="pref_show_links_inside">Mostrar previsualizaciones de enlaces web en el chat</string>
+    <string name="pref_show_links_inside_summary">Mostrar previsualizaciones de enlaces web directamente en la vista de chat, se establecerá una conexión al servidor especificado en el enlace.</string>
     <string name="pref_play_gif_inside">Reproducir archivos GIF en la conversación</string>
     <string name="pref_play_gif_inside_summary">Ejecutar archivos GIF dentro de la vista de chat.</string>
     <string name="open_with">Abrir con…</string>
@@ -886,6 +891,7 @@
     <string name="password_forgotten_title">Contraseña olvidada</string>
     <string name="password_forgotten_text">¿Has olvidado la contraseña de tu cuenta? Ahora intentaremos abrir la web de soporte de tu proveedor.</string>
     <string name="set_settings_intro">Aquí puedes establecer algunas configuraciones de privacidad importantes. Todas las configuraciones pueden ser modificadas más tarde.</string>
+    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizaciones de mapas directamente en la vista de chat, se establecerá una conexión al servidor Pix-Art.</string>
     <string name="pref_show_mappreview_inside">Mostrar previsualizaciones de localizaciones en el chat</string>
     <string name="pref_use_internal_updater_summary">Permitir que la aplicación busque actualizaciones una vez al día</string>
     <string name="pref_use_internal_updater">buscar actualizaciones</string>
