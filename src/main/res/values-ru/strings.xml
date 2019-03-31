@@ -156,6 +156,7 @@
     <string name="unpublish_pgp_message">Вы уверены, что хотите удалить ваш публичный OpenGPG ключ из вашего уведомления о присутствии?\nВаши контакты больше не смогут посылать вам зашифрованные OpenPGP сообщения.</string>
     <string name="openpgp_has_been_published">Публичный OpenPGP ключ был опубликован.</string>
     <string name="mgmt_account_are_you_sure">Вы уверены?</string>
+    <string name="mgmt_account_delete_confirm_message">При удалении аккаунта вся локальная история переписки будет утеряна.\n\nЕсли вы удалите аккаунт с сервера, переписка также удалится и на сервере, вы не сможете залогиниться, пока не зарегистрируете новый аккаунт.</string>
     <string name="attach_record_voice">Записать голосовое сообщение</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
@@ -408,6 +409,7 @@
     <string name="none">Нет</string>
     <string name="recently_used">Часто используемые</string>
     <string name="search_contacts">Поиск контактов</string>
+    <string name="search_bookmarks">Поиск групповых чатов</string>
     <string name="choose_quick_action">Выберите быстрое действие</string>
     <string name="send_private_message">Отправить личное сообщение</string>
     <string name="user_has_left_conference">%1$s вышел из группы!</string>
@@ -503,6 +505,7 @@
     <string name="magic_create_text">Мы поможем вам создать аккаунт со случайно сгенерированным паролем, который вы сможете сменить на свой собственный на следующей странице.\nЭто позволит вам общаться с другими пользователями этого и других серверов, давая вам Jabber-ID.</string>
     <string name="your_full_jid_will_be">Ваш Jabber-ID был: %s</string>
     <string name="create_account">Создать аккаунт</string>
+    <string name="welcome_existing_account">У меня есть аккаунт</string>
     <string name="pick_your_username">Выберите имя пользователя</string>
     <string name="pref_manually_change_presence">Управлять доступностью вручную</string>
     <string name="status_message">Статус сообщения</string>
@@ -529,9 +532,11 @@
     <string name="invite_again">Пригласить снова</string>
     <string name="inviteUser_Subject">приглашает вас присоединиться через</string>
     <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать Pix-Art Messenger. Если вы используете Android - нажмите на ссылку, чтобы попробовать...</string>
+    <string name="pref_broadcast_last_activity">Отображать последнюю активность пользователя</string>
     <string name="pref_broadcast_last_activity_summary">Позволяет вашим контактам видеть, когда вы пользуетесь Pix-Art Messenger</string>
     <string name="invite_user">Пригласить в Pix-Art Messenger</string>
     <string name="request_permissions_message">Pix-Art Messenger запросит у вас несколько разрешений. Чтобы пользоваться всеми возможностями этого мессенджера, нужно дать эти разрешения. Если какое-то разрешение не будет получено - приложение будет закрыто.</string>
+    <string name="request_permissions_message_again">Вы не дали некоторых разрешений, нужных для работы Pix-Art Messenger. Хотите перейти в настройки разрешений сейчас? Если вы не дадите какого-либо из этих разрешений - приложение будет закрыто.</string>
     <string name="unable_to_connect_to_keychain">Не удается подключиться к OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Устройство больше не используется</string>
     <string name="please_wait">Пожалуйста, подождите…</string>
@@ -659,6 +664,7 @@
     <string name="pref_show_foreground_service">Использовать фоновую службу</string>
     <string name="update_service">Служба обновления Pix-Art Messenger</string>
     <string name="install_update">Установить обновление?</string>
+    <string name="highlight_in_muc">отметить пользователя</string>
     <string name="no_application_found_to_open_link">Не удалось найти подходящее приложение для открытия ссылки</string>
     <string name="contacts_have_read_up_to_this_point">%s прочитал до этого момента</string>
     <string name="contact_has_read_up_to_this_point">%s прочитал до этого момента</string>
@@ -856,4 +862,7 @@
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
     <string name="pref_use_internal_updater">проверить наличие обновлений</string>
     <string name="attach">Прикрепить</string>
+    <string name="delete_locally">Удалить с этого устройства</string>
+    <string name="delete_from_server">Удалить с сервера</string>
+    <string name="go_online_to_delete">Удаляемый аккаунт должен быть активирован и в режиме онлайн.</string>
 </resources>
