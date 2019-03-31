@@ -415,10 +415,6 @@
     <string name="notify_only_when_highlighted">Pahibal-a kung ge-hisgutan</string>
     <string name="notify_never">Mga pahibalo kay baldado</string>
     <string name="notify_paused">Mga pahibalo kay gipa ungot</string>
-    <string name="pref_picture_compression">Isikit ang mga litrato</string>
-    <string name="pref_picture_compression_summary">Usaba ug sukod ug isikit ang mga litrato</string>
-    <string name="pref_video_compression">Isikit ang mga bidyo</string>
-    <string name="pref_video_compression_summary">Usaba ang sukod ug isikit ang mga bidyo</string>
     <string name="video_low">ubos (144p)</string>
     <string name="video_mid">tunga (360p)</string>
     <string name="video_high">taas (720p)</string>
