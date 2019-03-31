@@ -444,10 +444,6 @@
     <string name="notify_only_when_highlighted">I-notify lamang kapag nabanggit</string>
     <string name="notify_never">Hindi pinagana ang mga notification</string>
     <string name="notify_paused">Ang mga notification ay naka-pause</string>
-    <string name="pref_picture_compression">I-compress ang mga larawan</string>
-    <string name="pref_picture_compression_summary">Baguhin ang laki at i-compress ang mga larawan</string>
-    <string name="pref_video_compression">I-compress ang mga video</string>
-    <string name="pref_video_compression_summary">Baguhin ang laki at i-compress ang mga video</string>
     <string name="video_low">mababa (144p)</string>
     <string name="video_mid">gitna (360p)</string>
     <string name="video_high">mataas (720p)</string>
