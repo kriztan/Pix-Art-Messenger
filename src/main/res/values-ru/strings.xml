@@ -580,6 +580,7 @@
     <string name="not_trusted">Недоверенный</string>
     <string name="invalid_barcode">Неверный QR-код</string>
     <string name="verify_with_qr_code">подтвердить QR кодом</string>
+    <string name="i_followed_this_link_from_a_trusted_source">Я получил эту ссылку из надежного источника</string>
     <string name="verify_omemo_keys">Проверить OMEMO-отпечатки</string>
     <string name="show_inactive_devices">Показать неактивных</string>
     <string name="hide_inactive_devices">Скрыть неактивных</string>
@@ -772,6 +773,7 @@
     <string name="media_browser">Медиа браузер</string>
     <string name="account_status_stream_opening_error">Ошибка открытия потока</string>
     <string name="action_open">Открыть</string>
+    <string name="security_violation_not_attaching_file">Файл пропущен из-за проблем с безопасностью.</string>
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="delete_file_dialog_msg">Вы хотите удалить этот файл?\n\n<b>Внимание:</b>Это не затронет копии этого файла, которые сохранены на других устройствах или серверах.</string>
     <string name="cancelled">отменён</string>
@@ -795,6 +797,7 @@
     <string name="no_name_set_instructions">Имя не установлено.</string>
     <string name="autojoin_group_chat">Автоматически присоединяться к групповым чатам</string>
     <string name="pref_show_links_inside">Показывать превью ссылок в чате</string>
+    <string name="pref_show_links_inside_summary">Показывать превью ссылок внутри чата. Будет устанавливаться соединение с сервером, указанным в ссылке.</string>
     <string name="pref_play_gif_inside">Запускать GIF файлы в чате</string>
     <string name="pref_play_gif_inside_summary">Запускать GIF файлы немедленно при просмотре чата.</string>
     <string name="open_with">Открыть с помощью...</string>
