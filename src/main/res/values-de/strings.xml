@@ -481,6 +481,10 @@
     <string name="notify_only_when_highlighted">Nur benachrichtigen, wenn ich erwähnt werde</string>
     <string name="notify_never">Benachrichtigungen deaktiviert</string>
     <string name="notify_paused">Benachrichtigungen pausiert</string>
+    <string name="pref_picture_quality">Bildqualität</string>
+    <string name="pref_picture_quality_summary">Bildgröße anpassen und komprimieren</string>
+    <string name="pref_video_quality">Videoqualität</string>
+    <string name="pref_video_quality_summary">Videogröße anpassen und komprimieren</string>
     <string name="video_low">niedrig (144p)</string>
     <string name="video_mid">mittelmäßig (360p)</string>
     <string name="video_high">hoch (720p)</string>
@@ -820,6 +824,7 @@
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
     <string name="autojoin_group_chat">Diesem Gruppenchat automatisch beitreten</string>
     <string name="pref_show_links_inside">Zeige eine Vorschau von Weblinks im Chat</string>
+    <string name="pref_show_links_inside_summary">Zeige eine Vorschau von Weblinks direkt im Chat, dabei wird eine Verbindung zu dem im Link angegebenen Server hergestellt.</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
     <string name="pref_play_gif_inside_summary">GIF Dateien direkt im Chat abspielen.</string>
     <string name="open_with">Öffnen mit…</string>
@@ -886,6 +891,7 @@
     <string name="password_forgotten_title">Passwort vergessen</string>
     <string name="password_forgotten_text">Du hast dein Passwort vergessen? Wir versuchen, die Support-Website deines Providers zu öffnen.</string>
     <string name="set_settings_intro">Hier kannst du einige wichtige Einstellungen zur Privatsphäre nach deinen Wünschen vornehmen. Alle Änderungen können auch später angepasst werden.</string>
+    <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung Pix-Art-Server hergestellt.</string>
     <string name="pref_show_mappreview_inside">Zeige eine Vorschau von Karten im Chat</string>
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
