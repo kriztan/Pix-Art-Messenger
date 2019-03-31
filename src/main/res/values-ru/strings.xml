@@ -683,11 +683,13 @@
     <string name="destroy_room_failed">Групповой чат не может быть закрыт</string>
     <string name="no_write_access_in_public_muc">Вы не состоите в этом групповом чате и не можете оставлять сообщения в данный момент.\nПожалуйста, зайдите в свойства чата нажатием <b>ОК</b> и отправьте приватное сообщение модератору, администратору или владельцу чата долгим нажатием на их имени в верхней части списка, чтобы получить возможность оставлять сообщения.</string>
     <string name="huawei_protected_apps">Защищенные приложения</string>
+    <string name="huawei_protected_apps_summary">Чтобы продолжить получать уведомления при погашенном экране, вам нужно добавить Pix-Art Messenger в список исключений.</string>
     <string name="pref_enable_multi_accounts_title">Использовать несколько аккаунтов</string>
     <string name="pref_enable_multi_accounts_summary">Вы хотите использовать несколько аккаунтов?</string>
     <string name="mtm_accept_cert">Принять неизвестный сертификат?</string>
     <string name="mtm_trust_anchor">Сертификат не подписан авторизованным центром сертификации.</string>
     <string name="mtm_accept_servername">Имя сервера не совпадает. Принять?</string>
+    <string name="mtm_hostname_mismatch">Сервер не может быть опознан как \"%s\". Сертификат действителен только для:</string>
     <string name="mtm_connect_anyway">Все равно подключиться?</string>
     <string name="mtm_cert_details">Сведения о сертификате:</string>
     <string name="once">Один раз</string>
