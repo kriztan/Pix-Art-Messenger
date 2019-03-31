@@ -477,10 +477,6 @@
     <string name="notify_only_when_highlighted">Notifier seulement en cas de mention</string>
     <string name="notify_never">Notifications désactivées</string>
     <string name="notify_paused">Notifications en pause</string>
-    <string name="pref_picture_compression">Compresser images</string>
-    <string name="pref_picture_compression_summary">Redimensionner et compresser les images</string>
-    <string name="pref_video_compression">Compression des vidéos</string>
-    <string name="pref_video_compression_summary">Redimensionner et compresser les vidéos</string>
     <string name="video_low">basse (144p)</string>
     <string name="video_mid">moyenne (360p)</string>
     <string name="video_high">haute (720p)</string>
@@ -815,7 +811,6 @@
     <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
     <string name="autojoin_group_chat">Rejoindre automatiquement ce groupe de discussion</string>
     <string name="pref_show_links_inside">Afficher les aperçus des liens Web au sein de la discussion</string>
-    <string name="pref_show_links_inside_summary">Afficher les aperçus des liens Web directement dans la fenêtre de discussion.</string>
     <string name="pref_play_gif_inside">Animer les fichiers GIF dans la discussion</string>
     <string name="pref_play_gif_inside_summary">Animer les images GIF publiées directement dans la fenêtre de discussion.</string>
     <string name="open_with">Ouvrir avec …</string>
