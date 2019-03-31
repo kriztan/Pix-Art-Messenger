@@ -512,6 +512,7 @@
     <string name="magic_create_text">A continuación crearemos un perfil con una contraseña generada aleatoriamente que podrás utilizar o cambiar en la página siguiente\ny posteriormente podrás ponerte en contacto con los contactos de este y otros servidores dándoles tu Jabber-ID.</string>
     <string name="your_full_jid_will_be">Tu identificador Jabber será: %s</string>
     <string name="create_account">Crear cuenta</string>
+    <string name="welcome_existing_account">Tengo una cuenta</string>
     <string name="pick_your_username">Selecciona tu nombre de usuario</string>
     <string name="pref_manually_change_presence">Cambiar disponibilidad manualmente</string>
     <string name="pref_manually_change_presence_summary">Establezca su disponibilidad cuando edite su mensaje de estado.</string>
@@ -894,4 +895,7 @@
     <string name="pref_use_internal_updater_summary">Permitir que la aplicación busque actualizaciones una vez al día</string>
     <string name="pref_use_internal_updater">buscar actualizaciones</string>
     <string name="attach">Adjuntar</string>
+    <string name="delete_locally">Eliminar localmente</string>
+    <string name="delete_from_server">Eliminar en el servidor</string>
+    <string name="go_online_to_delete">Tienes que activar y/o ir en línea con la cuenta que quieres eliminar del servidor.</string>
 </resources>
