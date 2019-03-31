@@ -139,7 +139,6 @@
     <string name="unpublish_pgp_message">Ziur zure OpenPGP gako publikoa zure presentzia eguneraketetatik kendu nahi duzula?\nZure kontaktuek ezin dizute gehiago OpenPGPz enkriptatutako mezuak bidali.</string>
     <string name="openpgp_has_been_published">OpenPGP gako publikoa argitaratu da.</string>
     <string name="mgmt_account_are_you_sure">Ziur al zaude?</string>
-    <string name="mgmt_account_delete_confirm_text">Zure kontua ezabatzen baduzu, zure elkarrizketen historia guztia galduko da</string>
     <string name="attach_record_voice">Ahotsa grabatu</string>
     <string name="account_settings_jabber_id">Jabber IDa</string>
     <string name="account_settings_example_jabber_id">erabiltzailea@adibidea.com</string>
