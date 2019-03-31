@@ -102,7 +102,6 @@
     <string name="pref_sound">Ringtone</string>
     <string name="pref_sound_summary">I-play ang tunog kapay mayroong bagong mensahe</string>
     <string name="pref_send_crash">Magpadala ng mga bagsak na ulat</string>
-    <string name="pref_send_crash_summary">Kapag magpadala ka ng stack traces makakatulong ka sa pag-unlad ng Pix-Art Messenger</string>
     <string name="pref_confirm_messages">I-kumpirma ang mensahe</string>
     <string name="pref_confirm_messages_summary">Paki alam sa mga kontak ko na natanggap at nabasa ko ang kanilang mga mensahe</string>
     <string name="pref_ui_options">UI</string>
