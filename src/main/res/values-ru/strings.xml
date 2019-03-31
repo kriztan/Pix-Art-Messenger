@@ -547,8 +547,10 @@
     <string name="remote_server_not_found">Сервер не найден</string>
     <string name="error_file_corrupt">Возможно, файл поврежден.</string>
     <string name="unable_to_update_account">Не удается изменить учетную запись</string>
+    <string name="report_jid_as_spammer">Пометить этот JID, как отправляющий нежелательные сообщения.</string>
     <string name="create_issue">Сообщить об ошибке</string>
     <string name="pref_delete_omemo_identities">Удалить OMEMO-отпечатки</string>
+    <string name="pref_delete_omemo_identities_summary">Создать новые OMEMO ключи. Вашим контактам нужно будет проверить вашу личность снова. Используйте в случае крайней необходимости.</string>
     <string name="delete_selected_keys">Удалить выбранные ключи</string>
     <string name="error_publish_avatar_offline">Вы должны быть подключены, чтобы опубликовать аватар.</string>
     <string name="copy_to_clipboard">Копировать в буфер обмена</string>
@@ -652,6 +654,7 @@
     <string name="application_found_to_open_website">Не удалось найти подходящее приложение для открытия веб-сайта</string>
     <string name="open_website">Открыть веб-сайт</string>
     <string name="yesterday">Вчера</string>
+    <string name="pref_validate_hostname">Проверять имя хоста через DNSSEC</string>
     <string name="certificate_does_not_contain_jid">Сертификат не содержит Jabber ID</string>
     <string name="mark_as_read">Отметить как прочитанное</string>
     <string name="pref_show_foreground_service_summary">Некоторые устройства Android закрывают приложения по прошествии некоторого времени, и вы теряете возможность получать новые сообщения. Если вы столкнулись с такой проблемой - попробуйте активировать фоновую службу. Имейте ввиду, что если эта опция включена - значок уведомления будет отображаться постоянно.</string>
@@ -698,6 +701,7 @@
     <string name="error_trustkey_hint_mutual">Подсказка: Иногда это может быть устранено добавлением друг друга в список контактов.</string>
     <string name="disable_encryption_message">Вы уверены, что хотите отключить шифрование OMEMO в этом диалоге?\nЭто даст возможность администратору сервера читать ваши сообщения, но может быть единственным способом связаться с контактами, использующими устаревший клиент.</string>
     <string name="disable_now">Отключить</string>
+    <string name="draft">Черновик:</string>
     <string name="pref_omemo_setting">OMEMO шифрование</string>
     <string name="pref_omemo_setting_summary_always">OMEMO всегда будет использоваться для личных бесед и приватных групповых чатов.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO будет по умолчанию использоваться для новых бесед.</string>
@@ -734,6 +738,7 @@
     <string name="contact_name">Имя контакта</string>
     <string name="nickname">Наименование для этого группового чата</string>
     <string name="group_chat_name">Название</string>
+    <string name="providing_a_name_is_optional">Указание имени не обязательно</string>
     <string name="create_dialog_group_chat_name">Название группового чата</string>
     <string name="everyone_has_read_up_to_this_point">Все прочитали до этого момента</string>
     <string name="delete_message">Удалить сообщение</string>
@@ -794,6 +799,7 @@
     <string name="enter_password_to_restore">Введите пароль от аккаунта %s для восстановления резервной копии.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
     <string name="pref_prefer_xmpp_avatar">Предпочитаемый XMPP аватар</string>
     <string name="view_users">Просмотреть список участников</string>
     <string name="group_chat_members">Участники</string>
@@ -810,6 +816,7 @@
     <string name="creating_channel">Создание публичного канала...</string>
     <string name="channel_already_exists">Канал с таким именем уже существует</string>
     <string name="joined_an_existing_channel">Вы присоединились к существующему каналу</string>
+    <string name="unable_to_set_channel_configuration">Не удается сохранить конфигурацию канала</string>
     <string name="back">Назад</string>
     <string name="conference_options">Настройки приватности группового чата</string>
     <string name="channel_options">Конфигурация публичного канала</string>
@@ -840,8 +847,15 @@
     <string name="notification_backup_created_subtitle">Резервная копия сохранена в %s</string>
     <string name="notification_backup_failed_title">Сбой резервного копирования</string>
     <string name="notification_backup_failed_subtitle">Резервная копия не может быть сохранена в %s</string>
+    <string name="search_participants">Поиск участников</string>
     <string name="file_too_large">Файл слишком большой</string>
     <string name="mgmt_account_password_forgotten">Не помню пароль</string>
     <string name="password_forgotten_title">Не помню пароль</string>
     <string name="password_forgotten_text">Забыли пароль от аккаунта? Мы попробуем открыть страницу поддержки вашего провайдера.</string>
+    <string name="set_settings_intro">Здесь вы можете установить важные настройки безопасности. Все настройки могут быть изменены позднее.</string>
+    <string name="pref_show_mappreview_inside_summary">Показывать превью карт внутри чата (будет установлено соединение с Pix-Art-Server).</string>
+    <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
+    <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
+    <string name="pref_use_internal_updater">проверить наличие обновлений</string>
+    <string name="attach">Прикрепить</string>
 </resources>
