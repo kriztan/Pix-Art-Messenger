@@ -444,10 +444,6 @@
     <string name="notify_only_when_highlighted">Yalnızca bahsedildiğinde bildir</string>
     <string name="notify_never">Bildirimler devre dışı</string>
     <string name="notify_paused">Bildirimler duraklatıldı</string>
-    <string name="pref_picture_compression">Resimleri sıkıştır</string>
-    <string name="pref_picture_compression_summary">Resimleri yeniden boyutlandır ve sıkıştır</string>
-    <string name="pref_video_compression">Videoları sıkıştır</string>
-    <string name="pref_video_compression_summary">Videoları yeniden boyutlandırma ve sıkıştırma</string>
     <string name="video_low">düşük (144p)</string>
     <string name="video_mid">orta (360p)</string>
     <string name="video_high">yüksek (720p)</string>
