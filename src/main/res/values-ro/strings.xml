@@ -432,8 +432,6 @@
     <string name="notify_only_when_highlighted">Notifică doar atunci când cineva vă menționează numele</string>
     <string name="notify_never">Notificări dezactivate</string>
     <string name="notify_paused">Notificări suspendate</string>
-    <string name="pref_picture_compression">Comprimă imaginile</string>
-    <string name="pref_picture_compression_summary">Redimensionează și comprimă imaginile</string>
     <string name="always">Mereu</string>
     <string name="battery_optimizations_enabled">Optimizare baterie activată</string>
     <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru Pix-Art Messenger, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
