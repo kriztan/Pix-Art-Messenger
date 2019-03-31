@@ -442,10 +442,6 @@
     <string name="notify_only_when_highlighted">Pemberitahuan hanya bila disebutkan</string>
     <string name="notify_never">Pemberitahuan tidak diaktifkan</string>
     <string name="notify_paused">Pemberitahuan dijeda</string>
-    <string name="pref_picture_compression">Meringkaskan gambar</string>
-    <string name="pref_picture_compression_summary">Ubah ukuran dan meringkaskan gambar</string>
-    <string name="pref_video_compression">Meringkaskan video</string>
-    <string name="pref_video_compression_summary">Ubah ukuran dan meringkaskan video</string>
     <string name="video_low">rendah (144p)</string>
     <string name="video_mid">menengah (360p)</string>
     <string name="video_high">tinggi (720p)</string>
