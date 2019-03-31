@@ -156,7 +156,6 @@
     <string name="unpublish_pgp_message">Вы уверены, что хотите удалить ваш публичный OpenGPG ключ из вашего уведомления о присутствии?\nВаши контакты больше не смогут посылать вам зашифрованные OpenPGP сообщения.</string>
     <string name="openpgp_has_been_published">Публичный OpenPGP ключ был опубликован.</string>
     <string name="mgmt_account_are_you_sure">Вы уверены?</string>
-    <string name="mgmt_account_delete_confirm_text">Если вы удалите свой аккаунт, то история разговора будет потеряна</string>
     <string name="attach_record_voice">Записать голосовое сообщение</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
@@ -504,7 +503,6 @@
     <string name="magic_create_text">Мы поможем вам создать аккаунт со случайно сгенерированным паролем, который вы сможете сменить на свой собственный на следующей странице.\nЭто позволит вам общаться с другими пользователями этого и других серверов, давая вам Jabber-ID.</string>
     <string name="your_full_jid_will_be">Ваш Jabber-ID был: %s</string>
     <string name="create_account">Создать аккаунт</string>
-    <string name="welcome_advanced_mode">Расширенный режим</string>
     <string name="pick_your_username">Выберите имя пользователя</string>
     <string name="pref_manually_change_presence">Управлять доступностью вручную</string>
     <string name="status_message">Статус сообщения</string>
