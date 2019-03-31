@@ -146,7 +146,6 @@
     <string name="unpublish_pgp_message">Yakin ingin menghapus kunci terbuka OpenPGP dari pemberitahuan anda?\nkontak anda tidak lagi dapat mengirimkan pesan terenkripsi OpenPGP.</string>
     <string name="openpgp_has_been_published">Kunci terbuka OpenPGP telah ditampilkan.</string>
     <string name="mgmt_account_are_you_sure">Apakah kamu yakin?</string>
-    <string name="mgmt_account_delete_confirm_text">Jika anda menghapus akun anda, semua riwayat percakapan anda akan hilang</string>
     <string name="attach_record_voice">Rekam suara</string>
     <string name="account_settings_jabber_id">Obrolan-Data diri</string>
     <string name="account_settings_example_jabber_id">nama pengguna@pix-art.de</string>
