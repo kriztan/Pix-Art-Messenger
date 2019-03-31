@@ -479,10 +479,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="notify_only_when_highlighted">Powiadamiaj tylko w przypadku wzmianki o mnie</string>
     <string name="notify_never">Powiadomienia wyłączone</string>
     <string name="notify_paused">Powiadomienia wstrzymane</string>
-    <string name="pref_picture_compression">Kompresuj obrazki</string>
-    <string name="pref_picture_compression_summary">Zmień rozmiar i kompresuj obrazki</string>
-    <string name="pref_video_compression">Skompresuj filmik</string>
-    <string name="pref_video_compression_summary">Zmień rozmiar i kompresuj wideo</string>
     <string name="video_low">niski (144p)</string>
     <string name="video_mid">średnie (360p)</string>
     <string name="video_high">wysokie (720p)</string>
