@@ -102,7 +102,6 @@
     <string name="pref_sound">Zil sesi</string>
     <string name="pref_sound_summary">Yeni bir mesaj geldiği zaman ses çıkar</string>
     <string name="pref_send_crash">Kilitlenme raporlarını gönderin</string>
-    <string name="pref_send_crash_summary">Yığın ipuçlarını göndererek, Pix-Art Messenger\'ın sürekli gelişmesine yardımcı oluyorsunuz</string>
     <string name="pref_confirm_messages">Mesajları Onayla</string>
     <string name="pref_confirm_messages_summary">Kişilerinize mesajlarınızı ne zaman aldığınızı ve okuduğunuzu bilmelerini sağlayın</string>
     <string name="pref_ui_options">UI</string>
