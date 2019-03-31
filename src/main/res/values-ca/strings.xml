@@ -139,7 +139,6 @@
     <string name="unpublish_pgp_message">Esteu segur que voleu eliminar la vostra clau pública OpenPGP de l\'anunci de la vostra presència?\nEls vostres contactes ja no podran enviar missatges xifrats amb OpenPGP.</string>
     <string name="openpgp_has_been_published">S\'ha publicat la clau pública OpenPGP.</string>
     <string name="mgmt_account_are_you_sure">Estàs segur?</string>
-    <string name="mgmt_account_delete_confirm_text">Si suprimiu el vostre compte, es perdrà tot l\'historial de la conversa</string>
     <string name="attach_record_voice">Registre de veu</string>
     <string name="account_settings_jabber_id">Identificació de Jabber</string>
     <string name="account_settings_example_jabber_id">username@example.com</string>
