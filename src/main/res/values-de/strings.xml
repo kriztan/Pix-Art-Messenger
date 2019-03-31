@@ -111,6 +111,7 @@
     <string name="pref_sound">Benachrichtigungston</string>
     <string name="pref_sound_summary">Benachrichtigungston wiedergeben</string>
     <string name="pref_send_crash">Absturzberichte senden</string>
+    <string name="pref_send_crash_summary">Wenn du Absturzberichte einschickst, hilfst du bei der Verbesserung von Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Lese- und Empfangsbestätigung senden</string>
     <string name="pref_confirm_messages_summary">Informiere deine Kontakte, wenn du eine Nachricht empfangen und gelesen hast</string>
     <string name="pref_ui_options">Benutzeroberfläche</string>
@@ -889,4 +890,7 @@
     <string name="mgmt_account_password_forgotten">Passwort vergessen</string>
     <string name="password_forgotten_title">Passwort vergessen</string>
     <string name="password_forgotten_text">Du hast dein Passwort vergessen? Wir versuchen, die Support-Website deines Providers zu öffnen.</string>
+    <string name="set_settings_intro">Hier kannst du einige wichtige Einstellungen zur Privatsphäre nach deinen Wünschen vornehmen. Alle Änderungen können auch später angepasst werden.</string>
+    <string name="pref_show_mappreview_inside_summary">Zeige eine Kartenvorschau direkt im Chat</string>
+    <string name="pref_show_mappreview_inside">Zeige eine Vorschau von Karten im Chat</string>
 </resources>
