@@ -111,7 +111,6 @@
     <string name="pref_sound">Suono di notifica</string>
     <string name="pref_sound_summary">Esegui un suono quando arriva un nuovo messaggio</string>
     <string name="pref_send_crash">Invia riepiloghi dei problemi</string>
-    <string name="pref_send_crash_summary">Inviando queste tracce aiuti lo sviluppo di Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Conferma messaggi</string>
     <string name="pref_confirm_messages_summary">Fai sapere ai tuoi contatti quando hai ricevuto e letto i loro messaggi</string>
     <string name="pref_ui_options">Interfaccia utente</string>
