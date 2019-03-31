@@ -146,7 +146,6 @@
     <string name="unpublish_pgp_message">Sigurado ka nga imung tanggalun imung OpenPGP nga publik nga yawe gekan sa presensya sa pahibalo?\n Imung mga kontak kay dili na pwedi ipadala sa imuha ug OpenPGP nga naka-encrypt nga mga mensahe.</string>
     <string name="openpgp_has_been_published">Gilunsad ang publikong yawe sa OpenPGP.</string>
     <string name="mgmt_account_are_you_sure">Sure jud ka?</string>
-    <string name="mgmt_account_delete_confirm_text">Kon imong tangtangon ang imong account, ang imong tibuok kasaysayan sa gepaga-istoryahan kay mawala</string>
     <string name="attach_record_voice">Irekord ang tingog</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
