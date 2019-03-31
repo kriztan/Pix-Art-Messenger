@@ -472,6 +472,10 @@
     <string name="notify_only_when_highlighted">Уведомлять только при упоминаниях</string>
     <string name="notify_never">Уведомления отключены</string>
     <string name="notify_paused">Уведомления приостановлены</string>
+    <string name="pref_picture_quality">Качество изображения</string>
+    <string name="pref_picture_quality_summary">Изменять размер и сжимать изображения</string>
+    <string name="pref_video_quality">Качество видео</string>
+    <string name="pref_video_quality_summary">Изменять размер и сжимать видео</string>
     <string name="video_low">низкое (144p)</string>
     <string name="video_mid">среднее (360p)</string>
     <string name="video_high">высокое (720p)</string>
@@ -510,6 +514,7 @@
     <string name="presence_xa">Недоступен</string>
     <string name="presence_dnd">Занят</string>
     <string name="secure_password_generated">Защищенный пароль сгенерирован</string>
+    <string name="device_does_not_support_battery_op">Ваше устройство не поддерживает исключение из списка оптимизации батареи</string>
     <string name="share">Поделиться</string>
     <string name="share_location">Поделиться местоположением</string>
     <string name="location_sharing_disabled">Возможность делиться местоположением отключена в настройках</string>
@@ -614,12 +619,19 @@
     <string name="today">Сегодня</string>
     <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и картинок.</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
+    <string name="block_jabber_id">Заблокировать Jabber-ID</string>
     <string name="contact_blocked_past_tense">Контакт заблокирован.</string>
+    <string name="pref_notifications_from_strangers">Уведомления от незнакомцев</string>
+    <string name="pref_notifications_from_strangers_summary">Уведомлять о сообщениях от незнакомых контактов.</string>
+    <string name="received_message_from_stranger">Принимать сообщения от незнакомых контактов</string>
     <string name="contacts_are_typing">%s набирают сообщение...</string>
     <string name="contact_is_typing">%s набирает сообщение...</string>
     <string name="one_participant">один участник</string>
     <string name="more_participants">%d участников</string>
     <string name="presence_offline">Оффлайн</string>
+    <string name="block_stranger">Заблокировать незнакомца</string>
+    <string name="block_entire_domain">Заблокировать весь домен</string>
+    <string name="pref_use_auto_rotate_summary">Поворачивать изображения и видео для подгонки к размеру экрана</string>
     <string name="pref_use_tor">Подключиться через Tor</string>
     <string name="pref_use_tor_summary">Направлять все соединения через сеть Tor.</string>
     <string name="pref_connection_options">Настройки соединения</string>
@@ -633,6 +645,7 @@
     <string name="pref_show_connection_options">Расширенные настройки подключения</string>
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
+    <string name="sasl_downgrade">Устаревший механизм SASL</string>
     <string name="action_take_photo">cделать фото</string>
     <string name="action_take_video">записать видео</string>
     <string name="account_status_regis_web">Сервер требует регистрации на веб-сайте</string>
@@ -757,6 +770,7 @@
     <string name="delete_message_dialog_msg">Вы хотите удалить это сообщение?\n\n<b>Внимание:</b>Это не затронет сообщения, которые сохранены на других устройствах или серверах.</string>
     <string name="feature_not_implemented">Возможность пока недоступна</string>
     <string name="device_does_not_support_unknown_source_op">Ваше устройство не поддерживает установку из неизвестных источников.</string>
+    <string name="reject_request">Отклонить запрос</string>
     <string name="error_message_copied_to_clipboard">Сообщение об ошибке скопировано в буфер</string>
     <string name="pref_screen_security">Запретить скриншоты</string>
     <string name="omemo_decryption_failed">Ошибка расшифровки OMEMO-сообщения.</string>
@@ -792,10 +806,13 @@
     <string name="xmpp_address">XMPP адрес</string>
     <string name="please_enter_name">Пожалуйста, укажите название канала</string>
     <string name="please_enter_xmpp_address">Пожалуйста укажите XMPP адрес</string>
+    <string name="this_is_an_xmpp_address">Это адрес XMPP. Пожалуйста, укажите имя.</string>
     <string name="creating_channel">Создание публичного канала...</string>
     <string name="channel_already_exists">Канал с таким именем уже существует</string>
+    <string name="joined_an_existing_channel">Вы присоединились к существующему каналу</string>
     <string name="back">Назад</string>
     <string name="conference_options">Настройки приватности группового чата</string>
+    <string name="channel_options">Конфигурация публичного канала</string>
     <string name="allow_participants_to_edit_subject">Разрешить всем изменять эту тему</string>
     <string name="allow_participants_to_invite_others">Позволить всем приглашать других</string>
     <string name="anyone_can_edit_subject">Все могут изменять эту тему.</string>
@@ -805,11 +822,15 @@
     <string name="anyone_can_invite_others">Все могут приглашать других.</string>
     <string name="jabber_ids_are_visible_to_admins">Jabber ID видим для админов.</string>
     <string name="jabber_ids_are_visible_to_anyone">Jabber ID видим для всех.</string>
+    <string name="no_users_hint_channel">В этом канале нет участников. Пригласите ваших контактов или используйте кнопку \"Поделиться\" для распространения этого XMPP-адреса.</string>
     <string name="no_users_hint_group_chat">В этой группе нет участников.</string>
+    <string name="grant_owner_privileges">Предоставить права владельца</string>
+    <string name="remove_owner_privileges">Отозвать права владельца</string>
     <string name="remove_from_channel">Удалить из канала</string>
     <string name="ban_from_channel">Заблокировать на канале</string>
     <string name="manage_permission">Управление привилегиями</string>
     <string name="destroy_channel">Закрыть канал</string>
+    <string name="destroy_channel_dialog">Вы хотите удалить групповой чат %s? Это действие нельзя отменить.</string>
     <string name="destroy_channel_succeed">Канал успешно закрыт</string>
     <string name="destroy_channel_failed">Канал не может быть закрыт</string>
     <string name="action_end_conversation_channel">Покинуть канал</string>
@@ -820,4 +841,7 @@
     <string name="notification_backup_failed_title">Сбой резервного копирования</string>
     <string name="notification_backup_failed_subtitle">Резервная копия не может быть сохранена в %s</string>
     <string name="file_too_large">Файл слишком большой</string>
+    <string name="mgmt_account_password_forgotten">Не помню пароль</string>
+    <string name="password_forgotten_title">Не помню пароль</string>
+    <string name="password_forgotten_text">Забыли пароль от аккаунта? Мы попробуем открыть страницу поддержки вашего провайдера.</string>
 </resources>
