@@ -424,8 +424,6 @@
     <string name="notify_only_when_highlighted">Notificar só cando é mencionada</string>
     <string name="notify_never">Notificacións deshabilitadas</string>
     <string name="notify_paused">Notificacións pausadas</string>
-    <string name="pref_picture_compression">Comprimir imaxes</string>
-    <string name="pref_picture_compression_summary">Redimensionar e comprimir imaxes</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimizacións de batería habilitadas</string>
     <string name="battery_optimizations_enabled_explained">O seu dispositivo está a realizar algunhas optimizacións de batería extremas en Conversations que poderían levar a notificacións con retraso o incluso perda dos mesmos.\nÉ recomendado deshabilitadas.</string>
