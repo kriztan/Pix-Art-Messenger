@@ -140,7 +140,6 @@
     <string name="unpublish_pgp_message">Sigur doriți să vă ștergeți cheia publică OpenPGP din mesajele de prezență?\nContactele dumneavoastră nu vor mai putea să vă trimită mesaje criptate cu OpenPGP.</string>
     <string name="openpgp_has_been_published">Cheia publică OpenPGP a fost publicată.</string>
     <string name="mgmt_account_are_you_sure">Sigur doriți asta?</string>
-    <string name="mgmt_account_delete_confirm_text">Dacă vă ștergeți contul, întregul istoric de conversații va fi pierdut</string>
     <string name="attach_record_voice">Înregistrare voce</string>
     <string name="account_settings_jabber_id">ID-ul Jabber</string>
     <string name="account_settings_example_jabber_id">username@pix-art.de</string>
