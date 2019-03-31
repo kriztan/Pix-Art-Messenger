@@ -480,10 +480,6 @@
     <string name="notify_only_when_highlighted">Notifica solo quando menzionato</string>
     <string name="notify_never">Notifiche disabilitate</string>
     <string name="notify_paused">Notifiche in pausa</string>
-    <string name="pref_picture_compression">Comprimi immagini</string>
-    <string name="pref_picture_compression_summary">Ridimensiona e comprimi immagini</string>
-    <string name="pref_video_compression">Comprimi video</string>
-    <string name="pref_video_compression_summary">Riduci e comprimi video</string>
     <string name="video_low">bassa (144p)</string>
     <string name="video_mid">media (360p)</string>
     <string name="video_high">alta (720p)</string>
@@ -823,7 +819,6 @@
     <string name="no_name_set_instructions">Nessun nome impostato.</string>
     <string name="autojoin_group_chat">Unisciti automaticamente a questa conversazione di gruppo</string>
     <string name="pref_show_links_inside">Mostra anteprime dei collegamenti web nella conversazione</string>
-    <string name="pref_show_links_inside_summary">Mostra anteprime dei collegamenti web direttamente all\'interno della schermata di conversazione.</string>
     <string name="pref_play_gif_inside">Riproduci file GIF nelle conversazioni</string>
     <string name="pref_play_gif_inside_summary">Riproduci file GIF direttamente all\'interno della schermata di conversazione.</string>
     <string name="open_with">Apri con…</string>
