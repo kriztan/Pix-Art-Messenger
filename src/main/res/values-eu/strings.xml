@@ -324,7 +324,6 @@
     <string name="advanced_mode">Modu aurreratua</string>
     <string name="grant_admin_privileges">Administratzaile baimenak eman</string>
     <string name="remove_admin_privileges">Administratzaile baimenak ezeztatu</string>
-    <string name="remove_from_room">Taldetik kendu</string>
     <string name="could_not_change_affiliation">%s(r)en afiliazioa ezin izan da aldatu</string>
     <string name="ban_from_conference">Taldean egotea debekatu</string>
     <string name="ban_now">Debekatu orain</string>
