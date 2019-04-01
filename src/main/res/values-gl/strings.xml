@@ -324,7 +324,6 @@
     <string name="advanced_mode">Modo avanzado</string>
     <string name="grant_admin_privileges">Dar privilexios de administración</string>
     <string name="remove_admin_privileges">Revocar privilexios de administración</string>
-    <string name="remove_from_room">Eliminar da conversa en grupo</string>
     <string name="could_not_change_affiliation">Non se puido mudar a afiliación de %s</string>
     <string name="ban_from_conference">Prohibición da conversa en grupo</string>
     <string name="ban_now">Rexeitar agora</string>
