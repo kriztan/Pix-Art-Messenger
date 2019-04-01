@@ -360,9 +360,7 @@
     <string name="remove_membership">Отозвать права участника</string>
     <string name="grant_admin_privileges">Предоставить права администратора</string>
     <string name="remove_admin_privileges">Отозвать права администратора</string>
-    <string name="remove_from_room">Удален из группового чата</string>
     <string name="ban_from_conference">Заблокирован групповым чатом</string>
-    <string name="removing_from_public_conference">Вы пытаетесь удалить %s из публичного канала. Единственный способ это сделать - навсегда забанить этого пользователя.</string>
     <string name="ban_now">Заблокировать сейчас</string>
     <string name="non_anonymous">Сделать Jabber ID видимыми для всех</string>
     <string name="moderated">Сделать канал модерируемым</string>
