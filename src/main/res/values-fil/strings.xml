@@ -334,7 +334,6 @@
     <string name="advanced_mode">Maunlad na pamamaraan</string>
     <string name="grant_admin_privileges">Pinagkalooban ng administratibong prebilihiyo</string>
     <string name="remove_admin_privileges">Binawian ng administratibong prebilihiyo</string>
-    <string name="remove_from_room">Tinanggal mula sa group chat</string>
     <string name="could_not_change_affiliation">Hindi na mababagong ugnayan sa %s</string>
     <string name="ban_from_conference">Ipinagbawal sa grupo ng chat</string>
     <string name="ban_now">Bawal ngayon</string>
