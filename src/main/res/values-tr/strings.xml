@@ -334,7 +334,6 @@
     <string name="advanced_mode">Gelişmiş mod</string>
     <string name="grant_admin_privileges">Yönetici ayrıcalıkları ver</string>
     <string name="remove_admin_privileges">Yönetici ayrıcalıklarını iptal et</string>
-    <string name="remove_from_room">Sohbet grubunu silin</string>
     <string name="could_not_change_affiliation">%s kullanıcısının üyeliği değiştirilemedi</string>
     <string name="ban_from_conference">Grup sohbetini engelle</string>
     <string name="ban_now">Şimdi engelle</string>
