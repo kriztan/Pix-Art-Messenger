@@ -326,7 +326,6 @@
     <string name="advanced_mode">Mod avansat</string>
     <string name="grant_admin_privileges">Acordă privilegiile de administrator</string>
     <string name="remove_admin_privileges">Abrogă privilegiile de administrator</string>
-    <string name="remove_from_room">Înlătură din discuția de grup</string>
     <string name="could_not_change_affiliation">Nu s-a putut schimba afilierea lui %s</string>
     <string name="ban_from_conference">Interzice accesul la discuția de grup</string>
     <string name="ban_now">Interzice accesul acum</string>
