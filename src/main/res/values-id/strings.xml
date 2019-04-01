@@ -334,7 +334,6 @@
     <string name="advanced_mode">Mode lanjutan</string>
     <string name="grant_admin_privileges">Berikan hak istimewa</string>
     <string name="remove_admin_privileges">Cabut hak istimewa</string>
-    <string name="remove_from_room">Hapus dari obrolan berkelompok</string>
     <string name="could_not_change_affiliation">Tidak dapat mengubah afiliasi %s</string>
     <string name="ban_from_conference">Larangan dari obrolan berkelompok</string>
     <string name="ban_now">Larang sekarang</string>
