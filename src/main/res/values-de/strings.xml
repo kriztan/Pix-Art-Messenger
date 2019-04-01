@@ -365,10 +365,8 @@
     <string name="remove_membership">Mitgliedsrechte entziehen</string>
     <string name="grant_admin_privileges">Administratorrechte gewähren</string>
     <string name="remove_admin_privileges">Administratorrechte entziehen</string>
-    <string name="remove_from_room">Aus Gruppenchat entfernen</string>
     <string name="could_not_change_affiliation">Zugehörigkeit von %s konnte nicht verändert werden</string>
     <string name="ban_from_conference">Von Gruppenchat ausschließen</string>
-    <string name="removing_from_public_conference">Du versuchst %s aus einem öffentlichen Gruppenchat zu entfernen. Die einzige Möglichkeit ist, den Kontakt von diesem Gruppenchat auszuschließen.</string>
     <string name="ban_now">Kontakt ausschließen</string>
     <string name="non_anonymous">JIDs für alle sichtbar machen</string>
     <string name="moderated">Channel wird moderiert</string>
