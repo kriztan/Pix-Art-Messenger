@@ -365,10 +365,8 @@
     <string name="remove_membership">Revoca privilegi di membro</string>
     <string name="grant_admin_privileges">Concedi i privilegi di amministratore</string>
     <string name="remove_admin_privileges">Revoca i privilegi di amministratore</string>
-    <string name="remove_from_room">Rimuovi dalla conversazione di gruppo</string>
     <string name="could_not_change_affiliation">Impossibile cambiare l’affiliazione di %s</string>
     <string name="ban_from_conference">Bandisci dalla conversazione di gruppo</string>
-    <string name="removing_from_public_conference">Stai cercando di rimuovere %s da un canale pubblico. L\'unico modo di fare questo è di bandire quell\'utente per sempre.</string>
     <string name="ban_now">Bandisci</string>
     <string name="non_anonymous">Imposta gli ID Jabber visibili a chiunque</string>
     <string name="moderated">Rendi moderato il canale</string>
