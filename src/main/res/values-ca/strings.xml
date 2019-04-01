@@ -327,7 +327,6 @@ mentrestant.</string>
     <string name="advanced_mode">Mode avançat</string>
     <string name="grant_admin_privileges">Admetre privilegis d\'administrador</string>
     <string name="remove_admin_privileges">Rebocar privilegis d\'administrador</string>
-    <string name="remove_from_room">Suprimeix del xat de grup</string>
     <string name="could_not_change_affiliation">No s\'ha pogut canviar l\'afiliació del %s</string>
     <string name="ban_from_conference">Prohibició del xat en grup</string>
     <string name="ban_now">Banejat ara</string>
