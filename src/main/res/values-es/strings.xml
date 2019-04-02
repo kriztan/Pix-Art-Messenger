@@ -369,6 +369,8 @@
     <string name="could_not_change_affiliation">No se puede cambiar la afiliación de %s</string>
     <string name="ban_from_conference">Desterrar del grupo</string>
     <string name="kick_from_conference">Expulsar del grupo de chat</string>
+    <string name="ban_from_public_conference_message">Estás intentando prohibir para siempre a %s entrar en un canal público.</string>
+    <string name="ban_from_conference_message">Estás intentando prohibir para siempre a %s entrar en un grupo de chat</string>
     <string name="ban_now">Prohibir ahora</string>
     <string name="kick_now">Expulsar ahora</string>
     <string name="non_anonymous">Hacer identificación Jabber visible para cualquiera</string>
