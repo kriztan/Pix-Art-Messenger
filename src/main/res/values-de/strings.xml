@@ -365,9 +365,16 @@
     <string name="remove_membership">Mitgliedsrechte entziehen</string>
     <string name="grant_admin_privileges">Administratorrechte gewähren</string>
     <string name="remove_admin_privileges">Administratorrechte entziehen</string>
+    <string name="kick_from_room">Aus Gruppenchat entfernen</string>
     <string name="could_not_change_affiliation">Zugehörigkeit von %s konnte nicht verändert werden</string>
     <string name="ban_from_conference">Von Gruppenchat ausschließen</string>
-    <string name="ban_now">Kontakt ausschließen</string>
+    <string name="kick_from_conference">Aus Gruppenchat entfernen</string>
+    <string name="ban_from_public_conference_message">Du versuchst %s für immer von dem Channel auszuschließen.</string>
+    <string name="ban_from_conference_message">Du versuchst %s für immer von dem Gruppenchat auszuschließen</string>
+    <string name="kicking_from_public_conference">Du versuchst %s aus dem Channel zu entfernen.</string>
+    <string name="kicking_from_conference">Du versuchst %s aus dem Gruppenchat zu entfernen.</string>
+    <string name="ban_now">Jetzt ausschließen</string>
+    <string name="kick_now">Jetzt auschließen</string>
     <string name="non_anonymous">JIDs für alle sichtbar machen</string>
     <string name="moderated">Channel wird moderiert</string>
     <string name="you_are_not_participating">Du bist kein Mitglied</string>
@@ -894,6 +901,7 @@
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
     <string name="attach">Anhängen</string>
+    <string name="delete_locally">Lokal löschen</string>
     <string name="delete_from_server">Auf Server löschen</string>
     <string name="go_online_to_delete">Du musst online sein, um dein Profil vom Server löschen zu können.</string>
 </resources>
