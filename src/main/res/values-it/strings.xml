@@ -369,6 +369,10 @@
     <string name="could_not_change_affiliation">Impossibile cambiare l’affiliazione di %s</string>
     <string name="ban_from_conference">Bandisci dalla conversazione di gruppo</string>
     <string name="kick_from_conference">Caccia dalla conversazione di gruppo</string>
+    <string name="ban_from_public_conference_message">Stai cercando di bandire %s per sempre da un canale pubblico.</string>
+    <string name="ban_from_conference_message">Stai cercando di bandire %s per sempre da una conversazione di gruppo</string>
+    <string name="kicking_from_public_conference">Stai cercando di cacciare %s da un canale pubblico.</string>
+    <string name="kicking_from_conference">Stai cercando di cacciare %s da una conversazione di gruppo.</string>
     <string name="ban_now">Bandisci</string>
     <string name="kick_now">Caccia ora</string>
     <string name="non_anonymous">Imposta gli ID Jabber visibili a chiunque</string>
