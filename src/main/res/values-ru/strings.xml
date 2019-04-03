@@ -361,7 +361,12 @@
     <string name="grant_admin_privileges">Предоставить права администратора</string>
     <string name="remove_admin_privileges">Отозвать права администратора</string>
     <string name="ban_from_conference">Заблокирован групповым чатом</string>
+    <string name="ban_from_public_conference_message">Вы пытаетесь забанить %s навсегда на этом публичном канале.</string>
+    <string name="ban_from_conference_message">Вы пытаетесь забанить %s навсегда в этом групповом чате</string>
+    <string name="kicking_from_public_conference">Вы пытаетесь исключить %s из группового канала.</string>
+    <string name="kicking_from_conference">Вы пытаетесь исключить %s из группового чата.</string>
     <string name="ban_now">Заблокировать сейчас</string>
+    <string name="kick_now">Исключить</string>
     <string name="non_anonymous">Сделать Jabber ID видимыми для всех</string>
     <string name="moderated">Сделать канал модерируемым</string>
     <string name="modified_conference_options">Настройки группового чата изменены!</string>
