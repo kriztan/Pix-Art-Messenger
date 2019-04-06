@@ -19,7 +19,9 @@
     <string name="title_activity_settings">الإعدادات</string>
     <string name="conference_details">تفاصيل فريق المحادثة</string>
     <string name="title_activity_contact_details">بيانات المُراسِل</string>
+    <string name="title_activity_start_conversation">ابدأ محادثة</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
+    <string name="title_activity_choose_contacts">اختر جهات الاتصال</string>
     <string name="title_activity_block_list">قائمة الحظر</string>
     <string name="just_now">الآن</string>
     <string name="minute_ago">منذ دقيقة</string>
@@ -185,7 +187,7 @@
     <string name="server_info_session_established">تم ربط الجلسة الحالية</string>
     <string name="skip">تخطي</string>
     <string name="disable_notifications">تعطيل الإشعارات</string>
-    <string name="enable">تمكين</string>
+    <string name="enable">تنشيط</string>
     <string name="conference_requires_password">تلزمك كلمة سرية الانضمام إلى فريق المحادثة</string>
     <string name="enter_password">ادخل الكلمة السرية</string>
     <string name="request_now">اطلب الآن</string>
@@ -253,6 +255,7 @@
     <string name="advanced_mode">الوضع المتقدم</string>
     <string name="grant_admin_privileges">منح صلاحيات المُشرِف</string>
     <string name="remove_admin_privileges">الغاء صلاحيات المُشرِف</string>
+    <string name="moderated">وضع القناة تحت الإشراف</string>
     <string name="never">أبدًا</string>
     <string name="pref_display_enter_key">أظهر زر الإدخال</string>
     <string name="video">فيديو</string>
@@ -471,17 +474,25 @@
     <string name="ebook">كتاب إلكتروني</string>
     <string name="your_name">اسمك</string>
     <string name="enter_your_name">أدخل اسمك</string>
+    <string name="autojoin_group_chat">التحق بفريق المحادثة هذا افتراضيا</string>
     <string name="pref_play_gif_inside">تشغيل صور جيف المتحركة في المحادثة</string>
+    <string name="choose_account">اختر حسابا</string>
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
+    <string name="view_users">عرض المشاركين</string>
     <string name="message_deleted">تم حذف الرسالة</string>
+    <string name="channel_details">تفاصيل القناة</string>
     <string name="join_public_channel">الانضمام إلى قناة عامة</string>
     <string name="create_private_group_chat">إنشاء محادثة جماعية خاصة</string>
     <string name="create_public_channel">إنشاء قناة عامة</string>
     <string name="xmpp_address">عنوان XMPP</string>
+    <string name="please_enter_name">يرجى تقديم اسم للقناة</string>
     <string name="channel_options">إعدادات القناة العامة</string>
+    <string name="destroy_channel">تدمير القناة</string>
+    <string name="destroy_channel_succeed">تم تدمير القناة بنجاح</string>
     <string name="action_end_conversation_channel">غادر القناة</string>
+    <string name="autojoin_channel">التحق بهذه القناة افتراضيا</string>
     <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
     <string name="password_forgotten_title">نسيت الكلمة السرية</string>
 </resources>
