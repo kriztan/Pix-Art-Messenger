@@ -476,6 +476,12 @@
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
     <string name="message_deleted">تم حذف الرسالة</string>
+    <string name="join_public_channel">الانضمام إلى قناة عامة</string>
+    <string name="create_private_group_chat">إنشاء محادثة جماعية خاصة</string>
+    <string name="create_public_channel">إنشاء قناة عامة</string>
+    <string name="xmpp_address">عنوان XMPP</string>
+    <string name="channel_options">إعدادات القناة العامة</string>
+    <string name="action_end_conversation_channel">غادر القناة</string>
     <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
     <string name="password_forgotten_title">نسيت الكلمة السرية</string>
 </resources>
