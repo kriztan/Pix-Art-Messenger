@@ -71,6 +71,8 @@
     <string name="choose_presence">اختر الجهاز</string>
     <string name="send_unencrypted_message">ارسل رسالة غير مشفّرة</string>
     <string name="send_message_to_x">إرسال رسالة إلى %s</string>
+    <string name="send_omemo_message">إرسال رسالة مشفّرة بواسطة أوميمو</string>
+    <string name="send_omemo_x509_message">إرسال رسالة مشفّرة بواسطة أوميمو</string>
     <string name="send_pgp_message">ارسل رسالة مشفّرة بواسطة OpenPGP</string>
     <string name="your_nick_has_been_changed">لقد تم تغيير اسمك المستعار</string>
     <string name="send_unencrypted">أرسل من دون تشفير</string>
@@ -106,6 +108,7 @@
     <string name="account_status_unknown">مجهول</string>
     <string name="account_status_disabled">معطّل مؤقتا</string>
     <string name="account_status_online">متصل</string>
+    <string name="account_status_connecting">جارٍ الاتصال\u2026</string>
     <string name="account_status_offline">غير متصل</string>
     <string name="account_status_not_found">لم يتم العثور على الخادم</string>
     <string name="account_status_no_internet">لا يوجد اتصال</string>
@@ -151,6 +154,7 @@
     <string name="done">تم</string>
     <string name="verify">تحقق</string>
     <string name="decrypt">فك التشفير</string>
+    <string name="bookmarks">المحادثات الجماعية</string>
     <string name="search">بحث</string>
     <string name="enter_contact">أدخل مراسلا</string>
     <string name="delete_contact">حذف المراسِل</string>
@@ -207,6 +211,7 @@
     <string name="url_copied_to_clipboard">تم نسخ العنوان إلى الحافظة</string>
     <string name="scan_qr_code">امسح رمز الاستجابة السريعة QR</string>
     <string name="show_qr_code">إظهار رمز الكيو آر</string>
+    <string name="show_block_list">عرض قائمة الحظر</string>
     <string name="account_details">تفاصيل الحساب</string>
     <string name="shared_secret_hint">نصيحة أو سؤال</string>
     <string name="shared_secret_secret">الرمز السري المشترَك</string>
@@ -299,6 +304,9 @@
     <string name="not_valid_hostname">اسم المضيف هذا غير صالح</string>
     <string name="load_more_messages">تحميل المزيد من الرسائل</string>
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
+    <string name="pref_picture_quality">جودة الصورة</string>
+    <string name="pref_video_quality">جودة الفيديو</string>
+    <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
     <string name="disable">تعطيل</string>
@@ -314,7 +322,9 @@
     <string name="mgmt_account_reconnect">إعادة الاتصال</string>
     <string name="welcome_text">… هو تطبيق محادثة حر و آمن لجابر و XMPP.</string>
     <string name="create_account">إنشاء حساب جديد</string>
+    <string name="welcome_existing_account">لدي حساب</string>
     <string name="pick_your_username">قم باختيار اسم مستخدم خاص بك</string>
+    <string name="pref_manually_change_presence">إدارة حالة الحضور يدويا</string>
     <string name="status_message">رسالة حالة الحضور</string>
     <string name="presence_chat">حر للمحادثة</string>
     <string name="presence_online">متصل</string>
@@ -466,4 +476,6 @@
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
     <string name="message_deleted">تم حذف الرسالة</string>
+    <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
+    <string name="password_forgotten_title">نسيت الكلمة السرية</string>
 </resources>
