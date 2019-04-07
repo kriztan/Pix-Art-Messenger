@@ -4,7 +4,7 @@
     <string name="action_settings">Настройки</string>
     <string name="action_add">Новый разговор</string>
     <string name="action_accounts">Управление аккаунтами</string>
-    <string name="action_end_conversation">Закончить этот разговор</string>
+    <string name="action_end_conversation">Закончить беседу</string>
     <string name="action_contact_details">Сведения о контакте</string>
     <string name="action_secure">Защищённый разговор</string>
     <string name="action_add_account">Добавить аккаунт</string>
@@ -112,7 +112,7 @@
     <string name="pref_sound_summary">Воспроизводить звук, когда получено новое сообщение</string>
     <string name="pref_send_crash">Отправлять отчёты о сбоях</string>
     <string name="pref_send_crash_summary">Отсылая трассировку стека, вы помогаете текущей разработке Pix-Art Messenger</string>
-    <string name="pref_confirm_messages">Подтвердить сообщения</string>
+    <string name="pref_confirm_messages">Подтвердить получение</string>
     <string name="pref_confirm_messages_summary">Разрешить вашим контактам видеть, когда вы получили и прочитали их сообщения</string>
     <string name="pref_ui_options">Интерфейс</string>
     <string name="openpgp_error">OpenKeychain сообщает об ошибке</string>
@@ -260,7 +260,7 @@
     <string name="pref_quiet_hours_summary">Уведомления будут приглушены во время тихих часов</string>
     <string name="pref_use_send_button_to_indicate_status">Кнопка отправить показывает статус</string>
     <string name="pref_use_colored_names_to_indicate_status">Расцветка имён показывает статус</string>
-    <string name="pref_use_indicate_received">Запрашивать получение сообщений</string>
+    <string name="pref_use_indicate_received">Уведомления о доставке сообщений</string>
     <string name="pref_use_indicate_received_summary">Если поддерживается, полученные сообщения будут помечены зелёной галкой</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Раскрасить кнопку отсылки сообщений для индикации статуса контакта</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Раскрасить имена контактов для индикации статуса контакта</string>
@@ -389,7 +389,7 @@
     <string name="sending_x_file">Отправка %s</string>
     <string name="hide_offline">Сейчас в сети</string>
     <string name="is_typing">набирает сообщение..</string>
-    <string name="pref_chat_states">Способ уведомления</string>
+    <string name="pref_chat_states">Уведомления \"печатает\"</string>
     <string name="pref_chat_states_summary">Разрешить вашим контактам видеть, когда вы пишете им сообщения</string>
     <string name="send_location">Отправить местоположение</string>
     <string name="show_location">Показать местоположение</string>
@@ -513,6 +513,7 @@
     <string name="welcome_existing_account">У меня есть аккаунт</string>
     <string name="pick_your_username">Выберите имя пользователя</string>
     <string name="pref_manually_change_presence">Управлять доступностью вручную</string>
+    <string name="pref_manually_change_presence_summary">Устанавливать доступность при редактировании статуса.</string>
     <string name="status_message">Новый статус</string>
     <string name="presence_chat">Доступен для сообщений</string>
     <string name="presence_online">Oнлайн</string>
@@ -827,7 +828,7 @@
     <string name="channel_details">Сведения о канале</string>
     <string name="join_public_channel">Присоединиться к публичному каналу</string>
     <string name="create_private_group_chat">Создание приватного группового чата</string>
-    <string name="create_public_channel">Создать к публичный канал</string>
+    <string name="create_public_channel">Создать публичный канал</string>
     <string name="create_dialog_channel_name">Название канала</string>
     <string name="xmpp_address">XMPP адрес</string>
     <string name="please_enter_name">Пожалуйста, укажите название канала</string>
@@ -876,7 +877,7 @@
     <string name="pref_show_mappreview_inside_summary">Показывать превью карт внутри чата (будет установлено соединение с Pix-Art-Server).</string>
     <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
-    <string name="pref_use_internal_updater">проверить наличие обновлений</string>
+    <string name="pref_use_internal_updater">Проверять наличие обновлений</string>
     <string name="attach">Прикрепить</string>
     <string name="delete_locally">Удалить с этого устройства</string>
     <string name="delete_from_server">Удалить с сервера</string>
