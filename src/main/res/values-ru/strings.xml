@@ -360,7 +360,9 @@
     <string name="remove_membership">Отозвать права участника</string>
     <string name="grant_admin_privileges">Предоставить права администратора</string>
     <string name="remove_admin_privileges">Отозвать права администратора</string>
+    <string name="kick_from_room">Исключить из группового чата</string>
     <string name="ban_from_conference">Заблокирован групповым чатом</string>
+    <string name="kick_from_conference">Исключить из группового чата</string>
     <string name="ban_from_public_conference_message">Вы пытаетесь забанить %s навсегда на этом публичном канале.</string>
     <string name="ban_from_conference_message">Вы пытаетесь забанить %s навсегда в этом групповом чате</string>
     <string name="kicking_from_public_conference">Вы пытаетесь исключить %s из группового канала.</string>
@@ -641,6 +643,7 @@
     <string name="block_stranger">Заблокировать незнакомца</string>
     <string name="block_entire_domain">Заблокировать весь домен</string>
     <string name="pref_use_auto_rotate_summary">Поворачивать изображения и видео для подгонки к размеру экрана</string>
+    <string name="pref_use_auto_rotate">Поворот в полноэкранном режиме</string>
     <string name="pref_use_tor">Подключиться через Tor</string>
     <string name="pref_use_tor_summary">Направлять все соединения через сеть Tor.</string>
     <string name="pref_connection_options">Настройки соединения</string>
@@ -661,6 +664,8 @@
     <string name="account_status_regis_web">Сервер требует регистрации на веб-сайте</string>
     <string name="application_found_to_open_website">Не удалось найти подходящее приложение для открытия веб-сайта</string>
     <string name="open_website">Открыть веб-сайт</string>
+    <string name="pref_headsup_notifications">Системные уведомления</string>
+    <string name="pref_headsup_notifications_summary">Показывать уведомления</string>
     <string name="yesterday">Вчера</string>
     <string name="pref_validate_hostname">Проверять имя хоста через DNSSEC</string>
     <string name="certificate_does_not_contain_jid">Сертификат не содержит Jabber ID</string>
@@ -790,6 +795,7 @@
     <string name="device_does_not_support_unknown_source_op">Ваше устройство не поддерживает установку из неизвестных источников.</string>
     <string name="reject_request">Отклонить запрос</string>
     <string name="error_message_copied_to_clipboard">Сообщение об ошибке скопировано в буфер</string>
+    <string name="pref_screen_security_summary">Защищать содержимое бесед от появления на скриншотах.</string>
     <string name="pref_screen_security">Запретить скриншоты</string>
     <string name="omemo_decryption_failed">Ошибка расшифровки OMEMO-сообщения.</string>
     <string name="install_orbot">Установить Orbot</string>
