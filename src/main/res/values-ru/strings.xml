@@ -513,7 +513,7 @@
     <string name="welcome_existing_account">У меня есть аккаунт</string>
     <string name="pick_your_username">Выберите имя пользователя</string>
     <string name="pref_manually_change_presence">Управлять доступностью вручную</string>
-    <string name="status_message">Статус сообщения</string>
+    <string name="status_message">Новый статус</string>
     <string name="presence_chat">Доступен для сообщений</string>
     <string name="presence_online">Oнлайн</string>
     <string name="presence_away">Ушел</string>
