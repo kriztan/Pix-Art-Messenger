@@ -880,6 +880,7 @@
     <string name="mgmt_account_password_forgotten">Mot de passe oublié</string>
     <string name="password_forgotten_title">Mot de passe oublié</string>
     <string name="password_forgotten_text">Vous avez oublié le mot de passe de votre compte ? Nous allons maintenant essayer d\'ouvrir le site Web d\'assistance de votre fournisseur.</string>
+    <string name="pref_show_mappreview_inside">Afficher les aperçus localisations au sein de la discussion</string>
     <string name="pref_use_internal_updater">rechercher des mise à jour</string>
     <string name="attach">Attacher</string>
     <string name="delete_locally">Supprimer localement</string>
