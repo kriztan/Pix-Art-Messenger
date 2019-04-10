@@ -526,7 +526,7 @@
     <string name="share_location">Поделиться местоположением</string>
     <string name="location_sharing_disabled">Возможность делиться местоположением отключена в настройках</string>
     <string name="locating">Определение местоположения...</string>
-    <string name="action_end_conversation_muc">Покинул групповой чат</string>
+    <string name="action_end_conversation_muc">Покинуть групповой чат</string>
     <string name="leave_conference_warning">Вы действительно хотите покинуть групповой чат? Вы не будете получать уведомления о новых сообщениях до тех пор, пока не вступите в групповой чат снова.</string>
     <string name="show_password">Показать пароль</string>
     <string name="registration_please_wait">Ошибка регистрации: Попробуйте позже</string>
