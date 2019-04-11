@@ -896,7 +896,7 @@
     <string name="password_forgotten_title">Passwort vergessen</string>
     <string name="password_forgotten_text">Du hast dein Passwort vergessen? Wir versuchen, die Support-Website deines Providers zu öffnen.</string>
     <string name="set_settings_intro">Hier kannst du einige wichtige Einstellungen zur Privatsphäre nach deinen Wünschen vornehmen. Alle Änderungen können auch später angepasst werden.</string>
-    <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung Pix-Art-Server hergestellt.</string>
+    <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung zum Pix-Art-Server hergestellt.</string>
     <string name="pref_show_mappreview_inside">Zeige eine Vorschau von Karten im Chat</string>
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
