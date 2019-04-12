@@ -689,7 +689,7 @@
     <string name="contact_has_read_up_to_this_point">%s hat bis hierher gelesen</string>
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s und %2$d weitere haben bis hierher gelesen</string>
     <string name="conversation_unencrypted_hint">Dieser Chat ist unverschlüsselt, aus Sicherheitsgründen sollte eine Nachrichtenverschlüsselung über das Schloss Symbol aktiviert werden. Die bevorzugte Verschlüsselung ist OMEMO.</string>
-    <string name="pref_warn_unencrypted_chat">Warnen, wenn der Chat unverschlüsselt ist</string>
+    <string name="pref_warn_unencrypted_chat">Warne bei unverschlüsseltem Chat</string>
     <string name="pref_warn_unencrypted_chat_summary">Wenn Nachrichtenverschlüsselung verfügbar ist, solltest du diese nutzen. Falls du keine Nachrichtenverschlüsselung nutzt, zeige eine Warnung im Chat.</string>
     <string name="pref_use_bundled_emoji">Nutze integrierte Emojis</string>
     <string name="pref_use_bundled_emoji_summary">Nutze die in die App integrierten Emojis anstatt der von deinem Gerät. Die Änderungen werden nach dem nächsten Öffnen der App wirksam.</string>
@@ -828,7 +828,7 @@
     <string name="enter_your_name_instructions">Bitte gib deinen Nickname ein, der für deine Kontakte sichtbar sein wird.</string>
     <string name="no_name_set_instructions">Keinen Nickname festgelegt.</string>
     <string name="autojoin_group_chat">Diesem Gruppenchat automatisch beitreten</string>
-    <string name="pref_show_links_inside">Zeige eine Vorschau von Weblinks im Chat</string>
+    <string name="pref_show_links_inside">Zeige Weblink-Vorschau im Chat</string>
     <string name="pref_show_links_inside_summary">Zeige eine Vorschau von Weblinks direkt im Chat, dabei wird eine Verbindung zu dem im Link angegebenen Server hergestellt.</string>
     <string name="pref_play_gif_inside">GIF-Dateien im Chat abspielen</string>
     <string name="pref_play_gif_inside_summary">GIF Dateien direkt im Chat abspielen.</string>
@@ -897,7 +897,7 @@
     <string name="password_forgotten_text">Du hast dein Passwort vergessen? Wir versuchen, die Support-Website deines Providers zu öffnen.</string>
     <string name="set_settings_intro">Hier kannst du einige wichtige Einstellungen zur Privatsphäre nach deinen Wünschen vornehmen. Alle Änderungen können auch später angepasst werden.</string>
     <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung zum Pix-Art-Server hergestellt.</string>
-    <string name="pref_show_mappreview_inside">Zeige eine Vorschau von Karten im Chat</string>
+    <string name="pref_show_mappreview_inside">Zeige Karten-Vorschau im Chat</string>
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
     <string name="attach">Anhängen</string>
