@@ -28,7 +28,7 @@ jobs:
       - run: export GRADLE_USER_HOME=$PWD/.gradle
       - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
       # workaround for fdroid nightly circleci bug
-      - run: sed -i "s/os.getenv('CIRCLE_REPOSITORY_URL')/\"https:\/\/github.com\/genofire\/Pix-Art-Messenger\"/" /usr/lib/python3/dist-packages/fdroidserver/nightly.py
+      - run: sed -i "s/os.getenv('CIRCLE_REPOSITORY_URL')/\"https:\/\/github.com\/kriztan\/Pix-Art-Messenger\"/" /usr/lib/python3/dist-packages/fdroidserver/nightly.py
       # generate version number
       - run: sed -i "s/^\(\s*versionCode\s*\).*$/\1$(git rev-list --first-parent --count HEAD)/" build.gradle
       - run: sed -i "0,/versionName/s/^\(\s*versionName\).*/\1 \"$(printf '%s-%05d' $(git describe --tag --abbrev=0) $(git rev-list --first-parent --count HEAD))\"/" build.gradle
