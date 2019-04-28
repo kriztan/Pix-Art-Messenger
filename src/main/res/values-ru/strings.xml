@@ -886,4 +886,6 @@
     <string name="discover_channels">Просмотреть каналы</string>
     <string name="search_channels">Поиск каналов</string>
     <string name="channel_discovery_opt_in_title">Уведомление о конфиденциальности</string>
+    <string name="action_add_existing_account">Добавить существующий аккаунт</string>
+    <string name="use_own_provider">Использовать свой сервер</string>
 </resources>
