@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Avsluta denna konversation</string>
     <string name="action_contact_details">Kontaktdetaljer</string>
     <string name="action_secure">Säker konversation</string>
-    <string name="action_add_account">Lägg till konto</string>
     <string name="action_edit_contact">Ändra namn</string>
     <string name="action_add_phone_book">Lägg till i kontakter</string>
     <string name="action_delete_contact">Ta bort kontakt</string>
