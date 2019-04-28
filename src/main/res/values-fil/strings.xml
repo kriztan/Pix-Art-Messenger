@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Tapusin ang pag-uusap</string>
     <string name="action_contact_details">Mga detalyi ng mga kontak</string>
     <string name="action_secure">Ligtas na pag-uusap</string>
-    <string name="action_add_account">Mag dagdag ng account</string>
     <string name="action_edit_contact">I-edit ang pangalan</string>
     <string name="action_add_phone_book">Mag dagdag sa address book</string>
     <string name="action_delete_contact">Burahin sa listahan</string>
