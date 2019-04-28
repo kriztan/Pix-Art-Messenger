@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Unterhaltung beenden</string>
     <string name="action_contact_details">Kontakt-Details</string>
     <string name="action_secure">Verschlüsselte Unterhaltung</string>
-    <string name="action_add_account">Profil hinzufügen</string>
     <string name="action_edit_contact">Namen bearbeiten</string>
     <string name="action_add_phone_book">Zu Adressbuch hinzufügen</string>
     <string name="action_delete_contact">Aus Kontaktliste entfernen</string>
