@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Закончить беседу</string>
     <string name="action_contact_details">Сведения о контакте</string>
     <string name="action_secure">Защищённый разговор</string>
+    <string name="action_add_new_account">Добавить новый аккаунт</string>
     <string name="action_edit_contact">Изменить имя</string>
     <string name="action_add_phone_book">Добавить в адресную книгу</string>
     <string name="action_delete_contact">Удалить из контактов</string>
@@ -882,4 +883,7 @@
     <string name="delete_locally">Удалить с этого устройства</string>
     <string name="delete_from_server">Удалить с сервера</string>
     <string name="go_online_to_delete">Удаляемый аккаунт должен быть активирован и в режиме онлайн.</string>
+    <string name="discover_channels">Просмотреть каналы</string>
+    <string name="search_channels">Поиск каналов</string>
+    <string name="channel_discovery_opt_in_title">Уведомление о конфиденциальности</string>
 </resources>
