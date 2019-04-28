@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Λήξη συζήτησης</string>
     <string name="action_contact_details">Λεπτομέρειες επαφής</string>
     <string name="action_secure">Ασφαλής συζήτηση</string>
-    <string name="action_add_account">Προσθήκη λογαριασμού</string>
     <string name="action_edit_contact">Επεξεργασία ονόματος</string>
     <string name="action_delete_contact">Διαγραφή από τη λίστα επαφών</string>
     <string name="action_block_contact">Αποκλεισμός επαφής</string>
