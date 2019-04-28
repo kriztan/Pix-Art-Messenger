@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Bu danışığı bitir</string>
     <string name="action_contact_details">Şəxs təfsilatları</string>
     <string name="action_secure">Təhlükəsiz danışıq</string>
-    <string name="action_add_account">Hesab əlavə et</string>
     <string name="action_edit_contact">Ada düzəliş et</string>
     <string name="action_add_phone_book">Ünvan kitabçasına əlavə et</string>
     <string name="action_delete_contact">Siyahıdan sil</string>
