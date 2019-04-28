@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Terminer cette conversation</string>
     <string name="action_contact_details">Détails du contact</string>
     <string name="action_secure">Conversation sécurisée</string>
-    <string name="action_add_account">Ajouter un compte</string>
     <string name="action_edit_contact">Modifier le nom</string>
     <string name="action_add_phone_book">Ajouter au carnet d’adresses</string>
     <string name="action_delete_contact">Retirer des contacts</string>
