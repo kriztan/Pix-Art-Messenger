@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Elkarrizketa hau amaitu</string>
     <string name="action_contact_details">Kontaktuaren xehetasunak</string>
     <string name="action_secure">Elkarrizketa segurua</string>
-    <string name="action_add_account">Kontua gehitu</string>
     <string name="action_edit_contact">Izena editatu</string>
     <string name="action_add_phone_book">Helbideen liburura gehitu</string>
     <string name="action_delete_contact">Zerrendatik ezabatu</string>
