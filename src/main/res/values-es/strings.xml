@@ -907,4 +907,7 @@
     <string name="discover_channels">Descubrir canales</string>
     <string name="search_channels">Buscar canales</string>
     <string name="channel_discovery_opt_in_title">Aviso de privacidad</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[EL descubrimiento de canales usa un servicio de terceros llamado<a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Usar esta caraterística transmitirá su dirección IP y los términos de búsqueda a ese servicio. Vea su<a href="https://search.jabbercat.org/privacy">Política de Privacidad</a> para más información.]]></string>
+    <string name="action_add_existing_account">Añadir cuenta existente</string>
+    <string name="use_own_provider">Usar proveedor propio</string>
 </resources>
