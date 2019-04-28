@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Zakończ konwersację</string>
     <string name="action_contact_details">Szczegóły kontaktu</string>
     <string name="action_secure">Konwersacja szyfrowana</string>
-    <string name="action_add_account">Dodaj konto</string>
     <string name="action_edit_contact">Edytuj nazwę</string>
     <string name="action_add_phone_book">Dodaj do kontaktów</string>
     <string name="action_delete_contact">Usuń z rostera</string>
