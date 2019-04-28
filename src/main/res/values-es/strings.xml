@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Terminar conversación</string>
     <string name="action_contact_details">Detalles del contacto</string>
     <string name="action_secure">Conversación segura</string>
+    <string name="action_add_new_account">Añadir nueva cuenta</string>
     <string name="action_edit_contact">Editar contacto</string>
     <string name="action_add_phone_book">Añadir a contactos</string>
     <string name="action_delete_contact">Eliminar de la lista de contactos</string>
@@ -903,4 +904,7 @@
     <string name="delete_locally">Eliminar localmente</string>
     <string name="delete_from_server">Eliminar en el servidor</string>
     <string name="go_online_to_delete">Tienes que activar y/o ir en línea con la cuenta que quieres eliminar del servidor.</string>
+    <string name="discover_channels">Descubrir canales</string>
+    <string name="search_channels">Buscar canales</string>
+    <string name="channel_discovery_opt_in_title">Aviso de privacidad</string>
 </resources>
