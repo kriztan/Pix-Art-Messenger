@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Прекъсване на разговора или Прекъсване на обаждането</string>
     <string name="action_contact_details">Детайли на контакта</string>
     <string name="action_secure">Сигурна връзка</string>
-    <string name="action_add_account">Добави профил</string>
     <string name="action_edit_contact">Редактирай името</string>
     <string name="action_add_phone_book">Добавяне към адресната книга</string>
     <string name="action_delete_contact">Изтриване от любими</string>
