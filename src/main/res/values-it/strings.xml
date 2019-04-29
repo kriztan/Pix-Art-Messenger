@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Termina questa conversazione</string>
     <string name="action_contact_details">Dettagli del contatto</string>
     <string name="action_secure">Conversazione sicura</string>
+    <string name="action_add_new_account">Aggiungi nuovo account</string>
     <string name="action_edit_contact">Modifica il nome</string>
     <string name="action_add_phone_book">Aggiungi alla rubrica</string>
     <string name="action_delete_contact">Cancella dalla lista</string>
@@ -903,4 +904,10 @@
     <string name="delete_locally">Elimina localmente</string>
     <string name="delete_from_server">Elimina dal server</string>
     <string name="go_online_to_delete">Devi attivare e/o andare online con l\'account che vuoi eliminare dal server.</string>
+    <string name="discover_channels">Scopri canali</string>
+    <string name="search_channels">Cerca canali</string>
+    <string name="channel_discovery_opt_in_title">Nota sulla riservatezza</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[La ricerca dei canali utilizza un servizio di terze parti chiamato <a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Utilizzando questa funzionalità trasmetterai il tuo indirizzo IP e i termini di ricerca a quel servizio. Si vedano le <a href="https://search.jabbercat.org/privacy">Note sulla Riservatezza</a> per maggiori informazioni.]]></string>
+    <string name="action_add_existing_account">Aggiungi account esistente</string>
+    <string name="use_own_provider">Usa un tuo fornitore</string>
 </resources>
