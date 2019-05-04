@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Прекъсване на разговора или Прекъсване на обаждането</string>
     <string name="action_contact_details">Детайли на контакта</string>
     <string name="action_secure">Сигурна връзка</string>
+    <string name="action_add_new_account">Добави нов профил</string>
     <string name="action_edit_contact">Редактирай името</string>
     <string name="action_add_phone_book">Добавяне към адресната книга</string>
     <string name="action_delete_contact">Изтриване от любими</string>
@@ -463,6 +464,7 @@
     <string name="device_does_not_support_certificates">Вашето устройство не поддържа избора на клиентски сертификати!</string>
     <string name="changelog">Промени</string>
     <string name="account_settings_hostname">Име на сървър</string>
+    <string name="account_settings_port">Порт</string>
     <string name="hostname_or_onion">Адрес на сървър или .onion</string>
     <string name="not_a_valid_port">Това не е валиден номер на порт</string>
     <string name="not_valid_hostname">Това не е валидно име на сървър</string>
@@ -526,6 +528,7 @@
     <string name="share">Сподели</string>
     <string name="share_location">Сподели местоположението</string>
     <string name="location_sharing_disabled">Споделянето на местоположението е деактивирано в настройките</string>
+    <string name="locating">Намиране на…</string>
     <string name="action_end_conversation_muc">Напускане на груповия разговор</string>
     <string name="leave_conference_warning">Наистина ли искате да напуснете този групов чат? Вече няма да получавате известия за нови съобщения, преди отново да се присъедините към груповия разговор.</string>
     <string name="show_password">Покажи паролата</string>
@@ -803,6 +806,7 @@
     <string name="device_does_not_support_unknown_source_op">Устройството ви не поддържа разрешение за инсталиране на приложения от неизвестни източници.</string>
     <string name="reject_request">Отхвърли заявката</string>
     <string name="error_message_copied_to_clipboard">Копирай съобщението за грешка в бележника</string>
+    <string name="pref_screen_security_summary">Отнасяй се към съдържанието като сигурно и не допускайте да се показва на екрани.</string>
     <string name="omemo_decryption_failed">Неуспешно декриптиране на съобщението OMEMO.</string>
     <string name="install_orbot">Инсталирай Orbot</string>
     <string name="start_orbot">Стартирай Orbot</string>
