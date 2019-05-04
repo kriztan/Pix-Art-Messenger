@@ -894,4 +894,13 @@
     <string name="delete_locally">Изтрий локално \"от gsm\"</string>
     <string name="delete_from_server">Изтрий от сървъра</string>
     <string name="go_online_to_delete">Трябва да активирате и/или да влизате в интернет със сметката, която искате да изтриете от сървъра.</string>
+    <string name="discover_channels">Открий канали</string>
+    <string name="search_channels">Търси канали</string>
+    <string name="channel_discovery_opt_in_title">Бележка за поверителност</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[Откриването на канал използва услугата на трета страна, наречена <a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Използването на тази функция ще предава IP адреса и думите за търсене на тази услуга. Вижте техните <a href="https://search.jabbercat.org/privacy">Декларация за поверителност</a> за повече информация.]]></string>
+    <string name="action_add_existing_account">Добави съществуващ профил</string>
+    <string name="use_own_provider">Използвай собствен доставчик</string>
+    <string name="this_looks_like_a_domain">Това изглежда като адрес на домейн</string>
+    <string name="add_anway">Все пак добави</string>
+    <string name="this_looks_like_channel">Това изглежда като адрес на канал</string>
 </resources>
