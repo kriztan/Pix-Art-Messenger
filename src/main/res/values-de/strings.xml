@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Unterhaltung beenden</string>
     <string name="action_contact_details">Kontakt-Details</string>
     <string name="action_secure">Verschlüsselte Unterhaltung</string>
+    <string name="action_add_new_account">Neues Profil erstellen</string>
     <string name="action_edit_contact">Namen bearbeiten</string>
     <string name="action_add_phone_book">Zu Adressbuch hinzufügen</string>
     <string name="action_delete_contact">Aus Kontaktliste entfernen</string>
@@ -903,4 +904,13 @@
     <string name="delete_locally">Lokal löschen</string>
     <string name="delete_from_server">Auf Server löschen</string>
     <string name="go_online_to_delete">Du musst online sein, um dein Profil vom Server löschen zu können.</string>
+    <string name="discover_channels">Kanäle entdecken</string>
+    <string name="search_channels">Kanäle suchen</string>
+    <string name="channel_discovery_opt_in_title">Hinweis zum Datenschutz</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[Die Kanal-Entdeckung verwendet einen Drittanbieterservice namens <a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Wenn du diese Funktion verwendest, werden deine IP-Adresse und deine Suchbegriffe an diesen Dienst übertragen. Weitere Informationen findest du in der <a href="https://search.jabbercat.org/privacy">Datenschutzerklärung</a>.]]></string>
+    <string name="action_add_existing_account">Bestehendes Profil hinzufügen</string>
+    <string name="use_own_provider">Nutze eigenen Provider</string>
+    <string name="this_looks_like_a_domain">Dies sieht aus wie eine Domain-Adresse</string>
+    <string name="add_anway">Trotzdem hinzufügen</string>
+    <string name="this_looks_like_channel">Dies sieht aus wie eine Channel-Adresse</string>
 </resources>
