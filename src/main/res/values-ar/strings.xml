@@ -555,6 +555,17 @@
     <string name="no_attachments">ليس هناك مُرفقات</string>
     <string name="notification_backup_created_title">تم النسخ الاحتياطي بنجاح</string>
     <string name="notification_backup_failed_title">فشل النسخ الاحتياطي</string>
+    <string name="search_participants">البحث عن مشارِكين</string>
+    <string name="file_too_large">الملف كبير جدا</string>
     <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
     <string name="password_forgotten_title">نسيت الكلمة السرية</string>
+    <string name="attach">ارفق</string>
+    <string name="delete_locally">احذفه محليا</string>
+    <string name="delete_from_server">احذفه على الخادم</string>
+    <string name="discover_channels">اكتشاف قنوات</string>
+    <string name="search_channels">البحث عن قنوات</string>
+    <string name="channel_discovery_opt_in_title">إشعار الخصوصية</string>
+    <string name="action_add_existing_account">إضافة حساب موجود</string>
+    <string name="use_own_provider">استخدم مُزوّدك الخاص</string>
+    <string name="add_anway">أضفه على أية حال</string>
 </resources>
