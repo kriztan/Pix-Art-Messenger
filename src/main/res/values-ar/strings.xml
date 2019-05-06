@@ -7,6 +7,7 @@
     <string name="action_end_conversation">إنهاء هذه المحادثة</string>
     <string name="action_contact_details">بيانات المُراسِل</string>
     <string name="action_secure">محادثة آمنة</string>
+    <string name="action_add_new_account">إضافة حساب جديد</string>
     <string name="action_edit_contact">تعديل الاسم</string>
     <string name="action_add_phone_book">إضافة إلى دفتر العناوين</string>
     <string name="action_delete_contact">حذف من القائمة</string>
@@ -306,6 +307,7 @@
     <string name="not_valid_hostname">اسم المضيف هذا غير صالح</string>
     <string name="load_more_messages">تحميل المزيد من الرسائل</string>
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
+    <string name="notify_on_all_messages">أخبرني لدى ورود أية رسائل جديدة</string>
     <string name="pref_picture_quality">جودة الصورة</string>
     <string name="pref_video_quality">جودة الفيديو</string>
     <string name="video_original">أصلية (غير مضغوطة)</string>
@@ -485,6 +487,7 @@
     <string name="join_public_channel">الانضمام إلى قناة عامة</string>
     <string name="create_private_group_chat">إنشاء محادثة جماعية خاصة</string>
     <string name="create_public_channel">إنشاء قناة عامة</string>
+    <string name="create_dialog_channel_name">اسم القناة</string>
     <string name="xmpp_address">عنوان XMPP</string>
     <string name="please_enter_name">يرجى تقديم اسم للقناة</string>
     <string name="channel_options">إعدادات القناة العامة</string>
