@@ -308,6 +308,9 @@
     <string name="load_more_messages">تحميل المزيد من الرسائل</string>
     <string name="sync_with_contacts">زامِن مع المراسِلين</string>
     <string name="notify_on_all_messages">أخبرني لدى ورود أية رسائل جديدة</string>
+    <string name="notify_only_when_highlighted">أخبرني فقط عندما يُشار إلي</string>
+    <string name="notify_never">الإشعارات معطلة</string>
+    <string name="notify_paused">الإشعارات موقّفة مؤقتا</string>
     <string name="pref_picture_quality">جودة الصورة</string>
     <string name="pref_video_quality">جودة الفيديو</string>
     <string name="video_original">أصلية (غير مضغوطة)</string>
@@ -377,6 +380,7 @@
     <string name="pref_use_max_brightness">أقصى سطوع للشاشة</string>
     <string name="contact_blocked_past_tense">تم حجب المراسِل.</string>
     <string name="pref_notifications_from_strangers">الإشعارات مِن طرف الأجانب</string>
+    <string name="pref_notifications_from_strangers_summary">أخبرني عند ورود رسائل مِن طرف أشخاص أجانب.</string>
     <string name="contacts_are_typing">%s يكتبون حاليا…</string>
     <string name="contact_is_typing">%s يكتب حاليا…</string>
     <string name="one_participant">مشارك واحد</string>
@@ -422,9 +426,11 @@
     <string name="default_off">مُعطّل افتراضيا</string>
     <string name="pref_theme_light">سمة فاتحة</string>
     <string name="pref_theme_dark">سمة داكنة</string>
+    <string name="pref_theme_options_summary">اختر لوحة الألوان</string>
     <string name="pref_theme_options">السمة</string>
     <string name="chooce_account">اختر حسابا</string>
     <string name="pref_font_size">حجم الخط</string>
+    <string name="pref_font_size_summary">الحجم المتوسط للخط الذي سيستخدمه التطبيق</string>
     <string name="small">صغير</string>
     <string name="medium">متوسط</string>
     <string name="large">كبير</string>
@@ -449,6 +455,7 @@
     <string name="delete_message">حذف الرسالة</string>
     <string name="conference_destroyed">لقد تم تدمير هذه المحادثة الجماعية</string>
     <string name="welcome_server_info">ننصح باستخدام blabber.im كمزوّد الخدمة الخاص بك.</string>
+    <string name="pref_quick_share_attachment_choice">اختيار الملفات المرفَقة</string>
     <string name="unable_to_save_recording">لا يمكن الاحتفاظ بالتسجيل</string>
     <string name="foreground_service_channel_name">الخدمة الأمامية</string>
     <string name="error_channel_name">مشاكل الاتصال</string>
@@ -492,9 +499,11 @@
     <string name="please_enter_name">يرجى تقديم اسم للقناة</string>
     <string name="channel_options">إعدادات القناة العامة</string>
     <string name="destroy_channel">تدمير القناة</string>
+    <string name="destroy_channel_dialog">هل تريد تدمير هذه القناة %s؟ ذلك سوف ينجر عنه حذف هذه القناة نهائيا.</string>
     <string name="destroy_channel_succeed">تم تدمير القناة بنجاح</string>
     <string name="action_end_conversation_channel">غادر القناة</string>
     <string name="autojoin_channel">التحق بهذه القناة افتراضيا</string>
+    <string name="no_attachments">ليس هناك مُرفقات</string>
     <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
     <string name="password_forgotten_title">نسيت الكلمة السرية</string>
 </resources>
