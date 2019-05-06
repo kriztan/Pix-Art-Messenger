@@ -90,6 +90,7 @@
     <string name="pref_attachments">المرفقات</string>
     <string name="pref_notification_settings">الإشعارات</string>
     <string name="pref_vibrate">إهتزاز</string>
+    <string name="pref_led">الإشعار الضوئي</string>
     <string name="pref_sound">النغمة</string>
     <string name="pref_sound_summary">تشغيل نغمة عند استلام رسالة جديدة</string>
     <string name="pref_send_crash">ارسال تقارير تحطّم التطبيق</string>
@@ -131,6 +132,7 @@
     <string name="mgmt_account_publish_avatar">انشر الصورة الرمزية</string>
     <string name="mgmt_account_publish_pgp">نشر المفتاح العمومي OpenPGP</string>
     <string name="unpublish_pgp">حذف المفتاح العمومي OpenPGP</string>
+    <string name="openpgp_has_been_published">تم نشر مفتاح OpenPGP العمومي.</string>
     <string name="mgmt_account_are_you_sure">هل أنت متأكد؟</string>
     <string name="attach_record_voice">تسجيل مقطع صوتي</string>
     <string name="account_settings_jabber_id">حساب جابر</string>
@@ -151,6 +153,7 @@
     <string name="otr_fingerprint">بصمة OTR</string>
     <string name="openpgp_key_id">معرّف مفتاح OpenPGP</string>
     <string name="omemo_fingerprint">بصمة أوميمو OMEMO</string>
+    <string name="omemo_fingerprint_selected_message">بصمة OMEMO للرسالة</string>
     <string name="other_devices">أجهزة أخرى</string>
     <string name="fetching_keys">جارٍ جلب المفاتيح…</string>
     <string name="done">تم</string>
@@ -165,7 +168,9 @@
     <string name="unblock_contact">إلغاء حجب المُراسِل</string>
     <string name="create">إنشاء</string>
     <string name="select">اختيار</string>
+    <string name="contact_already_exists">جهة الاتصال موجودة مسبقاً</string>
     <string name="join">الانضمام</string>
+    <string name="channel_full_jid_example">channel@conference.example.com/nick</string>
     <string name="save_as_bookmark">أضفه كفاصلة مرجعية</string>
     <string name="delete_bookmark">حذف الفاصلة المرجعية</string>
     <string name="topic">الموضوع</string>
@@ -204,10 +209,15 @@
     <string name="title_pref_quiet_hours_end_time">إلى غاية</string>
     <string name="title_pref_enable_quiet_hours">تمكين ساعات الهدوء</string>
     <string name="pref_quiet_hours_summary">سوف يتم كتم الاشعارات أثناء ساعات السكون</string>
+    <string name="pref_use_indicate_received">طلب إيصال بالقراءة</string>
     <string name="pref_expert_options_other">أخرى</string>
     <string name="pref_autojoin">زامن مع الفواصل المرجعية</string>
+    <string name="toast_message_otr_fingerprint">تم نسخ بصمة OTR إلى الحافظة!</string>
+    <string name="toast_message_omemo_fingerprint">تم نسخ بصمة OMEMO إلى الحافظة!</string>
+    <string name="conference_banned">لقد تم طردك مِن فريق المحادثة هذا</string>
     <string name="using_account">تستخدم حاليا حساب %s</string>
     <string name="message_options">خيارات الرسائل</string>
+    <string name="copy_original_url">انسخ الرابط الأصلي</string>
     <string name="send_again">إرسل مجددا</string>
     <string name="file_url">رابط الملف</string>
     <string name="url_copied_to_clipboard">تم نسخ العنوان إلى الحافظة</string>
@@ -215,6 +225,8 @@
     <string name="show_qr_code">إظهار رمز الكيو آر</string>
     <string name="show_block_list">عرض قائمة الحظر</string>
     <string name="account_details">تفاصيل الحساب</string>
+    <string name="verify_otr">التحقق مِن OTR</string>
+    <string name="remote_fingerprint">البصمة البُعدية</string>
     <string name="shared_secret_hint">نصيحة أو سؤال</string>
     <string name="shared_secret_secret">الرمز السري المشترَك</string>
     <string name="confirm">تأكيد</string>
@@ -255,6 +267,8 @@
     <string name="advanced_mode">الوضع المتقدم</string>
     <string name="grant_admin_privileges">منح صلاحيات المُشرِف</string>
     <string name="remove_admin_privileges">الغاء صلاحيات المُشرِف</string>
+    <string name="ban_now">قم بحظره الآن</string>
+    <string name="kick_now">اطرده الآن</string>
     <string name="moderated">وضع القناة تحت الإشراف</string>
     <string name="never">أبدًا</string>
     <string name="pref_display_enter_key">أظهر زر الإدخال</string>
@@ -295,7 +309,9 @@
     <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">إضافة حساب يحوي شهادة</string>
     <string name="unable_to_parse_certificate">لا يمكن تحليل لشهادة</string>
+    <string name="mam_prefs">خيارات الأرشفة</string>
     <string name="captcha_required">رمز الكابتشا مطلوب</string>
+    <string name="captcha_hint">ادخل النص المكتوب على الصورة أعلاه</string>
     <string name="certificate_chain_is_not_trusted">سلسلة الشهادة غير موثوق فيها</string>
     <string name="action_renew_certificate">تجديد الشهادة</string>
     <string name="error_fetching_omemo_key">خطأ أثناء جلب مفتاح أوميمو!</string>
@@ -415,6 +431,7 @@
     <string name="mtm_accept_cert">هل تريد تقبُّل الشهادة المجهولة؟</string>
     <string name="mtm_cert_details">تفاصيل الشهادة:</string>
     <string name="once">مرة واحدة</string>
+    <string name="pref_scroll_to_bottom_summary">التمرير إلى أسفل بعد إرسال رسالة</string>
     <string name="pref_scroll_to_bottom">التمرير إلى أسفل</string>
     <string name="edit_status_message_title">تعديل رسالة حالة الحضور</string>
     <string name="edit_status_message">تعديل رسالة الحالة</string>
