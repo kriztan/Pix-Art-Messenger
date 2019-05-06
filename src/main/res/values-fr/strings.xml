@@ -19,6 +19,7 @@
     <string name="title_activity_settings">Paramètres</string>
     <string name="conference_details">Détails du groupe de discussion</string>
     <string name="title_activity_contact_details">Détails du contact</string>
+    <string name="title_activity_sharewith">Partager avec la conversation</string>
     <string name="title_activity_start_conversation">Démarrer une conversation</string>
     <string name="title_activity_choose_contact">Choix du contact</string>
     <string name="title_activity_choose_contacts">Choisissez des contacts</string>
@@ -366,6 +367,7 @@
     <string name="ban_from_conference">Bannir de la conférence</string>
     <string name="kick_from_conference">Retirer de la conférence</string>
     <string name="ban_now">Bannir maintenant</string>
+    <string name="kick_now">Expulser maintenant</string>
     <string name="non_anonymous">Rendre l’identifiant Jabber visible à tout le monde</string>
     <string name="moderated">Rendre le canal modéré</string>
     <string name="you_are_not_participating">Vous ne participez pas</string>
@@ -881,6 +883,7 @@
     <string name="password_forgotten_title">Mot de passe oublié</string>
     <string name="password_forgotten_text">Vous avez oublié le mot de passe de votre compte ? Nous allons maintenant essayer d\'ouvrir le site Web d\'assistance de votre fournisseur.</string>
     <string name="pref_show_mappreview_inside">Afficher les aperçus localisations au sein de la discussion</string>
+    <string name="pref_use_internal_updater_summary">Laisser le messager vérifier la disponibilité de mise à jour une fois par jour</string>
     <string name="pref_use_internal_updater">rechercher des mise à jour</string>
     <string name="attach">Attacher</string>
     <string name="delete_locally">Supprimer localement</string>
