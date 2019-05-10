@@ -18,6 +18,8 @@
     <string name="title_activity_manage_accounts">Accounts beheren</string>
     <string name="title_activity_settings">Instellingen</string>
     <string name="conference_details">Gespreksgegevens</string>
+    <string name="title_activity_sharewith">Delen in gesprek</string>
+    <string name="title_activity_start_conversation">Gesprek beginnen</string>
     <string name="title_activity_choose_contact">Contact kiezen</string>
     <string name="title_activity_choose_contacts">Contacten kiezen</string>
     <string name="title_activity_block_list">Geblokkeerde contacten</string>
@@ -275,6 +277,7 @@
     <string name="confirm">Bevestigen</string>
     <string name="in_progress">Bezig</string>
     <string name="respond">Antwoorden</string>
+    <string name="failed">Mislukt</string>
     <string name="secrets_do_not_match">Geheimen komen niet overeen</string>
     <string name="try_again">Opnieuw proberen</string>
     <string name="finish">Afsluiten</string>
@@ -391,6 +394,7 @@
     <string name="download_failed_file_not_found">Downloaden mislukt: bestand niet gevonden</string>
     <string name="download_failed_could_not_connect">Downloaden mislukt: kon geen verbinding maken met host</string>
     <string name="download_failed_could_not_write_file">Download mislukt: kon bestand niet schrijven</string>
+    <string name="remind_later">later</string>
     <string name="account_status_tor_unavailable">Tor-netwerk niet beschikbaar</string>
     <string name="account_status_bind_failure">Bindingsfout</string>
     <string name="account_status_host_unknown">Server niet verantwoordelijk voor domein</string>
