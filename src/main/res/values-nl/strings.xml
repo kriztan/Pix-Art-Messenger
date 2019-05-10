@@ -500,6 +500,7 @@
     <string name="invite_user">Uitnodigen voor Pix-Art Messenger</string>
     <string name="unable_to_connect_to_keychain">Verbinden met OpenKeychain mislukt</string>
     <string name="this_device_is_no_longer_in_use">Dit apparaat wordt niet meer gebruikt</string>
+    <string name="please_wait">Even geduld…</string>
     <string name="payment_required">Betaling vereist</string>
     <string name="missing_internet_permission">Internetmachtiging ontbreekt</string>
     <string name="me">Ik</string>
@@ -580,6 +581,8 @@
     <string name="received_message_from_stranger">Bericht ontvangen van onbekende</string>
     <string name="contacts_are_typing">%s zijn aan het typen…</string>
     <string name="contact_is_typing">%s is aan het typen…</string>
+    <string name="one_participant">één deelnemer</string>
+    <string name="more_participants">%d deelnemers</string>
     <string name="block_stranger">Vreemde blokkeren</string>
     <string name="block_entire_domain">Volledig domein blokkeren</string>
     <string name="pref_use_tor">Verbinden via Tor</string>
@@ -588,12 +591,14 @@
     <string name="image_low">Laag (720p)</string>
     <string name="image_mid">Gemiddeld (1920p)</string>
     <string name="image_high">Hoog (3840p)</string>
+    <string name="image_original">Origineel (zonder compressie)</string>
     <string name="send_message">Verstuur bericht</string>
     <string name="pref_show_connection_options_summary">Toon hostnaam- en poortinstellingen bij instellen van een account</string>
     <string name="pref_show_connection_options">Uitgebreide verbindingsinstellingen</string>
     <string name="retry_decryption">Ontsleutelen opnieuw proberen</string>
     <string name="session_failure">Sessiefout</string>
     <string name="sasl_downgrade">SASL-mechanisme neergewaardeerd</string>
+    <string name="action_take_photo">Foto nemen</string>
     <string name="account_status_regis_web">Server vereist registratie op website</string>
     <string name="application_found_to_open_website">Geen applicatie om website te openen</string>
     <string name="open_website">Website openen</string>
