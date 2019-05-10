@@ -560,6 +560,7 @@
     <string name="destroy_room_succeed">Groepsgesprek met succes verwijderd</string>
     <string name="destroy_room_failed">Kan groepsgesprek niet vernietigen</string>
     <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je Pix-Art Messenger toevoegen aan de lijst met beschermde apps.</string>
+    <string name="pref_theme_options">Thema</string>
     <string name="view_conversation">Gesprek bekijken</string>
     <string name="everyone_has_read_up_to_this_point">Iedereen heeft tot hier gelezen</string>
     <string name="conference_destroyed">Dit groepsgesprek is verwijderd</string>
