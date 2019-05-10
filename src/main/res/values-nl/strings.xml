@@ -19,10 +19,12 @@
     <string name="title_activity_settings">Instellingen</string>
     <string name="conference_details">Gespreksgegevens</string>
     <string name="title_activity_choose_contact">Contact kiezen</string>
+    <string name="title_activity_choose_contacts">Contacten kiezen</string>
     <string name="title_activity_block_list">Geblokkeerde contacten</string>
     <string name="just_now">zojuist</string>
     <string name="minute_ago">1 min. geleden</string>
     <string name="minutes_ago">%d min. geleden</string>
+    <string name="unread_conversations">ongelezen gesprekken</string>
     <string name="sending">versturen…</string>
     <string name="message_decrypting">Bericht aan het ontsleutelen. Even geduld…</string>
     <string name="pgp_message">OpenPGP-versleuteld bericht</string>
@@ -158,6 +160,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
+    <string name="server_info_available">ja</string>
+    <string name="server_info_unavailable">nee</string>
     <string name="missing_public_keys">Ontbrekende publieke sleutel-aankondigingen</string>
     <string name="last_seen_now">zojuist voor het laatst gezien</string>
     <string name="last_seen_min">1 minuut geleden voor het laatst gezien</string>
@@ -197,6 +201,7 @@
     <string name="save_as_bookmark">Opslaan als bladwijzer</string>
     <string name="delete_bookmark">Bladwijzer verwijderen</string>
     <string name="bookmark_already_exists">Deze bladwijzer bestaat al</string>
+    <string name="topic">Onderwerp</string>
     <string name="joining_conference">Deelnemen aan groepsgesprek…</string>
     <string name="leave">Verlaten</string>
     <string name="contact_added_you">Contact heeft je toegevoegd aan zijn/haar contacten</string>
@@ -374,6 +379,7 @@
     <string name="pref_quick_action">Snelle actie</string>
     <string name="none">Geen</string>
     <string name="recently_used">Recent gebruikt</string>
+    <string name="search_contacts">Contacten zoeken</string>
     <string name="search_bookmarks">Bladwijzers doorzoeken</string>
     <string name="choose_quick_action">Snelle actie kiezen</string>
     <string name="send_private_message">Privébericht sturen</string>
@@ -433,6 +439,8 @@
     <string name="battery_optimizations_enabled_explained">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\nHet is aangeraden deze optimalisaties uit te schakelen.</string>
     <string name="battery_optimizations_enabled_dialog">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\n\nJe zal nu gevraagd worden deze optimalisaties uit te schakelen.</string>
     <string name="disable">Uitschakelen</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
     <string name="no_accounts">(Geen actieve accounts)</string>
     <string name="this_field_is_required">Dit veld is vereist</string>
     <string name="correct_message">Bericht corrigeren</string>
