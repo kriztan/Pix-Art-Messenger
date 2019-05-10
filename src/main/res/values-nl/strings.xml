@@ -40,6 +40,7 @@
     <string name="block_domain_text">Alle contacten van %s blokkeren?</string>
     <string name="unblock_domain_text">Alle contacten van %s deblokkeren?</string>
     <string name="contact_blocked">Contact geblokkeerd</string>
+    <string name="blocked">Geblokkeerd</string>
     <string name="remove_bookmark_text">Wil je %s als bladwijzer verwijderen? Het gesprek met deze account zal niet worden verwijderd.</string>
     <string name="register_account">Nieuwe account op server registreren</string>
     <string name="change_password_on_server">Wachtwoord op server veranderen</string>
@@ -394,6 +395,7 @@
     <string name="account_status_bind_failure">Bindingsfout</string>
     <string name="account_status_host_unknown">Server niet verantwoordelijk voor domein</string>
     <string name="server_info_broken">Gebroken</string>
+    <string name="pref_presence_settings">Beschikbaarheid</string>
     <string name="pref_away_when_screen_off">Even weg wanneer scherm uit staat</string>
     <string name="pref_away_when_screen_off_summary">Stelt je bron in als even weg wanneer het scherm uitgeschakeld is</string>
     <string name="pref_dnd_on_silent_mode">“Niet storen” in stille modus</string>
@@ -452,6 +454,8 @@
     <string name="your_full_jid_will_be">Je volledige Jabber-ID zal %s zijn</string>
     <string name="create_account">Account aanmaken</string>
     <string name="pick_your_username">Kies je gebruikersnaam</string>
+    <string name="pref_manually_change_presence">Stel je aanwezigheid in bij het bewerken van je statusbericht</string>
+    <string name="pref_manually_change_presence_summary">Stel je aanwezigheid in bij het bewerken van je statusbericht.</string>
     <string name="status_message">Statusbericht</string>
     <string name="presence_chat">Beschikbaar voor gesprek</string>
     <string name="presence_online">Online</string>
@@ -551,11 +555,17 @@
     <string name="destroy_room">Groepsgesprek vernietigen</string>
     <string name="destroy_room_succeed">Groepsgesprek met succes verwijderd</string>
     <string name="destroy_room_failed">Kan groepsgesprek niet vernietigen</string>
+    <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je Pix-Art Messenger toevoegen aan de lijst met beschermde apps.</string>
     <string name="view_conversation">Gesprek bekijken</string>
     <string name="everyone_has_read_up_to_this_point">Iedereen heeft tot hier gelezen</string>
     <string name="conference_destroyed">Dit groepsgesprek is verwijderd</string>
+    <string name="foreground_service_channel_description">Deze meldingscategorie wordt gebruikt om een permanente melding weer te geven dat Pix-Art Messenger wordt uitgevoerd.</string>
+    <string name="error_channel_description">Deze meldingscategorie wordt gebruikt om een melding weer te geven ingeval er een probleem is bij het verbinden met een account.</string>
+    <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
+    <string name="pref_more_notification_settings">Meldingsinstellingen</string>
     <string name="view_media">Media bekijken</string>
     <string name="group_chat_will_make_your_jabber_id_public">Dit kanaal openbaart je XMPP-adres</string>
+    <string name="restore_backup">Back-up herstellen</string>
     <string name="view_users">Deelnemers bekijken</string>
     <string name="group_chat_members">Deelnemers</string>
     <string name="channel_details">Kanaalinformatie</string>
