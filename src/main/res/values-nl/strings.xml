@@ -290,6 +290,7 @@
     <string name="notification_create_backup_title">Bezig met creëren van back-upbestanden</string>
     <string name="restoring_backup">Bezig met herstellen van back-up</string>
     <string name="notification_restored_backup_title">Je back-up is hersteld</string>
+    <string name="notification_restored_backup_subtitle">Vergeet niet om de account in te schakelen.</string>
     <string name="choose_file">Bestand kiezen</string>
     <string name="receiving_x_file">Ontvangen van %1$s (%2$d%% voltooid)</string>
     <string name="download_x_file">%s downloaden</string>
@@ -601,6 +602,7 @@
     <string name="error_channel_description">Deze meldingscategorie wordt gebruikt om een melding weer te geven ingeval er een probleem is bij het verbinden met een account.</string>
     <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
     <string name="pref_more_notification_settings">Meldingsinstellingen</string>
+    <string name="pref_more_notification_settings_summary">Belang, geluid, trillen</string>
     <string name="video_compression_channel_name">Videocompressie</string>
     <string name="backup_channel_name">Back-up en herstel</string>
     <string name="view_media">Media bekijken</string>
