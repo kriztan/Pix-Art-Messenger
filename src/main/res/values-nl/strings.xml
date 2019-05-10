@@ -443,6 +443,9 @@
     <string name="notify_never">Meldingen uitgeschakeld</string>
     <string name="notify_paused">Meldingen gepauzeerd</string>
     <string name="pref_video_quality">Videokwaliteit</string>
+    <string name="video_mid">Gemiddeld (360p)</string>
+    <string name="video_high">Hoog (720p)</string>
+    <string name="video_original">Origineel (zonder compressie)</string>
     <string name="always">Altijd</string>
     <string name="battery_optimizations_enabled">Batterij-optimalisaties ingeschakeld</string>
     <string name="battery_optimizations_enabled_explained">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\nHet is aangeraden deze optimalisaties uit te schakelen.</string>
@@ -583,6 +586,7 @@
     <string name="error_channel_description">Deze meldingscategorie wordt gebruikt om een melding weer te geven ingeval er een probleem is bij het verbinden met een account.</string>
     <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
     <string name="pref_more_notification_settings">Meldingsinstellingen</string>
+    <string name="video_compression_channel_name">Videocompressie</string>
     <string name="view_media">Media bekijken</string>
     <string name="group_chat_will_make_your_jabber_id_public">Dit kanaal openbaart je XMPP-adres</string>
     <string name="restore_backup">Back-up herstellen</string>
