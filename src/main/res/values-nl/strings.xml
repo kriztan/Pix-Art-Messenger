@@ -348,6 +348,7 @@
     <string name="could_not_change_affiliation">Kon aansluiting niet wijzigen</string>
     <string name="ban_from_conference">Verbannen uit groepsgesprek</string>
     <string name="ban_now">Nu verbannen</string>
+    <string name="non_anonymous">Maak Jabber ID\'s zichtbaar voor iedereen</string>
     <string name="you_are_not_participating">Je neemt geen deel</string>
     <string name="modified_conference_options">Gespreksopties aangepast!</string>
     <string name="could_not_modify_conference_options">Kon gespreksopties niet aanpassen</string>
@@ -524,6 +525,7 @@
     <string name="data_saver_enabled">Gegevensbesparing ingeschakeld</string>
     <string name="data_saver_enabled_explained">Je besturingssysteem verhindert Pix-Art Messenger toegang tot het internet wanneer Pix-Art Messenger zich in de achtergrond bevindt. Om meldingen van nieuwe berichten te krijgen moet je Pix-Art Messenger onbeperkte toegang geven wanneer gegevensbesparing is ingeschakeld.\nPix-Art Messenger zal nog steeds proberen wanneer mogelijk gegevens te besparen.</string>
     <string name="device_does_not_support_data_saver">Je apparaat ondersteunt het uitschakelen van gegevensbesparing voor Pix-Art Messenger niet.</string>
+    <string name="add_to_contact_list">Toevoegen aan contactpersonen</string>
     <string name="contact">Contact</string>
     <string name="error_unable_to_create_temporary_file">Kan tijdelijk bestand niet aanmaken</string>
     <string name="this_device_has_been_verified">Dit apparaat is geverifieerd</string>
@@ -531,6 +533,7 @@
     <string name="all_omemo_keys_have_been_verified">Alle OMEMO-sleutels zijn geverifieerd</string>
     <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Streepjescode bevat geen vingerafdruk voor dit gesprek.</string>
     <string name="verified_fingerprints">Geverifieerde vingerafdrukken</string>
+    <string name="use_camera_icon_to_scan_barcode">Gebruik de camera om de streepjescode van een contact te scannen</string>
     <string name="please_wait_for_keys_to_be_fetched">De sleutels worden opgehaald. Even geduld.</string>
     <string name="share_as_barcode">Delen als streepjescode</string>
     <string name="share_as_uri">Delen als XMPP-URI</string>
@@ -599,6 +602,7 @@
     <string name="session_failure">Sessiefout</string>
     <string name="sasl_downgrade">SASL-mechanisme neergewaardeerd</string>
     <string name="action_take_photo">Foto nemen</string>
+    <string name="action_take_video">Video opnemen</string>
     <string name="account_status_regis_web">Server vereist registratie op website</string>
     <string name="application_found_to_open_website">Geen applicatie om website te openen</string>
     <string name="open_website">Website openen</string>
@@ -609,6 +613,7 @@
     <string name="pref_validate_hostname_summary">Servercertificaten die de gevalideerde hostnaam bevatten worden beschouwd als geverifieerd</string>
     <string name="certificate_does_not_contain_jid">Certificaat bevat geen Jabber-ID</string>
     <string name="error_no_keys_to_trust_presence">Er zijn geen bruikbare sleutels beschikbaar voor dit contact.\nZorg dat je allebei op elkaars aanwezigheidsupdates bent geabonneerd.</string>
+    <string name="mark_as_read">Als gelezen markeren</string>
     <string name="server_info_partial">gedeeltelijk</string>
     <string name="no_application_found_to_open_link">Geen applicatie om verwijzing te openen</string>
     <string name="contacts_have_read_up_to_this_point">%s hebben tot hier gelezen</string>
@@ -619,7 +624,9 @@
     <string name="destroy_room">Groepsgesprek vernietigen</string>
     <string name="destroy_room_succeed">Groepsgesprek met succes verwijderd</string>
     <string name="destroy_room_failed">Kan groepsgesprek niet vernietigen</string>
+    <string name="snooze">Sluimeren</string>
     <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je Pix-Art Messenger toevoegen aan de lijst met beschermde apps.</string>
+    <string name="mtm_cert_details">Certificaatinformatie:</string>
     <string name="pref_automatically_delete_messages_description">Verwijder automatisch berichten van dit apparaat ouder dan de ingestelde tijdsperiode.</string>
     <string name="pref_automatically_delete_messages">Automatisch berichten verwijderen</string>
     <string name="pref_omemo_setting">OMEMO-versleuteling</string>
@@ -639,8 +646,10 @@
     <string name="view_conversation">Gesprek bekijken</string>
     <string name="pref_start_search">Rechtstreeks zoeken</string>
     <string name="pref_start_search_summary">Open het toetsenbord op het scherm ‘Gesprek starten’ en plaats de cursor in het zoekveld</string>
+    <string name="contact_name">Naam van contactpersoon</string>
     <string name="everyone_has_read_up_to_this_point">Iedereen heeft tot hier gelezen</string>
     <string name="conference_destroyed">Dit groepsgesprek is verwijderd</string>
+    <string name="no_application_found_to_view_contact">Er is geen app gevonden om dit contact te bekijken</string>
     <string name="foreground_service_channel_description">Deze meldingscategorie wordt gebruikt om een permanente melding weer te geven dat Pix-Art Messenger wordt uitgevoerd.</string>
     <string name="error_channel_description">Deze meldingscategorie wordt gebruikt om een melding weer te geven ingeval er een probleem is bij het verbinden met een account.</string>
     <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
@@ -650,6 +659,9 @@
     <string name="backup_channel_name">Back-up en herstel</string>
     <string name="view_media">Media bekijken</string>
     <string name="group_chat_will_make_your_jabber_id_public">Dit kanaal openbaart je XMPP-adres</string>
+    <string name="your_name">Uw naam</string>
+    <string name="enter_your_name">Voer uw naam in</string>
+    <string name="enter_your_name_instructions">Voer uw nickname in die zichtbaar zal voor uw contacten zijn.</string>
     <string name="restore_backup">Back-up herstellen</string>
     <string name="enter_password_to_restore">Enter your password for the account %s to restore the backup.</string>
     <string name="restore_warning">Gebruik de back-upfunctie niet als je een installatie wilt klonen (gelijktijdig draaien). Back-ups zijn alleen bedoeld voor migraties of als je het oorspronkelijke apparaat bent kwijtgeraakt.</string>
@@ -658,7 +670,14 @@
     <string name="view_users">Deelnemers bekijken</string>
     <string name="group_chat_members">Deelnemers</string>
     <string name="channel_details">Kanaalinformatie</string>
+    <string name="allow_participants_to_edit_subject">Laat iedereen om het onderwerp te bewerken</string>
+    <string name="allow_participants_to_invite_others">Laat iedereen om anderen uit te nodigen</string>
+    <string name="anyone_can_edit_subject">Iedereen kan het onderwerp bewerken.</string>
+    <string name="anyone_can_invite_others">Iedereen kan anderen uitnodigen.</string>
+    <string name="jabber_ids_are_visible_to_anyone">Jabber ID\'s zijn voor iedereen zichtbaar.</string>
     <string name="no_users_hint_channel">Dit openbare kanaal heeft geen deelnemers. Nodig je contactpersonen uit of gebruik de knop \'Delen\' om het XMPP-adres te delen.</string>
     <string name="destroy_channel">Kanaal vernietigen</string>
+    <string name="no_attachments">Er zijn geen bijlagen</string>
     <string name="notification_backup_created_subtitle">De back-upbestanden zijn opgeslagen in %s</string>
+    <string name="attach">Bijvoegen</string>
 </resources>
