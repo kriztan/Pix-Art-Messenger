@@ -595,7 +595,9 @@
     <string name="image_mid">Gemiddeld (1920p)</string>
     <string name="image_high">Hoog (3840p)</string>
     <string name="image_original">Origineel (zonder compressie)</string>
+    <string name="last_seen_just_away">recent</string>
     <string name="send_message">Verstuur bericht</string>
+    <string name="send_failed_resend">de levering is mislukt, het opnieuw verzenden van…</string>
     <string name="pref_show_connection_options_summary">Toon hostnaam- en poortinstellingen bij instellen van een account</string>
     <string name="pref_show_connection_options">Uitgebreide verbindingsinstellingen</string>
     <string name="retry_decryption">Ontsleutelen opnieuw proberen</string>
