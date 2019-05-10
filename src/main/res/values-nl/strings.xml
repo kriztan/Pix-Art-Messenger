@@ -269,7 +269,7 @@
     <string name="send_again">Opnieuw versturen</string>
     <string name="file_url">Bestands-URL</string>
     <string name="url_copied_to_clipboard">URL gekopieerd naar klembord</string>
-    <string name="scan_qr_code">2D-Streepjescode scannen</string>
+    <string name="scan_qr_code">QR-code scannen</string>
     <string name="show_block_list">Geblokkeerde contacten weergeven</string>
     <string name="account_details">Accountgegevens</string>
     <string name="verify_otr">OTR verifiëren</string>
@@ -287,6 +287,7 @@
     <string name="smp_requested">Contact vraagt SMP-bevestiging</string>
     <string name="no_otr_session_found">Geen geldige OTR-sessie gevonden!</string>
     <string name="pref_create_backup">Back-up creëren</string>
+    <string name="pref_create_backup_summary">Back-upbestanden in %s</string>
     <string name="notification_create_backup_title">Bezig met creëren van back-upbestanden</string>
     <string name="restoring_backup">Bezig met herstellen van back-up</string>
     <string name="notification_restored_backup_title">Je back-up is hersteld</string>
@@ -459,6 +460,7 @@
     <string name="battery_optimizations_enabled_explained">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\nHet is aangeraden deze optimalisaties uit te schakelen.</string>
     <string name="battery_optimizations_enabled_dialog">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\n\nJe zal nu gevraagd worden deze optimalisaties uit te schakelen.</string>
     <string name="disable">Uitschakelen</string>
+    <string name="cancel_update">Update annuleren?</string>
     <string name="yes">Ja</string>
     <string name="no">Nee</string>
     <string name="no_accounts">(Geen actieve accounts)</string>
@@ -469,8 +471,10 @@
     <string name="this_account_is_disabled">Je hebt deze account uitgeschakeld</string>
     <string name="no_application_to_share_uri">Geen applicatie om URI te delen</string>
     <string name="share_uri_with">URI delen met…</string>
+    <string name="mgmt_account_reconnect">Opnieuw verbinden</string>
     <string name="your_full_jid_will_be">Je volledige Jabber-ID zal %s zijn</string>
     <string name="create_account">Account aanmaken</string>
+    <string name="welcome_existing_account">Ik heb een account</string>
     <string name="pick_your_username">Kies je gebruikersnaam</string>
     <string name="pref_manually_change_presence">Stel je aanwezigheid in bij het bewerken van je statusbericht</string>
     <string name="pref_manually_change_presence_summary">Stel je aanwezigheid in bij het bewerken van je statusbericht.</string>
@@ -482,6 +486,9 @@
     <string name="presence_dnd">Bezig</string>
     <string name="secure_password_generated">Een veilig wachtwoord is aangemaakt</string>
     <string name="device_does_not_support_battery_op">Je apparaat ondersteunt het uitschakelen van batterij-optimalisatie niet</string>
+    <string name="share">Delen</string>
+    <string name="share_location">Deel locatie</string>
+    <string name="location_sharing_disabled">Delen van locatie is uitgeschakeld in instellingen</string>
     <string name="show_password">Wachtwoord weergeven</string>
     <string name="registration_please_wait">Registratie mislukt: probeer later opnieuw</string>
     <string name="registration_password_too_weak">Registratie mislukt: wachtwoord te zwak</string>
@@ -502,6 +509,7 @@
     <string name="remote_server_not_found">Externe server niet gevonden</string>
     <string name="unable_to_update_account">Kan account niet bijwerken</string>
     <string name="report_jid_as_spammer">Rapporteer deze JID voor het sturen van ongewenste berichten</string>
+    <string name="create_issue">Een probleem melden</string>
     <string name="pref_delete_omemo_identities">OMEMO-identiteiten verwijderen</string>
     <string name="pref_delete_omemo_identities_summary">Maak je OMEMO-sleutels opnieuw aan. Al je contacten zullen je opnieuw moeten verifiëren. Gebruik dit enkel als een laatste reddingsmiddel.</string>
     <string name="delete_selected_keys">Geselecteerde sleutels verwijderen</string>
@@ -515,24 +523,54 @@
     <string name="data_saver_enabled">Gegevensbesparing ingeschakeld</string>
     <string name="data_saver_enabled_explained">Je besturingssysteem verhindert Pix-Art Messenger toegang tot het internet wanneer Pix-Art Messenger zich in de achtergrond bevindt. Om meldingen van nieuwe berichten te krijgen moet je Pix-Art Messenger onbeperkte toegang geven wanneer gegevensbesparing is ingeschakeld.\nPix-Art Messenger zal nog steeds proberen wanneer mogelijk gegevens te besparen.</string>
     <string name="device_does_not_support_data_saver">Je apparaat ondersteunt het uitschakelen van gegevensbesparing voor Pix-Art Messenger niet.</string>
+    <string name="contact">Contact</string>
     <string name="error_unable_to_create_temporary_file">Kan tijdelijk bestand niet aanmaken</string>
     <string name="this_device_has_been_verified">Dit apparaat is geverifieerd</string>
     <string name="copy_fingerprint">Vingerafdruk kopiëren</string>
     <string name="all_omemo_keys_have_been_verified">Alle OMEMO-sleutels zijn geverifieerd</string>
+    <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Streepjescode bevat geen vingerafdruk voor dit gesprek.</string>
     <string name="verified_fingerprints">Geverifieerde vingerafdrukken</string>
     <string name="please_wait_for_keys_to_be_fetched">De sleutels worden opgehaald. Even geduld.</string>
+    <string name="share_as_barcode">Delen als streepjescode</string>
     <string name="share_as_uri">Delen als XMPP-URI</string>
     <string name="share_as_http">Delen als HTTP-link</string>
     <string name="blindly_trusted_omemo_keys">Blindelings vertrouwde OMEMO-sleutels</string>
     <string name="pref_blind_trust_before_verification">Blindelings vertrouwen vóór verificatie</string>
     <string name="pref_blind_trust_before_verification_summary">Automatisch alle nieuwe ongeverifieerde apparaten van contacten vertrouwen en in het vervolg elke keer dat een contact een nieuw apparaat toevoegt vragen om bevestiging.</string>
     <string name="not_trusted">Onvertrouwd</string>
+    <string name="invalid_barcode">Ongeldige QR Code</string>
     <string name="i_followed_this_link_from_a_trusted_source">Ik heb deze link gevolgd vanuit een betrouwbare bron</string>
     <string name="verifying_omemo_keys_trusted_source">Je staat op het punt de OMEMO-sleutels van %1$s te verifiëren door op een link te klikken. Dit is enkel veilig als je de link van een betrouwbare bron hebt gevolgd, waarbij enkel %2$s de link gepubliceerd kan hebben.</string>
     <string name="verify_omemo_keys">OMEMO-sleutels verifiëren</string>
     <string name="show_inactive_devices">Niet-actieve tonen</string>
+    <string name="hide_inactive_devices">Verberg inactief</string>
+    <string name="reply">Beantwoorden</string>
     <string name="transcoding_video">Video wordt gecomprimeerd</string>
     <string name="not_fetching_history_retention_period">Berichten worden niet opgehaald wegens lokale bewaarperiode.</string>
+    <plurals name="seconds">
+        <item quantity="one">%d seconde</item>
+        <item quantity="other">%d seconden</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d minuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d uur</item>
+        <item quantity="other">%d uren</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weken</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d maand</item>
+        <item quantity="other">%d maanden</item>
+    </plurals>
     <string name="today">Vandaag</string>
     <string name="block_jabber_id">Jabber-ID blokkeren</string>
     <string name="corresponding_conversations_closed">Bijbehorende gesprekken gesloten.</string>
