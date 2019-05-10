@@ -615,6 +615,7 @@
     <string name="error_no_keys_to_trust_presence">Er zijn geen bruikbare sleutels beschikbaar voor dit contact.\nZorg dat je allebei op elkaars aanwezigheidsupdates bent geabonneerd.</string>
     <string name="mark_as_read">Als gelezen markeren</string>
     <string name="server_info_partial">gedeeltelijk</string>
+    <string name="update_service">Pix-Art Messenger update dienst</string>
     <string name="no_application_found_to_open_link">Geen applicatie om verwijzing te openen</string>
     <string name="contacts_have_read_up_to_this_point">%s hebben tot hier gelezen</string>
     <string name="contact_has_read_up_to_this_point">%s heeft tot hier gelezen</string>
@@ -625,10 +626,16 @@
     <string name="destroy_room_succeed">Groepsgesprek met succes verwijderd</string>
     <string name="destroy_room_failed">Kan groepsgesprek niet vernietigen</string>
     <string name="snooze">Sluimeren</string>
+    <string name="huawei_protected_apps">Beschermde apps</string>
     <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je Pix-Art Messenger toevoegen aan de lijst met beschermde apps.</string>
     <string name="mtm_cert_details">Certificaatinformatie:</string>
+    <string name="once">Eenmalig</string>
+    <string name="pref_scroll_to_bottom">Naar beneden scrollen</string>
+    <string name="edit_status_message_title">Statusbericht bewerken</string>
+    <string name="edit_status_message">Statusbericht bewerken</string>
     <string name="pref_automatically_delete_messages_description">Verwijder automatisch berichten van dit apparaat ouder dan de ingestelde tijdsperiode.</string>
     <string name="pref_automatically_delete_messages">Automatisch berichten verwijderen</string>
+    <string name="disable_encryption">Versleuteling uitschakelen</string>
     <string name="pref_omemo_setting">OMEMO-versleuteling</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO zal standaard gebruikt worden voor nieuwe gesprekken.</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO zal standaard gebruikt worden voor nieuwe gesprekken.</string>
