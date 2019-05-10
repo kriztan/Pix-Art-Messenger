@@ -286,6 +286,10 @@
     <string name="verified">Geverifieerd!</string>
     <string name="smp_requested">Contact vraagt SMP-bevestiging</string>
     <string name="no_otr_session_found">Geen geldige OTR-sessie gevonden!</string>
+    <string name="pref_create_backup">Back-up creëren</string>
+    <string name="notification_create_backup_title">Bezig met creëren van back-upbestanden</string>
+    <string name="restoring_backup">Bezig met herstellen van back-up</string>
+    <string name="notification_restored_backup_title">Je back-up is hersteld</string>
     <string name="choose_file">Bestand kiezen</string>
     <string name="receiving_x_file">Ontvangen van %1$s (%2$d%% voltooid)</string>
     <string name="download_x_file">%s downloaden</string>
@@ -442,7 +446,10 @@
     <string name="notify_only_when_highlighted">Melding enkel wanneer aangesproken</string>
     <string name="notify_never">Meldingen uitgeschakeld</string>
     <string name="notify_paused">Meldingen gepauzeerd</string>
+    <string name="pref_picture_quality">Afbeeldingskwaliteit</string>
+    <string name="pref_picture_quality_summary">Afbeeldingen verkleinen en comprimeren</string>
     <string name="pref_video_quality">Videokwaliteit</string>
+    <string name="video_low">Laag (144p)</string>
     <string name="video_mid">Gemiddeld (360p)</string>
     <string name="video_high">Hoog (720p)</string>
     <string name="video_original">Origineel (zonder compressie)</string>
@@ -539,6 +546,9 @@
     <string name="pref_use_tor">Verbinden via Tor</string>
     <string name="pref_use_tor_summary">Tunnel alle verbindingen door het Tor-netwerk. Vereist Orbot</string>
     <string name="pref_connection_options">Verbinding</string>
+    <string name="image_low">Laag (720p)</string>
+    <string name="image_mid">Gemiddeld (1920p)</string>
+    <string name="image_high">Hoog (3840p)</string>
     <string name="send_message">Verstuur bericht</string>
     <string name="pref_show_connection_options_summary">Toon hostnaam- en poortinstellingen bij instellen van een account</string>
     <string name="pref_show_connection_options">Uitgebreide verbindingsinstellingen</string>
@@ -568,6 +578,11 @@
     <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je Pix-Art Messenger toevoegen aan de lijst met beschermde apps.</string>
     <string name="pref_automatically_delete_messages_description">Verwijder automatisch berichten van dit apparaat ouder dan de ingestelde tijdsperiode.</string>
     <string name="pref_automatically_delete_messages">Automatisch berichten verwijderen</string>
+    <string name="pref_omemo_setting">OMEMO-versleuteling</string>
+    <string name="pref_omemo_setting_summary_default_on">OMEMO zal standaard gebruikt worden voor nieuwe gesprekken.</string>
+    <string name="pref_omemo_setting_summary_default_off">OMEMO zal standaard gebruikt worden voor nieuwe gesprekken.</string>
+    <string name="default_on">Standaard aan</string>
+    <string name="default_off">Standaard uit</string>
     <string name="pref_theme_light">Licht thema</string>
     <string name="pref_theme_dark">Donker thema</string>
     <string name="pref_theme_options_summary">Kies het kleurenpalet</string>
@@ -587,12 +602,18 @@
     <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
     <string name="pref_more_notification_settings">Meldingsinstellingen</string>
     <string name="video_compression_channel_name">Videocompressie</string>
+    <string name="backup_channel_name">Back-up en herstel</string>
     <string name="view_media">Media bekijken</string>
     <string name="group_chat_will_make_your_jabber_id_public">Dit kanaal openbaart je XMPP-adres</string>
     <string name="restore_backup">Back-up herstellen</string>
+    <string name="enter_password_to_restore">Enter your password for the account %s to restore the backup.</string>
+    <string name="restore_warning">Gebruik de back-upfunctie niet als je een installatie wilt klonen (gelijktijdig draaien). Back-ups zijn alleen bedoeld voor migraties of als je het oorspronkelijke apparaat bent kwijtgeraakt.</string>
+    <string name="unable_to_restore_backup">Kan back-up niet herstellen.</string>
+    <string name="unable_to_decrypt_backup">Kan back-up niet ontsleutelen. Is het wachtwoord juist?</string>
     <string name="view_users">Deelnemers bekijken</string>
     <string name="group_chat_members">Deelnemers</string>
     <string name="channel_details">Kanaalinformatie</string>
     <string name="no_users_hint_channel">Dit openbare kanaal heeft geen deelnemers. Nodig je contactpersonen uit of gebruik de knop \'Delen\' om het XMPP-adres te delen.</string>
     <string name="destroy_channel">Kanaal vernietigen</string>
+    <string name="notification_backup_created_subtitle">De back-upbestanden zijn opgeslagen in %s</string>
 </resources>
