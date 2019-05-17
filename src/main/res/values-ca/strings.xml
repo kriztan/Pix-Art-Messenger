@@ -295,10 +295,10 @@
     <string name="copy_omemo_clipboard_description">Copieu l\'empremta digital OMEMO al porta-retalls</string>
     <string name="regenerate_omemo_key">Regenerar la clau OMEMO</string>
     <string name="clear_other_devices">Esborra els dispositius</string>
-    <string name="clear_other_devices_desc">Estàs segur que vols esborrar tots els altres dispositius de l\'anunci OMEMO? La
+    <string name="clear_other_devices_desc">"Estàs segur que vols esborrar tots els altres dispositius de l'anunci OMEMO? La
  propera vegada que connectin els vostres dispositius, es tornaran a 
 anunciar, però és possible que no rebeu missatges enviats mentre 
-mentrestant.</string>
+mentrestant."</string>
     <string name="distrust_omemo_key">Dispositiu no confiable</string>
     <string name="distrust_omemo_key_text">Estàs segur que vols eliminar la verificació d\'aquest dispositiu?\nAquest dispositiu i missatges procedents d\'aquest dispositiu es marcaran com a no confiables.</string>
     <string name="error_no_keys_to_trust_server_error">No hi ha claus utilitzables per a aquest contacte.\nEls fitxers noves del servidor no han tingut èxit. Potser hi ha alguna cosa malament amb el servidor del vostre contacte.</string>
@@ -419,23 +419,23 @@ mentrestant.</string>
     <string name="load_more_messages">Carregueu més missatges</string>
     <string name="no_storage_permission">Les converses necessiten accés a emmagatzematge extern</string>
     <string name="sync_with_contacts">Sincronitza amb contactes</string>
-    <string name="sync_with_contacts_long">Conversations vol coincidir amb la vostra llista XMPP amb els vostres contactes per 
+    <string name="sync_with_contacts_long">"Conversations vol coincidir amb la vostra llista XMPP amb els vostres contactes per 
 mostrar els noms i avatars complets.\n\nConversations només 
 llegeix els vostres contactes i els relacionaran localment sense haver
  de penjar-les al vostre servidor.\n\nAra se us demanarà que 
-concediu permís per accedir als teus contactes.</string>
+concediu permís per accedir als teus contactes."</string>
     <string name="notify_on_all_messages">Notifica a tots els missatges</string>
     <string name="notify_only_when_highlighted">Notifica només quan s\'esmenta</string>
     <string name="notify_never">S\'han desactivat les notificacions</string>
     <string name="notify_paused">S\'han pausat les notificacions</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions de la bateria habilitades</string>
-    <string name="battery_optimizations_enabled_explained">El vostre dispositiu fa algunes optimitzacions pesades de la bateria i Conversations 
+    <string name="battery_optimizations_enabled_explained">"El vostre dispositiu fa algunes optimitzacions pesades de la bateria i Conversations 
 pot provocar notificacions retardades o fins i tot pèrdua de 
-missatges.\nEs recomana desactivar-les.</string>
-    <string name="battery_optimizations_enabled_dialog">El vostre dispositiu fa algunes optimitzacions pesades de la bateria i Conversations 
+missatges.\nEs recomana desactivar-les."</string>
+    <string name="battery_optimizations_enabled_dialog">"El vostre dispositiu fa algunes optimitzacions pesades de la bateria i Conversations 
 pot provocar notificacions retardades o fins i tot pèrdua de 
-missatges.\n\nAra se us demanarà que desactiveu-las.</string>
+missatges.\n\nAra se us demanarà que desactiveu-las."</string>
     <string name="disable">Desactivar</string>
     <string name="no_accounts">(Sense comptes activats)</string>
     <string name="this_field_is_required">Aquest camp és obligatori</string>
@@ -447,9 +447,9 @@ missatges.\n\nAra se us demanarà que desactiveu-las.</string>
     <string name="no_application_to_share_uri">No s\'ha trobat cap aplicació que comparteixi URI</string>
     <string name="share_uri_with">Comparteix l\'URI amb...</string>
     <string name="welcome_text">XMPP és un protocol independent del proveïdor. Podeu utilitzar aquest client amb el servidor XMPP que trieu.\nPerò per a la vostra comoditat, hem facilitat crear un compte a conversations.im¹; un proveïdor especialment indicat per a l\'ús amb Conversations.</string>
-    <string name="magic_create_text">Us guiarem pel procés de creació d\'un compte a conversations.im.¹\nQuan 
+    <string name="magic_create_text">"Us guiarem pel procés de creació d'un compte a conversations.im.¹\nQuan 
 trieu conversations.im com a proveïdor, podreu comunicar-vos amb els usuaris 
-d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
+d'altres proveïdors donant-los la vostra ID Jabber completa."</string>
     <string name="your_full_jid_will_be">La vostra Jabber ID completa serà: %s</string>
     <string name="create_account">Crear compte</string>
     <string name="pick_your_username">Tria el teu nom d\'usuari</string>
@@ -491,8 +491,8 @@ d\'altres proveïdors donant-los la vostra ID Jabber completa.</string>
     <string name="show_error_message">Mostra el missatge d\'error</string>
     <string name="error_message">Missatge d\'error</string>
     <string name="data_saver_enabled">S\'ha activat el protector de dades</string>
-    <string name="data_saver_enabled_explained">El vostre sistema operatiu restringeix a Conversations d\'accedir a Internet quan en segon pla. Per
- rebre notificacions de missatges nous, haureu de permetre que l\'accés sense restriccions a Conversations quan el protector de dades estigui activat.\nConversations encara farà un esforç per guardar dades quan sigui possible.</string>
+    <string name="data_saver_enabled_explained">"El vostre sistema operatiu restringeix a Conversations d'accedir a Internet quan en segon pla. Per
+ rebre notificacions de missatges nous, haureu de permetre que l'accés sense restriccions a Conversations quan el protector de dades estigui activat.\nConversations encara farà un esforç per guardar dades quan sigui possible."</string>
     <string name="device_does_not_support_data_saver">El vostre dispositiu no suporta desactivar el protector de dades de Conversations</string>
     <string name="error_unable_to_create_temporary_file">No es pot crear un fitxer temporal</string>
     <string name="this_device_has_been_verified">S\'ha verificat aquest dispositiu</string>
