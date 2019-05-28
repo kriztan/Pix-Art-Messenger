@@ -40,8 +40,8 @@
     <string name="remove_contact_text">Vols eliminar a %s de la teva llista? La conversa associada a aquest compte no s\'eliminarà.</string>
     <string name="block_contact_text">¿Vols bloquejar a %s per a que no puguin enviar-t\'he missatges?</string>
     <string name="unblock_contact_text">¿Vols desbloquejar a %s i permetre que t\'envíí missatges?</string>
-    <string name="block_domain_text">¿Bloquejar tots els contactes de %s?</string>
-    <string name="unblock_domain_text">¿Desbloquejar tots els contactes de %s?</string>
+    <string name="block_domain_text">Bloquejar tots els contactes de %s?</string>
+    <string name="unblock_domain_text">Desbloquejar tots els contactes de %s?</string>
     <string name="contact_blocked">Contacte bloquejat</string>
     <string name="blocked">Bloquejat</string>
     <string name="remove_bookmark_text">¿Vols eliminar %s dels teus marcadors? La conversa associada amb aquest marcador no s\'eliminarà.</string>
@@ -61,13 +61,13 @@
     <string name="save">Guardar</string>
     <string name="ok">Acceptar</string>
     <string name="crash_report_title">Pix-Art Messenger s\'ha aturat.</string>
-    <string name="crash_report_message">Si envíes informes d\'errors ajudes al desenvolupament de Pix-Art Messenger\n<b>Avís:</b> Aixó utilitzarà el teu compte XMPP per enviar els registres d\'errors al desemvolupador.</string>
+    <string name="crash_report_message">Si envíes informes d\'errors ajudes al desenvolupament de Pix-Art Messenger\n<b>Avís:</b> Aixó utilitzarà el teu compte XMPP per enviar els registres d\'errors al desenvolupador.</string>
     <string name="send_now">Enviar ara</string>
     <string name="send_never">No preguntar de nou</string>
     <string name="problem_connecting_to_account">No s\'ha pogut connectar a el compte</string>
     <string name="problem_connecting_to_accounts">No s\'ha pogut connectar a múltiples comptes</string>
     <string name="touch_to_fix">Polsar aquí per a gestionar els teus comptes</string>
-    <string name="attach_file">Adjuntar</string>
+    <string name="attach_file">Adjuntar arxiu</string>
     <string name="not_in_roster">El contacte no està a la teva llista. Vols afegir-lo?</string>
     <string name="add_contact">Afegir contacte</string>
     <string name="send_failed">Error al enviar</string>
@@ -75,7 +75,7 @@
     <string name="action_clear_history">Netejar historial</string>
     <string name="clear_conversation_history">Netejar l\'historial de conversa</string>
     <string name="clear_histor_msg">Vols borrar tots els missatges d\'aquesta conversa?\n\n<b>Atenció:</b> Aixó no afectarà als missatges guardats en altres dispositius o servidors.</string>
-    <string name="also_end_conversation">A més, finalitzar aquesta conversa</string>
+    <string name="also_end_conversation">Finalitzar aquesta conversa</string>
     <string name="choose_presence">Seleccionar dispositius</string>
     <string name="send_unencrypted_message">Enviar missatges sense xifrar</string>
     <string name="send_message_to_x">Enviar missatge a %s</string>
@@ -109,7 +109,7 @@
     <string name="pref_led">Notificació LED</string>
     <string name="pref_led_summary">La llum parpalleja quant arriba un nou missatge</string>
     <string name="pref_sound">To</string>
-    <string name="pref_sound_summary">Reprodueix el to amnb la notificació</string>
+    <string name="pref_sound_summary">Reprodueix el sol quant arribi un missatge nou</string>
     <string name="pref_send_crash">Enviar informes d\'errors</string>
     <string name="pref_send_crash_summary">Enviant informes d\'errors, pots ajudar al desenvolupament continu de Pix-Art Messenger</string>
     <string name="pref_confirm_messages">Confirmar missatges</string>
