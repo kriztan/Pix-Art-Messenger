@@ -26,7 +26,6 @@ import de.measite.minidns.DNSName;
 import de.measite.minidns.Question;
 import de.measite.minidns.Record;
 import de.measite.minidns.dnssec.DNSSECResultNotAuthenticException;
-import de.measite.minidns.dnsserverlookup.AndroidUsingExec;
 import de.measite.minidns.hla.DnssecResolverApi;
 import de.measite.minidns.hla.ResolverApi;
 import de.measite.minidns.hla.ResolverResult;
@@ -54,9 +53,6 @@ public class Resolver {
 
     public static void init(XmppConnectionService service) {
         Resolver.SERVICE = service;
-        DNSClient.removeDNSServerLookupMechanism(AndroidUsingExec.INSTANCE);
-        DNSClient.addDnsServerLookupMechanism(AndroidUsingExecLowPriority.INSTANCE);
-        DNSClient.addDnsServerLookupMechanism(new AndroidUsingLinkProperties(service));
         final AbstractDNSClient client = ResolverApi.INSTANCE.getClient();
         if (client instanceof ReliableDNSClient) {
             disableHardcodedDnsServers((ReliableDNSClient) client);
