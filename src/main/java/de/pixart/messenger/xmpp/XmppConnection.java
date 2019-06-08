@@ -330,16 +330,6 @@ public class XmppConnection implements Runnable {
                     Log.e(Config.LOGTAG, account.getJid().asBareJid() + ": Resolver results were empty");
                     return;
                 }
-                final Resolver.Result storedBackupResult;
-                if (hardcoded) {
-                    storedBackupResult = null;
-                } else {
-                    storedBackupResult = mXmppConnectionService.databaseBackend.findResolverResult(domain);
-                    if (storedBackupResult != null && !results.contains(storedBackupResult)) {
-                        results.add(storedBackupResult);
-                        Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": loaded backup resolver result from db: " + storedBackupResult);
-                    }
-                }
                 for (Iterator<Resolver.Result> iterator = results.iterator(); iterator.hasNext(); ) {
                     final Resolver.Result result = iterator.next();
                     if (Thread.currentThread().isInterrupted()) {
@@ -366,9 +356,6 @@ public class XmppConnection implements Runnable {
                         localSocket.setSoTimeout(Config.SOCKET_TIMEOUT * 1000);
                         if (startXmpp(localSocket)) {
                             localSocket.setSoTimeout(0); //reset to 0; once the connection is established we don’t want this
-                            if (!hardcoded && !result.equals(storedBackupResult)) {
-                                mXmppConnectionService.databaseBackend.saveResolverResult(domain, result);
-                            }
                             break; // successfully connected to server that speaks xmpp
                         } else {
                             FileBackend.close(localSocket);
