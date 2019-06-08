@@ -338,10 +338,10 @@
     <string name="dialog_manage_certs_positivebutton">Tangtanga ang pilianan</string>
     <string name="dialog_manage_certs_negativebutton">Ayaw ipadayun</string>
     <plurals name="toast_delete_certificates">
-        <item quantity="one">"%d sertipiko na natanggal
-%d sertipiko na natanggal"</item>
-        <item quantity="other">"%d sertipiko na natanggal
-%d sertipiko na natanggal"</item>
+        <item quantity="one">%d sertipiko na natanggal
+%d sertipiko na natanggal</item>
+        <item quantity="other">%d sertipiko na natanggal
+%d sertipiko na natanggal</item>
     </plurals>
     <string name="pref_quick_action_summary">Ilisi ang napadala nga button nga naay paspas nga lihok</string>
     <string name="pref_quick_action">Paspas nga Lihok</string>
@@ -398,12 +398,12 @@
     <string name="not_valid_hostname">Dili kini usa ka balido nga hostname</string>
     <string name="connected_accounts">%1$d gekan sa %2$d mga account konektado</string>
     <plurals name="x_messages">
-        <item quantity="one">"%d mensahe
+        <item quantity="one">%d mensahe
 
-%d mga mensahe"</item>
-        <item quantity="other">"%d mensahe
+%d mga mensahe</item>
+        <item quantity="other">%d mensahe
 
-%d mga mensahe"</item>
+%d mga mensahe</item>
     </plurals>
     <string name="load_more_messages">Pag-load og daghang mga mensahe</string>
     <string name="no_storage_permission">Ang Pix-Art Messenger nagkinahanglan og access sa external nga storage</string>
