@@ -19,9 +19,6 @@ jobs:
           path: build/outputs/apk/standard
           destination: apk
   build:
-    branches:
-      ignore:
-        - master
     docker:
       - image: registry.gitlab.com/fdroid/ci-images-client:latest
     steps:
@@ -40,9 +37,6 @@ jobs:
           path: build/outputs/apk/standard
 
   publish:
-    branches:
-      only:
-        - master
     docker:
       - image: registry.gitlab.com/fdroid/ci-images-client:latest
     steps:
@@ -68,7 +62,15 @@ jobs:
 
 workflows:
   version: 2
-  build_test:
+  test_build:
+    branches:
+      only:
+        - master
     jobs:
     - build
+  test_publish:
+    branches:
+      ignore:
+        - master
+    jobs:
     - publish
