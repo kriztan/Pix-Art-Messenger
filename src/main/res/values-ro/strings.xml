@@ -432,9 +432,9 @@
     <string name="always">Mereu</string>
     <string name="battery_optimizations_enabled">Optimizare baterie activată</string>
     <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru Pix-Art Messenger, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
-    <string name="battery_optimizations_enabled_dialog">"Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul 
+    <string name="battery_optimizations_enabled_dialog">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul 
 bateriei pentru Conversations, asta poate duce la notificări întârziate 
-sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări."</string>
+sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
     <string name="disable">Dezactivează</string>
     <string name="yes">Da</string>
     <string name="no">Nu</string>
