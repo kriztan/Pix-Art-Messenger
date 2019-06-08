@@ -73,8 +73,8 @@
     <string name="preparing_image">Przygotowywanie obrazu do wysłania</string>
     <string name="action_clear_history">Wyczyść historię</string>
     <string name="clear_conversation_history">Wyczyść historię konwersacji</string>
-    <string name="clear_histor_msg">"Czy na pewno usunąć wszystkie wiadomości z wybranej konwersacji?\n\n<b>Uwaga:</b> 
-Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządzeniach lub serwerach."</string>
+    <string name="clear_histor_msg">Czy na pewno usunąć wszystkie wiadomości z wybranej konwersacji?\n\n<b>Uwaga:</b> 
+Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządzeniach lub serwerach.</string>
     <string name="also_end_conversation">po czym zakończ tę rozmowę</string>
     <string name="choose_presence">Wybierz urządzenie</string>
     <string name="send_unencrypted_message">Wyślij wiadomość bez szyfrowania</string>
@@ -320,8 +320,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="no_application_found_to_open_file">Nie odnaleziono aplikacji skojarzonej z typem pliku</string>
     <string name="could_not_verify_fingerprint">Weryfikacja odcisku klucza nieudana</string>
     <string name="manually_verify">Weryfikuj ręcznie</string>
-    <string name="are_you_sure_verify_fingerprint">"Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?
-"</string>
+    <string name="are_you_sure_verify_fingerprint">Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?</string>
     <string name="pref_show_dynamic_tags">Etykiety kontaktów</string>
     <string name="pref_show_dynamic_tags_summary">Wyświetlaj etykiety pod kontaktami</string>
     <string name="no_conference_server_found">Nie znaleziono serwera grupowych rozmów</string>
@@ -555,8 +554,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_error_message">Pokaż komunikaty błędów</string>
     <string name="error_message">Komunikat o Błędzie</string>
     <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
-    <string name="data_saver_enabled_explained">"Twój system operacyjny blokuje dostęp do internetu Pix-Art Messenger, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Pix-Art Messenger nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
-Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe."</string>
+    <string name="data_saver_enabled_explained">Twój system operacyjny blokuje dostęp do internetu Pix-Art Messenger, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Pix-Art Messenger nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
+Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe.</string>
     <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
     <string name="contact">Kontakt</string>
