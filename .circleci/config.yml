@@ -63,14 +63,12 @@ jobs:
 workflows:
   version: 2
   test_build:
-    branches:
-      only:
-        - master
     jobs:
-    - build
-  test_publish:
-    branches:
-      ignore:
-        - master
-    jobs:
-    - publish
+    - build:
+        filters:
+          branches:
+            ignore:  master
+    - publish:
+        filters:
+          branches:
+            only:  master
