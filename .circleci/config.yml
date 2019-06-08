@@ -19,6 +19,30 @@ jobs:
           path: build/outputs/apk/standard
           destination: apk
   build:
+    branches:
+      ignore:
+        - master
+    docker:
+      - image: registry.gitlab.com/fdroid/ci-images-client:latest
+    steps:
+      - checkout
+      - restore_cache:
+          key: android
+      - run: export GRADLE_USER_HOME=$PWD/.gradle
+      - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
+      # build
+      - run: ./gradlew assembleStandard
+      - save_cache:
+          paths:
+            - ~/.android
+          key: android
+      - store_artifacts:
+          path: build/outputs/apk/standard
+
+  publish:
+    branches:
+      only:
+        - master
     docker:
       - image: registry.gitlab.com/fdroid/ci-images-client:latest
     steps:
@@ -41,12 +65,10 @@ jobs:
           paths:
             - ~/.android
           key: android
-      - store_artifacts:
-          path: build/outputs/apk/standard
-          destination: apk
 
 workflows:
   version: 2
   build_test:
     jobs:
     - build
+    - publish
