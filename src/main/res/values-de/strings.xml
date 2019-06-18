@@ -541,6 +541,7 @@
     <string name="registration_password_too_weak">Registrierung fehlgeschlagen: Passwort zu schwach</string>
     <string name="choose_participants">Mitglieder auswählen</string>
     <string name="creating_conference">Gruppenchat wird erstellt…</string>
+    <string name="import_text">Falls ein Backup verfügbar ist, kannst du es über den unten stehenden Button importieren.</string>
     <string name="import_database">Backup importieren</string>
     <string name="invite_again">Erneut hinzufügen</string>
     <string name="inviteUser_Subject">hat dich eingeladen über</string>
@@ -912,4 +913,5 @@
     <string name="this_looks_like_a_domain">Dies sieht aus wie eine Domain-Adresse</string>
     <string name="add_anway">Trotzdem hinzufügen</string>
     <string name="this_looks_like_channel">Dies sieht aus wie eine Channel-Adresse</string>
+    <string name="no_backup_available">Kein Backup vorhanden</string>
 </resources>
