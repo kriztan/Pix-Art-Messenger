@@ -541,6 +541,7 @@
     <string name="registration_password_too_weak">Error en el registro: La contraseña es demasiado débil</string>
     <string name="choose_participants">Elige a los participantes</string>
     <string name="creating_conference">Crear chat de grupo…</string>
+    <string name="import_text">Si hay una copia de seguridad disponible, puedes importarla pulsando el botón de debajo.</string>
     <string name="import_database">Importar copia de seguridad</string>
     <string name="invite_again">Invitar de nuevo</string>
     <string name="inviteUser_Subject">te ha invitado a través de</string>
@@ -912,4 +913,5 @@
     <string name="this_looks_like_a_domain">Esto parece la dirección de un dominio</string>
     <string name="add_anway">Añadir de todas formas</string>
     <string name="this_looks_like_channel">Esto parece la dirección de un canal</string>
+    <string name="no_backup_available">No hay copia de seguridad disponible</string>
 </resources>
