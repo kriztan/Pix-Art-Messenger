@@ -541,6 +541,7 @@
     <string name="registration_password_too_weak">Registrazione fallita: password troppo debole</string>
     <string name="choose_participants">Scegli i partecipanti</string>
     <string name="creating_conference">Creazione conversazione di gruppo…</string>
+    <string name="import_text">Se un backup fosse disponibile puoi importarlo premendo il pulsante qui sotto.</string>
     <string name="import_database">Importa backup</string>
     <string name="invite_again">Invita di nuovo</string>
     <string name="inviteUser_Subject">ti ha invitato via</string>
@@ -912,4 +913,5 @@
     <string name="this_looks_like_a_domain">Questo sembra un indirizzo di un dominio</string>
     <string name="add_anway">Aggiungi comunque</string>
     <string name="this_looks_like_channel">Questo sembra un indirizzo di un canale</string>
+    <string name="no_backup_available">Nessun backup disponibile</string>
 </resources>
