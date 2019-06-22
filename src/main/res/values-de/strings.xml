@@ -374,7 +374,7 @@
     <string name="kicking_from_public_conference">Du versuchst %s aus dem Channel zu entfernen.</string>
     <string name="kicking_from_conference">Du versuchst %s aus dem Gruppenchat zu entfernen.</string>
     <string name="ban_now">Jetzt ausschließen</string>
-    <string name="kick_now">Jetzt auschließen</string>
+    <string name="kick_now">Jetzt ausschließen</string>
     <string name="non_anonymous">JIDs für alle sichtbar machen</string>
     <string name="moderated">Channel wird moderiert</string>
     <string name="you_are_not_participating">Du bist kein Mitglied</string>
