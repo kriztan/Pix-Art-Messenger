@@ -917,5 +917,7 @@
     <string name="pref_show_own_accounts_summary">Mostrar tus cuentas en chats y contactos si tienes múltiples cuentas.</string>
     <string name="pref_show_own_accounts">Mostrar tus cuentas</string>
     <string name="message_encryption">Cifrado de mensaje</string>
+    <string name="enable_message_encryption">Este chat no está cifrado. Por razones de seguridad deberías habilitar el cifrado de mensajes, preferiblemente OMEMO. Si hay algo que no te funciona, puedes deshabilitar el cifrado de mensajes pulsando en el icono del candado.</string>
     <string name="hide_warning">Ocultar advertencia</string>
+    <string name="change_password_in_next_step">Puedes cambiar la contraseña generado en el siguiente paso según tus necesidades.</string>
 </resources>
