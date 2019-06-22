@@ -916,4 +916,6 @@
     <string name="no_backup_available">No hay copia de seguridad disponible</string>
     <string name="pref_show_own_accounts_summary">Mostrar tus cuentas en chats y contactos si tienes múltiples cuentas.</string>
     <string name="pref_show_own_accounts">Mostrar tus cuentas</string>
+    <string name="message_encryption">Cifrado de mensaje</string>
+    <string name="hide_warning">Ocultar advertencia</string>
 </resources>
