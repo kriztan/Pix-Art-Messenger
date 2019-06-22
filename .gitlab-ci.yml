@@ -4,11 +4,9 @@ cache:
   paths:
     - .gradle/wrapper
     - .gradle/caches
-    - .android
 
 stages:
   - build
-  - test
 
 before_script:
   - export GRADLE_USER_HOME=$PWD/.gradle
@@ -18,29 +16,40 @@ before_script:
 
 build:
   stage: build
+  #except:
+  #- master
   script:
   # generate version number
-  - export versionCode=`printf $(git rev-list --first-parent --count HEAD)`
-  - export versionName=`printf '%s-%05d' $(git describe --tag --abbrev=0) $versionCode`
+  - export versionCode="$CI_JOB_ID"
+  - export versionName="$(git describe --tag --abbrev=0)-${CI_JOB_ID}_${CI_COMMIT_REF_NAME}"
   - echo "set VersionCode '${versionCode}' and VersonName '${versionName}'"
   - sed -i "s/^\(\s*versionCode\s*\).*$/\1$versionCode/" build.gradle
   - sed -i "0,/versionName/s/^\(\s*versionName\).*/\1 \"$versionName\"/" build.gradle
-  - cat -n build.gradle
+  # build
+  - ./gradlew assembleStandard
+  artifacts:
+    paths:
+    - build/outputs/apk/standard
+
+publish:
+  stage: build
+  only:
+  #- master
+  - master--not-build-on-my-repo
+  script:
+  # generate version number
+  - export versionCode="$CI_JOB_ID"
+  - export versionName="$(git describe --tag --abbrev=0)-${CI_JOB_ID}_${CI_COMMIT_REF_NAME}"
+  - echo "set VersionCode '${versionCode}' and VersonName '${versionName}'"
+  - sed -i "s/^\(\s*versionCode\s*\).*$/\1$versionCode/" build.gradle
+  - sed -i "0,/versionName/s/^\(\s*versionName\).*/\1 \"$versionName\"/" build.gradle
   # build
   - ./gradlew assembleStandard
   # publish on nightly fdroid repo
-  - fdroid nightly
+  - fdroid nightly -v
   artifacts:
     paths:
-    - build/outputs/
-
-test:
-  stage: test
-  script:
-  - ./gradlew lint
-  artifacts:
-    paths:
-    - build/outputs/
+    - build/outputs/apk/standard
 
 after_script:
   # this file changes every time but should not be cached
