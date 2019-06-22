@@ -917,7 +917,6 @@
     <string name="pref_show_own_accounts_summary">Zeige eigenes Profil in Chats und Kontakten, falls du mehrere Profile nutzt.</string>
     <string name="pref_show_own_accounts">Zeige eigenes Profil</string>
     <string name="message_encryption">Nachrichtenverschlüsselung</string>
-    <string name="enable_message_encryption">Dieser Chat ist unverschlüsselt. Aus Sicherheitsgründen solltest du Nachrichtenverschlüsselung aktivieren, vorzugsweise OMEMO. Falls irgendetwas nicht funktioniert, kannst du die Nachrichtenverschlüsselung über das Schloss Symbol wieder deaktivieren.</string>
     <string name="hide_warning">Warnung anschalten</string>
     <string name="change_password_in_next_step">Du kannst das generierte Passwort im nächsten Schritt auch nach Belieben anpassen.</string>
 </resources>
