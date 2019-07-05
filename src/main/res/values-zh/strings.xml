@@ -35,4 +35,8 @@
     <string name="owner">所有者</string>
     <string name="participant">参与者</string>
     <string name="visitor">访客</string>
+    <string name="remove_contact_text">将 %s 从列表中移除? 与该联系人进行的会话不会被删除。</string>
+    <string name="block_contact_text">您想阻止 %s 向您发送消息吗？</string>
+    <string name="unblock_contact_text">你想解除对 %s 的屏蔽，使他们可以发送信息给你吗？</string>
+    <string name="block_domain_text">屏蔽 %s 中的所有联系人？</string>
 </resources>
