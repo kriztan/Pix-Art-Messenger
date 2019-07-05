@@ -33,4 +33,6 @@
     <string name="nick_in_use">该名称已存在</string>
     <string name="admin">管理员</string>
     <string name="owner">所有者</string>
+    <string name="participant">参与者</string>
+    <string name="visitor">访客</string>
 </resources>
