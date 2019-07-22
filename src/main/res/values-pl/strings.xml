@@ -158,6 +158,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="unpublish_pgp_message">Czy na pewno chcesz usunąć klucz publiczny OpenPGP ze swojej propagacji obecności?\nTwoje kontakty nie będą już mogły wysyłać Ci wiadomości zaszyfrowanych OpenPGP.</string>
     <string name="openpgp_has_been_published">Klucz publiczny OpenPGP został opublikowany.</string>
     <string name="mgmt_account_are_you_sure">Czy na pewno?</string>
+    <string name="mgmt_account_delete_confirm_message">W przypadku usunięcia konta z urządzenia zostanie usunięta tylko lokalna historia rozmów.\n\nUsunięcie konta z serwera będzie skutkowało brakiem możliwości zalogowania do niego.</string>
     <string name="attach_record_voice">Nagraj głos</string>
     <string name="account_settings_jabber_id">Jabber ID</string>
     <string name="account_settings_example_jabber_id">username@example.com</string>
@@ -202,6 +203,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="done">Ukończono</string>
     <string name="verify">Weryfikuj</string>
     <string name="decrypt">Odszyfruj</string>
+    <string name="bookmarks">Rozmowy grupowe</string>
     <string name="search">Szukaj</string>
     <string name="enter_contact">Wpisz kontakt</string>
     <string name="delete_contact">Usuń kontakt</string>
@@ -267,6 +269,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_colored_names_to_indicate_status_summary">Koloruj pseudonim aby wskazać statusu kontaktu</string>
     <string name="pref_expert_options_other">Inne opcje</string>
     <string name="pref_autojoin">Synchronizuj z zakładkami</string>
+    <string name="pref_autojoin_summary">To ustawienie sprawia, że pokoje konferencyjne respektują ustawienia auto-dołączania.</string>
     <string name="toast_message_otr_fingerprint">Odcisk klucza OTR został skopiowany do schowka</string>
     <string name="toast_message_omemo_fingerprint">Odcisk klucza OMEMO został skopiowany do schowka!</string>
     <string name="conference_banned">Zostałeś zbanowany z tego czatu grupowego</string>
@@ -359,6 +362,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="outcast">Wykluczony</string>
     <string name="member">Członek</string>
     <string name="advanced_mode">Tryb zaawansowany</string>
+    <string name="grant_membership">Przyznaj uprawnienie członka pokoju</string>
     <string name="grant_admin_privileges">Przyznaj uprawnienia administratora</string>
     <string name="remove_admin_privileges">Odbierz uprawnienia administratora</string>
     <string name="could_not_change_affiliation">Nie udało się zmienić stanowiska dla %s</string>
