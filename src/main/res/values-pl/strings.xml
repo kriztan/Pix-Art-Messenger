@@ -727,13 +727,17 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="no_camera_permission">Pix-Art Messenger potrzebuje dostęp do kamery</string>
     <string name="edit_status_message_title">Edytuj info o statusie</string>
     <string name="edit_status_message">Edytuj info o statusie</string>
+    <string name="pref_automatically_delete_messages_description">Automatycznie usuń wiadomości z tego urządzenia, które są starsze niż ustawiona wartość.</string>
     <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
     <string name="disable_encryption">Wyłącz szyfrowanie</string>
     <string name="error_trustkey_general">Pix-Art Messenger nie może wysyłać zaszyfrowanych wiadomości do %1$s. Może to być spowodowane nieaktualnym serwerem lub klientem użytkownika, który nie może obsłużyć OMEMO.</string>
     <string name="error_trustkey_device_list">Nie można pobrać listy urządzeń</string>
+    <string name="error_trustkey_bundle">Nie można pobrać listy urządzeń</string>
     <string name="disable_encryption_message">Szyfrowanie OMEMO na pewno wyłączyć dla tej rozmowy?\nTo pozwoli administratorowi serwera na odczyt twoich wiadomości, jednak może to być jedyną możliwością aby komunikować z ludźmi używającymi nieaktualnych klientów.</string>
     <string name="disable_now">Wyłącz teraz</string>
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
+    <string name="pref_omemo_setting_summary_always">OMEMO będzie używane zawsze dla wiadomości jeden do jednego oraz prywatnych rozmów grupowych.</string>
+    <string name="pref_omemo_setting_summary_default_on">OMEMO będzie domyślnie włączone dla nowych rozmów.</string>
     <string name="pref_theme_light">Jasny motyw</string>
     <string name="pref_theme_dark">Ciemny motyw</string>
     <string name="pref_theme_options_summary">Wybierz jasny albo ciemny motyw</string>
