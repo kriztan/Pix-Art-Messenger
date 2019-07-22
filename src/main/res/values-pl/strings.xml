@@ -556,6 +556,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="unable_to_connect_to_keychain">Nie można połączyć się z OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Urządzenie to nie jest już używane</string>
     <string name="please_wait">Proszę czekać…</string>
+    <string name="pref_export_plain_text_logs_summary">Eksportuj historię wiadomości jako pliki tekstowe czytelne dla człowieka</string>
     <string name="pref_export_plain_text_logs">Eksportuj historię wiadomości w formacie czytelnym dla człowieka</string>
     <string name="payment_required">Płatność wymagana</string>
     <string name="missing_internet_permission">Brak pozwolenia na korzystanie z Internetu</string>
@@ -590,6 +591,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="copy_fingerprint">Skopiuj odcisk</string>
     <string name="all_omemo_keys_have_been_verified">Wszystkie odciski OMEMO zostały zweryfikowane</string>
     <string name="verified_fingerprints">Zaufane odciski</string>
+    <string name="use_camera_icon_to_scan_barcode">Użyj kamery do zeskanowania kodu QR</string>
     <string name="please_wait_for_keys_to_be_fetched">Proszę czekać na ściągnięcie kluczy</string>
     <string name="share_as_barcode">Udostępnij jako kod QR</string>
     <string name="share_as_uri">Udostępnij przez URI XMPP</string>
@@ -661,6 +663,7 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="block_stranger">Zablokuj nieznajomego</string>
     <string name="block_entire_domain">Zablokuj całą domenę</string>
     <string name="pref_use_auto_rotate_summary">Obracaj zdjęcia i filmy na pełnym ekranie, aby dopasować rozmiar ekranu</string>
+    <string name="pref_use_auto_rotate">Obróć media w trybie pełnoekranowym</string>
     <string name="pref_use_tor">Połącz przez sieć TOR</string>
     <string name="pref_use_tor_summary">Tuneluj wszystkie połączenia przez sieć TOR. Wymaga zainstalowania aplikacji \"Orbot\"</string>
     <string name="pref_connection_options">Połączenie</string>
@@ -690,9 +693,11 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="error_no_keys_to_trust_presence">Brak dostępnych kluczy dla tego kontaktu.\nUpewnij się, że wzajemnie powiadamiacie się o obecności.</string>
     <string name="mark_as_read">oznacz jako przeczytane</string>
     <string name="server_info_partial">częściowo</string>
+    <string name="pref_show_foreground_service">Usługa na pierwszym planie</string>
     <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
     <string name="highlight_in_muc">wymień użytkownika</string>
+    <string name="no_application_found_to_open_link">Nie znaleziono aplikacji do otworzenia tego linku</string>
     <string name="contacts_have_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="conversation_unencrypted_hint">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO.</string>
@@ -709,10 +714,14 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
+    <string name="pref_enable_multi_accounts_title">Włącz obsługę wielu kont</string>
+    <string name="pref_enable_multi_accounts_summary">Zaznacz tę opcję jeżeli chcesz używać wielu kont</string>
     <string name="mtm_accept_cert">Zaakceptować nieznany certyfikat?</string>
+    <string name="mtm_trust_anchor">Certyfikat serwera nie został podpisany przez zaufane Centrum Certyfikacji.</string>
     <string name="mtm_connect_anyway">Czy połączyć mimo to?</string>
     <string name="mtm_cert_details">Szczegóły certyfikatu:</string>
     <string name="once">Jednorazowo</string>
+    <string name="qr_code_scanner_needs_access_to_camera">Skaner kodów QR potrzebuje dostępu do kamery urządzenia</string>
     <string name="pref_scroll_to_bottom_summary">Przewiń w dół po wysłaniu wiadomości</string>
     <string name="pref_scroll_to_bottom">Przewiń do dołu</string>
     <string name="no_camera_permission">Pix-Art Messenger potrzebuje dostęp do kamery</string>
