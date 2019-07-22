@@ -700,8 +700,11 @@ Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to je
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="pref_theme_light">Jasny motyw</string>
     <string name="pref_theme_dark">Ciemny motyw</string>
+    <string name="pref_theme_options_summary">Wybierz jasny albo ciemny motyw</string>
     <string name="pref_theme_options">Motyw</string>
     <string name="chooce_account">Wybierz konto</string>
+    <string name="pref_font_size">Rozmiar czcionki</string>
+    <string name="pref_font_size_summary">Względna wielkość czcionki w aplikacji.</string>
     <string name="small">Mały</string>
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
