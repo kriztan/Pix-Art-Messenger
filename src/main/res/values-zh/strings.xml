@@ -106,13 +106,21 @@
     <string name="trust_omemo_fingerprints">信任OMEMO指纹</string>
     <string name="toast_message_omemo_fingerprint">OMEMO指纹复制到剪贴板！</string>
     <string name="copy_omemo_clipboard_description">将OMEMO指纹复制到剪贴板</string>
-    <string name="regenerate_omemo_key">重新生成OMEMO钥匙</string>
+    <string name="regenerate_omemo_key">重新生成OMEMO密钥</string>
     <string name="distrust_omemo_key_text">您确定要删除此设备的验证吗？\n此设备和来自该设备的消息将被标记为不受信任。</string>
     <string name="fetching_history_from_server">从服务器获取历史记录</string>
     <string name="kick_from_room">从群聊中踢出</string>
     <string name="ban_from_conference">禁止群聊</string>
     <string name="kick_from_conference">从组中踢出</string>
-    <string name="ban_from_public_conference_message">你正试图在公共频道中永远封禁%s。</string>
+    <string name="ban_from_public_conference_message">你试图在公共频道中永远封禁%s。</string>
     <string name="ban_from_conference_message">你将在公共频道中暂时封禁%s。</string>
     <string name="kicking_from_public_conference">你将从公共频道踢出%s。</string>
+    <string name="kicking_from_conference">你正试图从组中踢出%s。</string>
+    <string name="error_fetching_omemo_key">获取OMEMO密钥时出错！</string>
+    <string name="verified_omemo_key_with_certificate">已通过证书验证OMEMO密钥！</string>
+    <string name="install_from_unknown_sources_disabled">禁用未知来源安装</string>
+    <string name="install_from_unknown_sources_disabled_dialog">您的设备配置为不允许来自Google PlayStore以外的未知来源的应用安装。这将导致应用程序更新程序出现问题。\n\n现在将要求您允许安装未知来源的应用。</string>
+    <string name="pref_delete_omemo_identities">删除OMEMO标识</string>
+    <string name="pref_delete_omemo_identities_summary">重新生成OMEMO密钥。您的所有联系人都必须再次验证您。仅将此作为最后的手段。</string>
+    <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
 </resources>
