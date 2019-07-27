@@ -73,4 +73,16 @@
     <string name="preparing_image">准备传输图像</string>
     <string name="action_clear_history">清除历史记录</string>
     <string name="clear_conversation_history">清除会话历史</string>
+    <string name="clear_histor_msg">您确定要删除此对话中的所有消息吗？\n\n<b>警告：</b>这不会删除存储在其他设备或服务器上的那些消息的副本。</string>
+    <string name="choose_presence">选择设备</string>
+    <string name="send_unencrypted_message">发送未加密的消息</string>
+    <string name="send_message_to_x">发送消息给%s</string>
+    <string name="send_otr_message">发送OTR加密消息</string>
+    <string name="send_omemo_message">发送OMEMO加密消息</string>
+    <string name="send_omemo_x509_message">发送v\\OMEMO加密消息</string>
+    <string name="send_pgp_message">发送OpenPGP加密消息</string>
+    <string name="your_nick_has_been_changed">您的昵称已更改</string>
+    <string name="send_unencrypted">发送未加密</string>
+    <string name="decryption_failed">解密失败。也许你没有合适的私钥。</string>
+    <string name="openkeychain_required">OpenKeychain</string>
 </resources>
