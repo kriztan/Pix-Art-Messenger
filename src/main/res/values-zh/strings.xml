@@ -42,4 +42,8 @@
     <string name="unblock_contact_text">你想解除对 %s 的屏蔽，使他们可以发送信息给你吗？</string>
     <string name="block_domain_text">屏蔽 %s 中的所有联系人？</string>
     <string name="contact_blocked">屏蔽联系人</string>
+    <string name="blocked">已屏蔽</string>
+    <string name="remove_bookmark_text">要删除%s作为书签吗？与此书签相关的对话将不会被删除。</string>
+    <string name="register_account">在服务器上注册新帐户</string>
+    <string name="change_password_on_server">在服务器上更改密码</string>
 </resources>
