@@ -236,6 +236,16 @@
     <string name="file_url">文件地址</string>
     <string name="url_copied_to_clipboard">已复制链接到剪贴板</string>
     <string name="show_qr_code">显示QR码</string>
+    <string name="show_block_list">显示屏蔽列表</string>
+    <string name="account_details">帐户信息</string>
+    <string name="verify_otr">验证OTR</string>
+    <string name="remote_fingerprint">远程指纹</string>
+    <string name="shared_secret_hint">提示或问题</string>
+    <string name="shared_secret_secret">共享秘密</string>
+    <string name="confirm">确认</string>
+    <string name="in_progress">正在处理</string>
+    <string name="respond">响应</string>
+    <string name="failed">失败</string>
     <string name="copy_omemo_clipboard_description">将OMEMO指纹复制到剪贴板</string>
     <string name="regenerate_omemo_key">重新生成OMEMO密钥</string>
     <string name="distrust_omemo_key">不信任设备</string>
