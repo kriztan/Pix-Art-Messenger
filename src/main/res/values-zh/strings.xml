@@ -60,4 +60,11 @@
     <string name="save">保存</string>
     <string name="ok">确定</string>
     <string name="crash_report_title">Pix-Art Messenger 崩溃了</string>
+    <string name="crash_report_message">通过发送堆栈跟踪，您正在帮助Pix-Art Messenger的持续开发\n<b>警告：</b>这将使用您的XMPP帐户将堆栈跟踪发送给开发人员。</string>
+    <string name="send_now">现在发送</string>
+    <string name="send_never">不再询问</string>
+    <string name="problem_connecting_to_account">无法连接到帐户</string>
+    <string name="problem_connecting_to_accounts">无法连接到多个帐户</string>
+    <string name="touch_to_fix">点击此处即可管理您的帐户</string>
+    <string name="attach_file">插入附件</string>
 </resources>
