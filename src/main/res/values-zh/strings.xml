@@ -380,6 +380,8 @@
     <string name="you_are_not_participating">你没有参加</string>
     <string name="modified_conference_options">修改了群聊选项！</string>
     <string name="could_not_modify_conference_options">无法修改群聊选项</string>
+    <string name="never">Never</string>
+    <string name="until_further_notice">直至另行通告</string>
     <string name="error_fetching_omemo_key">获取OMEMO密钥时出错！</string>
     <string name="verified_omemo_key_with_certificate">已通过证书验证OMEMO密钥！</string>
     <string name="install_from_unknown_sources_disabled">禁用未知来源安装</string>
