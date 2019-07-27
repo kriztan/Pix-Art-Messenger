@@ -41,4 +41,5 @@
     <string name="block_contact_text">您想阻止 %s 向您发送消息吗？</string>
     <string name="unblock_contact_text">你想解除对 %s 的屏蔽，使他们可以发送信息给你吗？</string>
     <string name="block_domain_text">屏蔽 %s 中的所有联系人？</string>
+    <string name="contact_blocked">屏蔽联系人</string>
 </resources>
