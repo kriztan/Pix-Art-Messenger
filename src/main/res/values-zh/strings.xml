@@ -137,4 +137,12 @@
     <string name="pref_omemo_setting">OMEMO加密</string>
     <string name="pref_omemo_setting_summary_always">OMEMO将始终用于端对端和私人群聊。</string>
     <string name="pref_omemo_setting_summary_default_on">默认情况下，OMEMO将用于新对话。</string>
+    <string name="pref_omemo_setting_summary_default_off">必须明确启用OMEMO才能进行新的对话。</string>
+    <string name="welcome_server_info">我们建议您使用blabber.im作为提供商。</string>
+    <string name="video_compression_channel_name">视频压缩</string>
+    <string name="omemo_decryption_failed">无法解密OMEMO消息。</string>
+    <string name="remove_from_channel">从频道中移除</string>
+    <string name="ban_from_channel">屏蔽频道</string>
+    <string name="delete_from_server">从服务器删除</string>
+    <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
 </resources>
