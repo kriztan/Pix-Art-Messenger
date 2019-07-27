@@ -41,6 +41,7 @@
     <string name="block_contact_text">您想阻止 %s 向您发送消息吗？</string>
     <string name="unblock_contact_text">你想解除对 %s 的屏蔽，使他们可以发送信息给你吗？</string>
     <string name="block_domain_text">屏蔽 %s 中的所有联系人？</string>
+    <string name="unblock_domain_text">从%s取消屏蔽所有联系人？</string>
     <string name="contact_blocked">屏蔽联系人</string>
     <string name="blocked">已屏蔽</string>
     <string name="remove_bookmark_text">要删除%s作为书签吗？与此书签相关的对话将不会被删除。</string>
@@ -74,6 +75,7 @@
     <string name="action_clear_history">清除历史记录</string>
     <string name="clear_conversation_history">清除会话历史</string>
     <string name="clear_histor_msg">您确定要删除此对话中的所有消息吗？\n\n<b>警告：</b>这不会删除存储在其他设备或服务器上的那些消息的副本。</string>
+    <string name="also_end_conversation">结束这个对话</string>
     <string name="choose_presence">选择设备</string>
     <string name="send_unencrypted_message">发送未加密的消息</string>
     <string name="send_message_to_x">发送消息给%s</string>
@@ -90,7 +92,13 @@
     <string name="install">安装</string>
     <string name="offering">提供…</string>
     <string name="waiting">等候…</string>
+    <string name="no_pgp_key">找不到OpenPGP密钥</string>
+    <string name="contact_has_no_pgp_key">Pix-Art Messenger无法加密您的消息，因为您的联系人未公布他或她的公钥。\n\n<small>请让您的联系人设置OpenPGP。</small></string>
+    <string name="no_pgp_keys">没有找到OpenPGP密钥</string>
+    <string name="pref_general">常规​​​​​</string>
+    <string name="pref_accept_files_wifi">接受WiFi连接中的文件</string>
     <string name="pref_accept_files_summary_wifi">当连接到wifi时自动接受小于…的文件</string>
+    <string name="pref_accept_files_mobile">接受移动数据连接中的文件</string>
     <string name="pref_accept_files_summary_mobile">与移动数据连接时自动接受小于…的文件</string>
     <string name="error_compressing_image">转换图像文件时出错</string>
     <string name="account_status_regis_not_sup">服务器不支持注册</string>
@@ -137,9 +145,11 @@
     <string name="pref_notifications_from_strangers_summary">通知从陌生人那里收到的消息。</string>
     <string name="received_message_from_stranger">收到陌生人的消息</string>
     <string name="block_entire_domain">屏蔽整个域名</string>
-    <string name="destroy_room">删除群组</string>
+    <string name="destroy_room">摧毁群组</string>
     <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
     <string name="destroy_room_succeed">群聊成功销毁</string>
+    <string name="destroy_room_failed">无法销毁群聊</string>
+    <string name="pref_scroll_to_bottom_summary">发送消息后向下滚动</string>
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
     <string name="pref_automatically_delete_messages_description">自动删除此设备中比配置的时间框架更早的消息。</string>
     <string name="pref_automatically_delete_messages">自动删除消息</string>
