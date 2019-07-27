@@ -134,4 +134,7 @@
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
     <string name="pref_automatically_delete_messages_description">自动删除此设备中比配置的时间框架更早的消息。</string>
     <string name="pref_automatically_delete_messages">自动删除消息</string>
+    <string name="pref_omemo_setting">OMEMO加密</string>
+    <string name="pref_omemo_setting_summary_always">OMEMO将始终用于端对端和私人群聊。</string>
+    <string name="pref_omemo_setting_summary_default_on">默认情况下，OMEMO将用于新对话。</string>
 </resources>
