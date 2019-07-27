@@ -98,4 +98,13 @@
     <string name="encryption_choice_unencrypted">未加密</string>
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
+    <string name="encryption_choice_omemo">OMEMO</string>
+    <string name="omemo_fingerprint">OMEMO指纹</string>
+    <string name="omemo_fingerprint_x509">v\\OMEMO指纹</string>
+    <string name="omemo_fingerprint_selected_message">OMEMO消息的指纹</string>
+    <string name="omemo_fingerprint_x509_selected_message">v\\OMEMO消息的指纹</string>
+    <string name="trust_omemo_fingerprints">信任OMEMO指纹</string>
+    <string name="toast_message_omemo_fingerprint">OMEMO指纹复制到剪贴板！</string>
+    <string name="copy_omemo_clipboard_description">将OMEMO指纹复制到剪贴板</string>
+    <string name="regenerate_omemo_key">重新生成OMEMO钥匙</string>
 </resources>
