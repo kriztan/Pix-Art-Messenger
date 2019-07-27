@@ -90,6 +90,9 @@
     <string name="install">安装</string>
     <string name="offering">提供…</string>
     <string name="waiting">等候…</string>
+    <string name="pref_accept_files_summary_wifi">当连接到wifi时自动接受小于…的文件</string>
+    <string name="pref_accept_files_summary_mobile">与移动数据连接时自动接受小于…的文件</string>
+    <string name="error_compressing_image">转换图像文件时出错</string>
     <string name="account_status_regis_not_sup">服务器不支持注册</string>
     <string name="account_status_tls_error">TLS握手失败</string>
     <string name="account_status_policy_violation">违反政策</string>
@@ -107,6 +110,7 @@
     <string name="toast_message_omemo_fingerprint">OMEMO指纹复制到剪贴板！</string>
     <string name="copy_omemo_clipboard_description">将OMEMO指纹复制到剪贴板</string>
     <string name="regenerate_omemo_key">重新生成OMEMO密钥</string>
+    <string name="distrust_omemo_key">不信任设备</string>
     <string name="distrust_omemo_key_text">您确定要删除此设备的验证吗？\n此设备和来自该设备的消息将被标记为不受信任。</string>
     <string name="fetching_history_from_server">从服务器获取历史记录</string>
     <string name="kick_from_room">从群聊中踢出</string>
@@ -120,6 +124,8 @@
     <string name="verified_omemo_key_with_certificate">已通过证书验证OMEMO密钥！</string>
     <string name="install_from_unknown_sources_disabled">禁用未知来源安装</string>
     <string name="install_from_unknown_sources_disabled_dialog">您的设备配置为不允许来自Google PlayStore以外的未知来源的应用安装。这将导致应用程序更新程序出现问题。\n\n现在将要求您允许安装未知来源的应用。</string>
+    <string name="welcome_text">…是一个免费且安全的XMPP/Jabber客户端。</string>
+    <string name="welcome_existing_account">我已有账号</string>
     <string name="pref_delete_omemo_identities">删除OMEMO标识</string>
     <string name="pref_delete_omemo_identities_summary">重新生成OMEMO密钥。您的所有联系人都必须再次验证您。仅将此作为最后的手段。</string>
     <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
@@ -131,6 +137,9 @@
     <string name="pref_notifications_from_strangers_summary">通知从陌生人那里收到的消息。</string>
     <string name="received_message_from_stranger">收到陌生人的消息</string>
     <string name="block_entire_domain">屏蔽整个域名</string>
+    <string name="destroy_room">删除群组</string>
+    <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
+    <string name="destroy_room_succeed">群聊成功销毁</string>
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
     <string name="pref_automatically_delete_messages_description">自动删除此设备中比配置的时间框架更早的消息。</string>
     <string name="pref_automatically_delete_messages">自动删除消息</string>
@@ -145,4 +154,5 @@
     <string name="ban_from_channel">屏蔽频道</string>
     <string name="delete_from_server">从服务器删除</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
+    <string name="enable_message_encryption">此聊天未加密。出于安全原因，您应该启用消息加密，最好是OMEMO。如果不适合您，您可以通过按密钥锁图标禁用消息加密。</string>
 </resources>
