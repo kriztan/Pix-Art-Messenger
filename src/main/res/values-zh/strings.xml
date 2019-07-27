@@ -107,4 +107,9 @@
     <string name="toast_message_omemo_fingerprint">OMEMO指纹复制到剪贴板！</string>
     <string name="copy_omemo_clipboard_description">将OMEMO指纹复制到剪贴板</string>
     <string name="regenerate_omemo_key">重新生成OMEMO钥匙</string>
+    <string name="distrust_omemo_key_text">您确定要删除此设备的验证吗？\n此设备和来自该设备的消息将被标记为不受信任。</string>
+    <string name="fetching_history_from_server">从服务器获取历史记录</string>
+    <string name="kick_from_room">从群聊中踢出</string>
+    <string name="ban_from_conference">禁止群聊</string>
+    <string name="kick_from_conference">从群聊中踢出</string>
 </resources>
