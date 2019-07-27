@@ -67,4 +67,10 @@
     <string name="problem_connecting_to_accounts">无法连接到多个帐户</string>
     <string name="touch_to_fix">点击此处即可管理您的帐户</string>
     <string name="attach_file">插入附件</string>
+    <string name="not_in_roster">联系人不在您的名单中。你要添加联系人吗？</string>
+    <string name="add_contact">添加联系人</string>
+    <string name="send_failed">发送失败</string>
+    <string name="preparing_image">准备传输图像</string>
+    <string name="action_clear_history">清除历史记录</string>
+    <string name="clear_conversation_history">清除会话历史</string>
 </resources>
