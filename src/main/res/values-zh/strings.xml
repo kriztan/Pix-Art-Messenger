@@ -416,6 +416,28 @@
         <item quantity="other">%d证书已删除
 %d删除所有证书</item>
     </plurals>
+    <string name="pref_quick_action_summary">用快捷键替换发送按钮</string>
+    <string name="pref_quick_action">快捷操作</string>
+    <string name="none">无</string>
+    <string name="recently_used">最近使用</string>
+    <string name="search_contacts">搜索联系人</string>
+    <string name="search_bookmarks">搜索多用户聊天</string>
+    <string name="choose_quick_action">选择快捷键</string>
+    <string name="send_private_message">发送私信</string>
+    <string name="user_has_left_conference">%1$s离开了小组聊天！</string>
+    <string name="username">用户名</string>
+    <string name="username_hint">昵称</string>
+    <string name="invalid_username">这不是有效的用户名</string>
+    <string name="download_failed_server_not_found">下载失败：找不到服务器</string>
+    <string name="download_failed_file_not_found">下载失败：找不到文件</string>
+    <string name="download_failed_could_not_connect">下载失败：无法连接到主机</string>
+    <string name="download_failed_could_not_write_file">下载失败：无法写入文件</string>
+    <string name="action_check_update">检查更新</string>
+    <string name="title_activity_updater">下载更新服务</string>
+    <string name="update_available">版本%1$s是可用的。\n\n文件大小：%2$s\n\n现在更新到版本%1$s？</string>
+    <string name="remind_later">稍后</string>
+    <string name="update">更新</string>
+    <string name="no_update_available">无可用更新</string>
     <string name="account_status_tor_unavailable">Tor网络不可用</string>
     <string name="account_status_bind_failure">绑定失败</string>
     <string name="account_status_host_unknown">服务器不负责域名</string>
