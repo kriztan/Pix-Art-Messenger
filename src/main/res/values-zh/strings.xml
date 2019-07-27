@@ -91,4 +91,11 @@
     <string name="offering">提供…</string>
     <string name="waiting">等候…</string>
     <string name="account_status_regis_not_sup">服务器不支持注册</string>
+    <string name="account_status_tls_error">TLS握手失败</string>
+    <string name="account_status_policy_violation">违反政策</string>
+    <string name="account_status_incompatible_server">不兼容的服务器</string>
+    <string name="account_status_stream_error">流错误</string>
+    <string name="encryption_choice_unencrypted">未加密</string>
+    <string name="encryption_choice_otr">OTR</string>
+    <string name="encryption_choice_pgp">OpenPGP</string>
 </resources>
