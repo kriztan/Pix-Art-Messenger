@@ -46,4 +46,14 @@
     <string name="remove_bookmark_text">要删除%s作为书签吗？与此书签相关的对话将不会被删除。</string>
     <string name="register_account">在服务器上注册新帐户</string>
     <string name="change_password_on_server">在服务器上更改密码</string>
+    <string name="share_with">与……分享</string>
+    <string name="start_conversation">开始对话</string>
+    <string name="invite_contact">邀请联系人</string>
+    <string name="contacts">联系人</string>
+    <string name="cancel">取消</string>
+    <string name="set">设置</string>
+    <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="block">屏蔽</string>
 </resources>
