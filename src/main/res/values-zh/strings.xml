@@ -19,6 +19,7 @@
     <string name="title_activity_settings">设置</string>
     <string name="conference_details">群聊详情</string>
     <string name="title_activity_contact_details">联系人详情</string>
+    <string name="title_activity_sharewith">分享会话</string>
     <string name="title_activity_start_conversation">开始会话</string>
     <string name="title_activity_choose_contact">选择联系人</string>
     <string name="title_activity_choose_contacts">选择联系人</string>
@@ -33,6 +34,7 @@
     <string name="nick_in_use">该名称已存在</string>
     <string name="admin">管理员</string>
     <string name="owner">所有者</string>
+    <string name="moderator">管理员</string>
     <string name="participant">参与者</string>
     <string name="visitor">访客</string>
     <string name="remove_contact_text">将 %s 从列表中移除? 与该联系人进行的会话不会被删除。</string>
