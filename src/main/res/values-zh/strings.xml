@@ -338,7 +338,16 @@
     <string name="distrust_omemo_key">不信任设备</string>
     <string name="distrust_omemo_key_text">您确定要删除此设备的验证吗？\n此设备和来自该设备的消息将被标记为不受信任。</string>
     <string name="error_no_keys_to_trust_server_error">此联系人没有可用的密钥。\n从服务器获取新密钥不成功。也许你的联系人服务器有问题。</string>
+    <string name="error_trustkeys_title">出错了</string>
     <string name="fetching_history_from_server">从服务器获取历史记录</string>
+    <string name="no_more_history_on_server">服务器上没有更多历史记录</string>
+    <string name="updating">更新中…</string>
+    <string name="password_changed">密码已更改！</string>
+    <string name="could_not_change_password">无法更改密码</string>
+    <string name="otr_session_not_started">发送消息以启动加密聊天</string>
+    <string name="ask_question">提问</string>
+    <string name="smp_explain_question">如果你和你的联系人有一个共同的秘密，没有其他人知道（比如一个内部的笑话或者你最后一次见面时吃的午餐），你可以用这个秘密来验证对方的指纹。\n\n您为联系人提供了一个提示或问题，他们会回答一个区分大小写的答案。</string>
+    <string name="smp_explain_answer">您的联系人希望通过共享秘密挑战您来验证您的指纹。您的联系人提供了以下有关该秘密的提示或问题。</string>
     <string name="no_role">离线</string>
     <string name="member">成员</string>
     <string name="kick_from_room">从群聊中踢出</string>
