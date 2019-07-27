@@ -85,4 +85,10 @@
     <string name="send_unencrypted">发送未加密</string>
     <string name="decryption_failed">解密失败。也许你没有合适的私钥。</string>
     <string name="openkeychain_required">OpenKeychain</string>
+    <string name="openkeychain_required_long">Pex-ArtMessenger利用第三方应用程序，名为<b>OpenKeychain</b>加密和解密消息以及管理公钥。\n\nOpenKeychain根据GPLv3许可，可在F-Droid和Google Play上使用。\n\n<small>(之后请重启Pix-Art Messenger.)</small></string>
+    <string name="restart">重启</string>
+    <string name="install">安装</string>
+    <string name="offering">提供…</string>
+    <string name="waiting">等候…</string>
+    <string name="account_status_regis_not_sup">服务器不支持注册</string>
 </resources>
