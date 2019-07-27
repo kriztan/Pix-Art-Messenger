@@ -56,4 +56,8 @@
     <string name="edit">编辑</string>
     <string name="delete">删除</string>
     <string name="block">屏蔽</string>
+    <string name="unblock">解除屏蔽</string>
+    <string name="save">保存</string>
+    <string name="ok">确定</string>
+    <string name="crash_report_title">Pix-Art Messenger 崩溃了</string>
 </resources>
