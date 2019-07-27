@@ -496,6 +496,14 @@
     <string name="pref_broadcast_last_activity">广播上次用户交互</string>
     <string name="pref_broadcast_last_activity_summary">使用Pix-Art Messenger时，让所有联系人知道</string>
     <string name="invite_user">邀请至Pix-Art Messenger</string>
+    <string name="request_permissions_message">Pix-Art Messenger会要求您允许一些权限。允许所有这些权限使用此Messenger的所有功能非常重要。如果您拒绝任何这些权限，应用程序将自行关闭。</string>
+    <string name="request_permissions_message_again">您已拒绝Pix-Art Messenger所需的部分或全部权限。您是否要跳转到设置并允许这些权限？如果您拒绝任何这些权限，该应用程序将自行关闭。</string>
+    <string name="unable_to_connect_to_keychain">无法连接到OpenKeychain</string>
+    <string name="this_device_is_no_longer_in_use">该设备已不再使用</string>
+    <string name="please_wait">请耐心等待…</string>
+    <string name="pref_export_plain_text_logs_summary">启用聊天日志导出可读的文本文件</string>
+    <string name="pref_export_plain_text_logs">导出可读的聊天记录</string>
+    <string name="payment_required">需要付款</string>
     <string name="pref_delete_omemo_identities">删除OMEMO标识</string>
     <string name="pref_delete_omemo_identities_summary">重新生成OMEMO密钥。您的所有联系人都必须再次验证您。仅将此作为最后的手段。</string>
     <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
