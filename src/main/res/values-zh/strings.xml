@@ -111,5 +111,8 @@
     <string name="fetching_history_from_server">从服务器获取历史记录</string>
     <string name="kick_from_room">从群聊中踢出</string>
     <string name="ban_from_conference">禁止群聊</string>
-    <string name="kick_from_conference">从群聊中踢出</string>
+    <string name="kick_from_conference">从组中踢出</string>
+    <string name="ban_from_public_conference_message">你正试图在公共频道中永远封禁%s。</string>
+    <string name="ban_from_conference_message">你将在公共频道中暂时封禁%s。</string>
+    <string name="kicking_from_public_conference">你将从公共频道踢出%s。</string>
 </resources>
