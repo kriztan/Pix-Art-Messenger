@@ -395,6 +395,27 @@
     <string name="vcard">联系信息</string>
     <string name="avatar_has_been_published">徽标已发布！</string>
     <string name="sending_x_file">发送%s</string>
+    <string name="offering_x_file">提供%s</string>
+    <string name="hide_offline">隐藏离线联系人</string>
+    <string name="is_typing">正在输入…</string>
+    <string name="pref_chat_states">输入通知</string>
+    <string name="pref_chat_states_summary">当您向他们发送消息时，让您的联系人知道</string>
+    <string name="send_location">发送位置</string>
+    <string name="show_location">显示地点</string>
+    <string name="no_application_found_to_display_location">找不到显示位置的应用程序</string>
+    <string name="location">地点</string>
+    <string name="pref_dont_trust_system_cas_title">不信任系统CAs</string>
+    <string name="pref_dont_trust_system_cas_summary">必须手动批准所有证书</string>
+    <string name="pref_remove_trusted_certificates_title">删除证书</string>
+    <string name="pref_remove_trusted_certificates_summary">删除手动批准的证书</string>
+    <string name="toast_no_trusted_certs">没有手动批准的证书</string>
+    <string name="dialog_manage_certs_title">删除证书</string>
+    <string name="dialog_manage_certs_positivebutton">删除选中的项目</string>
+    <string name="dialog_manage_certs_negativebutton">取消</string>
+    <plurals name="toast_delete_certificates">
+        <item quantity="other">%d证书已删除
+%d删除所有证书</item>
+    </plurals>
     <string name="account_status_tor_unavailable">Tor网络不可用</string>
     <string name="account_status_bind_failure">绑定失败</string>
     <string name="account_status_host_unknown">服务器不负责域名</string>
