@@ -237,7 +237,7 @@
     <string name="connect">连接 </string>
     <string name="account_already_exists">此帐户已存在</string>
     <string name="next">前进</string>
-    <string name="server_info_session_established">现在会议已建立</string>
+    <string name="server_info_session_established">会议已建立</string>
     <string name="skip">跳过</string>
     <string name="disable_notifications">禁用通知</string>
     <string name="enable">启用</string>
