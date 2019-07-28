@@ -574,6 +574,7 @@
     <string name="copy_to_clipboard">复制到剪贴板</string>
     <string name="message_copied_to_clipboard">复制消息到剪贴板</string>
     <string name="message">消息</string>
+    <string name="quote">引用</string>
     <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
     <string name="blindly_trusted_omemo_keys">盲目地信任OMEMO密钥</string>
     <string name="i_followed_this_link_from_a_trusted_source">我从一个可信任的来源接收这个链接。</string>
