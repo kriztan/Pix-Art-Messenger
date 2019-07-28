@@ -575,6 +575,17 @@
     <string name="message_copied_to_clipboard">复制消息到剪贴板</string>
     <string name="message">消息</string>
     <string name="quote">引用</string>
+    <string name="show_error_message">显示错误消息</string>
+    <string name="error_message">错误消息</string>
+    <string name="data_saver_enabled">已启用数据保护程序</string>
+    <string name="data_saver_enabled_explained">您的操作系统限制Pix-Art Messenger在后台访问Internet。要接收新消息的通知，您应该在启用数据保护程序时允许Pix-Art Messenger无限制访问。\\nPix-Art Messenger仍会努力在可能的情况下保存数据。</string>
+    <string name="device_does_not_support_data_saver">您的设备不支持禁用Pix-Art Messenger的数据保护程序。</string>
+    <string name="add_to_contact_list">添加到联系人列表</string>
+    <string name="contact">联系人</string>
+    <string name="unable_to_start_recording">无法开启录制</string>
+    <string name="error_unable_to_create_temporary_file">无法创建临时文件</string>
+    <string name="this_device_has_been_verified">此设备已经过验证</string>
+    <string name="copy_fingerprint">复制指纹</string>
     <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
     <string name="blindly_trusted_omemo_keys">盲目地信任OMEMO密钥</string>
     <string name="i_followed_this_link_from_a_trusted_source">我从一个可信任的来源接收这个链接。</string>
