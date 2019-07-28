@@ -672,6 +672,14 @@
     <string name="error_no_keys_to_trust_presence">此联系人没有可用的密钥。\n确保你们有共同的在线订阅。</string>
     <string name="mark_as_read">标记为已读</string>
     <string name="server_info_partial">部分</string>
+    <string name="pref_show_foreground_service_summary">一些Android设备会在一段时间后关闭一些应用程序，您将无法接收到新的消息。如果您遇到此类问题，请尝试激活前台服务。但请记住，选中此选项后，您将获得永久通知。</string>
+    <string name="pref_show_foreground_service">使用前台服务</string>
+    <string name="update_service">Pix-Art Messenger更新服务</string>
+    <string name="install_update">安装更新？</string>
+    <string name="highlight_in_muc">突出显示用户</string>
+    <string name="no_application_found_to_open_link">找不到应用程序打开链接</string>
+    <string name="contacts_have_read_up_to_this_point">%s已经读到了这一点</string>
+    <string name="contact_has_read_up_to_this_point">%s已经读到这一点了</string>
     <string name="destroy_room">摧毁群组</string>
     <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
     <string name="destroy_room_succeed">群聊成功销毁</string>
