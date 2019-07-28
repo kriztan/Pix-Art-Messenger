@@ -558,6 +558,12 @@
     <string name="pref_export_plain_text_logs">导出可读的聊天记录</string>
     <string name="payment_required">需要付款</string>
     <string name="me">我</string>
+    <string name="contact_asks_for_presence_subscription">联系人要求在线订阅</string>
+    <string name="allow">允许</string>
+    <string name="no_permission_to_access_x">无权访问%s</string>
+    <string name="remote_server_not_found">找不到远程服务器</string>
+    <string name="error_file_corrupt">这个文件似乎已损坏</string>
+    <string name="unable_to_update_account">无法更新帐户</string>
     <string name="pref_delete_omemo_identities">删除OMEMO标识</string>
     <string name="pref_delete_omemo_identities_summary">重新生成OMEMO密钥。您的所有联系人都必须再次验证您。仅将此作为最后的手段。</string>
     <string name="all_omemo_keys_have_been_verified">所有OMEMO密钥都已经过验证</string>
