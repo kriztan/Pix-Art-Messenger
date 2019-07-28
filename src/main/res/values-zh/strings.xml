@@ -413,8 +413,7 @@
     <string name="dialog_manage_certs_positivebutton">删除选中的项目</string>
     <string name="dialog_manage_certs_negativebutton">取消</string>
     <plurals name="toast_delete_certificates">
-        <item quantity="other">%d证书已删除
-%d删除所有证书</item>
+        <item quantity="other">%d删除证书</item>
     </plurals>
     <string name="pref_quick_action_summary">用快捷键替换发送按钮</string>
     <string name="pref_quick_action">快捷操作</string>
@@ -608,10 +607,41 @@
     <string name="reply">回复</string>
     <string name="transcoding_video">压缩视频</string>
     <string name="not_fetching_history_retention_period">由于本地保留期而未获取消息。</string>
+    <plurals name="seconds">
+        <item quantity="other">%d秒</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d分钟</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d小时</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%d天</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="other">%d周</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">%d月</item>
+    </plurals>
+    <string name="today">今天</string>
+    <string name="pref_use_max_brightness_summary">在全屏观看视频或图像时切换到最大亮度。</string>
+    <string name="pref_use_max_brightness">最大亮度</string>
+    <string name="block_jabber_id">屏蔽Jabber-ID</string>
+    <string name="corresponding_conversations_closed">相关对话已结束</string>
+    <string name="contact_blocked_past_tense">联系人被屏蔽</string>
     <string name="pref_notifications_from_strangers">来自陌生人的通知</string>
     <string name="pref_notifications_from_strangers_summary">通知从陌生人那里收到的消息。</string>
     <string name="received_message_from_stranger">收到陌生人的消息</string>
+    <string name="contacts_are_typing">%s正在打字…</string>
+    <string name="contact_is_typing">%s在打字…</string>
+    <string name="one_participant">一名参加者</string>
+    <string name="more_participants">%d参加者</string>
+    <string name="presence_offline">离线</string>
+    <string name="block_stranger">屏蔽陌生人</string>
     <string name="block_entire_domain">屏蔽整个域名</string>
+    <string name="pref_use_auto_rotate_summary">全屏旋转图像和视频以适应屏幕大小</string>
     <string name="destroy_room">摧毁群组</string>
     <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
     <string name="destroy_room_succeed">群聊成功销毁</string>
