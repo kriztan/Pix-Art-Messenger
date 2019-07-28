@@ -381,7 +381,7 @@
     <string name="modified_conference_options">修改了群聊选项！</string>
     <string name="could_not_modify_conference_options">无法修改群聊选项</string>
     <string name="never">Never</string>
-    <string name="until_further_notice">直至另行通告</string>
+    <string name="until_further_notice">直到再次通知</string>
     <string name="pref_input_options">输入</string>
     <string name="pref_enter_is_send">Enter键发送</string>
     <string name="pref_enter_is_send_summary">使用回车键发送消息</string>
