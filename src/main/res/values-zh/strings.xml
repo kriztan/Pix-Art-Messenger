@@ -454,6 +454,12 @@
     <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">用证书添加帐户</string>
     <string name="unable_to_parse_certificate">无法解析证书</string>
+    <string name="authenticate_with_certificate">留空以验证w/证书</string>
+    <string name="mam_prefs">存档首选项</string>
+    <string name="server_side_mam_prefs">服务器端存档首选项</string>
+    <string name="fetching_mam_prefs">获取存档首选项。请耐心等待…</string>
+    <string name="unable_to_fetch_mam_prefs">无法获取存档首选项</string>
+    <string name="captcha_required">需要验证码</string>
     <string name="error_fetching_omemo_key">获取OMEMO密钥时出错！</string>
     <string name="verified_omemo_key_with_certificate">已通过证书验证OMEMO密钥！</string>
     <string name="install_from_unknown_sources_disabled">禁用未知来源安装</string>
