@@ -852,6 +852,15 @@
     <string name="channel_discovery_opt_in_title">隐私声明</string>
     <string name="channel_discover_opt_in_message"><![CDATA[通道发现使用名为<a href="https://search.jabbercat.org">的第三方服务。jabbercat.org </a>。<br><br>使用此功能会将您的IP地址和搜索字词传输到该服务。有关详细信息，请参阅其<a href="https://search.jabbercat.org/privacy">隐私政策</a>。]]></string>
     <string name="action_add_existing_account">添加现有帐户</string>
+    <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
+    <string name="add_anway">仍然添加</string>
+    <string name="this_looks_like_channel">这看起来像一个路径地址</string>
+    <string name="no_backup_available">没有可用的备份</string>
+    <string name="pref_show_own_accounts_summary">如果您有多个帐户，请在聊天和联系人中显示自己的帐户</string>
+    <string name="pref_show_own_accounts">显示自己的帐户</string>
+    <string name="message_encryption">信息加密</string>
     <string name="enable_message_encryption">此聊天未加密。出于安全原因，您应该启用消息加密，最好是OMEMO。如果不适合您，您可以通过按密钥锁图标禁用消息加密。</string>
+    <string name="hide_warning">隐藏警告</string>
+    <string name="change_password_in_next_step">您可以根据需要在下一步中更改生成的密码</string>
 </resources>
