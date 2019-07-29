@@ -768,7 +768,15 @@
     <string name="conference_resource_constraint">来源受限制</string>
     <string name="delete_message">删除消息</string>
     <string name="conference_destroyed">这个群聊已被解散</string>
+    <string name="no_application_found_to_view_contact">没有发现查看联系人的应用程序</string>
     <string name="welcome_server_info">我们建议您使用blabber.im作为提供商。</string>
+    <string name="no_location_permission">Pix-Art Messenger需要访问位置服务</string>
+    <string name="pref_show_record_voice_btn_summary">在聊天中显示录制语音按钮作为快速操作</string>
+    <string name="pref_show_record_voice_btn">显示录制语音按钮</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">如果未键入消息，请将附件选项替换为发送按钮。否则显示快速操作，可以在以下设置中进行配置。</string>
+    <string name="pref_quick_share_attachment_choice">附件选择</string>
+    <string name="unable_to_save_recording">无法保存录音</string>
+    <string name="foreground_service_channel_name">前台服务</string>
     <string name="video_compression_channel_name">视频压缩</string>
     <string name="omemo_decryption_failed">无法解密OMEMO消息。</string>
     <string name="remove_from_channel">从频道中移除</string>
