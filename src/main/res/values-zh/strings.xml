@@ -22,7 +22,7 @@
     <string name="title_activity_sharewith">分享对话</string>
     <string name="title_activity_start_conversation">开始会话</string>
     <string name="title_activity_choose_contact">选择联系人</string>
-    <string name="title_activity_choose_contacts">选择联系人</string>
+    <string name="title_activity_choose_contacts">选择其他联系人</string>
     <string name="title_activity_block_list">屏蔽列表</string>
     <string name="just_now">刚刚</string>
     <string name="minute_ago">1 分钟前</string>
