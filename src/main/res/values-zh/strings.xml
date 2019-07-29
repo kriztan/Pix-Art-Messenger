@@ -680,6 +680,13 @@
     <string name="no_application_found_to_open_link">找不到应用程序打开链接</string>
     <string name="contacts_have_read_up_to_this_point">%s已经读到了这一点</string>
     <string name="contact_has_read_up_to_this_point">%s已经读到这一点了</string>
+    <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s和%2$d已读到这一点</string>
+    <string name="conversation_unencrypted_hint">此聊天未加密，出于安全原因，您应使用锁定图标激活加密消息。最好的加密是OMEMO。</string>
+    <string name="pref_warn_unencrypted_chat">如果聊天未加密，则发出警告</string>
+    <string name="pref_warn_unencrypted_chat_summary">如果消息加密可用，则应使用它。如果您不使用消息加密，请在聊天内显示警告消息。</string>
+    <string name="pref_use_bundled_emoji">使用内置的表情符号</string>
+    <string name="pref_use_bundled_emoji_summary">使用内置的表情符号库而不是使用您的设备库。重新打开应用后，可进行更改。</string>
+    <string name="invalid_muc_nick">昵称无效</string>
     <string name="destroy_room">摧毁群组</string>
     <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
     <string name="destroy_room_succeed">群聊成功销毁</string>
