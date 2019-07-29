@@ -693,6 +693,7 @@
     <string name="destroy_room_dialog">你想摧毁群聊%s吗？这将永久删除此群组聊天。</string>
     <string name="destroy_room_succeed">群聊成功销毁</string>
     <string name="destroy_room_failed">无法销毁群聊</string>
+    <string name="no_write_access_in_public_muc">您没有参与此群组聊天，目前没有加入权限。\n请按此按群聊聊天<b>OK</b>并通过长按列表顶部的其中一个成员名称向群主﹑管理员或所有者发送私人消息以请求加入权限。</string>
     <string name="pref_scroll_to_bottom_summary">发送消息后向下滚动</string>
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
     <string name="pref_automatically_delete_messages_description">自动删除此设备中比配置的时间框架更早的消息。</string>
