@@ -827,10 +827,31 @@
     <string name="pref_play_gif_inside_summary">直接在聊天视图中播放GIF文件</string>
     <string name="open_with">打开方式…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: user invite</string>
+    <string name="choose_account">选择帐户</string>
+    <string name="set_profile_picture">Pix-Art Messenger个人资料图片</string>
+    <string name="restore_backup">恢复备份</string>
+    <string name="restore">恢复</string>
+    <string name="enter_password_to_restore">输入帐户%s的密码以恢复备份。</string>
+    <string name="restore_warning">尝试克隆(同时运行) 安装时，请勿使用还原备份功能。还原备份仅适用于迁移或丢失原始设备。</string>
+    <string name="unable_to_restore_backup">无法恢复备份。</string>
+    <string name="unable_to_decrypt_backup">无法解密备份。密码是否正确？</string>
+    <string name="pref_prefer_xmpp_avatar_summary">首选用户的XMPP头像而不是通讯录中的头像</string>
+    <string name="pref_prefer_xmpp_avatar">喜欢XMPP头像</string>
+    <string name="view_users">查看参与者</string>
+    <string name="group_chat_members">参与者</string>
     <string name="message_deleted">消息已删除</string>
+    <string name="channel_details">通讯录详情</string>
     <string name="remove_from_channel">从频道中移除</string>
     <string name="ban_from_channel">屏蔽频道</string>
+    <string name="attach">连接</string>
+    <string name="delete_locally">本地删除</string>
     <string name="delete_from_server">从服务器删除</string>
+    <string name="go_online_to_delete">您必须使用要从服务器删除的帐户激活和/或联机。</string>
+    <string name="discover_channels">发现通道</string>
+    <string name="search_channels">搜索频道</string>
+    <string name="channel_discovery_opt_in_title">隐私声明</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[通道发现使用名为<a href="https://search.jabbercat.org">的第三方服务。jabbercat.org </a>。<br><br>使用此功能会将您的IP地址和搜索字词传输到该服务。有关详细信息，请参阅其<a href="https://search.jabbercat.org/privacy">隐私政策</a>。]]></string>
+    <string name="action_add_existing_account">添加现有帐户</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
     <string name="enable_message_encryption">此聊天未加密。出于安全原因，您应该启用消息加密，最好是OMEMO。如果不适合您，您可以通过按密钥锁图标禁用消息加密。</string>
 </resources>
