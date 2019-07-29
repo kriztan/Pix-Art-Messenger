@@ -886,6 +886,13 @@
     <string name="search_participants">搜索参与者</string>
     <string name="file_too_large">文件太大</string>
     <string name="mgmt_account_password_forgotten">忘记密码</string>
+    <string name="password_forgotten_title">忘记密码</string>
+    <string name="password_forgotten_text">您忘记了帐户密码？我们现在将尝试打开您的提供商的支持网站。</string>
+    <string name="set_settings_intro">在这里，您可以根据需要设置一些重要的隐私设置。以后也可以修改所有设置。</string>
+    <string name="pref_show_mappreview_inside_summary">直接在聊天视图中显示地图预览，将建立与Pix-Art-Server的连接。</string>
+    <string name="pref_show_mappreview_inside">显示聊天中的位置预览</string>
+    <string name="pref_use_internal_updater_summary">让信使每天查找一次新的应用更新</string>
+    <string name="pref_use_internal_updater">寻找更新</string>
     <string name="attach">连接</string>
     <string name="delete_locally">本地删除</string>
     <string name="delete_from_server">从服务器删除</string>
@@ -898,7 +905,7 @@
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
     <string name="add_anway">仍然添加</string>
-    <string name="this_looks_like_channel">这看起来像一个路径地址</string>
+    <string name="this_looks_like_channel">这看起来像一个频道地址</string>
     <string name="no_backup_available">没有可用的备份</string>
     <string name="pref_show_own_accounts_summary">如果您有多个帐户，请在聊天和联系人中显示自己的帐户</string>
     <string name="pref_show_own_accounts">显示自己的帐户</string>
