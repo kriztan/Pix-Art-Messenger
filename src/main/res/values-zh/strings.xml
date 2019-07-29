@@ -19,7 +19,7 @@
     <string name="title_activity_settings">设置</string>
     <string name="conference_details">群聊详情</string>
     <string name="title_activity_contact_details">联系人详情</string>
-    <string name="title_activity_sharewith">与联系人分享</string>
+    <string name="title_activity_sharewith">分享对话</string>
     <string name="title_activity_start_conversation">开始会话</string>
     <string name="title_activity_choose_contact">选择联系人</string>
     <string name="title_activity_choose_contacts">选择联系人</string>
@@ -841,6 +841,14 @@
     <string name="group_chat_members">参与者</string>
     <string name="message_deleted">消息已删除</string>
     <string name="channel_details">通讯录详情</string>
+    <string name="join_public_channel">加入公共频道</string>
+    <string name="create_private_group_chat">创建私人群聊</string>
+    <string name="create_public_channel">创建公共频道</string>
+    <string name="create_dialog_channel_name">频道名称</string>
+    <string name="xmpp_address">XMPP地址</string>
+    <string name="please_enter_name">请提供频道名称</string>
+    <string name="please_enter_xmpp_address">请提供XMPP地址</string>
+    <string name="this_is_an_xmpp_address">这是一个XMPP地址。请提供一个名字。</string>
     <string name="remove_from_channel">从频道中移除</string>
     <string name="ban_from_channel">屏蔽频道</string>
     <string name="attach">连接</string>
