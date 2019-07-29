@@ -777,6 +777,8 @@
     <string name="pref_quick_share_attachment_choice">附件选择</string>
     <string name="unable_to_save_recording">无法保存录音</string>
     <string name="foreground_service_channel_name">前台服务</string>
+    <string name="foreground_service_channel_description">此通知类别用于显示Pix-Art Messenger正在运行的永久通知。</string>
+    <string name="notification_group_status_information">状态信息</string>
     <string name="video_compression_channel_name">视频压缩</string>
     <string name="omemo_decryption_failed">无法解密OMEMO消息。</string>
     <string name="remove_from_channel">从频道中移除</string>
