@@ -819,6 +819,7 @@
     <string name="restore_backup">Восстановить резервную копию</string>
     <string name="restore">Восстановить</string>
     <string name="enter_password_to_restore">Введите пароль от аккаунта %s для восстановления резервной копии.</string>
+    <string name="restore_warning">Не используйте резервную копию для клонирования (одновременного запуска) нескольких экземпляров приложения. Восстановление из резервной копии предназначено только для миграции или случаев утери вашего устройства.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
@@ -890,6 +891,8 @@
     <string name="use_own_provider">Использовать свой сервер</string>
     <string name="add_anway">Добавить в любом случае</string>
     <string name="no_backup_available">Нет доступных резервных копий</string>
+    <string name="pref_show_own_accounts_summary">Отображать мои аккаунты в чатах и контактах - если у вас несколько аккаунтов.</string>
+    <string name="pref_show_own_accounts">Отображать мои аккаунты</string>
     <string name="message_encryption">Шифрование сообщений</string>
     <string name="enable_message_encryption">Этот чат не зашифрован. Из соображений безопасности рекомендуется включить шифрование, предпочтительно OMEMO. Если что-то пойдет не так - вы можете отключить шифрование сообщений нажатием на значок замка.</string>
     <string name="hide_warning">Скрыть предупреждение</string>
