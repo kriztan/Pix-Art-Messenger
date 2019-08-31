@@ -354,6 +354,7 @@
     <string name="password_should_not_be_empty">Пароль не может быль пустым</string>
     <string name="perform_action_with">Выполнить действие с</string>
     <string name="no_role">Оффлайн</string>
+    <string name="outcast">Изгой</string>
     <string name="member">Участник</string>
     <string name="advanced_mode">Расширенный режим</string>
     <string name="grant_membership">Предоставить права участника</string>
@@ -371,6 +372,7 @@
     <string name="kick_now">Исключить</string>
     <string name="non_anonymous">Сделать Jabber ID видимыми для всех</string>
     <string name="moderated">Сделать канал модерируемым</string>
+    <string name="you_are_not_participating">Вы не участник</string>
     <string name="modified_conference_options">Настройки группового чата изменены!</string>
     <string name="could_not_modify_conference_options">Невозможно изменить настройки группового чата</string>
     <string name="never">Никогда</string>
@@ -533,6 +535,7 @@
     <string name="registration_password_too_weak">Ошибка регистрации: Пароль слишком простой</string>
     <string name="choose_participants">Выберите участников</string>
     <string name="creating_conference">Создание группового чата...</string>
+    <string name="import_text">Если имеется резервная копия - вы можете ее импортировать нажав на кнопку нижу</string>
     <string name="import_database">Импортировать резервную копию</string>
     <string name="invite_again">Пригласить снова</string>
     <string name="inviteUser_Subject">приглашает вас присоединиться через</string>
@@ -896,4 +899,11 @@
     <string name="message_encryption">Шифрование сообщений</string>
     <string name="enable_message_encryption">Этот чат не зашифрован. Из соображений безопасности рекомендуется включить шифрование, предпочтительно OMEMO. Если что-то пойдет не так - вы можете отключить шифрование сообщений нажатием на значок замка.</string>
     <string name="hide_warning">Скрыть предупреждение</string>
+    <string name="action_unblock_participant">Разблокировать участника</string>
+    <string name="action_block_participant">Заблокировать участника</string>
+    <string name="share_backup_files">Отправить файл резервной копии</string>
+    <string name="conversations_backup">Резервная копия Conversations</string>
+    <string name="event">Событие</string>
+    <string name="pref_vibrate_in_chat_summary">Вибрация при новом сообщении в открытом чате</string>
+    <string name="pref_vibrate_in_chat">Вибрация в открытом чате</string>
 </resources>
