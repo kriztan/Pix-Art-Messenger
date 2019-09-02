@@ -913,4 +913,16 @@
     <string name="enable_message_encryption">此聊天未加密。出于安全原因，您应该启用消息加密，最好是OMEMO。如果不适合您，您可以通过按密钥锁图标禁用消息加密。</string>
     <string name="hide_warning">隐藏警告</string>
     <string name="change_password_in_next_step">您可以根据需要在下一步中更改生成的密码</string>
+    <string name="action_unblock_participant">解除屏蔽参与者</string>
+    <string name="action_block_participant">屏蔽参与者</string>
+    <string name="share_backup_files">共享备份文件</string>
+    <string name="conversations_backup">对话备份</string>
+    <string name="event">活动</string>
+    <string name="pref_vibrate_in_chat_summary">当新消息到达打开的聊天时振动</string>
+    <string name="pref_vibrate_in_chat">在开放式聊天中振动</string>
+    <string name="open_backup">打开备份</string>
+    <string name="not_a_backup_file">您选择的文件不是Conversations备份文件</string>
+    <string name="account_already_setup">此帐户已设置完毕</string>
+    <string name="please_enter_password">请输入此帐户的密码</string>
+    <string name="unable_to_perform_this_action">无法执行此操作</string>
 </resources>
