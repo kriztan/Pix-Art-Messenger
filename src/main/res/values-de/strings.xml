@@ -902,7 +902,7 @@
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
     <string name="attach">Anhängen</string>
     <string name="delete_locally">Lokal löschen</string>
-    <string name="delete_from_server">Auf Server löschen</string>
+    <string name="delete_from_server">Vom Server löschen</string>
     <string name="go_online_to_delete">Du musst online sein, um dein Profil vom Server löschen zu können.</string>
     <string name="discover_channels">Kanäle entdecken</string>
     <string name="search_channels">Kanäle suchen</string>
