@@ -404,7 +404,7 @@
     <string name="show_location">显示地点</string>
     <string name="no_application_found_to_display_location">找不到显示位置的应用程序</string>
     <string name="location">地点</string>
-    <string name="pref_dont_trust_system_cas_title">不信任系统CAs</string>
+    <string name="pref_dont_trust_system_cas_title">不信任系统CA</string>
     <string name="pref_dont_trust_system_cas_summary">必须手动批准所有证书</string>
     <string name="pref_remove_trusted_certificates_title">删除证书</string>
     <string name="pref_remove_trusted_certificates_summary">删除手动批准的证书</string>
