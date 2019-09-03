@@ -923,12 +923,10 @@
     <string name="action_unblock_participant">Desbloquear participante</string>
     <string name="action_block_participant">Bloquear participante</string>
     <string name="share_backup_files">Compartir archivos de backup</string>
-    <string name="conversations_backup">Backup de Conversations</string>
     <string name="event">Evento</string>
     <string name="pref_vibrate_in_chat_summary">Vibrar cuando llega un nuevo mensaje en un conversación abierta</string>
     <string name="pref_vibrate_in_chat">Vibrar en una conversación abierta</string>
     <string name="open_backup">Abrir backup</string>
-    <string name="not_a_backup_file">El archivo seleccionado no es un archivo de backup de Conversations</string>
     <string name="account_already_setup">Esta cuenta ya ha sido configurada</string>
     <string name="please_enter_password">Por favor entrar la contraseña para esta cuenta</string>
     <string name="unable_to_perform_this_action">No se pudo realizar la acción</string>
