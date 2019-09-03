@@ -902,12 +902,10 @@
     <string name="action_unblock_participant">Разблокировать участника</string>
     <string name="action_block_participant">Заблокировать участника</string>
     <string name="share_backup_files">Отправить файл резервной копии</string>
-    <string name="conversations_backup">Резервная копия Conversations</string>
     <string name="event">Событие</string>
     <string name="pref_vibrate_in_chat_summary">Вибрация при новом сообщении в открытом чате</string>
     <string name="pref_vibrate_in_chat">Вибрация в открытом чате</string>
     <string name="open_backup">Открыть резервную копию</string>
-    <string name="not_a_backup_file">Выбранный вами файл не является резервной копией Conversations</string>
     <string name="account_already_setup">Этот аккаунт уже настроен</string>
     <string name="please_enter_password">Пожалуйста, введите пароль для этого аккаунта</string>
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
