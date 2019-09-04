@@ -682,7 +682,7 @@
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s和%2$d已读到这里</string>
     <string name="conversation_unencrypted_hint">此聊天未加密，出于安全原因，您应使用锁定图标激活加密消息。最好的加密是OMEMO。</string>
     <string name="pref_warn_unencrypted_chat">如果聊天未加密，则发出警告</string>
-    <string name="pref_warn_unencrypted_chat_summary">如果消息加密可用，则应使用它。如果您不使用消息加密，请在聊天内显示警告消息。</string>
+    <string name="pref_warn_unencrypted_chat_summary">如果消息加密可用，则应使用它。如果您不使用消息加密，则在聊天内显示警告消息。</string>
     <string name="pref_use_bundled_emoji">使用内置的表情符号</string>
     <string name="pref_use_bundled_emoji_summary">使用内置的表情符号库而不是使用您的设备库。重新打开应用后，可进行更改。</string>
     <string name="invalid_muc_nick">昵称无效</string>
@@ -692,7 +692,7 @@
     <string name="destroy_room_dialog">您想解散群聊%s吗？</string>
     <string name="destroy_room_succeed">群聊成功解散</string>
     <string name="destroy_room_failed">无法解散群聊</string>
-    <string name="no_write_access_in_public_muc">您没有参与此群聊，目前没有加入权限。\n请按此按群聊<b>OK</b>并通过长按列表顶部的其中一个成员名称向群主﹑管理员或所有者发送私人消息以请求加入权限。</string>
+    <string name="no_write_access_in_public_muc">您没有参与此群聊所以现在不能发消息。\n请点<b>是</b>，进入群聊详情，然后长按任何一个管理员的名称，发送一条私信。</string>
     <string name="snooze">稍后再响</string>
     <string name="huawei_protected_apps">受保护的应用</string>
     <string name="huawei_protected_apps_summary">要持续接收通知，即使屏幕关闭，您也需要将Pix-Art聊天添加到受保护的应用列表中。</string>
@@ -704,7 +704,7 @@
     <string name="mtm_hostname_mismatch">服务器无法验证为“%s”。该证书仅对以下内容有效：</string>
     <string name="mtm_connect_anyway">您想要连接吗？</string>
     <string name="mtm_cert_details">证书详情：</string>
-    <string name="once">一次</string>
+    <string name="once">仅一次</string>
     <string name="qr_code_scanner_needs_access_to_camera">二维码扫描仪需要访问相机</string>
     <string name="pref_scroll_to_bottom_summary">发送消息后向下滚动</string>
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
