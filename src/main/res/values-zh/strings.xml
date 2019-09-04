@@ -563,7 +563,7 @@
     <string name="remote_server_not_found">找不到远程服务器</string>
     <string name="error_file_corrupt">这个文件似乎已损坏</string>
     <string name="unable_to_update_account">无法更新帐户</string>
-    <string name="report_jid_as_spammer">举报/投诉该账号发送垃圾信息</string>
+    <string name="report_jid_as_spammer">举报该账号发送垃圾信息</string>
     <string name="create_issue">反馈问题</string>
     <string name="pref_delete_omemo_identities">删除OMEMO身份</string>
     <string name="pref_delete_omemo_identities_summary">重新生成OMEMO密钥。您的所有联系人都必须再次验证您。仅将此作为最后的手段。</string>
@@ -598,13 +598,13 @@
     <string name="not_trusted">不信任</string>
     <string name="invalid_barcode">无效的二维码</string>
     <string name="verify_with_qr_code">用二维码验证</string>
-    <string name="i_followed_this_link_from_a_trusted_source">我从一个可信任的来源接收这个链接。</string>
+    <string name="i_followed_this_link_from_a_trusted_source">我从一个可信任的来源接收了这个链接。</string>
     <string name="verifying_omemo_keys_trusted_source">单击链接后即将验证%1$s的OMEMO密钥。只有当您从受信任的来源接收此链接时，这才是安全的，其中只有%2$s可以发布此链接。</string>
     <string name="verify_omemo_keys">验证OMEMO指纹</string>
-    <string name="show_inactive_devices">显示无效</string>
-    <string name="hide_inactive_devices">隐藏无效</string>
+    <string name="show_inactive_devices">显示不活动</string>
+    <string name="hide_inactive_devices">隐藏不活动</string>
     <string name="reply">回复</string>
-    <string name="transcoding_video">压缩视频</string>
+    <string name="transcoding_video">正在压缩视频</string>
     <string name="not_fetching_history_retention_period">由于本地保留期而未获取消息。</string>
     <plurals name="seconds">
         <item quantity="other">%d秒</item>
@@ -793,7 +793,7 @@
     <string name="view_media">查看媒体</string>
     <string name="media_browser">媒体浏览器</string>
     <string name="account_status_stream_opening_error">流启动错误</string>
-    <string name="action_open">开启</string>
+    <string name="action_open">打开</string>
     <string name="security_violation_not_attaching_file">由于安全违规而省略了文件</string>
     <string name="delete_file_dialog">删除文件</string>
     <string name="delete_file_dialog_msg">您确定要删除此文件吗？\n\n<b>警告:</b>这不会删除存储在其他设备或服务器上的此文件的副本。</string>
