@@ -839,6 +839,7 @@
     <string name="restore_backup">Sicherung wiederherstellen</string>
     <string name="restore">Wiederherstellen</string>
     <string name="enter_password_to_restore">Um die Sicherung wiederherzustellen, gib für das Profil %s dein Kennwort ein.</string>
+    <string name="restore_warning">Benutze die Wiederherstellungsfunktion unter keinen Umständen, außer im Falle einer Migration oder eines Verlustes deines Geräts.</string>
     <string name="unable_to_restore_backup">Sicherung kann nicht wiederhergestellt werden.</string>
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Bevorzuge den vom Benutzer gesetzten Avatar anstatt des Profilbildes in deinem Adressbuch</string>
