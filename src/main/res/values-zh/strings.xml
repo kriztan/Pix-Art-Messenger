@@ -87,14 +87,14 @@
     <string name="send_unencrypted">未加密发送</string>
     <string name="decryption_failed">解密失败。可能您没有合适的私钥。</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Pex-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密和解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
+    <string name="openkeychain_required_long">Pix-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密、解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
     <string name="restart">重启</string>
     <string name="install">安装</string>
     <string name="offering">正在提供…</string>
     <string name="waiting">正在等待…</string>
     <string name="no_pgp_key">找不到OpenPGP密钥</string>
     <string name="contact_has_no_pgp_key">因为对方未公布公钥，Pix-Art聊天无法加密您的消息。\n\n<small>请让您的联系人设置OpenPGP。</small></string>
-    <string name="no_pgp_keys">没有找到OpenPGP密钥</string>
+    <string name="no_pgp_keys">未找到OpenPGP密钥</string>
     <string name="pref_general">常规​​​​​</string>
     <string name="pref_accept_files_wifi">在使用WiFi时接受文件</string>
     <string name="pref_accept_files_summary_wifi">当连接到WiFi时自动接受小于…的文件</string>
