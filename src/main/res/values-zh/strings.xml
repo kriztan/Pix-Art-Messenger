@@ -41,7 +41,7 @@
     <string name="block_contact_text">您想封禁 %s 的消息吗？</string>
     <string name="unblock_contact_text">您想让 %s 给您发送信息吗？</string>
     <string name="block_domain_text">封禁 %s 的所有联系人？</string>
-    <string name="unblock_domain_text">从%s取消封禁所有联系人？</string>
+    <string name="unblock_domain_text">解封%s的所有联系人？</string>
     <string name="contact_blocked">联系人已封禁</string>
     <string name="blocked">已封禁的</string>
     <string name="remove_bookmark_text">要将%s书签删除吗？与此书签相关的对话将不会被删除。</string>
@@ -831,6 +831,7 @@
     <string name="restore_backup">恢复备份</string>
     <string name="restore">恢复</string>
     <string name="enter_password_to_restore">输入帐户%s的密码以恢复备份。</string>
+    <string name="restore_warning">请不要在除了更换或丢失设备以外的任何情况下使用恢复功能。</string>
     <string name="unable_to_restore_backup">无法恢复备份。</string>
     <string name="unable_to_decrypt_backup">无法解密备份。密码是否正确？</string>
     <string name="pref_prefer_xmpp_avatar_summary">首选用户的XMPP头像而不是通讯录中的头像</string>
