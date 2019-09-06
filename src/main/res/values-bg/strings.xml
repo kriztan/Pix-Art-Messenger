@@ -828,7 +828,6 @@
     <string name="restore_backup">Възстанови архив</string>
     <string name="restore">Възстановяване</string>
     <string name="enter_password_to_restore">Въведете паролата си за профила %s, за да възстановите архива.</string>
-    <string name="restore_warning">Не използвайте функцията за възстановяване на резервно копие в опит да клонирате (стартирате едновременно) инсталация. Възстановяването на резервно копие е предназначено само за миграции или в случай, че сте загубили оригиналното устройство.</string>
     <string name="unable_to_restore_backup">Архивирането не може да се възстанови.</string>
     <string name="unable_to_decrypt_backup">Архивирането не може да се декриптира. Правилна ли е паролата?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочиташ XMPP снимка на потребителя вместо от вашата адресна книга</string>
