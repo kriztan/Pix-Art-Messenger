@@ -838,7 +838,6 @@
     <string name="restore_backup">Restaurar còpia de seguretat</string>
     <string name="restore">Restaurar</string>
     <string name="enter_password_to_restore">Escriu la teva contrasenya pel compte %s per a restaurar la còpia de seguretat.</string>
-    <string name="restore_warning">No utilitzis la característica de restaurar còpia de seguretat per a intentar clonar (executar simultàniament) una instal·lació. La restauración de còpia de seguretat és només per a migracions o per a el cas de que hi hagi perdut el dispositiu original.</string>
     <string name="unable_to_restore_backup">No es pot restaurar la còpia de seguretat.</string>
     <string name="unable_to_decrypt_backup">No es pot desxifrar la còpia de seguretat. És correcta la contrasenya?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir l\'avatar d\'usuaris XMPP en lloc del de la teva llista de contactes</string>
