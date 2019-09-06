@@ -839,7 +839,6 @@
     <string name="restore_backup">Ripristino backup</string>
     <string name="restore">Ripristino</string>
     <string name="enter_password_to_restore">Inserisci la password per l\'account %s per ripristinare il backup.</string>
-    <string name="restore_warning">Non usare il ripristino del backup nel tentativo di clonare (avviare simultaneamente) un\'installazione. Il ripristino del backup è inteso solo per migrazioni o nel caso tu abbia perso il dispositivo originale.</string>
     <string name="unable_to_restore_backup">Impossibile ripristinare il backup.</string>
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
