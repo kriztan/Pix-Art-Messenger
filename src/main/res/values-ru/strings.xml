@@ -822,7 +822,6 @@
     <string name="restore_backup">Восстановить резервную копию</string>
     <string name="restore">Восстановить</string>
     <string name="enter_password_to_restore">Введите пароль от аккаунта %s для восстановления резервной копии.</string>
-    <string name="restore_warning">Не используйте резервную копию для клонирования (одновременного запуска) нескольких экземпляров приложения. Восстановление из резервной копии предназначено только для миграции или случаев утери вашего устройства.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
