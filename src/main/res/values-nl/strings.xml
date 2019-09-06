@@ -673,7 +673,6 @@
     <string name="enter_your_name_instructions">Voer uw nickname in die zichtbaar zal voor uw contacten zijn.</string>
     <string name="restore_backup">Back-up herstellen</string>
     <string name="enter_password_to_restore">Enter your password for the account %s to restore the backup.</string>
-    <string name="restore_warning">Gebruik de back-upfunctie niet als je een installatie wilt klonen (gelijktijdig draaien). Back-ups zijn alleen bedoeld voor migraties of als je het oorspronkelijke apparaat bent kwijtgeraakt.</string>
     <string name="unable_to_restore_backup">Kan back-up niet herstellen.</string>
     <string name="unable_to_decrypt_backup">Kan back-up niet ontsleutelen. Is het wachtwoord juist?</string>
     <string name="view_users">Deelnemers bekijken</string>
