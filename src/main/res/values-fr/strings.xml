@@ -825,7 +825,6 @@
     <string name="restore_backup">Restaurer une sauvegarde</string>
     <string name="restore">Restaurer</string>
     <string name="enter_password_to_restore">Entrez votre mot de passe pour le compte %s afin de procéder à la restauration de la sauvegarde.</string>
-    <string name="restore_warning">N\'utilisez pas la fonction de restauration des sauvegardes pour tenter de cloner (d\'exécuter simultanément) une installation. La restauration d\'une sauvegarde n\'est prévue que pour les migrations ou en cas de perte de l\'appareil d\'origine.</string>
     <string name="unable_to_restore_backup">Impossible de restaurer la sauvegarde.</string>
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
