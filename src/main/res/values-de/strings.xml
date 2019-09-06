@@ -902,7 +902,7 @@
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
     <string name="attach">Anhängen</string>
     <string name="delete_locally">Lokal löschen</string>
-    <string name="delete_from_server">Auf Server löschen</string>
+    <string name="delete_from_server">Vom Server löschen</string>
     <string name="go_online_to_delete">Du musst online sein, um dein Profil vom Server löschen zu können.</string>
     <string name="discover_channels">Kanäle entdecken</string>
     <string name="search_channels">Kanäle suchen</string>
@@ -920,4 +920,16 @@
     <string name="enable_message_encryption">Dieser Chat ist unverschlüsselt. Aus Sicherheitsgründen solltest du Nachrichtenverschlüsselung aktivieren, vorzugsweise OMEMO. Falls irgendetwas nicht funktioniert, kannst du die Nachrichtenverschlüsselung über das Schloss Symbol wieder deaktivieren.</string>
     <string name="hide_warning">Warnung ausschalten</string>
     <string name="change_password_in_next_step">Du kannst das generierte Passwort im nächsten Schritt auch nach Belieben anpassen.</string>
+    <string name="action_unblock_participant">Teilnehmer entsperren</string>
+    <string name="action_block_participant">Teilnehmer sperren</string>
+    <string name="share_backup_files">Backup teilen</string>
+    <string name="conversations_backup">Pix-Art Messenger Sicherung</string>
+    <string name="event">Ereignis</string>
+    <string name="pref_vibrate_in_chat_summary">Vibrieren bei Erhalt einer neuen Nachricht in geöffnetem Chat</string>
+    <string name="pref_vibrate_in_chat">Vibrieren in offenem Chat</string>
+    <string name="open_backup">Backup öffnen</string>
+    <string name="not_a_backup_file">Die ausgewählte Datei ist keine Pix-Art Messenger Sicherung</string>
+    <string name="account_already_setup">Dieses Profil wurde bereits eingerichtet</string>
+    <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
+    <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
 </resources>
