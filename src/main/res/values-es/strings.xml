@@ -839,6 +839,7 @@
     <string name="restore_backup">Restaurar copia de seguridad</string>
     <string name="restore">Restaurar</string>
     <string name="enter_password_to_restore">Escribe tu contraseña para la cuenta %s para restaurar la copia de seguridad.</string>
+    <string name="restore_warning">No use la característica de restauración bajo ninguna circunstancia excepto en caso de migración o pérdida de su dispositivo.</string>
     <string name="unable_to_restore_backup">No se puede restaurar la copia de seguridad.</string>
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
