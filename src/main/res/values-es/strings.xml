@@ -27,6 +27,7 @@
     <string name="just_now">ahora mismo</string>
     <string name="minute_ago">hace 1 min</string>
     <string name="minutes_ago">hace %d min</string>
+    <string name="x_unread_conversations">%d conversaciones no leídas</string>
     <string name="sending">enviando…</string>
     <string name="message_decrypting">Descifrando mensaje. Por favor, espera...</string>
     <string name="pgp_message">Mensaje cifrado con OpenPGP</string>
@@ -489,6 +490,10 @@
     <string name="pref_picture_quality_summary">Redimensionar y comprimir las imágenes</string>
     <string name="pref_video_quality">Calidad de vídeo</string>
     <string name="pref_video_quality_summary">Redimensionar y comprimir los vídeos</string>
+    <string name="video_very_low">muy baja (144p)</string>
+    <string name="video_low">baja (360p)</string>
+    <string name="video_mid">media (720p)</string>
+    <string name="video_high">alta (1080p)</string>
     <string name="video_original">original (sin comprimir)</string>
     <string name="always">Siempre</string>
     <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
@@ -928,4 +933,5 @@
     <string name="account_already_setup">Esta cuenta ya ha sido configurada</string>
     <string name="please_enter_password">Por favor entrar la contraseña para esta cuenta</string>
     <string name="unable_to_perform_this_action">No se pudo realizar la acción</string>
+    <string name="waiting_for_transfer">Esperando la transferencia</string>
 </resources>
