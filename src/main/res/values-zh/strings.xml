@@ -27,6 +27,7 @@
     <string name="just_now">刚刚</string>
     <string name="minute_ago">1 分钟前</string>
     <string name="minutes_ago">%d 分钟前</string>
+    <string name="x_unread_conversations">%d未读会话</string>
     <string name="sending">正在发送……</string>
     <string name="message_decrypting">解密消息中，请稍等……</string>
     <string name="pgp_message">OpenPGP 加密信息</string>
@@ -487,6 +488,10 @@
     <string name="pref_picture_quality_summary">调整尺寸和压缩图片</string>
     <string name="pref_video_quality">视频画质</string>
     <string name="pref_video_quality_summary">调整尺寸和压缩视频</string>
+    <string name="video_very_low">极低（144p）</string>
+    <string name="video_low">低（360p）</string>
+    <string name="video_mid">中（720p）</string>
+    <string name="video_high">高（1080p）</string>
     <string name="video_original">原文件(未压缩)</string>
     <string name="always">总是</string>
     <string name="battery_optimizations_enabled">电池优化已启用</string>
@@ -920,4 +925,5 @@
     <string name="account_already_setup">此帐户已设置完毕</string>
     <string name="please_enter_password">请输入此帐户的密码</string>
     <string name="unable_to_perform_this_action">无法执行此操作</string>
+    <string name="waiting_for_transfer">等待传输</string>
 </resources>
