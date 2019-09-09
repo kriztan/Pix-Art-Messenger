@@ -490,6 +490,10 @@
     <string name="pref_picture_quality_summary">Bildgröße anpassen und komprimieren</string>
     <string name="pref_video_quality">Videoqualität</string>
     <string name="pref_video_quality_summary">Videogröße anpassen und komprimieren</string>
+    <string name="video_very_low">sehr niedrig (144p)</string>
+    <string name="video_low">niedrig (360p)</string>
+    <string name="video_mid">mittelmäßig (720p)</string>
+    <string name="video_high">hoch (1080p)</string>
     <string name="video_original">original (unkomprimiert)</string>
     <string name="always">Immer</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
