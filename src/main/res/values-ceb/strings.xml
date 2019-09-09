@@ -413,9 +413,6 @@
     <string name="notify_only_when_highlighted">Pahibal-a kung ge-hisgutan</string>
     <string name="notify_never">Mga pahibalo kay baldado</string>
     <string name="notify_paused">Mga pahibalo kay gipa ungot</string>
-    <string name="video_low">ubos (144p)</string>
-    <string name="video_mid">tunga (360p)</string>
-    <string name="video_high">taas (720p)</string>
     <string name="always">Permenti</string>
     <string name="battery_optimizations_enabled">Kinahanglan ang mga optimization sa baterya</string>
     <string name="battery_optimizations_enabled_explained">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa Pix-Art Messenger nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\nKani kay ge recomend mga dili na.</string>
