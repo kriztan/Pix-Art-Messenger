@@ -491,9 +491,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_quality_summary">Skompresuj i zmień rozmiar zdjęcia</string>
     <string name="pref_video_quality">Jakoś wideo</string>
     <string name="pref_video_quality_summary">Skompresuj i zmień rozmiar wideo</string>
-    <string name="video_low">niski (144p)</string>
-    <string name="video_mid">średnie (360p)</string>
-    <string name="video_high">wysokie (720p)</string>
     <string name="video_original">oryginał (nieskompresowane)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
