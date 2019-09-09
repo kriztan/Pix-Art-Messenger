@@ -451,9 +451,6 @@
     <string name="pref_picture_quality">Afbeeldingskwaliteit</string>
     <string name="pref_picture_quality_summary">Afbeeldingen verkleinen en comprimeren</string>
     <string name="pref_video_quality">Videokwaliteit</string>
-    <string name="video_low">Laag (144p)</string>
-    <string name="video_mid">Gemiddeld (360p)</string>
-    <string name="video_high">Hoog (720p)</string>
     <string name="video_original">Origineel (zonder compressie)</string>
     <string name="always">Altijd</string>
     <string name="battery_optimizations_enabled">Batterij-optimalisaties ingeschakeld</string>
