@@ -489,9 +489,6 @@
     <string name="pref_picture_quality_summary">Rimpicciolisci e comprimi immagini</string>
     <string name="pref_video_quality">Qualità video</string>
     <string name="pref_video_quality_summary">Rimpicciolisci e comprimi video</string>
-    <string name="video_low">bassa (144p)</string>
-    <string name="video_mid">media (360p)</string>
-    <string name="video_high">alta (720p)</string>
     <string name="video_original">originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
