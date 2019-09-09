@@ -483,9 +483,6 @@
     <string name="pref_picture_quality_summary">Изменять размер и сжимать изображения</string>
     <string name="pref_video_quality">Качество видео</string>
     <string name="pref_video_quality_summary">Изменять размер и сжимать видео</string>
-    <string name="video_low">низкое (144p)</string>
-    <string name="video_mid">среднее (360p)</string>
-    <string name="video_high">высокое (720p)</string>
     <string name="video_original">оригинальное (без сжатия)</string>
     <string name="always">Всегда</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
