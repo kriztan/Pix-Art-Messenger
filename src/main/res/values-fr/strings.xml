@@ -482,9 +482,6 @@
     <string name="pref_picture_quality_summary">Redimensionner et compresser les images</string>
     <string name="pref_video_quality">Qualité de la vidéo</string>
     <string name="pref_video_quality_summary">Redimensionner et compresser les vidéos</string>
-    <string name="video_low">basse (144p)</string>
-    <string name="video_mid">moyenne (360p)</string>
-    <string name="video_high">haute (720p)</string>
     <string name="video_original">original (non compressé)</string>
     <string name="always">Toujours</string>
     <string name="battery_optimizations_enabled">Optimisations de batterie activées</string>
