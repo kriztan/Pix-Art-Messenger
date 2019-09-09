@@ -484,9 +484,6 @@
     <string name="pref_picture_quality_summary">Уголемеване, намалеване и компресиране на снимки</string>
     <string name="pref_video_quality">Видео качество</string>
     <string name="pref_video_quality_summary">Уголемеване, намалеване и компресиране на видео</string>
-    <string name="video_low">ниско (144p)</string>
-    <string name="video_mid">средно (360p)</string>
-    <string name="video_high">високo (720p)</string>
     <string name="video_original">оригинал (некомпресиран)</string>
     <string name="always">Винаги</string>
     <string name="battery_optimizations_enabled">Оптимизациите на батерията са активирани</string>
