@@ -330,9 +330,6 @@
     <string name="pref_picture_quality_summary">تغيير الحجم وضغط الصور</string>
     <string name="pref_video_quality">جودة الفيديو</string>
     <string name="pref_video_quality_summary">تغيير الحجم وضغط الفيديوهات</string>
-    <string name="video_low">ضعيفة (144p)</string>
-    <string name="video_mid">متوسطة (360p)</string>
-    <string name="video_high">عالية (720p)</string>
     <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
