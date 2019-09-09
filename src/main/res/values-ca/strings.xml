@@ -489,9 +489,6 @@
     <string name="pref_picture_quality_summary">Redimensionar i comprimir les imatges</string>
     <string name="pref_video_quality">Qualitat de vídeo </string>
     <string name="pref_video_quality_summary">Redimensionar i comprimir els vídeos</string>
-    <string name="video_low">abaix (144p)</string>
-    <string name="video_mid"> mig (360p)</string>
-    <string name="video_high">alt (720p)</string>
     <string name="video_original">original (sense comprimir)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions d\'ús de batería habil·litades</string>
