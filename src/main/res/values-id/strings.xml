@@ -439,9 +439,6 @@
     <string name="notify_only_when_highlighted">Pemberitahuan hanya bila disebutkan</string>
     <string name="notify_never">Pemberitahuan tidak diaktifkan</string>
     <string name="notify_paused">Pemberitahuan dijeda</string>
-    <string name="video_low">rendah (144p)</string>
-    <string name="video_mid">menengah (360p)</string>
-    <string name="video_high">tinggi (720p)</string>
     <string name="always">Selalu</string>
     <string name="battery_optimizations_enabled">Optimalisasi baterai diaktifkan</string>
     <string name="battery_optimizations_enabled_explained">Perangkat anda melakukan beberapa pengoptimalan baterai pada Pix-Art Messenger yang mungkin menyebabkan pemberitahuan tertunda atau bahkan kehilangan pesan.\nDianjurkan untuk tidak mengaktifkannya.</string>
