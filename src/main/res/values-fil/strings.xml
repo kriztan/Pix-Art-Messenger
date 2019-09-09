@@ -441,9 +441,6 @@
     <string name="notify_only_when_highlighted">I-notify lamang kapag nabanggit</string>
     <string name="notify_never">Hindi pinagana ang mga notification</string>
     <string name="notify_paused">Ang mga notification ay naka-pause</string>
-    <string name="video_low">mababa (144p)</string>
-    <string name="video_mid">gitna (360p)</string>
-    <string name="video_high">mataas (720p)</string>
     <string name="always">Laging</string>
     <string name="battery_optimizations_enabled">Pinagana ang mga pag-optimize ng baterya</string>
     <string name="battery_optimizations_enabled_explained">Ang iyong aparato ay gumagawa ng ilang mabigat na pag-optimize ng baterya sa Pix-Art Messenger na maaaring humantong sa mga naantalang abiso o kahit na pagkawala ng mensahe. \nIto ay inirerekomenda upang huwag paganahin ang mga iyon.</string>
