@@ -441,9 +441,6 @@
     <string name="notify_only_when_highlighted">Yalnızca bahsedildiğinde bildir</string>
     <string name="notify_never">Bildirimler devre dışı</string>
     <string name="notify_paused">Bildirimler duraklatıldı</string>
-    <string name="video_low">düşük (144p)</string>
-    <string name="video_mid">orta (360p)</string>
-    <string name="video_high">yüksek (720p)</string>
     <string name="always">Her zaman</string>
     <string name="battery_optimizations_enabled">Pil optimizasyonları etkin</string>
     <string name="battery_optimizations_enabled_explained">Cihazınız, Pix-Art Messenger\'da, bildirimleri gecikmeli hatta mesaj kaybına yol açabilecek bazı ağır pil optimizasyonları yapıyor. \n Bunları devre dışı bırakmanız önerilir.</string>
