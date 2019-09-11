@@ -730,6 +730,7 @@
     <string name="default_off">默认关闭</string>
     <string name="pref_theme_light">亮色主题</string>
     <string name="pref_theme_dark">暗色主题</string>
+    <string name="pref_theme_auto">自动</string>
     <string name="pref_theme_options_summary">选择调色板</string>
     <string name="pref_theme_options">界面主题</string>
     <string name="chooce_account">选择帐户</string>
