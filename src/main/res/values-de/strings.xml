@@ -738,6 +738,7 @@
     <string name="default_off">Standardmäßig deaktiviert</string>
     <string name="pref_theme_light">Helle Farben</string>
     <string name="pref_theme_dark">Dunkle Farben</string>
+    <string name="pref_theme_auto">Automatisch</string>
     <string name="pref_theme_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_options">Design</string>
     <string name="chooce_account">Profil wählen</string>
@@ -934,4 +935,5 @@
     <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
     <string name="waiting_for_transfer">Wartet auf Übertragung</string>
+    <string name="x_has_written">%s hat geschrieben:</string>
 </resources>
