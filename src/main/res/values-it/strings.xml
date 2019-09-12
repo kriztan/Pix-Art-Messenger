@@ -738,6 +738,7 @@
     <string name="default_off">Predefinito disattivo</string>
     <string name="pref_theme_light">Tema chiaro</string>
     <string name="pref_theme_dark">Tema scuro</string>
+    <string name="pref_theme_auto">Automatico</string>
     <string name="pref_theme_options_summary">Scegli la palette di colori</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Scegli account</string>
@@ -934,4 +935,5 @@
     <string name="please_enter_password">Per favore inserisci la password per questo account</string>
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
+    <string name="x_has_written">%s ha scritto:</string>
 </resources>
