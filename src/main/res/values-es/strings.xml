@@ -654,7 +654,7 @@
     <string name="pref_use_tor">Conectar via Tor</string>
     <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
     <string name="pref_connection_options">Conexión</string>
-    <string name="image_low">bajo (720p)</string>
+    <string name="image_low">baja (720p)</string>
     <string name="image_mid">medio (1920p)</string>
     <string name="image_high">alto (3840p)</string>
     <string name="image_original">original (sin comprimir)</string>
