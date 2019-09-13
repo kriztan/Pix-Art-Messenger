@@ -891,7 +891,7 @@
     <string name="notification_backup_created_title">Sicherung erfolgreich</string>
     <string name="notification_backup_created_subtitle">Sicherungsdateien wurden in %s gespeichert</string>
     <string name="notification_backup_failed_title">Sicherung fehlgeschlagen</string>
-    <string name="notification_backup_failed_subtitle">Sicherungsdateien konnte in %s nicht gespeichert werden</string>
+    <string name="notification_backup_failed_subtitle">Sicherungsdateien konnten in %s nicht gespeichert werden</string>
     <string name="search_participants">Teilnehmer suchen</string>
     <string name="file_too_large">Datei zu groß</string>
     <string name="mgmt_account_password_forgotten">Passwort vergessen</string>
