@@ -936,4 +936,6 @@
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
     <string name="x_has_written">%s ha scritto:</string>
+    <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
+    <string name="your_status">Il tuo stato</string>
 </resources>
