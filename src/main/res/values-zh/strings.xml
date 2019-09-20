@@ -928,4 +928,6 @@
     <string name="unable_to_perform_this_action">无法执行此操作</string>
     <string name="waiting_for_transfer">等待传输</string>
     <string name="x_has_written">%s写道:</string>
+    <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
+    <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
 </resources>
