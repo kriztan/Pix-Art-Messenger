@@ -929,6 +929,8 @@
     <string name="waiting_for_transfer">等待传输</string>
     <string name="x_has_written">%s写道:</string>
     <string name="no_status_set_instructions">未设置在线状态消息</string>
+    <string name="your_status">你的状态</string>
     <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
+    <string name="this_device">此设备</string>
 </resources>
