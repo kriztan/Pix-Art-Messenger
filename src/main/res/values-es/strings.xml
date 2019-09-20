@@ -938,4 +938,6 @@
     <string name="x_has_written">%s ha escrito:</string>
     <string name="no_status_set_instructions">No tienes configurado un mensaje de estado de presencia</string>
     <string name="your_status">Tu estado</string>
+    <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuoso con la privacidad</string>
 </resources>
