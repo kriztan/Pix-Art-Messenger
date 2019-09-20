@@ -936,4 +936,5 @@
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
     <string name="waiting_for_transfer">Wartet auf Übertragung</string>
     <string name="x_has_written">%s hat geschrieben:</string>
+    <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
 </resources>
