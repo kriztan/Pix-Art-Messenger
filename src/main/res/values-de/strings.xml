@@ -934,9 +934,10 @@
     <string name="account_already_setup">Dieses Profil wurde bereits eingerichtet</string>
     <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
-    <string name="waiting_for_transfer">Wartet auf Übertragung</string>
+    <string name="waiting_for_transfer">Warte auf Übertragung</string>
     <string name="x_has_written">%s hat geschrieben:</string>
     <string name="no_status_set_instructions">Du hast keine Statusnachricht definiert</string>
     <string name="your_status">Dein Status</string>
     <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious ist eine datenschutzfreundliche Alternative zu YouTube</string>
 </resources>
