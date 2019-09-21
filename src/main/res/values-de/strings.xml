@@ -546,7 +546,6 @@
     <string name="import_database">Backup importieren</string>
     <string name="invite_again">Erneut hinzufügen</string>
     <string name="inviteUser_Subject">hat dich eingeladen über</string>
-    <string name="InviteText">Hallo,\n\n%s hat dich zu einem Gespräch mit Pix-Art Messenger eingeladen. Falls du Android Nutzer bist, probiere es aus und klicke folgenden Link…</string>
     <string name="pref_broadcast_last_activity">Zuletzt gesehen senden</string>
     <string name="pref_broadcast_last_activity_summary">Lasse deine Kontakte wissen, wann du Pix-Art Messenger nutzt</string>
     <string name="invite_user">Zu Pix-Art Messenger einladen</string>
@@ -579,7 +578,6 @@
     <string name="show_error_message">Zeige Fehlermeldung</string>
     <string name="error_message">Fehlermeldung</string>
     <string name="data_saver_enabled">Datensparmodus aktiviert</string>
-    <string name="data_saver_enabled_explained">Dein Betriebssystem verbietet Pix-Art Messenger im Hintergrund den Zugang zum Internet. Um Benachrichtigungen erhalten zu können, solltest du Pix-Art Messenger den Zugang erlauben, wenn der Datensparmodus aktiv ist. Pix-Art Messenger wird dennoch versuchen, so viele Daten wie möglich einzusparen.</string>
     <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
     <string name="add_to_contact_list">Zur Kontaktliste hinzufügen</string>
     <string name="contact">Kontakt</string>
