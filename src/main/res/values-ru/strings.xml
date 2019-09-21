@@ -540,7 +540,6 @@
     <string name="import_database">Импортировать резервную копию</string>
     <string name="invite_again">Пригласить снова</string>
     <string name="inviteUser_Subject">приглашает вас присоединиться через</string>
-    <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать Pix-Art Messenger. Если вы используете Android - нажмите на ссылку, чтобы попробовать...</string>
     <string name="pref_broadcast_last_activity">Отображать последнюю активность пользователя</string>
     <string name="pref_broadcast_last_activity_summary">Позволяет вашим контактам видеть, когда вы пользуетесь Pix-Art Messenger</string>
     <string name="invite_user">Пригласить в Pix-Art Messenger</string>
@@ -572,7 +571,6 @@
     <string name="show_error_message">Показать сообщения об ошибках</string>
     <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
-    <string name="data_saver_enabled_explained">Ваша операционная система запрещает Pix-Art Messenger доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить Pix-Art Messenger неограниченный доступ в Интернет. \nPix-Art Messenger будет пытаться сохранить данные при появлении возможности.</string>
     <string name="add_to_contact_list">Добавить в контакты</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не удается начать запись</string>
