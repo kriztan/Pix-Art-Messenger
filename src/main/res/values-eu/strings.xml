@@ -478,7 +478,6 @@
     <string name="show_error_message">Akatsaren mezua erakutsi</string>
     <string name="error_message">Akatsaren mezua</string>
     <string name="data_saver_enabled">Datuen aurreztailea gaituta</string>
-    <string name="data_saver_enabled_explained">Zure sistema eragileak Conversations atzeko planoan dagoenean Internetera konekta dadin mugatzen ari da. Mezu berrien jakinarazpenak jasotzeko Conversationsi mugagabeko sarrera eman beharko zenioke Datuen aurreztailea piztuta dagoenean.\nConversationsek datuak aurrezteko esfortzua egiten jarraituko du ahal duenean.</string>
     <string name="device_does_not_support_data_saver">Zure gailuak ez du Datuen aurreztailea ezgaitzea baimentzen Conversationserako</string>
     <string name="error_unable_to_create_temporary_file">Ezin izan da aldi baterako fitxategia sortu</string>
     <string name="this_device_has_been_verified">Gailu hau egiaztatu da</string>
