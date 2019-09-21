@@ -938,4 +938,8 @@
     <string name="your_status">Tu estado</string>
     <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
+    <string name="this_device">Este dispositivo</string>
+    <string name="welcome_header">Bienvenido a Pix-Art Messenger</string>
+    <string name="intro_permissions">Permisos</string>
+    <string name="intro_account">Tu cuenta</string>
 </resources>
