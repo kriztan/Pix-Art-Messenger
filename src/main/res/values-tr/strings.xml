@@ -488,7 +488,6 @@
     <string name="import_database">Yedeği içeri aktar</string>
     <string name="invite_again">Tekrar davet et</string>
     <string name="inviteUser_Subject">sizi davet etti</string>
-    <string name="InviteText">Merhaba, \n\n kullanıcı %s sizi Pix-Art Messenger\'a davet etti. Android kullanıyorsanız, bir deneme yapın ve baştan başlamak için aşağıdaki bağlantıyı tıklayın...</string>
     <string name="pref_broadcast_last_activity">Son kullanıcı etkileşimlerini yayınla</string>
     <string name="pref_broadcast_last_activity_summary">Pix-Art Messenger\'ı kullanırken tüm kişilerinize haber verin</string>
     <string name="invite_user">Pix-Art Messenger\'a davet et</string>
@@ -521,7 +520,6 @@
     <string name="show_error_message">Hata mesajını göster</string>
     <string name="error_message">Hata Mesajı</string>
     <string name="data_saver_enabled">Veri kaydedici etkin</string>
-    <string name="data_saver_enabled_explained">İşletim sisteminiz Pix-Art Messenger\'ın arka planda olduğunda Internet\'e erişmesini kısıtlıyor. Yeni mesaj bildirimlerini almak için, Veri koruyucu açıkken Pix-Art Messenger\'a sınırsız erişime izin vermelisiniz.\n Pix-Art Messenger mümkün olduğunca veri kaydetmek için çaba gösterecektir.</string>
     <string name="device_does_not_support_data_saver">Cihazınız Pix-Art messenger\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
     <string name="add_to_contact_list">Bağlantı listesine ekle</string>
     <string name="contact">Bağlantı</string>
