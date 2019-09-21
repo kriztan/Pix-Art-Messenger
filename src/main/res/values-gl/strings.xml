@@ -478,7 +478,6 @@
     <string name="show_error_message">Mostrar mensaxe do fallo</string>
     <string name="error_message">Mensaxe de fallo</string>
     <string name="data_saver_enabled">Aforrador de datos habilitado</string>
-    <string name="data_saver_enabled_explained">O seu sistema operativo está restrinxindo a Conversations para acceder a internet cando está en segundo plano. Para recibir notificacións de novas mensaxes debería permitir a Conversations acceso non restrinxido cando o aforro de datos está acendido.\nConversations fará todo o posible para aforrar consumo de datos.</string>
     <string name="device_does_not_support_data_saver">O seu dispositivo non admite deshabilitar o aforro de datos para Conversations.</string>
     <string name="error_unable_to_create_temporary_file">Non se puido crear o ficheiro temporal</string>
     <string name="this_device_has_been_verified">Este dispositivo foi verificado</string>
