@@ -914,4 +914,6 @@
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
     <string name="waiting_for_transfer">Ожидание передачи</string>
     <string name="x_has_written">%s написал:</string>
+    <string name="your_status">Ваш статус</string>
+    <string name="this_device">Это устройство</string>
 </resources>
