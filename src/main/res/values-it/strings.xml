@@ -546,7 +546,6 @@
     <string name="import_database">Importa backup</string>
     <string name="invite_again">Invita di nuovo</string>
     <string name="inviteUser_Subject">ti ha invitato via</string>
-    <string name="InviteText">Ciao,\n\nl\'utente %s ti ha invitato su Pix-Art Messenger. Se utilizzi Android, puoi provarlo cliccando il seguente collegamento per iniziare...</string>
     <string name="pref_broadcast_last_activity">Trasmetti ultima interazione utente</string>
     <string name="pref_broadcast_last_activity_summary">Fai sapere ai tuoi contatti quando usi Pix-Art Messenger</string>
     <string name="invite_user">Invita su Pix-Art Messenger</string>
@@ -579,7 +578,6 @@
     <string name="show_error_message">Mostra messaggio di errore</string>
     <string name="error_message">Messaggio di errore</string>
     <string name="data_saver_enabled">Risparmio dati attivato</string>
-    <string name="data_saver_enabled_explained">Il tuo sistema operativo sta limitando l\'accesso internet a Pix-Art Messenger quando è in background. Per ricevere le notifiche di nuovi messaggi dovresti consentire l\'accesso senza limiti a Pix-Art Messenger quando il Risparmio dati è attivo.\nPix-Art Messenger cercherà comunque di risparmiare dati quando possibile.</string>
     <string name="device_does_not_support_data_saver">Il tuo dispositivo non supporta la disattivazione del Risparmio dati per Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Aggiungi alla lista contatti</string>
     <string name="contact">Contatto</string>
