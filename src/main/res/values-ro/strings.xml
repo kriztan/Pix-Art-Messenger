@@ -494,7 +494,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="show_error_message">Arată mesaj de eroare</string>
     <string name="error_message">Mesaj de eroare</string>
     <string name="data_saver_enabled">Economizorul de date este activat</string>
-    <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Pix-Art Messenger atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Pix-Art Messenger atunci când Economizorul de date este activ.\nPix-Art Messenger totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
     <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru Pix-Art Messenger.</string>
     <string name="error_unable_to_create_temporary_file">Nu se poate crea un fișier temporar</string>
     <string name="this_device_has_been_verified">Acest dispozitiv a fost verificat</string>
