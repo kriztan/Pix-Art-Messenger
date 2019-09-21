@@ -488,7 +488,6 @@
     <string name="import_database">Mag-import ng backup</string>
     <string name="invite_again">Mag-imbita muli</string>
     <string name="inviteUser_Subject">ay inanyayahan ka sa pamamagitan ng</string>
-    <string name="InviteText">Kumusta, \n\ninanyayahan ka ng user %s sa Pix-Art Messenger. Kung gumagamit ka ng Android, subukan ito at i-click ang sumusunod na link upang magsimula...</string>
     <string name="pref_broadcast_last_activity">Broadcast Last User Interaction</string>
     <string name="pref_broadcast_last_activity_summary">Hayaan ang lahat ng iyong mga contact malaman kapag gumagamit ng Pix-Art Messenger</string>
     <string name="invite_user">Mag-imbita sa Pix-Art Messenger</string>
@@ -521,7 +520,6 @@
     <string name="show_error_message">Ipakita ang mensahe ng error</string>
     <string name="error_message">Maling mensahe</string>
     <string name="data_saver_enabled">Pinagana ang data saver</string>
-    <string name="data_saver_enabled_explained">Pinipigilan ng iyong operating system ang Pix-Art Messenger mula sa pag-access sa Internet kapag nasa background. Upang makatanggap ng mga abiso ng mga bagong mensahe dapat mong pahintulutan ang walang limitasyong access sa Pix-Art Messenger kapag naka-on ang Data saver. \\nPix-Art Messenger ay magsisikap pa rin upang i-save ang data kapag posible.</string>
     <string name="device_does_not_support_data_saver">Hindi sinusuportahan ng iyong aparato ang hindi pagpapagana ng data saver para sa Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Idagdag sa listahan ng kontak</string>
     <string name="contact">Kontak</string>
