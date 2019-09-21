@@ -434,7 +434,6 @@
     <string name="show_error_message">Zobrazit chybovou zprávu</string>
     <string name="error_message">Chybová zpráva</string>
     <string name="data_saver_enabled">Zapnuta úspora dat</string>
-    <string name="data_saver_enabled_explained">Váš operační systém zabraňuje aplikaci Pix-Art Messenger v přístupu na Internet, pokud tato běží na pozadí. Pro příjem upozornění na nové zprávy musíte Pix-Art Messenger povolit neomezený přístup při zapnuté úspoře dat.\nPix-Art Messenger se bude i přesto snažit omezovat přenos dat.</string>
     <string name="device_does_not_support_data_saver">Tento přístroj nepodporuje vypnutí šetření dat pro aplikaci Pix-Art Messenger.</string>
     <string name="error_unable_to_create_temporary_file">Nelze vytvořit dočasný soubor</string>
     <string name="this_device_has_been_verified">Tento přístroj byl ověřen</string>
