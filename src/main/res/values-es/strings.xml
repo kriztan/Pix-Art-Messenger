@@ -546,7 +546,6 @@
     <string name="import_database">Importar copia de seguridad</string>
     <string name="invite_again">Invitar de nuevo</string>
     <string name="inviteUser_Subject">te ha invitado a través de</string>
-    <string name="InviteText">Hola,\n\n%s te ha invitado a una conversación con Pix-Art Messenger. Si eres usuario de Android, pruébalo y haz clic en el siguiente enlace...</string>
     <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
     <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
     <string name="invite_user">Invitar a Pix-Art Messenger</string>
@@ -579,7 +578,6 @@
     <string name="show_error_message">Mostrar mensaje de error</string>
     <string name="error_message">Mensaje de error</string>
     <string name="data_saver_enabled">Optimización de datos habilitado</string>
-    <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo a Pix-Art Messenger acceder a internet cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceder a internet cuando la optimización de datos está habilitada.\nPix-Art Messenger realizará igualmente optimizaciones para ahorrar datos cuando sea posible.</string>
     <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
     <string name="add_to_contact_list">Añadir a contactos</string>
     <string name="contact">Contacto</string>
