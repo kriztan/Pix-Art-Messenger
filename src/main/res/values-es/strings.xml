@@ -950,7 +950,9 @@
     <string name="intro_chat_details">Detalles del chat</string>
     <string name="intro_desc_chat_details">¿Quieres abrir los detalles del chat? Pulsa el nombre del chat en la barra superior de menú.</string>
     <string name="intro_highlight_user">Resaltar usuario</string>
+    <string name="intro_desc_open_chat_details">Has abierto los detalles del chat. Aquí puedes ver los detalles del chat, cambiar el comportamiento del mensaje de notificación, añadir o eliminar el chat de tu lista de contactos y mucho más.</string>
     <string name="pref_show_intro_summary">Volver a mostrar las pantallas de introducción</string>
     <string name="pref_show_intro">Mostrar de nuevo la introducción</string>
     <string name="show_intro_again">Se volverán a mostrar las pantallas de introducción</string>
+    <string name="show_intro_again_failed">El reinicio de pantallas de introducción ha fallado. Intentar otra vez…</string>
 </resources>
