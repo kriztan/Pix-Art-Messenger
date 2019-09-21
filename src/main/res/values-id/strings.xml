@@ -485,7 +485,6 @@
     <string name="import_database">Impor cadangan</string>
     <string name="invite_again">Undang lagi</string>
     <string name="inviteUser_Subject">telah mengundang Anda melalui</string>
-    <string name="InviteText">Halo, \n\n pengguna %s telah mengundang Anda ke Pix-Art Messenger. Jika Anda menggunakan Android, cobalah dan klik tautan berikut untuk memulai kembali...</string>
     <string name="pref_broadcast_last_activity">Siaran Interaksi Pengguna Terakhir</string>
     <string name="pref_broadcast_last_activity_summary">Biarkan semua kontak Anda tahu saat menggunakan Pix-Art Messenger</string>
     <string name="invite_user">Mengundang ke Pix-Art Messenger</string>
@@ -518,7 +517,6 @@
     <string name="show_error_message">Tampilkan pesan kesalahan</string>
     <string name="error_message">Pesan kesalahan</string>
     <string name="data_saver_enabled">Penghemat data diaktifkan</string>
-    <string name="data_saver_enabled_explained">Sistem operasi Anda membatasi Pix-Art Messenger untuk mengakses Internet saat berada di latar belakang. Untuk menerima notifikasi pesan baru, Anda harus mengizinkan akses Pix-Art Messenger tidak terbatas saat hemat data aktif. \\n Pix-Art Messenger masih akan berusaha untuk menyimpan data bila memungkinkan.</string>
     <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan hemat data untuk Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
     <string name="contact">Kontak</string>
