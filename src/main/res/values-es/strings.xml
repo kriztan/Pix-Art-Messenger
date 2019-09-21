@@ -579,6 +579,7 @@
     <string name="show_error_message">Mostrar mensaje de error</string>
     <string name="error_message">Mensaje de error</string>
     <string name="data_saver_enabled">Optimización de datos habilitado</string>
+    <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo el acceso a Internet a Pix-Art Messenger cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceso no restringido cuando el ahorro de datos esté activado.\n\nPix-Art Messenger hará un esfuerzo para ahorrar datos cuando sea posible.</string>
     <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
     <string name="add_to_contact_list">Añadir a contactos</string>
     <string name="contact">Contacto</string>
