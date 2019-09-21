@@ -944,9 +944,13 @@
     <string name="welcome_header">Bienvenido a Pix-Art Messenger</string>
     <string name="intro_permissions">Permisos</string>
     <string name="intro_account">Tu cuenta</string>
+    <string name="intro_desc_account">Para comenzar, necesitarás una cuenta. Funciona como un e-mail. Si tienes una cuenta, entra con tu Jabber-Id y contraseña. Si quieres crear una cuenta, puedes elegir uno de los servidores sugeridos en el desplegable o utilizar uno propio. Tienes también la posibilidad de importar una cuenta existente en la aplicación.</string>
     <string name="intro_start_chatting">Iniciar conversación</string>
     <string name="intro_desc_open_chat">Ahora ya puedes empezar a chatear, compartir ubicaciones, archivos, videos e imágenes, o enviar mensajes de voz.</string>
     <string name="intro_chat_details">Detalles del chat</string>
+    <string name="intro_desc_chat_details">¿Quieres abrir los detalles del chat? Pulsa el nombre del chat en la barra superior de menú.</string>
     <string name="intro_highlight_user">Resaltar usuario</string>
+    <string name="pref_show_intro_summary">Volver a mostrar las pantallas de introducción</string>
     <string name="pref_show_intro">Mostrar de nuevo la introducción</string>
+    <string name="show_intro_again">Se volverán a mostrar las pantallas de introducción</string>
 </resources>
