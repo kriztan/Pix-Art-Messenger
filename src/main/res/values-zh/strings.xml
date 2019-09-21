@@ -740,7 +740,7 @@
     <string name="medium">中</string>
     <string name="large">大</string>
     <string name="create_shortcut">创建快捷方式</string>
-    <string name="not_encrypted_for_this_device">该条消息没有为设备而加密</string>
+    <string name="not_encrypted_for_this_device">该条消息没有为设备加密</string>
     <string name="no_microphone_permission">Pix-Art聊天需要访问麦克风</string>
     <string name="search_messages">搜索消息</string>
     <string name="gif">GIF</string>
