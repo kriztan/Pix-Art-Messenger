@@ -936,4 +936,9 @@
     <string name="intro_desc_main">学习如何使用Pix-Art聊天</string>
     <string name="welcome_header">邀请至Pix-Art聊天</string>
     <string name="intro_permissions">权限</string>
+    <string name="intro_desc_permissions">Pix-Art聊天将请求一些权限。此应用至少需要外部储存权限。其他权限将会按需请求。注意：此应用将请求联系人权限，用来读取联系人中的Jabber用户名。此应用将不会分享，上传或复制你的任何联系人。</string>
+    <string name="intro_account">您的帐户</string>
+    <string name="intro_start_chatting">开始聊天</string>
+    <string name="intro_chat_details">聊天详情</string>
+    <string name="intro_highlight_user">突出显示用户</string>
 </resources>
