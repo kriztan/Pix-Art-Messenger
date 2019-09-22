@@ -544,6 +544,7 @@
     <string name="import_database">恢复备份</string>
     <string name="invite_again">再次邀请</string>
     <string name="inviteUser_Subject">已通过... 邀请</string>
+    <string name="InviteText">您好，\n\n%s邀请您使用Pix-Art聊天。如果您使用的是Android，请点击以下链接开始...</string>
     <string name="pref_broadcast_last_activity">广播最后一次使用聊天的时间</string>
     <string name="pref_broadcast_last_activity_summary">当使用Pix-Art聊天时，让所有联系人知道</string>
     <string name="invite_user">邀请至Pix-Art聊天</string>
@@ -576,6 +577,7 @@
     <string name="show_error_message">显示错误消息</string>
     <string name="error_message">错误消息</string>
     <string name="data_saver_enabled">节省流量模式已启用</string>
+    <string name="data_saver_enabled_explained">您的设备禁止此应用在后台时上网。要接收新消息通知，需要在启用节省流量模式时允许Pix-Art聊天的无限制访问。\\n\nPix-Art聊天本仍会努力节省流量。</string>
     <string name="device_does_not_support_data_saver">您的设备不支持禁用Pix-Art聊天的节省流量模式。</string>
     <string name="add_to_contact_list">添加至联系人列表</string>
     <string name="contact">联系人</string>
@@ -931,4 +933,7 @@
     <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
+    <string name="intro_desc_main">学习如何使用Pix-Art聊天</string>
+    <string name="welcome_header">邀请至Pix-Art聊天</string>
+    <string name="intro_permissions">权限</string>
 </resources>
