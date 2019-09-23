@@ -535,7 +535,6 @@
     <string name="import_database">Възтановеване на резервно копие</string>
     <string name="invite_again">Покани отново</string>
     <string name="inviteUser_Subject">те покани чрез</string>
-    <string name="InviteText">Здравей,\n\nпотребителя %s ви покани на Messenger Messenger. Ако използвате Android, опитайте го и кликнете върху следната връзка, за да започнете отначало...</string>
     <string name="pref_broadcast_last_activity">Излъчване на Последното Взаимодействие с Потребителя</string>
     <string name="pref_broadcast_last_activity_summary">Нека всичките ви контакти знаят, когато използвате Pix-Art Messenger</string>
     <string name="invite_user">Поканете в Pix-Art Messenger</string>
@@ -568,7 +567,6 @@
     <string name="show_error_message">Покажи грешката на съобшението</string>
     <string name="error_message">Грешка в писмото</string>
     <string name="data_saver_enabled">Спестяването на данни е активирано</string>
-    <string name="data_saver_enabled_explained">Вашата операционна система ограничава достъпа на Pix-Art Messenger до интернет във фонов режим. За да получавате известия за нови съобщения, трябва да разрешите неограничен достъп на Pix-Art Messenger, когато е включен спестяването на данниr.\\nPix-Art Messenger ще продължи да се опитва да запази данните, когато това е възможно.</string>
     <string name="device_does_not_support_data_saver">Устройството ви не поддържа блокиране на защитата на данни за Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Добави в списъка с контакти</string>
     <string name="contact">Контакт</string>
