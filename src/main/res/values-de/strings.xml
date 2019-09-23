@@ -27,6 +27,7 @@
     <string name="just_now">gerade</string>
     <string name="minute_ago">vor einer Minute</string>
     <string name="minutes_ago">vor %d Minuten</string>
+    <string name="x_unread_conversations">%d ungelesene Unterhaltungen</string>
     <string name="sending">wird gesendet…</string>
     <string name="message_decrypting">Nachricht wird entschlüsselt. Bitte warten …</string>
     <string name="pgp_message">OpenPGP-verschlüsselte Nachricht</string>
@@ -489,6 +490,10 @@
     <string name="pref_picture_quality_summary">Bildgröße anpassen und komprimieren</string>
     <string name="pref_video_quality">Videoqualität</string>
     <string name="pref_video_quality_summary">Videogröße anpassen und komprimieren</string>
+    <string name="video_very_low">sehr niedrig (144p)</string>
+    <string name="video_low">niedrig (360p)</string>
+    <string name="video_mid">mittelmäßig (720p)</string>
+    <string name="video_high">hoch (1080p)</string>
     <string name="video_original">original (unkomprimiert)</string>
     <string name="always">Immer</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
@@ -574,7 +579,7 @@
     <string name="show_error_message">Zeige Fehlermeldung</string>
     <string name="error_message">Fehlermeldung</string>
     <string name="data_saver_enabled">Datensparmodus aktiviert</string>
-    <string name="data_saver_enabled_explained">Dein Betriebssystem verbietet Pix-Art Messenger im Hintergrund den Zugang zum Internet. Um Benachrichtigungen erhalten zu können, solltest du Pix-Art Messenger den Zugang erlauben, wenn der Datensparmodus aktiv ist. Pix-Art Messenger wird dennoch versuchen, so viele Daten wie möglich einzusparen.</string>
+    <string name="data_saver_enabled_explained">Dein Betriebssystem verbietet Pix-Art Messenger im Hintergrund den Zugang zum Internet. Um Benachrichtigungen erhalten zu können, solltest du Pix-Art Messenger den Zugang erlauben, wenn der Datensparmodus aktiv ist.\n\nPix-Art Messenger wird dennoch versuchen, so viele Daten wie möglich einzusparen.</string>
     <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
     <string name="add_to_contact_list">Zur Kontaktliste hinzufügen</string>
     <string name="contact">Kontakt</string>
@@ -733,6 +738,7 @@
     <string name="default_off">Standardmäßig deaktiviert</string>
     <string name="pref_theme_light">Helle Farben</string>
     <string name="pref_theme_dark">Dunkle Farben</string>
+    <string name="pref_theme_auto">Automatisch</string>
     <string name="pref_theme_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_options">Design</string>
     <string name="chooce_account">Profil wählen</string>
@@ -885,7 +891,7 @@
     <string name="notification_backup_created_title">Sicherung erfolgreich</string>
     <string name="notification_backup_created_subtitle">Sicherungsdateien wurden in %s gespeichert</string>
     <string name="notification_backup_failed_title">Sicherung fehlgeschlagen</string>
-    <string name="notification_backup_failed_subtitle">Sicherungsdateien konnte in %s nicht gespeichert werden</string>
+    <string name="notification_backup_failed_subtitle">Sicherungsdateien konnten in %s nicht gespeichert werden</string>
     <string name="search_participants">Teilnehmer suchen</string>
     <string name="file_too_large">Datei zu groß</string>
     <string name="mgmt_account_password_forgotten">Passwort vergessen</string>
@@ -928,4 +934,29 @@
     <string name="account_already_setup">Dieses Profil wurde bereits eingerichtet</string>
     <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
+    <string name="waiting_for_transfer">Warte auf Übertragung</string>
+    <string name="x_has_written">%s hat geschrieben:</string>
+    <string name="no_status_set_instructions">Du hast keine Statusnachricht definiert</string>
+    <string name="your_status">Dein Status</string>
+    <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious ist eine datenschutzfreundliche Alternative zu YouTube</string>
+    <string name="this_device">Dieses Gerät</string>
+    <string name="intro_desc_main">Erfahre, wie du Pix-Art Messenger nutzen kannst.</string>
+    <string name="welcome_header">Willkommen beim Pix-Art Messenger</string>
+    <string name="intro_permissions">Berechtigungen</string>
+    <string name="intro_desc_permissions">Pix-Art Messenger wird dich um die Erteilung einiger Berechtigungen bitten. Wir müssen zumindest Zugang zum externen Speicher haben. Alle anderen Berechtigungen werden bei Bedarf angefordert. Hinweis: Wir werden dich um Kontaktberechtigungen bitten, um Jabber-IDs aus deinem Adressbuch zu lesen. Wir werden keine Kontakte weitergeben, hochladen oder kopieren.</string>
+    <string name="intro_account">Dein Profil</string>
+    <string name="intro_desc_account">Um anzufangen, benötigst du ein eigenes Profil. Das funktioniert genauso wie bei E-Mails. Wenn du ein eigenes Profil hast, melde dich einfach mit deiner Jabber-ID und deinem Passwort an. Wenn du ein neues Profil erstellen möchtest, hast du die Wahl, einen vorgeschlagenen Server aus dem Dropdown-Menü zu wählen oder einen benutzerdefinierten Server zu verwenden. Du hast auch die Möglichkeit, ein bestehendes Konto zu importieren.</string>
+    <string name="intro_start_chatting">Chat starten</string>
+    <string name="intro_desc_start_chatting">Herzlichen Glückwunsch! Aber wie funktioniert das Chatten? Füge einfach Jabber-IDs deiner Kontakte hinzu, oder wenn du Kontaktberechtigungen erteilt hast und Jabber-IDs in deinem Adressbuch hinterlegt hast, werden diese angezeigt. Du kannst auch Gruppenchats hinzufügen oder beitreten oder öffentlichen Kanälen beitreten.</string>
+    <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
+    <string name="intro_chat_details">Chat-Details</string>
+    <string name="intro_desc_chat_details">Du möchtest die Chat-Details öffnen? Tippe einfach auf den Chat-Namen oben in der Menüleiste.</string>
+    <string name="intro_highlight_user">Benutzer erwähnen</string>
+    <string name="intro_desc_highlight_user">Wenn du einen Benutzer in einem Gruppenchat erwähnen möchtest, berühre einfach den Avatar des Benutzers im Chat. Alternativ, insbesondere wenn sich der Benutzer nicht im Chat befindet, wechsele zu den Chat-Details und suche den Benutzer in der Teilnehmerliste. Ein langer Klick auf den Avatar des Benutzers öffnet ein Popup-Menü, in dem du den Benutzer erwöhnen kannst.</string>
+    <string name="intro_desc_open_chat_details">Du hast die Chat-Details geöffnet. Hier kannst du die Details des Chats sehen, das Verhalten der Benachrichtigung für neue Nachrichten ändern, den Chat deiner Kontaktliste hinzufügen oder entfernen und vieles mehr.</string>
+    <string name="pref_show_intro_summary">Die Hilfe-Bildschirme erneut anzeigen</string>
+    <string name="pref_show_intro">Hilfen erneut anzeigen</string>
+    <string name="show_intro_again">Hilfen werden erneut angezeigt</string>
+    <string name="show_intro_again_failed">Zurücksetzen der Hilfen fehlgeschlagen. Versuche es erneut…</string>
 </resources>
