@@ -460,7 +460,6 @@
     <string name="import_database">Import nga tabang</string>
     <string name="invite_again">Pagdapit pag-usab</string>
     <string name="inviteUser_Subject">nagdapit kanimo pinaagi sa</string>
-    <string name="InviteText">Hello,\n\n ang user %s nag-imbitar sa imuha nga sa Pix-Art Messenger. kung ikaw naggamit ug Android, suwayi dayun ug pislite ang mga nagsunod nga link para sugod ug balik...</string>
     <string name="pref_broadcast_last_activity">Broadcast Last Interaction sa Gumagamit</string>
     <string name="pref_broadcast_last_activity_summary">Hibal-i ang tanan nimong contact kung gamiton ang Pix-Art Messenger</string>
     <string name="invite_user">Pagdapit sa Pix-Art Messenger</string>
@@ -493,7 +492,6 @@
     <string name="show_error_message">Ipakita ang error nga mensahe</string>
     <string name="error_message">Error nga Mensahe</string>
     <string name="data_saver_enabled">Tigluwas sa Data gipagana</string>
-    <string name="data_saver_enabled_explained">Ang imuhang operata nga sistema kay nagpugong sa Pix-Art Messenger gikan sa pag-access sa Internet kon anaa sa luyo. Para makadawat sa mga pagpahibalo sa bag-ong mga mensahe kinahanglan imong tugotan ang Pix-Art Messenger nga walay pugong nga access kon ang Data saver anaa.\\n Ang Pix-Art Messenger magpadayon pa sa paningkamot aron makaluwas sa datos kung posible.</string>
     <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
     <string name="contact">Kontak</string>
