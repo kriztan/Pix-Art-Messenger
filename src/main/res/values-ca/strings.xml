@@ -489,7 +489,6 @@
     <string name="pref_picture_quality_summary">Redimensionar i comprimir les imatges</string>
     <string name="pref_video_quality">Qualitat de vídeo </string>
     <string name="pref_video_quality_summary">Redimensionar i comprimir els vídeos</string>
-
     <string name="video_original">original (sense comprimir)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions d\'ús de batería habil·litades</string>
@@ -541,7 +540,6 @@
     <string name="import_database">Importar còpia de seguretat</string>
     <string name="invite_again">Convidar de nou</string>
     <string name="inviteUser_Subject">t\'ha convidat a través de</string>
-    <string name="InviteText">Hola,\n\n%s t\'ha convidat a una conversa amb Pix-Art Messenger. Si ets un usuar d\'Android, prova\'l i fes click en el següent enllaç...</string>
     <string name="pref_broadcast_last_activity">Informar de la teva última interacció</string>
     <string name="pref_broadcast_last_activity_summary">Informar als teus contactes quant utilitzes Pix-Art Messenger</string>
     <string name="invite_user">Convidar a Pix-Art Messenger</string>
@@ -574,7 +572,6 @@
     <string name="show_error_message">Mostrar missatge d\'error</string>
     <string name="error_message">Missatge d\'error</string>
     <string name="data_saver_enabled">Optimizació de dades habil·litades</string>
-    <string name="data_saver_enabled_explained">El teu sistema operatiu està restringint a Pix-Art Messenger accedir a internet quant està en segon pla . Per a rebre notificacions de nous missatges hauries de permetre a Pix-Art Messenger accedir a internet quant la optimizació de dades està habil·litada.\nPix-Art Messenger realizarà igualment optimizacions per a estalviar dades quant sigui possible.</string>
     <string name="device_does_not_support_data_saver">El teu dispositiu no suporta l\'opció de deshabil·litar l\'optimizació de dades per a Pix-Art Messenger</string>
     <string name="add_to_contact_list">Afegir a contactes</string>
     <string name="contact">Contacte</string>
