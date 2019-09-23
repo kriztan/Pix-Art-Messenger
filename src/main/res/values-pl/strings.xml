@@ -491,7 +491,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_quality_summary">Skompresuj i zmień rozmiar zdjęcia</string>
     <string name="pref_video_quality">Jakoś wideo</string>
     <string name="pref_video_quality_summary">Skompresuj i zmień rozmiar wideo</string>
-
     <string name="video_original">oryginał (nieskompresowane)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
@@ -544,7 +543,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
-    <string name="InviteText">Witaj,\n\nużytkownik% s zaprosił Cię do korzystania z Pix-Art Messenger. Jeśli na swoim urządzeniu posiadasz system Android, to kliknij link w celu instalacji komunikatora...</string>
     <string name="pref_broadcast_last_activity">Dziel się ostatnią interakcją.</string>
     <string name="pref_broadcast_last_activity_summary">Powiadamiaj kontakty, że używasz Pix-Art Messenger</string>
     <string name="invite_user">Zaproś do Pix-Art Messengera</string>
@@ -577,8 +575,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_error_message">Pokaż komunikaty błędów</string>
     <string name="error_message">Komunikat o Błędzie</string>
     <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
-    <string name="data_saver_enabled_explained">Twój system operacyjny blokuje dostęp do internetu Pix-Art Messenger, kiedy jest w tle. Aby dostawać powiadomienia dla nowych wiadomości powinieneś/powinnaś dać Pix-Art Messenger nieograniczony dostęp do internetu, kiedy Oszczędzanie danych jest włączone.
-Pix-Art Messenger będzie wciąż ograniczał transfer danych, kiedy tylko to jest możliwe.</string>
     <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
     <string name="contact">Kontakt</string>
