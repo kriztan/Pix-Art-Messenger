@@ -532,7 +532,6 @@
     <string name="import_database">Importer une sauvegarde</string>
     <string name="invite_again">Inviter à nouveau</string>
     <string name="inviteUser_Subject">vous a invité via</string>
-    <string name="InviteText">Bonjour,\n\nl’utilisateur·rice %s vous a invité sur Pix-Art Messenger. Si vous utilisez Android, essayez-le en cliquant sur le lien suivant pour continuer …</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur</string>
     <string name="pref_broadcast_last_activity_summary">Informer tous vos contacts lorsque vous utilisez Pix-Art Messenger</string>
     <string name="invite_user">Inviter à Pix-Art Messenger</string>
@@ -565,7 +564,6 @@
     <string name="show_error_message">Afficher le message d’erreur</string>
     <string name="error_message">Message d’erreur</string>
     <string name="data_saver_enabled">Économiseur de données activé</string>
-    <string name="data_saver_enabled_explained">Votre système d’exploitation empêche Pix-Art Messenger d’accéder à Internet lorsque l’application est en arrière plan. Pour recevoir les notifications des nouveaux messages, vous devez autoriser Pix-Art Messenger à accéder au réseau sans restriction quand l’Économiseur de données est activé.\n Pix-Art Messenger tentera de consommer le moins de données possible.</string>
     <string name="device_does_not_support_data_saver">Votre appareil ne prend pas en charge la désactivation de l’Économiseur de données pour Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Ajouter aux contacts</string>
     <string name="contact">Contact</string>
