@@ -27,6 +27,7 @@
     <string name="just_now">adesso</string>
     <string name="minute_ago">1 min fa</string>
     <string name="minutes_ago">%d min fa</string>
+    <string name="x_unread_conversations">%d conversazioni non lette</string>
     <string name="sending">invio…</string>
     <string name="message_decrypting">Decifrazione messaggio. Attendere prego...</string>
     <string name="pgp_message">Messaggio cifrato con OpenPGP</string>
@@ -489,7 +490,10 @@
     <string name="pref_picture_quality_summary">Rimpicciolisci e comprimi immagini</string>
     <string name="pref_video_quality">Qualità video</string>
     <string name="pref_video_quality_summary">Rimpicciolisci e comprimi video</string>
-
+    <string name="video_very_low">molto bassa (144p)</string>
+    <string name="video_low">bassa (360p)</string>
+    <string name="video_mid">media (720p)</string>
+    <string name="video_high">alta (1080p)</string>
     <string name="video_original">originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
@@ -542,7 +546,6 @@
     <string name="import_database">Importa backup</string>
     <string name="invite_again">Invita di nuovo</string>
     <string name="inviteUser_Subject">ti ha invitato via</string>
-    <string name="InviteText">Ciao,\n\nl\'utente %s ti ha invitato su Pix-Art Messenger. Se utilizzi Android, puoi provarlo cliccando il seguente collegamento per iniziare...</string>
     <string name="pref_broadcast_last_activity">Trasmetti ultima interazione utente</string>
     <string name="pref_broadcast_last_activity_summary">Fai sapere ai tuoi contatti quando usi Pix-Art Messenger</string>
     <string name="invite_user">Invita su Pix-Art Messenger</string>
@@ -575,7 +578,6 @@
     <string name="show_error_message">Mostra messaggio di errore</string>
     <string name="error_message">Messaggio di errore</string>
     <string name="data_saver_enabled">Risparmio dati attivato</string>
-    <string name="data_saver_enabled_explained">Il tuo sistema operativo sta limitando l\'accesso internet a Pix-Art Messenger quando è in background. Per ricevere le notifiche di nuovi messaggi dovresti consentire l\'accesso senza limiti a Pix-Art Messenger quando il Risparmio dati è attivo.\nPix-Art Messenger cercherà comunque di risparmiare dati quando possibile.</string>
     <string name="device_does_not_support_data_saver">Il tuo dispositivo non supporta la disattivazione del Risparmio dati per Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Aggiungi alla lista contatti</string>
     <string name="contact">Contatto</string>
@@ -734,6 +736,7 @@
     <string name="default_off">Predefinito disattivo</string>
     <string name="pref_theme_light">Tema chiaro</string>
     <string name="pref_theme_dark">Tema scuro</string>
+    <string name="pref_theme_auto">Automatico</string>
     <string name="pref_theme_options_summary">Scegli la palette di colori</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Scegli account</string>
@@ -836,6 +839,7 @@
     <string name="restore_backup">Ripristino backup</string>
     <string name="restore">Ripristino</string>
     <string name="enter_password_to_restore">Inserisci la password per l\'account %s per ripristinare il backup.</string>
+    <string name="restore_warning">Non utilizzare la funzionalità di ripristino in alcuna circostanza ad eccezione di migrazione o in caso di smarrimento del tuo dispositivo.</string>
     <string name="unable_to_restore_backup">Impossibile ripristinare il backup.</string>
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
@@ -928,4 +932,8 @@
     <string name="account_already_setup">Questo account è già stato impostato</string>
     <string name="please_enter_password">Per favore inserisci la password per questo account</string>
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
+    <string name="waiting_for_transfer">In attesa di trasferimento</string>
+    <string name="x_has_written">%s ha scritto:</string>
+    <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
+    <string name="your_status">Il tuo stato</string>
 </resources>
