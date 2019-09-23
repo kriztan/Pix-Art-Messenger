@@ -27,6 +27,7 @@
     <string name="just_now">ahora mismo</string>
     <string name="minute_ago">hace 1 min</string>
     <string name="minutes_ago">hace %d min</string>
+    <string name="x_unread_conversations">%d conversaciones no leídas</string>
     <string name="sending">enviando…</string>
     <string name="message_decrypting">Descifrando mensaje. Por favor, espera...</string>
     <string name="pgp_message">Mensaje cifrado con OpenPGP</string>
@@ -489,6 +490,10 @@
     <string name="pref_picture_quality_summary">Redimensionar y comprimir las imágenes</string>
     <string name="pref_video_quality">Calidad de vídeo</string>
     <string name="pref_video_quality_summary">Redimensionar y comprimir los vídeos</string>
+    <string name="video_very_low">muy baja (144p)</string>
+    <string name="video_low">baja (360p)</string>
+    <string name="video_mid">media (720p)</string>
+    <string name="video_high">alta (1080p)</string>
     <string name="video_original">original (sin comprimir)</string>
     <string name="always">Siempre</string>
     <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
@@ -541,7 +546,7 @@
     <string name="import_database">Importar copia de seguridad</string>
     <string name="invite_again">Invitar de nuevo</string>
     <string name="inviteUser_Subject">te ha invitado a través de</string>
-    <string name="InviteText">Hola,\n\n%s te ha invitado a una conversación con Pix-Art Messenger. Si eres usuario de Android, pruébalo y haz clic en el siguiente enlace...</string>
+    <string name="InviteText">Hola, \n\nel usuario %s te ha invitado a Pix-Art Messenger. Si estás usando Android, dale una oportunidad y pulsa en el siguiente enlace para comenzar…</string>
     <string name="pref_broadcast_last_activity">Informar de tu última interacción</string>
     <string name="pref_broadcast_last_activity_summary">Informar a tus contactos cuando usas Pix-Art Messenger</string>
     <string name="invite_user">Invitar a Pix-Art Messenger</string>
@@ -574,7 +579,7 @@
     <string name="show_error_message">Mostrar mensaje de error</string>
     <string name="error_message">Mensaje de error</string>
     <string name="data_saver_enabled">Optimización de datos habilitado</string>
-    <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo a Pix-Art Messenger acceder a internet cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceder a internet cuando la optimización de datos está habilitada.\nPix-Art Messenger realizará igualmente optimizaciones para ahorrar datos cuando sea posible.</string>
+    <string name="data_saver_enabled_explained">Tu sistema operativo está restringiendo el acceso a Internet a Pix-Art Messenger cuando está en segundo plano. Para recibir notificaciones de nuevos mensajes deberías permitir a Pix-Art Messenger acceso no restringido cuando el ahorro de datos esté activado.\n\nPix-Art Messenger hará un esfuerzo para ahorrar datos cuando sea posible.</string>
     <string name="device_does_not_support_data_saver">Tu dispositivo no soporta la opción de deshabilitar la optimización de datos para Pix-Art Messenger</string>
     <string name="add_to_contact_list">Añadir a contactos</string>
     <string name="contact">Contacto</string>
@@ -649,7 +654,7 @@
     <string name="pref_use_tor">Conectar via Tor</string>
     <string name="pref_use_tor_summary">Todas las conexiones se realizan a través de la red TOR. Requiere Orbot</string>
     <string name="pref_connection_options">Conexión</string>
-    <string name="image_low">bajo (720p)</string>
+    <string name="image_low">baja (720p)</string>
     <string name="image_mid">medio (1920p)</string>
     <string name="image_high">alto (3840p)</string>
     <string name="image_original">original (sin comprimir)</string>
@@ -733,6 +738,7 @@
     <string name="default_off">Desactivado por defecto</string>
     <string name="pref_theme_light">Tema claro</string>
     <string name="pref_theme_dark">Tema oscuro</string>
+    <string name="pref_theme_auto">Automático</string>
     <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Elegir cuenta</string>
@@ -928,4 +934,29 @@
     <string name="account_already_setup">Esta cuenta ya ha sido configurada</string>
     <string name="please_enter_password">Por favor entrar la contraseña para esta cuenta</string>
     <string name="unable_to_perform_this_action">No se pudo realizar la acción</string>
+    <string name="waiting_for_transfer">Esperando la transferencia</string>
+    <string name="x_has_written">%s ha escrito:</string>
+    <string name="no_status_set_instructions">No tienes configurado un mensaje de estado de presencia</string>
+    <string name="your_status">Tu estado</string>
+    <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
+    <string name="this_device">Este dispositivo</string>
+    <string name="intro_desc_main">Aprende como usar Pix-Art Messenger.</string>
+    <string name="welcome_header">Bienvenido a Pix-Art Messenger</string>
+    <string name="intro_permissions">Permisos</string>
+    <string name="intro_desc_permissions">Pix-Art Messenger te pedirá otorgar algunos permisos. Necesitamos al menos acceso al almacenamiento externo. Cualquier otro permiso se pedirá si se requiere. Nota: Pediremos permisos sobre los contactos para leer los Jabber-IDs de tu lista de contactos. No compartiremos, ni subiremos ni copiaremos ninguno de tus contactos.</string>
+    <string name="intro_account">Tu cuenta</string>
+    <string name="intro_desc_account">Para comenzar, necesitarás una cuenta. Funciona como un e-mail. Si tienes una cuenta, entra con tu Jabber-Id y contraseña. Si quieres crear una cuenta, puedes elegir uno de los servidores sugeridos en el desplegable o utilizar uno propio. Tienes también la posibilidad de importar una cuenta existente en la aplicación.</string>
+    <string name="intro_start_chatting">Iniciar conversación</string>
+    <string name="intro_desc_start_chatting">¡Enhorabuena! ¿Pero como chatear? Añade los Jabber-IDs de tus contactos, o si has otorgado permisos sobre los contactos, se mostrarán los Jabber-IDs de tu lista de contactos. También puedes añadir o unirte a grupos o unirte a canales públicos.</string>
+    <string name="intro_desc_open_chat">Ahora ya puedes empezar a chatear, compartir ubicaciones, archivos, videos e imágenes, o enviar mensajes de voz.</string>
+    <string name="intro_chat_details">Detalles del chat</string>
+    <string name="intro_desc_chat_details">¿Quieres abrir los detalles del chat? Pulsa el nombre del chat en la barra superior de menú.</string>
+    <string name="intro_highlight_user">Resaltar usuario</string>
+    <string name="intro_desc_highlight_user">Si quieres remarcar a un usuario de un grupo solo tienes que tocar en la imagen del usuario en el grupo. Alternativamente, especialmente si el usuario no está conectado, se puede hacer desde los detalles del grupo buscando al usuario en la lista de participantes. Una pulsación larga sobre la imagen del usuario mostrará un menú desde el que se puede remarcar al mismo.</string>
+    <string name="intro_desc_open_chat_details">Has abierto los detalles del chat. Aquí puedes ver los detalles del chat, cambiar el comportamiento del mensaje de notificación, añadir o eliminar el chat de tu lista de contactos y mucho más.</string>
+    <string name="pref_show_intro_summary">Volver a mostrar las pantallas de introducción</string>
+    <string name="pref_show_intro">Mostrar de nuevo la introducción</string>
+    <string name="show_intro_again">Se volverán a mostrar las pantallas de introducción</string>
+    <string name="show_intro_again_failed">El reinicio de pantallas de introducción ha fallado. Intentar otra vez…</string>
 </resources>
