@@ -449,7 +449,6 @@
     <string name="show_error_message">Visa felmeddelande</string>
     <string name="error_message">Felmeddelande</string>
     <string name="data_saver_enabled">Databesparing</string>
-    <string name="data_saver_enabled_explained">Ditt operativsystem begränsar Internet-access för Pix-Art Messenger i när den är i bakgrunden. För att få notifieringar vid nya meddelanden behöver du ge Pix-Art Messenger obegränsad access när databesparing är påslaget.\nPix-Art Messenger kommer ändå försöka minska dataanvändningen när det är möjligt.</string>
     <string name="device_does_not_support_data_saver">Din enhet stödjer inte att deaktivera databesparing för Pix-Art Messenger.</string>
     <string name="error_unable_to_create_temporary_file">Kunde inte skapa tillfällig fil</string>
     <string name="this_device_has_been_verified">Denna enhet har verifierats</string>
