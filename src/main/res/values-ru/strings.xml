@@ -27,6 +27,7 @@
     <string name="just_now">только что</string>
     <string name="minute_ago">1 мин. назад</string>
     <string name="minutes_ago">%d мин. назад</string>
+    <string name="x_unread_conversations">%d непрочитанных диалогов</string>
     <string name="sending">отправка…</string>
     <string name="message_decrypting">Расшифровка сообщения. Пожалуйста подождите…</string>
     <string name="pgp_message">Зашифрованное OpenPGP сообщение</string>
@@ -483,6 +484,10 @@
     <string name="pref_picture_quality_summary">Изменять размер и сжимать изображения</string>
     <string name="pref_video_quality">Качество видео</string>
     <string name="pref_video_quality_summary">Изменять размер и сжимать видео</string>
+    <string name="video_very_low">очень низкое (144p)</string>
+    <string name="video_low">низкое (360p)</string>
+    <string name="video_mid">среднее (720p)</string>
+    <string name="video_high">высокое (1080p)</string>
     <string name="video_original">оригинальное (без сжатия)</string>
     <string name="always">Всегда</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
@@ -535,7 +540,7 @@
     <string name="import_database">Импортировать резервную копию</string>
     <string name="invite_again">Пригласить снова</string>
     <string name="inviteUser_Subject">приглашает вас присоединиться через</string>
-    <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать Pix-Art Messenger. Если вы используете Android - нажмите на ссылку, чтобы попробовать...</string>
+    <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать Pix-Art Messenger. Если вы используете Android - нажмите на ссылку, чтобы попробовать…</string>
     <string name="pref_broadcast_last_activity">Отображать последнюю активность пользователя</string>
     <string name="pref_broadcast_last_activity_summary">Позволяет вашим контактам видеть, когда вы пользуетесь Pix-Art Messenger</string>
     <string name="invite_user">Пригласить в Pix-Art Messenger</string>
@@ -567,7 +572,7 @@
     <string name="show_error_message">Показать сообщения об ошибках</string>
     <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
-    <string name="data_saver_enabled_explained">Ваша операционная система запрещает Pix-Art Messenger доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить Pix-Art Messenger неограниченный доступ в Интернет. \nPix-Art Messenger будет пытаться сохранить данные при появлении возможности.</string>
+    <string name="data_saver_enabled_explained">Ваша операционная система запрещает Pix-Art Messenger доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить Pix-Art Messenger неограниченный доступ в Интернет. \n\nPix-Art Messenger будет пытаться сохранить данные при появлении возможности.</string>
     <string name="add_to_contact_list">Добавить в контакты</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не удается начать запись</string>
@@ -818,6 +823,7 @@
     <string name="restore_backup">Восстановить резервную копию</string>
     <string name="restore">Восстановить</string>
     <string name="enter_password_to_restore">Введите пароль от аккаунта %s для восстановления резервной копии.</string>
+    <string name="restore_warning">Не используйте функцию резервного копирования ни для чего, кроме случаев переноса на другое устройство или утери устройства.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
@@ -906,4 +912,15 @@
     <string name="account_already_setup">Этот аккаунт уже настроен</string>
     <string name="please_enter_password">Пожалуйста, введите пароль для этого аккаунта</string>
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
+    <string name="waiting_for_transfer">Ожидание передачи</string>
+    <string name="x_has_written">%s написал:</string>
+    <string name="your_status">Ваш статус</string>
+    <string name="this_device">Это устройство</string>
+    <string name="intro_desc_main">Узнайте как использовать Pix-Art Messenger.</string>
+    <string name="welcome_header">Добро пожаловать в Pix-Art Messenger</string>
+    <string name="intro_permissions">Разрешения</string>
+    <string name="intro_account">Ваш аккаунт</string>
+    <string name="intro_start_chatting">Начать чат</string>
+    <string name="intro_chat_details">Сведения о чате</string>
+    <string name="intro_highlight_user">Отметить пользователя</string>
 </resources>
