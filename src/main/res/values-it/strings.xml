@@ -939,4 +939,11 @@
     <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
     <string name="your_status">Il tuo stato</string>
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious è un\'interfaccia alternativa di YouTube che rispetta la tua privacy</string>
+    <string name="this_device">Questo dispositivo</string>
+    <string name="intro_desc_main">Impara come utilizzare Pix-Art Messenger.</string>
+    <string name="welcome_header">Benvenuto su Pix-Art Messenger</string>
+    <string name="intro_permissions">Permessi</string>
+    <string name="intro_desc_permissions">Pix-Art Messenger ti chiederà l\'autorizzazione per alcuni permessi. Abbiamo bisogno almeno di accedere all\'archiviazione. Qualsiasi altro permesso sarà richiesto solo quando ci sarà la necessità. Nota: Ti chiederemo l\'accesso ai contatti per leggere gli ID-Jabber dalla tua rubrica. Non condivideremo, caricheremo o copieremo alcuno dei tuoi contatti.</string>
+    <string name="intro_account">Il tuo account</string>
 </resources>
