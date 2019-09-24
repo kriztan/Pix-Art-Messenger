@@ -948,4 +948,13 @@
     <string name="intro_highlight_user">突出显示用户</string>
     <string name="intro_desc_highlight_user">如果您需要在消息中提到某人，点击他的头像即可。或者您也可以在“群聊详情”的“群成员列表”中选择联系人。</string>
     <string name="intro_desc_open_chat_details">您已经成功进入群聊详情界面。这里，您可以看到群聊的详情、改变新消息通知的设置、将群聊添加到XMPP联系人中或移除。还有很多其他的功能。</string>
+    <string name="pref_show_intro_summary">重新显示入门指南。</string>
+    <string name="pref_show_intro">重新显示入门指南</string>
+    <string name="show_intro_again">将重新显示入门指南</string>
+    <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
+    <string name="intro_desc_whats_xmpp">XMPP，也称Jabber，是一个不依赖于中心服务器的即时通讯网络。它的工作原理与电子邮件类似。您需要一个账户来使用XMPP。</string>
+    <string name="intro_whats_xmpp">什么是XMPP/Jabber？</string>
+    <string name="intro_desc_contacts_permissions">应用将请求读取通讯录的权限。这个权限用于读取Jabber地址。此应用永远都不会以任何方式分享或改变您的通讯录。</string>
+    <string name="intro_desc_account2">如果您想创建新账户的话，您可以从下拉菜单中选择一个服务器或填入自定义服务器地址。</string>
+    <string name="open_join_dialog">加入公共群聊</string>
 </resources>
