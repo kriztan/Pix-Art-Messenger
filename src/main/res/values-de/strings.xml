@@ -944,11 +944,8 @@
     <string name="intro_desc_main">Erfahre, wie du Pix-Art Messenger nutzen kannst.</string>
     <string name="welcome_header">Willkommen beim Pix-Art Messenger</string>
     <string name="intro_permissions">Berechtigungen</string>
-    <string name="intro_desc_permissions">Pix-Art Messenger wird dich um die Erteilung einiger Berechtigungen bitten. Wir müssen zumindest Zugang zum externen Speicher haben. Alle anderen Berechtigungen werden bei Bedarf angefordert. Hinweis: Wir werden dich um Kontaktberechtigungen bitten, um Jabber-IDs aus deinem Adressbuch zu lesen. Wir werden keine Kontakte weitergeben, hochladen oder kopieren.</string>
     <string name="intro_account">Dein Profil</string>
-    <string name="intro_desc_account">Um anzufangen, benötigst du ein eigenes Profil. Das funktioniert genauso wie bei E-Mails. Wenn du ein eigenes Profil hast, melde dich einfach mit deiner Jabber-ID und deinem Passwort an. Wenn du ein neues Profil erstellen möchtest, hast du die Wahl, einen vorgeschlagenen Server aus dem Dropdown-Menü zu wählen oder einen benutzerdefinierten Server zu verwenden. Du hast auch die Möglichkeit, ein bestehendes Konto zu importieren.</string>
     <string name="intro_start_chatting">Chat starten</string>
-    <string name="intro_desc_start_chatting">Herzlichen Glückwunsch! Aber wie funktioniert das Chatten? Füge einfach Jabber-IDs deiner Kontakte hinzu, oder wenn du Kontaktberechtigungen erteilt hast und Jabber-IDs in deinem Adressbuch hinterlegt hast, werden diese angezeigt. Du kannst auch Gruppenchats hinzufügen oder beitreten oder öffentlichen Kanälen beitreten.</string>
     <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
     <string name="intro_chat_details">Chat-Details</string>
     <string name="intro_desc_chat_details">Du möchtest die Chat-Details öffnen? Tippe einfach auf den Chat-Namen oben in der Menüleiste.</string>
