@@ -939,7 +939,11 @@
     <string name="intro_permissions">权限</string>
     <string name="intro_desc_permissions">本应用将会请求一些权限。其中“外部储存访问”权限是必须的。其他的可选权限将在您使用相关功能时请求。</string>
     <string name="intro_account">您的帐户</string>
+    <string name="intro_desc_account">您需要拥有一个账户来使用这个应用。如果您已经有账户了，直接登录就可以。</string>
     <string name="intro_start_chatting">开始聊天</string>
+    <string name="intro_desc_start_chatting">很棒！但怎么聊天呢？只要添加您联系人的Jabber用户名就可以了。如果您已授予通讯录权限的话，您通讯录中的Jabber用户名也会在这里显示。除此之外，您还可以创建新群聊或加入群聊。</string>
+    <string name="intro_desc_open_chat">现在您就可以开始和别人聊天，分享位置、文件、音视频、图片和语音消息。</string>
     <string name="intro_chat_details">聊天详情</string>
+    <string name="intro_desc_chat_details">想查看群聊详情吗？点击屏幕上方的群聊名称即可。</string>
     <string name="intro_highlight_user">突出显示用户</string>
 </resources>
