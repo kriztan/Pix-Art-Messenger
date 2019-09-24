@@ -946,4 +946,6 @@
     <string name="intro_chat_details">聊天详情</string>
     <string name="intro_desc_chat_details">想查看群聊详情吗？点击屏幕上方的群聊名称即可。</string>
     <string name="intro_highlight_user">突出显示用户</string>
+    <string name="intro_desc_highlight_user">如果您需要在消息中提到某人，点击他的头像即可。或者您也可以在“群聊详情”的“群成员列表”中选择联系人。</string>
+    <string name="intro_desc_open_chat_details">您已经成功进入群聊详情界面。这里，您可以看到群聊的详情、改变新消息通知的设置、将群聊添加到XMPP联系人中或移除。还有很多其他的功能。</string>
 </resources>
