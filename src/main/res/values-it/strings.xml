@@ -955,6 +955,14 @@
     <string name="intro_desc_chat_details">Vuoi aprire i dettagli della conversazione? Ti basta premere sul nome della conversazione nella barra del menu in alto.</string>
     <string name="intro_highlight_user">Evidenzia utente</string>
     <string name="intro_desc_highlight_user">Se vuoi evidenziare un utente in una conversazione di gruppo, tocca l\'immagine dell\'utente nella conversazione. Oppure, in particolare se l\'utente non è nella conversazione, vai nei dettagli della conversazione e guarda la lista dei partecipanti. Tenendo premuto a lungo sull\'immagine dell\'utente farà apparire un menu a comparsa dove potrai mettere in evidenza l\'utente.</string>
+    <string name="intro_desc_open_chat_details">Hai aperto i dettagli della conversazione. Qui puoi vedere informazioni sulla conversazione, cambiare il comportamento delle notifiche per i nuovi messaggi, aggiungere o rimuovere la conversazione dalla tua lista dei contatti e molto altro.</string>
+    <string name="pref_show_intro_summary">Mostra ancora le schermate introduttive</string>
+    <string name="pref_show_intro">Mostra ancora l\'introduzione</string>
+    <string name="show_intro_again">Le schermate introduttive saranno mostrate ancora</string>
+    <string name="show_intro_again_failed">Reimpostazione delle schermate introduttive non riuscita. Riprova ancora…</string>
+    <string name="intro_desc_whats_xmpp">XMPP, chiamato anche Jabber, è una rete di comunicazione decentralizzata e funziona come le e-mail. Hai bisogno di un indirizzo, che è anche chiamato ID Jabber e di una password.</string>
     <string name="intro_whats_xmpp">Cos\'è XMPP / Jabber?</string>
+    <string name="intro_desc_contacts_permissions">Ti chiederemo anche il permesso di leggere la tua rubrica, per scoprire ID Jabber dai tuoi contatti. Non condivideremo, caricheremo o copieremo mai alcuno dei tuoi contatti.</string>
+    <string name="intro_desc_account2">Se vuoi creare un nuovo account, puoi sceglierne un server che ti piace tra quelli suggeriti nel menu a tendina oppure usarne uno personalizzato.</string>
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
 </resources>
