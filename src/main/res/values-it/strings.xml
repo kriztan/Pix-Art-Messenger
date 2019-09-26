@@ -950,7 +950,9 @@
     <string name="intro_desc_account">Per ricominciare, avrai bisogno di un tuo account. Se hai un tuo account, ti basta accedere con il tuo ID Jabber e la password.</string>
     <string name="intro_start_chatting">Inizia a conversare</string>
     <string name="intro_desc_start_chatting">Congratulazioni! Ma che ne dici di conversare? Aggiungi qualche ID Jabber dei tuoi contatti o, se hai dato il permesso di accedere ai contatti ed hai degli ID Jabber nella tua rubrica verranno aggiunti qui. Puoi anche aggiungere o creare conversazioni di gruppo o unirti a canali pubblici.</string>
+    <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
     <string name="intro_chat_details">Dettagli della conversazione</string>
+    <string name="intro_desc_chat_details">Vuoi aprire i dettagli della conversazione? Ti basta premere sul nome della conversazione nella barra del menu in alto.</string>
     <string name="intro_highlight_user">Evidenzia utente</string>
     <string name="intro_desc_highlight_user">Se vuoi evidenziare un utente in una conversazione di gruppo, tocca l\'immagine dell\'utente nella conversazione. Oppure, in particolare se l\'utente non è nella conversazione, vai nei dettagli della conversazione e guarda la lista dei partecipanti. Tenendo premuto a lungo sull\'immagine dell\'utente farà apparire un menu a comparsa dove potrai mettere in evidenza l\'utente.</string>
     <string name="intro_whats_xmpp">Cos\'è XMPP / Jabber?</string>
