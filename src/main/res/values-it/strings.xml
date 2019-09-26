@@ -936,6 +936,7 @@
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
     <string name="x_has_written">%s ha scritto:</string>
+    <string name="i_have_written">Io ho scritto:</string>
     <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
     <string name="your_status">Il tuo stato</string>
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
@@ -945,4 +946,9 @@
     <string name="welcome_header">Benvenuto su Pix-Art Messenger</string>
     <string name="intro_permissions">Permessi</string>
     <string name="intro_account">Il tuo account</string>
+    <string name="intro_start_chatting">Inizia a conversare</string>
+    <string name="intro_chat_details">Dettagli della conversazione</string>
+    <string name="intro_highlight_user">Evidenzia utente</string>
+    <string name="intro_desc_highlight_user">Se vuoi evidenziare un utente in una conversazione di gruppo, tocca l\'immagine dell\'utente nella conversazione. Oppure, in particolare se l\'utente non è nella conversazione, vai nei dettagli della conversazione e guarda la lista dei partecipanti. Tenendo premuto a lungo sull\'immagine dell\'utente farà apparire un menu a comparsa dove potrai mettere in evidenza l\'utente.</string>
+    <string name="intro_whats_xmpp">Cos\'è XMPP / Jabber?</string>
 </resources>
