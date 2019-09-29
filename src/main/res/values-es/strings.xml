@@ -942,6 +942,8 @@
     <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
     <string name="this_device">Este dispositivo</string>
+    <string name="welcome_header">Bienvenido a\nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Permisos necesarios</string>
     <string name="intro_account">Tu cuenta</string>
     <string name="intro_desc_open_chat">Ahora ya puedes empezar a chatear, compartir ubicaciones, archivos, videos e imágenes, o enviar mensajes de voz.</string>
     <string name="intro_chat_details">Detalles del chat</string>
