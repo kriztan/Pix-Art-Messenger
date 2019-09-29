@@ -936,16 +936,18 @@
     <string name="unable_to_perform_this_action">No se pudo realizar la acción</string>
     <string name="waiting_for_transfer">Esperando la transferencia</string>
     <string name="x_has_written">%s ha escrito:</string>
+    <string name="i_have_written">He escrito:</string>
     <string name="no_status_set_instructions">No tienes configurado un mensaje de estado de presencia</string>
     <string name="your_status">Tu estado</string>
     <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
     <string name="this_device">Este dispositivo</string>
-    <string name="intro_desc_main">Aprende como usar Pix-Art Messenger.</string>
-    <string name="welcome_header">Bienvenido a Pix-Art Messenger</string>
-    <string name="intro_required_permissions">Permisos</string>
+    <string name="intro_desc_main">Averiguar más…</string>
+    <string name="welcome_header">Bienvenido a\nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Permisos necesarios</string>
     <string name="intro_account">Tu cuenta</string>
-    <string name="intro_start_chatting">Iniciar conversación</string>
+    <string name="intro_desc_account">Si ya tienes una cuenta, puedes simplemente entrar con tu Jabber-ID y contraseña</string>
+    <string name="intro_start_chatting">Contactos</string>
     <string name="intro_desc_open_chat">Ahora ya puedes empezar a chatear, compartir ubicaciones, archivos, videos e imágenes, o enviar mensajes de voz.</string>
     <string name="intro_chat_details">Detalles del chat</string>
     <string name="intro_desc_chat_details">¿Quieres abrir los detalles del chat? Pulsa el nombre del chat en la barra superior de menú.</string>
@@ -956,4 +958,8 @@
     <string name="pref_show_intro">Mostrar de nuevo la introducción</string>
     <string name="show_intro_again">Se volverán a mostrar las pantallas de introducción</string>
     <string name="show_intro_again_failed">El reinicio de pantallas de introducción ha fallado. Intentar otra vez…</string>
+    <string name="intro_desc_whats_xmpp">XMPP, también conocido como Jabber, es una red de comunicación descentralizada y funciona parecido al correo electrónico. Necesitar una dirección llamada Jabber-ID, una contraseña y un cliente. Más información más adelante.</string>
+    <string name="intro_whats_xmpp">¿Qué es XMPP / Jabber / Pix-Art Messenger?</string>
+    <string name="open_join_dialog">Unirse a un canal público…</string>
+    <string name="intro_optional_permissions">Permisos opcionales</string>
 </resources>
