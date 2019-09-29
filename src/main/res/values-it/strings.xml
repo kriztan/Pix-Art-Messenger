@@ -936,13 +936,22 @@
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
     <string name="x_has_written">%s ha scritto:</string>
+    <string name="i_have_written">Io ho scritto:</string>
     <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
     <string name="your_status">Il tuo stato</string>
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious è un\'interfaccia alternativa di YouTube che rispetta la tua privacy</string>
     <string name="this_device">Questo dispositivo</string>
-    <string name="intro_desc_main">Impara come utilizzare Pix-Art Messenger.</string>
-    <string name="welcome_header">Benvenuto su Pix-Art Messenger</string>
-    <string name="intro_required_permissions">Permessi</string>
     <string name="intro_account">Il tuo account</string>
+    <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
+    <string name="intro_chat_details">Dettagli della conversazione</string>
+    <string name="intro_desc_chat_details">Vuoi aprire i dettagli della conversazione? Ti basta premere sul nome della conversazione nella barra del menu in alto.</string>
+    <string name="intro_highlight_user">Evidenzia utente</string>
+    <string name="intro_desc_highlight_user">Se vuoi evidenziare un utente in una conversazione di gruppo, tocca l\'immagine dell\'utente nella conversazione. Oppure, in particolare se l\'utente non è nella conversazione, vai nei dettagli della conversazione e guarda la lista dei partecipanti. Tenendo premuto a lungo sull\'immagine dell\'utente farà apparire un menu a comparsa dove potrai mettere in evidenza l\'utente.</string>
+    <string name="intro_desc_open_chat_details">Hai aperto i dettagli della conversazione. Qui puoi vedere informazioni sulla conversazione, cambiare il comportamento delle notifiche per i nuovi messaggi, aggiungere o rimuovere la conversazione dalla tua lista dei contatti e molto altro.</string>
+    <string name="pref_show_intro_summary">Mostra ancora le schermate introduttive</string>
+    <string name="pref_show_intro">Mostra ancora l\'introduzione</string>
+    <string name="show_intro_again">Le schermate introduttive saranno mostrate ancora</string>
+    <string name="show_intro_again_failed">Reimpostazione delle schermate introduttive non riuscita. Riprova ancora…</string>
+    <string name="open_join_dialog">Unisciti al canale pubblico…</string>
 </resources>
