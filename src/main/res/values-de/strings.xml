@@ -942,7 +942,13 @@
     <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
     <string name="pref_use_invidious_summary">Invidious ist eine datenschutzfreundliche Alternative zu YouTube</string>
     <string name="this_device">Dieses Gerät</string>
+    <string name="intro_desc_main">Mehr erfahren…</string>
+    <string name="welcome_header">Willkommen beim\nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Erforderliche Berechtigungen</string>
+    <string name="intro_desc_required_permissions">Am Ende des Intros wirst du gefragt, Zugriff auf externen Speicher zuzulassen (erforderlich), wenn du ihn nicht bereits erteilt hast. Zusätzliche Berechtigungen werden bei Bedarf angefragt und sind optional.</string>
     <string name="intro_account">Dein Profil</string>
+    <string name="intro_desc_account">Wenn du bereits ein Profil hast, kannst du dich einfach mit deiner Jabber-ID und deinem Passwort anmelden</string>
+    <string name="intro_start_chatting">Kontakte</string>
     <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
     <string name="intro_chat_details">Chat-Details</string>
     <string name="intro_desc_chat_details">Du möchtest die Chat-Details öffnen? Tippe einfach auf den Chat-Namen oben in der Menüleiste.</string>
