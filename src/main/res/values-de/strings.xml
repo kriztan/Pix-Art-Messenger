@@ -967,4 +967,9 @@
     <string name="open_join_dialog">Öffentlichem Channel beitreten…</string>
     <string name="intro_optional_permissions">Optionale Berechtigungen</string>
     <string name="intro_desc_optional_permissions2">Wenn du deinen Standort teilen möchtest, sind Berechtigungen auf deinen Standort erforderlich.\nFür den Versand von Sprachnachrichten ist es erforderlich, Zugang zum Mikrofon zu erhalten.</string>
+    <string name="intro_desc_account3">Du hast die Möglichkeit, ein bestehendes Profil zu importieren.\nTippe einfach auf Profil importieren. Wenn Backup-Dateien verfügbar sind, werden diese angezeigt. Wähle ein Profil aus, das importiert werden soll.</string>
+    <string name="intro_desc_start_chatting2">Du kannst auch Gruppenchats - sogenannte MUCs (Multi-User-Chats) - hinzufügen, erstellen oder beitreten. Man unterscheidet zwischen privaten Gruppenchats und öffentlichen Gruppenchats - sogenannten Kanälen.</string>
+    <string name="intro_desc_start_chatting3">Herzlichen Glückwunsch!\nJetzt geht\'s los und viel Spaß…</string>
+    <string name="intro_privacy">Deine Privatsphäre\nDeine Souveränität</string>
+    <string name="intro_desc_privacy">Pix-Art Messenger wird deine Daten weder verkaufen noch analysieren und du entscheidest, welche Berechtigungen du erteilst.</string>
 </resources>
