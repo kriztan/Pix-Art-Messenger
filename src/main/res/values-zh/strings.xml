@@ -934,6 +934,7 @@
     <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
+    <string name="intro_desc_main">了解更多...</string>
     <string name="intro_account">您的帐户</string>
     <string name="intro_desc_open_chat">现在您就可以开始和别人聊天，分享位置、文件、音视频、图片和语音消息。</string>
     <string name="intro_chat_details">聊天详情</string>
