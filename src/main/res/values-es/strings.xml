@@ -942,14 +942,7 @@
     <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
     <string name="this_device">Este dispositivo</string>
-    <string name="intro_desc_main">Aprende como usar Pix-Art Messenger.</string>
-    <string name="welcome_header">Bienvenido a Pix-Art Messenger</string>
-    <string name="intro_permissions">Permisos</string>
-    <string name="intro_desc_permissions">Pix-Art Messenger te pedirá otorgar algunos permisos. Necesitamos al meno acceso a tu almacenamiento externo. Cualquier otro permiso será solicitado según se requiera y no son obligatorios. </string>
     <string name="intro_account">Tu cuenta</string>
-    <string name="intro_desc_account">Para empezar, necesitas una cuenta propia. Si tienes una cuenta, entra con tu Jabber-ID y contraseña.</string>
-    <string name="intro_start_chatting">Iniciar conversación</string>
-    <string name="intro_desc_start_chatting">¡Enhorabuena! ¿Pero como chatear? Añade los Jabber-IDs de tus contactos, o si has otorgado permisos sobre los contactos, se mostrarán los Jabber-IDs de tu libreta de direcciones. También puedes añadir o crear grupos o unirte a canales públicos.</string>
     <string name="intro_desc_open_chat">Ahora ya puedes empezar a chatear, compartir ubicaciones, archivos, videos e imágenes, o enviar mensajes de voz.</string>
     <string name="intro_chat_details">Detalles del chat</string>
     <string name="intro_desc_chat_details">¿Quieres abrir los detalles del chat? Pulsa el nombre del chat en la barra superior de menú.</string>
@@ -960,9 +953,5 @@
     <string name="pref_show_intro">Mostrar de nuevo la introducción</string>
     <string name="show_intro_again">Se volverán a mostrar las pantallas de introducción</string>
     <string name="show_intro_again_failed">El reinicio de pantallas de introducción ha fallado. Intentar otra vez…</string>
-    <string name="intro_desc_whats_xmpp">XMPP, también llamado Jabber, es una red de comunicación descentralizada y funciona parecido al correo electrónico. Necesitas una dirección que se llama Jabber-ID y una contraseña.</string>
-    <string name="intro_whats_xmpp">¿Qué es XMPP/Jabber?</string>
-    <string name="intro_desc_contacts_permissions">También te pediremos otorgar permiso para leer tu libreta de direcciones, para leer los Jabber-IDs de tus contactos. Nunca compartiremos, subiremos o copiaremos ninguno de tus contactos.</string>
-    <string name="intro_desc_account2">Si quieres crear una cuenta nueva, tienes la opción de elegir entre el servidor sugerido en el menú desplegable o uno de propia elección.</string>
     <string name="open_join_dialog">Unirse a un canal público…</string>
 </resources>
