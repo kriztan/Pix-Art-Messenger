@@ -560,6 +560,7 @@
     <string name="remote_server_not_found">Віддалений сервер не знайдено</string>
     <string name="unable_to_update_account">Неможливо оновити обліковий запис</string>
     <string name="report_jid_as_spammer">Відзвітувати, що цей Jabber ID розсилає спам.</string>
+    <string name="create_issue">Повідомити про помилку</string>
     <string name="pref_delete_omemo_identities">Видалити ідентифікаційні дані OMEMO</string>
     <string name="pref_delete_omemo_identities_summary">Стоврити наново ваші ключі OMEMO. Усі ваші контакти будуть змушені підтвердити вас знову. Використовуйте це, лише якщо немає іншого вибору.</string>
     <string name="delete_selected_keys">Видалити вибрані ключі</string>
@@ -573,6 +574,7 @@
     <string name="data_saver_enabled">Задіяно економію передачі данних</string>
     <string name="data_saver_enabled_explained">Ваша операційна система обмежує програмі Conversations доступ до Інтернету, коли вона не на екрані. Щоб отримувати сповіщення про нові повідомлення, вам слід дозволити програмі Conversations необмежений доступ, коли включено економію передачі даних.\nПрограма Conversations все одно буде намагатися зекономити дані, коли це можливо.</string>
     <string name="device_does_not_support_data_saver">Ваш пристрій не дає можливості вимкнути економію передачі даних з програми Conversations</string>
+    <string name="add_to_contact_list">Додати до контактів</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не можу почати запис</string>
     <string name="error_unable_to_create_temporary_file">Неможливо створити тимчасовий файл</string>
@@ -591,6 +593,7 @@
     <string name="pref_blind_trust_before_verification_summary">Автоматично довіряти всім новим пристроям контактів, які не були перевірені раніше, й запитувати підтвердження вручну кожного разу, коли перевірений контакт додає новий пристрій.</string>
     <string name="not_trusted">Недовірений</string>
     <string name="invalid_barcode">Недійсний QR-код </string>
+    <string name="verify_with_qr_code">увійти через QR-код</string>
     <string name="i_followed_this_link_from_a_trusted_source">Я прослідував за цим посиланням від довіреного джерела</string>
     <string name="verifying_omemo_keys_trusted_source">Ви збираєтеся підтвердити ключі OMEMO для %1$s після переходу за посиланням. Це безпечно, лише якщо ви отримали посилання з довіреного джерела, де лише %2$s міг опублікувати це посилання.</string>
     <string name="verify_omemo_keys">Підтвердити ключі OMEMO</string>
@@ -636,6 +639,8 @@
         <item quantity="other">%d місяців</item>
     </plurals>
     <string name="today">Сьогодні</string>
+    <string name="pref_use_max_brightness_summary">Зробити яскравішим під час перегляду відео чи зображень на повному екрані.</string>
+    <string name="pref_use_max_brightness">Найбільша яскравість</string>
     <string name="block_jabber_id">Заблокувати XMPP адресу</string>
     <string name="corresponding_conversations_closed">Відповідні розмови закрито.</string>
     <string name="contact_blocked_past_tense">Контакт заблоковано.</string>
@@ -644,8 +649,13 @@
     <string name="received_message_from_stranger">Отримано повідомлення від незнайомця</string>
     <string name="contacts_are_typing">%s набирає повідомлення…</string>
     <string name="contact_is_typing">%s друкує…</string>
+    <string name="one_participant">один учасник</string>
+    <string name="more_participants">%d учасників</string>
+    <string name="presence_offline">Не в мережі</string>
     <string name="block_stranger">Заблокувати незнайомця</string>
     <string name="block_entire_domain">Заблокувати весь домен</string>
+    <string name="pref_use_auto_rotate_summary">Повертати зображення та відео у повноекранному режимі, щоб заповнити весь екран</string>
+    <string name="pref_use_auto_rotate">Повертати зображення у повноекранному режимі</string>
     <string name="pref_use_tor">З\'єднання через Tor</string>
     <string name="pref_use_tor_summary">Тунелювати всі з\'єднання через мережу Tor. Потребує Orbot</string>
     <string name="pref_connection_options">З\'єднання</string>
