@@ -963,6 +963,13 @@
     <string name="intro_desc_whats_xmpp">XMPP, también conocido como Jabber, es una red de comunicación descentralizada y funciona parecido al correo electrónico. Necesitar una dirección llamada Jabber-ID, una contraseña y un cliente. Más información más adelante.</string>
     <string name="intro_whats_xmpp">¿Qué es XMPP / Jabber / Pix-Art Messenger?</string>
     <string name="intro_desc_optional_permissions">El permiso para leer tu libreta de direcciones es necesario para leer los Jabber-IDs (si hay alguno) desde tus contactos. Los contactos nunca se comparten, se suben o se copian.</string>
+    <string name="intro_desc_account2">Puedes crear un nuevo perfil seleccionando un servidor personalizado o uno del menú desplegable y entrando un alias.</string>
     <string name="open_join_dialog">Unirse a un canal público…</string>
     <string name="intro_optional_permissions">Permisos opcionales</string>
+    <string name="intro_desc_optional_permissions2">El permiso para tu ubicación es necesario si quieres compartir tu ubicación.\nPara usar mensajes de voz se requiere tener acceso a tu micrófono.</string>
+    <string name="intro_desc_account3">Tienes la opción de importar una cuenta existente.\nSolo toca el botón de importar. Si hay archivos de backup, se mostrarán. Elige una cuenta para importar.</string>
+    <string name="intro_desc_start_chatting2">También puede añadir, crear o unirte a chats multiusuario llamados MUCs. Hay grupos de chat privados y grupos de chat públicos también llamados canales.</string>
+    <string name="intro_desc_start_chatting3">¡Enhorabuena!\nVamos a divertirnos…</string>
+    <string name="intro_privacy">Tu privacidad\nTu soberanía</string>
+    <string name="intro_desc_privacy">Pix-Art Messenger no vende ni analiza tus datos y tú decides que permisos otorgas.</string>
 </resources>
