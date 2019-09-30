@@ -962,8 +962,13 @@
     <string name="show_intro_again_failed">Reimpostazione delle schermate introduttive non riuscita. Riprova ancora…</string>
     <string name="intro_desc_whats_xmpp">XMPP, anche chiamato Jabber, è una rete di comunicazione decentralizzata e funziona come le e-mail. Avrai bisogno di un indirizzo chiamato ID Jabber, una password e un\'app di messaggistica. Lo approfondiremo più tardi.</string>
     <string name="intro_whats_xmpp">Cosa sono XMPP / Jabber / Pix-Art Messenger?</string>
+    <string name="intro_desc_optional_permissions">Il permesso di leggere la tua rubrica è richiesto per leggere ID Jabber (se ce ne fossero) dai tuoi contatti. I contatti non saranno mai condivisi, caricati o copiati.</string>
+    <string name="intro_desc_account2">Puoi creare un nuovo profilo selezionando un server personalizzato o uno dal menu a discesa e inserendo un soprannome.</string>
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
     <string name="intro_optional_permissions">Permessi opzionali</string>
+    <string name="intro_desc_optional_permissions2">Il permesso per la localizzazione è richiesto se vuoi condividere la tua posizione.\nPer condividere messaggi vocali è richiesto l\'accesso al tuo microfono.</string>
+    <string name="intro_desc_account3">Hai la possibilità di importare un account esistente.\nTocca il pulsante di importazione. Se ci sono file di backup disponibili, saranno mostrati. Scegli un account da importare.</string>
+    <string name="intro_desc_start_chatting2">Puoi anche aggiungere, creare o unirti a conversazioni di gruppo - anche chiamate MUC. Si dividono in conversazioni di gruppo private e conversazioni di gruppo pubbliche - chiamate anche canali.</string>
     <string name="intro_desc_start_chatting3">Congratulazioni!\nComincia e divertiti…</string>
     <string name="intro_privacy">La tua privacy\nLa tua sovranità</string>
     <string name="intro_desc_privacy">Pix-Art Messenger non venderà nè analizzerà i tuoi dati e tu decidi quali permessi vuoi dare.</string>
