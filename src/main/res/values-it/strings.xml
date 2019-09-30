@@ -949,6 +949,7 @@
     <string name="intro_account">Il tuo account</string>
     <string name="intro_desc_account">Se hai già un account, puoi semplicemente accedere con il tuo ID Jabber e password</string>
     <string name="intro_start_chatting">Contatti</string>
+    <string name="intro_desc_start_chatting">Se hai dato il permesso di leggere i contatti, i contatti Jabber già esistenti saranno automaticamente mostrati nella tua rubrica. Altrimenti, aggiungi semplicemente gli ID Jabber</string>
     <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
     <string name="intro_chat_details">Dettagli della conversazione</string>
     <string name="intro_desc_chat_details">Vuoi aprire i dettagli della conversazione? Ti basta premere sul nome della conversazione nella barra del menu in alto.</string>
@@ -959,6 +960,8 @@
     <string name="pref_show_intro">Mostra ancora l\'introduzione</string>
     <string name="show_intro_again">Le schermate introduttive saranno mostrate ancora</string>
     <string name="show_intro_again_failed">Reimpostazione delle schermate introduttive non riuscita. Riprova ancora…</string>
+    <string name="intro_desc_whats_xmpp">XMPP, anche chiamato Jabber, è una rete di comunicazione decentralizzata e funziona come le e-mail. Avrai bisogno di un indirizzo chiamato ID Jabber, una password e un\'app di messaggistica. Lo approfondiremo più tardi.</string>
+    <string name="intro_whats_xmpp">Cosa sono XMPP / Jabber / Pix-Art Messenger?</string>
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
     <string name="intro_optional_permissions">Permessi opzionali</string>
     <string name="intro_desc_start_chatting3">Congratulazioni!\nComincia e divertiti…</string>
