@@ -279,13 +279,13 @@
     <string name="account_details">Деталі облікового запису</string>
     <string name="verify_otr">Перевірити OTR</string>
     <string name="remote_fingerprint">Вилучити відбиток</string>
-    <string name="shared_secret_hint">Підказка чи питання</string>
+    <string name="shared_secret_hint">Підказка чи запитання</string>
     <string name="shared_secret_secret">Секретний ключ</string>
     <string name="confirm">Підтвердити</string>
     <string name="in_progress">У процесі</string>
     <string name="respond">Відповісти</string>
     <string name="failed">Невдача</string>
-    <string name="secrets_do_not_match">Ключі не збігаються</string>
+    <string name="secrets_do_not_match">Секрети не збігаються</string>
     <string name="try_again">Спробуйте ще</string>
     <string name="finish">Завершити</string>
     <string name="verified">Перевірено!</string>
@@ -334,6 +334,8 @@
     <string name="could_not_change_password">Не зміг змінити пароль</string>
     <string name="otr_session_not_started">Надішліть повідомлення, щоб розпочати зашифрований чат</string>
     <string name="ask_question">Поставити запитання</string>
+    <string name="smp_explain_question">Якщо ви чи ваш контакт маєте спільний секрет, який ніхто інший не знає (наприклад, якийсь жарт, про який відомо лише вам, чи що ви їли в обід під час зустрічі), то ви можете його використати для підтвердження відбитків один одного.\n\nЗ вашого боку ви можете надати підказку чи поставити запитання вашому контакту, який має надати відповідь - зверніть увагу, що реєстр має значення.</string>
+    <string name="smp_explain_answer">Ваш контакт бажає перевірити ваш відбиток через спільний ключ. Ви можете отримати відповідну підказку чи навідне запитання, яке стосується цього ключа.</string>
     <string name="shared_secret_hint_should_not_be_empty">Підказка має містити інформацію</string>
     <string name="shared_secret_can_not_be_empty">Ваш публічний ключ має містити інформацію</string>
     <string name="change_password">Змінити пароль</string>
