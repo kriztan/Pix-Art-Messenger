@@ -942,7 +942,11 @@
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious è un\'interfaccia alternativa di YouTube che rispetta la tua privacy</string>
     <string name="this_device">Questo dispositivo</string>
+    <string name="intro_desc_main">Scopri di più…</string>
+    <string name="welcome_header">Benvenuto su\nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Permessi richiesti</string>
     <string name="intro_account">Il tuo account</string>
+    <string name="intro_start_chatting">Contatti</string>
     <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
     <string name="intro_chat_details">Dettagli della conversazione</string>
     <string name="intro_desc_chat_details">Vuoi aprire i dettagli della conversazione? Ti basta premere sul nome della conversazione nella barra del menu in alto.</string>
@@ -954,4 +958,5 @@
     <string name="show_intro_again">Le schermate introduttive saranno mostrate ancora</string>
     <string name="show_intro_again_failed">Reimpostazione delle schermate introduttive non riuscita. Riprova ancora…</string>
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
+    <string name="intro_optional_permissions">Permessi opzionali</string>
 </resources>
