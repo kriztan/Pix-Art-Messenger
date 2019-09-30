@@ -27,6 +27,7 @@
     <string name="just_now">щойно</string>
     <string name="minute_ago">1 хвилину тому</string>
     <string name="minutes_ago">%d хвилин тому</string>
+    <string name="x_unread_conversations">%d непрочитаних розмов</string>
     <string name="sending">відправляю…</string>
     <string name="message_decrypting">Розшифровую повідомлення. Зачекайте, будь ласка…</string>
     <string name="pgp_message">Повідомлення, зашифроване OpenPGP</string>
@@ -686,6 +687,7 @@
     <string name="mark_as_read">Позначити як прочитане</string>
     <string name="server_info_partial">частково</string>
     <string name="install_update">Встановити оновлення?</string>
+    <string name="highlight_in_muc">підсвітити контакт</string>
     <string name="no_application_found_to_open_link">Не знайдено програми, щоб відкрити посилання</string>
     <string name="contacts_have_read_up_to_this_point">%s прочитала до цього місця</string>
     <string name="contact_has_read_up_to_this_point">%s дочитав до цього місця</string>
@@ -733,6 +735,7 @@
     <string name="pref_theme_auto">Автоматично</string>
     <string name="pref_theme_options_summary">Вибрати палітру кольорів</string>
     <string name="pref_theme_options">Тема</string>
+    <string name="chooce_account">Вибрати обліковий запис</string>
     <string name="pref_font_size">Розмір шрифту</string>
     <string name="pref_font_size_summary">Відносний розмір шрифту в програмі.</string>
     <string name="small">Малий</string>
@@ -750,6 +753,7 @@
     <string name="server_hint">Вибрати провайдера</string>
     <string name="choose_your_server">Виберіть провайдера XMPP</string>
     <string name="show_privacy">Політика конфіденційності</string>
+    <string name="show_termsofuse">Умови використання</string>
     <string name="p1_s3_filetransfer">Доступ до файлів по HTTP для S3</string>
     <string name="pref_start_search">Безпосередній пошук</string>
     <string name="pref_start_search_summary">На екрані початку розмови відкривати клавіатуру й розміщувати курсор в поле пошуку</string>
@@ -764,6 +768,7 @@
     <string name="create_dialog_group_chat_name">Назва групи</string>
     <string name="everyone_has_read_up_to_this_point">Усі прочитали до цього місця</string>
     <string name="conference_resource_constraint">Обмеження ресурсів</string>
+    <string name="delete_message">Вилучити повідомлення</string>
     <string name="conference_destroyed">Цю групу знищено</string>
     <string name="no_application_found_to_view_contact">Не знайдено програми, щоб переглянути контакт</string>
     <string name="unable_to_save_recording">Не можу зберегти запис</string>
@@ -783,6 +788,7 @@
     <string name="view_media">Перегляд медіа</string>
     <string name="media_browser">Переглядач медіа</string>
     <string name="account_status_stream_opening_error">Не вдалося відкрити мережевий потік</string>
+    <string name="action_open">Відкрити</string>
     <string name="security_violation_not_attaching_file">Файл пропущено через порушення безпеки.</string>
     <string name="delete_file_dialog">Видалити файл</string>
     <string name="delete_file_dialog_msg">Ви певні, що бажаєте видалити цей файл?\n\n<b>Увага:</b> Це не видалить копії цього файла, які зберігаються на інших пристроях чи серверах.</string>
@@ -790,9 +796,11 @@
     <string name="remote_server_timeout">Затримка відповіді сервера</string>
     <string name="already_drafting_message">Ви вже маєте чернетку повідомлення.</string>
     <string name="bad_key_for_encryption">Неприйнятний ключ для шифрування</string>
+    <string name="delete_message_dialog">Вилучити повідомлення</string>
     <string name="feature_not_implemented">Функція в розробці.</string>
     <string name="reject_request">Відхилити запит</string>
     <string name="error_message_copied_to_clipboard">Текст повідомлення про помилку скопійовано до комірки обміну</string>
+    <string name="pref_screen_security">Заборонити скріншоти</string>
     <string name="omemo_decryption_failed">Не вийшло розшифрувати повідомлення OMEMO.</string>
     <string name="install_orbot">Встановити Orbot</string>
     <string name="start_orbot">Запустити Orbot</string>
@@ -803,6 +811,7 @@
     <string name="enter_your_name">Введіть Ваше ім\'я</string>
     <string name="enter_your_name_instructions">Будь ласка, введіть Ваше ім\'я, щоб надати можливість людям, які не мають Вашого контакту в своїх книгах, дізнатися, хто Ви.</string>
     <string name="no_name_set_instructions">Використовуйте кнопку редагування, щоб встановити ім\'я.</string>
+    <string name="autojoin_group_chat">Автоматично приєднуватися до цієї групи</string>
     <string name="open_with">Відкрити за допомогою...</string>
     <string name="choose_account">Виберіть обліковий запис</string>
     <string name="set_profile_picture">Фото профілю чату</string>
