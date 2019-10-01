@@ -185,6 +185,7 @@
     <string name="openpgp_messages_found">Знайдено повідомлення, зашифроване OpenPGP</string>
     <string name="your_fingerprint">Ваш відбиток</string>
     <string name="otr_fingerprint">Відбиток OTR</string>
+    <string name="otr_fingerprint_selected_message">Відбиток OTR повідомлення</string>
     <string name="openpgp_key_id">Ідентифікатор ключа OpenPGP</string>
     <string name="omemo_fingerprint">Відбиток OMEMO</string>
     <string name="omemo_fingerprint_x509">Відбиток v\\OMEMO</string>
@@ -552,6 +553,7 @@
     <string name="this_device_is_no_longer_in_use">Цей пристрій більше не використовується</string>
     <string name="please_wait">Прошу зачекайте…</string>
     <string name="pref_export_plain_text_logs_summary">Увімкнути експорт журналу чату у вигляді зручних для перегляду файлів</string>
+    <string name="pref_export_plain_text_logs">Експортувати журнал чату у зручній для перегляду формі</string>
     <string name="payment_required">Вимагається оплата</string>
     <string name="missing_internet_permission">Немає дозволу на Інтернет</string>
     <string name="me">Я</string>
@@ -559,6 +561,7 @@
     <string name="allow">Дозволити</string>
     <string name="no_permission_to_access_x">Немає дозволу на доступ до %s</string>
     <string name="remote_server_not_found">Віддалений сервер не знайдено</string>
+    <string name="error_file_corrupt">Схоже, файл було пошкоджено.</string>
     <string name="unable_to_update_account">Неможливо оновити обліковий запис</string>
     <string name="report_jid_as_spammer">Відзвітувати, що цей Jabber ID розсилає спам.</string>
     <string name="create_issue">Повідомити про помилку</string>
@@ -686,12 +689,16 @@
     <string name="error_no_keys_to_trust_presence">Немає ключів для цього контакту.\nПеревірте, що ви взаємно підписані на присутність.</string>
     <string name="mark_as_read">Позначити як прочитане</string>
     <string name="server_info_partial">частково</string>
+    <string name="pref_show_foreground_service">Запускати у фоні</string>
+    <string name="update_service">Служба оновлення месенджера Pix-Art</string>
     <string name="install_update">Встановити оновлення?</string>
     <string name="highlight_in_muc">підсвітити контакт</string>
     <string name="no_application_found_to_open_link">Не знайдено програми, щоб відкрити посилання</string>
     <string name="contacts_have_read_up_to_this_point">%s прочитала до цього місця</string>
     <string name="contact_has_read_up_to_this_point">%s дочитав до цього місця</string>
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s +%2$d ще прочитали до цього місця</string>
+    <string name="conversation_unencrypted_hint">Це незашифрований чат. З міркувань безпеки радимо увімкнути шифрування повідомлень, для цього натисніть на значок із \"замочком\".  OMEMO є кращим методом шифрування. </string>
+    <string name="pref_warn_unencrypted_chat">Попереджати, якщо чат не зашифрований</string>
     <string name="invalid_muc_nick">Неприйнятне прізвисько</string>
     <string name="title_activity_share_via_account">Поділитися через обліковий запис</string>
     <string name="destroy_room">Видалити груповий чат</string>
