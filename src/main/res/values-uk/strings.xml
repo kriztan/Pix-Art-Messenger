@@ -699,15 +699,22 @@
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s +%2$d ще прочитали до цього місця</string>
     <string name="conversation_unencrypted_hint">Це незашифрований чат. З міркувань безпеки радимо увімкнути шифрування повідомлень, для цього натисніть на значок із \"замочком\".  OMEMO є кращим методом шифрування. </string>
     <string name="pref_warn_unencrypted_chat">Попереджати, якщо чат не зашифрований</string>
+    <string name="pref_warn_unencrypted_chat_summary">У разі доступности шифрування повідомлень, рекомендуємо його застосовувати. Якщо ви не використовуєте шифрування, всередині чату з\'являтиметься відповідне попередження.</string>
+    <string name="pref_use_bundled_emoji">Використовувати вбудовані емоційки</string>
+    <string name="pref_use_bundled_emoji_summary">Використовувати бібліотеку вбудованих емоційне замість типових для вашого пристрою. Зміни буде застосовано після перевантаження застосунку.</string>
     <string name="invalid_muc_nick">Неприйнятне прізвисько</string>
     <string name="title_activity_share_via_account">Поділитися через обліковий запис</string>
     <string name="destroy_room">Видалити груповий чат</string>
     <string name="conference_unknown_error">Ви більше не берете участь в цій групі</string>
     <string name="destroy_room_dialog">Ви впевнені що бажаєте видалити цей груповий чат?\n\n 1
 Увага:  1  Груповий чат буде видалений з сервера.</string>
+    <string name="destroy_room_succeed">Групу успішно знищено</string>
+    <string name="destroy_room_failed">Неможливо знищити групу</string>
     <string name="snooze">Приспати</string>
     <string name="huawei_protected_apps">Захищені програми</string>
     <string name="huawei_protected_apps_summary">Щоб отримувати сповіщення, навіть коли екран погас, Вам потрібно додати програму до переліку програм, до яких не застосовується енергозаощадження.</string>
+    <string name="pref_enable_multi_accounts_title">Увімкнути кілька облікових записів</string>
+    <string name="pref_enable_multi_accounts_summary">Чи ви бажаєте використовувати кілька облікових записів?</string>
     <string name="mtm_accept_cert">Прийняти незнайомий сертифікат?</string>
     <string name="mtm_trust_anchor">Сертифікат сервера не засвідчено відомим центром сертифікації </string>
     <string name="mtm_accept_servername">Прийняти сервер, ім\'я якого не збігається?</string>
