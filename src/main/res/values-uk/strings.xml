@@ -840,6 +840,7 @@
     <string name="pref_show_links_inside">Показувати попередній перегляд посилань сайтів у чаті</string>
     <string name="pref_show_links_inside_summary">Показувати попередній перегляд посилань на сайти безпосередньо у вікні чату, при цьому буде встановлено з\'єднання з сервером зазначеного у посилання вебсайту.</string>
     <string name="pref_play_gif_inside">Програвати файли GIF у чаті</string>
+    <string name="pref_play_gif_inside_summary">Програвати файли GIF безпосередньо у вікні чату.</string>
     <string name="open_with">Відкрити за допомогою...</string>
     <string name="choose_account">Виберіть обліковий запис</string>
     <string name="set_profile_picture">Фото профілю чату</string>
@@ -900,6 +901,8 @@
     <string name="file_too_large">Файл надто великий</string>
     <string name="mgmt_account_password_forgotten">Забули пароль?</string>
     <string name="password_forgotten_title">Втрачено пароль</string>
+    <string name="password_forgotten_text">Чи ви забули пароль до вашої обліковки? Ми спробуємо відкрити сторінку підтримки вашого постачальника.</string>
+    <string name="set_settings_intro">Тут ви можете здійснити окремі налаштування приватности. Їх можна буде змінити пізніше.</string>
     <string name="attach">Долучити</string>
     <string name="delete_locally">Вилучити в себе</string>
     <string name="delete_from_server">Вилучити віддалено</string>
