@@ -785,6 +785,7 @@
     <string name="delete_message">Вилучити повідомлення</string>
     <string name="conference_destroyed">Цю групу знищено</string>
     <string name="no_application_found_to_view_contact">Не знайдено програми, щоб переглянути контакт</string>
+    <string name="welcome_server_info">Рекомендуємо використовувати blabber.im як постачальника послуг XMPP. </string>
     <string name="unable_to_save_recording">Не можу зберегти запис</string>
     <string name="foreground_service_channel_name">Процес на передньому плані</string>
     <string name="foreground_service_channel_description">Цей вид сповіщень буде постійно показувати, що програма працює.</string>
