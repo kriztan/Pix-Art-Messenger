@@ -786,6 +786,11 @@
     <string name="conference_destroyed">Цю групу знищено</string>
     <string name="no_application_found_to_view_contact">Не знайдено програми, щоб переглянути контакт</string>
     <string name="welcome_server_info">Рекомендуємо використовувати blabber.im як постачальника послуг XMPP. </string>
+    <string name="no_location_permission">Месенджер Pix-Art потребує доступу до служб геолокації</string>
+    <string name="pref_show_record_voice_btn_summary">Показувати кнопку голосового запису в чаті яко швидку дію</string>
+    <string name="pref_show_record_voice_btn">Показувати кнопку голосового запису</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Замінити кнопку надсилання під час набору функцією вибору долучника. В іншому випадку показувати швидкі дії, які можна окремо налаштувати подалі.</string>
+    <string name="pref_quick_share_attachment_choice">Вибрати долучник</string>
     <string name="unable_to_save_recording">Не можу зберегти запис</string>
     <string name="foreground_service_channel_name">Процес на передньому плані</string>
     <string name="foreground_service_channel_description">Цей вид сповіщень буде постійно показувати, що програма працює.</string>
@@ -800,6 +805,8 @@
     <string name="pref_more_notification_settings_summary">Важливість, звук, вібрація</string>
     <string name="video_compression_channel_name">Стиснення відео</string>
     <string name="backup_channel_name">Створити або відновити резервну копію</string>
+    <string name="app_update_channel_name">Оновлення застосунку</string>
+    <string name="action_group_details">Деталі групи</string>
     <string name="view_media">Перегляд медіа</string>
     <string name="media_browser">Переглядач медіа</string>
     <string name="account_status_stream_opening_error">Не вдалося відкрити мережевий потік</string>
@@ -812,9 +819,12 @@
     <string name="already_drafting_message">Ви вже маєте чернетку повідомлення.</string>
     <string name="bad_key_for_encryption">Неприйнятний ключ для шифрування</string>
     <string name="delete_message_dialog">Вилучити повідомлення</string>
+    <string name="delete_message_dialog_msg">Чи ви дійсно бажаєте вилучити це повідомлення?\n\n<b>Увага!</b> Копії вашого повідомлення все одно залишаться на інших пристроях та серверах.</string>
     <string name="feature_not_implemented">Функція в розробці.</string>
+    <string name="device_does_not_support_unknown_source_op">Ваш пристрій не дозволяє встановлення застосунків із недозволених джерел.</string>
     <string name="reject_request">Відхилити запит</string>
     <string name="error_message_copied_to_clipboard">Текст повідомлення про помилку скопійовано до комірки обміну</string>
+    <string name="pref_screen_security_summary">Вважати зміст за безпечний і не дозволяти йому потрапляти на скріншоти.</string>
     <string name="pref_screen_security">Заборонити скріншоти</string>
     <string name="omemo_decryption_failed">Не вийшло розшифрувати повідомлення OMEMO.</string>
     <string name="install_orbot">Встановити Orbot</string>
@@ -827,6 +837,9 @@
     <string name="enter_your_name_instructions">Будь ласка, введіть Ваше ім\'я, щоб надати можливість людям, які не мають Вашого контакту в своїх книгах, дізнатися, хто Ви.</string>
     <string name="no_name_set_instructions">Використовуйте кнопку редагування, щоб встановити ім\'я.</string>
     <string name="autojoin_group_chat">Автоматично приєднуватися до цієї групи</string>
+    <string name="pref_show_links_inside">Показувати попередній перегляд посилань сайтів у чаті</string>
+    <string name="pref_show_links_inside_summary">Показувати попередній перегляд посилань на сайти безпосередньо у вікні чату, при цьому буде встановлено з\'єднання з сервером зазначеного у посилання вебсайту.</string>
+    <string name="pref_play_gif_inside">Програвати файли GIF у чаті</string>
     <string name="open_with">Відкрити за допомогою...</string>
     <string name="choose_account">Виберіть обліковий запис</string>
     <string name="set_profile_picture">Фото профілю чату</string>
