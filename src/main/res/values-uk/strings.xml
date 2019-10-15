@@ -153,6 +153,7 @@
     <string name="unpublish_pgp_message">Ви впевнені, що хочете видалити ваш публічний ключ OpenPGP з вашого оголошення про присутність?\nВаші контакти більше не зможуть надсилати вам повідомлення, зашифровані OpenPGP.</string>
     <string name="openpgp_has_been_published">Публічний ключ OpenPGP опубліковано.</string>
     <string name="mgmt_account_are_you_sure">Ви впевнені?</string>
+    <string name="mgmt_account_delete_confirm_message">Якщо ви вилучите ваш обліковий запис, ви втратите усю історію спілкування на пристрої.\n\nЯкщо ви вилучите ваш обліковий запис з сервера, то його буде вилучено також на сервері й ви не матимете змоги виходити, луки не зареєструєте новий обліковий запис.</string>
     <string name="attach_record_voice">Записати голос</string>
     <string name="account_settings_jabber_id">XMPP адреса</string>
     <string name="account_settings_example_jabber_id">username@example.com</string>
