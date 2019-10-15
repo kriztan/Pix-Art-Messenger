@@ -925,6 +925,7 @@
     <string name="add_anway">Додати все одно</string>
     <string name="this_looks_like_channel">Це схоже на адресу каналу</string>
     <string name="no_backup_available">Відсутні резервні копії</string>
+    <string name="pref_show_own_accounts_summary">Показувати власні облікові записи у чатах та контактах, якщо у вас кілька обліковок.</string>
     <string name="pref_show_own_accounts">Показати мої облікові записи</string>
     <string name="message_encryption">Шифрування повідомлень</string>
     <string name="hide_warning">Сховати попередження</string>
