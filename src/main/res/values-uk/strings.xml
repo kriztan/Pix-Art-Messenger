@@ -690,6 +690,7 @@
     <string name="error_no_keys_to_trust_presence">Немає ключів для цього контакту.\nПеревірте, що ви взаємно підписані на присутність.</string>
     <string name="mark_as_read">Позначити як прочитане</string>
     <string name="server_info_partial">частково</string>
+    <string name="pref_show_foreground_service_summary">Деякі пристрої на Android припиняють дію окремих застосункіа через певний час й таким чином ви можете не мати змоги отримувати нові повідомлення. Якщо у вас виникають такі проблеми, спробуйте увімкнути фонові служби. Зверніть увагу, що з такими налаштуваннями система вас постійно сповіщуватиме про це.</string>
     <string name="pref_show_foreground_service">Запускати у фоні</string>
     <string name="update_service">Служба оновлення месенджера Pix-Art</string>
     <string name="install_update">Встановити оновлення?</string>
@@ -711,6 +712,7 @@
 Увага:  1  Груповий чат буде видалений з сервера.</string>
     <string name="destroy_room_succeed">Групу успішно знищено</string>
     <string name="destroy_room_failed">Неможливо знищити групу</string>
+    <string name="no_write_access_in_public_muc">На разі ви не є учасником цього групового чату й не маєте права на створення дописів.\nБудь ласка, перейдіть до деталей чату, для цього натисніть на <b>OK</b> та надішліть приватне повідомлення модераторові, адміністраторові або власникові, натиснувши довго на ім\'я учасника нагорі списку й відтак попросіть право на допис у чаті.</string>
     <string name="snooze">Приспати</string>
     <string name="huawei_protected_apps">Захищені програми</string>
     <string name="huawei_protected_apps_summary">Щоб отримувати сповіщення, навіть коли екран погас, Вам потрібно додати програму до переліку програм, до яких не застосовується енергозаощадження.</string>
@@ -912,6 +914,7 @@
     <string name="attach">Долучити</string>
     <string name="delete_locally">Вилучити в себе</string>
     <string name="delete_from_server">Вилучити віддалено</string>
+    <string name="go_online_to_delete">Вам потрібно або увімкнути, або з\'єднатися з мережею з обліковим записом, який ви хочете вилучити з сервера.</string>
     <string name="discover_channels">Знайти канали</string>
     <string name="search_channels">Шукати канали</string>
     <string name="channel_discovery_opt_in_title">Можливе порушення приватності!</string>
