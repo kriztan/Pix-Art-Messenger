@@ -904,7 +904,6 @@
     <string name="discover_channels">Descobrir canals</string>
     <string name="search_channels">Cercar canals</string>
     <string name="channel_discovery_opt_in_title">Nota de privadesa</string>
-    <string name="channel_discover_opt_in_message"><![CDATA[El descobriment de canals empra un servei de tercers anomenat <a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Utilitzar aquesta característica transmetrà la teva adreça IP i els termes de la cerca a aquest servei. Consulta la seva <a href="https://search.jabbercat.org/privacy">Política de Privadesa</a> per a obtenir més informació.]]></string>
     <string name="action_add_existing_account">Afegir compte existent</string>
     <string name="use_own_provider">Emprar proveïdor propi</string>
     <string name="this_looks_like_a_domain">Això sembla una adreça de domini</string>
