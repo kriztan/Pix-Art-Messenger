@@ -909,6 +909,7 @@
     <string name="discover_channels">Descubrir canales</string>
     <string name="search_channels">Buscar canales</string>
     <string name="channel_discovery_opt_in_title">Aviso de privacidad</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[El descubrimiento de canales usa un servicio de terceros llamado<a href="https://search.jabber.network">search.jabber.network</a><br><br>Esta característica enviará tu dirección IP y términos de búsqueda a ese servicio. Comprueba su<a href="https://search.jabber.network/privacy">Política de Privacidad</a> para más información.]]></string>
     <string name="action_add_existing_account">Añadir cuenta existente</string>
     <string name="use_own_provider">Usar proveedor propio</string>
     <string name="this_looks_like_a_domain">Esto parece la dirección de un dominio</string>
@@ -971,4 +972,5 @@
     <string name="intro_desc_start_chatting3">¡Enhorabuena!\nVamos a divertirnos…</string>
     <string name="intro_privacy">Tu privacidad\nTu soberanía</string>
     <string name="intro_desc_privacy">Pix-Art Messenger no vende ni analiza tus datos y tú decides que permisos otorgas.</string>
+    <string name="no_results">No ha resultados</string>
 </resources>
