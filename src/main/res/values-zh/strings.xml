@@ -956,6 +956,7 @@ Pix-Arr Messenger</string>
     <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
     <string name="open_join_dialog">加入公共群聊</string>
     <string name="intro_optional_permissions">可选权限</string>
+    <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
 </resources>
