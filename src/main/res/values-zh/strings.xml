@@ -901,6 +901,7 @@
     <string name="discover_channels">发现群聊</string>
     <string name="search_channels">搜索群聊</string>
     <string name="channel_discovery_opt_in_title">隐私声明</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[群聊探索使用名为 <a href="https://search.jabber.network">search.jabber.network</a>的第三方服务。<br><br>使用此功能会将您的IP地址和搜索字词传输到该服务。有关详细信息，请参阅其<a href="https://search.jabber.network/privacy">隐私政策</a>。]]></string>
     <string name="action_add_existing_account">添加已有帐户</string>
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
@@ -934,7 +935,13 @@
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
     <string name="intro_desc_main">了解更多...</string>
+    <string name="welcome_header">欢迎来到\n
+Pix-Arr Messenger</string>
+    <string name="intro_required_permissions">所需权限:</string>
+    <string name="intro_desc_required_permissions">如果没有必须的储存权限的话，本应用将在向导末尾请求权限。其他权限都是可选。</string>
     <string name="intro_account">您的帐户</string>
+    <string name="intro_desc_account">如果您已经有了一个帐号，您可以以您的 Jabber-ID 和密码登录</string>
+    <string name="intro_start_chatting">联系人</string>
     <string name="intro_desc_open_chat">现在您就可以开始和别人聊天，分享位置、文件、音视频、图片和语音消息。</string>
     <string name="intro_chat_details">聊天详情</string>
     <string name="intro_desc_chat_details">想查看群聊详情吗？点击屏幕上方的群聊名称即可。</string>
@@ -945,5 +952,10 @@
     <string name="pref_show_intro">重新显示入门指南</string>
     <string name="show_intro_again">将重新显示入门指南</string>
     <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
+    <string name="intro_whats_xmpp">XMPP / Jabber / Pix-Art Messenger 是什么？</string>
+    <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
     <string name="open_join_dialog">加入公共群聊</string>
+    <string name="intro_optional_permissions">可选权限</string>
+    <string name="no_results">无结果</string>
+    <string name="file_transmission_cancelled">文件传输取消</string>
 </resources>
