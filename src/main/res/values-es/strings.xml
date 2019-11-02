@@ -496,6 +496,7 @@
     <string name="video_high">alta (1080p)</string>
     <string name="video_original">original (sin comprimir)</string>
     <string name="always">Siempre</string>
+    <string name="always_off">Siempre desactivado</string>
     <string name="battery_optimizations_enabled">Optimizaciones de uso de batería habilitadas</string>
     <string name="battery_optimizations_enabled_explained">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\nEs recomendable deshabilitarlas.</string>
     <string name="battery_optimizations_enabled_dialog">Tu dispositivo está realizando optimizaciones de uso de batería en Pix-Art Messenger que pueden hacer que los mensajes se retrasen o incluso hacer que se pierdan.\n\nEl sistema te preguntará ahora para deshabilitarlas.</string>
@@ -734,6 +735,7 @@
     <string name="pref_omemo_setting_summary_always">OMEMO se usará siempre en conversaciones de uno a uno y en grupos privados.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO se usará por defecto en nuevas conversaciones.</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO tendrá que ser activado explícitamente en nuevas conversaciones.</string>
+    <string name="pref_omemo_setting_summary_always_off">OMEMO no se usará nunca.</string>
     <string name="default_on">Activo por defecto</string>
     <string name="default_off">Desactivado por defecto</string>
     <string name="pref_theme_light">Tema claro</string>
