@@ -323,6 +323,7 @@ public final class MimeUtils {
         add("text/plain", "text");
         add("text/plain", "diff");
         add("text/plain", "po");     // reserve "pot" for vnd.ms-powerpoint
+        add("text/plain", "ass");
         add("text/richtext", "rtx");
         add("text/rtf", "rtf");
         add("text/text", "phps");

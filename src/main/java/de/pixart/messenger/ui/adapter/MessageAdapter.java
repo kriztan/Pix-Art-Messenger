@@ -634,29 +634,27 @@ public class MessageAdapter extends ArrayAdapter<Message> implements CopyTextVie
         viewHolder.richlinkview.setVisibility(View.GONE);
         viewHolder.download_button.setVisibility(View.VISIBLE);
         final String mimeType = message.getMimeType();
-        if (mimeType != null) {
-            if (message.getMimeType().contains("pdf")) {
-                viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_file_pdf_grey600_48dp, 0, 0, 0);
-                viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
-            } else if (message.getMimeType().contains("vcard")) {
-                try {
-                    showVCard(message, viewHolder);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else if (message.getMimeType().contains("calendar")) {
-                viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_calendar_grey600_48dp, 0, 0, 0);
-                viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
-            } else if (message.getMimeType().equals("application/vnd.android.package-archive")) {
-                try {
-                    showAPK(message, viewHolder);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_file_grey600_48dp, 0, 0, 0);
-                viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
+        if (mimeType != null && message.getMimeType().contains("pdf")) {
+            viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_file_pdf_grey600_48dp, 0, 0, 0);
+            viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
+        } else if (mimeType != null && message.getMimeType().contains("vcard")) {
+            try {
+                showVCard(message, viewHolder);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+        } else if (mimeType != null && message.getMimeType().contains("calendar")) {
+            viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_calendar_grey600_48dp, 0, 0, 0);
+            viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
+        } else if (mimeType != null && message.getMimeType().equals("application/vnd.android.package-archive")) {
+            try {
+                showAPK(message, viewHolder);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            viewHolder.download_button.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_file_grey600_48dp, 0, 0, 0);
+            viewHolder.download_button.setText(activity.getString(R.string.open_x_file, UIHelper.getFileDescriptionString(activity, message)));
         }
         viewHolder.download_button.setOnClickListener(v -> openDownloadable(message));
     }
