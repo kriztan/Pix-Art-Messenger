@@ -494,6 +494,7 @@
     <string name="video_high">高（1080p）</string>
     <string name="video_original">原文件(未压缩)</string>
     <string name="always">总是</string>
+    <string name="always_off">始终关闭</string>
     <string name="battery_optimizations_enabled">电池优化已启用</string>
     <string name="battery_optimizations_enabled_explained">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n建议禁用优化。</string>
     <string name="battery_optimizations_enabled_dialog">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n\n现在请您禁用优化。</string>
@@ -726,6 +727,7 @@
     <string name="pref_omemo_setting_summary_always">OMEMO将始终用于端对端和私人群聊。</string>
     <string name="pref_omemo_setting_summary_default_on">默认情况下，OMEMO将用于新对话。</string>
     <string name="pref_omemo_setting_summary_default_off">必须明确启用OMEMO才能进行新的对话。</string>
+    <string name="pref_omemo_setting_summary_always_off">关闭OMEMO加密</string>
     <string name="default_on">默认开启</string>
     <string name="default_off">默认关闭</string>
     <string name="pref_theme_light">亮色主题</string>
