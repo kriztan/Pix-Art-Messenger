@@ -976,4 +976,14 @@
     <string name="intro_desc_privacy">Pix-Art Messenger non venderà nè analizzerà i tuoi dati e tu decidi quali permessi vuoi dare.</string>
     <string name="no_results">Nessun risultato</string>
     <string name="file_transmission_cancelled">trasmissione del file annullata</string>
+    <string name="sharing_application_not_grant_permission">L\'applicazione che sta condividendo non ha concesso il permesso per accedere a questo file.</string>
+    <string name="group_chats_and_channels"><![CDATA[Conversazioni di Gruppo & Canali]]></string>
+    <string name="jabber_network">jabber.network</string>
+    <string name="local_server">Server locale</string>
+    <string name="pref_channel_discovery_summary">La maggior parte degli utenti dovrebbe scegliere \'jabber.network\' per migliori suggerimenti dall\'interezza dell\'ecosistema XMPP pubblico.</string>
+    <string name="pref_channel_discovery">Metodo di ricerca canali</string>
+    <string name="gp_disable">Disabilita</string>
+    <string name="gp_short">Breve</string>
+    <string name="gp_medium">Medio</string>
+    <string name="gp_long">Lungo</string>
 </resources>
