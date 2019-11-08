@@ -987,4 +987,5 @@
     <string name="gp_medium">Medio</string>
     <string name="gp_long">Largo</string>
     <string name="pref_notification_grace_period">Periodo de gracia</string>
+    <string name="pref_notification_grace_period_summary">Periodo de tiempo en el que se silencian las notificaciones después de detectar actividad en uno de tus otros dispositivos.</string>
 </resources>
