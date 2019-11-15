@@ -721,7 +721,6 @@
     <string name="default_off">Изключено по подразбиране</string>
     <string name="pref_theme_light">Светла тема</string>
     <string name="pref_theme_dark">Тъмна тема</string>
-    <string name="pref_theme_options_summary">Изберете цветовата палитра</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Избери профил</string>
     <string name="pref_font_size">Размер на шрифта</string>
