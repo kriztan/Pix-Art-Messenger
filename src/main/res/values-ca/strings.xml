@@ -132,7 +132,7 @@
     <string name="account_status_disabled">Deshabil·litar temporalment</string>
     <string name="account_status_online">Connectat</string>
     <string name="account_status_connecting">Connectant\u2026</string>
-    <string name="account_status_offline">Desconnectant</string>
+    <string name="account_status_offline">Fora de línia</string>
     <string name="account_status_unauthorized">No autorizat</string>
     <string name="account_status_not_found">Servidor no trobat</string>
     <string name="account_status_no_internet">Sense  connectivitat</string>
@@ -356,7 +356,7 @@
     <string name="password_should_not_be_empty">La contrasenya no pot ser buida</string>
     <string name="perform_action_with">Realitzar acció amb</string>
     <string name="no_affiliation">Sense afiliació</string>
-    <string name="no_role">Desconnectat</string>
+    <string name="no_role">Fora de línia</string>
     <string name="outcast">Refusat</string>
     <string name="member">Membre</string>
     <string name="advanced_mode">Mode avançat</string>
@@ -395,7 +395,7 @@
     <string name="avatar_has_been_published">La imatge de perfil ha sigut publicada!</string>
     <string name="sending_x_file">Enviant %s</string>
     <string name="offering_x_file">Oferint %s</string>
-    <string name="hide_offline">Amagar desconnectats</string>
+    <string name="hide_offline">Amaga el fora de línia</string>
     <string name="is_typing">Està escrivint...</string>
     <string name="pref_chat_states">Notificació d\'escriptura</string>
     <string name="pref_chat_states_summary">Permetre als teus contactes saber quant estàs escrivint un missatge</string>
@@ -489,6 +489,10 @@
     <string name="pref_picture_quality_summary">Redimensionar i comprimir les imatges</string>
     <string name="pref_video_quality">Qualitat de vídeo </string>
     <string name="pref_video_quality_summary">Redimensionar i comprimir els vídeos</string>
+    <string name="video_very_low">molt baix (144p)</string>
+    <string name="video_low">baix (360p)</string>
+    <string name="video_mid">mig (720p)</string>
+    <string name="video_high">alt (1080p)</string>
     <string name="video_original">original (sense comprimir)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions d\'ús de batería habil·litades</string>
@@ -638,7 +642,7 @@
     <string name="contact_is_typing">%s està escrivint...</string>
     <string name="one_participant">un Participant</string>
     <string name="more_participants">%d participants</string>
-    <string name="presence_offline">Desconnectat</string>
+    <string name="presence_offline">Fora de línia</string>
     <string name="block_stranger">Bloquejar desconegut</string>
     <string name="block_entire_domain">Bloquejar el domini complet</string>
     <string name="pref_use_auto_rotate_summary">Girar imatges i vídeos en pantalla completa per a ajustar-se el tamany de la pantalla</string>
@@ -730,6 +734,7 @@
     <string name="default_off">Desactivar per defect</string>
     <string name="pref_theme_light">Tema clar</string>
     <string name="pref_theme_dark">Tema fosc</string>
+    <string name="pref_theme_auto">Automàtic</string>
     <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Escollir compte</string>
@@ -905,4 +910,13 @@
     <string name="this_looks_like_a_domain">Això sembla una adreça de domini</string>
     <string name="add_anway">Afegir igualment</string>
     <string name="this_looks_like_channel">Això sembla una adreça de canal</string>
+    <string name="no_backup_available">No hi ha cap còpia de seguretat disponible</string>
+    <string name="message_encryption">Missatge xifrat</string>
+    <string name="your_status">El teu estat</string>
+    <string name="intro_required_permissions">Permisos necessaris</string>
+    <string name="intro_account">El vostre compte</string>
+    <string name="intro_chat_details">Detalls del xat</string>
+    <string name="intro_whats_xmpp">Que és XMPP / Jabber / Pix-Art Messenger?</string>
+    <string name="open_join_dialog">Unir-se al canal públic…</string>
+    <string name="intro_optional_permissions">Permisos opcionals</string>
 </resources>
