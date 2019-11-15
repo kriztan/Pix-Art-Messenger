@@ -697,7 +697,6 @@
     <string name="destroy_room_dialog"> Vols destruir el grup de xat %s? Això eliminarà el grup permanentement.</string>
     <string name="destroy_room_succeed">Grupo de xat destruit</string>
     <string name="destroy_room_failed">No s\'ha pogut destruir el grup de xat</string>
-    <string name="no_write_access_in_public_muc">De moment no estàs participant en aquest grup i no pots escriure en él\n Si us plau, ves als detalls del grup pressionant <b>OK</b> i envía un missatge privat a un moderador, administrador o propietari fent un click llarg en el nom dels membres en la part superior de la llista per a sol·licitar accès d\'escriptura en el grup.</string>
     <string name="snooze">Dormitar</string>
     <string name="huawei_protected_apps">Aplicacions protegides</string>
     <string name="huawei_protected_apps_summary">Per a rebre notificacions inclús quant la pantalla està apagada, si us plau afegeix Pix-Art Messenger a la llista d\'aplicacions protegides.</string>
