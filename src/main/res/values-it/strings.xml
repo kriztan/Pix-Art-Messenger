@@ -740,7 +740,6 @@
     <string name="pref_theme_light">Tema chiaro</string>
     <string name="pref_theme_dark">Tema scuro</string>
     <string name="pref_theme_auto">Automatico</string>
-    <string name="pref_theme_options_summary">Scegli la palette di colori</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Scegli account</string>
     <string name="pref_font_size">Dimensioni carattere</string>
