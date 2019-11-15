@@ -741,6 +741,7 @@
     <string name="pref_theme_light">Tema claro</string>
     <string name="pref_theme_dark">Tema oscuro</string>
     <string name="pref_theme_auto">Automático</string>
+    <string name="pref_theme_options_summary">Selecciona el brillo del tema</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Elegir cuenta</string>
     <string name="pref_font_size">Tamaño de tipografía</string>
@@ -988,4 +989,8 @@
     <string name="pref_notification_grace_period">Periodo de gracia</string>
     <string name="pref_notification_grace_period_summary">Periodo de tiempo en el que se silencian las notificaciones después de detectar actividad en uno de tus otros dispositivos.</string>
     <string name="ask_for_writeaccess">Por favor, pide permiso de escritura</string>
+    <string name="pref_theme_blue">azul</string>
+    <string name="pref_theme_orange">naranja</string>
+    <string name="pref_theme_color_options_summary">Selecciona la paleta de color del tema</string>
+    <string name="pref_theme_color_options">Color del tema</string>
 </resources>
