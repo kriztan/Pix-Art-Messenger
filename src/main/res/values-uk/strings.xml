@@ -755,7 +755,6 @@
     <string name="pref_theme_light">Світла тема</string>
     <string name="pref_theme_dark">Темна тема</string>
     <string name="pref_theme_auto">Автоматично</string>
-    <string name="pref_theme_options_summary">Вибрати палітру кольорів</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Вибрати обліковий запис</string>
     <string name="pref_font_size">Розмір шрифту</string>
