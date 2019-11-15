@@ -496,6 +496,7 @@
     <string name="video_high">hoch (1080p)</string>
     <string name="video_original">original (unkomprimiert)</string>
     <string name="always">Immer</string>
+    <string name="always_off">Immer aus</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
     <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
     <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
@@ -734,6 +735,7 @@
     <string name="pref_omemo_setting_summary_always">OMEMO Verschlüsselung wird immer für Einzelchats und private Gruppenchats verwendet.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO Verschlüsselung wird standardmäßig für alle neuen Chats verwendet.</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO Verschlüsselung muss manuell für neue Chats aktiviert werden.</string>
+    <string name="pref_omemo_setting_summary_always_off">OMEMO Verschlüsselung wird nie verwendet.</string>
     <string name="default_on">Standarmäßig aktiviert</string>
     <string name="default_off">Standardmäßig deaktiviert</string>
     <string name="pref_theme_light">Helle Farben</string>
@@ -948,6 +950,7 @@
     <string name="intro_desc_required_permissions">Am Ende des Intros wirst du gefragt, Zugriff auf externen Speicher zuzulassen (erforderlich), wenn du ihn nicht bereits erteilt hast. Zusätzliche Berechtigungen werden bei Bedarf angefragt und sind optional.</string>
     <string name="intro_account">Dein Profil</string>
     <string name="intro_desc_account">Wenn du bereits ein Profil hast, kannst du dich einfach mit deiner Jabber-ID und deinem Passwort anmelden</string>
+    <string name="intro_start_chatting">Mit dem Chatten beginnen</string>
     <string name="intro_desc_start_chatting">Hast du den Adressbuchzugriff erlaubt, werden bereits vorhandene Jabber-Kontakte automatisch in deiner Kontaktliste angezeigt. Andernfalls füge einfach Jabber-IDs hinzu</string>
     <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
     <string name="intro_chat_details">Chat-Details</string>
@@ -971,4 +974,23 @@
     <string name="intro_desc_start_chatting3">Herzlichen Glückwunsch!\nJetzt geht\'s los und viel Spaß…</string>
     <string name="intro_privacy">Deine Privatsphäre\nDeine Souveränität</string>
     <string name="intro_desc_privacy">Pix-Art Messenger wird deine Daten weder verkaufen noch analysieren und du entscheidest, welche Berechtigungen du erteilst.</string>
+    <string name="no_results">Keine Ergebnisse</string>
+    <string name="file_transmission_cancelled">Übertragung abgebrochen</string>
+    <string name="sharing_application_not_grant_permission">Die teilende App erteilte keine Berechtigung für den Zugriff auf diese Datei.</string>
+    <string name="group_chats_and_channels"><![CDATA[Gruppenchats & Kanäle]]></string>
+    <string name="jabber_network">jabber.network</string>
+    <string name="local_server">Lokaler Server</string>
+    <string name="pref_channel_discovery_summary">Die meisten Benutzer sollten \'jabber.network\' wählen, um bessere Vorschläge aus dem gesamten öffentlichen XMPP-Netzwerk zu erhalten.</string>
+    <string name="pref_channel_discovery">Methode zur Kanalsuche</string>
+    <string name="gp_disable">Deaktivieren</string>
+    <string name="gp_short">Kurz</string>
+    <string name="gp_medium">Mittel</string>
+    <string name="gp_long">Lang</string>
+    <string name="pref_notification_grace_period">Schonfrist</string>
+    <string name="pref_notification_grace_period_summary">Die Zeitspanne, in der Benachrichtigungen nach der Erkennung von Aktivitäten auf einem deiner anderen Geräte unterdrückt werden.</string>
+    <string name="ask_for_writeaccess">Frage nach Schreibrechten</string>
+    <string name="pref_theme_blue">blau</string>
+    <string name="pref_theme_orange">orange</string>
+    <string name="pref_theme_color_options_summary">Wähle das Farbschema</string>
+    <string name="pref_theme_color_options">Designfarbe</string>
 </resources>
