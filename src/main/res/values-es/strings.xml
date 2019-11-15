@@ -741,7 +741,6 @@
     <string name="pref_theme_light">Tema claro</string>
     <string name="pref_theme_dark">Tema oscuro</string>
     <string name="pref_theme_auto">Automático</string>
-    <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Elegir cuenta</string>
     <string name="pref_font_size">Tamaño de tipografía</string>
