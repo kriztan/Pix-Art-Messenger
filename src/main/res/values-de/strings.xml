@@ -741,7 +741,6 @@
     <string name="pref_theme_light">Helle Farben</string>
     <string name="pref_theme_dark">Dunkle Farben</string>
     <string name="pref_theme_auto">Automatisch</string>
-    <string name="pref_theme_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_options">Design</string>
     <string name="chooce_account">Profil wählen</string>
     <string name="pref_font_size">Schriftgröße</string>
