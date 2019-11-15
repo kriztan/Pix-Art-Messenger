@@ -974,4 +974,19 @@
     <string name="intro_desc_start_chatting3">Herzlichen Glückwunsch!\nJetzt geht\'s los und viel Spaß…</string>
     <string name="intro_privacy">Deine Privatsphäre\nDeine Souveränität</string>
     <string name="intro_desc_privacy">Pix-Art Messenger wird deine Daten weder verkaufen noch analysieren und du entscheidest, welche Berechtigungen du erteilst.</string>
+    <string name="no_results">Keine Ergebnisse</string>
+    <string name="file_transmission_cancelled">Übertragung abgebrochen</string>
+    <string name="sharing_application_not_grant_permission">Die teilende App erteilte keine Berechtigung für den Zugriff auf diese Datei.</string>
+    <string name="group_chats_and_channels"><![CDATA[Gruppenchats & Kanäle]]></string>
+    <string name="jabber_network">jabber.network</string>
+    <string name="local_server">Lokaler Server</string>
+    <string name="pref_channel_discovery_summary">Die meisten Benutzer sollten \'jabber.network\' wählen, um bessere Vorschläge aus dem gesamten öffentlichen XMPP-Netzwerk zu erhalten.</string>
+    <string name="pref_channel_discovery">Methode zur Kanalsuche</string>
+    <string name="gp_disable">Deaktivieren</string>
+    <string name="gp_short">Kurz</string>
+    <string name="gp_medium">Mittel</string>
+    <string name="gp_long">Lang</string>
+    <string name="pref_notification_grace_period">Schonfrist</string>
+    <string name="pref_notification_grace_period_summary">Die Zeitspanne, in der Benachrichtigungen nach der Erkennung von Aktivitäten auf einem deiner anderen Geräte unterdrückt werden.</string>
+    <string name="ask_for_writeaccess">Frage nach Schreibrechten</string>
 </resources>
