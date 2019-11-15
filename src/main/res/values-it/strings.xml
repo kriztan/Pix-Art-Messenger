@@ -702,7 +702,6 @@
     <string name="destroy_room_dialog">Vuoi eliminare la conversazione di gruppo %s? Questo rimuoverà questa conversazione di gruppo permanentemente.</string>
     <string name="destroy_room_succeed">Conversazione di gruppo eliminata con successo</string>
     <string name="destroy_room_failed">La conversazione di gruppo non può essere eliminata</string>
-    <string name="no_write_access_in_public_muc">Non stai partecipando a questa conversazione di gruppo e non hai accesso in scrittura al momento.\nPer favore vai ai dettagli della conversazione di gruppo premendo <b>OK</b> ed invia un messaggio privato al moderatore, amministratore o proprietario tenendo premuto sul nome di uno dei primi nomi dei membri in cima alla lista e chiedi l\'accesso in scrittura.</string>
     <string name="snooze">Posponi</string>
     <string name="huawei_protected_apps">App Protette</string>
     <string name="huawei_protected_apps_summary">Per continuare a ricevere notifiche, anche quando lo schermo è spento, è necessario inserire Pix-Art Messenger alla lista delle app protette.</string>
@@ -950,7 +949,6 @@
     <string name="intro_desc_required_permissions">Alla fine dell\'introduzione ti sarà chiesto di dare il permesso di archiviazione (obbligatorio), se già non l\'hai consentito. Altri permessi sono richiesti al bisogno e sono opzionali.</string>
     <string name="intro_account">Il tuo account</string>
     <string name="intro_desc_account">Se hai già un account, puoi semplicemente accedere con il tuo ID Jabber e password</string>
-    <string name="intro_start_chatting">Contatti</string>
     <string name="intro_desc_start_chatting">Se hai dato il permesso di leggere i contatti, i contatti Jabber già esistenti saranno automaticamente mostrati nella tua rubrica. Altrimenti, aggiungi semplicemente gli ID Jabber</string>
     <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
     <string name="intro_chat_details">Dettagli della conversazione</string>
@@ -969,7 +967,6 @@
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
     <string name="intro_optional_permissions">Permessi opzionali</string>
     <string name="intro_desc_optional_permissions2">Il permesso per la localizzazione è richiesto se vuoi condividere la tua posizione.\nPer condividere messaggi vocali è richiesto l\'accesso al tuo microfono.</string>
-    <string name="intro_desc_account3">Hai la possibilità di importare un account esistente.\nTocca il pulsante di importazione. Se ci sono file di backup disponibili, saranno mostrati. Scegli un account da importare.</string>
     <string name="intro_desc_start_chatting2">Puoi anche aggiungere, creare o unirti a conversazioni di gruppo - anche chiamate MUC. Si dividono in conversazioni di gruppo private e conversazioni di gruppo pubbliche - chiamate anche canali.</string>
     <string name="intro_desc_start_chatting3">Congratulazioni!\nComincia e divertiti…</string>
     <string name="intro_privacy">La tua privacy\nLa tua sovranità</string>
