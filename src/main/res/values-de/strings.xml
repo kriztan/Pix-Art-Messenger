@@ -701,7 +701,6 @@
     <string name="destroy_room_dialog">Möchtest du den Gruppenchat %s auflösen? Der Gruppenchat wird dabei vollständig vom Server gelöscht.</string>
     <string name="destroy_room_succeed">Gruppenchat erfolgreich gelöscht</string>
     <string name="destroy_room_failed">Gruppenchat konnte nicht aufgelöst werden</string>
-    <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
     <string name="snooze">Schlummern</string>
     <string name="huawei_protected_apps">Geschützte Apps</string>
     <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
@@ -947,7 +946,6 @@
     <string name="intro_desc_required_permissions">Am Ende des Intros wirst du gefragt, Zugriff auf externen Speicher zuzulassen (erforderlich), wenn du ihn nicht bereits erteilt hast. Zusätzliche Berechtigungen werden bei Bedarf angefragt und sind optional.</string>
     <string name="intro_account">Dein Profil</string>
     <string name="intro_desc_account">Wenn du bereits ein Profil hast, kannst du dich einfach mit deiner Jabber-ID und deinem Passwort anmelden</string>
-    <string name="intro_start_chatting">Kontakte</string>
     <string name="intro_desc_start_chatting">Hast du den Adressbuchzugriff erlaubt, werden bereits vorhandene Jabber-Kontakte automatisch in deiner Kontaktliste angezeigt. Andernfalls füge einfach Jabber-IDs hinzu</string>
     <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
     <string name="intro_chat_details">Chat-Details</string>
@@ -966,7 +964,6 @@
     <string name="open_join_dialog">Öffentlichem Channel beitreten…</string>
     <string name="intro_optional_permissions">Optionale Berechtigungen</string>
     <string name="intro_desc_optional_permissions2">Wenn du deinen Standort teilen möchtest, sind Berechtigungen auf deinen Standort erforderlich.\nFür den Versand von Sprachnachrichten ist es erforderlich, Zugang zum Mikrofon zu erhalten.</string>
-    <string name="intro_desc_account3">Du hast die Möglichkeit, ein bestehendes Profil zu importieren.\nTippe einfach auf Profil importieren. Wenn Backup-Dateien verfügbar sind, werden diese angezeigt. Wähle ein Profil aus, das importiert werden soll.</string>
     <string name="intro_desc_start_chatting2">Du kannst auch Gruppenchats - sogenannte MUCs (Multi-User-Chats) - hinzufügen, erstellen oder beitreten. Man unterscheidet zwischen privaten Gruppenchats und öffentlichen Gruppenchats - sogenannten Kanälen.</string>
     <string name="intro_desc_start_chatting3">Herzlichen Glückwunsch!\nJetzt geht\'s los und viel Spaß…</string>
     <string name="intro_privacy">Deine Privatsphäre\nDeine Souveränität</string>
