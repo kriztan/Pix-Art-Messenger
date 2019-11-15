@@ -496,6 +496,7 @@
     <string name="video_high">hoch (1080p)</string>
     <string name="video_original">original (unkomprimiert)</string>
     <string name="always">Immer</string>
+    <string name="always_off">Immer aus</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
     <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
     <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei Pix-Art Messenger an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
@@ -701,6 +702,7 @@
     <string name="destroy_room_dialog">Möchtest du den Gruppenchat %s auflösen? Der Gruppenchat wird dabei vollständig vom Server gelöscht.</string>
     <string name="destroy_room_succeed">Gruppenchat erfolgreich gelöscht</string>
     <string name="destroy_room_failed">Gruppenchat konnte nicht aufgelöst werden</string>
+    <string name="no_write_access_in_public_muc">Du bist kein Mitglied dieser Gruppe und hast aktuell keine Erlaubnis zum Schreiben.\nBitte gehe in die Gruppenchat-Details indem du <b>OK</b> klickst und sende eine private Nachricht an einen Moderator, Administrator oder Eigentümer dadurch, dass du auf den Namen eines dieser Mitglieder am Anfang der Liste lange klickst und bitte um Erlaubnis schreiben zu dürfen.</string>
     <string name="snooze">Schlummern</string>
     <string name="huawei_protected_apps">Geschützte Apps</string>
     <string name="huawei_protected_apps_summary">Um Benachrichtigungen zu erhalten, selbst wenn der Bildschirm ausgeschaltet ist, füge Pix-Art Messenger bitte der Liste geschützter Apps hinzu.</string>
@@ -733,6 +735,7 @@
     <string name="pref_omemo_setting_summary_always">OMEMO Verschlüsselung wird immer für Einzelchats und private Gruppenchats verwendet.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO Verschlüsselung wird standardmäßig für alle neuen Chats verwendet.</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO Verschlüsselung muss manuell für neue Chats aktiviert werden.</string>
+    <string name="pref_omemo_setting_summary_always_off">OMEMO Verschlüsselung wird nie verwendet.</string>
     <string name="default_on">Standarmäßig aktiviert</string>
     <string name="default_off">Standardmäßig deaktiviert</string>
     <string name="pref_theme_light">Helle Farben</string>
@@ -908,6 +911,7 @@
     <string name="discover_channels">Kanäle entdecken</string>
     <string name="search_channels">Kanäle suchen</string>
     <string name="channel_discovery_opt_in_title">Hinweis zum Datenschutz</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[Die Kanal-Entdeckung verwendet einen Drittanbieterservice namens <a href="https://search.jabber.network">search.jabber.network</a>.<br><br>Wenn du diese Funktion verwendest, werden deine IP-Adresse und deine Suchbegriffe an diesen Dienst übertragen. Weitere Informationen findest du in der <a href="https://search.jabber.network/privacy">Datenschutzerklärung</a>.]]></string>
     <string name="action_add_existing_account">Bestehendes Profil hinzufügen</string>
     <string name="use_own_provider">Nutze eigenen Provider</string>
     <string name="this_looks_like_a_domain">Dies sieht aus wie eine Domain-Adresse</string>
@@ -946,6 +950,7 @@
     <string name="intro_desc_required_permissions">Am Ende des Intros wirst du gefragt, Zugriff auf externen Speicher zuzulassen (erforderlich), wenn du ihn nicht bereits erteilt hast. Zusätzliche Berechtigungen werden bei Bedarf angefragt und sind optional.</string>
     <string name="intro_account">Dein Profil</string>
     <string name="intro_desc_account">Wenn du bereits ein Profil hast, kannst du dich einfach mit deiner Jabber-ID und deinem Passwort anmelden</string>
+    <string name="intro_start_chatting">Mit dem Chatten beginnen</string>
     <string name="intro_desc_start_chatting">Hast du den Adressbuchzugriff erlaubt, werden bereits vorhandene Jabber-Kontakte automatisch in deiner Kontaktliste angezeigt. Andernfalls füge einfach Jabber-IDs hinzu</string>
     <string name="intro_desc_open_chat">Jetzt kannst du mit dem Chatten beginnen, Orte, Dateien, Videos und Bilder freigeben oder Sprachnachrichten senden.</string>
     <string name="intro_chat_details">Chat-Details</string>
@@ -964,6 +969,7 @@
     <string name="open_join_dialog">Öffentlichem Channel beitreten…</string>
     <string name="intro_optional_permissions">Optionale Berechtigungen</string>
     <string name="intro_desc_optional_permissions2">Wenn du deinen Standort teilen möchtest, sind Berechtigungen auf deinen Standort erforderlich.\nFür den Versand von Sprachnachrichten ist es erforderlich, Zugang zum Mikrofon zu erhalten.</string>
+    <string name="intro_desc_account3">Du hast die Möglichkeit, ein bestehendes Konto zu importieren.\nWenn Backup-Dateien verfügbar sind, werden diese angezeigt.</string>
     <string name="intro_desc_start_chatting2">Du kannst auch Gruppenchats - sogenannte MUCs (Multi-User-Chats) - hinzufügen, erstellen oder beitreten. Man unterscheidet zwischen privaten Gruppenchats und öffentlichen Gruppenchats - sogenannten Kanälen.</string>
     <string name="intro_desc_start_chatting3">Herzlichen Glückwunsch!\nJetzt geht\'s los und viel Spaß…</string>
     <string name="intro_privacy">Deine Privatsphäre\nDeine Souveränität</string>
