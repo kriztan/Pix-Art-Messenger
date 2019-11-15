@@ -730,7 +730,6 @@
     <string name="default_off">Выключено по умолчанию</string>
     <string name="pref_theme_light">Светлое оформление</string>
     <string name="pref_theme_dark">Тёмное оформление</string>
-    <string name="pref_theme_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Выберите аккаунт</string>
     <string name="pref_font_size">Размер Шрифта</string>
