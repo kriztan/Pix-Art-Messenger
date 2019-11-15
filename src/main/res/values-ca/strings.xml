@@ -734,7 +734,6 @@
     <string name="pref_theme_light">Tema clar</string>
     <string name="pref_theme_dark">Tema fosc</string>
     <string name="pref_theme_auto">Automàtic</string>
-    <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
     <string name="chooce_account">Escollir compte</string>
     <string name="pref_font_size">Tamanys de tipografía</string>
