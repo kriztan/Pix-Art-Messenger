@@ -640,7 +640,6 @@
     <string name="default_off">Standaard uit</string>
     <string name="pref_theme_light">Licht thema</string>
     <string name="pref_theme_dark">Donker thema</string>
-    <string name="pref_theme_options_summary">Kies het kleurenpalet</string>
     <string name="pref_theme_options">Thema</string>
     <string name="pref_font_size">Lettergrootte</string>
     <string name="pref_font_size_summary">De relatieve lettergrootte in de app.</string>
