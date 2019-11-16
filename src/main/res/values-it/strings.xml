@@ -950,6 +950,7 @@
     <string name="intro_desc_required_permissions">Alla fine dell\'introduzione ti sarà chiesto di dare il permesso di archiviazione (obbligatorio), se già non l\'hai consentito. Altri permessi sono richiesti al bisogno e sono opzionali.</string>
     <string name="intro_account">Il tuo account</string>
     <string name="intro_desc_account">Se hai già un account, puoi semplicemente accedere con il tuo ID Jabber e password</string>
+    <string name="intro_start_chatting">Inizia a conversare</string>
     <string name="intro_desc_start_chatting">Se hai dato il permesso di leggere i contatti, i contatti Jabber già esistenti saranno automaticamente mostrati nella tua rubrica. Altrimenti, aggiungi semplicemente gli ID Jabber</string>
     <string name="intro_desc_open_chat">Ora puoi iniziare a chiaccherare, condividere posizioni, file, video e immagini o inviare messaggi vocali.</string>
     <string name="intro_chat_details">Dettagli della conversazione</string>
@@ -986,4 +987,9 @@
     <string name="gp_long">Lungo</string>
     <string name="pref_notification_grace_period">Periodo di Tregua</string>
     <string name="pref_notification_grace_period_summary">Il tempo durante il quale le notifiche saranno silenziate dopo che sarà rilevata dell\'attività su uno degli altri tuoi dispositivi.</string>
+    <string name="ask_for_writeaccess">Chiedi un accesso in scrittura</string>
+    <string name="pref_theme_blue">blu</string>
+    <string name="pref_theme_orange">arancio</string>
+    <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
+    <string name="pref_theme_color_options">Colore del tema</string>
 </resources>
