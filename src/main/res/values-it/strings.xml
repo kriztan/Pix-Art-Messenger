@@ -969,6 +969,7 @@
     <string name="open_join_dialog">Unisciti al canale pubblico…</string>
     <string name="intro_optional_permissions">Permessi opzionali</string>
     <string name="intro_desc_optional_permissions2">Il permesso per la localizzazione è richiesto se vuoi condividere la tua posizione.\nPer condividere messaggi vocali è richiesto l\'accesso al tuo microfono.</string>
+    <string name="intro_desc_account3">Hai la possibilità di importare un account esistente.\nSe ci sono file di backup disponibili, saranno mostrati.</string>
     <string name="intro_desc_start_chatting2">Puoi anche aggiungere, creare o unirti a conversazioni di gruppo - anche chiamate MUC. Si dividono in conversazioni di gruppo private e conversazioni di gruppo pubbliche - chiamate anche canali.</string>
     <string name="intro_desc_start_chatting3">Congratulazioni!\nComincia e divertiti…</string>
     <string name="intro_privacy">La tua privacy\nLa tua sovranità</string>
