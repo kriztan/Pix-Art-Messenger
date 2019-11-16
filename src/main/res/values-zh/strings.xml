@@ -86,6 +86,7 @@
     <string name="your_nick_has_been_changed">您的昵称已更改</string>
     <string name="send_unencrypted">未加密发送</string>
     <string name="decryption_failed">解密失败。可能您没有合适的私钥。</string>
+    <string name="openkeychain_required">OpenKeychain</string>
     <string name="openkeychain_required_long">Pix-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密、解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
     <string name="restart">重启</string>
     <string name="install">安装</string>
@@ -145,6 +146,9 @@
     <string name="account_status_incompatible_server">不兼容的服务器</string>
     <string name="account_status_stream_error">传输错误</string>
     <string name="encryption_choice_unencrypted">未加密</string>
+    <string name="encryption_choice_otr">OTR</string>
+    <string name="encryption_choice_pgp">OpenPGP</string>
+    <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">编辑帐户</string>
     <string name="mgmt_account_delete">删除帐户</string>
     <string name="mgmt_account_publish_avatar">发布头像</string>
@@ -156,6 +160,7 @@
     <string name="mgmt_account_delete_confirm_message">如果您删除了帐户，则本地对话历史记录将丢失。\n\n如果您从服务器删除帐户，则您的帐户也将从服务器中删除，在注册新帐户之前，您将无法登录。</string>
     <string name="attach_record_voice">语音录制</string>
     <string name="account_settings_jabber_id">Jabber用户名</string>
+    <string name="account_settings_example_jabber_id">username@pix-art.de</string>
     <string name="password">密码</string>
     <string name="invalid_jid">Jabber用户名无效</string>
     <string name="error_out_of_memory">内存不足。图像太大了</string>
@@ -445,6 +450,7 @@
     <string name="pref_dnd_on_silent_mode_summary">当设备静音时，将您标记为“请勿打扰”状态</string>
     <string name="pref_treat_vibrate_as_silent">将振动看作静音</string>
     <string name="pref_treat_vibrate_as_dnd_summary">当设备处于振动状态时，将您标记为“请勿打扰”</string>
+    <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">用证书添加帐户</string>
     <string name="unable_to_parse_certificate">无法解析证书</string>
     <string name="authenticate_with_certificate">留空以验证w/证书</string>
@@ -488,6 +494,7 @@
     <string name="video_high">高（1080p）</string>
     <string name="video_original">原文件(未压缩)</string>
     <string name="always">总是</string>
+    <string name="always_off">始终关闭</string>
     <string name="battery_optimizations_enabled">电池优化已启用</string>
     <string name="battery_optimizations_enabled_explained">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n建议禁用优化。</string>
     <string name="battery_optimizations_enabled_dialog">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n\n现在请您禁用优化。</string>
@@ -687,7 +694,6 @@
     <string name="destroy_room_dialog">您想解散群聊%s吗？</string>
     <string name="destroy_room_succeed">群聊成功解散</string>
     <string name="destroy_room_failed">无法解散群聊</string>
-    <string name="no_write_access_in_public_muc">您没有参与此群聊所以现在不能发消息。\n请点<b>是</b>，进入群聊详情，然后长按任何一个管理员的名称，发送一条私信。</string>
     <string name="snooze">稍后再响</string>
     <string name="huawei_protected_apps">受保护的应用</string>
     <string name="huawei_protected_apps_summary">要持续接收通知，即使屏幕关闭，您也需要将Pix-Art聊天添加到受保护的应用列表中。</string>
@@ -720,12 +726,10 @@
     <string name="pref_omemo_setting_summary_always">OMEMO将始终用于端对端和私人群聊。</string>
     <string name="pref_omemo_setting_summary_default_on">默认情况下，OMEMO将用于新对话。</string>
     <string name="pref_omemo_setting_summary_default_off">必须明确启用OMEMO才能进行新的对话。</string>
+    <string name="pref_omemo_setting_summary_always_off">关闭OMEMO加密</string>
     <string name="default_on">默认开启</string>
     <string name="default_off">默认关闭</string>
-    <string name="pref_theme_light">亮色主题</string>
-    <string name="pref_theme_dark">暗色主题</string>
     <string name="pref_theme_auto">自动</string>
-    <string name="pref_theme_options_summary">选择调色板</string>
     <string name="pref_theme_options">界面主题</string>
     <string name="chooce_account">选择帐户</string>
     <string name="pref_font_size">字体大小</string>
@@ -737,6 +741,7 @@
     <string name="not_encrypted_for_this_device">该条消息没有为设备加密</string>
     <string name="no_microphone_permission">Pix-Art聊天需要访问麦克风</string>
     <string name="search_messages">搜索消息</string>
+    <string name="gif">GIF</string>
     <string name="view_conversation">查看对话</string>
     <string name="web_address">网址</string>
     <string name="jabber_id_copied_to_clipboard">将Jabber用户名复制到剪贴板</string>
@@ -894,7 +899,7 @@
     <string name="discover_channels">发现群聊</string>
     <string name="search_channels">搜索群聊</string>
     <string name="channel_discovery_opt_in_title">隐私声明</string>
-    <string name="channel_discover_opt_in_message"><![CDATA[群聊探索使用名为<a href="https://search.jabbercat.org">的第三方服务。jabbercat.org </a>。<br><br>使用此功能会将您的IP地址和搜索字词传输到该服务。有关详细信息，请参阅其<a href="https://search.jabbercat.org/privacy">隐私政策</a>。]]></string>
+    <string name="channel_discover_opt_in_message"><![CDATA[群聊探索使用名为 <a href="https://search.jabber.network">search.jabber.network</a>的第三方服务。<br><br>使用此功能会将您的IP地址和搜索字词传输到该服务。有关详细信息，请参阅其<a href="https://search.jabber.network/privacy">隐私政策</a>。]]></string>
     <string name="action_add_existing_account">添加已有帐户</string>
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
@@ -927,7 +932,13 @@
     <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
+    <string name="intro_desc_main">了解更多...</string>
+    <string name="welcome_header">欢迎来到\n
+Pix-Arr Messenger</string>
+    <string name="intro_required_permissions">所需权限:</string>
+    <string name="intro_desc_required_permissions">如果没有必须的储存权限的话，本应用将在向导末尾请求权限。其他权限都是可选。</string>
     <string name="intro_account">您的帐户</string>
+    <string name="intro_desc_account">如果您已经有了一个帐号，您可以以您的 Jabber-ID 和密码登录</string>
     <string name="intro_desc_open_chat">现在您就可以开始和别人聊天，分享位置、文件、音视频、图片和语音消息。</string>
     <string name="intro_chat_details">聊天详情</string>
     <string name="intro_desc_chat_details">想查看群聊详情吗？点击屏幕上方的群聊名称即可。</string>
@@ -938,5 +949,11 @@
     <string name="pref_show_intro">重新显示入门指南</string>
     <string name="show_intro_again">将重新显示入门指南</string>
     <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
+    <string name="intro_whats_xmpp">XMPP / Jabber / Pix-Art Messenger 是什么？</string>
+    <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
     <string name="open_join_dialog">加入公共群聊</string>
+    <string name="intro_optional_permissions">可选权限</string>
+    <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
+    <string name="no_results">无结果</string>
+    <string name="file_transmission_cancelled">文件传输取消</string>
 </resources>
