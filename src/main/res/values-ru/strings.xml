@@ -729,8 +729,6 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO будет включен по умолчанию для новых разговоров.</string>
     <string name="default_on">Включено по умолчанию</string>
     <string name="default_off">Выключено по умолчанию</string>
-    <string name="pref_theme_light">Светлое оформление</string>
-    <string name="pref_theme_dark">Тёмное оформление</string>
     <string name="pref_theme_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Выберите аккаунт</string>
