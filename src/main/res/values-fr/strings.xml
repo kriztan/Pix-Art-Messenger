@@ -719,8 +719,6 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO devra être activé explicitement pour les nouvelles conversations.</string>
     <string name="default_on">Activé par défaut</string>
     <string name="default_off">Désactivé par défaut</string>
-    <string name="pref_theme_light">Thème clair</string>
-    <string name="pref_theme_dark">Thème sombre</string>
     <string name="pref_theme_options_summary">Sélectionner la palette de couleurs</string>
     <string name="pref_theme_options">Thème</string>
     <string name="chooce_account">Choisir un compte</string>
