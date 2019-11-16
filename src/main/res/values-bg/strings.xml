@@ -720,8 +720,6 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO трябва да бъде включен изрично за нови разговори.</string>
     <string name="default_on">Включено по подразбиране</string>
     <string name="default_off">Изключено по подразбиране</string>
-    <string name="pref_theme_light">Светла тема</string>
-    <string name="pref_theme_dark">Тъмна тема</string>
     <string name="pref_theme_options_summary">Изберете цветовата палитра</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Избери профил</string>
