@@ -738,6 +738,8 @@
     <string name="pref_omemo_setting_summary_always_off">OMEMO no se usará nunca.</string>
     <string name="default_on">Activo por defecto</string>
     <string name="default_off">Desactivado por defecto</string>
+    <string name="pref_theme_light">Luminoso</string>
+    <string name="pref_theme_dark">Oscuro</string>
     <string name="pref_theme_auto">Automático</string>
     <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
@@ -987,6 +989,8 @@
     <string name="pref_notification_grace_period">Periodo de gracia</string>
     <string name="pref_notification_grace_period_summary">Periodo de tiempo en el que se silencian las notificaciones después de detectar actividad en uno de tus otros dispositivos.</string>
     <string name="ask_for_writeaccess">Por favor, pide permiso de escritura</string>
+    <string name="pref_theme_blue">Azul</string>
+    <string name="pref_theme_orange">Naranja</string>
     <string name="pref_theme_color_options_summary">Selecciona la paleta de color del tema</string>
     <string name="pref_theme_color_options">Color del tema</string>
 </resources>
