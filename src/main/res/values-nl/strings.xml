@@ -638,8 +638,6 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO zal standaard gebruikt worden voor nieuwe gesprekken.</string>
     <string name="default_on">Standaard aan</string>
     <string name="default_off">Standaard uit</string>
-    <string name="pref_theme_light">Licht thema</string>
-    <string name="pref_theme_dark">Donker thema</string>
     <string name="pref_theme_options_summary">Kies het kleurenpalet</string>
     <string name="pref_theme_options">Thema</string>
     <string name="pref_font_size">Lettergrootte</string>
