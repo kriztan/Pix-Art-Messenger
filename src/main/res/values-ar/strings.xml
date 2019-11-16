@@ -454,8 +454,6 @@
     <string name="pref_omemo_setting">التشفير عبر OMEMO</string>
     <string name="default_on">نشط افتراضيا</string>
     <string name="default_off">مُعطّل افتراضيا</string>
-    <string name="pref_theme_light">سمة فاتحة</string>
-    <string name="pref_theme_dark">سمة داكنة</string>
     <string name="pref_theme_options_summary">اختر لوحة الألوان</string>
     <string name="pref_theme_options">السمة</string>
     <string name="chooce_account">اختر حسابا</string>
