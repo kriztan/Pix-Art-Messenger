@@ -738,6 +738,8 @@
     <string name="pref_omemo_setting_summary_always_off">OMEMO Verschlüsselung wird nie verwendet.</string>
     <string name="default_on">Standarmäßig aktiviert</string>
     <string name="default_off">Standardmäßig deaktiviert</string>
+    <string name="pref_theme_light">Hell</string>
+    <string name="pref_theme_dark">Dunkel</string>
     <string name="pref_theme_auto">Automatisch</string>
     <string name="pref_theme_options_summary">Wähle die Helligkeit</string>
     <string name="pref_theme_options">Design</string>
@@ -987,6 +989,8 @@
     <string name="pref_notification_grace_period">Schonfrist</string>
     <string name="pref_notification_grace_period_summary">Die Zeitspanne, in der Benachrichtigungen nach der Erkennung von Aktivitäten auf einem deiner anderen Geräte unterdrückt werden.</string>
     <string name="ask_for_writeaccess">Frage nach Schreibrechten</string>
+    <string name="pref_theme_blue">Blau</string>
+    <string name="pref_theme_orange">Orange</string>
     <string name="pref_theme_color_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_color_options">Designfarbe</string>
 </resources>
