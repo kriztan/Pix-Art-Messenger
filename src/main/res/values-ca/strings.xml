@@ -732,8 +732,6 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO tindrà que ser activat explícítament en noves converses.</string>
     <string name="default_on">Activar per defecte</string>
     <string name="default_off">Desactivar per defect</string>
-    <string name="pref_theme_light">Tema clar</string>
-    <string name="pref_theme_dark">Tema fosc</string>
     <string name="pref_theme_auto">Automàtic</string>
     <string name="pref_theme_options_summary">Selecciona el color de la paleta</string>
     <string name="pref_theme_options">Tema</string>
