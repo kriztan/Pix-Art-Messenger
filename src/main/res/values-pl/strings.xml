@@ -731,8 +731,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="pref_omemo_setting_summary_always">OMEMO będzie używane zawsze dla wiadomości jeden do jednego oraz prywatnych rozmów grupowych.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO będzie domyślnie włączone dla nowych rozmów.</string>
-    <string name="pref_theme_light">Jasny motyw</string>
-    <string name="pref_theme_dark">Ciemny motyw</string>
     <string name="pref_theme_options_summary">Wybierz jasny albo ciemny motyw</string>
     <string name="pref_theme_options">Motyw</string>
     <string name="chooce_account">Wybierz konto</string>
