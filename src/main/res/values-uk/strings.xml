@@ -500,6 +500,7 @@
     <string name="video_high">висока (1080p)</string>
     <string name="video_original">Оригінал (не стиснений)</string>
     <string name="always">Завжди</string>
+    <string name="always_off">Завжди вимкнено</string>
     <string name="battery_optimizations_enabled">Оптимізацію батареї задіяно</string>
     <string name="battery_optimizations_enabled_explained">Ваш пристрій здійснює деяку агресивну оптимізацію Розмов для збереження заряду батареї, яка може призвести до затримки сповіщення або навіть втрати повідомлень.\nРекомендовано відключити цю оптимізацію.</string>
     <string name="battery_optimizations_enabled_dialog">Ваш пристрій здійснює деяку агресивну оптимізацію Розмов для збереження заряду батареї, яка може призвести до затримки сповіщення або навіть втрати повідомлень.\nПросимо Вас зараз відключити цю оптимзацію.</string>
@@ -718,6 +719,7 @@
 Увага:  1  Груповий чат буде видалений з сервера.</string>
     <string name="destroy_room_succeed">Групу успішно знищено</string>
     <string name="destroy_room_failed">Неможливо знищити групу</string>
+    <string name="no_write_access_in_public_muc">На разі ви не є учасником цього групового чату й не маєте права на створення дописів.\nБудь ласка, перейдіть до деталей чату, для цього натисніть на <b>OK</b> та надішліть приватне повідомлення модераторові, адміністраторові або власникові, натиснувши довго на ім\'я учасника нагорі списку й відтак попросіть право на допис у чаті.</string>
     <string name="snooze">Приспати</string>
     <string name="huawei_protected_apps">Захищені програми</string>
     <string name="huawei_protected_apps_summary">Щоб отримувати сповіщення, навіть коли екран погас, Вам потрібно додати програму до переліку програм, до яких не застосовується енергозаощадження.</string>
@@ -752,7 +754,10 @@
     <string name="pref_omemo_setting_summary_default_off">OMEMO потрібно буде включати окремо для кожної нової розмови.</string>
     <string name="default_on">За замовчування ввімкнено</string>
     <string name="default_off">За замовчуванням вимкнено</string>
+    <string name="pref_theme_light">Світла</string>
+    <string name="pref_theme_dark">Темна</string>
     <string name="pref_theme_auto">Автоматично</string>
+    <string name="pref_theme_options_summary">Виберіть колір теми</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Вибрати обліковий запис</string>
     <string name="pref_font_size">Розмір шрифту</string>
@@ -922,6 +927,7 @@
     <string name="discover_channels">Знайти канали</string>
     <string name="search_channels">Шукати канали</string>
     <string name="channel_discovery_opt_in_title">Можливе порушення приватності!</string>
+    <string name="channel_discover_opt_in_message"><![CDATA[Пошук каналів використовує сторонній сервіс <a href="https://search.jabber.network">search.jabbercat.org</a>.<br><br>Використання цієї функції передає Вашу IP-адресу та пошукові запити цьому сервісу. Перегляньте їхню <a href="https://search.jabber.network/privacy">політику конфіденційності</a>, щоб отримати більше інформації.]]></string>
     <string name="action_add_existing_account">Додати наявний обліковий запис</string>
     <string name="use_own_provider">Використати мого власного провайдера</string>
     <string name="this_looks_like_a_domain">Це схоже на ім\'я домену</string>
@@ -960,6 +966,7 @@
     <string name="intro_desc_required_permissions">Наприкінці заставки вас спитають про доступ до місця зберігання (обов\'язково), якщо ви ще не надали його. Вас також можуть запитати про додаткові дозволи.</string>
     <string name="intro_account">Ваш обліковий запис</string>
     <string name="intro_desc_account">Якщо ви вже маєте обліковий запис, ви можете увійти з вашим Jabber/XMPP ID та паролем</string>
+    <string name="intro_start_chatting">Почати чат</string>
     <string name="intro_desc_start_chatting">Якщо ви надали доступу до контактів, уже наявні контакти XMPP автоматично відображатимуться у вашій адресній книзі. В іншому випадку, просто додайте XMPP ID</string>
     <string name="intro_desc_open_chat">Тепер ви можете спілкуватися, ділитися вашим місцем розташування, файлами, відео та зображеннями, а також надсилати голосові повідомлення.</string>
     <string name="intro_chat_details">Деталі чату</string>
@@ -969,9 +976,20 @@
     <string name="pref_show_intro">Показати заставку повторно</string>
     <string name="show_intro_again">Заставку буде показано знову</string>
     <string name="show_intro_again_failed">Не вдалося перевстановити заставку екрану. Спробуйте ще раз…</string>
+    <string name="intro_whats_xmpp">Що таке XMPP/Jabber/Месенджер \"Pix-Art\"?</string>
     <string name="open_join_dialog">Приєднатися до відкритого каналу…</string>
     <string name="intro_optional_permissions">Необов\'язкові дозволи</string>
     <string name="intro_desc_start_chatting3">Вітання!\nТут ми почнемо нову подоріж…</string>
     <string name="intro_privacy">Ваша приватність\nВаша незалежність</string>
     <string name="intro_desc_privacy">Месенджер Pix-Art ніколи не продаватиме або аналізуватиме ваші дані. Ви самі визначатимете, які надавати дозволи.</string>
+    <string name="no_results">Нічого не знайдено</string>
+    <string name="file_transmission_cancelled">скасовано передачу файлу</string>
+    <string name="group_chats_and_channels"><![CDATA[Групові чати та канали]]></string>
+    <string name="local_server">Локальний сервер</string>
+    <string name="pref_channel_discovery">Метод пошуку каналів</string>
+    <string name="gp_disable">Вимкнути</string>
+    <string name="gp_short">Короткий</string>
+    <string name="gp_medium">Середній</string>
+    <string name="gp_long">Довгий</string>
+    <string name="pref_notification_grace_period">Час до блокування</string>
 </resources>
