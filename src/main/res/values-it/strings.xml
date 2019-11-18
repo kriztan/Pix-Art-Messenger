@@ -738,6 +738,8 @@
     <string name="pref_omemo_setting_summary_always_off">OMEMO non sarà mai utilizzato.</string>
     <string name="default_on">Predefinito attivo</string>
     <string name="default_off">Predefinito disattivo</string>
+    <string name="pref_theme_light">Chiaro</string>
+    <string name="pref_theme_dark">Scuro</string>
     <string name="pref_theme_auto">Automatico</string>
     <string name="pref_theme_options_summary">Scegli la palette di colori</string>
     <string name="pref_theme_options">Tema</string>
@@ -987,6 +989,8 @@
     <string name="pref_notification_grace_period">Periodo di Tregua</string>
     <string name="pref_notification_grace_period_summary">Il tempo durante il quale le notifiche saranno silenziate dopo che sarà rilevata dell\'attività su uno degli altri tuoi dispositivi.</string>
     <string name="ask_for_writeaccess">Chiedi un accesso in scrittura</string>
+    <string name="pref_theme_blue">Blu</string>
+    <string name="pref_theme_orange">Arancio</string>
     <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
     <string name="pref_theme_color_options">Colore del tema</string>
 </resources>
