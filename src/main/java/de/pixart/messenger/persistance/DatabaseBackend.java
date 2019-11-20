@@ -52,7 +52,6 @@ import de.pixart.messenger.entities.ServiceDiscoveryResult;
 import de.pixart.messenger.services.ShortcutService;
 import de.pixart.messenger.utils.CryptoHelper;
 import de.pixart.messenger.utils.FtsUtils;
-import de.pixart.messenger.utils.Resolver;
 import de.pixart.messenger.xmpp.InvalidJid;
 import de.pixart.messenger.xmpp.mam.MamReference;
 import rocks.xmpp.addr.Jid;
@@ -148,17 +147,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             + ") ON CONFLICT IGNORE"
             + ");";
 
-    private static String RESOLVER_RESULTS_TABLENAME = "resolver_results";
-    private static String CREATE_RESOLVER_RESULTS_TABLE = "create table " + RESOLVER_RESULTS_TABLENAME + "("
-            + Resolver.Result.DOMAIN + " TEXT,"
-            + Resolver.Result.HOSTNAME + " TEXT,"
-            + Resolver.Result.IP + " BLOB,"
-            + Resolver.Result.PRIORITY + " NUMBER,"
-            + Resolver.Result.DIRECT_TLS + " NUMBER,"
-            + Resolver.Result.AUTHENTICATED + " NUMBER,"
-            + Resolver.Result.PORT + " NUMBER,"
-            + "UNIQUE(" + Resolver.Result.DOMAIN + ") ON CONFLICT REPLACE"
-            + ");";
     private static String CREATE_MESSAGE_TIME_INDEX = "create INDEX message_time_index ON " + Message.TABLENAME + "(" + Message.TIME_SENT + ")";
     private static String CREATE_MESSAGE_CONVERSATION_INDEX = "create INDEX message_conversation_index ON " + Message.TABLENAME + "(" + Message.CONVERSATION + ")";
     private static String CREATE_MESSAGE_DELETED_INDEX = "create index message_deleted_index ON " + Message.TABLENAME + "(" + Message.DELETED + ")";
@@ -257,7 +245,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         db.execSQL(CREATE_SIGNED_PREKEYS_STATEMENT);
         db.execSQL(CREATE_IDENTITIES_STATEMENT);
         db.execSQL(CREATE_PRESENCE_TEMPLATES_STATEMENT);
-        db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
         db.execSQL(CREATE_MESSAGE_INDEX_TABLE);
         db.execSQL(CREATE_MESSAGE_INSERT_TRIGGER);
         db.execSQL(CREATE_MESSAGE_UPDATE_TRIGGER);
@@ -527,10 +514,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.MARKABLE + " NUMBER DEFAULT 0");
         }
 
-        if (oldVersion < 40 && newVersion >= 40) {
-            db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
-        }
-
         if (oldVersion < 42 && newVersion >= 42) {
             db.execSQL(CREATE_MESSAGE_INDEX_TABLE);
             db.execSQL(CREATE_MESSAGE_INSERT_TRIGGER);
@@ -560,17 +543,11 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             }
         }
 
-        if (oldVersion < 48 && newVersion >= 48) {
-            try {
-                db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
-            } catch (Exception e) {
-                //ignore
-            }
-        }
-
         if (oldVersion < 49 && newVersion >= 49) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.BODY_LANGUAGE);
         }
+
+        db.execSQL("DROP TABLE IF EXISTS resolver_results");
     }
 
     private boolean isColumnExisting(SQLiteDatabase db, String TableName, String ColumnName) {
@@ -704,34 +681,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         } catch (JSONException e) { /* result is still null */ }
 
         cursor.close();
-        return result;
-    }
-
-    public void saveResolverResult(String domain, Resolver.Result result) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = result.toContentValues();
-        contentValues.put(Resolver.Result.DOMAIN, domain);
-        db.insert(RESOLVER_RESULTS_TABLENAME, null, contentValues);
-    }
-
-    public synchronized Resolver.Result findResolverResult(String domain) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        String where = Resolver.Result.DOMAIN + "=?";
-        String[] whereArgs = {domain};
-        final Cursor cursor = db.query(RESOLVER_RESULTS_TABLENAME, null, where, whereArgs, null, null, null);
-        Resolver.Result result = null;
-        if (cursor != null) {
-            try {
-                if (cursor.moveToFirst()) {
-                    result = Resolver.Result.fromCursor(cursor);
-                }
-            } catch (Exception e) {
-                Log.d(Config.LOGTAG, "unable to find cached resolver result in database " + e.getMessage());
-                return null;
-            } finally {
-                cursor.close();
-            }
-        }
         return result;
     }
 
