@@ -34,7 +34,7 @@ jobs:
             - ~/.android
           key: android
       - store_artifacts:
-          path: build/outputs/apk/standard
+          path: build/outputs/apk/git
 
   publish:
     docker:
