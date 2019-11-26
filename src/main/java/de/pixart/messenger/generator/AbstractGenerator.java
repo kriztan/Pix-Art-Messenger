@@ -103,7 +103,7 @@ public abstract class AbstractGenerator {
             s.append(feature).append('<');
         }
         byte[] sha1 = md.digest(s.toString().getBytes());
-        return new String(Base64.encode(sha1, Base64.DEFAULT)).trim();
+        return Base64.encodeToString(sha1, Base64.NO_WRAP);
     }
 
     public static String getTimestamp(long time) {
