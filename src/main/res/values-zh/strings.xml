@@ -943,7 +943,7 @@ Pix-Arr Messenger</string>
     <string name="intro_account">您的帐户</string>
     <string name="intro_desc_account">如果您已经有了一个帐号，您可以以您的 Jabber-ID 和密码登录</string>
     <string name="intro_start_chatting">开始聊天</string>
-    <string name="intro_desc_start_chatting">如果您授予通讯录权限，现有的 Jabber 联系人会自动显示在您的通讯录中。否则，仅仅添加 Jabber-IDs。</string>
+    <string name="intro_desc_start_chatting">如果您授予通讯录权限，现有的 Jabber 联系人会自动显示在您的通讯录中。否则，仅仅添加 Jabber-ID。</string>
     <string name="intro_desc_open_chat">现在您就可以开始和别人聊天，分享位置、文件、音视频、图片和语音消息。</string>
     <string name="intro_chat_details">聊天详情</string>
     <string name="intro_desc_chat_details">想查看群聊详情吗？点击屏幕上方的群聊名称即可。</string>
@@ -963,10 +963,12 @@ Pix-Arr Messenger</string>
     <string name="intro_desc_optional_permissions2">如果要分享您的位置，需要获取位置的权限。\n如果要分享语言消息，需要麦克风的权限。</string>
     <string name="intro_desc_account3">您会有导入现有帐户的选项。\n如果有可用的备份文件，它们会显示出来。</string>
     <string name="intro_desc_start_chatting2">您可以添加，创建或加入多人聊天（MUCs）。与私密群组和公共群组有所区别的叫作频道。</string>
+    <string name="intro_desc_start_chatting3">祝贺！\n我们开始吧，用得开心…</string>
     <string name="intro_privacy">您的隐私\n您作主</string>
     <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
+    <string name="sharing_application_not_grant_permission">分享文件的应用没有授予该文件的权限。</string>
     <string name="group_chats_and_channels"><![CDATA[群组聊天及频道]]></string>
     <string name="jabber_network">jabber.network</string>
     <string name="local_server">本地服务器</string>
