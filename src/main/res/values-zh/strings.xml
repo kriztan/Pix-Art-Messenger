@@ -962,5 +962,14 @@ Pix-Arr Messenger</string>
     <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
+    <string name="group_chats_and_channels"><![CDATA[群组聊天及频道]]></string>
+    <string name="jabber_network">jabber.network</string>
     <string name="local_server">本地服务器</string>
+    <string name="pref_channel_discovery_summary">大多数用户会选择“jabber.network”以便从公共 XMPP 生态系统获得更好的建议。</string>
+    <string name="pref_channel_discovery">频道发现方法</string>
+    <string name="gp_disable">禁用</string>
+    <string name="pref_theme_blue">蓝色</string>
+    <string name="pref_theme_orange">橙色</string>
+    <string name="pref_theme_color_options_summary">选择主题调色板</string>
+    <string name="pref_theme_color_options">主题颜色</string>
 </resources>
