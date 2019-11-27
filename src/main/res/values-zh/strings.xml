@@ -544,7 +544,7 @@
     <string name="import_text">您可以按下面的按钮来恢复备份。</string>
     <string name="import_database">恢复备份</string>
     <string name="invite_again">再次邀请</string>
-    <string name="inviteUser_Subject">已通过... 邀请</string>
+    <string name="inviteUser_Subject">已邀请您，通过</string>
     <string name="InviteText">您好，\n\n%s邀请您使用Pix-Art聊天。如果您使用的是Android，请点击以下链接开始...</string>
     <string name="pref_broadcast_last_activity">广播最后一次使用聊天的时间</string>
     <string name="pref_broadcast_last_activity_summary">当使用Pix-Art聊天时，让所有联系人知道</string>
@@ -670,7 +670,7 @@
     <string name="pref_validate_hostname">使用DNSSEC验证主机名</string>
     <string name="pref_validate_hostname_summary">包含经过验证的主机名的服务器证书将被视为已验证</string>
     <string name="certificate_does_not_contain_jid">证书不包含Jabber用户名</string>
-    <string name="error_no_keys_to_trust_presence">此联系人没有可用的密钥。\n确保您们有共同的在线订阅。</string>
+    <string name="error_no_keys_to_trust_presence">此联系人没有可用的密钥。\n确保你们有共同的在线订阅。</string>
     <string name="mark_as_read">标记为已读</string>
     <string name="server_info_partial">部分</string>
     <string name="pref_show_foreground_service_summary">一些Android设备会在一段时间后关闭一些应用程序，您将无法接收到新的消息。如果您遇到此类问题，请尝试激活前台服务。但请记住，选中此选项后，您将获得永久通知。</string>
@@ -703,7 +703,7 @@
     <string name="mtm_trust_anchor">服务器证书不是由已知的证书颁发机构签名</string>
     <string name="mtm_accept_servername">接受不匹配的服务器名称？</string>
     <string name="mtm_hostname_mismatch">服务器无法验证为“%s”。该证书仅对以下内容有效：</string>
-    <string name="mtm_connect_anyway">您想要连接吗？</string>
+    <string name="mtm_connect_anyway">您无论如何想要连接吗？</string>
     <string name="mtm_cert_details">证书详情：</string>
     <string name="once">仅一次</string>
     <string name="qr_code_scanner_needs_access_to_camera">二维码扫描仪需要访问相机</string>
@@ -729,8 +729,8 @@
     <string name="pref_omemo_setting_summary_always_off">关闭OMEMO加密</string>
     <string name="default_on">默认开启</string>
     <string name="default_off">默认关闭</string>
-    <string name="pref_theme_light">浅色主题</string>
-    <string name="pref_theme_dark">深色主题</string>
+    <string name="pref_theme_light">浅色</string>
+    <string name="pref_theme_dark">深色</string>
     <string name="pref_theme_auto">自动</string>
     <string name="pref_theme_options_summary">选择主题亮度</string>
     <string name="pref_theme_options">界面主题</string>
@@ -931,7 +931,7 @@
     <string name="x_has_written">%s写道:</string>
     <string name="i_have_written">我写道:</string>
     <string name="no_status_set_instructions">未设置在线状态消息</string>
-    <string name="your_status">你的状态</string>
+    <string name="your_status">您的状态</string>
     <string name="pref_use_invidious">用 Invidio 链接替换 Youtube 链接</string>
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
@@ -955,11 +955,12 @@ Pix-Arr Messenger</string>
     <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
     <string name="intro_whats_xmpp">XMPP / Jabber / Pix-Art Messenger 是什么？</string>
     <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
-    <string name="intro_desc_account2">你可以通过自定义或从下拉菜单中选择一个服务器然后输入一个昵称来新建一个一份配置。</string>
+    <string name="intro_desc_account2">您可以通过自定义或从下拉菜单中选择一个服务器然后输入一个昵称来新建一个一份配置。</string>
     <string name="open_join_dialog">加入公共群聊</string>
     <string name="intro_optional_permissions">可选权限</string>
-    <string name="intro_desc_optional_permissions2">如果要分享你的位置，需要获取位置的权限。\n如果要分享语言消息，需要麦克风的权限。</string>
+    <string name="intro_desc_optional_permissions2">如果要分享您的位置，需要获取位置的权限。\n如果要分享语言消息，需要麦克风的权限。</string>
     <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
+    <string name="local_server">本地服务器</string>
 </resources>
