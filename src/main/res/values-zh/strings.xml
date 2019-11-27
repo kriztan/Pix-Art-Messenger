@@ -953,12 +953,14 @@ Pix-Arr Messenger</string>
     <string name="pref_show_intro">重新显示入门指南</string>
     <string name="show_intro_again">将重新显示入门指南</string>
     <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
+    <string name="intro_desc_whats_xmpp">XMPP，也叫 jabber，是一种去中心化的通讯网络（就像电子邮件一样）。您需要一个被称作 Jabber-ID 的地址，一个密码和一个客户端。</string>
     <string name="intro_whats_xmpp">XMPP / Jabber / Pix-Art Messenger 是什么？</string>
     <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
     <string name="intro_desc_account2">您可以通过自定义或从下拉菜单中选择一个服务器然后输入一个昵称来新建一个一份配置。</string>
     <string name="open_join_dialog">加入公共群聊</string>
     <string name="intro_optional_permissions">可选权限</string>
     <string name="intro_desc_optional_permissions2">如果要分享您的位置，需要获取位置的权限。\n如果要分享语言消息，需要麦克风的权限。</string>
+    <string name="intro_desc_account3">您会有导入现有帐户的选项。\n如果有可用的备份文件，它们会显示出来。</string>
     <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
@@ -968,6 +970,9 @@ Pix-Arr Messenger</string>
     <string name="pref_channel_discovery_summary">大多数用户会选择“jabber.network”以便从公共 XMPP 生态系统获得更好的建议。</string>
     <string name="pref_channel_discovery">频道发现方法</string>
     <string name="gp_disable">禁用</string>
+    <string name="gp_short">短</string>
+    <string name="gp_medium">中</string>
+    <string name="gp_long">长</string>
     <string name="pref_theme_blue">蓝色</string>
     <string name="pref_theme_orange">橙色</string>
     <string name="pref_theme_color_options_summary">选择主题调色板</string>
