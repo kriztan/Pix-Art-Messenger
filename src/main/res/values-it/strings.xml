@@ -903,7 +903,7 @@
     <string name="pref_show_mappreview_inside_summary">Mostra anteprime mappe direttamente all\'interno delle conversazioni, sarà stabilita una connessione al Pix-Art-Server.</string>
     <string name="pref_show_mappreview_inside">Mostra anteprime delle posizioni nella conversazione</string>
     <string name="pref_use_internal_updater_summary">Permetti all\'app di cercare gli aggiornamenti una volta al giorno</string>
-    <string name="pref_use_internal_updater">cerca aggiornamenti</string>
+    <string name="pref_use_internal_updater">Cerca aggiornamenti</string>
     <string name="attach">Allega</string>
     <string name="delete_locally">Elimina localmente</string>
     <string name="delete_from_server">Elimina dal server</string>
