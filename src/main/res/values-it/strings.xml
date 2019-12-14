@@ -993,4 +993,6 @@
     <string name="pref_theme_orange">Arancio</string>
     <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
     <string name="pref_theme_color_options">Colore del tema</string>
+    <string name="pref_enable_otr_summary">Abilita crittografia OTR per la criptazione del messaggio</string>
+    <string name="pref_enable_otr">Abilita crittografia OTR</string>
 </resources>
