@@ -982,4 +982,6 @@ Pix-Arr Messenger</string>
     <string name="pref_theme_orange">橙色</string>
     <string name="pref_theme_color_options_summary">选择主题调色板</string>
     <string name="pref_theme_color_options">主题颜色</string>
+    <string name="pref_enable_otr_summary">为信息加密启用 OTR 加密</string>
+    <string name="pref_enable_otr">启用 OTR 加密</string>
 </resources>
