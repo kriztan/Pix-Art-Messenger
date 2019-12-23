@@ -18,6 +18,7 @@
     <string name="title_activity_manage_accounts">Впорядкувати облікові записи</string>
     <string name="title_activity_settings">Налаштування</string>
     <string name="conference_details">Деталі групи</string>
+    <string name="contact_details">Деталі контакту</string>
     <string name="title_activity_sharewith">Поділитися в Розмови</string>
     <string name="title_activity_start_conversation">Почати розмову</string>
     <string name="title_activity_choose_contact">Вибрати контакт</string>
