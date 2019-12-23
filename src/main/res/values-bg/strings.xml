@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">Управление на профилите</string>
     <string name="title_activity_settings">Настройки</string>
     <string name="conference_details">Подробности за групов чат</string>
-    <string name="title_activity_contact_details">Данни за контакта</string>
     <string name="title_activity_sharewith">Сподели със разговор</string>
     <string name="title_activity_start_conversation">Започнете разговор</string>
     <string name="title_activity_choose_contact">Изберете контакт</string>
