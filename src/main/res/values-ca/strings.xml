@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">Gestionar comptes</string>
     <string name="title_activity_settings">Ajustos</string>
     <string name="conference_details">Detalls del grupo de xat</string>
-    <string name="title_activity_contact_details">Detalls del contacte</string>
     <string name="title_activity_sharewith">Compartir una conversa</string>
     <string name="title_activity_start_conversation">Iniciar conversa</string>
     <string name="title_activity_choose_contact">Escollir contacte</string>
