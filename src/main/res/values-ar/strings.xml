@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">إدارة الحسابات</string>
     <string name="title_activity_settings">الإعدادات</string>
     <string name="conference_details">تفاصيل فريق المحادثة</string>
-    <string name="title_activity_contact_details">بيانات المُراسِل</string>
     <string name="title_activity_start_conversation">ابدأ محادثة</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
     <string name="title_activity_choose_contacts">اختر جهات الاتصال</string>
