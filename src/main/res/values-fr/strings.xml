@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">Gestion des comptes</string>
     <string name="title_activity_settings">Paramètres</string>
     <string name="conference_details">Détails du groupe de discussion</string>
-    <string name="title_activity_contact_details">Détails du contact</string>
     <string name="title_activity_sharewith">Partager avec la conversation</string>
     <string name="title_activity_start_conversation">Démarrer une conversation</string>
     <string name="title_activity_choose_contact">Choix du contact</string>
