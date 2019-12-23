@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">Управление аккаунтами</string>
     <string name="title_activity_settings">Настройки</string>
     <string name="conference_details">Информация о конференции</string>
-    <string name="title_activity_contact_details">Сведения о контакте</string>
     <string name="title_activity_sharewith">Поделиться с разговором</string>
     <string name="title_activity_start_conversation">Начать беседу</string>
     <string name="title_activity_choose_contact">Выбрать контакт</string>
