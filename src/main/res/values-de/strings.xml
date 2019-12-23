@@ -18,7 +18,6 @@
     <string name="title_activity_manage_accounts">Profile verwalten</string>
     <string name="title_activity_settings">Einstellungen</string>
     <string name="conference_details">Gruppenchat-Details</string>
-    <string name="title_activity_contact_details">Kontakt-Details</string>
     <string name="title_activity_sharewith">Mit Unterhaltung teilen</string>
     <string name="title_activity_start_conversation">Unterhaltung beginnen</string>
     <string name="title_activity_choose_contact">Kontakt auswählen</string>
