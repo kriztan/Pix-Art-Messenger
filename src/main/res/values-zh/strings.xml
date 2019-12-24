@@ -18,6 +18,7 @@
     <string name="title_activity_manage_accounts">管理账户</string>
     <string name="title_activity_settings">设置</string>
     <string name="conference_details">群聊详情</string>
+    <string name="contact_details">联系人详情</string>
     <string name="title_activity_sharewith">分享会话</string>
     <string name="title_activity_start_conversation">开始会话</string>
     <string name="title_activity_choose_contact">选择联系人</string>
