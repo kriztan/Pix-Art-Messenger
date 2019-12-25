@@ -391,6 +391,7 @@
     <string name="vcard">Контакт</string>
     <string name="avatar_has_been_published">Аватар был обновлен!</string>
     <string name="sending_x_file">Отправка %s</string>
+    <string name="offering_x_file">Предложение %s</string>
     <string name="hide_offline">Сейчас в сети</string>
     <string name="is_typing">набирает сообщение..</string>
     <string name="pref_chat_states">Уведомления \"печатает\"</string>
@@ -437,6 +438,8 @@
     <string name="no_update_available">Нет доступных обновлений</string>
     <string name="download_started">Загрузка начата</string>
     <string name="account_status_tor_unavailable">Сеть Tor недоступна</string>
+    <string name="account_status_bind_failure">Неудачная связка</string>
+    <string name="server_info_broken">Поломано</string>
     <string name="pref_presence_settings">Доступность</string>
     <string name="pref_away_when_screen_off">Статус \"Отошел\", когда экран выключен</string>
     <string name="pref_away_when_screen_off_summary">Статус \"Отошел\" при гашении экрана</string>
@@ -492,6 +495,7 @@
     <string name="video_high">высокое (1080p)</string>
     <string name="video_original">оригинальное (без сжатия)</string>
     <string name="always">Всегда</string>
+    <string name="always_off">Всегда выключен</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
     <string name="battery_optimizations_enabled_explained">Ваше устройство оптимизирует расход батареи при использовании Pix-Art Messenger, что может привести к задержкам уведомлений и даже потере сообщений.\n\nРекомендуется отключить эту оптимизацию.</string>
     <string name="battery_optimizations_enabled_dialog">Ваше устройство оптимизирует расход батареи при использовании Pix-Art Messenger, что может привести к задержкам уведомлений и даже потере сообщений.\n\n\nСейчас вам будет предложено отключить эту оптимизацию.</string>
@@ -556,6 +560,7 @@
     <string name="payment_required">Необходима оплата</string>
     <string name="missing_internet_permission">Нет разрешения на доступ в Интернет</string>
     <string name="me">Я</string>
+    <string name="contact_asks_for_presence_subscription">Контакт запрашивает подписку на присутствие</string>
     <string name="allow">Разрешить</string>
     <string name="no_permission_to_access_x">Нет разрешения на доступ к %s</string>
     <string name="remote_server_not_found">Сервер не найден</string>
@@ -575,6 +580,7 @@
     <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
     <string name="data_saver_enabled_explained">Ваша операционная система запрещает Pix-Art Messenger доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить Pix-Art Messenger неограниченный доступ в Интернет. \n\nPix-Art Messenger будет пытаться сохранить данные при появлении возможности.</string>
+    <string name="device_does_not_support_data_saver">Ваше устройство не поддерживает отключение дата сервера для Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Добавить в контакты</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не удается начать запись</string>
@@ -585,18 +591,24 @@
     <string name="barcode_does_not_contain_fingerprints_for_this_conversation">QR код не содержит отпечатки для этого разговора.</string>
     <string name="verified_fingerprints">Проверенные отпечатки</string>
     <string name="use_camera_icon_to_scan_barcode">Используйте камеру для сканирования QR кода контактов</string>
+    <string name="please_wait_for_keys_to_be_fetched">Пожалуйста, подождите извлечения ключей</string>
     <string name="share_as_barcode">Поделиться QR кодом</string>
     <string name="share_as_uri">Поделиться как XMPP URI</string>
     <string name="share_as_http">Поделиться HTTP ссылкой</string>
+    <string name="blindly_trusted_omemo_keys">Слепо доверять ключам OMEMO</string>
+    <string name="pref_blind_trust_before_verification">Слепое Доверие Перед Проверкой</string>
+    <string name="pref_blind_trust_before_verification_summary">Автоматически доверять всем новым устройствам из контактов, которые ранее не были проверены.</string>
     <string name="not_trusted">Недоверенный</string>
     <string name="invalid_barcode">Неверный QR-код</string>
     <string name="verify_with_qr_code">подтвердить QR кодом</string>
     <string name="i_followed_this_link_from_a_trusted_source">Я получил эту ссылку из надежного источника</string>
+    <string name="verifying_omemo_keys_trusted_source">Вы собираетесь проверить ключи OMEMO %1$s после нажатия на ссылку. Это безопасно только в том случае, если вы перешли по этой ссылке из надежного источника, где только %2$s мог опубликовать эту ссылку.</string>
     <string name="verify_omemo_keys">Проверить OMEMO-отпечатки</string>
     <string name="show_inactive_devices">Показать неактивных</string>
     <string name="hide_inactive_devices">Скрыть неактивных</string>
     <string name="reply">Ответить</string>
     <string name="transcoding_video">Сжимание видео</string>
+    <string name="not_fetching_history_retention_period">Не извлекает сообщения из-за локального периода хранения.</string>
     <plurals name="seconds">
         <item quantity="one">%d секунда</item>
         <item quantity="few">%d секунды</item>
