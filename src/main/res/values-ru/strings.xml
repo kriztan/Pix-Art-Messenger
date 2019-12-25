@@ -934,6 +934,7 @@
     <string name="message_encryption">Шифрование сообщений</string>
     <string name="enable_message_encryption">Этот чат не зашифрован. Из соображений безопасности рекомендуется включить шифрование, предпочтительно OMEMO. Если что-то пойдет не так - вы можете отключить шифрование сообщений нажатием на значок замка.</string>
     <string name="hide_warning">Скрыть предупреждение</string>
+    <string name="change_password_in_next_step">Вы можете изменить сгенерированный пароль на следующем шаге в соответствии с вашими потребностями.</string>
     <string name="action_unblock_participant">Разблокировать участника</string>
     <string name="action_block_participant">Заблокировать участника</string>
     <string name="share_backup_files">Отправить файл резервной копии</string>
@@ -948,6 +949,8 @@
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
     <string name="waiting_for_transfer">Ожидание передачи</string>
     <string name="x_has_written">%s написал:</string>
+    <string name="i_have_written">Я написал:</string>
+    <string name="no_status_set_instructions">Вы не установили сообщение о состоянии присутствия</string>
     <string name="your_status">Ваш статус</string>
     <string name="this_device">Это устройство</string>
     <string name="intro_account">Ваш аккаунт</string>
