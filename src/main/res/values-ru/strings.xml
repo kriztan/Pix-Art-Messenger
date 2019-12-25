@@ -649,6 +649,7 @@
     <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и картинок.</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
     <string name="block_jabber_id">Заблокировать Jabber-ID</string>
+    <string name="corresponding_conversations_closed">Соответствующие разговоры были закрыты.</string>
     <string name="contact_blocked_past_tense">Контакт заблокирован.</string>
     <string name="pref_notifications_from_strangers">Уведомления от незнакомцев</string>
     <string name="pref_notifications_from_strangers_summary">Уведомлять о сообщениях от незнакомых контактов.</string>
@@ -686,8 +687,11 @@
     <string name="pref_headsup_notifications_summary">Показывать уведомления</string>
     <string name="yesterday">Вчера</string>
     <string name="pref_validate_hostname">Проверять имя хоста через DNSSEC</string>
+    <string name="pref_validate_hostname_summary">Сертификаты сервера, содержащие проверенное имя хоста, считаются проверенными</string>
     <string name="certificate_does_not_contain_jid">Сертификат не содержит Jabber ID</string>
+    <string name="error_no_keys_to_trust_presence">Для этого контакта не существует доступных ключей.\nMake убедитесь, что у вас есть подписка на взаимное присутствие.</string>
     <string name="mark_as_read">Отметить как прочитанное</string>
+    <string name="server_info_partial">частичный</string>
     <string name="pref_show_foreground_service_summary">Некоторые устройства Android закрывают приложения по прошествии некоторого времени, и вы теряете возможность получать новые сообщения. Если вы столкнулись с такой проблемой - попробуйте активировать фоновую службу. Имейте ввиду, что если эта опция включена - значок уведомления будет отображаться постоянно.</string>
     <string name="pref_show_foreground_service">Использовать фоновую службу</string>
     <string name="update_service">Служба обновления Pix-Art Messenger</string>
@@ -733,6 +737,7 @@
     <string name="disable_encryption">Отключить шифрование</string>
     <string name="error_trustkey_general">Pix-Art Messenger не может отправить зашифрованное сообщение %1$s. Возможно, контакт использует устаревший сервер или его клиент не поддерживает OMEMO.</string>
     <string name="error_trustkey_device_list">Не удалось получить список устройств</string>
+    <string name="error_trustkey_bundle">Невозможно извлечь пакеты устройств</string>
     <string name="error_trustkey_hint_mutual">Подсказка: Иногда это может быть устранено добавлением друг друга в список контактов.</string>
     <string name="disable_encryption_message">Вы уверены, что хотите отключить шифрование OMEMO в этом диалоге?\nЭто даст возможность администратору сервера читать ваши сообщения, но может быть единственным способом связаться с контактами, использующими устаревший клиент.</string>
     <string name="disable_now">Отключить</string>
@@ -741,8 +746,12 @@
     <string name="pref_omemo_setting_summary_always">OMEMO всегда будет использоваться для личных бесед и приватных групповых чатов.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO будет по умолчанию использоваться для новых бесед.</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO будет включен по умолчанию для новых разговоров.</string>
+    <string name="pref_omemo_setting_summary_always_off">ОМЕМО никогда не будет использоваться.</string>
     <string name="default_on">Включено по умолчанию</string>
     <string name="default_off">Выключено по умолчанию</string>
+    <string name="pref_theme_light">Светлая</string>
+    <string name="pref_theme_dark">Тёмная</string>
+    <string name="pref_theme_auto">Автоматическая</string>
     <string name="pref_theme_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Выберите аккаунт</string>
@@ -752,6 +761,7 @@
     <string name="medium">Средний</string>
     <string name="large">Большой</string>
     <string name="create_shortcut">Создать ярлык</string>
+    <string name="not_encrypted_for_this_device">Сообщение не было зашифровано для этого устройства.</string>
     <string name="no_microphone_permission">Pix-Art Messenger нужен доступ к микрофону</string>
     <string name="search_messages">Поиск сообщений</string>
     <string name="gif">GIF</string>
@@ -764,6 +774,8 @@
     <string name="choose_your_server">Выбрать jabber-сервер</string>
     <string name="show_privacy">Политика конфиденциальности</string>
     <string name="show_termsofuse">Пользовательское соглашение</string>
+    <string name="p1_s3_filetransfer">Обмен файла HTTP для S3</string>
+    <string name="pref_start_search">Прямой Поиск</string>
     <string name="pref_start_search_summary">При начале разговора показать клавиатуру и установить курсор в поле поиска</string>
     <string name="paste_as_quote">Вставить как цитату</string>
     <string name="group_chat_avatar">Аватар группового чата</string>
@@ -775,9 +787,11 @@
     <string name="providing_a_name_is_optional">Указание имени не обязательно</string>
     <string name="create_dialog_group_chat_name">Название группового чата</string>
     <string name="everyone_has_read_up_to_this_point">Все прочитали до этого момента</string>
+    <string name="conference_resource_constraint">Ресурсное ограничение</string>
     <string name="delete_message">Удалить сообщение</string>
     <string name="conference_destroyed">Данная группа была закрыта</string>
     <string name="no_application_found_to_view_contact">Не найдено приложений для просмотра контакта</string>
+    <string name="welcome_server_info">Мы рекомендуем использовать blabber.im как ваш провайдер.</string>
     <string name="no_location_permission">Pix-Art Messenger нужен доступ к сервисам геолокации</string>
     <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
     <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
@@ -785,11 +799,14 @@
     <string name="pref_quick_share_attachment_choice">Выбор вложений</string>
     <string name="unable_to_save_recording">Не удается сохранить запись</string>
     <string name="foreground_service_channel_name">Фоновая служба</string>
+    <string name="foreground_service_channel_description">Эта категория уведомлений используется для отображения постоянного уведомления о том, что Pix-Art Messenger запущен.</string>
     <string name="notification_group_status_information">Статус</string>
     <string name="error_channel_name">Проблемы с подключением</string>
+    <string name="error_channel_description">Эта категория уведомлений используется для отображения уведомления в случае возникновения проблем с подключением к учетной записи.</string>
     <string name="notification_group_messages">Сообщения</string>
     <string name="messages_channel_name">Сообщения</string>
     <string name="silent_messages_channel_name">Бесшумные сообщения</string>
+    <string name="silent_messages_channel_description">Эта категория уведомлений используется для отображения уведомлений, которые не должны вызывать никаких звуков. Например, когда вы активны на другом устройстве (льготный период).</string>
     <string name="pref_more_notification_settings">Настройки уведомлений</string>
     <string name="pref_more_notification_settings_summary">Важность, звук, вибрация</string>
     <string name="video_compression_channel_name">Сжатие видео</string>
@@ -805,6 +822,7 @@
     <string name="delete_file_dialog_msg">Вы хотите удалить этот файл?\n\n<b>Внимание:</b>Это не затронет копии этого файла, которые сохранены на других устройствах или серверах.</string>
     <string name="cancelled">отменён</string>
     <string name="remote_server_timeout">Таймаут удаленного сервера</string>
+    <string name="already_drafting_message">Вы уже составляете текст послания.</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
     <string name="delete_message_dialog">Удалить сообщение</string>
     <string name="delete_message_dialog_msg">Вы хотите удалить это сообщение?\n\n<b>Внимание:</b>Это не затронет сообщения, которые сохранены на других устройствах или серверах.</string>
@@ -817,6 +835,7 @@
     <string name="omemo_decryption_failed">Ошибка расшифровки OMEMO-сообщения.</string>
     <string name="install_orbot">Установить Orbot</string>
     <string name="start_orbot">Запуск Orbot</string>
+    <string name="no_market_app_installed">Приложение market не установлено.</string>
     <string name="group_chat_will_make_your_jabber_id_public">Этот канал будет создан с помощью вашего публичного Jabber ID</string>
     <string name="ebook">электронная книга</string>
     <string name="your_name">Ваше имя</string>
