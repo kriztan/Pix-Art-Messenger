@@ -502,7 +502,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="share_uri_with">Partajează adresa cu...</string>
     <string name="mgmt_account_reconnect">Reconectare</string>
     <string name="welcome_text">…este un client XMPP/Jabber gratis și securizat.</string>
-    <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți folosi sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le adresa dumneavoastră completă XMPP.</string>
     <string name="your_full_jid_will_be">Adresa dumneavoastră XMPP completă va fi: %s</string>
     <string name="create_account">Creează cont</string>
     <string name="welcome_existing_account">Am un cont</string>
@@ -716,7 +715,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="pref_start_search_summary">În ecranul \"Pornește o conversație\" focalizează câmpul de căutare și arată tastatura</string>
     <string name="paste_as_quote">Lipește citat</string>
     <string name="group_chat_avatar">Avatar discuție de grup</string>
-    <string name="host_does_not_support_group_chat_avatars">Serverul gazdă nu suporta avatare pentru grupuri</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Doar proprietarul grupului poate schimba avatarul</string>
     <string name="contact_name">Nume contact</string>
     <string name="nickname">Numele dumneavoastră</string>
