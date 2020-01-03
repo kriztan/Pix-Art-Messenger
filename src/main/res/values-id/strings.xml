@@ -559,9 +559,6 @@
     <string name="pref_use_tor">Terhubung melalui Tor</string>
     <string name="pref_use_tor_summary">Menghubungkan semua koneksi melalui jaringan Tor.</string>
     <string name="pref_connection_options">Pilihan koneksi</string>
-    <string name="image_low">rendah (720p)</string>
-    <string name="image_mid">tengah (1920p)</string>
-    <string name="image_high">tinggi (3840 p)</string>
     <string name="last_seen_just_away">baru saja</string>
     <string name="send_message">Mengirim pesan</string>
     <string name="send_failed_resend">pengiriman gagal, kirim ulang…</string>
@@ -570,8 +567,6 @@
     <string name="retry_decryption">Deskripsi kembali</string>
     <string name="session_failure">Kegagalan sesi</string>
     <string name="sasl_downgrade">Menurunkan mekanisme SASL</string>
-    <string name="action_take_photo">ambil foto</string>
-    <string name="action_take_video">merekam video</string>
     <string name="account_status_regis_web">Server membutuhkan registrasi di situs web</string>
     <string name="application_found_to_open_website">Tidak ada aplikasi yang ditemukan untuk membuka situs web</string>
     <string name="open_website">Buka situs web</string>
