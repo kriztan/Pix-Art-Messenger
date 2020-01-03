@@ -269,8 +269,6 @@
     <string name="contact_is_typing">%s yazır…</string>
     <string name="block_stranger">Naməlumu blokla</string>
     <string name="block_entire_domain">Bütün domenləri bloklayın</string>
-    <string name="action_take_photo">Şəkil çəkmək</string>
-    <string name="action_take_video">Video çəkmək</string>
     <string name="account_status_regis_web">Bu server saytda qeydiyyat tələb edir</string>
     <string name="application_found_to_open_website">Veb sayt açmaq üçün heç bir tətbiq tapılmadı</string>
     <string name="certificate_does_not_contain_jid">Sertifikatda bir Jabber ID yoxdur</string>
