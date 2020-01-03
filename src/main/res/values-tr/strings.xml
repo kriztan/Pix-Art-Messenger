@@ -563,9 +563,6 @@
     <string name="pref_use_tor">Tor aracılığıyla bağlan</string>
     <string name="pref_use_tor_summary">Tüm bağlantıları Tor ağından açın.</string>
     <string name="pref_connection_options">Bağlantı ayarları</string>
-    <string name="image_low">düşük (720p)</string>
-    <string name="image_mid">orta (1920p)</string>
-    <string name="image_high">yüksek (3840p)</string>
     <string name="last_seen_just_away">yeni</string>
     <string name="send_message">Mesaj gönder</string>
     <string name="send_failed_resend">gönderim başarısız oldu, yeniden gönderiliyor…</string>
@@ -574,8 +571,6 @@
     <string name="retry_decryption">Şifre çözmeyi yeniden dene</string>
     <string name="session_failure">Oturum başarısız</string>
     <string name="sasl_downgrade">İndirilmiş SASL mekanizması</string>
-    <string name="action_take_photo">fotoğraf çek</string>
-    <string name="action_take_video">video kaydet</string>
     <string name="account_status_regis_web">Sunucu web sitesinde kayıt gerektiriyor</string>
     <string name="application_found_to_open_website">Web sitesini açmak için uygulama bulunamadı</string>
     <string name="open_website">İnternet sitesini aç</string>
