@@ -436,7 +436,6 @@
     <string name="no_application_to_share_uri">Non se atopou un aplicativo para compartir URI</string>
     <string name="share_uri_with">Compartir URI con...</string>
     <string name="welcome_text">XMPP é un protocolo independente do proveedor. Pode utilizar este cliente con calquer servidor XMPP que escolla.\nPara a súa conveniencia facilitamos a creación de unha conta en conversations.im; un proveedor especialmente adaptado ao uso con Conversations.</string>
-    <string name="magic_create_text">Guiarémola a través do proceso de crear unha conta en conversations.im.\nCando escolla conversations.im como proveedor poderá comunicarse con outras usuarias de outros proveedores que lle proporcionen un ID Jabber completo.</string>
     <string name="your_full_jid_will_be">O seu ID Jabber será: %s</string>
     <string name="create_account">Crear conta</string>
     <string name="pick_your_username">Escolla un identificador</string>
