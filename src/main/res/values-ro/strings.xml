@@ -171,9 +171,9 @@
     <string name="last_seen_min">în urmă cu 1 minut</string>
     <string name="last_seen_mins">în urmă cu %d minute</string>
     <string name="last_seen_hour">acum o oră</string>
-    <string name="last_seen_hours">văzut(ă) ultima dată acum %d ore</string>
-    <string name="last_seen_day">văzut(ă) ultima dată acum o zi</string>
-    <string name="last_seen_days">văzut(ă) ultima dată acum %d zile</string>
+    <string name="last_seen_hours">acum %d ore</string>
+    <string name="last_seen_day">acum o zi</string>
+    <string name="last_seen_days">acum %d zile</string>
     <string name="install_openkeychain">Mesaj criptat. Vă rugăm să instalați OpenKeychain pentru a-l putea decripta.</string>
     <string name="unknown_otr_fingerprint">Amprenta OTR necunoscuta</string>
     <string name="openpgp_messages_found">A fost găsit un mesaj criptat cu OpenPGP</string>
@@ -191,7 +191,7 @@
     <string name="done">Gata</string>
     <string name="verify">Verifică</string>
     <string name="decrypt">Decriptează</string>
-    <string name="bookmarks">Semne de carte</string>
+    <string name="bookmarks">Discuții de grup</string>
     <string name="search">Caută</string>
     <string name="enter_contact">Introduceți contact</string>
     <string name="delete_contact">Șterge contact</string>
@@ -272,8 +272,8 @@
     <string name="send_again">Trimite din nou</string>
     <string name="file_url">Adresă fișier</string>
     <string name="url_copied_to_clipboard">Adresă copiată în memorie</string>
-    <string name="scan_qr_code">Scanează cod de bare 2D</string>
-    <string name="show_qr_code">Arată cod de bare 2D</string>
+    <string name="scan_qr_code">Scanează cod QR</string>
+    <string name="show_qr_code">Arată cod QR</string>
     <string name="show_block_list">Listă contacte blocate</string>
     <string name="account_details">Detalii cont</string>
     <string name="verify_otr">Verifica OTR</string>
@@ -291,7 +291,7 @@
     <string name="smp_requested">Contactul a cerut verificare SMP</string>
     <string name="no_otr_session_found">Nu s-a găsit nici o sesiune OTR validă</string>
     <string name="pref_create_backup">Creează copie de siguranță</string>
-    <string name="pref_create_backup_summary">Fișierele copiei de siguranță vor fi salvate în %s</string>
+    <string name="pref_create_backup_summary">Salvează fișierele copiei de siguranță în %s</string>
     <string name="notification_create_backup_title">Se creează copia de siguranță</string>
     <string name="restoring_backup">Se restaurează din copia de siguranță</string>
     <string name="notification_restored_backup_title">Copia de siguranță a fost restaurată</string>
@@ -312,7 +312,7 @@
     <string name="could_not_verify_fingerprint">Nu s-a putut verifica amprenta</string>
     <string name="manually_verify">Verificare manuală</string>
     <string name="are_you_sure_verify_fingerprint">Sigur doriți să verificați amprenta OTR a persoanei de contact?</string>
-    <string name="pref_show_dynamic_tags">Etichete dinamice</string>
+    <string name="pref_show_dynamic_tags">Arată etichete dinamice</string>
     <string name="pref_show_dynamic_tags_summary">Sub contacte arată etichete dinamice</string>
     <string name="no_conference_server_found">Nu s-a găsit serverul pentru discuția de grup</string>
     <string name="conference_creation_failed">Discuția de grup nu a putut fi creată!</string>
@@ -402,7 +402,7 @@
     <string name="none">Nimic</string>
     <string name="recently_used">Folosită recent</string>
     <string name="search_contacts">Caută contacte</string>
-    <string name="search_bookmarks">Caută semne de carte</string>
+    <string name="search_bookmarks">Caută discuții de grup</string>
     <string name="choose_quick_action">Alegeți acțiunea rapidă</string>
     <string name="send_private_message">Trimite mesaj privat</string>
     <string name="user_has_left_conference">%1$s a părăsit discuția de grup!</string>
@@ -414,12 +414,12 @@
     <string name="download_failed_could_not_connect">Descărcare eșuată: Nu s-a putut realiza conexiunea cu gazda.</string>
     <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
     <string name="remind_later">mai târziu</string>
-    <string name="update">Actualizare</string>
+    <string name="update">actualizează</string>
     <string name="account_status_tor_unavailable">Rețeaua Tor nu este disponibilă</string>
     <string name="account_status_bind_failure">Eroare de conexiune</string>
     <string name="account_status_host_unknown">Gazdă fără domeniu</string>
     <string name="server_info_broken">Deteriorat</string>
-    <string name="pref_presence_settings">Setări de disponibilitate</string>
+    <string name="pref_presence_settings">Disponibilitate</string>
     <string name="pref_away_when_screen_off">Plecat când ecranul este oprit</string>
     <string name="pref_away_when_screen_off_summary">Prezintă clientul drept \"Plecat\" atunci când ecranul este oprit</string>
     <string name="pref_dnd_on_silent_mode">\"Nu deranja\" în modul silențios</string>
@@ -455,9 +455,9 @@
         <item quantity="other">%d mesaje</item>
     </plurals>
     <string name="load_more_messages">Încarcă mai multe mesaje</string>
-    <string name="no_storage_permission">Conversations are nevoie de acces la stocarea externă</string>
+    <string name="no_storage_permission">Pix-Art Messenger are nevoie de acces la stocarea externă</string>
     <string name="sync_with_contacts">Sincronizează cu contactele</string>
-    <string name="sync_with_contacts_long">Conversations dorește să potrivească lista de contacte de pe server cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nConversations doar va citi și potrivi local fără să le încarce pe server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
+    <string name="sync_with_contacts_long">Pix-Art Messenger dorește să potrivească lista de contacte de pe server cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nPix-Art Messenger doar va citi și potrivi local fără să le încarce pe server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
     <string name="notify_on_all_messages">Notifică la toate mesajele</string>
     <string name="notify_only_when_highlighted">Notifică doar atunci când cineva vă menționează numele</string>
     <string name="notify_never">Notificări dezactivate</string>
@@ -483,7 +483,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="share_uri_with">Partajează adresa cu...</string>
     <string name="mgmt_account_reconnect">Reconectare</string>
     <string name="welcome_text">…este un client XMPP/Jabber gratis și securizat.</string>
-    <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont pe conversations.im.¹\nCând alegeți conversations.im ca furnizor veți putea comunica cu utilizatorii altor furnizori oferindu-le adresa dumneavoastră completă XMPP.</string>
+    <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți folosi sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le adresa dumneavoastră completă XMPP.</string>
     <string name="your_full_jid_will_be">Adresa dumneavoastră XMPP completă va fi: %s</string>
     <string name="create_account">Creează cont</string>
     <string name="pick_your_username">Alegeți un nume de utilizator</string>
