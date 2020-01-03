@@ -82,7 +82,7 @@
     <string name="send_pgp_message">Trimite mesaj criptat cu OpenPGP</string>
     <string name="your_nick_has_been_changed">Numele dumneavoastră a fost schimbat</string>
     <string name="send_unencrypted">Trimite necriptat</string>
-    <string name="decryption_failed">Decriptarea a eșuat. Poate nu aveții cheia privată corectă.</string>
+    <string name="decryption_failed">Decriptarea a eșuat. Poate nu aveți cheia privată corectă.</string>
     <string name="openkeychain_required">OpenKeychain</string>
     <string name="openkeychain_required_long">Pix-Art Messenger utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți Pix-Art Messenger după)</small></string>
     <string name="restart">Repornește</string>
@@ -139,7 +139,7 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenGPG</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="action_account">Configurează contul</string>
+    <string name="action_account">Editare cont</string>
     <string name="mgmt_account_delete">Șterge cont</string>
     <string name="mgmt_account_publish_avatar">Publică avatar</string>
     <string name="mgmt_account_publish_pgp">Publică cheia publică OpenPGP</string>
@@ -151,7 +151,7 @@
     <string name="account_settings_jabber_id">Adresä XMPP</string>
     <string name="account_settings_example_jabber_id">numeutilizator@exemplu.ro</string>
     <string name="password">Parolă</string>
-    <string name="invalid_jid">Acesta nu este o adresă XMPP valabilă</string>
+    <string name="invalid_jid">Aceasta nu este o adresă XMPP valabilă</string>
     <string name="error_out_of_memory">Memorie epuizată. Imaginea este prea mare.</string>
     <string name="add_phone_book_text">Vreți să adăugați pe %s în lista de contacte?</string>
     <string name="server_info_show_more">Informații server</string>
@@ -164,13 +164,13 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatare / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: Încărcare fișiere prin HTTP</string>
     <string name="server_info_push">XEP-0357: Push</string>
-    <string name="server_info_available">disponibil</string>
-    <string name="server_info_unavailable">indisponibil</string>
+    <string name="server_info_available">da</string>
+    <string name="server_info_unavailable">nu</string>
     <string name="missing_public_keys">Cheile publice ce nu au fost anunțate</string>
-    <string name="last_seen_now">văzut(ă) ultima dată adineauri</string>
-    <string name="last_seen_min">văzut(ă) ultima dată acum 1 minut</string>
-    <string name="last_seen_mins">văzut(ă) ultima dată acum %d minute</string>
-    <string name="last_seen_hour">văzut(ă) ultima dată acum o oră</string>
+    <string name="last_seen_now">conectat(ă)</string>
+    <string name="last_seen_min">în urmă cu 1 minut</string>
+    <string name="last_seen_mins">în urmă cu %d minute</string>
+    <string name="last_seen_hour">acum o oră</string>
     <string name="last_seen_hours">văzut(ă) ultima dată acum %d ore</string>
     <string name="last_seen_day">văzut(ă) ultima dată acum o zi</string>
     <string name="last_seen_days">văzut(ă) ultima dată acum %d zile</string>
