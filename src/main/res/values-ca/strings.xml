@@ -509,7 +509,6 @@
     <string name="share_uri_with">Compartir URI con...</string>
     <string name="mgmt_account_reconnect">Reconnectar</string>
     <string name="welcome_text">... és una aplicació XMPP/Jabber gratuÏta i segura.</string>
-    <string name="magic_create_text">A continuació crearem un perfil amb una contrasenya generada aleatoriàment que podràs utilitzar o canviar a la pàgina següent\i posteriorment podràs posar-t\'he en contacte amb els teus contactes d\'aquest i altres servidors donan-los el teu Jabber-ID.</string>
     <string name="your_full_jid_will_be">El teu identificador Jabber serà: %s</string>
     <string name="create_account">Crear compte</string>
     <string name="welcome_existing_account">Tinc un compte</string>
@@ -748,7 +747,6 @@
     <string name="pref_start_search_summary">En la pantalla \'Començar conversa\', obrir el teclat i situar el cursor en el camp de cerca</string>
     <string name="paste_as_quote">Enganxar  como a  cita</string>
     <string name="group_chat_avatar">Imatge de perfil del grup</string>
-    <string name="host_does_not_support_group_chat_avatars">El servidor no suporta imatges de perfil</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Només el propietari pot canviar l\'imatge de perfil</string>
     <string name="contact_name">Nom de contacto</string>
     <string name="nickname">Sobrenom per a aquest grup de conversa</string>
