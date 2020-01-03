@@ -256,6 +256,7 @@
     <string name="pref_use_indicate_received">Cere raport de primire</string>
     <string name="pref_use_indicate_received_summary">Mesajele primite vor fi marcate cu o bifa verde, dacă este suportat</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Colorează butonul de trimitere pentru a indica starea contactului</string>
+    <string name="pref_use_colored_names_to_indicate_status_summary">Colorează numele pentru a indica starea contactului</string>
     <string name="pref_expert_options_other">Altele</string>
     <string name="pref_autojoin">Sincronizează cu semnele de carte</string>
     <string name="pref_autojoin_summary">Alătură-te sau părăsește discuțiile de grup în mod automat în funcție de setarea din semnele de carte.</string>
@@ -355,8 +356,10 @@
     <string name="remove_membership">Abrogă privilegiile de membru</string>
     <string name="grant_admin_privileges">Acordă privilegiile de administrator</string>
     <string name="remove_admin_privileges">Abrogă privilegiile de administrator</string>
+    <string name="kick_from_room">Înlătură din discuția de grup</string>
     <string name="could_not_change_affiliation">Nu s-a putut schimba afilierea lui %s</string>
     <string name="ban_from_conference">Interzice accesul la discuția de grup</string>
+    <string name="kick_from_conference">Înlătură din discuția de grup</string>
     <string name="ban_now">Interzice accesul acum</string>
     <string name="non_anonymous">Adresele XMPP sunt vizibile tuturor</string>
     <string name="moderated">Canalul este moderat</string>
@@ -416,8 +419,11 @@
     <string name="download_failed_file_not_found">Descărcare eșuată: Fișierul nu a fost găsit</string>
     <string name="download_failed_could_not_connect">Descărcare eșuată: Nu s-a putut realiza conexiunea cu gazda.</string>
     <string name="download_failed_could_not_write_file">Descărcare eșuată: Nu s-a putut scrie fișierul</string>
+    <string name="action_check_update">Verifică actualizare</string>
+    <string name="title_activity_updater">Serviciul de actualizare</string>
     <string name="remind_later">mai târziu</string>
     <string name="update">actualizează</string>
+    <string name="no_update_available">Nici o actualizare disponibilă</string>
     <string name="account_status_tor_unavailable">Rețeaua Tor nu este disponibilă</string>
     <string name="account_status_bind_failure">Eroare de conexiune</string>
     <string name="account_status_host_unknown">Gazdă fără domeniu</string>
@@ -465,14 +471,24 @@
     <string name="notify_only_when_highlighted">Notifică doar atunci când cineva vă menționează numele</string>
     <string name="notify_never">Notificări dezactivate</string>
     <string name="notify_paused">Notificări suspendate</string>
+    <string name="pref_picture_quality">Calitatea imaginii</string>
+    <string name="pref_picture_quality_summary">Redimensionează și comprimă imaginile</string>
+    <string name="pref_video_quality">Calitate video</string>
+    <string name="pref_video_quality_summary">Redimensionează și comprimă videourile</string>
+    <string name="video_very_low">Foarte mică (144p)</string>
+    <string name="video_low">Mică (360p)</string>
+    <string name="video_mid">Medie (720p)</string>
+    <string name="video_high">Mare (1080p)</string>
     <string name="video_original">Original (necompresat)</string>
     <string name="always">Mereu</string>
+    <string name="always_off">Mereu oprit</string>
     <string name="battery_optimizations_enabled">Optimizare baterie activată</string>
     <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru Pix-Art Messenger, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
     <string name="battery_optimizations_enabled_dialog">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul 
 bateriei pentru Conversations, asta poate duce la notificări întârziate 
 sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
     <string name="disable">Dezactivează</string>
+    <string name="cancel_update">Anulare actualizare?</string>
     <string name="yes">Da</string>
     <string name="no">Nu</string>
     <string name="no_accounts">(Nici un cont activat)</string>
@@ -489,6 +505,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți folosi sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le adresa dumneavoastră completă XMPP.</string>
     <string name="your_full_jid_will_be">Adresa dumneavoastră XMPP completă va fi: %s</string>
     <string name="create_account">Creează cont</string>
+    <string name="welcome_existing_account">Am un cont</string>
     <string name="pick_your_username">Alegeți un nume de utilizator</string>
     <string name="pref_manually_change_presence">Setează disponibilitate manual</string>
     <string name="pref_manually_change_presence_summary">Setați disponibilitatea atunci când vă editați mesajul de stare.</string>
@@ -508,6 +525,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="registration_password_too_weak">Înregistrare eșuată: Parolă nesigură</string>
     <string name="choose_participants">Alegeți participanți</string>
     <string name="creating_conference">Se creează discuția de grup...</string>
+    <string name="import_database">Importă o copie de siguranță</string>
     <string name="invite_again">Trimite din nou invitația</string>
     <string name="pref_broadcast_last_activity">Anunță ultima interacțiune</string>
     <string name="pref_broadcast_last_activity_summary">Contactele vă sunt anunțate atunci când folosiți Pix-Art Messenger</string>
@@ -623,6 +641,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="error_no_keys_to_trust_presence">Nu există chei disponibile ce pot fi folosite pentru acest contact.\nAsigurați-vă că ați activat trimiterea de actualizări de prezență reciproce.</string>
     <string name="mark_as_read">Marchează ca citit</string>
     <string name="server_info_partial">parțial</string>
+    <string name="pref_show_foreground_service">Folosește serviciul activ în prim-plan</string>
+    <string name="install_update">Instalare actualizare?</string>
     <string name="no_application_found_to_open_link">Nu s-a găsit nici o aplicație care să deschidă legătura</string>
     <string name="contacts_have_read_up_to_this_point">%s au citit până aici</string>
     <string name="contact_has_read_up_to_this_point">%s a citit până aici</string>
@@ -635,6 +655,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="snooze">Amânare</string>
     <string name="huawei_protected_apps">Aplicații protejate</string>
     <string name="huawei_protected_apps_summary">Pentru a continua să primiți notificări, chiar și când ecranul este oprit, trebuie să adăugați Pix-Art Messenger în lista de aplicații protejate.</string>
+    <string name="pref_enable_multi_accounts_title">Activează conturi multiple</string>
+    <string name="pref_enable_multi_accounts_summary">Doriți să folosiți conturi multiple?</string>
     <string name="mtm_accept_cert">Acceptați certificatul necunoscut?</string>
     <string name="mtm_trust_anchor">Certificatul serverului nu este semnat de o autoritate de certificare (CA) cunoscută.</string>
     <string name="mtm_accept_servername">Acceptați numele serverului ce nu corespunde?</string>
@@ -666,8 +688,10 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="default_off">Dezactivată implicit</string>
     <string name="pref_theme_light">Luminoasă</string>
     <string name="pref_theme_dark">Întunecată</string>
+    <string name="pref_theme_auto">Automat</string>
     <string name="pref_theme_options_summary">Selecție paletă culori interfață</string>
     <string name="pref_theme_options">Temă</string>
+    <string name="chooce_account">Alegeți contul</string>
     <string name="pref_font_size">Mărime text</string>
     <string name="pref_font_size_summary">Dimensiunea relativă a fontului folosită în aplicație.</string>
     <string name="small">Mică</string>
@@ -677,11 +701,16 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="not_encrypted_for_this_device">Mesajul nu a fost criptat pentru acest dispozitiv.</string>
     <string name="no_microphone_permission">Pix-Art Messenger are nevoie de acces la microfon</string>
     <string name="search_messages">Caută mesaje</string>
+    <string name="gif">GIF</string>
     <string name="view_conversation">Arată conversația</string>
     <string name="web_address">adresă web</string>
     <string name="jabber_id_copied_to_clipboard">Adresă XMPP copiată în memorie</string>
     <string name="copy_jabber_id">Copiază adresa XMPP</string>
     <string name="copy_link">Copiază adresa web</string>
+    <string name="server_hint">Alegeți furnizorul</string>
+    <string name="choose_your_server">Alegeţi furnizorul de XMPP</string>
+    <string name="show_privacy">Politica de confidenţialitate</string>
+    <string name="show_termsofuse">Condiţii de utilizare</string>
     <string name="p1_s3_filetransfer">Partajare fișiere prin HTTP pentru S3</string>
     <string name="pref_start_search">Activează direct căutarea</string>
     <string name="pref_start_search_summary">În ecranul \"Pornește o conversație\" focalizează câmpul de căutare și arată tastatura</string>
@@ -696,8 +725,10 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="create_dialog_group_chat_name">Titlul discuției de grup</string>
     <string name="everyone_has_read_up_to_this_point">Toate persoanele au citit până aici</string>
     <string name="conference_resource_constraint">Resurse restricționate</string>
+    <string name="delete_message">Șterge mesaj</string>
     <string name="conference_destroyed">Această discuție de grup a fost distrusă</string>
     <string name="no_application_found_to_view_contact">Nu s-a găsit nici o aplicație care să deschidă contactul</string>
+    <string name="no_location_permission">Pix-Art Messenger are nevoie de acces la serviciile de localizare</string>
     <string name="unable_to_save_recording">Nu s-a putut salva înregistrarea</string>
     <string name="foreground_service_channel_name">Serviciul activ în prim-plan</string>
     <string name="foreground_service_channel_description">Această categorie de notificări este folosită pentru a arăta o notificare permanentă ce indică rularea Pix-Art Messenger.</string>
@@ -712,9 +743,12 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="pref_more_notification_settings_summary">Importanță, sunete, vibrații</string>
     <string name="video_compression_channel_name">Compresie video</string>
     <string name="backup_channel_name">Copie de siguranță &amp; Restaurare</string>
+    <string name="app_update_channel_name">Actualizare aplicație</string>
+    <string name="action_group_details">Detalii grup</string>
     <string name="view_media">Vizualizare fișiere media</string>
     <string name="media_browser">Vizualizare fișiere media</string>
     <string name="account_status_stream_opening_error">Eroare deschidere flux de date</string>
+    <string name="action_open">Deschide</string>
     <string name="security_violation_not_attaching_file">Fișier omis ca urmare a unei probleme de securitate.</string>
     <string name="delete_file_dialog">Șterge fișierul</string>
     <string name="delete_file_dialog_msg">Sigur doriți să ștergeți acest fișier?\n\n<b>Atenție:</b> Această acțiune nu va șterge copiile acestui fișier care sunt stocate pe alte dispozitive sau servere.</string>
@@ -722,6 +756,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="remote_server_timeout">A expirat termenul de așteptare răspuns de la serverul destinație</string>
     <string name="already_drafting_message">Deja aveți ciorna unui mesaj.</string>
     <string name="bad_key_for_encryption">Cheie invalidă pentru criptare.</string>
+    <string name="delete_message_dialog">Șterge mesaj</string>
+    <string name="delete_message_dialog_msg">Sigur doriți să ștergeți acest mesaj?\n\n<b>Atenție:</b> Această acțiune nu va șterge copiile acestui mesaj care sunt stocate pe alte dispozitive sau servere.</string>
     <string name="feature_not_implemented">Opțiune neimplementată</string>
     <string name="reject_request">Refuză cererea</string>
     <string name="error_message_copied_to_clipboard">Mesaj de eroare copiat în memorie</string>
@@ -735,6 +771,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="enter_your_name">Introducețivă numele</string>
     <string name="enter_your_name_instructions">Vă rugăm să introduceți numele care v-a fii vizibil contactelelor dumneavoastră.</string>
     <string name="no_name_set_instructions">Nu este setat nici un nume.</string>
+    <string name="autojoin_group_chat">Alătură-te automat acestei discuții de grup</string>
     <string name="open_with">Deschide cu…</string>
     <string name="choose_account">Alegeți contul</string>
     <string name="set_profile_picture">Poză profil Pix-Art Messenger</string>
@@ -746,6 +783,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="unable_to_decrypt_backup">Nu s-a putut decripta copia de siguranță. Parola este corectă?</string>
     <string name="view_users">Arată participanții</string>
     <string name="group_chat_members">Participanți</string>
+    <string name="message_deleted">Mesajul a fost șters</string>
     <string name="channel_details">Detalii canal</string>
     <string name="join_public_channel">Alătură-te unui canal public</string>
     <string name="create_private_group_chat">Creează discuție de grup privată</string>
@@ -780,6 +818,9 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="manage_permission">Gestionare privilegii</string>
     <string name="destroy_channel">Distruge canal</string>
     <string name="destroy_channel_dialog">Doriți distrugerea canalului %s? Această acțiune v-a șterge permanent canalul.</string>
+    <string name="destroy_channel_succeed">Canalul a fost distrus cu succes</string>
+    <string name="destroy_channel_failed">Canalul nu a putut fi distrus</string>
+    <string name="action_end_conversation_channel">Părăsește canalul</string>
     <string name="notification_backup_created_title">Copia de siguranță a fost creată</string>
     <string name="notification_backup_created_subtitle">Fișierele copiei de siguranță au fost salvate în %s</string>
     <string name="search_participants">Caută participanți</string>
@@ -803,6 +844,12 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="account_already_setup">Acest cont a fost deja configurat</string>
     <string name="please_enter_password">Va rugăm să introduceți parola pentru acest cont</string>
     <string name="unable_to_perform_this_action">Nu se poate realiza această acțiune</string>
+    <string name="your_status">Statusul dumneavoastră</string>
+    <string name="this_device">Acest dispozitiv</string>
+    <string name="intro_desc_main">Află mai multe…</string>
+    <string name="welcome_header">Bine ați venit la\nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Permisiunile necesare</string>
+    <string name="intro_account">Contul dumneavoastră</string>
     <string name="open_join_dialog">Alătură-te unui canal public...</string>
     <string name="file_transmission_cancelled">transmisia fișierului a fost anulată</string>
     <string name="sharing_application_not_grant_permission">Aplicația care a partajat nu a permis accesul la acest fișier.</string>
