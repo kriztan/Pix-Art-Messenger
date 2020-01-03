@@ -511,7 +511,6 @@
     <string name="share_uri_with">Поделиться URI с…</string>
     <string name="mgmt_account_reconnect">Переподключить</string>
     <string name="welcome_text">...это свободный и безопасный XMPP/Jabber клиент.</string>
-    <string name="magic_create_text">Мы поможем вам создать аккаунт со случайно сгенерированным паролем, который вы сможете сменить на свой собственный на следующей странице.\nЭто позволит вам общаться с другими пользователями этого и других серверов, давая вам Jabber-ID.</string>
     <string name="your_full_jid_will_be">Ваш Jabber-ID был: %s</string>
     <string name="create_account">Создать аккаунт</string>
     <string name="welcome_existing_account">У меня есть аккаунт</string>
@@ -768,7 +767,6 @@
     <string name="pref_start_search_summary">При начале разговора показать клавиатуру и установить курсор в поле поиска</string>
     <string name="paste_as_quote">Вставить как цитату</string>
     <string name="group_chat_avatar">Аватар группового чата</string>
-    <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Только владелец может сменить аватар</string>
     <string name="contact_name">Имя контакта</string>
     <string name="nickname">Наименование для этого группового чата</string>
