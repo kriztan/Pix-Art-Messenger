@@ -490,7 +490,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_quality_summary">Skompresuj i zmień rozmiar zdjęcia</string>
     <string name="pref_video_quality">Jakoś wideo</string>
     <string name="pref_video_quality_summary">Skompresuj i zmień rozmiar wideo</string>
-    <string name="video_original">oryginał (nieskompresowane)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
     <string name="battery_optimizations_enabled_explained">Twoje urządzenie wykonuje poważnie optymalizacje zużycia baterii przez Pix-Art Messenger, które mogą powodować opóźnienie powiadomień lub nawet utratę wiadomości.\nZaleca się ich wyłączenie.</string>
@@ -659,10 +658,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_tor">Połącz przez sieć TOR</string>
     <string name="pref_use_tor_summary">Tuneluj wszystkie połączenia przez sieć TOR. Wymaga zainstalowania aplikacji \"Orbot\"</string>
     <string name="pref_connection_options">Połączenie</string>
-    <string name="image_low">niski (720p)</string>
-    <string name="image_mid">średnie (1920p)</string>
-    <string name="image_high">wysokie (3840p)</string>
-    <string name="image_original">oryginał (nieskompresowany)</string>
     <string name="last_seen_just_away">ostatnio</string>
     <string name="send_message">Wyślij wiadomość</string>
     <string name="send_failed_resend">dostarczenie nie powiodło się, ponowne wysyłanie…</string>
@@ -671,8 +666,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="retry_decryption">Ponownie spróbuj odszyfrować</string>
     <string name="session_failure">Błąd sesji</string>
     <string name="sasl_downgrade">Starszy mechanizm SASL</string>
-    <string name="action_take_photo">zrób zdjęcie</string>
-    <string name="action_take_video">nagraj wideo</string>
     <string name="account_status_regis_web">Serwer wymaga rejestracji na stronie</string>
     <string name="application_found_to_open_website">Nie znaleziono aplikacji do otwarcia strony</string>
     <string name="open_website">Otwórz stronę</string>
