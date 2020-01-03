@@ -489,11 +489,6 @@
     <string name="pref_picture_quality_summary">Rimpicciolisci e comprimi immagini</string>
     <string name="pref_video_quality">Qualità video</string>
     <string name="pref_video_quality_summary">Rimpicciolisci e comprimi video</string>
-    <string name="video_very_low">molto bassa (144p)</string>
-    <string name="video_low">bassa (360p)</string>
-    <string name="video_mid">media (720p)</string>
-    <string name="video_high">alta (1080p)</string>
-    <string name="video_original">originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="always_off">Sempre disattivato</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
@@ -654,10 +649,6 @@
     <string name="pref_use_tor">Connettiti via Tor</string>
     <string name="pref_use_tor_summary">Indirizza tutte le connessioni attraverso la rete Tor. Richiede Orbot</string>
     <string name="pref_connection_options">Connessione</string>
-    <string name="image_low">bassa (720p)</string>
-    <string name="image_mid">media (1920p)</string>
-    <string name="image_high">alta (3840p)</string>
-    <string name="image_original">originale (non compresso)</string>
     <string name="last_seen_just_away">recentemente</string>
     <string name="send_message">Invia messaggio</string>
     <string name="send_failed_resend">invio fallito, reinvio…</string>
@@ -666,8 +657,6 @@
     <string name="retry_decryption">Ritenta decifrazione</string>
     <string name="session_failure">Sessione fallita</string>
     <string name="sasl_downgrade">Meccanismo SASL degradato</string>
-    <string name="action_take_photo">scatta foto</string>
-    <string name="action_take_video">registra video</string>
     <string name="account_status_regis_web">Il server richiede la registrazione sul sito</string>
     <string name="application_found_to_open_website">Nessuna applicazione trovata per aprire il sito</string>
     <string name="open_website">Apri sito</string>
@@ -902,7 +891,6 @@
     <string name="pref_show_mappreview_inside_summary">Mostra anteprime mappe direttamente all\'interno delle conversazioni, sarà stabilita una connessione al Pix-Art-Server.</string>
     <string name="pref_show_mappreview_inside">Mostra anteprime delle posizioni nella conversazione</string>
     <string name="pref_use_internal_updater_summary">Permetti all\'app di cercare gli aggiornamenti una volta al giorno</string>
-    <string name="pref_use_internal_updater">Cerca aggiornamenti</string>
     <string name="attach">Allega</string>
     <string name="delete_locally">Elimina localmente</string>
     <string name="delete_from_server">Elimina dal server</string>
