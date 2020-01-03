@@ -7,6 +7,7 @@
     <string name="action_end_conversation">Închide conversația</string>
     <string name="action_contact_details">Detalii contact</string>
     <string name="action_secure">Securizează conferința</string>
+    <string name="action_add_new_account">Adăugaţi un cont nou</string>
     <string name="action_edit_contact">Editează nume</string>
     <string name="action_add_phone_book">Adaugă la lista de contacte</string>
     <string name="action_delete_contact">Șterge din lista de contacte</string>
@@ -16,6 +17,8 @@
     <string name="action_unblock_domain">Deblochează domeniu</string>
     <string name="title_activity_manage_accounts">Configurează conturile</string>
     <string name="title_activity_settings">Setări</string>
+    <string name="conference_details">Detalii discuție de grup</string>
+    <string name="contact_details">Detalii contact</string>
     <string name="title_activity_sharewith">Partajează într-o conversație</string>
     <string name="title_activity_start_conversation">Pornește o conversație</string>
     <string name="title_activity_choose_contact">Alegeți contact</string>
@@ -148,7 +151,7 @@
     <string name="openpgp_has_been_published">Cheia publică OpenPGP a fost publicată.</string>
     <string name="mgmt_account_are_you_sure">Sigur doriți asta?</string>
     <string name="attach_record_voice">Înregistrare voce</string>
-    <string name="account_settings_jabber_id">Adresä XMPP</string>
+    <string name="account_settings_jabber_id">Adresă XMPP</string>
     <string name="account_settings_example_jabber_id">numeutilizator@exemplu.ro</string>
     <string name="password">Parolă</string>
     <string name="invalid_jid">Aceasta nu este o adresă XMPP valabilă</string>
@@ -748,7 +751,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="create_private_group_chat">Creează discuție de grup privată</string>
     <string name="create_public_channel">Creează canal public</string>
     <string name="create_dialog_channel_name">Nume canal</string>
-    <string name="xmpp_address">Adresä XMPP</string>
+    <string name="xmpp_address">Adresă XMPP</string>
     <string name="please_enter_name">Vă rugăm să furnizați un nume pentru canal</string>
     <string name="please_enter_xmpp_address">Vă rugăm să furnizați o adresă XMPP</string>
     <string name="this_is_an_xmpp_address">Aceasta este o adresă XMPP. Vă rugăm să furnizați un nume.</string>
@@ -756,7 +759,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="channel_already_exists">Acest canal există deja</string>
     <string name="joined_an_existing_channel">V-ați alăturat unui canal existent</string>
     <string name="unable_to_set_channel_configuration">Nu se poate seta configurația canalului</string>
-    <string name="back">înapoi</string>
+    <string name="back">Înapoi</string>
     <string name="conference_options">Configurare discuție de grup privată</string>
     <string name="channel_options">Configurare canal public</string>
     <string name="allow_participants_to_edit_subject">Permite oricui să editeze subiectul</string>
@@ -776,7 +779,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="ban_from_channel">Interzice accesul la canal</string>
     <string name="manage_permission">Gestionare privilegii</string>
     <string name="destroy_channel">Distruge canal</string>
-    <string name="destroy_channel_dialog">Sigur doriți distrugerea acestui canal public?\n\n<b>Atenție:</b> Canalul public v-a fi complet șters de pe server.</string>
+    <string name="destroy_channel_dialog">Doriți distrugerea canalului %s? Această acțiune v-a șterge permanent canalul.</string>
     <string name="notification_backup_created_title">Copia de siguranță a fost creată</string>
     <string name="notification_backup_created_subtitle">Fișierele copiei de siguranță au fost salvate în %s</string>
     <string name="search_participants">Caută participanți</string>
@@ -784,7 +787,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="attach">Atașează</string>
     <string name="discover_channels">Descoperă canale publice</string>
     <string name="search_channels">Caută canale publice</string>
-    <string name="channel_discovery_opt_in_title">Posibilă încălcare a intimității!</string>
+    <string name="channel_discovery_opt_in_title">Notificare de confidențialitate</string>
     <string name="channel_discover_opt_in_message"><![CDATA[Descoperirea de canale publice folosește un serviciu terț numit <a href="https://search.jabber.network">search.jabber.network</a>.<br><br>Folosind această funcție se va transmite adresa dumneavoastră IP și cuvintele căutate către acest serviciu. Pentru mai multe informații citiți <a href="https://search.jabber.network/privacy">Politica de confidențialitate</a> a serviciului.]]></string>
     <string name="use_own_provider">Folosește furnizorul meu</string>
     <string name="this_looks_like_a_domain">Aceasta pare să fie o adresă de domeniu</string>
