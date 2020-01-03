@@ -563,9 +563,6 @@
     <string name="pref_use_tor">Kumonekta sa pamamagitan ng Tor</string>
     <string name="pref_use_tor_summary">I-tunnel lahat ng koneksyon sa pamamagitan ng network ng Tor.</string>
     <string name="pref_connection_options">Mga pagpipilian sa koneksyon</string>
-    <string name="image_low">mababa (720p)</string>
-    <string name="image_mid">gitna (1920p)</string>
-    <string name="image_high">mataas (3840p)</string>
     <string name="last_seen_just_away">kamakailan lamang</string>
     <string name="send_message">Magpadala ng mensahe</string>
     <string name="send_failed_resend">nabigo ang paghahatid, hinahatid uli…</string>
@@ -574,8 +571,6 @@
     <string name="retry_decryption">Retry decryption</string>
     <string name="session_failure">Pagkabigo ng sesyon</string>
     <string name="sasl_downgrade">I-downgrade ang mekanismo ng SASL</string>
-    <string name="action_take_photo">kunan ng litrato</string>
-    <string name="action_take_video">kumuha ng video</string>
     <string name="account_status_regis_web">Nangangailangan ang server ng pagpaparehistro sa website</string>
     <string name="application_found_to_open_website">Walang nahanap na application upang buksan ang website</string>
     <string name="open_website">Buksan ang website</string>
