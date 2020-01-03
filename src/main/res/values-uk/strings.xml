@@ -516,7 +516,6 @@
     <string name="share_uri_with">Поділитися URI з…</string>
     <string name="mgmt_account_reconnect">Перез’єднатися</string>
     <string name="welcome_text">…вільний та безпечний клієнт XMPP/Jabber.</string>
-    <string name="magic_create_text">Ми допоможемо вам створити обліковий запис. На наступній сторінці ви зможете змінити автоматично зґенерований пароль.\nПодалі ви зможете спілкуватися з користувачами вашого чи будь-якого іншого, для цього потрібно буде надати користувачеві вашу повну XMPP-адресу.</string>
     <string name="your_full_jid_will_be">Ваша повна адреса XMPP буде: %s</string>
     <string name="create_account">Створити обліковий запис</string>
     <string name="welcome_existing_account">Я маю обліковий запис</string>
@@ -773,7 +772,6 @@
     <string name="pref_start_search_summary">На екрані початку розмови відкривати клавіатуру й розміщувати курсор в поле пошуку</string>
     <string name="paste_as_quote">Вставити як цитату</string>
     <string name="group_chat_avatar">Іконка групи</string>
-    <string name="host_does_not_support_group_chat_avatars">Сервер не підтримує іконки для груп</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Лише власник може змінити іконку групи</string>
     <string name="contact_name">Ім\'я контакта</string>
     <string name="nickname">Прізвисько</string>
