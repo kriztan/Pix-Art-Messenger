@@ -490,11 +490,6 @@
     <string name="pref_picture_quality_summary">Bildgröße anpassen und komprimieren</string>
     <string name="pref_video_quality">Videoqualität</string>
     <string name="pref_video_quality_summary">Videogröße anpassen und komprimieren</string>
-    <string name="video_very_low">sehr niedrig (144p)</string>
-    <string name="video_low">niedrig (360p)</string>
-    <string name="video_mid">mittelmäßig (720p)</string>
-    <string name="video_high">hoch (1080p)</string>
-    <string name="video_original">original (unkomprimiert)</string>
     <string name="always">Immer</string>
     <string name="always_off">Immer aus</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
@@ -655,10 +650,6 @@
     <string name="pref_use_tor">Über Tor verbinden</string>
     <string name="pref_use_tor_summary">Alle Verbindungen über das Tor-Netzwerk tunneln. Benötigt Orbot</string>
     <string name="pref_connection_options">Verbindung</string>
-    <string name="image_low">niedrig (720p)</string>
-    <string name="image_mid">mittelmäßig  (1920p)</string>
-    <string name="image_high">hoch (3840p)</string>
-    <string name="image_original">original (unkomprimiert)</string>
     <string name="last_seen_just_away">kürzlich</string>
     <string name="send_message">Nachricht senden</string>
     <string name="send_failed_resend">Zustellung fehlgeschlagen, sende erneut…</string>
@@ -667,8 +658,6 @@
     <string name="retry_decryption">Entschlüsseln wiederholen</string>
     <string name="session_failure">Sitzungsfehler</string>
     <string name="sasl_downgrade">SASL-Mechanismus zurückgestuft</string>
-    <string name="action_take_photo">Foto aufnehmen</string>
-    <string name="action_take_video">Video aufnehmen</string>
     <string name="account_status_regis_web">Der Server benötigt eine Registrierung auf einer Website</string>
     <string name="application_found_to_open_website">Keine Anwendung zum Öffnen von Webseiten gefunden</string>
     <string name="open_website">Webseite anzeigen</string>
@@ -903,7 +892,6 @@
     <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung zum Pix-Art-Server hergestellt.</string>
     <string name="pref_show_mappreview_inside">Zeige Karten-Vorschau im Chat</string>
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
-    <string name="pref_use_internal_updater">Nach Updates suchen</string>
     <string name="attach">Anhängen</string>
     <string name="delete_locally">Lokal löschen</string>
     <string name="delete_from_server">Vom Server löschen</string>
