@@ -504,7 +504,6 @@
     <string name="share_uri_with">Сподели URI с…</string>
     <string name="mgmt_account_reconnect">Повторно Свързване</string>
     <string name="welcome_text">...е безплатен и сигурен XMPP / Jabber клиент.</string>
-    <string name="magic_create_text">Ще ви преведем през процеса на създаване на акаунт със случайна парола, която можете да използвате или да промените на собствената си парола на следващата страница. \nСлед това ще можете да общувате с потребителите на този и други доставчици, като им дадете пълния си Jabber-ID.</string>
     <string name="your_full_jid_will_be">Вашият Jabber-ID ще бъде: %s</string>
     <string name="create_account">Създаване на нов акаунт</string>
     <string name="welcome_existing_account">Имам профил</string>
@@ -738,7 +737,6 @@
     <string name="pref_start_search_summary">На екрана ‘Стартиране на разговор’ отворете клавиатурата и поставете курсора в полето за търсене</string>
     <string name="paste_as_quote">Постави като цитат</string>
     <string name="group_chat_avatar">Снимка за групов чат</string>
-    <string name="host_does_not_support_group_chat_avatars">Сървъра не поддържа аватари</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Само собственикът може да промени снимката</string>
     <string name="contact_name">Име на контакт</string>
     <string name="nickname">Псевдоним за този групов разговор</string>
