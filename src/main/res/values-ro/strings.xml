@@ -850,10 +850,17 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="welcome_header">Bine ați venit la\nPix-Art Messenger</string>
     <string name="intro_required_permissions">Permisiunile necesare</string>
     <string name="intro_account">Contul dumneavoastră</string>
+    <string name="intro_start_chatting">Începeți să discutați</string>
+    <string name="intro_chat_details">Detalii discuții</string>
+    <string name="intro_highlight_user">Evidențiere utilizator</string>
+    <string name="intro_whats_xmpp">Ce este XMPP / Jabber / Pix-Art Messenger?</string>
     <string name="open_join_dialog">Alătură-te unui canal public...</string>
+    <string name="intro_optional_permissions">Permisiuni opționale</string>
+    <string name="no_results">Nici un rezultat</string>
     <string name="file_transmission_cancelled">transmisia fișierului a fost anulată</string>
     <string name="sharing_application_not_grant_permission">Aplicația care a partajat nu a permis accesul la acest fișier.</string>
     <string name="group_chats_and_channels"><![CDATA[Discuții de grup & Canale]]></string>
+    <string name="jabber_network">jabber.network</string>
     <string name="local_server">Server local</string>
     <string name="pref_channel_discovery_summary">Cei mai mulți utilizatori ar trebui să aleagă \'jabber.network\' pentru a primi sugestii mai bune din întregul ecosistem XMPP.</string>
     <string name="pref_channel_discovery">Metoda de descoperire a canalelor</string>
@@ -863,4 +870,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="gp_long">Lungă</string>
     <string name="pref_notification_grace_period">Perioadă de grație</string>
     <string name="pref_notification_grace_period_summary">Durata de timp cât notificările sunt ascunse după ce s-a observat activitate pe un alt dispozitiv al dumneavoastră.</string>
+    <string name="pref_theme_blue">Albastru</string>
+    <string name="pref_theme_orange">Portocaliu</string>
+    <string name="pref_theme_color_options_summary">Selectați paleta de culori a temei</string>
+    <string name="pref_theme_color_options">Culoarea temei</string>
 </resources>
