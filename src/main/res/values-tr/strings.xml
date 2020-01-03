@@ -462,7 +462,6 @@
     <string name="share_uri_with">Ile URI paylaş…</string>
     <string name="mgmt_account_reconnect">Yeniden bağlan</string>
     <string name="welcome_text">... ücretsiz ve güvenli bir XMPP/Jabber istemcisidir.</string>
-    <string name="magic_create_text">Bir sonraki sayfada kendi şifrenizi değiştirebileceğiniz veya kullanabileceğiniz rastgele bir şifreyle bir hesap oluşturma sürecinde size yol göstereceğiz.\n Bu kişilere ve diğer sağlayıcıların kullanıcılarına tam Jabber Kimliği vererek iletişime geçebileceksiniz.</string>
     <string name="your_full_jid_will_be">Jabber-ID\'niz şu şekilde olacaktır: %s</string>
     <string name="create_account">Yeni hesap oluştur</string>
     <string name="pick_your_username">Kullanıcı adınızı seçin</string>
