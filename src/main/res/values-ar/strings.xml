@@ -329,7 +329,6 @@
     <string name="pref_picture_quality_summary">تغيير الحجم وضغط الصور</string>
     <string name="pref_video_quality">جودة الفيديو</string>
     <string name="pref_video_quality_summary">تغيير الحجم وضغط الفيديوهات</string>
-    <string name="video_original">أصلية (غير مضغوطة)</string>
     <string name="always">دائما</string>
     <string name="battery_optimizations_enabled">تم تشغيل تحسينات البطارية</string>
     <string name="disable">تعطيل</string>
@@ -410,17 +409,11 @@
     <string name="block_entire_domain">حجب النطاق كاملا</string>
     <string name="pref_use_tor">الإتصال عبر شبكة تور</string>
     <string name="pref_connection_options">خيارات الاتصال</string>
-    <string name="image_low">ضعيفة (720p)</string>
-    <string name="image_mid">متوسطة (1920p)</string>
-    <string name="image_high">عالية (3840p)</string>
-    <string name="image_original">أصلية (غير مضغوطة)</string>
     <string name="last_seen_just_away">مؤخَرًا</string>
     <string name="send_message">إرسال رسالة</string>
     <string name="retry_decryption">إعادة محاولة فك التعمية</string>
     <string name="session_failure">أخفقت الجلسة</string>
     <string name="sasl_downgrade">الرجوع إلى ميكانيزم SASL</string>
-    <string name="action_take_photo">التقاط صورة</string>
-    <string name="action_take_video">تسجيل فيديو</string>
     <string name="open_website">افتح موقع الويب</string>
     <string name="pref_headsup_notifications">الإشعارات العلوية</string>
     <string name="pref_headsup_notifications_summary">اظهار الإشعارات العلوية</string>
