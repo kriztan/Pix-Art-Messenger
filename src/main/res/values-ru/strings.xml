@@ -489,11 +489,6 @@
     <string name="pref_picture_quality_summary">Изменять размер и сжимать изображения</string>
     <string name="pref_video_quality">Качество видео</string>
     <string name="pref_video_quality_summary">Изменять размер и сжимать видео</string>
-    <string name="video_very_low">очень низкое (144p)</string>
-    <string name="video_low">низкое (360p)</string>
-    <string name="video_mid">среднее (720p)</string>
-    <string name="video_high">высокое (1080p)</string>
-    <string name="video_original">оригинальное (без сжатия)</string>
     <string name="always">Всегда</string>
     <string name="always_off">Всегда выключен</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
@@ -666,10 +661,6 @@
     <string name="pref_use_tor">Подключиться через Tor</string>
     <string name="pref_use_tor_summary">Направлять все соединения через сеть Tor.</string>
     <string name="pref_connection_options">Настройки соединения</string>
-    <string name="image_low">низкое (720p)</string>
-    <string name="image_mid">среднее (1920p)</string>
-    <string name="image_high">высокое (3840p)</string>
-    <string name="image_original">оригинальное (без сжатия)</string>
     <string name="last_seen_just_away">только что</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="send_failed_resend">не удалось отправить, пробую снова…</string>
@@ -678,8 +669,6 @@
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
     <string name="sasl_downgrade">Устаревший механизм SASL</string>
-    <string name="action_take_photo">cделать фото</string>
-    <string name="action_take_video">записать видео</string>
     <string name="account_status_regis_web">Сервер требует регистрации на веб-сайте</string>
     <string name="application_found_to_open_website">Не удалось найти подходящее приложение для открытия веб-сайта</string>
     <string name="open_website">Открыть веб-сайт</string>
@@ -914,7 +903,6 @@
     <string name="pref_show_mappreview_inside_summary">Показывать превью карт внутри чата (будет установлено соединение с Pix-Art-Server).</string>
     <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
-    <string name="pref_use_internal_updater">Проверять наличие обновлений</string>
     <string name="attach">Прикрепить</string>
     <string name="delete_locally">Удалить с этого устройства</string>
     <string name="delete_from_server">Удалить с сервера</string>
