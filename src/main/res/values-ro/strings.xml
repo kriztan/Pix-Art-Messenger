@@ -729,9 +729,9 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="group_chat_will_make_your_jabber_id_public">Acest canal vă face publică adresa XMPP</string>
     <string name="ebook">carte electronică</string>
     <string name="your_name">Numele dumneavoastă</string>
-    <string name="enter_your_name">Introducețivä numele</string>
-    <string name="enter_your_name_instructions">Vă rugăm să vă introduceți numele pentru a informa persoanele care nu vă au în agendă cine sunteți.</string>
-    <string name="no_name_set_instructions">Folosiți butonul de editare pentru a vă seta numele.</string>
+    <string name="enter_your_name">Introducețivă numele</string>
+    <string name="enter_your_name_instructions">Vă rugăm să introduceți numele care v-a fii vizibil contactelelor dumneavoastră.</string>
+    <string name="no_name_set_instructions">Nu este setat nici un nume.</string>
     <string name="open_with">Deschide cu…</string>
     <string name="choose_account">Alegeți contul</string>
     <string name="set_profile_picture">Poză profil Pix-Art Messenger</string>
