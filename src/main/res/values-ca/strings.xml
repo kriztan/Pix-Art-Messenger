@@ -488,11 +488,6 @@
     <string name="pref_picture_quality_summary">Redimensionar i comprimir les imatges</string>
     <string name="pref_video_quality">Qualitat de vídeo </string>
     <string name="pref_video_quality_summary">Redimensionar i comprimir els vídeos</string>
-    <string name="video_very_low">molt baix (144p)</string>
-    <string name="video_low">baix (360p)</string>
-    <string name="video_mid">mig (720p)</string>
-    <string name="video_high">alt (1080p)</string>
-    <string name="video_original">original (sense comprimir)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions d\'ús de batería habil·litades</string>
     <string name="battery_optimizations_enabled_explained">El teu dispositiu està realizant optimitzacions d\'ús de batería en Pix-Art Messenger que poden fer que els missatges es retrasin o inclús fer que es perdin.\nEs recomanable deshabil·litar-les.</string>
@@ -649,10 +644,6 @@
     <string name="pref_use_tor">Connectar via Tor</string>
     <string name="pref_use_tor_summary">Totes las connexions se realitzen a través de la xarxa TOR. Requereix Orbot</string>
     <string name="pref_connection_options">Connexió</string>
-    <string name="image_low">baix (720p)</string>
-    <string name="image_mid">mig (1920p)</string>
-    <string name="image_high">alt (3840p)</string>
-    <string name="image_original">original (sense comprimir)</string>
     <string name="last_seen_just_away">recentment</string>
     <string name="send_message">Enviar missatge</string>
     <string name="send_failed_resend">entrega fallida, reenvío…</string>
@@ -661,8 +652,6 @@
     <string name="retry_decryption">Reintentar desxifrat</string>
     <string name="session_failure">Error de sessió</string>
     <string name="sasl_downgrade">Mecanisme d\'autentificació SASL degradat</string>
-    <string name="action_take_photo">fer una fotografía</string>
-    <string name="action_take_video">gravar un Vídeo</string>
     <string name="account_status_regis_web">El servidor requereix registrw en la seva pàgina web</string>
     <string name="application_found_to_open_website">No s\'han trobat aplicacions per a obrir la pàgina web</string>
     <string name="open_website">Obrir pàgina web</string>
@@ -893,7 +882,6 @@
     <string name="pref_show_mappreview_inside_summary">Mostrar previsualizacions de mapes directament en la vista de xat, s\'establirà una connexió al servidor Pix-Art.</string>
     <string name="pref_show_mappreview_inside">Mostrar previsualizacions de localizacions en el xat</string>
     <string name="pref_use_internal_updater_summary">Permetre que l\'aplicació busqui actualizacions una vegada al dia</string>
-    <string name="pref_use_internal_updater">buscar actualizacions</string>
     <string name="attach">Adjuntar</string>
     <string name="delete_locally">Eliminar localment</string>
     <string name="delete_from_server">Eliminar en el servidor</string>
