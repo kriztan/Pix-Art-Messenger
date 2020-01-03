@@ -501,7 +501,6 @@
     <string name="share_uri_with">Partager l’URI avec …</string>
     <string name="mgmt_account_reconnect">Reconnecter</string>
     <string name="welcome_text">… est un client XMPP/Jabber libre et sécure.</string>
-    <string name="magic_create_text">Nous vous guiderons pendant toute la procédure de création d’un compte utilisateur avec un mot de passe aléatoire que vous pourrez utiliser ou modifier, au choix durant, la prochaine étape. \nEnsuite vous pourrez communiquer avec les utilisateur·trice·s des autres fournisseurs en leur transmettant votre identifiant complet de Jabber.</string>
     <string name="your_full_jid_will_be">Votre Jabber ID complet sera : %s</string>
     <string name="create_account">Création d’un nouveau compte</string>
     <string name="welcome_existing_account">J’ai déjà un compte</string>
@@ -738,7 +737,6 @@
     <string name="pref_start_search_summary">Ouvre le clavier et place le curseur sur le champs de recherche dans la fenêtre « Démarrer une conversation »</string>
     <string name="paste_as_quote">Coller comme une citation</string>
     <string name="group_chat_avatar">Avatar de la conférence</string>
-    <string name="host_does_not_support_group_chat_avatars">L’hôte ne prend pas en charge les avatars</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Seul le propriétaire peut changer l’avatar</string>
     <string name="contact_name">Nom du contact</string>
     <string name="nickname">Psœudonyme pour cette conférence</string>
