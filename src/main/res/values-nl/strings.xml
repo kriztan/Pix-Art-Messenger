@@ -451,7 +451,6 @@
     <string name="pref_picture_quality">Afbeeldingskwaliteit</string>
     <string name="pref_picture_quality_summary">Afbeeldingen verkleinen en comprimeren</string>
     <string name="pref_video_quality">Videokwaliteit</string>
-    <string name="video_original">Origineel (zonder compressie)</string>
     <string name="always">Altijd</string>
     <string name="battery_optimizations_enabled">Batterij-optimalisaties ingeschakeld</string>
     <string name="battery_optimizations_enabled_explained">Je apparaat voert sterke batterij-optimalisaties uit op Pix-Art Messenger, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\nHet is aangeraden deze optimalisaties uit te schakelen.</string>
@@ -586,10 +585,6 @@
     <string name="pref_use_tor">Verbinden via Tor</string>
     <string name="pref_use_tor_summary">Tunnel alle verbindingen door het Tor-netwerk. Vereist Orbot</string>
     <string name="pref_connection_options">Verbinding</string>
-    <string name="image_low">Laag (720p)</string>
-    <string name="image_mid">Gemiddeld (1920p)</string>
-    <string name="image_high">Hoog (3840p)</string>
-    <string name="image_original">Origineel (zonder compressie)</string>
     <string name="last_seen_just_away">recent</string>
     <string name="send_message">Verstuur bericht</string>
     <string name="send_failed_resend">de levering is mislukt, het opnieuw verzenden van…</string>
@@ -598,8 +593,6 @@
     <string name="retry_decryption">Ontsleutelen opnieuw proberen</string>
     <string name="session_failure">Sessiefout</string>
     <string name="sasl_downgrade">SASL-mechanisme neergewaardeerd</string>
-    <string name="action_take_photo">Foto nemen</string>
-    <string name="action_take_video">Video opnemen</string>
     <string name="account_status_regis_web">Server vereist registratie op website</string>
     <string name="application_found_to_open_website">Geen applicatie om website te openen</string>
     <string name="open_website">Website openen</string>
