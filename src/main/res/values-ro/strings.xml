@@ -488,7 +488,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="create_account">Creează cont</string>
     <string name="pick_your_username">Alegeți un nume de utilizator</string>
     <string name="pref_manually_change_presence">Setează disponibilitate manual</string>
-    <string name="pref_manually_change_presence_summary">Atunci când vă editați mesajul de stare.</string>
+    <string name="pref_manually_change_presence_summary">Setați disponibilitatea atunci când vă editați mesajul de stare.</string>
     <string name="status_message">Mesaj de stare</string>
     <string name="presence_chat">Disponibil(ă) pentru conversație</string>
     <string name="presence_online">Conectat(ă)</string>
@@ -507,7 +507,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="creating_conference">Se creează discuția de grup...</string>
     <string name="invite_again">Trimite din nou invitația</string>
     <string name="pref_broadcast_last_activity">Anunță ultima interacțiune</string>
-    <string name="pref_broadcast_last_activity_summary">Contactele vă sunt anunțate atunci când folosiți Conversations</string>
+    <string name="pref_broadcast_last_activity_summary">Contactele vă sunt anunțate atunci când folosiți Pix-Art Messenger</string>
     <string name="unable_to_connect_to_keychain">Nu s-a putut contacta OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Acest dispozitiv nu mai este in uz</string>
     <string name="please_wait">Vă rugăm să așteptați...</string>
@@ -531,25 +531,25 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="show_error_message">Arată mesaj de eroare</string>
     <string name="error_message">Mesaj de eroare</string>
     <string name="data_saver_enabled">Economizorul de date este activat</string>
-    <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Conversations atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Conversations atunci când Economizorul de date este activ.\nConversations totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
+    <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Pix-Art Messenger atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Pix-Art Messenger atunci când Economizorul de date este activ.\n\nPix-Art Messenger totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
     <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru Pix-Art Messenger.</string>
     <string name="unable_to_start_recording">Nu s-a putut porni înregistrarea</string>
     <string name="error_unable_to_create_temporary_file">Nu se poate crea un fișier temporar</string>
     <string name="this_device_has_been_verified">Acest dispozitiv a fost verificat</string>
     <string name="copy_fingerprint">Copiază amprenta</string>
     <string name="all_omemo_keys_have_been_verified">Toate cheile OMEMO au fost verificate</string>
-    <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Codul de bare nu conține amprente pentru această conversație.</string>
+    <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Codul QR nu conține amprente pentru această conversație.</string>
     <string name="verified_fingerprints">Amprente verificate</string>
-    <string name="use_camera_icon_to_scan_barcode">Folosește camera pentru a scana codul de bare al contactului</string>
+    <string name="use_camera_icon_to_scan_barcode">Folosește camera pentru a scana codul QR al contactului</string>
     <string name="please_wait_for_keys_to_be_fetched">Asteptati cat se preiau cheile</string>
-    <string name="share_as_barcode">Partajează un cod de bare</string>
+    <string name="share_as_barcode">Partajează un cod QR</string>
     <string name="share_as_uri">Partajează ca adresă XMPP</string>
     <string name="share_as_http">Partajează ca legatură HTTP</string>
     <string name="blindly_trusted_omemo_keys">Încredere oarbă în aceste chei OMEMO</string>
     <string name="pref_blind_trust_before_verification">Încredere Oarbă Înainte de Verificare</string>
     <string name="pref_blind_trust_before_verification_summary">Ai încredere în toate dispozitivele noi ale contactelor care nu au fost verificate anterior, și cere confirmare manuală de fiecare dată când un contact adaugă un dispozitiv nou.</string>
     <string name="not_trusted">De neîncredere</string>
-    <string name="invalid_barcode">Cod de bare 2D invalid</string>
+    <string name="invalid_barcode">Cod QR invalid</string>
     <string name="i_followed_this_link_from_a_trusted_source">Am urmat această legătură de la o sursă de încredere</string>
     <string name="verifying_omemo_keys_trusted_source">Urmează să verificați cheile OMEMO pentru %1$s după ce veți deschide legătura. Acest lucru se poate face în siguranță doar dacă ați primit legătura de la o sursă de încredere unde doar %2$s putea publica.</string>
     <string name="verify_omemo_keys">Verificare chei OMEMO</string>
@@ -575,7 +575,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     </plurals>
     <plurals name="days">
         <item quantity="one">%d zi</item>
-        <item quantity="few"> %d zile</item>
+        <item quantity="few">%d zile</item>
         <item quantity="other">%d de zile</item>
     </plurals>
     <plurals name="weeks">
@@ -628,10 +628,10 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="title_activity_share_via_account">Partajează cu cont</string>
     <string name="destroy_room">Distruge discuția de grup</string>
     <string name="conference_unknown_error">Nu mai sunteți în această discuție de grup</string>
-    <string name="destroy_room_dialog">Sigur doriți distrugerea acestei discuții de grup?\n\n<b>Atenție:</b> Discuția de grup v-a fi complet ștearsä de pe server.</string>
+    <string name="destroy_room_dialog">Doriți distrugerea discuției de grup %s? Această acțiune v-a șterge permanent discuția de grup.</string>
     <string name="snooze">Amânare</string>
     <string name="huawei_protected_apps">Aplicații protejate</string>
-    <string name="huawei_protected_apps_summary">Pentru a continua să primiți notificări, chiar și când ecranul este oprit, trebuie să adăugați Conversations în lista de aplicații protejate.</string>
+    <string name="huawei_protected_apps_summary">Pentru a continua să primiți notificări, chiar și când ecranul este oprit, trebuie să adăugați Pix-Art Messenger în lista de aplicații protejate.</string>
     <string name="mtm_accept_cert">Acceptați certificatul necunoscut?</string>
     <string name="mtm_trust_anchor">Certificatul serverului nu este semnat de o autoritate de certificare (CA) cunoscută.</string>
     <string name="mtm_accept_servername">Acceptați numele serverului ce nu corespunde?</string>
