@@ -511,7 +511,6 @@
     <string name="share_uri_with">Condividi l\'URI con...</string>
     <string name="mgmt_account_reconnect">Riconnetti</string>
     <string name="welcome_text">…è un client XMPP/Jabber libero e sicuro.</string>
-    <string name="magic_create_text">Ti guideremo nel processo di creazione di un account con una password casuale, che potrai utilizzare o cambiare con una tua nella prossima pagina. \nSuccessivamente potrai comunicare con altri utenti di questo e altri server dando loro il tuo ID-Jabber completo.</string>
     <string name="your_full_jid_will_be">Il tuo ID Jabber completo sarà: %s</string>
     <string name="create_account">Crea account</string>
     <string name="welcome_existing_account">Ho un account</string>
@@ -756,7 +755,6 @@
     <string name="pref_start_search_summary">Alla schermata \'Inizia Conversazione\' apri la tastiera e posiziona il cursore nel campo di ricerca</string>
     <string name="paste_as_quote">Incolla come citazione</string>
     <string name="group_chat_avatar">Immagine della conversazione di gruppo</string>
-    <string name="host_does_not_support_group_chat_avatars">L\'Host non supporta le immagini di profilo</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Solo il proprietario può cambiare l\'immagine di profilo</string>
     <string name="contact_name">Nome del contatto</string>
     <string name="nickname">Soprannome per questa conversazione di gruppo</string>
