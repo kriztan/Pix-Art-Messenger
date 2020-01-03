@@ -512,7 +512,6 @@
     <string name="share_uri_with">Teile URI mit…</string>
     <string name="mgmt_account_reconnect">Neu verbinden</string>
     <string name="welcome_text">…ist ein kostenfreier und sicherer XMPP/Jabber Client.</string>
-    <string name="magic_create_text">Wir erstellen nun mit dir gemeinsam ein Profil mit einem zufällig generierten Passwort, welches du benutzen oder auf der nächsten Seite ändern kannst\nDanach kannst du mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
     <string name="your_full_jid_will_be">Deine Jabber-ID lautet: %s</string>
     <string name="create_account">Neues Profil erstellen</string>
     <string name="welcome_existing_account">Ich habe ein Profil</string>
@@ -757,7 +756,6 @@
     <string name="pref_start_search_summary">Bei \'Unterhaltung beginnen\' direkt die Suche starten</string>
     <string name="paste_as_quote">Als Zitat einfügen</string>
     <string name="group_chat_avatar">Gruppenchat-Avatar</string>
-    <string name="host_does_not_support_group_chat_avatars">Server unterstützt keine Gruppenchat-Avatare</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Nur der Eigentümer kann den Gruppenchat-Avatar ändern</string>
     <string name="contact_name">Name des Kontaktes</string>
     <string name="nickname">Nickname für diesen Gruppenchat</string>
