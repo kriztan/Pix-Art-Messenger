@@ -767,6 +767,7 @@
     <string name="pref_start_search_summary">En la pantalla \'Comenzar conversación\', abrir el teclado y situar el cursor en el campo de búsqueda</string>
     <string name="paste_as_quote">Pegar como cita</string>
     <string name="group_chat_avatar">Imagen de perfil del grupo</string>
+    <string name="host_does_not_support_group_chat_avatars">El servidor no soporta imágenes de perfil de grupos de chat</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Solo el propietario puede cambiar la imagen de perfil</string>
     <string name="contact_name">Nombre de contacto</string>
     <string name="nickname">Apodo para este grupo de conversación</string>
