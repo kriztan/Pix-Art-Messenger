@@ -502,6 +502,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="share_uri_with">Partajează adresa cu...</string>
     <string name="mgmt_account_reconnect">Reconectare</string>
     <string name="welcome_text">…este un client XMPP/Jabber gratis și securizat.</string>
+    <string name="magic_create_text">Vă vom ghida prin procesul de creare al unui cont cu o parolă aleatoare, pe care o puteți folosi sau schimba pe pagina următoare.\nApoi veți putea comunica cu utilizatorii acestui furnizor sau ai altor furnizori oferindu-le adresa dumneavoastră completă XMPP.</string>
     <string name="your_full_jid_will_be">Adresa dumneavoastră XMPP completă va fi: %s</string>
     <string name="create_account">Creează cont</string>
     <string name="welcome_existing_account">Am un cont</string>
@@ -622,12 +623,18 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="pref_use_tor">Conectare prin Tor</string>
     <string name="pref_use_tor_summary">Trimite toate conexiunile prin rețeaua Tor. Necesită aplicația Orbot</string>
     <string name="pref_connection_options">Opțiuni conexiune</string>
+    <string name="image_low">Mică (720p)</string>
+    <string name="image_mid">Medie (1920p)</string>
+    <string name="image_high">Mare (3840p)</string>
+    <string name="image_original">Original (necompresat)</string>
     <string name="send_message">Trimite mesaj</string>
     <string name="pref_show_connection_options_summary">Arată opțiunea de setare a numelui de gazdă și a portului, atunci când se configurează un cont</string>
     <string name="pref_show_connection_options">Opțiuni avansate conexiune</string>
     <string name="retry_decryption">Reîncearcă decriptarea</string>
     <string name="session_failure">Sesiune eșuată</string>
     <string name="sasl_downgrade">Mecanism SASL degradat</string>
+    <string name="action_take_photo">Fă o poză</string>
+    <string name="action_take_video">Înregistrare video</string>
     <string name="account_status_regis_web">Serverul necesită înregistrarea pe website</string>
     <string name="application_found_to_open_website">Nu s-a găsit nici o aplicație care să poată deschide siteul</string>
     <string name="open_website">Deschide website</string>
@@ -715,6 +722,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="pref_start_search_summary">În ecranul \"Pornește o conversație\" focalizează câmpul de căutare și arată tastatura</string>
     <string name="paste_as_quote">Lipește citat</string>
     <string name="group_chat_avatar">Avatar discuție de grup</string>
+    <string name="host_does_not_support_group_chat_avatars">Serverul gazdă nu suporta avatare pentru grupuri</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Doar proprietarul grupului poate schimba avatarul</string>
     <string name="contact_name">Nume contact</string>
     <string name="nickname">Numele dumneavoastră</string>
@@ -823,6 +831,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="notification_backup_created_subtitle">Fișierele copiei de siguranță au fost salvate în %s</string>
     <string name="search_participants">Caută participanți</string>
     <string name="file_too_large">Fișier prea mare</string>
+    <string name="pref_use_internal_updater">Căutare actualizări</string>
     <string name="attach">Atașează</string>
     <string name="discover_channels">Descoperă canale publice</string>
     <string name="search_channels">Caută canale publice</string>
