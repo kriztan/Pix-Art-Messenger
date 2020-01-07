@@ -18,6 +18,7 @@
     <string name="title_activity_manage_accounts">Gestisci account</string>
     <string name="title_activity_settings">Impostazioni</string>
     <string name="conference_details">Dettagli della conversazione di gruppo</string>
+    <string name="contact_details">Dettagli del contatto</string>
     <string name="title_activity_sharewith">Condividi con la conversazione</string>
     <string name="title_activity_start_conversation">Inizia conversazione</string>
     <string name="title_activity_choose_contact">Scegli un contatto</string>
@@ -489,6 +490,11 @@
     <string name="pref_picture_quality_summary">Rimpicciolisci e comprimi immagini</string>
     <string name="pref_video_quality">Qualità video</string>
     <string name="pref_video_quality_summary">Rimpicciolisci e comprimi video</string>
+    <string name="video_very_low">Molto bassa (144p)</string>
+    <string name="video_low">Bassa (360p)</string>
+    <string name="video_mid">Media (720p)</string>
+    <string name="video_high">Alta (1080p)</string>
+    <string name="video_original">Originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="always_off">Sempre disattivato</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
@@ -511,6 +517,7 @@
     <string name="share_uri_with">Condividi l\'URI con...</string>
     <string name="mgmt_account_reconnect">Riconnetti</string>
     <string name="welcome_text">…è un client XMPP/Jabber libero e sicuro.</string>
+    <string name="magic_create_text">Ti guideremo nel processo di creazione di un account con una password casuale, che potrai utilizzare o cambiare con una tua nella prossima pagina. \nSuccessivamente potrai comunicare con altri utenti di questo e altri server dando loro il tuo ID-Jabber completo.</string>
     <string name="your_full_jid_will_be">Il tuo ID Jabber completo sarà: %s</string>
     <string name="create_account">Crea account</string>
     <string name="welcome_existing_account">Ho un account</string>
@@ -648,6 +655,10 @@
     <string name="pref_use_tor">Connettiti via Tor</string>
     <string name="pref_use_tor_summary">Indirizza tutte le connessioni attraverso la rete Tor. Richiede Orbot</string>
     <string name="pref_connection_options">Connessione</string>
+    <string name="image_low">Bassa (720p)</string>
+    <string name="image_mid">Media (1920p)</string>
+    <string name="image_high">Alta (3840p)</string>
+    <string name="image_original">Originale (non compressa)</string>
     <string name="last_seen_just_away">recentemente</string>
     <string name="send_message">Invia messaggio</string>
     <string name="send_failed_resend">invio fallito, reinvio…</string>
@@ -656,6 +667,8 @@
     <string name="retry_decryption">Ritenta decifrazione</string>
     <string name="session_failure">Sessione fallita</string>
     <string name="sasl_downgrade">Meccanismo SASL degradato</string>
+    <string name="action_take_photo">Scatta foto</string>
+    <string name="action_take_video">Registra video</string>
     <string name="account_status_regis_web">Il server richiede la registrazione sul sito</string>
     <string name="application_found_to_open_website">Nessuna applicazione trovata per aprire il sito</string>
     <string name="open_website">Apri sito</string>
@@ -755,6 +768,7 @@
     <string name="pref_start_search_summary">Alla schermata \'Inizia Conversazione\' apri la tastiera e posiziona il cursore nel campo di ricerca</string>
     <string name="paste_as_quote">Incolla come citazione</string>
     <string name="group_chat_avatar">Immagine della conversazione di gruppo</string>
+    <string name="host_does_not_support_group_chat_avatars">L\'host non supporta immagini per le conversazioni di gruppo</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Solo il proprietario può cambiare l\'immagine di profilo</string>
     <string name="contact_name">Nome del contatto</string>
     <string name="nickname">Soprannome per questa conversazione di gruppo</string>
@@ -889,6 +903,7 @@
     <string name="pref_show_mappreview_inside_summary">Mostra anteprime mappe direttamente all\'interno delle conversazioni, sarà stabilita una connessione al Pix-Art-Server.</string>
     <string name="pref_show_mappreview_inside">Mostra anteprime delle posizioni nella conversazione</string>
     <string name="pref_use_internal_updater_summary">Permetti all\'app di cercare gli aggiornamenti una volta al giorno</string>
+    <string name="pref_use_internal_updater">Cerca aggiornamenti</string>
     <string name="attach">Allega</string>
     <string name="delete_locally">Elimina localmente</string>
     <string name="delete_from_server">Elimina dal server</string>
