@@ -665,6 +665,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="retry_decryption">Ponownie spróbuj odszyfrować</string>
     <string name="session_failure">Błąd sesji</string>
     <string name="sasl_downgrade">Starszy mechanizm SASL</string>
+    <string name="action_take_photo">Zrób zdjęcie</string>
+    <string name="action_take_video">Nagraj wideo</string>
     <string name="account_status_regis_web">Serwer wymaga rejestracji na stronie</string>
     <string name="application_found_to_open_website">Nie znaleziono aplikacji do otwarcia strony</string>
     <string name="open_website">Otwórz stronę</string>
