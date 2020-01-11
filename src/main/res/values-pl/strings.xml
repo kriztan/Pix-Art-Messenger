@@ -741,6 +741,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
+    <string name="not_encrypted_for_this_device">Wiadomość nie została zaszyfrowana dla tego urządzenia.</string>
     <string name="search_messages">Znajdź Wiadomość</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Wyświetl komunikację</string>
@@ -753,6 +754,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_privacy">Polityka prywatności</string>
     <string name="show_termsofuse">Warunki użytkowania</string>
     <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
+    <string name="paste_as_quote">Wklej jako cytat</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
@@ -819,6 +821,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="channel_already_exists">Ten kanał już istnieje</string>
     <string name="joined_an_existing_channel">Dołączyłeś do istniejącego kanału</string>
     <string name="back">Wstecz</string>
+    <string name="channel_options">Konfiguracja kanału publicznego</string>
     <string name="allow_participants_to_edit_subject">Zezwól wszystkim na edytowanie tematu</string>
     <string name="anyone_can_edit_subject">Każdy może edytować temat.</string>
     <string name="owners_can_edit_subject">Właściciele mogą edytować temat.</string>
@@ -845,6 +848,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="mgmt_account_password_forgotten">Hasło zapomniane</string>
     <string name="password_forgotten_title">Hasło zapomniane</string>
     <string name="password_forgotten_text">Nie pamiętasz hasła do swojego konta? Spróbujemy teraz otworzyć stronę pomocy technicznej twojego operatora.</string>
+    <string name="pref_use_internal_updater">Poszukaj aktualizacji</string>
     <string name="attach">Załącz</string>
     <string name="delete_locally">Usuń lokalnie</string>
     <string name="delete_from_server">Usuń z serwera</string>
@@ -853,7 +857,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_show_own_accounts">Pokaż własne konta</string>
     <string name="message_encryption">Szyfrowanie wiadomości</string>
     <string name="enable_message_encryption">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO. Jeżeli są problemy z działaniem szyfrowania, to można je wyłączyć przez wciśnięcie ikonki kłódki.</string>
+    <string name="event">Zdarzenie</string>
     <string name="account_already_setup">To konto zostało już skonfigurowane</string>
+    <string name="x_has_written">%s napisał/a:</string>
+    <string name="i_have_written">Napisała(e)m:</string>
     <string name="intro_desc_main">Dowiedz się więcej…</string>
     <string name="welcome_header">Witamy w\nPix-Art Messenger</string>
     <string name="intro_account">Twoje konto</string>
