@@ -87,6 +87,7 @@
     <string name="send_unencrypted">Şifrəsiz göndər</string>
     <string name="decryption_failed">Şifrəni açma uğursuz oldu. Bəlkə də, müvafiq özəl açarınız yoxdur.</string>
     <string name="openkeychain_required">OpenKeychain</string>
+    <string name="openkeychain_required_long">Pix-Art Messenger, mesajları şifrələmək və şifrəni açmaq və açıq açarlarınızı idarə etmək üçün &lt;b&gt;OpenKeychain&lt;b&gt; adlı üçüncü bir tətbiqdən istifadə edir.\n\nOpenKeychain GPLv3-lə lisenziyalıdır və F-Droid və Google Play-də mövcuddur.\n\n&lt;small&gt;(Pix-Art Messenger-i yenidən başladın)&lt;/small&gt;</string>
     <string name="restart">Yenidən başlat</string>
     <string name="install">Quraşdır</string>
     <string name="offering">təklif edilir…</string>
@@ -95,10 +96,14 @@
     <string name="contact_has_no_pgp_key">Pix-Art Messenger, mesajlarınızın şifrələməsinə imkan vermir, çünki kontaktınız onun ictimai anonsunu elan etmir. \n
   \n
   <small>OpenPGP-in qurulmasına müraciət edin.</small></string>
+    <string name="no_pgp_keys">OpenPGP Açarı tapılmadı</string>
     <string name="pref_general">Ümumi</string>
     <string name="pref_accept_files_wifi">WiFi bağlantılarında faylları qəbul et</string>
+    <string name="pref_accept_files_summary_wifi">WiFi-yə qoşulduqda avtomatik olaraq …</string>
     <string name="pref_accept_files_mobile">Mobil bağlantılarda faylları qəbul et</string>
+    <string name="pref_accept_files_summary_mobile">Mobil məlumatlarla əlaqəli olduqda avtomatik olaraq…</string>
     <string name="pref_accept_files_mobileroaming">Rouminq bağlantılarında faylları qəbul et</string>
+    <string name="pref_accept_files_summary_mobileroaming">Rouminqdəki mobil məlumatlarla əlaqəli olduqda avtomatik olaraq …</string>
     <string name="pref_attachments">Qoşmalar</string>
     <string name="pref_notification_settings">Bildirişlər</string>
     <string name="pref_vibrate">Titrət</string>
@@ -108,7 +113,9 @@
     <string name="pref_sound">Zəng səsi</string>
     <string name="pref_sound_summary">Yeni bir mesaj gələndə səs oynat</string>
     <string name="pref_send_crash">Xəta hesabatı göndər</string>
+    <string name="pref_send_crash_summary">Yığma izlər göndərməklə Pix-Art Messenger-in davamlı inkişafına kömək edir</string>
     <string name="pref_confirm_messages">Mesajları Təsdiqlə</string>
+    <string name="pref_confirm_messages_summary">Kontaktlarınızı qəbul etdikdə bildirin və mesajlarını oxuyun</string>
     <string name="pref_ui_options">İstifadәçi İnterfeysi</string>
     <string name="openpgp_error">OpenKeychain bir xəta bildirdi</string>
     <string name="accept">Qəbul et</string>
@@ -118,10 +125,12 @@
     <string name="receive_presence_updates">Vəziyyət yeniləmələri al</string>
     <string name="ask_for_presence_updates">Vəziyyət yeniləmələri istə</string>
     <string name="attach_choose_picture">Şəkil seç</string>
+    <string name="preemptively_grant">Abunə tələbini əvvəlcədən təmin edin</string>
     <string name="error_not_an_image_file">Seçdiyiniz fayl bir təsvir faylı deyil</string>
     <string name="error_compressing_image">Təsvir fayl çevirərkən xəta baş verdi</string>
     <string name="error_file_not_found">Fayl tapılmadı</string>
     <string name="error_io_exception">Ümumi G/Ç xətası. Bəlkə anbar sahənizdə boş yer qalmayıb?</string>
+    <string name="error_security_exception_during_image_copy">Bu şəklii seçmək üçün istifadə etdiyiniz tətbiq, faylı oxumaq üçün bizə kifayət qədər icazə vermədi.\n\n<small>Şəkil seçmək üçün başqa bir fayl menecerindən istifadə edin</small></string>
     <string name="account_status_unknown">Bilinməyən</string>
     <string name="account_status_disabled">Müvəqqəti sıradan çıxarıldı</string>
     <string name="account_status_online">Xətdə</string>
@@ -143,6 +152,10 @@
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">Hesaba düzəliş et</string>
+    <string name="mgmt_account_delete">Hesabı silmək</string>
+    <string name="mgmt_account_publish_avatar">Avatar (Profil şəkili) </string>
+    <string name="mgmt_account_publish_pgp">Dərc olunan OpenPGP açarı</string>
+    <string name="unpublish_pgp">Dərc olunan OpenPGP açarı silmək</string>
     <string name="attach_record_voice">Səs yazmaq</string>
     <string name="account_settings_example_jabber_id">istifadəçininadı@pix-art.de</string>
     <string name="add_phone_book_text">Ünvan kitabınıza %s əlavə etmək istəyirsiniz?</string>
