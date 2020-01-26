@@ -986,4 +986,5 @@
     <string name="intro_desc_start_chatting3">Поздравляю!\nВот мы и идем веселиться…</string>
     <string name="intro_privacy">Ваша конфиденциальностьn\Ваш суверенитет</string>
     <string name="intro_desc_privacy">Pix-Art Messenger не будет ни продавать, ни анализировать ваши данные, и вы сами решаете, какие разрешения вы предоставляете.</string>
+    <string name="no_results">Нет результата</string>
 </resources>
