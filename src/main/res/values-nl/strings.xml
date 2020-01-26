@@ -661,7 +661,6 @@
     <string name="enter_password_to_restore">Enter your password for the account %s to restore the backup.</string>
     <string name="unable_to_restore_backup">Kan back-up niet herstellen.</string>
     <string name="unable_to_decrypt_backup">Kan back-up niet ontsleutelen. Is het wachtwoord juist?</string>
-    <string name="view_users">Deelnemers bekijken</string>
     <string name="group_chat_members">Deelnemers</string>
     <string name="channel_details">Kanaalinformatie</string>
     <string name="allow_participants_to_edit_subject">Laat iedereen om het onderwerp te bewerken</string>
