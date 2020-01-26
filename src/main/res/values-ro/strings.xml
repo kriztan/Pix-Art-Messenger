@@ -787,7 +787,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="restore_warning">Nu folosiți funcția de restaurare a copiei de siguranță decât pentru a migra pe un alt dispozitiv sau în cazul în care v-ați pierdut dispozitivul.</string>
     <string name="unable_to_restore_backup">Nu s-a putut restaura copia de siguranță.</string>
     <string name="unable_to_decrypt_backup">Nu s-a putut decripta copia de siguranță. Parola este corectă?</string>
-    <string name="view_users">Arată participanții</string>
     <string name="group_chat_members">Participanți</string>
     <string name="message_deleted">Mesajul a fost șters</string>
     <string name="channel_details">Detalii canal</string>
