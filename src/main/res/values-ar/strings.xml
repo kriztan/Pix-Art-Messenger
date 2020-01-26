@@ -511,7 +511,6 @@
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
-    <string name="view_users">عرض المشاركين</string>
     <string name="group_chat_members">المشاركون</string>
     <string name="message_deleted">تم حذف الرسالة</string>
     <string name="channel_details">تفاصيل القناة</string>
