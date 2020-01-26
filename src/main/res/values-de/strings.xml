@@ -835,7 +835,6 @@
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Bevorzuge den vom Benutzer gesetzten Avatar anstatt des Profilbildes in deinem Adressbuch</string>
     <string name="pref_prefer_xmpp_avatar">XMPP-Avatar bevorzugen</string>
-    <string name="view_users">Teilnehmer anzeigen</string>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
