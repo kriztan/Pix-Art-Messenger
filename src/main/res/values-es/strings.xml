@@ -848,7 +848,6 @@
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
-    <string name="view_users">Ver participantes</string>
     <string name="group_chat_members">Participantes</string>
     <string name="message_deleted">El mensaje fue eliminado</string>
     <string name="channel_details">Detalles del canal</string>
