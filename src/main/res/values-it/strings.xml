@@ -848,7 +848,6 @@
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'avatar XMPP</string>
-    <string name="view_users">Vedi partecipanti</string>
     <string name="group_chat_members">Partecipanti</string>
     <string name="message_deleted">Il messaggio è stato eliminato</string>
     <string name="channel_details">Dettagli canale</string>
