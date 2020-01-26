@@ -520,6 +520,7 @@
     <string name="share_uri_with">Поделиться URI с…</string>
     <string name="mgmt_account_reconnect">Переподключить</string>
     <string name="welcome_text">...это свободный и безопасный XMPP/Jabber клиент.</string>
+    <string name="magic_create_text">Мы проведем вас через процесс создания учетной записи со случайным паролем, который вы можете использовать или изменить на свой собственный пароль на следующей странице. \nТогда вы сможете общаться с пользователями этого и других провайдеров, предоставляя им свой полный Jabber-ID.</string>
     <string name="your_full_jid_will_be">Ваш Jabber-ID был: %s</string>
     <string name="create_account">Создать аккаунт</string>
     <string name="welcome_existing_account">У меня есть аккаунт</string>
@@ -669,6 +670,9 @@
     <string name="pref_use_tor">Подключиться через Tor</string>
     <string name="pref_use_tor_summary">Направлять все соединения через сеть Tor.</string>
     <string name="pref_connection_options">Настройки соединения</string>
+    <string name="image_mid">Среднее (1920p)</string>
+    <string name="image_high">Высокое (3840p)</string>
+    <string name="image_original">Оригинальное (несжатое)</string>
     <string name="last_seen_just_away">только что</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="send_failed_resend">не удалось отправить, пробую снова…</string>
@@ -677,6 +681,8 @@
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
     <string name="sasl_downgrade">Устаревший механизм SASL</string>
+    <string name="action_take_photo">Выбрать фото</string>
+    <string name="action_take_video">Записать видео</string>
     <string name="account_status_regis_web">Сервер требует регистрации на веб-сайте</string>
     <string name="application_found_to_open_website">Не удалось найти подходящее приложение для открытия веб-сайта</string>
     <string name="open_website">Открыть веб-сайт</string>
@@ -776,6 +782,7 @@
     <string name="pref_start_search_summary">При начале разговора показать клавиатуру и установить курсор в поле поиска</string>
     <string name="paste_as_quote">Вставить как цитату</string>
     <string name="group_chat_avatar">Аватар группового чата</string>
+    <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары групповых чатов</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Только владелец может сменить аватар</string>
     <string name="contact_name">Имя контакта</string>
     <string name="nickname">Наименование для этого группового чата</string>
@@ -946,8 +953,22 @@
     <string name="i_have_written">Я написал:</string>
     <string name="no_status_set_instructions">Вы не установили сообщение о состоянии присутствия</string>
     <string name="your_status">Ваш статус</string>
+    <string name="pref_use_invidious">Заменить ссылки YouTube на Invidious</string>
+    <string name="pref_use_invidious_summary">Invidious - это дружественная к конфиденциальности альтернатива YouTube</string>
     <string name="this_device">Это устройство</string>
+    <string name="intro_desc_main">Узнать больше…</string>
+    <string name="welcome_header">Добро пожаловать в /nPix-Art Messenger</string>
+    <string name="intro_required_permissions">Запрашиваемые права</string>
+    <string name="intro_desc_required_permissions">В конце вступления вам будет предложено предоставить разрешения на хранение (обязательные), если вы их еще не предоставили. Разрешения на добавление запрашиваются по мере необходимости и являются необязательными.</string>
     <string name="intro_account">Ваш аккаунт</string>
+    <string name="intro_desc_account">Если у вас уже есть учетная запись, вы можете просто войти в систему с помощью Jabber-ID и пароля</string>
+    <string name="intro_start_chatting">Начать чат</string>
+    <string name="intro_desc_start_chatting">Если вы дали разрешения контакту, уже существующие контакты Jabber автоматически отображаются в вашей адресной книге. В противном случае, просто добавьте Jabber-ID</string>
+    <string name="intro_desc_open_chat">Теперь вы можете начать общаться в чате, обмениваться местоположениями, файлами, видео и изображениями или отправлять голосовые сообщения.</string>
     <string name="intro_chat_details">Сведения о чате</string>
+    <string name="intro_desc_chat_details">Вы хотите открыть подробности чата? Просто нажмите на название чата в строке меню вверху.</string>
     <string name="intro_highlight_user">Отметить пользователя</string>
+    <string name="intro_desc_highlight_user">Если вы хотите выделить пользователя в групповом чате, просто коснитесь аватара пользователя в чате. В качестве альтернативы, особенно если пользователя нет в чате, переключитесь на детали чата и найдите пользователя в списке участников. Долгое нажатие на аватар пользователя отобразит всплывающее меню, в котором вы можете выделить пользователя.</string>
+    <string name="intro_desc_open_chat_details">Вы открыли подробности чата. Здесь вы можете просмотреть подробную информацию о чате, изменить поведение уведомления о новом сообщении, добавить или удалить чат из списка контактов и многое другое.</string>
+    <string name="pref_show_intro_summary">Снова показать интро экраны</string>
 </resources>
