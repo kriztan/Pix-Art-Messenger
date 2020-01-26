@@ -825,7 +825,6 @@
     <string name="unable_to_decrypt_backup">No es pot desxifrar la còpia de seguretat. És correcta la contrasenya?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir l\'avatar d\'usuaris XMPP en lloc del de la teva llista de contactes</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
-    <string name="view_users">Veure participants</string>
     <string name="group_chat_members">Participants</string>
     <string name="message_deleted">El missatge fou eliminat</string>
     <string name="channel_details">Detalls del canal</string>
