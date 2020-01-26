@@ -230,6 +230,7 @@
     <string name="error_saving_avatar">Невозможно сохранить аватар на диск</string>
     <string name="or_long_press_for_default">(Или используйте долгое нажатие, чтобы вернуть значение по умолчанию)</string>
     <string name="error_publish_avatar_no_server_support">Ваш сервер не поддерживает публикацию аватаров</string>
+    <string name="private_message">шепчет</string>
     <string name="private_message_to">к %s</string>
     <string name="send_private_message_to">Отправить личное сообщение для %s</string>
     <string name="connect">Подключиться</string>
@@ -354,6 +355,7 @@
     <string name="new_password">Новый пароль</string>
     <string name="password_should_not_be_empty">Пароль не может быль пустым</string>
     <string name="perform_action_with">Выполнить действие с</string>
+    <string name="no_affiliation">Нет принадлежности</string>
     <string name="no_role">Оффлайн</string>
     <string name="outcast">Изгой</string>
     <string name="member">Участник</string>
@@ -378,6 +380,7 @@
     <string name="modified_conference_options">Настройки группового чата изменены!</string>
     <string name="could_not_modify_conference_options">Невозможно изменить настройки группового чата</string>
     <string name="never">Никогда</string>
+    <string name="until_further_notice">До особого распоряжения</string>
     <string name="pref_input_options">Ввод</string>
     <string name="pref_enter_is_send">Ввод для отправки</string>
     <string name="pref_enter_is_send_summary">Использовать клавишу Отправить для отправки сообщений</string>
@@ -439,6 +442,7 @@
     <string name="download_started">Загрузка начата</string>
     <string name="account_status_tor_unavailable">Сеть Tor недоступна</string>
     <string name="account_status_bind_failure">Неудачная связка</string>
+    <string name="account_status_host_unknown">Сервер не отвечает за домен</string>
     <string name="server_info_broken">Поломано</string>
     <string name="pref_presence_settings">Доступность</string>
     <string name="pref_away_when_screen_off">Статус \"Отошел\", когда экран выключен</string>
@@ -489,6 +493,11 @@
     <string name="pref_picture_quality_summary">Изменять размер и сжимать изображения</string>
     <string name="pref_video_quality">Качество видео</string>
     <string name="pref_video_quality_summary">Изменять размер и сжимать видео</string>
+    <string name="video_very_low">Очень низкое (144p)</string>
+    <string name="video_low">Низкое (360p)</string>
+    <string name="video_mid">Среднее (720p)</string>
+    <string name="video_high">Высокое (1080p)</string>
+    <string name="video_original">Оригинальное (несжатое)</string>
     <string name="always">Всегда</string>
     <string name="always_off">Всегда выключен</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
