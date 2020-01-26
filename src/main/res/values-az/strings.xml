@@ -18,6 +18,7 @@
     <string name="title_activity_manage_accounts">Hesabları idarә et</string>
     <string name="title_activity_settings">Tənzimləmələr</string>
     <string name="conference_details">Qrup söhbəti təfsilatları</string>
+    <string name="contact_details">Şəxs təfsilatları</string>
     <string name="title_activity_sharewith">Bu danışıqla paylaş</string>
     <string name="title_activity_start_conversation">Danışığa başla</string>
     <string name="title_activity_choose_contact">Şəxs seç</string>
@@ -26,6 +27,7 @@
     <string name="just_now">elə indicə</string>
     <string name="minute_ago">1 dəq əvvəl</string>
     <string name="minutes_ago">%d dəq əvvəl</string>
+    <string name="x_unread_conversations">%d oxunmamış çatlar</string>
     <string name="sending">göndərilir…</string>
     <string name="message_decrypting">Mesaj şifrəsi açılır. Zəhmət olmasa gözləyin…</string>
     <string name="pgp_message">OpenPGP şifrələnmiş mesaj</string>
@@ -59,17 +61,20 @@
     <string name="save">Saxla</string>
     <string name="ok">Oldu</string>
     <string name="crash_report_title">Pix-Art Messenger çökdü</string>
+    <string name="crash_report_message">Yığma izləri göndərməklə Pix-Art Messenger-in davamlı inkişafına kömək edir\n &lt;b&gt;Xəbərdarlıq:&lt;bb&gt; Bu XMPP hesabınızı yığın izini geliştiriciyə göndərmək üçün istifadə edəcəkdir.</string>
     <string name="send_now">İndi göndər</string>
     <string name="send_never">Bir daha soruşma</string>
     <string name="problem_connecting_to_account">Hesabla bağlantı qurula bilmədi</string>
     <string name="problem_connecting_to_accounts">Çoxlu hesabla bağlantı qurula bilmədi</string>
     <string name="touch_to_fix">Hesablarınızı idarə etmək üçün bura toxunun</string>
     <string name="attach_file">Fayl qoş</string>
+    <string name="not_in_roster">Əlaqə siyahınızda deyil. Əlavə etmək istərdinizmi?</string>
     <string name="add_contact">Şəxs əlavə et</string>
     <string name="send_failed">çatdırılma uğursuz</string>
     <string name="preparing_image">Köçürmə üçün təsvir hazırlanır</string>
     <string name="action_clear_history">Tarixçəni təmizlə</string>
     <string name="clear_conversation_history">Danışıq Tarixçəsini Təmizlə</string>
+    <string name="clear_histor_msg">Bu söhbətdəki bütün mesajları silmək istədiyinizə əminsiniz?\n\n&lt;b&gt;Xəbərdarlıq:&lt;b&gt; Bu digər cihazlarda və ya serverlərdə saxlanan həmin mesajların surətlərini silməyəcəkdir.</string>
     <string name="also_end_conversation">Sonradan bu söhbəti bitir</string>
     <string name="choose_presence">Cihaz seç</string>
     <string name="send_unencrypted_message">Şifrəsiz mesaj göndər</string>
