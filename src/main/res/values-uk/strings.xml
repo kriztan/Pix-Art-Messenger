@@ -862,7 +862,6 @@
     <string name="unable_to_decrypt_backup">Не можу розшифрувати резервну копію. Пароль правильний?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Використовувати переважно аватарку користувача XMPP замість адресної книги</string>
     <string name="pref_prefer_xmpp_avatar">Віддавати перевагу аватару XMPP</string>
-    <string name="view_users">Переглянути учасників</string>
     <string name="group_chat_members">Учасники</string>
     <string name="message_deleted">Повідомлення вилучено</string>
     <string name="channel_details">Деталі каналу</string>
