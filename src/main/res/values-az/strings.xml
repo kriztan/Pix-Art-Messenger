@@ -304,6 +304,11 @@
     <string name="finish">Hazırdır</string>
     <string name="verified">Təsdiqləndi!</string>
     <string name="smp_requested">Kontakt SMP yoxlanmasını tələb etdi</string>
+    <string name="no_otr_session_found">Etibarlı OTR sessiyası tapılmadı!</string>
+    <string name="pref_create_backup">Nüxsə yarat</string>
+    <string name="pref_create_backup_summary">Nüsxə fayllarını %s-ya yazın</string>
+    <string name="notification_create_backup_title">Ehtiyat nüsxə faylları yaratması</string>
+    <string name="restoring_backup">Nüsxəni bərpa et</string>
     <string name="notification_restored_backup_subtitle">Hesabı aktivləşdirməyi unutmayın.</string>
     <string name="choose_file">Fail seçin</string>
     <string name="receiving_x_file">%1$s qəbul edilir (%2$d%% tamamlandı)</string>
