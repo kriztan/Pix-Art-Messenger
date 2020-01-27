@@ -309,6 +309,7 @@
     <string name="pref_create_backup_summary">Nüsxə fayllarını %s-ya yazın</string>
     <string name="notification_create_backup_title">Ehtiyat nüsxə faylları yaratması</string>
     <string name="restoring_backup">Nüsxəni bərpa et</string>
+    <string name="notification_restored_backup_title">Nüsxəniz bərpa edildi</string>
     <string name="notification_restored_backup_subtitle">Hesabı aktivləşdirməyi unutmayın.</string>
     <string name="choose_file">Fail seçin</string>
     <string name="receiving_x_file">%1$s qəbul edilir (%2$d%% tamamlandı)</string>
@@ -337,7 +338,15 @@
     <string name="clear_other_devices">Cihazları təmizləyin</string>
     <string name="clear_other_devices_desc">OMEMO elanından bütün digər cihazları təmizləmək istədiyinizə əminsiniz? Cihazlarınız bir-birinə qoşulduqda, onlar özləri yenidən xəbər verəcəklər, lakin eyni zamanda göndərilən mesajları qəbul etməyəcəklər.</string>
     <string name="distrust_omemo_key">Etibarsız cihaz</string>
+    <string name="distrust_omemo_key_text">Bu cihaz üçün yoxlamanı silmək istədiyinizə əminsiniz?\nBu cihaz və cihazdan gələn mesajlar etibarsız olaraq qeyd ediləcək.</string>
+    <string name="error_no_keys_to_trust_server_error">Bu kontakt üçün istifadə edilə bilən açarlar yoxdur.\nServerdən yeni açarların alınması uğursuz oldu. Bəlkə kontaktlar serverinizdə səhv bir şey var.</string>
+    <string name="error_trustkeys_title">Bir şey yanlış getmişdir</string>
+    <string name="fetching_history_from_server">Tarixçənin serverdən alınması</string>
+    <string name="no_more_history_on_server">Artıq serverdə tarixçə yoxdur</string>
+    <string name="updating">Yenilənmə…</string>
+    <string name="password_changed">Parol dəyişdirildi!</string>
     <string name="could_not_change_password">Şifrəni dəyişmək alınmadı</string>
+    <string name="otr_session_not_started">Şifrəli bir söhbətə başlamaq üçün mesaj göndərin</string>
     <string name="ask_question">Sual soruş</string>
     <string name="change_password">Şifrəni dəyişin</string>
     <string name="advanced_mode">Ətraflı rejimi</string>
