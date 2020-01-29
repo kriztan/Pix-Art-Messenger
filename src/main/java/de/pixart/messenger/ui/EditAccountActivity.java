@@ -716,6 +716,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
         final MenuItem shareQRCode = menu.findItem(R.id.action_show_qr_code);
         final MenuItem announcePGP = menu.findItem(R.id.mgmt_account_announce_pgp);
         final MenuItem forgotPassword = menu.findItem(R.id.mgmt_account_password_forgotten);
+        final MenuItem addAccountWithCert = menu.findItem(R.id.action_add_account_with_cert);
         renewCertificate.setVisible(mAccount != null && mAccount.getPrivateKeyAlias() != null);
 
         if (mAccount != null && mAccount.isOnlineAndConnected()) {
@@ -747,6 +748,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                     && !mAccount.isOptionSet(Account.OPTION_REGISTER));
         } else {
             showPassword.setVisible(false);
+            addAccountWithCert.setVisible(true);
         }
         return super.onCreateOptionsMenu(menu);
     }
