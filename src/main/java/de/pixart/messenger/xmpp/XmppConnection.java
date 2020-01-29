@@ -462,7 +462,7 @@ public class XmppConnection implements Runnable {
         final SSLContext sc = SSLSocketHelper.getSSLContext();
         MemorizingTrustManager trustManager = this.mXmppConnectionService.getMemorizingTrustManager();
         KeyManager[] keyManager;
-        if (account.getPrivateKeyAlias() != null && account.getPassword().isEmpty()) {
+        if (account.getPrivateKeyAlias() != null) {
             keyManager = new KeyManager[]{new MyKeyManager()};
         } else {
             keyManager = null;
