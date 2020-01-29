@@ -154,11 +154,12 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.manageaccounts, menu);
         MenuItem addAccount = menu.findItem(R.id.action_add_account);
+        MenuItem addAccountMenu = menu.findItem(R.id.action_add_account_menu);
         MenuItem addAccountWithCertificate = menu.findItem(R.id.action_add_account_with_cert);
 
         if (Config.X509_VERIFICATION) {
             addAccount.setVisible(false);
-            addAccountWithCertificate.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+            addAccountMenu.setVisible(false);
         }
 
         return true;
@@ -192,6 +193,10 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
         }
         switch (item.getItemId()) {
             case R.id.action_add_account:
+                startActivity(new Intent(this, EditAccountActivity.class));
+                overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
+                break;
+            case R.id.action_add_account_menu:
                 startActivity(new Intent(this, EditAccountActivity.class));
                 overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
                 break;
