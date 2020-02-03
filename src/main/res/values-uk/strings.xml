@@ -309,6 +309,7 @@
     <string name="notification_restored_backup_title">Відтворено з резервної копії</string>
     <string name="notification_restored_backup_subtitle">Не забудьте включити обліковий запис</string>
     <string name="choose_file">Вибрати файл</string>
+    <string name="receiving_file">Отримано: %1$s</string>
     <string name="download_x_file">Завантажити %s</string>
     <string name="delete_x_file">Видалити %s</string>
     <string name="file">файл</string>
