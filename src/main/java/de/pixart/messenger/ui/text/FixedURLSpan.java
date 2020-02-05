@@ -46,6 +46,7 @@ import java.util.Arrays;
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
 import de.pixart.messenger.ui.ConversationsActivity;
+import me.drakeet.support.toast.ToastCompat;
 
 @SuppressLint("ParcelCreator")
 public class FixedURLSpan extends URLSpan {
@@ -83,7 +84,7 @@ public class FixedURLSpan extends URLSpan {
             context.startActivity(intent);
             widget.playSoundEffect(0);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(context, R.string.no_application_found_to_open_link, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(context, R.string.no_application_found_to_open_link, Toast.LENGTH_SHORT).show();
         }
     }
 }

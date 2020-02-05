@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.Calendar;
 
 import de.pixart.messenger.R;
 import de.pixart.messenger.utils.ThemeHelper;
@@ -12,6 +15,7 @@ public class AboutActivity extends XmppActivity {
 
     private Button privacyButton;
     private Button termsOfUseButton;
+    private TextView aboutmessage;
 
     @Override
     protected void refreshUiReal() {
@@ -30,6 +34,10 @@ public class AboutActivity extends XmppActivity {
         setContentView(R.layout.activity_about);
         setSupportActionBar(findViewById(R.id.toolbar));
         configureActionBar(getSupportActionBar());
+
+        aboutmessage = findViewById(R.id.aboutmessage);
+        String year = String.valueOf(Calendar.getInstance().get(Calendar.YEAR));
+        aboutmessage.setText(getString(R.string.pref_about_message, year));
 
         privacyButton = findViewById(R.id.show_privacy_policy);
         privacyButton.setOnClickListener(view -> {

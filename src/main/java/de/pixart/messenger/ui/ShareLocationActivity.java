@@ -12,11 +12,13 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.google.android.material.snackbar.Snackbar;
 import android.text.TextUtils;
 import android.webkit.WebView;
 import android.widget.Button;
+
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -104,12 +106,12 @@ public class ShareLocationActivity extends LocationActivity implements LocationL
         if (snackBarCoordinator != null) {
             this.snackBar = Snackbar.make(snackBarCoordinator, R.string.location_sharing_disabled, Snackbar.LENGTH_INDEFINITE);
             snackBar.setAction(R.string.enable, view -> {
+                showLocation(null, "");
                 if (isLocationEnabled()) {
                     if (hasLocationPermission(LocationActivity.REQUEST_LOCATION_PERMISSION)) {
                         requestLocationUpdates();
                     }
                 } else {
-                    showLocation(null, null);
                     setShareButtonEnabled(false);
                     if (hasLocationPermission(LocationActivity.REQUEST_LOCATION_PERMISSION)) {
                         requestLocationUpdates();
@@ -142,7 +144,7 @@ public class ShareLocationActivity extends LocationActivity implements LocationL
         super.onResume();
         if (isLocationEnabled()) {
             this.snackBar.dismiss();
-            showLocation(null, null);
+            showLocation(null, "");
         } else {
             this.snackBar.show();
         }
@@ -208,7 +210,7 @@ public class ShareLocationActivity extends LocationActivity implements LocationL
         }
     }
 
-    private void showLocation(@Nullable Location location, @Nullable String address) {
+    private void showLocation(@Nullable Location location, String address) {
         if (location == null && TextUtils.isEmpty(address)) { // no location and no address available
             final WebView webView = findViewById(R.id.webView);
             webView.getSettings().setJavaScriptEnabled(true);
@@ -217,12 +219,12 @@ public class ShareLocationActivity extends LocationActivity implements LocationL
             String LocationName = "<b>" + mLocationName + "</b>";
             final WebView webView = findViewById(R.id.webView);
             webView.getSettings().setJavaScriptEnabled(true);
-            webView.loadUrl("file:///android_asset/map.html?lat=" + mLastLocation.getLatitude() + "&lon=" + mLastLocation.getLongitude() + "&name=" + LocationName);
+            webView.loadUrl("javascript:toCoordinates(" + mLastLocation.getLatitude() + "," + mLastLocation.getLongitude() + "," + "'" + LocationName + "'" +");");
         } else if (location != null && !TextUtils.isEmpty(address)) { // location and address available
             String LocationName = "<b>" + mLocationName + "</b><br>" + address;
             final WebView webView = findViewById(R.id.webView);
             webView.getSettings().setJavaScriptEnabled(true);
-            webView.loadUrl("file:///android_asset/map.html?lat=" + mLastLocation.getLatitude() + "&lon=" + mLastLocation.getLongitude() + "&name=" + LocationName);
+            webView.loadUrl("javascript:toCoordinates(" + mLastLocation.getLatitude() + "," + mLastLocation.getLongitude() + "," + "'" + LocationName + "'" +");");
         }
     }
 
@@ -238,12 +240,14 @@ public class ShareLocationActivity extends LocationActivity implements LocationL
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            showLocation(mLastLocation, null);
+            showLocation(mLastLocation, "");
         }
 
         @Override
         protected Void doInBackground(Void... params) {
-            address = getAddress(ShareLocationActivity.this, mLastLocation);
+            if (mLastLocation != null) {
+                address = getAddress(ShareLocationActivity.this, mLastLocation);
+            }
             return null;
         }
 

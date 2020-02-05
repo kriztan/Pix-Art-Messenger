@@ -1,10 +1,11 @@
 package de.pixart.messenger.ui.util;
 
 import android.content.Context;
-import androidx.annotation.StringRes;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
+
+import androidx.annotation.StringRes;
 
 public class JidDialog {
 

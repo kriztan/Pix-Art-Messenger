@@ -8,7 +8,6 @@
     <string name="action_contact_details">Contactgegevens</string>
     <string name="action_secure">Beveiligd gesprek</string>
     <string name="action_add_new_account">Nieuwe account registreren</string>
-    <string name="action_edit_contact">Naam veranderen</string>
     <string name="action_add_phone_book">Toevoegen aan adresboek</string>
     <string name="action_delete_contact">Verwijderen uit lijst</string>
     <string name="action_block_contact">Contact blokkeren</string>
@@ -292,12 +291,10 @@
     <string name="notification_restored_backup_title">Je back-up is hersteld</string>
     <string name="notification_restored_backup_subtitle">Vergeet niet om de account in te schakelen.</string>
     <string name="choose_file">Bestand kiezen</string>
-    <string name="receiving_x_file">Ontvangen van %1$s (%2$d%% voltooid)</string>
     <string name="download_x_file">%s downloaden</string>
     <string name="delete_x_file">%s verwijderen</string>
     <string name="file">bestand</string>
     <string name="open_x_file">%s openen</string>
-    <string name="sending_file">versturen (%1$d%% voltooid)</string>
     <string name="preparing_file">Bestand gereedmaken voor verzending</string>
     <string name="x_file_offered_for_download">%s aangeboden om te downloaden</string>
     <string name="cancel_transmission">Bestandsoverdracht annuleren</string>
@@ -629,7 +626,6 @@
     <string name="once">Eenmalig</string>
     <string name="pref_scroll_to_bottom">Naar beneden scrollen</string>
     <string name="edit_status_message_title">Statusbericht bewerken</string>
-    <string name="edit_status_message">Statusbericht bewerken</string>
     <string name="pref_automatically_delete_messages_description">Verwijder automatisch berichten van dit apparaat ouder dan de ingestelde tijdsperiode.</string>
     <string name="pref_automatically_delete_messages">Automatisch berichten verwijderen</string>
     <string name="disable_encryption">Versleuteling uitschakelen</string>
@@ -668,7 +664,6 @@
     <string name="enter_password_to_restore">Enter your password for the account %s to restore the backup.</string>
     <string name="unable_to_restore_backup">Kan back-up niet herstellen.</string>
     <string name="unable_to_decrypt_backup">Kan back-up niet ontsleutelen. Is het wachtwoord juist?</string>
-    <string name="view_users">Deelnemers bekijken</string>
     <string name="group_chat_members">Deelnemers</string>
     <string name="channel_details">Kanaalinformatie</string>
     <string name="allow_participants_to_edit_subject">Laat iedereen om het onderwerp te bewerken</string>

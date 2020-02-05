@@ -76,7 +76,6 @@ import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.entities.Conversation;
 import de.pixart.messenger.entities.Conversational;
 import de.pixart.messenger.entities.MucOptions;
-import de.pixart.messenger.entities.Presence;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.ui.interfaces.OnBackendConnected;
 import de.pixart.messenger.ui.interfaces.OnConversationArchived;
@@ -90,11 +89,13 @@ import de.pixart.messenger.ui.util.PendingItem;
 import de.pixart.messenger.utils.EmojiWrapper;
 import de.pixart.messenger.utils.ExceptionHelper;
 import de.pixart.messenger.utils.MenuDoubleTabUtil;
+import de.pixart.messenger.utils.Namespace;
 import de.pixart.messenger.utils.SignupUtils;
 import de.pixart.messenger.utils.UIHelper;
 import de.pixart.messenger.utils.XmppUri;
 import de.pixart.messenger.xmpp.OnUpdateBlocklist;
 import de.pixart.messenger.xmpp.chatstate.ChatState;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 import static de.pixart.messenger.ui.ConversationFragment.REQUEST_DECRYPT_PGP;
@@ -118,7 +119,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
             Intent.ACTION_SEND_MULTIPLE
     );
 
-    private boolean showLastSeen = false;
+    private boolean showLastSeen;
 
     long FirstStartTime = -1;
     String PREF_FIRST_START = "FirstStart";
@@ -291,7 +292,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
                 try {
                     startActivityForResult(intent, REQUEST_BATTERY_OP);
                 } catch (ActivityNotFoundException e) {
-                    Toast.makeText(this, R.string.device_does_not_support_battery_op, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(this, R.string.device_does_not_support_battery_op, Toast.LENGTH_SHORT).show();
                 }
             });
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
@@ -488,7 +489,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
     }
 
     private void displayToast(final String msg) {
-        runOnUiThread(() -> Toast.makeText(ConversationsActivity.this, msg, Toast.LENGTH_SHORT).show());
+        runOnUiThread(() -> ToastCompat.makeText(ConversationsActivity.this, msg, Toast.LENGTH_SHORT).show());
     }
 
     @Override
@@ -539,7 +540,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
 
     public boolean onXmppUriClicked(Uri uri) {
         XmppUri xmppUri = new XmppUri(uri);
-        if (xmppUri.isJidValid() && !xmppUri.hasFingerprints()) {
+        if (xmppUri.isValidJid() && !xmppUri.hasFingerprints()) {
             final Conversation conversation = xmppConnectionService.findUniqueConversationByJid(xmppUri);
             if (conversation != null) {
                 openConversation(conversation, null);
@@ -573,7 +574,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
                 if (xmppConnectionService.hasInternetConnection()) {
                     openInstallFromUnknownSourcesDialogIfNeeded(true);
                 } else {
-                    Toast.makeText(this, R.string.account_status_no_internet, Toast.LENGTH_LONG).show();
+                    ToastCompat.makeText(this, R.string.account_status_no_internet, Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.action_invite_user:
@@ -601,7 +602,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
         }
         mRedirectInProcess.set(false);
         final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        this.showLastSeen = preferences.getBoolean("last_activity", false);
+        this.showLastSeen = preferences.getBoolean("last_activity", getResources().getBoolean(R.bool.last_activity));
         super.onStart();
     }
 
@@ -695,7 +696,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
                 final Conversation conversation = ((ConversationFragment) mainFragment).getConversation();
                 if (conversation != null) {
                     actionBar.setDisplayHomeAsUpEnabled(true);
-                    View view = getLayoutInflater().inflate(R.layout.ab_title, null);
+                    final View view = getLayoutInflater().inflate(R.layout.ab_title, null);
                     getSupportActionBar().setCustomView(view);
                     actionBar.setDisplayShowTitleEnabled(false);
                     actionBar.setDisplayShowCustomEnabled(true);
@@ -716,10 +717,11 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
                     abtitle.setSelected(true);
                     if (conversation.getMode() == Conversation.MODE_SINGLE && !conversation.withSelf()) {
                         ChatState state = conversation.getIncomingChatState();
-                        if (conversation.getContact().getShownStatus() == Presence.Status.OFFLINE) {
-                            absubtitle.setText(getString(R.string.account_status_offline));
+                        if (state == ChatState.COMPOSING) {
+                            absubtitle.setText(getString(R.string.is_typing));
+                            absubtitle.setTypeface(null, Typeface.BOLD_ITALIC);
                             absubtitle.setSelected(true);
-                            absubtitle.setOnClickListener(view12 -> {
+                            absubtitle.setOnClickListener(view13 -> {
                                 if (conversation.getMode() == Conversation.MODE_SINGLE) {
                                     switchToContactDetails(conversation.getContact());
                                 } else if (conversation.getMode() == Conversation.MODE_MULTI) {
@@ -731,40 +733,23 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
                                 }
                             });
                         } else {
-                            if (state == ChatState.COMPOSING) {
-                                absubtitle.setText(getString(R.string.is_typing));
-                                absubtitle.setTypeface(null, Typeface.BOLD_ITALIC);
-                                absubtitle.setSelected(true);
-                                absubtitle.setOnClickListener(view13 -> {
-                                    if (conversation.getMode() == Conversation.MODE_SINGLE) {
-                                        switchToContactDetails(conversation.getContact());
-                                    } else if (conversation.getMode() == Conversation.MODE_MULTI) {
-                                        Intent intent = new Intent(ConversationsActivity.this, ConferenceDetailsActivity.class);
-                                        intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
-                                        intent.putExtra("uuid", conversation.getUuid());
-                                        startActivity(intent);
-                                        overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
-                                    }
-                                });
+                            if (showLastSeen && conversation.getContact().getLastseen() > 0 && conversation.getContact().getPresences().allOrNonSupport(Namespace.IDLE)) {
+                                absubtitle.setText(UIHelper.lastseen(getApplicationContext(), conversation.getContact().isActive(), conversation.getContact().getLastseen()));
                             } else {
-                                if (showLastSeen && conversation.getContact().getLastseen() > 0) {
-                                    absubtitle.setText(UIHelper.lastseen(getApplicationContext(), conversation.getContact().isActive(), conversation.getContact().getLastseen()));
-                                } else {
-                                    absubtitle.setText(getString(R.string.account_status_online));
-                                }
-                                absubtitle.setSelected(true);
-                                absubtitle.setOnClickListener(view14 -> {
-                                    if (conversation.getMode() == Conversation.MODE_SINGLE) {
-                                        switchToContactDetails(conversation.getContact());
-                                    } else if (conversation.getMode() == Conversation.MODE_MULTI) {
-                                        Intent intent = new Intent(ConversationsActivity.this, ConferenceDetailsActivity.class);
-                                        intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
-                                        intent.putExtra("uuid", conversation.getUuid());
-                                        startActivity(intent);
-                                        overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
-                                    }
-                                });
+                                absubtitle.setText(getString(R.string.account_status_online));
                             }
+                            absubtitle.setSelected(true);
+                            absubtitle.setOnClickListener(view14 -> {
+                                if (conversation.getMode() == Conversation.MODE_SINGLE) {
+                                    switchToContactDetails(conversation.getContact());
+                                } else if (conversation.getMode() == Conversation.MODE_MULTI) {
+                                    Intent intent = new Intent(ConversationsActivity.this, ConferenceDetailsActivity.class);
+                                    intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
+                                    intent.putExtra("uuid", conversation.getUuid());
+                                    startActivity(intent);
+                                    overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
+                                }
+                            });
                         }
                     } else {
                         ChatState state = ChatState.COMPOSING;
@@ -824,7 +809,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
 
     public void verifyOtrSessionDialog(final Conversation conversation, View view) {
         if (!conversation.hasValidOtrSession() || conversation.getOtrSession().getSessionStatus() != SessionStatus.ENCRYPTED) {
-            Toast.makeText(this, R.string.otr_session_not_started, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(this, R.string.otr_session_not_started, Toast.LENGTH_LONG).show();
             return;
         }
         if (view == null) {
@@ -923,7 +908,7 @@ public class ConversationsActivity extends XmppActivity implements OnConversatio
 
     @Override
     public void onShowErrorToast(int resId) {
-        runOnUiThread(() -> Toast.makeText(this, resId, Toast.LENGTH_SHORT).show());
+        runOnUiThread(() -> ToastCompat.makeText(this, resId, Toast.LENGTH_SHORT).show());
     }
 
     protected void AppUpdate(String Store) {

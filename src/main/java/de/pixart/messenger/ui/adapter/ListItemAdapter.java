@@ -1,7 +1,6 @@
 package de.pixart.messenger.ui.adapter;
 
 import android.content.SharedPreferences;
-import androidx.databinding.DataBindingUtil;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.databinding.DataBindingUtil;
 
 import com.wefika.flowlayout.FlowLayout;
 
@@ -30,7 +31,8 @@ public class ListItemAdapter extends ArrayAdapter<ListItem> {
     private static final float INACTIVE_ALPHA = 0.4684f;
     private static final float ACTIVE_ALPHA = 1.0f;
     protected XmppActivity activity;
-    protected boolean showDynamicTags = false;
+    private boolean showDynamicTags = false;
+    private boolean showPresenceColoredNames = false;
     private OnTagClickedListener mOnTagClickedListener = null;
     protected int color = 0;
     protected boolean offline = false;
@@ -52,7 +54,8 @@ public class ListItemAdapter extends ArrayAdapter<ListItem> {
 
     public void refreshSettings() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
-        this.showDynamicTags = preferences.getBoolean(SettingsActivity.SHOW_DYNAMIC_TAGS, false);
+        this.showDynamicTags = preferences.getBoolean(SettingsActivity.SHOW_DYNAMIC_TAGS, activity.getResources().getBoolean(R.bool.show_dynamic_tags));
+        this.showPresenceColoredNames = preferences.getBoolean("presence_colored_names", activity.getResources().getBoolean(R.bool.presence_colored_names));
     }
 
     @Override
@@ -102,14 +105,14 @@ public class ListItemAdapter extends ArrayAdapter<ListItem> {
                 color = tag.getColor();
             }
         }
-        if (offline) {
+        if (offline || !activity.xmppConnectionService.hasInternetConnection()) {
             viewHolder.name.setTextColor(StyledAttributes.getColor(activity, R.attr.text_Color_Main));
             viewHolder.name.setAlpha(INACTIVE_ALPHA);
             viewHolder.jid.setAlpha(INACTIVE_ALPHA);
             viewHolder.avatar.setAlpha(INACTIVE_ALPHA);
             viewHolder.tags.setAlpha(INACTIVE_ALPHA);
         } else {
-            if (ShowPresenceColoredNames()) {
+            if (showPresenceColoredNames) {
                 viewHolder.name.setTextColor(color != 0 ? color : StyledAttributes.getColor(activity, R.attr.text_Color_Main));
             } else {
                 viewHolder.name.setTextColor(StyledAttributes.getColor(activity, R.attr.text_Color_Main));
@@ -151,13 +154,5 @@ public class ListItemAdapter extends ArrayAdapter<ListItem> {
             binding.getRoot().setTag(viewHolder);
             return viewHolder;
         }
-    }
-
-    private boolean ShowPresenceColoredNames() {
-        return getPreferences().getBoolean("presence_colored_names", activity.getResources().getBoolean(R.bool.presence_colored_names));
-    }
-
-    protected SharedPreferences getPreferences() {
-        return PreferenceManager.getDefaultSharedPreferences(activity.getApplicationContext());
     }
 }

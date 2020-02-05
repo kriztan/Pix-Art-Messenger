@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Ukončit tuto konverzaci</string>
     <string name="action_contact_details">Detaily kontaktu</string>
     <string name="action_secure">Zabezpečená konverzace</string>
-    <string name="action_edit_contact">Upravit jméno</string>
     <string name="action_add_phone_book">Přidat do adresáře</string>
     <string name="action_delete_contact">Smazat ze seznamu</string>
     <string name="action_block_contact">Zablokovat kontakt</string>
@@ -257,12 +256,10 @@
     <string name="smp_requested">Kontakt zažádal o ověření SMP</string>
     <string name="no_otr_session_found">Nebylo nalezeno platné OTR sezení!</string>
     <string name="choose_file">Vybrat soubor</string>
-    <string name="receiving_x_file">Přijímám %1$s (%2$d%% dokončeno)</string>
     <string name="download_x_file">Stáhnout %s</string>
     <string name="delete_x_file">Smazat %s</string>
     <string name="file">soubor</string>
     <string name="open_x_file">Otevřít %s</string>
-    <string name="sending_file">odesílám (%1$d%% přeneseno)</string>
     <string name="preparing_file">Příprava souboru na přenos</string>
     <string name="x_file_offered_for_download">%s nabídnuto ke stažení</string>
     <string name="cancel_transmission">Zrušit přenos</string>

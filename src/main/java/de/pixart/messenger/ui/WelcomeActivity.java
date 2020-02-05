@@ -1,26 +1,76 @@
 package de.pixart.messenger.ui;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import androidx.databinding.DataBindingUtil;
 
+import java.util.Arrays;
+import java.util.List;
+
+import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
+import de.pixart.messenger.databinding.WelcomeBinding;
+import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.ui.util.IntroHelper;
+import de.pixart.messenger.utils.InstallReferrerUtils;
+import de.pixart.messenger.utils.SignupUtils;
+import de.pixart.messenger.utils.XmppUri;
+import me.drakeet.support.toast.ToastCompat;
+import rocks.xmpp.addr.Jid;
 
 import static de.pixart.messenger.Config.DISALLOW_REGISTRATION_IN_UI;
 import static de.pixart.messenger.utils.PermissionUtils.allGranted;
-import static de.pixart.messenger.utils.PermissionUtils.writeGranted;
+import static de.pixart.messenger.utils.PermissionUtils.readGranted;
 
 public class WelcomeActivity extends XmppActivity {
 
     private static final int REQUEST_IMPORT_BACKUP = 0x63fb;
+    private static final int REQUEST_READ_EXTERNAL_STORAGE = 0XD737;
+
+    private XmppUri inviteUri;
+
+    public void onInstallReferrerDiscovered(final String referrer) {
+        Log.d(Config.LOGTAG, "welcome activity: on install referrer discovered " + referrer);
+        if (referrer != null) {
+            final XmppUri xmppUri = new XmppUri(referrer);
+            runOnUiThread(() -> processXmppUri(xmppUri));
+        }
+    }
+
+    private boolean processXmppUri(final XmppUri xmppUri) {
+        if (xmppUri.isValidJid()) {
+            final String preauth = xmppUri.getParameter("preauth");
+            final Jid jid = xmppUri.getJid();
+            final Intent intent;
+            if (xmppUri.isAction(XmppUri.ACTION_REGISTER)) {
+                intent = SignupUtils.getTokenRegistrationIntent(this, jid, preauth);
+            } else if (xmppUri.isAction(XmppUri.ACTION_ROSTER) && "y".equals(xmppUri.getParameter("ibr"))) {
+                intent = SignupUtils.getTokenRegistrationIntent(this, Jid.ofDomain(jid.getDomain()), preauth);
+                intent.putExtra(StartConversationActivity.EXTRA_INVITE_URI, xmppUri.toString());
+            } else {
+                intent = null;
+            }
+            if (intent != null) {
+                startActivity(intent);
+                finish();
+                return true;
+            }
+            this.inviteUri = xmppUri;
+        }
+        return false;
+    }
 
     @Override
     protected void refreshUiReal() {
@@ -30,8 +80,6 @@ public class WelcomeActivity extends XmppActivity {
     void onBackendConnected() {
     }
 
-    private static final int REQUEST_READ_EXTERNAL_STORAGE = 0XD737;
-
     @Override
     public void onStart() {
         super.onStart();
@@ -39,6 +87,12 @@ public class WelcomeActivity extends XmppActivity {
         if (this.mTheme != theme) {
             recreate();
         }
+        new InstallReferrerUtils(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
     }
 
     @Override
@@ -54,7 +108,7 @@ public class WelcomeActivity extends XmppActivity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome);
+        WelcomeBinding binding = DataBindingUtil.setContentView(this, R.layout.welcome);
         setSupportActionBar(findViewById(R.id.toolbar));
         final ActionBar ab = getSupportActionBar();
         if (ab != null) {
@@ -62,29 +116,29 @@ public class WelcomeActivity extends XmppActivity {
             ab.setDisplayHomeAsUpEnabled(false);
         }
         IntroHelper.showIntro(this, false);
-        final Button ImportDatabase = findViewById(R.id.import_database);
-        final TextView ImportText = findViewById(R.id.import_text);
         if (hasStoragePermission(REQUEST_IMPORT_BACKUP)) {
-            ImportDatabase.setVisibility(View.VISIBLE);
-            ImportText.setVisibility(View.VISIBLE);
+            binding.importDatabase.setVisibility(View.VISIBLE);
+            binding.importText.setVisibility(View.VISIBLE);
         }
-        ImportDatabase.setOnClickListener(v -> startActivity(new Intent(this, ImportBackupActivity.class)));
-
-
-        final Button createAccount = findViewById(R.id.create_account);
-        createAccount.setOnClickListener(v -> {
+        binding.importDatabase.setOnClickListener(v -> startActivity(new Intent(this, ImportBackupActivity.class)));
+        binding.createAccount.setOnClickListener(v -> {
             final Intent intent = new Intent(WelcomeActivity.this, MagicCreateActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             addInviteUri(intent);
             startActivity(intent);
         });
         if (DISALLOW_REGISTRATION_IN_UI) {
-            createAccount.setVisibility(View.GONE);
+            binding.createAccount.setVisibility(View.GONE);
         }
-        final Button useExistingAccount = findViewById(R.id.use_existing_account);
-        useExistingAccount.setOnClickListener(v -> {
+        binding.useExistingAccount.setOnClickListener(v -> {
+            final List<Account> accounts = xmppConnectionService.getAccounts();
             Intent intent = new Intent(WelcomeActivity.this, EditAccountActivity.class);
-            intent.putExtra("init", true);
+            if (accounts.size() == 1) {
+                intent.putExtra("jid", accounts.get(0).getJid().asBareJid().toString());
+                intent.putExtra("init", true);
+            } else if (accounts.size() >= 1) {
+                intent = new Intent(WelcomeActivity.this, ManageAccountActivity.class);
+            }
             intent.putExtra("existing", true);
             addInviteUri(intent);
             startActivity(intent);
@@ -92,11 +146,17 @@ public class WelcomeActivity extends XmppActivity {
             finish();
             overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
         });
-
     }
 
-    public void addInviteUri(Intent intent) {
-        StartConversationActivity.addInviteUri(intent, getIntent());
+    public void addInviteUri(Intent to) {
+        final Intent from = getIntent();
+        if (from != null && from.hasExtra(StartConversationActivity.EXTRA_INVITE_URI)) {
+            final String invite = from.getStringExtra(StartConversationActivity.EXTRA_INVITE_URI);
+            to.putExtra(StartConversationActivity.EXTRA_INVITE_URI, invite);
+        } else if (this.inviteUri != null) {
+            Log.d(Config.LOGTAG, "injecting referrer uri into on-boarding flow");
+            to.putExtra(StartConversationActivity.EXTRA_INVITE_URI, this.inviteUri.toString());
+        }
     }
 
     public static void launch(AppCompatActivity activity) {
@@ -107,7 +167,26 @@ public class WelcomeActivity extends XmppActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.welcome_menu, menu);
+        final MenuItem scan = menu.findItem(R.id.action_scan_qr_code);
+        scan.setVisible(getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA));
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_scan_qr_code:
+                UriHandlerActivity.scan(this);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        UriHandlerActivity.onRequestPermissionResult(this, requestCode, grantResults);
         if (grantResults.length > 0) {
             if (allGranted(grantResults)) {
                 switch (requestCode) {
@@ -115,11 +194,11 @@ public class WelcomeActivity extends XmppActivity {
                         startActivity(new Intent(this, ImportBackupActivity.class));
                         break;
                 }
-            } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+            } else if (Arrays.asList(permissions).contains(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
         }
-        if (writeGranted(grantResults, permissions)) {
+        if (readGranted(grantResults, permissions)) {
             if (xmppConnectionService != null) {
                 xmppConnectionService.restartFileObserver();
             }

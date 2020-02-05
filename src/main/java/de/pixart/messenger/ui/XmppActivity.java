@@ -3,7 +3,6 @@ package de.pixart.messenger.ui;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.AlertDialog.Builder;
 import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
@@ -26,7 +25,6 @@ import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -51,7 +49,6 @@ import android.widget.Toast;
 
 import androidx.annotation.BoolRes;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -96,6 +93,7 @@ import de.pixart.messenger.utils.ThemeHelper;
 import de.pixart.messenger.xmpp.OnKeyStatusUpdated;
 import de.pixart.messenger.xmpp.OnUpdateBlocklist;
 import de.pixart.messenger.xmpp.XmppConnection;
+import me.drakeet.support.toast.ToastCompat;
 import pl.droidsonroids.gif.GifDrawable;
 import rocks.xmpp.addr.Jid;
 
@@ -116,6 +114,8 @@ public abstract class XmppActivity extends ActionBarActivity {
     public boolean xmppConnectionServiceBound = false;
 
     protected int mColorWarningButton;
+    protected int mColorWarningText;
+    protected int mColorDefaultButtonText;
     protected int mColorWhite;
 
     protected static final String FRAGMENT_TAG_DIALOG = "dialog";
@@ -126,7 +126,7 @@ public abstract class XmppActivity extends ActionBarActivity {
     protected boolean mUsingEnterKey = false;
 
     protected Toast mToast;
-    protected Runnable onOpenPGPKeyPublished = () -> Toast.makeText(XmppActivity.this, R.string.openpgp_has_been_published, Toast.LENGTH_SHORT).show();
+    protected Runnable onOpenPGPKeyPublished = () -> ToastCompat.makeText(XmppActivity.this, R.string.openpgp_has_been_published, Toast.LENGTH_SHORT).show();
     protected ConferenceInvite mPendingConferenceInvite = null;
     protected ServiceConnection mConnection = new ServiceConnection() {
 
@@ -211,7 +211,7 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     protected void replaceToast(String msg, boolean showlong) {
         hideToast();
-        mToast = Toast.makeText(this, msg, showlong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
+        mToast = ToastCompat.makeText(this, msg, showlong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
         mToast.show();
     }
 
@@ -402,16 +402,18 @@ public abstract class XmppActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         this.mTheme = findTheme();
         setTheme(this.mTheme);
-        setVolumeControlStream(AudioManager.STREAM_MUSIC);
         metrics = getResources().getDisplayMetrics();
         ExceptionHelper.init(getApplicationContext());
         new EmojiService(this).init(getPreferences().getBoolean(USE_BUNDLED_EMOJIS, getResources().getBoolean(R.bool.use_bundled_emoji)));
         this.isCameraFeatureAvailable = getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
         if (isDarkTheme()) {
             mColorWarningButton = ContextCompat.getColor(this, R.color.warning_button_dark);
+            mColorWarningText = ContextCompat.getColor(this, R.color.warning_button);
         } else {
             mColorWarningButton = ContextCompat.getColor(this, R.color.warning_button);
+            mColorWarningText = ContextCompat.getColor(this, R.color.warning_button_dark);
         }
+        mColorDefaultButtonText = ContextCompat.getColor(this, R.color.realwhite);
         mColorWhite = ContextCompat.getColor(this, R.color.white70);
         this.mUsingEnterKey = usingEnterKey();
     }
@@ -433,7 +435,7 @@ public abstract class XmppActivity extends ActionBarActivity {
     }
 
     public void setBubbleColor(final View v, final int backgroundColor, final int borderColor) {
-        GradientDrawable shape = (GradientDrawable)v.getBackground();
+        GradientDrawable shape = (GradientDrawable) v.getBackground();
         shape.setColor(backgroundColor);
         if (borderColor != -1) {
             shape.setStroke(2, borderColor);
@@ -581,7 +583,7 @@ public abstract class XmppActivity extends ActionBarActivity {
         Intent intent = new Intent(this, XmppConnectionService.class);
         intent.setAction(Intent.ACTION_SEND);
         intent.setData(uri);
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try {
             startService(intent);
         } catch (Exception e) {
@@ -679,8 +681,7 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     protected void displayErrorDialog(final int errorCode) {
         runOnUiThread(() -> {
-            Builder builder = new Builder(
-                    XmppActivity.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(XmppActivity.this);
             builder.setIconAttribute(android.R.attr.alertDialogIcon);
             builder.setTitle(getString(R.string.error));
             builder.setMessage(errorCode);
@@ -799,8 +800,8 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     protected boolean hasStoragePermission(int requestCode) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, requestCode);
+            if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, requestCode);
                 return false;
             } else {
                 return true;
@@ -936,7 +937,7 @@ public abstract class XmppActivity extends ActionBarActivity {
             mPendingConferenceInvite = ConferenceInvite.parse(data);
             if (xmppConnectionServiceBound && mPendingConferenceInvite != null) {
                 if (mPendingConferenceInvite.execute(this)) {
-                    mToast = Toast.makeText(this, R.string.creating_conference, Toast.LENGTH_LONG);
+                    mToast = ToastCompat.makeText(this, R.string.creating_conference, Toast.LENGTH_LONG);
                     mToast.show();
                 }
                 mPendingConferenceInvite = null;
@@ -946,6 +947,14 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     public int getWarningButtonColor() {
         return this.mColorWarningButton;
+    }
+
+    public int getWarningTextColor() {
+        return this.mColorWarningText;
+    }
+
+    public int getDefaultButtonTextColor() {
+        return this.mColorDefaultButtonText;
     }
 
     public int getPixel(int dp) {
@@ -964,10 +973,6 @@ public abstract class XmppActivity extends ActionBarActivity {
         return false;
     }
 
-    protected boolean neverCompressPictures() {
-        return getPreferences().getString("picture_compression", getResources().getString(R.string.picture_compression)).equals("never");
-    }
-
     protected boolean manuallyChangePresence() {
         return getBooleanPreference(SettingsActivity.MANUALLY_CHANGE_PRESENCE, R.bool.manually_change_presence);
     }
@@ -982,11 +987,11 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     public void inviteUser() {
         if (!xmppConnectionServiceBound) {
-            Toast.makeText(this, R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
             return;
         }
         if (xmppConnectionService.getAccounts() == null) {
-            Toast.makeText(this, R.string.no_accounts, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.no_accounts, Toast.LENGTH_SHORT).show();
             return;
         }
         if (!xmppConnectionService.multipleAccounts()) {
@@ -995,7 +1000,7 @@ public abstract class XmppActivity extends ActionBarActivity {
             String domain = Jid.ofEscaped(mAccount.getJid()).getDomain();
             String inviteURL;
             try {
-                inviteURL = new getAdHocInviteUri(mAccount).execute().get();
+                inviteURL = new getAdHocInviteUri(mAccount.getXmppConnection(), mAccount).execute().get();
             } catch (ExecutionException e) {
                 e.printStackTrace();
                 inviteURL = Config.inviteUserURL + user + "/" + domain;
@@ -1039,7 +1044,7 @@ public abstract class XmppActivity extends ActionBarActivity {
                         String domain = Jid.of(mAccount.getJid()).getDomain();
                         String inviteURL;
                         try {
-                            inviteURL = new getAdHocInviteUri(mAccount).execute().get();
+                            inviteURL = new getAdHocInviteUri(mAccount.getXmppConnection(), mAccount).execute().get();
                         } catch (ExecutionException e) {
                             e.printStackTrace();
                             inviteURL = Config.inviteUserURL + user + "/" + domain;
@@ -1064,20 +1069,13 @@ public abstract class XmppActivity extends ActionBarActivity {
         }
     }
 
-    private boolean AdHocInvite(Account account) {
-        if (!xmppConnectionServiceBound) {
-            return false;
-        }
-        XmppConnection.Features features = account.getXmppConnection().getFeatures();
-        Log.d(Config.LOGTAG, "Invite available: " + features.adhocinvite);
-        return features.adhocinvite;
-    }
+    private class getAdHocInviteUri extends AsyncTask<XmppConnection, Account, String> {
 
-    private class getAdHocInviteUri extends AsyncTask<Account, Void, String> {
-
+        private XmppConnection connection;
         private Account account;
 
-        public getAdHocInviteUri(Account a) {
+        public getAdHocInviteUri(XmppConnection c, Account a) {
+            this.connection = c;
             this.account = a;
         }
 
@@ -1087,15 +1085,26 @@ public abstract class XmppActivity extends ActionBarActivity {
         }
 
         @Override
-        protected String doInBackground(Account... params) {
-            if (AdHocInvite(account)) {
-                XmppConnection.Features features = account.getXmppConnection().getFeatures();
-                account.getXmppConnection().getAdHocInviteUrl(Jid.ofDomain(account.getJid().getDomain()));
-                String uri = features.adhocinviteURI;
-                features.adhocinviteURI = null;
-                return uri;
+        protected String doInBackground(XmppConnection... params) {
+            String uri = null;
+            if (this.connection != null) {
+                XmppConnection.Features features = connection.getFeatures();
+                if (features.adhocinvite) {
+                    int i = 0;
+                    uri = this.connection.getAdHocInviteUrl(Jid.ofDomain(this.account.getJid().getDomain()));
+                    try {
+                        while (uri == null && i++ < 10) {
+                            uri = this.connection.getAdHocInviteUrl(Jid.ofDomain(this.account.getJid().getDomain()));
+                            Thread.sleep(1000);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                        features.adhocinviteURI = null;
+                    }
+                }
             }
-            return null;
+            return uri;
         }
 
         @Override
@@ -1124,7 +1133,7 @@ public abstract class XmppActivity extends ActionBarActivity {
             startActivity(Intent.createChooser(intent, getText(R.string.share_uri_with)));
             overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, R.string.no_application_to_share_uri, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.no_application_to_share_uri, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1135,7 +1144,7 @@ public abstract class XmppActivity extends ActionBarActivity {
                     pgp.getIntentForKey(keyId).getIntentSender(), 0, null, 0,
                     0, 0);
         } catch (Throwable e) {
-            Toast.makeText(XmppActivity.this, R.string.openpgp_error, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(XmppActivity.this, R.string.openpgp_error, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1399,7 +1408,7 @@ public abstract class XmppActivity extends ActionBarActivity {
                 try {
                     startActivityForResult(intent, REQUEST_UNKNOWN_SOURCE_OP);
                 } catch (ActivityNotFoundException e) {
-                    Toast.makeText(XmppActivity.this, R.string.device_does_not_support_unknown_source_op, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(XmppActivity.this, R.string.device_does_not_support_unknown_source_op, Toast.LENGTH_SHORT).show();
                 } finally {
                     UpdateService task = new UpdateService(this, xmppConnectionService.installedFrom(), xmppConnectionService);
                     task.executeOnExecutor(UpdateService.THREAD_POOL_EXECUTOR, ShowToast);

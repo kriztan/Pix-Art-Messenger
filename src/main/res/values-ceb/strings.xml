@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Taposa ang kining panag-estorya</string>
     <string name="action_contact_details">Mga detalyi sa kontak</string>
     <string name="action_secure">Maayo nga panag-estorya</string>
-    <string name="action_edit_contact">Usba ang ngan</string>
     <string name="action_add_phone_book">Idungag sa address nga libro</string>
     <string name="action_delete_contact">Tangtanga gikan sa roster</string>
     <string name="action_block_contact">I-block ang kontak</string>
@@ -281,12 +280,10 @@
     <string name="smp_requested">Hangyu-a ang kontak ug SMP nga pag-tinu</string>
     <string name="no_otr_session_found">Walay balido nga OTR nga sesyon nga nakita!</string>
     <string name="choose_file">Pili ug file</string>
-    <string name="receiving_x_file">Dawata %1$s(%2$d%% kumpleto)</string>
     <string name="download_x_file">Pag-download %s</string>
     <string name="delete_x_file">Tangtanga %s</string>
     <string name="file">file</string>
     <string name="open_x_file">Abli %s</string>
-    <string name="sending_file">pagpadala (%1$d%% kumpleto)</string>
     <string name="preparing_file">Pagpreparar sa file para transmission</string>
     <string name="x_file_offered_for_download">%s ang gitanyag alang sa pag-download</string>
     <string name="cancel_transmission">Ayaw i-dayun ang transmission</string>

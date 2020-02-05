@@ -74,6 +74,8 @@ public class SettingsActivity extends XmppActivity implements
     public static final String CONFIRM_MESSAGES = "confirm_messages";
     public static final String INDICATE_RECEIVED = "indicate_received";
     public static final String USE_INVIDIOUS = "use_invidious";
+    public static final String ALLOW_MESSAGE_CORRECTION = "allow_message_correction";
+    public static final String ENABLE_OTR_ENCRYPTION = "enable_otr_encryption";
 
     public static final int REQUEST_CREATE_BACKUP = 0xbf8701;
     Preference multiAccountPreference;
@@ -258,6 +260,7 @@ public class SettingsActivity extends XmppActivity implements
                 removeCertsDialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
                 return true;
             });
+            updateTheme();
         }
 
         final Preference createBackupPreference = mSettingsFragment.findPreference("create_backup");
@@ -482,7 +485,7 @@ public class SettingsActivity extends XmppActivity implements
                 CONFIRM_MESSAGES,
                 DND_ON_SILENT_MODE,
                 AWAY_WHEN_SCREEN_IS_OFF,
-                "allow_message_correction",
+                ALLOW_MESSAGE_CORRECTION,
                 TREAT_VIBRATE_AS_SILENT,
                 MANUALLY_CHANGE_PRESENCE,
                 BROADCAST_LAST_ACTIVITY);
@@ -520,7 +523,7 @@ public class SettingsActivity extends XmppActivity implements
                     createBackup(true);
                 }
             } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -532,7 +535,7 @@ public class SettingsActivity extends XmppActivity implements
     }
 
     private void displayToast(final String msg) {
-        runOnUiThread(() -> Toast.makeText(SettingsActivity.this, msg, Toast.LENGTH_LONG).show());
+        runOnUiThread(() -> ToastCompat.makeText(SettingsActivity.this, msg, Toast.LENGTH_LONG).show());
     }
 
     private void reconnectAccounts() {

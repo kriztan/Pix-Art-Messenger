@@ -2,11 +2,12 @@ package de.pixart.messenger.ui;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.view.MenuItem;
+import android.view.WindowManager;
+
 import androidx.annotation.BoolRes;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.view.WindowManager;
 
 import de.pixart.messenger.R;
 

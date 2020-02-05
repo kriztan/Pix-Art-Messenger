@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Meninggalkan percakapan ini</string>
     <string name="action_contact_details">Rincian kontak</string>
     <string name="action_secure">Amankan percakapan</string>
-    <string name="action_edit_contact">Ubah nama</string>
     <string name="action_add_phone_book">Tambah ke buku alamat</string>
     <string name="action_delete_contact">Hapus dari daftar</string>
     <string name="action_block_contact">Blokir kontak</string>
@@ -281,12 +280,10 @@
     <string name="smp_requested">Kontak meminta verifikasi SMP</string>
     <string name="no_otr_session_found">Tidak ada sesi OTR yang valid telah ditemukan!</string>
     <string name="choose_file">Pilih berkas</string>
-    <string name="receiving_x_file">Mengirimkan %1$s (%2$d%% lengkap)</string>
     <string name="download_x_file">Unduh %s</string>
     <string name="delete_x_file">Hapus %s</string>
     <string name="file">berkas</string>
     <string name="open_x_file">Buka %s</string>
-    <string name="sending_file">mengirim (%1$d%% lengkap)</string>
     <string name="preparing_file">Menyiapkan berkas untuk pemindahan</string>
     <string name="x_file_offered_for_download">%s ditawarkan untuk diunduh</string>
     <string name="cancel_transmission">Batalkan pemindahan</string>

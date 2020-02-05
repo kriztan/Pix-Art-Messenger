@@ -13,11 +13,12 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
-import androidx.core.app.ActivityCompat;
-import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.app.ActivityCompat;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -33,6 +34,7 @@ import de.pixart.messenger.R;
 import de.pixart.messenger.persistance.FileBackend;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.utils.WakeLockHelper;
+import me.drakeet.support.toast.ToastCompat;
 
 import static de.pixart.messenger.http.HttpConnectionManager.getProxy;
 import static de.pixart.messenger.services.XmppConnectionService.FDroid;
@@ -92,13 +94,13 @@ public class UpdaterActivity extends XmppActivity {
             try {
                 appURI = getIntent().getStringExtra("url");
             } catch (Exception e) {
-                Toast.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
+                ToastCompat.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
                 UpdaterActivity.this.finish();
             }
             try {
                 changelog = getIntent().getStringExtra("changelog");
             } catch (Exception e) {
-                Toast.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
+                ToastCompat.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
                 UpdaterActivity.this.finish();
             }
             try {
@@ -156,7 +158,7 @@ public class UpdaterActivity extends XmppActivity {
                                     overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
                                 }
                             } else {
-                                Toast.makeText(getApplicationContext(), getText(R.string.download_started), Toast.LENGTH_LONG).show();
+                                ToastCompat.makeText(getApplicationContext(), getText(R.string.download_started), Toast.LENGTH_LONG).show();
                                 downloadTask = new DownloadTask(UpdaterActivity.this);
                                 downloadTask.execute(appURI);
                             }
@@ -185,7 +187,7 @@ public class UpdaterActivity extends XmppActivity {
             //show the alert message
             builder.create().show();
         } else {
-            Toast.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
             UpdaterActivity.this.finish();
         }
     }
@@ -228,12 +230,10 @@ public class UpdaterActivity extends XmppActivity {
 
     public boolean isStoragePermissionGranted() {
         if (Build.VERSION.SDK_INT >= 23) {
-            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED) {
+            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 return true;
             } else {
-
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
                 return false;
             }
         } else { //permission is automatically granted on sdk<23 upon installation
@@ -342,7 +342,7 @@ public class UpdaterActivity extends XmppActivity {
                 // expect HTTP 200 OK, so we don't mistakenly save error report
                 // instead of the file
                 if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                    Toast.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
+                    ToastCompat.makeText(getApplicationContext(), getText(R.string.failed), Toast.LENGTH_LONG).show();
                     return connection.getResponseCode() + ": " + connection.getResponseMessage();
                 }
 
@@ -398,7 +398,7 @@ public class UpdaterActivity extends XmppActivity {
             WakeLockHelper.release(mWakeLock);
             mProgressDialog.dismiss();
             if (result != null) {
-                Toast.makeText(getApplicationContext(), getString(R.string.failed), Toast.LENGTH_LONG).show();
+                ToastCompat.makeText(getApplicationContext(), getString(R.string.failed), Toast.LENGTH_LONG).show();
                 Log.d(Config.LOGTAG, "AppUpdater: failed with " + result);
                 UpdaterActivity.this.finish();
             } else {

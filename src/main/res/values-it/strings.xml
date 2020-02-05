@@ -8,7 +8,6 @@
     <string name="action_contact_details">Dettagli del contatto</string>
     <string name="action_secure">Conversazione sicura</string>
     <string name="action_add_new_account">Aggiungi nuovo account</string>
-    <string name="action_edit_contact">Modifica il nome</string>
     <string name="action_add_phone_book">Aggiungi alla rubrica</string>
     <string name="action_delete_contact">Cancella dalla lista</string>
     <string name="action_block_contact">Blocca contatto</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Gestisci account</string>
     <string name="title_activity_settings">Impostazioni</string>
     <string name="conference_details">Dettagli della conversazione di gruppo</string>
-    <string name="title_activity_contact_details">Dettagli del contato</string>
+    <string name="contact_details">Dettagli del contato</string>
     <string name="title_activity_sharewith">Condividi con la conversazione</string>
     <string name="title_activity_start_conversation">Inizia conversazione</string>
     <string name="title_activity_choose_contact">Scegli un contatto</string>
@@ -310,12 +309,10 @@
     <string name="notification_restored_backup_title">Il tuo backup è stato ripristinato</string>
     <string name="notification_restored_backup_subtitle">Non dimenticarti di abilitare l\'account.</string>
     <string name="choose_file">Scegli un file</string>
-    <string name="receiving_x_file">Ricezione di %1$s file (%2$d%% completato)</string>
     <string name="download_x_file">Scarica %s</string>
     <string name="delete_x_file">Elimina %s</string>
     <string name="file">file</string>
     <string name="open_x_file">Apri %s</string>
-    <string name="sending_file">invio (%1$d%% completato)</string>
     <string name="preparing_file">Preparazione alla trasmissione del file</string>
     <string name="x_file_offered_for_download">%s offerto da scaricare</string>
     <string name="cancel_transmission">Annulla trasmissione</string>
@@ -720,7 +717,6 @@
     <string name="pref_scroll_to_bottom">Scorri in fondo</string>
     <string name="no_camera_permission">Pix-Art Messenger ha bisogno di accedere alla fotocamera</string>
     <string name="edit_status_message_title">Modifica Messaggio di Stato</string>
-    <string name="edit_status_message">Modifica messaggio di stato</string>
     <string name="pref_automatically_delete_messages_description">Elimina automaticamente da questo dispositivo i messaggi più vecchi del lasso di tempo configurato.</string>
     <string name="pref_automatically_delete_messages">Eliminazione automatica dei messaggi</string>
     <string name="disable_encryption">Disabilita crittografia</string>
@@ -738,6 +734,8 @@
     <string name="pref_omemo_setting_summary_always_off">OMEMO non sarà mai utilizzato.</string>
     <string name="default_on">Predefinito attivo</string>
     <string name="default_off">Predefinito disattivo</string>
+    <string name="pref_theme_light">Chiaro</string>
+    <string name="pref_theme_dark">Scuro</string>
     <string name="pref_theme_auto">Automatico</string>
     <string name="pref_theme_options_summary">Scegli la palette di colori</string>
     <string name="pref_theme_options">Tema</string>
@@ -846,7 +844,6 @@
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'avatar XMPP</string>
-    <string name="view_users">Vedi partecipanti</string>
     <string name="group_chat_members">Partecipanti</string>
     <string name="message_deleted">Il messaggio è stato eliminato</string>
     <string name="channel_details">Dettagli canale</string>
@@ -901,9 +898,8 @@
     <string name="pref_show_mappreview_inside_summary">Mostra anteprime mappe direttamente all\'interno delle conversazioni, sarà stabilita una connessione al Pix-Art-Server.</string>
     <string name="pref_show_mappreview_inside">Mostra anteprime delle posizioni nella conversazione</string>
     <string name="pref_use_internal_updater_summary">Permetti all\'app di cercare gli aggiornamenti una volta al giorno</string>
-    <string name="pref_use_internal_updater">cerca aggiornamenti</string>
+    <string name="pref_use_internal_updater">Cerca aggiornamenti</string>
     <string name="attach">Allega</string>
-    <string name="delete_locally">Elimina localmente</string>
     <string name="delete_from_server">Elimina dal server</string>
     <string name="go_online_to_delete">Devi attivare e/o andare online con l\'account che vuoi eliminare dal server.</string>
     <string name="discover_channels">Scopri canali</string>
@@ -937,7 +933,6 @@
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
     <string name="x_has_written">%s ha scritto:</string>
     <string name="i_have_written">Io ho scritto:</string>
-    <string name="no_status_set_instructions">Non hai impostato un messaggio di stato di presenza</string>
     <string name="your_status">Il tuo stato</string>
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious è un\'interfaccia alternativa di YouTube che rispetta la tua privacy</string>
@@ -975,7 +970,6 @@
     <string name="no_results">Nessun risultato</string>
     <string name="file_transmission_cancelled">trasmissione del file annullata</string>
     <string name="sharing_application_not_grant_permission">L\'applicazione che sta condividendo non ha concesso il permesso per accedere a questo file.</string>
-    <string name="group_chats_and_channels"><![CDATA[Conversazioni di Gruppo & Canali]]></string>
     <string name="jabber_network">jabber.network</string>
     <string name="local_server">Server locale</string>
     <string name="pref_channel_discovery_summary">La maggior parte degli utenti dovrebbe scegliere \'jabber.network\' per migliori suggerimenti dall\'interezza dell\'ecosistema XMPP pubblico.</string>
@@ -987,6 +981,8 @@
     <string name="pref_notification_grace_period">Periodo di Tregua</string>
     <string name="pref_notification_grace_period_summary">Il tempo durante il quale le notifiche saranno silenziate dopo che sarà rilevata dell\'attività su uno degli altri tuoi dispositivi.</string>
     <string name="ask_for_writeaccess">Chiedi un accesso in scrittura</string>
+    <string name="pref_theme_blue">Blu</string>
+    <string name="pref_theme_orange">Arancio</string>
     <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
     <string name="pref_theme_color_options">Colore del tema</string>
 </resources>

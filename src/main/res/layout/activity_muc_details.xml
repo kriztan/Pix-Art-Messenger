@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/tools">
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/activity_horizontal_margin"
@@ -60,27 +61,50 @@
                                     android:layout_toLeftOf="@+id/edit_muc_name_button"
                                     android:orientation="vertical">
 
-                                    <TextView
-                                        android:id="@+id/muc_title"
-                                        android:layout_width="wrap_content"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:textAppearance="@style/TextAppearance.Conversations.Title" />
+                                        android:orientation="horizontal">
+
+                                        <com.makeramen.roundedimageview.RoundedImageView
+                                            android:id="@+id/details_muc_avatar"
+                                            android:layout_width="@dimen/avatar_on_details_screen_size"
+                                            android:layout_height="@dimen/avatar_on_details_screen_size"
+                                            android:layout_marginEnd="@dimen/avatar_item_distance"
+                                            android:layout_marginRight="@dimen/avatar_item_distance"
+                                            android:padding="1dp"
+                                            android:scaleType="centerCrop"
+                                            app:riv_corner_radius="@dimen/rounded_image_border" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/muc_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="@style/TextAppearance.Conversations.Title" />
+
+                                            <TextView
+                                                android:id="@+id/jid"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/account_settings_example_jabber_id"
+                                                android:textAppearance="@style/TextAppearance.Conversations.Body1"
+                                                android:textIsSelectable="true"
+                                                android:visibility="gone" />
+                                        </LinearLayout>
+                                    </LinearLayout>
 
                                     <TextView
                                         android:id="@+id/muc_subject"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/list_padding"
                                         android:autoLink="web"
                                         android:textAppearance="@style/TextAppearance.Conversations.Subhead" />
-
-                                    <TextView
-                                        android:id="@+id/jid"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/account_settings_example_jabber_id"
-                                        android:textAppearance="@style/TextAppearance.Conversations.Body1"
-                                        android:textIsSelectable="true"
-                                        android:visibility="gone" />
 
                                 </LinearLayout>
 
@@ -136,27 +160,6 @@
                                     android:background="?attr/selectableItemBackgroundBorderless"
                                     android:padding="@dimen/image_button_padding"
                                     android:src="?attr/icon_edit_body" />
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical"
-                                android:paddingTop="@dimen/card_padding_regular">
-
-                                <com.makeramen.roundedimageview.RoundedImageView
-                                    android:id="@+id/details_muc_avatar"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/avatar_item_distance"
-                                    android:layout_marginRight="@dimen/avatar_item_distance"
-                                    android:adjustViewBounds="true"
-                                    android:maxWidth="384dp"
-                                    android:maxHeight="384dp"
-                                    android:padding="1dp"
-                                    android:scaleType="centerCrop"
-                                    app:riv_corner_radius="@dimen/rounded_image_border" />
                             </RelativeLayout>
 
                             <RelativeLayout
@@ -279,15 +282,24 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="@dimen/card_padding_list">
+                            android:padding="@dimen/card_padding_regular">
 
                             <Button
                                 android:id="@+id/destroy"
-                                style="?android:attr/buttonStyleSmall"
+                                style="@style/Widget.Conversations.Button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="24dp" />
+
+                            <Button
+                                android:id="@+id/add_contact_button"
+                                style="@style/Widget.Conversations.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="24dp"
+                                android:text="@string/add_to_contact_list" />
 
                             <TextView
                                 android:id="@+id/details_account"
@@ -300,9 +312,9 @@
                                 android:visibility="gone" />
                         </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/activity_horizontal_margin"
@@ -332,8 +344,8 @@
 
                                 <com.makeramen.roundedimageview.RoundedImageView
                                     android:id="@+id/your_photo"
-                                    android:layout_width="72dp"
-                                    android:layout_height="72dp"
+                                    android:layout_width="@dimen/avatar_on_details_screen_size"
+                                    android:layout_height="@dimen/avatar_on_details_screen_size"
                                     android:layout_alignParentStart="true"
                                     android:layout_alignParentLeft="true"
                                     android:layout_alignParentEnd="false"
@@ -388,26 +400,17 @@
 
                             <Button
                                 android:id="@+id/leave_muc"
-                                style="?android:attr/buttonStyleSmall"
-                                android:layout_width="match_parent"
+                                style="@style/Widget.Conversations.Button"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="24dp" />
 
-                            <Button
-                                android:id="@+id/add_contact_button"
-                                style="?android:attr/buttonStyleSmall"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_marginTop="24dp"
-                                android:text="@string/add_to_contact_list" />
-
                         </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/users_wrapper"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -459,8 +462,6 @@
                                 style="@style/Widget.Conversations.Button.Borderless"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentLeft="true"
                                 android:minWidth="0dp"
                                 android:paddingStart="16dp"
                                 android:paddingLeft="16dp"
@@ -479,13 +480,13 @@
                                 android:paddingLeft="16dp"
                                 android:paddingEnd="16dp"
                                 android:paddingRight="16dp"
-                                android:text="@string/view_users"
-                                android:textColor="?attr/colorAccent" />
+                                android:textColor="?attr/colorAccent"
+                                tools:text="View n Participants" />
                         </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/media_wrapper"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -536,7 +537,7 @@
                                 android:textColor="?attr/colorAccent" />
                         </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

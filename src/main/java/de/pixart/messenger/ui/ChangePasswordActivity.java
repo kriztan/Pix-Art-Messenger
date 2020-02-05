@@ -2,16 +2,18 @@ package de.pixart.messenger.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.textfield.TextInputLayout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 import de.pixart.messenger.R;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.ui.widget.DisabledActionModeCallback;
 import de.pixart.messenger.ui.widget.TextInputEditText;
+import me.drakeet.support.toast.ToastCompat;
 
 public class ChangePasswordActivity extends XmppActivity implements XmppConnectionService.OnAccountPasswordChanged {
 
@@ -90,7 +92,7 @@ public class ChangePasswordActivity extends XmppActivity implements XmppConnecti
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(ChangePasswordActivity.this, R.string.password_changed, Toast.LENGTH_LONG).show();
+                ToastCompat.makeText(ChangePasswordActivity.this, R.string.password_changed, Toast.LENGTH_LONG).show();
                 finish();
             }
         });

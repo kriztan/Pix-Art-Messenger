@@ -8,7 +8,6 @@
     <string name="action_contact_details">Детайли на контакта</string>
     <string name="action_secure">Сигурна връзка</string>
     <string name="action_add_new_account">Добави нов профил</string>
-    <string name="action_edit_contact">Редактирай името</string>
     <string name="action_add_phone_book">Добавяне към адресната книга</string>
     <string name="action_delete_contact">Изтриване от любими</string>
     <string name="action_block_contact">Блокирай контакта</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Управление на профилите</string>
     <string name="title_activity_settings">Настройки</string>
     <string name="conference_details">Подробности за групов чат</string>
-    <string name="title_activity_contact_details">Данни за контакта</string>
+    <string name="contact_details">Данни за контакта</string>
     <string name="title_activity_sharewith">Сподели със разговор</string>
     <string name="title_activity_start_conversation">Започнете разговор</string>
     <string name="title_activity_choose_contact">Изберете контакт</string>
@@ -307,12 +306,10 @@
     <string name="notification_restored_backup_title">Архивът ви бе възстановен</string>
     <string name="notification_restored_backup_subtitle">Не забравяйте да активирате профила.</string>
     <string name="choose_file">Изберете файл</string>
-    <string name="receiving_x_file">Получаване на %1$ s (%2$d%% завършено)</string>
     <string name="download_x_file">Изтегляне на %s</string>
     <string name="delete_x_file">Изтриване на %s</string>
     <string name="file">досие </string>
     <string name="open_x_file">Отвори %s</string>
-    <string name="sending_file">изпращане (%1$d%% завършено)</string>
     <string name="preparing_file">Подготвя файла за изпращане</string>
     <string name="x_file_offered_for_download">%s, предлага да изтеглите</string>
     <string name="cancel_transmission">Прекъсване на предаването</string>
@@ -703,7 +700,6 @@
     <string name="qr_code_scanner_needs_access_to_camera">Скенерът за QR код се нуждае от достъп до камерата</string>
     <string name="no_camera_permission">Pix-Art Messenger се нуждае от достъп до камерата</string>
     <string name="edit_status_message_title">Редактирай Как се чувстваш днес</string>
-    <string name="edit_status_message">Редактирай как се чувстваш днес</string>
     <string name="pref_automatically_delete_messages_description">Автоматично изтриване на съобщения от това устройство, които са по-стари от конфигурираната времева рамка.</string>
     <string name="pref_automatically_delete_messages">Автоматично изтриване на съобщение</string>
     <string name="disable_encryption">Изключи криптиране</string>
@@ -824,7 +820,6 @@
     <string name="unable_to_decrypt_backup">Архивирането не може да се декриптира. Правилна ли е паролата?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочиташ XMPP снимка на потребителя вместо от вашата адресна книга</string>
     <string name="pref_prefer_xmpp_avatar">Предпочиташ снимка от XMPP</string>
-    <string name="view_users">Виж участниците</string>
     <string name="group_chat_members">Участници</string>
     <string name="message_deleted">Съобщението бе изтрито</string>
     <string name="channel_details">Подробности за канала</string>
@@ -881,7 +876,6 @@
     <string name="pref_use_internal_updater_summary">Нека програмата да търси нови подновения на програмата веднъж на ден</string>
     <string name="pref_use_internal_updater">подновеване на програмата</string>
     <string name="attach">Прикрепи</string>
-    <string name="delete_locally">Изтрий локално \"от gsm\"</string>
     <string name="delete_from_server">Изтрий от сървъра</string>
     <string name="go_online_to_delete">Трябва да активирате и/или да влизате в интернет със сметката, която искате да изтриете от сървъра.</string>
     <string name="discover_channels">Открий канали</string>

@@ -8,7 +8,6 @@
     <string name="action_contact_details">Detalles del contacto</string>
     <string name="action_secure">Conversación segura</string>
     <string name="action_add_new_account">Añadir nueva cuenta</string>
-    <string name="action_edit_contact">Editar contacto</string>
     <string name="action_add_phone_book">Añadir a contactos</string>
     <string name="action_delete_contact">Eliminar de la lista de contactos</string>
     <string name="action_block_contact">Bloquear contacto</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Gestionar cuentas</string>
     <string name="title_activity_settings">Ajustes</string>
     <string name="conference_details">Detalles del grupo de chat</string>
-    <string name="title_activity_contact_details">Detalles del contacto</string>
+    <string name="contact_details">Detalles del contacto</string>
     <string name="title_activity_sharewith">Compartir con conversación</string>
     <string name="title_activity_start_conversation">Iniciar conversación</string>
     <string name="title_activity_choose_contact">Elegir contacto</string>
@@ -310,12 +309,10 @@
     <string name="notification_restored_backup_title">Tu copia de seguridad ha sido restaurada</string>
     <string name="notification_restored_backup_subtitle">No olvides habilitar la cuenta.</string>
     <string name="choose_file">Seleccionar archivo</string>
-    <string name="receiving_x_file">Recibiendo %1$s (%2$d%% completado)</string>
     <string name="download_x_file">Descargar %s</string>
     <string name="delete_x_file">Eliminar %s</string>
     <string name="file">archivo</string>
     <string name="open_x_file">Abrir %s</string>
-    <string name="sending_file">Enviando (%1$d%% completado)</string>
     <string name="preparing_file">Preparando transferencia de archivo</string>
     <string name="x_file_offered_for_download">%s ofrecido para descarga</string>
     <string name="cancel_transmission">Cancelar transferencia</string>
@@ -720,7 +717,6 @@
     <string name="pref_scroll_to_bottom">Desplazarse hasta abajo</string>
     <string name="no_camera_permission">Pix-Art Messenger necesita acceder a la cámara</string>
     <string name="edit_status_message_title">Editar el mensaje de estado</string>
-    <string name="edit_status_message">Editar el mensaje de estado</string>
     <string name="pref_automatically_delete_messages_description">Eliminar automáticamente los mensajes del dispositivo que sean anteriores al tiempo seleccionado.</string>
     <string name="pref_automatically_delete_messages">Borrado automático de mensajes</string>
     <string name="disable_encryption">Desactivar cifrado</string>
@@ -848,7 +844,6 @@
     <string name="unable_to_decrypt_backup">No se puede descifrar la copia de seguridad. ¿Es correcta la contraseña?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
-    <string name="view_users">Ver participantes</string>
     <string name="group_chat_members">Participantes</string>
     <string name="message_deleted">El mensaje fue eliminado</string>
     <string name="channel_details">Detalles del canal</string>
@@ -905,7 +900,6 @@
     <string name="pref_use_internal_updater_summary">Permitir que la aplicación busque actualizaciones una vez al día</string>
     <string name="pref_use_internal_updater">buscar actualizaciones</string>
     <string name="attach">Adjuntar</string>
-    <string name="delete_locally">Eliminar localmente</string>
     <string name="delete_from_server">Eliminar en el servidor</string>
     <string name="go_online_to_delete">Tienes que activar y/o ir en línea con la cuenta que quieres eliminar del servidor.</string>
     <string name="discover_channels">Descubrir canales</string>
@@ -939,7 +933,6 @@
     <string name="waiting_for_transfer">Esperando la transferencia</string>
     <string name="x_has_written">%s ha escrito:</string>
     <string name="i_have_written">He escrito:</string>
-    <string name="no_status_set_instructions">No tienes configurado un mensaje de estado de presencia</string>
     <string name="your_status">Tu estado</string>
     <string name="pref_use_invidious">Cambiar los enlaces de YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious es una alternativa a YouTube respetuosa con la privacidad</string>
@@ -977,7 +970,6 @@
     <string name="no_results">No ha resultados</string>
     <string name="file_transmission_cancelled">transmisión de archivo cancelada</string>
     <string name="sharing_application_not_grant_permission">La aplicación de compartición no otorgó permiso de acceso a este archivo.</string>
-    <string name="group_chats_and_channels"><![CDATA[Grupos y canales]]></string>
     <string name="jabber_network">jabber.network</string>
     <string name="local_server">Servidor local</string>
     <string name="pref_channel_discovery_summary">La mayoría de usuarios deberían escoger \'jabber.network\' para tener mejores sugerencias desde el ecosistema público de XMPP.</string>

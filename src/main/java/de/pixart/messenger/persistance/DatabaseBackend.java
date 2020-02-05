@@ -51,6 +51,7 @@ import de.pixart.messenger.entities.Roster;
 import de.pixart.messenger.entities.ServiceDiscoveryResult;
 import de.pixart.messenger.services.ShortcutService;
 import de.pixart.messenger.utils.CryptoHelper;
+import de.pixart.messenger.utils.CursorUtils;
 import de.pixart.messenger.utils.FtsUtils;
 import de.pixart.messenger.xmpp.InvalidJid;
 import de.pixart.messenger.xmpp.mam.MamReference;
@@ -59,7 +60,7 @@ import rocks.xmpp.addr.Jid;
 public class DatabaseBackend extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "history";
-    public static final int DATABASE_VERSION = 49; // = Conversations DATABASE_VERSION + 4
+    public static final int DATABASE_VERSION = 50; // = Conversations DATABASE_VERSION + 4
     private static DatabaseBackend instance = null;
 
     private static String CREATE_CONTATCS_STATEMENT = "create table "
@@ -180,7 +181,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
     @Override
     public void onConfigure(SQLiteDatabase db) {
         db.execSQL("PRAGMA foreign_keys=ON");
-        db.rawQuery("PRAGMA secure_delete=ON", null);
+        db.rawQuery("PRAGMA secure_delete=ON", null).close();
     }
 
     @Override
@@ -547,6 +548,15 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.BODY_LANGUAGE);
         }
 
+        if (oldVersion < 50 && newVersion >= 50) {
+            final long start = SystemClock.elapsedRealtime();
+            db.rawQuery("PRAGMA secure_delete = FALSE", null).close();
+            db.execSQL("update " + Message.TABLENAME + " set " + Message.EDITED + "=NULL");
+            db.rawQuery("PRAGMA secure_delete=ON", null).close();
+            final long diff = SystemClock.elapsedRealtime() - start;
+            Log.d(Config.LOGTAG, "deleted old edit information in " + diff + "ms");
+        }
+
         db.execSQL("DROP TABLE IF EXISTS resolver_results");
     }
 
@@ -596,14 +606,14 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             String newJid;
             try {
                 newJid = Jid.of(cursor.getString(cursor.getColumnIndex(Contact.JID))).toString();
-            } catch (IllegalArgumentException ignored) {
+            } catch (final IllegalArgumentException e) {
                 Log.e(Config.LOGTAG, "Failed to migrate Contact JID "
                         + cursor.getString(cursor.getColumnIndex(Contact.JID))
-                        + ": " + ignored + ". Skipping...");
+                        + ":  Skipping...", e);
                 continue;
             }
 
-            String[] updateArgs = {
+            final String[] updateArgs = {
                     newJid,
                     cursor.getString(cursor.getColumnIndex(Contact.ACCOUNT)),
                     cursor.getString(cursor.getColumnIndex(Contact.JID)),
@@ -742,12 +752,10 @@ public class DatabaseBackend extends SQLiteOpenHelper {
                     null, null, Message.TIME_SENT + " DESC",
                     String.valueOf(limit));
         }
+        CursorUtils.upgradeCursorWindowSize(cursor);
         while (cursor.moveToNext()) {
             try {
-                final Message message = Message.fromCursor(cursor, conversation);
-                if (message != null && !message.isMessageDeleted()) {
-                    list.add(0, message);
-                }
+                list.add(0, Message.fromCursor(cursor, conversation));
             } catch (Exception e) {
                 Log.e(Config.LOGTAG, "unable to restore message");
             }

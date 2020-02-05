@@ -2,8 +2,6 @@ package de.pixart.messenger.utils;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -13,6 +11,7 @@ import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.services.XmppConnectionService;
+import me.drakeet.support.toast.ToastCompat;
 
 public class AccountUtils {
 
@@ -70,7 +69,7 @@ public class AccountUtils {
         if (MANAGE_ACCOUNT_ACTIVITY != null) {
             activity.startActivity(new Intent(activity, MANAGE_ACCOUNT_ACTIVITY));
         } else {
-            Toast.makeText(activity, R.string.feature_not_implemented, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(activity, R.string.feature_not_implemented, Toast.LENGTH_SHORT).show();
         }
     }
 

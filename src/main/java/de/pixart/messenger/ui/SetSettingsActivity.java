@@ -2,13 +2,14 @@ package de.pixart.messenger.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;

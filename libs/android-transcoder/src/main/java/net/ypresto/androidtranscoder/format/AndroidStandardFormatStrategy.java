@@ -18,8 +18,9 @@ package net.ypresto.androidtranscoder.format;
 import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
 import android.os.Build;
-import androidx.annotation.RequiresApi;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 class AndroidStandardFormatStrategy implements MediaFormatStrategy {
     public static final int AUDIO_BITRATE_AS_IS = -1;

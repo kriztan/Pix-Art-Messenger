@@ -4,10 +4,10 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
 import android.os.AsyncTask;
-import androidx.annotation.DimenRes;
 import android.widget.ImageView;
+
+import androidx.annotation.DimenRes;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.RejectedExecutionException;

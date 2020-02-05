@@ -31,7 +31,7 @@ public class AbstractConnectionManager {
     private static final String KEYTYPE = "AES";
     private static final String CIPHERMODE = "AES/GCM/NoPadding";
     private static final String PROVIDER = "BC";
-    private static final int UI_REFRESH_THRESHOLD = 250;
+    private static final int UI_REFRESH_THRESHOLD = Config.REFRESH_UI_INTERVAL;
     private static final AtomicLong LAST_UI_UPDATE_CALL = new AtomicLong(0);
     protected XmppConnectionService mXmppConnectionService;
 
@@ -51,24 +51,11 @@ public class AbstractConnectionManager {
         }
     }
 
-
-    public static OutputStream createAppendedOutputStream(DownloadableFile file) {
-        return createOutputStream(file, false, true);
-    }
-
-    public static OutputStream createOutputStream(DownloadableFile file) {
-        return createOutputStream(file, false);
-    }
-
-    public static OutputStream createOutputStream(DownloadableFile file, boolean gcm) {
-        return createOutputStream(file, gcm, false);
-    }
-
-    private static OutputStream createOutputStream(DownloadableFile file, boolean gcm, boolean append) {
+    public static OutputStream createOutputStream(DownloadableFile file, boolean append, boolean decrypt) {
         FileOutputStream os;
         try {
             os = new FileOutputStream(file, append);
-            if (file.getKey() == null) {
+            if (file.getKey() == null || !decrypt) {
                 return os;
             }
         } catch (FileNotFoundException e) {
@@ -76,18 +63,11 @@ public class AbstractConnectionManager {
             return null;
         }
         try {
-            if (gcm) {
-                final Cipher cipher = Compatibility.twentyEight() ? Cipher.getInstance(CIPHERMODE) : Cipher.getInstance(CIPHERMODE, PROVIDER);
-                SecretKeySpec keySpec = new SecretKeySpec(file.getKey(), KEYTYPE);
-                IvParameterSpec ivSpec = new IvParameterSpec(file.getIv());
-                cipher.init(Cipher.DECRYPT_MODE, keySpec, ivSpec);
-                return new CipherOutputStream(os, cipher);
-            } else {
-                IvParameterSpec ips = new IvParameterSpec(file.getIv());
-                final Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
-                cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(file.getKey(), KEYTYPE), ips);
-                return new CipherOutputStream(os, cipher);
-            }
+            final Cipher cipher = Compatibility.twentyEight() ? Cipher.getInstance(CIPHERMODE) : Cipher.getInstance(CIPHERMODE, PROVIDER);
+            SecretKeySpec keySpec = new SecretKeySpec(file.getKey(), KEYTYPE);
+            IvParameterSpec ivSpec = new IvParameterSpec(file.getIv());
+            cipher.init(Cipher.DECRYPT_MODE, keySpec, ivSpec);
+            return new CipherOutputStream(os, cipher);
         } catch (Exception e) {
             Log.d(Config.LOGTAG, "unable to create cipher output stream", e);
             return null;

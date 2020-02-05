@@ -8,7 +8,6 @@
     <string name="action_contact_details">Şəxs təfsilatları</string>
     <string name="action_secure">Təhlükəsiz danışıq</string>
     <string name="action_add_new_account">Yeni hesab əlavə edin</string>
-    <string name="action_edit_contact">Ada düzəliş et</string>
     <string name="action_add_phone_book">Ünvan kitabçasına əlavə et</string>
     <string name="action_delete_contact">Siyahıdan sil</string>
     <string name="action_block_contact">Şəxsi əngəllə</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Hesabları idarә et</string>
     <string name="title_activity_settings">Tənzimləmələr</string>
     <string name="conference_details">Qrup söhbəti təfsilatları</string>
-    <string name="title_activity_contact_details">Şəxs təfsilatı</string>
+    <string name="contact_details">Şəxs təfsilatı</string>
     <string name="title_activity_sharewith">Bu danışıqla paylaş</string>
     <string name="title_activity_start_conversation">Danışığa başla</string>
     <string name="title_activity_choose_contact">Şəxs seç</string>

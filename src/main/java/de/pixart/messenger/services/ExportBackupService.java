@@ -15,8 +15,9 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
-import androidx.core.app.NotificationCompat;
 import android.util.Log;
+
+import androidx.core.app.NotificationCompat;
 
 import java.io.BufferedWriter;
 import java.io.DataOutputStream;
@@ -401,7 +402,7 @@ public class ExportBackupService extends Service {
                 uris.add(FileBackend.getUriForFile(this, file));
             }
             intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             intent.setType(MIME_TYPE);
             final Intent chooser = Intent.createChooser(intent, getString(R.string.share_backup_files));
             shareFilesIntent = PendingIntent.getActivity(this, 190, chooser, PendingIntent.FLAG_UPDATE_CURRENT);

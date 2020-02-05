@@ -449,6 +449,11 @@
                 android:summary="@string/pref_delete_omemo_identities_summary"
                 android:title="@string/pref_delete_omemo_identities" />
             <CheckBoxPreference
+                android:defaultValue="@bool/enable_otr"
+                android:key="enable_otr_encryption"
+                android:summary="@string/pref_enable_otr_summary"
+                android:title="@string/pref_enable_otr" />
+            <CheckBoxPreference
                 android:defaultValue="@bool/dont_trust_system_cas"
                 android:key="dont_trust_system_cas"
                 android:summary="@string/pref_dont_trust_system_cas_summary"

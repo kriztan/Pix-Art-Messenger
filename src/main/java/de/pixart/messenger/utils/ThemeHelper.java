@@ -48,7 +48,7 @@ import de.pixart.messenger.ui.SettingsActivity;
 
 public class ThemeHelper {
 
-    public static int find(Context context) {
+    public static int find(final Context context) {
         final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         final Resources resources = context.getResources();
         final boolean auto = sharedPreferences.getString(SettingsActivity.THEME, resources.getString(R.string.theme)).equals("auto");
@@ -93,8 +93,9 @@ public class ThemeHelper {
                 return false;
             case Configuration.UI_MODE_NIGHT_UNDEFINED:
                 return false;
+            default:
+                return false;
         }
-        return false;
     }
 
     public static int findDialog(Context context) {

@@ -19,11 +19,9 @@ import android.media.MediaExtractor;
 import android.media.MediaFormat;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaMuxer;
-import android.os.Build;
 import android.util.Log;
 
 import net.ypresto.androidtranscoder.format.MediaFormatStrategy;
-import net.ypresto.androidtranscoder.utils.ISO6709LocationParser;
 import net.ypresto.androidtranscoder.utils.MediaExtractorUtils;
 
 import java.io.FileDescriptor;
@@ -137,18 +135,6 @@ public class MediaTranscoderEngine {
             mMuxer.setOrientationHint(Integer.parseInt(rotationString));
         } catch (NumberFormatException e) {
             // skip
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            String locationString = mediaMetadataRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_LOCATION);
-            if (locationString != null) {
-                float[] location = new ISO6709LocationParser().parse(locationString);
-                if (location != null) {
-                    mMuxer.setLocation(location[0], location[1]);
-                } else {
-                    Log.d(TAG, "Failed to parse the location metadata: " + locationString);
-                }
-            }
         }
 
         try {

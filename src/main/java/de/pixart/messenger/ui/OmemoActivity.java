@@ -2,14 +2,15 @@ package de.pixart.messenger.ui;
 
 
 import android.content.Intent;
-import androidx.databinding.DataBindingUtil;
-import androidx.appcompat.app.AlertDialog;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.databinding.DataBindingUtil;
 
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
@@ -19,6 +20,7 @@ import de.pixart.messenger.databinding.ContactKeyBinding;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.utils.CryptoHelper;
 import de.pixart.messenger.utils.XmppUri;
+import me.drakeet.support.toast.ToastCompat;
 
 public abstract class OmemoActivity extends XmppActivity {
 
@@ -91,7 +93,7 @@ public abstract class OmemoActivity extends XmppActivity {
 
     protected void copyOmemoFingerprint(String fingerprint) {
         if (copyTextToClipboard(CryptoHelper.prettifyFingerprint(fingerprint.substring(2)), R.string.omemo_fingerprint)) {
-            Toast.makeText(
+            ToastCompat.makeText(
                     this,
                     R.string.toast_message_omemo_fingerprint,
                     Toast.LENGTH_SHORT).show();

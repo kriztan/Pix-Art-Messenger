@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import androidx.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,12 +13,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
+
 import com.squareup.picasso.Picasso;
 
 import de.pixart.messenger.R;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.utils.MetaData;
 import de.pixart.messenger.utils.RichPreview;
+import me.drakeet.support.toast.ToastCompat;
 
 
 /**
@@ -135,7 +137,7 @@ public class RichLinkView extends RelativeLayout {
         try {
             context.startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(context, R.string.no_application_found_to_open_link, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(context, R.string.no_application_found_to_open_link, Toast.LENGTH_LONG).show();
         }
     }
 

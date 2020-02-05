@@ -55,8 +55,20 @@
         <item name="android:textSize">?TextSizeBody1</item>
     </style>
 
-    <style name="Widget.Conversations.Button.Borderless" parent="@style/Widget.AppCompat.Button.Borderless">
+    <style name="Widget.Conversations.Button.Borderless" parent="@style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">?TextSizeBody2</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="Widget.Conversations.Button.Outline" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">?TextSizeBody2</item>
+        <item name="strokeColor">?attr/colorAccent</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="Widget.Conversations.Button" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textSize">?TextSizeBody2</item>
+        <item name="android:textColor">@color/realwhite</item>
     </style>
 
     <style name="TextAppearance.Conversations.Design.Hint" parent="TextAppearance.Design.Hint">
@@ -137,5 +149,9 @@
 
     <style name="TextAppearance.Conversations.Body1.Secondary.OnDark" parent="TextAppearance.Conversations.Body1">
         <item name="android:textColor">@color/white70</item>
+    </style>
+
+    <style name="Conversations.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert" >
+        <item name="android:buttonStyle">@style/Widget.Conversations.Button.Borderless</item>
     </style>
 </resources>

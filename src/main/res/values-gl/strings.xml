@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Terminar conversa</string>
     <string name="action_contact_details">Detalles do contacto</string>
     <string name="action_secure">Conversa segura</string>
-    <string name="action_edit_contact">Editar contacto</string>
     <string name="action_add_phone_book">Engadir a libreta de enderezos</string>
     <string name="action_delete_contact">Eliminar contacto da lista</string>
     <string name="action_block_contact">Bloquear contacto</string>
@@ -271,12 +270,10 @@
     <string name="smp_requested">O contacto solicitou a comprobación SMP</string>
     <string name="no_otr_session_found">Non se atopou unha sesión OTR válida!</string>
     <string name="choose_file">Escoller ficheiro</string>
-    <string name="receiving_x_file">Recibindo %1$s (%2$d %% completado)</string>
     <string name="download_x_file">Descargar %s</string>
     <string name="delete_x_file">Eliminar %s</string>
     <string name="file">ficheiro</string>
     <string name="open_x_file">Abrir %s</string>
-    <string name="sending_file">enviando (%1$d %% completado)</string>
     <string name="preparing_file">Preparando o ficheiro para a transmisión</string>
     <string name="x_file_offered_for_download">Ofreceuse %s para descargar</string>
     <string name="cancel_transmission">Cancelar a transmisión</string>

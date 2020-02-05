@@ -43,6 +43,8 @@ import de.pixart.messenger.entities.Conversation;
 import de.pixart.messenger.entities.Conversational;
 import de.pixart.messenger.entities.Message;
 
+import static de.pixart.messenger.ui.SettingsActivity.ENABLE_OTR_ENCRYPTION;
+
 public class ConversationMenuConfigurator {
 
     private static boolean microphoneAvailable = false;
@@ -128,7 +130,7 @@ public class ConversationMenuConfigurator {
             menuSecure.setIcon(R.drawable.ic_lock_white_24dp);
         }
 
-        otr.setVisible(Config.supportOtr());
+        otr.setVisible(Config.supportOtr() && conversation.getBooleanAttribute(ENABLE_OTR_ENCRYPTION, false));
         if (conversation.getMode() == Conversation.MODE_MULTI) {
             otr.setVisible(false);
         }

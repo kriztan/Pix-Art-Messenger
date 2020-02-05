@@ -12,6 +12,7 @@ import de.pixart.messenger.databinding.DialogBlockContactBinding;
 import de.pixart.messenger.entities.Blockable;
 import de.pixart.messenger.entities.Conversation;
 import de.pixart.messenger.ui.util.JidDialog;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public final class BlockContactDialog {
@@ -47,12 +48,12 @@ public final class BlockContactDialog {
             } else {
                 boolean toastShown = false;
                 if (xmppActivity.xmppConnectionService.sendBlockRequest(blockable, binding.reportSpam.isChecked())) {
-                    Toast.makeText(xmppActivity, R.string.corresponding_conversations_closed, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(xmppActivity, R.string.corresponding_conversations_closed, Toast.LENGTH_SHORT).show();
                     toastShown = true;
                 }
                 if (xmppActivity instanceof ContactDetailsActivity) {
                     if (!toastShown) {
-                        Toast.makeText(xmppActivity, R.string.contact_blocked_past_tense, Toast.LENGTH_SHORT).show();
+                        ToastCompat.makeText(xmppActivity, R.string.contact_blocked_past_tense, Toast.LENGTH_SHORT).show();
                     }
                     xmppActivity.finish();
                 }

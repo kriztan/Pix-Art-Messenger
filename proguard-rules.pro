@@ -12,6 +12,8 @@
   **[] $VALUES;
   public *;
 }
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
 
 -dontwarn org.bouncycastle.mail.**
 -dontwarn org.bouncycastle.x509.util.LDAPStoreHelper

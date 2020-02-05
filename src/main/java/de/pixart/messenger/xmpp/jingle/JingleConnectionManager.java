@@ -49,6 +49,7 @@ public class JingleConnectionManager extends AbstractConnectionManager {
                     return;
                 }
             }
+            Log.d(Config.LOGTAG, "unable to route jingle packet: " + packet);
             IqPacket response = packet.generateResponse(IqPacket.TYPE.ERROR);
             Element error = response.addChild("error");
             error.setAttribute("type", "cancel");
@@ -150,17 +151,16 @@ public class JingleConnectionManager extends AbstractConnectionManager {
                 if (connection.getAccount() == account
                         && connection.hasTransportId(sid)) {
                     JingleTransport transport = connection.getTransport();
-                    if (transport instanceof JingleInbandTransport) {
-                        JingleInbandTransport inbandTransport = (JingleInbandTransport) transport;
+                    if (transport instanceof JingleInBandTransport) {
+                        JingleInBandTransport inbandTransport = (JingleInBandTransport) transport;
                         inbandTransport.deliverPayload(packet, payload);
                         return;
                     }
                 }
             }
-            Log.d(Config.LOGTAG, "couldn't deliver payload: " + payload.toString());
-        } else {
-            Log.d(Config.LOGTAG, "no sid found in incoming ibb packet");
         }
+        Log.d(Config.LOGTAG, "unable to deliver ibb packet: " + packet.toString());
+        account.getXmppConnection().sendIqPacket(packet.generateResponse(IqPacket.TYPE.ERROR), null);
     }
 
     public void cancelInTransmission() {

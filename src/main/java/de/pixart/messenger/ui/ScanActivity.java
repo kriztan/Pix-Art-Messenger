@@ -33,8 +33,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
 import android.os.Vibrator;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Surface;
@@ -43,6 +41,9 @@ import android.view.TextureView.SurfaceTextureListener;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.DecodeHintType;
@@ -60,6 +61,7 @@ import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
 import de.pixart.messenger.ui.service.CameraManager;
 import de.pixart.messenger.ui.widget.ScannerView;
+import me.drakeet.support.toast.ToastCompat;
 
 /**
  * @author Andreas Schildbach
@@ -289,7 +291,7 @@ public final class ScanActivity extends Activity implements SurfaceTextureListen
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 scan(activity);
             } else {
-                Toast.makeText(activity, R.string.qr_code_scanner_needs_access_to_camera, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(activity, R.string.qr_code_scanner_needs_access_to_camera, Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -182,10 +182,6 @@ public class AttachFileToConversationRunnable implements Runnable, MediaTranscod
         }
     }
 
-    private String getVideoCompression() {
-        return getVideoCompression(mXmppConnectionService);
-    }
-
     public static String getVideoCompression(final Context context) {
         final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getString("video_compression", context.getResources().getString(R.string.video_compression));

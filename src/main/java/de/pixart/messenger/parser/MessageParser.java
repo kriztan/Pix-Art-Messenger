@@ -26,6 +26,7 @@ import de.pixart.messenger.crypto.OtrService;
 import de.pixart.messenger.crypto.axolotl.AxolotlService;
 import de.pixart.messenger.crypto.axolotl.BrokenSessionException;
 import de.pixart.messenger.crypto.axolotl.NotEncryptedForThisDeviceException;
+import de.pixart.messenger.crypto.axolotl.OutdatedSenderException;
 import de.pixart.messenger.crypto.axolotl.XmppAxolotlMessage;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.entities.Bookmark;
@@ -52,6 +53,8 @@ import de.pixart.messenger.xmpp.chatstate.ChatState;
 import de.pixart.messenger.xmpp.pep.Avatar;
 import de.pixart.messenger.xmpp.stanzas.MessagePacket;
 import rocks.xmpp.addr.Jid;
+
+import static de.pixart.messenger.entities.Message.DELETED_MESSAGE_BODY;
 
 public class MessageParser extends AbstractParser implements OnMessagePacketReceived {
 
@@ -233,6 +236,8 @@ public class MessageParser extends AbstractParser implements OnMessagePacketRece
                 }
             } catch (NotEncryptedForThisDeviceException e) {
                 return new Message(conversation, "", Message.ENCRYPTION_AXOLOTL_NOT_FOR_THIS_DEVICE, status);
+            } catch (OutdatedSenderException e) {
+                return new Message(conversation, "", Message.ENCRYPTION_AXOLOTL_FAILED, status);
             }
             if (plaintextMessage != null) {
                 Message finishedMessage = new Message(conversation, plaintextMessage.getPlaintext(), Message.ENCRYPTION_AXOLOTL, status);
@@ -741,6 +746,9 @@ public class MessageParser extends AbstractParser implements OnMessagePacketRece
                         Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": received message correction but verification didn't check out");
                     }
                 }
+            } else if (replacementId != null && !mXmppConnectionService.allowMessageCorrection() && message.getBody().equals(DELETED_MESSAGE_BODY)) {
+                Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": received deleted message but LMC is deactivated");
+                return;
             }
 
             long deletionDate = mXmppConnectionService.getAutomaticMessageDeletionDate();

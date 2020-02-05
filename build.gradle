@@ -6,7 +6,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
     }
 }
 
@@ -44,15 +44,16 @@ dependencies {
         exclude group: 'com.google.firebase', module: 'firebase-analytics'
         exclude group: 'com.google.firebase', module: 'firebase-measurement-connector'
     }
+    playstoreImplementation 'com.android.installreferrer:installreferrer:1.1.1'
     implementation 'org.sufficientlysecure:openpgp-api:10.0'
-    implementation('com.theartofdev.edmodo:android-image-cropper:2.7.+') {
+    implementation('com.theartofdev.edmodo:android-image-cropper:2.8.0') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
         exclude group: 'com.android.support', module: 'exifinterface'
     }
     implementation 'org.bouncycastle:bcmail-jdk15on:1.64'
     implementation 'org.jitsi:org.otr4j:0.22'
     implementation 'org.gnu.inet:libidn:1.15'
-    implementation 'com.google.zxing:core:3.4.0'
+    implementation 'com.google.zxing:core:3.3.3' // > 3.3.x not working below SDK 24
     implementation 'de.measite.minidns:minidns-hla:0.2.4'
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
     implementation 'org.whispersystems:signal-protocol-java:2.6.2'
@@ -62,16 +63,15 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.emoji:emoji:1.0.0'
     gitImplementation 'androidx.emoji:emoji-appcompat:1.0.0'
     gitImplementation 'androidx.emoji:emoji-bundled:1.0.0'
-    implementation 'androidx.exifinterface:exifinterface:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
-    implementation project(':libs:fullscreenvideoview')
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
     implementation 'pub.devrel:easypermissions:3.0.0' // version >= 3.0.0 needs android X libraries
     implementation 'com.wefika:flowlayout:0.4.1'
     implementation 'com.googlecode.ez-vcard:ez-vcard:0.10.5'
@@ -80,13 +80,13 @@ dependencies {
     implementation 'org.conscrypt:conscrypt-android:2.2.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15' // 1.2.15 is last working version for minSDK 16
     implementation 'me.drakeet.support:toastcompat:1.1.0'
-    implementation 'org.osmdroid:osmdroid-android:6.1.2'
+    implementation 'org.osmdroid:osmdroid-android:6.1.5'
     implementation 'com.leinardi.android:speed-dial:3.1.1' // version >= 3.0.0 needs android X libraries
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'com.squareup.okhttp3:okhttp:3.12.6' // versions > 3.12.x don't support API level < 21 anymore
-    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
-    implementation 'com.google.guava:guava:28.1-android'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.8' // versions > 3.12.x don't support API level < 21 anymore
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4' //retrofit needs to stick with 2.6.x (https://github.com/square/retrofit/blob/master/CHANGELOG.md)
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
+    implementation 'com.google.guava:guava:28.2-android'
     implementation('com.github.AppIntro:AppIntro:5.1.0') {
         exclude group: 'org.jetbrains' , module:'annotations'
     }
@@ -105,11 +105,13 @@ android {
         minSdkVersion 16
         targetSdkVersion 29
 
-        versionCode 276
-        versionName "2.3.0"
+        versionCode 284
+        versionName "2.3.5"
+        versionNameSuffix " beta (2020-02-02)" //" beta (XXXX-XX-XX)"
         //resConfigs "en"
 
         archivesBaseName += "-$versionName"
+        archivesBaseName += "$versionNameSuffix"
         applicationId "de.pixart.messenger"
         multiDexEnabled true
 
@@ -124,6 +126,15 @@ android {
 
     dataBinding {
         enabled true
+    }
+
+    packagingOptions {
+        //X86
+        exclude "lib/x86/**"
+        //X86_64
+        exclude "lib/x86_64/**"
+        //armeabi
+        exclude "lib/armeabi/**"
     }
 
     dexOptions {
@@ -147,7 +158,6 @@ android {
         }
         git {
             dimension "distribution"
-            versionNameSuffix "-git"
         }
     }
     if (project.hasProperty('mStoreFile') &&
@@ -168,7 +178,6 @@ android {
                 signingConfig = signingConfigs.release
                 minifyEnabled true
                 shrinkResources true
-                android.enableR8.fullMode=true
                 runProguard true
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             }
@@ -178,7 +187,6 @@ android {
                 buildTypes.release.signingConfig = null
                 minifyEnabled true
                 shrinkResources true
-                android.enableR8.fullMode=true
                 runProguard true
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             }

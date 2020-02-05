@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Tapusin ang pag-uusap</string>
     <string name="action_contact_details">Mga detalyi ng mga kontak</string>
     <string name="action_secure">Ligtas na pag-uusap</string>
-    <string name="action_edit_contact">I-edit ang pangalan</string>
     <string name="action_add_phone_book">Mag dagdag sa address book</string>
     <string name="action_delete_contact">Burahin sa listahan</string>
     <string name="action_block_contact">Harangan ang kontak</string>
@@ -281,12 +280,10 @@
     <string name="smp_requested">Ang kontak hinihiling ang beripikasyon ng SMP</string>
     <string name="no_otr_session_found">Walang napatunayang OTR na sesyon ang nakita!</string>
     <string name="choose_file">Pumili ng hilira</string>
-    <string name="receiving_x_file">Pagtanggap %1$s (%2$d%% nakumpleto)</string>
     <string name="download_x_file">I-download %s</string>
     <string name="delete_x_file">Burahin %s</string>
     <string name="file">kikil</string>
     <string name="open_x_file">Buksan %s</string>
-    <string name="sending_file">pagpapadala (%1$d% nakumpleto)</string>
     <string name="preparing_file">Paghahanda sa kikil para sa transmisyon</string>
     <string name="x_file_offered_for_download">%s inaalok para idownload</string>
     <string name="cancel_transmission">Kansel transmisyon</string>

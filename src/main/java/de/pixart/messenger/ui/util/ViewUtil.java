@@ -17,6 +17,7 @@ import de.pixart.messenger.R;
 import de.pixart.messenger.entities.DownloadableFile;
 import de.pixart.messenger.persistance.FileBackend;
 import de.pixart.messenger.ui.MediaViewerActivity;
+import me.drakeet.support.toast.ToastCompat;
 
 public class ViewUtil {
 
@@ -28,7 +29,7 @@ public class ViewUtil {
 
     public static void view(Context context, DownloadableFile file) {
         if (!file.exists()) {
-            Toast.makeText(context, R.string.file_deleted, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(context, R.string.file_deleted, Toast.LENGTH_SHORT).show();
             return;
         }
         String mime = file.getMimeType();
@@ -44,7 +45,7 @@ public class ViewUtil {
             uri = FileBackend.getUriForFile(context, file);
         } catch (SecurityException e) {
             Log.d(Config.LOGTAG, "No permission to access " + file.getAbsolutePath(), e);
-            Toast.makeText(context, context.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(context, context.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
             return;
         }
         // use internal viewer for images and videos
@@ -69,7 +70,7 @@ public class ViewUtil {
         } else {
             Intent openIntent = new Intent(Intent.ACTION_VIEW);
             openIntent.setDataAndType(uri, mime);
-            openIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            openIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             PackageManager manager = context.getPackageManager();
             List<ResolveInfo> info = manager.queryIntentActivities(openIntent, 0);
             if (info.size() == 0) {
@@ -78,7 +79,7 @@ public class ViewUtil {
             try {
                 context.startActivity(openIntent);
             } catch (ActivityNotFoundException e) {
-                Toast.makeText(context, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(context, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
             }
         }
     }

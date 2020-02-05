@@ -54,7 +54,7 @@ public final class MimeUtils {
         // by guessExtensionFromMimeType.
         add("application/andrew-inset", "ez");
         add("application/dsptype", "tsp");
-        add("application/epub+zip","epub");
+        add("application/epub+zip", "epub");
         add("application/hta", "hta");
         add("application/mac-binhex40", "hqx");
         add("application/mathematica", "nb");
@@ -72,9 +72,9 @@ public final class MimeUtils {
         add("application/zip", "zip");
         add("application/gzip", "gz");
         add("application/gzip", "tgz");
-        add("application/vnd.amazon.mobi8-ebook","azw3");
-        add("application/vnd.amazon.mobi8-ebook","azw");
-        add("application/vnd.amazon.mobi8-ebook","kfx");
+        add("application/vnd.amazon.mobi8-ebook", "azw3");
+        add("application/vnd.amazon.mobi8-ebook", "azw");
+        add("application/vnd.amazon.mobi8-ebook", "kfx");
         add("application/vnd.android.package-archive", "apk");
         add("application/vnd.cinderella", "cdy");
         add(ExportBackupService.MIME_TYPE, "ceb");
@@ -187,7 +187,7 @@ public final class MimeUtils {
         add("application/x-maker", "book");
         add("application/x-maker", "fbdoc");
         add("application/x-mif", "mif");
-        add("application/x-mobipocket-ebook","mobi");
+        add("application/x-mobipocket-ebook", "mobi");
         add("application/x-ms-wmd", "wmd");
         add("application/x-ms-wmz", "wmz");
         add("application/x-msi", "msi");
@@ -273,6 +273,7 @@ public final class MimeUtils {
         add("image/ico", "cur");
         add("image/ico", "ico");
         add("image/ief", "ief");
+        add("image/heic", "heic");
         // add ".jpg" first so it will be the default for guessExtensionFromMimeType
         add("image/jpeg", "jpg");
         add("image/jpeg", "jpeg");
@@ -370,11 +371,12 @@ public final class MimeUtils {
         add("video/fli", "fli");
         add("video/m4v", "m4v");
         add("video/mp2ts", "ts");
-        add("video/ogg","ogv");
+        add("video/ogg", "ogv");
         add("video/mpeg", "mpeg");
         add("video/mpeg", "mpg");
         add("video/mpeg", "mpe");
         add("video/mp4", "mp4");
+        add("video/mp4", "gifv");
         add("video/mpeg", "VOB");
         add("video/quicktime", "qt");
         add("video/quicktime", "mov");

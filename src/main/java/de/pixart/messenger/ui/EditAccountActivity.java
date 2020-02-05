@@ -1,7 +1,6 @@
 package de.pixart.messenger.ui;
 
 import android.app.Activity;
-import android.app.AlertDialog.Builder;
 import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -80,10 +79,11 @@ import de.pixart.messenger.xmpp.XmppConnection;
 import de.pixart.messenger.xmpp.XmppConnection.Features;
 import de.pixart.messenger.xmpp.forms.Data;
 import de.pixart.messenger.xmpp.pep.Avatar;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 import static de.pixart.messenger.utils.PermissionUtils.allGranted;
-import static de.pixart.messenger.utils.PermissionUtils.writeGranted;
+import static de.pixart.messenger.utils.PermissionUtils.readGranted;
 
 public class EditAccountActivity extends OmemoActivity implements OnAccountUpdate, OnUpdateBlocklist,
         OnKeyStatusUpdated, OnCaptchaRequested, KeyChainAliasCallback, XmppConnectionService.OnShowErrorToast, XmppConnectionService.OnMamPreferencesFetched {
@@ -126,7 +126,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             if (mAccount != null && mAccount.getStatus() == Account.State.DISABLED && !accountInfoEdited) {
                 mAccount.setOption(Account.OPTION_DISABLED, false);
                 if (!xmppConnectionService.updateAccount(mAccount)) {
-                    Toast.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
                 }
                 return;
             }
@@ -156,7 +156,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             if (inNeedOfSaslAccept()) {
                 mAccount.setKey(Account.PINNED_MECHANISM_KEY, String.valueOf(-1));
                 if (!xmppConnectionService.updateAccount(mAccount)) {
-                    Toast.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
                 }
                 return;
             }
@@ -170,7 +170,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                     overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
                     return;
                 } catch (ActivityNotFoundException e) {
-                    Toast.makeText(EditAccountActivity.this, R.string.application_found_to_open_website, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.application_found_to_open_website, Toast.LENGTH_SHORT).show();
                     return;
                 }
             }
@@ -242,7 +242,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             }
             if (registerNewAccount) {
                 if (XmppConnection.errorMessage != null) {
-                    Toast.makeText(EditAccountActivity.this, XmppConnection.errorMessage, Toast.LENGTH_LONG).show();
+                    ToastCompat.makeText(EditAccountActivity.this, XmppConnection.errorMessage, Toast.LENGTH_LONG).show();
                 }
             }
             if (mAccount != null) {
@@ -260,7 +260,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 mAccount.setPassword(password);
                 mAccount.setOption(Account.OPTION_REGISTER, registerNewAccount);
                 if (!xmppConnectionService.updateAccount(mAccount)) {
-                    Toast.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
                     return;
                 }
             } else {
@@ -351,8 +351,26 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
         if (mInitMode && mAccount != null && !mAccount.isOptionSet(Account.OPTION_LOGGED_IN_SUCCESSFULLY)) {
             xmppConnectionService.deleteAccount(mAccount);
         }
+
+        final boolean magicCreate = mAccount != null && mAccount.isOptionSet(Account.OPTION_MAGIC_CREATE) && !mAccount.isOptionSet(Account.OPTION_LOGGED_IN_SUCCESSFULLY);
+        final Jid jid = mAccount == null ? null : mAccount.getJid();
+
+        if (SignupUtils.isSupportTokenRegistry() && jid != null && magicCreate && !jid.getDomain().equals(Config.MAGIC_CREATE_DOMAIN)) {
+            final Jid preset;
+            if (mAccount.isOptionSet(Account.OPTION_FIXED_USERNAME)) {
+                preset = jid.asBareJid();
+            } else {
+                preset = Jid.ofDomain(jid.getDomain());
+            }
+            final Intent intent = SignupUtils.getTokenRegistrationIntent(this, preset, mAccount.getKey(Account.PRE_AUTH_REGISTRATION_TOKEN));
+            StartConversationActivity.addInviteUri(intent, getIntent());
+            startActivity(intent);
+            return;
+        }
+
         if (xmppConnectionService.getAccounts().size() == 0 && Config.MAGIC_CREATE_DOMAIN != null) {
-            Intent intent = SignupUtils.getSignUpIntent(this);
+            Intent intent = SignupUtils.getSignUpIntent(this, mForceRegister != null && mForceRegister);
+            StartConversationActivity.addInviteUri(intent, getIntent());
             startActivity(intent);
             overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
         }
@@ -440,6 +458,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 if (wasFirstAccount) {
                     intent.putExtra("init", true);
                 }
+                intent.putExtra(EXTRA_ACCOUNT, mAccount.getJid().asBareJid().toEscapedString());
             } else {
                 intent = new Intent(getApplicationContext(), PublishProfilePictureActivity.class);
                 intent.putExtra(EXTRA_ACCOUNT, mAccount.getJid().asBareJid().toString());
@@ -487,11 +506,11 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
     protected void processFingerprintVerification(XmppUri uri, boolean showWarningToast) {
         if (mAccount != null && mAccount.getJid().asBareJid().equals(uri.getJid()) && uri.hasFingerprints()) {
             if (xmppConnectionService.verifyFingerprints(mAccount, uri.getFingerprints())) {
-                Toast.makeText(this, R.string.verified_fingerprints, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.verified_fingerprints, Toast.LENGTH_SHORT).show();
                 updateAccountInformation(false);
             }
         } else if (showWarningToast) {
-            Toast.makeText(this, R.string.invalid_barcode, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.invalid_barcode, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -897,6 +916,9 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             return false;
         }
         switch (item.getItemId()) {
+            case android.R.id.home:
+                deleteAccountAndReturnIfNecessary();
+                break;
             case R.id.action_import_backup:
                 if (hasStoragePermission(REQUEST_IMPORT_BACKUP)) {
                     startActivity(new Intent(this, ImportBackupActivity.class));
@@ -1141,7 +1163,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
 
         }
 
-        final boolean editable = !mAccount.isOptionSet(Account.OPTION_LOGGED_IN_SUCCESSFULLY) && QuickConversationsService.isConversations();
+        final boolean editable = !mAccount.isOptionSet(Account.OPTION_LOGGED_IN_SUCCESSFULLY) && !mAccount.isOptionSet(Account.OPTION_FIXED_USERNAME) && QuickConversationsService.isConversations();
         this.binding.accountJid.setEnabled(editable);
         this.binding.accountJid.setFocusable(editable);
         this.binding.accountJid.setFocusableInTouchMode(editable);
@@ -1289,7 +1311,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 this.binding.actionCopyToClipboard.setVisibility(View.VISIBLE);
                 this.binding.actionCopyToClipboard.setOnClickListener(v -> {
                     if (copyTextToClipboard(CryptoHelper.prettifyFingerprint(otrFingerprint), R.string.otr_fingerprint)) {
-                        Toast.makeText(
+                        ToastCompat.makeText(
                                 EditAccountActivity.this,
                                 R.string.toast_message_otr_fingerprint,
                                 Toast.LENGTH_SHORT).show();
@@ -1425,7 +1447,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 try {
                     startActivityForResult(intent, REQUEST_DATA_SAVER);
                 } catch (ActivityNotFoundException e) {
-                    Toast.makeText(EditAccountActivity.this, R.string.device_does_not_support_data_saver, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.device_does_not_support_data_saver, Toast.LENGTH_SHORT).show();
                 }
             });
         } else if (showBatteryWarning && android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
@@ -1439,14 +1461,14 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                 try {
                     startActivityForResult(intent, REQUEST_BATTERY_OP);
                 } catch (ActivityNotFoundException e) {
-                    Toast.makeText(EditAccountActivity.this, R.string.device_does_not_support_battery_op, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(EditAccountActivity.this, R.string.device_does_not_support_battery_op, Toast.LENGTH_SHORT).show();
                 }
             });
         }
     }
 
     public void showWipePepDialog() {
-        Builder builder = new Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(getString(R.string.clear_other_devices));
         builder.setIconAttribute(android.R.attr.alertDialogIcon);
         builder.setMessage(getString(R.string.clear_other_devices_desc));
@@ -1457,7 +1479,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
     }
 
     private void editMamPrefs() {
-        this.mFetchingMamPrefsToast = Toast.makeText(this, R.string.fetching_mam_prefs, Toast.LENGTH_LONG);
+        this.mFetchingMamPrefsToast = ToastCompat.makeText(this, R.string.fetching_mam_prefs, Toast.LENGTH_LONG);
         this.mFetchingMamPrefsToast.show();
         xmppConnectionService.fetchMamPreferences(mAccount, this);
     }
@@ -1527,7 +1549,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(EditAccountActivity.this, resId, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(EditAccountActivity.this, resId, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -1538,7 +1560,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             if (mFetchingMamPrefsToast != null) {
                 mFetchingMamPrefsToast.cancel();
             }
-            Builder builder = new Builder(EditAccountActivity.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(EditAccountActivity.this);
             builder.setTitle(R.string.server_side_mam_prefs);
             String defaultAttr = prefs.getAttribute("default");
             final List<String> defaults = Arrays.asList("never", "roster", "always");
@@ -1559,7 +1581,7 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
             if (mFetchingMamPrefsToast != null) {
                 mFetchingMamPrefsToast.cancel();
             }
-            Toast.makeText(EditAccountActivity.this, R.string.unable_to_fetch_mam_prefs, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(EditAccountActivity.this, R.string.unable_to_fetch_mam_prefs, Toast.LENGTH_LONG).show();
         });
     }
 
@@ -1573,10 +1595,10 @@ public class EditAccountActivity extends OmemoActivity implements OnAccountUpdat
                         break;
                 }
             } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
         }
-        if (writeGranted(grantResults, permissions)) {
+        if (readGranted(grantResults, permissions)) {
             if (xmppConnectionService != null) {
                 xmppConnectionService.restartFileObserver();
             }

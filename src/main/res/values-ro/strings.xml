@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Închide conversația</string>
     <string name="action_contact_details">Detalii contact</string>
     <string name="action_secure">Securizează conferința</string>
-    <string name="action_edit_contact">Editează nume</string>
     <string name="action_add_phone_book">Adaugă la lista de contacte</string>
     <string name="action_delete_contact">Șterge din lista de contacte</string>
     <string name="action_block_contact">Blochează contact</string>
@@ -273,12 +272,10 @@
     <string name="smp_requested">Contactul a cerut verificare SMP</string>
     <string name="no_otr_session_found">Nu s-a găsit nici o sesiune OTR validă</string>
     <string name="choose_file">Alege un fișier</string>
-    <string name="receiving_x_file">Primesc %1$s (%2$d%% complet)</string>
     <string name="download_x_file">Descarca %s</string>
     <string name="delete_x_file">Șterge %s</string>
     <string name="file">fișier</string>
     <string name="open_x_file">Deschide %s</string>
-    <string name="sending_file">trimit (%1$d%% complet)</string>
     <string name="preparing_file">Pregătire fișier pentru transmisie</string>
     <string name="x_file_offered_for_download">%s - fișier oferit spre descărcare</string>
     <string name="cancel_transmission">Anulează transmisiunea</string>

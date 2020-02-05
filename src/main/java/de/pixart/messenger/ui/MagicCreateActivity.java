@@ -1,6 +1,5 @@
 package de.pixart.messenger.ui;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -9,12 +8,11 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -23,18 +21,23 @@ import java.util.List;
 
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
+import de.pixart.messenger.databinding.ActivityMagicCreateBinding;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.utils.CryptoHelper;
+import de.pixart.messenger.utils.InstallReferrerUtils;
 import rocks.xmpp.addr.Jid;
 
 public class MagicCreateActivity extends XmppActivity implements TextWatcher, AdapterView.OnItemSelectedListener, CompoundButton.OnCheckedChangeListener {
 
-    private TextView mFullJidDisplay;
-    private EditText mUsername;
-    private CheckBox mUseOwnProvider;
-    private Spinner mServer;
     private boolean useOwnProvider = false;
-    String domain = null;
+    public static final String EXTRA_DOMAIN = "domain";
+    public static final String EXTRA_PRE_AUTH = "pre_auth";
+    public static final String EXTRA_USERNAME = "username";
+
+    private ActivityMagicCreateBinding binding;
+    private String domain;
+    private String username;
+    private String preAuth;
 
     @Override
     protected void refreshUiReal() {
@@ -57,42 +60,61 @@ public class MagicCreateActivity extends XmppActivity implements TextWatcher, Ad
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        final Intent data = getIntent();
+        this.domain = data == null ? null : data.getStringExtra(EXTRA_DOMAIN);
+        this.preAuth = data == null ? null : data.getStringExtra(EXTRA_PRE_AUTH);
+        this.username = data == null ? null : data.getStringExtra(EXTRA_USERNAME);
         if (getResources().getBoolean(R.bool.portrait_only)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_magic_create);
-        setSupportActionBar(findViewById(R.id.toolbar));
-        configureActionBar(getSupportActionBar());
-        mFullJidDisplay = findViewById(R.id.full_jid);
+        this.binding = DataBindingUtil.setContentView(this, R.layout.activity_magic_create);
         final List<String> domains = Arrays.asList(getResources().getStringArray(R.array.domains));
         Collections.sort(domains, String::compareToIgnoreCase);
         final ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_selectable_list_item, domains);
         int defaultServer = adapter.getPosition("blabber.im");
-        mUsername = findViewById(R.id.username);
-        mUseOwnProvider = findViewById(R.id.use_own);
-        mUseOwnProvider.setOnCheckedChangeListener(this);
-        mServer = findViewById(R.id.server);
-        mServer.setAdapter(adapter);
-        mServer.setSelection(defaultServer);
-        mServer.setOnItemSelectedListener(this);
+        binding.useOwn.setOnCheckedChangeListener(this);
+        binding.server.setAdapter(adapter);
+        binding.server.setSelection(defaultServer);
+        binding.server.setOnItemSelectedListener(this);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Button next = findViewById(R.id.create_account);
-        next.setOnClickListener(v -> {
+        setSupportActionBar((Toolbar) this.binding.toolbar);
+        configureActionBar(getSupportActionBar(), this.domain == null);
+        if (username != null && domain != null) {
+            binding.title.setText(R.string.your_server_invitation);
+            binding.instructions.setText(getString(R.string.magic_create_text_fixed, domain));
+            binding.username.setEnabled(false);
+            binding.username.setText(this.username);
+            updateFullJidInformation(this.username);
+        } else if (domain != null) {
+            binding.instructions.setText(getString(R.string.magic_create_text_on_x, domain));
+        }
+        binding.createAccount.setOnClickListener(v -> {
             try {
-                String username = mUsername.getText().toString();
-                if (domain == null && !useOwnProvider) {
-                    domain = Config.MAGIC_CREATE_DOMAIN;
-                }
-                if (useOwnProvider) {
-                    domain = "your-domain.com";
-                }
-                Jid jid = Jid.of(username.toLowerCase(), domain, null);
-                if (!jid.getEscapedLocal().equals(jid.getLocal()) || username.length() < 3) {
-                    mUsername.setError(getString(R.string.invalid_username));
-                    mUsername.requestFocus();
+                final String username = binding.username.getText().toString();
+                final boolean fixedUsername;
+                final Jid jid;
+                if (this.domain != null && this.username != null) {
+                    fixedUsername = true;
+                    jid = Jid.ofLocalAndDomain(this.username, this.domain);
+                } else if (this.domain != null) {
+                    fixedUsername = false;
+                    jid = Jid.ofLocalAndDomain(username, this.domain);
                 } else {
-                    mUsername.setError(null);
+                    fixedUsername = false;
+                    if (domain == null && !useOwnProvider) {
+                        domain = Config.MAGIC_CREATE_DOMAIN;
+                    }
+                    if (useOwnProvider) {
+                        domain = "your-domain.com";
+                    }
+                    jid = Jid.ofLocalAndDomain(username, domain);
+                }
+                if (!jid.getEscapedLocal().equals(jid.getLocal()) || (this.username == null && username.length() < 3)) {
+                    binding.username.setError(getString(R.string.invalid_username));
+                    binding.username.requestFocus();
+                } else {
+                    binding.username.setError(null);
                     Account account = xmppConnectionService.findAccountByJid(jid);
                     String password = CryptoHelper.createPassword(new SecureRandom());
                     if (account == null) {
@@ -100,6 +122,10 @@ public class MagicCreateActivity extends XmppActivity implements TextWatcher, Ad
                         account.setOption(Account.OPTION_REGISTER, true);
                         account.setOption(Account.OPTION_DISABLED, true);
                         account.setOption(Account.OPTION_MAGIC_CREATE, true);
+                        account.setOption(Account.OPTION_FIXED_USERNAME, fixedUsername);
+                        if (this.preAuth != null) {
+                            account.setKey(Account.PRE_AUTH_REGISTRATION_TOKEN, this.preAuth);
+                        }
                         xmppConnectionService.createAccount(account);
                     }
                     Intent intent = new Intent(MagicCreateActivity.this, EditAccountActivity.class);
@@ -108,7 +134,6 @@ public class MagicCreateActivity extends XmppActivity implements TextWatcher, Ad
                     intent.putExtra("existing", false);
                     intent.putExtra("useownprovider", useOwnProvider);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle(getString(R.string.create_account));
                     builder.setCancelable(false);
@@ -133,11 +158,11 @@ public class MagicCreateActivity extends XmppActivity implements TextWatcher, Ad
                     builder.create().show();
                 }
             } catch (IllegalArgumentException e) {
-                mUsername.setError(getString(R.string.invalid_username));
-                mUsername.requestFocus();
+                binding.username.setError(getString(R.string.invalid_username));
+                binding.username.requestFocus();
             }
         });
-        mUsername.addTextChangedListener(this);
+        binding.username.addTextChangedListener(this);
     }
 
     @Override
@@ -152,47 +177,55 @@ public class MagicCreateActivity extends XmppActivity implements TextWatcher, Ad
 
     @Override
     public void afterTextChanged(Editable s) {
-        generateJID(s.toString());
+        updateFullJidInformation(s.toString());
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        generateJID(mUsername.getText().toString());
+        updateFullJidInformation(binding.username.getText().toString());
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-        generateJID(mUsername.getText().toString());
+        updateFullJidInformation(binding.username.getText().toString());
     }
 
-    private void generateJID(String s) {
-        domain = mServer.getSelectedItem().toString();
-        if (s.trim().length() > 0) {
+    private void updateFullJidInformation(String username) {
+        this.domain = binding.server.getSelectedItem().toString();
+        if (username.trim().isEmpty()) {
+            binding.fullJid.setVisibility(View.INVISIBLE);
+        } else {
             try {
-                mFullJidDisplay.setVisibility(View.VISIBLE);
-                if (domain == null) {
-                    domain = Config.MAGIC_CREATE_DOMAIN;
+                binding.fullJid.setVisibility(View.VISIBLE);
+                final Jid jid;
+                if (this.domain == null) {
+                    jid = Jid.ofLocalAndDomain(username, Config.MAGIC_CREATE_DOMAIN);
+                } else {
+                    jid = Jid.ofLocalAndDomain(username, this.domain);
                 }
-                Jid jid = Jid.of(s.toLowerCase(), domain, null);
-                mFullJidDisplay.setText(getString(R.string.your_full_jid_will_be, jid.toEscapedString()));
+                binding.fullJid.setText(getString(R.string.your_full_jid_will_be, jid.toEscapedString()));
             } catch (IllegalArgumentException e) {
-                mFullJidDisplay.setVisibility(View.INVISIBLE);
+                binding.fullJid.setVisibility(View.INVISIBLE);
             }
 
-        } else {
-            mFullJidDisplay.setVisibility(View.INVISIBLE);
         }
     }
 
     @Override
+    public void onDestroy() {
+        InstallReferrerUtils.markInstallReferrerExecuted(this);
+        super.onDestroy();
+    }
+
+    @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (mUseOwnProvider.isChecked()) {
-            mServer.setEnabled(false);
-            mFullJidDisplay.setVisibility(View.GONE);
+        if (binding.useOwn.isChecked()) {
+            binding.server.setEnabled(false);
+            binding.fullJid.setVisibility(View.GONE);
             useOwnProvider = true;
         } else {
-            mServer.setEnabled(true);
-            mFullJidDisplay.setVisibility(View.VISIBLE);
+            binding.server.setEnabled(true);
+            binding.fullJid.setVisibility(View.VISIBLE);
             useOwnProvider = false;
         }
     }

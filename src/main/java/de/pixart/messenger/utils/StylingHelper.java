@@ -32,8 +32,6 @@ package de.pixart.messenger.utils;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import androidx.annotation.ColorInt;
-import androidx.core.content.ContextCompat;
 import android.text.Editable;
 import android.text.ParcelableSpan;
 import android.text.Spannable;
@@ -47,6 +45,9 @@ import android.text.style.StyleSpan;
 import android.text.style.TypefaceSpan;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.annotation.ColorInt;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.Arrays;

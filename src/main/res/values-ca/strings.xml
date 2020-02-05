@@ -8,7 +8,6 @@
     <string name="action_contact_details">Detalls del contacte</string>
     <string name="action_secure">Conversa segura</string>
     <string name="action_add_new_account">Afegir nou compte</string>
-    <string name="action_edit_contact">Editar contacte</string>
     <string name="action_add_phone_book">Afegir a contactes</string>
     <string name="action_delete_contact">Eliminar de la llista de contactes</string>
     <string name="action_block_contact">Bloquejar contacte</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Gestionar comptes</string>
     <string name="title_activity_settings">Ajustos</string>
     <string name="conference_details">Detalls del grupo de xat</string>
-    <string name="title_activity_contact_details">Detalls del contacte</string>
+    <string name="contact_details">Detalls del contacte</string>
     <string name="title_activity_sharewith">Compartir una conversa</string>
     <string name="title_activity_start_conversation">Iniciar conversa</string>
     <string name="title_activity_choose_contact">Escollir contacte</string>
@@ -309,12 +308,10 @@
     <string name="notification_restored_backup_title">La teva còpia de seguretat ha sigut restaurada</string>
     <string name="notification_restored_backup_subtitle">No oblidis habil·litar el teva compte.</string>
     <string name="choose_file">Seleccionar arxiu</string>
-    <string name="receiving_x_file">Rebent %1$s (%2$d%% completat)</string>
     <string name="download_x_file">Descargar %s</string>
     <string name="delete_x_file">Eliminar %s</string>
     <string name="file">Arxiu</string>
     <string name="open_x_file">Obrir %s</string>
-    <string name="sending_file">Enviant (%1$d%% completado)</string>
     <string name="preparing_file">Preparant transferència d\'arxiu</string>
     <string name="x_file_offered_for_download">%s ofert per a descàrrega </string>
     <string name="cancel_transmission">Cancel·lar transferència</string>
@@ -715,7 +712,6 @@
     <string name="pref_scroll_to_bottom">Desplaçar-se fins abaix</string>
     <string name="no_camera_permission">Pix-Art Messenger necessita accedir a la càmara</string>
     <string name="edit_status_message_title">Editar el missatge d\'estat</string>
-    <string name="edit_status_message">Editar el missatge d\'estat</string>
     <string name="pref_automatically_delete_messages_description">Eliminar automàticament els missatges del dispositius que siguin anteriors al temps seleccionant.</string>
     <string name="pref_automatically_delete_messages">Borrat automàtico de missatges</string>
     <string name="disable_encryption">Desactivar xifrat</string>
@@ -839,7 +835,6 @@
     <string name="unable_to_decrypt_backup">No es pot desxifrar la còpia de seguretat. És correcta la contrasenya?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferir l\'avatar d\'usuaris XMPP en lloc del de la teva llista de contactes</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
-    <string name="view_users">Veure participants</string>
     <string name="group_chat_members">Participants</string>
     <string name="message_deleted">El missatge fou eliminat</string>
     <string name="channel_details">Detalls del canal</string>
@@ -896,7 +891,6 @@
     <string name="pref_use_internal_updater_summary">Permetre que l\'aplicació busqui actualizacions una vegada al dia</string>
     <string name="pref_use_internal_updater">buscar actualizacions</string>
     <string name="attach">Adjuntar</string>
-    <string name="delete_locally">Eliminar localment</string>
     <string name="delete_from_server">Eliminar en el servidor</string>
     <string name="go_online_to_delete">Tens que activar i/o anar en línea amb el compte que vols eliminar del servidor.</string>
     <string name="discover_channels">Descobrir canals</string>

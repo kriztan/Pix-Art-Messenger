@@ -4,8 +4,9 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBar;
 import android.view.inputmethod.InputMethodManager;
+
+import androidx.appcompat.app.ActionBar;
 
 import java.util.Arrays;
 import java.util.Collections;

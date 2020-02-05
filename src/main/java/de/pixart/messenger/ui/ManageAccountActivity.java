@@ -5,9 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.security.KeyChain;
 import android.security.KeyChainAliasCallback;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import android.util.Pair;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -17,6 +14,10 @@ import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 
 import org.openintents.openpgp.util.OpenPgpApi;
 
@@ -32,10 +33,11 @@ import de.pixart.messenger.services.XmppConnectionService.OnAccountUpdate;
 import de.pixart.messenger.ui.adapter.AccountAdapter;
 import de.pixart.messenger.utils.MenuDoubleTabUtil;
 import de.pixart.messenger.xmpp.XmppConnection;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 import static de.pixart.messenger.utils.PermissionUtils.allGranted;
-import static de.pixart.messenger.utils.PermissionUtils.writeGranted;
+import static de.pixart.messenger.utils.PermissionUtils.readGranted;
 
 public class ManageAccountActivity extends XmppActivity implements OnAccountUpdate, KeyChainAliasCallback, XmppConnectionService.OnAccountCreated, AccountAdapter.OnTglAccountState {
 
@@ -219,10 +221,10 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
                         break;
                 }
             } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
         }
-        if (writeGranted(grantResults, permissions)) {
+        if (readGranted(grantResults, permissions)) {
             if (xmppConnectionService != null) {
                 xmppConnectionService.restartFileObserver();
             }
@@ -263,7 +265,7 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
         try {
             KeyChain.choosePrivateKeyAlias(this, this, null, null, null, -1, null);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, R.string.device_does_not_support_certificates, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(this, R.string.device_does_not_support_certificates, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -328,7 +330,7 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
     private void disableAccount(Account account) {
         account.setOption(Account.OPTION_DISABLED, true);
         if (!xmppConnectionService.updateAccount(account)) {
-            Toast.makeText(this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -339,7 +341,7 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
             connection.resetEverything();
         }
         if (!xmppConnectionService.updateAccount(account)) {
-            Toast.makeText(this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.unable_to_update_account, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -422,6 +424,6 @@ public class ManageAccountActivity extends XmppActivity implements OnAccountUpda
 
     @Override
     public void informUser(final int r) {
-        runOnUiThread(() -> Toast.makeText(ManageAccountActivity.this, r, Toast.LENGTH_LONG).show());
+        runOnUiThread(() -> ToastCompat.makeText(ManageAccountActivity.this, r, Toast.LENGTH_LONG).show());
     }
 }

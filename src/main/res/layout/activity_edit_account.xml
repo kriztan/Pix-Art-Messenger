@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/editor"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -307,9 +307,9 @@
                             android:layout_marginTop="8dp"
                             android:text="@string/register_account" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/os_optimization"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -369,16 +369,16 @@
                                 android:textColor="@color/accent" />
                         </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/stats"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:visibility="gone">
 
                     <LinearLayout
@@ -401,6 +401,7 @@
                             android:layout_height="wrap_content"
                             android:shrinkColumns="0"
                             android:stretchColumns="1">
+
                             <TableRow
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -818,9 +819,9 @@
                             </LinearLayout>
                         </RelativeLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/other_device_keys_card"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -862,7 +863,7 @@
                             android:text="@string/clear_other_devices"
                             android:textColor="@color/accent" />
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </ScrollView>
 

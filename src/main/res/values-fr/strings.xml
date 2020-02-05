@@ -8,7 +8,6 @@
     <string name="action_contact_details">Détails du contact</string>
     <string name="action_secure">Conversation sécurisée</string>
     <string name="action_add_new_account">Ajouter un nouveau compte</string>
-    <string name="action_edit_contact">Modifier le nom</string>
     <string name="action_add_phone_book">Ajouter au carnet d’adresses</string>
     <string name="action_delete_contact">Retirer des contacts</string>
     <string name="action_block_contact">Bloquer le contact</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Gestion des comptes</string>
     <string name="title_activity_settings">Paramètres</string>
     <string name="conference_details">Détails du groupe de discussion</string>
-    <string name="title_activity_contact_details">Détails du contact</string>
+    <string name="contact_details">Détails du contact</string>
     <string name="title_activity_sharewith">Partager avec la conversation</string>
     <string name="title_activity_start_conversation">Démarrer une conversation</string>
     <string name="title_activity_choose_contact">Choix du contact</string>
@@ -306,12 +305,10 @@
     <string name="notification_restored_backup_title">Votre sauvegarde a été restaurée</string>
     <string name="notification_restored_backup_subtitle">N\'oubliez pas d\'activer le compte.</string>
     <string name="choose_file">Choix du fichier</string>
-    <string name="receiving_x_file">Réception %1$s (%2$d%% complété)</string>
     <string name="download_x_file">Télécharger %s</string>
     <string name="delete_x_file">Effacer %s</string>
     <string name="file">fichier</string>
     <string name="open_x_file">Ouvrir %s</string>
-    <string name="sending_file">envoi (%1$d%% complété)</string>
     <string name="preparing_file">Préparation du fichier pour l’envoi</string>
     <string name="x_file_offered_for_download">%s proposé à télécharger</string>
     <string name="cancel_transmission">Annuler l’envoi</string>
@@ -702,7 +699,6 @@
     <string name="pref_scroll_to_bottom">Défiler vers le bas</string>
     <string name="no_camera_permission">Pix-Art Messenger a besoin d’accéder à l’appareil photo</string>
     <string name="edit_status_message_title">Modifier le message du Statut</string>
-    <string name="edit_status_message">Modifier Message de Statut</string>
     <string name="pref_automatically_delete_messages_description">Supprimer automatiquement de cet appareil les anciens messages ayant dépassé la période spécifiée.</string>
     <string name="pref_automatically_delete_messages">Suppression automatique des messages</string>
     <string name="disable_encryption">Désactiver le chiffrement</string>
@@ -821,7 +817,6 @@
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateur·rice·s au lieu de celui figurant sur votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
-    <string name="view_users">Voir les participants</string>
     <string name="group_chat_members">Participants</string>
     <string name="message_deleted">Le message a été supprimé</string>
     <string name="channel_details">Détails du canal</string>
@@ -876,7 +871,6 @@
     <string name="pref_use_internal_updater_summary">Laisser le messager vérifier la disponibilité de mise à jour une fois par jour</string>
     <string name="pref_use_internal_updater">rechercher des mise à jour</string>
     <string name="attach">Attacher</string>
-    <string name="delete_locally">Supprimer localement</string>
     <string name="delete_from_server">Supprimer sur le serveur</string>
     <string name="discover_channels">Découvrir des canaux</string>
     <string name="search_channels">Rechercher des canaux</string>

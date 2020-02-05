@@ -8,7 +8,6 @@
     <string name="action_contact_details">بيانات المُراسِل</string>
     <string name="action_secure">محادثة آمنة</string>
     <string name="action_add_new_account">إضافة حساب جديد</string>
-    <string name="action_edit_contact">تعديل الاسم</string>
     <string name="action_add_phone_book">إضافة إلى دفتر العناوين</string>
     <string name="action_delete_contact">حذف من القائمة</string>
     <string name="action_block_contact">حجب المُراسِل</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">إدارة الحسابات</string>
     <string name="title_activity_settings">الإعدادات</string>
     <string name="conference_details">تفاصيل فريق المحادثة</string>
-    <string name="title_activity_contact_details">بيانات المُراسِل</string>
+    <string name="contact_details">بيانات المُراسِل</string>
     <string name="title_activity_start_conversation">ابدأ محادثة</string>
     <string name="title_activity_choose_contact">إختر مُراسلك</string>
     <string name="title_activity_choose_contacts">اختر جهات الاتصال</string>
@@ -447,7 +446,6 @@
     <string name="pref_scroll_to_bottom_summary">التمرير إلى أسفل بعد إرسال رسالة</string>
     <string name="pref_scroll_to_bottom">التمرير إلى أسفل</string>
     <string name="edit_status_message_title">تعديل رسالة حالة الحضور</string>
-    <string name="edit_status_message">تعديل رسالة الحالة</string>
     <string name="disable_encryption">تعطيل التشفير</string>
     <string name="disable_now">عطّله الآن</string>
     <string name="draft">المسودة:</string>
@@ -519,7 +517,6 @@
     <string name="restore_backup">استرجاع النسخة الاحتياطية</string>
     <string name="restore">إستعادة</string>
     <string name="unable_to_restore_backup">تعذرت عملية استعادة النسخة الاحتياطية.</string>
-    <string name="view_users">عرض المشاركين</string>
     <string name="group_chat_members">المشاركون</string>
     <string name="message_deleted">تم حذف الرسالة</string>
     <string name="channel_details">تفاصيل القناة</string>
@@ -553,7 +550,6 @@
     <string name="mgmt_account_password_forgotten">نسيت الكلمة السرية</string>
     <string name="password_forgotten_title">نسيت الكلمة السرية</string>
     <string name="attach">ارفق</string>
-    <string name="delete_locally">احذفه محليا</string>
     <string name="delete_from_server">احذفه على الخادم</string>
     <string name="discover_channels">اكتشاف قنوات</string>
     <string name="search_channels">البحث عن قنوات</string>

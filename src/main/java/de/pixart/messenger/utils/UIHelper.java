@@ -263,9 +263,8 @@ public class UIHelper {
                     return new Pair<>(context.getString(R.string.checking_x,
                             getFileDescriptionString(context, message)), true);
                 case Transferable.STATUS_DOWNLOADING:
-                    return new Pair<>(context.getString(R.string.receiving_x_file,
-                            getFileDescriptionString(context, message),
-                            d.getProgress()), true);
+                    return new Pair<>(context.getString(R.string.receiving_file,
+                            getFileDescriptionString(context, message)), true);
                 case Transferable.STATUS_OFFER:
                 case Transferable.STATUS_OFFER_CHECK_FILESIZE:
                     return new Pair<>(context.getString(R.string.x_file_offered_for_download,
@@ -307,7 +306,7 @@ public class UIHelper {
                 return new Pair<>(context.getString(R.string.location), true);
             } else if (message.isXmppUri()) {
                 return new Pair<>(context.getString(R.string.contact), true);
-            } else if (message.treatAsDownloadable()) {
+            } else if (message.treatAsDownloadable() || MessageUtils.unInitiatedButKnownSize(message)) {
                 return new Pair<>(context.getString(R.string.x_file_offered_for_download,
                         getFileDescriptionString(context, message)), true);
             } else {
@@ -517,8 +516,18 @@ public class UIHelper {
             if (conversation instanceof Conversation && conversation.getMode() == Conversation.MODE_MULTI) {
                 return ((Conversation) conversation).getMucOptions().getSelf().getName();
             } else {
-                final Jid jid = conversation.getAccount().getJid();
-                return jid.getLocal() != null ? jid.getLocal() : Jid.ofDomain(jid.getDomain()).toString();
+                final Account account = conversation.getAccount();
+                final Jid jid = account.getJid();
+                final String displayName = account.getDisplayName();
+                if (displayName != null) {
+                    return displayName;
+                } else {
+                    if (jid.getLocal() != null) {
+                        return jid.getLocal();
+                    } else {
+                        return Jid.ofDomain(jid.getDomain()).toString();
+                    }
+                }
             }
         }
     }

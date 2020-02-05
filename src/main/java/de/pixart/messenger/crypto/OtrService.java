@@ -188,7 +188,7 @@ public class OtrService extends OtrCryptoEngineImpl implements OtrEngineHost {
         try {
             Jid jid = OtrJidHelper.fromSessionID(session);
             Conversation conversation = mXmppConnectionService.find(account, jid);
-            if (conversation != null && conversation.setOutgoingChatState(Config.DEFAULT_CHATSTATE)) {
+            if (conversation != null && conversation.setOutgoingChatState(Config.DEFAULT_CHAT_STATE)) {
                 if (mXmppConnectionService.sendChatStates()) {
                     packet.addChild(ChatState.toElement(conversation.getOutgoingChatState()));
                 }

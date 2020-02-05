@@ -4,9 +4,9 @@
     <color name="primary">#ff0D47A1</color>  <!-- blue 900 -->
     <color name="primary_dark">#ff1A237E</color>  <!-- indigo 900 -->
 
-    <color name="primary_orange">#ffe59400</color>
-    <color name="primary_dark_orange">#ffB27300</color>
-    <color name="primary_orange_dark">#ffce8500</color>
+    <color name="primary_orange">#ffce8500</color>
+    <color name="primary_dark_orange">#ffa06700</color>
+    <color name="primary_orange_dark">#ffb97700</color>
     <color name="primary_dark_orange_dark">#ffa06700</color>
     <color name="accent_orange">#ffffa500</color>
 
@@ -51,8 +51,8 @@
     <color name="darkred">#ffb71c1c</color>  <!-- red 900 -->
     <color name="darkgreen">#ff1b5e20</color>  <!-- green 900 -->
 
-    <color name="lightorange">#ffffb732</color>
-    <color name="lightorange2">#ffcc8400</color>
+    <color name="lightorange">#fffff3de</color>
+    <color name="lightorange2">#ffb89f6f</color>
     <color name="middleorange">#ff996300</color>
     <color name="darkorange">#ff4c3100</color>
 

@@ -29,9 +29,7 @@
 
 package de.pixart.messenger.ui;
 
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
@@ -41,6 +39,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

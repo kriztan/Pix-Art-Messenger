@@ -7,7 +7,6 @@
     <string name="action_contact_details">Contact details</string>
     <string name="action_secure">Secure conversation</string>
     <string name="action_add_new_account">Add new account</string>
-    <string name="action_edit_contact">Edit name</string>
     <string name="action_add_phone_book">Add to address book</string>
     <string name="action_delete_contact">Delete from roster</string>
     <string name="action_block_contact">Block contact</string>
@@ -17,7 +16,7 @@
     <string name="title_activity_manage_accounts">Manage accounts</string>
     <string name="title_activity_settings">Settings</string>
     <string name="conference_details">Group chat details</string>
-    <string name="title_activity_contact_details">Contact details</string>
+    <string name="contact_details">Contact details</string>
     <string name="title_activity_sharewith">Share with conversation</string>
     <string name="title_activity_start_conversation">Start conversation</string>
     <string name="title_activity_choose_contact">Choose contact</string>
@@ -310,12 +309,11 @@
     <string name="notification_restored_backup_title">Your backup has been restored</string>
     <string name="notification_restored_backup_subtitle">Do not forget to enable the account.</string>
     <string name="choose_file">Choose file</string>
-    <string name="receiving_x_file">Receiving %1$s (%2$d%% completed)</string>
+    <string name="receiving_file">Receiving %1$s</string>
     <string name="download_x_file">Download %s</string>
     <string name="delete_x_file">Delete %s</string>
     <string name="file">file</string>
     <string name="open_x_file">Open %s</string>
-    <string name="sending_file">sending (%1$d%% completed)</string>
     <string name="preparing_file">Preparing file for transmission</string>
     <string name="x_file_offered_for_download">%s offered for download</string>
     <string name="cancel_transmission">Cancel transmission</string>
@@ -490,11 +488,11 @@
     <string name="pref_picture_quality_summary">Resize and compress pictures</string>
     <string name="pref_video_quality">Video quality</string>
     <string name="pref_video_quality_summary">Resize and compress videos</string>
-    <string name="video_very_low">very low (144p)</string>
-    <string name="video_low">low (360p)</string>
-    <string name="video_mid">middle (720p)</string>
-    <string name="video_high">high (1080p)</string>
-    <string name="video_original">original (uncompressed)</string>
+    <string name="video_very_low">Very low (144p)</string>
+    <string name="video_low">Low (360p)</string>
+    <string name="video_mid">Medium (720p)</string>
+    <string name="video_high">High (1080p)</string>
+    <string name="video_original">Original (uncompressed)</string>
     <string name="always">Always</string>
     <string name="always_off">Always off</string>
     <string name="battery_optimizations_enabled">Battery optimizations enabled</string>
@@ -517,7 +515,7 @@
     <string name="share_uri_with">Share URI with…</string>
     <string name="mgmt_account_reconnect">Reconnect</string>
     <string name="welcome_text">…is a free and secure XMPP/Jabber client.</string>
-    <string name="magic_create_text">We will guide you through the process of creating an account with a random password, which you can use or change to your own password on the next page. \nThan you will be able to communicate with users of this and other providers by giving them your full Jabber-ID.</string>
+    <string name="magic_create_text">We will guide you through the process of creating an account with a random password, which you can use or change to your own password on the next page. \nThen you will be able to communicate with users of this and other providers by giving them your full Jabber-ID.</string>
     <string name="your_full_jid_will_be">Your Jabber-ID will be: %s</string>
     <string name="create_account">Create new account</string>
     <string name="welcome_existing_account">I have an account</string>
@@ -655,10 +653,10 @@
     <string name="pref_use_tor">Connect via Tor</string>
     <string name="pref_use_tor_summary">Tunnel all connections through the Tor network.</string>
     <string name="pref_connection_options">Connection options</string>
-    <string name="image_low">low (720p)</string>
-    <string name="image_mid">middle (1920p)</string>
-    <string name="image_high">high (3840p)</string>
-    <string name="image_original">original (uncompressed)</string>
+    <string name="image_low">Low (720p)</string>
+    <string name="image_mid">Medium (1920p)</string>
+    <string name="image_high">High (3840p)</string>
+    <string name="image_original">Original (uncompressed)</string>
     <string name="last_seen_just_away">recently</string>
     <string name="send_message">Send message</string>
     <string name="send_failed_resend">delivery failed, resending…</string>
@@ -667,8 +665,8 @@
     <string name="retry_decryption">Retry decryption</string>
     <string name="session_failure">Session failure</string>
     <string name="sasl_downgrade">Downgraded SASL mechanism</string>
-    <string name="action_take_photo">take photo</string>
-    <string name="action_take_video">record video</string>
+    <string name="action_take_photo">Take photo</string>
+    <string name="action_take_video">Record video</string>
     <string name="account_status_regis_web">Server requires registration on website</string>
     <string name="application_found_to_open_website">No application found to open website</string>
     <string name="open_website">Open website</string>
@@ -720,7 +718,6 @@
     <string name="pref_scroll_to_bottom">Scroll to bottom</string>
     <string name="no_camera_permission">Pix-Art Messenger needs access to the camera</string>
     <string name="edit_status_message_title">Edit Status Message</string>
-    <string name="edit_status_message">Edit status message</string>
     <string name="pref_automatically_delete_messages_description">Automatically delete messages from this device that are older than the configured time frame.</string>
     <string name="pref_automatically_delete_messages">Automatic message deletion</string>
     <string name="disable_encryption">Disable encryption</string>
@@ -768,7 +765,7 @@
     <string name="pref_start_search_summary">At ‘Start Conversation’ screen open keyboard and place cursor in search field</string>
     <string name="paste_as_quote">Paste as quote</string>
     <string name="group_chat_avatar">Group chat avatar</string>
-    <string name="host_does_not_support_group_chat_avatars">Host does not support avatars</string>
+    <string name="host_does_not_support_group_chat_avatars">Host does not support group chat avatars</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Only the owner can change the avatar</string>
     <string name="contact_name">Contact name</string>
     <string name="nickname">Nickname for this group chat</string>
@@ -848,7 +845,10 @@
     <string name="unable_to_decrypt_backup">Unable to decrypt backup. Is the password correct?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Prefer the user\'s XMPP avatar instead of the one from your address book</string>
     <string name="pref_prefer_xmpp_avatar">Prefer XMPP avatar</string>
-    <string name="view_users">View participants</string>
+    <plurals name="view_users">
+        <item quantity="one">View %1$d Participant</item>
+        <item quantity="other">View %1$d Participants</item>
+    </plurals>
     <string name="group_chat_members">Participants</string>
     <string name="message_deleted">Message was deleted</string>
     <string name="channel_details">Channel details</string>
@@ -903,9 +903,8 @@
     <string name="pref_show_mappreview_inside_summary">Show map previews directly inside the chat view, a connection to the Pix-Art-Server will be established.</string>
     <string name="pref_show_mappreview_inside">Show previews of locations in chat</string>
     <string name="pref_use_internal_updater_summary">Let the messenger look for new app updates once a day</string>
-    <string name="pref_use_internal_updater">look for updates</string>
+    <string name="pref_use_internal_updater">Look for updates</string>
     <string name="attach">Attach</string>
-    <string name="delete_locally">Delete locally</string>
     <string name="delete_from_server">Delete from server</string>
     <string name="go_online_to_delete">You have to activate and/or go online with the account you want to delete from server.</string>
     <string name="discover_channels">Discover channels</string>
@@ -939,7 +938,6 @@
     <string name="waiting_for_transfer">Waiting for transfer</string>
     <string name="x_has_written">%s has written:</string>
     <string name="i_have_written">I have written:</string>
-    <string name="no_status_set_instructions">You have not set a presence status message</string>
     <string name="your_status">Your status</string>
     <string name="pref_use_invidious">Replace YouTube links with Invidious</string>
     <string name="pref_use_invidious_summary">Invidious is a privacy friendly alternative to YouTube</string>
@@ -977,7 +975,6 @@
     <string name="no_results">No results</string>
     <string name="file_transmission_cancelled">file transmission cancelled</string>
     <string name="sharing_application_not_grant_permission">The sharing application did not grant permission to access this file.</string>
-    <string name="group_chats_and_channels"><![CDATA[Group Chats & Channels]]></string>
     <string name="jabber_network">jabber.network</string>
     <string name="local_server">Local server</string>
     <string name="pref_channel_discovery_summary">Most users should choose ‘jabber.network’ for better suggestions from the entirety of the public XMPP ecosystem.</string>
@@ -993,4 +990,10 @@
     <string name="pref_theme_orange">Orange</string>
     <string name="pref_theme_color_options_summary">Select the theme color palette</string>
     <string name="pref_theme_color_options">Theme color</string>
+    <string name="pref_enable_otr_summary">Enable OTR encryption for message encryption</string>
+    <string name="pref_enable_otr">Enable OTR encryption</string>
+    <string name="magic_create_text_on_x">You have been invited to %1$s. We will guide you through the process of creating an account.\nWhen picking %1$s as a provider you will be able to communicate with users of other providers by giving them your full XMPP address.</string>
+    <string name="account_status_regis_invalid_token">Invalid registration token</string>
+    <string name="magic_create_text_fixed">You have been invited to %1$s. A username has already been picked for you. We will guide you through the process of creating an account.\nYou will be able to communicate with users of other providers by giving them your full XMPP address.</string>
+    <string name="your_server_invitation">Your server invitation</string>
 </resources>

@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Elkarrizketa hau amaitu</string>
     <string name="action_contact_details">Kontaktuaren xehetasunak</string>
     <string name="action_secure">Elkarrizketa segurua</string>
-    <string name="action_edit_contact">Izena editatu</string>
     <string name="action_add_phone_book">Helbideen liburura gehitu</string>
     <string name="action_delete_contact">Zerrendatik ezabatu</string>
     <string name="action_block_contact">Kontaktua blokeatu</string>
@@ -271,12 +270,10 @@
     <string name="smp_requested">Kontaktuak SMP egiaztapena eskatu du</string>
     <string name="no_otr_session_found">Ez da OTR saio baliodunik aurkitu!</string>
     <string name="choose_file">Fitxategia aukeratu</string>
-    <string name="receiving_x_file">%1$s jasotzen (%2$d%% osatua)</string>
     <string name="download_x_file">%s deskargatu</string>
     <string name="delete_x_file">Ezabatu %s</string>
     <string name="file">fitxategia</string>
     <string name="open_x_file">%s ireki</string>
-    <string name="sending_file">bidaltzen (%1$d%% osatua)</string>
     <string name="preparing_file">Fitxategia transmisiorako prestatzen</string>
     <string name="x_file_offered_for_download">%s deskargatzeko eskeinita</string>
     <string name="cancel_transmission">Transmisioa utzi</string>

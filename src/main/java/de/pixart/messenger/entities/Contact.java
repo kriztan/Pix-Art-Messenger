@@ -4,8 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import androidx.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,6 +21,7 @@ import java.util.Locale;
 import de.pixart.messenger.Config;
 import de.pixart.messenger.R;
 import de.pixart.messenger.android.AbstractPhoneContact;
+import de.pixart.messenger.services.QuickConversationsService;
 import de.pixart.messenger.utils.JidHelper;
 import de.pixart.messenger.utils.UIHelper;
 import de.pixart.messenger.xml.Element;
@@ -101,7 +103,7 @@ public class Contact implements ListItem, Blockable {
         final Jid jid;
         try {
             jid = Jid.of(cursor.getString(cursor.getColumnIndex(JID)));
-        } catch (final IllegalArgumentException  e) {
+        } catch (final IllegalArgumentException e) {
             // TODO: Borked DB... handle this somehow?
             return null;
         }
@@ -384,7 +386,9 @@ public class Contact implements ListItem, Blockable {
     }
 
     public boolean showInContactList() {
-        return showInRoster() || getOption(Options.SYNCED_VIA_OTHER);
+        return showInRoster()
+                || getOption(Options.SYNCED_VIA_OTHER)
+                || (QuickConversationsService.isQuicksy() && systemAccount != null);
     }
 
     public void parseSubscriptionFromElement(Element item) {
@@ -587,7 +591,8 @@ public class Contact implements ListItem, Blockable {
         changed |= setPhotoUri(phoneContact.getPhotoUri());
         return changed;
     }
-    public synchronized boolean unsetPhoneContact(Class<?extends AbstractPhoneContact> clazz) {
+
+    public synchronized boolean unsetPhoneContact(Class<? extends AbstractPhoneContact> clazz) {
         resetOption(getOption(clazz));
         boolean changed = false;
         if (!getOption(Options.SYNCED_VIA_ADDRESSBOOK) && !getOption(Options.SYNCED_VIA_OTHER)) {
@@ -597,6 +602,7 @@ public class Contact implements ListItem, Blockable {
         }
         return changed;
     }
+
     public static int getOption(Class<? extends AbstractPhoneContact> clazz) {
         return Options.SYNCED_VIA_OTHER;
     }

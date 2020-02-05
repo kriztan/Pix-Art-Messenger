@@ -23,6 +23,15 @@ public class PermissionUtils {
         return false;
     }
 
+    public static boolean readGranted(int[] grantResults, String[] permission) {
+        for (int i = 0; i < grantResults.length; ++i) {
+            if (Manifest.permission.READ_EXTERNAL_STORAGE.equals(permission[i])) {
+                return grantResults[i] == PackageManager.PERMISSION_GRANTED;
+            }
+        }
+        return false;
+    }
+
     public static String getFirstDenied(int[] grantResults, String[] permissions) {
         for (int i = 0; i < grantResults.length; ++i) {
             if (grantResults[i] == PackageManager.PERMISSION_DENIED) {

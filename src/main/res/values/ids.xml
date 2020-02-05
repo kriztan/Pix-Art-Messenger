@@ -4,7 +4,6 @@
     <item name="message_image_view" type="id" />
     <item name="message_video_view" type="id" />
     <item name="message_gif_view" type="id" />
-    <item name="import_text" type="id" />
     <item name="TAG_ACCOUNT" type="id" />
     <item name="TAG_FINGERPRINT" type="id" />
     <item name="TAG_FINGERPRINT_STATUS" type="id" />

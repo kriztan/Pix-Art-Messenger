@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.StringRes;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnLongClickListener;
@@ -12,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.StringRes;
 
 import com.theartofdev.edmodo.cropper.CropImage;
 
@@ -23,6 +24,7 @@ import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.ui.interfaces.OnAvatarPublication;
 import de.pixart.messenger.utils.PhoneHelper;
+import me.drakeet.support.toast.ToastCompat;
 
 public class PublishProfilePictureActivity extends XmppActivity implements XmppConnectionService.OnAccountUpdate, OnAvatarPublication {
 
@@ -54,10 +56,11 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
             if (mInitialAccountSetup) {
                 Intent intent = new Intent(getApplicationContext(), StartConversationActivity.class);
                 StartConversationActivity.addInviteUri(intent, getIntent());
+                intent.putExtra(EXTRA_ACCOUNT, account.getJid().asBareJid().toEscapedString());
                 intent.putExtra("init", true);
                 startActivity(intent);
             }
-            Toast.makeText(PublishProfilePictureActivity.this,
+            ToastCompat.makeText(PublishProfilePictureActivity.this,
                     R.string.avatar_has_been_published,
                     Toast.LENGTH_SHORT).show();
             finish();
@@ -95,11 +98,12 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
         });
         this.cancelButton.setOnClickListener(v -> {
             if (mInitialAccountSetup) {
-                Intent intent = new Intent(getApplicationContext(), StartConversationActivity.class);
+                final Intent intent = new Intent(getApplicationContext(), StartConversationActivity.class);
                 if (xmppConnectionService != null && xmppConnectionService.getAccounts().size() == 1) {
-                    StartConversationActivity.addInviteUri(intent, getIntent());
                     intent.putExtra("init", true);
                 }
+                StartConversationActivity.addInviteUri(intent, getIntent());
+                intent.putExtra(EXTRA_ACCOUNT, account.getJid().asBareJid().toEscapedString());
                 startActivity(intent);
             }
             finish();
@@ -134,7 +138,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
                 if (error != null) {
-                    Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         }

@@ -2,10 +2,7 @@ package de.pixart.messenger.ui;
 
 import android.app.AlertDialog;
 import android.content.Intent;
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -13,6 +10,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import org.whispersystems.libsignal.IdentityKey;
 
@@ -38,6 +39,7 @@ import de.pixart.messenger.utils.CryptoHelper;
 import de.pixart.messenger.utils.IrregularUnicodeDetector;
 import de.pixart.messenger.utils.XmppUri;
 import de.pixart.messenger.xmpp.OnKeyStatusUpdated;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class TrustKeysActivity extends OmemoActivity implements OnKeyStatusUpdated {
@@ -104,7 +106,7 @@ public class TrustKeysActivity extends OmemoActivity implements OnKeyStatusUpdat
     }
 
     private void showCameraToast() {
-        mUseCameraHintToast = Toast.makeText(this, R.string.use_camera_icon_to_scan_barcode, Toast.LENGTH_LONG);
+        mUseCameraHintToast = ToastCompat.makeText(this, R.string.use_camera_icon_to_scan_barcode, Toast.LENGTH_LONG);
         ActionBar actionBar = getSupportActionBar();
         mUseCameraHintToast.setGravity(Gravity.TOP | Gravity.END, 0, actionBar == null ? 0 : actionBar.getHeight());
         mUseCameraHintToast.show();
@@ -115,7 +117,7 @@ public class TrustKeysActivity extends OmemoActivity implements OnKeyStatusUpdat
         switch (item.getItemId()) {
             case R.id.action_scan_qr_code:
                 if (hasPendingKeyFetches()) {
-                    Toast.makeText(this, R.string.please_wait_for_keys_to_be_fetched, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(this, R.string.please_wait_for_keys_to_be_fetched, Toast.LENGTH_SHORT).show();
                 } else {
                     ScanActivity.scan(this);
                     return true;
@@ -141,16 +143,16 @@ public class TrustKeysActivity extends OmemoActivity implements OnKeyStatusUpdat
             boolean performedVerification = xmppConnectionService.verifyFingerprints(mAccount.getRoster().getContact(uri.getJid()), uri.getFingerprints());
             boolean keys = reloadFingerprints();
             if (performedVerification && !keys && !hasNoOtherTrustedKeys() && !hasPendingKeyFetches()) {
-                Toast.makeText(this, R.string.all_omemo_keys_have_been_verified, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.all_omemo_keys_have_been_verified, Toast.LENGTH_SHORT).show();
                 finishOk(false);
                 return;
             } else if (performedVerification) {
-                Toast.makeText(this, R.string.verified_fingerprints, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.verified_fingerprints, Toast.LENGTH_SHORT).show();
             }
         } else {
             reloadFingerprints();
             Log.d(Config.LOGTAG, "xmpp uri was: " + uri.getJid() + " has Fingerprints: " + Boolean.toString(uri.hasFingerprints()));
-            Toast.makeText(this, R.string.barcode_does_not_contain_fingerprints_for_this_conversation, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.barcode_does_not_contain_fingerprints_for_this_conversation, Toast.LENGTH_SHORT).show();
         }
         populateView();
     }
@@ -366,13 +368,13 @@ public class TrustKeysActivity extends OmemoActivity implements OnKeyStatusUpdat
                 }
                 switch (report) {
                     case ERROR:
-                        Toast.makeText(TrustKeysActivity.this, R.string.error_fetching_omemo_key, Toast.LENGTH_SHORT).show();
+                        ToastCompat.makeText(TrustKeysActivity.this, R.string.error_fetching_omemo_key, Toast.LENGTH_SHORT).show();
                         break;
                     case SUCCESS_TRUSTED:
-                        Toast.makeText(TrustKeysActivity.this, R.string.blindly_trusted_omemo_keys, Toast.LENGTH_LONG).show();
+                        ToastCompat.makeText(TrustKeysActivity.this, R.string.blindly_trusted_omemo_keys, Toast.LENGTH_LONG).show();
                         break;
                     case SUCCESS_VERIFIED:
-                        Toast.makeText(TrustKeysActivity.this,
+                        ToastCompat.makeText(TrustKeysActivity.this,
                                 Config.X509_VERIFICATION ? R.string.verified_omemo_key_with_certificate : R.string.all_omemo_keys_have_been_verified,
                                 Toast.LENGTH_LONG).show();
                         break;

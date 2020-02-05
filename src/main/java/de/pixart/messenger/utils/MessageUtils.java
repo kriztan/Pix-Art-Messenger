@@ -41,6 +41,7 @@ public class MessageUtils {
 
     private static final Pattern LTR_RTL = Pattern.compile("(\\u200E[^\\u200F]*\\u200F){3,}");
     private static final String EMPTY_STRING = "";
+
     public static String prepareQuote(Message message) {
         final StringBuilder builder = new StringBuilder();
         final String body = message.getMergedBody().toString();
@@ -88,5 +89,9 @@ public class MessageUtils {
 
     public static String filterLtrRtl(String body) {
         return LTR_RTL.matcher(body).replaceFirst(EMPTY_STRING);
+    }
+
+    public static boolean unInitiatedButKnownSize(Message message) {
+        return message.getType() == Message.TYPE_TEXT && message.getTransferable() == null && message.isOOb() && message.getFileParams().size > 0 && message.getFileParams().url != null;
     }
 }

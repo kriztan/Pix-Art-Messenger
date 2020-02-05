@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="ConversationsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="ConversationsTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -159,7 +159,7 @@
         <item name="ic_settings_about" type="reference">@drawable/ic_help_black_24dp</item>
     </style>
 
-    <style name="ConversationsTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+    <style name="ConversationsTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -328,8 +328,8 @@
 
         <item name="color_bubble_light">@color/lightorange</item>
         <item name="color_bubble_dark">@color/lightorange2</item>
-        <item name="color_bubble_date">@color/darkred</item>
-        <item name="color_bubble_warning">@color/darkgreen</item>
+        <item name="color_bubble_date">@color/lightgreen</item>
+        <item name="color_bubble_warning">@color/lightred</item>
     </style>
 
     <style name="ConversationsTheme.Orange.Dark" parent="ConversationsTheme.Dark">
@@ -341,11 +341,11 @@
 
         <item name="color_bubble_light">@color/middleorange</item>
         <item name="color_bubble_dark">@color/darkorange</item>
-        <item name="color_bubble_date">@color/darkred</item>
-        <item name="color_bubble_warning">@color/darkgreen</item>
+        <item name="color_bubble_date">@color/darkgreen</item>
+        <item name="color_bubble_warning">@color/darkred</item>
     </style>
 
-    <style name="ConversationsTheme.Dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+    <style name="ConversationsTheme.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -363,7 +363,7 @@
         <item name="colorAccent">@color/accent_orange</item>
     </style>
 
-    <style name="ConversationsTheme.Dark.Dialog" parent="@style/Theme.AppCompat.Dialog">
+    <style name="ConversationsTheme.Dark.Dialog" parent="Theme.MaterialComponents.Dialog">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -420,7 +420,7 @@
         <item name="TextSizeTitle">56sp</item>
     </style>
 
-    <style name="ConversationsTheme.FullScreen" parent="@style/Theme.AppCompat.Light">
+    <style name="ConversationsTheme.FullScreen" parent="Theme.MaterialComponents.Light">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="android:windowNoTitle">true</item>
@@ -431,7 +431,7 @@
         <item name="android:navigationBarColor" tools:targetApi="21">@color/black</item>
     </style>
 
-    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimaryDark">@android:color/transparent</item>
         <item name="android:windowBackground">@drawable/background</item>
     </style>

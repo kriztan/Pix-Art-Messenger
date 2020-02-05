@@ -8,7 +8,6 @@
     <string name="action_contact_details">Szczegóły kontaktu</string>
     <string name="action_secure">Konwersacja szyfrowana</string>
     <string name="action_add_new_account">Dodaj nowe konto</string>
-    <string name="action_edit_contact">Edytuj nazwę</string>
     <string name="action_add_phone_book">Dodaj do kontaktów</string>
     <string name="action_delete_contact">Usuń z rostera</string>
     <string name="action_block_contact">Zablokuj kontakt</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Zarządzaj kontami</string>
     <string name="title_activity_settings">Ustawienia</string>
     <string name="conference_details">Szczegóły czatu grupowego</string>
-    <string name="title_activity_contact_details">Szczegóły kontaktu</string>
+    <string name="contact_details">Szczegóły kontaktu</string>
     <string name="title_activity_sharewith">Udostępnij w konwersacji</string>
     <string name="title_activity_start_conversation">Rozpocznij konwersację</string>
     <string name="title_activity_choose_contact">Wybierz kontakt</string>
@@ -310,12 +309,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="notification_restored_backup_title">Kopia zapasowa została przywrócona</string>
     <string name="notification_restored_backup_subtitle">Nie zapomnij włączyć konta.</string>
     <string name="choose_file">Wybierz plik</string>
-    <string name="receiving_x_file">Odbieranie %1$s (ukończono %2$d%%)</string>
     <string name="download_x_file">Pobierz %s</string>
     <string name="delete_x_file">Usuń %s</string>
     <string name="file">plik</string>
     <string name="open_x_file">Otwórz %s</string>
-    <string name="sending_file">Wysyłanie (ukończono %1$d%%)</string>
     <string name="preparing_file">Przygotowywanie pliku do wysłania</string>
     <string name="x_file_offered_for_download">Zaproponowano pobranie pliku %s</string>
     <string name="cancel_transmission">Anuluj przesyłanie</string>
@@ -719,7 +716,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_scroll_to_bottom">Przewiń do dołu</string>
     <string name="no_camera_permission">Pix-Art Messenger potrzebuje dostęp do kamery</string>
     <string name="edit_status_message_title">Edytuj info o statusie</string>
-    <string name="edit_status_message">Edytuj info o statusie</string>
     <string name="pref_automatically_delete_messages_description">Automatycznie usuń wiadomości z tego urządzenia, które są starsze niż ustawiona wartość.</string>
     <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
     <string name="disable_encryption">Wyłącz szyfrowanie</string>

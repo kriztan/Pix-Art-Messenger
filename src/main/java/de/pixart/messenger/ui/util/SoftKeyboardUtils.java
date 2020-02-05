@@ -30,10 +30,11 @@ package de.pixart.messenger.ui.util;
 
 import android.app.Activity;
 import android.content.Context;
-import androidx.annotation.NonNull;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+
+import androidx.annotation.NonNull;
 
 public class SoftKeyboardUtils {
 

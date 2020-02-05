@@ -114,6 +114,7 @@ public class XmppConnection implements Runnable {
         public void onIqPacketReceived(Account account, IqPacket packet) {
             if (packet.getType() == IqPacket.TYPE.RESULT) {
                 account.setOption(Account.OPTION_REGISTER, false);
+                Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": successfully registered new account on server");
                 throw new StateChangingError(Account.State.REGISTRATION_SUCCESSFUL);
             } else {
                 final List<String> PASSWORD_TOO_WEAK_MSGS = Arrays.asList(
@@ -840,7 +841,7 @@ public class XmppConnection implements Runnable {
             sendStartTLS();
         } else if (this.streamFeatures.hasChild("register") && account.isOptionSet(Account.OPTION_REGISTER)) {
             if (isSecure) {
-                sendRegistryRequest();
+                register();
             } else {
                 Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": unable to find STARTTLS for registration process " + XmlHelper.printElementNames(this.streamFeatures));
                 throw new StateChangingException(Account.State.INCOMPATIBLE_SERVER);
@@ -912,6 +913,25 @@ public class XmppConnection implements Runnable {
             mechanisms.add(child.getContent());
         }
         return mechanisms;
+    }
+
+    private void register() {
+        final String preAuth = account.getKey(Account.PRE_AUTH_REGISTRATION_TOKEN);
+        if (preAuth != null && features.invite()) {
+            final IqPacket preAuthRequest = new IqPacket(IqPacket.TYPE.SET);
+            preAuthRequest.addChild("preauth", Namespace.PARS).setAttribute("token", preAuth);
+            sendUnmodifiedIqPacket(preAuthRequest, (account, response) -> {
+                if (response.getType() == IqPacket.TYPE.RESULT) {
+                    sendRegistryRequest();
+                } else {
+                    final Element error = response.getError();
+                    Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": failed to pre auth. " + error);
+                    throw new StateChangingError(Account.State.REGISTRATION_INVALID_TOKEN);
+                }
+            }, true);
+        } else {
+            sendRegistryRequest();
+        }
     }
 
     private void sendRegistryRequest() {
@@ -1343,7 +1363,7 @@ public class XmppConnection implements Runnable {
         });
     }
 
-    public void getAdHocInviteUrl(final Jid server) {
+    public String getAdHocInviteUrl(final Jid server) {
         IqPacket iqPacket = new IqPacket(IqPacket.TYPE.SET);
         iqPacket.setTo(Jid.ofDomain(server.getDomain()));
         iqPacket.setFrom(Jid.of(account.getJid().asBareJid()));
@@ -1367,10 +1387,12 @@ public class XmppConnection implements Runnable {
             if (packet.getType() != IqPacket.TYPE.TIMEOUT) {
                 if (mPendingServiceDiscoveries.decrementAndGet() == 0
                         && mWaitForDisco.compareAndSet(true, false)) {
+                    features.adhocinviteURI = "";
                     finalizeBind();
                 }
             }
         });
+        return features.adhocinviteURI;
     }
 
     private void sendEnableCarbons() {
@@ -1861,6 +1883,10 @@ public class XmppConnection implements Runnable {
             return hasDiscoFeature(Jid.of(account.getServer()), Namespace.REGISTER);
         }
 
+        public boolean invite() {
+            return connection.streamFeatures != null && connection.streamFeatures.hasChild("register", Namespace.INVITE);
+        }
+
         public boolean sm() {
             return streamId != null
                     || (connection.streamFeatures != null && connection.streamFeatures.hasChild("sm"));
@@ -1965,7 +1991,7 @@ public class XmppConnection implements Runnable {
         }
 
         public boolean bookmarks2() {
-            return Config.USE_BOOKMARKS2 || hasDiscoFeature(account.getJid().asBareJid(), Namespace.BOOKMARKS2_COMPAT);
+            return Config.USE_BOOKMARKS2 /* || hasDiscoFeature(account.getJid().asBareJid(), Namespace.BOOKMARKS2_COMPAT)*/;
         }
     }
 }

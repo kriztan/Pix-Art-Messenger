@@ -1,11 +1,12 @@
 package de.pixart.messenger.ui.util;
 
 import android.content.Context;
+import android.util.Log;
+import android.view.ViewTreeObserver;
+
 import androidx.annotation.DimenRes;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
-import android.view.ViewTreeObserver;
 
 import de.pixart.messenger.Config;
 import de.pixart.messenger.ui.adapter.MediaAdapter;

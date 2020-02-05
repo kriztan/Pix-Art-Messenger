@@ -110,9 +110,10 @@ public final class Config {
     public static final boolean REMOVE_BROKEN_DEVICES = false;
     public static final boolean OMEMO_PADDING = false;
     public static final boolean PUT_AUTH_TAG_INTO_KEY = true;
+    public static final boolean TWELVE_BYTE_IV = false;
 
     public static final int MAX_DISPLAY_MESSAGE_CHARS = 4096;
-    public static final int MAX_STORAGE_MESSAGE_CHARS = 1024 * 1024; //1MB
+    public static final int MAX_STORAGE_MESSAGE_CHARS = 2 * 1024 * 1024; //2MB
 
     public static final boolean ExportLogs = true; // automatically export logs
     public static final int ExportLogs_Hour = 4; //Time - hours: valid values from 0 to 23
@@ -135,12 +136,12 @@ public final class Config {
     public static final boolean IGNORE_ID_REWRITE_IN_MUC = true;
     public static final boolean MUC_LEAVE_BEFORE_JOIN = true;
 
-    public static final boolean USE_LMC_VERSION_1_1 = false;
+    public static final boolean USE_LMC_VERSION_1_1 = true;
 
-    public static final long MAM_MAX_CATCHUP = MILLISECONDS_IN_DAY * 5;
+    public static final long MAM_MAX_CATCHUP = MILLISECONDS_IN_DAY * 30;
     public static final int MAM_MAX_MESSAGES = 750;
 
-    public static final ChatState DEFAULT_CHATSTATE = ChatState.ACTIVE;
+    public static final ChatState DEFAULT_CHAT_STATE = ChatState.ACTIVE;
     public static final int TYPING_TIMEOUT = 5;
 
     public static final int EXPIRY_INTERVAL = 30 * 60 * 1000; // 30 minutes

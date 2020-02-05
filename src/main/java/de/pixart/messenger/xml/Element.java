@@ -1,7 +1,5 @@
 package de.pixart.messenger.xml;
 
-import androidx.annotation.NonNull;
-
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;

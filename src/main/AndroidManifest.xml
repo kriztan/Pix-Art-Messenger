@@ -56,11 +56,12 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_configuration"
+        android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
         android:theme="@style/ConversationsTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:label, android:allowBackup"
-        tools:targetApi="o">
+        tools:targetApi="q">
 
         <meta-data
             android:name="com.google.android.gms.car.application"
@@ -228,7 +229,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.ContactDetailsActivity"
-            android:label="@string/title_activity_contact_details"
+            android:label="@string/contact_details"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.PublishProfilePictureActivity"

@@ -168,6 +168,7 @@ import de.pixart.messenger.xmpp.stanzas.PresencePacket;
 import me.leolin.shortcutbadger.ShortcutBadger;
 import rocks.xmpp.addr.Jid;
 
+import static de.pixart.messenger.ui.SettingsActivity.ALLOW_MESSAGE_CORRECTION;
 import static de.pixart.messenger.ui.SettingsActivity.CHAT_STATES;
 import static de.pixart.messenger.ui.SettingsActivity.CONFIRM_MESSAGES;
 import static de.pixart.messenger.ui.SettingsActivity.ENABLE_MULTI_ACCOUNTS;
@@ -416,7 +417,6 @@ public class XmppConnectionService extends Service {
                             Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": couldn't start OTR with " + conversation.getContact().getJid() + " when needed");
                         }
                         sendUnsentMessages(conversation);
-                        resendFailedFileMessages(conversation);
                     }
                 }
                 final List<Conversation> pendingLeaves;
@@ -572,10 +572,9 @@ public class XmppConnectionService extends Service {
 
     public void attachImageToConversation(final Conversation conversation, final Uri uri, final UiCallback<Message> callback) {
         final String mimeType = MimeUtils.guessMimeTypeFromUri(this, uri);
-        final String compressPictures = getCompressPicturesPreference();
-
-        if ("never".equals(compressPictures)
-                || ("auto".equals(compressPictures) && getFileBackend().useImageAsIs(uri))
+        final boolean compressPictures = getCompressImageResolutionPreference() != 0;
+        if (!compressPictures
+                || getFileBackend().useImageAsIs(uri)
                 || (mimeType != null && mimeType.endsWith("/gif"))
                 || getFileBackend().unusualBounds(uri)) {
             Log.d(Config.LOGTAG, conversation.getAccount().getJid().asBareJid() + ": not compressing picture. sending as file");
@@ -630,6 +629,7 @@ public class XmppConnectionService extends Service {
         MessageSearchTask.search(this, term, onSearchResultsAvailable);
     }
 
+    @SuppressLint("InvalidWakeLockTag")
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         final String action = intent == null ? null : intent.getAction();
@@ -695,7 +695,14 @@ public class XmppConnectionService extends Service {
                             restoredFromDatabaseLatch.await();
                             final Conversation c = findConversationByUuid(uuid);
                             if (c != null) {
-                                directReply(c, body.toString(), dismissNotification);
+                                boolean pn = false;
+                                if (c.getMode() == Conversational.MODE_MULTI) {
+                                    if (c.getLatestMessage().isPrivateMessage()) {
+                                        pn = true;
+                                        c.setNextCounterpart(c.getLatestMessage().getCounterpart());
+                                    }
+                                }
+                                directReply(c, body.toString(), dismissNotification, pn);
                             }
                         } catch (InterruptedException e) {
                             Log.d(Config.LOGTAG, "unable to process direct reply");
@@ -764,6 +771,9 @@ public class XmppConnectionService extends Service {
             }
         }
         synchronized (this) {
+            if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M && Build.MANUFACTURER.equals("Huawei")) {
+                wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "LocationManagerService");
+            }
             WakeLockHelper.acquire(wakeLock);
             boolean pingNow = ConnectivityManager.CONNECTIVITY_ACTION.equals(action) || (Config.POST_CONNECTIVITY_CHANGE_PING_INTERVAL > 0 && ACTION_POST_CONNECTIVITY_CHANGE.equals(action));
             final HashSet<Account> pingCandidates = new HashSet<>();
@@ -803,29 +813,31 @@ public class XmppConnectionService extends Service {
     }
 
     private void deleteWebpreviewCache() {
-        try {
-            long start = SystemClock.elapsedRealtime();
-            final Calendar time = Calendar.getInstance();
-            time.add(Calendar.DAY_OF_YEAR, -7);
-            final File directory = new File(getCacheDir().getAbsolutePath(), File.separator + RICH_LINK_METADATA);
-            if (!directory.exists()) {
-                return;
-            }
-            final File[] files = directory.listFiles();
-            if (files != null) {
-                int count = 0;
-                for (File file : files) {
-                    Date lastModified = new Date(file.lastModified());
-                    if (lastModified.before(time.getTime())) {
-                        file.delete();
-                        count++;
-                    }
+        new Thread(() -> {
+            try {
+                long start = SystemClock.elapsedRealtime();
+                final Calendar time = Calendar.getInstance();
+                time.add(Calendar.DAY_OF_YEAR, -7);
+                final File directory = new File(getCacheDir().getAbsolutePath(), File.separator + RICH_LINK_METADATA);
+                if (!directory.exists()) {
+                    return;
                 }
-                Log.d(Config.LOGTAG, "Deleted " + count + " expired webpreview cache files in " + (SystemClock.elapsedRealtime() - start) + "ms");
+                final File[] files = directory.listFiles();
+                if (files != null) {
+                    int count = 0;
+                    for (File file : files) {
+                        Date lastModified = new Date(file.lastModified());
+                        if (lastModified.before(time.getTime())) {
+                            file.delete();
+                            count++;
+                        }
+                    }
+                    Log.d(Config.LOGTAG, "Deleted " + count + " expired webpreview cache files in " + (SystemClock.elapsedRealtime() - start) + "ms");
+                }
+            } catch (Exception e) {
+                Log.d(Config.LOGTAG, "Deleted no expired webpreview cache files because of " + e);
             }
-        } catch (Exception e) {
-            Log.d(Config.LOGTAG, "Deleted no expired webpreview cache files because of " + e);
-        }
+        }).start();
     }
 
     private boolean processAccountState(Account account, boolean interactive, boolean isUiAction, boolean isAccountPushed, HashSet<Account> pingCandidates) {
@@ -944,8 +956,11 @@ public class XmppConnectionService extends Service {
         }
     }
 
-    private void directReply(Conversation conversation, String body, final boolean dismissAfterReply) {
+    private void directReply(Conversation conversation, String body, final boolean dismissAfterReply, final boolean pn) {
         Message message = new Message(conversation, body, conversation.getNextEncryption());
+        if (pn) {
+            Message.configurePrivateMessage(message);
+        }
         message.markUnread();
         if (message.getEncryption() == Message.ENCRYPTION_PGP) {
             getPgpEngine().encrypt(message, new UiCallback<Message>() {
@@ -994,12 +1009,8 @@ public class XmppConnectionService extends Service {
         return getBooleanPreference(SettingsActivity.AWAY_WHEN_SCREEN_IS_OFF, R.bool.away_when_screen_off);
     }
 
-    private String getCompressPicturesPreference() {
-        return getPreferences().getString("picture_compression", getResources().getString(R.string.picture_compression));
-    }
-
     public int getCompressImageResolutionPreference() {
-        switch (getPreferences().getString("image_compression", getResources().getString(R.string.picture_compression))) {
+        switch (getPreferences().getString("image_compression", getResources().getString(R.string.image_compression))) {
             case "low":
                 return 720;
             case "mid":
@@ -1014,7 +1025,7 @@ public class XmppConnectionService extends Service {
     }
 
     public int getCompressImageSizePreference() {
-        switch (getPreferences().getString("image_compression", getResources().getString(R.string.picture_compression))) {
+        switch (getPreferences().getString("image_compression", getResources().getString(R.string.image_compression))) {
             case "low":
                 return 209715; // 0.2 * 1024 * 1024 = 209715 (0.2 MiB)
             case "mid":
@@ -1562,6 +1573,9 @@ public class XmppConnectionService extends Service {
     }
 
     private void sendMessage(final Message message, final boolean resend, final boolean delay) {
+        if (resend) {
+            message.setTime(System.currentTimeMillis());
+        }
         final Account account = message.getConversation().getAccount();
         if (account.setShowErrorNotification(true)) {
             databaseBackend.updateAccount(account);
@@ -1744,7 +1758,7 @@ public class XmppConnectionService extends Service {
             if (delay) {
                 mMessageGenerator.addDelay(packet, message.getTimeSent());
             }
-            if (conversation.setOutgoingChatState(Config.DEFAULT_CHATSTATE)) {
+            if (conversation.setOutgoingChatState(Config.DEFAULT_CHAT_STATE)) {
                 if (this.sendChatStates()) {
                     packet.addChild(ChatState.toElement(conversation.getOutgoingChatState()));
                 }
@@ -1771,7 +1785,9 @@ public class XmppConnectionService extends Service {
     }
 
     private void sendUnsentMessages(final Conversation conversation) {
-        conversation.findWaitingMessages(message -> resendMessage(message, true));
+        new Thread(() -> {
+            conversation.findWaitingMessages(message -> resendMessage(message, true));
+        }).start();
     }
 
     private void resendFailedFileMessages(final Conversation conversation) {
@@ -2013,14 +2029,18 @@ public class XmppConnectionService extends Service {
                 final long startMessageRestore = SystemClock.elapsedRealtime();
                 final Conversation quickLoad = QuickLoader.get(this.conversations);
                 if (quickLoad != null) {
-                    restoreMessages(quickLoad);
+                    new Thread(() -> {
+                        restoreMessages(quickLoad);
+                    }).start();
                     updateConversationUi();
                     final long diffMessageRestore = SystemClock.elapsedRealtime() - startMessageRestore;
                     Log.d(Config.LOGTAG, "quickly restored " + quickLoad.getName() + " after " + diffMessageRestore + "ms");
                 }
                 for (Conversation conversation : this.conversations) {
                     if (quickLoad != conversation) {
-                        restoreMessages(conversation);
+                        new Thread(() -> {
+                            restoreMessages(conversation);
+                        }).start();
                     }
                 }
                 mNotificationService.finishBacklog(false);
@@ -2093,6 +2113,9 @@ public class XmppConnectionService extends Service {
         boolean deleted = false;
         for (Conversation conversation : getConversations()) {
             deleted |= conversation.markAsDeleted(uuids);
+        }
+        for (final String uuid : uuids) {
+            evictPreview(uuid);
         }
         if (deleted) {
             updateConversationUi();
@@ -2341,7 +2364,6 @@ public class XmppConnectionService extends Service {
                 return conversation;
             }
             conversation = databaseBackend.findConversation(account, jid);
-            final boolean loadMessagesFromDb;
             if (conversation != null) {
                 conversation.setStatus(Conversation.STATUS_AVAILABLE);
                 conversation.setAccount(account);
@@ -2353,7 +2375,6 @@ public class XmppConnectionService extends Service {
                     conversation.setContactJid(jid.asBareJid());
                 }
                 databaseBackend.updateConversation(conversation);
-                loadMessagesFromDb = conversation.messagesLoaded.compareAndSet(true, false);
             } else {
                 String conversationName;
                 Contact contact = account.getRoster().getContact(jid);
@@ -2369,21 +2390,7 @@ public class XmppConnectionService extends Service {
                     conversation = new Conversation(conversationName, account, jid.asBareJid(),
                             Conversation.MODE_SINGLE);
                 }
-                this.databaseBackend.createConversation(conversation);
-                loadMessagesFromDb = false;
             }
-            final Conversation c = conversation;
-            mDatabaseReaderExecutor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    if (loadMessagesFromDb) {
-                        c.addAll(0, databaseBackend.getMessages(c, Config.PAGE_SIZE));
-                        updateConversationUi();
-                        c.messagesLoaded.set(true);
-                    }
-                }
-            });
-            updateConversationUi();
             return conversation;
         }
     }
@@ -2810,7 +2817,7 @@ public class XmppConnectionService extends Service {
             if (conversation.getMode() == Conversation.MODE_MULTI) {
                 conversation.getMucOptions().resetChatState();
             } else {
-                conversation.setIncomingChatState(Config.DEFAULT_CHATSTATE);
+                conversation.setIncomingChatState(Config.DEFAULT_CHAT_STATE);
             }
         }
         for (Account account : getAccounts()) {
@@ -4263,7 +4270,7 @@ public class XmppConnectionService extends Service {
     }
 
     public boolean allowMessageCorrection() {
-        return getBooleanPreference("allow_message_correction", R.bool.allow_message_correction);
+        return getBooleanPreference(ALLOW_MESSAGE_CORRECTION, R.bool.allow_message_correction);
     }
 
     public boolean sendChatStates() {
@@ -5051,6 +5058,12 @@ public class XmppConnectionService extends Service {
         IqPacket set = new IqPacket(IqPacket.TYPE.SET);
         set.addChild(prefs);
         sendIqPacket(account, set, null);
+    }
+
+    public void evictPreview(String uuid) {
+        if (mBitmapCache.remove(uuid) != null) {
+            Log.d(Config.LOGTAG, "deleted cached preview");
+        }
     }
 
     public interface OnMamPreferencesFetched {

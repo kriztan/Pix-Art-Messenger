@@ -2,8 +2,9 @@ package de.pixart.messenger.crypto;
 
 import android.app.PendingIntent;
 import android.content.Intent;
-import androidx.annotation.StringRes;
 import android.util.Log;
+
+import androidx.annotation.StringRes;
 
 import org.openintents.openpgp.OpenPgpError;
 import org.openintents.openpgp.OpenPgpSignatureResult;

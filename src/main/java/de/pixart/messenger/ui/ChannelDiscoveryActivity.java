@@ -35,7 +35,6 @@ import de.pixart.messenger.services.ChannelDiscoveryService;
 import de.pixart.messenger.ui.adapter.ChannelSearchResultAdapter;
 import de.pixart.messenger.ui.util.PendingItem;
 import de.pixart.messenger.ui.util.SoftKeyboardUtils;
-import de.pixart.messenger.ui.util.StyledAttributes;
 import de.pixart.messenger.utils.AccountUtils;
 import rocks.xmpp.addr.Jid;
 

@@ -12,6 +12,7 @@ import java.util.List;
 import de.pixart.messenger.R;
 import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.ui.adapter.AccountAdapter;
+import me.drakeet.support.toast.ToastCompat;
 
 public class ChooseAccountForProfilePictureActivity extends XmppActivity {
 
@@ -75,11 +76,11 @@ public class ChooseAccountForProfilePictureActivity extends XmppActivity {
             Intent intent = new Intent(this, PublishProfilePictureActivity.class);
             intent.putExtra(EXTRA_ACCOUNT, account.getJid().asBareJid().toString());
             intent.setData(uri);
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             try {
                 startActivity(intent);
             } catch (SecurityException e) {
-                Toast.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
                 return;
             }
         }

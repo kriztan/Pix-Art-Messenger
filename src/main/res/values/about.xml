@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="pref_about_message" translatable="false"><b>Pix-Art Messenger</b>
-			\n\nCopyright © 2014-2019 Christian Schneppe
+			\n\nCopyright © 2014-%s Christian Schneppe
 			\n\nhttp://jabber.pix-art.de
 			\n\nThis program is free software: you can redistribute it and/or modify
 			it under the terms of the GNU General Public License as published by
@@ -13,7 +13,7 @@
 			GNU General Public License for more details.
 			\n\nYou should have received a copy of the GNU General Public License
 			along with this program. If not, see https://www.gnu.org/licenses
-			\n\nDownload the full original source code at https://github.com/siacs/Conversations (Copyright © 2014-2019 Daniel Gultsch)
+			\n\nDownload the full original source code at https://github.com/siacs/Conversations (Copyright © Daniel Gultsch)
 			\n\nDownload the modified source code at https://github.com/kriztan/Pix-Art-Messenger
             \n\nPix-Art Messenger recommends blabber.im as provider. More information can be found at https://blabber.im
             \n\nYou can support me by making a donation in form of a gift in sense of § 516 ff BGB i.e. a gratuitous donation.
@@ -38,7 +38,7 @@
 			\n\nhttps://github.com/square/picasso\n(Apache License, Version 2.0)
 			\n\nhttps://github.com/davemorrissey/subsampling-scale-image-view\n(Apache License, Version 2.0)
             \n\nhttps://github.com/koral--/android-gif-drawable\n(The MIT License (MIT))
-			\n\nhttps://github.com/rtoshiro/FullscreenVideoView\n(Apache License, Version 2.0)
+			\n\nhttps://github.com/google/ExoPlayer\n(Apache License, Version 2.0)
             \n\nhttps://github.com/mangstadt/ez-vcard\n(FreeBSD)
             \n\nhttps://github.com/googlesamples/easypermissions\n(Apache License, Version 2.0)
             \n\nhttps://github.com/blazsolar/FlowLayout\n(Apache License, Version 2.0)

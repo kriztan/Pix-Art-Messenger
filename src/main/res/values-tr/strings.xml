@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Bu konuşmayı bitir</string>
     <string name="action_contact_details">İletişim detayları</string>
     <string name="action_secure">Güvenli görüşme</string>
-    <string name="action_edit_contact">İsmi düzenle</string>
     <string name="action_add_phone_book">Adres defterine ekle</string>
     <string name="action_delete_contact">Listeden sil</string>
     <string name="action_block_contact">Kişiyi engelle</string>
@@ -281,12 +280,10 @@
     <string name="smp_requested">İstenilen SMP doğrulamayla bağlantıyı kurun</string>
     <string name="no_otr_session_found">Geçerli bir OTR oturumu bulunamadı!</string>
     <string name="choose_file">Dosya seç</string>
-    <string name="receiving_x_file">%1$s alındığında (%2$d%% tamamlandı)</string>
     <string name="download_x_file">%s indir</string>
     <string name="delete_x_file">%s sil</string>
     <string name="file">dosya</string>
     <string name="open_x_file">%s aç</string>
-    <string name="sending_file">gönderiliyor (%1$d%% tamamlandı)</string>
     <string name="preparing_file">Aktarım için hazırlanıyor</string>
     <string name="x_file_offered_for_download">%s indirmek için teklif edildi</string>
     <string name="cancel_transmission">Aktarımı iptal et</string>

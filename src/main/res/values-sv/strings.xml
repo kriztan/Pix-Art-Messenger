@@ -7,7 +7,6 @@
     <string name="action_end_conversation">Avsluta denna konversation</string>
     <string name="action_contact_details">Kontaktdetaljer</string>
     <string name="action_secure">Säker konversation</string>
-    <string name="action_edit_contact">Ändra namn</string>
     <string name="action_add_phone_book">Lägg till i kontakter</string>
     <string name="action_delete_contact">Ta bort kontakt</string>
     <string name="action_block_contact">Blockera kontakt</string>
@@ -260,12 +259,10 @@
     <string name="smp_requested">Kontakt begärde SMP-verifikation</string>
     <string name="no_otr_session_found">Ingen giltig OTR-session kunde hittas!</string>
     <string name="choose_file">Välj fil</string>
-    <string name="receiving_x_file">Tar emot %1$s (%2$d%% klart)</string>
     <string name="download_x_file">Ladda ner %s</string>
     <string name="delete_x_file">Ta bort %s</string>
     <string name="file">fil</string>
     <string name="open_x_file">Öppna %s</string>
-    <string name="sending_file">skickar (%1$d%% klart)</string>
     <string name="preparing_file">Förbereder fil för överföring</string>
     <string name="x_file_offered_for_download">%s erbjuden för nedladdning</string>
     <string name="cancel_transmission">Avbryt överföring</string>

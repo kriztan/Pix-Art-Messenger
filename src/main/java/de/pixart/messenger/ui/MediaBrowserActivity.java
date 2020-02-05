@@ -2,10 +2,11 @@ package de.pixart.messenger.ui;
 
 import android.content.Context;
 import android.content.Intent;
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
 import android.view.View;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import java.util.List;
 

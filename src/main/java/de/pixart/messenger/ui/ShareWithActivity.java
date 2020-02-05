@@ -21,21 +21,33 @@ import de.pixart.messenger.entities.Account;
 import de.pixart.messenger.entities.Conversation;
 import de.pixart.messenger.services.XmppConnectionService;
 import de.pixart.messenger.ui.adapter.ConversationAdapter;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class ShareWithActivity extends XmppActivity implements XmppConnectionService.OnConversationUpdate {
 
     private static final int REQUEST_STORAGE_PERMISSION = 0x733f32;
-    private static final int REQUEST_START_NEW_CONVERSATION = 0x0501;
     private Conversation mPendingConversation = null;
-    private Share share;
-    private ConversationAdapter mAdapter;
-    private List<Conversation> mConversations = new ArrayList<>();
 
     @Override
     public void onConversationUpdate() {
         refreshUi();
     }
+
+    private class Share {
+        ArrayList<Uri> uris = new ArrayList<>();
+        public String account;
+        public String contact;
+        public String text;
+        public boolean asQuote = false;
+    }
+
+    private Share share;
+
+    private static final int REQUEST_START_NEW_CONVERSATION = 0x0501;
+    private ConversationAdapter mAdapter;
+    private List<Conversation> mConversations = new ArrayList<>();
+
 
     protected void onActivityResult(int requestCode, int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -53,7 +65,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         if (grantResults.length > 0)
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 if (requestCode == REQUEST_STORAGE_PERMISSION) {
@@ -64,7 +76,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
                     }
                 }
             } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -175,18 +187,18 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         if (share.uris.size() > 0) {
             intent.setAction(Intent.ACTION_SEND_MULTIPLE);
             intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, share.uris);
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         } else if (share.text != null) {
             intent.setAction(ConversationsActivity.ACTION_VIEW_CONVERSATION);
             intent.putExtra(Intent.EXTRA_TEXT, share.text);
-            try {
-                startActivity(intent);
-            } catch (SecurityException e) {
-                Toast.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
-                return;
-            }
+            intent.putExtra(ConversationsActivity.EXTRA_AS_QUOTE, share.asQuote);
         }
-        startActivity(intent);
+        try {
+            startActivity(intent);
+        } catch (SecurityException e) {
+            ToastCompat.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
+            return;
+        }
         finish();
     }
 
@@ -194,13 +206,5 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         //TODO inject desired order to not resort on refresh
         xmppConnectionService.populateWithOrderedConversations(mConversations, this.share != null && this.share.uris.size() == 0, false);
         mAdapter.notifyDataSetChanged();
-    }
-
-    private class Share {
-        ArrayList<Uri> uris = new ArrayList<>();
-        public String account;
-        public String contact;
-        public String text;
-        public boolean asQuote = false;
     }
 }

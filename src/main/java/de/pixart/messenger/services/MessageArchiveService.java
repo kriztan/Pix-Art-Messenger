@@ -333,7 +333,7 @@ public class MessageArchiveService implements OnAdvancedStreamFeaturesLoaded {
         String count = set == null ? null : set.findChildContent("count");
         Element first = set == null ? null : set.findChild("first");
         Element relevant = query.getPagingOrder() == PagingOrder.NORMAL ? last : first;
-        boolean abort = (!query.isCatchup() && query.getTotalCount() >= Config.PAGE_SIZE) || query.getTotalCount() >= Config.MAM_MAX_MESSAGES;
+        boolean abort = (!query.isCatchup() && query.getTotalCount() >= Config.PAGE_SIZE); // || query.getTotalCount() >= Config.MAM_MAX_MESSAGES;
         if (query.getConversation() != null) {
             query.getConversation().setFirstMamReference(first == null ? null : first.getContent());
         }

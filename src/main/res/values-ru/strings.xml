@@ -8,7 +8,6 @@
     <string name="action_contact_details">Сведения о контакте</string>
     <string name="action_secure">Защищённый разговор</string>
     <string name="action_add_new_account">Добавить новый аккаунт</string>
-    <string name="action_edit_contact">Изменить имя</string>
     <string name="action_add_phone_book">Добавить в адресную книгу</string>
     <string name="action_delete_contact">Удалить из контактов</string>
     <string name="action_block_contact">Заблокировать контакт</string>
@@ -18,7 +17,7 @@
     <string name="title_activity_manage_accounts">Управление аккаунтами</string>
     <string name="title_activity_settings">Настройки</string>
     <string name="conference_details">Информация о конференции</string>
-    <string name="title_activity_contact_details">Сведения о контакте</string>
+    <string name="contact_details">Сведения о контакте</string>
     <string name="title_activity_sharewith">Поделиться с разговором</string>
     <string name="title_activity_start_conversation">Начать беседу</string>
     <string name="title_activity_choose_contact">Выбрать контакт</string>
@@ -307,12 +306,10 @@
     <string name="notification_restored_backup_title">Ваша резервная копия была восстановлена</string>
     <string name="notification_restored_backup_subtitle">Не забудьте активировать аккаунт.</string>
     <string name="choose_file">Выберите файл</string>
-    <string name="receiving_x_file">Получение %1$s (%2$d%% завершено)</string>
     <string name="download_x_file">Скачать %s</string>
     <string name="delete_x_file">Удалить %s</string>
     <string name="file">файл</string>
     <string name="open_x_file">Открыть %s</string>
-    <string name="sending_file">получение (%1$d%% завершено)</string>
     <string name="preparing_file">Подготовка файла к передаче</string>
     <string name="x_file_offered_for_download">%s предложен для загрузки</string>
     <string name="cancel_transmission">Закончить передачу</string>
@@ -713,7 +710,6 @@
     <string name="pref_scroll_to_bottom">Прокрутить вниз</string>
     <string name="no_camera_permission">Pix-Art Messenger нужен доступ к камере</string>
     <string name="edit_status_message_title">Редактировать статус</string>
-    <string name="edit_status_message">Редактировать статус</string>
     <string name="pref_automatically_delete_messages_description">Автоматически удалять с этого устройства сообщения старше заданного времени.</string>
     <string name="pref_automatically_delete_messages">Автоматическое удаление сообщений</string>
     <string name="disable_encryption">Отключить шифрование</string>
@@ -826,7 +822,6 @@
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
     <string name="pref_prefer_xmpp_avatar">Предпочитаемый XMPP аватар</string>
-    <string name="view_users">Просмотреть список участников</string>
     <string name="group_chat_members">Участники</string>
     <string name="message_deleted">Сообщение было удалено</string>
     <string name="channel_details">Сведения о канале</string>
@@ -883,7 +878,6 @@
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
     <string name="pref_use_internal_updater">Проверять наличие обновлений</string>
     <string name="attach">Прикрепить</string>
-    <string name="delete_locally">Удалить с этого устройства</string>
     <string name="delete_from_server">Удалить с сервера</string>
     <string name="go_online_to_delete">Удаляемый аккаунт должен быть активирован и в режиме онлайн.</string>
     <string name="discover_channels">Просмотреть каналы</string>
