@@ -26,6 +26,7 @@
     <string name="just_now">przed chwilą</string>
     <string name="minute_ago">minutę temu</string>
     <string name="minutes_ago">%d minut temu</string>
+    <string name="x_unread_conversations">%d nieprzeczytanych wiadomości</string>
     <string name="sending">wysyłanie...</string>
     <string name="message_decrypting">Odszyfrowywanie wiadomości. To zajmie tylko chwilę...</string>
     <string name="pgp_message">Wiadomość zaszyfrowana OpenPGP</string>
@@ -727,6 +728,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="pref_omemo_setting_summary_always">OMEMO będzie używane zawsze dla wiadomości jeden do jednego oraz prywatnych rozmów grupowych.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO będzie domyślnie włączone dla nowych rozmów.</string>
+    <string name="pref_omemo_setting_summary_always_off">OMEMO nigdy nie będzie używane.</string>
+    <string name="pref_theme_light">Jasny</string>
+    <string name="pref_theme_dark">Ciemny</string>
+    <string name="pref_theme_auto">Automatycznie</string>
     <string name="pref_theme_options_summary">Wybierz jasny albo ciemny motyw</string>
     <string name="pref_theme_options">Motyw</string>
     <string name="chooce_account">Wybierz konto</string>
@@ -736,6 +741,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="medium">Średni</string>
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
+    <string name="not_encrypted_for_this_device">Wiadomość nie została zaszyfrowana dla tego urządzenia.</string>
     <string name="search_messages">Znajdź Wiadomość</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Wyświetl komunikację</string>
@@ -748,6 +754,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_privacy">Polityka prywatności</string>
     <string name="show_termsofuse">Warunki użytkowania</string>
     <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
+    <string name="paste_as_quote">Wklej jako cytat</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Tylko właściciel może zmienić awatar</string>
     <string name="contact_name">Nazwa kontaktu</string>
@@ -776,6 +783,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="action_open">Otwórz</string>
     <string name="delete_file_dialog">Usuń plik</string>
     <string name="cancelled">anulowane</string>
+    <string name="already_drafting_message">Już piszesz wiadomość.</string>
     <string name="bad_key_for_encryption">Zły klucz do szyfrowania.</string>
     <string name="delete_message_dialog">Usuń wiadomość</string>
     <string name="delete_message_dialog_msg">Czy na pewno chcesz usunąć tą wiadomość?\n\n<b>Uwaga:</b> Nie spowoduje to usunięcia kopii tej wiadomości przechowywanej na innych urządzeniach lub serwerach.</string>
@@ -813,6 +821,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="channel_already_exists">Ten kanał już istnieje</string>
     <string name="joined_an_existing_channel">Dołączyłeś do istniejącego kanału</string>
     <string name="back">Wstecz</string>
+    <string name="channel_options">Konfiguracja kanału publicznego</string>
     <string name="allow_participants_to_edit_subject">Zezwól wszystkim na edytowanie tematu</string>
     <string name="anyone_can_edit_subject">Każdy może edytować temat.</string>
     <string name="owners_can_edit_subject">Właściciele mogą edytować temat.</string>
@@ -839,5 +848,27 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="mgmt_account_password_forgotten">Hasło zapomniane</string>
     <string name="password_forgotten_title">Hasło zapomniane</string>
     <string name="password_forgotten_text">Nie pamiętasz hasła do swojego konta? Spróbujemy teraz otworzyć stronę pomocy technicznej twojego operatora.</string>
+    <string name="pref_use_internal_updater">Poszukaj aktualizacji</string>
+    <string name="attach">Załącz</string>
+    <string name="delete_from_server">Usuń z serwera</string>
+    <string name="action_add_existing_account">Dodaj istniejące konto</string>
+    <string name="add_anway">Dodaj mimo to</string>
+    <string name="pref_show_own_accounts">Pokaż własne konta</string>
+    <string name="message_encryption">Szyfrowanie wiadomości</string>
     <string name="enable_message_encryption">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO. Jeżeli są problemy z działaniem szyfrowania, to można je wyłączyć przez wciśnięcie ikonki kłódki.</string>
+    <string name="event">Zdarzenie</string>
+    <string name="account_already_setup">To konto zostało już skonfigurowane</string>
+    <string name="x_has_written">%s napisał/a:</string>
+    <string name="i_have_written">Napisała(e)m:</string>
+    <string name="intro_desc_main">Dowiedz się więcej…</string>
+    <string name="welcome_header">Witamy w\nPix-Art Messenger</string>
+    <string name="intro_account">Twoje konto</string>
+    <string name="intro_start_chatting">Rozpocznij Czat</string>
+    <string name="intro_chat_details">Szczegóły czatu</string>
+    <string name="pref_show_intro">Ponownie pokaż intro</string>
+    <string name="no_results">Brak rezultatów</string>
+    <string name="file_transmission_cancelled">transfer plików anulowany</string>
+    <string name="jabber_network">jabber.network</string>
+    <string name="local_server">Serwer lokalny</string>
+    <string name="gp_disable">Wyłączyć</string>
 </resources>
