@@ -309,6 +309,7 @@
     <string name="notification_restored_backup_title">Deine Sicherung wurde wiederhergestellt</string>
     <string name="notification_restored_backup_subtitle">Vergiss nicht, das Profil zu aktivieren.</string>
     <string name="choose_file">Datei auswählen</string>
+    <string name="receiving_file">Empfange %1$s</string>
     <string name="download_x_file">%s herunterladen</string>
     <string name="delete_x_file">%s löschen</string>
     <string name="file">Datei</string>
@@ -844,6 +845,10 @@
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Bevorzuge den vom Benutzer gesetzten Avatar anstatt des Profilbildes in deinem Adressbuch</string>
     <string name="pref_prefer_xmpp_avatar">XMPP-Avatar bevorzugen</string>
+    <plurals name="view_users">
+        <item quantity="one">%1$d Teilnehmer anzeigen</item>
+        <item quantity="other">%1$d Teilnehmer anzeigen</item>
+    </plurals>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
@@ -985,4 +990,10 @@
     <string name="pref_theme_orange">Orange</string>
     <string name="pref_theme_color_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_color_options">Designfarbe</string>
+    <string name="pref_enable_otr_summary">Aktiviere OTR-Verschlüsselung für die Nachrichtenverschlüsselung</string>
+    <string name="pref_enable_otr">OTR-Verschlüsselung aktivieren</string>
+    <string name="magic_create_text_on_x">Du wurdest zu %1$s eingeladen. Wir erstellen nun mit dir gemeinsam ein Profil.\nWenn du %1$s als deinen Provider wählst, kannst du mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
+    <string name="account_status_regis_invalid_token">Falscher Registrierungsschlüssel</string>
+    <string name="magic_create_text_fixed">Du wurdest zu %1$s eingeladen. Ein Nutzername wurde für dich bereits voreingestellt. Wir erstellen nun mit dir gemeinsam ein Profil.\nDu kannst mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
+    <string name="your_server_invitation">Deine Server-Einladung</string>
 </resources>
