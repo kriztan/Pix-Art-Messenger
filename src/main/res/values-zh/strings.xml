@@ -485,11 +485,11 @@
     <string name="pref_picture_quality_summary">调整尺寸和压缩图片</string>
     <string name="pref_video_quality">视频画质</string>
     <string name="pref_video_quality_summary">调整尺寸和压缩视频</string>
-    <string name="video_very_low">极低（144p）</string>
+    <string name="video_very_low">非常低（144p）</string>
     <string name="video_low">低（360p）</string>
     <string name="video_mid">中（720p）</string>
     <string name="video_high">高（1080p）</string>
-    <string name="video_original">原文件(未压缩)</string>
+    <string name="video_original">原文件（未压缩）</string>
     <string name="always">总是</string>
     <string name="always_off">始终关闭</string>
     <string name="battery_optimizations_enabled">电池优化已启用</string>
@@ -512,7 +512,7 @@
     <string name="share_uri_with">与…共享URI</string>
     <string name="mgmt_account_reconnect">重新连接</string>
     <string name="welcome_text">…是一个免费且安全的XMPP/Jabber客户端。</string>
-    <string name="magic_create_text">此向导将为您创建一个账户。账户的初始密码是随机的，但您可以在下一个界面上修改密码。\n完成向导后，您就可以通过XMPP/Jabber和其他人聊天了。</string>
+    <string name="magic_create_text">此向导将为您创建一个账户。账户的初始密码是随机的，但您可以在下一个界面上修改密码。\n完成向导后，您就可以把您的 Jabber-ID 告诉别人，和别人聊天了。</string>
     <string name="your_full_jid_will_be">您的Jabber用户名为：%s</string>
     <string name="create_account">创建新帐号</string>
     <string name="welcome_existing_account">我已有账号</string>
@@ -644,10 +644,10 @@
     <string name="pref_use_tor">通过Tor连接</string>
     <string name="pref_use_tor_summary">通过Tor网络隧道连接所有连接。</string>
     <string name="pref_connection_options">连接选项</string>
-    <string name="image_low">低(720p)</string>
-    <string name="image_mid">标准(1920p)</string>
-    <string name="image_high">高 (3840p)</string>
-    <string name="image_original">原版(未压缩)</string>
+    <string name="image_low">低（720p）</string>
+    <string name="image_mid">中（1920p）</string>
+    <string name="image_high">高（3840p）</string>
+    <string name="image_original">原文件（未压缩）</string>
     <string name="last_seen_just_away">最近</string>
     <string name="send_message">发送消息</string>
     <string name="send_failed_resend">传送失败，重新发送…</string>
@@ -657,7 +657,7 @@
     <string name="session_failure">对话失败</string>
     <string name="sasl_downgrade">降级SASL机制</string>
     <string name="action_take_photo">拍照</string>
-    <string name="action_take_video">录视频</string>
+    <string name="action_take_video">录像</string>
     <string name="account_status_regis_web">服务器需要在网站上注册</string>
     <string name="application_found_to_open_website">没有找到打开网站的应用程序</string>
     <string name="open_website">打开网站</string>
@@ -755,7 +755,7 @@
     <string name="pref_start_search_summary">在“开始对话”屏幕上打开键盘并将光标放在搜索字段中</string>
     <string name="paste_as_quote">粘贴选中的内容</string>
     <string name="group_chat_avatar">群聊头像</string>
-    <string name="host_does_not_support_group_chat_avatars">主机不支持头像</string>
+    <string name="host_does_not_support_group_chat_avatars">服务器不支持群组头像</string>
     <string name="only_the_owner_can_change_group_chat_avatar">只有所有者才能更改头像</string>
     <string name="contact_name">联系人名称</string>
     <string name="nickname">群聊昵称</string>
@@ -835,6 +835,9 @@
     <string name="unable_to_decrypt_backup">无法解密备份。密码是否正确？</string>
     <string name="pref_prefer_xmpp_avatar_summary">首选用户的XMPP头像而不是通讯录中的头像</string>
     <string name="pref_prefer_xmpp_avatar">首选XMPP头像</string>
+    <plurals name="view_users">
+        <item quantity="other">查看 %1$d 名参与者</item>
+    </plurals>
     <string name="group_chat_members">参与者</string>
     <string name="message_deleted">消息已删除</string>
     <string name="channel_details">群聊详情</string>
@@ -889,7 +892,7 @@
     <string name="pref_show_mappreview_inside_summary">直接在聊天视图中显示地图预览，将建立与Pix-Art服务器的连接。</string>
     <string name="pref_show_mappreview_inside">显示位置预览</string>
     <string name="pref_use_internal_updater_summary">让应用每天查找更新</string>
-    <string name="pref_use_internal_updater">寻找更新</string>
+    <string name="pref_use_internal_updater">查找更新</string>
     <string name="attach">添加附件</string>
     <string name="delete_from_server">从服务器删除</string>
     <string name="go_online_to_delete">您需要登录想删除的账户。</string>
@@ -974,4 +977,6 @@ Pix-Arr Messenger</string>
     <string name="pref_theme_orange">橙色</string>
     <string name="pref_theme_color_options_summary">选择主题调色板</string>
     <string name="pref_theme_color_options">主题颜色</string>
+    <string name="pref_enable_otr_summary">为信息加密启用 OTR 加密</string>
+    <string name="pref_enable_otr">启用 OTR 加密</string>
 </resources>
