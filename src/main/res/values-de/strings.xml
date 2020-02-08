@@ -996,4 +996,6 @@
     <string name="account_status_regis_invalid_token">Falscher Registrierungsschlüssel</string>
     <string name="magic_create_text_fixed">Du wurdest zu %1$s eingeladen. Ein Nutzername wurde für dich bereits voreingestellt. Wir erstellen nun mit dir gemeinsam ein Profil.\nDu kannst mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
     <string name="your_server_invitation">Deine Server-Einladung</string>
+    <string name="pref_use_unicolored_chatbg_summary">Nutze einfarbigen Hintergrund in Chats.</string>
+    <string name="pref_use_unicolored_chatbg">Nutze einfarbigen Hintergrund</string>
 </resources>
