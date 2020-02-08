@@ -309,6 +309,7 @@
     <string name="notification_restored_backup_title">Il tuo backup è stato ripristinato</string>
     <string name="notification_restored_backup_subtitle">Non dimenticarti di abilitare l\'account.</string>
     <string name="choose_file">Scegli un file</string>
+    <string name="receiving_file">Ricevendo %1$s</string>
     <string name="download_x_file">Scarica %s</string>
     <string name="delete_x_file">Elimina %s</string>
     <string name="file">file</string>
@@ -844,6 +845,10 @@
     <string name="unable_to_decrypt_backup">Impossibile decriptare il backup. La password è corretta?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'avatar XMPP dell\'utente a quello della tua rubrica</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'avatar XMPP</string>
+    <plurals name="view_users">
+        <item quantity="one">Vedi %1$d Partecipante</item>
+        <item quantity="other">Vedi %1$d Partecipanti</item>
+    </plurals>
     <string name="group_chat_members">Partecipanti</string>
     <string name="message_deleted">Il messaggio è stato eliminato</string>
     <string name="channel_details">Dettagli canale</string>
@@ -985,4 +990,10 @@
     <string name="pref_theme_orange">Arancio</string>
     <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
     <string name="pref_theme_color_options">Colore del tema</string>
+    <string name="pref_enable_otr_summary">Abilita crittografia OTR per la criptazione del messaggio</string>
+    <string name="pref_enable_otr">Abilita crittografia OTR</string>
+    <string name="magic_create_text_on_x">Sei stato invitato su %1$s. Ti guideremo nel processo di creazione dell\'account.\nScegliendo %1$s come fornitore sarai in grado di comunicare con utenti di altri fornitori dando loro il tuo indirizzo XMPP completo.</string>
+    <string name="account_status_regis_invalid_token">Token di registrazione non valido</string>
+    <string name="magic_create_text_fixed">Sei stato invitato su %1$s. Ti è già stato riservato un nome utente. Ti guideremo nel processo di creazione dell\'account.\nSarai in grado di comunicare con utenti di altri fornitori dando loro il tuo indirizzo XMPP completo.</string>
+    <string name="your_server_invitation">Il tuo invito al server</string>
 </resources>
