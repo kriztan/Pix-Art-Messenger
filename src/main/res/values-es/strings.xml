@@ -996,4 +996,6 @@
     <string name="account_status_regis_invalid_token">Referencia de registro inválida</string>
     <string name="magic_create_text_fixed">Has sido invitado a %1$s. Ya se ha seleccionado un nombre de usuario para ti. Te guiaremos en el proceso de creación de cuenta.\nPodrás comunicarte con usuarios de otros proveedores proporcionándoles tu dirección XMPP completa.</string>
     <string name="your_server_invitation">Tu invitación al servidor</string>
+    <string name="pref_use_unicolored_chatbg_summary">Usar fondo sin color en conversaciones.</string>
+    <string name="pref_use_unicolored_chatbg">Usar fondo sin color</string>
 </resources>
