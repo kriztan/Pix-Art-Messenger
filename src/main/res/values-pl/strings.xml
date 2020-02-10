@@ -858,8 +858,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="enable_message_encryption">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO. Jeżeli są problemy z działaniem szyfrowania, to można je wyłączyć przez wciśnięcie ikonki kłódki.</string>
     <string name="event">Zdarzenie</string>
     <string name="account_already_setup">To konto zostało już skonfigurowane</string>
-    <string name="x_has_written">%s napisał/a:</string>
-    <string name="i_have_written">Napisała(e)m:</string>
     <string name="intro_desc_main">Dowiedz się więcej…</string>
     <string name="welcome_header">Witamy w\nPix-Art Messenger</string>
     <string name="intro_account">Twoje konto</string>
