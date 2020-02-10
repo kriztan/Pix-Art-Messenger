@@ -936,8 +936,6 @@
     <string name="please_enter_password">Per favore inserisci la password per questo account</string>
     <string name="unable_to_perform_this_action">Impossibile eseguire questa operazione</string>
     <string name="waiting_for_transfer">In attesa di trasferimento</string>
-    <string name="x_has_written">%s ha scritto:</string>
-    <string name="i_have_written">Io ho scritto:</string>
     <string name="your_status">Il tuo stato</string>
     <string name="pref_use_invidious">Rimpiazza i collegamenti a YouTube con Invidious</string>
     <string name="pref_use_invidious_summary">Invidious è un\'interfaccia alternativa di YouTube che rispetta la tua privacy</string>
