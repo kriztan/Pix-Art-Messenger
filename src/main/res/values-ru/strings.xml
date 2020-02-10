@@ -953,8 +953,6 @@
     <string name="please_enter_password">Пожалуйста, введите пароль для этого аккаунта</string>
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
     <string name="waiting_for_transfer">Ожидание передачи</string>
-    <string name="x_has_written">%s написал:</string>
-    <string name="i_have_written">Я написал:</string>
     <string name="your_status">Ваш статус</string>
     <string name="pref_use_invidious">Заменить ссылки YouTube на Invidious</string>
     <string name="pref_use_invidious_summary">Invidious - это дружественная к конфиденциальности альтернатива YouTube</string>
