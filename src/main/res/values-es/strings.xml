@@ -1000,4 +1000,6 @@
     <string name="pref_use_unicolored_chatbg">Usar fondo sin color</string>
     <string name="pref_alternative_voice_settings_summary">Si tienes problemas durante la grabación de voz, usa esta configuración para cambiar el codec.</string>
     <string name="pref_alternative_voice_settings">Método alternativo de grabación de voz</string>
+    <string name="pref_use_colored_muc_names_summary">Colorear apodos en grupos o en canales como fondos de avatar predeterminados.</string>
+    <string name="pref_use_colored_muc_names">Colorear apodos</string>
 </resources>
