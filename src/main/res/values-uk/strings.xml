@@ -948,6 +948,8 @@
     <string name="please_enter_password">Будь ласка, введіть пароль для цього облікового запису</string>
     <string name="unable_to_perform_this_action">Неможливо виконати цю дію</string>
     <string name="waiting_for_transfer">Очікуємо на передачу</string>
+    <string name="x_has_written">%s написав:</string>
+    <string name="i_have_written">Я написав:</string>
     <string name="your_status">Ваш стан</string>
     <string name="pref_use_invidious">Замінювати посилання Youtube посиланнями з Invidious</string>
     <string name="pref_use_invidious_summary">Invidious це альтернатива YouTube, яка чутлива до питань конфіденційності</string>
@@ -988,4 +990,8 @@
     <string name="pref_theme_orange">Помаранчева</string>
     <string name="pref_theme_color_options_summary">Оберіть палітру кольорів теми</string>
     <string name="pref_theme_color_options">Колір теми</string>
+    <string name="pref_alternative_voice_settings_summary">У разі проблем із записом голосу, будь ласка, змініть кодек у цих налаштуваннях.</string>
+    <string name="pref_alternative_voice_settings">Альтернативний метод запису голосу</string>
+    <string name="pref_use_colored_muc_names_summary">Розфарбовувати псевдо у групових чатах та каналах подібно до типового тла у аватарі.</string>
+    <string name="pref_use_colored_muc_names">Розфарбовувати псевдо</string>
 </resources>
