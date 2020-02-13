@@ -373,7 +373,7 @@ public class Resolver {
         private int priority;
         private Socket socket;
 
-        private String logID;
+        private String logID = "";
 
         static Result fromRecord(final SRV srv, final boolean directTls) {
             Result result = new Result();
