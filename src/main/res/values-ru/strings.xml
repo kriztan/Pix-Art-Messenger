@@ -20,7 +20,7 @@
     <string name="title_activity_sharewith">Поделиться с разговором</string>
     <string name="title_activity_start_conversation">Начать беседу</string>
     <string name="title_activity_choose_contact">Выбрать контакт</string>
-    <string name="title_activity_choose_contacts">Выберите контакты</string>
+    <string name="title_activity_choose_contacts">Выбрать контакты</string>
     <string name="title_activity_block_list">Черный список</string>
     <string name="just_now">только что</string>
     <string name="minute_ago">1 мин. назад</string>
@@ -120,7 +120,7 @@
     <string name="send_presence_updates">Посылать обновления присутствия</string>
     <string name="receive_presence_updates">Принимать обновления присутствия</string>
     <string name="ask_for_presence_updates">Запрашивать обновления присутствия</string>
-    <string name="attach_choose_picture">Выберите изображение</string>
+    <string name="attach_choose_picture">Выбрать изображение</string>
     <string name="preemptively_grant">Предоставить запрос на подписку</string>
     <string name="error_not_an_image_file">Выбранный файл не является изображением</string>
     <string name="error_compressing_image">Ошибка конвертации изображения</string>
@@ -307,7 +307,7 @@
     <string name="restoring_backup">Восстановление резервной копии</string>
     <string name="notification_restored_backup_title">Ваша резервная копия была восстановлена</string>
     <string name="notification_restored_backup_subtitle">Не забудьте активировать аккаунт.</string>
-    <string name="choose_file">Выберите файл</string>
+    <string name="choose_file">Выбрать файл</string>
     <string name="download_x_file">Скачать %s</string>
     <string name="delete_x_file">Удалить %s</string>
     <string name="file">файл</string>
@@ -597,7 +597,7 @@
     <string name="share_as_uri">Поделиться как XMPP URI</string>
     <string name="share_as_http">Поделиться HTTP ссылкой</string>
     <string name="blindly_trusted_omemo_keys">Слепо доверять ключам OMEMO</string>
-    <string name="pref_blind_trust_before_verification">Слепое Доверие Перед Проверкой</string>
+    <string name="pref_blind_trust_before_verification">Слепо доверять до проверки</string>
     <string name="pref_blind_trust_before_verification_summary">Автоматически доверять всем новым устройствам из контактов, которые ранее не были проверены.</string>
     <string name="not_trusted">Недоверенный</string>
     <string name="invalid_barcode">Неверный QR-код</string>
@@ -679,8 +679,8 @@
     <string name="retry_decryption">Повторить расшифровку</string>
     <string name="session_failure">Ошибка сессии</string>
     <string name="sasl_downgrade">Устаревший механизм SASL</string>
-    <string name="action_take_photo">cделать фото</string>
-    <string name="action_take_video">записать видео</string>
+    <string name="action_take_photo">Сделать фото</string>
+    <string name="action_take_video">Записать видео</string>
     <string name="account_status_regis_web">Сервер требует регистрации на веб-сайте</string>
     <string name="application_found_to_open_website">Не удалось найти подходящее приложение для открытия веб-сайта</string>
     <string name="open_website">Открыть веб-сайт</string>
