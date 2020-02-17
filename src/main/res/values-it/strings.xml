@@ -487,11 +487,11 @@
     <string name="pref_picture_quality_summary">Rimpicciolisci e comprimi immagini</string>
     <string name="pref_video_quality">Qualità video</string>
     <string name="pref_video_quality_summary">Rimpicciolisci e comprimi video</string>
-    <string name="video_very_low">molto bassa (144p)</string>
-    <string name="video_low">bassa (360p)</string>
-    <string name="video_mid">media (720p)</string>
-    <string name="video_high">alta (1080p)</string>
-    <string name="video_original">originale (non compresso)</string>
+    <string name="video_very_low">Molto bassa (144p)</string>
+    <string name="video_low">Bassa (360p)</string>
+    <string name="video_mid">Media (720p)</string>
+    <string name="video_high">Alta (1080p)</string>
+    <string name="video_original">Originale (non compresso)</string>
     <string name="always">Sempre</string>
     <string name="always_off">Sempre disattivato</string>
     <string name="battery_optimizations_enabled">Ottimizzazioni batteria abilitate</string>
@@ -652,10 +652,10 @@
     <string name="pref_use_tor">Connettiti via Tor</string>
     <string name="pref_use_tor_summary">Indirizza tutte le connessioni attraverso la rete Tor. Richiede Orbot</string>
     <string name="pref_connection_options">Connessione</string>
-    <string name="image_low">bassa (720p)</string>
-    <string name="image_mid">media (1920p)</string>
-    <string name="image_high">alta (3840p)</string>
-    <string name="image_original">originale (non compresso)</string>
+    <string name="image_low">Bassa (720p)</string>
+    <string name="image_mid">Media (1920p)</string>
+    <string name="image_high">Alta (3840p)</string>
+    <string name="image_original">Originale (non compressa)</string>
     <string name="last_seen_just_away">recentemente</string>
     <string name="send_message">Invia messaggio</string>
     <string name="send_failed_resend">invio fallito, reinvio…</string>
@@ -664,8 +664,8 @@
     <string name="retry_decryption">Ritenta decifrazione</string>
     <string name="session_failure">Sessione fallita</string>
     <string name="sasl_downgrade">Meccanismo SASL degradato</string>
-    <string name="action_take_photo">scatta foto</string>
-    <string name="action_take_video">registra video</string>
+    <string name="action_take_photo">Scatta foto</string>
+    <string name="action_take_video">Registra video</string>
     <string name="account_status_regis_web">Il server richiede la registrazione sul sito</string>
     <string name="application_found_to_open_website">Nessuna applicazione trovata per aprire il sito</string>
     <string name="open_website">Apri sito</string>
@@ -764,7 +764,7 @@
     <string name="pref_start_search_summary">Alla schermata \'Inizia Conversazione\' apri la tastiera e posiziona il cursore nel campo di ricerca</string>
     <string name="paste_as_quote">Incolla come citazione</string>
     <string name="group_chat_avatar">Immagine della conversazione di gruppo</string>
-    <string name="host_does_not_support_group_chat_avatars">L\'Host non supporta le immagini di profilo</string>
+    <string name="host_does_not_support_group_chat_avatars">L\'host non supporta immagini per le conversazioni di gruppo</string>
     <string name="only_the_owner_can_change_group_chat_avatar">Solo il proprietario può cambiare l\'immagine di profilo</string>
     <string name="contact_name">Nome del contatto</string>
     <string name="nickname">Soprannome per questa conversazione di gruppo</string>
@@ -909,7 +909,7 @@
     <string name="discover_channels">Scopri canali</string>
     <string name="search_channels">Cerca canali</string>
     <string name="channel_discovery_opt_in_title">Nota sulla riservatezza</string>
-    <string name="channel_discover_opt_in_message"><![CDATA[La ricerca dei canali utilizza un servizio di terze parti chiamato <a href="https://search.jabbercat.org">search.jabbercat.org</a>.<br><br>Utilizzando questa funzionalità trasmetterai il tuo indirizzo IP e i termini di ricerca a quel servizio. Si vedano le <a href="https://search.jabbercat.org/privacy">Note sulla Riservatezza</a> per maggiori informazioni.]]></string>
+    <string name="channel_discover_opt_in_message"><![CDATA[La ricerca dei canali utilizza un servizio di terze parti chiamato <a href="https://search.jabber.network">search.jabber.network</a>.<br><br>Utilizzando questa funzionalità trasmetterai il tuo indirizzo IP e i termini di ricerca a quel servizio. Guarda le <a href="https://search.jabber.network/privacy">Note sulla Riservatezza</a> per maggiori informazioni.]]></string>
     <string name="action_add_existing_account">Aggiungi account esistente</string>
     <string name="use_own_provider">Usa un tuo fornitore</string>
     <string name="this_looks_like_a_domain">Questo sembra un indirizzo di un dominio</string>
