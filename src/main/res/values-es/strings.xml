@@ -1003,4 +1003,5 @@
     <string name="pref_use_colored_muc_names">Colorear apodos</string>
     <string name="show_videos_images_only">Solo imágenes o vídeos</string>
     <string name="show_avatar">Mostrar avatar</string>
+    <string name="action_delete">Borrar</string>
 </resources>
