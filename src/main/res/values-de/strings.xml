@@ -1002,4 +1002,6 @@
     <string name="pref_use_colored_muc_names_summary">Namen in Gruppen-Chats oder Channels wie Standard-Avatar-Hintergründe einfärben.</string>
     <string name="pref_use_colored_muc_names">Farbige Namen</string>
     <string name="show_videos_images_only">Nur Bilder/Videos</string>
+    <string name="show_avatar">Profilbild anzeigen</string>
+    <string name="action_delete">Löschen</string>
 </resources>
