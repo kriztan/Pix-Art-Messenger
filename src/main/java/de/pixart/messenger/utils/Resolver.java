@@ -168,6 +168,7 @@ public class Resolver {
             final Result result = new Result();
             result.ip = InetAddress.getByName(domain);
             result.port = port;
+            result.authenticated = true;
             return result;
         } catch (UnknownHostException e) {
             e.printStackTrace();
@@ -202,18 +203,20 @@ public class Resolver {
             }));
             fallbackThreads.add(new Thread(() -> {
                 try {
-                    for (CNAME cname : resolveWithFallback(record.name, CNAME.class, result.isAuthenticData()).getAnswersOrEmptySet()) {
-                        final List<Result> ipv6s = resolveIp(record, cname.name, AAAA.class, result.isAuthenticData(), directTls);
+                    ResolverResult<CNAME> cnames = resolveWithFallback(record.name, CNAME.class, result.isAuthenticData());
+                    for (CNAME cname : cnames.getAnswersOrEmptySet()) {
+                        final List<Result> ipv6s = resolveIp(record, cname.name, AAAA.class, cnames.isAuthenticData(), directTls);
                         synchronized (fallbackResults) {
                             fallbackResults.addAll(ipv6s);
                         }
-                        final List<Result> ipv4s = resolveIp(record, cname.name, A.class, result.isAuthenticData(), directTls);
+                        final List<Result> ipv4s = resolveIp(record, cname.name, A.class, cnames.isAuthenticData(), directTls);
                         synchronized (results) {
                             fallbackResults.addAll(ipv4s);
                         }
                     }
+                    Log.d(Config.LOGTAG, Resolver.class.getSimpleName() + "cname in srv (agains RFC2782) - run slow fallback");
                 } catch (Throwable throwable) {
-                    Log.d(Config.LOGTAG, Resolver.class.getSimpleName() + "error resolving srv cname-fallback records", throwable);
+                    Log.i(Config.LOGTAG, Resolver.class.getSimpleName() + "error resolving srv cname-fallback records", throwable);
                 }
             }));
         }
