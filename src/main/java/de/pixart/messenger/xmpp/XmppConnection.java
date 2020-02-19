@@ -317,11 +317,17 @@ public class XmppConnection implements Runnable {
                 }
             } else {
                 final String domain = account.getJid().getDomain();
-                final Resolver.Result result;
+                final Resolver.Result storedBackupResult = mXmppConnectionService.databaseBackend.findResolverResult(domain);
+                Resolver.Result result = null;
                 final boolean hardcoded = extended && !account.getHostname().isEmpty();
                 if (hardcoded) {
                     result = Resolver.fromHardCoded(account.getHostname(), account.getPort());
-                } else {
+                } else if (storedBackupResult != null && !storedBackupResult.isOutdated()) {
+                    storedBackupResult.connect();
+                    result = storedBackupResult;
+                    Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": loaded backup resolver result from db: " + storedBackupResult);
+                }
+                if (result == null || result.getSocket() == null) {
                     result = Resolver.resolve(domain);
                 }
                 if (result == null) {
@@ -348,6 +354,9 @@ public class XmppConnection implements Runnable {
                     localSocket.setSoTimeout(Config.SOCKET_TIMEOUT * 1000);
                     if (startXmpp(localSocket)) {
                         localSocket.setSoTimeout(0); //reset to 0; once the connection is established we don’t want this
+                        if (!hardcoded && !result.equals(storedBackupResult)) {
+                            mXmppConnectionService.databaseBackend.saveResolverResult(domain, result);
+                        }
                         // successfully connected to server that speaks xmpp
                     } else {
                         FileBackend.close(localSocket);

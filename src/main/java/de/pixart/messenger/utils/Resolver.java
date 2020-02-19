@@ -1,6 +1,7 @@
 package de.pixart.messenger.utils;
 
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -361,12 +362,14 @@ public class Resolver {
     }
 
     public static class Result implements Comparable<Result>, Callable<Result> {
+        public static final String DOMAIN = "domain";
         public static final String IP = "ip";
         public static final String HOSTNAME = "hostname";
         public static final String PORT = "port";
         public static final String PRIORITY = "priority";
         public static final String DIRECT_TLS = "directTls";
         public static final String AUTHENTICATED = "authenticated";
+        public static final String TIME_REQUESTED = "time_requested";
 
         private InetAddress ip;
         private DNSName hostname;
@@ -374,12 +377,14 @@ public class Resolver {
         private boolean directTls = false;
         private boolean authenticated = false;
         private int priority;
+        private long timeRequested;
         private Socket socket;
 
         private String logID = "";
 
         static Result fromRecord(final SRV srv, final boolean directTls) {
             Result result = new Result();
+            result.timeRequested = System.currentTimeMillis();
             result.port = srv.port;
             result.hostname = srv.name;
             result.directTls = directTls;
@@ -389,6 +394,7 @@ public class Resolver {
 
         static Result createDefault(final DNSName hostname, final InetAddress ip, final int port) {
             Result result = new Result();
+            result.timeRequested = System.currentTimeMillis();
             result.port = port;
             result.hostname = hostname;
             result.ip = ip;
@@ -431,6 +437,10 @@ public class Resolver {
 
         public boolean isAuthenticated() {
             return authenticated;
+        }
+
+        public boolean isOutdated() {
+            return (System.currentTimeMillis() - timeRequested) > 300_000;
         }
 
         public Socket getSocket() {
@@ -509,6 +519,23 @@ public class Resolver {
             throw new Exception("Resolver.Result was not possible to connect - should be catched by executor");
         }
 
+        public static Result fromCursor(Cursor cursor) {
+            final Result result = new Result();
+            try {
+                result.ip = InetAddress.getByAddress(cursor.getBlob(cursor.getColumnIndex(IP)));
+            } catch (UnknownHostException e) {
+                result.ip = null;
+            }
+            final String hostname = cursor.getString(cursor.getColumnIndex(HOSTNAME));
+            result.hostname = hostname == null ? null : DNSName.from(hostname);
+            result.port = cursor.getInt(cursor.getColumnIndex(PORT));
+            result.directTls = cursor.getInt(cursor.getColumnIndex(DIRECT_TLS)) > 0;
+            result.authenticated = cursor.getInt(cursor.getColumnIndex(AUTHENTICATED)) > 0;
+            result.priority = cursor.getInt(cursor.getColumnIndex(PRIORITY));
+            result.timeRequested = cursor.getLong(cursor.getColumnIndex(TIME_REQUESTED));
+            return result;
+        }
+
         public ContentValues toContentValues() {
             final ContentValues contentValues = new ContentValues();
             contentValues.put(IP, ip == null ? null : ip.getAddress());
@@ -517,6 +544,7 @@ public class Resolver {
             contentValues.put(PRIORITY, priority);
             contentValues.put(DIRECT_TLS, directTls ? 1 : 0);
             contentValues.put(AUTHENTICATED, authenticated ? 1 : 0);
+            contentValues.put(TIME_REQUESTED, timeRequested);
             return contentValues;
         }
     }

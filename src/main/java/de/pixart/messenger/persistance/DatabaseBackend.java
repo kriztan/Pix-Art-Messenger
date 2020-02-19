@@ -53,6 +53,7 @@ import de.pixart.messenger.services.ShortcutService;
 import de.pixart.messenger.utils.CryptoHelper;
 import de.pixart.messenger.utils.CursorUtils;
 import de.pixart.messenger.utils.FtsUtils;
+import de.pixart.messenger.utils.Resolver;
 import de.pixart.messenger.xmpp.InvalidJid;
 import de.pixart.messenger.xmpp.mam.MamReference;
 import rocks.xmpp.addr.Jid;
@@ -60,7 +61,7 @@ import rocks.xmpp.addr.Jid;
 public class DatabaseBackend extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "history";
-    public static final int DATABASE_VERSION = 50; // = Conversations DATABASE_VERSION + 4
+    public static final int DATABASE_VERSION = 51; // = Conversations DATABASE_VERSION + 5
     private static DatabaseBackend instance = null;
 
     private static String CREATE_CONTATCS_STATEMENT = "create table "
@@ -146,6 +147,20 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             + SQLiteAxolotlStore.NAME + ", "
             + SQLiteAxolotlStore.FINGERPRINT
             + ") ON CONFLICT IGNORE"
+            + ");";
+
+    private static String RESOLVER_RESULTS_TABLENAME = "resolver_results";
+
+    private static String CREATE_RESOLVER_RESULTS_TABLE = "create table " + RESOLVER_RESULTS_TABLENAME + "("
+            + Resolver.Result.DOMAIN + " TEXT,"
+            + Resolver.Result.HOSTNAME + " TEXT,"
+            + Resolver.Result.IP + " BLOB,"
+            + Resolver.Result.PRIORITY + " NUMBER,"
+            + Resolver.Result.DIRECT_TLS + " NUMBER,"
+            + Resolver.Result.AUTHENTICATED + " NUMBER,"
+            + Resolver.Result.PORT + " NUMBER,"
+            + Resolver.Result.TIME_REQUESTED + " NUMBER,"
+            + "UNIQUE(" + Resolver.Result.DOMAIN + ") ON CONFLICT REPLACE"
             + ");";
 
     private static String CREATE_MESSAGE_TIME_INDEX = "create INDEX message_time_index ON " + Message.TABLENAME + "(" + Message.TIME_SENT + ")";
@@ -246,6 +261,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         db.execSQL(CREATE_SIGNED_PREKEYS_STATEMENT);
         db.execSQL(CREATE_IDENTITIES_STATEMENT);
         db.execSQL(CREATE_PRESENCE_TEMPLATES_STATEMENT);
+        db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
         db.execSQL(CREATE_MESSAGE_INDEX_TABLE);
         db.execSQL(CREATE_MESSAGE_INSERT_TRIGGER);
         db.execSQL(CREATE_MESSAGE_UPDATE_TRIGGER);
@@ -557,7 +573,11 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             Log.d(Config.LOGTAG, "deleted old edit information in " + diff + "ms");
         }
 
-        db.execSQL("DROP TABLE IF EXISTS resolver_results");
+        if (oldVersion < 51 && newVersion >= 51) {
+          // values in resolver_result are cache and not worth to store
+          db.execSQL("DROP TABLE IF EXISTS " + RESOLVER_RESULTS_TABLENAME);
+          db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
+        }
     }
 
     private boolean isColumnExisting(SQLiteDatabase db, String TableName, String ColumnName) {
@@ -691,6 +711,34 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         } catch (JSONException e) { /* result is still null */ }
 
         cursor.close();
+        return result;
+    }
+
+    public void saveResolverResult(String domain, Resolver.Result result) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = result.toContentValues();
+        contentValues.put(Resolver.Result.DOMAIN, domain);
+        db.insert(RESOLVER_RESULTS_TABLENAME, null, contentValues);
+    }
+
+    public synchronized Resolver.Result findResolverResult(String domain) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String where = Resolver.Result.DOMAIN + "=?";
+        String[] whereArgs = {domain};
+        final Cursor cursor = db.query(RESOLVER_RESULTS_TABLENAME, null, where, whereArgs, null, null, null);
+        Resolver.Result result = null;
+        if (cursor != null) {
+            try {
+                if (cursor.moveToFirst()) {
+                    result = Resolver.Result.fromCursor(cursor);
+                }
+            } catch (Exception e) {
+                Log.d(Config.LOGTAG, "unable to find cached resolver result in database " + e.getMessage());
+                return null;
+            } finally {
+                cursor.close();
+            }
+        }
         return result;
     }
 
