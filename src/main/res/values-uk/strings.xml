@@ -147,7 +147,7 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="action_account">Впорядкувати обліковий запис</string>
+    <string name="action_account">Редагувати обліковий запис</string>
     <string name="mgmt_account_delete">Видалити обліковий запис</string>
     <string name="mgmt_account_publish_avatar">Опублікувати іконку користувача</string>
     <string name="mgmt_account_publish_pgp">Опублікувати публічний ключ OpenPGP</string>
@@ -257,12 +257,12 @@
     <string name="title_pref_quiet_hours_end_time">Час завершення</string>
     <string name="title_pref_enable_quiet_hours">Задіяти години тиші</string>
     <string name="pref_quiet_hours_summary">Сповіщення не звучатимуть під час годин тиші</string>
-    <string name="pref_use_send_button_to_indicate_status">Кнопка відправки показує стан</string>
+    <string name="pref_use_send_button_to_indicate_status">Кнопка надсилання відображає стан</string>
     <string name="pref_use_colored_names_to_indicate_status">Колір імени означає стан контакту</string>
     <string name="pref_use_indicate_received">Просити повідомлення про доставку</string>
     <string name="pref_use_indicate_received_summary">Отримані повідомлення будуть позначені зеленою галочкою, якщо ця функція підтримується</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Змінювати колір кнопки відправлення на позначення статусу контакта</string>
-    <string name="pref_use_colored_names_to_indicate_status_summary">Показувати імена користувачів кольоровим текстом для позначки стану контакту</string>
+    <string name="pref_use_colored_names_to_indicate_status_summary">Позначати імена користувачів кольоровим текстом згідно зі станом контакту</string>
     <string name="pref_expert_options_other">Інше</string>
     <string name="pref_autojoin">Синхронізувати з закладками</string>
     <string name="pref_autojoin_summary">Приєднуватися до груп і полишати їх відповідно до опції автоматичного приєднання, вибраної в закладках.</string>
@@ -647,13 +647,13 @@
         <item quantity="other">%d місяців</item>
     </plurals>
     <string name="today">Сьогодні</string>
-    <string name="pref_use_max_brightness_summary">Зробити яскравішим під час перегляду відео чи зображень на повному екрані.</string>
+    <string name="pref_use_max_brightness_summary">Зробити екран яскравішим у повноекранному режимі під час перегляду відео чи зображень</string>
     <string name="pref_use_max_brightness">Найбільша яскравість</string>
     <string name="block_jabber_id">Заблокувати XMPP адресу</string>
     <string name="corresponding_conversations_closed">Відповідні розмови закрито.</string>
     <string name="contact_blocked_past_tense">Контакт заблоковано.</string>
     <string name="pref_notifications_from_strangers">Сповіщення від незнайомців</string>
-    <string name="pref_notifications_from_strangers_summary">Сповіщувати про повідомлення від незнайомців.</string>
+    <string name="pref_notifications_from_strangers_summary">Сповіщувати про повідомлення від незнайомців</string>
     <string name="received_message_from_stranger">Отримано повідомлення від незнайомця</string>
     <string name="contacts_are_typing">%s набирає повідомлення…</string>
     <string name="contact_is_typing">%s друкує…</string>
@@ -662,7 +662,7 @@
     <string name="presence_offline">Не в мережі</string>
     <string name="block_stranger">Заблокувати незнайомця</string>
     <string name="block_entire_domain">Заблокувати весь домен</string>
-    <string name="pref_use_auto_rotate_summary">Повертати зображення та відео у повноекранному режимі, щоб заповнити весь екран</string>
+    <string name="pref_use_auto_rotate_summary">Повертати зображення та відео у повноекранному режимі</string>
     <string name="pref_use_auto_rotate">Повертати зображення у повноекранному режимі</string>
     <string name="pref_use_tor">З\'єднання через Tor</string>
     <string name="pref_use_tor_summary">Тунелювати всі з\'єднання через мережу Tor. Потребує Orbot</string>
@@ -729,8 +729,8 @@
     <string name="mtm_cert_details">Деталі сертифіката:</string>
     <string name="once">Один раз</string>
     <string name="qr_code_scanner_needs_access_to_camera">Сканер QR кодів потребує доступу до камери</string>
-    <string name="pref_scroll_to_bottom_summary">Прокрутити до кінця після відправлення повідомлення</string>
-    <string name="pref_scroll_to_bottom">Прокрутити до кінця</string>
+    <string name="pref_scroll_to_bottom_summary">Прокрутити до кінця вниз після надсилання повідомлення</string>
+    <string name="pref_scroll_to_bottom">Прокрутити вниз до кінця</string>
     <string name="no_camera_permission">Програма потребує доступу до камери</string>
     <string name="edit_status_message_title">Редагувати повідомлення стану</string>
     <string name="pref_automatically_delete_messages_description">Автоматично видаляти повідомлення з цього пристрою, старіші за вказаний часовий проміжок.</string>
@@ -756,7 +756,7 @@
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Вибрати обліковий запис</string>
     <string name="pref_font_size">Розмір шрифту</string>
-    <string name="pref_font_size_summary">Відносний розмір шрифту в програмі.</string>
+    <string name="pref_font_size_summary">Динамічний розмір шрифту у застосунку</string>
     <string name="small">Малий</string>
     <string name="medium">Середній</string>
     <string name="large">Велики</string>
@@ -776,7 +776,7 @@
     <string name="show_termsofuse">Умови використання</string>
     <string name="p1_s3_filetransfer">Доступ до файлів по HTTP для S3</string>
     <string name="pref_start_search">Безпосередній пошук</string>
-    <string name="pref_start_search_summary">На екрані початку розмови відкривати клавіатуру й розміщувати курсор в поле пошуку</string>
+    <string name="pref_start_search_summary">На екрані початку розмови показувати клавіатуру та розміщувати курсор у полі пошуку</string>
     <string name="paste_as_quote">Вставити як цитату</string>
     <string name="group_chat_avatar">Іконка групи</string>
     <string name="host_does_not_support_group_chat_avatars">Сервер не підтримує іконки для груп</string>
@@ -793,9 +793,9 @@
     <string name="no_application_found_to_view_contact">Не знайдено програми, щоб переглянути контакт</string>
     <string name="welcome_server_info">Рекомендуємо використовувати blabber.im як постачальника послуг XMPP. </string>
     <string name="no_location_permission">Месенджер Pix-Art потребує доступу до служб геолокації</string>
-    <string name="pref_show_record_voice_btn_summary">Показувати кнопку голосового запису в чаті яко швидку дію</string>
-    <string name="pref_show_record_voice_btn">Показувати кнопку голосового запису</string>
-    <string name="pref_use_quick_share_attachment_choice_summary">Замінити кнопку надсилання під час набору функцією вибору долучника. В іншому випадку показувати швидкі дії, які можна окремо налаштувати подалі.</string>
+    <string name="pref_show_record_voice_btn_summary">Показувати у чаті кнопку запису голосу як швидку дію</string>
+    <string name="pref_show_record_voice_btn">Показувати кнопку запису голосу</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Замінювати кнопку надсилання під час набору функцією вибору вкладення. В іншому випадку показувати швидкі дії, які можна окремо налаштувати</string>
     <string name="pref_quick_share_attachment_choice">Вибрати долучник</string>
     <string name="unable_to_save_recording">Не можу зберегти запис</string>
     <string name="foreground_service_channel_name">Процес на передньому плані</string>
@@ -808,7 +808,7 @@
     <string name="silent_messages_channel_name">Тихі повідомлення</string>
     <string name="silent_messages_channel_description">Ця група сповіщень показує сповіщення, які не повинні супроводжуватися звуком. Наприклад, у разі активності на іншому пристрої (період очікування).</string>
     <string name="pref_more_notification_settings">Налаштування сповіщень</string>
-    <string name="pref_more_notification_settings_summary">Важливість, звук, вібрація</string>
+    <string name="pref_more_notification_settings_summary">Налаштування пріоритетів, звуку та режиму вібрації для сповіщень</string>
     <string name="video_compression_channel_name">Стиснення відео</string>
     <string name="backup_channel_name">Створити або відновити резервну копію</string>
     <string name="app_update_channel_name">Оновлення застосунку</string>
@@ -927,7 +927,7 @@
     <string name="add_anway">Додати все одно</string>
     <string name="this_looks_like_channel">Це схоже на адресу каналу</string>
     <string name="no_backup_available">Відсутні резервні копії</string>
-    <string name="pref_show_own_accounts_summary">Показувати власні облікові записи у чатах та контактах, якщо у вас кілька обліковок.</string>
+    <string name="pref_show_own_accounts_summary">Показувати власні облікові записи у чатах та контактах, якщо у вас кілька обліковок</string>
     <string name="pref_show_own_accounts">Показати мої облікові записи</string>
     <string name="message_encryption">Шифрування повідомлень</string>
     <string name="enable_message_encryption">Цей чат не зашифрований. З міркувань безпеки вам потрібно увімкнути шифрування повідомлень, бажано OMEMO. Якщо щось не працюватиме у вас, ви завжди зможете вимкнути шифрування, для цього натисніть на значок \"замочка\".</string>
@@ -964,7 +964,7 @@
     <string name="intro_chat_details">Деталі чату</string>
     <string name="intro_desc_chat_details">Бажаєте переглянути деталі чату? Просто натисніть на назву чату у верхньому рядку меню.</string>
     <string name="intro_highlight_user">Підсвітити користувача</string>
-    <string name="pref_show_intro_summary">Показати екрани заставки повторно</string>
+    <string name="pref_show_intro_summary">Показувати заставку повторно</string>
     <string name="pref_show_intro">Показати заставку повторно</string>
     <string name="show_intro_again">Заставку буде показано знову</string>
     <string name="show_intro_again_failed">Не вдалося перевстановити заставку екрану. Спробуйте ще раз…</string>
@@ -983,15 +983,18 @@
     <string name="gp_medium">Середній</string>
     <string name="gp_long">Довгий</string>
     <string name="pref_notification_grace_period">Час до блокування</string>
+    <string name="pref_notification_grace_period_summary">Час надсилання сповіщень не буде враховуватися у разі активності користувача на іншому пристрої</string>
     <string name="ask_for_writeaccess">Будь ласка, надішліть запит на запис</string>
     <string name="pref_theme_blue">Синя</string>
     <string name="pref_theme_orange">Помаранчева</string>
     <string name="pref_theme_color_options_summary">Оберіть палітру кольорів теми</string>
     <string name="pref_theme_color_options">Колір теми</string>
+    <string name="pref_use_unicolored_chatbg_summary">Використовувати однотипний колір тла у всіх чатах</string>
+    <string name="pref_use_unicolored_chatbg">Однотипний колір тла</string>
     <string name="pref_alternative_voice_settings_summary">У разі проблем із записом голосу, будь ласка, змініть кодек у цих налаштуваннях.</string>
     <string name="pref_alternative_voice_settings">Альтернативний метод запису голосу</string>
-    <string name="pref_use_colored_muc_names_summary">Розфарбовувати псевдо у групових чатах та каналах подібно до типового тла у аватарі.</string>
-    <string name="pref_use_colored_muc_names">Розфарбовувати псевдо</string>
+    <string name="pref_use_colored_muc_names_summary">Розфарбовувати псевдонім у групових чатах та каналах згідно з типовим кольором тла іконки користувача</string>
+    <string name="pref_use_colored_muc_names">Кольоровий шрифт псевдонімів</string>
     <string name="show_videos_images_only">Лише зображення або відео</string>
     <string name="please_enable_an_account">Будь ласка, активуйте обліковий запис</string>
 </resources>
