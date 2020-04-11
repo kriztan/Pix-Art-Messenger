@@ -747,6 +747,7 @@
     <string name="pref_omemo_setting_summary_always">OMEMO завжди використовуватиметься для розмов віч-на-віч і в приватних групах.</string>
     <string name="pref_omemo_setting_summary_default_on">За замовчуванням для нових розмов використовуватиметься OMEMO</string>
     <string name="pref_omemo_setting_summary_default_off">OMEMO потрібно буде включати окремо для кожної нової розмови.</string>
+    <string name="pref_omemo_setting_summary_always_off">OMEMO не буде використовуватися подалі.</string>
     <string name="default_on">За замовчування ввімкнено</string>
     <string name="default_off">За замовчуванням вимкнено</string>
     <string name="pref_theme_light">Світла</string>
