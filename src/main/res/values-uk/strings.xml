@@ -860,6 +860,12 @@
     <string name="unable_to_decrypt_backup">Не можу розшифрувати резервну копію. Пароль правильний?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Використовувати піктограму користувача XMPP замість піктограми з адресної книги</string>
     <string name="pref_prefer_xmpp_avatar">Віддавати перевагу піктограмі XMPP</string>
+    <plurals name="view_users">
+        <item quantity="one">Перегляд %1$d користувача</item>
+        <item quantity="few">Перегляд %1$d користувачів</item>
+        <item quantity="many">Перегляд %1$d користувачів</item>
+        <item quantity="other">Перегляд %1$d користувачів</item>
+    </plurals>
     <string name="group_chat_members">Учасники</string>
     <string name="message_deleted">Повідомлення вилучено</string>
     <string name="channel_details">Деталі каналу</string>
