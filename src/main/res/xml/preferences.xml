@@ -225,6 +225,10 @@
             android:ringtoneType="ringtone"
             android:summary="@string/pref_call_ringtone_summary"
             android:title="@string/pref_ringtone" />
+    </PreferenceScreen>
+    <!--Attachments-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_attachments"
         android:key="attachments"
         android:title="@string/pref_attachments">
         <intent
