@@ -144,18 +144,19 @@ public class Message extends AbstractEntity implements AvatarService.Avatarable 
                 TYPE_TEXT,
                 false,
                 null,
-				null,
-				null,
-				null,
-				true,
-				null,
-				false,
-				null,
-				null,
-				false,
-				false,
-				null);
-	}
+                null,
+                null,
+                null,
+                true,
+                false,
+                null,
+                false,
+                null,
+                null,
+                false,
+                false,
+                null);
+    }
 
 	public Message(Conversation conversation, int status, int type, final String remoteMsgId) {
 		this(conversation, java.util.UUID.randomUUID().toString(),

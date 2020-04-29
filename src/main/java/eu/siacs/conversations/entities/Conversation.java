@@ -70,10 +70,6 @@ public class Conversation extends AbstractEntity implements Blockable, Comparabl
     private static final String ATTRIBUTE_CRYPTO_TARGETS = "crypto_targets";
     private static final String ATTRIBUTE_NEXT_ENCRYPTION = "next_encryption";
     private static final String ATTRIBUTE_CORRECTING_MESSAGE = "correcting_message";
-    static final String ATTRIBUTE_MEMBERS_ONLY = "members_only";
-    static final String ATTRIBUTE_MODERATED = "moderated";
-    static final String ATTRIBUTE_NON_ANONYMOUS = "non_anonymous";
-    public static final String ATTRIBUTE_FORMERLY_PRIVATE_NON_ANONYMOUS = "formerly_private_non_anonymous";
     protected final ArrayList<Message> messages = new ArrayList<>();
     public AtomicBoolean messagesLoaded = new AtomicBoolean(true);
     protected Account account = null;
@@ -148,7 +144,7 @@ public class Conversation extends AbstractEntity implements Blockable, Comparabl
         return null;
     }
 
-    private static boolean suitableForOmemoByDefault(final Conversation conversation) {
+    public static boolean suitableForOmemoByDefault(final Conversation conversation) {
         if (conversation.getJid().asBareJid().equals(Config.BUG_REPORTS)) {
             return false;
         }
@@ -593,17 +589,6 @@ public class Conversation extends AbstractEntity implements Blockable, Comparabl
         return unread;
     }
 
-    public static Message getLatestMarkableMessage(final List<Message> messages, boolean isPrivateAndNonAnonymousMuc) {
-        for (int i = messages.size() - 1; i >= 0; --i) {
-            final Message message = messages.get(i);
-            if (message.getStatus() <= Message.STATUS_RECEIVED
-                    && (message.markable || isPrivateAndNonAnonymousMuc)
-                    && !message.isPrivateMessage()) {
-                return message;
-            }
-        }
-        return null;
-    }
     public Message getLatestMessage() {
         synchronized (this.messages) {
             if (this.messages.size() == 0) {
@@ -868,21 +853,6 @@ public class Conversation extends AbstractEntity implements Blockable, Comparabl
         }
     }
 
-
-    public static boolean suitableForOmemoByDefault(final Conversation conversation) {
-        if (conversation.getJid().asBareJid().equals(Config.BUG_REPORTS)) {
-            return false;
-        }
-        if (conversation.getContact().isOwnServer()) {
-            return false;
-        }
-        final String contact = conversation.getJid().getDomain();
-        final String account = conversation.getAccount().getServer();
-        if (Config.OMEMO_EXCEPTIONS.CONTACT_DOMAINS.contains(contact) || Config.OMEMO_EXCEPTIONS.ACCOUNT_DOMAINS.contains(account)) {
-            return false;
-        }
-        return conversation.isSingleOrPrivateAndNonAnonymous() || conversation.getBooleanAttribute(ATTRIBUTE_FORMERLY_PRIVATE_NON_ANONYMOUS, false);
-    }
     public boolean setNextEncryption(int encryption) {
         return this.setAttribute(ATTRIBUTE_NEXT_ENCRYPTION, encryption);
     }

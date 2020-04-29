@@ -117,14 +117,6 @@ public class NotificationService {
         return Pattern.compile("(?<=(^|\\s))" + Pattern.quote(nick) + "(?=\\s|$|\\p{Punct})");
     }
 
-    private static boolean isImageMessage(Message message) {
-        return message.getType() != Message.TYPE_TEXT
-                && message.getTransferable() == null
-                && !message.isDeleted()
-                && message.getEncryption() != Message.ENCRYPTION_PGP
-                && message.getFileParams().height > 0;
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.O)
     void initializeChannels() {
         final Context c = mXmppConnectionService;
@@ -1191,8 +1183,6 @@ public class NotificationService {
         notify(FOREGROUND_NOTIFICATION_ID, notification);
     }
 
-    }
-
     Notification AppUpdateNotification(PendingIntent intent, String version, String filesize) {
         Notification.Builder mBuilder = new Notification.Builder(mXmppConnectionService);
         mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.app_name));
@@ -1208,6 +1198,8 @@ public class NotificationService {
 
     public void AppUpdateServiceNotification(Notification notification) {
         notify(FOREGROUND_NOTIFICATION_ID, notification);
+    }
+
     private void notify(String tag, int id, Notification notification) {
         final NotificationManagerCompat notificationManager = NotificationManagerCompat.from(mXmppConnectionService);
         try {

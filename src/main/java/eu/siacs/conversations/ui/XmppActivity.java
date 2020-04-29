@@ -80,6 +80,7 @@ import eu.siacs.conversations.entities.Presences;
 import eu.siacs.conversations.services.AvatarService;
 import eu.siacs.conversations.services.BarcodeProvider;
 import eu.siacs.conversations.services.EmojiService;
+import eu.siacs.conversations.services.QuickConversationsService;
 import eu.siacs.conversations.services.UpdateService;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.services.XmppConnectionService.XmppConnectionBinder;
@@ -97,8 +98,8 @@ import me.drakeet.support.toast.ToastCompat;
 import pl.droidsonroids.gif.GifDrawable;
 import rocks.xmpp.addr.Jid;
 
-import static eu.siacs.conversations.ui.SettingsActivity.USE_BUNDLED_EMOJIS;
 import static eu.siacs.conversations.ui.SettingsActivity.ENABLE_OTR_ENCRYPTION;
+import static eu.siacs.conversations.ui.SettingsActivity.USE_BUNDLED_EMOJIS;
 import static eu.siacs.conversations.ui.SettingsActivity.USE_INTERNAL_UPDATER;
 
 public abstract class XmppActivity extends ActionBarActivity {
@@ -126,6 +127,7 @@ public abstract class XmppActivity extends ActionBarActivity {
 
     protected int mTheme;
     protected boolean mUsingEnterKey = false;
+    protected boolean mUseTor = false;
 
     protected Toast mToast;
     protected Runnable onOpenPGPKeyPublished = () -> ToastCompat.makeText(XmppActivity.this, R.string.openpgp_has_been_published, Toast.LENGTH_SHORT).show();

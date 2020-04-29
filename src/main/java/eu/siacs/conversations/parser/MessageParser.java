@@ -403,6 +403,11 @@ public class MessageParser extends AbstractParser implements OnMessagePacketRece
             final Jid from = packet.getFrom();
             final String id = packet.getId();
             if (from != null && id != null) {
+                final Message message = mXmppConnectionService.markMessage(account,
+                        from.asBareJid(),
+                        packet.getId(),
+                        Message.STATUS_SEND_FAILED,
+                        extractErrorMessage(packet));
                 if (id.startsWith(JingleRtpConnection.JINGLE_MESSAGE_PROPOSE_ID_PREFIX)) {
                     final String sessionId = id.substring(JingleRtpConnection.JINGLE_MESSAGE_PROPOSE_ID_PREFIX.length());
                     mXmppConnectionService.getJingleConnectionManager()

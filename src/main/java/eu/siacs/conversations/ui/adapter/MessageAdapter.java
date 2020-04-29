@@ -1160,7 +1160,7 @@ public class MessageAdapter extends ArrayAdapter<Message> implements CopyTextVie
             }
             viewHolder.indicatorReceived.setImageResource(RtpSessionStatus.getDrawable(received,rtpSessionStatus.successful,isDarkTheme));
             viewHolder.indicatorReceived.setAlpha(isDarkTheme ? 0.7f : 0.57f);
-            viewHolder.message_box.setBackgroundResource(isDarkTheme ? R.drawable.date_bubble_grey : R.drawable.date_bubble_white);
+            viewHolder.message_box.setBackgroundResource(darkBackground ? R.drawable.date_bubble_dark : R.drawable.date_bubble);
             return view;
         } else if (type == STATUS) {
             if ("LOAD_MORE".equals(message.getBody())) {

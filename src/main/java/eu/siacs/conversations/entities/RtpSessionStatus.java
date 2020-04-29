@@ -1,8 +1,7 @@
 package eu.siacs.conversations.entities;
 
-import android.support.annotation.DrawableRes;
-
 import com.google.common.base.Strings;
+import androidx.annotation.DrawableRes;
 
 import eu.siacs.conversations.R;
 

@@ -34,13 +34,13 @@
                 android:visibility="gone" />
         </LinearLayout>
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="visible">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -60,7 +60,7 @@
                 android:textColor="@color/white"
                 tools:text="Juliet Capulet" />
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -123,7 +123,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="24dp">
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/reject_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                 app:maxImageSize="36dp"
                 tools:visibility="visible" />
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/in_call_action_left"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                 app:fabSize="mini"
                 app:tint="?attr/icon_tint" />
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/end_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                 app:fabCustomSize="72dp"
                 app:maxImageSize="36dp" />
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/in_call_action_right"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                 app:tint="?attr/icon_tint" />
 
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/accept_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
                 android:layout_margin="16dp"
                 android:src="@drawable/ic_call_white_48dp"
                 android:visibility="gone"
-                app:backgroundTint="@color/green700"
+                app:backgroundTint="@color/green500"
                 app:elevation="4dp"
                 app:fabCustomSize="72dp"
                 app:maxImageSize="36dp"

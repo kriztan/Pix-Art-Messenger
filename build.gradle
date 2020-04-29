@@ -2,11 +2,11 @@
 // sub-projects/modules.
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.android.tools.build:gradle:3.6.2'
     }
 }
 
@@ -90,11 +90,13 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
     implementation 'com.google.guava:guava:28.2-android'
     implementation 'com.github.AppIntro:AppIntro:5.1.0'
+    implementation fileTree(include: ['libwebrtc-m81.aar'], dir: 'libs')
 }
 
 ext {
     travisBuild = System.getenv("TRAVIS") == "true"
     preDexEnabled = System.getProperty("pre-dex", "true")
+    abiCodes = ['armeabi-v7a': 1, 'x86': 2, 'x86_64': 3, 'arm64-v8a': 4]
 }
 
 android {
@@ -122,6 +124,13 @@ android {
         buildConfigField("String", "UPDATE_URL", '"https://xmpp.pix-art.de/Pix-Art_Messenger/update/"')
         resValue "string", "applicationId", applicationId
         resValue "string", "app_name", "Pix-Art Messenger"
+    }
+
+    splits {
+        abi {
+            universalApk true
+            enable true
+        }
     }
 
     dataBinding {

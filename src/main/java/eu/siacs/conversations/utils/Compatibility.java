@@ -35,8 +35,8 @@ public class Compatibility {
             "notification_headsup",
             "vibrate_on_notification",
             "call_ringtone"
-    private static final List<String> UNUSED_SETTINGS_PRE_TWENTYSIX = Collections.singletonList("more_notification_settings");
     );
+    private static final List<String> UNUSED_SETTINGS_PRE_TWENTYSIX = Collections.singletonList("more_notification_settings");
     private static final List<String> UNUESD_SETTINGS_PRE_TWENTYSIX = Arrays.asList(
             "message_notification_settings",
             "call_notification_settings"

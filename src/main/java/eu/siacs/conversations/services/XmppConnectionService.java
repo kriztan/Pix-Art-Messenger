@@ -40,11 +40,11 @@ import android.util.LruCache;
 import android.util.Pair;
 
 import androidx.annotation.BoolRes;
-import com.google.common.base.Objects;
 import androidx.annotation.IntegerRes;
 import androidx.core.app.RemoteInput;
 import androidx.core.content.ContextCompat;
 
+import com.google.common.base.Objects;
 import com.google.common.base.Strings;
 
 import net.java.otr4j.OtrException;
@@ -158,8 +158,8 @@ import eu.siacs.conversations.xmpp.Patches;
 import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.forms.Data;
-import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jid.OtrJidHelper;
+import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jingle.JingleConnectionManager;
 import eu.siacs.conversations.xmpp.jingle.Media;
 import eu.siacs.conversations.xmpp.jingle.RtpEndUserState;
@@ -1672,7 +1672,7 @@ public class XmppConnectionService extends Service {
                             break;
                         }
                         if (message.needsUploading()) {
-                            mJingleConnectionManager.createNewConnection(message);
+                            mJingleConnectionManager.startJingleFileTransfer(message);
                         } else {
                             packet = mMessageGenerator.generateOtrChat(message);
                         }
@@ -3656,7 +3656,7 @@ public class XmppConnectionService extends Service {
                     return;
                 }
                 if (message.needsUploading()) {
-                    mJingleConnectionManager.createNewConnection(message);
+                    mJingleConnectionManager.startJingleFileTransfer(message);
                 } else {
                     MessagePacket outPacket = mMessageGenerator.generateOtrChat(message);
                     if (outPacket != null) {

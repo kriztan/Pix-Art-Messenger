@@ -52,8 +52,6 @@ import android.widget.ListView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
-import com.google.common.base.Optional;
-
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -66,6 +64,8 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.inputmethod.InputConnectionCompat;
 import androidx.core.view.inputmethod.InputContentInfoCompat;
 import androidx.databinding.DataBindingUtil;
+
+import com.google.common.base.Optional;
 
 import net.java.otr4j.session.SessionStatus;
 
@@ -99,7 +99,6 @@ import eu.siacs.conversations.entities.Transferable;
 import eu.siacs.conversations.entities.TransferablePlaceholder;
 import eu.siacs.conversations.http.HttpDownloadConnection;
 import eu.siacs.conversations.persistance.FileBackend;
-import eu.siacs.conversations.services.AppRTCAudioManager;
 import eu.siacs.conversations.services.MessageArchiveService;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.adapter.MediaPreviewAdapter;
@@ -127,7 +126,6 @@ import eu.siacs.conversations.utils.MenuDoubleTabUtil;
 import eu.siacs.conversations.utils.MessageUtils;
 import eu.siacs.conversations.utils.NickValidityChecker;
 import eu.siacs.conversations.utils.Patterns;
-import eu.siacs.conversations.utils.PermissionUtils;
 import eu.siacs.conversations.utils.QuickLoader;
 import eu.siacs.conversations.utils.StylingHelper;
 import eu.siacs.conversations.utils.UIHelper;
@@ -135,11 +133,11 @@ import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jingle.JingleConnectionManager;
-import me.drakeet.support.toast.ToastCompat;
 import eu.siacs.conversations.xmpp.jingle.JingleFileTransferConnection;
 import eu.siacs.conversations.xmpp.jingle.Media;
 import eu.siacs.conversations.xmpp.jingle.OngoingRtpSession;
 import eu.siacs.conversations.xmpp.jingle.RtpCapability;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 import static eu.siacs.conversations.entities.Message.DELETED_MESSAGE_BODY;
@@ -1159,18 +1157,23 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     menuCall.setVisible(rtpCapability != RtpCapability.Capability.NONE);
                     menuVideoCall.setVisible(rtpCapability == RtpCapability.Capability.VIDEO);
                 }
-		menuInviteContact.setVisible(false);
-                menuArchiveChat.setTitle(R.string.action_end_conversation);          
+                menuInviteContact.setVisible(false);
+                menuArchiveChat.setTitle(R.string.action_end_conversation);
+            }
+            Fragment secondaryFragment = activity.getFragmentManager().findFragmentById(R.id.secondary_fragment);
+            if (secondaryFragment instanceof ConversationFragment) {
+                if (conversation.getMode() == Conversation.MODE_MULTI) {
+                    menuGroupDetails.setTitle(conversation.getMucOptions().isPrivateAndNonAnonymous() ? R.string.action_group_details : R.string.channel_details);
+                    menuGroupDetails.setVisible(true);
+                    menuContactDetails.setVisible(false);
+                } else {
+                    menuGroupDetails.setVisible(false);
+                    menuContactDetails.setVisible(!this.conversation.withSelf());
+                }
             } else {
                 menuGroupDetails.setVisible(false);
                 menuContactDetails.setVisible(false);
             }
-            menuMediaBrowser.setVisible(true);
-            menuNeedHelp.setVisible(true);
-            menuSearchUpdates.setVisible(false);
-            ConversationMenuConfigurator.configureAttachmentMenu(conversation, menu, activity.xmppConnectionService.getAttachmentChoicePreference(), hasAttachments);
-            ConversationMenuConfigurator.configureEncryptionMenu(conversation, menu, activity);
-        } else {
             menuNeedHelp.setVisible(false);
             menuSearchUpdates.setVisible(true);
             menuInviteContact.setVisible(false);

@@ -66,9 +66,7 @@ public abstract class AbstractGenerator {
             Namespace.JINGLE_APPS_RTP,
             Namespace.JINGLE_APPS_DTLS,
             Namespace.JINGLE_MESSAGE
-    };    
-
-    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US);
+    };
 
     protected XmppConnectionService mXmppConnectionService;
     private String mVersion = null;
@@ -122,10 +120,6 @@ public abstract class AbstractGenerator {
         return Base64.encodeToString(sha1, Base64.NO_WRAP);
     }
 
-    public static String getTimestamp(long time) {
-        DATE_FORMAT.setTimeZone(TimeZone.getTimeZone("UTC"));
-        return DATE_FORMAT.format(time);
-    }
     public List<String> getFeatures(Account account) {
         final XmppConnection connection = account.getXmppConnection();
         final ArrayList<String> features = new ArrayList<>(Arrays.asList(FEATURES));
