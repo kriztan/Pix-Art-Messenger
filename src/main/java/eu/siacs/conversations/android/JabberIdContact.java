@@ -23,7 +23,9 @@ public class JabberIdContact extends AbstractPhoneContact {
         super(cursor);
         try {
             this.jid = Jid.of(cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Im.DATA)));
-        } catch (IllegalArgumentException | NullPointerException e) {
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException(e);
+        } catch (NullPointerException e) {
             throw new IllegalArgumentException(e);
         }
     }

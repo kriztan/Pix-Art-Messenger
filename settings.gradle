@@ -1,2 +1,3 @@
+include ':libs:android-transcoder'
 include ':libs:xmpp-addr'
-rootProject.name = 'Conversations'
+rootProject.name = 'PixArtMessenger'

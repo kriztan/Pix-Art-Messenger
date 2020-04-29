@@ -26,23 +26,22 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.entities;
 
 import rocks.xmpp.addr.Jid;
 
 public interface Conversational {
 
-	int MODE_MULTI = 1;
-	int MODE_SINGLE = 0;
+    int MODE_MULTI = 1;
+    int MODE_SINGLE = 0;
 
-	Account getAccount();
+    Account getAccount();
 
-	Contact getContact();
+    Contact getContact();
 
-	Jid getJid();
+    Jid getJid();
 
-	int getMode();
+    int getMode();
 
-	String getUuid();
+    String getUuid();
 }

@@ -17,19 +17,20 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationCompat.BigPictureStyle;
-import android.support.v4.app.NotificationCompat.Builder;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v4.app.Person;
-import android.support.v4.app.RemoteInput;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.IconCompat;
 import android.text.SpannableString;
 import android.text.style.StyleSpan;
 import android.util.DisplayMetrics;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationCompat.BigPictureStyle;
+import androidx.core.app.NotificationCompat.Builder;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.app.Person;
+import androidx.core.app.RemoteInput;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.IconCompat;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,26 +61,33 @@ import eu.siacs.conversations.ui.RtpSessionActivity;
 import eu.siacs.conversations.ui.TimePreference;
 import eu.siacs.conversations.utils.AccountUtils;
 import eu.siacs.conversations.utils.Compatibility;
+import eu.siacs.conversations.utils.EmojiWrapper;
 import eu.siacs.conversations.utils.GeoHelper;
 import eu.siacs.conversations.utils.UIHelper;
 import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jingle.Media;
 
+import static eu.siacs.conversations.ui.util.MyLinkify.replaceYoutube;
+
 public class NotificationService {
 
     public static final Object CATCHUP_LOCK = new Object();
-
-    private static final int LED_COLOR = 0xff00ff00;
-
+    public static final String MESSAGES_CHANNEL_ID = "messages";
+    public static final String FOREGROUND_CHANNEL_ID = "foreground";
+    public static final String BACKUP_CHANNEL_ID = "backup";
+    public static final String UPDATE_CHANNEL_ID = "appupdate";
+    public static final String VIDEOCOMPRESSION_CHANNEL_ID = "compression";
+    public static final String ERROR_CHANNEL_ID = "error";
     private static final int CALL_DAT = 120;
     private static final long[] CALL_PATTERN = {0, 3 * CALL_DAT, CALL_DAT, CALL_DAT, 3 * CALL_DAT, CALL_DAT, CALL_DAT};
 
     private static final String CONVERSATIONS_GROUP = "eu.siacs.conversations";
     private static final int NOTIFICATION_ID_MULTIPLIER = 1024 * 1024;
-    static final int FOREGROUND_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 4;
-    private static final int NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 2;
-    private static final int ERROR_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 6;
+    public static final int NOTIFICATION_ID = 2 * NOTIFICATION_ID_MULTIPLIER;
+    public static final int FOREGROUND_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 4;
+    public static final int ERROR_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 6;
+    private static final int LED_COLOR = 0xff0080FF;
     private static final int INCOMING_CALL_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 8;
     public static final int ONGOING_CALL_NOTIFICATION_ID = NOTIFICATION_ID_MULTIPLIER * 10;
     private final XmppConnectionService mXmppConnectionService;
@@ -124,40 +132,37 @@ public class NotificationService {
         if (notificationManager == null) {
             return;
         }
-
-        notificationManager.deleteNotificationChannel("export");
-
         notificationManager.createNotificationChannelGroup(new NotificationChannelGroup("status", c.getString(R.string.notification_group_status_information)));
         notificationManager.createNotificationChannelGroup(new NotificationChannelGroup("chats", c.getString(R.string.notification_group_messages)));
         notificationManager.createNotificationChannelGroup(new NotificationChannelGroup("calls", c.getString(R.string.notification_group_calls)));
-        final NotificationChannel foregroundServiceChannel = new NotificationChannel("foreground",
+        final NotificationChannel foregroundServiceChannel = new NotificationChannel(FOREGROUND_CHANNEL_ID,
                 c.getString(R.string.foreground_service_channel_name),
                 NotificationManager.IMPORTANCE_MIN);
         foregroundServiceChannel.setDescription(c.getString(R.string.foreground_service_channel_description));
         foregroundServiceChannel.setShowBadge(false);
         foregroundServiceChannel.setGroup("status");
         notificationManager.createNotificationChannel(foregroundServiceChannel);
-        final NotificationChannel errorChannel = new NotificationChannel("error",
-                c.getString(R.string.error_channel_name),
-                NotificationManager.IMPORTANCE_LOW);
-        errorChannel.setDescription(c.getString(R.string.error_channel_description));
-        errorChannel.setShowBadge(false);
-        errorChannel.setGroup("status");
-        notificationManager.createNotificationChannel(errorChannel);
 
-        final NotificationChannel videoCompressionChannel = new NotificationChannel("compression",
+        final NotificationChannel backupChannel = new NotificationChannel(BACKUP_CHANNEL_ID,
+                c.getString(R.string.backup_channel_name),
+                NotificationManager.IMPORTANCE_LOW);
+        backupChannel.setShowBadge(false);
+        backupChannel.setGroup("status");
+        notificationManager.createNotificationChannel(backupChannel);
+
+        final NotificationChannel videoCompressionChannel = new NotificationChannel(VIDEOCOMPRESSION_CHANNEL_ID,
                 c.getString(R.string.video_compression_channel_name),
                 NotificationManager.IMPORTANCE_LOW);
         videoCompressionChannel.setShowBadge(false);
         videoCompressionChannel.setGroup("status");
         notificationManager.createNotificationChannel(videoCompressionChannel);
 
-        final NotificationChannel exportChannel = new NotificationChannel("backup",
-                c.getString(R.string.backup_channel_name),
+        final NotificationChannel AppUpdateChannel = new NotificationChannel(UPDATE_CHANNEL_ID,
+                c.getString(R.string.app_update_channel_name),
                 NotificationManager.IMPORTANCE_LOW);
-        exportChannel.setShowBadge(false);
-        exportChannel.setGroup("status");
-        notificationManager.createNotificationChannel(exportChannel);
+        AppUpdateChannel.setShowBadge(false);
+        AppUpdateChannel.setGroup("status");
+        notificationManager.createNotificationChannel(AppUpdateChannel);
 
         final NotificationChannel incomingCallsChannel = new NotificationChannel("incoming_calls",
                 c.getString(R.string.incoming_calls_channel_name),
@@ -199,6 +204,7 @@ public class NotificationService {
         messagesChannel.enableLights(true);
         messagesChannel.setGroup("chats");
         notificationManager.createNotificationChannel(messagesChannel);
+
         final NotificationChannel silentMessagesChannel = new NotificationChannel("silent_messages",
                 c.getString(R.string.silent_messages_channel_name),
                 NotificationManager.IMPORTANCE_LOW);
@@ -218,7 +224,6 @@ public class NotificationService {
         quietHoursChannel.setGroup("chats");
         quietHoursChannel.enableVibration(false);
         quietHoursChannel.setSound(null, null);
-
         notificationManager.createNotificationChannel(quietHoursChannel);
     }
 
@@ -432,14 +437,21 @@ public class NotificationService {
 
     private void pushNow(final Message message) {
         mXmppConnectionService.updateUnreadCountBadge();
+        final boolean isScreenOn = mXmppConnectionService.isInteractive();
         if (!notify(message)) {
+            if (this.mIsInForeground && isScreenOn && this.mOpenConversation == message.getConversation()) {
+                mXmppConnectionService.vibrate();
+            }
             Log.d(Config.LOGTAG, message.getConversation().getAccount().getJid().asBareJid() + ": suppressing notification because turned off");
             return;
         }
-        final boolean isScreenOn = mXmppConnectionService.isInteractive();
         if (this.mIsInForeground && isScreenOn && this.mOpenConversation == message.getConversation()) {
+            mXmppConnectionService.vibrate();
             Log.d(Config.LOGTAG, message.getConversation().getAccount().getJid().asBareJid() + ": suppressing notification because conversation is open");
             return;
+        }
+        if (this.mIsInForeground && isScreenOn) {
+            mXmppConnectionService.vibrate();
         }
         synchronized (notifications) {
             pushToStack(message);
@@ -491,7 +503,7 @@ public class NotificationService {
     }
 
     private void setNotificationColor(final Builder mBuilder) {
-        mBuilder.setColor(ContextCompat.getColor(mXmppConnectionService, R.color.green600));
+        mBuilder.setColor(ContextCompat.getColor(mXmppConnectionService, R.color.primary));
     }
 
     public void updateNotification() {
@@ -510,12 +522,8 @@ public class NotificationService {
 
     private void updateNotification(final boolean notify, final List<String> conversations, final boolean summaryOnly) {
         final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(mXmppConnectionService);
-
         final boolean quiteHours = isQuietHours();
-
         final boolean notifyOnlyOneChild = notify && conversations != null && conversations.size() == 1; //if this check is changed to > 0 catchup messages will create one notification per conversation
-
-
         if (notifications.size() == 0) {
             cancel(NOTIFICATION_ID);
         } else {
@@ -646,7 +654,7 @@ public class NotificationService {
         mBuilder.setContentText(names.toString());
         mBuilder.setStyle(style);
         if (conversation != null) {
-            mBuilder.setContentIntent(createContentIntent(conversation));
+            mBuilder.setContentIntent(createOpenConversationsIntent());
         }
         mBuilder.setGroupSummary(true);
         mBuilder.setGroup(CONVERSATIONS_GROUP);
@@ -659,8 +667,7 @@ public class NotificationService {
         final Builder mBuilder = new NotificationCompat.Builder(mXmppConnectionService, quietHours ? "quiet_hours" : (notify ? "messages" : "silent_messages"));
         if (messages.size() >= 1) {
             final Conversation conversation = (Conversation) messages.get(0).getConversation();
-            mBuilder.setLargeIcon(mXmppConnectionService.getAvatarService()
-                    .get(conversation, AvatarService.getSystemUiAvatarSize(mXmppConnectionService)));
+            mBuilder.setLargeIcon(mXmppConnectionService.getAvatarService().get(conversation, AvatarService.getSystemUiAvatarSize(mXmppConnectionService)));
             mBuilder.setContentTitle(conversation.getName());
             if (Config.HIDE_MESSAGE_TEXT_IN_NOTIFICATION) {
                 int count = messages.size();
@@ -676,7 +683,7 @@ public class NotificationService {
                 RemoteInput remoteInput = new RemoteInput.Builder("text_reply").setLabel(UIHelper.getMessageHint(mXmppConnectionService, conversation)).build();
                 PendingIntent markAsReadPendingIntent = createReadPendingIntent(conversation);
                 NotificationCompat.Action markReadAction = new NotificationCompat.Action.Builder(
-                        R.drawable.ic_drafts_white_24dp,
+                        R.drawable.ic_email_open_outline_white_24dp,
                         mXmppConnectionService.getString(R.string.mark_as_read),
                         markAsReadPendingIntent)
                         .setSemanticAction(NotificationCompat.Action.SEMANTIC_ACTION_MARK_AS_READ)
@@ -684,7 +691,7 @@ public class NotificationService {
                         .build();
                 String replyLabel = mXmppConnectionService.getString(R.string.reply);
                 NotificationCompat.Action replyAction = new NotificationCompat.Action.Builder(
-                        R.drawable.ic_send_text_offline,
+                        R.drawable.ic_reply_white_24dp,
                         replyLabel,
                         createReplyIntent(conversation, false))
                         .setSemanticAction(NotificationCompat.Action.SEMANTIC_ACTION_REPLY)
@@ -700,7 +707,6 @@ public class NotificationService {
                     mBuilder.addAction(replyAction);
                     ++addedActionsCount;
                 }
-
                 if (displaySnoozeAction(messages)) {
                     String label = mXmppConnectionService.getString(R.string.snooze);
                     PendingIntent pendingSnoozeIntent = createSnoozeIntent(conversation);
@@ -793,7 +799,7 @@ public class NotificationService {
                 builder.setUri(uri.toString());
             }
         } else {
-            builder.setName(UIHelper.getMessageDisplayName(message));
+            builder.setName(UIHelper.getColoredUsername(mXmppConnectionService, message));
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             builder.setIcon(IconCompat.createWithBitmap(mXmppConnectionService.getAvatarService().get(message, AvatarService.getSystemUiAvatarSize(mXmppConnectionService), false)));
@@ -840,17 +846,15 @@ public class NotificationService {
                 final NotificationCompat.InboxStyle style = new NotificationCompat.InboxStyle();
                 SpannableString styledString;
                 for (Message message : messages) {
-                    final String name = UIHelper.getMessageDisplayName(message);
-                    styledString = new SpannableString(name + ": " + message.getBody());
-                    styledString.setSpan(new StyleSpan(Typeface.BOLD), 0, name.length(), 0);
+                    final SpannableString name = UIHelper.getColoredUsername(mXmppConnectionService, message);
+                    styledString = new SpannableString(name + ": " + EmojiWrapper.transform(replaceYoutube(mXmppConnectionService, message.getBody())));
                     style.addLine(styledString);
                 }
                 builder.setStyle(style);
                 int count = messages.size();
                 if (count == 1) {
-                    final String name = UIHelper.getMessageDisplayName(messages.get(0));
-                    styledString = new SpannableString(name + ": " + messages.get(0).getBody());
-                    styledString.setSpan(new StyleSpan(Typeface.BOLD), 0, name.length(), 0);
+                    final SpannableString name = UIHelper.getColoredUsername(mXmppConnectionService, messages.get(0));
+                    styledString = new SpannableString(name + ": " + EmojiWrapper.transform(replaceYoutube(mXmppConnectionService, messages.get(0).getBody())));
                     builder.setContentText(styledString);
                     builder.setTicker(styledString);
                 } else {
@@ -873,6 +877,14 @@ public class NotificationService {
             }
         }
         return image;
+    }
+
+    private static boolean isImageMessage(Message message) {
+        return message.getType() != Message.TYPE_TEXT
+                && message.getTransferable() == null
+                && !message.isFileDeleted()
+                && message.getEncryption() != Message.ENCRYPTION_PGP
+                && message.getFileParams().height > 0;
     }
 
     private Message getFirstDownloadableMessage(final Iterable<Message> messages) {
@@ -1044,7 +1056,9 @@ public class NotificationService {
 
     Notification createForegroundNotification() {
         final Notification.Builder mBuilder = new Notification.Builder(mXmppConnectionService);
-        mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.app_name));
+        mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service));
+        Account mAccount = null;
+        String status;
         final List<Account> accounts = mXmppConnectionService.getAccounts();
         int enabled = 0;
         int connected = 0;
@@ -1057,8 +1071,35 @@ public class NotificationService {
                     enabled++;
                 }
             }
+            if (accounts.size() == 1) {
+                mAccount = accounts.get(0);
+                if (mAccount.getStatus() == Account.State.ONLINE) {
+                    status = "(" + mXmppConnectionService.getString(R.string.account_status_online) + ")";
+                    status = " " + status;
+                    Log.d(Config.LOGTAG, "Status: " + status);
+                    mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service) + status);
+                } else if (mAccount.getStatus() == Account.State.CONNECTING) {
+                    status = "(" + mXmppConnectionService.getString(R.string.account_status_connecting) + ")";
+                    status = " " + status;
+                    Log.d(Config.LOGTAG, "Status: " + status);
+                    mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service) + status);
+                } else {
+                    status = "(" + mXmppConnectionService.getString(R.string.account_status_offline) + ")";
+                    status = " " + status;
+                    Log.d(Config.LOGTAG, "Status: " + status);
+                    mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service) + status);
+                }
+            } else if (accounts.size() > 1) {
+                mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service));
+            } else {
+                status = "(" + mXmppConnectionService.getString(R.string.account_status_offline) + ")";
+                status = " " + status;
+                Log.d(Config.LOGTAG, "Status: " + status);
+                mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.conversations_foreground_service) + status);
+            }
         }
         mBuilder.setContentText(mXmppConnectionService.getString(R.string.connected_accounts, connected, enabled));
+        mBuilder.setContentIntent(createOpenConversationsIntent());
         final PendingIntent openIntent = createOpenConversationsIntent();
         if (openIntent != null) {
             mBuilder.setContentIntent(openIntent);
@@ -1066,19 +1107,17 @@ public class NotificationService {
         mBuilder.setWhen(0);
         mBuilder.setPriority(Notification.PRIORITY_MIN);
         mBuilder.setSmallIcon(connected > 0 ? R.drawable.ic_link_white_24dp : R.drawable.ic_link_off_white_24dp);
-
         if (Compatibility.runsTwentySix()) {
-            mBuilder.setChannelId("foreground");
+            mBuilder.setChannelId(FOREGROUND_CHANNEL_ID);
         }
-
-
         return mBuilder.build();
     }
 
     private PendingIntent createOpenConversationsIntent() {
         try {
             return PendingIntent.getActivity(mXmppConnectionService, 0, new Intent(mXmppConnectionService, ConversationsActivity.class), 0);
-        } catch (RuntimeException e) {
+        } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -1117,7 +1156,7 @@ public class NotificationService {
             mBuilder.setVisibility(Notification.VISIBILITY_PRIVATE);
             mBuilder.setSmallIcon(R.drawable.ic_warning_white_24dp);
         } else {
-            mBuilder.setSmallIcon(R.drawable.ic_stat_alert_warning);
+            mBuilder.setSmallIcon(R.drawable.ic_warning_white_24dp);
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT_WATCH) {
             mBuilder.setLocalOnly(true);
@@ -1133,7 +1172,7 @@ public class NotificationService {
         }
         mBuilder.setContentIntent(PendingIntent.getActivity(mXmppConnectionService, 145, intent, PendingIntent.FLAG_UPDATE_CURRENT));
         if (Compatibility.runsTwentySix()) {
-            mBuilder.setChannelId("error");
+            mBuilder.setChannelId(ERROR_CHANNEL_ID);
         }
         notify(ERROR_NOTIFICATION_ID, mBuilder.build());
     }
@@ -1146,12 +1185,29 @@ public class NotificationService {
         mBuilder.setContentIntent(createContentIntent(message.getConversation()));
         mBuilder.setOngoing(true);
         if (Compatibility.runsTwentySix()) {
-            mBuilder.setChannelId("compression");
+            mBuilder.setChannelId(VIDEOCOMPRESSION_CHANNEL_ID);
         }
         Notification notification = mBuilder.build();
         notify(FOREGROUND_NOTIFICATION_ID, notification);
     }
 
+    }
+
+    Notification AppUpdateNotification(PendingIntent intent, String version, String filesize) {
+        Notification.Builder mBuilder = new Notification.Builder(mXmppConnectionService);
+        mBuilder.setContentTitle(mXmppConnectionService.getString(R.string.app_name));
+        mBuilder.setContentText(String.format(mXmppConnectionService.getString(R.string.update_available), version, filesize));
+        mBuilder.setSmallIcon(R.drawable.ic_update_notification);
+        mBuilder.setContentIntent(intent);
+        mBuilder.setOngoing(true);
+        if (Compatibility.runsTwentySix()) {
+            mBuilder.setChannelId(UPDATE_CHANNEL_ID);
+        }
+        return mBuilder.build();
+    }
+
+    public void AppUpdateServiceNotification(Notification notification) {
+        notify(FOREGROUND_NOTIFICATION_ID, notification);
     private void notify(String tag, int id, Notification notification) {
         final NotificationManagerCompat notificationManager = NotificationManagerCompat.from(mXmppConnectionService);
         try {

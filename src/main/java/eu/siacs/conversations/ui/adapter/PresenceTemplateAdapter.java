@@ -30,9 +30,10 @@
 package eu.siacs.conversations.ui.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.widget.ArrayAdapter;
 import android.widget.Filter;
+
+import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,50 +44,50 @@ import eu.siacs.conversations.entities.PresenceTemplate;
 
 public class PresenceTemplateAdapter extends ArrayAdapter<PresenceTemplate> {
 
-	private final List<PresenceTemplate> templates;
+    private final List<PresenceTemplate> templates;
 
-	private final Filter filter = new Filter() {
+    private final Filter filter = new Filter() {
 
-		@Override
-		protected FilterResults performFiltering(CharSequence constraint) {
-			FilterResults results = new FilterResults();
-			if (constraint == null || constraint.length() == 0) {
-				results.values = new ArrayList<>(templates);
-				results.count = templates.size();
-			} else {
-				ArrayList<PresenceTemplate> suggestions = new ArrayList<>();
-				final String needle = constraint.toString().trim().toLowerCase(Locale.getDefault());
-				for(PresenceTemplate template : templates) {
-					final String lc = template.getStatusMessage().toLowerCase(Locale.getDefault());
-					if (needle.isEmpty() || lc.contains(needle)) {
-						suggestions.add(template);
-					}
-				}
-				results.values = suggestions;
-				results.count = suggestions.size();
-			}
-			return results;
-		}
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            FilterResults results = new FilterResults();
+            if (constraint == null || constraint.length() == 0) {
+                results.values = new ArrayList<>(templates);
+                results.count = templates.size();
+            } else {
+                ArrayList<PresenceTemplate> suggestions = new ArrayList<>();
+                final String needle = constraint.toString().trim().toLowerCase(Locale.getDefault());
+                for (PresenceTemplate template : templates) {
+                    final String lc = template.getStatusMessage().toLowerCase(Locale.getDefault());
+                    if (needle.isEmpty() || lc.contains(needle)) {
+                        suggestions.add(template);
+                    }
+                }
+                results.values = suggestions;
+                results.count = suggestions.size();
+            }
+            return results;
+        }
 
-		@Override
-		protected void publishResults(CharSequence constraint, FilterResults results) {
-			ArrayList filteredList = (ArrayList) results.values;
-			clear();
-			for (Object c : filteredList) {
-				add((PresenceTemplate) c);
-			}
-			notifyDataSetChanged();
-		}
-	};
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            ArrayList filteredList = (ArrayList) results.values;
+            clear();
+            for (Object c : filteredList) {
+                add((PresenceTemplate) c);
+            }
+            notifyDataSetChanged();
+        }
+    };
 
-	public PresenceTemplateAdapter(@NonNull Context context, int resource, @NonNull List<PresenceTemplate> templates) {
-		super(context, resource, new ArrayList<>());
-		this.templates = new ArrayList<>(templates);
-	}
+    public PresenceTemplateAdapter(@NonNull Context context, int resource, @NonNull List<PresenceTemplate> templates) {
+        super(context, resource, new ArrayList<>());
+        this.templates = new ArrayList<>(templates);
+    }
 
-	@Override
-	@NonNull
-	public Filter getFilter() {
-		return this.filter;
-	}
+    @Override
+    @NonNull
+    public Filter getFilter() {
+        return this.filter;
+    }
 }

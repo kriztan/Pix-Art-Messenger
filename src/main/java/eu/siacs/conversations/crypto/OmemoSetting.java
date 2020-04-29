@@ -26,9 +26,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.crypto;
-
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -40,37 +38,50 @@ import eu.siacs.conversations.ui.SettingsActivity;
 
 public class OmemoSetting {
 
-	private static boolean always = false;
-	private static int encryption = Message.ENCRYPTION_AXOLOTL;
+    private static boolean always = false;
+    private static boolean never = false;
+    private static int encryption = Message.ENCRYPTION_AXOLOTL;
 
-	public static boolean isAlways() {
-		return always;
-	}
+    public static boolean isAlways() {
+        return always;
+    }
 
-	public static int getEncryption() {
-		return encryption;
-	}
+    public static boolean isNever() {
+        return never;
+    }
 
-	public static void load(final Context context, final SharedPreferences sharedPreferences) {
-		final String value = sharedPreferences.getString(SettingsActivity.OMEMO_SETTING, context.getResources().getString(R.string.omemo_setting_default));
-		switch (value) {
-			case "always":
-				always = true;
-				encryption = Message.ENCRYPTION_AXOLOTL;
-				break;
-			case "default_off":
-				always = false;
-				encryption = Message.ENCRYPTION_NONE;
-				break;
-			default:
-				always = false;
-				encryption = Message.ENCRYPTION_AXOLOTL;
-				break;
+    public static int getEncryption() {
+        return encryption;
+    }
 
-		}
-	}
+    public static void load(final Context context, final SharedPreferences sharedPreferences) {
+        final String value = sharedPreferences.getString(SettingsActivity.OMEMO_SETTING, context.getResources().getString(R.string.omemo_setting_default));
+        switch (value) {
+            case "always":
+                always = true;
+                never = false;
+                encryption = Message.ENCRYPTION_AXOLOTL;
+                break;
+            case "default_on":
+                always = false;
+                never = false;
+                encryption = Message.ENCRYPTION_AXOLOTL;
+                break;
+            case "always_off":
+                always = false;
+                never = true;
+                encryption = Message.ENCRYPTION_NONE;
+                break;
+            default:
+                always = false;
+                never = false;
+                encryption = Message.ENCRYPTION_NONE;
+                break;
 
-	public static void load(final Context context) {
-		load(context, PreferenceManager.getDefaultSharedPreferences(context));
-	}
+        }
+    }
+
+    public static void load(final Context context) {
+        load(context, PreferenceManager.getDefaultSharedPreferences(context));
+    }
 }

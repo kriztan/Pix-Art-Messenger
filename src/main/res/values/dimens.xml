@@ -18,12 +18,8 @@
     <dimen name="toolbar_elevation">4dp</dimen>
 
     <dimen name="publish_avatar_top_margin">8dp</dimen>
-    <dimen name="publish_avatar_size">96dp</dimen>
     <dimen name="incoming_call_radius">48dp</dimen>
-    <dimen name="avatar_on_status_message">32dp</dimen>
-    <dimen name="avatar">48dp</dimen>
     <dimen name="avatar_on_details_screen_size">56dp</dimen>
-    <dimen name="avatar_on_conversation_overview">56dp</dimen>
 
     <dimen name="input_label_vertical_spacing">4dp</dimen>
     <dimen name="input_label_horizontal_spacing">4dp</dimen>
@@ -32,10 +28,12 @@
     <dimen name="scan_laser_width">4dp</dimen>
     <dimen name="scan_dot_size">8dp</dimen>
 
-    <dimen name="swipe_escape_velocity">1200dp</dimen> <!-- android default is 120dp -->
-
     <dimen name="background_image_opacity">0.12</dimen>
-
+    <dimen name="rounded_image_border">5dp</dimen>
+    <dimen name="avatar">48dp</dimen>
+    <dimen name="avatar_on_conversation_overview">56dp</dimen>
+    <dimen name="avatar_on_status_message">32dp</dimen>
+    <dimen name="avatar_big">480dp</dimen>
     <dimen name="sd_label_max_width">256dp</dimen>
 
     <dimen name="local_video_preview_height">128dp</dimen>

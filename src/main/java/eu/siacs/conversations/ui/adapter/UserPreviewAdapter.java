@@ -1,13 +1,14 @@
 package eu.siacs.conversations.ui.adapter;
 
-import android.databinding.DataBindingUtil;
-import android.support.annotation.NonNull;
-import android.support.v7.recyclerview.extensions.ListAdapter;
-import android.support.v7.widget.RecyclerView;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.ListAdapter;
+import androidx.recyclerview.widget.RecyclerView;
 
 import eu.siacs.conversations.R;
 import eu.siacs.conversations.databinding.UserPreviewBinding;
@@ -56,6 +57,7 @@ public class UserPreviewAdapter extends ListAdapter<MucOptions.User, UserPreview
     public MucOptions.User getSelectedUser() {
         return selectedUser;
     }
+
 
     class ViewHolder extends RecyclerView.ViewHolder {
 

@@ -8,8 +8,9 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +24,6 @@ import eu.siacs.conversations.utils.ReplacingSerialSingleThreadExecutor;
 import rocks.xmpp.addr.Jid;
 
 public class ShortcutService {
-
     private final XmppConnectionService xmppConnectionService;
     private final ReplacingSerialSingleThreadExecutor replacingSerialSingleThreadExecutor = new ReplacingSerialSingleThreadExecutor(ShortcutService.class.getSimpleName());
 
@@ -58,21 +58,21 @@ public class ShortcutService {
     @TargetApi(25)
     private void refreshImpl(boolean forceUpdate) {
         List<FrequentContact> frequentContacts = xmppConnectionService.databaseBackend.getFrequentContacts(30);
-        HashMap<String,Account> accounts = new HashMap<>();
-        for(Account account : xmppConnectionService.getAccounts()) {
-            accounts.put(account.getUuid(),account);
+        HashMap<String, Account> accounts = new HashMap<>();
+        for (Account account : xmppConnectionService.getAccounts()) {
+            accounts.put(account.getUuid(), account);
         }
         List<Contact> contacts = new ArrayList<>();
-        for(FrequentContact frequentContact : frequentContacts) {
+        for (FrequentContact frequentContact : frequentContacts) {
             Account account = accounts.get(frequentContact.account);
             if (account != null) {
                 contacts.add(account.getRoster().getContact(frequentContact.contact));
             }
         }
         ShortcutManager shortcutManager = xmppConnectionService.getSystemService(ShortcutManager.class);
-        boolean needsUpdate = forceUpdate || contactsChanged(contacts,shortcutManager.getDynamicShortcuts());
+        boolean needsUpdate = forceUpdate || contactsChanged(contacts, shortcutManager.getDynamicShortcuts());
         if (!needsUpdate) {
-            Log.d(Config.LOGTAG,"skipping shortcut update");
+            Log.d(Config.LOGTAG, "skipping shortcut update");
             return;
         }
         List<ShortcutInfo> newDynamicShortCuts = new ArrayList<>();
@@ -81,7 +81,7 @@ public class ShortcutService {
             newDynamicShortCuts.add(shortcut);
         }
         if (shortcutManager.setDynamicShortcuts(newDynamicShortCuts)) {
-            Log.d(Config.LOGTAG,"updated dynamic shortcuts");
+            Log.d(Config.LOGTAG, "updated dynamic shortcuts");
         } else {
             Log.d(Config.LOGTAG, "unable to update dynamic shortcuts");
         }
@@ -90,15 +90,15 @@ public class ShortcutService {
     @TargetApi(Build.VERSION_CODES.N_MR1)
     private ShortcutInfo getShortcutInfo(Contact contact) {
         return new ShortcutInfo.Builder(xmppConnectionService, getShortcutId(contact))
-                        .setShortLabel(contact.getDisplayName())
-                        .setIntent(getShortcutIntent(contact))
-                        .setIcon(Icon.createWithBitmap(xmppConnectionService.getAvatarService().getRoundedShortcut(contact)))
-                        .build();
+                .setShortLabel(contact.getDisplayName())
+                .setIntent(getShortcutIntent(contact))
+                .setIcon(Icon.createWithBitmap(xmppConnectionService.getAvatarService().getRoundedShortcut(contact)))
+                .build();
     }
 
     private static boolean contactsChanged(List<Contact> needles, List<ShortcutInfo> haystack) {
-        for(Contact needle : needles) {
-            if(!contactExists(needle,haystack)) {
+        for (Contact needle : needles) {
+            if (!contactExists(needle, haystack)) {
                 return true;
             }
         }
@@ -107,7 +107,7 @@ public class ShortcutService {
 
     @TargetApi(25)
     private static boolean contactExists(Contact needle, List<ShortcutInfo> haystack) {
-        for(ShortcutInfo shortcutInfo : haystack) {
+        for (ShortcutInfo shortcutInfo : haystack) {
             if (getShortcutId(needle).equals(shortcutInfo.getId()) && needle.getDisplayName().equals(shortcutInfo.getShortLabel())) {
                 return true;
             }
@@ -116,15 +116,15 @@ public class ShortcutService {
     }
 
     private static String getShortcutId(Contact contact) {
-        return contact.getAccount().getJid().asBareJid().toString()+"#"+contact.getJid().asBareJid().toString();
+        return contact.getAccount().getJid().asBareJid().toString() + "#" + contact.getJid().asBareJid().toString();
     }
 
     private Intent getShortcutIntent(Contact contact) {
         Intent intent = new Intent(xmppConnectionService, StartConversationActivity.class);
         intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("xmpp:"+contact.getJid().asBareJid().toString()));
-        intent.putExtra("account",contact.getAccount().getJid().asBareJid().toString());
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP| Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.setData(Uri.parse("xmpp:" + contact.getJid().asBareJid().toString()));
+        intent.putExtra("account", contact.getAccount().getJid().asBareJid().toString());
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         return intent;
     }
 
@@ -161,5 +161,4 @@ public class ShortcutService {
             this.contact = contact;
         }
     }
-
 }

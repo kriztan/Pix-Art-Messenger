@@ -26,10 +26,8 @@ import eu.siacs.conversations.utils.WakeLockHelper;
 import eu.siacs.conversations.xmpp.jingle.stanzas.FileTransferDescription;
 
 public class JingleSocks5Transport extends JingleTransport {
-
     private static final int SOCKET_TIMEOUT_DIRECT = 3000;
     private static final int SOCKET_TIMEOUT_PROXY = 5000;
-
     private final JingleCandidate candidate;
     private final JingleFileTransferConnection connection;
     private final String destination;
@@ -177,7 +175,7 @@ public class JingleSocks5Transport extends JingleTransport {
                 socket.setSoTimeout(0);
                 isEstablished = true;
                 callback.established();
-            } catch (IOException e) {
+            } catch (Exception e) {
                 callback.failed();
             }
         }).start();

@@ -13,7 +13,7 @@ public class PendingActionHelper {
     }
 
     public void execute() {
-        if(pendingAction != null){
+        if (pendingAction != null) {
             pendingAction.execute();
             pendingAction = null;
         }

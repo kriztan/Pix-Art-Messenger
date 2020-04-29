@@ -150,7 +150,7 @@ public class ListSelectionManager {
         public final int end;
 
         StartSelectionHolder(ListSelectionManager listSelectionManager, TextView textView,
-                                    int start, int end) {
+                             int start, int end) {
             this.listSelectionManager = listSelectionManager;
             this.textView = textView;
             this.start = start;

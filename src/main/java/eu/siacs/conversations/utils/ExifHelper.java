@@ -66,7 +66,7 @@ public class ExifHelper {
                 if (!read(is, buf, 6)) return 0;
                 length -= 6;
                 if (pack(buf, 0, 4, false) == 0x45786966 &&
-                    pack(buf, 4, 2, false) == 0) {
+                        pack(buf, 4, 2, false) == 0) {
                     break;
                 }
             }
@@ -136,7 +136,7 @@ public class ExifHelper {
     }
 
     private static int pack(byte[] bytes, int offset, int length,
-            boolean littleEndian) {
+                            boolean littleEndian) {
         int step = 1;
         if (littleEndian) {
             offset += length - 1;

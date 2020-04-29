@@ -34,89 +34,88 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-
 public class FtsUtils {
 
-	private static List<String> KEYWORDS = Arrays.asList("OR", "AND");
+    private static List<String> KEYWORDS = Arrays.asList("OR", "AND");
 
-	public static List<String> parse(String input) {
-		List<String> term = new ArrayList<>();
-		for (String part : input.replace('"',' ').split("\\s+")) {
-			if (part.isEmpty()) {
-				continue;
-			}
-			final String cleaned = clean(part);
-			if (isKeyword(cleaned) || cleaned.contains("*")) {
-				term.add(part);
-			} else if (!cleaned.isEmpty()) {
-				term.add(cleaned);
-			}
-		}
-		return term;
-	}
+    public static List<String> parse(String input) {
+        List<String> term = new ArrayList<>();
+        for (String part : input.replace('"', ' ').split("\\s+")) {
+            if (part.isEmpty()) {
+                continue;
+            }
+            final String cleaned = clean(part);
+            if (isKeyword(cleaned) || cleaned.contains("*")) {
+                term.add(part);
+            } else if (!cleaned.isEmpty()) {
+                term.add(cleaned);
+            }
+        }
+        return term;
+    }
 
-	public static String toMatchString(List<String> terms) {
-		StringBuilder builder = new StringBuilder();
-		for (String term : terms) {
-			if (builder.length() != 0) {
-				builder.append(' ');
-			}
-			if (isKeyword(term)) {
-				builder.append(term.toUpperCase(Locale.ENGLISH));
-			} else if (term.contains("*") || term.startsWith("-")) {
-				builder.append(term);
-			} else {
-				builder.append('*').append(term).append('*');
-			}
-		}
-		return builder.toString();
-	}
+    public static String toMatchString(List<String> terms) {
+        StringBuilder builder = new StringBuilder();
+        for (String term : terms) {
+            if (builder.length() != 0) {
+                builder.append(' ');
+            }
+            if (isKeyword(term)) {
+                builder.append(term.toUpperCase(Locale.ENGLISH));
+            } else if (term.contains("*") || term.startsWith("-")) {
+                builder.append(term);
+            } else {
+                builder.append('*').append(term).append('*');
+            }
+        }
+        return builder.toString();
+    }
 
-	static boolean isKeyword(String term) {
-		return KEYWORDS.contains(term.toUpperCase(Locale.ENGLISH));
-	}
+    static boolean isKeyword(String term) {
+        return KEYWORDS.contains(term.toUpperCase(Locale.ENGLISH));
+    }
 
-	private static int getStartIndex(String term) {
-		int length = term.length();
-		int index = 0;
-		while (term.charAt(index) == '*') {
-			++index;
-			if (index >= length) {
-				break;
-			}
-		}
-		return index;
-	}
+    private static int getStartIndex(String term) {
+        int length = term.length();
+        int index = 0;
+        while (term.charAt(index) == '*') {
+            ++index;
+            if (index >= length) {
+                break;
+            }
+        }
+        return index;
+    }
 
-	private static int getEndIndex(String term) {
-		int index = term.length() - 1;
-		while (term.charAt(index) == '*') {
-			--index;
-			if (index < 0) {
-				break;
-			}
-		}
-		return index;
-	}
+    private static int getEndIndex(String term) {
+        int index = term.length() - 1;
+        while (term.charAt(index) == '*') {
+            --index;
+            if (index < 0) {
+                break;
+            }
+        }
+        return index;
+    }
 
-	private static String clean(String input) {
-		int begin = getStartIndex(input);
-		int end = getEndIndex(input);
-		if (begin > end) {
-			return "";
-		} else {
-			return input.substring(begin, end + 1);
-		}
-	}
+    private static String clean(String input) {
+        int begin = getStartIndex(input);
+        int end = getEndIndex(input);
+        if (begin > end) {
+            return "";
+        } else {
+            return input.substring(begin, end + 1);
+        }
+    }
 
-	public static String toUserEnteredString(List<String> term) {
-		final StringBuilder builder = new StringBuilder();
-		for(String part : term) {
-			if (builder.length() != 0) {
-				builder.append(' ');
-			}
-			builder.append(part);
-		}
-		return builder.toString();
-	}
+    public static String toUserEnteredString(List<String> term) {
+        final StringBuilder builder = new StringBuilder();
+        for (String part : term) {
+            if (builder.length() != 0) {
+                builder.append(' ');
+            }
+            builder.append(part);
+        }
+        return builder.toString();
+    }
 }

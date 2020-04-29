@@ -31,8 +31,7 @@ import eu.siacs.conversations.entities.DownloadableFile;
 import eu.siacs.conversations.utils.Compatibility;
 
 public class AbstractConnectionManager {
-
-    private static final int UI_REFRESH_THRESHOLD = 250;
+    private static final int UI_REFRESH_THRESHOLD = Config.REFRESH_UI_INTERVAL;
     private static final AtomicLong LAST_UI_UPDATE_CALL = new AtomicLong(0);
     protected XmppConnectionService mXmppConnectionService;
 
@@ -76,7 +75,26 @@ public class AbstractConnectionManager {
     }
 
     public long getAutoAcceptFileSize() {
-        return this.mXmppConnectionService.getLongPreference("auto_accept_file_size", R.integer.auto_accept_filesize);
+        long defaultValue_wifi = this.getXmppConnectionService().getResources().getInteger(R.integer.auto_accept_filesize_wifi);
+        long defaultValue_mobile = this.getXmppConnectionService().getResources().getInteger(R.integer.auto_accept_filesize_mobile);
+        long defaultValue_roaming = this.getXmppConnectionService().getResources().getInteger(R.integer.auto_accept_filesize_roaming);
+
+        String config = "0";
+        if (mXmppConnectionService.isWIFI()) {
+            config = this.mXmppConnectionService.getPreferences().getString(
+                    "auto_accept_file_size_wifi", String.valueOf(defaultValue_wifi));
+        } else if (mXmppConnectionService.isMobile()) {
+            config = this.mXmppConnectionService.getPreferences().getString(
+                    "auto_accept_file_size_mobile", String.valueOf(defaultValue_mobile));
+        } else if (mXmppConnectionService.isMobileRoaming()) {
+            config = this.mXmppConnectionService.getPreferences().getString(
+                    "auto_accept_file_size_roaming", String.valueOf(defaultValue_roaming));
+        }
+        try {
+            return Long.parseLong(config);
+        } catch (NumberFormatException e) {
+            return defaultValue_mobile;
+        }
     }
 
     public boolean hasStoragePermission() {

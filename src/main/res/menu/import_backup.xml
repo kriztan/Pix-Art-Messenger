@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_open_backup_file"
         android:icon="?attr/ic_cloud_download"
-        app:showAsAction="always"
-        android:title="@string/open_backup"/>
+        android:title="@string/open_backup"
+        app:showAsAction="always" />
 
 </menu>

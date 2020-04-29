@@ -5,25 +5,25 @@ import android.text.style.MetricAffectingSpan;
 
 public class DividerSpan extends MetricAffectingSpan {
 
-	private static final float PROPORTION = 0.3f;
+    private static final float PROPORTION = 0.3f;
 
-	private final boolean large;
+    private final boolean large;
 
-	public DividerSpan(boolean large) {
-		this.large = large;
-	}
+    public DividerSpan(boolean large) {
+        this.large = large;
+    }
 
-	public boolean isLarge() {
-		return large;
-	}
+    public boolean isLarge() {
+        return large;
+    }
 
-	@Override
-	public void updateDrawState(TextPaint tp) {
-		tp.setTextSize(tp.getTextSize() * PROPORTION);
-	}
+    @Override
+    public void updateDrawState(TextPaint tp) {
+        tp.setTextSize(tp.getTextSize() * PROPORTION);
+    }
 
-	@Override
-	public void updateMeasureState(TextPaint p) {
-		p.setTextSize(p.getTextSize() * PROPORTION);
-	}
+    @Override
+    public void updateMeasureState(TextPaint p) {
+        p.setTextSize(p.getTextSize() * PROPORTION);
+    }
 }

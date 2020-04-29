@@ -6,44 +6,45 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
 import eu.siacs.conversations.R;
+import eu.siacs.conversations.ui.util.StyledAttributes;
 
 public class UnreadCountCustomView extends View {
 
     private int unreadCount;
     private Paint paint, textPaint;
-    private int backgroundColor = 0xff326130;
+    private int backgroundColor = 0xff0091ea;
 
     public UnreadCountCustomView(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public UnreadCountCustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initXMLAttrs(context, attrs);
-        init();
+        init(context);
     }
 
     public UnreadCountCustomView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initXMLAttrs(context, attrs);
-        init();
+        init(context);
     }
 
     private void initXMLAttrs(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.UnreadCountCustomView);
-        setBackgroundColor(a.getColor(a.getIndex(0), ContextCompat.getColor(context, R.color.green700_desaturated)));
+        //setBackgroundColor(a.getColor(a.getIndex(0), ContextCompat.getColor(context, R.color.accent)));
+        setBackgroundColor(StyledAttributes.getColor(context, R.attr.colorAccent));
         a.recycle();
     }
 
-    void init() {
+    void init(Context context) {
         paint = new Paint();
-        paint.setColor(backgroundColor);
+        paint.setColor(StyledAttributes.getColor(context, R.attr.colorAccent));
         paint.setAntiAlias(true);
         textPaint = new Paint();
         textPaint.setColor(Color.WHITE);

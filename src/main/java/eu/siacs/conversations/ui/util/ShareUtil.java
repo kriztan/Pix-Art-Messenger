@@ -43,100 +43,104 @@ import eu.siacs.conversations.ui.ConversationsActivity;
 import eu.siacs.conversations.ui.XmppActivity;
 import eu.siacs.conversations.utils.Patterns;
 import eu.siacs.conversations.utils.XmppUri;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class ShareUtil {
 
-	public static void share(XmppActivity activity, Message message) {
-		Intent shareIntent = new Intent();
-		shareIntent.setAction(Intent.ACTION_SEND);
-		if (message.isGeoUri()) {
-			shareIntent.putExtra(Intent.EXTRA_TEXT, message.getBody());
-			shareIntent.setType("text/plain");
-		} else if (!message.isFileOrImage()) {
-			shareIntent.putExtra(Intent.EXTRA_TEXT, message.getMergedBody().toString());
-			shareIntent.setType("text/plain");
-			shareIntent.putExtra(ConversationsActivity.EXTRA_AS_QUOTE, message.getStatus() == Message.STATUS_RECEIVED);
-		} else {
-			final DownloadableFile file = activity.xmppConnectionService.getFileBackend().getFile(message);
-			try {
-				shareIntent.putExtra(Intent.EXTRA_STREAM, FileBackend.getUriForFile(activity, file));
-			} catch (SecurityException e) {
-				Toast.makeText(activity, activity.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
-				return;
-			}
-			shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-			String mime = message.getMimeType();
-			if (mime == null) {
-				mime = "*/*";
-			}
-			shareIntent.setType(mime);
-		}
-		try {
-			activity.startActivity(Intent.createChooser(shareIntent, activity.getText(R.string.share_with)));
-		} catch (ActivityNotFoundException e) {
-			//This should happen only on faulty androids because normally chooser is always available
-			Toast.makeText(activity, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
-		}
-	}
+    public static void share(XmppActivity activity, Message message, String user) {
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        if (message.isGeoUri()) {
+            shareIntent.putExtra(Intent.EXTRA_TEXT, message.getBody());
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(ConversationsActivity.EXTRA_AS_QUOTE, false);
+        } else if (!message.isFileOrImage()) {
+            shareIntent.putExtra(Intent.EXTRA_TEXT, message.getMergedBody().toString());
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(ConversationsActivity.EXTRA_AS_QUOTE, true);
+            shareIntent.putExtra(ConversationsActivity.EXTRA_USER, user);
+        } else {
+            final DownloadableFile file = activity.xmppConnectionService.getFileBackend().getFile(message);
+            try {
+                shareIntent.putExtra(Intent.EXTRA_STREAM, FileBackend.getUriForFile(activity, file));
+            } catch (SecurityException e) {
+                ToastCompat.makeText(activity, activity.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
+                return;
+            }
+            shareIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            String mime = message.getMimeType();
+            if (mime == null) {
+                mime = "*/*";
+            }
+            shareIntent.setType(mime);
+        }
+        try {
+            activity.startActivity(Intent.createChooser(shareIntent, activity.getText(R.string.share_with)));
+            activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
+        } catch (ActivityNotFoundException e) {
+            //This should happen only on faulty androids because normally chooser is always available
+            ToastCompat.makeText(activity, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+        }
+    }
 
-	public static void copyToClipboard(XmppActivity activity, Message message) {
-		if (activity.copyTextToClipboard(message.getMergedBody().toString(), R.string.message)) {
-			Toast.makeText(activity, R.string.message_copied_to_clipboard, Toast.LENGTH_SHORT).show();
-		}
-	}
+    public static void copyToClipboard(XmppActivity activity, Message message) {
+        if (activity.copyTextToClipboard(message.getMergedBody().toString(), R.string.message)) {
+            ToastCompat.makeText(activity, R.string.message_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+        }
+    }
 
-	public static void copyUrlToClipboard(XmppActivity activity, Message message) {
-		final String url;
-		final int resId;
-		if (message.isGeoUri()) {
-			resId = R.string.location;
-			url = message.getBody();
-		} else if (message.hasFileOnRemoteHost()) {
-			resId = R.string.file_url;
-			url = message.getFileParams().url.toString();
-		} else {
-			url = message.getBody().trim();
-			resId = R.string.file_url;
-		}
-		if (activity.copyTextToClipboard(url, resId)) {
-			Toast.makeText(activity, R.string.url_copied_to_clipboard, Toast.LENGTH_SHORT).show();
-		}
-	}
+    public static void copyUrlToClipboard(XmppActivity activity, Message message) {
+        final String url;
+        final int resId;
+        if (message.isGeoUri()) {
+            resId = R.string.location;
+            url = message.getBody();
+        } else if (message.hasFileOnRemoteHost()) {
+            resId = R.string.file_url;
+            url = message.getFileParams().url.toString();
+        } else {
+            url = message.getBody().trim();
+            resId = R.string.file_url;
+        }
+        if (activity.copyTextToClipboard(url, resId)) {
+            ToastCompat.makeText(activity, R.string.url_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+        }
+    }
 
-	public static void copyLinkToClipboard(XmppActivity activity, Message message) {
-		String body = message.getMergedBody().toString();
-		Matcher xmppPatternMatcher = Patterns.XMPP_PATTERN.matcher(body);
-		if (xmppPatternMatcher.find()) {
-			try {
-				Jid jid = new XmppUri(body.substring(xmppPatternMatcher.start(), xmppPatternMatcher.end())).getJid();
-				if (activity.copyTextToClipboard(jid.asBareJid().toString(), R.string.account_settings_jabber_id)) {
-					Toast.makeText(activity,R.string.jabber_id_copied_to_clipboard, Toast.LENGTH_SHORT).show();
-				}
-				return;
-			} catch (Exception e) {
-				e.printStackTrace();
-				return;
-			}
-		}
-		Matcher webUrlPatternMatcher = Patterns.AUTOLINK_WEB_URL.matcher(body);
-		if (webUrlPatternMatcher.find()) {
-			String url = body.substring(webUrlPatternMatcher.start(),webUrlPatternMatcher.end());
-			if (activity.copyTextToClipboard(url,R.string.web_address)) {
-				Toast.makeText(activity,R.string.url_copied_to_clipboard, Toast.LENGTH_SHORT).show();
-			}
-		}
-	}
+    public static void copyLinkToClipboard(XmppActivity activity, Message message) {
+        String body = message.getMergedBody().toString();
+        Matcher xmppPatternMatcher = Patterns.XMPP_PATTERN.matcher(body);
+        if (xmppPatternMatcher.find()) {
+            try {
+                Jid jid = new XmppUri(body.substring(xmppPatternMatcher.start(), xmppPatternMatcher.end())).getJid();
+                if (activity.copyTextToClipboard(jid.asBareJid().toString(), R.string.account_settings_jabber_id)) {
+                    ToastCompat.makeText(activity, R.string.jabber_id_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+                }
+                return;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return;
+            }
+        }
+        Matcher webUrlPatternMatcher = Patterns.AUTOLINK_WEB_URL.matcher(body);
+        if (webUrlPatternMatcher.find()) {
+            String url = body.substring(webUrlPatternMatcher.start(), webUrlPatternMatcher.end());
+            if (activity.copyTextToClipboard(url, R.string.web_address)) {
+                ToastCompat.makeText(activity, R.string.url_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 
-	public static boolean containsXmppUri(String body) {
-		Matcher xmppPatternMatcher = Patterns.XMPP_PATTERN.matcher(body);
-		if (xmppPatternMatcher.find()) {
-			try {
-				return new XmppUri(body.substring(xmppPatternMatcher.start(), xmppPatternMatcher.end())).isValidJid();
-			} catch (Exception e) {
-				return false;
-			}
-		}
-		return false;
-	}
+    public static boolean containsXmppUri(String body) {
+        Matcher xmppPatternMatcher = Patterns.XMPP_PATTERN.matcher(body);
+        if (xmppPatternMatcher.find()) {
+            try {
+                return new XmppUri(body.substring(xmppPatternMatcher.start(), xmppPatternMatcher.end())).isValidJid();
+            } catch (Exception e) {
+                return false;
+            }
+        }
+        return false;
+    }
 }

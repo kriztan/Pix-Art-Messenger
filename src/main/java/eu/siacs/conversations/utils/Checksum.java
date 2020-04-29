@@ -38,23 +38,23 @@ import java.security.NoSuchAlgorithmException;
 
 public class Checksum {
 
-	public static String md5(InputStream inputStream) throws IOException {
-		byte[] buffer = new byte[4096];
-		MessageDigest messageDigest;
-		try {
-			messageDigest = MessageDigest.getInstance("MD5");
-		} catch (NoSuchAlgorithmException e) {
-			throw new AssertionError(e);
-		}
+    public static String md5(InputStream inputStream) throws IOException {
+        byte[] buffer = new byte[4096];
+        MessageDigest messageDigest;
+        try {
+            messageDigest = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            throw new AssertionError(e);
+        }
 
-		int count;
-		do {
-			count = inputStream.read(buffer);
-			if (count > 0) {
-				messageDigest.update(buffer, 0, count);
-			}
-		} while (count != -1);
-		inputStream.close();
-		return Base64.encodeToString(messageDigest.digest(), Base64.NO_WRAP);
-	}
+        int count;
+        do {
+            count = inputStream.read(buffer);
+            if (count > 0) {
+                messageDigest.update(buffer, 0, count);
+            }
+        } while (count != -1);
+        inputStream.close();
+        return Base64.encodeToString(messageDigest.digest(), Base64.NO_WRAP);
+    }
 }

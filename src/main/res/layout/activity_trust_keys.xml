@@ -1,102 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/color_background_secondary">
+        android:background="?attr/color_background_tertiary">
 
-        <include android:id="@+id/toolbar"
+        <include
+            android:id="@+id/toolbar"
             layout="@layout/toolbar" />
 
         <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/toolbar"
-            android:layout_above="@+id/button_bar">
+            android:layout_above="@+id/button_bar"
+            android:layout_below="@id/toolbar">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/key_error_message_card"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:visibility="gone">
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:visibility="gone"
+                    card_view:cardBackgroundColor="?attr/color_background_secondary">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="@dimen/card_padding_regular">
 
-                        <TextView
-                            android:id="@+id/key_error_message_title"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/error_trustkeys_title"
-                            android:textAppearance="@style/TextAppearance.Conversations.Title"
-                            android:layout_marginBottom="8sp"/>
+                            android:orientation="vertical"
+                            android:padding="@dimen/card_padding_regular">
 
-                        <TextView
-                            android:id="@+id/key_error_message"
-                            android:layout_width="wrap_content"
+                            <TextView
+                                android:id="@+id/key_error_message_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8sp"
+                                android:text="@string/error_trustkeys_title"
+                                android:textAppearance="@style/TextAppearance.Conversations.Title" />
+
+                            <TextView
+                                android:id="@+id/key_error_message"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.Conversations.Subhead" />
+
+                            <TextView
+                                android:id="@+id/key_error_general"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.Conversations.Body1" />
+
+                            <TextView
+                                android:id="@+id/key_error_hint_mutual"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8sp"
+                                android:text="@string/error_trustkey_hint_mutual"
+                                android:textAppearance="@style/TextAppearance.Conversations.Body1.Secondary" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.Conversations.Subhead"/>
-                        <TextView
-                            android:id="@+id/key_error_general"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.Conversations.Body1"/>
-                        <TextView
-                            android:layout_marginTop="8sp"
-                            android:id="@+id/key_error_hint_mutual"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.Conversations.Body1.Secondary"
-                            android:text="@string/error_trustkey_hint_mutual"/>
+                            android:layout_gravity="end"
+                            android:gravity="end">
+
+                            <Button
+                                android:id="@+id/disable_button"
+                                style="@style/Widget.Conversations.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="0dp"
+                                android:paddingStart="16dp"
+                                android:paddingLeft="16dp"
+                                android:paddingEnd="16dp"
+                                android:paddingRight="16dp"
+                                android:text="@string/disable_encryption"
+                                android:textColor="?attr/colorAccent" />
+                        </LinearLayout>
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:gravity="right">
 
-                        <Button
-                            android:id="@+id/disable_button"
-                            style="@style/Widget.Conversations.Button.Borderless"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:minWidth="0dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:text="@string/disable_encryption"
-                            android:textColor="?colorAccent"/>
-                    </LinearLayout>
-                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/own_keys_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:visibility="gone">
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:visibility="gone"
+                    card_view:cardBackgroundColor="?attr/color_background_secondary">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -109,16 +122,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/list_padding"
-                            android:textAppearance="@style/TextAppearance.Conversations.Title"/>
+                            android:textAppearance="@style/TextAppearance.Conversations.Title" />
 
                         <LinearLayout
                             android:id="@+id/own_keys_details"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"/>
+                            android:orientation="vertical" />
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:id="@+id/foreign_keys"
@@ -136,11 +149,11 @@
             android:id="@+id/button_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentBottom="true">
 
             <Button
                 android:id="@+id/cancel_button"
@@ -148,14 +161,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/cancel"/>
+                android:text="@string/cancel" />
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="fill_parent"
-                android:layout_marginBottom="7dp"
                 android:layout_marginTop="7dp"
-                android:background="?attr/divider"/>
+                android:layout_marginBottom="7dp"
+                android:background="?attr/divider" />
 
             <Button
                 android:id="@+id/save_button"
@@ -164,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="true"
-                android:text="@string/done"/>
+                android:text="@string/done" />
         </LinearLayout>
     </RelativeLayout>
 </layout>

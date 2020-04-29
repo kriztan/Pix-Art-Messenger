@@ -16,5 +16,4 @@ public class XmlElementReader {
         xmlReader.setInputStream(inputStream);
         return xmlReader.readElement(xmlReader.readTag());
     }
-
 }

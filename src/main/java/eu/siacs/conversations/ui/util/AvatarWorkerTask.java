@@ -5,22 +5,22 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
-import android.support.annotation.DimenRes;
 import android.widget.ImageView;
+
+import androidx.annotation.DimenRes;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.RejectedExecutionException;
 
-import eu.siacs.conversations.entities.Account;
+import eu.siacs.conversations.R;
 import eu.siacs.conversations.services.AvatarService;
 import eu.siacs.conversations.ui.XmppActivity;
-import eu.siacs.conversations.ui.adapter.AccountAdapter;
-import eu.siacs.conversations.utils.UIHelper;
 
 public class AvatarWorkerTask extends AsyncTask<AvatarService.Avatarable, Void, Bitmap> {
     private final WeakReference<ImageView> imageViewReference;
     private AvatarService.Avatarable avatarable = null;
-    private @DimenRes int size;
+    private @DimenRes
+    int size;
 
     public AvatarWorkerTask(ImageView imageView, @DimenRes int size) {
         imageViewReference = new WeakReference<>(imageView);
@@ -52,7 +52,7 @@ public class AvatarWorkerTask extends AsyncTask<AvatarService.Avatarable, Void, 
         final AvatarWorkerTask workerTask = getBitmapWorkerTask(imageView);
 
         if (workerTask != null) {
-            final AvatarService.Avatarable old= workerTask.avatarable;
+            final AvatarService.Avatarable old = workerTask.avatarable;
             if (old == null || avatarable != old) {
                 workerTask.cancel(true);
             } else {
@@ -74,22 +74,36 @@ public class AvatarWorkerTask extends AsyncTask<AvatarService.Avatarable, Void, 
     }
 
     public static void loadAvatar(final AvatarService.Avatarable avatarable, final ImageView imageView, final @DimenRes int size) {
+        loadAvatar(avatarable, imageView, size, false);
+    }
+
+    public static void loadAvatar(final AvatarService.Avatarable avatarable, final ImageView imageView, final @DimenRes int size, final boolean overlay) {
         if (cancelPotentialWork(avatarable, imageView)) {
             final XmppActivity activity = XmppActivity.find(imageView);
             if (activity == null) {
                 return;
             }
-            final Bitmap bm = activity.avatarService().get(avatarable, (int) activity.getResources().getDimension(size), true);
+            final Bitmap bm = activity.avatarService().get(avatarable, (int) activity.getResources().getDimension(size), false);
             if (bm != null) {
                 cancelPotentialWork(avatarable, imageView);
-                imageView.setImageBitmap(bm);
+                if (overlay) {
+                    activity.xmppConnectionService.fileBackend.drawOverlay(bm, R.drawable.pencil_overlay, 0.35f, true);
+                    imageView.setImageBitmap(bm);
+                } else {
+                    imageView.setImageBitmap(bm);
+                }
                 imageView.setBackgroundColor(0x00000000);
             } else {
                 imageView.setBackgroundColor(avatarable.getAvatarBackgroundColor());
                 imageView.setImageDrawable(null);
                 final AvatarWorkerTask task = new AvatarWorkerTask(imageView, size);
                 final AsyncDrawable asyncDrawable = new AsyncDrawable(activity.getResources(), null, task);
-                imageView.setImageDrawable(asyncDrawable);
+                if (overlay) {
+                    activity.xmppConnectionService.fileBackend.drawOverlayFromDrawable(asyncDrawable, R.drawable.pencil_overlay, 1.0f);
+                    imageView.setImageDrawable(asyncDrawable);
+                } else {
+                    imageView.setImageDrawable(asyncDrawable);
+                }
                 try {
                     task.execute(avatarable);
                 } catch (final RejectedExecutionException ignored) {

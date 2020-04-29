@@ -1,7 +1,8 @@
 package eu.siacs.conversations.utils;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
@@ -13,6 +14,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import rocks.xmpp.addr.Jid;
 
@@ -23,6 +25,8 @@ public class XmppUri {
     public static final String ACTION_REGISTER = "register";
     public static final String ACTION_ROSTER = "roster";
     private static final String OMEMO_URI_PARAM = "omemo-sid-";
+    private static final String OTR_URI_PARAM = "otr-fingerprint";
+    public static Pattern XMPP_URI = Patterns.XMPP_PATTERN;
     protected Uri uri;
     protected String jid;
     private List<Fingerprint> fingerprints = new ArrayList<>();
@@ -96,13 +100,15 @@ public class XmppUri {
     }
 
     public static String getFingerprintUri(final String base, final List<XmppUri.Fingerprint> fingerprints, char separator) {
-        final StringBuilder builder = new StringBuilder(base);
+        StringBuilder builder = new StringBuilder(base);
         builder.append('?');
         for (int i = 0; i < fingerprints.size(); ++i) {
             XmppUri.FingerprintType type = fingerprints.get(i).type;
             if (type == XmppUri.FingerprintType.OMEMO) {
                 builder.append(XmppUri.OMEMO_URI_PARAM);
                 builder.append(fingerprints.get(i).deviceId);
+            } else if (type == XmppUri.FingerprintType.OTR) {
+                builder.append(XmppUri.OTR_URI_PARAM);
             }
             builder.append('=');
             builder.append(fingerprints.get(i).fingerprint);
@@ -133,7 +139,7 @@ public class XmppUri {
         String scheme = uri.getScheme();
         String host = uri.getHost();
         List<String> segments = uri.getPathSegments();
-        if ("https".equalsIgnoreCase(scheme) && "conversations.im".equalsIgnoreCase(host)) {
+        if ("https".equalsIgnoreCase(scheme) && "jabber.pix-art.de".equalsIgnoreCase(host)) {
             if (segments.size() >= 2 && segments.get(1).contains("@")) {
                 // sample : https://conversations.im/i/foo@bar.com
                 try {
@@ -234,13 +240,18 @@ public class XmppUri {
     }
 
     public enum FingerprintType {
-        OMEMO
+        OMEMO,
+        OTR
     }
 
     public static class Fingerprint {
         public final FingerprintType type;
         public final String fingerprint;
         final int deviceId;
+
+        public Fingerprint(FingerprintType type, String fingerprint) {
+            this(type, fingerprint, 0);
+        }
 
         public Fingerprint(FingerprintType type, String fingerprint, int deviceId) {
             this.type = type;

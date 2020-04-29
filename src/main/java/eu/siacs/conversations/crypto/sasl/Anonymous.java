@@ -7,22 +7,22 @@ import eu.siacs.conversations.xml.TagWriter;
 
 public class Anonymous extends SaslMechanism {
 
-	public Anonymous(TagWriter tagWriter, Account account, SecureRandom rng) {
-		super(tagWriter, account, rng);
-	}
+    public Anonymous(TagWriter tagWriter, Account account, SecureRandom rng) {
+        super(tagWriter, account, rng);
+    }
 
-	@Override
-	public int getPriority() {
-		return 0;
-	}
+    @Override
+    public int getPriority() {
+        return 0;
+    }
 
-	@Override
-	public String getMechanism() {
-		return "ANONYMOUS";
-	}
+    @Override
+    public String getMechanism() {
+        return "ANONYMOUS";
+    }
 
-	@Override
-	public String getClientFirstMessage() {
-		return "";
-	}
+    @Override
+    public String getClientFirstMessage() {
+        return "";
+    }
 }

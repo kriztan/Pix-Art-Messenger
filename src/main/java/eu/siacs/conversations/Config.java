@@ -9,6 +9,9 @@ import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import rocks.xmpp.addr.Jid;
 
 public final class Config {
+
+    public static final long MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000;
+
     private static final int UNENCRYPTED = 1;
     private static final int OPENPGP = 2;
     private static final int OTR = 4;
@@ -24,6 +27,10 @@ public final class Config {
         return (ENCRYPTION_MASK & OPENPGP) != 0;
     }
 
+    public static boolean supportOtr() {
+        return (ENCRYPTION_MASK & OTR) != 0;
+    }
+
     public static boolean supportOmemo() {
         return (ENCRYPTION_MASK & OMEMO) != 0;
     }
@@ -34,29 +41,33 @@ public final class Config {
 
     public static final String LOGTAG = BuildConfig.LOGTAG;
 
-    public static final Jid BUG_REPORTS = Jid.of("bugs@conversations.im");
+    public static final Jid BUG_REPORTS = Jid.of("bugs@pix-art.de");
 
+    public static final String inviteUserURL = "https://jabber.pix-art.de/i/";
+    public static final String inviteMUCURL = "https://jabber.pix-art.de/j/";
+    public static final String inviteHostURL = "jabber.pix-art.de"; // without http(s)
+    public static final String CHANGELOG_URL = "https://github.com/kriztan/Pix-Art-Messenger/blob/master/CHANGELOG.md";
 
-    public static final String DOMAIN_LOCK = null; //only allow account creation for this domain
-    public static final String MAGIC_CREATE_DOMAIN = "conversations.im";
+    public static final String XMPP_IP = null; //BuildConfig.XMPP_IP; // set to null means disable
+    public static final Integer[] XMPP_Ports = null; //BuildConfig.XMPP_Ports; // set to null means disable
+    public static final String DOMAIN_LOCK = BuildConfig.DOMAIN_LOCK; //only allow account creation for this domain
+    public static final String MAGIC_CREATE_DOMAIN = BuildConfig.MAGIC_CREATE_DOMAIN; //"blabber.im";
     public static final String QUICKSY_DOMAIN = "quicksy.im";
-
     public static final String CHANNEL_DISCOVERY = "https://search.jabber.network";
-
+    public static final String DEFAULT_INVIDIOUS_HOST = "invidio.us";
     public static final boolean DISALLOW_REGISTRATION_IN_UI = false; //hide the register checkbox
+    public static final boolean SHOW_INTRO = BuildConfig.SHOW_INTRO;
 
     public static final boolean USE_RANDOM_RESOURCE_ON_EVERY_BIND = false;
 
     public static final boolean ALLOW_NON_TLS_CONNECTIONS = false; //very dangerous. you should have a good reason to set this to true
 
-    public static final long CONTACT_SYNC_RETRY_INTERVAL = 1000L * 60 * 5;
+    public static final boolean FORCE_ORBOT = false; // always use TOR
 
-
-    //Notification settings
     public static final boolean HIDE_MESSAGE_TEXT_IN_NOTIFICATION = false;
+
     public static final boolean ALWAYS_NOTIFY_BY_DEFAULT = false;
     public static final boolean SUPPRESS_ERROR_NOTIFICATION = false;
-
 
     public static final boolean DISABLE_BAN = false; // disables the ability to ban users from rooms
 
@@ -65,21 +76,27 @@ public final class Config {
     public static final int PING_MIN_INTERVAL = 30;
     public static final int LOW_PING_TIMEOUT = 1; // used after push received
     public static final int PING_TIMEOUT = 15;
-    public static final int SOCKET_TIMEOUT = 15;
-    public static final int CONNECT_TIMEOUT = 90;
+    public static final int SOCKET_TIMEOUT = 30;
+    public static final int CONNECT_TIMEOUT = 60;
     public static final int POST_CONNECTIVITY_CHANGE_PING_INTERVAL = 30;
-    public static final int CONNECT_DISCO_TIMEOUT = 20;
+    public static final int CONNECT_DISCO_TIMEOUT = 30;
     public static final int MINI_GRACE_PERIOD = 750;
 
     public static final boolean XEP_0392 = true; //enables XEP-0392 v0.6.0
 
-    public static final int AVATAR_SIZE = 192;
+    public static final int FILE_SIZE = 1048576; // 1 MiB
+
+    public static final int AVATAR_SIZE = 480;
     public static final Bitmap.CompressFormat AVATAR_FORMAT = Bitmap.CompressFormat.JPEG;
     public static final int AVATAR_CHAR_LIMIT = 9400;
 
-    public static final int IMAGE_SIZE = 1920;
     public static final Bitmap.CompressFormat IMAGE_FORMAT = Bitmap.CompressFormat.JPEG;
-    public static final int IMAGE_QUALITY = 75;
+    public static final int IMAGE_QUALITY = 65;
+
+    public static final int DEFAULT_ZOOM = 15; //for locations
+    public final static long LOCATION_FIX_TIME_DELTA = 1000 * 10; // ms
+    public final static float LOCATION_FIX_SPACE_DELTA = 10; // m
+    public final static int LOCATION_FIX_SIGNIFICANT_TIME_DELTA = 1000 * 60 * 2; // ms
 
     public static final int MESSAGE_MERGE_WINDOW = 20;
 
@@ -89,20 +106,20 @@ public final class Config {
 
     public static final int REFRESH_UI_INTERVAL = 500;
 
-    public static final int MAX_DISPLAY_MESSAGE_CHARS = 4096;
-    public static final int MAX_STORAGE_MESSAGE_CHARS = 2 * 1024 * 1024; //2MB
-
-    public static final long MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000;
-
-    //remove *other* omemo devices from *your* device list announcement after not seeing any activity from them for 42 days. They will automatically add themselves after coming back online.
-    public static final long OMEMO_AUTO_EXPIRY = 42 * MILLISECONDS_IN_DAY;
-    
+    public static final long OMEMO_AUTO_EXPIRY = 60 * MILLISECONDS_IN_DAY; // delete old OMEMO devices after 60 days of inactivity
     public static final boolean REMOVE_BROKEN_DEVICES = false;
     public static final boolean OMEMO_PADDING = false;
     public static final boolean PUT_AUTH_TAG_INTO_KEY = true;
+    public static final boolean TWELVE_BYTE_IV = true;
+
+    public static final int MAX_DISPLAY_MESSAGE_CHARS = 4096;
+    public static final int MAX_STORAGE_MESSAGE_CHARS = 2 * 1024 * 1024; //2MB
+
+    public static final boolean ExportLogs = true; // automatically export logs
+    public static final int ExportLogs_Hour = 4; //Time - hours: valid values from 0 to 23
+    public static final int ExportLogs_Minute = 0; //Time - minutes: valid values from 0 to 59
 
     public static final boolean USE_BOOKMARKS2 = false;
-
     public static final boolean DISABLE_PROXY_LOOKUP = false; //useful to debug ibb
     public static final boolean USE_DIRECT_JINGLE_CANDIDATES = true;
     public static final boolean DISABLE_HTTP_UPLOAD = false;
@@ -121,13 +138,18 @@ public final class Config {
 
     public static final boolean USE_LMC_VERSION_1_1 = true;
 
-    public static final long MAM_MAX_CATCHUP = MILLISECONDS_IN_DAY * 5;
+    public static final long MAM_MAX_CATCHUP = MILLISECONDS_IN_DAY * 30;
     public static final int MAM_MAX_MESSAGES = 750;
 
     public static final ChatState DEFAULT_CHAT_STATE = ChatState.ACTIVE;
-    public static final int TYPING_TIMEOUT = 8;
+    public static final int TYPING_TIMEOUT = 5;
 
     public static final int EXPIRY_INTERVAL = 30 * 60 * 1000; // 30 minutes
+
+    public static final String UPDATE_URL = BuildConfig.UPDATE_URL;
+    public static final long UPDATE_CHECK_TIMER = 24 * 60 * 60; // 24 h in seconds
+
+    public static final String ISSUE_URL = "xmpp://support@room.pix-art.de?join";
 
     public static final String[] ENABLED_CIPHERS = {
             "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
@@ -176,15 +198,5 @@ public final class Config {
     }
 
     private Config() {
-    }
-
-    public static final class Map {
-        public final static double INITIAL_ZOOM_LEVEL = 4;
-        public final static double FINAL_ZOOM_LEVEL = 15;
-        public final static int MY_LOCATION_INDICATOR_SIZE = 10;
-        public final static int MY_LOCATION_INDICATOR_OUTLINE_SIZE = 3;
-        public final static long LOCATION_FIX_TIME_DELTA = 1000 * 10; // ms
-        public final static float LOCATION_FIX_SPACE_DELTA = 10; // m
-        public final static int LOCATION_FIX_SIGNIFICANT_TIME_DELTA = 1000 * 60 * 2; // ms
     }
 }

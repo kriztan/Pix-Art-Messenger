@@ -1,5 +1,6 @@
 package eu.siacs.conversations.crypto.sasl;
 
+
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.util.Base64;
@@ -9,7 +10,6 @@ import org.bouncycastle.crypto.Digest;
 import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
 
-import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.security.InvalidKeyException;
 import java.security.SecureRandom;
@@ -43,7 +43,9 @@ abstract class ScramMechanism extends SaslMechanism {
                     clientKey = hmac(saltedPassword, CLIENT_KEY_BYTES);
 
                     return new KeyPair(clientKey, serverKey);
-                } catch (final InvalidKeyException | NumberFormatException e) {
+                } catch (final InvalidKeyException e) {
+                    return null;
+                } catch (final NumberFormatException e) {
                     return null;
                 }
             }

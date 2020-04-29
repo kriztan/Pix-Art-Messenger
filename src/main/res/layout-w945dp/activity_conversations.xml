@@ -5,7 +5,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include android:id="@+id/toolbar"
+        <include
+            android:id="@+id/toolbar"
             layout="@layout/toolbar" />
 
         <LinearLayout
@@ -16,13 +17,14 @@
                 android:id="@+id/main_fragment"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1000"/>
+                android:layout_weight="1000" />
 
             <FrameLayout
                 android:id="@+id/secondary_fragment"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1618"/>
+                android:layout_weight="1618" />
+
         </LinearLayout>
     </LinearLayout>
 </layout>

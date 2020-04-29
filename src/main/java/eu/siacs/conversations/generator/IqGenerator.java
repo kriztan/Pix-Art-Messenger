@@ -29,7 +29,7 @@ import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.entities.DownloadableFile;
 import eu.siacs.conversations.services.MessageArchiveService;
 import eu.siacs.conversations.services.XmppConnectionService;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xml.Element;
 import eu.siacs.conversations.xmpp.forms.Data;
 import eu.siacs.conversations.xmpp.pep.Avatar;
@@ -147,7 +147,7 @@ public class IqGenerator extends AbstractGenerator {
         final Element pubsub = packet.addChild("pubsub", Namespace.PUBSUB);
         final Element retract = pubsub.addChild("retract");
         retract.setAttribute("node", node);
-        retract.setAttribute("notify","true");
+        retract.setAttribute("notify", "true");
         retract.addChild("item").setAttribute("id", id);
         return packet;
     }
@@ -247,7 +247,7 @@ public class IqGenerator extends AbstractGenerator {
         if (nick != null) {
             conference.addChild("nick").setContent(nick);
         }
-        conference.setAttribute("autojoin",String.valueOf(autojoin));
+        conference.setAttribute("autojoin", String.valueOf(autojoin));
         return conference;
     }
 
@@ -385,6 +385,17 @@ public class IqGenerator extends AbstractGenerator {
         Element item = packet.query("http://jabber.org/protocol/muc#admin").addChild("item");
         item.setAttribute("nick", nick);
         item.setAttribute("role", role);
+        return packet;
+    }
+
+    public IqPacket destroyRoom(Conversation conference) {
+        IqPacket packet = new IqPacket(IqPacket.TYPE.SET);
+        packet.setTo(conference.getJid().asBareJid());
+        packet.setFrom(conference.getAccount().getJid());
+        final Element query = packet.addChild("query", "http://jabber.org/protocol/muc#owner");
+        final Element destroy = query.addChild("destroy");
+        destroy.setAttribute("jid", conference.getJid().asBareJid().toString());
+        Log.d(Config.LOGTAG, "Destroy: " + packet.toString());
         return packet;
     }
 
@@ -543,6 +554,7 @@ public class IqGenerator extends AbstractGenerator {
         return options;
     }
 
+
     public IqPacket requestPubsubConfiguration(Jid jid, String node) {
         return pubsubConfiguration(jid, node, null);
     }
@@ -565,14 +577,14 @@ public class IqGenerator extends AbstractGenerator {
     public IqPacket queryDiscoItems(Jid jid) {
         IqPacket packet = new IqPacket(IqPacket.TYPE.GET);
         packet.setTo(jid);
-        packet.addChild("query",Namespace.DISCO_ITEMS);
+        packet.addChild("query", Namespace.DISCO_ITEMS);
         return packet;
     }
 
     public IqPacket queryDiscoInfo(Jid jid) {
         IqPacket packet = new IqPacket(IqPacket.TYPE.GET);
         packet.setTo(jid);
-        packet.addChild("query",Namespace.DISCO_INFO);
+        packet.addChild("query", Namespace.DISCO_INFO);
         return packet;
     }
 }

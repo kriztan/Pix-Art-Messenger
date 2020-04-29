@@ -1,6 +1,5 @@
 package eu.siacs.conversations.ui.widget;
 
-
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -12,7 +11,7 @@ import java.lang.reflect.Field;
  * A wrapper class to fix some weird fuck ups on Meizu devices
  * credit goes to the people in this thread https://github.com/android-in-china/Compatibility/issues/11
  */
-public class TextInputEditText extends android.support.design.widget.TextInputEditText {
+public class TextInputEditText extends com.google.android.material.textfield.TextInputEditText {
 
     public TextInputEditText(Context context) {
         super(context);
@@ -31,10 +30,10 @@ public class TextInputEditText extends android.support.design.widget.TextInputEd
         String manufacturer = Build.MANUFACTURER.toUpperCase();
         if (!manufacturer.contains("MEIZU") || Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             return super.getHint();
-        }else{
+        } else {
             try {
                 return getSuperHintHack();
-            }catch (Exception e){
+            } catch (Exception e) {
                 return super.getHint();
             }
         }
@@ -46,4 +45,3 @@ public class TextInputEditText extends android.support.design.widget.TextInputEd
         return (CharSequence) hintField.get(this);
     }
 }
-

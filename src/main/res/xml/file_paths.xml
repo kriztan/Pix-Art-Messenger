@@ -2,23 +2,23 @@
 <paths>
     <external-path
         name="external"
-        path="/"/>
+        path="/" />
     <root-path
         name="storage"
-        path="/storage/"/>
+        path="/storage/" />
     <files-path
         name="pictures"
-        path="Images/"/>
+        path="Images/" />
     <files-path
         name="videos"
-        path="Videos"/>
+        path="Videos/" />
     <files-path
         name="files"
-        path="Files/"/>
+        path="Files/" />
     <files-path
-        name="recordings"
-        path="Recordings/"/>
-    <cache-path
-        name="camera"
-        path="Camera/"/>
+        name="audios"
+        path="Audios/" />
+    <files-path
+        name="update"
+        path="Update/" />
 </paths>

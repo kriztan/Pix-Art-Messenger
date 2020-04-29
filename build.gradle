@@ -1,123 +1,146 @@
-import com.android.build.OutputFile
-
 // Top-level build file where you can add configuration options common to all
 // sub-projects/modules.
 buildscript {
     repositories {
-        google()
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.2'
+        classpath 'com.android.tools.build:gradle:3.6.1'
     }
 }
 
 apply plugin: 'com.android.application'
 
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
 repositories {
     google()
     jcenter()
     mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 configurations {
     playstoreImplementation
-    compatImplementation
-    conversationsFreeCompatImplementation
-    conversationsPlaystoreCompatImplementation
-    conversationsPlaystoreSystemImplementation
-    quicksyFreeCompatImplementation
-    quicksyImplementation
-}
-
-ext {
-    supportLibVersion = '28.0.0'
+    gitImplementation
+    compile.exclude group: 'org.jetbrains' , module:'annotations'
 }
 
 dependencies {
-    //should remain that low because later versions introduce dependency to androidx (not sure exactly from what version)
-    playstoreImplementation('com.google.firebase:firebase-messaging:17.3.4') {
+    implementation project(':libs:android-transcoder')
+    playstoreImplementation('com.google.firebase:firebase-messaging:20.1.3') {
         exclude group: 'com.google.firebase', module: 'firebase-core'
         exclude group: 'com.google.firebase', module: 'firebase-analytics'
         exclude group: 'com.google.firebase', module: 'firebase-measurement-connector'
     }
-    conversationsPlaystoreCompatImplementation("com.android.installreferrer:installreferrer:1.1.2")
-    conversationsPlaystoreSystemImplementation("com.android.installreferrer:installreferrer:1.1.2")
+    playstoreImplementation 'com.android.installreferrer:installreferrer:1.1.2'
     implementation 'org.sufficientlysecure:openpgp-api:10.0'
-    implementation('com.theartofdev.edmodo:android-image-cropper:2.7.+') {
+    implementation('com.theartofdev.edmodo:android-image-cropper:2.8.0') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
         exclude group: 'com.android.support', module: 'exifinterface'
     }
-    implementation "com.android.support:support-v13:$supportLibVersion"
-    implementation "com.android.support:appcompat-v7:$supportLibVersion"
-    implementation "com.android.support:exifinterface:$supportLibVersion"
-    implementation "com.android.support:cardview-v7:$supportLibVersion"
-    implementation "com.android.support:support-emoji:$supportLibVersion"
-    implementation "com.android.support:design:$supportLibVersion"
-    compatImplementation "com.android.support:support-emoji-appcompat:$supportLibVersion"
-    conversationsFreeCompatImplementation "com.android.support:support-emoji-bundled:$supportLibVersion"
-    quicksyFreeCompatImplementation "com.android.support:support-emoji-bundled:$supportLibVersion"
     implementation 'org.bouncycastle:bcmail-jdk15on:1.64'
-    //zxing stopped supporting Java 7 so we have to stick with 3.3.3
-    //https://github.com/zxing/zxing/issues/1170
-    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'org.jitsi:org.otr4j:0.22'
+    implementation 'org.gnu.inet:libidn:1.15'
+    implementation 'com.google.zxing:core:3.3.3' // > 3.3.x not working below SDK 24
     implementation 'de.measite.minidns:minidns-hla:0.2.4'
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
     implementation 'org.whispersystems:signal-protocol-java:2.6.2'
     implementation 'com.makeramen:roundedimageview:2.3.0'
-    implementation "com.wefika:flowlayout:0.4.1"
-    implementation 'net.ypresto.androidtranscoder:android-transcoder:0.3.0'
+    implementation 'jetty:javax.servlet:5.1.12'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.exifinterface:exifinterface:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.emoji:emoji:1.0.0'
+    gitImplementation 'androidx.emoji:emoji-appcompat:1.0.0'
+    gitImplementation 'androidx.emoji:emoji-bundled:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0' // higher versions cause strange fab design
+    implementation 'androidx.cardview:cardview:1.0.0' // for compatibility
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.3'
+    implementation 'pub.devrel:easypermissions:3.0.0' // version >= 3.0.0 needs android X libraries
+    implementation 'com.wefika:flowlayout:0.4.1'
+    implementation 'com.googlecode.ez-vcard:ez-vcard:0.10.5'
     implementation project(':libs:xmpp-addr')
-    implementation 'org.osmdroid:osmdroid-android:6.1.5'
     implementation 'org.hsluv:hsluv:0.2'
     implementation 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15' // 1.2.15 is last working version for minSDK 16
     implementation 'me.drakeet.support:toastcompat:1.1.0'
-    implementation "com.leinardi.android:speed-dial:2.0.1"
-    //retrofit needs to stick with 2.6.x (https://github.com/square/retrofit/blob/master/CHANGELOG.md)
-    implementation "com.squareup.retrofit2:retrofit:2.6.4"
-    implementation "com.squareup.retrofit2:converter-gson:2.6.4"
-    //okhttp needs to stick with 3.12.x
-    implementation 'com.squareup.okhttp3:okhttp:3.12.10'
-    implementation 'com.google.guava:guava:27.1-android'
-    quicksyImplementation 'io.michaelrocks:libphonenumber-android:8.11.1'
-    implementation fileTree(include: ['libwebrtc-m81.aar'], dir: 'libs')
+    implementation 'org.osmdroid:osmdroid-android:6.1.5'
+    implementation 'com.leinardi.android:speed-dial:3.1.1' // version >= 3.0.0 needs android X libraries
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.10' // versions > 3.12.x don't support API level < 21 anymore
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4' //retrofit needs to stick with 2.6.x (https://github.com/square/retrofit/blob/master/CHANGELOG.md)
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
+    implementation 'com.google.guava:guava:28.2-android'
+    implementation 'com.github.AppIntro:AppIntro:5.1.0'
 }
 
 ext {
     travisBuild = System.getenv("TRAVIS") == "true"
     preDexEnabled = System.getProperty("pre-dex", "true")
-    abiCodes = ['armeabi-v7a': 1, 'x86': 2, 'x86_64': 3, 'arm64-v8a': 4]
 }
 
 android {
+
     compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 381
-        versionName "2.8.1"
-        archivesBaseName += "-$versionName"
-        applicationId "eu.siacs.conversations"
-        resValue "string", "applicationId", applicationId
-        resValue "string", "app_name", "Conversations"
-        buildConfigField "String", "LOGTAG", "\"conversations\""
-    }
+        targetSdkVersion 29
 
-    splits {
-        abi {
-            universalApk true
-            enable true
-        }
+        versionCode 299
+        versionName "2.3.7"
+        //versionNameSuffix "beta_(2020-04-01)" // "-beta_(XXXX-XX-XX)" // activate for beta versions
+        //resConfigs "en"
+
+        archivesBaseName += "-$versionName"
+        //archivesBaseName += "-$versionNameSuffix"  // activate for beta versions
+        applicationId "de.pixart.messenger"
+        multiDexEnabled true
+
+        buildConfigField("String", "LOGTAG", '"Pix-Art_Messenger"')
+        buildConfigField("String", "DOMAIN_LOCK", 'null')
+        buildConfigField("String", "MAGIC_CREATE_DOMAIN", '"blabber.im"')
+        buildConfigField("boolean", "SHOW_INTRO", 'true')
+        buildConfigField("String", "UPDATE_URL", '"https://xmpp.pix-art.de/Pix-Art_Messenger/update/"')
+        resValue "string", "applicationId", applicationId
+        resValue "string", "app_name", "Pix-Art Messenger"
     }
 
     dataBinding {
         enabled true
     }
 
+    packagingOptions {
+        //X86
+        exclude "lib/x86/**"
+        //X86_64
+        exclude "lib/x86_64/**"
+        //armeabi
+        exclude "lib/armeabi/**"
+    }
+
     dexOptions {
         // Skip pre-dexing when running on Travis CI or when disabled via -Dpre-dex=false.
         preDexLibraries = preDexEnabled && !travisBuild
+        javaMaxHeapSize "4g"
         jumboMode true
     }
 
@@ -126,124 +149,54 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    flavorDimensions("mode", "distribution", "emoji")
+    flavorDimensions("distribution")
 
     productFlavors {
-
-        quicksy {
-            dimension "mode"
-            applicationId = "im.quicksy.client"
-            resValue "string", "app_name", "Quicksy"
-            resValue "string", "applicationId", applicationId
-            buildConfigField "String", "LOGTAG", "\"quicksy\""
-        }
-
-        conversations {
-            dimension "mode"
-        }
-
         playstore {
             dimension "distribution"
-            versionNameSuffix "+p"
+            versionNameSuffix "-playstore"
         }
-        free {
+        git {
             dimension "distribution"
-            versionNameSuffix "+f"
-        }
-        system {
-            dimension "emoji"
-            versionNameSuffix "s"
-        }
-        compat {
-            dimension "emoji"
-            versionNameSuffix "c"
         }
     }
-
-    sourceSets {
-        quicksyFreeCompat {
-            java {
-                srcDir 'src/freeCompat/java'
-            }
-        }
-        quicksyPlaystoreCompat {
-            java {
-                srcDir 'src/playstoreCompat/java'
-            }
-            res {
-                srcDir 'src/playstoreCompat/res'
-                srcDir 'src/quicksyPlaystore/res'
-            }
-        }
-        quicksyPlaystoreSystem {
-            res {
-                srcDir 'src/quicksyPlaystore/res'
-            }
-        }
-        conversationsFreeCompat {
-            java {
-                srcDir 'src/freeCompat/java'
-                srcDir 'src/conversationsFree/java'
-            }
-        }
-        conversationsFreeSystem {
-            java {
-                srcDir 'src/conversationsFree/java'
-            }
-        }
-        conversationsPlaystoreCompat {
-            java {
-                srcDir 'src/playstoreCompat/java'
-                srcDir 'src/conversationsPlaystore/java'
-            }
-            res {
-                srcDir 'src/playstoreCompat/res'
-                srcDir 'src/conversationsPlaystore/res'
-            }
-        }
-        conversationsPlaystoreSystem {
-            java {
-                srcDir 'src/conversationsPlaystore/java'
-            }
-            res {
-                srcDir 'src/conversationsPlaystore/res'
-            }
-        }
-    }
-
-    buildTypes {
-        release {
-            shrinkResources true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            versionNameSuffix "r"
-        }
-        debug {
-            shrinkResources true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            versionNameSuffix "d"
-        }
-    }
-
-
-    if (new File("signing.properties").exists()) {
-        Properties props = new Properties()
-        props.load(new FileInputStream(file("signing.properties")))
-
+    if (project.hasProperty('mStoreFile') &&
+            project.hasProperty('mStorePassword') &&
+            project.hasProperty('mKeyAlias') &&
+            project.hasProperty('mKeyPassword')) {
         signingConfigs {
             release {
-                storeFile file(props['keystore'])
-                storePassword props['keystore.password']
-                keyAlias props['keystore.alias']
-                keyPassword props['keystore.password']
+                storeFile file(mStoreFile)
+                storePassword mStorePassword
+                keyAlias mKeyAlias
+                keyPassword mKeyPassword
             }
         }
-        buildTypes.release.signingConfig = signingConfigs.release
+        buildTypes {
+            release {
+                debuggable false
+                signingConfig = signingConfigs.release
+                minifyEnabled true
+                shrinkResources true
+                runProguard true
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+
+            debug {
+                debuggable true
+                buildTypes.release.signingConfig = null
+                minifyEnabled true
+                shrinkResources true
+                runProguard true
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+
+        }
     }
 
     lintOptions {
-        disable 'ExtraTranslation', 'MissingTranslation', 'InvalidPackage', 'MissingQuantity', 'AppCompatResource'
+        disable 'ExtraTranslation', 'MissingTranslation', 'InvalidPackage', 'MissingQuantity', 'AppCompatResource', 'RestrictedApi'
+        //abortOnError false
     }
 
     subprojects {
@@ -263,17 +216,5 @@ android {
     packagingOptions {
         exclude 'META-INF/BCKEY.DSA'
         exclude 'META-INF/BCKEY.SF'
-    }
-
-    android.applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            def baseAbiVersionCode = project.ext.abiCodes.get(output.getFilter(OutputFile.ABI))
-            if (baseAbiVersionCode != null) {
-                output.versionCodeOverride = (100 * variant.versionCode) + baseAbiVersionCode
-            } else {
-                output.versionCodeOverride = (100 * variant.versionCode)
-            }
-        }
-
     }
 }

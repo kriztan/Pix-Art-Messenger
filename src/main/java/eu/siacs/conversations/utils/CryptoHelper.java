@@ -24,7 +24,6 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Locale;
 import java.util.regex.Pattern;
 
 import eu.siacs.conversations.Config;
@@ -42,6 +41,7 @@ public final class CryptoHelper {
     private static final int PW_LENGTH = 10;
     private static final char[] VOWELS = "aeiou".toCharArray();
     private static final char[] CONSONANTS = "bcfghjklmnpqrstvwxyz".toCharArray();
+    public static final String FILETRANSFER = "?FILETRANSFERv1:";
     private final static char[] hexArray = "0123456789abcdef".toCharArray();
 
     public static String bytesToHex(byte[] bytes) {

@@ -1,11 +1,12 @@
 package eu.siacs.conversations.ui.util;
 
 import android.content.Context;
-import android.support.annotation.DimenRes;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.ViewTreeObserver;
+
+import androidx.annotation.DimenRes;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import eu.siacs.conversations.Config;
 import eu.siacs.conversations.ui.adapter.MediaAdapter;
@@ -24,7 +25,7 @@ public class GridManager {
                 recyclerView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 final int availableWidth = recyclerView.getMeasuredWidth();
                 if (availableWidth == 0) {
-                    Log.e(Config.LOGTAG,"GridManager: available width was 0; probably because layout was hidden");
+                    Log.e(Config.LOGTAG, "GridManager: available width was 0; probably because layout was hidden");
                     return;
                 }
                 final ColumnInfo columnInfo = calculateColumnCount(context, recyclerView.getMeasuredWidth(), desiredSize);
@@ -49,7 +50,10 @@ public class GridManager {
 
     private static ColumnInfo calculateColumnCount(Context context, int availableWidth, @DimenRes int desiredSize) {
         final float desiredWidth = context.getResources().getDimension(desiredSize);
-        final int columns = Math.round(availableWidth / desiredWidth);
+        int columns = Math.round(availableWidth / desiredWidth);
+        if (columns < 1) {
+            columns = 1;
+        }
         final int realWidth = availableWidth / columns;
         Log.d(Config.LOGTAG, "desired=" + desiredWidth + " real=" + realWidth);
         return new ColumnInfo(columns, realWidth);

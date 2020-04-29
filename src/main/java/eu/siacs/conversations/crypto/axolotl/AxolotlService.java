@@ -2,18 +2,19 @@ package eu.siacs.conversations.crypto.axolotl;
 
 import android.os.Bundle;
 import android.security.KeyChain;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.util.Pair;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.whispersystems.libsignal.SignalProtocolAddress;
 import org.whispersystems.libsignal.IdentityKey;
 import org.whispersystems.libsignal.IdentityKeyPair;
 import org.whispersystems.libsignal.InvalidKeyException;
 import org.whispersystems.libsignal.InvalidKeyIdException;
 import org.whispersystems.libsignal.SessionBuilder;
+import org.whispersystems.libsignal.SignalProtocolAddress;
 import org.whispersystems.libsignal.UntrustedIdentityException;
 import org.whispersystems.libsignal.ecc.ECPublicKey;
 import org.whispersystems.libsignal.state.PreKeyBundle;
@@ -1266,7 +1267,7 @@ public class AxolotlService implements OnAdvancedStreamFeaturesLoaded {
         } catch (final BrokenSessionException e) {
             throw e;
         } catch (final OutdatedSenderException e) {
-            Log.e(Config.LOGTAG,account.getJid().asBareJid()+": "+e.getMessage());
+            Log.e(Config.LOGTAG, account.getJid().asBareJid() + ": " + e.getMessage());
             throw e;
         } catch (CryptoFailedException e) {
             Log.w(Config.LOGTAG, getLogprefix(account) + "Failed to decrypt message from " + message.getFrom(), e);

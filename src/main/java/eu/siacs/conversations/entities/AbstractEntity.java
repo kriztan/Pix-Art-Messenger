@@ -4,17 +4,17 @@ import android.content.ContentValues;
 
 public abstract class AbstractEntity {
 
-	public static final String UUID = "uuid";
+    public static final String UUID = "uuid";
 
-	protected String uuid;
+    protected String uuid;
 
-	public String getUuid() {
-		return this.uuid;
-	}
+    public String getUuid() {
+        return this.uuid;
+    }
 
-	public abstract ContentValues getContentValues();
+    public abstract ContentValues getContentValues();
 
-	public boolean equals(AbstractEntity entity) {
-		return this.getUuid().equals(entity.getUuid());
-	}
+    public boolean equals(AbstractEntity entity) {
+        return this.getUuid().equals(entity.getUuid());
+    }
 }

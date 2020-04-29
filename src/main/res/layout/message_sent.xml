@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingStart="8dp"
     android:paddingLeft="8dp"
     android:paddingTop="3dp"
+    android:paddingEnd="8dp"
     android:paddingRight="8dp"
     android:paddingBottom="3dp">
-
 
     <LinearLayout
         android:id="@+id/message_photo_box"
@@ -24,7 +25,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:scaleType="fitXY"
-            app:riv_corner_radius="2dp" />
+            app:riv_corner_radius="@dimen/rounded_image_border" />
 
         <View
             android:id="@+id/placeholder"
@@ -32,17 +33,20 @@
             android:layout_height="3dp" />
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/message_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="-4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toStartOf="@+id/message_photo_box"
         android:layout_toLeftOf="@+id/message_photo_box"
-        android:background="?attr/message_bubble_sent"
+        android:background="@drawable/message_bubble_sent"
         android:longClickable="true"
-        android:minHeight="53dp">
+        android:minHeight="48dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -53,10 +57,17 @@
 
             <include layout="@layout/message_content" />
 
+            <Button
+                android:id="@+id/resend_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="true"
+                android:visibility="gone" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:orientation="horizontal"
                 android:paddingBottom="2dp">
 
@@ -65,8 +76,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="4sp"
-                    android:layout_marginRight="4sp"
                     android:gravity="center_vertical"
                     android:text="@string/sending"
                     android:textAppearance="@style/TextAppearance.Conversations.Caption" />
@@ -76,6 +85,8 @@
                     android:layout_width="?attr/TextSizeCaption"
                     android:layout_height="?attr/TextSizeCaption"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4sp"
+                    android:layout_marginLeft="4sp"
                     android:alpha="0.54"
                     android:gravity="center_vertical"
                     android:src="@drawable/ic_lock_black_18dp" />
@@ -85,20 +96,33 @@
                     android:layout_width="?attr/TextSizeCaption"
                     android:layout_height="?attr/TextSizeCaption"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4sp"
+                    android:layout_marginLeft="4sp"
                     android:alpha="0.54"
                     android:gravity="center_vertical"
                     android:src="@drawable/ic_mode_edit_black_18dp" />
 
                 <ImageView
                     android:id="@+id/indicator_received"
-                    android:layout_width="?attr/TextSizeSubhead"
-                    android:layout_height="?attr/TextSizeSubhead"
+                    android:layout_width="?attr/TextSizeCaption"
+                    android:layout_height="?attr/TextSizeCaption"
                     android:layout_gravity="center_vertical"
-                    android:alpha="0.54"
+                    android:layout_marginStart="4sp"
+                    android:layout_marginLeft="4sp"
                     android:gravity="center_vertical"
-                    android:src="@drawable/ic_done_black_18dp" />
+                    android:src="@drawable/ic_received_indicator" />
+
+                <ImageView
+                    android:id="@+id/indicator_read"
+                    android:layout_width="?attr/TextSizeCaption"
+                    android:layout_height="?attr/TextSizeCaption"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="-8sp"
+                    android:layout_marginLeft="-8sp"
+                    android:adjustViewBounds="false"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_read_indicator" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>

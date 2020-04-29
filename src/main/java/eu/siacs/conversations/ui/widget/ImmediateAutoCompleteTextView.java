@@ -26,24 +26,23 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.ui.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-public class ImmediateAutoCompleteTextView extends android.support.v7.widget.AppCompatAutoCompleteTextView {
+public class ImmediateAutoCompleteTextView extends androidx.appcompat.widget.AppCompatAutoCompleteTextView {
 
-	public ImmediateAutoCompleteTextView(Context context, AttributeSet attrs) {
-		super(context, attrs);
-	}
+    public ImmediateAutoCompleteTextView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
 
-	public ImmediateAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
-		super(context, attrs, defStyleAttr);
-	}
+    public ImmediateAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
 
-	@Override
-	public boolean enoughToFilter() {
-		return true;
-	}
+    @Override
+    public boolean enoughToFilter() {
+        return true;
+    }
 }

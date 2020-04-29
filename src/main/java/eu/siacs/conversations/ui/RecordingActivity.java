@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +12,12 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,15 +32,15 @@ import eu.siacs.conversations.R;
 import eu.siacs.conversations.databinding.ActivityRecordingBinding;
 import eu.siacs.conversations.persistance.FileBackend;
 import eu.siacs.conversations.utils.ThemeHelper;
+import me.drakeet.support.toast.ToastCompat;
 
-public class RecordingActivity extends Activity implements View.OnClickListener {
-
-    public static String STORAGE_DIRECTORY_TYPE_NAME = "Recordings";
+public class RecordingActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ActivityRecordingBinding binding;
 
     private MediaRecorder mRecorder;
     private long mStartTime = 0;
+    private boolean alternativeCodec = false;
 
     private CountDownLatch outputFileWrittenLatch = new CountDownLatch(1);
 
@@ -58,7 +61,9 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(ThemeHelper.findDialog(this));
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         this.binding = DataBindingUtil.setContentView(this, R.layout.activity_recording);
+        this.setTitle(R.string.attach_record_voice);
         this.binding.cancelButton.setOnClickListener(this);
         this.binding.shareButton.setOnClickListener(this);
         this.setFinishOnTouchOutside(false);
@@ -68,6 +73,8 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
     @Override
     protected void onStart() {
         super.onStart();
+        Intent intent = getIntent();
+        alternativeCodec = intent != null && intent.getBooleanExtra("ALTERNATIVE_CODEC", getResources().getBoolean(R.bool.alternative_voice_settings));
         if (!startRecording()) {
             this.binding.shareButton.setEnabled(false);
             this.binding.timer.setTextAppearance(this, R.style.TextAppearance_Conversations_Title);
@@ -90,10 +97,15 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
     private boolean startRecording() {
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
-        mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-        mRecorder.setAudioEncodingBitRate(96000);
-        mRecorder.setAudioSamplingRate(22050);
+        if (alternativeCodec) {
+            mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+            mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+        } else {
+            mRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+            mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+            mRecorder.setAudioEncodingBitRate(96000);
+            mRecorder.setAudioSamplingRate(22050);
+        }
         setupOutputFile();
         mRecorder.setOutputFile(mOutputFile.getAbsolutePath());
 
@@ -116,7 +128,7 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
             mRecorder.release();
         } catch (Exception e) {
             if (saveFile) {
-                Toast.makeText(this, R.string.unable_to_save_recording, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.unable_to_save_recording, Toast.LENGTH_SHORT).show();
                 return;
             }
         } finally {
@@ -135,7 +147,7 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
                         Log.d(Config.LOGTAG, "time out waiting for output file to be written");
                     }
                 } catch (InterruptedException e) {
-                    Log.d(Config.LOGTAG, "interrupted while waiting for output file to be written" ,e);
+                    Log.d(Config.LOGTAG, "interrupted while waiting for output file to be written", e);
                 }
                 runOnUiThread(() -> {
                     setResult(Activity.RESULT_OK, new Intent().setData(Uri.fromFile(mOutputFile)));
@@ -147,8 +159,9 @@ public class RecordingActivity extends Activity implements View.OnClickListener 
 
     private static File generateOutputFilename(Context context) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmssSSS", Locale.US);
-        String filename = "RECORDING_" + dateFormat.format(new Date()) + ".m4a";
-        return new File(FileBackend.getConversationsDirectory(context, STORAGE_DIRECTORY_TYPE_NAME) + "/" + filename);
+        return new File(FileBackend.getConversationsDirectory("Audios/Sent")
+                + dateFormat.format(new Date())
+                + ".m4a");
     }
 
     private void setupOutputFile() {

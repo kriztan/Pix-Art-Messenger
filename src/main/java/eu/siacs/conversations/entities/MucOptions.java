@@ -1,8 +1,10 @@
 package eu.siacs.conversations.entities;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import android.annotation.SuppressLint;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,14 +18,15 @@ import eu.siacs.conversations.R;
 import eu.siacs.conversations.services.AvatarService;
 import eu.siacs.conversations.services.MessageArchiveService;
 import eu.siacs.conversations.utils.JidHelper;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.utils.UIHelper;
-import eu.siacs.conversations.xml.Namespace;
 import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.forms.Data;
 import eu.siacs.conversations.xmpp.forms.Field;
 import eu.siacs.conversations.xmpp.pep.Avatar;
 import rocks.xmpp.addr.Jid;
 
+@SuppressLint("DefaultLocale")
 public class MucOptions {
 
     public static final String STATUS_CODE_SELF_PRESENCE = "110";
@@ -44,7 +47,6 @@ public class MucOptions {
     private Error error = Error.NONE;
     private User self;
     private String password = null;
-
     private boolean tookProposedNickFromBookmark = false;
 
     public MucOptions(Conversation conversation) {
@@ -104,7 +106,7 @@ public class MucOptions {
     }
 
     void notifyOfBookmarkNick(final String nick) {
-        final String normalized = normalize(account.getJid(),nick);
+        final String normalized = normalize(account.getJid(), nick);
         if (normalized != null && normalized.equals(getSelf().getFullJid().getResource())) {
             this.tookProposedNickFromBookmark = true;
         }
@@ -267,7 +269,6 @@ public class MucOptions {
             }
         }
         old = findUserByFullJid(user.getFullJid());
-
         synchronized (this.users) {
             if (old != null) {
                 users.remove(old);

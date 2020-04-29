@@ -32,22 +32,22 @@ package eu.siacs.conversations.http;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.xmpp.XmppConnection;
 
-public enum  Method {
-	P1_S3, HTTP_UPLOAD, HTTP_UPLOAD_LEGACY;
+public enum Method {
+    P1_S3, HTTP_UPLOAD, HTTP_UPLOAD_LEGACY;
 
-	public static Method determine(Account account) {
-		XmppConnection.Features features = account.getXmppConnection() == null ? null : account.getXmppConnection().getFeatures();
-		if (features == null) {
-			return HTTP_UPLOAD;
-		}
-		if (features.useLegacyHttpUpload()) {
-			return HTTP_UPLOAD_LEGACY;
-		} else if (features.httpUpload(0)) {
-			return HTTP_UPLOAD;
-		} else if (features.p1S3FileTransfer()) {
-			return P1_S3;
-		} else {
-			return HTTP_UPLOAD;
-		}
-	}
+    public static Method determine(Account account) {
+        XmppConnection.Features features = account.getXmppConnection() == null ? null : account.getXmppConnection().getFeatures();
+        if (features == null) {
+            return HTTP_UPLOAD;
+        }
+        if (features.useLegacyHttpUpload()) {
+            return HTTP_UPLOAD_LEGACY;
+        } else if (features.httpUpload(0)) {
+            return HTTP_UPLOAD;
+        } else if (features.p1S3FileTransfer()) {
+            return P1_S3;
+        } else {
+            return HTTP_UPLOAD;
+        }
+    }
 }

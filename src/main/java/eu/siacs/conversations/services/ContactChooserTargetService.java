@@ -52,7 +52,7 @@ public class ContactChooserTargetService extends ChooserTargetService implements
             if (!mXmppConnectionService.areMessagesInitialized()) {
                 return chooserTargets;
             }
-            
+
             mXmppConnectionService.populateWithOrderedConversations(conversations, textOnly(matchedFilter));
             final ComponentName componentName = new ComponentName(this, ConversationsActivity.class);
             final int pixel = AvatarService.getSystemUiAvatarSize(this);

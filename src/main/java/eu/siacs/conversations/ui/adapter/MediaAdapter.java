@@ -1,33 +1,49 @@
 package eu.siacs.conversations.ui.adapter;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
-import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.annotation.AttrRes;
-import android.support.annotation.DimenRes;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import androidx.annotation.AttrRes;
+import androidx.annotation.DimenRes;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.RejectedExecutionException;
 
+import eu.siacs.conversations.Config;
 import eu.siacs.conversations.R;
 import eu.siacs.conversations.databinding.MediaBinding;
+import eu.siacs.conversations.persistance.FileBackend;
 import eu.siacs.conversations.services.ExportBackupService;
 import eu.siacs.conversations.ui.XmppActivity;
 import eu.siacs.conversations.ui.util.Attachment;
 import eu.siacs.conversations.ui.util.StyledAttributes;
 import eu.siacs.conversations.ui.util.ViewUtil;
+import eu.siacs.conversations.utils.MimeUtils;
+import me.drakeet.support.toast.ToastCompat;
 
 public class MediaAdapter extends RecyclerView.Adapter<MediaAdapter.MediaViewHolder> {
 
@@ -58,7 +74,8 @@ public class MediaAdapter extends RecyclerView.Adapter<MediaAdapter.MediaViewHol
         }
     }
 
-    private static @AttrRes int getImageAttr(Attachment attachment) {
+    private static @AttrRes
+    int getImageAttr(Attachment attachment) {
         final @AttrRes int attr;
         if (attachment.getType() == Attachment.Type.LOCATION) {
             attr = R.attr.media_preview_location;
@@ -138,9 +155,105 @@ public class MediaAdapter extends RecyclerView.Adapter<MediaAdapter.MediaViewHol
             loadPreview(attachment, holder.binding.media);
         } else {
             cancelPotentialWork(attachment, holder.binding.media);
-            renderPreview(activity, attachment, holder.binding.media);
+            renderPreview(this.activity, attachment, holder.binding.media);
         }
-        holder.binding.getRoot().setOnClickListener(v -> ViewUtil.view(activity, attachment));
+        holder.binding.getRoot().setOnClickListener(v -> ViewUtil.view(this.activity, attachment));
+        holder.binding.getRoot().setOnLongClickListener(v -> {
+            setSelection(v);
+            final PopupMenu popupMenu = new PopupMenu(this.activity, v);
+            popupMenu.inflate(R.menu.media_viewer);
+            popupMenu.getMenu().findItem(R.id.action_delete).setVisible(isDeletableFile(new File(attachment.getUri().getPath())));
+            popupMenu.setOnMenuItemClickListener(item -> {
+                switch (item.getItemId()) {
+                    case R.id.action_share:
+                        share(attachment);
+                        return true;
+                    case R.id.action_open:
+                        open(attachment);
+                        return true;
+                    case R.id.action_delete:
+                        deleteFile(attachment);
+                        return true;
+                }
+                return false;
+            });
+            popupMenu.setOnDismissListener(menu -> resetSelection(v));
+            popupMenu.show();
+            return true;
+        });
+    }
+
+    private void setSelection(final View v) {
+        v.setBackgroundColor(StyledAttributes.getColor(this.activity, R.attr.colorAccent));
+    }
+
+    private void resetSelection(final View v) {
+        v.setBackgroundColor(0);
+    }
+
+    private void share(final Attachment attachment) {
+        final Intent share = new Intent(Intent.ACTION_SEND);
+        final File file = new File(attachment.getUri().getPath());
+        share.setType(attachment.getMime());
+        share.putExtra(Intent.EXTRA_STREAM, FileBackend.getUriForFile(this.activity, file));
+        try {
+            this.activity.startActivity(Intent.createChooser(share, this.activity.getText(R.string.share_with)));
+        } catch (ActivityNotFoundException e) {
+            //This should happen only on faulty androids because normally chooser is always available
+            ToastCompat.makeText(this.activity, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void deleteFile(final Attachment attachment) {
+        final File file = new File(attachment.getUri().getPath());
+        final int hash = attachment.hashCode();
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this.activity);
+        builder.setNegativeButton(R.string.cancel, null);
+        builder.setTitle(R.string.delete_file_dialog);
+        builder.setMessage(R.string.delete_file_dialog_msg);
+        builder.setPositiveButton(R.string.confirm, (dialog, which) -> {
+            if (activity.xmppConnectionService.getFileBackend().deleteFile(file)) {
+                for (int i = 0; i < attachments.size(); i++) {
+                    if (hash == attachments.get(i).hashCode()) {
+                        attachments.remove(i);
+                        notifyDataSetChanged();
+                        this.activity.refreshUi();
+                        return;
+                    }
+                }
+            }
+        });
+        builder.create().show();
+    }
+
+    private void open(final Attachment attachment) {
+        final File file = new File(attachment.getUri().getPath());
+        final Uri uri;
+        try {
+            uri = FileBackend.getUriForFile(this.activity, file);
+        } catch (SecurityException e) {
+            Log.d(Config.LOGTAG, "No permission to access " + file.getAbsolutePath(), e);
+            ToastCompat.makeText(this.activity, this.activity.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String mime = MimeUtils.guessMimeTypeFromUri(this.activity, uri);
+        Intent openIntent = new Intent(Intent.ACTION_VIEW);
+        openIntent.setDataAndType(uri, mime);
+        openIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        PackageManager manager = this.activity.getPackageManager();
+        List<ResolveInfo> info = manager.queryIntentActivities(openIntent, 0);
+        if (info.size() == 0) {
+            openIntent.setDataAndType(uri, "*/*");
+        }
+        try {
+            this.activity.startActivity(openIntent);
+        } catch (ActivityNotFoundException e) {
+            ToastCompat.makeText(this.activity, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean isDeletableFile(File file) {
+        return (file == null || !file.toString().startsWith("/") || file.toString().contains(FileBackend.getConversationsDirectory("null")));
     }
 
     public void setAttachments(List<Attachment> attachments) {
@@ -155,7 +268,7 @@ public class MediaAdapter extends RecyclerView.Adapter<MediaAdapter.MediaViewHol
 
     private void loadPreview(Attachment attachment, ImageView imageView) {
         if (cancelPotentialWork(attachment, imageView)) {
-            final Bitmap bm = activity.xmppConnectionService.getFileBackend().getPreviewForUri(attachment,mediaSize,true);
+            final Bitmap bm = activity.xmppConnectionService.getFileBackend().getPreviewForUri(attachment, mediaSize, true);
             if (bm != null) {
                 cancelPotentialWork(attachment, imageView);
                 imageView.setImageBitmap(bm);

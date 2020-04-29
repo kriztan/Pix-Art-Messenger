@@ -4,15 +4,15 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import eu.siacs.conversations.Config;
@@ -21,8 +21,7 @@ import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.adapter.ConversationAdapter;
-import eu.siacs.conversations.ui.service.EmojiService;
-import eu.siacs.conversations.utils.GeoHelper;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class ShareWithActivity extends XmppActivity implements XmppConnectionService.OnConversationUpdate {
@@ -77,7 +76,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
                     }
                 }
             } else {
-                Toast.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(this, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -85,15 +84,12 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_with);
-
         setSupportActionBar(findViewById(R.id.toolbar));
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
             getSupportActionBar().setHomeButtonEnabled(false);
         }
-
         setTitle(getString(R.string.title_activity_sharewith));
-
         RecyclerView mListView = findViewById(R.id.choose_conversation_list);
         mAdapter = new ConversationAdapter(this, this.mConversations);
         mListView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -113,7 +109,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         switch (item.getItemId()) {
             case R.id.action_add:
                 final Intent intent = new Intent(getApplicationContext(), ChooseContactActivity.class);
-                intent.putExtra("direct_search",true);
+                intent.putExtra("direct_search", true);
                 startActivityForResult(intent, REQUEST_START_NEW_CONVERSATION);
                 return true;
         }
@@ -134,7 +130,6 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
             final String text = intent.getStringExtra(Intent.EXTRA_TEXT);
             final Uri uri = intent.getParcelableExtra(Intent.EXTRA_STREAM);
             final boolean asQuote = intent.getBooleanExtra(ConversationsActivity.EXTRA_AS_QUOTE, false);
-
             if (data != null && "geo".equals(data.getScheme())) {
                 this.share.uris.clear();
                 this.share.uris.add(data);
@@ -152,7 +147,6 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         if (xmppConnectionServiceBound) {
             xmppConnectionService.populateWithOrderedConversations(mConversations, this.share.uris.size() == 0, false);
         }
-
     }
 
     @Override
@@ -166,21 +160,20 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
 
     private void share() {
         final Conversation conversation;
-            Account account;
-            try {
-                account = xmppConnectionService.findAccountByJid(Jid.of(share.account));
-            } catch (final IllegalArgumentException e) {
-                account = null;
-            }
-            if (account == null) {
-                return;
-            }
-
-            try {
-                conversation = xmppConnectionService.findOrCreateConversation(account, Jid.of(share.contact), false, true);
-            } catch (final IllegalArgumentException e) {
-                return;
-            }
+        Account account;
+        try {
+            account = xmppConnectionService.findAccountByJid(Jid.of(share.account));
+        } catch (final IllegalArgumentException e) {
+            account = null;
+        }
+        if (account == null) {
+            return;
+        }
+        try {
+            conversation = xmppConnectionService.findOrCreateConversation(account, Jid.of(share.contact), false, true);
+        } catch (final IllegalArgumentException e) {
+            return;
+        }
         share(conversation);
     }
 
@@ -194,7 +187,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         if (share.uris.size() > 0) {
             intent.setAction(Intent.ACTION_SEND_MULTIPLE);
             intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, share.uris);
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         } else if (share.text != null) {
             intent.setAction(ConversationsActivity.ACTION_VIEW_CONVERSATION);
             intent.putExtra(Intent.EXTRA_TEXT, share.text);
@@ -203,7 +196,7 @@ public class ShareWithActivity extends XmppActivity implements XmppConnectionSer
         try {
             startActivity(intent);
         } catch (SecurityException e) {
-            Toast.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(this, R.string.sharing_application_not_grant_permission, Toast.LENGTH_SHORT).show();
             return;
         }
         finish();

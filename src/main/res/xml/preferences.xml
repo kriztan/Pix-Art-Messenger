@@ -1,79 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="?attr/color_background_secondary"
     android:key="main_screen">
-
-    <PreferenceCategory
-        android:key="general"
-        android:title="@string/pref_general">
-        <PreferenceScreen
-            android:key="huawei"
-            android:summary="@string/huawei_protected_apps_summary"
-            android:title="@string/huawei_protected_apps">
-            <intent
-                android:targetClass="com.huawei.systemmanager.optimize.process.ProtectActivity"
-                android:targetPackage="com.huawei.systemmanager" />
-        </PreferenceScreen>
-    </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_privacy">
-        <CheckBoxPreference
-            android:defaultValue="@bool/confirm_messages"
-            android:key="confirm_messages"
-            android:summary="@string/pref_confirm_messages_summary"
-            android:title="@string/pref_confirm_messages" />
-        <CheckBoxPreference
-            android:defaultValue="@bool/chat_states"
-            android:key="chat_states"
-            android:summary="@string/pref_chat_states_summary"
-            android:title="@string/pref_chat_states" />
-
-        <CheckBoxPreference
-            android:defaultValue="@bool/last_activity"
-            android:key="last_activity"
-            android:summary="@string/pref_broadcast_last_activity_summary"
-            android:title="@string/pref_broadcast_last_activity" />
+    <!--UI-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_ui"
+        android:key="userinterface"
+        android:title="@string/pref_ui_options">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="userinterface" />
+        </intent>
         <ListPreference
-            android:defaultValue="@string/omemo_setting_default"
-            android:entries="@array/omemo_setting_entries"
-            android:entryValues="@array/omemo_setting_entry_values"
-            android:key="omemo"
-            android:summary="@string/pref_omemo_setting_summary_default_on"
-            android:title="@string/pref_omemo_setting" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="notification_category"
-        android:title="@string/pref_notification_settings">
+            android:defaultValue="@string/theme"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes_values"
+            android:key="theme"
+            android:summary="@string/pref_theme_options_summary"
+            android:title="@string/pref_theme_options" />
+        <ListPreference
+            android:defaultValue="@string/theme_color"
+            android:entries="@array/themecolors"
+            android:entryValues="@array/themecolor_values"
+            android:key="theme_color"
+            android:summary="@string/pref_theme_color_options_summary"
+            android:title="@string/pref_theme_color_options" />
+        <ListPreference
+            android:defaultValue="@string/default_font_size"
+            android:entries="@array/font_size_entries"
+            android:entryValues="@array/font_size_entry_values"
+            android:key="font_size"
+            android:summary="@string/pref_font_size_summary"
+            android:title="@string/pref_font_size" />
         <CheckBoxPreference
-            android:defaultValue="@bool/notifications_from_strangers"
-            android:key="notifications_from_strangers"
-            android:summary="@string/pref_notifications_from_strangers_summary"
-            android:title="@string/pref_notifications_from_strangers" />
+            android:defaultValue="@bool/use_unicolored_chatbg"
+            android:key="unicolored_chatbg"
+            android:summary="@string/pref_use_unicolored_chatbg_summary"
+            android:title="@string/pref_use_unicolored_chatbg" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/use_colored_muc_names"
+            android:key="colored_muc_names"
+            android:summary="@string/pref_use_colored_muc_names_summary"
+            android:title="@string/pref_use_colored_muc_names" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/send_button_status"
+            android:key="send_button_status"
+            android:summary="@string/pref_use_send_button_to_indicate_status_summary"
+            android:title="@string/pref_use_send_button_to_indicate_status" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/presence_colored_names"
+            android:key="presence_colored_names"
+            android:summary="@string/pref_use_colored_names_to_indicate_status_summary"
+            android:title="@string/pref_use_colored_names_to_indicate_status" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/quick_share_attachment_choice"
+            android:key="quick_share_attachment_choice"
+            android:summary="@string/pref_use_quick_share_attachment_choice_summary"
+            android:title="@string/pref_quick_share_attachment_choice" />
+        <ListPreference
+            android:defaultValue="@string/quick_action"
+            android:dialogTitle="@string/choose_quick_action"
+            android:entries="@array/quick_actions"
+            android:entryValues="@array/quick_action_values"
+            android:key="quick_action"
+            android:summary="@string/pref_quick_action_summary"
+            android:title="@string/pref_quick_action" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/show_record_voice_btn"
+            android:key="show_record_voice_btn"
+            android:summary="@string/pref_show_record_voice_btn_summary"
+            android:title="@string/pref_show_record_voice_btn" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/use_max_brightness"
+            android:key="use_max_brightness"
+            android:summary="@string/pref_use_max_brightness_summary"
+            android:title="@string/pref_use_max_brightness" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/auto_rotate"
+            android:key="use_auto_rotate"
+            android:summary="@string/pref_use_auto_rotate_summary"
+            android:title="@string/pref_use_auto_rotate" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/scroll_to_bottom"
+            android:key="scroll_to_bottom"
+            android:summary="@string/pref_scroll_to_bottom_summary"
+            android:title="@string/pref_scroll_to_bottom" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/play_gif_inside"
+            android:key="play_gif_inside"
+            android:summary="@string/pref_play_gif_inside_summary"
+            android:title="@string/pref_play_gif_inside" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/prefer_xmpp_avatar"
+            android:key="prefer_xmpp_avatar"
+            android:summary="@string/pref_prefer_xmpp_avatar_summary"
+            android:title="@string/pref_prefer_xmpp_avatar" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/show_own_accounts"
+            android:key="show_own_accounts"
+            android:summary="@string/pref_show_own_accounts_summary"
+            android:title="@string/pref_show_own_accounts" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/start_searching"
+            android:key="start_searching"
+            android:summary="@string/pref_start_search_summary"
+            android:title="@string/pref_start_search" />
+        <Preference
+            android:key="show_intro"
+            android:summary="@string/pref_show_intro_summary"
+            android:title="@string/pref_show_intro" />
+    </PreferenceScreen>
+    <!--Notifications-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_notifications"
+        android:key="notifications"
+        android:title="@string/pref_notification_settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="notifications" />
+        </intent>
         <CheckBoxPreference
             android:defaultValue="@bool/headsup_notifications"
             android:key="notification_headsup"
             android:summary="@string/pref_headsup_notifications_summary"
             android:title="@string/pref_headsup_notifications" />
-        <CheckBoxPreference
-            android:defaultValue="@bool/vibrate_on_notification"
-            android:key="vibrate_on_notification"
-            android:summary="@string/pref_vibrate_summary"
-            android:title="@string/pref_vibrate" />
-        <CheckBoxPreference
-            android:defaultValue="@bool/led"
-            android:key="led"
-            android:summary="@string/pref_led_summary"
-            android:title="@string/pref_led" />
-        <ListPreference
-            android:defaultValue="@integer/grace_period"
-            android:entries="@array/grace_periods"
-            android:entryValues="@array/grace_periods_values"
-            android:key="grace_period_length"
-            android:summary="@string/pref_notification_grace_period_summary"
-            android:title="@string/pref_notification_grace_period" />
         <PreferenceScreen
             android:key="quiet_hours"
             android:summary="@string/pref_quiet_hours_summary"
             android:title="@string/title_pref_quiet_hours">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+                android:targetPackage="@string/applicationId">
+                <extra
+                    android:name="page"
+                    android:value="quiet_hours" />
+            </intent>
             <CheckBoxPreference
                 android:defaultValue="@bool/enable_quiet_hours"
                 android:key="enable_quiet_hours"
@@ -91,15 +160,33 @@
                 android:negativeButtonText="@string/cancel"
                 android:positiveButtonText="@string/set"
                 android:title="@string/title_pref_quiet_hours_end_time" />
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
-                android:targetPackage="@string/applicationId">
-                <extra
-                    android:name="page"
-                    android:value="quiet_hours" />
-            </intent>
         </PreferenceScreen>
+        <CheckBoxPreference
+            android:defaultValue="@bool/vibrate_on_notification"
+            android:key="vibrate_on_notification"
+            android:summary="@string/pref_vibrate_summary"
+            android:title="@string/pref_vibrate" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/vibrate_in_chat"
+            android:key="vibrate_in_chat"
+            android:summary="@string/pref_vibrate_in_chat_summary"
+            android:title="@string/pref_vibrate_in_chat" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/led"
+            android:key="led"
+            android:summary="@string/pref_led_summary"
+            android:title="@string/pref_led" />
+        <RingtonePreference
+            android:defaultValue="@string/notification_ringtone"
+            android:key="notification_ringtone"
+            android:ringtoneType="notification"
+            android:summary="@string/pref_sound_summary"
+            android:title="@string/pref_sound" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/notifications_from_strangers"
+            android:key="notifications_from_strangers"
+            android:summary="@string/pref_notifications_from_strangers_summary"
+            android:title="@string/pref_notifications_from_strangers" />
         <PreferenceScreen
             android:key="message_notification_settings"
             android:summary="@string/pref_more_notification_settings_summary"
@@ -138,232 +225,316 @@
             android:ringtoneType="ringtone"
             android:summary="@string/pref_call_ringtone_summary"
             android:title="@string/pref_ringtone" />
-    </PreferenceCategory>
-    <PreferenceCategory
         android:key="attachments"
         android:title="@string/pref_attachments">
-        <CheckBoxPreference
-            android:defaultValue="@bool/use_share_location_plugin"
-            android:key="use_share_location_plugin"
-            android:summary="@string/pref_use_share_location_plugin_summary"
-            android:title="@string/pref_use_share_location_plugin" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="attachments" />
+        </intent>
         <ListPreference
-            android:defaultValue="@string/picture_compression"
-            android:entries="@array/picture_compression_entries"
-            android:entryValues="@array/picture_compression_values"
-            android:key="picture_compression"
-            android:summary="@string/pref_picture_compression_summary"
-            android:title="@string/pref_picture_compression" />
+            android:defaultValue="@integer/auto_accept_filesize_wifi"
+            android:entries="@array/filesizes"
+            android:entryValues="@array/filesizes_values"
+            android:key="auto_accept_file_size_wifi"
+            android:summary="@string/pref_accept_files_summary_wifi"
+            android:title="@string/pref_accept_files_wifi" />
+        <ListPreference
+            android:defaultValue="@integer/auto_accept_filesize_mobile"
+            android:entries="@array/filesizes"
+            android:entryValues="@array/filesizes_values"
+            android:key="auto_accept_file_size_mobile"
+            android:summary="@string/pref_accept_files_summary_mobile"
+            android:title="@string/pref_accept_files_mobile" />
+        <ListPreference
+            android:defaultValue="@integer/auto_accept_filesize_roaming"
+            android:entries="@array/filesizes"
+            android:entryValues="@array/filesizes_values"
+            android:key="auto_accept_file_size_roaming"
+            android:summary="@string/pref_accept_files_summary_mobileroaming"
+            android:title="@string/pref_accept_files_mobileroaming" />
+        <ListPreference
+            android:defaultValue="@string/image_compression"
+            android:entries="@array/image_compression_entries"
+            android:entryValues="@array/image_compression_values"
+            android:key="image_compression"
+            android:summary="@string/pref_picture_quality_summary"
+            android:title="@string/pref_picture_quality" />
         <ListPreference
             android:defaultValue="@string/video_compression"
             android:entries="@array/video_compression_entries"
             android:entryValues="@array/video_compression_values"
             android:key="video_compression"
-            android:summary="@string/pref_video_compression_summary"
-            android:title="@string/pref_video_compression" />
-        <ListPreference
-            android:defaultValue="@integer/auto_accept_filesize"
-            android:entries="@array/filesizes"
-            android:entryValues="@array/filesizes_values"
-            android:key="auto_accept_file_size"
-            android:summary="@string/pref_accept_files_summary"
-            android:title="@string/pref_accept_files" />
-    </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_ui_options">
+            android:summary="@string/pref_video_quality_summary"
+            android:title="@string/pref_video_quality" />
         <CheckBoxPreference
-            android:defaultValue="@bool/use_green_background"
-            android:key="use_green_background"
-            android:summary="@string/pref_use_green_background_summary"
-            android:title="@string/pref_use_green_background" />
+            android:defaultValue="@bool/alternative_voice_settings"
+            android:key="alternative_voice_settings"
+            android:summary="@string/pref_alternative_voice_settings_summary"
+            android:title="@string/pref_alternative_voice_settings" />
+    </PreferenceScreen>
+    <!--status-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_status"
+        android:key="presence"
+        android:title="@string/pref_presence_settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="presence" />
+        </intent>
         <CheckBoxPreference
-            android:defaultValue="@bool/show_dynamic_tags"
-            android:key="show_dynamic_tags"
-            android:summary="@string/pref_show_dynamic_tags_summary"
-            android:title="@string/pref_show_dynamic_tags" />
-        <ListPreference
-            android:defaultValue="@string/theme"
-            android:entries="@array/themes"
-            android:entryValues="@array/themes_values"
-            android:key="theme"
-            android:summary="@string/pref_theme_options_summary"
-            android:title="@string/pref_theme_options" />
-        <ListPreference
-            android:defaultValue="@string/quick_action"
-            android:dialogTitle="@string/choose_quick_action"
-            android:entries="@array/quick_actions"
-            android:entryValues="@array/quick_action_values"
-            android:key="quick_action"
-            android:summary="@string/pref_quick_action_summary"
-            android:title="@string/pref_quick_action" />
-        <ListPreference
-            android:defaultValue="@string/default_font_size"
-            android:entries="@array/font_size_entries"
-            android:entryValues="@array/font_size_entry_values"
-            android:key="font_size"
-            android:summary="@string/pref_font_size_summary"
-            android:title="@string/pref_font_size" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="backup_category"
-        android:title="@string/backup">
-        <Preference
-            android:key="create_backup"
-            android:summary="@string/pref_create_backup_summary"
-            android:title="@string/pref_create_backup" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="advanced"
-        android:title="@string/pref_advanced_options">
+            android:defaultValue="@bool/manually_change_presence"
+            android:disableDependentsState="true"
+            android:key="manually_change_presence"
+            android:summary="@string/pref_manually_change_presence_summary"
+            android:title="@string/pref_manually_change_presence" />
         <CheckBoxPreference
-            android:defaultValue="@bool/never_send"
-            android:key="never_send"
-            android:summary="@string/pref_never_send_crash_summary"
-            android:title="@string/pref_never_send_crash" />
+            android:defaultValue="@bool/away_when_screen_off"
+            android:dependency="manually_change_presence"
+            android:key="away_when_screen_off"
+            android:summary="@string/pref_away_when_screen_off_summary"
+            android:title="@string/pref_away_when_screen_off" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/dnd_on_silent_mode"
+            android:dependency="manually_change_presence"
+            android:key="dnd_on_silent_mode"
+            android:summary="@string/pref_dnd_on_silent_mode_summary"
+            android:title="@string/pref_dnd_on_silent_mode" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/treat_vibrate_as_silent"
+            android:dependency="dnd_on_silent_mode"
+            android:key="treat_vibrate_as_silent"
+            android:summary="@string/pref_treat_vibrate_as_dnd_summary"
+            android:title="@string/pref_treat_vibrate_as_silent" />
+    </PreferenceScreen>
+    <!--Security and Privacy-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_security"
+        android:key="security"
+        android:title="@string/pref_security_settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="security" />
+        </intent>
+        <CheckBoxPreference
+            android:defaultValue="@bool/screen_security"
+            android:key="screen_security"
+            android:summary="@string/pref_screen_security_summary"
+            android:title="@string/pref_screen_security" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/confirm_messages"
+            android:key="confirm_messages"
+            android:summary="@string/pref_confirm_messages_summary"
+            android:title="@string/pref_confirm_messages" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/chat_states"
+            android:key="chat_states"
+            android:summary="@string/pref_chat_states_summary"
+            android:title="@string/pref_chat_states" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/allow_message_correction"
+            android:key="allow_message_correction"
+            android:summary="@string/pref_allow_message_correction_summary"
+            android:title="@string/pref_allow_message_correction" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/indicate_received"
+            android:key="indicate_received"
+            android:summary="@string/pref_use_indicate_received_summary"
+            android:title="@string/pref_use_indicate_received" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/last_activity"
+            android:key="last_activity"
+            android:summary="@string/pref_broadcast_last_activity_summary"
+            android:title="@string/pref_broadcast_last_activity" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/use_internal_updater"
+            android:key="use_internal_updater"
+            android:summary="@string/pref_use_internal_updater_summary"
+            android:title="@string/pref_use_internal_updater" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/show_links_inside"
+            android:key="show_links_inside"
+            android:summary="@string/pref_show_links_inside_summary"
+            android:title="@string/pref_show_links_inside" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/show_maps_inside"
+            android:key="show_maps_inside"
+            android:summary="@string/pref_show_mappreview_inside_summary"
+            android:title="@string/pref_show_mappreview_inside" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/warn_unencrypted_chat"
+            android:key="warn_unencrypted_chat"
+            android:summary="@string/pref_warn_unencrypted_chat_summary"
+            android:title="@string/pref_warn_unencrypted_chat" />
+        <ListPreference
+            android:defaultValue="@string/omemo_setting_default"
+            android:entries="@array/omemo_setting_entries"
+            android:entryValues="@array/omemo_setting_entry_values"
+            android:key="omemo"
+            android:summary="@string/pref_omemo_setting_summary_default_on"
+            android:title="@string/pref_omemo_setting" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/send_crashreport"
+            android:key="crashreport"
+            android:summary="@string/pref_send_crash_summary"
+            android:title="@string/pref_send_crash" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/use_invidious"
+            android:key="use_invidious"
+            android:summary="@string/pref_use_invidious_summary"
+            android:title="@string/pref_use_invidious" />
+        <ListPreference
+            android:defaultValue="@string/default_channel_discovery"
+            android:entries="@array/channel_discovery_entries"
+            android:entryValues="@array/channel_discover_values"
+            android:key="channel_discovery_method"
+            android:summary="@string/pref_channel_discovery_summary"
+            android:title="@string/pref_channel_discovery" />
+        <PreferenceCategory android:title="@string/pref_create_backup">
+            <Preference
+                android:key="create_backup"
+                android:summary="@string/pref_create_backup_summary"
+                android:title="@string/pref_create_backup" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/plain_text_logs"
+                android:key="export_plain_text_logs"
+                android:summary="@string/pref_export_plain_text_logs_summary"
+                android:title="@string/pref_export_plain_text_logs" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <!--Expert-->
+    <PreferenceScreen
+        android:icon="?attr/ic_settings_expert"
+        android:key="expert"
+        android:title="@string/pref_expert_options">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
+            android:targetPackage="@string/applicationId">
+            <extra
+                android:name="page"
+                android:value="expert" />
+        </intent>
+        <PreferenceCategory
+            android:key="general"
+            android:title="@string/pref_general">
+            <CheckBoxPreference
+                android:defaultValue="@bool/show_foreground_service"
+                android:key="show_foreground_service"
+                android:summary="@string/pref_show_foreground_service_summary"
+                android:title="@string/pref_show_foreground_service" />
+            <PreferenceScreen
+                android:key="huawei"
+                android:summary="@string/huawei_protected_apps_summary"
+                android:title="@string/huawei_protected_apps">
+                <intent
+                    android:targetClass="com.huawei.systemmanager.optimize.process.ProtectActivity"
+                    android:targetPackage="com.huawei.systemmanager" />
+            </PreferenceScreen>
+            <CheckBoxPreference
+                android:defaultValue="@bool/enable_multi_accounts"
+                android:key="enable_multi_accounts"
+                android:summary="@string/pref_enable_multi_accounts_summary"
+                android:title="@string/pref_enable_multi_accounts_title" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="UI"
+            android:title="@string/pref_ui_options">
+            <CheckBoxPreference
+                android:defaultValue="@bool/show_dynamic_tags"
+                android:key="show_dynamic_tags"
+                android:summary="@string/pref_show_dynamic_tags_summary"
+                android:title="@string/pref_show_dynamic_tags" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/use_bundled_emoji"
+                android:key="use_bundled_emoji"
+                android:summary="@string/pref_use_bundled_emoji_summary"
+                android:title="@string/pref_use_bundled_emoji" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/pref_security_settings">
+            <CheckBoxPreference
+                android:defaultValue="@bool/btbv"
+                android:key="btbv"
+                android:summary="@string/pref_blind_trust_before_verification_summary"
+                android:title="@string/pref_blind_trust_before_verification" />
+            <ListPreference
+                android:defaultValue="@integer/automatic_message_deletion"
+                android:key="automatic_message_deletion"
+                android:summary="@string/pref_automatically_delete_messages_description"
+                android:title="@string/pref_automatically_delete_messages" />
+            <Preference
+                android:key="delete_omemo_identities"
+                android:summary="@string/pref_delete_omemo_identities_summary"
+                android:title="@string/pref_delete_omemo_identities" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/enable_otr"
+                android:key="enable_otr_encryption"
+                android:summary="@string/pref_enable_otr_summary"
+                android:title="@string/pref_enable_otr" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/dont_trust_system_cas"
+                android:key="dont_trust_system_cas"
+                android:summary="@string/pref_dont_trust_system_cas_summary"
+                android:title="@string/pref_dont_trust_system_cas_title" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/validate_hostname"
+                android:key="validate_hostname"
+                android:summary="@string/pref_validate_hostname_summary"
+                android:title="@string/pref_validate_hostname" />
+            <Preference
+                android:key="remove_trusted_certificates"
+                android:summary="@string/pref_remove_trusted_certificates_summary"
+                android:title="@string/pref_remove_trusted_certificates_title" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="connection_options"
+            android:title="@string/pref_connection_options">
+            <CheckBoxPreference
+                android:defaultValue="@bool/use_tor"
+                android:key="use_tor"
+                android:summary="@string/pref_use_tor_summary"
+                android:title="@string/pref_use_tor" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/show_connection_options"
+                android:key="show_connection_options"
+                android:summary="@string/pref_show_connection_options_summary"
+                android:title="@string/pref_show_connection_options" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/pref_input_options">
+            <CheckBoxPreference
+                android:defaultValue="@bool/enter_is_send"
+                android:key="enter_is_send"
+                android:summary="@string/pref_enter_is_send_summary"
+                android:title="@string/pref_enter_is_send" />
+            <CheckBoxPreference
+                android:defaultValue="@bool/display_enter_key"
+                android:key="display_enter_key"
+                android:summary="@string/pref_display_enter_key_summary"
+                android:title="@string/pref_display_enter_key" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/pref_expert_options_other">
+            <CheckBoxPreference
+                android:defaultValue="@bool/autojoin"
+                android:key="autojoin"
+                android:summary="@string/pref_autojoin_summary"
+                android:title="@string/pref_autojoin" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <!--About-->
+    <eu.siacs.conversations.ui.AboutPreference
+        android:icon="?attr/ic_settings_about"
+        android:summary="@string/pref_about_conversations_summary"
+        android:title="@string/title_activity_about" />
 
-        <CheckBoxPreference
-            android:defaultValue="@bool/enable_foreground_service"
-            android:key="enable_foreground_service"
-            android:summary="@string/pref_keep_foreground_service_summary"
-            android:title="@string/pref_keep_foreground_service" />
-
-        <PreferenceScreen
-            android:key="expert"
-            android:summary="@string/pref_expert_options_summary"
-            android:title="@string/pref_expert_options">
-            <PreferenceCategory
-                android:key="security_options"
-                android:title="@string/pref_security_settings">
-                <CheckBoxPreference
-                    android:defaultValue="@bool/btbv"
-                    android:key="btbv"
-                    android:summary="@string/pref_blind_trust_before_verification_summary"
-                    android:title="@string/pref_blind_trust_before_verification" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/dont_trust_system_cas"
-                    android:key="dont_trust_system_cas"
-                    android:summary="@string/pref_dont_trust_system_cas_summary"
-                    android:title="@string/pref_dont_trust_system_cas_title" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/validate_hostname"
-                    android:key="validate_hostname"
-                    android:summary="@string/pref_validate_hostname_summary"
-                    android:title="@string/pref_validate_hostname" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/allow_message_correction"
-                    android:key="allow_message_correction"
-                    android:summary="@string/pref_allow_message_correction_summary"
-                    android:title="@string/pref_allow_message_correction" />
-                <ListPreference
-                    android:defaultValue="@integer/automatic_message_deletion"
-                    android:key="automatic_message_deletion"
-                    android:summary="@string/pref_automatically_delete_messages_description"
-                    android:title="@string/pref_automatically_delete_messages" />
-                <Preference
-                    android:key="remove_trusted_certificates"
-                    android:summary="@string/pref_remove_trusted_certificates_summary"
-                    android:title="@string/pref_remove_trusted_certificates_title" />
-                <Preference
-                    android:key="clean_cache"
-                    android:summary="@string/pref_clean_cache_summary"
-                    android:title="@string/pref_clean_cache" />
-                <Preference
-                    android:key="clean_private_storage"
-                    android:summary="@string/pref_clean_private_storage_summary"
-                    android:title="@string/pref_clean_private_storage" />
-                <Preference
-                    android:key="delete_omemo_identities"
-                    android:summary="@string/pref_delete_omemo_identities_summary"
-                    android:title="@string/pref_delete_omemo_identities" />
-            </PreferenceCategory>
-            <PreferenceCategory
-                android:key="connection_options"
-                android:title="@string/pref_connection_options">
-                <CheckBoxPreference
-                    android:defaultValue="@bool/use_tor"
-                    android:key="use_tor"
-                    android:summary="@string/pref_use_tor_summary"
-                    android:title="@string/pref_use_tor" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/show_connection_options"
-                    android:key="show_connection_options"
-                    android:summary="@string/pref_show_connection_options_summary"
-                    android:title="@string/pref_show_connection_options" />
-            </PreferenceCategory>
-            <PreferenceCategory android:title="@string/pref_input_options">
-                <CheckBoxPreference
-                    android:defaultValue="@bool/start_searching"
-                    android:key="start_searching"
-                    android:summary="@string/pref_start_search_summary"
-                    android:title="@string/pref_start_search" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/enter_is_send"
-                    android:key="enter_is_send"
-                    android:summary="@string/pref_enter_is_send_summary"
-                    android:title="@string/pref_enter_is_send" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/display_enter_key"
-                    android:key="display_enter_key"
-                    android:summary="@string/pref_display_enter_key_summary"
-                    android:title="@string/pref_display_enter_key" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/scroll_to_bottom"
-                    android:key="scroll_to_bottom"
-                    android:summary="@string/pref_scroll_to_bottom_summary"
-                    android:title="@string/pref_scroll_to_bottom" />
-            </PreferenceCategory>
-            <PreferenceCategory android:title="@string/pref_presence_settings">
-                <CheckBoxPreference
-                    android:defaultValue="@bool/manually_change_presence"
-                    android:disableDependentsState="true"
-                    android:key="manually_change_presence"
-                    android:summary="@string/pref_manually_change_presence_summary"
-                    android:title="@string/pref_manually_change_presence" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/away_when_screen_off"
-                    android:dependency="manually_change_presence"
-                    android:key="away_when_screen_off"
-                    android:summary="@string/pref_away_when_screen_off_summary"
-                    android:title="@string/pref_away_when_screen_off" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/dnd_on_silent_mode"
-                    android:dependency="manually_change_presence"
-                    android:key="dnd_on_silent_mode"
-                    android:summary="@string/pref_dnd_on_silent_mode_summary"
-                    android:title="@string/pref_dnd_on_silent_mode" />
-                <CheckBoxPreference
-                    android:defaultValue="@bool/treat_vibrate_as_silent"
-                    android:dependency="dnd_on_silent_mode"
-                    android:key="treat_vibrate_as_silent"
-                    android:summary="@string/pref_treat_vibrate_as_dnd_summary"
-                    android:title="@string/pref_treat_vibrate_as_silent" />
-            </PreferenceCategory>
-            <PreferenceCategory
-                android:key="group_chats"
-                android:title="@string/group_chats_and_channels">
-                <CheckBoxPreference
-                    android:defaultValue="@bool/autojoin"
-                    android:key="autojoin"
-                    android:summary="@string/pref_autojoin_summary"
-                    android:title="@string/pref_autojoin" />
-                <ListPreference
-                    android:defaultValue="@string/default_channel_discovery"
-                    android:entries="@array/channel_discovery_entries"
-                    android:entryValues="@array/channel_discover_values"
-                    android:key="channel_discovery_method"
-                    android:summary="@string/pref_channel_discovery_summary"
-                    android:title="@string/pref_channel_discovery" />
-            </PreferenceCategory>
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:targetClass="eu.siacs.conversations.ui.SettingsActivity"
-                android:targetPackage="@string/applicationId">
-                <extra
-                    android:name="page"
-                    android:value="expert" />
-            </intent>
-        </PreferenceScreen>
-    </PreferenceCategory>
-    <PreferenceCategory android:title="@string/category_about">
-        <eu.siacs.conversations.ui.AboutPreference />
-    </PreferenceCategory>
 </PreferenceScreen>

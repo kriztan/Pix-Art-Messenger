@@ -27,7 +27,6 @@ public interface MuclumbusService {
     }
 
     class SearchRequest {
-
         public final Set<String> keywords;
 
         public SearchRequest(String keyword) {
@@ -36,15 +35,10 @@ public interface MuclumbusService {
     }
 
     class SearchResult {
-
         public Result result;
-
     }
 
     class Result {
-
         public List<Room> items;
-
     }
-
 }

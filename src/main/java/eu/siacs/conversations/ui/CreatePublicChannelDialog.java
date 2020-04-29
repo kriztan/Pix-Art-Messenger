@@ -4,18 +4,18 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.Spinner;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.DialogFragment;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -23,7 +23,6 @@ import java.util.Collection;
 import java.util.List;
 
 import eu.siacs.conversations.R;
-import eu.siacs.conversations.databinding.CreateConferenceDialogBinding;
 import eu.siacs.conversations.databinding.CreatePublicChannelDialogBinding;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.services.XmppConnectionService;
@@ -36,9 +35,10 @@ import rocks.xmpp.addr.Jid;
 
 public class CreatePublicChannelDialog extends DialogFragment implements OnBackendConnected {
 
-    private static final char[] FORBIDDEN = new char[]{'\u0022','&','\'','/',':','<','>','@'};
+    private static final char[] FORBIDDEN = new char[]{'\u0022', '&', '\'', '/', ':', '<', '>', '@'};
 
     private static final String ACCOUNTS_LIST_KEY = "activated_accounts_list";
+    private static final String MULTIPLE_ACCOUNTS = "multiple_accounts_enabled";
     private CreatePublicChannelDialogListener mListener;
     private KnownHostsAdapter knownHostsAdapter;
     private boolean jidWasModified = false;
@@ -68,6 +68,13 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.create_public_channel);
         final CreatePublicChannelDialogBinding binding = DataBindingUtil.inflate(getActivity().getLayoutInflater(), R.layout.create_public_channel_dialog, null, false);
+        if (getArguments().getBoolean(MULTIPLE_ACCOUNTS)) {
+            binding.yourAccount.setVisibility(View.VISIBLE);
+            binding.account.setVisibility(View.VISIBLE);
+        } else {
+            binding.yourAccount.setVisibility(View.GONE);
+            binding.account.setVisibility(View.GONE);
+        }
         binding.account.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -102,7 +109,7 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
                 }
             }
         });
-        updateInputs(binding,false);
+        updateInputs(binding, false);
         ArrayList<String> mActivatedAccounts = getArguments().getStringArrayList(ACCOUNTS_LIST_KEY);
         StartConversationActivity.populateAccountSpinner(getActivity(), mActivatedAccounts, binding.account);
         builder.setView(binding.getRoot());
@@ -135,7 +142,7 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putBoolean("jid_was_modified",jidWasModified);
+        outState.putBoolean("jid_was_modified", jidWasModified);
         outState.putBoolean("name_entered", nameEntered);
         super.onSaveInstanceState(outState);
     }
@@ -165,10 +172,10 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
     }
 
     private static String clean(String name) {
-        for(char c : FORBIDDEN) {
-            name = name.replace(String.valueOf(c),"");
+        for (char c : FORBIDDEN) {
+            name = name.replace(String.valueOf(c), "");
         }
-        return name.replaceAll("\\s+","-");
+        return name.replaceAll("\\s+", "-");
     }
 
     private void goBack(AlertDialog dialog, CreatePublicChannelDialogBinding binding) {
@@ -203,7 +210,7 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
                 if (account == null) {
                     return;
                 }
-                final XmppConnectionService service = ((XmppActivity )context).xmppConnectionService;
+                final XmppConnectionService service = ((XmppActivity) context).xmppConnectionService;
                 if (service != null && service.findFirstMuc(jid) != null) {
                     binding.xmppAddressLayout.setError(context.getString(R.string.channel_already_exists));
                     return;
@@ -215,7 +222,7 @@ public class CreatePublicChannelDialog extends DialogFragment implements OnBacke
             binding.xmppAddressLayout.setError(null);
             if (name.isEmpty()) {
                 binding.nameLayout.setError(context.getText(R.string.please_enter_name));
-            } else if (StartConversationActivity.isValidJid(name)){
+            } else if (StartConversationActivity.isValidJid(name)) {
                 binding.nameLayout.setError(context.getText(R.string.this_is_an_xmpp_address));
             } else {
                 binding.nameLayout.setError(null);

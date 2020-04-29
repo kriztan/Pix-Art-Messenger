@@ -2,16 +2,12 @@
 *.swp
 .settings
 
-src/conversationsPlaystore/res/values/push.xml
-src/quicksyPlaystore/res/values/push.xml
-
+src/playstore/res/values/gcm.xml
 
 # https://github.com/github/gitignore/blob/master/Gradle.gitignore
 .gradle/
 build/
-gradle.properties
 captures/
-signing.properties
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -44,3 +40,5 @@ proguard/
 
 import-summary.txt
 .navigation/
+src/main/res/values/api_keys.xml
+src/standardPush/res/values/gcm.xml

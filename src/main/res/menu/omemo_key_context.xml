@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/verify_scan"
-        android:title="@string/scan_qr_code"
+        android:title="@string/verify_with_qr_code"
         />
     <item
         android:id="@+id/distrust_key"
-        android:title="@string/distrust_omemo_key"/>
+        android:title="@string/distrust_omemo_key" />
     <item
         android:id="@+id/copy_omemo_key"
-        android:title="@string/copy_fingerprint"/>
+        android:title="@string/copy_fingerprint" />
 </menu>

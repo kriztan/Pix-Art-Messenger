@@ -56,6 +56,8 @@ public class SerialSingleThreadExecutor implements Executor {
         public void run() {
             try {
                 runnable.run();
+            } catch (Exception e) {
+                e.printStackTrace();
             } finally {
                 scheduleNext();
             }

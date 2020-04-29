@@ -29,9 +29,8 @@
 
 package eu.siacs.conversations.ui.interfaces;
 
-
 import eu.siacs.conversations.entities.Conversation;
 
 public interface OnConversationSelected {
-	void onConversationSelected(Conversation conversation);
+    void onConversationSelected(Conversation conversation);
 }

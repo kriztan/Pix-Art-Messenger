@@ -1,2 +1,0 @@
-* Provide PDF preview on Android 5+
-* Use 12 byte IVs for OMEMO

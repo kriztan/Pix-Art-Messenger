@@ -17,23 +17,22 @@
 
 package eu.siacs.conversations.ui.service;
 
+import android.annotation.SuppressLint;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.hardware.Camera;
+import android.hardware.Camera.CameraInfo;
+import android.util.Log;
+import android.view.TextureView;
+
+import com.google.zxing.PlanarYUVLuminanceSource;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import com.google.zxing.PlanarYUVLuminanceSource;
-
-import android.annotation.SuppressLint;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.hardware.Camera;
-import android.hardware.Camera.CameraInfo;
-import android.hardware.Camera.PreviewCallback;
-import android.util.Log;
-import android.view.TextureView;
 
 import eu.siacs.conversations.Config;
 
@@ -242,7 +241,7 @@ public final class CameraManager {
 
     @SuppressLint("InlinedApi")
     private static void setDesiredCameraParameters(final Camera camera, final Camera.Size cameraResolution,
-            final boolean continuousAutoFocus) {
+                                                   final boolean continuousAutoFocus) {
         final Camera.Parameters parameters = camera.getParameters();
         if (parameters == null)
             return;
@@ -250,8 +249,8 @@ public final class CameraManager {
         final List<String> supportedFocusModes = parameters.getSupportedFocusModes();
         final String focusMode = continuousAutoFocus
                 ? findValue(supportedFocusModes, Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE,
-                        Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO, Camera.Parameters.FOCUS_MODE_AUTO,
-                        Camera.Parameters.FOCUS_MODE_MACRO)
+                Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO, Camera.Parameters.FOCUS_MODE_AUTO,
+                Camera.Parameters.FOCUS_MODE_MACRO)
                 : findValue(supportedFocusModes, Camera.Parameters.FOCUS_MODE_AUTO, Camera.Parameters.FOCUS_MODE_MACRO);
         if (focusMode != null)
             parameters.setFocusMode(focusMode);
@@ -261,7 +260,7 @@ public final class CameraManager {
         camera.setParameters(parameters);
     }
 
-    public void requestPreviewFrame(final PreviewCallback callback) {
+    public void requestPreviewFrame(final Camera.PreviewCallback callback) {
         try {
             camera.setOneShotPreviewCallback(callback);
         } catch (final RuntimeException x) {

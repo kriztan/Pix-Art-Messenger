@@ -1,45 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_resource">Phone</string>
+    <string name="type_pc" translatable="false">Computer</string>
+    <string name="type_phone" translatable="false">Mobile phone</string>
+    <string name="type_tablet" translatable="false">Tablet</string>
+    <string name="type_web" translatable="false">Web browser</string>
+    <string name="type_console" translatable="false">Console</string>
+
     <bool name="portrait_only">true</bool>
     <bool name="enter_is_send">false</bool>
-    <bool name="notifications_from_strangers">true</bool>
-    <bool name="headsup_notifications">false</bool>
     <bool name="dnd_on_silent_mode">false</bool>
     <bool name="treat_vibrate_as_silent">false</bool>
-    <bool name="confirm_messages">true</bool>
-    <bool name="chat_states">true</bool>
-    <bool name="last_activity">false</bool>
     <bool name="vibrate_on_notification">true</bool>
     <bool name="led">true</bool>
+    <bool name="notifications_from_strangers">true</bool>
+    <bool name="headsup_notifications">true</bool>
     <bool name="enable_quiet_hours">false</bool>
-    <string name="notification_ringtone">content://settings/system/notification_sound</string>
+    <bool name="manually_change_presence">true</bool>
+    <bool name="away_when_screen_off">false</bool>
     <string name="incoming_call_ringtone">content://settings/system/ringtone</string>
-    <integer name="grace_period">144</integer>
-    <integer name="auto_accept_filesize">524288</integer>
-    <string name="picture_compression">auto</string>
-    <bool name="use_green_background">true</bool>
-    <string name="quick_action">recent</string>
-    <bool name="show_dynamic_tags">false</bool>
-    <bool name="btbv">true</bool>
-    <integer name="automatic_message_deletion">0</integer>
-    <bool name="dont_trust_system_cas">false</bool>
+    <bool name="confirm_messages">true</bool>
     <bool name="allow_message_correction">true</bool>
+    <bool name="chat_states">true</bool>
+    <bool name="autojoin">true</bool>
+    <bool name="indicate_received">true</bool>
     <bool name="use_tor">false</bool>
     <bool name="show_connection_options">false</bool>
+    <bool name="last_activity">true</bool>
+    <bool name="dont_trust_system_cas">false</bool>
+    <bool name="btbv">true</bool>
+    <bool name="send_button_status">true</bool>
     <bool name="display_enter_key">false</bool>
-    <bool name="manually_change_presence">false</bool>
-    <bool name="away_when_screen_off">false</bool>
-    <bool name="autojoin">true</bool>
-    <bool name="enable_foreground_service">false</bool>
-    <bool name="never_send">false</bool>
+    <bool name="show_dynamic_tags">false</bool>
+    <bool name="presence_colored_names">false</bool>
+    <bool name="use_max_brightness">true</bool>
+    <bool name="auto_rotate">true</bool>
+    <bool name="send_crashreport">true</bool>
+    <bool name="use_invidious">false</bool>
+    <bool name="plain_text_logs">false</bool>
     <bool name="validate_hostname">false</bool>
+    <bool name="show_foreground_service">true</bool>
+    <bool name="warn_unencrypted_chat">true</bool>
+    <bool name="hide_you_are_not_participating">false</bool>
+    <bool name="use_bundled_emoji">true</bool>
+    <bool name="enable_multi_accounts">false</bool>
     <bool name="show_qr_code_scan">true</bool>
     <bool name="scroll_to_bottom">true</bool>
-    <string name="omemo_setting_default">default_on</string>
-    <string name="default_font_size">small</string>
-    <bool name="use_share_location_plugin">false</bool>
     <bool name="start_searching">false</bool>
-    <string name="video_compression">360</string>
+    <bool name="show_record_voice_btn">true</bool>
+    <bool name="quick_share_attachment_choice">true</bool>
+    <bool name="screen_security">false</bool>
+    <bool name="play_gif_inside">false</bool>
+    <bool name="prefer_xmpp_avatar">true</bool>
+    <bool name="show_links_inside">true</bool>
+    <bool name="show_maps_inside">true</bool>
+    <bool name="use_internal_updater">true</bool>
+    <bool name="show_own_accounts">true</bool>
+    <bool name="vibrate_in_chat">true</bool>
+    <bool name="enable_otr">false</bool>
+    <integer name="auto_accept_filesize_wifi">10485760</integer>
+    <integer name="auto_accept_filesize_mobile">524288</integer>
+    <integer name="auto_accept_filesize_roaming">0</integer>
+    <integer name="automatic_message_deletion">0</integer>
+    <integer name="grace_period">144</integer>
+    <string name="default_resource" translatable="false">Phone</string>
+    <string name="notification_ringtone">content://settings/system/notification_sound</string>
+    <string name="image_compression">mid</string>
+    <string name="video_compression">mid</string>
+    <string name="quick_action">recent</string>
+    <string name="omemo_setting_default">default_on</string>
+    <string name="theme">auto</string>
+    <string name="theme_color">blue</string>
+    <string name="default_font_size">small</string>
     <string name="default_channel_discovery">JABBER_NETWORK</string>
+    <bool name="use_unicolored_chatbg">false</bool>
+    <bool name="alternative_voice_settings">false</bool>
+    <bool name="use_colored_muc_names">false</bool>
+    <bool name="show_videos_images_only">false</bool>
+
+    <string-array name="domains">
+        <item>pix-art.de</item>
+        <item>conversations.im</item>
+        <item>jabber.cat</item>
+        <item>jabbers.one</item>
+        <item>jabjab.de</item>
+        <item>im.koderoot.net</item>
+        <item>riotcat.org</item>
+        <item>magicbroccoli.de</item>
+        <item>kode.im</item>
+        <item>jabber-germany.de</item>
+        <item>simplewire.de</item>
+        <item>suchat.org</item>
+        <item>jabber.at</item>
+        <item>trashserver.net</item>
+        <item>wiuwiu.de</item>
+        <item>5222.de</item>
+        <item>dismail.de</item>
+        <item>chat.sum7.eu</item>
+        <item>xmpp.zone</item>
+        <item>libranet.de</item>
+        <item>laborversuch.de</item>
+        <item>creep.im</item>
+        <item>jabber.systemausfall.org</item>
+        <item>jabber.hot-chilli.net</item>
+        <item>jabber.fr</item>
+        <item>jabber.de</item>
+        <item>draugr.de</item>
+        <item>elaon.de</item>
+        <item>high-way.me</item>
+        <item>jabber.rwth-aachen.de</item>
+        <item>deshalbfrei.org</item>
+        <item>mail.de</item>
+        <item>bommboo.de</item>
+        <item>jabber.systemli.org</item>
+        <item>jabb.im</item>
+        <item>mailbox.org</item>
+        <item>hot-chilli.net</item>
+        <item>jabberpl.org</item>
+        <item>chinwag.im</item>
+        <item>tchncs.de</item>
+        <item>zsim.de</item>
+        <item>patchcord.be</item>
+        <item>gajim.org</item>
+        <item>talker.to</item>
+        <item>pimux.de</item>
+        <item>jabber.home.vdlinde.org</item>
+        <item>im.apinc.org</item>
+        <item>chatme.im</item>
+        <item>fusselkater.org</item>
+        <item>datenknoten.me</item>
+        <item>fysh.in</item>
+        <item>jabber.chaos-darmstadt.de</item>
+        <item>yax.im</item>
+        <item>neko.im</item>
+        <item>jabberzac.org</item>
+        <item>xmpp.is</item>
+        <item>home.zom.im</item>
+        <item>jabber.ccc.de</item>
+        <item>jwchat.org</item>
+        <item>kdetalk.net</item>
+        <item>kde.org</item>
+        <item>riseup.net</item>
+        <item>ruhr-uni-bochum.de</item>
+        <item>njs.netlab.cz</item>
+        <item>schokokeks.org</item>
+        <item>jabber.cz</item>
+        <item>ubuntu-jabber.de</item>
+        <item>xabber.de</item>
+        <item>ubuntu-jabber.net</item>
+        <item>jabber.ru</item>
+        <item>darknet.nz</item>
+        <item>movim.eu</item>
+        <item>404.city</item>
+        <item>igniterealtime.org</item>
+        <item>kapsi.fi</item>
+        <item>jabbel.net</item>
+        <item>joindiaspora.com</item>
+        <item>alpha-labs.net</item>
+        <item>xmppnet.de</item>
+        <item>hoth.one</item>
+        <item>blah.im</item>
+        <item>xmpp.jp</item>
+        <item>jabber.uni-mainz.de</item>
+        <item>richim.org</item>
+        <item>tigase.im</item>
+        <item>jappix.com</item>
+        <item>member.fsf.org</item>
+        <item>jabber.rueckgr.at</item>
+        <item>swissjabber.ch</item>
+        <item>twattle.net</item>
+        <item>jabber.calyxinstitute.org</item>
+        <item>sapo.pt</item>
+        <item>uprod.biz</item>
+        <item>krautspace.de</item>
+        <item>kraut.space</item>
+        <item>null.pm</item>
+        <item>anonymitaet-im-inter.net</item>
+        <item>linuxlovers.at</item>
+        <item>jabber.org</item>
+        <item>jabber.no-sense.net</item>
+        <item>swissjabber.eu</item>
+        <item>swissjabber.org</item>
+        <item>swissjabber.de</item>
+        <item>swissjabber.li</item>
+        <item>jabber.no</item>
+        <item>cypherpunks.it</item>
+        <item>adastra.re</item>
+        <item>jabber-br.org</item>
+        <item>einfachjabber.de</item>
+        <item>jabber.smash-net.org</item>
+        <item>freifunk.im</item>
+        <item>openmailbox.org</item>
+        <item>jabber.otr.im</item>
+        <item>evil.im</item>
+        <item>xmpp.slack.com</item>
+        <item>chat.hipchat.com</item>
+        <item>googlemail.com</item>
+        <item>nsa.li</item>
+        <item>blabber.im</item>
+        <item>buzon.uy</item>
+    </string-array>
+
+    <string-array name="support_domains">
+        <item>pix-art.de</item>
+        <item>blabber.im</item>
+        <item>jabber.de</item>
+        <item>dismail.de</item>
+        <item>draugr.de</item>
+        <item>conversations.im</item>
+        <item>jabber.at</item>
+        <item>jabber-germany.de</item>
+        <item>jabjab.de</item>
+        <item>jabber.fr</item>
+    </string-array>
+
+    <string-array name="support_site">
+        <item>https://jabber.pix-art.de/impressum/</item>
+        <item>https://blabber.im/en/kontakt/</item>
+        <item>https://www.jabber.de/support/</item>
+        <item>https://dismail.de/contact.html</item>
+        <item>https://www.draugr.de/kontakt/</item>
+        <item>https://conversations.im/#support</item>
+        <item>https://jabber.at/account/password/reset/</item>
+        <item>https://jabber-germany.de/impressum.html</item>
+        <item>https://jabjab.de/kontakt.php</item>
+        <item>https://jabberfr.org/contact/</item>
+    </string-array>
 </resources>
+

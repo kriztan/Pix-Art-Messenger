@@ -26,7 +26,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.ui.interfaces;
 
 import java.util.List;
@@ -35,6 +34,6 @@ import eu.siacs.conversations.entities.Message;
 
 public interface OnSearchResultsAvailable {
 
-	void onSearchResultsAvailable(List<String> term, List<Message> messages);
+    void onSearchResultsAvailable(List<String> term, List<Message> messages);
 
 }

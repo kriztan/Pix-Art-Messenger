@@ -28,10 +28,11 @@
   -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_search"
-        android:title="@string/search_messages"
         android:orderInCategory="50"
-        app:showAsAction="never"/>
+        android:title="@string/search_messages"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always" />
 </menu>

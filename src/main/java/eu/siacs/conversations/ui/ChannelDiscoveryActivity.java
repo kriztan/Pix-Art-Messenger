@@ -1,14 +1,11 @@
 package eu.siacs.conversations.ui;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.KeyEvent;
@@ -18,7 +15,10 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import java.util.Collections;
 import java.util.List;
@@ -32,12 +32,11 @@ import eu.siacs.conversations.entities.Bookmark;
 import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.entities.Room;
 import eu.siacs.conversations.services.ChannelDiscoveryService;
-import eu.siacs.conversations.services.QuickConversationsService;
 import eu.siacs.conversations.ui.adapter.ChannelSearchResultAdapter;
 import eu.siacs.conversations.ui.util.PendingItem;
 import eu.siacs.conversations.ui.util.SoftKeyboardUtils;
-import eu.siacs.conversations.ui.util.StyledAttributes;
 import eu.siacs.conversations.utils.AccountUtils;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.OnActionExpandListener, TextView.OnEditorActionListener, ChannelDiscoveryService.OnChannelSearchResultsFound, ChannelSearchResultAdapter.OnChannelSearchResultSelected {
@@ -90,9 +89,6 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
     }
 
     private static ChannelDiscoveryService.Method getMethod(final Context c) {
-        if (QuickConversationsService.isQuicksy()) {
-            return ChannelDiscoveryService.Method.JABBER_NETWORK;
-        }
         final SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(c);
         final String m = p.getString("channel_discovery_method", c.getString(R.string.default_channel_discovery));
         try {
@@ -105,7 +101,6 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
     @Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         getMenuInflater().inflate(R.menu.channel_discovery_activity, menu);
-        AccountUtils.showHideMenuItems(menu);
         mMenuSearchView = menu.findItem(R.id.action_search);
         final View mSearchView = mMenuSearchView.getActionView();
         mSearchEditText = mSearchView.findViewById(R.id.search_field);
@@ -149,7 +144,6 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
     private void toggleLoadingScreen() {
         adapter.submitList(Collections.emptyList());
         binding.progressBar.setVisibility(View.VISIBLE);
-        binding.list.setBackgroundColor(StyledAttributes.getColor(this, R.attr.color_background_primary));
     }
 
     @Override
@@ -180,7 +174,6 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
     private void holdLoading() {
         adapter.submitList(Collections.emptyList());
         binding.progressBar.setVisibility(View.GONE);
-        binding.list.setBackgroundColor(StyledAttributes.getColor(this, R.attr.color_background_primary));
     }
 
     @Override
@@ -213,14 +206,16 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
     public void onChannelSearchResultsFound(final List<Room> results) {
         runOnUiThread(() -> {
             adapter.submitList(results);
-            binding.progressBar.setVisibility(View.GONE);
-            if (results.size() == 0) {
-                binding.list.setBackground(StyledAttributes.getDrawable(this, R.attr.activity_primary_background_no_results));
+            if (results.size() > 0) {
+                binding.list.setVisibility(View.VISIBLE);
+                binding.progressBar.setVisibility(View.GONE);
+                this.binding.noResults.setVisibility(View.GONE);
             } else {
-                binding.list.setBackgroundColor(StyledAttributes.getColor(this, R.attr.color_background_primary));
+                binding.list.setVisibility(View.GONE);
+                binding.progressBar.setVisibility(View.GONE);
+                this.binding.noResults.setVisibility(View.VISIBLE);
             }
         });
-
     }
 
     @Override
@@ -229,17 +224,16 @@ public class ChannelDiscoveryActivity extends XmppActivity implements MenuItem.O
         if (accounts.size() == 1) {
             joinChannelSearchResult(accounts.get(0), result);
         } else if (accounts.size() == 0) {
-            Toast.makeText(this, R.string.please_enable_an_account, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(this, R.string.please_enable_an_account, ToastCompat.LENGTH_LONG).show();
         } else {
             final AtomicReference<String> account = new AtomicReference<>(accounts.get(0));
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle(R.string.choose_account);
             builder.setSingleChoiceItems(accounts.toArray(new CharSequence[0]), 0, (dialog, which) -> account.set(accounts.get(which)));
             builder.setPositiveButton(R.string.join, (dialog, which) -> joinChannelSearchResult(account.get(), result));
             builder.setNegativeButton(R.string.cancel, null);
             builder.create().show();
         }
-
     }
 
     @Override

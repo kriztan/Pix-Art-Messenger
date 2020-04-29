@@ -9,11 +9,6 @@
         app:actionLayout="@layout/actionview_search"
         app:showAsAction="collapseActionView|always" />
     <item
-        android:id="@+id/action_accounts"
-        android:orderInCategory="90"
-        android:title="@string/action_accounts"
-        app:showAsAction="never"/>
-    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"

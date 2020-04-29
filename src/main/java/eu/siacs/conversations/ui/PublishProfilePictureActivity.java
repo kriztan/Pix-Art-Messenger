@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.StringRes;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnLongClickListener;
@@ -14,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.StringRes;
 
 import com.theartofdev.edmodo.cropper.CropImage;
 
@@ -25,6 +26,7 @@ import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.interfaces.OnAvatarPublication;
 import eu.siacs.conversations.utils.PhoneHelper;
+import me.drakeet.support.toast.ToastCompat;
 
 public class PublishProfilePictureActivity extends XmppActivity implements XmppConnectionService.OnAccountUpdate, OnAvatarPublication {
 
@@ -58,11 +60,11 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
             if (mInitialAccountSetup) {
                 Intent intent = new Intent(getApplicationContext(), StartConversationActivity.class);
                 StartConversationActivity.addInviteUri(intent, getIntent());
-                intent.putExtra("init", true);
                 intent.putExtra(EXTRA_ACCOUNT, account.getJid().asBareJid().toEscapedString());
+                intent.putExtra("init", true);
                 startActivity(intent);
             }
-            Toast.makeText(PublishProfilePictureActivity.this,
+            ToastCompat.makeText(PublishProfilePictureActivity.this,
                     R.string.avatar_has_been_published,
                     Toast.LENGTH_SHORT).show();
             finish();
@@ -73,7 +75,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
     public void onAvatarPublicationFailed(int res) {
         runOnUiThread(() -> {
             hintOrWarning.setText(res);
-            hintOrWarning.setTextAppearance(this,R.style.TextAppearance_Conversations_Body1_Warning);
+            hintOrWarning.setTextAppearance(this, R.style.TextAppearance_Conversations_Body1_Warning);
             hintOrWarning.setVisibility(View.VISIBLE);
             publishing = false;
             togglePublishButton(true, R.string.publish);
@@ -114,7 +116,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
         this.defaultUri = PhoneHelper.getProfilePictureUri(getApplicationContext());
         if (savedInstanceState != null) {
             this.avatarUri = savedInstanceState.getParcelable("uri");
-            this.handledExternalUri.set(savedInstanceState.getBoolean("handle_external_uri",false));
+            this.handledExternalUri.set(savedInstanceState.getBoolean("handle_external_uri", false));
         }
     }
 
@@ -140,7 +142,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
                 if (error != null) {
-                    Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         } else if (requestCode == REQUEST_CHOOSE_PICTURE) {
@@ -197,7 +199,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
 
         final Uri uri = intent != null ? intent.getData() : null;
 
-        if (uri != null && handledExternalUri.compareAndSet(false,true)) {
+        if (uri != null && handledExternalUri.compareAndSet(false, true)) {
             cropUri(this, uri);
             return;
         }
@@ -219,10 +221,10 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
 
         Bitmap bm = null;
         if (uri == null) {
-            bm = avatarService().get(account, (int) getResources().getDimension(R.dimen.publish_avatar_size));
+            bm = avatarService().get(account, getPixel(Config.AVATAR_SIZE));
         } else {
             try {
-                bm = xmppConnectionService.getFileBackend().cropCenterSquare(uri, (int) getResources().getDimension(R.dimen.publish_avatar_size));
+                bm = xmppConnectionService.getFileBackend().cropCenterSquare(uri, getPixel(Config.AVATAR_SIZE));
             } catch (Exception e) {
                 Log.d(Config.LOGTAG, "unable to load bitmap into image view", e);
             }
@@ -231,7 +233,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
         if (bm == null) {
             togglePublishButton(false, R.string.publish);
             this.hintOrWarning.setVisibility(View.VISIBLE);
-            this.hintOrWarning.setTextAppearance(this,R.style.TextAppearance_Conversations_Body1_Warning);
+            this.hintOrWarning.setTextAppearance(this, R.style.TextAppearance_Conversations_Body1_Warning);
             this.hintOrWarning.setText(R.string.error_publish_avatar_converting);
             return;
         }
@@ -242,7 +244,7 @@ public class PublishProfilePictureActivity extends XmppActivity implements XmppC
         } else {
             togglePublishButton(false, R.string.publish);
             this.hintOrWarning.setVisibility(View.VISIBLE);
-            this.hintOrWarning.setTextAppearance(this,R.style.TextAppearance_Conversations_Body1_Warning);
+            this.hintOrWarning.setTextAppearance(this, R.style.TextAppearance_Conversations_Body1_Warning);
             if (account.getStatus() == Account.State.ONLINE) {
                 this.hintOrWarning.setText(R.string.error_publish_avatar_no_server_support);
             } else {

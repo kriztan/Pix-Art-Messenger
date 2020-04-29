@@ -38,25 +38,25 @@ import eu.siacs.conversations.xml.Element;
 
 public class P1S3UrlStreamHandler extends URLStreamHandler {
 
-	public static final String PROTOCOL_NAME = "p1s3";
+    public static final String PROTOCOL_NAME = "p1s3";
 
-	@Override
-	protected URLConnection openConnection(URL url) {
-		throw new IllegalStateException("Unable to open connection with stub protocol");
-	}
+    public static URL of(String fileId, String filename) throws MalformedURLException {
+        if (fileId == null || filename == null) {
+            throw new MalformedURLException("Paramaters must not be null");
+        }
+        return new URL(PROTOCOL_NAME + "://" + fileId + "/" + filename);
+    }
 
-	public static URL of(String fileId, String filename) throws MalformedURLException {
-		if (fileId == null || filename == null) {
-			throw new MalformedURLException("Paramaters must not be null");
-		}
-		return new URL(PROTOCOL_NAME+"://" + fileId + "/" + filename);
-	}
+    public static URL of(Element x) {
+        try {
+            return of(x.getAttribute("fileid"), x.getAttribute("name"));
+        } catch (MalformedURLException e) {
+            return null;
+        }
+    }
 
-	public static URL of(Element x) {
-		try {
-			return of(x.getAttribute("fileid"),x.getAttribute("name"));
-		} catch (MalformedURLException e) {
-			return null;
-		}
-	}
+    @Override
+    protected URLConnection openConnection(URL url) {
+        throw new IllegalStateException("Unable to open connection with stub protocol");
+    }
 }

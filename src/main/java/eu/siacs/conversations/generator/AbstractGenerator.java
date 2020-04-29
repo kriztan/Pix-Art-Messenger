@@ -17,8 +17,8 @@ import eu.siacs.conversations.R;
 import eu.siacs.conversations.crypto.axolotl.AxolotlService;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.services.XmppConnectionService;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.utils.PhoneHelper;
-import eu.siacs.conversations.xml.Namespace;
 import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.jingle.stanzas.FileTransferDescription;
 
@@ -56,6 +56,9 @@ public abstract class AbstractGenerator {
     private final String[] PRIVACY_SENSITIVE = {
             "urn:xmpp:time" //XEP-0202: Entity Time leaks time zone
     };
+    private final String[] OTR = {
+            "urn:xmpp:otr:0"
+    };
     private final String[] VOIP_NAMESPACES = {
             Namespace.JINGLE_TRANSPORT_ICE_UDP,
             Namespace.JINGLE_FEATURE_AUDIO,
@@ -63,7 +66,10 @@ public abstract class AbstractGenerator {
             Namespace.JINGLE_APPS_RTP,
             Namespace.JINGLE_APPS_DTLS,
             Namespace.JINGLE_MESSAGE
-    };
+    };    
+
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US);
+
     protected XmppConnectionService mXmppConnectionService;
     private String mVersion = null;
 
@@ -83,8 +89,8 @@ public abstract class AbstractGenerator {
         return this.mVersion;
     }
 
-    String getIdentityName() {
-        return mXmppConnectionService.getString(R.string.app_name);
+    public String getIdentityName() {
+        return mXmppConnectionService.getString(R.string.app_name) + ' ' + getIdentityVersion();
     }
 
     public String getUserAgent() {
@@ -116,6 +122,10 @@ public abstract class AbstractGenerator {
         return Base64.encodeToString(sha1, Base64.NO_WRAP);
     }
 
+    public static String getTimestamp(long time) {
+        DATE_FORMAT.setTimeZone(TimeZone.getTimeZone("UTC"));
+        return DATE_FORMAT.format(time);
+    }
     public List<String> getFeatures(Account account) {
         final XmppConnection connection = account.getXmppConnection();
         final ArrayList<String> features = new ArrayList<>(Arrays.asList(FEATURES));
@@ -132,6 +142,9 @@ public abstract class AbstractGenerator {
             features.addAll(Arrays.asList(PRIVACY_SENSITIVE));
             features.addAll(Arrays.asList(VOIP_NAMESPACES));
         }
+        if (Config.supportOtr()) {
+            features.addAll(Arrays.asList(OTR));
+        }
         if (mXmppConnectionService.broadcastLastActivity()) {
             features.add(Namespace.IDLE);
         }
@@ -140,7 +153,6 @@ public abstract class AbstractGenerator {
         } else {
             features.add(Namespace.BOOKMARKS + "+notify");
         }
-
         Collections.sort(features);
         return features;
     }

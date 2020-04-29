@@ -1,8 +1,9 @@
 package eu.siacs.conversations.utils;
 
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import org.conscrypt.Conscrypt;
 
@@ -58,6 +59,7 @@ public class SSLSocketHelper {
         }
     }
 
+
     @RequiresApi(api = Build.VERSION_CODES.N)
     private static void setHostnameNougat(final SSLSocket socket, final String hostname) {
         final SSLParameters parameters = new SSLParameters();
@@ -76,7 +78,7 @@ public class SSLSocketHelper {
             System.arraycopy(protocolUTF8Bytes, 0, lengthPrefixedProtocols, 1, protocolUTF8Bytes.length);
             method.invoke(socket, new Object[]{lengthPrefixedProtocols});
         } catch (Throwable e) {
-            Log.e(Config.LOGTAG,"unable to set ALPN on socket",e);
+            Log.e(Config.LOGTAG, "unable to set ALPN on socket", e);
         }
     }
 

@@ -29,6 +29,7 @@
 
 package eu.siacs.conversations.ui.util;
 
+import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE;
 import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE_CHOOSE_IMAGE;
 import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE_LOCATION;
 import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE_RECORD_VIDEO;
@@ -36,50 +37,54 @@ import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE_R
 import static eu.siacs.conversations.ui.ConversationFragment.ATTACHMENT_CHOICE_TAKE_PHOTO;
 
 public enum SendButtonAction {
-	TEXT, TAKE_PHOTO, SEND_LOCATION, RECORD_VOICE, CANCEL, CHOOSE_PICTURE, RECORD_VIDEO;
+    TEXT, TAKE_PHOTO, SEND_LOCATION, RECORD_VOICE, CANCEL, CHOOSE_PICTURE, RECORD_VIDEO, CHOOSE_ATTACHMENT;
 
-	public static SendButtonAction valueOfOrDefault(final String setting) {
-		if (setting == null) {
-			return TEXT;
-		}
-		try {
-			return valueOf(setting);
-		} catch (IllegalArgumentException e) {
-			return TEXT;
-		}
-	}
+    public static SendButtonAction valueOfOrDefault(final String setting) {
+        if (setting == null) {
+            return TEXT;
+        }
+        try {
+            return valueOf(setting);
+        } catch (IllegalArgumentException e) {
+            return TEXT;
+        }
+    }
 
-	public static SendButtonAction of(int attachmentChoice) {
-		switch (attachmentChoice) {
-			case ATTACHMENT_CHOICE_LOCATION:
-				return SEND_LOCATION;
-			case ATTACHMENT_CHOICE_RECORD_VOICE:
-				return RECORD_VOICE;
-			case ATTACHMENT_CHOICE_RECORD_VIDEO:
-				return RECORD_VIDEO;
-			case ATTACHMENT_CHOICE_TAKE_PHOTO:
-				return TAKE_PHOTO;
-			case ATTACHMENT_CHOICE_CHOOSE_IMAGE:
-				return CHOOSE_PICTURE;
-			default:
-				throw new IllegalArgumentException("Not a known attachment choice");
-		}
-	}
+    public static SendButtonAction of(int attachmentChoice) {
+        switch (attachmentChoice) {
+            case ATTACHMENT_CHOICE_LOCATION:
+                return SEND_LOCATION;
+            case ATTACHMENT_CHOICE_RECORD_VOICE:
+                return RECORD_VOICE;
+            case ATTACHMENT_CHOICE_RECORD_VIDEO:
+                return RECORD_VIDEO;
+            case ATTACHMENT_CHOICE_TAKE_PHOTO:
+                return TAKE_PHOTO;
+            case ATTACHMENT_CHOICE_CHOOSE_IMAGE:
+                return CHOOSE_PICTURE;
+            case ATTACHMENT_CHOICE:
+                return CHOOSE_ATTACHMENT;
+            default:
+                throw new IllegalArgumentException("Not a known attachment choice");
+        }
+    }
 
-	public int toChoice() {
-		switch (this) {
-			case TAKE_PHOTO:
-				return ATTACHMENT_CHOICE_TAKE_PHOTO;
-			case SEND_LOCATION:
-				return ATTACHMENT_CHOICE_LOCATION;
-			case RECORD_VOICE:
-				return ATTACHMENT_CHOICE_RECORD_VOICE;
-			case CHOOSE_PICTURE:
-				return ATTACHMENT_CHOICE_CHOOSE_IMAGE;
-			case RECORD_VIDEO:
-				return ATTACHMENT_CHOICE_RECORD_VIDEO;
-			default:
-				return 0;
-		}
-	}
+    public int toChoice() {
+        switch (this) {
+            case TAKE_PHOTO:
+                return ATTACHMENT_CHOICE_TAKE_PHOTO;
+            case RECORD_VIDEO:
+                return ATTACHMENT_CHOICE_RECORD_VIDEO;
+            case SEND_LOCATION:
+                return ATTACHMENT_CHOICE_LOCATION;
+            case RECORD_VOICE:
+                return ATTACHMENT_CHOICE_RECORD_VOICE;
+            case CHOOSE_PICTURE:
+                return ATTACHMENT_CHOICE_CHOOSE_IMAGE;
+            case CHOOSE_ATTACHMENT:
+                return ATTACHMENT_CHOICE;
+            default:
+                return 0;
+        }
+    }
 }

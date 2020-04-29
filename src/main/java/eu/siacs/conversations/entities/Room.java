@@ -4,8 +4,6 @@ import com.google.common.base.Objects;
 import com.google.common.base.Strings;
 import com.google.common.collect.ComparisonChain;
 
-import java.util.Comparator;
-
 import eu.siacs.conversations.services.AvatarService;
 import eu.siacs.conversations.utils.LanguageUtils;
 import eu.siacs.conversations.utils.UIHelper;

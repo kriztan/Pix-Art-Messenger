@@ -16,6 +16,8 @@ import eu.siacs.conversations.Config;
 import eu.siacs.conversations.R;
 import eu.siacs.conversations.entities.DownloadableFile;
 import eu.siacs.conversations.persistance.FileBackend;
+import eu.siacs.conversations.ui.MediaViewerActivity;
+import me.drakeet.support.toast.ToastCompat;
 
 public class ViewUtil {
 
@@ -25,9 +27,9 @@ public class ViewUtil {
         view(context, file, mime);
     }
 
-    public static void view (Context context, DownloadableFile file) {
+    public static void view(Context context, DownloadableFile file) {
         if (!file.exists()) {
-            Toast.makeText(context, R.string.file_deleted, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(context, R.string.file_deleted, Toast.LENGTH_SHORT).show();
             return;
         }
         String mime = file.getMimeType();
@@ -38,27 +40,47 @@ public class ViewUtil {
     }
 
     public static void view(Context context, File file, String mime) {
-        Intent openIntent = new Intent(Intent.ACTION_VIEW);
         Uri uri;
         try {
             uri = FileBackend.getUriForFile(context, file);
         } catch (SecurityException e) {
             Log.d(Config.LOGTAG, "No permission to access " + file.getAbsolutePath(), e);
-            Toast.makeText(context, context.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(context, context.getString(R.string.no_permission_to_access_x, file.getAbsolutePath()), Toast.LENGTH_SHORT).show();
             return;
         }
-        openIntent.setDataAndType(uri, mime);
-        openIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        PackageManager manager = context.getPackageManager();
-        List<ResolveInfo> info = manager.queryIntentActivities(openIntent, 0);
-        if (info.size() == 0) {
-            openIntent.setDataAndType(uri, "*/*");
-        }
-        try {
-            context.startActivity(openIntent);
-        } catch (ActivityNotFoundException e) {
-            Toast.makeText(context, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+        // use internal viewer for images and videos
+        if (mime.startsWith("image/")) {
+            Intent intent = new Intent(context, MediaViewerActivity.class);
+            intent.putExtra("image", Uri.fromFile(file));
+            try {
+                context.startActivity(intent);
+                return;
+            } catch (ActivityNotFoundException e) {
+                //ignored
+            }
+        } else if (mime.startsWith("video/")) {
+            Intent intent = new Intent(context, MediaViewerActivity.class);
+            intent.putExtra("video", Uri.fromFile(file));
+            try {
+                context.startActivity(intent);
+                return;
+            } catch (ActivityNotFoundException e) {
+                //ignored
+            }
+        } else {
+            Intent openIntent = new Intent(Intent.ACTION_VIEW);
+            openIntent.setDataAndType(uri, mime);
+            openIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            PackageManager manager = context.getPackageManager();
+            List<ResolveInfo> info = manager.queryIntentActivities(openIntent, 0);
+            if (info.size() == 0) {
+                openIntent.setDataAndType(uri, "*/*");
+            }
+            try {
+                context.startActivity(openIntent);
+            } catch (ActivityNotFoundException e) {
+                ToastCompat.makeText(context, R.string.no_application_found_to_open_file, Toast.LENGTH_SHORT).show();
+            }
         }
     }
-
 }

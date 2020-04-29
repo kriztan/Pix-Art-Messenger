@@ -19,7 +19,8 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingStart="8dp"
     android:paddingLeft="8dp"
+    android:paddingEnd="8dp"
     android:paddingRight="8dp"
-    android:textAppearance="@style/TextAppearance.Conversations.Body1"
-    android:textColor="?attr/edit_text_color" />
+    android:textAppearance="@style/TextAppearance.Conversations.Body1" />

@@ -42,7 +42,7 @@ public class AndroidUsingLinkProperties extends AbstractDNSServerLookupMechanism
         final Network activeNetwork = getActiveNetwork(connectivityManager);
         final List<String> servers = new ArrayList<>();
         int vpnOffset = 0;
-        for(Network network : networks) {
+        for (Network network : networks) {
             LinkProperties linkProperties = connectivityManager.getLinkProperties(network);
             if (linkProperties == null) {
                 continue;
@@ -68,7 +68,7 @@ public class AndroidUsingLinkProperties extends AbstractDNSServerLookupMechanism
 
     private static List<String> getIPv4First(List<InetAddress> in) {
         List<String> out = new ArrayList<>();
-        for(InetAddress address : in) {
+        for (InetAddress address : in) {
             if (address instanceof Inet4Address) {
                 out.add(0, address.getHostAddress());
             } else {
@@ -80,7 +80,7 @@ public class AndroidUsingLinkProperties extends AbstractDNSServerLookupMechanism
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private static boolean hasDefaultRoute(LinkProperties linkProperties) {
-        for(RouteInfo route: linkProperties.getRoutes()) {
+        for (RouteInfo route : linkProperties.getRoutes()) {
             if (route.isDefaultRoute()) {
                 return true;
             }

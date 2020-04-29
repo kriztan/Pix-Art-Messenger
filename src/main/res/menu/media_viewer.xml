@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:orderInCategory="10"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/action_open"
+        android:icon="@drawable/ic_open_in_new_white_24dp"
+        android:orderInCategory="20"
+        android:title="@string/action_open" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:orderInCategory="20"
+        android:title="@string/action_delete" />
+</menu>

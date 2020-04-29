@@ -13,29 +13,20 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-
-    <uses-feature
-        android:name="android.hardware.location"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.location.gps"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.location.network"
-        android:required="false" />
-
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
     <uses-permission
         android:name="android.permission.READ_PHONE_STATE"
         tools:node="remove" />
@@ -48,22 +39,34 @@
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
-
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.microphone"
         android:required="false" />
 
-
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="false"
         android:appCategory="social"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/new_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_configuration"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
         android:theme="@style/ConversationsTheme"
-        tools:replace="android:label"
-        tools:targetApi="o">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label, android:allowBackup"
+        tools:targetApi="q">
 
         <meta-data
             android:name="com.google.android.gms.car.application"
@@ -76,26 +79,31 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
                 <action android:name="android.media.RINGER_MODE_CHANGED" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data
+                    android:path="${applicationId}"
+                    android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <data
+                    android:path="${applicationId}"
+                    android:scheme="package" />
+            </intent-filter>
         </receiver>
+        <receiver android:name=".services.AlarmReceiver"></receiver>
 
         <activity
-            android:name=".ui.ShareLocationActivity"
-            android:label="@string/title_activity_share_location" />
-        <activity
-            android:name=".ui.SearchActivity"
-            android:label="@string/search_messages" />
-        <activity
-            android:name=".ui.RecordingActivity"
+            android:name="de.pixart.messenger.ui.StartUI"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/ConversationsTheme.Dialog" />
-        <activity
-            android:name=".ui.ShowLocationActivity"
-            android:label="@string/title_activity_show_location" />
-        <activity
-            android:name=".ui.ConversationActivity"
-            android:theme="@style/SplashTheme">
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -131,7 +139,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data android:scheme="https" />
-                <data android:host="conversations.im" />
+                <data android:host="jabber.pix-art.de" />
                 <data android:pathPrefix="/i/" />
                 <data android:pathPrefix="/j/" />
             </intent-filter>
@@ -146,10 +154,38 @@
         </activity>
         <activity
             android:name=".ui.StartConversationActivity"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_start_conversation"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.MagicCreateActivity"
+            android:label="@string/create_account"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.ImportBackupActivity"
+            android:label="@string/restore_backup"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.conversations.backup" />
+                <data android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.conversations.backup" />
+                <data android:scheme="file" />
             </intent-filter>
         </activity>
         <activity
@@ -181,6 +217,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.ManageAccountActivity"
+            android:label="@string/title_activity_manage_accounts"
+            android:launchMode="singleTask" />
+        <activity
             android:name=".ui.ShareViaAccountActivity"
             android:label="@string/title_activity_share_via_account"
             android:launchMode="singleTop" />
@@ -190,10 +230,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ui.ConferenceDetailsActivity"
-            android:label="@string/action_muc_details"
+            android:label="@string/conference_details"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.ContactDetailsActivity"
+            android:label="@string/contact_details"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.PublishProfilePictureActivity"
@@ -203,25 +244,25 @@
             android:name=".ui.PublishGroupChatProfilePictureActivity"
             android:label="@string/group_chat_avatar" />
         <activity
+            android:name=".ui.VerifyOTRActivity"
+            android:label="@string/verify_otr"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
             android:name=".ui.ShareWithActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop">
-
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="text/plain" />
             </intent-filter>
-
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="*/*" />
             </intent-filter>
 
@@ -231,28 +272,86 @@
                 android:value="eu.siacs.conversations.services.ContactChooserTargetService" />
         </activity>
         <activity
+            android:name=".ui.RecordingActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/ConversationsTheme.Dialog" />
+        <activity
+            android:name=".ui.ShareLocationActivity"
+            android:label="@string/share_location"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.ShowLocationActivity"
+            android:label="@string/show_location"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SearchActivity"
+            android:label="@string/search_messages"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.MediaViewerActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/ConversationsTheme.FullScreen" />
+        <activity
             android:name=".ui.TrustKeysActivity"
             android:label="@string/trust_omemo_fingerprints"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".ui.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:launchMode="singleTask"
             android:parentActivityName=".ui.SettingsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="eu.siacs.conversations.ui.SettingsActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.PREFERENCE" />
             </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.UpdaterActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_updater"
+            android:launchMode="singleTask"
+            android:theme="@style/ConversationsTheme" />
+        <activity
+            android:name=".ui.ShortcutActivity"
+            android:label="@string/contact"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:launchMode="singleTask"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".ui.MemorizingActivity" />
-
         <activity
             android:name=".ui.MediaBrowserActivity"
-            android:label="@string/media_browser" />
+            android:label="@string/media_browser"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.EnterNameActivity"
+            android:label="@string/enter_your_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SetSettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.MucUsersActivity"
+            android:label="@string/group_chat_members"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.ChannelDiscoveryActivity"
+            android:label="@string/discover_channels"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.IntroActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" />
 
         <service android:name=".services.ExportBackupService" />
         <service android:name=".services.ImportBackupService" />
@@ -265,7 +364,7 @@
         </service>
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.files"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -278,25 +377,10 @@
             android:authorities="${applicationId}.barcodes"
             android:exported="false"
             android:grantUriPermissions="true" />
-
-        <activity
-            android:name=".ui.ShortcutActivity"
-            android:label="@string/contact">
-            <intent-filter>
-                <action android:name="android.intent.action.CREATE_SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.MucUsersActivity"
-            android:label="@string/group_chat_members" />
-        <activity
-            android:name=".ui.ChannelDiscoveryActivity"
-            android:label="@string/discover_channels" />
         <activity
             android:name=".ui.RtpSessionActivity"
             android:autoRemoveFromRecents="true"
             android:launchMode="singleInstance"
             android:supportsPictureInPicture="true" />
     </application>
-
 </manifest>

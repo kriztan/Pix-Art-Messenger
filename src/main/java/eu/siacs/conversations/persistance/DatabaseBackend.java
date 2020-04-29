@@ -11,11 +11,12 @@ import android.os.SystemClock;
 import android.util.Base64;
 import android.util.Log;
 
+import org.json.JSONException;
 import org.json.JSONObject;
-import org.whispersystems.libsignal.SignalProtocolAddress;
 import org.whispersystems.libsignal.IdentityKey;
 import org.whispersystems.libsignal.IdentityKeyPair;
 import org.whispersystems.libsignal.InvalidKeyException;
+import org.whispersystems.libsignal.SignalProtocolAddress;
 import org.whispersystems.libsignal.state.PreKeyRecord;
 import org.whispersystems.libsignal.state.SessionRecord;
 import org.whispersystems.libsignal.state.SignedPreKeyRecord;
@@ -30,13 +31,12 @@ import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
-
-import org.json.JSONException;
 
 import eu.siacs.conversations.Config;
 import eu.siacs.conversations.crypto.axolotl.AxolotlService;
@@ -49,12 +49,10 @@ import eu.siacs.conversations.entities.Message;
 import eu.siacs.conversations.entities.PresenceTemplate;
 import eu.siacs.conversations.entities.Roster;
 import eu.siacs.conversations.entities.ServiceDiscoveryResult;
-import eu.siacs.conversations.services.QuickConversationsService;
 import eu.siacs.conversations.services.ShortcutService;
 import eu.siacs.conversations.utils.CryptoHelper;
 import eu.siacs.conversations.utils.CursorUtils;
 import eu.siacs.conversations.utils.FtsUtils;
-import eu.siacs.conversations.utils.MimeUtils;
 import eu.siacs.conversations.utils.Resolver;
 import eu.siacs.conversations.xmpp.InvalidJid;
 import eu.siacs.conversations.xmpp.mam.MamReference;
@@ -62,9 +60,10 @@ import rocks.xmpp.addr.Jid;
 
 public class DatabaseBackend extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "history";
-    private static final int DATABASE_VERSION = 46;
+    public static final String DATABASE_NAME = "history";
+    public static final int DATABASE_VERSION = 51; // = Conversations DATABASE_VERSION + 5
     private static DatabaseBackend instance = null;
+
     private static String CREATE_CONTATCS_STATEMENT = "create table "
             + Contact.TABLENAME + "(" + Contact.ACCOUNT + " TEXT, "
             + Contact.SERVERNAME + " TEXT, " + Contact.SYSTEMNAME + " TEXT,"
@@ -160,12 +159,14 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             + Resolver.Result.DIRECT_TLS + " NUMBER,"
             + Resolver.Result.AUTHENTICATED + " NUMBER,"
             + Resolver.Result.PORT + " NUMBER,"
+            + Resolver.Result.TIME_REQUESTED + " NUMBER,"
             + "UNIQUE(" + Resolver.Result.DOMAIN + ") ON CONFLICT REPLACE"
             + ");";
 
     private static String CREATE_MESSAGE_TIME_INDEX = "create INDEX message_time_index ON " + Message.TABLENAME + "(" + Message.TIME_SENT + ")";
     private static String CREATE_MESSAGE_CONVERSATION_INDEX = "create INDEX message_conversation_index ON " + Message.TABLENAME + "(" + Message.CONVERSATION + ")";
     private static String CREATE_MESSAGE_DELETED_INDEX = "create index message_deleted_index ON " + Message.TABLENAME + "(" + Message.DELETED + ")";
+    private static String CREATE_MESSAGE_FILE_DELETED_INDEX = "create index message_file_deleted_index ON " + Message.TABLENAME + "(" + Message.FILE_DELETED + ")";
     private static String CREATE_MESSAGE_RELATIVE_FILE_PATH_INDEX = "create INDEX message_file_path_index ON " + Message.TABLENAME + "(" + Message.RELATIVE_FILE_PATH + ")";
     private static String CREATE_MESSAGE_TYPE_INDEX = "create INDEX message_type_index ON " + Message.TABLENAME + "(" + Message.TYPE + ")";
 
@@ -235,19 +236,22 @@ public class DatabaseBackend extends SQLiteOpenHelper {
                 + Message.CARBON + " INTEGER, "
                 + Message.EDITED + " TEXT, "
                 + Message.READ + " NUMBER DEFAULT 1, "
+                + Message.DELETED + " NUMBER DEFAULT 0, "
                 + Message.OOB + " INTEGER, "
                 + Message.ERROR_MESSAGE + " TEXT,"
                 + Message.READ_BY_MARKERS + " TEXT,"
                 + Message.MARKABLE + " NUMBER DEFAULT 0,"
-                + Message.DELETED + " NUMBER DEFAULT 0,"
+                + Message.FILE_DELETED + " NUMBER DEFAULT 0,"
                 + Message.BODY_LANGUAGE + " TEXT,"
                 + Message.REMOTE_MSG_ID + " TEXT, FOREIGN KEY("
                 + Message.CONVERSATION + ") REFERENCES "
                 + Conversation.TABLENAME + "(" + Conversation.UUID
                 + ") ON DELETE CASCADE);");
+
         db.execSQL(CREATE_MESSAGE_TIME_INDEX);
         db.execSQL(CREATE_MESSAGE_CONVERSATION_INDEX);
         db.execSQL(CREATE_MESSAGE_DELETED_INDEX);
+        db.execSQL(CREATE_MESSAGE_FILE_DELETED_INDEX);
         db.execSQL(CREATE_MESSAGE_RELATIVE_FILE_PATH_INDEX);
         db.execSQL(CREATE_MESSAGE_TYPE_INDEX);
         db.execSQL(CREATE_CONTATCS_STATEMENT);
@@ -342,7 +346,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             db.execSQL("ALTER TABLE " + Account.TABLENAME + " ADD COLUMN " + Account.STATUS + " TEXT");
             db.execSQL("ALTER TABLE " + Account.TABLENAME + " ADD COLUMN " + Account.STATUS_MESSAGE + " TEXT");
         }
-        if (oldVersion < 40 && newVersion >= 40) {
+        if (oldVersion < 41 && newVersion >= 41) {
             db.execSQL("ALTER TABLE " + Account.TABLENAME + " ADD COLUMN " + Account.RESOURCE + " TEXT");
         }
         /* Any migrations that alter the Account table need to happen BEFORE this migration, as it
@@ -419,6 +423,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         if (oldVersion < 29 && newVersion >= 29) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.ERROR_MESSAGE + " TEXT");
         }
+
         if (oldVersion >= 15 && oldVersion < 31 && newVersion >= 31) {
             db.execSQL("ALTER TABLE " + SQLiteAxolotlStore.IDENTITIES_TABLENAME + " ADD COLUMN " + SQLiteAxolotlStore.TRUST + " TEXT");
             db.execSQL("ALTER TABLE " + SQLiteAxolotlStore.IDENTITIES_TABLENAME + " ADD COLUMN " + SQLiteAxolotlStore.ACTIVE + " NUMBER");
@@ -437,7 +442,6 @@ public class DatabaseBackend extends SQLiteOpenHelper {
                 String[] where = {String.valueOf(entry.getKey())};
                 db.update(SQLiteAxolotlStore.IDENTITIES_TABLENAME, entry.getValue(), whereClause, where);
             }
-
         }
         if (oldVersion >= 15 && oldVersion < 32 && newVersion >= 32) {
             db.execSQL("ALTER TABLE " + SQLiteAxolotlStore.IDENTITIES_TABLENAME + " ADD COLUMN " + SQLiteAxolotlStore.LAST_ACTIVATION + " NUMBER");
@@ -449,53 +453,67 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             String whereClause = SQLiteAxolotlStore.OWN + "=1";
             db.update(SQLiteAxolotlStore.IDENTITIES_TABLENAME, createFingerprintStatusContentValues(FingerprintStatus.Trust.VERIFIED, true), whereClause, null);
         }
-
         if (oldVersion < 34 && newVersion >= 34) {
             db.execSQL(CREATE_MESSAGE_TIME_INDEX);
-
-            final File oldPicturesDirectory = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/Conversations/");
-            final File oldFilesDirectory = new File(Environment.getExternalStorageDirectory() + "/Conversations/");
-            final File newFilesDirectory = new File(Environment.getExternalStorageDirectory() + "/Conversations/Media/Conversations Files/");
-            final File newVideosDirectory = new File(Environment.getExternalStorageDirectory() + "/Conversations/Media/Conversations Videos/");
-            if (oldPicturesDirectory.exists() && oldPicturesDirectory.isDirectory()) {
-                final File newPicturesDirectory = new File(Environment.getExternalStorageDirectory() + "/Conversations/Media/Conversations Images/");
-                newPicturesDirectory.getParentFile().mkdirs();
-                if (oldPicturesDirectory.renameTo(newPicturesDirectory)) {
-                    Log.d(Config.LOGTAG, "moved " + oldPicturesDirectory.getAbsolutePath() + " to " + newPicturesDirectory.getAbsolutePath());
-                }
-            }
-            if (oldFilesDirectory.exists() && oldFilesDirectory.isDirectory()) {
-                newFilesDirectory.mkdirs();
-                newVideosDirectory.mkdirs();
-                final File[] files = oldFilesDirectory.listFiles();
-                if (files == null) {
-                    return;
-                }
-                for (File file : files) {
-                    if (file.getName().equals(".nomedia")) {
-                        if (file.delete()) {
-                            Log.d(Config.LOGTAG, "deleted nomedia file in " + oldFilesDirectory.getAbsolutePath());
-                        }
-                    } else if (file.isFile()) {
-                        final String name = file.getName();
-                        boolean isVideo = false;
-                        int start = name.lastIndexOf('.') + 1;
-                        if (start < name.length()) {
-                            String mime = MimeUtils.guessMimeTypeFromExtension(name.substring(start));
-                            isVideo = mime != null && mime.startsWith("video/");
-                        }
-                        File dst = new File((isVideo ? newVideosDirectory : newFilesDirectory).getAbsolutePath() + "/" + file.getName());
-                        if (file.renameTo(dst)) {
-                            Log.d(Config.LOGTAG, "moved " + file + " to " + dst);
-                        }
-                    }
-                }
-            }
+            // do nothing else at this point because we have seperated videos, images, audios and other files in different directories
         }
         if (oldVersion < 35 && newVersion >= 35) {
             db.execSQL(CREATE_MESSAGE_CONVERSATION_INDEX);
         }
         if (oldVersion < 36 && newVersion >= 36) {
+            // only rename videos, images, audios and other files directories
+            final File oldPicturesDirectory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pix-Art Messenger/Images/");
+            final File oldFilesDirectory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pix-Art Messenger/Files/");
+            final File oldAudiosDirectory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pix-Art Messenger/Audios/");
+            final File oldVideosDirectory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pix-Art Messenger/Videos/");
+
+            if (oldPicturesDirectory.exists() && oldPicturesDirectory.isDirectory()) {
+                final File newPicturesDirectory = new File(Environment.getExternalStorageDirectory() + "/Pix-Art Messenger/Media/Pix-Art Messenger Images/");
+                newPicturesDirectory.getParentFile().mkdirs();
+                final File[] files = oldPicturesDirectory.listFiles();
+                if (files == null) {
+                    return;
+                }
+                if (oldPicturesDirectory.renameTo(newPicturesDirectory)) {
+                    Log.d(Config.LOGTAG, "moved " + oldPicturesDirectory.getAbsolutePath() + " to " + newPicturesDirectory.getAbsolutePath());
+                }
+            }
+            if (oldFilesDirectory.exists() && oldFilesDirectory.isDirectory()) {
+                final File newFilesDirectory = new File(Environment.getExternalStorageDirectory() + "/Pix-Art Messenger/Media/Pix-Art Messenger Files/");
+                newFilesDirectory.mkdirs();
+                final File[] files = oldFilesDirectory.listFiles();
+                if (files == null) {
+                    return;
+                }
+                if (oldFilesDirectory.renameTo(newFilesDirectory)) {
+                    Log.d(Config.LOGTAG, "moved " + oldFilesDirectory.getAbsolutePath() + " to " + newFilesDirectory.getAbsolutePath());
+                }
+            }
+            if (oldAudiosDirectory.exists() && oldAudiosDirectory.isDirectory()) {
+                final File newAudiosDirectory = new File(Environment.getExternalStorageDirectory() + "/Pix-Art Messenger/Media/Pix-Art Messenger Audios/");
+                newAudiosDirectory.mkdirs();
+                final File[] files = oldAudiosDirectory.listFiles();
+                if (files == null) {
+                    return;
+                }
+                if (oldAudiosDirectory.renameTo(newAudiosDirectory)) {
+                    Log.d(Config.LOGTAG, "moved " + oldAudiosDirectory.getAbsolutePath() + " to " + newAudiosDirectory.getAbsolutePath());
+                }
+            }
+            if (oldVideosDirectory.exists() && oldVideosDirectory.isDirectory()) {
+                final File newVideosDirectory = new File(Environment.getExternalStorageDirectory() + "/Pix-Art Messenger/Media/Pix-Art Messenger Videos/");
+                newVideosDirectory.mkdirs();
+                final File[] files = oldVideosDirectory.listFiles();
+                if (files == null) {
+                    return;
+                }
+                if (oldVideosDirectory.renameTo(newVideosDirectory)) {
+                    Log.d(Config.LOGTAG, "moved " + oldVideosDirectory.getAbsolutePath() + " to " + newVideosDirectory.getAbsolutePath());
+                }
+            }
+        }
+
+        if (oldVersion < 37 && newVersion >= 37) {
             List<Account> accounts = getAccounts(db);
             for (Account account : accounts) {
                 account.setOption(Account.OPTION_REQUIRES_ACCESS_MODE_CHANGE, true);
@@ -505,56 +523,75 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             }
         }
 
-        if (oldVersion < 37 && newVersion >= 37) {
+        if (oldVersion < 38 && newVersion >= 38) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.READ_BY_MARKERS + " TEXT");
         }
 
-        if (oldVersion < 38 && newVersion >= 38) {
+        if (oldVersion < 39 && newVersion >= 39) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.MARKABLE + " NUMBER DEFAULT 0");
         }
 
-        if (oldVersion < 39 && newVersion >= 39) {
-            db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
-        }
-
-        if (oldVersion < 41 && newVersion >= 41) {
+        if (oldVersion < 42 && newVersion >= 42) {
             db.execSQL(CREATE_MESSAGE_INDEX_TABLE);
             db.execSQL(CREATE_MESSAGE_INSERT_TRIGGER);
             db.execSQL(CREATE_MESSAGE_UPDATE_TRIGGER);
             db.execSQL(COPY_PREEXISTING_ENTRIES);
         }
 
-        if (oldVersion < 42 && newVersion >= 42) {
+        if (oldVersion < 43 && newVersion >= 43) {
             db.execSQL("DROP TRIGGER IF EXISTS after_message_delete");
-        }
-        if (QuickConversationsService.isQuicksy() && oldVersion < 43 && newVersion >= 43) {
-            List<Account> accounts = getAccounts(db);
-            for (Account account : accounts) {
-                account.setOption(Account.OPTION_MAGIC_CREATE, true);
-                db.update(Account.TABLENAME, account.getContentValues(), Account.UUID
-                        + "=?", new String[]{account.getUuid()});
-            }
         }
 
         if (oldVersion < 44 && newVersion >= 44) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.DELETED + " NUMBER DEFAULT 0");
+        }
+
+        if (oldVersion < 45 && newVersion >= 45) {
+            db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.FILE_DELETED + " NUMBER DEFAULT 0");
             db.execSQL(CREATE_MESSAGE_DELETED_INDEX);
+            db.execSQL(CREATE_MESSAGE_FILE_DELETED_INDEX);
             db.execSQL(CREATE_MESSAGE_RELATIVE_FILE_PATH_INDEX);
             db.execSQL(CREATE_MESSAGE_TYPE_INDEX);
         }
 
-        if (oldVersion < 45 && newVersion >= 45) {
+        if (oldVersion < 46 && newVersion == 46) { // only available for old database version 46
+            if (!isColumnExisting(db, SQLiteAxolotlStore.IDENTITIES_TABLENAME, SQLiteAxolotlStore.TRUSTED)) {
+                db.execSQL("ALTER TABLE " + SQLiteAxolotlStore.IDENTITIES_TABLENAME + " ADD COLUMN " + SQLiteAxolotlStore.TRUSTED); // TODO - just to make old databases importable, column isn't needed at all
+            }
+        }
+
+        if (oldVersion < 49 && newVersion >= 49) {
             db.execSQL("ALTER TABLE " + Message.TABLENAME + " ADD COLUMN " + Message.BODY_LANGUAGE);
         }
 
-        if (oldVersion < 46 && newVersion >= 46) {
+        if (oldVersion < 50 && newVersion >= 50) {
             final long start = SystemClock.elapsedRealtime();
             db.rawQuery("PRAGMA secure_delete = FALSE", null).close();
-            db.execSQL("update "+Message.TABLENAME+" set "+Message.EDITED+"=NULL");
+            db.execSQL("update " + Message.TABLENAME + " set " + Message.EDITED + "=NULL");
             db.rawQuery("PRAGMA secure_delete=ON", null).close();
             final long diff = SystemClock.elapsedRealtime() - start;
-            Log.d(Config.LOGTAG,"deleted old edit information in "+diff+"ms");
+            Log.d(Config.LOGTAG, "deleted old edit information in " + diff + "ms");
         }
+
+        if (oldVersion < 51 && newVersion >= 51) {
+          // values in resolver_result are cache and not worth to store
+          db.execSQL("DROP TABLE IF EXISTS " + RESOLVER_RESULTS_TABLENAME);
+          db.execSQL(CREATE_RESOLVER_RESULTS_TABLE);
+        }
+    }
+
+    private boolean isColumnExisting(SQLiteDatabase db, String TableName, String ColumnName) {
+        boolean isExist = false;
+        Cursor cursor = db.rawQuery("PRAGMA table_info(" + TableName + ")", null);
+        cursor.moveToFirst();
+        do {
+            String currentColumn = cursor.getString(1);
+            if (currentColumn.equals(ColumnName)) {
+                isExist = true;
+            }
+        } while (cursor.moveToNext());
+        cursor.close();
+        return isExist;
     }
 
     private void canonicalizeJids(SQLiteDatabase db) {
@@ -573,7 +610,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
                 continue;
             }
 
-            String updateArgs[] = {
+            String[] updateArgs = {
                     newJid,
                     cursor.getString(cursor.getColumnIndex(Conversation.UUID)),
             };
@@ -625,7 +662,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
                 continue;
             }
 
-            String updateArgs[] = {
+            String[] updateArgs = {
                     newServer,
                     cursor.getString(cursor.getColumnIndex(Account.UUID)),
             };
@@ -752,15 +789,14 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor;
         if (timestamp == -1) {
-            String[] selectionArgs = {conversation.getUuid()};
+            String[] selectionArgs = {conversation.getUuid(), "1"};
             cursor = db.query(Message.TABLENAME, null, Message.CONVERSATION
-                    + "=?", selectionArgs, null, null, Message.TIME_SENT
+                    + "=? and " + Message.DELETED + "<?", selectionArgs, null, null, Message.TIME_SENT
                     + " DESC", String.valueOf(limit));
         } else {
-            String[] selectionArgs = {conversation.getUuid(),
-                    Long.toString(timestamp)};
+            String[] selectionArgs = {conversation.getUuid(), Long.toString(timestamp), "1"};
             cursor = db.query(Message.TABLENAME, null, Message.CONVERSATION
-                            + "=? and " + Message.TIME_SENT + "<?", selectionArgs,
+                            + "=? and " + Message.TIME_SENT + "<? and " + Message.DELETED + "<?", selectionArgs,
                     null, null, Message.TIME_SENT + " DESC",
                     String.valueOf(limit));
         }
@@ -769,7 +805,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
             try {
                 list.add(0, Message.fromCursor(cursor, conversation));
             } catch (Exception e) {
-                Log.e(Config.LOGTAG,"unable to restore message");
+                Log.e(Config.LOGTAG, "unable to restore message");
             }
         }
         cursor.close();
@@ -781,6 +817,40 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         String SQL = "SELECT " + Message.TABLENAME + ".*," + Conversation.TABLENAME + '.' + Conversation.CONTACTJID + ',' + Conversation.TABLENAME + '.' + Conversation.ACCOUNT + ',' + Conversation.TABLENAME + '.' + Conversation.MODE + " FROM " + Message.TABLENAME + " join " + Conversation.TABLENAME + " on " + Message.TABLENAME + '.' + Message.CONVERSATION + '=' + Conversation.TABLENAME + '.' + Conversation.UUID + " join messages_index ON messages_index.uuid=messages.uuid where " + Message.ENCRYPTION + " NOT IN(" + Message.ENCRYPTION_AXOLOTL_NOT_FOR_THIS_DEVICE + ',' + Message.ENCRYPTION_PGP + ',' + Message.ENCRYPTION_DECRYPTION_FAILED + ',' + Message.ENCRYPTION_AXOLOTL_FAILED + ") AND " + Message.TYPE + " IN(" + Message.TYPE_TEXT + ',' + Message.TYPE_PRIVATE + ") AND messages_index.body MATCH ? ORDER BY " + Message.TIME_SENT + " DESC limit " + Config.MAX_SEARCH_RESULTS;
         Log.d(Config.LOGTAG, "search term: " + FtsUtils.toMatchString(term));
         return db.rawQuery(SQL, new String[]{FtsUtils.toMatchString(term)});
+    }
+
+    public Iterable<Message> getMessagesIterable(final Conversation conversation) {
+        return () -> {
+            class MessageIterator implements Iterator<Message> {
+                SQLiteDatabase db = getReadableDatabase();
+                String[] selectionArgs = {conversation.getUuid(), "1"};
+                Cursor cursor = db.query(Message.TABLENAME, null, Message.CONVERSATION
+                        + "=? and " + Message.DELETED + "<?", selectionArgs, null, null, Message.TIME_SENT
+                        + " ASC", null);
+
+                public MessageIterator() {
+                    cursor.moveToFirst();
+                }
+
+                @Override
+                public boolean hasNext() {
+                    return !cursor.isAfterLast();
+                }
+
+                @Override
+                public Message next() {
+                    Message message = Message.fromCursor(cursor, conversation);
+                    cursor.moveToNext();
+                    return message;
+                }
+
+                @Override
+                public void remove() {
+                    throw new UnsupportedOperationException();
+                }
+            }
+            return new MessageIterator();
+        };
     }
 
     public List<String> markFileAsDeleted(final File file, final boolean internal) {
@@ -816,7 +886,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         final ContentValues contentValues = new ContentValues();
         final String where = Message.UUID + "=?";
-        contentValues.put(Message.DELETED, 1);
+        contentValues.put(Message.FILE_DELETED, 1);
         db.beginTransaction();
         for (String uuid : uuids) {
             db.update(Message.TABLENAME, contentValues, where, new String[]{uuid});
@@ -831,7 +901,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         db.beginTransaction();
         for (FilePathInfo info : files) {
             final ContentValues contentValues = new ContentValues();
-            contentValues.put(Message.DELETED, info.deleted ? 1 : 0);
+            contentValues.put(Message.FILE_DELETED, info.FileDeleted ? 1 : 0);
             db.update(Message.TABLENAME, contentValues, where, new String[]{info.uuid.toString()});
         }
         db.setTransactionSuccessful();
@@ -840,7 +910,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
 
     public List<FilePathInfo> getFilePathInfo() {
         final SQLiteDatabase db = this.getReadableDatabase();
-        final Cursor cursor = db.query(Message.TABLENAME, new String[]{Message.UUID, Message.RELATIVE_FILE_PATH, Message.DELETED}, "type in (1,2,5) and "+Message.RELATIVE_FILE_PATH+" is not null", null, null, null, null);
+        final Cursor cursor = db.query(Message.TABLENAME, new String[]{Message.UUID, Message.RELATIVE_FILE_PATH, Message.DELETED}, "type in (1,2,5) and " + Message.RELATIVE_FILE_PATH + " is not null", null, null, null, null);
         final List<FilePathInfo> list = new ArrayList<>();
         while (cursor != null && cursor.moveToNext()) {
             list.add(new FilePathInfo(cursor.getString(0), cursor.getString(1), cursor.getInt(2) > 0));
@@ -853,7 +923,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
 
     public List<FilePath> getRelativeFilePaths(String account, Jid jid, int limit) {
         SQLiteDatabase db = this.getReadableDatabase();
-        final String SQL = "select uuid,relativeFilePath from messages where type in (1,2,5) and deleted=0 and "+Message.RELATIVE_FILE_PATH+" is not null and conversationUuid=(select uuid from conversations where accountUuid=? and (contactJid=? or contactJid like ?)) order by timeSent desc";
+        final String SQL = "select uuid,relativeFilePath from messages where type in (1,2,5) and deleted=0 and " + Message.RELATIVE_FILE_PATH + " is not null and conversationUuid=(select uuid from conversations where accountUuid=? and (contactJid=? or contactJid like ?)) order by timeSent desc";
         final String[] args = {account, jid.toEscapedString(), jid.toEscapedString() + "/%"};
         Cursor cursor = db.rawQuery(SQL + (limit > 0 ? " limit " + String.valueOf(limit) : ""), args);
         List<FilePath> filesPaths = new ArrayList<>();
@@ -875,16 +945,16 @@ public class DatabaseBackend extends SQLiteOpenHelper {
     }
 
     public static class FilePathInfo extends FilePath {
-        public boolean deleted;
+        public boolean FileDeleted;
 
         private FilePathInfo(String uuid, String path, boolean deleted) {
-            super(uuid,path);
-            this.deleted = deleted;
+            super(uuid, path);
+            this.FileDeleted = deleted;
         }
 
-        public boolean setDeleted(boolean deleted) {
-            final boolean changed = deleted != this.deleted;
-            this.deleted = deleted;
+        public boolean setFileDeleted(boolean deleted) {
+            final boolean changed = deleted != this.FileDeleted;
+            this.FileDeleted = deleted;
             return changed;
         }
     }
@@ -943,14 +1013,17 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         }
     }
 
+
     private List<Account> getAccounts(SQLiteDatabase db) {
         List<Account> list = new ArrayList<>();
-        Cursor cursor = db.query(Account.TABLENAME, null, null, null, null,
-                null, null);
-        while (cursor.moveToNext()) {
-            list.add(Account.fromCursor(cursor));
+        try (Cursor cursor = db.query(Account.TABLENAME, null, null, null, null,
+                null, null)) {
+            while (cursor.moveToNext()) {
+                list.add(Account.fromCursor(cursor));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        cursor.close();
         return list;
     }
 
@@ -988,7 +1061,7 @@ public class DatabaseBackend extends SQLiteOpenHelper {
     public void readRoster(Roster roster) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor;
-        String args[] = {roster.getAccount().getUuid()};
+        String[] args = {roster.getAccount().getUuid()};
         cursor = db.query(Contact.TABLENAME, null, Contact.ACCOUNT + "=?", args, null, null, null);
         while (cursor.moveToNext()) {
             roster.initContact(Contact.fromCursor(cursor));
@@ -1018,6 +1091,19 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         Log.d(Config.LOGTAG, account.getJid().asBareJid() + ": persisted roster in " + duration + "ms");
     }
 
+    public void deleteMessageInConversation(Message message) {
+        long start = SystemClock.elapsedRealtime();
+        final SQLiteDatabase db = this.getWritableDatabase();
+        db.beginTransaction();
+        ContentValues values = new ContentValues();
+        values.put(Message.DELETED, "1");
+        String[] args = {message.getUuid()};
+        int rows = db.update("messages", values, "uuid =?", args);
+        db.setTransactionSuccessful();
+        db.endTransaction();
+        Log.d(Config.LOGTAG, "deleted " + rows + " message in " + (SystemClock.elapsedRealtime() - start) + "ms");
+    }
+
     public void deleteMessagesInConversation(Conversation conversation) {
         long start = SystemClock.elapsedRealtime();
         final SQLiteDatabase db = this.getWritableDatabase();
@@ -1030,14 +1116,55 @@ public class DatabaseBackend extends SQLiteOpenHelper {
         Log.d(Config.LOGTAG, "deleted " + num + " messages for " + conversation.getJid().asBareJid() + " in " + (SystemClock.elapsedRealtime() - start) + "ms");
     }
 
-    public void expireOldMessages(long timestamp) {
+    public long countExpireOldMessages(long timestamp) {
+        long start = SystemClock.elapsedRealtime();
         final String[] args = {String.valueOf(timestamp)};
         SQLiteDatabase db = this.getReadableDatabase();
         db.beginTransaction();
-        db.delete("messages_index", "uuid in (select uuid from messages where timeSent<?)", args);
-        db.delete(Message.TABLENAME, "timeSent<?", args);
+        long num = DatabaseUtils.queryNumEntries(db, Message.TABLENAME, "timeSent<?", args);
         db.setTransactionSuccessful();
         db.endTransaction();
+        Log.d(Config.LOGTAG, "found " + num + " expired messages in " + (SystemClock.elapsedRealtime() - start) + "ms");
+        return num;
+    }
+
+    public long getOldestMessages() {
+        Cursor cursor = null;
+        try {
+            SQLiteDatabase db = this.getReadableDatabase();
+            db.beginTransaction();
+            cursor = db.rawQuery("select timeSent from " + Message.TABLENAME + " ORDER BY " + Message.TIME_SENT + " ASC limit 1", null);
+            db.setTransactionSuccessful();
+            db.endTransaction();
+            if (cursor.getCount() == 0) {
+                return 0;
+            } else {
+                cursor.moveToFirst();
+                return cursor.getLong(0);
+            }
+        } catch (Exception e) {
+            return 0;
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
+    }
+
+    public int expireOldMessages(long timestamp) {
+        long start = SystemClock.elapsedRealtime();
+        int num = 0;
+        if (countExpireOldMessages(timestamp) >= 1) {
+            final String[] args = {String.valueOf(timestamp)};
+            SQLiteDatabase db = this.getReadableDatabase();
+            db.beginTransaction();
+            db.delete("messages_index", "uuid in (select uuid from messages where timeSent<?)", args);
+            num = db.delete(Message.TABLENAME, "timeSent<?", args);
+            db.setTransactionSuccessful();
+            db.endTransaction();
+        }
+        Log.d(Config.LOGTAG, "deleted " + num + " expired messages in " + (SystemClock.elapsedRealtime() - start) + "ms");
+        return num;
     }
 
     public MamReference getLastMessageReceived(Account account) {

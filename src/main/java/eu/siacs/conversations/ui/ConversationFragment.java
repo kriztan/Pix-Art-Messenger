@@ -1,33 +1,33 @@
 package eu.siacs.conversations.ui;
 
 import android.Manifest;
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.FragmentManager;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.databinding.DataBindingUtil;
-import android.net.Uri;
-import android.os.Build;
-import android.preference.PreferenceManager;
-import android.provider.MediaStore;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AlertDialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender.SendIntentException;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.support.v13.view.inputmethod.InputConnectionCompat;
-import android.support.v13.view.inputmethod.InputContentInfoCompat;
+import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.text.Editable;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -47,12 +47,27 @@ import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.PopupMenu;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
 import com.google.common.base.Optional;
+
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.view.menu.MenuPopupHelper;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.inputmethod.InputConnectionCompat;
+import androidx.core.view.inputmethod.InputContentInfoCompat;
+import androidx.databinding.DataBindingUtil;
+
+import net.java.otr4j.session.SessionStatus;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -86,17 +101,16 @@ import eu.siacs.conversations.http.HttpDownloadConnection;
 import eu.siacs.conversations.persistance.FileBackend;
 import eu.siacs.conversations.services.AppRTCAudioManager;
 import eu.siacs.conversations.services.MessageArchiveService;
-import eu.siacs.conversations.services.QuickConversationsService;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.adapter.MediaPreviewAdapter;
 import eu.siacs.conversations.ui.adapter.MessageAdapter;
 import eu.siacs.conversations.ui.util.ActivityResult;
 import eu.siacs.conversations.ui.util.Attachment;
+import eu.siacs.conversations.ui.util.AvatarWorkerTask;
 import eu.siacs.conversations.ui.util.ConversationMenuConfigurator;
 import eu.siacs.conversations.ui.util.DateSeparator;
 import eu.siacs.conversations.ui.util.EditMessageActionModeCallback;
 import eu.siacs.conversations.ui.util.ListViewUtils;
-import eu.siacs.conversations.ui.util.MenuDoubleTabUtil;
 import eu.siacs.conversations.ui.util.MucDetailsContextMenuHelper;
 import eu.siacs.conversations.ui.util.PendingItem;
 import eu.siacs.conversations.ui.util.PresenceSelector;
@@ -104,39 +118,43 @@ import eu.siacs.conversations.ui.util.ScrollState;
 import eu.siacs.conversations.ui.util.SendButtonAction;
 import eu.siacs.conversations.ui.util.SendButtonTool;
 import eu.siacs.conversations.ui.util.ShareUtil;
+import eu.siacs.conversations.ui.util.StyledAttributes;
 import eu.siacs.conversations.ui.util.ViewUtil;
 import eu.siacs.conversations.ui.widget.EditMessage;
-import eu.siacs.conversations.utils.AccountUtils;
 import eu.siacs.conversations.utils.Compatibility;
 import eu.siacs.conversations.utils.GeoHelper;
+import eu.siacs.conversations.utils.MenuDoubleTabUtil;
 import eu.siacs.conversations.utils.MessageUtils;
 import eu.siacs.conversations.utils.NickValidityChecker;
 import eu.siacs.conversations.utils.Patterns;
 import eu.siacs.conversations.utils.PermissionUtils;
 import eu.siacs.conversations.utils.QuickLoader;
 import eu.siacs.conversations.utils.StylingHelper;
-import eu.siacs.conversations.utils.TimeframeUtils;
 import eu.siacs.conversations.utils.UIHelper;
 import eu.siacs.conversations.xmpp.XmppConnection;
 import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jingle.JingleConnectionManager;
+import me.drakeet.support.toast.ToastCompat;
 import eu.siacs.conversations.xmpp.jingle.JingleFileTransferConnection;
 import eu.siacs.conversations.xmpp.jingle.Media;
 import eu.siacs.conversations.xmpp.jingle.OngoingRtpSession;
 import eu.siacs.conversations.xmpp.jingle.RtpCapability;
 import rocks.xmpp.addr.Jid;
 
+import static eu.siacs.conversations.entities.Message.DELETED_MESSAGE_BODY;
+import static eu.siacs.conversations.ui.SettingsActivity.HIDE_YOU_ARE_NOT_PARTICIPATING;
+import static eu.siacs.conversations.ui.SettingsActivity.WARN_UNENCRYPTED_CHAT;
 import static eu.siacs.conversations.ui.XmppActivity.EXTRA_ACCOUNT;
 import static eu.siacs.conversations.ui.XmppActivity.REQUEST_INVITE_TO_CONVERSATION;
 import static eu.siacs.conversations.ui.util.SoftKeyboardUtils.hideSoftKeyboard;
+import static eu.siacs.conversations.utils.Compatibility.runsTwentyOne;
 import static eu.siacs.conversations.utils.PermissionUtils.allGranted;
 import static eu.siacs.conversations.utils.PermissionUtils.getFirstDenied;
-import static eu.siacs.conversations.utils.PermissionUtils.writeGranted;
-
+import static eu.siacs.conversations.utils.PermissionUtils.readGranted;
+import static eu.siacs.conversations.xmpp.Patches.ENCRYPTION_EXCEPTIONS;
 
 public class ConversationFragment extends XmppFragment implements EditMessage.KeyboardListener, MessageAdapter.OnContactPictureLongClicked, MessageAdapter.OnContactPictureClicked {
-
 
     public static final int REQUEST_SEND_MESSAGE = 0x0201;
     public static final int REQUEST_DECRYPT_PGP = 0x0202;
@@ -146,6 +164,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     public static final int REQUEST_START_DOWNLOAD = 0x0210;
     public static final int REQUEST_ADD_EDITOR_CONTENT = 0x0211;
     public static final int REQUEST_COMMIT_ATTACHMENTS = 0x0212;
+    public static final int ATTACHMENT_CHOICE = 0x0300;
     public static final int REQUEST_START_AUDIO_CALL = 0x213;
     public static final int REQUEST_START_VIDEO_CALL = 0x214;
     public static final int ATTACHMENT_CHOICE_CHOOSE_IMAGE = 0x0301;
@@ -153,14 +172,16 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     public static final int ATTACHMENT_CHOICE_CHOOSE_FILE = 0x0303;
     public static final int ATTACHMENT_CHOICE_RECORD_VOICE = 0x0304;
     public static final int ATTACHMENT_CHOICE_LOCATION = 0x0305;
-    public static final int ATTACHMENT_CHOICE_INVALID = 0x0306;
+    public static final int ATTACHMENT_CHOICE_CHOOSE_VIDEO = 0x0306;
     public static final int ATTACHMENT_CHOICE_RECORD_VIDEO = 0x0307;
+    public static final int ATTACHMENT_CHOICE_INVALID = 0x0399;
 
     public static final String RECENTLY_USED_QUICK_ACTION = "recently_used_quick_action";
     public static final String STATE_CONVERSATION_UUID = ConversationFragment.class.getName() + ".uuid";
     public static final String STATE_SCROLL_POSITION = ConversationFragment.class.getName() + ".scroll_position";
     public static final String STATE_PHOTO_URI = ConversationFragment.class.getName() + ".media_previews";
     public static final String STATE_MEDIA_PREVIEWS = ConversationFragment.class.getName() + ".take_photo_uri";
+
     private static final String STATE_LAST_MESSAGE_UUID = "state_last_message_uuid";
 
     private final List<Message> messageList = new ArrayList<>();
@@ -169,18 +190,27 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     private final PendingItem<ArrayList<Attachment>> pendingMediaPreviews = new PendingItem<>();
     private final PendingItem<Bundle> pendingExtras = new PendingItem<>();
     private final PendingItem<Uri> pendingTakePhotoUri = new PendingItem<>();
+    private final PendingItem<Uri> pendingTakeVideoUri = new PendingItem<>();
     private final PendingItem<ScrollState> pendingScrollState = new PendingItem<>();
     private final PendingItem<String> pendingLastMessageUuid = new PendingItem<>();
     private final PendingItem<Message> pendingMessage = new PendingItem<>();
     public Uri mPendingEditorContent = null;
+    public FragmentConversationBinding binding;
     protected MessageAdapter messageListAdapter;
-    private MediaPreviewAdapter mediaPreviewAdapter;
     private String lastMessageUuid = null;
     private Conversation conversation;
-    private FragmentConversationBinding binding;
     private Toast messageLoaderToast;
     private ConversationsActivity activity;
+    private Menu mOptionsMenu;
+    protected OnClickListener clickToVerify = new OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            activity.verifyOtrSessionDialog(conversation, v);
+        }
+    };
+
     private boolean reInitRequiredOnStart = true;
+    private MediaPreviewAdapter mediaPreviewAdapter;
     private OnClickListener clickToMuc = new OnClickListener() {
 
         @Override
@@ -189,8 +219,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
             intent.putExtra("uuid", conversation.getUuid());
             startActivity(intent);
+            activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
         }
     };
+
     private OnClickListener leaveMuc = new OnClickListener() {
 
         @Override
@@ -198,6 +230,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             activity.xmppConnectionService.archiveConversation(conversation);
         }
     };
+
     private OnClickListener joinMuc = new OnClickListener() {
 
         @Override
@@ -230,6 +263,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             });
         }
     };
+
     private OnScrollListener mOnScrollListener = new OnScrollListener() {
 
         @Override
@@ -298,17 +332,16 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                                 if (ConversationFragment.this.conversation != conversation) {
                                     return;
                                 }
-                                messageLoaderToast = Toast.makeText(view.getContext(), resId, Toast.LENGTH_LONG);
+                                messageLoaderToast = ToastCompat.makeText(view.getContext(), resId, Toast.LENGTH_LONG);
                                 messageLoaderToast.show();
                             });
-
                         }
                     });
-
                 }
             }
         }
     };
+
     private EditMessage.OnCommitContentListener mEditorContentListener = new EditMessage.OnCommitContentListener() {
         @Override
         public boolean onCommitContent(InputContentInfoCompat inputContentInfo, int flags, Bundle opts, String[] contentMimeTypes) {
@@ -318,12 +351,12 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     inputContentInfo.requestPermission();
                 } catch (Exception e) {
                     Log.e(Config.LOGTAG, "InputContentInfoCompat#requestPermission() failed.", e);
-                    Toast.makeText(getActivity(), activity.getString(R.string.no_permission_to_access_x, inputContentInfo.getDescription()), Toast.LENGTH_LONG
+                    ToastCompat.makeText(getActivity(), activity.getString(R.string.no_permission_to_access_x, inputContentInfo.getDescription()), Toast.LENGTH_LONG
                     ).show();
                     return false;
                 }
             }
-            if (hasPermissions(REQUEST_ADD_EDITOR_CONTENT, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            if (hasPermissions(REQUEST_ADD_EDITOR_CONTENT, Manifest.permission.WRITE_EXTERNAL_STORAGE) && hasPermissions(REQUEST_ADD_EDITOR_CONTENT, Manifest.permission.READ_EXTERNAL_STORAGE)) {
                 attachEditorContentToConversation(inputContentInfo.getContentUri());
             } else {
                 mPendingEditorContent = inputContentInfo.getContentUri();
@@ -354,8 +387,8 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
     };
     private OnClickListener mBlockClickListener = this::showBlockSubmenu;
-    private OnClickListener mAddBackClickListener = new OnClickListener() {
 
+    private OnClickListener mAddBackClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
             final Contact contact = conversation == null ? null : conversation.getContact();
@@ -365,7 +398,22 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         }
     };
-    private View.OnLongClickListener mLongPressBlockListener = this::showBlockSubmenu;
+    private View.OnLongClickListener mLongPressBlockListener = v -> {
+        showBlockSubmenu(v);
+        return true;
+    };
+
+    private OnClickListener mHideUnencryptionHint = v -> enableMessageEncryption();
+
+    private void enableMessageEncryption() {
+        if (Config.supportOmemo() && Conversation.suitableForOmemoByDefault(conversation) && conversation.isSingleOrPrivateAndNonAnonymous()) {
+            conversation.setNextEncryption(Message.ENCRYPTION_AXOLOTL);
+            activity.xmppConnectionService.updateConversation(conversation);
+            activity.refreshUi();
+        }
+        hideSnackbar();
+    }
+
     private OnClickListener mAllowPresenceSubscription = new OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -378,6 +426,19 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         }
     };
+    private OnClickListener mAnswerSmpClickListener = new OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(activity, VerifyOTRActivity.class);
+            intent.setAction(VerifyOTRActivity.ACTION_VERIFY_CONTACT);
+            intent.putExtra(EXTRA_ACCOUNT, conversation.getAccount().getJid().asBareJid().toString());
+            intent.putExtra(VerifyOTRActivity.EXTRA_ACCOUNT, conversation.getAccount().getJid().asBareJid().toString());
+            intent.putExtra("mode", VerifyOTRActivity.MODE_ANSWER_QUESTION);
+            startActivity(intent);
+            activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
+        }
+    };
+
     protected OnClickListener clickToDecryptListener = new OnClickListener() {
 
         @Override
@@ -392,7 +453,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                             0,
                             0);
                 } catch (SendIntentException e) {
-                    Toast.makeText(getActivity(), R.string.unable_to_connect_to_keychain, Toast.LENGTH_SHORT).show();
+                    ToastCompat.makeText(getActivity(), R.string.unable_to_connect_to_keychain, Toast.LENGTH_SHORT).show();
                     conversation.getAccount().getPgpDecryptionService().continueDecryption(true);
                 }
             }
@@ -412,6 +473,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             return false;
         }
     };
+
     private OnClickListener mScrollButtonListener = new OnClickListener() {
 
         @Override
@@ -420,6 +482,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             setSelection(binding.messagesView.getCount() - 1, true);
         }
     };
+
+    private OnClickListener mRecordVoiceButtonListener = v -> attachFile(ATTACHMENT_CHOICE_RECORD_VOICE);
+
     private OnClickListener mSendButtonListener = new OnClickListener() {
 
         @Override
@@ -428,6 +493,8 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             if (tag instanceof SendButtonAction) {
                 SendButtonAction action = (SendButtonAction) tag;
                 switch (action) {
+                    case CHOOSE_ATTACHMENT:
+                        choose_attachment(v);
                     case TAKE_PHOTO:
                     case RECORD_VIDEO:
                     case SEND_LOCATION:
@@ -460,6 +527,18 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         }
     };
+
+    private View.OnLongClickListener mSendButtonLongListener = new View.OnLongClickListener() {
+        @Override
+        public boolean onLongClick(View v) {
+            final String body = binding.textinput.getText().toString();
+            if (body.length() == 0) {
+                binding.textinput.getText().insert(0, Message.ME_COMMAND + " ");
+            }
+            return true;
+        }
+    };
+
     private int completionIndex = 0;
     private int lastCompletionLength = 0;
     private String incomplete;
@@ -554,6 +633,33 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
     }
 
+    @SuppressLint("RestrictedApi")
+    private void choose_attachment(View v) {
+        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(activity);
+        final boolean hideVoice = p.getBoolean("show_record_voice_btn", activity.getResources().getBoolean(R.bool.show_record_voice_btn));
+        PopupMenu popup = new PopupMenu(activity, v);
+        popup.inflate(R.menu.choose_attachment);
+        final Menu menu = popup.getMenu();
+        ConversationMenuConfigurator.configureQuickShareAttachmentMenu(conversation, menu, hideVoice);
+        popup.setOnMenuItemClickListener(attachmentItem -> {
+            switch (attachmentItem.getItemId()) {
+                case R.id.attach_choose_picture:
+                case R.id.attach_choose_video:
+                case R.id.attach_take_picture:
+                case R.id.attach_record_video:
+                case R.id.attach_choose_file:
+                case R.id.attach_record_voice:
+                case R.id.attach_location:
+                    handleAttachmentSelection(attachmentItem);
+                default:
+                    return false;
+            }
+        });
+        MenuPopupHelper menuHelper = new MenuPopupHelper(getActivity(), (MenuBuilder) menu, v);
+        menuHelper.setForceShowIcon(true);
+        menuHelper.show();
+    }
+
     private void toggleScrollDownButton() {
         toggleScrollDownButton(binding.messagesView);
     }
@@ -569,7 +675,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             binding.scrollToBottomButton.setEnabled(true);
             binding.scrollToBottomButton.show();
             if (lastMessageUuid == null) {
-                lastMessageUuid = conversation.getLatestMessage().getUuid();
+                new Thread(lastMessageUuid = conversation.getLatestMessage().getUuid()).start();
             }
             if (conversation.getReceivedMessagesCountSinceUuid(lastMessageUuid) > 0) {
                 binding.unreadCountCustomView.setVisibility(View.VISIBLE);
@@ -615,7 +721,6 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     private void setScrollPosition(ScrollState scrollPosition, String lastMessageUuid) {
         if (scrollPosition != null) {
-
             this.lastMessageUuid = lastMessageUuid;
             if (lastMessageUuid != null) {
                 binding.unreadCountCustomView.setUnreadCount(conversation.getReceivedMessagesCountSinceUuid(lastMessageUuid));
@@ -653,7 +758,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         if (conversation == null) {
             return;
         }
-        final Toast prepareFileToast = Toast.makeText(getActivity(), getText(R.string.preparing_file), Toast.LENGTH_LONG);
+        final Toast prepareFileToast = ToastCompat.makeText(getActivity(), getText(R.string.preparing_file), Toast.LENGTH_LONG);
         prepareFileToast.show();
         activity.delegateUriPermissionsToService(uri);
         activity.xmppConnectionService.attachFileToConversation(conversation, uri, type, new UiInformableCallback<Message>() {
@@ -683,6 +788,62 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         });
     }
 
+    private void attachPhotoToConversation(Conversation conversation, Uri uri) {
+        if (conversation == null) {
+            return;
+        }
+        final Toast prepareFileToast = ToastCompat.makeText(getActivity(), getText(R.string.preparing_image), Toast.LENGTH_LONG);
+        prepareFileToast.show();
+        activity.delegateUriPermissionsToService(uri);
+        activity.xmppConnectionService.attachImageToConversation(conversation, uri,
+                new UiCallback<Message>() {
+
+                    @Override
+                    public void userInputRequired(PendingIntent pi, Message object) {
+                        hidePrepareFileToast(prepareFileToast);
+                    }
+
+                    @Override
+                    public void success(Message message) {
+                        hidePrepareFileToast(prepareFileToast);
+                    }
+
+                    @Override
+                    public void error(final int error, Message message) {
+                        hidePrepareFileToast(prepareFileToast);
+                        activity.runOnUiThread(() -> activity.replaceToast(getString(error)));
+                    }
+                });
+    }
+
+    private void attachImagesToConversation(Conversation conversation, Uri uri) {
+        if (conversation == null) {
+            return;
+        }
+        final Toast prepareFileToast = ToastCompat.makeText(getActivity(), getText(R.string.preparing_image), Toast.LENGTH_LONG);
+        prepareFileToast.show();
+        activity.delegateUriPermissionsToService(uri);
+        activity.xmppConnectionService.attachImageToConversation(conversation, uri,
+                new UiCallback<Message>() {
+
+                    @Override
+                    public void userInputRequired(PendingIntent pi, Message object) {
+                        hidePrepareFileToast(prepareFileToast);
+                    }
+
+                    @Override
+                    public void success(Message message) {
+                        hidePrepareFileToast(prepareFileToast);
+                    }
+
+                    @Override
+                    public void error(final int error, Message message) {
+                        hidePrepareFileToast(prepareFileToast);
+                        activity.runOnUiThread(() -> activity.replaceToast(getString(error)));
+                    }
+                });
+    }
+
     public void attachEditorContentToConversation(Uri uri) {
         mediaPreviewAdapter.addMediaPreviews(Attachment.of(getActivity(), uri, Attachment.Type.FILE));
         toggleInputMethod();
@@ -692,12 +853,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         if (conversation == null) {
             return;
         }
-        final Toast prepareFileToast = Toast.makeText(getActivity(), getText(R.string.preparing_image), Toast.LENGTH_LONG);
+        final Toast prepareFileToast = ToastCompat.makeText(getActivity(), getText(R.string.preparing_image), Toast.LENGTH_LONG);
         prepareFileToast.show();
         activity.delegateUriPermissionsToService(uri);
         activity.xmppConnectionService.attachImageToConversation(conversation, uri,
                 new UiCallback<Message>() {
-
                     @Override
                     public void userInputRequired(PendingIntent pi, Message object) {
                         hidePrepareFileToast(prepareFileToast);
@@ -748,6 +908,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             message.setUuid(UUID.randomUUID().toString());
         }
         switch (conversation.getNextEncryption()) {
+            case Message.ENCRYPTION_OTR:
+                sendOtrMessage(message);
+                break;
             case Message.ENCRYPTION_PGP:
                 sendPgpMessage(message);
                 break;
@@ -785,22 +948,28 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     public void updateChatMsgHint() {
         final boolean multi = conversation.getMode() == Conversation.MODE_MULTI;
         if (conversation.getCorrectingMessage() != null) {
-            this.binding.textInputHint.setVisibility(View.GONE);
+            this.binding.textInputHint.setVisibility(View.VISIBLE);
+            this.binding.textInputHint.setText(R.string.send_corrected_message);
             this.binding.textinput.setHint(R.string.send_corrected_message);
-        } else if (multi && conversation.getNextCounterpart() != null) {
+        } else if (isPrivateMessage()) {
             this.binding.textinput.setHint(R.string.send_unencrypted_message);
             this.binding.textInputHint.setVisibility(View.VISIBLE);
-            this.binding.textInputHint.setText(getString(
-                    R.string.send_private_message_to,
-                    conversation.getNextCounterpart().getResource()));
+            SpannableStringBuilder hint = new SpannableStringBuilder(getString(R.string.send_private_message_to, conversation.getNextCounterpart().getResource()));
+            hint.setSpan(new StyleSpan(Typeface.BOLD), 0, hint.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            this.binding.textInputHint.setText(hint);
         } else if (multi && !conversation.getMucOptions().participating()) {
-            this.binding.textInputHint.setVisibility(View.GONE);
+            this.binding.textInputHint.setVisibility(View.VISIBLE);
+            this.binding.textInputHint.setText(R.string.ask_for_writeaccess);
             this.binding.textinput.setHint(R.string.you_are_not_participating);
         } else {
             this.binding.textInputHint.setVisibility(View.GONE);
             this.binding.textinput.setHint(UIHelper.getMessageHint(getActivity(), conversation));
             getActivity().invalidateOptionsMenu();
         }
+    }
+
+    private boolean isPrivateMessage() {
+        return conversation != null && conversation.getMode() == Conversation.MODE_MULTI && conversation.getNextCounterpart() != null;
     }
 
     public void setupIme() {
@@ -840,6 +1009,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             case ATTACHMENT_CHOICE_CHOOSE_FILE:
             case ATTACHMENT_CHOICE_RECORD_VIDEO:
             case ATTACHMENT_CHOICE_RECORD_VOICE:
+            case ATTACHMENT_CHOICE_CHOOSE_VIDEO:
                 final Attachment.Type type = requestCode == ATTACHMENT_CHOICE_RECORD_VOICE ? Attachment.Type.RECORDING : Attachment.Type.FILE;
                 final List<Attachment> fileUris = Attachment.extractAttachments(getActivity(), data, type);
                 mediaPreviewAdapter.addMediaPreviews(fileUris);
@@ -856,7 +1026,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 XmppActivity.ConferenceInvite invite = XmppActivity.ConferenceInvite.parse(data);
                 if (invite != null) {
                     if (invite.execute(activity)) {
-                        activity.mToast = Toast.makeText(activity, R.string.creating_conference, Toast.LENGTH_LONG);
+                        activity.mToast = ToastCompat.makeText(activity, R.string.creating_conference, Toast.LENGTH_LONG);
                         activity.mToast.show();
                     }
                 }
@@ -865,7 +1035,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     private void commitAttachments() {
-        if (!hasPermissions(REQUEST_COMMIT_ATTACHMENTS, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        if (!hasPermissions(REQUEST_COMMIT_ATTACHMENTS, Manifest.permission.WRITE_EXTERNAL_STORAGE) && hasPermissions(REQUEST_COMMIT_ATTACHMENTS, Manifest.permission.READ_EXTERNAL_STORAGE)) {
             return;
         }
         if (conversation.getNextEncryption() == Message.ENCRYPTION_AXOLOTL && trustKeysIfNeeded(REQUEST_TRUST_KEYS_ATTACHMENTS)) {
@@ -902,6 +1072,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         boolean hasAttachments = mediaPreviewAdapter.hasAttachments();
         binding.textinput.setVisibility(hasAttachments ? View.GONE : View.VISIBLE);
         binding.mediaPreview.setVisibility(hasAttachments ? View.VISIBLE : View.GONE);
+        if (mOptionsMenu != null) {
+            ConversationMenuConfigurator.configureAttachmentMenu(conversation, mOptionsMenu, activity.xmppConnectionService.getAttachmentChoicePreference(), hasAttachments);
+        }
         updateSendButton();
     }
 
@@ -955,22 +1128,24 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
+        mOptionsMenu = menu;
+        boolean hasAttachments = mediaPreviewAdapter != null && mediaPreviewAdapter.hasAttachments();
         menuInflater.inflate(R.menu.fragment_conversation, menu);
-        final MenuItem menuMucDetails = menu.findItem(R.id.action_muc_details);
-        final MenuItem menuContactDetails = menu.findItem(R.id.action_contact_details);
         final MenuItem menuInviteContact = menu.findItem(R.id.action_invite);
-        final MenuItem menuMute = menu.findItem(R.id.action_mute);
-        final MenuItem menuUnmute = menu.findItem(R.id.action_unmute);
+        final MenuItem menuNeedHelp = menu.findItem(R.id.action_create_issue);
+        final MenuItem menuSearchUpdates = menu.findItem(R.id.action_check_updates);
+        final MenuItem menuArchiveChat = menu.findItem(R.id.action_archive_chat);
+        final MenuItem menuGroupDetails = menu.findItem(R.id.action_group_details);
+        final MenuItem menuContactDetails = menu.findItem(R.id.action_contact_details);
         final MenuItem menuCall = menu.findItem(R.id.action_call);
         final MenuItem menuOngoingCall = menu.findItem(R.id.action_ongoing_call);
         final MenuItem menuVideoCall = menu.findItem(R.id.action_video_call);
-
+        final MenuItem menuMediaBrowser = menu.findItem(R.id.action_mediabrowser);
 
         if (conversation != null) {
             if (conversation.getMode() == Conversation.MODE_MULTI) {
-                menuContactDetails.setVisible(false);
                 menuInviteContact.setVisible(conversation.getMucOptions().canInvite());
-                menuMucDetails.setTitle(conversation.getMucOptions().isPrivateAndNonAnonymous() ? R.string.action_muc_details : R.string.channel_details);
+                menuArchiveChat.setTitle(R.string.action_end_conversation_muc);
                 menuCall.setVisible(false);
                 menuOngoingCall.setVisible(false);
             } else {
@@ -984,18 +1159,24 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     menuCall.setVisible(rtpCapability != RtpCapability.Capability.NONE);
                     menuVideoCall.setVisible(rtpCapability == RtpCapability.Capability.VIDEO);
                 }
-                menuContactDetails.setVisible(!this.conversation.withSelf());
-                menuMucDetails.setVisible(false);
-                final XmppConnectionService service = activity.xmppConnectionService;
-                menuInviteContact.setVisible(service != null && service.findConferenceServer(conversation.getAccount()) != null);
-            }
-            if (conversation.isMuted()) {
-                menuMute.setVisible(false);
+		menuInviteContact.setVisible(false);
+                menuArchiveChat.setTitle(R.string.action_end_conversation);          
             } else {
-                menuUnmute.setVisible(false);
+                menuGroupDetails.setVisible(false);
+                menuContactDetails.setVisible(false);
             }
-            ConversationMenuConfigurator.configureAttachmentMenu(conversation, menu);
-            ConversationMenuConfigurator.configureEncryptionMenu(conversation, menu);
+            menuMediaBrowser.setVisible(true);
+            menuNeedHelp.setVisible(true);
+            menuSearchUpdates.setVisible(false);
+            ConversationMenuConfigurator.configureAttachmentMenu(conversation, menu, activity.xmppConnectionService.getAttachmentChoicePreference(), hasAttachments);
+            ConversationMenuConfigurator.configureEncryptionMenu(conversation, menu, activity);
+        } else {
+            menuNeedHelp.setVisible(false);
+            menuSearchUpdates.setVisible(true);
+            menuInviteContact.setVisible(false);
+            menuGroupDetails.setVisible(false);
+            menuContactDetails.setVisible(false);
+            menuMediaBrowser.setVisible(false);
         }
         super.onCreateOptionsMenu(menu, menuInflater);
     }
@@ -1006,13 +1187,14 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         binding.getRoot().setOnClickListener(null); //TODO why the fuck did we do this?
 
         binding.textinput.addTextChangedListener(new StylingHelper.MessageEditorStyler(binding.textinput));
-
         binding.textinput.setOnEditorActionListener(mEditorActionListener);
         binding.textinput.setRichContentListener(new String[]{"image/*"}, mEditorContentListener);
 
         binding.textSendButton.setOnClickListener(this.mSendButtonListener);
-
+        binding.textSendButton.setOnLongClickListener(this.mSendButtonLongListener);
         binding.scrollToBottomButton.setOnClickListener(this.mScrollButtonListener);
+        binding.recordVoiceButton.setOnClickListener(this.mRecordVoiceButtonListener);
+
         binding.messagesView.setOnScrollListener(mOnScrollListener);
         binding.messagesView.setTranscriptMode(ListView.TRANSCRIPT_MODE_NORMAL);
         mediaPreviewAdapter = new MediaPreviewAdapter(this);
@@ -1020,21 +1202,36 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         messageListAdapter = new MessageAdapter((XmppActivity) getActivity(), this.messageList);
         messageListAdapter.setOnContactPictureClicked(this);
         messageListAdapter.setOnContactPictureLongClicked(this);
-        messageListAdapter.setOnQuoteListener(this::quoteText);
+        messageListAdapter.setOnQuoteListener(ConversationFragment.this::quoteText);
         binding.messagesView.setAdapter(messageListAdapter);
-
         registerForContextMenu(binding.messagesView);
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             this.binding.textinput.setCustomInsertionActionModeCallback(new EditMessageActionModeCallback(this.binding.textinput));
         }
-
         return binding.getRoot();
     }
 
-    private void quoteText(String text) {
+    @Override
+    public Animator onCreateAnimator(int transit, boolean enter, int nextAnim) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            int animator = enter ? R.animator.fade_right_in : R.animator.fade_right_out;
+            return AnimatorInflater.loadAnimator(getActivity(), animator);
+        } else {
+            return null;
+        }
+    }
+
+    private void quoteText(String text, String user) {
         if (binding.textinput.isEnabled()) {
-            binding.textinput.insertAsQuote(text);
+            String username = "";
+            if (user != null && user.length() > 0) {
+                if (user.equals(getString(R.string.me))) {
+                    username = getString(R.string.i_have_written) + System.getProperty("line.separator");
+                } else {
+                    username = getString(R.string.x_has_written, user) + System.getProperty("line.separator");
+                }
+            }
+            binding.textinput.insertAsQuote(username + text);
             binding.textinput.requestFocus();
             InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
             if (inputMethodManager != null) {
@@ -1043,8 +1240,20 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
     }
 
-    private void quoteMessage(Message message) {
-        quoteText(MessageUtils.prepareQuote(message));
+    private void showRecordVoiceButton() {
+        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(activity);
+        final boolean ShowRecordVoiceButton = p.getBoolean("show_record_voice_btn", activity.getResources().getBoolean(R.bool.show_record_voice_btn));
+        Log.d(Config.LOGTAG, "Recorder " + ShowRecordVoiceButton);
+        if (ShowRecordVoiceButton) {
+            binding.recordVoiceButton.setVisibility(View.VISIBLE);
+        } else {
+            binding.recordVoiceButton.setVisibility(View.GONE);
+        }
+        binding.recordVoiceButton.setImageResource(activity.getThemeResource(R.attr.ic_send_voice_offline, R.drawable.ic_send_voice_offline));
+    }
+
+    private void quoteMessage(Message message, @Nullable String user) {
+        quoteText(MessageUtils.prepareQuote(message), user);
     }
 
     @Override
@@ -1069,12 +1278,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             if (m.getEncryption() == Message.ENCRYPTION_AXOLOTL_NOT_FOR_THIS_DEVICE || m.getEncryption() == Message.ENCRYPTION_AXOLOTL_FAILED) {
                 return;
             }
-
             if (m.getStatus() == Message.STATUS_RECEIVED && t != null && (t.getStatus() == Transferable.STATUS_CANCELLED || t.getStatus() == Transferable.STATUS_FAILED)) {
                 return;
             }
-
-            final boolean deleted = m.isDeleted();
+            final boolean deleted = m.isFileDeleted();
             final boolean encrypted = m.getEncryption() == Message.ENCRYPTION_DECRYPTION_FAILED
                     || m.getEncryption() == Message.ENCRYPTION_PGP;
             final boolean receiving = m.getStatus() == Message.STATUS_RECEIVED && (t instanceof JingleFileTransferConnection || t instanceof HttpDownloadConnection);
@@ -1086,14 +1293,16 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             MenuItem quoteMessage = menu.findItem(R.id.quote_message);
             MenuItem retryDecryption = menu.findItem(R.id.retry_decryption);
             MenuItem correctMessage = menu.findItem(R.id.correct_message);
+            MenuItem deleteMessage = menu.findItem(R.id.delete_message);
             MenuItem shareWith = menu.findItem(R.id.share_with);
             MenuItem sendAgain = menu.findItem(R.id.send_again);
             MenuItem copyUrl = menu.findItem(R.id.copy_url);
-            MenuItem downloadFile = menu.findItem(R.id.download_file);
             MenuItem cancelTransmission = menu.findItem(R.id.cancel_transmission);
+            MenuItem downloadFile = menu.findItem(R.id.download_file);
             MenuItem deleteFile = menu.findItem(R.id.delete_file);
             MenuItem showErrorMessage = menu.findItem(R.id.show_error_message);
             final boolean showError = m.getStatus() == Message.STATUS_SEND_FAILED && m.getErrorMessage() != null && !Message.ERROR_MESSAGE_CANCELLED.equals(m.getErrorMessage());
+            deleteMessage.setVisible(true);
             if (!m.isFileOrImage() && !encrypted && !m.isGeoUri() && !m.treatAsDownloadable()) {
                 copyMessage.setVisible(true);
                 quoteMessage.setVisible(!showError && MessageUtils.prepareQuote(m).length() > 0);
@@ -1117,12 +1326,14 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
             if ((m.isFileOrImage() && !deleted && !receiving) || (m.getType() == Message.TYPE_TEXT && !m.treatAsDownloadable())) {
                 shareWith.setVisible(true);
+
             }
             if (m.getStatus() == Message.STATUS_SEND_FAILED) {
                 sendAgain.setVisible(true);
             }
             if (m.hasFileOnRemoteHost()
                     || m.isGeoUri()
+                    || m.isXmppUri()
                     || m.treatAsDownloadable()
                     || t instanceof HttpDownloadConnection) {
                 copyUrl.setVisible(true);
@@ -1140,14 +1351,13 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
             if (m.isFileOrImage() && !deleted && !cancelable) {
                 String path = m.getRelativeFilePath();
-                if (path == null || !path.startsWith("/") || FileBackend.isInDirectoryThatShouldNotBeScanned(getActivity(), path)) {
+                Log.d(Config.LOGTAG, "Path = " + path);
+                if (path == null || !path.startsWith("/") || path.contains(FileBackend.getConversationsDirectory("null"))) {
                     deleteFile.setVisible(true);
                     deleteFile.setTitle(activity.getString(R.string.delete_x_file, UIHelper.getFileDescriptionString(activity, m)));
                 }
             }
-            if (showError) {
-                showErrorMessage.setVisible(true);
-            }
+            showErrorMessage.setVisible(showError);
             final String mime = m.isFileOrImage() ? m.getMimeType() : null;
             if ((m.isGeoUri() && GeoHelper.openInOsmAnd(getActivity(), m)) || (mime != null && mime.startsWith("audio/"))) {
                 openWith.setVisible(true);
@@ -1157,9 +1367,27 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
+        String user;
+        try {
+            final Contact contact = selectedMessage.getContact();
+            if (conversation.getMode() == Conversation.MODE_MULTI) {
+                user = UIHelper.getDisplayedMucCounterpart(selectedMessage.getCounterpart());
+            } else {
+                user = contact != null ? contact.getDisplayName() : null;
+            }
+            if (selectedMessage.getStatus() == Message.STATUS_SEND
+                    || selectedMessage.getStatus() == Message.STATUS_SEND_FAILED
+                    || selectedMessage.getStatus() == Message.STATUS_SEND_RECEIVED
+                    || selectedMessage.getStatus() == Message.STATUS_SEND_DISPLAYED) {
+                user = getString(R.string.me);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            user = null;
+        }
         switch (item.getItemId()) {
             case R.id.share_with:
-                ShareUtil.share(activity, selectedMessage);
+                ShareUtil.share(activity, selectedMessage, user);
                 return true;
             case R.id.correct_message:
                 correctMessage(selectedMessage);
@@ -1171,7 +1399,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 ShareUtil.copyLinkToClipboard(activity, selectedMessage);
                 return true;
             case R.id.quote_message:
-                quoteMessage(selectedMessage);
+                if (conversation.getMode() == Conversation.MODE_MULTI) {
+                    quoteMessage(selectedMessage, user);
+                } else {
+                    quoteMessage(selectedMessage, null);
+                }
                 return true;
             case R.id.send_again:
                 resendMessage(selectedMessage);
@@ -1187,6 +1419,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 return true;
             case R.id.retry_decryption:
                 retryDecryption(selectedMessage);
+                return true;
+            case R.id.delete_message:
+                deleteMessage(selectedMessage);
                 return true;
             case R.id.delete_file:
                 deleteFile(selectedMessage);
@@ -1211,11 +1446,13 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
         switch (item.getItemId()) {
             case R.id.encryption_choice_axolotl:
+            case R.id.encryption_choice_otr:
             case R.id.encryption_choice_pgp:
             case R.id.encryption_choice_none:
                 handleEncryptionSelection(item);
                 break;
             case R.id.attach_choose_picture:
+            case R.id.attach_choose_video:
             case R.id.attach_take_picture:
             case R.id.attach_record_video:
             case R.id.attach_choose_file:
@@ -1223,17 +1460,22 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             case R.id.attach_location:
                 handleAttachmentSelection(item);
                 break;
-            case R.id.action_archive:
-                activity.xmppConnectionService.archiveConversation(conversation);
-                break;
-            case R.id.action_contact_details:
-                activity.switchToContactDetails(conversation.getContact());
-                break;
-            case R.id.action_muc_details:
-                Intent intent = new Intent(getActivity(), ConferenceDetailsActivity.class);
-                intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
-                intent.putExtra("uuid", conversation.getUuid());
-                startActivity(intent);
+            case R.id.action_archive_chat:
+                if (conversation.getMode() == Conversation.MODE_SINGLE) {
+                    activity.xmppConnectionService.archiveConversation(conversation);
+                } else {
+                    activity.runOnUiThread(() -> {
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                        builder.setTitle(getString(R.string.action_end_conversation_muc));
+                        builder.setMessage(getString(R.string.leave_conference_warning));
+                        builder.setNegativeButton(getString(R.string.cancel), null);
+                        builder.setPositiveButton(getString(R.string.action_end_conversation_muc),
+                                (dialog, which) -> {
+                                    activity.xmppConnectionService.archiveConversation(conversation);
+                                });
+                        builder.create().show();
+                    });
+                }
                 break;
             case R.id.action_invite:
                 startActivityForResult(ChooseContactActivity.create(activity, conversation), REQUEST_INVITE_TO_CONVERSATION);
@@ -1241,11 +1483,17 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             case R.id.action_clear_history:
                 clearHistoryDialog(conversation);
                 break;
-            case R.id.action_mute:
-                muteConversationDialog(conversation);
+            case R.id.action_group_details:
+                Intent intent = new Intent(activity, ConferenceDetailsActivity.class);
+                intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
+                intent.putExtra("uuid", conversation.getUuid());
+                startActivity(intent);
                 break;
-            case R.id.action_unmute:
-                unmuteConversation(conversation);
+            case R.id.action_contact_details:
+                activity.switchToContactDetails(conversation.getContact());
+                break;
+            case R.id.action_mediabrowser:
+                MediaBrowserActivity.launch(activity, conversation);
                 break;
             case R.id.action_block:
             case R.id.action_unblock:
@@ -1332,6 +1580,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             case R.id.attach_choose_picture:
                 attachFile(ATTACHMENT_CHOICE_CHOOSE_IMAGE);
                 break;
+            case R.id.attach_choose_video:
+                attachFile(ATTACHMENT_CHOICE_CHOOSE_VIDEO);
+                break;
             case R.id.attach_take_picture:
                 attachFile(ATTACHMENT_CHOICE_TAKE_PHOTO);
                 break;
@@ -1358,6 +1609,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         switch (item.getItemId()) {
             case R.id.encryption_choice_none:
                 updated = conversation.setNextEncryption(Message.ENCRYPTION_NONE);
+                item.setChecked(true);
+                break;
+            case R.id.encryption_choice_otr:
+                updated = conversation.setNextEncryption(Message.ENCRYPTION_OTR);
                 item.setChecked(true);
                 break;
             case R.id.encryption_choice_pgp:
@@ -1394,15 +1649,19 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     public void attachFile(final int attachmentChoice) {
         if (attachmentChoice == ATTACHMENT_CHOICE_RECORD_VOICE) {
-            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO)) {
+            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO)) {
                 return;
             }
         } else if (attachmentChoice == ATTACHMENT_CHOICE_TAKE_PHOTO || attachmentChoice == ATTACHMENT_CHOICE_RECORD_VIDEO) {
-            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA)) {
+            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA)) {
                 return;
             }
-        } else if (attachmentChoice != ATTACHMENT_CHOICE_LOCATION) {
-            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        } else if (attachmentChoice == ATTACHMENT_CHOICE_LOCATION) {
+            if (!hasPermissions(attachmentChoice, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)) {
+                return;
+            }
+        } else if (attachmentChoice == ATTACHMENT_CHOICE_CHOOSE_FILE || attachmentChoice == ATTACHMENT_CHOICE_CHOOSE_IMAGE || attachmentChoice == ATTACHMENT_CHOICE_CHOOSE_VIDEO) {
+            if (!hasPermissions(attachmentChoice, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE)) {
                 return;
             }
         }
@@ -1439,9 +1698,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                             });
                 } else if (mode == Conversation.MODE_MULTI && conversation.getMucOptions().pgpKeysInUse()) {
                     if (!conversation.getMucOptions().everybodyHasKeys()) {
-                        Toast warning = Toast.makeText(getActivity(), R.string.missing_public_keys, Toast.LENGTH_LONG);
-                        warning.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                        warning.show();
+                        getActivity().runOnUiThread(() -> {
+                            Toast warning = ToastCompat.makeText(activity, R.string.missing_public_keys, Toast.LENGTH_LONG);
+                            warning.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                            warning.show();
+                        });
                     }
                     invokeAttachFileIntent(attachmentChoice);
                 } else {
@@ -1494,13 +1755,16 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     res = R.string.no_microphone_permission;
                 } else if (Manifest.permission.CAMERA.equals(firstDenied)) {
                     res = R.string.no_camera_permission;
+                } else if (Manifest.permission.ACCESS_COARSE_LOCATION.equals(firstDenied)
+                        || Manifest.permission.ACCESS_FINE_LOCATION.equals(firstDenied)) {
+                    res = R.string.no_location_permission;
                 } else {
                     res = R.string.no_storage_permission;
                 }
-                Toast.makeText(getActivity(), res, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(getActivity(), res, Toast.LENGTH_SHORT).show();
             }
         }
-        if (writeGranted(grantResults, permissions)) {
+        if (readGranted(grantResults, permissions)) {
             if (activity != null && activity.xmppConnectionService != null) {
                 activity.xmppConnectionService.restartFileObserver();
             }
@@ -1508,8 +1772,18 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
     }
 
+    private void updateChatBG() {
+        if (activity.unicoloredBG() || !runsTwentyOne()) {
+            binding.conversationsFragment.setBackgroundResource(0);
+            binding.conversationsFragment.setBackgroundColor(StyledAttributes.getColor(activity, R.attr.color_background_tertiary));
+        } else {
+            binding.conversationsFragment.setBackgroundColor(0);
+            binding.conversationsFragment.setBackground(ContextCompat.getDrawable(activity, R.drawable.chatbg));
+        }
+    }
+
     public void startDownloadable(Message message) {
-        if (!hasPermissions(REQUEST_START_DOWNLOAD, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        if (!hasPermissions(REQUEST_START_DOWNLOAD, Manifest.permission.WRITE_EXTERNAL_STORAGE) && !hasPermissions(REQUEST_START_DOWNLOAD, Manifest.permission.READ_EXTERNAL_STORAGE)) {
             this.mPendingDownloadableMessage = message;
             return;
         }
@@ -1521,7 +1795,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
             if (!transferable.start()) {
                 Log.d(Config.LOGTAG, "type: " + transferable.getClass().getName());
-                Toast.makeText(getActivity(), R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(getActivity(), R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
             }
         } else if (message.treatAsDownloadable() || message.hasFileOnRemoteHost() || MessageUtils.unInitiatedButKnownSize(message)) {
             createNewConnection(message);
@@ -1532,7 +1806,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     private void createNewConnection(final Message message) {
         if (!activity.xmppConnectionService.getHttpConnectionManager().checkConnection(message)) {
-            Toast.makeText(getActivity(), R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(getActivity(), R.string.not_connected_try_again, Toast.LENGTH_SHORT).show();
             return;
         }
         activity.xmppConnectionService.getHttpConnectionManager().createNewDownloadConnection(message, true);
@@ -1540,17 +1814,20 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
     @SuppressLint("InflateParams")
     protected void clearHistoryDialog(final Conversation conversation) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(getString(R.string.clear_conversation_history));
         final View dialogView = getActivity().getLayoutInflater().inflate(R.layout.dialog_clear_history, null);
         final CheckBox endConversationCheckBox = dialogView.findViewById(R.id.end_conversation_checkbox);
+        if (conversation.getMode() == Conversation.MODE_SINGLE) {
+            endConversationCheckBox.setVisibility(View.VISIBLE);
+            endConversationCheckBox.setChecked(true);
+        }
         builder.setView(dialogView);
         builder.setNegativeButton(getString(R.string.cancel), null);
         builder.setPositiveButton(getString(R.string.confirm), (dialog, which) -> {
             this.activity.xmppConnectionService.clearConversationHistory(conversation);
             if (endConversationCheckBox.isChecked()) {
                 this.activity.xmppConnectionService.archiveConversation(conversation);
-                this.activity.onConversationArchived(conversation);
             } else {
                 activity.onConversationsListItemUpdated();
                 refresh();
@@ -1559,39 +1836,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         builder.create().show();
     }
 
-    protected void muteConversationDialog(final Conversation conversation) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle(R.string.disable_notifications);
-        final int[] durations = getResources().getIntArray(R.array.mute_options_durations);
-        final CharSequence[] labels = new CharSequence[durations.length];
-        for (int i = 0; i < durations.length; ++i) {
-            if (durations[i] == -1) {
-                labels[i] = getString(R.string.until_further_notice);
-            } else {
-                labels[i] = TimeframeUtils.resolve(activity, 1000L * durations[i]);
-            }
-        }
-        builder.setItems(labels, (dialog, which) -> {
-            final long till;
-            if (durations[which] == -1) {
-                till = Long.MAX_VALUE;
-            } else {
-                till = System.currentTimeMillis() + (durations[which] * 1000);
-            }
-            conversation.setMutedTill(till);
-            activity.xmppConnectionService.updateConversation(conversation);
-            activity.onConversationsListItemUpdated();
-            refresh();
-            getActivity().invalidateOptionsMenu();
-        });
-        builder.create().show();
-    }
-
     private boolean hasPermissions(int requestCode, String... permissions) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             final List<String> missingPermissions = new ArrayList<>();
             for (String permission : permissions) {
-                if (Config.ONLY_INTERNAL_STORAGE && permission.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                if (Config.ONLY_INTERNAL_STORAGE && permission.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE) && permission.equals(Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     continue;
                 }
                 if (activity.checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
@@ -1609,15 +1858,6 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         }
     }
 
-    public void unmuteConversation(final Conversation conversation) {
-        conversation.setMutedTill(0);
-        this.activity.xmppConnectionService.updateConversation(conversation);
-        this.activity.onConversationsListItemUpdated();
-        refresh();
-        getActivity().invalidateOptionsMenu();
-    }
-
-
     protected void invokeAttachFileIntent(final int attachmentChoice) {
         Intent intent = new Intent();
         boolean chooser = false;
@@ -1630,6 +1870,12 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 intent.setType("image/*");
                 chooser = true;
                 break;
+            case ATTACHMENT_CHOICE_CHOOSE_VIDEO:
+                chooser = true;
+                intent.setType("video/*");
+                intent.addCategory(Intent.CATEGORY_OPENABLE);
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                break;
             case ATTACHMENT_CHOICE_RECORD_VIDEO:
                 intent.setAction(MediaStore.ACTION_VIDEO_CAPTURE);
                 break;
@@ -1637,8 +1883,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 final Uri uri = activity.xmppConnectionService.getFileBackend().getTakePhotoUri();
                 pendingTakePhotoUri.push(uri);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
-                intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
-                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                intent.setFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION & Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
                 break;
             case ATTACHMENT_CHOICE_CHOOSE_FILE:
@@ -1652,19 +1897,23 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 break;
             case ATTACHMENT_CHOICE_RECORD_VOICE:
                 intent = new Intent(getActivity(), RecordingActivity.class);
+                intent.putExtra("ALTERNATIVE_CODEC", activity.xmppConnectionService.alternativeVoiceSettings());
                 break;
             case ATTACHMENT_CHOICE_LOCATION:
-                intent = GeoHelper.getFetchIntent(activity);
+                intent = new Intent(getActivity(), ShareLocationActivity.class);
                 break;
         }
         final Context context = getActivity();
         if (context != null && intent.resolveActivity(context.getPackageManager()) != null) {
+            Log.d(Config.LOGTAG, "Attachment: " + attachmentChoice);
             if (chooser) {
                 startActivityForResult(
                         Intent.createChooser(intent, getString(R.string.perform_action_with)),
                         attachmentChoice);
+                activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
             } else {
                 startActivityForResult(intent, attachmentChoice);
+                activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
             }
         }
     }
@@ -1724,7 +1973,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     private void showErrorMessage(final Message message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.error_message);
         final String errorMessage = message.getErrorMessage();
         final String[] errorMessageParts = errorMessage == null ? new String[0] : errorMessage.split("\\u001f");
@@ -1737,21 +1986,56 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         builder.setMessage(displayError);
         builder.setNegativeButton(R.string.copy_to_clipboard, (dialog, which) -> {
             activity.copyTextToClipboard(displayError, R.string.error_message);
-            Toast.makeText(activity, R.string.error_message_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(activity, R.string.error_message_copied_to_clipboard, Toast.LENGTH_SHORT).show();
         });
-        builder.setPositiveButton(R.string.confirm, null);
+        builder.setPositiveButton(R.string.ok, null);
         builder.create().show();
     }
 
+    private void deleteMessage(Message message) {
+        Message relevantForCorrection = message;
+        while (message.mergeable(message.next())) {
+            message = message.next();
+        }
+        while (relevantForCorrection.mergeable(relevantForCorrection.next())) {
+            relevantForCorrection = relevantForCorrection.next();
+        }
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setNegativeButton(R.string.cancel, null);
+        builder.setTitle(R.string.delete_message_dialog);
+        builder.setMessage(R.string.delete_message_dialog_msg);
+        final Message finalRelevantForCorrection = relevantForCorrection;
+        final Message finalMessage = message;
+        builder.setPositiveButton(R.string.confirm, (dialog, which) -> {
+            if (finalRelevantForCorrection.getType() == Message.TYPE_TEXT
+                    && !finalMessage.isGeoUri()
+                    && finalRelevantForCorrection.isLastCorrectableMessage()
+                    && finalMessage.getConversation() instanceof Conversation
+                    && (((Conversation) finalMessage.getConversation()).getMucOptions().nonanonymous() || finalMessage.getConversation().getMode() == Conversation.MODE_SINGLE)) {
+                this.conversation.setCorrectingMessage(finalMessage);
+                Message deletedmessage = conversation.getCorrectingMessage();
+                deletedmessage.setBody(DELETED_MESSAGE_BODY);
+                deletedmessage.putEdited(deletedmessage.getUuid(), deletedmessage.getServerMsgId());
+                deletedmessage.setServerMsgId(null);
+                deletedmessage.setUuid(UUID.randomUUID().toString());
+                sendMessage(deletedmessage);
+                activity.xmppConnectionService.deleteMessage(conversation, deletedmessage);
+            }
+            activity.xmppConnectionService.deleteMessage(conversation, finalMessage);
+            activity.onConversationsListItemUpdated();
+            refresh();
+        });
+        builder.create().show();
+    }
 
     private void deleteFile(final Message message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setNegativeButton(R.string.cancel, null);
         builder.setTitle(R.string.delete_file_dialog);
         builder.setMessage(R.string.delete_file_dialog_msg);
         builder.setPositiveButton(R.string.confirm, (dialog, which) -> {
             if (activity.xmppConnectionService.getFileBackend().deleteFile(message)) {
-                message.setDeleted(true);
+                message.setFileDeleted(true);
                 activity.xmppConnectionService.evictPreview(message.getUuid());
                 activity.xmppConnectionService.updateMessage(message, false);
                 activity.onConversationsListItemUpdated();
@@ -1759,11 +2043,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         });
         builder.create().show();
-
     }
 
-    private void resendMessage(final Message message) {
-        if (message.isFileOrImage()) {
+    public void resendMessage(final Message message) {
+        if (message != null && message.isFileOrImage()) {
             if (!(message.getConversation() instanceof Conversation)) {
                 return;
             }
@@ -1786,11 +2069,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     return;
                 }
             } else if (!Compatibility.hasStoragePermission(getActivity())) {
-                Toast.makeText(activity, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(activity, R.string.no_storage_permission, Toast.LENGTH_SHORT).show();
                 return;
             } else {
-                Toast.makeText(activity, R.string.file_deleted, Toast.LENGTH_SHORT).show();
-                message.setDeleted(true);
+                ToastCompat.makeText(activity, R.string.file_deleted, Toast.LENGTH_SHORT).show();
+                message.setFileDeleted(true);
                 activity.xmppConnectionService.updateMessage(message, false);
                 activity.onConversationsListItemUpdated();
                 refresh();
@@ -1802,6 +2085,28 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             int size = messageList.size();
             this.binding.messagesView.setSelection(size - 1);
         });
+    }
+
+    private void copyUrl(Message message) {
+        final String url;
+        final int resId;
+        if (message.isGeoUri()) {
+            resId = R.string.location;
+            url = message.getBody();
+        } else if (message.isXmppUri()) {
+            resId = R.string.contact;
+            url = message.getBody();
+        } else if (message.hasFileOnRemoteHost()) {
+            resId = R.string.file_url;
+            url = message.getFileParams().url.toString();
+        } else {
+            url = message.getBody().trim();
+            resId = R.string.file_url;
+        }
+        if (activity.copyTextToClipboard(url, resId)) {
+            ToastCompat.makeText(getActivity(), R.string.url_copied_to_clipboard,
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void cancelTransmission(Message message) {
@@ -1821,6 +2126,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     public void privateMessageWith(final Jid counterpart) {
+        final Jid tcp = conversation.getMucOptions().getTrueCounterpart(counterpart);
+        if (!getConversation().getMucOptions().isUserInRoom(counterpart) && getConversation().getMucOptions().findUserByRealJid(tcp == null ? null : tcp.asBareJid()) == null) {
+            ToastCompat.makeText(getActivity(), activity.getString(R.string.user_has_left_conference, counterpart.getResource()), Toast.LENGTH_SHORT).show();
+            return;
+        }
         if (conversation.setOutgoingChatState(Config.DEFAULT_CHAT_STATE)) {
             activity.xmppConnectionService.sendChatState(conversation);
         }
@@ -1926,12 +2236,16 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     public void onStart() {
         super.onStart();
         if (this.reInitRequiredOnStart && this.conversation != null) {
+            if (activity != null) {
+                updateChatBG();
+            }
             final Bundle extras = pendingExtras.pop();
             reInit(this.conversation, extras != null);
             if (extras != null) {
                 processExtras(extras);
             }
         } else if (conversation == null && activity != null && activity.xmppConnectionService != null) {
+            updateChatBG();
             final String uuid = pendingConversationsUuid.pop();
             Log.d(Config.LOGTAG, "ConversationFragment.onStart() - activity was bound but no conversation loaded. uuid=" + uuid);
             if (uuid != null) {
@@ -2030,6 +2344,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         this.binding.textSendButton.setContentDescription(activity.getString(R.string.send_message_to_x, conversation.getName()));
         this.binding.textinput.setKeyboardListener(null);
         this.binding.textinput.setText("");
+        showRecordVoiceButton();
         final boolean participating = conversation.getMode() == Conversational.MODE_SINGLE || conversation.getMucOptions().participating();
         if (participating) {
             this.binding.textinput.append(this.conversation.getNextMessage());
@@ -2038,6 +2353,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         messageListAdapter.updatePreferences();
         refresh(false);
         this.conversation.messagesLoaded.set(true);
+        hasWriteAccessInMUC();
         Log.d(Config.LOGTAG, "scrolledToBottomAndNoPending=" + Boolean.toString(scrolledToBottomAndNoPending));
 
         if (hasExtras || scrolledToBottomAndNoPending) {
@@ -2060,11 +2376,38 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         }
 
-
         this.binding.messagesView.post(this::fireReadEvent);
         //TODO if we only do this when this fragment is running on main it won't *bing* in tablet layout which might be unnecessary since we can *see* it
         activity.xmppConnectionService.getNotificationService().setOpenConversation(this.conversation);
         return true;
+    }
+
+    private void hasWriteAccessInMUC() {
+        if ((conversation.getMode() == Conversation.MODE_MULTI && !conversation.getMucOptions().participating()) && !activity.xmppConnectionService.hideYouAreNotParticipating()) {
+            activity.runOnUiThread(() -> {
+                final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.you_are_not_participating));
+                builder.setMessage(getString(R.string.no_write_access_in_public_muc));
+                builder.setNegativeButton(getString(R.string.hide_warning),
+                        (dialog, which) -> {
+                            SharedPreferences preferences = activity.getPreferences();
+                            preferences.edit().putBoolean(HIDE_YOU_ARE_NOT_PARTICIPATING, true).apply();
+                            hideSnackbar();
+                        });
+                builder.setPositiveButton(getString(R.string.ok),
+                        (dialog, which) -> {
+                            Intent intent = new Intent(getActivity(), ConferenceDetailsActivity.class);
+                            intent.setAction(ConferenceDetailsActivity.ACTION_VIEW_MUC);
+                            intent.putExtra("uuid", conversation.getUuid());
+                            startActivity(intent);
+                            activity.overridePendingTransition(R.animator.fade_in, R.animator.fade_out);
+                        });
+                builder.create().show();
+            });
+
+
+            showSnackbar(R.string.no_write_access_in_public_muc, R.string.ok, clickToMuc);
+        }
     }
 
     private void resetUnreadMessagesCount() {
@@ -2087,7 +2430,6 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         this.binding.messagesView.post(this::fireReadEvent);
     }
 
-
     private boolean scrolledToBottom() {
         return this.binding != null && scrolledToBottom(this.binding.messagesView);
     }
@@ -2097,6 +2439,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         final String text = extras.getString(Intent.EXTRA_TEXT);
         final String nick = extras.getString(ConversationsActivity.EXTRA_NICK);
         final boolean asQuote = extras.getBoolean(ConversationsActivity.EXTRA_AS_QUOTE);
+        final String user = extras.getString(ConversationsActivity.EXTRA_USER);
         final boolean pm = extras.getBoolean(ConversationsActivity.EXTRA_IS_PRIVATE_MESSAGE, false);
         final boolean doNotAppend = extras.getBoolean(ConversationsActivity.EXTRA_DO_NOT_APPEND, false);
         final List<Uri> uris = extractUris(extras);
@@ -2131,7 +2474,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 toggleInputMethod();
                 return;
             } else if (text != null && asQuote) {
-                quoteText(text);
+                quoteText(text, user);
             } else {
                 appendText(text, doNotAppend);
             }
@@ -2161,7 +2504,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             final Uri uri = iterator.next();
             if (FileBackend.weOwnFile(getActivity(), uri)) {
                 iterator.remove();
-                Toast.makeText(getActivity(), R.string.security_violation_not_attaching_file, Toast.LENGTH_SHORT).show();
+                ToastCompat.makeText(getActivity(), R.string.security_violation_not_attaching_file, Toast.LENGTH_SHORT).show();
             }
         }
         return uris;
@@ -2250,7 +2593,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     showSnackbar(R.string.conference_kicked, R.string.join, joinMuc);
                     break;
                 case UNKNOWN:
-                    showSnackbar(R.string.conference_unknown_error, R.string.try_again, joinMuc);
+                    showSnackbar(R.string.conference_unknown_error, R.string.join, joinMuc);
                     break;
                 case INVALID_NICK:
                     showSnackbar(R.string.invalid_muc_nick, R.string.edit, clickToMuc);
@@ -2269,16 +2612,59 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             }
         } else if (account.hasPendingPgpIntent(conversation)) {
             showSnackbar(R.string.openpgp_messages_found, R.string.decrypt, clickToDecryptListener);
+        } else if (mode == Conversation.MODE_SINGLE
+                && conversation.smpRequested()) {
+            showSnackbar(R.string.smp_requested, R.string.verify, this.mAnswerSmpClickListener);
+        } else if (mode == Conversation.MODE_SINGLE
+                && conversation.hasValidOtrSession()
+                && (conversation.getOtrSession().getSessionStatus() == SessionStatus.ENCRYPTED)
+                && (!conversation.isOtrFingerprintVerified())) {
+            showSnackbar(R.string.unknown_otr_fingerprint, R.string.verify, clickToVerify);
         } else if (connection != null
                 && connection.getFeatures().blocking()
                 && conversation.countMessages() != 0
                 && !conversation.isBlocked()
                 && conversation.isWithStranger()) {
             showSnackbar(R.string.received_message_from_stranger, R.string.block, mBlockClickListener);
+        } else if (activity.xmppConnectionService.warnUnecryptedChat()) {
+            if (conversation.getNextEncryption() == Message.ENCRYPTION_NONE && conversation.isSingleOrPrivateAndNonAnonymous() && ((Config.supportOmemo() && Conversation.suitableForOmemoByDefault(conversation)) ||
+                    (Config.supportOpenPgp() && account.isPgpDecryptionServiceConnected()) || (
+                    mode == Conversation.MODE_SINGLE && Config.supportOtr()))) {
+                if (ENCRYPTION_EXCEPTIONS.contains(conversation.getJid().toString()) || conversation.getJid().toString().equals(account.getJid().getDomain())) {
+                    hideSnackbar();
+                } else {
+                    showSnackbar(R.string.conversation_unencrypted_hint, R.string.ok, showUnencryptionHintDialog);
+                }
+            } else {
+                hideSnackbar();
+            }
         } else {
             hideSnackbar();
         }
     }
+
+    private OnClickListener showUnencryptionHintDialog = new OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            activity.runOnUiThread(() -> {
+                final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.message_encryption));
+                builder.setMessage(getString(R.string.enable_message_encryption));
+                builder.setNegativeButton(getString(R.string.cancel), null);
+                builder.setPositiveButton(getString(R.string.enable),
+                        (dialog, which) -> {
+                            enableMessageEncryption();
+                        });
+                builder.setNeutralButton(getString(R.string.hide_warning),
+                        (dialog, which) -> {
+                            SharedPreferences preferences = activity.getPreferences();
+                            preferences.edit().putBoolean(WARN_UNENCRYPTED_CHAT, false).apply();
+                            hideSnackbar();
+                        });
+                builder.create().show();
+            });
+        }
+    };
 
     @Override
     public void refresh() {
@@ -2292,13 +2678,15 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 return;
             }
         }
+        updateChatBG();
         this.refresh(true);
     }
+
 
     private void refresh(boolean notifyConversationRead) {
         synchronized (this.messageList) {
             if (this.conversation != null) {
-                conversation.populateWithMessages(this.messageList);
+                conversation.populateWithMessages(ConversationFragment.this.messageList);
                 updateSnackBar(conversation);
                 updateStatusMessages();
                 if (conversation.getReceivedMessagesCountSinceUuid(lastMessageUuid) != 0) {
@@ -2368,7 +2756,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     public void updateSendButton() {
+        messageListAdapter.setBubbleBackgroundColor(binding.messageInputBox, 0, isPrivateMessage(), true);
         boolean hasAttachments = mediaPreviewAdapter != null && mediaPreviewAdapter.hasAttachments();
+        boolean useSendButtonToIndicateStatus = activity != null && PreferenceManager.getDefaultSharedPreferences(activity).getBoolean("send_button_status", getResources().getBoolean(R.bool.send_button_status));
         final Conversation c = this.conversation;
         final Presence.Status status;
         final String text = this.binding.textinput == null ? "" : this.binding.textinput.getText().toString();
@@ -2378,7 +2768,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         } else {
             action = SendButtonTool.getAction(getActivity(), c, text);
         }
-        if (c.getAccount().getStatus() == Account.State.ONLINE) {
+        if (useSendButtonToIndicateStatus && c.getAccount().getStatus() == Account.State.ONLINE) {
             if (activity != null && activity.xmppConnectionService != null && activity.xmppConnectionService.getMessageArchiveService().isCatchingUp(c)) {
                 status = Presence.Status.OFFLINE;
             } else if (c.getMode() == Conversation.MODE_SINGLE) {
@@ -2401,38 +2791,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         if (showLoadMoreMessages(conversation)) {
             this.messageList.add(0, Message.createLoadMoreMessage(conversation));
         }
-        if (conversation.getMode() == Conversation.MODE_SINGLE) {
-            ChatState state = conversation.getIncomingChatState();
-            if (state == ChatState.COMPOSING) {
-                this.messageList.add(Message.createStatusMessage(conversation, getString(R.string.contact_is_typing, conversation.getName())));
-            } else if (state == ChatState.PAUSED) {
-                this.messageList.add(Message.createStatusMessage(conversation, getString(R.string.contact_has_stopped_typing, conversation.getName())));
-            } else {
-                for (int i = this.messageList.size() - 1; i >= 0; --i) {
-                    final Message message = this.messageList.get(i);
-                    if (message.getType() != Message.TYPE_STATUS) {
-                        if (message.getStatus() == Message.STATUS_RECEIVED) {
-                            return;
-                        } else {
-                            if (message.getStatus() == Message.STATUS_SEND_DISPLAYED) {
-                                this.messageList.add(i + 1,
-                                        Message.createStatusMessage(conversation, getString(R.string.contact_has_read_up_to_this_point, conversation.getName())));
-                                return;
-                            }
-                        }
-                    }
-                }
-            }
-        } else {
+        if (conversation.getMode() == Conversation.MODE_MULTI) {
             final MucOptions mucOptions = conversation.getMucOptions();
             final List<MucOptions.User> allUsers = mucOptions.getUsers();
             final Set<ReadByMarker> addedMarkers = new HashSet<>();
-            ChatState state = ChatState.COMPOSING;
-            List<MucOptions.User> users = conversation.getMucOptions().getUsersWithChatState(state, 5);
-            if (users.size() == 0) {
-                state = ChatState.PAUSED;
-                users = conversation.getMucOptions().getUsersWithChatState(state, 5);
-            }
             if (mucOptions.isPrivateAndNonAnonymous()) {
                 for (int i = this.messageList.size() - 1; i >= 0; --i) {
                     final Set<ReadByMarker> markersForMessage = messageList.get(i).getReadByMarkers();
@@ -2441,7 +2803,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                         if (!ReadByMarker.contains(marker, addedMarkers)) {
                             addedMarkers.add(marker); //may be put outside this condition. set should do dedup anyway
                             MucOptions.User user = mucOptions.findUser(marker);
-                            if (user != null && !users.contains(user)) {
+                            if (user != null) {
                                 shownMarkers.add(user);
                             }
                         }
@@ -2476,24 +2838,9 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     }
                 }
             }
-            if (users.size() > 0) {
-                Message statusMessage;
-                if (users.size() == 1) {
-                    MucOptions.User user = users.get(0);
-                    int id = state == ChatState.COMPOSING ? R.string.contact_is_typing : R.string.contact_has_stopped_typing;
-                    statusMessage = Message.createStatusMessage(conversation, getString(id, UIHelper.getDisplayName(user)));
-                    statusMessage.setTrueCounterpart(user.getRealJid());
-                    statusMessage.setCounterpart(user.getFullJid());
-                } else {
-                    int id = state == ChatState.COMPOSING ? R.string.contacts_are_typing : R.string.contacts_have_stopped_typing;
-                    statusMessage = Message.createStatusMessage(conversation, getString(id, UIHelper.concatNames(users)));
-                    statusMessage.setCounterparts(users);
-                }
-                this.messageList.add(statusMessage);
-            }
-
         }
     }
+
 
     private void stopScrolling() {
         long now = SystemClock.uptimeMillis();
@@ -2576,7 +2923,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
 
                             @Override
                             public void error(int error, Contact contact) {
-                                activity.runOnUiThread(() -> Toast.makeText(activity,
+                                activity.runOnUiThread(() -> ToastCompat.makeText(activity,
                                         R.string.unable_to_connect_to_keychain,
                                         Toast.LENGTH_SHORT
                                 ).show());
@@ -2585,13 +2932,14 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                         });
 
             } else {
-                showNoPGPKeyDialog(false, (dialog, which) -> {
-                    conversation.setNextEncryption(Message.ENCRYPTION_NONE);
-                    xmppService.updateConversation(conversation);
-                    message.setEncryption(Message.ENCRYPTION_NONE);
-                    xmppService.sendMessage(message);
-                    messageSent();
-                });
+                showNoPGPKeyDialog(false,
+                        (dialog, which) -> {
+                            conversation.setNextEncryption(Message.ENCRYPTION_NONE);
+                            xmppService.updateConversation(conversation);
+                            message.setEncryption(Message.ENCRYPTION_NONE);
+                            xmppService.sendMessage(message);
+                            messageSent();
+                        });
             }
         } else {
             if (conversation.getMucOptions().pgpKeysInUse()) {
@@ -2605,13 +2953,14 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 }
                 encryptTextMessage(message);
             } else {
-                showNoPGPKeyDialog(true, (dialog, which) -> {
-                    conversation.setNextEncryption(Message.ENCRYPTION_NONE);
-                    message.setEncryption(Message.ENCRYPTION_NONE);
-                    xmppService.updateConversation(conversation);
-                    xmppService.sendMessage(message);
-                    messageSent();
-                });
+                showNoPGPKeyDialog(true,
+                        (dialog, which) -> {
+                            conversation.setNextEncryption(Message.ENCRYPTION_NONE);
+                            message.setEncryption(Message.ENCRYPTION_NONE);
+                            xmppService.updateConversation(conversation);
+                            xmppService.sendMessage(message);
+                            messageSent();
+                        });
             }
         }
     }
@@ -2635,7 +2984,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     public void error(final int error, Message message) {
                         getActivity().runOnUiThread(() -> {
                             doneSendingPgpMessage();
-                            Toast.makeText(getActivity(), error == 0 ? R.string.unable_to_connect_to_keychain : error, Toast.LENGTH_SHORT).show();
+                            ToastCompat.makeText(getActivity(), error == 0 ? R.string.unable_to_connect_to_keychain : error, Toast.LENGTH_SHORT).show();
                         });
 
                     }
@@ -2643,7 +2992,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
     }
 
     public void showNoPGPKeyDialog(boolean plural, DialogInterface.OnClickListener listener) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setIconAttribute(android.R.attr.alertDialogIcon);
         if (plural) {
             builder.setTitle(getString(R.string.no_pgp_keys));
@@ -2657,6 +3006,17 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         builder.create().show();
     }
 
+    protected void sendOtrMessage(final Message message) {
+        final ConversationsActivity activity = (ConversationsActivity) getActivity();
+        final XmppConnectionService xmppService = activity.xmppConnectionService;
+        activity.selectPresence(conversation,
+                () -> {
+                    message.setCounterpart(conversation.getNextCounterpart());
+                    xmppService.sendMessage(message);
+                    messageSent();
+                });
+    }
+
     public void appendText(String text, final boolean doNotAppend) {
         if (text == null) {
             return;
@@ -2664,7 +3024,7 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         final Editable editable = this.binding.textinput.getText();
         String previous = editable == null ? "" : editable.toString();
         if (doNotAppend && !TextUtils.isEmpty(previous)) {
-            Toast.makeText(getActivity(), R.string.already_drafting_message, Toast.LENGTH_LONG).show();
+            ToastCompat.makeText(getActivity(), R.string.already_drafting_message, Toast.LENGTH_LONG).show();
             return;
         }
         if (UIHelper.isLastLineQuote(previous)) {
@@ -2693,9 +3053,13 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         if (service == null) {
             return;
         }
+        final boolean broadcastLastActivity = activity.xmppConnectionService.broadcastLastActivity();
         Account.State status = conversation.getAccount().getStatus();
         if (status == Account.State.ONLINE && conversation.setOutgoingChatState(ChatState.COMPOSING)) {
             service.sendChatState(conversation);
+        }
+        if (broadcastLastActivity) {
+            //service.sendPresence(conversation.getAccount(), false); //send new presence but don't include idle because we are not
         }
         runOnUiThread(this::updateSendButton);
     }
@@ -2722,14 +3086,12 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         if (status == Account.State.ONLINE && conversation.setOutgoingChatState(Config.DEFAULT_CHAT_STATE)) {
             service.sendChatState(conversation);
         }
-        if (storeNextMessage()) {
-            runOnUiThread(() -> {
-                if (activity == null) {
-                    return;
-                }
-                activity.onConversationsListItemUpdated();
-            });
-        }
+        runOnUiThread(() -> {
+            if (activity == null) {
+                return;
+            }
+            activity.onConversationsListItemUpdated();
+        });
         runOnUiThread(this::updateSendButton);
     }
 
@@ -2775,6 +3137,10 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
             lastCompletionLength = 0;
         }
         return true;
+    }
+
+    private boolean messageContainsQuery(Message m, String q) {
+        return m != null && m.getMergedBody().toString().toLowerCase().contains(q.toLowerCase());
     }
 
     private void startPendingIntent(PendingIntent pendingIntent, int requestCode) {
@@ -2871,12 +3237,24 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                 final User user = userByRealJid != null ? userByRealJid : conversation.getMucOptions().findUserByFullJid(cp);
                 popupMenu.inflate(R.menu.muc_details_context);
                 final Menu menu = popupMenu.getMenu();
-                MucDetailsContextMenuHelper.configureMucDetailsContextMenu(activity, menu, conversation, user);
+                MucDetailsContextMenuHelper.configureMucDetailsContextMenu(activity, menu, conversation, user, true, getUsername(message));
                 popupMenu.setOnMenuItemClickListener(menuItem -> MucDetailsContextMenuHelper.onContextItemSelected(menuItem, user, activity, fingerprint));
             } else {
                 popupMenu.inflate(R.menu.one_on_one_context);
                 popupMenu.setOnMenuItemClickListener(item -> {
                     switch (item.getItemId()) {
+                        case R.id.action_show_avatar:
+                            final ImageView view = new ImageView(activity);
+                            view.setAdjustViewBounds(true);
+                            view.setMaxHeight(R.dimen.avatar_big);
+                            view.setMaxWidth(R.dimen.avatar_big);
+                            view.setBackgroundColor(Color.WHITE);
+                            view.setScaleType(ImageView.ScaleType.FIT_XY);
+                            AvatarWorkerTask.loadAvatar(contact, view, R.dimen.avatar_big);
+                            final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+                            builder.setView(view);
+                            builder.create().show();
+                            break;
                         case R.id.action_contact_details:
                             activity.switchToContactDetails(message.getContact(), fingerprint);
                             break;
@@ -2890,23 +3268,50 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
         } else {
             popupMenu.inflate(R.menu.account_context);
             final Menu menu = popupMenu.getMenu();
-            menu.findItem(R.id.action_manage_accounts).setVisible(QuickConversationsService.isConversations());
             popupMenu.setOnMenuItemClickListener(item -> {
                 switch (item.getItemId()) {
+
+
                     case R.id.action_show_qr_code:
                         activity.showQrCode(conversation.getAccount().getShareableUri());
                         break;
                     case R.id.action_account_details:
                         activity.switchToAccount(message.getConversation().getAccount(), fingerprint);
                         break;
-                    case R.id.action_manage_accounts:
-                        AccountUtils.launchManageAccounts(activity);
-                        break;
                 }
                 return true;
             });
         }
         popupMenu.show();
+    }
+
+    public String getUsername(Message message) {
+        if (message == null) {
+            return null;
+        }
+        String user;
+        try {
+            final Contact contact = message.getContact();
+            if (conversation.getMode() == Conversation.MODE_MULTI) {
+                if (contact != null) {
+                    user = contact.getDisplayName();
+                } else {
+                    user = UIHelper.getDisplayedMucCounterpart(message.getCounterpart());
+                }
+            } else {
+                user = contact != null ? contact.getDisplayName() : null;
+            }
+            if (message.getStatus() == Message.STATUS_SEND
+                    || message.getStatus() == Message.STATUS_SEND_FAILED
+                    || message.getStatus() == Message.STATUS_SEND_RECEIVED
+                    || message.getStatus() == Message.STATUS_SEND_DISPLAYED) {
+                user = getString(R.string.me);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            user = null;
+        }
+        return user;
     }
 
     @Override
@@ -2926,11 +3331,11 @@ public class ConversationFragment extends XmppFragment implements EditMessage.Ke
                     final MucOptions mucOptions = ((Conversation) message.getConversation()).getMucOptions();
                     if (mucOptions.participating() || ((Conversation) message.getConversation()).getNextCounterpart() != null) {
                         if (!mucOptions.isUserInRoom(user) && mucOptions.findUserByRealJid(tcp == null ? null : tcp.asBareJid()) == null) {
-                            Toast.makeText(getActivity(), activity.getString(R.string.user_has_left_conference, user.getResource()), Toast.LENGTH_SHORT).show();
+                            ToastCompat.makeText(getActivity(), activity.getString(R.string.user_has_left_conference, user.getResource()), Toast.LENGTH_SHORT).show();
                         }
                         highlightInConference(user.getResource());
                     } else {
-                        Toast.makeText(getActivity(), R.string.you_are_not_participating, Toast.LENGTH_SHORT).show();
+                        ToastCompat.makeText(getActivity(), R.string.you_are_not_participating, Toast.LENGTH_SHORT).show();
                     }
                 }
                 return;

@@ -2,8 +2,6 @@ package eu.siacs.conversations.utils;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -13,7 +11,7 @@ import eu.siacs.conversations.Config;
 import eu.siacs.conversations.R;
 import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.services.XmppConnectionService;
-import eu.siacs.conversations.ui.XmppActivity;
+import me.drakeet.support.toast.ToastCompat;
 
 public class AccountUtils {
 
@@ -21,17 +19,6 @@ public class AccountUtils {
 
     static {
         MANAGE_ACCOUNT_ACTIVITY = getManageAccountActivityClass();
-    }
-
-
-    public static boolean hasEnabledAccounts(final XmppConnectionService service) {
-        final List<Account> accounts = service.getAccounts();
-        for(Account account : accounts) {
-            if (account.isOptionSet(Account.OPTION_DISABLED)) {
-                return false;
-            }
-        }
-        return false;
     }
 
     public static List<String> getEnabledAccounts(final XmppConnectionService service) {
@@ -50,7 +37,7 @@ public class AccountUtils {
 
     public static Account getFirstEnabled(XmppConnectionService service) {
         final List<Account> accounts = service.getAccounts();
-        for(Account account : accounts) {
+        for (Account account : accounts) {
             if (!account.isOptionSet(Account.OPTION_DISABLED)) {
                 return account;
             }
@@ -60,7 +47,7 @@ public class AccountUtils {
 
     public static Account getFirst(XmppConnectionService service) {
         final List<Account> accounts = service.getAccounts();
-        for(Account account : accounts) {
+        for (Account account : accounts) {
             return account;
         }
         return null;
@@ -82,13 +69,8 @@ public class AccountUtils {
         if (MANAGE_ACCOUNT_ACTIVITY != null) {
             activity.startActivity(new Intent(activity, MANAGE_ACCOUNT_ACTIVITY));
         } else {
-            Toast.makeText(activity, R.string.feature_not_implemented, Toast.LENGTH_SHORT).show();
+            ToastCompat.makeText(activity, R.string.feature_not_implemented, Toast.LENGTH_SHORT).show();
         }
-    }
-
-    public static void launchManageAccount(XmppActivity xmppActivity) {
-        Account account = getFirst(xmppActivity.xmppConnectionService);
-        xmppActivity.switchToAccount(account);
     }
 
     private static Class getManageAccountActivityClass() {
@@ -96,17 +78,6 @@ public class AccountUtils {
             return Class.forName("eu.siacs.conversations.ui.ManageAccountActivity");
         } catch (ClassNotFoundException e) {
             return null;
-        }
-    }
-
-    public static void showHideMenuItems(final Menu menu) {
-        final MenuItem manageAccounts = menu.findItem(R.id.action_accounts);
-        final MenuItem manageAccount = menu.findItem(R.id.action_account);
-        if (manageAccount != null) {
-            manageAccount.setVisible(MANAGE_ACCOUNT_ACTIVITY == null);
-        }
-        if (manageAccounts != null) {
-            manageAccounts.setVisible(MANAGE_ACCOUNT_ACTIVITY != null);
         }
     }
 }

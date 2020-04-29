@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -9,17 +9,18 @@
         android:padding="?dialogPreferredPadding">
 
         <TextView
+            android:id="@+id/your_account"
             style="@style/InputLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/your_account"/>
+            android:text="@string/your_account" />
 
         <Spinner
             android:id="@+id/account"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,14 +33,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/create_dialog_channel_name"
-                android:imeOptions="actionNext|flagNoExtractUi"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+                android:imeOptions="actionNext|flagNoExtractUi" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/xmpp_address_layout"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/xmpp_address"
+            android:visibility="gone"
             app:errorTextAppearance="@style/TextAppearance.Conversations.Design.Error"
             app:hintTextAppearance="@style/TextAppearance.Conversations.Design.Hint">
 
@@ -48,8 +50,8 @@
                 style="@style/Widget.Conversations.EditText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:imeOptions="actionDone|flagNoExtractUi"/>
-        </android.support.design.widget.TextInputLayout>
+                android:imeOptions="actionDone|flagNoExtractUi"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </layout>

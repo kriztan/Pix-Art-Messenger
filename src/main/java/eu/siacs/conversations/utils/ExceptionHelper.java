@@ -1,13 +1,15 @@
 package eu.siacs.conversations.utils;
 
-import android.support.v7.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.os.Build;
 import android.preference.PreferenceManager;
 import android.util.Log;
+
+import androidx.appcompat.app.AlertDialog;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -16,7 +18,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 import eu.siacs.conversations.Config;
@@ -28,7 +29,6 @@ import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.XmppActivity;
 
 public class ExceptionHelper {
-
     private static final String FILENAME = "stacktrace.txt";
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
 
@@ -46,8 +46,8 @@ public class ExceptionHelper {
                 return false;
             }
             final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
-            boolean neverSend = preferences.getBoolean("never_send", false);
-            if (neverSend || Config.BUG_REPORTS == null) {
+            boolean crashreport = preferences.getBoolean("crashreport", activity.getResources().getBoolean(R.bool.send_crashreport));
+            if (!crashreport || Config.BUG_REPORTS == null) {
                 return false;
             }
             final Account account = AccountUtils.getFirstEnabled(service);
@@ -60,11 +60,14 @@ public class ExceptionHelper {
             final StringBuilder report = new StringBuilder();
             PackageManager pm = activity.getPackageManager();
             PackageInfo packageInfo;
+            String release = Build.VERSION.RELEASE;
+            int sdkVersion = Build.VERSION.SDK_INT;
+            String deviceName = getDeviceName();
             try {
                 packageInfo = pm.getPackageInfo(activity.getPackageName(), PackageManager.GET_SIGNATURES);
-                final String versionName = packageInfo.versionName;
-                final int versionCode = packageInfo.versionCode;
-                final int version = versionCode > 10000 ? (versionCode / 100) : versionCode;
+                report.append("Device: ").append(deviceName).append('\n');
+                report.append("Android SDK: ").append(sdkVersion).append(" (").append(release).append(")").append('\n');
+                report.append("Version: ").append(packageInfo.versionName).append('\n');
                 report.append(String.format(Locale.ROOT, "Version: %s(%d)", versionName, version)).append('\n');
                 report.append("Last Update: ").append(DATE_FORMAT.format(new Date(packageInfo.lastUpdateTime))).append('\n');
                 Signature[] signatures = packageInfo.signatures;
@@ -83,14 +86,13 @@ public class ExceptionHelper {
             }
             file.close();
             activity.deleteFile(FILENAME);
-            AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+            final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
             builder.setTitle(activity.getString(R.string.crash_report_title));
             builder.setMessage(activity.getText(R.string.crash_report_message));
             builder.setPositiveButton(activity.getText(R.string.send_now), (dialog, which) -> {
-
                 Log.d(Config.LOGTAG, "using account=" + account.getJid().asBareJid() + " to send in stack trace");
-                Conversation conversation = service.findOrCreateConversation(account, Config.BUG_REPORTS, false, true);
-                Message message = new Message(conversation, report.toString(), Message.ENCRYPTION_NONE);
+                final Conversation conversation = service.findOrCreateConversation(account, Config.BUG_REPORTS, false, true);
+                final Message message = new Message(conversation, report.toString(), Message.ENCRYPTION_NONE);
                 service.sendMessage(message);
             });
             builder.setNegativeButton(activity.getText(R.string.send_never), (dialog, which) -> preferences.edit().putBoolean("never_send", true).apply());
@@ -98,6 +100,16 @@ public class ExceptionHelper {
             return true;
         } catch (final IOException ignored) {
             return false;
+        }
+    }
+
+    public static String getDeviceName() {
+        String manufacturer = Build.MANUFACTURER;
+        String model = Build.MODEL;
+        if (model.startsWith(manufacturer)) {
+            return model;
+        } else {
+            return manufacturer + " " + model;
         }
     }
 

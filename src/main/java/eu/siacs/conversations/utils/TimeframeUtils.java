@@ -26,50 +26,48 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.utils;
 
 import android.content.Context;
-import android.support.annotation.PluralsRes;
+
+import androidx.annotation.PluralsRes;
 
 import eu.siacs.conversations.R;
 
 public class TimeframeUtils {
 
-	private static final Timeframe[] TIMEFRAMES;
+    private static final Timeframe[] TIMEFRAMES;
 
-	static {
-		TIMEFRAMES = new Timeframe[]{
-				new Timeframe(1000L, R.plurals.seconds),
-				new Timeframe(60L * 1000, R.plurals.minutes),
-				new Timeframe(60L * 60 * 1000, R.plurals.hours),
-				new Timeframe(24L * 60 * 60 * 1000, R.plurals.days),
-				new Timeframe(7L * 24 * 60 * 60 * 1000, R.plurals.weeks),
-				new Timeframe(30L * 24 * 60 * 60 * 1000, R.plurals.months),
-		};
-	}
+    static {
+        TIMEFRAMES = new Timeframe[]{
+                new Timeframe(1000L, R.plurals.seconds),
+                new Timeframe(60L * 1000, R.plurals.minutes),
+                new Timeframe(60L * 60 * 1000, R.plurals.hours),
+                new Timeframe(24L * 60 * 60 * 1000, R.plurals.days),
+                new Timeframe(7L * 24 * 60 * 60 * 1000, R.plurals.weeks),
+                new Timeframe(30L * 24 * 60 * 60 * 1000, R.plurals.months),
+        };
+    }
 
-	public static String resolve(Context context, long timeframe) {
-		for(int i = TIMEFRAMES.length -1 ; i >= 0; --i) {
-			long duration = TIMEFRAMES[i].duration;
-			long threshold = i > 0 ? (TIMEFRAMES[i-1].duration / 2) : 0;
-			if (timeframe >= duration - threshold) {
-				int count = (int) (timeframe / duration + ((timeframe%duration)>(duration/2)?1:0));
-				return context.getResources().getQuantityString(TIMEFRAMES[i].name,count,count);
-			}
-		}
-		return context.getResources().getQuantityString(TIMEFRAMES[0].name,0,0);
-	}
+    public static String resolve(Context context, long timeframe) {
+        for (int i = TIMEFRAMES.length - 1; i >= 0; --i) {
+            long duration = TIMEFRAMES[i].duration;
+            long threshold = i > 0 ? (TIMEFRAMES[i - 1].duration / 2) : 0;
+            if (timeframe >= duration - threshold) {
+                int count = (int) (timeframe / duration + ((timeframe % duration) > (duration / 2) ? 1 : 0));
+                return context.getResources().getQuantityString(TIMEFRAMES[i].name, count, count);
+            }
+        }
+        return context.getResources().getQuantityString(TIMEFRAMES[0].name, 0, 0);
+    }
 
+    private static class Timeframe {
+        public final long duration;
+        public final int name;
 
-	private static class Timeframe {
-		public final long duration;
-		public final int name;
-
-		private Timeframe(long duration, @PluralsRes int name) {
-			this.duration = duration;
-			this.name = name;
-		}
-	}
-
+        private Timeframe(long duration, @PluralsRes int name) {
+            this.duration = duration;
+            this.name = name;
+        }
+    }
 }

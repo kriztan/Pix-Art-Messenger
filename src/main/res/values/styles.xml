@@ -17,14 +17,6 @@
         <item name="android:textSize">?TextSizeSubhead</item>
     </style>
 
-    <style name="TextAppearance.Conversations.Subhead.Bold" parent="TextAppearance.Conversations.Subhead">
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextAppearance.Conversations.Subhead.Bold.Secondary" parent="TextAppearance.Conversations.Subhead.Bold">
-        <item name="android:textColor">?android:textColorSecondary</item>
-    </style>
-
     <style name="TextAppearance.Conversations.Body2" parent="TextAppearance.AppCompat.Body2">
         <item name="android:textSize">?TextSizeBody2</item>
     </style>
@@ -66,14 +58,21 @@
         <item name="android:textSize">?TextSizeBody1</item>
     </style>
 
-    <style name="Widget.Conversations.Button.Borderless" parent="@style/Widget.AppCompat.Button.Borderless">
+    <style name="Widget.Conversations.Button.Borderless" parent="@style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">?TextSizeBody2</item>
+        <item name="android:textColor">@color/button_state_color</item>
     </style>
 
-    <style name="Widget.Conversations.Button.Borderless.Primary" parent="Widget.Conversations.Button.Borderless">
-        <item name="android:textColor">?colorAccent</item>
+    <style name="Widget.Conversations.Button.Outline" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">?TextSizeBody2</item>
+        <item name="strokeColor">?attr/colorAccent</item>
+        <item name="android:textColor">@color/button_state_color</item>
     </style>
 
+    <style name="Widget.Conversations.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textSize">?TextSizeBody2</item>
+        <item name="android:textColor">@color/realwhite</item>
+    </style>
 
     <style name="TextAppearance.Conversations.Design.Hint" parent="TextAppearance.Design.Hint">
         <item name="android:textSize">?TextSizeCaption</item>
@@ -119,11 +118,11 @@
     </style>
 
     <style name="TextAppearance.Conversations.Caption.Warning" parent="TextAppearance.Conversations.Caption">
-        <item name="android:textColor">@color/red_a700</item>
+        <item name="android:textColor">@color/red700</item>
     </style>
 
     <style name="TextAppearance.Conversations.Caption.Warning.OnDark" parent="TextAppearance.Conversations.Caption">
-        <item name="android:textColor">@color/red_a100</item>
+        <item name="android:textColor">@color/red500</item>
     </style>
 
     <style name="TextAppearance.Conversations.Caption.Highlight" parent="TextAppearance.Conversations.Caption">
@@ -144,7 +143,7 @@
     </style>
 
     <style name="TextAppearance.Conversations.Body1.Emoji.OnDark" parent="TextAppearance.Conversations.Body1">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">?EmojiColor</item>
     </style>
 
     <style name="TextAppearance.Conversations.Body1.Emoji" parent="TextAppearance.Conversations.Body1">
@@ -153,5 +152,17 @@
 
     <style name="TextAppearance.Conversations.Body1.Secondary.OnDark" parent="TextAppearance.Conversations.Body1">
         <item name="android:textColor">@color/white70</item>
+    </style>
+
+    <style name="Conversations.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert" >
+        <item name="android:buttonStyle">@style/Widget.Conversations.Button.Borderless</item>
+    </style>
+
+    <style name="ExoMediaButton.Previous">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ExoMediaButton.Next">
+        <item name="android:visibility">gone</item>
     </style>
 </resources>

@@ -2,9 +2,7 @@ package eu.siacs.conversations.ui;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -14,6 +12,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.databinding.DataBindingUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,6 +28,7 @@ import eu.siacs.conversations.entities.MucOptions;
 import eu.siacs.conversations.services.XmppConnectionService;
 import eu.siacs.conversations.ui.adapter.UserAdapter;
 import eu.siacs.conversations.ui.util.MucDetailsContextMenuHelper;
+import me.drakeet.support.toast.ToastCompat;
 import rocks.xmpp.addr.Jid;
 
 public class MucUsersActivity extends XmppActivity implements XmppConnectionService.OnMucRosterUpdate, XmppConnectionService.OnAffiliationChanged, MenuItem.OnActionExpandListener, TextWatcher {
@@ -67,7 +69,7 @@ public class MucUsersActivity extends XmppActivity implements XmppConnectionServ
         } else {
             final String needle = search.toLowerCase(Locale.getDefault());
             ArrayList<MucOptions.User> filtered = new ArrayList<>();
-            for(MucOptions.User user : allUsers) {
+            for (MucOptions.User user : allUsers) {
                 final String name = user.getName();
                 final Contact contact = user.getContact();
                 if (name != null && name.toLowerCase(Locale.getDefault()).contains(needle) || contact != null && contact.getDisplayName().toLowerCase(Locale.getDefault()).contains(needle)) {
@@ -102,8 +104,8 @@ public class MucUsersActivity extends XmppActivity implements XmppConnectionServ
         loadAndSubmitUsers();
     }
 
-     private void displayToast(final String msg) {
-        runOnUiThread(() -> Toast.makeText(this, msg, Toast.LENGTH_SHORT).show());
+    private void displayToast(final String msg) {
+        runOnUiThread(() -> ToastCompat.makeText(this, msg, Toast.LENGTH_SHORT).show());
     }
 
     @Override

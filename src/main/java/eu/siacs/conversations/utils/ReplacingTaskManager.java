@@ -26,7 +26,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.utils;
 
 import java.util.HashMap;
@@ -35,23 +34,23 @@ import eu.siacs.conversations.entities.Account;
 
 public class ReplacingTaskManager {
 
-	private final HashMap<Account, ReplacingSerialSingleThreadExecutor> executors = new HashMap<>();
+    private final HashMap<Account, ReplacingSerialSingleThreadExecutor> executors = new HashMap<>();
 
-	public void execute(final Account account, Runnable runnable) {
-		ReplacingSerialSingleThreadExecutor executor;
-		synchronized (this.executors) {
-			executor = this.executors.get(account);
-			if (executor == null) {
-				executor = new ReplacingSerialSingleThreadExecutor(ReplacingTaskManager.class.getSimpleName());
-				this.executors.put(account, executor);
-			}
-			executor.execute(runnable);
-		}
-	}
+    public void execute(final Account account, Runnable runnable) {
+        ReplacingSerialSingleThreadExecutor executor;
+        synchronized (this.executors) {
+            executor = this.executors.get(account);
+            if (executor == null) {
+                executor = new ReplacingSerialSingleThreadExecutor(ReplacingTaskManager.class.getSimpleName());
+                this.executors.put(account, executor);
+            }
+            executor.execute(runnable);
+        }
+    }
 
-	public void clear(Account account) {
-		synchronized (this.executors) {
-			this.executors.remove(account);
-		}
-	}
+    public void clear(Account account) {
+        synchronized (this.executors) {
+            this.executors.remove(account);
+        }
+    }
 }

@@ -1,58 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/title"
+        android:checkable="false"
+        android:enabled="false"
+        android:orderInCategory="1"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_show_avatar"
+        android:orderInCategory="99"
+        android:title="@string/show_avatar"
+        android:visible="false" />
+    <item
+        android:id="@+id/highlight_in_muc"
+        android:orderInCategory="100"
+        android:title="@string/highlight_in_muc"
+        android:visible="false" />
+    <item
+        android:id="@+id/add_contact"
+        android:orderInCategory="100"
+        android:title="@string/add_to_contact_list"
+        android:visible="false" />
+    <item
         android:id="@+id/start_conversation"
+        android:orderInCategory="100"
         android:title="@string/start_conversation"
         android:visible="false" />
     <item
         android:id="@+id/action_contact_details"
+        android:orderInCategory="100"
         android:title="@string/action_contact_details"
         android:visible="false" />
     <item
         android:id="@+id/invite"
+        android:orderInCategory="100"
         android:title="@string/invite_again"
         android:visible="false" />
     <item
         android:id="@+id/send_private_message"
+        android:orderInCategory="100"
         android:title="@string/send_private_message"
         android:visible="false" />
     <item
+        android:id="@+id/context_muc_contact_block_unblock"
+        android:orderInCategory="100"
+        android:title="@string/action_block_participant"
+        android:visible="false" />
+    <item
         android:id="@+id/manage_permissions"
+        android:orderInCategory="100"
         android:title="@string/manage_permission"
         android:visible="false">
         <menu>
             <item
                 android:id="@+id/give_membership"
+                android:orderInCategory="100"
                 android:title="@string/grant_membership"
                 android:visible="false" />
             <item
                 android:id="@+id/remove_membership"
+                android:orderInCategory="100"
                 android:title="@string/remove_membership"
                 android:visible="false" />
             <item
                 android:id="@+id/give_admin_privileges"
+                android:orderInCategory="100"
                 android:title="@string/grant_admin_privileges"
                 android:visible="false" />
             <item
                 android:id="@+id/remove_admin_privileges"
+                android:orderInCategory="100"
                 android:title="@string/remove_admin_privileges"
                 android:visible="false" />
             <item
                 android:id="@+id/give_owner_privileges"
+                android:orderInCategory="100"
                 android:title="@string/grant_owner_privileges"
                 android:visible="false" />
             <item
                 android:id="@+id/revoke_owner_privileges"
+                android:orderInCategory="100"
                 android:title="@string/remove_owner_privileges"
-                android:visible="false" />
-            <item
-                android:id="@+id/ban_from_conference"
-                android:title="@string/ban_from_conference"
                 android:visible="false" />
         </menu>
     </item>
     <item
-        android:id="@+id/remove_from_room"
-        android:title="@string/remove_from_room"
+        android:id="@+id/kick_from_room"
+        android:orderInCategory="100"
+        android:title="@string/kick_from_room"
+        android:visible="false" />
+    <item
+        android:id="@+id/ban_from_room"
+        android:orderInCategory="100"
+        android:title="@string/ban_from_conference"
         android:visible="false" />
 </menu>

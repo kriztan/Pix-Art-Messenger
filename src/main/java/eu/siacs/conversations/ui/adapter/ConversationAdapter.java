@@ -1,15 +1,23 @@
 package eu.siacs.conversations.ui.adapter;
 
-import android.databinding.DataBindingUtil;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import android.preference.PreferenceManager;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.style.StyleSpan;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.common.base.Optional;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
@@ -18,6 +26,7 @@ import eu.siacs.conversations.databinding.ConversationListRowBinding;
 import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.entities.Conversational;
 import eu.siacs.conversations.entities.Message;
+import eu.siacs.conversations.entities.MucOptions;
 import eu.siacs.conversations.ui.ConversationFragment;
 import eu.siacs.conversations.ui.XmppActivity;
 import eu.siacs.conversations.ui.util.AvatarWorkerTask;
@@ -25,21 +34,25 @@ import eu.siacs.conversations.ui.util.StyledAttributes;
 import eu.siacs.conversations.utils.EmojiWrapper;
 import eu.siacs.conversations.utils.IrregularUnicodeDetector;
 import eu.siacs.conversations.utils.UIHelper;
+import eu.siacs.conversations.xmpp.chatstate.ChatState;
 import eu.siacs.conversations.xmpp.jingle.AbstractJingleConnection;
 import eu.siacs.conversations.xmpp.jingle.OngoingRtpSession;
 import rocks.xmpp.addr.Jid;
+
+import static eu.siacs.conversations.entities.Message.DELETED_MESSAGE_BODY;
+import static eu.siacs.conversations.ui.util.MyLinkify.replaceYoutube;
 
 public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapter.ConversationViewHolder> {
 
     private XmppActivity activity;
     private List<Conversation> conversations;
     private OnConversationClickListener listener;
+    private boolean hasInternetConnection = false;
 
     public ConversationAdapter(XmppActivity activity, List<Conversation> conversations) {
         this.activity = activity;
         this.conversations = conversations;
     }
-
 
     @NonNull
     @Override
@@ -54,28 +67,36 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
             return;
         }
         CharSequence name = conversation.getName();
+        hasInternetConnection = activity.xmppConnectionService.hasInternetConnection();
         if (name instanceof Jid) {
             viewHolder.binding.conversationName.setText(IrregularUnicodeDetector.style(activity, (Jid) name));
         } else {
             viewHolder.binding.conversationName.setText(EmojiWrapper.transform(name));
         }
 
+        if (activity.xmppConnectionService.multipleAccounts() && activity.xmppConnectionService.showOwnAccounts()) {
+            viewHolder.binding.account.setVisibility(View.VISIBLE);
+            viewHolder.binding.account.setText(conversation.getAccount().getJid().asBareJid());
+        } else {
+            viewHolder.binding.account.setVisibility(View.GONE);
+        }
+
         if (conversation == ConversationFragment.getConversation(activity)) {
             viewHolder.binding.frame.setBackgroundColor(StyledAttributes.getColor(activity, R.attr.color_background_tertiary));
         } else {
-            viewHolder.binding.frame.setBackgroundColor(StyledAttributes.getColor(activity, R.attr.color_background_primary));
+            viewHolder.binding.frame.setBackgroundColor(StyledAttributes.getColor(activity, R.attr.color_background_secondary));
         }
 
         Message message = conversation.getLatestMessage();
+        final int failedCount = conversation.failedCount();
         final int unreadCount = conversation.unreadCount();
         final boolean isRead = conversation.isRead();
         final Conversation.Draft draft = isRead ? conversation.getDraft() : null;
-        if (unreadCount > 0) {
-            viewHolder.binding.unreadCount.setVisibility(View.VISIBLE);
-            viewHolder.binding.unreadCount.setUnreadCount(unreadCount);
-        } else {
-            viewHolder.binding.unreadCount.setVisibility(View.GONE);
-        }
+
+        viewHolder.binding.indicatorReceived.setVisibility(View.GONE);
+        viewHolder.binding.indicatorRead.setVisibility(View.GONE);
+        viewHolder.binding.unreadCount.setVisibility(View.GONE);
+        viewHolder.binding.failedCount.setVisibility(View.GONE);
 
         if (isRead) {
             viewHolder.binding.conversationName.setTypeface(null, Typeface.NORMAL);
@@ -83,15 +104,28 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
             viewHolder.binding.conversationName.setTypeface(null, Typeface.BOLD);
         }
 
+        if (unreadCount > 0) {
+            viewHolder.binding.unreadCount.setVisibility(View.VISIBLE);
+            viewHolder.binding.unreadCount.setUnreadCount(unreadCount);
+        } else {
+            viewHolder.binding.unreadCount.setVisibility(View.GONE);
+        }
+        if (failedCount > 0) {
+            viewHolder.binding.failedCount.setVisibility(View.VISIBLE);
+            viewHolder.binding.failedCount.setFailedCount(failedCount);
+        } else {
+            viewHolder.binding.failedCount.setVisibility(View.GONE);
+        }
+
         if (draft != null) {
             viewHolder.binding.conversationLastmsgImg.setVisibility(View.GONE);
-            viewHolder.binding.conversationLastmsg.setText(EmojiWrapper.transform(draft.getMessage()));
+            viewHolder.binding.conversationLastmsg.setText(EmojiWrapper.transform(replaceYoutube(activity.getApplicationContext(), draft.getMessage())));
             viewHolder.binding.senderName.setText(R.string.draft);
             viewHolder.binding.senderName.setVisibility(View.VISIBLE);
             viewHolder.binding.conversationLastmsg.setTypeface(null, Typeface.NORMAL);
             viewHolder.binding.senderName.setTypeface(null, Typeface.ITALIC);
         } else {
-            final boolean fileAvailable = !message.isDeleted();
+            final boolean fileAvailable = !message.isFileDeleted();
             final boolean showPreviewText;
             if (fileAvailable && (message.isFileOrImage() || message.treatAsDownloadable() || message.isGeoUri())) {
                 final int imageResource;
@@ -107,7 +141,7 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
                             showPreviewText = false;
                             break;
                         case "video":
-                            imageResource = activity.getThemeResource(R.attr.ic_attach_videocam, R.drawable.ic_attach_videocam);
+                            imageResource = activity.getThemeResource(R.attr.ic_attach_video, R.drawable.ic_attach_video);
                             showPreviewText = false;
                             break;
                         case "audio":
@@ -128,7 +162,11 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
             }
             final Pair<CharSequence, Boolean> preview = UIHelper.getMessagePreview(activity, message, viewHolder.binding.conversationLastmsg.getCurrentTextColor());
             if (showPreviewText) {
-                viewHolder.binding.conversationLastmsg.setText(EmojiWrapper.transform(UIHelper.shorten(preview.first)));
+                if (message.getBody().equals(DELETED_MESSAGE_BODY)) {
+                    viewHolder.binding.conversationLastmsg.setText(EmojiWrapper.transform(UIHelper.shorten(activity.getString(R.string.message_deleted))));
+                } else {
+                    viewHolder.binding.conversationLastmsg.setText(EmojiWrapper.transform(UIHelper.shorten(replaceYoutube(activity.getApplicationContext(), preview.first.toString()))));
+                }
             } else {
                 viewHolder.binding.conversationLastmsgImg.setContentDescription(preview.first);
             }
@@ -153,13 +191,18 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
             if (message.getStatus() == Message.STATUS_RECEIVED) {
                 if (conversation.getMode() == Conversation.MODE_MULTI) {
                     viewHolder.binding.senderName.setVisibility(View.VISIBLE);
-                    viewHolder.binding.senderName.setText(UIHelper.getMessageDisplayName(message).split("\\s+")[0] + ':');
+                    viewHolder.binding.senderName.setText(UIHelper.getColoredUsername(activity.xmppConnectionService, message));
+                    viewHolder.binding.senderName.append(":");
                 } else {
                     viewHolder.binding.senderName.setVisibility(View.GONE);
                 }
             } else if (message.getType() != Message.TYPE_STATUS) {
                 viewHolder.binding.senderName.setVisibility(View.VISIBLE);
-                viewHolder.binding.senderName.setText(activity.getString(R.string.me) + ':');
+                final SpannableString me;
+                me = SpannableString.valueOf(activity.getString(R.string.me));
+                me.setSpan(new StyleSpan(Typeface.BOLD), 0, me.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                viewHolder.binding.senderName.setText(me);
+                viewHolder.binding.senderName.append(":");
             } else {
                 viewHolder.binding.senderName.setVisibility(View.GONE);
             }
@@ -205,7 +248,84 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
         viewHolder.binding.conversationLastupdate.setText(UIHelper.readableTimeDifference(activity, timestamp));
         AvatarWorkerTask.loadAvatar(conversation, viewHolder.binding.conversationImage, R.dimen.avatar_on_conversation_overview);
         viewHolder.itemView.setOnClickListener(v -> listener.onConversationClick(v, conversation));
+
+        if (conversation.getMode() == Conversation.MODE_SINGLE && ShowPresenceColoredNames()) {
+            if (hasInternetConnection) {
+                switch (conversation.getContact().getPresences().getShownStatus()) {
+                    case CHAT:
+                    case ONLINE:
+                        viewHolder.binding.conversationName.setTextColor(ContextCompat.getColor(activity, R.color.online));
+                        break;
+                    case AWAY:
+                        viewHolder.binding.conversationName.setTextColor(ContextCompat.getColor(activity, R.color.away));
+                        break;
+                    case XA:
+                    case DND:
+                        viewHolder.binding.conversationName.setTextColor(ContextCompat.getColor(activity, R.color.notavailable));
+                        break;
+                    case OFFLINE:
+                    default:
+                        viewHolder.binding.conversationName.setTextColor(StyledAttributes.getColor(activity, R.attr.text_Color_Main));
+                        break;
+                }
+            } else {
+                viewHolder.binding.conversationName.setTextColor(StyledAttributes.getColor(activity, R.attr.text_Color_Main));
+            }
+        } else {
+            viewHolder.binding.conversationName.setTextColor(StyledAttributes.getColor(activity, R.attr.text_Color_Main));
+        }
+
+        if (activity.xmppConnectionService.indicateReceived()) {
+            switch (message.getMergedStatus()) {
+                case Message.STATUS_SEND_RECEIVED:
+                    viewHolder.binding.indicatorReceived.setVisibility(View.VISIBLE);
+                    break;
+                case Message.STATUS_SEND_DISPLAYED:
+                    viewHolder.binding.indicatorReceived.setVisibility(View.VISIBLE);
+                    viewHolder.binding.indicatorRead.setVisibility(View.VISIBLE);
+                    break;
+                default:
+                    viewHolder.binding.indicatorReceived.setVisibility(View.GONE);
+                    viewHolder.binding.indicatorRead.setVisibility(View.GONE);
+            }
+        }
+        if (conversation.getMode() == Conversation.MODE_SINGLE) {
+            if (conversation.getIncomingChatState().equals(ChatState.COMPOSING)) {
+                viewHolder.binding.conversationLastmsg.setText(R.string.is_typing);
+                viewHolder.binding.conversationLastmsg.setTypeface(null, Typeface.BOLD_ITALIC);
+                viewHolder.binding.senderName.setVisibility(View.GONE);
+            }
+        } else {
+            ChatState state = ChatState.COMPOSING;
+            List<MucOptions.User> userWithChatStates = conversation.getMucOptions().getUsersWithChatState(state, 5);
+            if (userWithChatStates.size() == 0) {
+                state = ChatState.PAUSED;
+                userWithChatStates = conversation.getMucOptions().getUsersWithChatState(state, 5);
+            }
+            if (state == ChatState.COMPOSING) {
+                if (userWithChatStates.size() > 0) {
+                    if (userWithChatStates.size() == 1) {
+                        MucOptions.User user = userWithChatStates.get(0);
+                        viewHolder.binding.conversationLastmsg.setText(activity.getString(R.string.contact_is_typing, UIHelper.getDisplayName(user)));
+                        viewHolder.binding.conversationLastmsg.setTypeface(null, Typeface.BOLD_ITALIC);
+                        viewHolder.binding.senderName.setVisibility(View.GONE);
+                    } else {
+                        StringBuilder builder = new StringBuilder();
+                        for (MucOptions.User user : userWithChatStates) {
+                            if (builder.length() != 0) {
+                                builder.append(", ");
+                            }
+                            builder.append(UIHelper.getDisplayName(user));
+                        }
+                        viewHolder.binding.conversationLastmsg.setText(activity.getString(R.string.contacts_are_typing, builder.toString()));
+                        viewHolder.binding.conversationLastmsg.setTypeface(null, Typeface.BOLD_ITALIC);
+                        viewHolder.binding.senderName.setVisibility(View.GONE);
+                    }
+                }
+            }
+        }
     }
+
 
     @Override
     public int getItemCount() {
@@ -215,7 +335,6 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
     public void setConversationClickListener(OnConversationClickListener listener) {
         this.listener = listener;
     }
-
 
     public void insert(Conversation c, int position) {
         conversations.add(position, c);
@@ -238,7 +357,13 @@ public class ConversationAdapter extends RecyclerView.Adapter<ConversationAdapte
             super(binding.getRoot());
             this.binding = binding;
         }
-
     }
 
+    private boolean ShowPresenceColoredNames() {
+        return getPreferences().getBoolean("presence_colored_names", activity.getResources().getBoolean(R.bool.presence_colored_names));
+    }
+
+    protected SharedPreferences getPreferences() {
+        return PreferenceManager.getDefaultSharedPreferences(activity.getApplicationContext());
+    }
 }

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2018, Daniel Gultsch All rights reserved.
   ~
   ~ Redistribution and use in source and binary forms, with or without modification,
@@ -32,18 +31,17 @@
 
     <item
         android:id="@+id/open_conversation"
-        android:title="@string/view_conversation"/>
-
+        android:title="@string/view_conversation" />
     <item
         android:id="@+id/share_with"
-        android:title="@string/share_with"/>
+        android:title="@string/share_with" />
     <item
         android:id="@+id/copy_message"
-        android:title="@string/copy_to_clipboard"/>
+        android:title="@string/copy_to_clipboard" />
     <item
         android:id="@+id/quote_message"
-        android:title="@string/quote"/>
+        android:title="@string/quote" />
     <item
         android:id="@+id/copy_url"
-        android:title="@string/copy_original_url"/>
+        android:title="@string/copy_original_url" />
 </menu>

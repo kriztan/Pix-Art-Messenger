@@ -13,6 +13,7 @@
             android:id="@+id/avatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:scaleType="centerCrop"
             app:riv_corner_radius="2dp" />
@@ -20,7 +21,9 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/avatar_item_distance"
             android:layout_marginLeft="@dimen/avatar_item_distance"
+            android:layout_toEndOf="@+id/avatar"
             android:layout_toRightOf="@+id/avatar">
 
             <TextView
@@ -36,7 +39,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/name"
+                android:layout_marginStart="8sp"
                 android:layout_marginLeft="8sp"
+                android:layout_toEndOf="@id/name"
                 android:layout_toRightOf="@id/name"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.Conversations.Caption"
@@ -58,6 +63,5 @@
                 android:maxLines="2"
                 android:textAppearance="@style/TextAppearance.Conversations.Body1.Secondary" />
         </RelativeLayout>
-
     </RelativeLayout>
 </layout>

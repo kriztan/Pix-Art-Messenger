@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2018, Daniel Gultsch All rights reserved.
   ~
   ~ Redistribution and use in source and binary forms, with or without modification,
@@ -29,12 +28,12 @@
   -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_search"
         android:icon="?attr/icon_search"
         android:title="@string/search"
         app:actionLayout="@layout/actionview_search"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>

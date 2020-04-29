@@ -12,12 +12,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -36,8 +39,8 @@ import eu.siacs.conversations.parser.IqParser;
 import eu.siacs.conversations.persistance.FileBackend;
 import eu.siacs.conversations.services.AbstractConnectionManager;
 import eu.siacs.conversations.utils.CryptoHelper;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
 import eu.siacs.conversations.xmpp.OnIqPacketReceived;
 import eu.siacs.conversations.xmpp.jingle.stanzas.Content;
 import eu.siacs.conversations.xmpp.jingle.stanzas.FileTransferDescription;
@@ -50,7 +53,7 @@ import eu.siacs.conversations.xmpp.stanzas.IqPacket;
 import rocks.xmpp.addr.Jid;
 
 public class JingleFileTransferConnection extends AbstractJingleConnection implements Transferable {
-
+    private final SimpleDateFormat fileDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmssSSS", Locale.US);
     private static final int JINGLE_STATUS_TRANSMITTING = 5;
     private static final String JET_OMEMO_CIPHER = "urn:xmpp:ciphers:aes-128-gcm-nopadding";
     private static final int JINGLE_STATUS_INITIATED = 0;
@@ -437,7 +440,6 @@ public class JingleFileTransferConnection extends AbstractJingleConnection imple
         final GenericTransportInfo transportInfo = content.getTransport();
         this.contentCreator = content.getCreator();
         this.contentName = content.getAttribute("name");
-
         if (transportInfo instanceof S5BTransportInfo) {
             final S5BTransportInfo s5BTransportInfo = (S5BTransportInfo) transportInfo;
             this.transportId = s5BTransportInfo.getTransportId();
@@ -460,11 +462,9 @@ public class JingleFileTransferConnection extends AbstractJingleConnection imple
             this.fail();
             return;
         }
-
         this.description = (FileTransferDescription) content.getDescription();
 
         final Element fileOffer = this.description.getFileOffer();
-
         if (fileOffer != null) {
             boolean remoteIsUsingJet = false;
             Element encrypted = fileOffer.findChild("encrypted", AxolotlService.PEP_PREFIX);
@@ -485,19 +485,40 @@ public class JingleFileTransferConnection extends AbstractJingleConnection imple
                 AbstractConnectionManager.Extension extension = AbstractConnectionManager.Extension.of(path);
                 if (VALID_IMAGE_EXTENSIONS.contains(extension.main)) {
                     message.setType(Message.TYPE_IMAGE);
-                    message.setRelativeFilePath(message.getUuid() + "." + extension.main);
+                    if (message.getStatus() == Message.STATUS_RECEIVED) {
+                        message.setRelativeFilePath(fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + "." + extension.main);
+                    } else {
+                        message.setRelativeFilePath("Sent/" + fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + "." + extension.main);
+                    }
                 } else if (VALID_CRYPTO_EXTENSIONS.contains(extension.main)) {
                     if (VALID_IMAGE_EXTENSIONS.contains(extension.secondary)) {
                         message.setType(Message.TYPE_IMAGE);
-                        message.setRelativeFilePath(message.getUuid() + "." + extension.secondary);
+                        if (message.getStatus() == Message.STATUS_RECEIVED) {
+                            message.setRelativeFilePath(fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + "." + extension.secondary);
+                        } else {
+                            message.setRelativeFilePath("Sent/" + fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + "." + extension.secondary);
+                        }
                     } else {
                         message.setType(Message.TYPE_FILE);
-                        message.setRelativeFilePath(message.getUuid() + (extension.secondary != null ? ("." + extension.secondary) : ""));
+                        if (message.getStatus() == Message.STATUS_RECEIVED) {
+                            message.setRelativeFilePath(fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + (extension.secondary != null ? ("." + extension.secondary) : ""));
+                        } else {
+                            message.setRelativeFilePath("Sent/" + fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + (extension.secondary != null ? ("." + extension.secondary) : ""));
+                        }
                     }
-                    message.setEncryption(Message.ENCRYPTION_PGP);
+                    // only for OTR compatibility
+                    if (extension.main.equals("otr")) {
+                        message.setEncryption(Message.ENCRYPTION_OTR);
+                    } else {
+                        message.setEncryption(Message.ENCRYPTION_PGP);
+                    }
                 } else {
                     message.setType(Message.TYPE_FILE);
-                    message.setRelativeFilePath(message.getUuid() + (extension.main != null ? ("." + extension.main) : ""));
+                    if (message.getStatus() == Message.STATUS_RECEIVED) {
+                        message.setRelativeFilePath(fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + (extension.main != null ? ("." + extension.main) : ""));
+                    } else {
+                        message.setRelativeFilePath("Sent/" + fileDateFormat.format(new Date(message.getTimeSent())) + "_" + message.getUuid().substring(0, 4) + (extension.main != null ? ("." + extension.main) : ""));
+                    }
                 }
                 long size = parseLong(fileSize, 0);
                 message.setBody(Long.toString(size));
@@ -520,9 +541,7 @@ public class JingleFileTransferConnection extends AbstractJingleConnection imple
                 //JET reports the plain text size. however lower levels of our receiving code still
                 //expect the cipher text size. so we just + 16 bytes (auth tag size) here
                 this.file.setExpectedSize(size + (remoteIsUsingJet ? 16 : 0));
-
                 respondToIq(packet, true);
-
                 if (id.account.getRoster().getContact(id.with).showInContactList()
                         && jingleConnectionManager.hasStoragePermission()
                         && size < this.jingleConnectionManager.getAutoAcceptFileSize()

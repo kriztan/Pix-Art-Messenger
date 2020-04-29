@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
@@ -19,6 +20,13 @@ public class TLSSocketFactory extends SSLSocketFactory {
         SSLContext context = SSLSocketHelper.getSSLContext();
         context.init(null, trustManager, random);
         this.internalSSLSocketFactory = context.getSocketFactory();
+    }
+
+    private static Socket enableTLSOnSocket(Socket socket) {
+        if (socket instanceof SSLSocket) {
+            SSLSocketHelper.setSecurity((SSLSocket) socket);
+        }
+        return socket;
     }
 
     @Override
@@ -54,12 +62,5 @@ public class TLSSocketFactory extends SSLSocketFactory {
     @Override
     public Socket createSocket(InetAddress address, int port, InetAddress localAddress, int localPort) throws IOException {
         return enableTLSOnSocket(internalSSLSocketFactory.createSocket(address, port, localAddress, localPort));
-    }
-
-    private static Socket enableTLSOnSocket(Socket socket) {
-        if(socket instanceof SSLSocket) {
-            SSLSocketHelper.setSecurity((SSLSocket) socket);
-        }
-        return socket;
     }
 }

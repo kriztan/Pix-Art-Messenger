@@ -34,10 +34,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.util.Log;
 import android.util.SparseArray;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -136,7 +137,7 @@ public class MemorizingTrustManager {
      * The context is used for file management, to display the dialog /
      * notification and for obtaining translated strings.
      *
-     * @param m                   Context for the application.
+     * @param m Context for the application.
      * @param defaultTrustManager Delegate trust management to this TM. If null, the user must accept every certificate.
      */
     public MemorizingTrustManager(Context m, X509TrustManager defaultTrustManager) {

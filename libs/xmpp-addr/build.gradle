@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'rocks.xmpp:precis:1.0.0'
+    implementation 'rocks.xmpp:precis:1.1.0'
 }
 
 sourceCompatibility = "8"

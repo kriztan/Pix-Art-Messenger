@@ -29,18 +29,47 @@
 
 package eu.siacs.conversations.ui.util;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.text.Editable;
+import android.text.SpannableString;
 import android.text.util.Linkify;
 
 import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import eu.siacs.conversations.Config;
+import eu.siacs.conversations.R;
+import eu.siacs.conversations.ui.SettingsActivity;
 import eu.siacs.conversations.ui.text.FixedURLSpan;
 import eu.siacs.conversations.utils.GeoHelper;
 import eu.siacs.conversations.utils.Patterns;
 import eu.siacs.conversations.utils.XmppUri;
 
 public class MyLinkify {
+
+    private static final Pattern youtubePattern = Pattern.compile("(www\\.|m\\.)?(youtube\\.com|youtu\\.be|youtube-nocookie\\.com)\\/(((?!(\"|'|<)).)*)");
+
+    public static SpannableString replaceYoutube(Context context, String url) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean invidious = sharedPreferences.getBoolean(SettingsActivity.USE_INVIDIOUS, context.getResources().getBoolean(R.bool.use_invidious));
+        if (invidious) {
+            Matcher matcher = youtubePattern.matcher(url);
+            while (matcher.find()) {
+                final String youtubeId = matcher.group(3);
+                String invidiousHost = Config.DEFAULT_INVIDIOUS_HOST.toLowerCase();
+                if (matcher.group(2) != null && matcher.group(2).equals("youtu.be")) {
+                    return new SpannableString(url.replaceAll("https://" + Pattern.quote(matcher.group()), Matcher.quoteReplacement("https://" + invidiousHost + "/watch?v=" + youtubeId + "&local=true")));
+                } else {
+                    return new SpannableString(url.replaceAll("https://" + Pattern.quote(matcher.group()), Matcher.quoteReplacement("https://" + invidiousHost + "/" + youtubeId + "&local=true")));
+                }
+            }
+        }
+        return new SpannableString(url);
+    }
 
     private static final Linkify.TransformFilter WEBURL_TRANSFORM_FILTER = (matcher, url) -> {
         if (url == null) {
@@ -54,7 +83,7 @@ public class MyLinkify {
         }
     };
 
-    private static String removeTrailingBracket(final String url) {
+    public static String removeTrailingBracket(final String url) {
         int numOpenBrackets = 0;
         for (char c : url.toCharArray()) {
             if (c == '(') {
@@ -77,12 +106,13 @@ public class MyLinkify {
                 return false;
             }
         }
-
-        if (end < cs.length()) {
-            // Reject strings that were probably matched only because they contain a dot followed by
-            // by some known TLD (see also comment for WORD_BOUNDARY in Patterns.java)
-            if (isAlphabetic(cs.charAt(end-1)) && isAlphabetic(cs.charAt(end))) {
-                return false;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (end < cs.length()) {
+                // Reject strings that were probably matched only because they contain a dot followed by
+                // by some known TLD (see also comment for WORD_BOUNDARY in Patterns.java)
+                if (isAlphabetic(cs.charAt(end - 1)) && isAlphabetic(cs.charAt(end))) {
+                    return false;
+                }
             }
         }
 
@@ -98,7 +128,6 @@ public class MyLinkify {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             return Character.isAlphabetic(code);
         }
-
         switch (Character.getType(code)) {
             case Character.UPPERCASE_LETTER:
             case Character.LOWERCASE_LETTER:

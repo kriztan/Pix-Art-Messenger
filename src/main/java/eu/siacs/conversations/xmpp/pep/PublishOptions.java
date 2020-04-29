@@ -2,8 +2,8 @@ package eu.siacs.conversations.xmpp.pep;
 
 import android.os.Bundle;
 
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
 import eu.siacs.conversations.xmpp.stanzas.IqPacket;
 
 public class PublishOptions {
@@ -31,10 +31,8 @@ public class PublishOptions {
         options.putString("pubsub#access_model", "whitelist");
         options.putString("pubsub#send_last_published_item", "never");
         options.putString("pubsub#max_items", "128"); //YOLO!
-
         options.putString("pubsub#notify_delete", "true");
         options.putString("pubsub#notify_retract", "true"); //one could also set notify=true on the retract
-
         return options;
     }
 

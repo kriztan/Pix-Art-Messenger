@@ -1,697 +1,739 @@
-# Changelog
+### Changelog
 
-### Version 2.8.1
-* Audible feedback (dialing, call started, call ended) for voice calls.
-* Fixed issue with retrying failed video call
+#### Version 2.3.7
+* bug fixes
 
-### Version 2.8.0
+#### Version 2.3.6
+* bug fixes
 
-* Audio/Video calls (Requires server support in form of STUN and TURN servers discoverable via XEP-0215)
-
-
-### Version 2.7.1
-
-* Fix avatar selection on some Android 10 devices
-* Fix file transfer for larger files
-
-### Version 2.7.0
-
-* Provide PDF preview on Android 5+
-* Use 12 byte IVs for OMEMO
-
-### Version 2.6.4
-
-* Support automatic theme switching on Android 10
-
-### Version 2.6.3
-
-* Support for ?register and ?register;preauth XMPP uri parameters
-
-### Version 2.6.2
-* let users set their own nick name
+#### Version 2.3.5
+* start removing OTR
+* rework conference and contact details (big avatar is available via long click) (PAM)
 * resume download of OMEMO encrypted files
-* Channels now use '#' as symbol in avatar
-* Quicksy uses 'always' as OMEMO encryption default (hides lock icon)
+* channels now use '#' as symbol in avatar
+* support for ?register and ?register;preauth XMPP uri parameters
+* update connection settings
+* use ExoPlayer for video playback (PAM)
+* show artist - title for audio files (PAM)
+* show PDF previews (PAM)
+* minor UI improvements (PAM)
+* use 12 byte IV for OMEMO
+* a lot of bug fixes
 
-### Version 2.6.1
+#### Version 2.3.4
 * fixes for Jingle IBB file transfer
 * fixes for repeated corrections filling up the database
 * switched to Last Message Correction v1.1
+* increase mam messages catchup (PAM)
+* bug fixes
 
-### Version 2.6.0
-* Introduce expert setting to perform channel discovery on local server instead of [search.jabber.network](https://search.jabber.network)
-* Enable delivery check marks by default and remove setting
-* Enable ‘Send button indicates status’ by default and remove setting
-* Move Backup and Foreground Service settings to main screen
+#### Version 2.3.3
+* fix missing send button
 
-### Version 2.5.12
-* Jingle file transfer fixes
-* Fixed OMEMO self healing (after backup restore) on servers w/o MAM
+#### Version 2.3.2
+* fix shareWithActivity
 
-### Version 2.5.11
-* Fixed crash on Android <5.0
+#### Version 2.3.1
+* bug fixes
 
-### Version 2.5.10
-* Fixed crash on Xiaomi devices running Android 8.0 + 8.1
-
-### Version 2.5.9
+#### Version 2.3.0
+* show name in quotes (PAM)
+* introduce theme based on systems theme (PAM)
+* increase default video quality (720p instead of 360p) (PAM)
+* replace YouTube links with Invidious links (PAM)
+* rework profile view (PAM)
+* introduce app intro and some help screens (PAM)
 * fixed minor security issues
-* Share XMPP uri from channel search by long pressing a result
+* share XMPP uri from channel search by long pressing a result
+* fixed OMEMO self healing (after backup restore) on servers w/o MAM
+* introduce expert setting to perform channel discovery on local server instead of [search.jabber.network](https://search.jabber.network)
+* introduce new orange theme color (PAM)
+* bug fixes
 
-### Version 2.5.8
-* fixed connection issues over Tor
-* P2P file transfer (Jingle) now offers direct candidates
-* Support XEP-0396: Jingle Encrypted Transports - OMEMO
+#### Version 2.2.9
+* bug fixes
 
-### Version 2.5.7
-* fixed crash when scanning QR codes on Android 6 and lower
-* when sharing a message from and to Conversations insert it as quote
-
-### Version 2.5.6
+#### Version 2.2.8
+* stability improvements for group chats and channels
+* allow backups to be restored from anywhere
+* make short vibrate in open chat configurable and respect silent mode (PAM)
 * fixes for Jingle file transfer
 * fixed some rare crashes
-
-### Version 2.5.5
-* allow backups to be restored from anywhere
+* when sharing a message from and to messenger insert it as quote
+* find orphaned files and show them in the chat again instead of showing them deleted (PAM)
+* introduce file uploads/downloads with queue (PAM)
+* fixed connection issues over Tor
+* P2P file transfer (Jingle) now offers direct candidates
+* support XEP-0396: Jingle Encrypted Transports - OMEMO
 * bug fixes
 
-### Version 2.5.4
-* stability improvements for group chats and channels
+#### Version 2.2.7
+* fixing crashes
 
-### Version 2.5.3
+#### Version 2.2.6
+* fixing connection issues
+* fix broken updater
+
+#### Version 2.2.5
+* make backup compatible to Conversations (only works for Android >= 8) (PAM)
+* bug fix
+
+#### Version 2.2.4
+* added channel search via search.jabbercat.org
+* reworked onboarding screens
+* warn when trying to enter domain address or channel address in Add Contact dialog
+* set own OMEMO devices to inactive after not seeing them for 60 days. (was 7 days)
 * bug fixes for peer to peer file transfer (Jingle)
 * fixed server info for unlimited/unknown max file size
-
-### Version 2.5.2
+* make backup compatible to Conversations (PAM)
+* performance improvements
 * bug fixes
 
-### Version 2.5.1
-* minor bug fixes
-* Set own OMEMO devices to inactive after not seeing them for 14 days. (was 7 days)
+#### Version 2.2.3
+* bug fixes
 
-### Version 2.5.0
-* Added channel search via search.jabbercat.org
-* Reworked onboarding screens
-* Warn when trying to enter domain address or channel address in Add Contact dialog
+#### Version 2.2.2
+* add activity to define some important privacy settings on first start (PAM)
+* add ability to delete account also from server (PAM)
+* add ability to kick users from room and not just ban them (PAM)
+* bug fixes
 
-### Version 2.4.3
-* Fixed display of private messages sent from another client
-* Fixed backup creation on long time installations
+#### Version 2.2.1
+* use extra activity for enter name during registration (PAM)
+* bug fixes
 
-### Version 2.4.2
-* Fix image preview on older Android version
-
-### Version 2.4.1
-* Fixed crash in message view
-
-### Version 2.4.0
-* New Backup / Restore feature
-* Clearly distinguish between (private) group chats and (public) channels
-* Redesigned participants view for group chats and channels
-* Redesigned create new contact/group chat/channel flow in Start Conversation screen
-
-
-### Version 2.3.12
-* Fixed rare crash on start up
-* Fixed avatar not being refreshed in group chats
-
-### Version 2.3.11
-* Support for Android 9 'message style' notifications
+#### Version 2.2.0
+* add ability to set/edit nickname in own profile (PAM)
+* add ability to configure autojoin flag in groupchat details (PAM)
+* support for Android 9 'message style' notifications
 * OMEMO stability improvements
-* Added ability to destroy group chats
-* Do not show deleted files in media browser
-* Added 'Keep Original' as video quality choice
+* do not show deleted files in media browser
+* added 'Keep Original' as image and video quality choice (PAM)
+* fixed avatar not being refreshed in group chats
+* make users avatars configurable (prefer either from xmpp or addressbook) (PAM)
+* integrate last message deletion on remote devices (server and client need support for message correction) (PAM)
+* clearly distinguish between (private) group chats and (public) channels
+* redesigned participants view for group chats and channels
+* redesigned create new contact/group chat/channel flow in Start Conversation screen
+* reworked backup & restore
+* use Ad-Hoc Commands to invite new users (PAM)
+* show link preview in chat (PAM)
+* bug fixes
 
-### Version 2.3.10
-* lower minimum required Android version to 4.1
-* Synchronize group chat join/leaves across multiple clients
-* Fixed sending PGP encrypted messages from quick reply
-
-### Version 2.3.9
-* OMEMO stability improvements
-* Context menu when long pressing avatar in 1:1 chat
-
-### Version 2.3.8
-* make PEP avatars public to play nice with Prosody 0.11
-* Fixed re-sending failed files in group chats
-
-### Version 2.3.7
+#### Version 2.1.5
+* improved handling of bookmark nicks
 * long press on 'allow' or 'add back' snackbar to bring up 'reject'
-* bug fixes for Android 9
-
-### Version 2.3.6
-* Improved handling of bookmark nicks
-* Show send PM menu entry in anonymous MUCs
-
-### Version 2.3.5
-* Fixed group chat mentions when nick ends in . (dot)
-* Fixed Conversations not asking for permissions after direct share
-* Fixed CVE-2018-18467
-
-### Version 2.3.4
-* Fixed sending OMEMO files to ChatSecure
-
-### Version 2.3.3
-* Fixed connection issues with user@ip type JIDs
-
-### Version 2.3.2
-* Fixed OMEMO on Android 5.1 & 6.0
-* Added setting for video quality
+* let the user forbid android from taking screenshots (PAM)
+* make PEP avatars public to play nice with Prosody 0.11
+* fixed re-sending failed files in group chats
+* OMEMO stability improvements
+* context menu when long pressing avatar in 1:1 chat
+* synchronize group chat join/leaves across multiple clients
+* fixed sending PGP encrypted messages from quick reply
 * bug fixes
 
-### Version 2.3.1
-* Stronger compression for video files
-* Use SNI on STARTTLS to fix gtalk
-* Fix Quiet Hours on Android 8+
-* Use Consistent Color Generation (XEP-0392)
+#### Version 2.1.4
+* fix crash with xmpp uris
+ 
+#### Version 2.1.3
+* bring back gif support in internal mediaviewer
+* fixed group chat mentions when nick ends in . (dot)
+* fixed not asking for permissions after direct share
+* fixed CVE-2018-18467
+* implement message deletion (PAM)
+* bug fixes
 
-### Version 2.3.0
-* Preview and ask for confirmation before sending media files
-* View per conversation media files in contact and conference details screens
-* Enable foreground service by default for Android 8 (notification can be disabled by long pressing it)
-* Audio player: disable screen and switch to ear piece
-* Support TLSv1.3 (ejabberd ≤ 18.06 is incompatible with openssl 1.1.1 - Update ejabberd or downgrade openssl if you get ›Stream opening error‹)
+#### Version 2.1.2
+* fix crash with updater
 
+#### Version 2.1.1
+* make quick actions/attachment choice configurable (PAM)
+* add a hideable separate quick button for voice messages (PAM)
+* switch between speaker/earpiece while playing audios/voice messages
+* store bookmarks in PEP if server has ability to convert to old bookmarks
+* show Jabber IDs from address book in address book
+* preview and ask for confirmation before sending media files
+* view per conversation media files in contact and conference details screens
+* enable foreground service by default for Android 8 (notification can be disabled by long pressing it)
+* reworked MediaViewer (PAM)
+* support TLSv1.3 (ejabberd ≤ 18.06 is incompatible with openssl 1.1.1 - Update ejabberd or downgrade openssl if you get ›Stream opening error‹)
+* add push messages for playstore versions
+* bug fixes
 
-### Version 2.2.9
-* Store bookmarks in PEP if server has ability to convert to old bookmarks
-* Show Jabber IDs from address book in Start Conversation screen
+#### Version 2.1.0
+* use group chat name as primary identifier
+* upload group chat avatar on compatible servers
+* show group name and subject in group chat details
+* UI improvements
+* introduce Expert Setting to enable direct search
+* introduce Paste As Quote on Android 6+
+* attempt to delete broken bundles from PEP
+* offer Paste as quote for HTML content
+* use SNI on STARTTLS to fix gtalk
+* use Consistent Color Generation (XEP-0392)
+* bug fixes
 
-### Version 2.2.8
-* fixed regression that broke XMPP uris
+#### Version 2.0.2
+* bug fixes especially for Android 4
 
-### Version 2.2.7
-* stability improvements
-
-### Version 2.2.6
-* support old MAM version to work with Prosody
-
-### Version 2.2.5
-* Persist MUC avatar across restarts / show in bookmarks
-* Offer Paste as quote for HTML content
-
-### Version 2.2.4
-* Use group chat name as primary identifier
-* Show group name and subject in group chat details
-* Upload group chat avatar on compatible servers
-
-### Version 2.2.3
-* Introduce Expert Setting to enable direct search
-* Introduce Paste As Quote on Android 6+
-* Fixed issues with HTTP Upload
-
-### Version 2.2.2
-* Fixed connection problems with TLS1.3 servers
-* Attempt to delete broken bundles from PEP
-* Use FCM instead of GCM
-
-### Version 2.2.1
+#### Version 2.0.1
 * improved recording quality
-* load map tiles over Tor if enabled 
+* let the user select a public server for account creation (PAM)
+* add possibility to de-/activate accounts in multi account mode
+* bug fixes 
 
-### Version 2.2.0
-* Integrate Voice Recorder
-* Integrate Share Location
-* Added ability to search messages
+#### Version 2.0.0
+* highlight irregular unicode code blocks in Jabber IDs
+* integrate QR code scanner (requires camera permission)
+* removed support for customizable resources
+* reworked message search
+* added splash screen at startup
+* integrate dark theme
+* keep OTR, but without further development and support, just for compatibility (PAM)
+* added configurable font size
+* added global OMEMO preference
+* added scroll to bottom button
+* added contact button as android widget
+* only mark visible messages as read
+* a lot of bug fixes
 
-### Version 2.1.4
+#### Version 1.22.1
+* show extended/TOR connection options in expert settings
 * bug fixes
 
-### Version 2.1.3
-* Do not process stanzas with invalid JIDs
+#### Version 1.22.0
+* integrated expert option to enable multiple account (PAM)
+* some UI improvements
+* improved MAM support
+* bug fixes 
 
-### Version 2.1.2
-* Fixed avatars not being displayed on new installs
-
-### Version 2.1.1
-* Improved start up performance
+#### Version 1.21.3
+* small self messages improvement
+* small notification improvement
 * bug fixes
 
-### Version 2.1.0
-* Added configurable font size
-* Added global OMEMO preference
-* Added scroll to bottom button
-* Only mark visible messages as read
-
-
-### Version 2.0.0
-* OMEMO by default for everything but public group chats
-* Integrate QR code scanner (requires camera permission)
-* Removed support for OTR
-* Removed support for customizable resources
-* Removed slide out panel for conversation overview
-* Add ability to change status message
-* Highlight irregular unicode code blocks in Jabber IDs
-* Conversations now requires Android 4.4+
-
-### Version 1.23.8
+#### Version 1.21.2
 * bug fixes
 
-### Version 1.23.7
-* Improved MAM support + bug fixes
-
-### Version 1.23.6
-* Fixed crash on receiving invalid HTTP slot response
-
-### Version 1.23.5
-* improved self chat
-
-### Version 1.23.4
-* keep screen on while playing audio
-* send delivery receipts after MAM catch-up
+#### Version 1.21.1
+* don't use integrated updater if Messenger is installed from F-Droid (PAM)
+* check if app installs from unknown sources are allowed, if not open settings to allow this (PAM)
+* show hint in chatview if private message is activated (PAM)
+* send delivery receipts after MAM catchup
 * reduce number of wake locks
+* add possibility to destroy group chats (PAM)
+* show progress dialog while downloading update with internal updater (PAM)
+* implemented message search (PAM)
+* improved self chat
+* bug fixes
 
-### Version 1.23.3
-* Fixed OMEMO device list not being announced
+#### Version 1.21.0
+* replaced google maps location service with open street map services via leaflet (PAM)
+* let screen on while playing audio files (PAM)
+* add Turkish translations
+* bug fixes
 
-### Version 1.23.2
-* Removed NFC support
-* upload Avatars as JPEG
-* reduce APK size
-
-### Version 1.23.1
-* Show icon instead of image preview in conversation overview
+#### Version 1.20.3
+* show icon instead of image preview in conversation overview
 * fixed loop when trying to decrypt with YubiKey
+* Removed NFC support
+* Fixed OMEMO device list no being announced
+* bug fixes
 
-### Version 1.23.0
-* Support for read markers in private, non-anonymous group chats
+#### Version 1.20.2
+* bug fixes
 
-### Version 1.22.1
-* Disable swipe to left to end conversation
-* Fixed 'No permission to access …' when opening files shared from the SD card
-* Always open URLs in new tab
+#### Version 1.20.1
+* bug fixes
 
-### Version 1.22.0
-* Text markup *bold*, _italic_,`monospace` and ~strikethrough~
-* Use same emoji style on all Android versions
-* Display emojis slightly larger within continuous text
+#### Version 1.20.0
+* reworked AppUpdater and show a notification if there is an update available (PAM)
+* some UI and performance improvements
+* add french and spanish translations
+* text markup *bold*, _italic_,`monospace` and ~strikethrough~
+* fixed 'No permission to access …' when opening files shared from the SD card
+* always open URLs in new tab
+* bring back quick share (default off) and return to previous app after sharing
+* send and show read markers in private, non-anonymous groups
+* warn if chat is unencrypted and switch to OMEMO if available after pressing OK (warning can be disabled in settings) (PAM)
+* support sending and receiving opus file
+* bug fixes
 
-### Version 1.21.0
-* Inline player for audio messages
-* Stronger compression for long videos
-* Long press the 'add back' button to show block menu
 
-### Version 1.20.1
+#### Version 1.19.2
+* reworked inline player for audio messages
+* long press the 'add back' button to show block menu
+* foregroundservice can be switched off 
+* bug fixes
+
+#### Version 1.19.1
 * fixed OTR encrypted file transfer
-
-### Version 1.20.0
-* presence subscription no longer required for OMEMO on compatible servers
-* display emoji-only messages slightly larger
-
-### Version 1.19.5
-* fixed connection loop on Android <4.4
-
-### Version 1.19.4
-* work around for OpensFire’s self signed certs
-* use VPN’s DNS servers first
-
-### Version 1.19.3
-* Do not create foreground service when all accounts are disabled
 * bug fixes
 
-### Version 1.19.2
-* bug fixes
-
-### Version 1.19.1
-* Made DNSSEC hostname validation opt-in
-
-### Version 1.19.0
+#### Version 1.19.0
 * Added 'App Shortcuts' to quickly access frequent contacts
 * Use DNSSEC to verify hostname instead of domain in certificate
 * Setting to enable Heads-up notifications
-* Added date separators in message view
+* Made DNSSEC hostname validation opt-in
+* work around for OpensFire's self signed certs
+* use VPN's DNS servers first
+* fixed connection loop on Android < 4.4
+* presence subscription no longer required for OMEMO on compatible servers
+* bug fixes
 
-### Version 1.18.5
+
+#### Version 1.18.2
 * colorize send button only after history is caught up
 * improved MAM catchup strategy
+* bug fixes
 
-### Version 1.18.4
+#### Version 1.18.1
+* limited GPG encryption for MUC offline members
+* show extended connection settings for open version in export settings
+* fixed landscape layout problems for tablets
 * fixed UI freezes during connection timeout
 * fixed notification sound playing twice
 * fixed conversations being marked as read
 * removed 'copy text' in favor of 'select text' and 'share with'
+* bug fixes
 
-### Version 1.18.3
-* limited GPG encryption for MUC offline members
-
-### Version 1.18.2
+#### Version 1.18.0
+* enable OTR and OpenPGP again
+* fix bug with updater on devices < SDK 21 (PAM)
+* Show colored contact names for their presence status (via settings)
+* treat URL as file if URL is in oob or contains key
 * added support for Android Auto
 * fixed HTTP Download over Tor
 * work around for nimbuzz.com MUCs
-
-### Version 1.18.1
 * bug fixes
 
-### Version 1.18.0
-* Conversations <1.16.0 will be unable to receive OMEMO encrypted messages
-* OMEMO: put auth tag into key (verify auth tag as well)
-* offer to block entire domain in message from stranger snackbar 
-* treat URL as file if URL is in oob or contains key
-
-### Version 1.17.1
+#### Version 1.17.1
+* grey out offline contacts in StartConversation (PAM)
+* change emoji library which supports newer emojis
+* change avatar images to circles
 * Switch Aztec to QR for faster scans
-* Fixed unread counter for image messages
+* make automatic fullscreen media rotation configurable (PAM)
+* open version can use tor networks
+* make image compression configurable (PAM)
+* show read/received markers in chatlist (PAM)
+* OMEMO: put auth tag into key (verify auth tag as well)
+* offer to block entire domain in message from stanger snackbar
+* bug fixes
 
-### Version 1.17.0
-* Do not notify for messages from strangers by default
-* Blocking a JID closes the corresponding conversation
-* Show message sender in conversation overview
-* Show unread counter for every conversation
-* Send typing notifications in private, non-anonymous MUCs
+#### Version 1.17.0
+* add date bubbles in chat view (PAM)
+* show last used resource in contact details
+* make brightness overwrite in image/video viewer configurable (PAM)
+* make video resolution configurable (PAM)
+* do not notify for messages from strangers by default
+* blocking a JID closes the corresponding conversation
+* show message sender in conversation overview
 * Support for the latest MAM namespace
 * Icons for attach menu
-
-### Version 1.16.2
-* change mam catchup strategie. support mam:1
+* send typing notifications in private, non-anonymous MUCs
+* change media directory names (PAM)
 * bug fixes
 
+#### Version 1.16.5
+* show read marker in whisper messages
+* bug fixes 
 
-### Version 1.16.1
+#### Version 1.16.4
+* show failed file uploads in chatlist (PAM)
+* resend failed file uploads automatically (PAM)
+* preview files in chatlist
+* move (un)mute settings to contact-/conference details
 * UI performance fixes
 * bug fixes
 
-### Version 1.16.0
-* configurable client side message retention period
-* compress videos before sending them
-
-### Version 1.15.5
-* show nick as bold text when mentioned in conference
+#### Version 1.16.3
+* don't use jingle as fallback if file is too big
 * bug fixes
 
-### Version 1.15.4
+#### Version 1.16.2
+* show app name and version from shared apk files
+* add ability to compress videos with 720p and not only bigger ones
+
+#### Version 1.16.1
 * bug fixes
 
-### Version 1.15.3
-* show offline contacts in MUC as grayed-out
-* don't transcode gifs. add overlay indication to gifs
+#### Version 1.16.0
+* show unread messages in chatlist (PAM)
+* increase image size to 4k UHD (PAM)
+* add support for GIF files
+* reworked video compression (PAM)
+* reworked app updater
 * bug fixes
 
-### Version 1.15.2
-* bug fixes
-
-### Version 1.15.1
+#### Version 1.15.4
+* improve video compression quality (PAM)
 * support for POSH (RFC7711)
 * support for quoting messages (via select text)
-* verified messages show shield icon. unverified messages show lock
-
-### Version 1.15.0
-* New [Blind Trust Before Verification](https://gultsch.de/trust.html) mode
-* Easily share Barcode and XMPP uri from Account details
-* Automatically deactivate own devices after 7 day of inactivity
-* Improvements fo doze/push mode
+* verified messages show shield icon; unverified messages show lock
 * bug fixes
 
-### Version 1.14.9
-* warn in account details when data saver is enabled
-* automatically enable foreground service after detecting frequent restarts
+#### Version 1.15.3
+* new [Blind Trust Before Verification](https://gultsch.de/trust.html) mode
+* easily share Barcode and XMPP uri from Account details
 * bug fixes
 
-### Version 1.14.8
+#### Version 1.15.2
+* automatically remove old OMEMO devices after 7 days
 * bug fixes
 
-### Version 1.14.7
+#### Version 1.15.1
+* introduces preference option to choose if videos should be compressed (always, automatically, never)
+* bug fixes
+
+#### Version 1.15.0
+* make OMEMO working with other clients
+* make OMEMO encryption standard for 1:1 chats as default
+* start navigation app directly from show location activity (PAM)
+* show map preview on shared locations (PAM)
+* show contacts name on shared VCARDs (PAM)
+* send text directly via ShareWithActivity
+* bug fixes 
+
+#### Version 1.14.5
 * error message accessible via context menu for failed messages
 * don't include pgp signature in anonymous mucs
 * bug fixes
 
-### Version 1.14.6
+#### Version 1.14.4
 * make error notification dismissable
 * bug fixes
 
-
-### Version 1.14.5
-* expert setting to delete OMEMO identities
-* bug fixes
-
-### Version 1.14.4
-* bug fixes
-
-### Version 1.14.3
+#### Version 1.14.3
+* set different auto-download-sizes for mobile, roaming and WiFi connections (PAM)
+* add ability to report errors and bugs directly from menu (PAM)
 * XEP-0377: Spam Reporting
 * fix rare start up crashes
+* bug fixes
 
-### Version 1.14.2
+#### Version 1.14.2
 * support ANONYMOUS SASL
+* add custom Emojis
+* scroll long actionbar titles
+* some performance improvements
+* some video compression improvements (PAM)
 * bug fixes
 
-### Version 1.14.1
-* Press lock icon to see why OMEMO is deactivated
+#### Version 1.14.1
+* fix crash on taking photos directly within the app
+
+#### Version 1.14.0
+* compress videos > 5 MB before sending
+* improvments for Android N
+* quick reply to notifications on Android N
+* don't download avatars and files when data saver is on
 * bug fixes
 
-### Version 1.14.0
-* Improvments for N
-* Quick Reply to Notifications on N
-* Don't download avatars and files when data saver is on
+#### Version 1.13.9
+* add icons for files in chat view
+* reworked backup service to automatically backup database encrypted to local storage at 4 am each day (PAM)
+* make human readable log export optional (PAM)
 * bug fixes
 
-### Version 1.13.9
+#### Version 1.13.8
 * bug fixes
 
-### Version 1.13.8
-* show identities instead of resources in selection dialog
-* allow TLS direct connect when port is set to 5223
+#### Version 1.13.7
+* improved video thumbnails in chatlist
 * bug fixes
 
-### Version 1.13.7
-* bug fixes
-
-### Version 1.13.6
-* thumbnails for videos
-* bug fixes
-
-### Version 1.13.5
-* bug fixes
-
-### Version 1.13.4
+#### Version 1.13.6
+* share image/video directly from fullscreen view (PAM)
+* show online status in foreground service
 * support jingle ft:4
 * show contact as DND if one resource is
 * bug fixes
 
-### Version 1.13.3
+#### Version 1.13.5
+* add image preview before sending single images directly (PAM)
+* add vibrate notification when app is open (PAM)
+* hide actionbar in fullscreen image/video view (PAM)
 * bug fixes
 
-### Version 1.13.2
+#### Version 1.13.4
 * new PGP decryption logic
 * bug fixes
 
-### Version 1.13.1
-* changed some colors in dark theme
-* fixed fall-back message for OMEMO
-
-### Version 1.13.0
-* configurable dark theme
-* opt-in to share Last User Interaction
-
-### Version 1.12.9
-* make grace period configurable
-
-### Version 1.12.8
-* more bug fixes :-(
-
-### Version 1.12.7
+#### Version 1.13.3
+* new permission check and request at startup (PAM)
 * bug fixes
 
-### Version 1.12.6
+#### Version 1.13.2
+* refactored lastseen info
 * bug fixes
 
-### Version 1.12.5
+#### Version 1.13.1
+* bug fixes
+
+#### Version 1.13.0
+* changed applicationId (PAM)
+* play videos directly without touching play button (PAM)
+* add database importer from local storage as backup (PAM)
+* changed files directories and names (PAM)
+* bug fixes
+
+#### Version 1.12.6
+* bug fixes
+* add database exporter to local storage as backup (PAM)
+
+#### Version 1.12.5
+* bug fixes
+
+#### Version 1.12.4
 * new create conference dialog
 * show first unread message on top
 * show geo uri as links
 * circumvent long message DOS
+* integrate simple videoplayer and image viewer (PAM)
 
-### Version 1.12.4
-* show offline members in conference (needs server support)
+#### Version 1.12.3
+* show offline members in conferences
 * various bug fixes
 
-### Version 1.12.3
+#### Version 1.12.2
 * make omemo default when all resources support it
 * show presence of other resources as template
 * start typing in StartConversationsActivity to search
+* show addresses in locations (PAM)
+* show video previews in chats
 * various bug fixes and improvements
-
-### Version 1.12.2
 * fixed pgp presence signing
 
-### Version 1.12.1
+#### Version 1.12.1
+* expert setting to modify presence
+* added simple audio player (PAM)
+* added audio recorder (PAM)
+* added location services (PAM)
+* changed theme color from green to blue (PAM)
 * small bug fixes
 
-### Version 1.12.0
-* new welcome screen that makes it easier to register account
-* expert setting to modify presence
+#### Version 1.12.0
+* added welcome screen for first start
+* use IP/Port instead of query DNS to improve connection performance
+* UI improvements
+* bug fixes
 
-### Version 1.11.7
+#### Version 1.11.7
 * Share xmpp uri from conference details
 * add setting to allow quick sharing
+* use material design icons for android < lollipop
+* make foreground service always activated (PAM)
+* disable account deactivation
+* UI improvements
 * various bug fixes
 
-### Version 1.11.6
+#### Version 1.11.6
 * added preference to disable notification light
 * various bug fixes
 
-### Version 1.11.5
+#### Version 1.11.5
 * check file ownership to not accidentally share private files
 
-### Version 1.11.4
+#### Version 1.11.4
 * fixed a bug where contacts are shown as offline
 * improved broken PEP detection
-
-### Version 1.11.3
 * check maximum file size when using HTTP Upload
 * properly calculate caps hash
+* some UI improvements
 
-### Version 1.11.2
+#### Version 1.11.3
 * only add image files to media scanner
 * allow to delete files
 * various bug fixes
 
-### Version 1.11.1
+#### Version 1.11.2
+* added voice recorder to plugins
+* bug fixes
+
+#### Version 1.11.1
 * fixed some bugs when sharing files with Conversations
 
-### Version 1.11.0
+#### Version 1.11.0
 * OMEMO encrypted conferences
+* resend failed filetransfers automatically
+* Support for XEP-0357: Push Notifications
+* disable support for only one account
 
-### Version 1.10.1
-* made message correction opt-in
+#### Version 1.10.1
+* support only one account
 * various bug fixes
 
-### Version 1.10.0
-* Support for XEP-0357: Push Notifications
+#### Version 1.10.0
 * Support for XEP-0308: Last Message Correction
-* introduced build flavors to make dependence on play-services optional
 
-### Version 1.9.4
+#### Version 1.9.4
 * prevent cleared Conversations from reloading history with MAM
 * various MAM fixes
 
-### Version 1.9.3
+#### Version 1.9.3
 * expert setting that enables host and port configuration
 * expert setting opt-out of bookmark autojoin handling
 * offer to rejoin a conference after server sent unavailable
-* internal rewrites
+* internal rewrites and optimizations
 
-### Version 1.9.2
+#### Version 1.9.2
 * prevent startup crash on Sailfish OS
 * minor bug fixes
+* removed contact-/conferece-details button (PAM)
+* touch contact name or conference name in action bar opens contact-/conference-details (PAM)
 
-### Version 1.9.1
+#### Version 1.9.1
 * minor bug fixes incl. a workaround for nimbuzz.com
 
-### Version 1.9.0
+#### Version 1.9.0
 * Per conference notification settings
 * Let user decide whether to compress pictures
 * Support for XEP-0368
 * Ask user to exclude Conversations from battery optimizations
 
-### Version 1.8.4
+#### Version 1.8.4
 * prompt to trust own OMEMO devices
 * fixed rotation issues in avatar publication
 * invite non-contact JIDs to conferences
 
-### Version 1.8.3
+#### Version 1.8.3
 * brought text selection back
+* hide settings, manage accounts and updater in all menus except in the main activity
+* bug fixes
 
-### Version 1.8.2
+#### Version 1.8.2
 * fixed stuck at 'connecting...' bug
 * make message box behave correctly with multiple links
+* bug fixes
 
-### Version 1.8.1
+#### Version 1.8.1
 * enabled direct share on Android 6.0
 * ask for permissions on Android 6.0
 * notify on MAM catchup messages
 * bug fixes
 
-### Version 1.8.0
+#### Version 1.8.0
 * TOR/ORBOT support in advanced settings
 * show vcard avatars of participants in a conference
-
-### Version 1.7.3
+* Own contact picture in tile for conferences with only one other occupant
+* added button to updater dialog to show full changelog
+* added plugin loader to settings
 * fixed PGP encrypted file transfer
-* fixed repeating messages in slack conferences
+* bug fixes
 
-### Version 1.7.2
-* decode PGP messages in background
+#### Versrion 1.7.3
+* changed app name from Conversations to Pix-Art Messenger (PAM)
+* changed chat background to light yellow
+* added own name for sent locations (PAM)
 
-### Version 1.7.1
+#### Version 1.7.2
+* let users crop their avatars
+* bug fixes
+
+#### Versrion 1.7.1
 * performance improvements when opening a conversation
+* bug fixes
 
-### Version 1.7.0
+#### Version 1.7.0
+* redownload deleted files from HTTP hosts
+* bug fixes
+* show lastseen info as subitle in single chats
+
+#### Version 1.6.13
+* bugfixes
+* fetching MUC history via MAM
+* Expert setting to automatically set presence
+* show client-to-client encryption in chatview
+* added changelog to AppUpdater dialog
+* delete old version files in download folder on updating
+* use standard namespace for file transfers
 * CAPTCHA support
 * SASL EXTERNAL (client certifiates)
-* fetching MUC history via MAM
-* redownload deleted files from HTTP hosts
-* Expert setting to automatically set presence
-* bug fixes
 
-### Version 1.6.11
+#### Version 1.6.12
+* added blue tick as read indicator
 * tab completion for MUC nicks
-* history export
+* history export to SD card
 * bug fixes
 
-### Version 1.6.10
+#### Version 1.6.11
+* optimized app updater and increased app update check period to once a day
+
+#### Version 1.6.10
 * fixed facebook login
 * fixed bug with ejabberd mam
-* use official HTTP File Upload namespace
+* run app updater automatically
 
-### Version 1.6.9
+#### Version 1.6.9
 * basic keyboard support
+* bug fixes
+* update checker with in app version updates
 
-### Version 1.6.8
+#### Version 1.6.8
 * reworked 'enter is send' setting
 * reworked DNS server discovery on lolipop devices
 * various bug fixes
 
-### Version 1.6.7
+#### Version 1.6.7
 * bug fixes
 
-### Version 1.6.6
+#### Version 1.6.6
 * best 1.6 release yet
 
-### Version 1.6.5
+#### Version 1.6.5
 * more OMEMO fixes
 
-### Version 1.6.4
+#### Version 1.6.4
 * setting to enable white chat bubbles
 * limit OMEMO key publish attempts to work around broken PEP
 * various bug fixes
 
-### Version 1.6.3
+#### Version 1.6.3
 * bug fixes
 
-### Version 1.6.2
+#### Version 1.6.2
 * fixed issues with connection time out when server does not support ping
 
-### Version 1.6.1
+#### Version 1.6.1
 * fixed crashes
 
-### Version 1.6.0
+#### Version 1.6.0
 * new multi-end-to-multi-end encryption method
-* redesigned chat bubbles
 * show unexpected encryption changes as red chat bubbles
 * always notify in private/non-anonymous conferences
+* some bugfixes
+* hard coded pix-art.de as standard server
 
-### Version 1.5.1
+#### Version 1.5.2
+* added new message bubbles
+* added subtitles to chatviews in ActionBar to display typing info in single chats and participant names in conferences
+* some bug fixes
+
+#### Version 1.5.1
 * fixed rare crashes
 * improved otr support
+* moved typing info to ActionBar
 
-### Version 1.5.0
-* upload files to HTTP host and share them in MUCs. requires new [HttpUploadComponent](https://github.com/siacs/HttpUploadComponent) on server side
+#### Version 1.5.0
+* new file transfer mode to offline contacts and conferences for files smaller than 20 MB: upload files to HTTP host and share them in MUCs. requires new [HttpUploadComponent](https://github.com/siacs/HttpUploadComponent) on server side
+* default image format is JPEG
+* small layout modifications with bigger avatars
+* show contacts name in locations shared in conferences
 
-### Version 1.4.5
+#### Version 1.4.5
 * fixes to message parser to not display some ejabberd muc status messages
 
-### Version 1.4.4
+#### Version 1.4.4
 * added unread count badges on supported devices
 * rewrote message parser
 
-### Version 1.4.0
+#### Version 1.4.0
 * send button turns into quick action button to offer faster access to take photo, send location or record audio
 * visually separate merged messages
 * faster reconnects of failed accounts after network switches 
 * r/o vcard avatars for contacts
 * various bug fixes
 
-### Version 1.3.0
+#### Version 1.3.0
 * swipe conversations to end them
 * quickly enable / disable account via slider
 * share multiple images at once
@@ -699,32 +741,32 @@
 * mlink compatibility
 * bug fixes
 
-### Version 1.2.0
+#### Version 1.2.0
 * Send current location. (requires [plugin](https://play.google.com/store/apps/details?id=eu.siacs.conversations.sharelocation))
 * Invite multiple contacts at once
 * performance improvements
 * bug fixes
 
-### Version 1.1.0
+#### Version 1.1.0
 * Typing notifications (must be turned on in settings)
 * Various UI performance improvements
 * bug fixes
 
-### Version 1.0.4
+#### Version 1.0.4
 * load avatars asynchronously on start up
 * support for XEP-0092: Software Version
 
-### Version 1.0.3
+#### Version 1.0.3
 * load messages asynchronously on start up
 * bug fixes
 
-### Version 1.0.2
+#### Version 1.0.2
 * skipped
 
-### Version 1.0.1
+#### Version 1.0.1
 * accept more ciphers
 
-### Version 1.0
+#### Version 1.0
 * MUC controls (Affiliaton changes)
 * Added download button to notification
 * Added check box to hide offline contacts
@@ -732,7 +774,7 @@
 * Improved security
 * bug fixes + code clean up
 
-### Version 0.10
+#### Version 0.10
 * Support for Message Archive Management
 * Dynamically load message history
 * Ability to block contacts
@@ -742,16 +784,16 @@
 * quiet hours
 * fixed connection issues on ipv6 servers
 
-### Version 0.9.3
+#### Version 0.9.3
 * bug fixes
 
-### Version 0.9.2
+#### Version 0.9.2
 * more bug fixes
 
-### Version 0.9.1
+#### Version 0.9.1
 * bug fixes including some that caused Conversations to crash on start
 
-### Version 0.9
+#### Version 0.9
 * arbitrary file transfer
 * more options to verify OTR (SMP, QR Codes, NFC)
 * ability to create instant conferences
@@ -760,44 +802,44 @@
 * added SCRAM-SHA1 login method
 * bug fixes
 
-### Version 0.8.4
+#### Version 0.8.4
 * bug fixes
 
-### Version 0.8.3
+#### Version 0.8.3
 * increased UI performance
 * fixed rotation bugs
 
-### Version 0.8.2
+#### Version 0.8.2
 * Share contacts via QR codes or NFC
 * Slightly improved UI
 * minor bug fixes
 
-### Version 0.8.1
+#### Version 0.8.1
 * minor bug fixes
 
-### Version 0.8
+#### Version 0.8
 * Download HTTP images
 * Show avatars in MUC tiles
 * Disabled SSLv3
 * Performance improvements
 * bug fixes
 
-### Version 0.7.3
+#### Version 0.7.3
 * revised tablet ui
 * internal rewrites
 * bug fixes
 
-### Version 0.7.2
+#### Version 0.7.2
 * show full timestamp in messages
 * brought back option to use JID to identify conferences
 * optionally request delivery receipts (expert option)
 * more languages
 * bug fixes
 
-### Version 0.7.1
+#### Version 0.7.1
 * Optionally use send button as status indicator
 
-### Version 0.7
+#### Version 0.7
 * Ability to disable notifications for single conversations
 * Merge messages in chat bubbles
 * Fixes for OpenPGP and OTR (please republish your public key)
@@ -806,26 +848,26 @@
 * Configurable font size
 * Expert options for encryption
 
-### Version 0.6
+#### Version 0.6
 * Support for server side avatars
 * save images in gallery
 * show contact name and picture in non-anonymous conferences
 * reworked account creation
 * various bug fixes
 
-### Version 0.5.2
+#### Version 0.5.2
 * minor bug fixes
 
-### Version 0.5.1
+#### Version 0.5.1
 * couple of small bug fixes that have been missed in 0.5
 * complete translations for Swedish, Dutch, German, Spanish, French, Russian
 
-### Version 0.5
+#### Version 0.5
 * UI overhaul
 * MUC / Conference bookmarks
 * A lot of bug fixes
 
-### Version 0.4
+#### Version 0.4
 * OTR file encryption
 * keep OTR messages and files on device until both parties or online at the same time
 * XEP-0333. Mark whether the other party has read your messages
@@ -834,7 +876,7 @@
 * Infinit history scrolling
 * Mark the last used presence in presence selection dialog
 
-### Version 0.3
+#### Version 0.3
 * Mostly bug fixes and internal rewrites
 * Touch contact picture in conference to highlight
 * Long press on received image to share
@@ -842,27 +884,27 @@
 * improved issues with occasional message lost
 * experimental conference encryption. (see FAQ)
 
-### Version 0.2.3
+#### Version 0.2.3
 * regression fix with receiving encrypted images
 
-### Version 0.2.2
+#### Version 0.2.2
 * Ability to take photos directly
 * Improved openPGP offline handling
 * Various bug fixes
 * Updated Translations
 
-### Version 0.2.1
+#### Version 0.2.1
 * Various bug fixes
 * Updated Translations
 
-### Version 0.2
+#### Version 0.2
 * Image file transfer
 * Better integration with OpenKeychain (PGP encryption)
 * Nicer conversation tiles for conferences
 * Ability to clear conversation history
 * A lot of bug fixes and code clean up
 
-### Version 0.1.3
+#### Version 0.1.3
 * Switched to minidns library to resolve SRV records
 * Faster DNS in some cases
 * Enabled stream compression
@@ -870,12 +912,12 @@
 * Various bug fixes involving message notifications
 * Added support for DIGEST-MD5 auth
 
-### Version 0.1.2
+#### Version 0.1.2
 * Various bug fixes relating to conferences
 * Further DNS lookup improvements
 
-### Version 0.1.1
+#### Version 0.1.1
 * Fixed the 'server not found' bug
 
-### Version 0.1
+#### Version 0.1
 * Initial release

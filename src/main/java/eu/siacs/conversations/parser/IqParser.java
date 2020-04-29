@@ -1,10 +1,11 @@
 package eu.siacs.conversations.parser;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 import android.util.Pair;
+
+import androidx.annotation.NonNull;
 
 import org.whispersystems.libsignal.IdentityKey;
 import org.whispersystems.libsignal.ecc.Curve;
@@ -29,9 +30,8 @@ import eu.siacs.conversations.entities.Account;
 import eu.siacs.conversations.entities.Contact;
 import eu.siacs.conversations.entities.Conversation;
 import eu.siacs.conversations.entities.Room;
-import eu.siacs.conversations.services.ChannelDiscoveryService;
 import eu.siacs.conversations.services.XmppConnectionService;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xml.Element;
 import eu.siacs.conversations.xmpp.InvalidJid;
 import eu.siacs.conversations.xmpp.OnIqPacketReceived;
@@ -398,14 +398,13 @@ public class IqParser extends AbstractParser implements OnIqPacketReceived {
         }
     }
 
-
     public static List<Jid> items(IqPacket packet) {
         ArrayList<Jid> items = new ArrayList<>();
         final Element query = packet.findChild("query", Namespace.DISCO_ITEMS);
         if (query == null) {
             return items;
         }
-        for(Element child : query.getChildren()) {
+        for (Element child : query.getChildren()) {
             if ("item".equals(child.getName())) {
                 Jid jid = child.getAttributeAsJid("jid");
                 if (jid != null) {
@@ -418,7 +417,7 @@ public class IqParser extends AbstractParser implements OnIqPacketReceived {
 
     public static Room parseRoom(IqPacket packet) {
         final Element query = packet.findChild("query", Namespace.DISCO_INFO);
-        if(query == null) {
+        if (query == null) {
             return null;
         }
         final Element x = query.findChild("x");
@@ -429,7 +428,8 @@ public class IqParser extends AbstractParser implements OnIqPacketReceived {
         Data data = Data.parse(x);
         String address = packet.getFrom().toEscapedString();
         String name = identity == null ? null : identity.getAttribute("name");
-        String roomName = data.getValue("muc#roomconfig_roomname");;
+        String roomName = data.getValue("muc#roomconfig_roomname");
+        ;
         String description = data.getValue("muc#roominfo_description");
         String language = data.getValue("muc#roominfo_lang");
         String occupants = data.getValue("muc#roominfo_occupants");
@@ -448,5 +448,4 @@ public class IqParser extends AbstractParser implements OnIqPacketReceived {
                 nusers
         );
     }
-
 }

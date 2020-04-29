@@ -24,16 +24,16 @@
 
 package rocks.xmpp.addr;
 
-import rocks.xmpp.precis.PrecisProfile;
-import rocks.xmpp.precis.PrecisProfiles;
-import rocks.xmpp.util.cache.LruCache;
-
 import java.net.IDN;
 import java.nio.charset.Charset;
 import java.text.Normalizer;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import rocks.xmpp.precis.PrecisProfile;
+import rocks.xmpp.precis.PrecisProfiles;
+import rocks.xmpp.util.cache.LruCache;
 
 /**
  * The implementation of the JID as described in <a href="https://tools.ietf.org/html/rfc7622">Extensible Messaging and Presence Protocol (XMPP): Address Format</a>.

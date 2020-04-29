@@ -1,7 +1,5 @@
 package eu.siacs.conversations.services;
 
-import eu.siacs.conversations.BuildConfig;
-
 public abstract class AbstractQuickConversationsService {
 
     protected final XmppConnectionService service;
@@ -13,11 +11,11 @@ public abstract class AbstractQuickConversationsService {
     public abstract void considerSync();
 
     public static boolean isQuicksy() {
-        return "quicksy".equals(BuildConfig.FLAVOR_mode);
+        return true;
     }
 
     public static boolean isConversations() {
-        return "conversations".equals(BuildConfig.FLAVOR_mode);
+        return true;
     }
 
     public abstract void signalAccountStateChange();

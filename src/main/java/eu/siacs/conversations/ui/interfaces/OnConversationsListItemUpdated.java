@@ -30,5 +30,5 @@
 package eu.siacs.conversations.ui.interfaces;
 
 public interface OnConversationsListItemUpdated {
-	void onConversationsListItemUpdated();
+    void onConversationsListItemUpdated();
 }

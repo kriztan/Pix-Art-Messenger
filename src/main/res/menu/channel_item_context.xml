@@ -5,5 +5,5 @@
         android:title="@string/share_uri_with" />
     <item
         android:id="@+id/open_join_dialog"
-        android:title="@string/open_join_dialog"/>
+        android:title="@string/open_join_dialog" />
 </menu>

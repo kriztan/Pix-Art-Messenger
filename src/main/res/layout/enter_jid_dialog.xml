@@ -6,23 +6,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingStart="?attr/dialog_horizontal_padding"
         android:paddingLeft="?attr/dialog_horizontal_padding"
         android:paddingTop="?attr/dialog_vertical_padding"
+        android:paddingEnd="?attr/dialog_horizontal_padding"
         android:paddingRight="?attr/dialog_horizontal_padding"
         android:paddingBottom="?attr/dialog_vertical_padding">
 
         <TextView
+            android:id="@+id/your_account"
             style="@style/InputLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/your_account" />
+            android:text="@string/your_account"
+            android:visibility="gone" />
 
         <Spinner
             android:id="@+id/account"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/jid_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +41,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionDone|flagNoExtractUi"
-                android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+                android:inputType="textEmailAddress"
+                android:textColor="?attr/text_Color_Main" />
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 </layout>

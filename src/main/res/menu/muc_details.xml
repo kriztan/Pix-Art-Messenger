@@ -1,62 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_share"
-        android:icon="?attr/icon_share"
+        android:icon="@drawable/ic_share_white_24dp"
         android:orderInCategory="15"
-        app:showAsAction="always"
-        android:title="@string/share_uri_with">
+        android:title="@string/share_uri_with"
+        app:showAsAction="always">
         <menu>
             <item
                 android:id="@+id/action_share_uri"
-                android:title="@string/share_as_uri"/>
+                android:title="@string/share_as_uri" />
             <item
                 android:id="@+id/action_share_http"
-                android:title="@string/share_as_http"/>
+                android:title="@string/share_as_http" />
             <item
                 android:id="@+id/action_show_qr_code"
-                android:title="@string/show_qr_code"/>
+                android:title="@string/show_qr_code" />
         </menu>
     </item>
-
-    <item
-        android:id="@+id/action_save_as_bookmark"
-        android:orderInCategory="80"
-        app:showAsAction="never"
-        android:title="@string/save_as_bookmark"/>
-    <item
-        android:id="@+id/action_delete_bookmark"
-        android:orderInCategory="80"
-        app:showAsAction="never"
-        android:title="@string/delete_bookmark"/>
-    <item
-        android:id="@+id/action_destroy_room"
-        android:orderInCategory="82"
-        app:showAsAction="never"
-        android:title="@string/destroy_room"/>
     <item
         android:id="@+id/action_advanced_mode"
         android:checkable="true"
         android:checked="false"
         android:orderInCategory="85"
-        app:showAsAction="never"
-        android:title="@string/advanced_mode"/>
-    <item
-        android:id="@+id/action_accounts"
-        android:orderInCategory="90"
-        app:showAsAction="never"
-        android:title="@string/action_accounts"/>
-    <item
-        android:id="@+id/action_account"
-        android:orderInCategory="90"
-        android:title="@string/action_account"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        app:showAsAction="never"
-        android:title="@string/action_settings"/>
-
+        android:title="@string/advanced_mode"
+        app:showAsAction="never" />
 </menu>

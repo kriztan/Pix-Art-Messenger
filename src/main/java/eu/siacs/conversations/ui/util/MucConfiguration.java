@@ -2,7 +2,8 @@ package eu.siacs.conversations.ui.util;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.StringRes;
+
+import androidx.annotation.StringRes;
 
 import eu.siacs.conversations.R;
 import eu.siacs.conversations.entities.MucOptions;
@@ -107,9 +108,9 @@ public class MucConfiguration {
 
     public Bundle toBundle(boolean[] values) {
         Bundle bundle = new Bundle();
-        for(int i = 0; i < values.length; ++i) {
+        for (int i = 0; i < values.length; ++i) {
             final Option option = options[i];
-            bundle.putString(option.name,option.values[values[i] ? 0 : 1]);
+            bundle.putString(option.name, option.values[values[i] ? 0 : 1]);
         }
         return bundle;
     }
@@ -120,12 +121,12 @@ public class MucConfiguration {
 
         private Option(String name) {
             this.name = name;
-            this.values = new String[]{"1","0"};
+            this.values = new String[]{"1", "0"};
         }
 
         private Option(String name, String on, String off) {
             this.name = name;
-            this.values = new String[]{on,off};
+            this.values = new String[]{on, off};
         }
     }
 

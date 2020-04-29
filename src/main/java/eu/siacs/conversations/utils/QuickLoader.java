@@ -26,9 +26,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.utils;
-
 
 import java.util.List;
 
@@ -36,27 +34,26 @@ import eu.siacs.conversations.entities.Conversation;
 
 public class QuickLoader {
 
-	private static String CONVERSATION_UUID = null;
-	private static Object LOCK = new Object();
+    private static String CONVERSATION_UUID = null;
+    private static Object LOCK = new Object();
 
-	public static void set(final String uuid) {
-		synchronized (LOCK) {
-			CONVERSATION_UUID = uuid;
-		}
-	}
+    public static void set(final String uuid) {
+        synchronized (LOCK) {
+            CONVERSATION_UUID = uuid;
+        }
+    }
 
-	public static Conversation get(List<Conversation> haystack) {
-		synchronized (LOCK) {
-			if (CONVERSATION_UUID == null) {
-				return null;
-			}
-			for (Conversation conversation : haystack) {
-				if (conversation.getUuid().equals(CONVERSATION_UUID)) {
-					return conversation;
-				}
-			}
-		}
-		return null;
-	}
-
+    public static Conversation get(List<Conversation> haystack) {
+        synchronized (LOCK) {
+            if (CONVERSATION_UUID == null) {
+                return null;
+            }
+            for (Conversation conversation : haystack) {
+                if (conversation.getUuid().equals(CONVERSATION_UUID)) {
+                    return conversation;
+                }
+            }
+        }
+        return null;
+    }
 }

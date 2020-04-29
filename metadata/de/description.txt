@@ -1,0 +1,32 @@
+﻿Pix-Art Messenger ist ein Fork der offiziellen Android-App <a href="https://f-droid.org/packages/eu.siacs.conversations/">Conversations</a> mit
+einigen Änderungen, insbesondere zur Verbesserung der Benutzerfreundlichkeit,
+um den Umstieg von oftmals vorinstallierten Messengern zu erleichtern.
+
+Verbindungssicherheit und der Schutz persönlicher Daten ist uns sehr wichtig,
+deshalb erzwingen wir verschlüsselte Verbindungen zwischen Messenger und Server,
+was es nahezu unmöglich macht, deine Nachrichten durch Fremde abzufangen und zu
+lesen.
+Wem das nicht genug ist, kann auf die integrierte Nachrichtenverschlüsselung von
+Ende-zu-Ende, wie OMEMO, OTR oder OpenPGP, zurückgreifen.
+Damit lassen sich Nachrichten auf dem Sendegerät verschlüsseln und nur durch das
+für den Empfang bestimmte Empfangsgerät entschlüsseln.
+Seit Version 1.20.0 wird ein Hinweis direkt im Chat angezeigt, sofern du
+unverschlüsselt schreibst und eine Verschlüsselung möglich ist.
+
+Features:
+* Ende-zu-Ende Verschlüsselung entweder mit <a href="http://conversations.im/omemo/">OMEMO</a>, <a href="https://otr.cypherpunks.ca/">OTR</a> oder <a href="http://openpgp.org/about/">OpenPGP</a>
+* Austausch von Bildern sowie anderen Dateien
+* Standorte senden und empfangen
+* Sprachnachrichten senden und empfangen
+* Integration von Profilbildern (Avatare) deiner Kontakte
+* Synchronisiere Nachrichtenverlauf mit anderen Clients
+* Konferenzen bzw. Gruppenchats
+* Adressbuchintegration (ein Austausch deines Adressbuches mit dem Server findet nicht statt)
+* sehr geringe Akku-Belastung
+* Status Nachrichten
+* tägliches Backup der Datenbank auf den lokalen Speicher
+
+Benötigst du Hilfe? Bitte tritt doch einfach dem Support Gruppenchat <a href="https://jabber.pix-art.de/j/support/room.pix-art.de">support@room.pix-art.de</a> bei.
+
+Anti-Features:
+* Tracking - Das Kartenvorschaubild wird von <a href="https://github.com/kriztan/staticmap">einem Skript</a> erzeugt, das OSM-Kartenkacheln auf dem Entwickler-Server lädt. Der Server protokolliert: Datum, Uhrzeit, GPS-Koordinaten, Zoomstufe und eine anonymisierte IP.

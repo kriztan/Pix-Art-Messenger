@@ -26,7 +26,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.entities;
 
 import android.database.Cursor;
@@ -38,86 +37,86 @@ import rocks.xmpp.addr.Jid;
 
 public class IndividualMessage extends Message {
 
+    private IndividualMessage(Conversational conversation) {
+        super(conversation);
+    }
 
-	private IndividualMessage(Conversational conversation) {
-		super(conversation);
-	}
+    private IndividualMessage(Conversational conversation, String uuid, String conversationUUid, Jid counterpart, Jid trueCounterpart, String body, long timeSent, int encryption, int status, int type, boolean carbon, String remoteMsgId, String relativeFilePath, String serverMsgId, String fingerprint, boolean read, boolean deleted, String edited, boolean oob, String errorMessage, Set<ReadByMarker> readByMarkers, boolean markable, boolean file_deleted, String bodyLanguage) {
+        super(conversation, uuid, conversationUUid, counterpart, trueCounterpart, body, timeSent, encryption, status, type, carbon, remoteMsgId, relativeFilePath, serverMsgId, fingerprint, read, deleted, edited, oob, errorMessage, readByMarkers, markable, file_deleted, bodyLanguage);
+    }
 
-	private IndividualMessage(Conversational conversation, String uuid, String conversationUUid, Jid counterpart, Jid trueCounterpart, String body, long timeSent, int encryption, int status, int type, boolean carbon, String remoteMsgId, String relativeFilePath, String serverMsgId, String fingerprint, boolean read, String edited, boolean oob, String errorMessage, Set<ReadByMarker> readByMarkers, boolean markable, boolean deleted, String bodyLanguage) {
-		super(conversation, uuid, conversationUUid, counterpart, trueCounterpart, body, timeSent, encryption, status, type, carbon, remoteMsgId, relativeFilePath, serverMsgId, fingerprint, read, edited, oob, errorMessage, readByMarkers, markable, deleted, bodyLanguage);
-	}
+    public static Message createDateSeparator(Message message) {
+        final Message separator = new IndividualMessage(message.getConversation());
+        separator.setType(Message.TYPE_STATUS);
+        separator.body = MessageAdapter.DATE_SEPARATOR_BODY;
+        separator.setTime(message.getTimeSent());
+        return separator;
+    }
 
-	@Override
-	public Message next() {
-		return null;
-	}
+    public static Message fromCursor(Cursor cursor, Conversational conversation) {
+        Jid jid;
+        try {
+            String value = cursor.getString(cursor.getColumnIndex(COUNTERPART));
+            if (value != null) {
+                jid = Jid.of(value);
+            } else {
+                jid = null;
+            }
+        } catch (IllegalArgumentException e) {
+            jid = null;
+        } catch (IllegalStateException e) {
+            return null; // message too long?
+        }
+        Jid trueCounterpart;
+        try {
+            String value = cursor.getString(cursor.getColumnIndex(TRUE_COUNTERPART));
+            if (value != null) {
+                trueCounterpart = Jid.of(value);
+            } else {
+                trueCounterpart = null;
+            }
+        } catch (IllegalArgumentException e) {
+            trueCounterpart = null;
+        }
+        return new IndividualMessage(conversation,
+                cursor.getString(cursor.getColumnIndex(UUID)),
+                cursor.getString(cursor.getColumnIndex(CONVERSATION)),
+                jid,
+                trueCounterpart,
+                cursor.getString(cursor.getColumnIndex(BODY)),
+                cursor.getLong(cursor.getColumnIndex(TIME_SENT)),
+                cursor.getInt(cursor.getColumnIndex(ENCRYPTION)),
+                cursor.getInt(cursor.getColumnIndex(STATUS)),
+                cursor.getInt(cursor.getColumnIndex(TYPE)),
+                cursor.getInt(cursor.getColumnIndex(CARBON)) > 0,
+                cursor.getString(cursor.getColumnIndex(REMOTE_MSG_ID)),
+                cursor.getString(cursor.getColumnIndex(RELATIVE_FILE_PATH)),
+                cursor.getString(cursor.getColumnIndex(SERVER_MSG_ID)),
+                cursor.getString(cursor.getColumnIndex(FINGERPRINT)),
+                cursor.getInt(cursor.getColumnIndex(READ)) > 0,
+                cursor.getInt(cursor.getColumnIndex(DELETED)) > 0,
+                cursor.getString(cursor.getColumnIndex(EDITED)),
+                cursor.getInt(cursor.getColumnIndex(OOB)) > 0,
+                cursor.getString(cursor.getColumnIndex(ERROR_MESSAGE)),
+                ReadByMarker.fromJsonString(cursor.getString(cursor.getColumnIndex(READ_BY_MARKERS))),
+                cursor.getInt(cursor.getColumnIndex(MARKABLE)) > 0,
+                cursor.getInt(cursor.getColumnIndex(FILE_DELETED)) > 0,
+                cursor.getString(cursor.getColumnIndex(BODY_LANGUAGE))
+        );
+    }
 
-	@Override
-	public Message prev() {
-		return null;
-	}
+    @Override
+    public Message next() {
+        return null;
+    }
 
-	@Override
-	public boolean isValidInSession() {
-		return true;
-	}
+    @Override
+    public Message prev() {
+        return null;
+    }
 
-	public static Message createDateSeparator(Message message) {
-		final Message separator = new IndividualMessage(message.getConversation());
-		separator.setType(Message.TYPE_STATUS);
-		separator.body = MessageAdapter.DATE_SEPARATOR_BODY;
-		separator.setTime(message.getTimeSent());
-		return separator;
-	}
-
-	public static Message fromCursor(Cursor cursor, Conversational conversation) {
-		Jid jid;
-		try {
-			String value = cursor.getString(cursor.getColumnIndex(COUNTERPART));
-			if (value != null) {
-				jid = Jid.of(value);
-			} else {
-				jid = null;
-			}
-		} catch (IllegalArgumentException e) {
-			jid = null;
-		} catch (IllegalStateException e) {
-			return null; // message too long?
-		}
-		Jid trueCounterpart;
-		try {
-			String value = cursor.getString(cursor.getColumnIndex(TRUE_COUNTERPART));
-			if (value != null) {
-				trueCounterpart = Jid.of(value);
-			} else {
-				trueCounterpart = null;
-			}
-		} catch (IllegalArgumentException e) {
-			trueCounterpart = null;
-		}
-		return new IndividualMessage(conversation,
-				cursor.getString(cursor.getColumnIndex(UUID)),
-				cursor.getString(cursor.getColumnIndex(CONVERSATION)),
-				jid,
-				trueCounterpart,
-				cursor.getString(cursor.getColumnIndex(BODY)),
-				cursor.getLong(cursor.getColumnIndex(TIME_SENT)),
-				cursor.getInt(cursor.getColumnIndex(ENCRYPTION)),
-				cursor.getInt(cursor.getColumnIndex(STATUS)),
-				cursor.getInt(cursor.getColumnIndex(TYPE)),
-				cursor.getInt(cursor.getColumnIndex(CARBON)) > 0,
-				cursor.getString(cursor.getColumnIndex(REMOTE_MSG_ID)),
-				cursor.getString(cursor.getColumnIndex(RELATIVE_FILE_PATH)),
-				cursor.getString(cursor.getColumnIndex(SERVER_MSG_ID)),
-				cursor.getString(cursor.getColumnIndex(FINGERPRINT)),
-				cursor.getInt(cursor.getColumnIndex(READ)) > 0,
-				cursor.getString(cursor.getColumnIndex(EDITED)),
-				cursor.getInt(cursor.getColumnIndex(OOB)) > 0,
-				cursor.getString(cursor.getColumnIndex(ERROR_MESSAGE)),
-				ReadByMarker.fromJsonString(cursor.getString(cursor.getColumnIndex(READ_BY_MARKERS))),
-				cursor.getInt(cursor.getColumnIndex(MARKABLE)) > 0,
-				cursor.getInt(cursor.getColumnIndex(DELETED)) > 0,
-				cursor.getString(cursor.getColumnIndex(BODY_LANGUAGE))
-		);
-	}
+    @Override
+    public boolean isValidInSession() {
+        return true;
+    }
 }

@@ -26,7 +26,6 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package eu.siacs.conversations.ui.widget;
 
 import android.view.ActionMode;
@@ -34,23 +33,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class DisabledActionModeCallback implements ActionMode.Callback {
-	@Override
-	public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-		return false;
-	}
+    @Override
+    public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+        return false;
+    }
 
-	@Override
-	public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-		return false;
-	}
+    @Override
+    public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+        return false;
+    }
 
-	@Override
-	public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-		return false;
-	}
+    @Override
+    public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+        return false;
+    }
 
-	@Override
-	public void onDestroyActionMode(ActionMode mode) {
+    @Override
+    public void onDestroyActionMode(ActionMode mode) {
 
-	}
+    }
 }

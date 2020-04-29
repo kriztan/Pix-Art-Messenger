@@ -39,19 +39,24 @@ public abstract class ConversationsFileObserver {
 
         while (!stack.empty()) {
             if (shouldStop.get()) {
-                Log.d(Config.LOGTAG,"file observer received command to stop");
+                Log.d(Config.LOGTAG, "file observer received command to stop");
                 return;
             }
             String parent = stack.pop();
-            mObservers.add(new SingleFileObserver(parent, FileObserver.DELETE| FileObserver.MOVED_FROM));
+            mObservers.add(new SingleFileObserver(parent, FileObserver.DELETE | FileObserver.MOVED_FROM));
             final File path = new File(parent);
-            final File[] files = path.listFiles();
+            File[] files = new File[0];
+            try {
+                files = path.listFiles();
+            } catch (OutOfMemoryError e) {
+                e.printStackTrace();
+            }
             if (files == null) {
                 continue;
             }
-            for(File file : files) {
+            for (File file : files) {
                 if (shouldStop.get()) {
-                    Log.d(Config.LOGTAG,"file observer received command to stop");
+                    Log.d(Config.LOGTAG, "file observer received command to stop");
                     return;
                 }
                 if (file.isDirectory() && file.getName().charAt(0) != '.') {
@@ -62,22 +67,22 @@ public abstract class ConversationsFileObserver {
                 }
             }
         }
-        for(FileObserver observer : mObservers) {
+        for (FileObserver observer : mObservers) {
             observer.startWatching();
         }
     }
 
     private static int depth(File file) {
         int depth = 0;
-        while((file = file.getParentFile()) != null) {
+        while ((file = file.getParentFile()) != null) {
             depth++;
         }
         return depth;
     }
 
     private boolean observing(String path) {
-        for(SingleFileObserver observer : mObservers) {
-            if(path.equals(observer.path)) {
+        for (SingleFileObserver observer : mObservers) {
+            if (path.equals(observer.path)) {
                 return true;
             }
         }
@@ -90,7 +95,7 @@ public abstract class ConversationsFileObserver {
     }
 
     private synchronized void stopWatchingInternal() {
-        for(FileObserver observer : mObservers) {
+        for (FileObserver observer : mObservers) {
             observer.stopWatching();
         }
         mObservers.clear();
@@ -114,10 +119,10 @@ public abstract class ConversationsFileObserver {
         @Override
         public void onEvent(int event, String filename) {
             if (filename == null) {
-                Log.d(Config.LOGTAG,"ignored file event with NULL filename (event="+event+")");
+                Log.d(Config.LOGTAG, "ignored file event with NULL filename (event=" + event + ")");
                 return;
             }
-            ConversationsFileObserver.this.onEvent(event, path+'/'+filename);
+            ConversationsFileObserver.this.onEvent(event, path + '/' + filename);
         }
 
     }

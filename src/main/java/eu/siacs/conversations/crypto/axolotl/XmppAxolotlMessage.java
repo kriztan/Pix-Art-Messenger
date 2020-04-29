@@ -2,7 +2,6 @@ package eu.siacs.conversations.crypto.axolotl;
 
 import android.util.Base64;
 import android.util.Log;
-import android.util.SparseArray;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -115,7 +114,8 @@ public class XmppAxolotlMessage {
             generator.init(128);
             return generator.generateKey().getEncoded();
         } catch (NoSuchAlgorithmException e) {
-            throw new IllegalStateException(e);
+            Log.e(Config.LOGTAG, e.getMessage());
+            return null;
         }
     }
 

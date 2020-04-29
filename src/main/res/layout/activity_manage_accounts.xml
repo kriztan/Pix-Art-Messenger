@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="?attr/color_background_primary"
+    android:background="?attr/color_background_tertiary"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar" />
@@ -12,7 +12,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="@android:color/transparent"
-        android:dividerHeight="0dp" >
-    </ListView>
+        android:dividerHeight="0dp" />
 
 </LinearLayout>

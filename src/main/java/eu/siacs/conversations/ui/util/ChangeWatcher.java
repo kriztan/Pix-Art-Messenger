@@ -31,20 +31,20 @@ package eu.siacs.conversations.ui.util;
 
 public class ChangeWatcher<T> {
 
-	private T object = null;
+    private T object = null;
 
-	public synchronized boolean watch(T object) {
-		if (this.object == null) {
-			this.object = object;
-			return object != null;
-		} else {
-			final boolean changed = !this.object.equals(object);
-			this.object = object;
-			return changed;
-		}
-	}
+    public synchronized boolean watch(T object) {
+        if (this.object == null) {
+            this.object = object;
+            return object != null;
+        } else {
+            final boolean changed = !this.object.equals(object);
+            this.object = object;
+            return changed;
+        }
+    }
 
-	public T get() {
-		return object;
-	}
+    public T get() {
+        return object;
+    }
 }
