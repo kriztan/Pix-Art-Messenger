@@ -1,5 +1,8 @@
 ### Changelog
 
+#### Version 2.4.0 (beta)
+* Audio/Video calls (Requires server support in form of STUN and TURN servers discoverable via XEP-0215)
+
 #### Version 2.3.7
 * bug fixes
 

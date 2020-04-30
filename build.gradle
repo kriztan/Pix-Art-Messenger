@@ -106,8 +106,8 @@ android {
         minSdkVersion 16
         targetSdkVersion 29
 
-        versionCode 299
-        versionName "2.3.8"
+        versionCode 300
+        versionName "2.4.0"
         versionNameSuffix " beta_(2020-04-30)" // " beta_(XXXX-XX-XX)" // activate for beta versions
         //resConfigs "en"
 
@@ -123,13 +123,6 @@ android {
         buildConfigField("String", "UPDATE_URL", '"https://xmpp.pix-art.de/Pix-Art_Messenger/update/"')
         resValue "string", "applicationId", applicationId
         resValue "string", "app_name", "Pix-Art Messenger"
-    }
-
-    splits {
-        abi {
-            universalApk true
-            enable true
-        }
     }
 
     dataBinding {
