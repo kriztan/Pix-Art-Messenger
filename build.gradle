@@ -108,12 +108,12 @@ android {
         targetSdkVersion 29
 
         versionCode 299
-        versionName "2.3.7"
-        //versionNameSuffix "beta_(2020-04-01)" // "-beta_(XXXX-XX-XX)" // activate for beta versions
+        versionName "2.3.8"
+        versionNameSuffix "beta_(2020-04-29)" // "-beta_(XXXX-XX-XX)" // activate for beta versions
         //resConfigs "en"
 
         archivesBaseName += "-$versionName"
-        //archivesBaseName += "-$versionNameSuffix"  // activate for beta versions
+        archivesBaseName += "-$versionNameSuffix"  // activate for beta versions
         applicationId "de.pixart.messenger"
         multiDexEnabled true
 
