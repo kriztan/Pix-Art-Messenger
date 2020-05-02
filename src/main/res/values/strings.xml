@@ -1038,9 +1038,11 @@
     <string name="rtp_state_connectivity_error">Unable to connect call</string>
     <string name="rtp_state_retracted">Retracted call</string>
     <string name="rtp_state_application_failure">Application failure</string>
-    <string name="incoming_call_duration">Incoming call · %s</string>
+    <string name="incoming_call_duration">%s · Incoming call · %s</string>
+    <string name="incoming_call_time">%s · Incoming call</string>
     <string name="incoming_call">Incoming call</string>
-    <string name="outgoing_call_duration">Outgoing call · %s</string>
+    <string name="outgoing_call_duration">%s · Outgoing call · %s</string>
+    <string name="outgoing_call_time">%s · Outgoing call</string>
     <string name="outgoing_call">Outgoing call</string>
     <string name="disable_tor_to_make_call">Disable Tor to make calls</string>
     <string name="only_one_call_at_a_time">You can only have one call at a time.</string>
