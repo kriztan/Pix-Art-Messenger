@@ -641,5 +641,5 @@
     <string name="channel_discovery_opt_in_title">إشعار الخصوصية</string>
     <string name="action_add_existing_account">إضافة حساب موجود</string>
     <string name="use_own_provider">استخدم مُزوّدك الخاص</string>
-    <string name="add_anway">أضفه على أية حال</string>
+    <string name="add_anyway">أضفه على أية حال</string>
 </resources>

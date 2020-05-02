@@ -924,7 +924,7 @@
     <string name="action_add_existing_account">Додати наявний обліковий запис</string>
     <string name="use_own_provider">Використати мого власного провайдера</string>
     <string name="this_looks_like_a_domain">Це схоже на ім\'я домену</string>
-    <string name="add_anway">Додати все одно</string>
+    <string name="add_anyway">Додати все одно</string>
     <string name="this_looks_like_channel">Це схоже на адресу каналу</string>
     <string name="no_backup_available">Відсутні резервні копії</string>
     <string name="pref_show_own_accounts_summary">Показувати власні облікові записи у чатах та контактах, якщо у вас кілька обліковок.</string>

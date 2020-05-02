@@ -883,6 +883,6 @@
     <string name="action_add_existing_account">Добави съществуващ профил</string>
     <string name="use_own_provider">Използвай собствен доставчик</string>
     <string name="this_looks_like_a_domain">Това изглежда като адрес на домейн</string>
-    <string name="add_anway">Все пак добави</string>
+    <string name="add_anyway">Все пак добави</string>
     <string name="this_looks_like_channel">Това изглежда като адрес на канал</string>
 </resources>

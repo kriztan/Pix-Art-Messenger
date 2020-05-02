@@ -913,7 +913,7 @@
     <string name="action_add_existing_account">Add existing account</string>
     <string name="use_own_provider">Use own provider</string>
     <string name="this_looks_like_a_domain">This looks like a domain address</string>
-    <string name="add_anway">Add anyway</string>
+    <string name="add_anyway">Add anyway</string>
     <string name="this_looks_like_channel">This looks like a channel address</string>
     <string name="no_backup_available">No backup available</string>
     <string name="pref_show_own_accounts_summary">Show own accounts in chats and contacts if you have multiple accounts.</string>

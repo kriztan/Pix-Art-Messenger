@@ -850,7 +850,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="attach">Załącz</string>
     <string name="delete_from_server">Usuń z serwera</string>
     <string name="action_add_existing_account">Dodaj istniejące konto</string>
-    <string name="add_anway">Dodaj mimo to</string>
+    <string name="add_anyway">Dodaj mimo to</string>
     <string name="pref_show_own_accounts">Pokaż własne konta</string>
     <string name="message_encryption">Szyfrowanie wiadomości</string>
     <string name="enable_message_encryption">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO. Jeżeli są problemy z działaniem szyfrowania, to można je wyłączyć przez wciśnięcie ikonki kłódki.</string>

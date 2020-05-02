@@ -912,7 +912,7 @@
     <string name="action_add_existing_account">Bestehendes Profil hinzufügen</string>
     <string name="use_own_provider">Nutze eigenen Provider</string>
     <string name="this_looks_like_a_domain">Dies sieht aus wie eine Domain-Adresse</string>
-    <string name="add_anway">Trotzdem hinzufügen</string>
+    <string name="add_anyway">Trotzdem hinzufügen</string>
     <string name="this_looks_like_channel">Dies sieht aus wie eine Channel-Adresse</string>
     <string name="no_backup_available">Kein Backup vorhanden</string>
     <string name="pref_show_own_accounts_summary">Zeige eigenes Profil in Chats und Kontakten, falls du mehrere Profile nutzt.</string>

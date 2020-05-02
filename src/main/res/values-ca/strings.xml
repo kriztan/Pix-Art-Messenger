@@ -898,7 +898,7 @@
     <string name="action_add_existing_account">Afegir compte existent</string>
     <string name="use_own_provider">Emprar proveïdor propi</string>
     <string name="this_looks_like_a_domain">Això sembla una adreça de domini</string>
-    <string name="add_anway">Afegir igualment</string>
+    <string name="add_anyway">Afegir igualment</string>
     <string name="this_looks_like_channel">Això sembla una adreça de canal</string>
     <string name="no_backup_available">No hi ha cap còpia de seguretat disponible</string>
     <string name="message_encryption">Missatge xifrat</string>

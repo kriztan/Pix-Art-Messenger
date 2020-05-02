@@ -832,7 +832,7 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="channel_discover_opt_in_message"><![CDATA[Descoperirea de canale publice folosește un serviciu terț numit <a href="https://search.jabber.network">search.jabber.network</a>.<br><br>Folosind această funcție se va transmite adresa dumneavoastră IP și cuvintele căutate către acest serviciu. Pentru mai multe informații citiți <a href="https://search.jabber.network/privacy">Politica de confidențialitate</a> a serviciului.]]></string>
     <string name="use_own_provider">Folosește furnizorul meu</string>
     <string name="this_looks_like_a_domain">Aceasta pare să fie o adresă de domeniu</string>
-    <string name="add_anway">Adaugă oricum</string>
+    <string name="add_anyway">Adaugă oricum</string>
     <string name="this_looks_like_channel">Aceasta pare o adresă de canal</string>
     <string name="action_unblock_participant">Deblochează participant</string>
     <string name="action_block_participant">Blochează participant</string>

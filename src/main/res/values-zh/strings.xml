@@ -903,7 +903,7 @@
     <string name="action_add_existing_account">添加已有帐户</string>
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
-    <string name="add_anway">仍然添加</string>
+    <string name="add_anyway">仍然添加</string>
     <string name="this_looks_like_channel">这看起来像一个群聊地址</string>
     <string name="no_backup_available">没有可用备份</string>
     <string name="pref_show_own_accounts_summary">在聊天和联系人中显示自己的多个帐户</string>

@@ -912,7 +912,7 @@
     <string name="action_add_existing_account">Aggiungi account esistente</string>
     <string name="use_own_provider">Usa un tuo fornitore</string>
     <string name="this_looks_like_a_domain">Questo sembra un indirizzo di un dominio</string>
-    <string name="add_anway">Aggiungi comunque</string>
+    <string name="add_anyway">Aggiungi comunque</string>
     <string name="this_looks_like_channel">Questo sembra un indirizzo di un canale</string>
     <string name="no_backup_available">Nessun backup disponibile</string>
     <string name="pref_show_own_accounts_summary">Mostra i tuoi account nelle conversazioni e nei contatti se hai account multipli.</string>

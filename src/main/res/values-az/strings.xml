@@ -914,7 +914,7 @@
     <string name="action_add_existing_account">Mövcud hesabı əlavə edin</string>
     <string name="use_own_provider">Öz provayderinizdən istifadə edin</string>
     <string name="this_looks_like_a_domain">Bu bir domen ünvanı kimi görünür</string>
-    <string name="add_anway">Əlavə et</string>
+    <string name="add_anyway">Əlavə et</string>
     <string name="this_looks_like_channel">Bu kanal ünvanı kimi görünür</string>
     <string name="no_backup_available">Ehtiyat nüsxəsi yoxdur</string>
     <string name="pref_show_own_accounts_summary">Birdən çox hesabınız varsa, öz hesablarınızı çatlarda və kontaktlarda göstərin.</string>

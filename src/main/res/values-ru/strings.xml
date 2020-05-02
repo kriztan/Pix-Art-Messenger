@@ -930,7 +930,7 @@
     <string name="action_add_existing_account">Добавить существующий аккаунт</string>
     <string name="use_own_provider">Использовать свой сервер</string>
     <string name="this_looks_like_a_domain">Это выглядит как доменный адрес</string>
-    <string name="add_anway">Добавить в любом случае</string>
+    <string name="add_anyway">Добавить в любом случае</string>
     <string name="this_looks_like_channel">Это выглядит как адрес канала</string>
     <string name="no_backup_available">Нет доступных резервных копий</string>
     <string name="pref_show_own_accounts_summary">Отображать мои аккаунты в чатах и контактах - если у вас несколько аккаунтов.</string>

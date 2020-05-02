@@ -892,7 +892,7 @@
     <string name="action_add_existing_account">Ajouter un compte existant</string>
     <string name="use_own_provider">Recourir à un fournisseur personnalisé</string>
     <string name="this_looks_like_a_domain">Il semble que ce soit une adresse d\'un domaine</string>
-    <string name="add_anway">Ajouter quand même</string>
+    <string name="add_anyway">Ajouter quand même</string>
     <string name="this_looks_like_channel">Il semble que ce soit une adresse d\'un canal</string>
     <string name="this_device">Cet appareil</string>
     <string name="intro_required_permissions">Autorisations Requises</string>
