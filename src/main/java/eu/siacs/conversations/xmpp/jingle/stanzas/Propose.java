@@ -6,7 +6,7 @@ import com.google.common.collect.ImmutableList;
 import java.util.List;
 
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 
 public class Propose extends Element {
     private Propose() {

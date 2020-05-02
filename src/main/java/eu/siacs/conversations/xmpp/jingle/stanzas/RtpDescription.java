@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xmpp.jingle.Media;
 import eu.siacs.conversations.xmpp.jingle.SessionDescription;
 

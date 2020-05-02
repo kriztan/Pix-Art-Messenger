@@ -14,7 +14,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import eu.siacs.conversations.Config;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xmpp.jingle.stanzas.Group;
 import eu.siacs.conversations.xmpp.jingle.stanzas.IceUdpTransportInfo;
 import eu.siacs.conversations.xmpp.jingle.stanzas.RtpDescription;

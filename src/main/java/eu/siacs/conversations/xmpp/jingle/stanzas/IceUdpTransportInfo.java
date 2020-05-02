@@ -7,7 +7,6 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
-
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
@@ -16,7 +15,6 @@ import java.util.Locale;
 import java.util.Map;
 
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
 import eu.siacs.conversations.xmpp.jingle.SessionDescription;
 
 public class IceUdpTransportInfo extends GenericTransportInfo {

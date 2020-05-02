@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.List;
 
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 
 public class Group extends Element {
 

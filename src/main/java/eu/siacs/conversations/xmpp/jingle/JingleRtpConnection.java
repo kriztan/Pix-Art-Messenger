@@ -36,7 +36,7 @@ import eu.siacs.conversations.entities.Message;
 import eu.siacs.conversations.entities.RtpSessionStatus;
 import eu.siacs.conversations.services.AppRTCAudioManager;
 import eu.siacs.conversations.xml.Element;
-import eu.siacs.conversations.xml.Namespace;
+import eu.siacs.conversations.utils.Namespace;
 import eu.siacs.conversations.xmpp.jingle.stanzas.Group;
 import eu.siacs.conversations.xmpp.jingle.stanzas.IceUdpTransportInfo;
 import eu.siacs.conversations.xmpp.jingle.stanzas.JinglePacket;
