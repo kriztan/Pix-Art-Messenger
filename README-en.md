@@ -68,10 +68,12 @@ If we can't fix your problem there, you can open an issue here on github, detail
 #### GNU/Linux, OSX and other Unix-like systems:
 
 1. First install The **A**ndroid **D**ebugging **B**ridge, if not already present.
-    ###### Ubuntu / Linux Mint
+    ###### Debian and derivates like Ubuntu / Linux Mint
     ```
     sudo apt-get update
-    sudo apt-get install android-tools-adb
+    sudo apt-get update adb
+    # Debian Jessie or older:
+    # sudo apt-get install android-tools-adb
     ```
     ###### openSUSE 42.2 and 42.3
     ```
@@ -137,4 +139,4 @@ If we can't fix your problem there, you can open an issue here on github, detail
     ``` 
 12. Now reproduce the issue encountered.
 
-13. Stop logging. Now take a close look at your log file and remove any personal and private information you may find before sending it together with a detailed description of your issue, instructions on how to reproduce to me. You can use GitHub's issue tracker: [Issues](https://github.com/kriztan/Pix-Art-Messenger/issues)
+13. Stop logging (`Ctrl+C`). Now take a close look at your log file and remove any personal and private information you may find before sending it together with a detailed description of your issue, instructions on how to reproduce to me. You can use GitHub's issue tracker: [Issues](https://github.com/kriztan/Pix-Art-Messenger/issues)

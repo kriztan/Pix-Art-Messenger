@@ -55,10 +55,12 @@ Solltest du dort nicht weiter kommen kannst du hier ein Issue erstellen, in welc
 ##### Linux:
 
 1. Installation von ADB
-    ###### Ubuntu / Linux Mint
+    ###### Debian und Derivate wie Ubuntu / Linux Mint
     ```
     sudo apt-get update
-    sudo apt-get install android-tools-adb
+    sudo apt-get install adb
+    # For Debian Jessie and older
+    # sudo apt-get install android-tools-adb
     ```
     ###### openSUSE 42.2 und 42.3
     ```
@@ -72,7 +74,13 @@ Solltest du dort nicht weiter kommen kannst du hier ein Issue erstellen, in welc
     alternativ kann auch der `1 Click Installer` benutzt werden:    
     https://software.opensuse.org/package/android-tools
     
-2. Navigiere mit `cd` in das Verzeichnis deines Vertrauens und fahre mit Schritt [6] unter [Windows] fort. s.u.
+2. Navigiere im Terminal mit `cd` in das Verzeichnis deines Vertrauens
+3. Folge den Schritten [6] bis [10] unter [Windows]. s.u.
+4. Nun kannst du mit der Ausgabe der Debug-Logs beginnen. Nenne die Log-Datei bspw `logcat.txt`:
+   ```
+   $ adb -d logcat -v time | grep -i Pix-Art > logcat.txt
+   ```
+5. Fahre nun mit den verbliebenen Schritten unter [Windows] ab Schritt [12] fort.
 
 ##### Windows:
 
@@ -112,4 +120,6 @@ Solltest du dort nicht weiter kommen kannst du hier ein Issue erstellen, in welc
     ``` 
 12. Führe nun die Schritte aus, die zum Fehler führen.
 
-13. Zum Schluss schaue dir die `logcat.txt` an, lösche ggf. persönliche Angaben und sende diese Datei zur Problemlösung mit einer Beschreibung des Fehlers und was man tun muss, um diesen Fehler zu erhalten, an mich. Nutz dafür den Menüpunkt [Issues](https://github.com/kriztan/Pix-Art-Messenger/issues)
+13. Nachdem der Fehler reproduziert wurde, kann das Loggen im Terminal mit `Strg+C` beendet werden.
+
+14. Zum Schluss schaue dir die `logcat.txt` an, lösche ggf. persönliche Angaben und sende diese Datei zur Problemlösung mit einer Beschreibung des Fehlers und was man tun muss, um diesen Fehler zu erhalten, an mich. Nutz dafür den Menüpunkt [Issues](https://github.com/kriztan/Pix-Art-Messenger/issues)
