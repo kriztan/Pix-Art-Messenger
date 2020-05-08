@@ -1064,4 +1064,5 @@
     <string name="disable_tor_to_make_call">Вимкнути ToR для здійснення викликів</string>
     <string name="only_one_call_at_a_time">Водночас можливо здійснювати лише один виклик.</string>
     <string name="missed_call">Пропущені виклики</string>
+    <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
 </resources>
