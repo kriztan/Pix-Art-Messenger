@@ -155,6 +155,7 @@
     <string name="unpublish_pgp_message">Êtes vous sûr de vouloir supprimer votre clef publique OpenPGP de votre annonce de présence?\nVos contacts ne pourront plus vous envoyer de message chiffrés avec OpenPGP.</string>
     <string name="openpgp_has_been_published">La clef publique OpenPGP a été publiée</string>
     <string name="mgmt_account_are_you_sure">Êtes-vous sûr?</string>
+    <string name="mgmt_account_delete_confirm_message">Si vous supprimez votre compte, l\'historique complet de vos conversations sera perdu.\n\nSi vous supprimez votre compte sur le serveur, votre compte sera entièrement supprimé du serveur, vous ne pourrez plus vous connecter jusqu\'à ce que vous ayez créé un nouveau compte.</string>
     <string name="attach_record_voice">Enregistrer une voix</string>
     <string name="account_settings_jabber_id">Identifiant</string>
     <string name="account_settings_example_jabber_id">nom@exemple.com</string>
@@ -215,6 +216,7 @@
     <string name="save_as_bookmark">Enregistrer comme favori</string>
     <string name="delete_bookmark">Supprimer le favori</string>
     <string name="topic">Sujet</string>
+    <string name="joining_conference">Se joint au groupe de discussion…</string>
     <string name="leave">Partir</string>
     <string name="contact_added_you">Votre correspondant vous a ajouté dans sa liste de contacts</string>
     <string name="add_back">Ré-ajouter</string>
@@ -305,6 +307,7 @@
     <string name="notification_restored_backup_title">Votre sauvegarde a été restaurée</string>
     <string name="notification_restored_backup_subtitle">N\'oubliez pas d\'activer le compte.</string>
     <string name="choose_file">Choix du fichier</string>
+    <string name="receiving_file">Réception de %1$s</string>
     <string name="download_x_file">Télécharger %s</string>
     <string name="delete_x_file">Effacer %s</string>
     <string name="file">fichier</string>
@@ -362,6 +365,10 @@
     <string name="could_not_change_affiliation">Impossible de changer l’affiliation de %s</string>
     <string name="ban_from_conference">Bannir de la conférence</string>
     <string name="kick_from_conference">Retirer de la conférence</string>
+    <string name="ban_from_public_conference_message">Vous allez bannir définitivement %s d\'un canal public.</string>
+    <string name="ban_from_conference_message">Vous allez bannir définitivement %s d\'un groupe de discussion</string>
+    <string name="kicking_from_public_conference">Vous allez exclure %s d\'un canal public.</string>
+    <string name="kicking_from_conference">Vous allez exclure %s d\'un groupe de discussion.</string>
     <string name="ban_now">Bannir maintenant</string>
     <string name="kick_now">Expulser maintenant</string>
     <string name="non_anonymous">Rendre l’identifiant Jabber visible à tout le monde</string>
@@ -490,6 +497,7 @@
     <string name="battery_optimizations_enabled_explained">Votre appareil applique sur Pix-Art Messenger des optimisations de batterie très strictes qui pourraient provoquer des retards dans les notifications, voire des pertes de messages.\nNous vous recommandons de les désactiver.</string>
     <string name="battery_optimizations_enabled_dialog">Votre appareil applique sur Pix-Art Messenger des optimisations de batterie très strictes qui pourraient provoquer des retards dans les notifications, voire des pertes de messages.\nVous allez maintenant avoir la possibilité de les désactiver.</string>
     <string name="install_from_unknown_sources_disabled">L’nstallation à partir de sources inconnues a été désactivée</string>
+    <string name="install_from_unknown_sources_disabled_dialog">Votre appareil est configuré de manière à ne pas autoriser l\'installation d\'applications de sources inconnues autres que Google Play Store. Cela va bloquer la mise à jour automatique de l\'application.\n\nOn va maintenant vous demander d\'autoriser l\'installation d\'applications de sources inconnues.</string>
     <string name="disable">Désactiver</string>
     <string name="cancel_update">Annuler la mise à jour ?</string>
     <string name="yes">Oui</string>
@@ -531,9 +539,11 @@
     <string name="registration_password_too_weak">Échec de l’enregistrement : le mot de passe n’est pas assez fort</string>
     <string name="choose_participants">Choisir les participants</string>
     <string name="creating_conference">Création de la conférence …</string>
+    <string name="import_text">Si une sauvegarde est disponible, vous pouvez la restaurer en appuyant sur le bouton ci-dessous.</string>
     <string name="import_database">Importer une sauvegarde</string>
     <string name="invite_again">Inviter à nouveau</string>
     <string name="inviteUser_Subject">vous a invité via</string>
+    <string name="InviteText">Bonjour,\n\nl’utilisateur·rice %s vous a invité sur Pix-Art Messenger. Si vous utilisez Android, essayez-le en cliquant sur le lien suivant pour continuer…</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur</string>
     <string name="pref_broadcast_last_activity_summary">Informer tous vos contacts lorsque vous utilisez Pix-Art Messenger</string>
     <string name="invite_user">Inviter à Pix-Art Messenger</string>
@@ -566,6 +576,7 @@
     <string name="show_error_message">Afficher le message d’erreur</string>
     <string name="error_message">Message d’erreur</string>
     <string name="data_saver_enabled">Économiseur de données activé</string>
+    <string name="data_saver_enabled_explained">Votre système d’exploitation empêche Pix-Art Messenger d’accéder à Internet lorsque l’application est en arrière plan. Pour recevoir les notifications des nouveaux messages, vous devez autoriser Pix-Art Messenger à accéder au réseau sans restriction quand l’Économiseur de données est activé.\n\nPix-Art Messenger tentera de consommer le moins de données possible.</string>
     <string name="device_does_not_support_data_saver">Votre appareil ne prend pas en charge la désactivation de l’Économiseur de données pour Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Ajouter aux contacts</string>
     <string name="contact">Contact</string>
@@ -770,6 +781,7 @@
     <string name="unable_to_save_recording">Impossible de sauvegarder l’enregistrement</string>
     <string name="foreground_service_channel_name">Service au premier plan</string>
     <string name="foreground_service_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification permanente indiquant que Pix-Art Messenger est en cours d\'exécution.</string>
+    <string name="notification_group_status_information">Information du statut</string>
     <string name="error_channel_name">Problèmes de connexion</string>
     <string name="error_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification en cas de problème de connexion à un compte.</string>
     <string name="notification_group_messages">Messages</string>
@@ -892,7 +904,17 @@
     <string name="action_add_existing_account">Ajouter un compte existant</string>
     <string name="use_own_provider">Recourir à un fournisseur personnalisé</string>
     <string name="this_looks_like_a_domain">Il semble que ce soit une adresse d\'un domaine</string>
+    <string name="add_anyway">Ajouter quand même</string>
     <string name="this_looks_like_channel">Il semble que ce soit une adresse d\'un canal</string>
+    <string name="no_backup_available">Aucune sauvegarde disponible</string>
+    <string name="hide_warning">Masquer l\'avertissement</string>
+    <string name="change_password_in_next_step">Vous pouvez modifier le mot de passe généré dans l\'étape suivante selon votre souhait.</string>
+    <string name="action_unblock_participant">Débloquer un participant</string>
+    <string name="action_block_participant">Bloquer un participant</string>
+    <string name="share_backup_files">Partager des fichiers de sauvegarde</string>
+    <string name="event">Événement</string>
+    <string name="pref_vibrate_in_chat_summary">Vibre à l\'arrivée d\'un nouveau message dans une discussion ouverte</string>
+    <string name="open_backup">Ouvrir une sauvegarde</string>
     <string name="this_device">Cet appareil</string>
     <string name="intro_required_permissions">Autorisations Requises</string>
     <string name="intro_start_chatting">Commencer à chatter</string>
@@ -914,10 +936,26 @@
     <string name="intro_desc_privacy">Pix-Art Messenger ne vendra ni n\'analysera vos données et c\'est vous qui décidez des autorisations que vous accordez.</string>
     <string name="sharing_application_not_grant_permission">La demande de partage n\'a pas permis d\'accéder à ce fichier.</string>
     <string name="pref_channel_discovery_summary">La plupart des utilisateurs devraient choisir \"jabber.network\" pour obtenir de meilleures suggestions de la part de l\'ensemble de l\'écosystème public XMPP.</string>
+    <string name="pref_theme_blue">Bleu</string>
+    <string name="pref_theme_orange">Orange</string>
     <string name="pref_alternative_voice_settings_summary">Si vous avez des problèmes pendant l\'enregistrement vocal, utilisez ce paramètre pour modifier le codec.</string>
     <string name="pref_alternative_voice_settings">Méthode alternative d\'enregistrement de la voix</string>
     <string name="pref_use_colored_muc_names_summary">Coloriez les surnoms dans les chats de groupe ou les canaux comme les arrière-plans d\'avatars par défaut.</string>
     <string name="pref_use_colored_muc_names">Colorier les surnoms</string>
     <string name="action_delete">Supprimer</string>
     <string name="attach_choose_video">Choisissez la Vidéo</string>
+    <string name="make_call">Passer un appel</string>
+    <string name="audio_call">Appel audio</string>
+    <string name="video_call">Appel vidéo</string>
+    <string name="answer_call">Répondre</string>
+    <string name="rtp_state_ringing">Appel en cours</string>
+    <string name="rtp_state_declined_or_busy">Occupé</string>
+    <string name="rtp_state_connectivity_error">Impossible d\'établir l\'appel</string>
+    <string name="incoming_call">Appel entrant</string>
+    <string name="outgoing_call_duration">%s · Appel sortant · %s</string>
+    <string name="outgoing_call_time">%s · Appel sortant</string>
+    <string name="outgoing_call">Appel sortant</string>
+    <string name="missed_call">Appel manqué</string>
+    <string name="could_not_switch_camera">Impossible de changer la caméra</string>
+    <string name="readmore">Plus d\'informations</string>
 </resources>
