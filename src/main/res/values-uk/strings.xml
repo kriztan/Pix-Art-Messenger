@@ -1065,4 +1065,6 @@
     <string name="only_one_call_at_a_time">Водночас можливо здійснювати лише один виклик.</string>
     <string name="missed_call">Пропущені виклики</string>
     <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
+    <string name="otr_warning">Підтримку шифрування OTR буде припинено у червні 2020 р. Клацніть, щоб перейти за посиланням та дізнатися більше.</string>
+    <string name="readmore">Дізнатися більше</string>
 </resources>
