@@ -1047,4 +1047,6 @@
     <string name="only_one_call_at_a_time">Solo puedes estar en una llamada a la vez.</string>
     <string name="missed_call">Llamada perdida</string>
     <string name="could_not_switch_camera">No se pudo cambiar cámara</string>
+    <string name="otr_warning">Se dejará de dar soporte a OTR en Junio de 2020. Pulsar en leer más para obtener más información. Se abrirá un enlace en el navegador.</string>
+    <string name="readmore">Leer más</string>
 </resources>
