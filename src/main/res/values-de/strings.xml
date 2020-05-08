@@ -1047,4 +1047,6 @@
     <string name="only_one_call_at_a_time">Nur ein zeitgleicher Anruf möglich.</string>
     <string name="missed_call">Verpasster Anruf</string>
     <string name="could_not_switch_camera">Kamera konnte nicht gewechselt werden</string>
+    <string name="otr_warning">Die Unterstützung for die OTR Verschlüsselung wird im Juni eingestellt. Klicke auf Mehr erfahren, um weitere Informationen zu erhalten. Ein Link in einem Browser wird geöffnet.</string>
+    <string name="readmore">Mehr erfahren</string>
 </resources>
