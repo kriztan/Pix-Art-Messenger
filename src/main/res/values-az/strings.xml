@@ -1048,4 +1048,6 @@
     <string name="only_one_call_at_a_time">Bir anda yalnız bir zəng edə bilərsiniz.</string>
     <string name="missed_call">Cavabsız zəng</string>
     <string name="could_not_switch_camera">Kameranı dəyişə bilmədi</string>
+    <string name="otr_warning">OTR şifrələməsinin dəstəyi 2020-ci ilin iyununda azalacaq. Daha çox məlumat əldə etmək üçün daha çox oxuyun.</string>
+    <string name="readmore">Ətraflı oxu</string>
 </resources>
