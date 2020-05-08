@@ -84,7 +84,6 @@
     <string name="your_nick_has_been_changed">您的昵称已更改</string>
     <string name="send_unencrypted">未加密发送</string>
     <string name="decryption_failed">解密失败。可能您没有合适的私钥。</string>
-    <string name="openkeychain_required">OpenKeychain</string>
     <string name="openkeychain_required_long">Pix-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密、解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
     <string name="restart">重启</string>
     <string name="install">安装</string>
@@ -144,9 +143,6 @@
     <string name="account_status_incompatible_server">不兼容的服务器</string>
     <string name="account_status_stream_error">传输错误</string>
     <string name="encryption_choice_unencrypted">未加密</string>
-    <string name="encryption_choice_otr">OTR</string>
-    <string name="encryption_choice_pgp">OpenPGP</string>
-    <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">编辑帐户</string>
     <string name="mgmt_account_delete">删除帐户</string>
     <string name="mgmt_account_publish_avatar">发布头像</string>
@@ -158,7 +154,6 @@
     <string name="mgmt_account_delete_confirm_message">如果您删除了帐户，则本地对话历史记录将丢失。\n\n如果您从服务器删除帐户，则您的帐户也将从服务器中删除，在注册新帐户之前，您将无法登录。</string>
     <string name="attach_record_voice">语音录制</string>
     <string name="account_settings_jabber_id">Jabber用户名</string>
-    <string name="account_settings_example_jabber_id">username@pix-art.de</string>
     <string name="password">密码</string>
     <string name="invalid_jid">Jabber用户名无效</string>
     <string name="error_out_of_memory">内存不足。图像太大了</string>
@@ -446,7 +441,6 @@
     <string name="pref_dnd_on_silent_mode_summary">当设备静音时，将您标记为“请勿打扰”状态</string>
     <string name="pref_treat_vibrate_as_silent">将振动看作静音</string>
     <string name="pref_treat_vibrate_as_dnd_summary">当设备处于振动状态时，将您标记为“请勿打扰”</string>
-    <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">用证书添加帐户</string>
     <string name="unable_to_parse_certificate">无法解析证书</string>
     <string name="authenticate_with_certificate">留空以验证w/证书</string>
@@ -740,7 +734,6 @@
     <string name="not_encrypted_for_this_device">该条消息没有为此设备加密</string>
     <string name="no_microphone_permission">Pix-Art聊天需要访问麦克风</string>
     <string name="search_messages">搜索消息</string>
-    <string name="gif">GIF</string>
     <string name="view_conversation">查看对话</string>
     <string name="web_address">网址</string>
     <string name="jabber_id_copied_to_clipboard">将Jabber用户名复制到剪贴板</string>
@@ -964,7 +957,6 @@ Pix-Arr Messenger</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
     <string name="sharing_application_not_grant_permission">分享文件的应用没有授予该文件的权限。</string>
-    <string name="jabber_network">jabber.network</string>
     <string name="local_server">本地服务器</string>
     <string name="pref_channel_discovery_summary">大多数用户会选择“jabber.network”以便从公共 XMPP 生态系统获得更好的建议。</string>
     <string name="pref_channel_discovery">频道发现方法</string>
