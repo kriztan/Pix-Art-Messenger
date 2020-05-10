@@ -47,7 +47,7 @@
     <string name="change_password_on_server">Змінити пароль на сервері</string>
     <string name="share_with">Поділитися</string>
     <string name="start_conversation">Почати розмову</string>
-    <string name="invite_contact">Запросити контакт</string>
+    <string name="invite_contact">Запросити до групи</string>
     <string name="contacts">Контакти</string>
     <string name="cancel">Скасувати</string>
     <string name="set">Встановити</string>
@@ -96,9 +96,9 @@
     <string name="pref_general">Загальне</string>
     <string name="pref_accept_files_wifi">Отримувати файли у мережах WiFi</string>
     <string name="pref_accept_files_summary_wifi">При з\'єднанні з мережами WiFi автоматично отримувати файли, розміром менше…</string>
-    <string name="pref_accept_files_mobile">Отримувати файли у мобільних мережах даних</string>
+    <string name="pref_accept_files_mobile">Отримувати файли у мобільній мережі даних</string>
     <string name="pref_accept_files_summary_mobile">При з\'єднанні з мережею мобільних даних автоматично отримувати файли, розміром менше…</string>
-    <string name="pref_accept_files_mobileroaming">Отримувати файли у мобільній мережі, перебуваючи у роумінгу</string>
+    <string name="pref_accept_files_mobileroaming">Отримувати файли у мобільній мережі у роумінгу</string>
     <string name="pref_accept_files_summary_mobileroaming">При з\'єднанні з мережею мобільних даних у роумінгу автоматично отримувати файли, розміром менше…</string>
     <string name="pref_attachments">Вкладення</string>
     <string name="pref_notification_settings">Сповіщення</string>
@@ -147,7 +147,7 @@
     <string name="encryption_choice_otr">OTR</string>
     <string name="encryption_choice_pgp">OpenPGP</string>
     <string name="encryption_choice_omemo">OMEMO</string>
-    <string name="action_account">Редагувати обліковий запис</string>
+    <string name="action_account">Мій обліковий запис</string>
     <string name="mgmt_account_delete">Вилучити обліковий запис</string>
     <string name="mgmt_account_publish_avatar">Опублікувати іконку користувача</string>
     <string name="mgmt_account_publish_pgp">Опублікувати публічний ключ OpenPGP</string>
@@ -157,7 +157,7 @@
     <string name="mgmt_account_are_you_sure">Ви впевнені?</string>
     <string name="mgmt_account_delete_confirm_message">Якщо ви вилучите ваш обліковий запис, ви втратите усю історію спілкування на пристрої.\n\nЯкщо ви вилучите ваш обліковий запис з сервера, то його буде вилучено також на сервері й ви не матимете змоги виходити, луки не зареєструєте новий обліковий запис.</string>
     <string name="attach_record_voice">Записати голос</string>
-    <string name="account_settings_jabber_id">XMPP адреса</string>
+    <string name="account_settings_jabber_id">Адреса XMPP</string>
     <string name="account_settings_example_jabber_id">username@example.com</string>
     <string name="password">Пароль</string>
     <string name="invalid_jid">Це неправильна адреса XMPP</string>
@@ -176,13 +176,13 @@
     <string name="server_info_available">є</string>
     <string name="server_info_unavailable">нема</string>
     <string name="missing_public_keys">Не вистачає повідомлення публічного ключа.</string>
-    <string name="last_seen_now">востаннє бачили щойно</string>
-    <string name="last_seen_min">востаннє бачили 1 хвилину тому</string>
-    <string name="last_seen_mins">востаннє бачили %d хвилин тому</string>
-    <string name="last_seen_hour">востанє бачили 1 годину тому</string>
-    <string name="last_seen_hours">востаннє бачили %d годин тому</string>
-    <string name="last_seen_day">востаннє бачили 1 день тому</string>
-    <string name="last_seen_days">востаннє бачили %d днів тому</string>
+    <string name="last_seen_now">у мережі</string>
+    <string name="last_seen_min">у мережі 1 хвилину тому</string>
+    <string name="last_seen_mins">у мережі %d хвилин тому</string>
+    <string name="last_seen_hour">у мережі 1 годину тому</string>
+    <string name="last_seen_hours">у мережі %d годин тому</string>
+    <string name="last_seen_day">у мережі 1 день тому</string>
+    <string name="last_seen_days">у мережі %d днів тому</string>
     <string name="install_openkeychain">Зашифроване повідомлення. Будь ласка, встановіть OpenKeychain, щоб розшифрувати.</string>
     <string name="unknown_otr_fingerprint">Невідомий цифровий підпис OTR</string>
     <string name="openpgp_messages_found">Знайдено повідомлення, зашифроване OpenPGP</string>
@@ -214,10 +214,10 @@
     <string name="channel_full_jid_example">channel@conference.example.com/nick</string>
     <string name="channel_bare_jid_example">channel@conference.example.com</string>
     <string name="save_as_bookmark">Зберегти до закладок</string>
-    <string name="delete_bookmark">Видалити закладкуВилучити</string>
+    <string name="delete_bookmark">Вилучити закладку</string>
     <string name="topic">Тема</string>
     <string name="joining_conference">Приєднання до групи…</string>
-    <string name="leave">Залишити</string>
+    <string name="leave">Вийти</string>
     <string name="contact_added_you">Контакт додано до Вашого списку контактів</string>
     <string name="add_back">Також додати</string>
     <string name="publish">Опублікувати</string>
@@ -264,10 +264,10 @@
     <string name="pref_use_send_button_to_indicate_status_summary">Змінювати колір клавіші надсилання на позначення статусу контакта</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Позначати імена користувачів кольоровим текстом згідно зі станом контакту</string>
     <string name="pref_expert_options_other">Інше</string>
-    <string name="pref_autojoin">Синхронізувати з закладками</string>
+    <string name="pref_autojoin">Синхронізовувати з закладками</string>
     <string name="pref_autojoin_summary">Приєднуватися до груп і полишати їх відповідно до опції автоматичного приєднання, вибраної в закладках.</string>
-    <string name="toast_message_otr_fingerprint">Цифровий підпис OTR скопійовано до буферу обміну!</string>
-    <string name="toast_message_omemo_fingerprint">Цифровий підпис OMEMO скопійовано до буферу обміну!</string>
+    <string name="toast_message_otr_fingerprint">Цифровий підпис OTR скопійовано до буферу обміну</string>
+    <string name="toast_message_omemo_fingerprint">Цифровий підпис OMEMO скопійовано до буферу обміну</string>
     <string name="conference_banned">Вам заборонили доступ до цієї групи</string>
     <string name="conference_members_only">Ця група лише для учасників</string>
     <string name="conference_kicked">Вас вигнали з цієї групи</string>
@@ -322,12 +322,12 @@
     <string name="manually_verify">Перевірити вручну</string>
     <string name="are_you_sure_verify_fingerprint">Ви дійсно хочете перевірити цифровий підпис OTR ваших контактів?</string>
     <string name="pref_show_dynamic_tags">Динамічні мітки</string>
-    <string name="pref_show_dynamic_tags_summary">Показувати мітки \"лише для читання\" під контактами</string>
+    <string name="pref_show_dynamic_tags_summary">Показувати мітку \"лише для читання\" під контактами</string>
     <string name="no_conference_server_found">Не знайдено сервер групи</string>
     <string name="conference_creation_failed">Не вдалося створити групу!</string>
     <string name="account_image_description">Іконка облікового запису</string>
-    <string name="copy_otr_clipboard_description">Копіювати цифровий підпис OTR до буферу обміну</string>
-    <string name="copy_omemo_clipboard_description">Скопіювати цифровий підпис OMEMO до буферу обміну</string>
+    <string name="copy_otr_clipboard_description">Копіювати цифровий підпис OTR</string>
+    <string name="copy_omemo_clipboard_description">Копіювати цифровий підпис OMEMO</string>
     <string name="regenerate_omemo_key">Згенерувати ключ OMEMO</string>
     <string name="clear_other_devices">Стерти пристрої</string>
     <string name="clear_other_devices_desc">Ви певні, що хочете стерти всі інші пристрої з OMEMO-оголошення? Наступного разу, коли Ваші пристрої приєднаються, вони знову оголосять про себе, але вони можуть не отримати повідомлення, які можуть бути надіслані тим часом. </string>
@@ -402,7 +402,7 @@
     <string name="location">Місцезнаходження</string>
     <string name="pref_dont_trust_system_cas_title">Не довіряти системним центрам сертифікації</string>
     <string name="pref_dont_trust_system_cas_summary">Усі сертифікати мають бути підтверджені вручну</string>
-    <string name="pref_remove_trusted_certificates_title">Вилучити сертифікати</string>
+    <string name="pref_remove_trusted_certificates_title">Вилучати сертифікати</string>
     <string name="pref_remove_trusted_certificates_summary">Вилучити сертифікати, які було підтверджено вручну</string>
     <string name="toast_no_trusted_certs">Немає сертифікатів, підтверджених вручну</string>
     <string name="dialog_manage_certs_title">Вилучити сертифікати</string>
@@ -518,7 +518,7 @@
     <string name="mgmt_account_reconnect">Перез’єднатися</string>
     <string name="welcome_text">…вільний та безпечний клієнт XMPP/Jabber.</string>
     <string name="magic_create_text">Ми допоможемо вам створити обліковий запис. На наступній сторінці ви зможете змінити автоматично зґенерований пароль.\nПодалі ви зможете спілкуватися з користувачами вашого чи будь-якого іншого, для цього потрібно буде надати користувачеві вашу повну адресу XMPP.</string>
-    <string name="your_full_jid_will_be">Ваша повна адреса XMPP буде: %s</string>
+    <string name="your_full_jid_will_be">Ваша повна адреса XMPP буде такою: %s</string>
     <string name="create_account">Створити обліковий запис</string>
     <string name="welcome_existing_account">Я маю обліковий запис</string>
     <string name="pick_your_username">Оберіть Ваше ім\'я користувача</string>
@@ -573,7 +573,7 @@
     <string name="pref_delete_omemo_identities_summary">Створити наново ваші ключі OMEMO. Усі ваші контакти будуть змушені підтвердити вас знову. Використовуйте це, лише якщо немає іншого вибору.</string>
     <string name="delete_selected_keys">Вилучити вибрані ключі</string>
     <string name="error_publish_avatar_offline">Потрібно підключення, щоб можна було опублікувати іконку користувача.</string>
-    <string name="copy_to_clipboard">Копіювати до буферу обміну</string>
+    <string name="copy_to_clipboard">Копіювати</string>
     <string name="message_copied_to_clipboard">Повідомлення скопійовано до буферу обміну</string>
     <string name="message">Повідомлення</string>
     <string name="quote">Цитувати</string>
@@ -597,8 +597,8 @@
     <string name="share_as_uri">Поділитися XMPP URI</string>
     <string name="share_as_http">Поділитися посиланням HTTP</string>
     <string name="blindly_trusted_omemo_keys">Ключі OMEMO наосліп прийнято як довірені</string>
-    <string name="pref_blind_trust_before_verification">Сліпо вірити перед перевіркою</string>
-    <string name="pref_blind_trust_before_verification_summary">Автоматично довіряти всім новим пристроям контактів, які не були перевірені раніше, й запитувати підтвердження вручну кожного разу, коли перевірений контакт додає новий пристрій.</string>
+    <string name="pref_blind_trust_before_verification">Довіряти новим пристроям</string>
+    <string name="pref_blind_trust_before_verification_summary">Автоматично довіряти усім новим пристроям співрозмовників, які ще не пройшли перевірки,  запитувати підтвердження вручну щоразу, як перевірений контакт додає свій новий пристрій</string>
     <string name="not_trusted">Недовірений</string>
     <string name="invalid_barcode">Недійсний QR-код </string>
     <string name="verify_with_qr_code">увійти через QR-код</string>
@@ -647,7 +647,7 @@
         <item quantity="other">%d місяців</item>
     </plurals>
     <string name="today">Сьогодні</string>
-    <string name="pref_use_max_brightness_summary">Зробити екран яскравішим у повноекранному режимі під час перегляду відео чи зображень</string>
+    <string name="pref_use_max_brightness_summary">Зробити екран яскравішим у повноекранному режимі під час перегляду відео або зображення</string>
     <string name="pref_use_max_brightness">Найбільша яскравість</string>
     <string name="block_jabber_id">Заблокувати адресу XMPP</string>
     <string name="corresponding_conversations_closed">Відповідні розмови завершено.</string>
@@ -663,7 +663,7 @@
     <string name="block_stranger">Заблокувати невідомий контакт</string>
     <string name="block_entire_domain">Заблокувати весь домен</string>
     <string name="pref_use_auto_rotate_summary">Повертати зображення та відео у повноекранному режимі</string>
-    <string name="pref_use_auto_rotate">Повертати зображення у повноекранному режимі</string>
+    <string name="pref_use_auto_rotate">Повертати зображення</string>
     <string name="pref_use_tor">З\'єднання через Tor</string>
     <string name="pref_use_tor_summary">Тунелювати всі з\'єднання через мережу Tor. Потребує Orbot</string>
     <string name="pref_connection_options">З\'єднання</string>
@@ -687,7 +687,7 @@
     <string name="pref_headsup_notifications">Сповіщення у спливних повідомленнях</string>
     <string name="pref_headsup_notifications_summary">Показувати сповіщення у спливних повідомленнях</string>
     <string name="yesterday">Учора</string>
-    <string name="pref_validate_hostname">Перевіряти адресу з допомогою DNSSEC</string>
+    <string name="pref_validate_hostname">Перевіряти адресу за допомогою DNSSEC</string>
     <string name="pref_validate_hostname_summary">Сертифікати, які містять завірену адресу, вважаються засвідченими</string>
     <string name="certificate_does_not_contain_jid">Сертифікат не містить XMPP адресу</string>
     <string name="error_no_keys_to_trust_presence">Немає ключів для цього контакту.\nПеревірте, що ви взаємно отримуєте інформацію про присутність.</string>
@@ -719,7 +719,7 @@
     <string name="huawei_protected_apps">Захищені програми</string>
     <string name="huawei_protected_apps_summary">Щоб отримувати сповіщення, навіть коли екран погас, Вам потрібно додати програму до переліку програм, до яких не застосовується енергозаощадження.</string>
     <string name="pref_enable_multi_accounts_title">Увімкнути кілька облікових записів</string>
-    <string name="pref_enable_multi_accounts_summary">Чи ви бажаєте використовувати кілька облікових записів?</string>
+    <string name="pref_enable_multi_accounts_summary">Дозволити використання кількох облікових записів</string>
     <string name="mtm_accept_cert">Прийняти незнайомий сертифікат?</string>
     <string name="mtm_trust_anchor">Сертифікат сервера не засвідчено відомим центром сертифікації </string>
     <string name="mtm_accept_servername">Прийняти сервер, ім\'я якого не збігається?</string>
@@ -1019,7 +1019,7 @@
     <string name="pref_use_colored_muc_names_summary">Розфарбовувати імена користувачів у групових чатах та каналах згідно з типовим кольором тла піктограми користувача</string>
     <string name="pref_use_colored_muc_names">Кольоровий шрифт імен користувачів</string>
     <string name="show_videos_images_only">Лише зображення або відео</string>
-    <string name="show_avatar">Показувати піктограму</string>
+    <string name="show_avatar">Показати зображення</string>
     <string name="action_delete">Вилучити</string>
     <string name="attach_choose_video">Відео</string>
     <string name="please_enable_an_account">Будь ласка, активуйте обліковий запис</string>
