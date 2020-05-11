@@ -1037,7 +1037,6 @@
     <string name="rtp_state_connected">Подключено</string>
     <string name="rtp_state_accepting_call">Прием вызова</string>
     <string name="rtp_state_ending_call">Завершение вызова</string>
-    <string name="rtp_state_finding_device">Обнаружение устройства</string>
     <string name="rtp_state_ringing">Звонящий</string>
     <string name="rtp_state_declined_or_busy">Занят</string>
     <string name="rtp_state_connectivity_error">Не удается подключиться</string>
