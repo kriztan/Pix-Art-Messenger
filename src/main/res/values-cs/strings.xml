@@ -369,7 +369,6 @@
     <string name="device_does_not_support_certificates">Tento přístroj nepodporuje výběr klientského certifikátu!</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Server- nebo .onion-adresa</string>
     <string name="not_a_valid_port">Toto není platné číslo portu</string>
     <string name="not_valid_hostname">Toto není platné hostname</string>
     <string name="connected_accounts">%1$d z %2$d účtů připojeno</string>
@@ -427,7 +426,6 @@
     <string name="delete_selected_keys">Smazat vybrané klíče</string>
     <string name="error_publish_avatar_offline">Pro zveřejnění svého avatara musíte být online.</string>
     <string name="show_error_message">Zobrazit chybovou zprávu</string>
-    <string name="error_message">Chybová zpráva</string>
     <string name="data_saver_enabled">Zapnuta úspora dat</string>
     <string name="device_does_not_support_data_saver">Tento přístroj nepodporuje vypnutí šetření dat pro aplikaci Pix-Art Messenger.</string>
     <string name="error_unable_to_create_temporary_file">Nelze vytvořit dočasný soubor</string>
