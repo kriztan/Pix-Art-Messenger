@@ -466,7 +466,7 @@
     <string name="changelog">Cambiamenti</string>
     <string name="account_settings_hostname">Nome host</string>
     <string name="account_settings_port">Porta</string>
-    <string name="hostname_or_onion">Indirizzo server o .onion</string>
+    <string name="hostname_or_onion">Nome host o indirizzo .onion</string>
     <string name="not_a_valid_port">Questo non è un numero di porta valido</string>
     <string name="not_valid_hostname">Questo non è un nome host valido</string>
     <string name="connected_accounts">%1$d su %2$d account connessi</string>
@@ -641,7 +641,7 @@
     <string name="received_message_from_stranger">Ricevuto messaggio da uno sconosciuto</string>
     <string name="contacts_are_typing">%s stanno scrivendo…</string>
     <string name="contact_is_typing">%s sta digitando...</string>
-    <string name="one_participant">un partecipante</string>
+    <string name="one_participant">Un partecipante</string>
     <string name="more_participants">%d partecipanti</string>
     <string name="presence_offline">Non in linea</string>
     <string name="block_stranger">Blocca sconosciuto</string>
@@ -844,8 +844,8 @@
     <string name="pref_prefer_xmpp_avatar_summary">Preferisci l\'immagine di profilo XMPP dell\'utente a quella della tua rubrica</string>
     <string name="pref_prefer_xmpp_avatar">Preferisci l\'immagine di profilo XMPP</string>
     <plurals name="view_users">
-        <item quantity="one">Vedi %1$d Partecipante</item>
-        <item quantity="other">Vedi %1$d Partecipanti</item>
+        <item quantity="one">Vedi %1$d partecipante</item>
+        <item quantity="other">Vedi %1$d partecipanti</item>
     </plurals>
     <string name="group_chat_members">Partecipanti</string>
     <string name="message_deleted">Il messaggio è stato eliminato</string>
@@ -1046,4 +1046,7 @@
     <string name="disable_tor_to_make_call">Disabilita Tor per effettuare chiamate</string>
     <string name="only_one_call_at_a_time">È possibile effettuare una sola chiamata alla volta.</string>
     <string name="missed_call">Chiamata persa</string>
+    <string name="could_not_switch_camera">Non è stato possibile cambiare la fotocamera</string>
+    <string name="otr_warning">Il supporto alla crittografia OTR terminerà in Giugno 2020. Premi leggi altro per sapere più informazioni. Un collegamento sarà aperto nel browser.</string>
+    <string name="readmore">Leggi altro</string>
 </resources>
