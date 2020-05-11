@@ -466,7 +466,6 @@
     <string name="changelog">Änderungen</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Server- oder .onion-Adresse</string>
     <string name="not_a_valid_port">Dies ist keine gültige Port-Nummer</string>
     <string name="not_valid_hostname">Dies ist kein gültiger Hostname</string>
     <string name="connected_accounts">%1$d von %2$d Profile verbunden</string>
@@ -574,7 +573,6 @@
     <string name="message">Nachricht</string>
     <string name="quote">Zitieren</string>
     <string name="show_error_message">Zeige Fehlermeldung</string>
-    <string name="error_message">Fehlermeldung</string>
     <string name="data_saver_enabled">Datensparmodus aktiviert</string>
     <string name="data_saver_enabled_explained">Dein Betriebssystem verbietet Pix-Art Messenger im Hintergrund den Zugang zum Internet. Um Benachrichtigungen erhalten zu können, solltest du Pix-Art Messenger den Zugang erlauben, wenn der Datensparmodus aktiv ist.\n\nPix-Art Messenger wird dennoch versuchen, so viele Daten wie möglich einzusparen.</string>
     <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
@@ -633,7 +631,6 @@
     <string name="today">Heute</string>
     <string name="pref_use_max_brightness_summary">Maximale Helligkeit aktivieren, wenn Videos oder Bilder im Vollbild betracht werden.</string>
     <string name="pref_use_max_brightness">Maximale Helligkeit</string>
-    <string name="block_jabber_id">Jabber-ID</string>
     <string name="corresponding_conversations_closed">Zugehörige Unterhaltung beendet.</string>
     <string name="contact_blocked_past_tense">Kontakt gesperrt.</string>
     <string name="pref_notifications_from_strangers">Benachrichtigungen von Unbekannten</string>
@@ -641,7 +638,6 @@
     <string name="received_message_from_stranger">Erhaltene Nachricht von einem Unbekannten</string>
     <string name="contacts_are_typing">%s tippen…</string>
     <string name="contact_is_typing">%s schreibt…</string>
-    <string name="one_participant">Ein Teilnehmer</string>
     <string name="more_participants">%d Teilnehmer</string>
     <string name="presence_offline">Offline</string>
     <string name="block_stranger">Unbekannten sperren</string>
@@ -843,10 +839,6 @@
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Bevorzuge den vom Benutzer gesetzten Avatar anstatt des Profilbildes in deinem Adressbuch</string>
     <string name="pref_prefer_xmpp_avatar">XMPP-Avatar bevorzugen</string>
-    <plurals name="view_users">
-        <item quantity="one">%1$d Teilnehmer anzeigen</item>
-        <item quantity="other">%1$d Teilnehmer anzeigen</item>
-    </plurals>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
@@ -934,8 +926,6 @@
     <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
     <string name="waiting_for_transfer">Warte auf Übertragung</string>
-    <string name="x_has_written">%s schrieb:</string>
-    <string name="i_have_written">Ich schrieb:</string>
     <string name="your_status">Dein Status</string>
     <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
     <string name="pref_use_invidious_summary">Invidious ist eine datenschutzfreundliche Alternative zu YouTube</string>
