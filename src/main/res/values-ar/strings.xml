@@ -401,7 +401,6 @@
     <string name="changelog">التغييرات</string>
     <string name="account_settings_hostname">اسم المضيف</string>
     <string name="account_settings_port">المنفذ</string>
-    <string name="hostname_or_onion">خادِم - أو عنوان .onion</string>
     <string name="not_a_valid_port">رقم المَنفَذ هذا غير صالح</string>
     <string name="not_valid_hostname">اسم المضيف هذا غير صالح</string>
     <string name="load_more_messages">تحميل المزيد من الرسائل</string>
@@ -465,7 +464,6 @@
     <string name="message">الرسالة</string>
     <string name="quote">اقتباس</string>
     <string name="show_error_message">عرض رسالة الخطأ</string>
-    <string name="error_message">رسالة الخطأ</string>
     <string name="add_to_contact_list">أضفه إلى قائمة المراسلين</string>
     <string name="contact">مراسل</string>
     <string name="copy_fingerprint">انسخ البصمة</string>
@@ -488,7 +486,6 @@
     <string name="pref_notifications_from_strangers_summary">أخبرني عند ورود رسائل مِن طرف أشخاص أجانب.</string>
     <string name="contacts_are_typing">%s يكتبون حاليا…</string>
     <string name="contact_is_typing">%s يكتب حاليا…</string>
-    <string name="one_participant">مشارك واحد</string>
     <string name="more_participants">%d مشاركين</string>
     <string name="presence_offline">غير مُتصل</string>
     <string name="block_stranger">حجب الأجنبي</string>
