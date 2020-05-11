@@ -449,7 +449,6 @@
     <string name="changelog">Istoric schimbări</string>
     <string name="account_settings_hostname">Nume gazdă</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Adresă server sau .onion</string>
     <string name="not_a_valid_port">Acesta nu este un numar de port valabil</string>
     <string name="not_valid_hostname">Acesta nu este un nume de gazdă valabil</string>
     <string name="connected_accounts">%1$d din %2$d conturi conectate</string>
@@ -545,7 +544,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="message">Mesaj</string>
     <string name="quote">Citează</string>
     <string name="show_error_message">Arată mesaj de eroare</string>
-    <string name="error_message">Mesaj de eroare</string>
     <string name="data_saver_enabled">Economizorul de date este activat</string>
     <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru Pix-Art Messenger atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru Pix-Art Messenger atunci când Economizorul de date este activ.\n\nPix-Art Messenger totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
     <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru Pix-Art Messenger.</string>
@@ -605,7 +603,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
         <item quantity="other">%d de luni</item>
     </plurals>
     <string name="today">Azi</string>
-    <string name="block_jabber_id">Blochează adresă XMPP</string>
     <string name="corresponding_conversations_closed">Conversațiile corespunzătoare au fost închise.</string>
     <string name="contact_blocked_past_tense">Contact blocat.</string>
     <string name="pref_notifications_from_strangers">Notificări de la persoane necunoscute</string>
