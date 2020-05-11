@@ -1021,7 +1021,6 @@
     <string name="rtp_state_connected">Connecté</string>
     <string name="rtp_state_accepting_call">Décrocher</string>
     <string name="rtp_state_ending_call">Raccrocher</string>
-    <string name="rtp_state_finding_device">Localiser des appareils</string>
     <string name="rtp_state_ringing">Appel en cours</string>
     <string name="rtp_state_declined_or_busy">Occupé</string>
     <string name="rtp_state_connectivity_error">Impossible d\'établir l\'appel</string>
