@@ -1031,7 +1031,6 @@
     <string name="rtp_state_connected">Conectado</string>
     <string name="rtp_state_accepting_call">Aceptando llamada</string>
     <string name="rtp_state_ending_call">Finalizando llamada</string>
-    <string name="rtp_state_finding_device">Localizar dispositivo</string>
     <string name="rtp_state_ringing">Sonando</string>
     <string name="rtp_state_declined_or_busy">Ocupado</string>
     <string name="rtp_state_connectivity_error">No se puede conectar</string>
