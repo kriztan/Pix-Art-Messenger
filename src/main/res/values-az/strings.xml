@@ -468,7 +468,7 @@
     <string name="changelog">Dəyişikliklər</string>
     <string name="account_settings_hostname">Host adı</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Server- və ya .onion-Ünvan</string>
+    <string name="hostname_or_onion">Host adı və ya .onion ünvanı</string>
     <string name="not_a_valid_port">Bu etibarlı port nömrəsi deyil</string>
     <string name="not_valid_hostname">Bu düzgün bir host adı deyil</string>
     <string name="connected_accounts">%2$d hesabdan %1$d qoşuldu</string>
@@ -643,7 +643,7 @@
     <string name="received_message_from_stranger">Naməlumlardan mesaj alındı</string>
     <string name="contacts_are_typing">%s yazır…</string>
     <string name="contact_is_typing">%s yazır…</string>
-    <string name="one_participant">bir iştirakçı</string>
+    <string name="one_participant">Bir iştirakçı</string>
     <string name="more_participants">%d İştirakçılar</string>
     <string name="presence_offline">Xətdən kənar</string>
     <string name="block_stranger">Naməlumu blokla</string>
@@ -845,10 +845,6 @@
     <string name="unable_to_decrypt_backup">Nüsxəni deşifrə etmək olmur. Parol düzgündür?</string>
     <string name="pref_prefer_xmpp_avatar_summary">İstifadəçi XMPP avatarına ünvan kitabınızdan daha çox üstünlük verin</string>
     <string name="pref_prefer_xmpp_avatar">XMPP avatarına üstünlük verin</string>
-    <plurals name="view_users">
-        <item quantity="one">%1$d iştirakçıya baxış</item>
-        <item quantity="other">%1$d iştirakçıya baxış</item>
-    </plurals>
     <string name="group_chat_members">Iştirakçılar</string>
     <string name="message_deleted">Mesaj silindi</string>
     <string name="channel_details">Kanal məlumatları</string>
@@ -936,7 +932,7 @@
     <string name="please_enter_password">Zəhmət olmasa bu hesab üçün parol daxil edin</string>
     <string name="unable_to_perform_this_action">Bu hərəkəti yerinə yetirmək olmur</string>
     <string name="waiting_for_transfer">Transferi gözləyirəm</string>
-    <string name="x_has_written">%s Yazdı:</string>
+    <string name="x_has_written">%s yazdı:</string>
     <string name="i_have_written">Mən yazdım:</string>
     <string name="your_status">Sənin statusun</string>
     <string name="pref_use_invidious">YouTube linkləri Invidious ilə əvəz edin</string>
