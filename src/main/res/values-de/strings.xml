@@ -1021,7 +1021,6 @@
     <string name="rtp_state_connected">Verbunden</string>
     <string name="rtp_state_accepting_call">Anruf annehmen</string>
     <string name="rtp_state_ending_call">Anruf beenden</string>
-    <string name="rtp_state_finding_device">Geräte lokalisieren</string>
     <string name="rtp_state_ringing">Klingelt</string>
     <string name="rtp_state_declined_or_busy">Besetzt</string>
     <string name="rtp_state_connectivity_error">Anruf kann nicht verbunden werden</string>
