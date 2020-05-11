@@ -466,7 +466,6 @@
     <string name="changelog">Changements</string>
     <string name="account_settings_hostname">Nom d’hôte</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Adresse du serveur ou .onion</string>
     <string name="not_a_valid_port">Ce numéro de port n\'est pas valide</string>
     <string name="not_valid_hostname">Ce nom d’hôte n’est pas valide</string>
     <string name="connected_accounts">%1$d compte(s) sur %2$d connecté(s)</string>
@@ -574,7 +573,6 @@
     <string name="message">Message</string>
     <string name="quote">Citation</string>
     <string name="show_error_message">Afficher le message d’erreur</string>
-    <string name="error_message">Message d’erreur</string>
     <string name="data_saver_enabled">Économiseur de données activé</string>
     <string name="data_saver_enabled_explained">Votre système d’exploitation empêche Pix-Art Messenger d’accéder à Internet lorsque l’application est en arrière plan. Pour recevoir les notifications des nouveaux messages, vous devez autoriser Pix-Art Messenger à accéder au réseau sans restriction quand l’Économiseur de données est activé.\n\nPix-Art Messenger tentera de consommer le moins de données possible.</string>
     <string name="device_does_not_support_data_saver">Votre appareil ne prend pas en charge la désactivation de l’Économiseur de données pour Pix-Art Messenger.</string>
@@ -633,7 +631,6 @@
     <string name="today">Aujourd’hui</string>
     <string name="pref_use_max_brightness_summary">Bascule en mode luminosité maximale lors du visionnement des vidéos ou des images en mode plein écran.</string>
     <string name="pref_use_max_brightness">Luminosité maximale</string>
-    <string name="block_jabber_id">Bloquer l’identifiant Jabber</string>
     <string name="corresponding_conversations_closed">Conversations correspondantes fermées.</string>
     <string name="contact_blocked_past_tense">Contact bloqué.</string>
     <string name="pref_notifications_from_strangers">Notifications d’inconnus</string>
@@ -641,7 +638,6 @@
     <string name="received_message_from_stranger">Message d’un inconnu reçu</string>
     <string name="contacts_are_typing">%s sont en train d’écrire …</string>
     <string name="contact_is_typing">%s est en train d’écrire …</string>
-    <string name="one_participant">un participant</string>
     <string name="more_participants">%d participants</string>
     <string name="presence_offline">Hors ligne</string>
     <string name="block_stranger">Bloquer l’inconnu</string>
@@ -843,10 +839,6 @@
     <string name="unable_to_decrypt_backup">Impossible de déchiffrer la sauvegarde. Vérifiez que le mot de passe est correct.</string>
     <string name="pref_prefer_xmpp_avatar_summary">Préférer l\'avatar XMPP des utilisateurs/trices au lieu de celui figurant dans votre carnet d\'adresses</string>
     <string name="pref_prefer_xmpp_avatar">Préférer l\'avatar XMPP</string>
-    <plurals name="view_users">
-        <item quantity="one">Voir %1$d Participant</item>
-        <item quantity="other">Voir %1$d Participants</item>
-    </plurals>
     <string name="group_chat_members">Participants</string>
     <string name="message_deleted">Le message a été supprimé</string>
     <string name="channel_details">Détails du canal</string>
@@ -934,8 +926,6 @@
     <string name="please_enter_password">Merci de saisir le mot de passe de ce compte</string>
     <string name="unable_to_perform_this_action">Impossible d\'effectuer cette action</string>
     <string name="waiting_for_transfer">En attente de l\'envoi</string>
-    <string name="x_has_written">%s a écrit :</string>
-    <string name="i_have_written">J\'ai écris :</string>
     <string name="your_status">Votre statut</string>
     <string name="pref_use_invidious">Remplacer les liens YouTube par Invidious</string>
     <string name="pref_use_invidious_summary">Invidious est une alternative à Youtube et respecte la vie privée</string>
