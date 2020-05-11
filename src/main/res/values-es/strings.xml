@@ -466,7 +466,7 @@
     <string name="changelog">Modificaciones</string>
     <string name="account_settings_hostname">Nombre del host</string>
     <string name="account_settings_port">Puerto</string>
-    <string name="hostname_or_onion">Dirección del servidor o .onion</string>
+    <string name="hostname_or_onion">Nombre de host o dirección .onion</string>
     <string name="not_a_valid_port">Éste no es un número de puerto válido</string>
     <string name="not_valid_hostname">Éste no es un hostame válido</string>
     <string name="connected_accounts">%1$d de %2$d cuentas conectadas</string>
@@ -641,7 +641,7 @@
     <string name="received_message_from_stranger">Mensaje recibido de un contacto desconocido</string>
     <string name="contacts_are_typing">%s están escribiendo...</string>
     <string name="contact_is_typing">%s está escribiendo...</string>
-    <string name="one_participant">un Participante</string>
+    <string name="one_participant">Un participante</string>
     <string name="more_participants">%d participantes</string>
     <string name="presence_offline">Desconectado</string>
     <string name="block_stranger">Bloquear desconocido</string>
@@ -844,7 +844,7 @@
     <string name="pref_prefer_xmpp_avatar_summary">Preferir el avatar de usuarios XMPP en lugar del de tu lista de contactos</string>
     <string name="pref_prefer_xmpp_avatar">Preferir avatar XMPP</string>
     <plurals name="view_users">
-        <item quantity="one">Ver %1$d participantes</item>
+        <item quantity="one">Ver %1$d participante</item>
         <item quantity="other">Ver %1$d participantes</item>
     </plurals>
     <string name="group_chat_members">Participantes</string>
