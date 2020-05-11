@@ -427,7 +427,6 @@
     <string name="device_does_not_support_certificates">Je apparaat ondersteunt de selectie van cliënt-certificaten niet!</string>
     <string name="account_settings_hostname">Hostnaam</string>
     <string name="account_settings_port">Poort</string>
-    <string name="hostname_or_onion">Server- of .onion-adres</string>
     <string name="not_a_valid_port">Dit is geen geldig poortnummer</string>
     <string name="not_valid_hostname">Dit is geen geldige hostnaam</string>
     <string name="connected_accounts">%1$d van %2$d accounts verbonden</string>
@@ -512,7 +511,6 @@
     <string name="message">Bericht</string>
     <string name="quote">Citeren</string>
     <string name="show_error_message">Toon foutbericht</string>
-    <string name="error_message">Foutbericht</string>
     <string name="data_saver_enabled">Gegevensbesparing ingeschakeld</string>
     <string name="device_does_not_support_data_saver">Je apparaat ondersteunt het uitschakelen van gegevensbesparing voor Pix-Art Messenger niet.</string>
     <string name="add_to_contact_list">Toevoegen aan contactpersonen</string>
@@ -566,7 +564,6 @@
         <item quantity="other">%d maanden</item>
     </plurals>
     <string name="today">Vandaag</string>
-    <string name="block_jabber_id">Jabber-ID blokkeren</string>
     <string name="corresponding_conversations_closed">Bijbehorende gesprekken gesloten.</string>
     <string name="contact_blocked_past_tense">Contact geblokkeerd.</string>
     <string name="pref_notifications_from_strangers">Meldingen van onbekenden</string>
@@ -574,7 +571,6 @@
     <string name="received_message_from_stranger">Bericht ontvangen van onbekende</string>
     <string name="contacts_are_typing">%s zijn aan het typen…</string>
     <string name="contact_is_typing">%s is aan het typen…</string>
-    <string name="one_participant">één deelnemer</string>
     <string name="more_participants">%d deelnemers</string>
     <string name="block_stranger">Vreemde blokkeren</string>
     <string name="block_entire_domain">Volledig domein blokkeren</string>
