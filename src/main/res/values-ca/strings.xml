@@ -464,7 +464,6 @@
     <string name="changelog">Modificacions</string>
     <string name="account_settings_hostname">Nom del host</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Direcció del servidor o .onion</string>
     <string name="not_a_valid_port"> Aquest no és un número de port vàlid</string>
     <string name="not_valid_hostname">Aquest no és un hostame vàlid</string>
     <string name="connected_accounts">%1$d de %2$d comptes connectats</string>
@@ -569,7 +568,6 @@
     <string name="message">Missatge</string>
     <string name="quote">Citar</string>
     <string name="show_error_message">Mostrar missatge d\'error</string>
-    <string name="error_message">Missatge d\'error</string>
     <string name="data_saver_enabled">Optimizació de dades habil·litades</string>
     <string name="device_does_not_support_data_saver">El teu dispositiu no suporta l\'opció de deshabil·litar l\'optimizació de dades per a Pix-Art Messenger</string>
     <string name="add_to_contact_list">Afegir a contactes</string>
@@ -627,7 +625,6 @@
     <string name="today">Avui</string>
     <string name="pref_use_max_brightness_summary">Canviar la brillantor al màxim quant estigui veient vídeos o imatges en pantalla completa.</string>
     <string name="pref_use_max_brightness">Brillantor al màxim</string>
-    <string name="block_jabber_id">Bloquejar Identificador Jabber</string>
     <string name="corresponding_conversations_closed">Conversa corresponent tancada.</string>
     <string name="contact_blocked_past_tense">Contacte bloquejat.</string>
     <string name="pref_notifications_from_strangers">Notificacions de desconeguts</string>
@@ -635,7 +632,6 @@
     <string name="received_message_from_stranger">Missatge rebut d\'un contacte desconegut</string>
     <string name="contacts_are_typing">%s estàn escrivint...</string>
     <string name="contact_is_typing">%s està escrivint...</string>
-    <string name="one_participant">un Participant</string>
     <string name="more_participants">%d participants</string>
     <string name="presence_offline">Fora de línia</string>
     <string name="block_stranger">Bloquejar desconegut</string>
