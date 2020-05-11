@@ -573,6 +573,7 @@
     <string name="message">Nachricht</string>
     <string name="quote">Zitieren</string>
     <string name="show_error_message">Zeige Fehlermeldung</string>
+    <string name="error_message">Fehlermeldung</string>
     <string name="data_saver_enabled">Datensparmodus aktiviert</string>
     <string name="data_saver_enabled_explained">Dein Betriebssystem verbietet Pix-Art Messenger im Hintergrund den Zugang zum Internet. Um Benachrichtigungen erhalten zu können, solltest du Pix-Art Messenger den Zugang erlauben, wenn der Datensparmodus aktiv ist.\n\nPix-Art Messenger wird dennoch versuchen, so viele Daten wie möglich einzusparen.</string>
     <string name="device_does_not_support_data_saver">Dein Gerät unterstützt den Datensparmodus für Pix-Art Messenger nicht.</string>
@@ -638,6 +639,7 @@
     <string name="received_message_from_stranger">Erhaltene Nachricht von einem Unbekannten</string>
     <string name="contacts_are_typing">%s tippen…</string>
     <string name="contact_is_typing">%s schreibt…</string>
+    <string name="one_participant">Ein Teilnehmer</string>
     <string name="more_participants">%d Teilnehmer</string>
     <string name="presence_offline">Offline</string>
     <string name="block_stranger">Unbekannten sperren</string>
@@ -839,6 +841,10 @@
     <string name="unable_to_decrypt_backup">Sicherung kann nicht entschlüsselt werden. Stimmt das Kennwort?</string>
     <string name="pref_prefer_xmpp_avatar_summary">Bevorzuge den vom Benutzer gesetzten Avatar anstatt des Profilbildes in deinem Adressbuch</string>
     <string name="pref_prefer_xmpp_avatar">XMPP-Avatar bevorzugen</string>
+    <plurals name="view_users">
+        <item quantity="one">%1$d Teilnehmer anzeigen</item>
+        <item quantity="other">%1$d Teilnehmer anzeigen</item>
+    </plurals>
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
@@ -926,6 +932,8 @@
     <string name="please_enter_password">Bitte gib das Kennwort für dieses Profil ein</string>
     <string name="unable_to_perform_this_action">Diese Aktion kann nicht ausgeführt werden</string>
     <string name="waiting_for_transfer">Warte auf Übertragung</string>
+    <string name="x_has_written">%s schrieb:</string>
+    <string name="i_have_written">Ich schrieb:</string>
     <string name="your_status">Dein Status</string>
     <string name="pref_use_invidious">Ersetze YouTube Links durch Invidious</string>
     <string name="pref_use_invidious_summary">Invidious ist eine datenschutzfreundliche Alternative zu YouTube</string>
