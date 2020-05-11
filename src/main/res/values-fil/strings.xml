@@ -420,7 +420,6 @@
     <string name="changelog">Mga pagbabago</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Server- o .onion-Address</string>
     <string name="not_a_valid_port">Hindi ito isang wastong numero ng port</string>
     <string name="not_valid_hostname">Hindi ito wastong hostname</string>
     <string name="connected_accounts">%1$d ng %2$d mga account na konektado</string>
@@ -513,7 +512,6 @@
     <string name="message">Mensahe</string>
     <string name="quote">Banggitin</string>
     <string name="show_error_message">Ipakita ang mensahe ng error</string>
-    <string name="error_message">Maling mensahe</string>
     <string name="data_saver_enabled">Pinagana ang data saver</string>
     <string name="device_does_not_support_data_saver">Hindi sinusuportahan ng iyong aparato ang hindi pagpapagana ng data saver para sa Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Idagdag sa listahan ng kontak</string>
@@ -540,7 +538,6 @@
     <string name="today">Ngayon</string>
     <string name="pref_use_max_brightness_summary">Lumipat sa maximum na liwanag habang nanonood ng mga video o mga imahe sa fullscreen.</string>
     <string name="pref_use_max_brightness">Pinakamataas na liwanag</string>
-    <string name="block_jabber_id">I-block ang Jabber-ID</string>
     <string name="corresponding_conversations_closed">Sarado ang mga pag-uusap na sarado.</string>
     <string name="contact_blocked_past_tense">Na-block ang kontak.</string>
     <string name="pref_notifications_from_strangers">Mga abiso mula sa mga estranghero</string>
@@ -548,7 +545,6 @@
     <string name="received_message_from_stranger">Natanggap na mensahe mula sa estranghero</string>
     <string name="contacts_are_typing">%s ay nagta-type…</string>
     <string name="contact_is_typing">%s ay nagta-type…</string>
-    <string name="one_participant">isang kalahok</string>
     <string name="more_participants">%d mga kalahok</string>
     <string name="presence_offline">Offline</string>
     <string name="block_stranger">I-block ang estranghero</string>
