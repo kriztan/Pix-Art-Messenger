@@ -380,7 +380,6 @@
     <string name="device_does_not_support_certificates">Din enhet stödjer inte val av klientcertifikat!</string>
     <string name="account_settings_hostname">Servernamn</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Server- eller .onion-adress</string>
     <string name="not_a_valid_port">Inte ett giltigt portnummer</string>
     <string name="not_valid_hostname">Inte ett giltigt servernamn</string>
     <string name="connected_accounts">%1$d av %2$d konton anslutna</string>
@@ -442,7 +441,6 @@
     <string name="error_publish_avatar_offline">Du måste vara ansluten för att publicera din avatarbild</string>
     <string name="quote">Citera</string>
     <string name="show_error_message">Visa felmeddelande</string>
-    <string name="error_message">Felmeddelande</string>
     <string name="data_saver_enabled">Databesparing</string>
     <string name="device_does_not_support_data_saver">Din enhet stödjer inte att deaktivera databesparing för Pix-Art Messenger.</string>
     <string name="error_unable_to_create_temporary_file">Kunde inte skapa tillfällig fil</string>
@@ -461,7 +459,6 @@
     <string name="verifying_omemo_keys_trusted_source">Du håller på att verifiera OMEMO-nyckeln för %1$s efter att du följt en länk. Detta är endast säkert om du följde länken från en trovärdig källa där endast %2$s kan ha publiserat denna länk.</string>
     <string name="verify_omemo_keys">Verifiera OMEMO-nycklar</string>
     <string name="not_fetching_history_retention_period">Hämtar inte meddelanden på grund av inställningen för borttagning av gamla meddelanden.</string>
-    <string name="block_jabber_id">Blockera Jabber-ID</string>
     <string name="corresponding_conversations_closed">Motsvarande konversationer är stängda.</string>
     <string name="contact_blocked_past_tense">Kontakt blockerad.</string>
     <string name="pref_notifications_from_strangers">Notifieringar från främlingar</string>
