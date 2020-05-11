@@ -459,7 +459,6 @@
     <string name="changelog">Промени</string>
     <string name="account_settings_hostname">Име на сървър</string>
     <string name="account_settings_port">Порт</string>
-    <string name="hostname_or_onion">Адрес на сървър или .onion</string>
     <string name="not_a_valid_port">Това не е валиден номер на порт</string>
     <string name="not_valid_hostname">Това не е валидно име на сървър</string>
     <string name="connected_accounts">Свързани са %1$d от %2$d профила</string>
@@ -560,7 +559,6 @@
     <string name="message">Съобщение</string>
     <string name="quote">Цитирай</string>
     <string name="show_error_message">Покажи грешката на съобшението</string>
-    <string name="error_message">Грешка в писмото</string>
     <string name="data_saver_enabled">Спестяването на данни е активирано</string>
     <string name="device_does_not_support_data_saver">Устройството ви не поддържа блокиране на защитата на данни за Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Добави в списъка с контакти</string>
@@ -618,7 +616,6 @@
     <string name="today">Днес</string>
     <string name="pref_use_max_brightness_summary">Превключване на максимална яркост, докато гледам видеоклипове или изображения на цял екран.</string>
     <string name="pref_use_max_brightness">М аксимална яркост</string>
-    <string name="block_jabber_id">Блокирай Jabber-ID</string>
     <string name="corresponding_conversations_closed">Съответните разговори бяха затворени.</string>
     <string name="contact_blocked_past_tense">Контактът е блокиран.</string>
     <string name="pref_notifications_from_strangers">Уведомления от непознати</string>
@@ -626,7 +623,6 @@
     <string name="received_message_from_stranger">Получено съобщение от непознат</string>
     <string name="contacts_are_typing">%s пишат...</string>
     <string name="contact_is_typing">%s пише...</string>
-    <string name="one_participant">един участник</string>
     <string name="more_participants">%d участници</string>
     <string name="presence_offline">Извън линия</string>
     <string name="block_stranger">Блокирай непозната</string>
