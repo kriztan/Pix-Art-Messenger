@@ -365,7 +365,6 @@
     <string name="device_does_not_support_certificates">O seu dispositivo não suporta a seleção de certificados de cliente!</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Porto</string>
-    <string name="hostname_or_onion">Servidor ou endereço .onion</string>
     <string name="not_a_valid_port">Este não é um número de porto válido</string>
     <string name="not_valid_hostname">Este não é um hostname válido</string>
     <string name="connected_accounts">%1$d de %2$d contas conectadas</string>
