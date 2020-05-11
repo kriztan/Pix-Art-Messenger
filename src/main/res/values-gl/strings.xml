@@ -400,7 +400,6 @@
     <string name="device_does_not_support_certificates">O seu dispositivo non admite a selección de certificados do cliente!</string>
     <string name="account_settings_hostname">Servidor</string>
     <string name="account_settings_port">Porto</string>
-    <string name="hostname_or_onion">Servidor- ou enderezo .onion</string>
     <string name="not_a_valid_port">Este non é un número válido de porto</string>
     <string name="not_valid_hostname">Este non é un servidor válido</string>
     <string name="connected_accounts">%1$d de %2$d contas conectadas</string>
@@ -471,7 +470,6 @@
     <string name="message">Mensaxe</string>
     <string name="quote">Cita</string>
     <string name="show_error_message">Mostrar mensaxe do fallo</string>
-    <string name="error_message">Mensaxe de fallo</string>
     <string name="data_saver_enabled">Aforrador de datos habilitado</string>
     <string name="device_does_not_support_data_saver">O seu dispositivo non admite deshabilitar o aforro de datos para Conversations.</string>
     <string name="error_unable_to_create_temporary_file">Non se puido crear o ficheiro temporal</string>
@@ -492,7 +490,6 @@
     <string name="transcoding_video">Comprimindo vídeo</string>
     <string name="not_fetching_history_retention_period">Sen obtención de mensaxes debido ao período de retención local.</string>
     <string name="today">Hoxe</string>
-    <string name="block_jabber_id">Bloquear ID Jabber</string>
     <string name="corresponding_conversations_closed">Conversas correpondentes pechadas.</string>
     <string name="contact_blocked_past_tense">Contacto bloqueado.</string>
     <string name="pref_notifications_from_strangers">Notificacións de estraños</string>
