@@ -419,7 +419,6 @@
     <string name="changelog">Perubahan</string>
     <string name="account_settings_hostname">Nama host</string>
     <string name="account_settings_port">Pelabuhan</string>
-    <string name="hostname_or_onion">Server- atau .onion-Address</string>
     <string name="not_a_valid_port">Ini bukan nomor port yang valid</string>
     <string name="not_valid_hostname">Ini bukan nama host yang valid</string>
     <string name="connected_accounts">%1$d dari %2$d akun terhubung</string>
@@ -510,7 +509,6 @@
     <string name="message">Pesan</string>
     <string name="quote">Kutipan</string>
     <string name="show_error_message">Tampilkan pesan kesalahan</string>
-    <string name="error_message">Pesan kesalahan</string>
     <string name="data_saver_enabled">Penghemat data diaktifkan</string>
     <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan hemat data untuk Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
@@ -536,7 +534,6 @@
     <string name="today">Hari ini</string>
     <string name="pref_use_max_brightness_summary">Beralih ke kecerahan maksimum saat menonton video atau gambar di layar penuh.</string>
     <string name="pref_use_max_brightness">Kecerahan maksimum</string>
-    <string name="block_jabber_id">Blok Obrolan-Data diri</string>
     <string name="corresponding_conversations_closed">Percakapan yang bersamaan ditutup.</string>
     <string name="contact_blocked_past_tense">Kontak diblokir.</string>
     <string name="pref_notifications_from_strangers">Pemberitahuan dari orang tak dikenal</string>
@@ -544,7 +541,6 @@
     <string name="received_message_from_stranger">Menerima pesan dari orang yang tak dikenal</string>
     <string name="contacts_are_typing">%s sedang mengetik…</string>
     <string name="contact_is_typing">%s sedang mengetik…</string>
-    <string name="one_participant">satu peserta</string>
     <string name="more_participants">%d peserta</string>
     <string name="presence_offline">Tidak terhubung</string>
     <string name="block_stranger">Blokir orang yang tak dikenal</string>
