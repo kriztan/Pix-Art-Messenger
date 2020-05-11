@@ -465,7 +465,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="changelog">Zmiany</string>
     <string name="account_settings_hostname">Nazwa hosta</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Adres serwera lub \".onion\" adres</string>
     <string name="not_a_valid_port">To nie jest prawidłowy numer portu</string>
     <string name="not_valid_hostname">To nie jest prawidłowa nazwa hosta</string>
     <string name="connected_accounts">%1$d z %2$d kont połączonych</string>
@@ -569,7 +568,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="message">Wiadomość</string>
     <string name="quote">Cytat</string>
     <string name="show_error_message">Pokaż komunikaty błędów</string>
-    <string name="error_message">Komunikat o Błędzie</string>
     <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
     <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
@@ -638,7 +636,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="today">Dzisiaj</string>
     <string name="pref_use_max_brightness_summary">Przełącz na maksymalną jasność podczas oglądania filmów lub zdjęć na pełnym ekranie.</string>
     <string name="pref_use_max_brightness">Maksymalna jasność</string>
-    <string name="block_jabber_id">Zablokuj Jabber ID</string>
     <string name="corresponding_conversations_closed">Odpowiadające rozmowy zostały zamknięte.</string>
     <string name="contact_blocked_past_tense">Kontakt zablokowany</string>
     <string name="pref_notifications_from_strangers">Powiadomienia od nieznajomych</string>
@@ -646,7 +643,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="received_message_from_stranger">Odebrano wiadomość od nieznajomego</string>
     <string name="contacts_are_typing">1%s pisze...</string>
     <string name="contact_is_typing">%s pisze...</string>
-    <string name="one_participant">jeden uczestnik</string>
     <string name="more_participants">%d uczestników</string>
     <string name="presence_offline">Nieaktywny</string>
     <string name="block_stranger">Zablokuj nieznajomego</string>
