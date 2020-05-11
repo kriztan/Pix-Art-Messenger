@@ -420,7 +420,6 @@
     <string name="changelog">Değişiklikler</string>
     <string name="account_settings_hostname">Sunucu adı</string>
     <string name="account_settings_port">Bağlantı noktası</string>
-    <string name="hostname_or_onion">Sunucu- ya da .onion-Adresi</string>
     <string name="not_a_valid_port">Bu geçerli bir port numarası değil</string>
     <string name="not_valid_hostname">Bu geçerli bir sunucu adı değil</string>
     <string name="connected_accounts">%1$d hesaptan %2$d bağlı</string>
@@ -513,7 +512,6 @@
     <string name="message">Mesaj</string>
     <string name="quote">Alıntı</string>
     <string name="show_error_message">Hata mesajını göster</string>
-    <string name="error_message">Hata Mesajı</string>
     <string name="data_saver_enabled">Veri kaydedici etkin</string>
     <string name="device_does_not_support_data_saver">Cihazınız Pix-Art messenger\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
     <string name="add_to_contact_list">Bağlantı listesine ekle</string>
@@ -540,7 +538,6 @@
     <string name="today">Bugün</string>
     <string name="pref_use_max_brightness_summary">Videoları veya resimleri tam ekran izlerken maksimum parlaklığa geçin.</string>
     <string name="pref_use_max_brightness">En yüksek parlaklık</string>
-    <string name="block_jabber_id">Jabber-ID\'yi engelle</string>
     <string name="corresponding_conversations_closed">Benzer konuşmalar kapandı.</string>
     <string name="contact_blocked_past_tense">Bağlantı engellendi.</string>
     <string name="pref_notifications_from_strangers">Yabancılardan gelen bildirimler</string>
@@ -548,7 +545,6 @@
     <string name="received_message_from_stranger">Yabancıdan gelen ileti</string>
     <string name="contacts_are_typing">%s yazıyor…</string>
     <string name="contact_is_typing">%s yazıyor…</string>
-    <string name="one_participant">bir katılımcı</string>
     <string name="more_participants">%d katılımcılar</string>
     <string name="presence_offline">Çevrimdışı</string>
     <string name="block_stranger">Yabancıyı engelle</string>
