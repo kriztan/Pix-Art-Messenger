@@ -1029,7 +1029,6 @@
     <string name="rtp_state_connected">Qoşuldu</string>
     <string name="rtp_state_accepting_call">Zəngi qəbul edir</string>
     <string name="rtp_state_ending_call">Zəngi bitir</string>
-    <string name="rtp_state_finding_device">Cihazların axtarışı</string>
     <string name="rtp_state_ringing">Çağırır</string>
     <string name="rtp_state_declined_or_busy">Məşğul</string>
     <string name="rtp_state_connectivity_error">Zəngi bağlamaq olmur</string>
