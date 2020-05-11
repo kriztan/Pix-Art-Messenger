@@ -388,7 +388,6 @@
     <string name="changelog">Mga kausaban</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Port</string>
-    <string name="hostname_or_onion">Serber- o .onion-Address</string>
     <string name="not_a_valid_port">Dili kini balido nga port nga numero</string>
     <string name="not_valid_hostname">Dili kini usa ka balido nga hostname</string>
     <string name="connected_accounts">%1$d gekan sa %2$d mga account konektado</string>
@@ -485,7 +484,6 @@
     <string name="message">Mensahe</string>
     <string name="quote">Quote</string>
     <string name="show_error_message">Ipakita ang error nga mensahe</string>
-    <string name="error_message">Error nga Mensahe</string>
     <string name="data_saver_enabled">Tigluwas sa Data gipagana</string>
     <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
@@ -512,7 +510,6 @@
     <string name="received_message_from_stranger">Nadawat nga mga mensahe gekan sa estranghero</string>
     <string name="contacts_are_typing">%s nag type…</string>
     <string name="contact_is_typing">%s ang pagtype…</string>
-    <string name="one_participant">usa ka partisipante</string>
     <string name="more_participants">%d mga partisipante</string>
     <string name="presence_offline">Dili-online</string>
     <string name="block_stranger">I-block ang estranghero</string>
