@@ -466,6 +466,7 @@
     <string name="changelog">Änderungen</string>
     <string name="account_settings_hostname">Hostname</string>
     <string name="account_settings_port">Port</string>
+    <string name="hostname_or_onion">Server- oder .onion-Adresse</string>
     <string name="not_a_valid_port">Dies ist keine gültige Port-Nummer</string>
     <string name="not_valid_hostname">Dies ist kein gültiger Hostname</string>
     <string name="connected_accounts">%1$d von %2$d Profile verbunden</string>
@@ -485,11 +486,11 @@
     <string name="pref_picture_quality_summary">Bildgröße anpassen und komprimieren</string>
     <string name="pref_video_quality">Videoqualität</string>
     <string name="pref_video_quality_summary">Videogröße anpassen und komprimieren</string>
-    <string name="video_very_low">sehr niedrig (144p)</string>
-    <string name="video_low">niedrig (360p)</string>
-    <string name="video_mid">mittelmäßig (720p)</string>
-    <string name="video_high">hoch (1080p)</string>
-    <string name="video_original">original (unkomprimiert)</string>
+    <string name="video_very_low">Sehr niedrig (144p)</string>
+    <string name="video_low">Niedrig (360p)</string>
+    <string name="video_mid">Mittelmäßig (720p)</string>
+    <string name="video_high">Hoch (1080p)</string>
+    <string name="video_original">Original (unkomprimiert)</string>
     <string name="always">Immer</string>
     <string name="always_off">Immer aus</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
@@ -632,6 +633,7 @@
     <string name="today">Heute</string>
     <string name="pref_use_max_brightness_summary">Maximale Helligkeit aktivieren, wenn Videos oder Bilder im Vollbild betracht werden.</string>
     <string name="pref_use_max_brightness">Maximale Helligkeit</string>
+    <string name="block_jabber_id">Blockiere Jabber-ID</string>
     <string name="corresponding_conversations_closed">Zugehörige Unterhaltung beendet.</string>
     <string name="contact_blocked_past_tense">Kontakt gesperrt.</string>
     <string name="pref_notifications_from_strangers">Benachrichtigungen von Unbekannten</string>
@@ -649,10 +651,10 @@
     <string name="pref_use_tor">Über Tor verbinden</string>
     <string name="pref_use_tor_summary">Alle Verbindungen über das Tor-Netzwerk tunneln. Benötigt Orbot</string>
     <string name="pref_connection_options">Verbindung</string>
-    <string name="image_low">niedrig (720p)</string>
-    <string name="image_mid">mittelmäßig  (1920p)</string>
-    <string name="image_high">hoch (3840p)</string>
-    <string name="image_original">original (unkomprimiert)</string>
+    <string name="image_low">Niedrig (720p)</string>
+    <string name="image_mid">Mittelmäßig (1920p)</string>
+    <string name="image_high">Hoch (3840p)</string>
+    <string name="image_original">Original (unkomprimiert)</string>
     <string name="last_seen_just_away">kürzlich</string>
     <string name="send_message">Nachricht senden</string>
     <string name="send_failed_resend">Zustellung fehlgeschlagen, sende erneut…</string>
@@ -1029,6 +1031,7 @@
     <string name="rtp_state_connected">Verbunden</string>
     <string name="rtp_state_accepting_call">Anruf annehmen</string>
     <string name="rtp_state_ending_call">Anruf beenden</string>
+    <string name="rtp_state_finding_device">Erkenne Geräte</string>
     <string name="rtp_state_ringing">Klingelt</string>
     <string name="rtp_state_declined_or_busy">Besetzt</string>
     <string name="rtp_state_connectivity_error">Anruf kann nicht verbunden werden</string>
