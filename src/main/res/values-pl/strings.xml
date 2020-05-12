@@ -308,6 +308,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="notification_restored_backup_title">Kopia zapasowa została przywrócona</string>
     <string name="notification_restored_backup_subtitle">Nie zapomnij włączyć konta.</string>
     <string name="choose_file">Wybierz plik</string>
+    <string name="receiving_file">Otrzymywanie: %1$s</string>
     <string name="download_x_file">Pobierz %s</string>
     <string name="delete_x_file">Usuń %s</string>
     <string name="file">plik</string>
@@ -366,6 +367,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="ban_from_conference">Wyklucz z czatu grupowego</string>
     <string name="kick_from_conference">Wykop z rozmowy grupowej</string>
     <string name="ban_from_public_conference_message">Zamierzasz trwale zbanować %s w czacie publicznym.</string>
+    <string name="ban_from_conference_message">Zamierzasz na zawsze wykluczyć %s z czatu grupowego</string>
+    <string name="kicking_from_public_conference">Zamierzasz wyrzucić %s z czatu publicznego.</string>
+    <string name="kicking_from_conference">Zamierzasz wyrzucić %s z czatu grupowego.</string>
     <string name="ban_now">Zbanuj teraz</string>
     <string name="kick_now">Wykop teraz</string>
     <string name="non_anonymous">Spraw aby Jabber ID była widoczna dla każdego</string>
@@ -486,6 +490,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_picture_quality_summary">Skompresuj i zmień rozmiar zdjęcia</string>
     <string name="pref_video_quality">Jakoś wideo</string>
     <string name="pref_video_quality_summary">Skompresuj i zmień rozmiar wideo</string>
+    <string name="video_very_low">Bardzo niska (144p)</string>
+    <string name="video_low">Niska (360p)</string>
+    <string name="video_mid">Średnia (720p)</string>
+    <string name="video_high">Wysoka (1080p)</string>
     <string name="video_original">oryginał (nieskompresowane)</string>
     <string name="always">Zawsze</string>
     <string name="battery_optimizations_enabled">Optymalizacje zużycia baterii włączone</string>
@@ -538,6 +546,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="import_database">Importować backup</string>
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
+    <string name="InviteText">Cześć,\n\nużytkownik o nicku %s zaprosił cię do skorzystania z Pix-Art Messengera. Jeśli korzystasz z Androida, to możesz zainstalować tę aplikację z tego linku…</string>
     <string name="pref_broadcast_last_activity">Dziel się ostatnią interakcją.</string>
     <string name="pref_broadcast_last_activity_summary">Powiadamiaj kontakty, że używasz Pix-Art Messenger</string>
     <string name="invite_user">Zaproś do Pix-Art Messengera</string>
@@ -568,6 +577,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="message">Wiadomość</string>
     <string name="quote">Cytat</string>
     <string name="show_error_message">Pokaż komunikaty błędów</string>
+    <string name="error_message">Komunikat o błędzie</string>
     <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
     <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączenia Oszczędzania danych dla Pix-Art Messenger.</string>
     <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
@@ -577,6 +587,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="this_device_has_been_verified">To urządzenie zostało zweryfikowane</string>
     <string name="copy_fingerprint">Skopiuj odcisk</string>
     <string name="all_omemo_keys_have_been_verified">Wszystkie odciski OMEMO zostały zweryfikowane</string>
+    <string name="barcode_does_not_contain_fingerprints_for_this_conversation">Kod QR nie zawiera odcisków kluczy dla tej rozmowy.</string>
     <string name="verified_fingerprints">Zaufane odciski</string>
     <string name="use_camera_icon_to_scan_barcode">Użyj kamery do zeskanowania kodu QR</string>
     <string name="please_wait_for_keys_to_be_fetched">Proszę czekać na ściągnięcie kluczy</string>
@@ -643,6 +654,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="received_message_from_stranger">Odebrano wiadomość od nieznajomego</string>
     <string name="contacts_are_typing">1%s pisze...</string>
     <string name="contact_is_typing">%s pisze...</string>
+    <string name="one_participant">Jeden uczestnik</string>
     <string name="more_participants">%d uczestników</string>
     <string name="presence_offline">Nieaktywny</string>
     <string name="block_stranger">Zablokuj nieznajomego</string>
@@ -678,6 +690,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="error_no_keys_to_trust_presence">Brak dostępnych kluczy dla tego kontaktu.\nUpewnij się, że wzajemnie powiadamiacie się o obecności.</string>
     <string name="mark_as_read">oznacz jako przeczytane</string>
     <string name="server_info_partial">częściowo</string>
+    <string name="pref_show_foreground_service_summary">Niektóre z urządzeń działających pod kontrolą systemu Android zamykają aplikacje po upływie pewnego okresu czasu i nie będziesz wtedy w stanie odbierać nowych wiadomości, jeśli dotyka Cię podobny problem spróbuj aktywować usługę działania aplikacji na pierwszym planie. Weź jednak pod uwagę, że spowoduje to trwałe wyświetlanie powiadomienia w pasku powiadomień.</string>
     <string name="pref_show_foreground_service">Usługa na pierwszym planie</string>
     <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
@@ -689,6 +702,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_warn_unencrypted_chat">Ostrzec, jeśli czat nie jest szyfrowany</string>
     <string name="pref_warn_unencrypted_chat_summary">Jeśli dostępne jest szyfrowanie wiadomości, powinieneś go użyć. Jeśli nie używasz szyfrowania, wyświetl komunikat ostrzegawczy na czacie.</string>
     <string name="pref_use_bundled_emoji">Użyj zintegrowanych emoji</string>
+    <string name="pref_use_bundled_emoji_summary">Używaj zintegrowanej z aplikacją biblioteki zawierającej emoji zamiast tej systemowej. Zmiany zostaną zastosowane po ponownym uruchomieniu aplikacji.</string>
     <string name="invalid_muc_nick">Nieprawidłowy pseudonim</string>
     <string name="title_activity_share_via_account">Udostępnij przez konto</string>
     <string name="destroy_room">Usuń czat grupowy</string>
@@ -719,10 +733,13 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="error_trustkey_bundle">Nie można pobrać listy urządzeń</string>
     <string name="disable_encryption_message">Szyfrowanie OMEMO na pewno wyłączyć dla tej rozmowy?\nTo pozwoli administratorowi serwera na odczyt twoich wiadomości, jednak może to być jedyną możliwością aby komunikować z ludźmi używającymi nieaktualnych klientów.</string>
     <string name="disable_now">Wyłącz teraz</string>
+    <string name="draft">Wersja robocza:</string>
     <string name="pref_omemo_setting">OMEMO szyfrowanie</string>
     <string name="pref_omemo_setting_summary_always">OMEMO będzie używane zawsze dla wiadomości jeden do jednego oraz prywatnych rozmów grupowych.</string>
     <string name="pref_omemo_setting_summary_default_on">OMEMO będzie domyślnie włączone dla nowych rozmów.</string>
     <string name="pref_omemo_setting_summary_always_off">OMEMO nigdy nie będzie używane.</string>
+    <string name="default_on">Domyślnie załączone</string>
+    <string name="default_off">Domyślnie wyłączone</string>
     <string name="pref_theme_light">Jasny</string>
     <string name="pref_theme_dark">Ciemny</string>
     <string name="pref_theme_auto">Automatycznie</string>
@@ -736,6 +753,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="large">Duży</string>
     <string name="create_shortcut">Utwórz skrót</string>
     <string name="not_encrypted_for_this_device">Wiadomość nie została zaszyfrowana dla tego urządzenia.</string>
+    <string name="no_microphone_permission">Pix-Art Messenger potrzebuje dostępu do mikrofonu</string>
     <string name="search_messages">Znajdź Wiadomość</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Wyświetl komunikację</string>
@@ -747,6 +765,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="choose_your_server">Wybierz dostawcę Jabber</string>
     <string name="show_privacy">Polityka prywatności</string>
     <string name="show_termsofuse">Warunki użytkowania</string>
+    <string name="p1_s3_filetransfer">HTTP File Sharing dla S3 (Amazon)</string>
     <string name="pref_start_search">Bezpośrednie wyszukiwanie</string>
     <string name="paste_as_quote">Wklej jako cytat</string>
     <string name="group_chat_avatar">Awatara czatu grupowego</string>
