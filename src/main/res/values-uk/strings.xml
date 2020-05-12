@@ -1043,6 +1043,7 @@
     <string name="rtp_state_connected">З\'єднано</string>
     <string name="rtp_state_accepting_call">Приймаю виклик</string>
     <string name="rtp_state_ending_call">Завершую виклик</string>
+    <string name="rtp_state_finding_device">Пошук пристроїв</string>
     <string name="rtp_state_ringing">Викликаю</string>
     <string name="rtp_state_declined_or_busy">Зайнято</string>
     <string name="rtp_state_connectivity_error">Неможливо здійснити виклик</string>
