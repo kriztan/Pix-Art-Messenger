@@ -6,13 +6,17 @@
     <string name="action_end_conversation">Finalizar essa conversa</string>
     <string name="action_contact_details">Detalhes do contacto</string>
     <string name="action_secure">Conversa segura</string>
+    <string name="action_add_new_account">Adicionar nova conta</string>
     <string name="action_add_phone_book">Adicionar ao livro de endereços</string>
     <string name="action_delete_contact">Apagar da lista</string>
     <string name="action_block_contact">Bloquear contacto</string>
     <string name="action_unblock_contact">Desbloquear contacto</string>
     <string name="action_block_domain">Bloquear domínio</string>
     <string name="action_unblock_domain">Desbloquear domínio</string>
+    <string name="title_activity_manage_accounts">Gerir contas</string>
     <string name="title_activity_settings">Definições</string>
+    <string name="conference_details">Detalhes do grupo</string>
+    <string name="contact_details">Detalhes do contacto</string>
     <string name="title_activity_block_list">Bloquear lista</string>
     <string name="just_now">agora há pouco</string>
     <string name="minute_ago">1 minuto atrás</string>
