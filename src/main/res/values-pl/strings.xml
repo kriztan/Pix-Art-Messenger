@@ -715,6 +715,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="destroy_room_dialog">Czy chcesz usunąć czat grupowy %s? Spowoduje to niezmienne usunięcie tego czatu grupowego.</string>
     <string name="destroy_room_succeed">Czat grupowy pomyślnie usunięty</string>
     <string name="destroy_room_failed">Nie udało się usunąć czatu grupowego</string>
+    <string name="no_write_access_in_public_muc">Aktualnie nie uczestniczysz w tym czacie grupowym i nie jesteś uprawniony do wysyłania tu wiadomości.\nAby uzyskać możliwość wysyłania wiadomości przejdź do szczegółów dotyczących tego czatu naciskając <b>OK</b> i wysyłając prywatną wiadomość do moderatora, administratora lub właściciela czatu przez dłuższe przytrzymanie, na którymś z nich na liście uczestników.</string>
     <string name="snooze">Drzemka</string>
     <string name="huawei_protected_apps">Chronione aplikacje</string>
     <string name="huawei_protected_apps_summary">Aby otrzymywać powiadomienia, nawet jeśli ekran jest wyłączony, musisz dodać Pix-Art Messenger do listy chronionych aplikacji.</string>
@@ -799,9 +800,11 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="foreground_service_channel_description">Ta kategoria powiadomień jest używana do stałego wyświetlania powiadomienia, oznaczającego że Pix-Art Messenger jest uruchomiony.</string>
     <string name="notification_group_status_information">Informacje statusu</string>
     <string name="error_channel_name">Problem z połączeniem</string>
+    <string name="error_channel_description">Ta kategoria powiadomień jest używana do wyświetlania powiadomienia w razie problemów z łącznością z kontem użytkownika.</string>
     <string name="notification_group_messages">Wiadomości</string>
     <string name="messages_channel_name">Wiadomości</string>
     <string name="silent_messages_channel_name">Wycisz wiadomości</string>
+    <string name="silent_messages_channel_description">Ta kategoria powiadomień jest używana do wyświetlania powiadomień które nie powinny wydawać żadnych dzwięków, np. kiedy jest się aktywnym na innym urządzeniu (Grace Period).</string>
     <string name="pref_more_notification_settings">Ustawienia powiadomień</string>
     <string name="pref_more_notification_settings_summary">Ważność, Dźwięk, Wibracja</string>
     <string name="video_compression_channel_name">Kompresja wideo</string>
@@ -908,7 +911,14 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_internal_updater">Poszukaj aktualizacji</string>
     <string name="attach">Załącz</string>
     <string name="delete_from_server">Usuń z serwera</string>
+    <string name="search_channels">Wyszukaj kanały</string>
+    <string name="channel_discovery_opt_in_title">Polityka prywatności</string>
     <string name="action_add_existing_account">Dodaj istniejące konto</string>
+    <string name="use_own_provider">Użyj innego serwera</string>
+    <string name="this_looks_like_a_domain">To wygląda jak adres domeny internetowej</string>
+    <string name="add_anyway">Dodaj mimo to</string>
+    <string name="this_looks_like_channel">To wygląda jak adres kanału</string>
+    <string name="no_backup_available">Kopia zapasowa nie istnieje</string>
     <string name="pref_show_own_accounts">Pokaż własne konta</string>
     <string name="message_encryption">Szyfrowanie wiadomości</string>
     <string name="enable_message_encryption">Ta rozmowa jest niezaszyfrowana. Zalecane jest włączenie szyfrowania ze względów bezpieczeństwa. Preferowany sposób szyfrowania to OMEMO. Jeżeli są problemy z działaniem szyfrowania, to można je wyłączyć przez wciśnięcie ikonki kłódki.</string>
@@ -923,6 +933,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="not_a_backup_file">Wybrany plik nie jest kopią zapasową danych Pix-Art Messengera</string>
     <string name="account_already_setup">To konto zostało już skonfigurowane</string>
     <string name="please_enter_password">Wprowadź hasło dla tego konta użytkownika</string>
+    <string name="waiting_for_transfer">Oczekiwanie na transfer</string>
     <string name="x_has_written">%s napisał:</string>
     <string name="i_have_written">Napisałem:</string>
     <string name="your_status">Twój status</string>
@@ -945,6 +956,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_intro_again_failed">Ponownie wyświetlenie ekranu powitalnego nie powiodło się. Spróbuj ponownie…</string>
     <string name="intro_desc_whats_xmpp">XMPP, nazywane również Jabberem, jest zdecentralizowaną platformą komunikacyjną działającą podobnie do poczty elektronicznej. Aby korzystać z XMPP potrzebujesz adresu zwanego Jabber-ID, hasła i komunikatora. Więcej o tym za chwilę.</string>
     <string name="intro_whats_xmpp">Czym jest XMPP / Jabber / Pix-Art Messenger?</string>
+    <string name="intro_privacy">Twoja prywatność\nTwoja niezależność</string>
+    <string name="intro_desc_privacy">Pix-Art Messenger nie analizuje ani nie sprzedaje twoich danych i to ty decydujesz jakich uprawnień mu przydzielisz.</string>
     <string name="no_results">Brak rezultatów</string>
     <string name="file_transmission_cancelled">transfer plików anulowany</string>
     <string name="jabber_network">jabber.network</string>
