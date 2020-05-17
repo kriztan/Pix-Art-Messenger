@@ -59,7 +59,7 @@
     <string name="save">Зберегти</string>
     <string name="ok">Гаразд</string>
     <string name="crash_report_title">Відмова в обслуговуванні</string>
-    <string name="crash_report_message">Надсилаюнням звіту про відмову ви допомагаєте удосконаленню месенджера.\n<b>Увага:</b> Звіти надсилатимуться розробниками з вашого облікового записк XMPP.</string>
+    <string name="crash_report_message">Надсиланням звіту про відмову ви допомагаєте удосконаленню месенджера.\n<b>Увага:</b> Звіти надсилатимуться розробниками з вашого облікового запису XMPP.</string>
     <string name="send_now">Надіслати зараз</string>
     <string name="send_never">Ніколи не питати знову</string>
     <string name="problem_connecting_to_account">Не можу з\'єднатися з обліковим записом</string>
@@ -290,7 +290,7 @@
     <string name="remote_fingerprint">Віддалений цифровий підпис</string>
     <string name="shared_secret_hint">Підказка чи запитання</string>
     <string name="shared_secret_secret">Секретний ключ</string>
-    <string name="confirm">Підтвердити</string>
+    <string name="confirm">Гаразд</string>
     <string name="in_progress">У процесі</string>
     <string name="respond">Відповісти</string>
     <string name="failed">Невдача</string>
@@ -309,7 +309,7 @@
     <string name="choose_file">Файл</string>
     <string name="receiving_file">Отримано: %1$s</string>
     <string name="download_x_file">Завантажити %s</string>
-    <string name="delete_x_file">Видалити %s</string>
+    <string name="delete_x_file">Вилучити %s</string>
     <string name="file">файл</string>
     <string name="open_x_file">Відкрити %s</string>
     <string name="preparing_file">Підготовка файлу до передачі</string>
@@ -330,7 +330,7 @@
     <string name="copy_omemo_clipboard_description">Копіювати цифровий підпис OMEMO</string>
     <string name="regenerate_omemo_key">Згенерувати ключ OMEMO</string>
     <string name="clear_other_devices">Стерти пристрої</string>
-    <string name="clear_other_devices_desc">Ви певні, що хочете стерти всі інші пристрої з OMEMO-оголошення? Наступного разу, коли Ваші пристрої приєднаються, вони знову оголосять про себе, але вони можуть не отримати повідомлення, які можуть бути надіслані тим часом. </string>
+    <string name="clear_other_devices_desc">Дійсно очистити всі інші пристрої з OMEMO-оголошення? Наступного разу, коли ваші пристрої приєднаються, вони знову оголосять про себе, але вони можуть не отримати повідомлення, які можуть бути надіслані тим часом. </string>
     <string name="distrust_omemo_key">Недовіряти пристрою</string>
     <string name="distrust_omemo_key_text">Ви певні, що більше не довіряєте цьому пристрою?\nЦей пристрій і повідомлення з нього будуть позначатися як недовірені.</string>
     <string name="error_no_keys_to_trust_server_error">Немає ключів, які б можна було використати для цього контакту.\nНе вдалося отримати нові ключі з сервера. Можливо, щось не так з сервером контактів.</string>
@@ -365,13 +365,13 @@
     <string name="could_not_change_affiliation">Не можу змінити статус приєднання з %s</string>
     <string name="ban_from_conference">Заборонити доступ до групи</string>
     <string name="kick_from_conference">Заборонити доступ до групи</string>
-    <string name="ban_from_public_conference_message">Ви намагаєтеся забанити назавжди %s у публічному каналі.</string>
-    <string name="ban_from_conference_message">Ви намагаєтеся забанити назавжди %s у групі</string>
+    <string name="ban_from_public_conference_message">Ви намагаєтеся остаточно забанити %s у публічному каналі.</string>
+    <string name="ban_from_conference_message">Ви намагаєтеся остаточно забанити %s у групі</string>
     <string name="kicking_from_public_conference">Ви намагаєтеся забанити %s у публічному каналі.</string>
     <string name="kicking_from_conference">Ви намагаєтеся забанити %s у групі.</string>
     <string name="ban_now">Вигнати зараз</string>
     <string name="kick_now">Заборонити доступ зараз</string>
-    <string name="non_anonymous">Зробити XMPP адрес доступним для всіх</string>
+    <string name="non_anonymous">Адреса XMPP доступна для перегляду всім</string>
     <string name="moderated">Зробити канал модерованим</string>
     <string name="you_are_not_participating">Ви не берете участі</string>
     <string name="modified_conference_options">Налаштування групи змінено!</string>
@@ -393,7 +393,7 @@
     <string name="sending_x_file">Надсилання %s</string>
     <string name="offering_x_file">Пропозиція %s</string>
     <string name="hide_offline">Сховати поза мережею</string>
-    <string name="is_typing">друкує…</string>
+    <string name="is_typing">пише…</string>
     <string name="pref_chat_states">Сповіщення про набір</string>
     <string name="pref_chat_states_summary">Дайте вашим контактам знати, коли ви набираєте їм повідомлення</string>
     <string name="send_location">Розташування</string>
@@ -406,13 +406,13 @@
     <string name="pref_remove_trusted_certificates_summary">Вилучити сертифікати, які було підтверджено вручну</string>
     <string name="toast_no_trusted_certs">Немає сертифікатів, підтверджених вручну</string>
     <string name="dialog_manage_certs_title">Вилучити сертифікати</string>
-    <string name="dialog_manage_certs_positivebutton">Видалити вибране</string>
+    <string name="dialog_manage_certs_positivebutton">Вилучити вибране</string>
     <string name="dialog_manage_certs_negativebutton">Скасувати</string>
     <plurals name="toast_delete_certificates">
         <item quantity="one">%d сертифікат вилучено</item>
         <item quantity="few">%d сертифікати видалено</item>
         <item quantity="many">%d сертифікатів видалено</item>
-        <item quantity="other">%d сертифікатів видалено</item>
+        <item quantity="other">%d сертифікатів вилучено</item>
     </plurals>
     <string name="pref_quick_action_summary">Замінювати клавішу надсилання швидкими діями</string>
     <string name="pref_quick_action">Швидкі дії</string>
@@ -655,8 +655,8 @@
     <string name="pref_notifications_from_strangers">Сповіщення від незнайомців</string>
     <string name="pref_notifications_from_strangers_summary">Сповіщувати про повідомлення від незнайомців</string>
     <string name="received_message_from_stranger">Отримано повідомлення від незнайомця</string>
-    <string name="contacts_are_typing">%s набирає повідомлення…</string>
-    <string name="contact_is_typing">%s друкує…</string>
+    <string name="contacts_are_typing">%s пишуть…</string>
+    <string name="contact_is_typing">%s пише…</string>
     <string name="one_participant">Один учасник</string>
     <string name="more_participants">%d учасників</string>
     <string name="presence_offline">Не в мережі</string>
@@ -741,7 +741,7 @@
     <string name="error_trustkey_hint_mutual">Підказка: В деяких випадках це можна виправити, якщо додати один до одного у ваших списках контактів.</string>
     <string name="disable_encryption_message">Дійсно вимкнути шифрування OMEMO?\nПісля цього у адміністратора вашого сервера буде можливість мати доступ до ваших повідомлень. Проте, це може бути єдиним способом спілкуватися з людьми, які використовують застарілі застосунки.</string>
     <string name="disable_now">Вимкнути зараз</string>
-    <string name="draft">Проєкт:</string>
+    <string name="draft">Чернетка:</string>
     <string name="pref_omemo_setting">Шифрування OMEMO</string>
     <string name="pref_omemo_setting_summary_always">OMEMO завжди використовуватиметься для приватних розмов та у приватних групах.</string>
     <string name="pref_omemo_setting_summary_default_on">Типово для нових розмов використовуватиметься OMEMO</string>
@@ -863,7 +863,7 @@
         <item quantity="one">Перегляд %1$d учасника</item>
         <item quantity="few">Перегляд %1$d учасників</item>
         <item quantity="many">Перегляд %1$d учасників</item>
-        <item quantity="other">Перегляд %1$d учасників</item>
+        <item quantity="other">%1$d учасників</item>
     </plurals>
     <string name="group_chat_members">Учасники</string>
     <string name="message_deleted">Повідомлення вилучено</string>
@@ -891,7 +891,7 @@
     <string name="owners_can_invite_others">Власники можуть запрошувати інших.</string>
     <string name="anyone_can_invite_others">Будь-хто може запрошувати інших.</string>
     <string name="jabber_ids_are_visible_to_admins">Адміністратори бачать адреси XMPP.</string>
-    <string name="jabber_ids_are_visible_to_anyone">Будь-хто бачить адреси XMPP.</string>
+    <string name="jabber_ids_are_visible_to_anyone">Публічно доступна адреса XMPP.</string>
     <string name="no_users_hint_channel">Цей публічний канал не має учасників. Запросіть ваші контакти або скористайтеся кнопкою поширення, щоб поділитися адресою XMPP.</string>
     <string name="no_users_hint_group_chat">У цій приватній групі обміну повідомленнями відсутні учасники.</string>
     <string name="grant_owner_privileges">Надати права власника</string>
@@ -903,7 +903,7 @@
     <string name="destroy_channel_dialog">Дійсно закрити цей публічний канал %s? Канал буде стерто, а дані вилучено з серверу.</string>
     <string name="destroy_channel_succeed">Канал успішно закрито</string>
     <string name="destroy_channel_failed">Неможливо закрити канал</string>
-    <string name="action_end_conversation_channel">Залишити канал</string>
+    <string name="action_end_conversation_channel">Відписатися</string>
     <string name="autojoin_channel">Автоматично приєднуватися до цього каналу</string>
     <string name="no_attachments">Немає вкладень</string>
     <string name="notification_backup_created_title">Резервну копію створено</string>
