@@ -580,8 +580,8 @@
     <string name="show_error_message">Показати повідомлення про помилку</string>
     <string name="error_message">Повідомлення про помилку</string>
     <string name="data_saver_enabled">Задіяно економію передачі данних</string>
-    <string name="data_saver_enabled_explained">Ваша операційна система обмежує програмі Conversations доступ до Інтернету, коли вона не на екрані. Щоб отримувати сповіщення про нові повідомлення, вам слід дозволити програмі Conversations необмежений доступ, коли включено економію передачі даних.\nПрограма Conversations все одно буде намагатися зекономити дані, коли це можливо.</string>
-    <string name="device_does_not_support_data_saver">Ваш пристрій не дає можливості вимкнути економію передачі даних з програми Conversations</string>
+    <string name="data_saver_enabled_explained">Ваша операційна система обмежує застосунку Pix-Art доступ до Інтернету, коли він не на екрані. Щоб отримувати сповіщення про нові повідомлення, вам слід дозволити застосунку необмежений доступ, коли активовано заощадження передачі даних.\n\nМесенджер намагатиметься заощаджувати трафік, де це буде можливо.</string>
+    <string name="device_does_not_support_data_saver">Ваш пристрій не дає можливості вимкнути заощадження передачі даних для застосунку Pix-Art.</string>
     <string name="add_to_contact_list">Додати до контактів</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не можу почати запис</string>
