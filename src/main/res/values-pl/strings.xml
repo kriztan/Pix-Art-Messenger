@@ -318,7 +318,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="cancel_transmission">Anuluj przesyłanie</string>
     <string name="file_transmission_failed">Przesyłanie pliku nie powiodło się</string>
     <string name="file_deleted">Plik został usunięty</string>
-    <string name="no_application_found_to_open_file">Nie odnaleziono aplikacji skojarzonej z typem pliku</string>
+    <string name="no_application_found_to_open_file">Nie odnaleziono aplikacji do otworzenia pliku</string>
     <string name="could_not_verify_fingerprint">Weryfikacja odcisku klucza nieudana</string>
     <string name="manually_verify">Weryfikuj ręcznie</string>
     <string name="are_you_sure_verify_fingerprint">Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?</string>
@@ -514,7 +514,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="no_keys_just_confirm">Zaufałeś już temu użytkownikowi. Wybierając \'gotowe\' tylko potwierdzasz, że %s jest częścią czatu grupowego.</string>
     <string name="contacts_have_no_pgp_keys">Pix-Art Messenger nie może zaszyfrować wiadomości, ponieważ kontakty nie udostępniają swoich kluczy publicznych.\n\n</string>
     <string name="this_account_is_disabled">Wyłączyłeś to konto</string>
-    <string name="no_application_to_share_uri">Nie odnaleziono aplikacji skojarzonej z URI</string>
+    <string name="no_application_to_share_uri">Nie odnaleziono aplikacji do udostępnienia URI</string>
     <string name="share_uri_with">Udostępnij URI za pomocą...</string>
     <string name="mgmt_account_reconnect">Połącz ponownie</string>
     <string name="welcome_text">... jest darmowym i otwartym klientem sieci XMPP.</string>
@@ -683,7 +683,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="action_take_photo">zrób zdjęcie</string>
     <string name="action_take_video">nagraj wideo</string>
     <string name="account_status_regis_web">Serwer wymaga rejestracji na stronie</string>
-    <string name="application_found_to_open_website">Nie znaleziono aplikacji do otwarcia strony</string>
+    <string name="application_found_to_open_website">Nie odnaleziono aplikacji do wyświetlenia strony</string>
     <string name="open_website">Otwórz stronę</string>
     <string name="pref_headsup_notifications">Powiadomienia heads-up</string>
     <string name="pref_headsup_notifications_summary">Pokazuj powiadomienia Heads-up</string>
@@ -699,7 +699,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="update_service">Usługa aktualizacji Messengera Pix-Art</string>
     <string name="install_update">Zainstalować aktualizację?</string>
     <string name="highlight_in_muc">wymień użytkownika</string>
-    <string name="no_application_found_to_open_link">Nie znaleziono aplikacji do otworzenia tego linku</string>
+    <string name="no_application_found_to_open_link">Nie odnaleziono aplikacji do otworzenia linku</string>
     <string name="contacts_have_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="contact_has_read_up_to_this_point">%s przeczytał do tego miejsca</string>
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s i %2$d więcej przeczytało do tej wiadomości</string>
@@ -791,6 +791,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="conference_resource_constraint">Ograniczenie zasobów</string>
     <string name="delete_message">Usuń wiadomość</string>
     <string name="conference_destroyed">Ten czat grupowy został usunięty</string>
+    <string name="no_application_found_to_view_contact">Nie odnaleziono aplikacji do wyświetlenia kontaktu</string>
     <string name="welcome_server_info">Zalecamy korzystanie z blabber.im jako serwera.</string>
     <string name="no_location_permission">Pix-Art Messenger potrzebuje dostęp do usług lokalizacyjnych</string>
     <string name="pref_show_record_voice_btn_summary">Pokaż przycisk nagrywania głosu w czatach, jako szybką akcję</string>
@@ -813,7 +814,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="backup_channel_name">Kopia zapasowa &amp; przywracanie</string>
     <string name="app_update_channel_name">Aktualizacja aplikacji</string>
     <string name="action_group_details">Szczegóły grupy</string>
+    <string name="view_media">Otwórz multimedia</string>
     <string name="media_browser">Przeglądarka multimediów</string>
+    <string name="account_status_stream_opening_error">Wystąpił błąd podczas otwierania strumienia danych</string>
     <string name="action_open">Otwórz</string>
     <string name="security_violation_not_attaching_file">Plik nie został wysłany ze względu na możliwe naruszenie bezpieczeństwa.</string>
     <string name="delete_file_dialog">Usuń plik</string>
