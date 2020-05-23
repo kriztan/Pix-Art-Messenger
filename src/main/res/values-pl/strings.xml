@@ -984,6 +984,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="file_transmission_cancelled">transfer plików anulowany</string>
     <string name="jabber_network">jabber.network</string>
     <string name="local_server">Serwer lokalny</string>
+    <string name="pref_channel_discovery">Metoda wyszukiwania kanałów</string>
     <string name="gp_disable">Wyłączyć</string>
     <string name="pref_notification_grace_period">Okres prolongaty</string>
     <string name="pref_notification_grace_period_summary">Okres czasu, podczas którego powiadomienia zostaną wiciszone po wykryciu aktywności na jednym z Twoich pozostałych urządzeń.</string>
