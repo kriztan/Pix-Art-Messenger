@@ -639,7 +639,7 @@
     <string name="pref_notifications_from_strangers">Notifications d’inconnus</string>
     <string name="pref_notifications_from_strangers_summary">Notifier pour les messages envoyés par des personnes inconnues.</string>
     <string name="received_message_from_stranger">Message d’un inconnu reçu</string>
-    <string name="contacts_are_typing">%s sont en train d’écrire …</string>
+    <string name="contacts_are_typing">%s sont en train d’écrire…</string>
     <string name="contact_is_typing">%s est en train d’écrire…</string>
     <string name="one_participant">Un participant</string>
     <string name="more_participants">%d participants</string>
