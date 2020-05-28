@@ -211,7 +211,7 @@
     <string name="select">Sélectionner</string>
     <string name="contact_already_exists">Le contact existe déjà.</string>
     <string name="join">Rejoindre</string>
-    <string name="channel_full_jid_example">canal@conference.example.com/psœudo</string>
+    <string name="channel_full_jid_example">canal@conference.example.com/pseudo</string>
     <string name="channel_bare_jid_example">canal@conference.example.com</string>
     <string name="save_as_bookmark">Enregistrer comme favori</string>
     <string name="delete_bookmark">Supprimer le favori</string>
@@ -691,7 +691,7 @@
     <string name="pref_warn_unencrypted_chat_summary">Affiche un avertissement dans la fenêtre de discussion si vous n\'utilisez pas le chiffrement des messages. Si le chiffrement est disponible, il est conseillé de l’utiliser.</string>
     <string name="pref_use_bundled_emoji">Utiliser les émojis intégrés</string>
     <string name="pref_use_bundled_emoji_summary">Utilise les émojis de l\'application plutôt que ceux de votre appareil. Les modifications seront prises en compte à la réouverture de l’application.</string>
-    <string name="invalid_muc_nick">Psœudonyme invalide</string>
+    <string name="invalid_muc_nick">Pseudonyme invalide</string>
     <string name="title_activity_share_via_account">Partager via le compte</string>
     <string name="destroy_room">Supprimer complètement la conférence</string>
     <string name="conference_unknown_error">Vous ne faîtes plus partie de cette conférence</string>
@@ -825,7 +825,7 @@
     <string name="your_name">Votre nom</string>
     <string name="enter_your_name">Saisissez votre nom</string>
     <string name="enter_your_name_instructions">Veuillez saisir le pseudonyme que vous désirez rendre visible à vos contacts.</string>
-    <string name="no_name_set_instructions">Aucun psœudonyme n’a été spécifié.</string>
+    <string name="no_name_set_instructions">Aucun pseudonyme n’a été spécifié.</string>
     <string name="autojoin_group_chat">Rejoindre automatiquement ce groupe de discussion</string>
     <string name="pref_show_links_inside">Montrer les aperçus des liens Web</string>
     <string name="pref_show_links_inside_summary">Affiche un aperçu des liens Web directement dans la discussion, une connexion au serveur correspondant est nécessaire.</string>
