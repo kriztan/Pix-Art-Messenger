@@ -518,7 +518,7 @@
     <string name="create_account">Création d’un nouveau compte</string>
     <string name="welcome_existing_account">J’ai déjà un compte</string>
     <string name="pick_your_username">Choisissez votre nom d’utilisateur/trice</string>
-    <string name="pref_manually_change_presence">Gérer votre disponibilité manuellement</string>
+    <string name="pref_manually_change_presence">Gérer votre statut de présence manuellement</string>
     <string name="pref_manually_change_presence_summary">Définir votre statut de présence manuellement en éditant votre compte.</string>
     <string name="status_message">Message de statut</string>
     <string name="presence_chat">Disponible</string>
@@ -900,7 +900,7 @@
     <string name="set_settings_intro">Vous pouvez définir ici les paramètres de confidentialité selon vos besoins. Tous les paramètres peuvent aussi être modifiés plus tard.</string>
     <string name="pref_show_mappreview_inside_summary">Affiche la géolocalisation sous forme d\'une carte directement dans la discussion, une connexion au serveur Pix-Art est nécessaire.</string>
     <string name="pref_show_mappreview_inside">Afficher les aperçus de géolocalisation</string>
-    <string name="pref_use_internal_updater_summary">Vérifie les mises à jour de l\'application quotidiennement.</string>
+    <string name="pref_use_internal_updater_summary">Vérifier les mises à jour de l\'application quotidiennement.</string>
     <string name="pref_use_internal_updater">Vérifier les mises à jour</string>
     <string name="attach">Joindre</string>
     <string name="delete_from_server">Supprimer sur le serveur</string>
