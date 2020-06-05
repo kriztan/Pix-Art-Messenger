@@ -468,6 +468,7 @@
     <string name="changelog">Изменения</string>
     <string name="account_settings_hostname">Имя хоста</string>
     <string name="account_settings_port">Порт</string>
+    <string name="hostname_or_onion">Имя хоста или onion-адрес</string>
     <string name="not_a_valid_port">Некорректный номер порта</string>
     <string name="not_valid_hostname">Некорректное имя хоста</string>
     <string name="connected_accounts">%1$d из %2$d аккаунтов подключены</string>
@@ -577,6 +578,7 @@
     <string name="message">Сообщение</string>
     <string name="quote">Цитата</string>
     <string name="show_error_message">Показать сообщения об ошибках</string>
+    <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
     <string name="data_saver_enabled_explained">Ваша операционная система запрещает Pix-Art Messenger доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить Pix-Art Messenger неограниченный доступ в Интернет. \n\nPix-Art Messenger будет пытаться сохранить данные при появлении возможности.</string>
     <string name="device_does_not_support_data_saver">Ваше устройство не поддерживает отключение дата сервера для Pix-Art Messenger.</string>
@@ -647,6 +649,7 @@
     <string name="today">Сегодня</string>
     <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и картинок.</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
+    <string name="block_jabber_id">Заблокировать Jabber-ID</string>
     <string name="corresponding_conversations_closed">Соответствующие разговоры были закрыты.</string>
     <string name="contact_blocked_past_tense">Контакт заблокирован.</string>
     <string name="pref_notifications_from_strangers">Уведомления от незнакомцев</string>
@@ -654,6 +657,7 @@
     <string name="received_message_from_stranger">Принимать сообщения от незнакомых контактов</string>
     <string name="contacts_are_typing">%s набирают сообщение...</string>
     <string name="contact_is_typing">%s набирает сообщение...</string>
+    <string name="one_participant">Один участник</string>
     <string name="more_participants">%d участников</string>
     <string name="presence_offline">Оффлайн</string>
     <string name="block_stranger">Заблокировать незнакомца</string>
@@ -942,6 +946,8 @@
     <string name="please_enter_password">Пожалуйста, введите пароль для этого аккаунта</string>
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
     <string name="waiting_for_transfer">Ожидание передачи</string>
+    <string name="x_has_written">%s написал:</string>
+    <string name="i_have_written">Я написал:</string>
     <string name="your_status">Ваш статус</string>
     <string name="pref_use_invidious">Заменить ссылки YouTube на Invidious</string>
     <string name="pref_use_invidious_summary">Invidious - это дружественная к конфиденциальности альтернатива YouTube</string>
@@ -1037,6 +1043,7 @@
     <string name="rtp_state_connected">Подключено</string>
     <string name="rtp_state_accepting_call">Прием вызова</string>
     <string name="rtp_state_ending_call">Завершение вызова</string>
+    <string name="rtp_state_finding_device">Найденные устройства</string>
     <string name="rtp_state_ringing">Звонящий</string>
     <string name="rtp_state_declined_or_busy">Занят</string>
     <string name="rtp_state_connectivity_error">Не удается подключиться</string>
@@ -1052,4 +1059,6 @@
     <string name="only_one_call_at_a_time">У вас может быть только один звонок за один раз.</string>
     <string name="missed_call">Пропущенный звонок</string>
     <string name="could_not_switch_camera">Не удалось переключить камеру</string>
+    <string name="otr_warning">Поддержка шифрования OTR закончится в июне 2020 года. Нажмите кнопку подробнее, чтобы получить дополнительную информацию. Откроется ссылка в браузере.</string>
+    <string name="readmore">Подробнее</string>
 </resources>
