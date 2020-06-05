@@ -845,6 +845,10 @@
     <string name="unable_to_decrypt_backup">Nüsxəni deşifrə etmək olmur. Parol düzgündür?</string>
     <string name="pref_prefer_xmpp_avatar_summary">İstifadəçi XMPP avatarına ünvan kitabınızdan daha çox üstünlük verin</string>
     <string name="pref_prefer_xmpp_avatar">XMPP avatarına üstünlük verin</string>
+    <plurals name="view_users">
+        <item quantity="one">%1$d iştirakçıya baxış</item>
+        <item quantity="other">%1$d iştirakçılaara baxış</item>
+    </plurals>
     <string name="group_chat_members">Iştirakçılar</string>
     <string name="message_deleted">Mesaj silindi</string>
     <string name="channel_details">Kanal məlumatları</string>
