@@ -860,9 +860,9 @@
     <string name="pref_prefer_xmpp_avatar_summary">Використовувати піктограму користувача XMPP замість піктограми з адресної книги</string>
     <string name="pref_prefer_xmpp_avatar">Віддавати перевагу піктограмі XMPP</string>
     <plurals name="view_users">
-        <item quantity="one">Перегляд %1$d учасника</item>
-        <item quantity="few">Перегляд %1$d учасників</item>
-        <item quantity="many">Перегляд %1$d учасників</item>
+        <item quantity="one">%1$d учасник</item>
+        <item quantity="few">%1$d учасники</item>
+        <item quantity="many">%1$d учасників</item>
         <item quantity="other">%1$d учасників</item>
     </plurals>
     <string name="group_chat_members">Учасники</string>
