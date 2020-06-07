@@ -33,7 +33,7 @@
     <string name="admin">Адміністратор</string>
     <string name="owner">Власник</string>
     <string name="moderator">Модератор</string>
-    <string name="participant">Учасник</string>
+    <string name="participant">учасник</string>
     <string name="visitor">Гість</string>
     <string name="remove_contact_text">Бажаєте вилучити %s з вашого списку розмов? Розмову з цим контактом, не буде вилучено.</string>
     <string name="block_contact_text">Бажаєте заборонити %s надсилати вам повідомлення?</string>
@@ -173,7 +173,7 @@
     <string name="server_info_pep">XEP-0163: Персональне (піктограми користувачів, OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: Обмін файлами через HTTP</string>
     <string name="server_info_push">XEP-0357: Push-повідомлення</string>
-    <string name="server_info_available">є</string>
+    <string name="server_info_available">так</string>
     <string name="server_info_unavailable">нема</string>
     <string name="missing_public_keys">Не вистачає повідомлення публічного ключа.</string>
     <string name="last_seen_now">у мережі</string>
@@ -272,12 +272,12 @@
     <string name="conference_members_only">Ця група лише для учасників</string>
     <string name="conference_kicked">Вас вигнали з цієї групи</string>
     <string name="conference_shutdown">Цю групу закрили</string>
-    <string name="using_account">використовується обліковий запис %s</string>
+    <string name="using_account">Обліковий запис: %s</string>
     <string name="checking_x">Перевіряю %s на хості HTTP</string>
     <string name="not_connected_try_again">Ви не з\'єднані. Спробуйте ще пізніше.</string>
     <string name="check_x_filesize">Перевірити %s розмір</string>
     <string name="check_x_filesize_on_host">Перевірити %1$s розмір на %2$s</string>
-    <string name="message_options">Налаштування повідомлення</string>
+    <string name="message_options">Повідомлення</string>
     <string name="copy_original_url">Копіювати оригінальний URL</string>
     <string name="send_again">Надіслати знову</string>
     <string name="file_url">URL файла</string>
@@ -483,7 +483,7 @@
     <string name="sync_with_contacts">Синхронізувати контакти</string>
     <string name="sync_with_contacts_long">Програма хоче співставити Ваш перелік контактів з сервера з переліком контактів із книжки контактів на пристрої, щоб показати повні імена та піктограми користувачів.\n\nПрограма лише прочитає Ваші контакти й співставить їх на пристрої й не буде передавати їх на сервер.\n\nЗараз вам буде запропоновано надати застосунку дозвіл на доступ до контактів.</string>
     <string name="notify_on_all_messages">Сповіщати про всі повідомлення</string>
-    <string name="notify_only_when_highlighted">Повідомляти, лише якщо згадують</string>
+    <string name="notify_only_when_highlighted">Повідомляти, якщо згадують мене</string>
     <string name="notify_never">Сповіщення вимкнено</string>
     <string name="notify_paused">Сповіщення призупинено</string>
     <string name="pref_picture_quality">Якість зображення</string>
@@ -508,7 +508,7 @@
     <string name="no">Ні</string>
     <string name="no_accounts">(Немає активних облікових засобів)</string>
     <string name="this_field_is_required">Це поле вимагається</string>
-    <string name="correct_message">Відредагувати</string>
+    <string name="correct_message">Редагувати</string>
     <string name="send_corrected_message">Відредаговане повідомлення</string>
     <string name="no_keys_just_confirm">Ви вже довіряєте цій особі. Вибираючи «Готово», ви лише підтверджуєте, що %s — учасник групи.</string>
     <string name="contacts_have_no_pgp_keys">Не вдалося розшифрувати повідомлення, оскільки контакт не повідомляє свого публічного ключа.\n\n<small>Будь ласка, попросіть контакт налаштувати OpenPGP.</small></string>
@@ -550,7 +550,7 @@
     <string name="InviteText">Вітаю,\n\nкористувач %s запросив вас почати користуватися нашим месенджером. Якщо ви користуєтеся пристроєм з Android, ви зможете спробувати встановити цей застосунок. Для цього перейдіть за цим посиланням…</string>
     <string name="pref_broadcast_last_activity">Показувати останню активність користувача</string>
     <string name="pref_broadcast_last_activity_summary">Дозвольте всім вашим контактам знати, коли ви використовуєте месенджер</string>
-    <string name="invite_user">Запросити до месенджера Pix-Art</string>
+    <string name="invite_user">Розповісти про Pix-Art</string>
     <string name="request_permissions_message">Месенджер запитає надати дозволи. Важливо, щоби ви надали доступ до відповідних дозволів - це дозволить використовувати усі функції месенджера. Якщо ви відмовите у доступі до будь-якого з дозволів, застосунок автоматично припинить роботу.</string>
     <string name="request_permissions_message_again">Ви не надали доступ до окремого з дозволів або до всіх разом, які запитав месенджер. Чи бажаєте ви перейти до налаштувань та надати доступ до цих дозволів? Якщо ви відмовите у якомусь з дозволів, застосунок закриється.</string>
     <string name="unable_to_connect_to_keychain">Не можу зв\'язатися з OpenKeychain</string>
@@ -1067,4 +1067,6 @@
     <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
     <string name="otr_warning">Підтримку шифрування OTR буде припинено у червні 2020 р. Клацніть, щоб перейти за посиланням та дізнатися більше.</string>
     <string name="readmore">Дізнатися більше</string>
+    <string name="add_to_favorites">До обраного</string>
+    <string name="remove_from_favorites">Вилучити з обраного</string>
 </resources>
