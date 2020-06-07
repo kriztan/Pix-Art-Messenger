@@ -110,7 +110,7 @@
     <string name="pref_sound_summary">Tocar som quando uma nova mensagem for recebida</string>
     <string name="pref_send_crash">Enviar relatório de erro</string>
     <string name="pref_confirm_messages">Confirmar mensagens</string>
-    <string name="pref_ui_options">Interface do utilizador</string>
+    <string name="pref_ui_options">Interface do Utilizador</string>
     <string name="openpgp_error">O OpenKeychain reportou um erro</string>
     <string name="accept">Aceitar</string>
     <string name="error">Ocorreu um erro</string>
@@ -134,7 +134,7 @@
     <string name="account_status_not_found">Servidor não encontrado</string>
     <string name="account_status_no_internet">Sem conectividade</string>
     <string name="account_status_regis_fail">O registo falhou</string>
-    <string name="account_status_regis_conflict">Nome de utilizador já existente</string>
+    <string name="account_status_regis_conflict">O nome de utilizador já está em uso</string>
     <string name="account_status_regis_success">Registo efetuado com sucesso</string>
     <string name="account_status_regis_not_sup">O servidor não aceita o registo</string>
     <string name="account_status_tls_error">Negociação TLS falhou</string>
@@ -167,8 +167,8 @@
     <string name="server_info_pep">XEP-0163: PEP (Avatars / OMEMO)</string>
     <string name="server_info_http_upload">XEP-0363: HTTP File Upload</string>
     <string name="server_info_push">XEP-0357: Push</string>
-    <string name="server_info_available">sim</string>
-    <string name="server_info_unavailable">não</string>
+    <string name="server_info_available">disponível</string>
+    <string name="server_info_unavailable">indisponível</string>
     <string name="missing_public_keys">Anúncios de ausência de chave pública</string>
     <string name="last_seen_now">visto agora há pouco</string>
     <string name="last_seen_min">visto há 1 minuto atrás</string>
@@ -188,7 +188,7 @@
     <string name="omemo_fingerprint_x509_selected_message">Impressão digital v\\OMEMO da mensagem</string>
     <string name="other_devices">Outros dispositivos</string>
     <string name="trust_omemo_fingerprints">Confiar nas impressões digitais OMEMO</string>
-    <string name="fetching_keys">A obter as chaves…</string>
+    <string name="fetching_keys">Obtendo as chaves...</string>
     <string name="done">Concluído</string>
     <string name="verify">Verificar</string>
     <string name="decrypt">Decifrar</string>
@@ -291,7 +291,7 @@
     <string name="x_file_offered_for_download">%s oferecido para download</string>
     <string name="cancel_transmission">Cancelar transmissão</string>
     <string name="file_transmission_failed">A transmissão do ficheiro falhou</string>
-    <string name="file_deleted">O ficheiro foi apagado</string>
+    <string name="file_deleted">O ficheiro foi eliminado</string>
     <string name="no_application_found_to_open_file">Não foi encontrada nenhuma aplicação para abrir o ficheiro</string>
     <string name="could_not_verify_fingerprint">Não foi possível verificar a impressão digital</string>
     <string name="manually_verify">Verificar manualmente</string>
@@ -303,7 +303,7 @@
     <string name="regenerate_omemo_key">Regenerar a chave OMEMO</string>
     <string name="clear_other_devices">Apagar dispositivos</string>
     <string name="clear_other_devices_desc">Tem a certeza que quer apagar todos os outros dispositivos do anúncio OMEMO? A próxima vez que os seus dispositivos se conectem, irão ser eles mesmos a fazerem o anúncio novamente, mas podem não receber as mensagems enviadas entretanto.</string>
-    <string name="fetching_history_from_server">A obter o histórico do servidor</string>
+    <string name="fetching_history_from_server">Obtendo o histórico do servidor</string>
     <string name="no_more_history_on_server">Não existe mais histórico no servidor</string>
     <string name="updating">A atualizar...</string>
     <string name="password_changed">Palavra-passe alterada!</string>
@@ -361,7 +361,7 @@
     <string name="dialog_manage_certs_positivebutton">Apagar seleção</string>
     <string name="dialog_manage_certs_negativebutton">Cancelar</string>
     <plurals name="toast_delete_certificates">
-        <item quantity="one">Certificado %d apagado</item>
+        <item quantity="one">%d certificado apagado</item>
         <item quantity="other">%d certificados apagados</item>
     </plurals>
     <string name="pref_quick_action_summary">Substituir botão enviar com ação rápida</string>
@@ -373,7 +373,7 @@
     <string name="send_private_message">Enviar mensagem privada</string>
     <string name="username">Nome de utilizador</string>
     <string name="username_hint">Nome de utilizador</string>
-    <string name="invalid_username">Este nome de utilizador não é válido</string>
+    <string name="invalid_username">Este não é um nome de utilizador válido</string>
     <string name="download_failed_server_not_found">Transferência falhou: Servidor não encontrado</string>
     <string name="download_failed_file_not_found">Transferência falhou: Ficheiro não encontrado</string>
     <string name="download_failed_could_not_connect">Transferência falhou: Não foi possível conectar ao host</string>
@@ -390,7 +390,7 @@
     <string name="authenticate_with_certificate">Deixar vazio para autenticar com certificado</string>
     <string name="mam_prefs">Preferências de arquivamento</string>
     <string name="server_side_mam_prefs">Preferências de arquivamento do servidor</string>
-    <string name="fetching_mam_prefs">A obter as preferências de arquivamento. Por favor aguarde…</string>
+    <string name="fetching_mam_prefs">Obtendo as preferências de arquivamento. Por favor espere...</string>
     <string name="unable_to_fetch_mam_prefs">Não foi possível obter as preferências de arquivamento</string>
     <string name="captcha_required">Captcha obrigatório</string>
     <string name="certificate_chain_is_not_trusted">A cadeia de certificados não é confiável</string>
