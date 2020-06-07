@@ -1049,4 +1049,6 @@
     <string name="could_not_switch_camera">Kamera konnte nicht gewechselt werden</string>
     <string name="otr_warning">Die Unterstützung for die OTR Verschlüsselung wird im Juni eingestellt. Klicke auf Mehr erfahren, um weitere Informationen zu erhalten. Ein Link in einem Browser wird geöffnet.</string>
     <string name="readmore">Mehr erfahren</string>
+    <string name="add_to_favorites">Zu Favoriten hinzufügen</string>
+    <string name="remove_from_favorites">Aus Favoriten entfernen</string>
 </resources>
