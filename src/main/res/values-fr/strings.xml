@@ -1049,4 +1049,6 @@
     <string name="could_not_switch_camera">Impossible de changer la caméra</string>
     <string name="otr_warning">L\'utilisation du chiffrement avec OTR sera abandonnée en juin 2020. Pour en savoir plus, cliquer sur Plus d\'informations. Cela ouvrira un lien dans un navigateur.</string>
     <string name="readmore">Plus d\'informations</string>
+    <string name="add_to_favorites">Ajouter aux favoris</string>
+    <string name="remove_from_favorites">Enlever des favoris</string>
 </resources>
