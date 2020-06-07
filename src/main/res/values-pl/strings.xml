@@ -1068,4 +1068,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="could_not_switch_camera">Nie udało się zmienić kamery</string>
     <string name="otr_warning">Wsparcie dla szyfrowania OTR zostanie porzucone w czerwcu 2020 roku. Kliknij w \"Przeczytaj więcej\" po więcej informacji, otworzy to stronę w przeglądarce internetowej.</string>
     <string name="readmore">Dowiedz się więcej</string>
+    <string name="add_to_favorites">Dodaj do ulubionych</string>
+    <string name="remove_from_favorites">Usuń z ulubionych</string>
 </resources>
