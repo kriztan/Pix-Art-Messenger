@@ -1050,4 +1050,6 @@
     <string name="could_not_switch_camera">Kameranı dəyişə bilmədi</string>
     <string name="otr_warning">OTR şifrələməsinin dəstəyi 2020-ci ilin iyununda azalacaq. Daha çox məlumat əldə etmək üçün daha çox oxuyun.</string>
     <string name="readmore">Ətraflı oxu</string>
+    <string name="add_to_favorites">Seçilmişlərə əlavə et</string>
+    <string name="remove_from_favorites">Seçilmişlərdən sil</string>
 </resources>
