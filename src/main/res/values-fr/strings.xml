@@ -952,7 +952,7 @@
     <string name="intro_chat_details">Détails du chat</string>
     <string name="intro_desc_chat_details">Vous voulez voir les détails d\'un chat ? Il vous suffit d\'appuyer sur le nom du chat dans la barre de menu du haut.</string>
     <string name="intro_highlight_user">Mettre en évidence l’utilisateur/trice</string>
-    <string name="intro_desc_highlight_user">Si vous souhaitez mettre en évidence un·e utilisateur/trice dans une discussion, toucher son avatar dans la discussion. Si l\'utilisateur/trice n\'est pas visible dans la discussion, passez aux détails du chat et cherchez l\'utilisateur/trice dans la liste des participant·e·s. Une pression longue sur son avatar fera apparaître un menu contextuel dans lequel vous pourrez le/la mettre en évidence.</string>
+    <string name="intro_desc_highlight_user">Si vous souhaitez mettre en évidence un·e utilisateur/trice dans une discussion, toucher son avatar dans la discussion. Si celui-ci n\'est pas visible, passez aux détails du chat et cherchez l\'utilisateur/trice parmi les participant·e·s. Une pression longue sur son avatar fera apparaître un menu permettant de le/la mettre en évidence.</string>
     <string name="intro_desc_open_chat_details">Vous avez ouvert les détails du chat. Vous pouvez y voir les détails de ce chat, modifier le comportement des notifications de nouveaux messages, ajouter ou supprimer le chat de votre liste de contacts et bien plus encore.</string>
     <string name="pref_show_intro_summary">Revoir les messages d\'introduction et de présentation.</string>
     <string name="pref_show_intro">Revoir l\'Introduction</string>
