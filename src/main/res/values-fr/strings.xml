@@ -306,7 +306,7 @@
     <string name="restoring_backup">Restauration de la sauvegarde</string>
     <string name="notification_restored_backup_title">Votre sauvegarde a été restaurée</string>
     <string name="notification_restored_backup_subtitle">N\'oubliez pas d\'activer le compte.</string>
-    <string name="choose_file">Choix du fichier</string>
+    <string name="choose_file">Choisir un fichier</string>
     <string name="receiving_file">Réception de %1$s</string>
     <string name="download_x_file">Télécharger %s</string>
     <string name="delete_x_file">Effacer %s</string>
@@ -631,7 +631,7 @@
         <item quantity="other">%d mois</item>
     </plurals>
     <string name="today">Aujourd’hui</string>
-    <string name="pref_use_max_brightness_summary">Bascule en mode luminosité maximale lors de l\'affichage des vidéos ou des images en mode plein écran.</string>
+    <string name="pref_use_max_brightness_summary">Active la luminosité maximale lors de l\'affichage de vidéos ou d\'images en plein écran.</string>
     <string name="pref_use_max_brightness">Luminosité maximale</string>
     <string name="block_jabber_id">Bloquer l’identifiant Jabber</string>
     <string name="corresponding_conversations_closed">Conversations correspondantes fermées.</string>
@@ -646,7 +646,7 @@
     <string name="presence_offline">Hors-ligne</string>
     <string name="block_stranger">Bloquer l’inconnu</string>
     <string name="block_entire_domain">Bloquer le domaine entier</string>
-    <string name="pref_use_auto_rotate_summary">Rotation automatique des images et vidéos en mode plein écran pour s’adapter à la taille de celui-ci.</string>
+    <string name="pref_use_auto_rotate_summary">Rotation automatique des images et vidéos en plein écran pour s’adapter à la taille de celui-ci.</string>
     <string name="pref_use_auto_rotate">Rotation des médias en plein écran</string>
     <string name="pref_use_tor">Connexion via Tor</string>
     <string name="pref_use_tor_summary">Redirige toutes les connexions vers le réseau Tor. Nécessite l\'application Orbot.</string>
@@ -663,8 +663,8 @@
     <string name="retry_decryption">Nouvelle tentative de déchiffrement</string>
     <string name="session_failure">Échec de la session</string>
     <string name="sasl_downgrade">Mécanisme SASL dégradé</string>
-    <string name="action_take_photo">prendre une photo</string>
-    <string name="action_take_video">enregistrer une vidéo</string>
+    <string name="action_take_photo">Prendre une photo</string>
+    <string name="action_take_video">Enregistrer une vidéo</string>
     <string name="account_status_regis_web">Le serveur nécessite une identification sur son site web </string>
     <string name="application_found_to_open_website">Aucune application trouvée pour afficher le site web</string>
     <string name="open_website">Ouvrir le site web</string>
@@ -712,7 +712,7 @@
     <string name="mtm_cert_details">Détails du certificat :</string>
     <string name="once">Une fois</string>
     <string name="qr_code_scanner_needs_access_to_camera">Le lecteur de code QR a besoin d’accéder à votre appareil photo</string>
-    <string name="pref_scroll_to_bottom_summary">Défiler en bas une fois le message envoyé.</string>
+    <string name="pref_scroll_to_bottom_summary">Aller en bas de la discussion une fois le message envoyé.</string>
     <string name="pref_scroll_to_bottom">Défiler vers le bas</string>
     <string name="no_camera_permission">Pix-Art Messenger a besoin d’accéder à l’appareil photo</string>
     <string name="edit_status_message_title">Modifier votre message de statut</string>
@@ -777,8 +777,8 @@
     <string name="no_application_found_to_view_contact">Aucune application permettant d’afficher ce contact n’a été trouvée</string>
     <string name="welcome_server_info">Nous vous recommandons d’utiliser blabber.im en tant que votre fournisseur.</string>
     <string name="no_location_permission">Pix-Art Messenger a besoin d’accéder aux services de géolocalisation</string>
-    <string name="pref_show_record_voice_btn_summary">Affiche le bouton Enregistrement vocal en tant qu’action rapide dans les conversations.</string>
-    <string name="pref_show_record_voice_btn">Afficher le bouton Enregistrement vocal</string>
+    <string name="pref_show_record_voice_btn_summary">Affiche le bouton Enregistrement audio en tant qu’action rapide dans les conversations.</string>
+    <string name="pref_show_record_voice_btn">Bouton Enregistrement audio</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Remplacer le bouton Envoyer par le bouton Joindre si aucun texte n\'est tapé. Sinon montrer le bouton d\'action rapide qui peut être configuré.</string>
     <string name="pref_quick_share_attachment_choice">Choix des fichiers joints</string>
     <string name="unable_to_save_recording">Impossible de sauvegarder l’enregistrement</string>
@@ -955,7 +955,7 @@
     <string name="intro_desc_highlight_user">Si vous souhaitez mettre en évidence un·e utilisateur/trice dans une discussion, toucher son avatar dans la discussion. Si celui-ci n\'est pas visible, passez aux détails du chat et cherchez l\'utilisateur/trice parmi les participant·e·s. Une pression longue sur son avatar fera apparaître un menu permettant de le/la mettre en évidence.</string>
     <string name="intro_desc_open_chat_details">Vous avez ouvert les détails du chat. Vous pouvez y voir les détails de ce chat, modifier le comportement des notifications de nouveaux messages, ajouter ou supprimer le chat de votre liste de contacts et bien plus encore.</string>
     <string name="pref_show_intro_summary">Revoir les messages d\'introduction et de présentation.</string>
-    <string name="pref_show_intro">Revoir l\'Introduction</string>
+    <string name="pref_show_intro">Revoir l\'introduction</string>
     <string name="show_intro_again">Les messages d\'introduction seront affichés à nouveau</string>
     <string name="show_intro_again_failed">La réactivation des messages d\'introduction a échoué. Ré-essayez…</string>
     <string name="intro_desc_whats_xmpp">XMPP, également appelé Jabber, est un réseau de communication décentralisé et fonctionne comme le courrier électronique. Vous avez besoin d\'une adresse appelée identifiant Jabber, d\'un mot de passe et d\'un messager. Nous reviendrons plus tard sur ce sujet.</string>
@@ -996,8 +996,8 @@
     <string name="your_server_invitation">Votre invitation sur un serveur</string>
     <string name="pref_use_unicolored_chatbg_summary">Avoir des arrière-plans de discussions uniformes.</string>
     <string name="pref_use_unicolored_chatbg">Arrière-plans uniformes</string>
-    <string name="pref_alternative_voice_settings_summary">Si vous avez des problèmes pendant un enregistrement vocal, sélectionner cette option pour modifier le codec.</string>
-    <string name="pref_alternative_voice_settings">Méthode alternative d\'enregistrement vocal</string>
+    <string name="pref_alternative_voice_settings_summary">Si vous avez des problèmes pendant un enregistrement audio, sélectionner cette option pour modifier le codec.</string>
+    <string name="pref_alternative_voice_settings">Méthode alternative d\'enregistrement audio</string>
     <string name="pref_use_colored_muc_names_summary">Colorer les surnoms dans les discussions ou les canaux comme les arrière-plans d\'avatars par défaut.</string>
     <string name="pref_use_colored_muc_names">Colorer les surnoms</string>
     <string name="show_videos_images_only">Uniquement images/vidéos</string>
@@ -1012,9 +1012,9 @@
     <string name="video_call">Appel vidéo</string>
     <string name="pref_message_notification_settings">Paramètres de notification des messages</string>
     <string name="pref_incoming_call_notification_settings">Paramètres de notification des appels entrants</string>
-    <string name="pref_notification_sound_summary">Son de notification des nouveaux messages</string>
+    <string name="pref_notification_sound_summary">Son de notification des nouveaux messages.</string>
     <string name="pref_notification_sound">Son de notification</string>
-    <string name="pref_call_ringtone_summary">Sonnerie d\'un appel entrants</string>
+    <string name="pref_call_ringtone_summary">Choisir la sonnerie d\'un appel entrant.</string>
     <string name="pref_ringtone">Sonnerie</string>
     <string name="incoming_calls_channel_name">Appels entrants</string>
     <string name="ongoing_calls_channel_name">Appels en cours</string>
