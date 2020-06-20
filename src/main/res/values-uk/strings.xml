@@ -138,7 +138,7 @@
     <string name="account_status_regis_fail">Не вдалося зареєструватися</string>
     <string name="account_status_regis_conflict">Ім\'я користувача вже використовується</string>
     <string name="account_status_regis_success">Реєстрацію виконано</string>
-    <string name="account_status_regis_not_sup">Сервер не підтримує режстрацію</string>
+    <string name="account_status_regis_not_sup">Сервер не підтримує реєстрацію</string>
     <string name="account_status_tls_error">Узгодження TLS не відбулося</string>
     <string name="account_status_policy_violation">Порушення політики</string>
     <string name="account_status_incompatible_server">Несумісний сервер</string>
@@ -176,7 +176,7 @@
     <string name="server_info_available">так</string>
     <string name="server_info_unavailable">нема</string>
     <string name="missing_public_keys">Не вистачає повідомлення публічного ключа.</string>
-    <string name="last_seen_now">у мережі</string>
+    <string name="last_seen_now">зараз у мережі</string>
     <string name="last_seen_min">у мережі 1 хвилину тому</string>
     <string name="last_seen_mins">у мережі %d хвилин тому</string>
     <string name="last_seen_hour">у мережі 1 годину тому</string>
@@ -659,7 +659,7 @@
     <string name="contact_is_typing">%s пише…</string>
     <string name="one_participant">Один учасник</string>
     <string name="more_participants">%d учасників</string>
-    <string name="presence_offline">Не в мережі</string>
+    <string name="presence_offline">Поза мережею</string>
     <string name="block_stranger">Заблокувати невідомий контакт</string>
     <string name="block_entire_domain">Заблокувати весь домен</string>
     <string name="pref_use_auto_rotate_summary">Повертати зображення та відео у повноекранному режимі</string>
