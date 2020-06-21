@@ -922,7 +922,7 @@
     <string name="pref_use_internal_updater">Оновлення</string>
     <string name="attach">Долучити</string>
     <string name="delete_from_server">Вилучити віддалено</string>
-    <string name="go_online_to_delete">Вам потрібно або увімкнути, або з\'єднатися з мережею з обліковим записом, який ви хочете вилучити з сервера.</string>
+    <string name="go_online_to_delete">Вам потрібно або увімкнути, або з\'єднатися із мережею під тим обліковим записом, який ви хочете вилучити з сервера.</string>
     <string name="discover_channels">Пошук каналу</string>
     <string name="search_channels">Шукати канали</string>
     <string name="channel_discovery_opt_in_title">Можливе порушення приватності!</string>
