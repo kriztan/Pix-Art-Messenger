@@ -26,7 +26,7 @@
     <string name="minute_ago">1 хвилину тому</string>
     <string name="minutes_ago">%d хв. тому</string>
     <string name="x_unread_conversations">%d непрочитаних розмов</string>
-    <string name="sending">відправляю…</string>
+    <string name="sending">надсилаю…</string>
     <string name="message_decrypting">Розшифровую повідомлення. Зачекайте, будь ласка…</string>
     <string name="pgp_message">Повідомлення зашифроване OpenPGP</string>
     <string name="nick_in_use">Таке прізвисько вже використовується</string>
@@ -735,7 +735,7 @@
     <string name="pref_automatically_delete_messages_description">Автоматично вилучати повідомлення з цього пристрою, старіші за зазначений проміжок часу.</string>
     <string name="pref_automatically_delete_messages">Автоматичне вилучення повідомлень</string>
     <string name="disable_encryption">Вимкнути шифрування</string>
-    <string name="error_trustkey_general">Застосунок не може відправляти зашифровані повідомлення до %1$s. Можливо, що ваш контакт використовує застарілий сервер або застосунок, який не підтримує OMEMO.</string>
+    <string name="error_trustkey_general">Месенджер не може надсилати зашифровані повідомлення до %1$s. Можливо, що ваш контакт використовує застарілий сервер або застосунок, який не підтримує OMEMO.</string>
     <string name="error_trustkey_device_list">Неможливо отримати перелік пристроїв</string>
     <string name="error_trustkey_bundle">Неможливо отримати пакети пристроїв</string>
     <string name="error_trustkey_hint_mutual">Підказка: В деяких випадках це можна виправити, якщо додати один до одного у ваших списках контактів.</string>
