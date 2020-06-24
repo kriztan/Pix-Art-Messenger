@@ -381,7 +381,7 @@
     <string name="pref_input_options">Введення</string>
     <string name="pref_enter_is_send">Enter для надсилання</string>
     <string name="pref_enter_is_send_summary">Використовувати Enter для надсилання повідомлення</string>
-    <string name="pref_display_enter_key">Показувати клавішу Enter</string>
+    <string name="pref_display_enter_key">Показувати кнопку Enter</string>
     <string name="pref_display_enter_key_summary">Змінити клавішу емоційок на кнопку Enter</string>
     <string name="audio">аудіо</string>
     <string name="video">відео</string>
@@ -414,7 +414,7 @@
         <item quantity="many">%d сертифікатів видалено</item>
         <item quantity="other">%d сертифікатів вилучено</item>
     </plurals>
-    <string name="pref_quick_action_summary">Замінювати клавішу надсилання швидкими діями</string>
+    <string name="pref_quick_action_summary">Замінювати кнопку надсилання швидкими діями</string>
     <string name="pref_quick_action">Швидкі дії</string>
     <string name="none">Жодної</string>
     <string name="recently_used">Остання, що використана</string>
@@ -543,7 +543,7 @@
     <string name="registration_password_too_weak">Реєстрація не відбулася: пароль занадто слабкий.</string>
     <string name="choose_participants">Вибрати учасників</string>
     <string name="creating_conference">Створення групи…</string>
-    <string name="import_text">Для відновлення з резервної копії натисніть цю клавішу.</string>
+    <string name="import_text">Для відновлення з резервної копії натисніть на цю кнопку.</string>
     <string name="import_database">Імпортувати резервну копію</string>
     <string name="invite_again">Запросити знову</string>
     <string name="inviteUser_Subject">запросив вас через</string>
