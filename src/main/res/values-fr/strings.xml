@@ -424,9 +424,9 @@
     <string name="username">Identifiant</string>
     <string name="username_hint">Identifiant</string>
     <string name="invalid_username">Cet identifiant n\'est pas valide</string>
-    <string name="download_failed_server_not_found">Échec du téléchargement : impossible de trouver le serveur</string>
-    <string name="download_failed_file_not_found">Échec du téléchargement : impossible de trouver le fichier</string>
-    <string name="download_failed_could_not_connect">Échec du téléchargement : impossible de se connecter à l’hôte</string>
+    <string name="download_failed_server_not_found">Échec du téléchargement : Impossible de trouver le serveur</string>
+    <string name="download_failed_file_not_found">Échec du téléchargement : Impossible de trouver le fichier</string>
+    <string name="download_failed_could_not_connect">Échec du téléchargement : Impossible de se connecter à l’hôte</string>
     <string name="download_failed_could_not_write_file">Échec du téléchargement : Écriture impossible</string>
     <string name="action_check_update">Vérifier les mises à jour</string>
     <string name="title_activity_updater">Mise à jour du service</string>
