@@ -77,14 +77,12 @@
     <string name="choose_presence">选择设备</string>
     <string name="send_unencrypted_message">发送未加密的消息</string>
     <string name="send_message_to_x">发送消息给%s</string>
-    <string name="send_otr_message">发送OTR加密消息</string>
     <string name="send_omemo_message">发送OMEMO加密消息</string>
     <string name="send_omemo_x509_message">发送v\\OMEMO加密消息</string>
     <string name="send_pgp_message">发送OpenPGP加密消息</string>
     <string name="your_nick_has_been_changed">您的昵称已更改</string>
     <string name="send_unencrypted">未加密发送</string>
     <string name="decryption_failed">解密失败。可能您没有合适的私钥。</string>
-    <string name="openkeychain_required">OpenKeychain</string>
     <string name="openkeychain_required_long">Pix-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密、解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
     <string name="restart">重启</string>
     <string name="install">安装</string>
@@ -144,9 +142,6 @@
     <string name="account_status_incompatible_server">不兼容的服务器</string>
     <string name="account_status_stream_error">传输错误</string>
     <string name="encryption_choice_unencrypted">未加密</string>
-    <string name="encryption_choice_otr">OTR</string>
-    <string name="encryption_choice_pgp">OpenPGP</string>
-    <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">编辑帐户</string>
     <string name="mgmt_account_delete">删除帐户</string>
     <string name="mgmt_account_publish_avatar">发布头像</string>
@@ -158,7 +153,6 @@
     <string name="mgmt_account_delete_confirm_message">如果您删除了帐户，则本地对话历史记录将丢失。\n\n如果您从服务器删除帐户，则您的帐户也将从服务器中删除，在注册新帐户之前，您将无法登录。</string>
     <string name="attach_record_voice">语音录制</string>
     <string name="account_settings_jabber_id">Jabber用户名</string>
-    <string name="account_settings_example_jabber_id">username@pix-art.de</string>
     <string name="password">密码</string>
     <string name="invalid_jid">Jabber用户名无效</string>
     <string name="error_out_of_memory">内存不足。图像太大了</string>
@@ -184,11 +178,8 @@
     <string name="last_seen_day">1天前</string>
     <string name="last_seen_days">%d天前</string>
     <string name="install_openkeychain">消息已加密。请安装OpenKeychain以解密。</string>
-    <string name="unknown_otr_fingerprint">未知OTR指纹</string>
     <string name="openpgp_messages_found">发现OpenPGP加密消息</string>
     <string name="your_fingerprint">您的指纹</string>
-    <string name="otr_fingerprint">OTR指纹</string>
-    <string name="otr_fingerprint_selected_message">OTR消息指纹</string>
     <string name="openpgp_key_id">OpenPGP密钥ID</string>
     <string name="omemo_fingerprint">OMEMO指纹</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO指纹</string>
@@ -266,7 +257,6 @@
     <string name="pref_expert_options_other">其它</string>
     <string name="pref_autojoin">与书签同步</string>
     <string name="pref_autojoin_summary">根据书签中的自动连接设定，自动加入并离开群聊。</string>
-    <string name="toast_message_otr_fingerprint">OTR指纹已复制！</string>
     <string name="toast_message_omemo_fingerprint">OMEMO指纹已复制！</string>
     <string name="conference_banned">您被此群聊封禁</string>
     <string name="conference_members_only">此群聊仅限成员</string>
@@ -286,7 +276,6 @@
     <string name="show_qr_code">显示二维码</string>
     <string name="show_block_list">显示封禁列表</string>
     <string name="account_details">帐户信息</string>
-    <string name="verify_otr">验证OTR</string>
     <string name="remote_fingerprint">远程指纹</string>
     <string name="shared_secret_hint">提示或问题</string>
     <string name="shared_secret_secret">已共享的密码</string>
@@ -299,7 +288,6 @@
     <string name="finish">完成</string>
     <string name="verified">已验证！</string>
     <string name="smp_requested">对方请求SMP验证</string>
-    <string name="no_otr_session_found">找不到有效的OTR会话！</string>
     <string name="pref_create_backup">创建备份</string>
     <string name="pref_create_backup_summary">将备份文件保存到%s</string>
     <string name="notification_create_backup_title">创建备份文件</string>
@@ -320,13 +308,11 @@
     <string name="no_application_found_to_open_file">找不到打开文件的应用程序</string>
     <string name="could_not_verify_fingerprint">无法验证指纹</string>
     <string name="manually_verify">手动验证</string>
-    <string name="are_you_sure_verify_fingerprint">您确定要验证您的联系人的OTR指纹吗？</string>
     <string name="pref_show_dynamic_tags">显示动态标签</string>
     <string name="pref_show_dynamic_tags_summary">在联系人下方显示只读标记</string>
     <string name="no_conference_server_found">找不到群聊服务器</string>
     <string name="conference_creation_failed">群聊创建失败！</string>
     <string name="account_image_description">帐户头像</string>
-    <string name="copy_otr_clipboard_description">复制OTR指纹</string>
     <string name="copy_omemo_clipboard_description">复制OMEMO指纹</string>
     <string name="regenerate_omemo_key">重新生成OMEMO密钥</string>
     <string name="clear_other_devices">清除设备</string>
@@ -340,7 +326,6 @@
     <string name="updating">更新中…</string>
     <string name="password_changed">密码已更改！</string>
     <string name="could_not_change_password">无法更改密码</string>
-    <string name="otr_session_not_started">发送消息以启动加密聊天</string>
     <string name="ask_question">提问</string>
     <string name="smp_explain_question">如果您和您的联系人有一个共同的秘密，没有其他人知道（比如一个笑话或者你们最后一次见面时吃的午餐），您可以用这个秘密来验证对方的指纹。\n\n您为联系人提供提示或问题，他们会回答答案。</string>
     <string name="smp_explain_answer">您的联系人希望通过共享秘密来验证您的指纹。您的联系人提供了以下有关该秘密的提示或问题。</string>
@@ -446,7 +431,6 @@
     <string name="pref_dnd_on_silent_mode_summary">当设备静音时，将您标记为“请勿打扰”状态</string>
     <string name="pref_treat_vibrate_as_silent">将振动看作静音</string>
     <string name="pref_treat_vibrate_as_dnd_summary">当设备处于振动状态时，将您标记为“请勿打扰”</string>
-    <string name="hostname_example">xmpp.pix-art.de</string>
     <string name="action_add_account_with_certificate">用证书添加帐户</string>
     <string name="unable_to_parse_certificate">无法解析证书</string>
     <string name="authenticate_with_certificate">留空以验证w/证书</string>
@@ -736,7 +720,6 @@
     <string name="not_encrypted_for_this_device">该条消息没有为此设备加密</string>
     <string name="no_microphone_permission">Pix-Art聊天需要访问麦克风</string>
     <string name="search_messages">搜索消息</string>
-    <string name="gif">GIF</string>
     <string name="view_conversation">查看对话</string>
     <string name="web_address">网址</string>
     <string name="jabber_id_copied_to_clipboard">将Jabber用户名复制到剪贴板</string>
@@ -896,7 +879,6 @@
     <string name="action_add_existing_account">添加已有帐户</string>
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
-    <string name="add_anyway">仍然添加</string>
     <string name="this_looks_like_channel">这看起来像一个群聊地址</string>
     <string name="no_backup_available">没有可用备份</string>
     <string name="pref_show_own_accounts_summary">在聊天和联系人中显示自己的多个帐户</string>
@@ -956,7 +938,6 @@ Pix-Arr Messenger</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
     <string name="sharing_application_not_grant_permission">分享文件的应用没有授予该文件的权限。</string>
-    <string name="jabber_network">jabber.network</string>
     <string name="local_server">本地服务器</string>
     <string name="pref_channel_discovery_summary">大多数用户会选择“jabber.network”以便从公共 XMPP 生态系统获得更好的建议。</string>
     <string name="pref_channel_discovery">频道发现方法</string>
@@ -968,16 +949,4 @@ Pix-Arr Messenger</string>
     <string name="pref_theme_orange">橙色</string>
     <string name="pref_theme_color_options_summary">选择主题调色板</string>
     <string name="pref_theme_color_options">主题颜色</string>
-    <string name="pref_enable_otr_summary">为信息加密启用 OTR 加密</string>
-    <string name="pref_enable_otr">启用 OTR 加密</string>
-    <string name="action_delete">删除</string>
-    <string name="attach_choose_video">选择视频</string>
-    <string name="please_enable_an_account">请启用一个用户</string>
-    <string name="make_call">呼叫</string>
-    <string name="audio_call">语音通话</string>
-    <string name="video_call">视频通话</string>
-    <string name="pref_message_notification_settings">消息通知设置</string>
-    <string name="pref_incoming_call_notification_settings">呼入通话设置</string>
-    <string name="pref_notification_sound_summary">新消息提示声</string>
-    <string name="pref_notification_sound">通知提示音</string>
 </resources>
