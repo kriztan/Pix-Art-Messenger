@@ -77,7 +77,6 @@
     <string name="choose_presence">Cihaz seç</string>
     <string name="send_unencrypted_message">Şifrəsiz mesaj göndər</string>
     <string name="send_message_to_x">%s şəxsinə mesaj göndər</string>
-    <string name="send_otr_message">OTR şifrəli mesaj göndər</string>
     <string name="send_omemo_message">OMEMO şifrəli mesaj göndər</string>
     <string name="send_omemo_x509_message">v\\OMEMO şifrəli mesaj göndər</string>
     <string name="send_pgp_message">OpenPGP şifrəli mesaj göndər</string>
@@ -186,11 +185,8 @@
     <string name="last_seen_day">1 gün əvvəl</string>
     <string name="last_seen_days">%d gün əvvəl</string>
     <string name="install_openkeychain">Şifrəli mesaj. Zəhmət olmasa şifrəni açmaq üçün OpenKeychain quraşdır.</string>
-    <string name="unknown_otr_fingerprint">Bilinməyən OTR barmaq izi</string>
     <string name="openpgp_messages_found">OpenPGP şifrəli mesajlar tapıldı</string>
     <string name="your_fingerprint">Barmaq iziniz</string>
-    <string name="otr_fingerprint">OTR barmaq izi</string>
-    <string name="otr_fingerprint_selected_message">OTR mesajın barmaq izi</string>
     <string name="openpgp_key_id">OpenPGP Açar Kimliyi</string>
     <string name="omemo_fingerprint">OMEMO barmaq izi</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO barmaq izi</string>
@@ -268,7 +264,6 @@
     <string name="pref_expert_options_other">Digərləri</string>
     <string name="pref_autojoin">Əlfəcinlərlə sinxronizasiya edin</string>
     <string name="pref_autojoin_summary">Əlfəcinlərinizdə avtomatik qoşulma bayrağına uyğun olaraq qrup söhbətlərinə qoşulun və tərk edin.</string>
-    <string name="toast_message_otr_fingerprint">OTR izi kopyalandı!</string>
     <string name="toast_message_omemo_fingerprint">OTR izi kopyalandı!</string>
     <string name="conference_banned">Bu qrupun söhbətindən qadağan olunur</string>
     <string name="conference_members_only">Bu qrup chat yalnız üzvlər üçün</string>
@@ -288,7 +283,6 @@
     <string name="show_qr_code">QR kodu göstər</string>
     <string name="show_block_list">Blok siyahısını göstər</string>
     <string name="account_details">Hasab məlumatı</string>
-    <string name="verify_otr">OTR təsdiq edin</string>
     <string name="remote_fingerprint">Izi silmək</string>
     <string name="shared_secret_hint">Göstəriş və ya sual</string>
     <string name="shared_secret_secret">Paylaşılan məxfi</string>
@@ -301,7 +295,6 @@
     <string name="finish">Hazırdır</string>
     <string name="verified">Təsdiqləndi!</string>
     <string name="smp_requested">Kontakt SMP yoxlanmasını tələb etdi</string>
-    <string name="no_otr_session_found">Etibarlı OTR sessiyası tapılmadı!</string>
     <string name="pref_create_backup">Nüxsə yarat</string>
     <string name="pref_create_backup_summary">Nüsxə fayllarını %s-ya yazın</string>
     <string name="notification_create_backup_title">Ehtiyat nüsxə faylları yaratması</string>
@@ -322,13 +315,11 @@
     <string name="no_application_found_to_open_file">Faylı açmaq üçün heç bir tətbiq tapılmadı</string>
     <string name="could_not_verify_fingerprint">Izi yoxlamqa alınmadı</string>
     <string name="manually_verify">Əl ilə yoxlayın</string>
-    <string name="are_you_sure_verify_fingerprint">Əlaqələrinizin OTR izini təsdiqləməyinizə əminsinizmi?</string>
     <string name="pref_show_dynamic_tags">Dinamik etiketləri göstərin</string>
     <string name="pref_show_dynamic_tags_summary">Kontaktların altından yalnız oxunan etiketləri göstərin</string>
     <string name="no_conference_server_found">Heç bir qrup chat serveri tapılmadı</string>
     <string name="conference_creation_failed">Qrup yığın yaratma alınmadı!</string>
     <string name="account_image_description">Hesabın avatarı</string>
-    <string name="copy_otr_clipboard_description">OTR izini panoya kopiyalayın</string>
     <string name="copy_omemo_clipboard_description">OMEMO izini panoya kopiyalayın</string>
     <string name="regenerate_omemo_key">OMEMO açarını yenidən yaradın</string>
     <string name="clear_other_devices">Cihazları təmizləyin</string>
@@ -342,7 +333,6 @@
     <string name="updating">Yenilənmə…</string>
     <string name="password_changed">Parol dəyişdirildi!</string>
     <string name="could_not_change_password">Şifrəni dəyişmək alınmadı</string>
-    <string name="otr_session_not_started">Şifrəli bir söhbətə başlamaq üçün mesaj göndərin</string>
     <string name="ask_question">Sual soruş</string>
     <string name="smp_explain_question">Əgər sizinlə kontaktınızın ortaq bir sirri varsa, başqa heç kim bilmir (daxili zarafat kimi və ya sadəcə son dəfə görüşdüyünüz günorta yeməyi), bu sirri bir-birinizin izlərini yoxlamaq üçün istifadə edə bilərsiniz.\n\nKontaktınıza həssas bir suala cavab verəcək bir işarə və ya bir sual verirsiniz.</string>
     <string name="smp_explain_answer">Kontaktınız izinizi ortaq bir gizli ilə sınayaraq təsdiqləmək istəyir. Kontaktınız bu sirr üçün aşağıdakı işarə və ya sual vermişdir.</string>
@@ -990,8 +980,6 @@
     <string name="pref_theme_orange">Narıncı</string>
     <string name="pref_theme_color_options_summary">Temanın rəng palitrasını seçin</string>
     <string name="pref_theme_color_options">Tema rəngi</string>
-    <string name="pref_enable_otr_summary">Mesaj şifrələməsi üçün OTR şifrələməsini aktiv edin</string>
-    <string name="pref_enable_otr">OTR şifrələməsini aktivləşdirin</string>
     <string name="magic_create_text_on_x">Siz %1$s - yə dəvət olunmusunuz. Bir hesab yaratma müddətində sizə yol göstərəcəyik.\nTayerçi olaraq %1$s seçərkən digər provayderlərin istifadəçiləri ilə tam XMPP ünvanınızı verərək əlaqə qura biləcəksiniz.</string>
     <string name="account_status_regis_invalid_token">Yanlış qeydiyyat simvolu</string>
     <string name="magic_create_text_fixed">Siz %1$s dəvət olunduz. Bütün hesab yaratma prosesi vasitəsilə sizi keçirəcəyik.\nYou, digər provayderlərin istifadəçiləri ilə tam XMPP ünvanını istifadə etməklə ünsiyyət qura bilərsiniz.</string>
@@ -1048,7 +1036,6 @@
     <string name="only_one_call_at_a_time">Bir anda yalnız bir zəng edə bilərsiniz.</string>
     <string name="missed_call">Cavabsız zəng</string>
     <string name="could_not_switch_camera">Kameranı dəyişə bilmədi</string>
-    <string name="otr_warning">OTR şifrələməsinin dəstəyi 2020-ci ilin iyununda azalacaq. Daha çox məlumat əldə etmək üçün daha çox oxuyun.</string>
     <string name="readmore">Ətraflı oxu</string>
     <string name="add_to_favorites">Seçilmişlərə əlavə et</string>
     <string name="remove_from_favorites">Seçilmişlərdən sil</string>
