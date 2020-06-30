@@ -67,7 +67,6 @@
     <string name="choose_presence">Pilih perangkat</string>
     <string name="send_unencrypted_message">Kirim pesan tidak terenkripsi</string>
     <string name="send_message_to_x">Kirim pesan ke% s</string>
-    <string name="send_otr_message">Kirim pesan terenkripsi OTR</string>
     <string name="send_omemo_message">Kirim pesan terenkripsi OMEMO</string>
     <string name="send_omemo_x509_message">Kirim pesan terenkripsi v\\OMEMO</string>
     <string name="send_pgp_message">Kirim pesan terenkripsi OpenPGP</string>
@@ -169,11 +168,8 @@
     <string name="last_seen_day">1 hari yang lalu</string>
     <string name="last_seen_days">%d hari yang lalu</string>
     <string name="install_openkeychain">Pesan terenkripsi. Silahkan pasang OpenKeychain untuk mendekripsikannya.</string>
-    <string name="unknown_otr_fingerprint">Sidik jari OTR tidak diketahui</string>
     <string name="openpgp_messages_found">Pesan terenskripsi OpenPGP ditemukan</string>
     <string name="your_fingerprint">Sidik jari anda</string>
-    <string name="otr_fingerprint">OTR sidik jari</string>
-    <string name="otr_fingerprint_selected_message">OTR sidik jari pesan</string>
     <string name="openpgp_key_id">OpenPGP Kunci data diri</string>
     <string name="omemo_fingerprint">OMEMO sidik jari</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO sidik jari</string>
@@ -245,7 +241,6 @@
     <string name="pref_use_send_button_to_indicate_status_summary">Warna tombol kirim untuk menunjukkan status kontak</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Warna nama kontak untuk menunjukkan status kontak</string>
     <string name="pref_expert_options_other">Lainnya</string>
-    <string name="toast_message_otr_fingerprint">Sidik jari OTR disalin ke clipboard!</string>
     <string name="toast_message_omemo_fingerprint">Sidik jari OMEMO disalin ke clipboard!</string>
     <string name="conference_banned">Anda dilarang melakukan obrolan kelompok ini</string>
     <string name="conference_members_only">Obrolan kelompok ini hanya untuk anggota saja</string>
@@ -263,7 +258,6 @@
     <string name="url_copied_to_clipboard">URL disimpan ke clipboard</string>
     <string name="show_block_list">Tampilkan daftar blokir</string>
     <string name="account_details">Rincian akun</string>
-    <string name="verify_otr">Periksa OTR</string>
     <string name="remote_fingerprint">Sidik jari terpencil</string>
     <string name="shared_secret_hint">Petunjuk atau pertanyaan</string>
     <string name="shared_secret_secret">Rahasia yang dibagikan</string>
@@ -276,7 +270,6 @@
     <string name="finish">Selesai</string>
     <string name="verified">Diverifikasi!</string>
     <string name="smp_requested">Kontak meminta verifikasi SMP</string>
-    <string name="no_otr_session_found">Tidak ada sesi OTR yang valid telah ditemukan!</string>
     <string name="choose_file">Pilih berkas</string>
     <string name="download_x_file">Unduh %s</string>
     <string name="delete_x_file">Hapus %s</string>
@@ -290,13 +283,11 @@
     <string name="no_application_found_to_open_file">Tidak ada aplikasi yang ditemukan untuk membuka berkas</string>
     <string name="could_not_verify_fingerprint">Tidak bisa memverifikasi sidik jari</string>
     <string name="manually_verify">Verifikasi secara manual</string>
-    <string name="are_you_sure_verify_fingerprint">Apakah kamu yakin ingin memverifikasi kontak OTR anda dengan sidik jari?</string>
     <string name="pref_show_dynamic_tags">Tampilkan tanda dinamis</string>
     <string name="pref_show_dynamic_tags_summary">Tampilkan tanda hanya-baca dibawah kontak</string>
     <string name="no_conference_server_found">Tidak ada server obrolan kelompok yang ditemukan</string>
     <string name="conference_creation_failed">Obrolan kelompok gagal dibuat!</string>
     <string name="account_image_description">Avatar akun</string>
-    <string name="copy_otr_clipboard_description">Salin OTR sidik jari ke clipboard</string>
     <string name="copy_omemo_clipboard_description">Salin OMEMO sidik jari ke clipboard</string>
     <string name="regenerate_omemo_key">Tombol OMEMO diperbarui</string>
     <string name="clear_other_devices">Hapus perangkat</string>
@@ -309,7 +300,6 @@
     <string name="updating">Memperbarui…</string>
     <string name="password_changed">Kata sandi berubah!</string>
     <string name="could_not_change_password">Tidak dapat mengubah kata sandi</string>
-    <string name="otr_session_not_started">Kirim pesan untuk memulai obrolan terenkripsi</string>
     <string name="ask_question">Mengajukan pertanyaan</string>
     <string name="smp_explain_question">Jika anda dan kontak anda memiliki rahasia yang sama serta tidak diketahui orang lain (seperti lelucon atau apa yang anda makan siang ini saat terakhir kali anda bertemu), anda dapat menggunakan fitur rahasia itu dengan memeriksa sidik jari masing-masing.\n\nAnda juga dapat memberikan sebuah petunjuk atau pertanyaan untuk kontak anda yang dapat dijawab dengan hal-hal sensitif.</string>
     <string name="smp_explain_answer">Kontak Anda ingin memverifikasi sidik jari Anda dengan menantang Anda dengan rahasia bersama. Kontak Anda memberikan petunjuk atau pertanyaan berikut untuk rahasia itu.</string>
