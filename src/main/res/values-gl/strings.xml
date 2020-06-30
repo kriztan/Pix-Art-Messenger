@@ -67,7 +67,6 @@
     <string name="choose_presence">Escoller dispositivo</string>
     <string name="send_unencrypted_message">Enviar mensaxe non cifrada</string>
     <string name="send_message_to_x">Enviar mensaxe a 1%s</string>
-    <string name="send_otr_message">Enviar mensaxe cifrado con OTR</string>
     <string name="send_omemo_message">Enviar mensaxe cifrada con OMEMO</string>
     <string name="send_omemo_x509_message">Enviar mensaxe cifrada v\\OMEMO</string>
     <string name="send_pgp_message">Enviar mensaxe cifrado con OpenPGP</string>
@@ -162,11 +161,8 @@
     <string name="last_seen_day">última vez hai 1 día</string>
     <string name="last_seen_days">última conexión hai 1%d días</string>
     <string name="install_openkeychain">Mensaxe cifrada. Por favor instale OpenKeychain para descifrala.</string>
-    <string name="unknown_otr_fingerprint">Pegada OTR descoñecida</string>
     <string name="openpgp_messages_found">Atopáronse mensaxes cifradas con OpenPGP</string>
     <string name="your_fingerprint">A súa pegada</string>
-    <string name="otr_fingerprint">Pegada OTR</string>
-    <string name="otr_fingerprint_selected_message">Pegada OTR da mensaxe</string>
     <string name="openpgp_key_id">ID da chave OpenPGP</string>
     <string name="omemo_fingerprint">Pegada OMEMO</string>
     <string name="omemo_fingerprint_x509">v\\pegada OMEMO </string>
@@ -236,7 +232,6 @@
     <string name="pref_use_indicate_received_summary">As mensaxes recibidas marcaránse cun sinal verde si este está admitido</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Boton de enviar de cor para indicar o estado do contacto</string>
     <string name="pref_expert_options_other">Outro</string>
-    <string name="toast_message_otr_fingerprint">Copiouse a pegada dixital OTR ao portapapeis!</string>
     <string name="toast_message_omemo_fingerprint">Copiouse a pegada dixital OMEMO ao portapapeis!</string>
     <string name="conference_banned">Vostede non pode acceder a esta conversa en grupo</string>
     <string name="conference_members_only">Esta conversa en grupo é so para membros</string>
@@ -254,7 +249,6 @@
     <string name="url_copied_to_clipboard">URL copiado ao portapapeis</string>
     <string name="show_block_list">Mostrar lista de bloqueo</string>
     <string name="account_details">Detalles da conta</string>
-    <string name="verify_otr">Verificar OTR</string>
     <string name="remote_fingerprint">Pegada dixital remota</string>
     <string name="shared_secret_hint">Consulta ou cuestión</string>
     <string name="shared_secret_secret">Chave secreta compartida</string>
@@ -266,7 +260,6 @@
     <string name="finish">Rematar</string>
     <string name="verified">Comprobado!</string>
     <string name="smp_requested">O contacto solicitou a comprobación SMP</string>
-    <string name="no_otr_session_found">Non se atopou unha sesión OTR válida!</string>
     <string name="choose_file">Escoller ficheiro</string>
     <string name="download_x_file">Descargar %s</string>
     <string name="delete_x_file">Eliminar %s</string>
@@ -280,13 +273,11 @@
     <string name="no_application_found_to_open_file">Non se atopou un aplicativo para abrir o ficheiro</string>
     <string name="could_not_verify_fingerprint">Non se puido comprobar a pegada dixital</string>
     <string name="manually_verify">Verificación manual</string>
-    <string name="are_you_sure_verify_fingerprint">Seguro que quere verificar a pegada OTR do seu contacto?</string>
     <string name="pref_show_dynamic_tags">Mostrar etiquetas dinámicas</string>
     <string name="pref_show_dynamic_tags_summary">Mostrar etiquetas de só lectura baixo os contactos</string>
     <string name="no_conference_server_found">Non se atopou ningún servidor de conversa en grupo</string>
     <string name="conference_creation_failed">Fallou a creación da conversa en grupo</string>
     <string name="account_image_description">Avatar da conta</string>
-    <string name="copy_otr_clipboard_description">Copiar a pegada OTR ao portapapeis</string>
     <string name="copy_omemo_clipboard_description">Copiar pegada OMEMO ao portapapeis</string>
     <string name="regenerate_omemo_key">Rexenerar a chave OMEMO</string>
     <string name="clear_other_devices">Limplar dispositivos</string>
@@ -299,7 +290,6 @@
     <string name="updating">Actualizando....</string>
     <string name="password_changed">Mudou o contrasinal!</string>
     <string name="could_not_change_password">Non puido mudar o contrasinal</string>
-    <string name="otr_session_not_started">Envíe unha mensaxe para iniciar a conversa cifrada</string>
     <string name="ask_question">Faga unha pregunta</string>
     <string name="smp_explain_question">Se vostede e o seu contacto teñen un secreto en común que ninguén máis coñece (como unha broma privada da última comida xuntas) poden utilizar ese secreto para verificar as pegadas dixitais respectivas.\n\nVostede proporciona o pé ou fai unha pregunta ao seu contacto que lle responderá con unha resposta diferenciando minúsculas e maiúsculas.</string>
     <string name="smp_explain_answer">O seu contacto quererá verificar a pegada de vostede desafiandoo con un secreto compartido. O seu contacto daralle pé a unha resposta para ese secreto.</string>
