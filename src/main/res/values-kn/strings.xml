@@ -77,7 +77,6 @@
     <string name="choose_presence">ಯಂತ್ರ ಆಯ್ಕೆ ಮಾಡಿ</string>
     <string name="send_unencrypted_message">ನಿರ್ಬದ್ಧ ಸಂದೇಶ ಕಳುಹಿಸು</string>
     <string name="send_message_to_x">%sಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ</string>
-    <string name="send_otr_message">OTR ಬದ್ಧ ಸಂದೇಶ ಕಳುಹಿಸು</string>
     <string name="send_omemo_message">OMEMO ಬದ್ಧ ಸಂದೇಶ ಕಳುಹಿಸು</string>
     <string name="send_omemo_x509_message">v\\OMEMO ಬದ್ಧ ಸಂದೇಶ ಕಳುಹಿಸು</string>
     <string name="send_pgp_message">OpenPGP ಬದ್ಧ ಸಂದೇಶ ಕಳುಹಿಸು</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">1 ದಿನ</string>
     <string name="last_seen_days">%d ದಿನ</string>
     <string name="install_openkeychain">ಬದ್ಧವಾದ ಸಂದೇಶ. ನಿರ್ಗೂಢಿಸಲು ದಯವಿಟ್ಟು OpenKeychainಅನ್ನು ಸ್ಥಾಪಿಸಿಕೊಳ್ಳಿ.</string>
-    <string name="unknown_otr_fingerprint">ಅಜ್ಞಾತ OTR ಬೆರಳಚ್ಚು</string>
     <string name="openpgp_messages_found">OpenPGP ಬದ್ಧ ಮಾಡಿದ ಸಂದೇಶಗಳು ಕಂಡುಬಂದಿವೆ</string>
     <string name="your_fingerprint">ನಿಮ್ಮ ಕೀಲಿಬೆರಳಚ್ಚು</string>
-    <string name="otr_fingerprint">OTR ಕೀಲಿಬೆರಳಚ್ಚು</string>
-    <string name="otr_fingerprint_selected_message">ಈ ಸಂದೇಶದ OTR ಕೀಲಿಬೆರಳಚ್ಚು</string>
     <string name="openpgp_key_id">OpenPGP ಕೀಲಿ ಗುರುತು</string>
     <string name="omemo_fingerprint">OMEMO ಕೀಲಿಬೆರಳಚ್ಚು</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO ಕೀಲಿಬೆರಳಚ್ಚು</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">ಇತರೆ</string>
     <string name="pref_autojoin">ಪುಟಗುರುತುಗಳ ಜೊತೆ ಸಮಮಾಡು</string>
     <string name="pref_autojoin_summary">ನಿಮ್ಮ ಪುಟಗುರುತುಗಳಲ್ಲಿ ಸ್ವಯಂ-ಸೇರ್ಪಡೆ ಧ್ವಜದ ಪ್ರಕಾರ ಗುಂಪುಗಳಿಗೆ ಸೇರಿ ಮತ್ತು ಬಿಡಿ.</string>
-    <string name="toast_message_otr_fingerprint">OTR ಕೀಲಿಬೆರಳಚ್ಚನ್ನು ನಕಲುಫಲಕಕ್ಕೆ ನಕಲಿಸಲಾಗಿದೆ!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO ಕೀಲಿಬೆರಳಚ್ಚನ್ನು ನಕಲುಫಲಕಕ್ಕೆ ನಕಲಿಸಲಾಗಿದೆ!</string>
     <string name="conference_banned">ನಿಮ್ಮನ್ನು ಈ ಗುಂಪಿನಿಂದ ನಿಷೇಧಿಸಲಾಗಿದೆ</string>
     <string name="conference_members_only">ಈ ಗುಂಪು ಸದಸ್ಯರಿಗೆ ಮಾತ್ರ</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">ಕ್ಯೂಆರ್ ಸಂಕೇತ ತೋರಿಸು</string>
     <string name="show_block_list">ನಿರ್ಬಂಧನಾ ಪಟ್ಟಿ ತೆರೆ</string>
     <string name="account_details">ಖಾತೆ ವಿವರ</string>
-    <string name="verify_otr">OTR ಖಚಿತ ಪಡಿಸಿ</string>
     <string name="remote_fingerprint">ದೂರದ ಕೀಲಿಬೆರಳಚ್ಚು</string>
     <string name="shared_secret_hint">ಸುಳಿವು ಅಥವಾ ಪ್ರಶ್ನೆ</string>
     <string name="shared_secret_secret">ಅಂಚಿಕೊಂಡ ಗುಟ್ಟು</string>
@@ -337,7 +331,6 @@
     <string name="updating">ನವೀಕರಿಸುತ್ತಾ…</string>
     <string name="password_changed">ಗುಪ್ತಪದ ಬದಲಾಯಿತು!</string>
     <string name="could_not_change_password">ಗುಪ್ತಪದ ಬದಲಾಯಿಸಲು ಆಗಲಿಲ್ಲ</string>
-    <string name="otr_session_not_started">ಬದ್ಧಸಂಭಾಷಣೆ ಶುರುಮಾಡಲು ಒಂದು ಸಂದೇಶ ಕಳುಹಿಸಿ</string>
     <string name="manual_verification_explanation">ನಿಮ್ಮ ಸಂಪರ್ಕದ ಕೀಲಿಬೆರಳಚ್ಚಿನೊಂದಿಗೆ ಕೆಳಗೆ ತೋರಿಸಿರುವ ಕಿಲ್ಲಿಬೆರಳಚ್ಚನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಹೋಲಿಕೆ ಮಾಡಿ.\nನೀವು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಿದ ಇ-ಮೇಲ್ ಅಥವಾ ದೂರವಾಣಿ ಕರೆಯಂತಹ ಯಾವುದೇ ವಿಶ್ವಾಸಾರ್ಹ ಸಂವಹನವನ್ನು ಬಳಸಬಹುದು.</string>
     <string name="change_password">ಗುಪ್ತಪದ ಬದಲಾಯಿಸಿ</string>
     <string name="current_password">ಪ್ರಸ್ತುತ ಗುಪ್ತಪದ</string>
