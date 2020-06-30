@@ -74,7 +74,6 @@
     <string name="choose_presence">Apparaat kiezen</string>
     <string name="send_unencrypted_message">Verstuur onversleuteld bericht</string>
     <string name="send_message_to_x">Bericht sturen naar %s</string>
-    <string name="send_otr_message">Verstuur OTR-versleuteld bericht</string>
     <string name="send_omemo_message">Verstuur OMEMO-versleuteld bericht</string>
     <string name="send_omemo_x509_message">Verstuur v\\OMEMO-versleuteld bericht</string>
     <string name="send_pgp_message">Verstuur OpenPGP-versleuteld bericht</string>
@@ -171,11 +170,8 @@
     <string name="last_seen_day">1 dag geleden voor het laatst gezien</string>
     <string name="last_seen_days">%d dagen geleden voor het laatst gezien</string>
     <string name="install_openkeychain">Versleuteld bericht. Installeer OpenKeychain om te ontsleutelen.</string>
-    <string name="unknown_otr_fingerprint">Onbekende OTR-vingerafdruk</string>
     <string name="openpgp_messages_found">OpenPGP-versleutelde berichten gevonden</string>
     <string name="your_fingerprint">Jouw vingerafdruk</string>
-    <string name="otr_fingerprint">OTR-vingerafdruk</string>
-    <string name="otr_fingerprint_selected_message">OTR-vingerafdruk van bericht</string>
     <string name="openpgp_key_id">OpenPGP-sleutel-ID</string>
     <string name="omemo_fingerprint">OMEMO-vingerafdruk</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO-vingerafdruk</string>
@@ -249,7 +245,6 @@
     <string name="pref_use_send_button_to_indicate_status_summary">Kleur verstuur-knop in om status van contact weer te geven</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Kleur contactnamen in om status van contact weer te geven</string>
     <string name="pref_expert_options_other">Andere</string>
-    <string name="toast_message_otr_fingerprint">OTR-vingerafdruk gekopieerd naar klembord!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO-vingerafdruk gekopieerd naar klembord!</string>
     <string name="conference_banned">Je bent verbannen uit dit groepsgesprek</string>
     <string name="conference_members_only">Dit groepsgesprek is enkel voor leden</string>
@@ -268,7 +263,6 @@
     <string name="scan_qr_code">QR-code scannen</string>
     <string name="show_block_list">Geblokkeerde contacten weergeven</string>
     <string name="account_details">Accountgegevens</string>
-    <string name="verify_otr">OTR verifiëren</string>
     <string name="remote_fingerprint">Externe vingerafdruk</string>
     <string name="shared_secret_hint">Hint of vraag</string>
     <string name="shared_secret_secret">Gedeeld geheim</string>
@@ -281,7 +275,6 @@
     <string name="finish">Afsluiten</string>
     <string name="verified">Geverifieerd!</string>
     <string name="smp_requested">Contact vraagt SMP-bevestiging</string>
-    <string name="no_otr_session_found">Geen geldige OTR-sessie gevonden!</string>
     <string name="pref_create_backup">Back-up creëren</string>
     <string name="pref_create_backup_summary">Back-upbestanden in %s</string>
     <string name="notification_create_backup_title">Bezig met creëren van back-upbestanden</string>
@@ -301,13 +294,11 @@
     <string name="no_application_found_to_open_file">Geen applicatie om bestand te openen</string>
     <string name="could_not_verify_fingerprint">Kon vingerafdruk niet verifiëren</string>
     <string name="manually_verify">Handmatig verifiëren</string>
-    <string name="are_you_sure_verify_fingerprint">Weet je zeker dat je de OTR-vingerafdruk van je contactpersoon wilt verifiëren?</string>
     <string name="pref_show_dynamic_tags">Toon dynamische tags</string>
     <string name="pref_show_dynamic_tags_summary">Toon enkel-lezen tags onder contacten</string>
     <string name="no_conference_server_found">Geen groepsgespreksserver gevonden</string>
     <string name="conference_creation_failed">Aanmaken van groepsgesprek mislukt!</string>
     <string name="account_image_description">Account-avatar</string>
-    <string name="copy_otr_clipboard_description">OTR-vingerafdruk kopiëren naar klembord</string>
     <string name="copy_omemo_clipboard_description">OMEMO-vingerafdruk kopiëren naar klembord</string>
     <string name="regenerate_omemo_key">OMEMO-sleutel opnieuw aanmaken</string>
     <string name="clear_other_devices">Apparaten wissen</string>
@@ -320,7 +311,6 @@
     <string name="updating">Bijwerken…</string>
     <string name="password_changed">Wachtwoord gewijzigd!</string>
     <string name="could_not_change_password">Kon wachtwoord niet wijzigen</string>
-    <string name="otr_session_not_started">Verstuur een bericht om een versleuteld gesprek te starten</string>
     <string name="ask_question">Stel een vraag</string>
     <string name="smp_explain_question">Als jij en je contact een gemeenschappelijk geheim hebben dat niemand anders weet (zoals een privé-grap of gewoonweg wat jullie gegeten hebben de laatste keer dat jullie elkaar zagen) kunnen jullie dat geheim gebruiken om elkaars vingerafdrukken te verifiëren.\n\nJe geeft een hint of een vraag voor je contact, en hij/zij moet hier een  hoofdlettergevoelig antwoord op geven.</string>
     <string name="smp_explain_answer">Je contact wil je vingerafdruk verifiëren door je uit te dagen met een gedeeld geheim. Je contact heeft daarvoor volgende hint of vraag opgegeven.</string>
