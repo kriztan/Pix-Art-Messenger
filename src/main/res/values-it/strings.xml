@@ -77,7 +77,6 @@
     <string name="choose_presence">Scegli un dispositivo</string>
     <string name="send_unencrypted_message">Invia messaggio non cifrato</string>
     <string name="send_message_to_x">Invia messaggio a %s</string>
-    <string name="send_otr_message">Messaggio OTR</string>
     <string name="send_omemo_message">Invia messaggio cifrato OMEMO</string>
     <string name="send_omemo_x509_message">Invia messaggio cifrato v\\OMEMO</string>
     <string name="send_pgp_message">Messaggio OpenPGP</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">visto 1 giorno fa</string>
     <string name="last_seen_days">visto %d giorni fa</string>
     <string name="install_openkeychain">Messaggio cifrato. Installa OpenKeychain per decifrare.</string>
-    <string name="unknown_otr_fingerprint">Impronta OTR sconosciuta</string>
     <string name="openpgp_messages_found">Messaggi cifrati con OpenPGP trovati</string>
     <string name="your_fingerprint">La tua impronta</string>
-    <string name="otr_fingerprint">Impronta OTR</string>
-    <string name="otr_fingerprint_selected_message">Impronta OTR del messaggio</string>
     <string name="openpgp_key_id">ID chiave OpenPGP</string>
     <string name="omemo_fingerprint">Impronta OMEMO</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO impronta</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Altro</string>
     <string name="pref_autojoin">Sincronizza con segnalibri</string>
     <string name="pref_autojoin_summary">Unisciti e lascia conversazioni di gruppo in accordo con la tua scelta di auto-unisci nei tuoi segnalibri.</string>
-    <string name="toast_message_otr_fingerprint">Impronta OTR copiata!</string>
     <string name="toast_message_omemo_fingerprint">impronta OMEMO copiata negli appunti|</string>
     <string name="conference_banned">Sei stato bandito da questa conversazione di gruppo</string>
     <string name="conference_members_only">Questa conversazione di gruppo è solo per membri</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">Mostra codice QR</string>
     <string name="show_block_list">Mostra la lista nera</string>
     <string name="account_details">Dettagli account</string>
-    <string name="verify_otr">Verifica OTR</string>
     <string name="remote_fingerprint">Impronta remota</string>
     <string name="shared_secret_hint">Suggerimento o domanda</string>
     <string name="shared_secret_secret">Segreto condiviso</string>
@@ -299,7 +293,6 @@
     <string name="finish">Fine</string>
     <string name="verified">Verificato!</string>
     <string name="smp_requested">Il contatto ha richiesto la verifica SMP</string>
-    <string name="no_otr_session_found">Non è stata trovata nessuna sessione OTR valida!</string>
     <string name="pref_create_backup">Crea backup</string>
     <string name="pref_create_backup_summary">Scrivi file di backup su %s</string>
     <string name="notification_create_backup_title">Creazione dei file di backup in corso</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">Nessuna applicazione trovata per aprire il file</string>
     <string name="could_not_verify_fingerprint">Impronta non verificata</string>
     <string name="manually_verify">Verifica manuale</string>
-    <string name="are_you_sure_verify_fingerprint">Sei sicuro di voler verificare l\'impronta OTR del tuo contatto?</string>
     <string name="pref_show_dynamic_tags">Mostra tag dinamici</string>
     <string name="pref_show_dynamic_tags_summary">Mostra tag in sola lettura sotto i contatti</string>
     <string name="no_conference_server_found">Nessun server per conversazioni di gruppo trovato</string>
     <string name="conference_creation_failed">Creazione della conversazione di gruppo fallita!</string>
     <string name="account_image_description">Immagine di profilo utente</string>
-    <string name="copy_otr_clipboard_description">Copia impronta OTR</string>
     <string name="copy_omemo_clipboard_description">Copia impronta OMEMO negli appunti</string>
     <string name="regenerate_omemo_key">Rigenera chiave OMEMO</string>
     <string name="clear_other_devices">Pulisci dispositivi</string>
@@ -340,7 +331,6 @@
     <string name="updating">Caricamento…</string>
     <string name="password_changed">Password cambiata!</string>
     <string name="could_not_change_password">Impossibile cambiare la password</string>
-    <string name="otr_session_not_started">Invia un messaggio per avviare una conversazione cifrata</string>
     <string name="ask_question">Fai una domanda</string>
     <string name="smp_explain_question">Se condividi con il tuo contatto un segreto in comune non conosciuto da altri (come uno scherzo privato o semplicemente quel che avete mangiato l\'ultima volta insieme) potete usarlo per verificare le vostre impronte.\n\nInvia un suggerimento o una domanda al tuo contatto il quale dovrà rispondere con una risposta controllando le maiuscole.</string>
     <string name="smp_explain_answer">Il tuo contatto vorrebbe verificare la tua impronta. Dovrai rispondere correttamente alla sua domanda con una risposta che condividete. Il tuo contatto ti ha fornito il suggerimento o la domanda seguente.</string>
@@ -988,8 +978,6 @@
     <string name="pref_theme_orange">Arancio</string>
     <string name="pref_theme_color_options_summary">Scegli la palette di colori del tema</string>
     <string name="pref_theme_color_options">Colore del tema</string>
-    <string name="pref_enable_otr_summary">Abilita crittografia OTR per la criptazione del messaggio</string>
-    <string name="pref_enable_otr">Abilita crittografia OTR</string>
     <string name="magic_create_text_on_x">Sei stato invitato su %1$s. Ti guideremo nel processo di creazione dell\'account.\nScegliendo %1$s come fornitore sarai in grado di comunicare con utenti di altri fornitori dando loro il tuo indirizzo XMPP completo.</string>
     <string name="account_status_regis_invalid_token">Token di registrazione non valido</string>
     <string name="magic_create_text_fixed">Sei stato invitato su %1$s. Ti è già stato riservato un nome utente. Ti guideremo nel processo di creazione dell\'account.\nSarai in grado di comunicare con utenti di altri fornitori dando loro il tuo indirizzo XMPP completo.</string>
@@ -1047,7 +1035,6 @@
     <string name="only_one_call_at_a_time">È possibile effettuare una sola chiamata alla volta.</string>
     <string name="missed_call">Chiamata persa</string>
     <string name="could_not_switch_camera">Non è stato possibile cambiare la fotocamera</string>
-    <string name="otr_warning">Il supporto alla crittografia OTR terminerà in Giugno 2020. Premi leggi altro per sapere più informazioni. Un collegamento sarà aperto nel browser.</string>
     <string name="readmore">Leggi altro</string>
     <string name="add_to_favorites">Aggiungi ai preferiti</string>
     <string name="remove_from_favorites">Rimuovi dai preferiti</string>
