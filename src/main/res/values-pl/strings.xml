@@ -78,7 +78,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="choose_presence">Wybierz urządzenie</string>
     <string name="send_unencrypted_message">Wyślij wiadomość bez szyfrowania</string>
     <string name="send_message_to_x">Wyślij wiadomość do %s</string>
-    <string name="send_otr_message">Wyślij zaszyfrowaną wiadomość (OTR)</string>
     <string name="send_omemo_message">Wyślij wiadomość zaszyfrowaną OMEMO</string>
     <string name="send_omemo_x509_message">Wyślij wiadomość zaszyfrowaną v\\OMEMO</string>
     <string name="send_pgp_message">Wyślij zaszyfrowaną wiadomość (OpenPGP)</string>
@@ -185,11 +184,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="last_seen_day">widziany wczoraj</string>
     <string name="last_seen_days">widziany %d dni temu</string>
     <string name="install_openkeychain">Wiadomość zaszyfrowana. Zainstaluj OpenKeychain, żeby odszyfrować.</string>
-    <string name="unknown_otr_fingerprint">Nieznany odcisk klucza OTR</string>
     <string name="openpgp_messages_found">Znaleziono wiadomości zaszyfrowane przez OpenPGP</string>
     <string name="your_fingerprint">Twój odcisk klucza</string>
-    <string name="otr_fingerprint">Odcisk klucza OTR</string>
-    <string name="otr_fingerprint_selected_message">Odcisk palca wiadomości OTR</string>
     <string name="openpgp_key_id">ID klucza OpenPGP</string>
     <string name="omemo_fingerprint">Odcisk OMEMO</string>
     <string name="omemo_fingerprint_x509">Odcisk v\\OMEMO</string>
@@ -267,7 +263,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_expert_options_other">Inne opcje</string>
     <string name="pref_autojoin">Synchronizuj z zakładkami</string>
     <string name="pref_autojoin_summary">To ustawienie sprawia, że pokoje konferencyjne respektują ustawienia auto-dołączania.</string>
-    <string name="toast_message_otr_fingerprint">Odcisk klucza OTR został skopiowany do schowka</string>
     <string name="toast_message_omemo_fingerprint">Odcisk klucza OMEMO został skopiowany do schowka!</string>
     <string name="conference_banned">Zostałeś zbanowany z tego czatu grupowego</string>
     <string name="conference_members_only">Ten czat jest tylko dla członków grupy</string>
@@ -287,7 +282,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_qr_code">Pokaż kod QR</string>
     <string name="show_block_list">Wyświetl listę banów</string>
     <string name="account_details">Szczegóły konta</string>
-    <string name="verify_otr">Weryfikuj OTR</string>
     <string name="remote_fingerprint">Zdalny odcisk klucza</string>
     <string name="shared_secret_hint">Podpowiedź lub pytanie</string>
     <string name="shared_secret_secret">Wspólny sekret</string>
@@ -300,7 +294,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="finish">Zakończ</string>
     <string name="verified">Weryfikacja udana!</string>
     <string name="smp_requested">Kontakt zażądał weryfikacji SMP</string>
-    <string name="no_otr_session_found">Brak ważnej sesji OTR!</string>
     <string name="pref_create_backup">Utwórz kopię zapasową</string>
     <string name="pref_create_backup_summary">Wpisz kopie zapasową do %s</string>
     <string name="notification_create_backup_title">Tworzenie kopii zapasowej</string>
@@ -321,13 +314,11 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="no_application_found_to_open_file">Nie odnaleziono aplikacji do otworzenia pliku</string>
     <string name="could_not_verify_fingerprint">Weryfikacja odcisku klucza nieudana</string>
     <string name="manually_verify">Weryfikuj ręcznie</string>
-    <string name="are_you_sure_verify_fingerprint">Czy na pewno chcesz zweryfikować odcisk klucza OTR kontaktu?</string>
     <string name="pref_show_dynamic_tags">Etykiety kontaktów</string>
     <string name="pref_show_dynamic_tags_summary">Wyświetlaj etykiety pod kontaktami</string>
     <string name="no_conference_server_found">Nie znaleziono serwera grupowych rozmów</string>
     <string name="conference_creation_failed">Utworzenie grupy nie powiodło się!</string>
     <string name="account_image_description">Awatar konta</string>
-    <string name="copy_otr_clipboard_description">Skopiuj odcisk klucza OTR do schowka</string>
     <string name="copy_omemo_clipboard_description">Skopiuj odcisk klucza OMEMO do schowka</string>
     <string name="regenerate_omemo_key">Wygeneruj ponownie klucz OMEMO</string>
     <string name="clear_other_devices">Wyczyść urządzenia</string>
@@ -341,7 +332,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="updating">Aktualizowanie...</string>
     <string name="password_changed">Hasło zostało zmienione!</string>
     <string name="could_not_change_password">Nie udało się zmienić hasła</string>
-    <string name="otr_session_not_started">Wyślij wiadomość, żeby rozpocząć szyfrowaną rozmowę</string>
     <string name="ask_question">Zadaj pytanie</string>
     <string name="smp_explain_question">Jeśli ty i twój kontakt macie jakiś wspólny sekret, którego nie zna nikt inny (żart znany tylko wam lub po prostu co jedliście ostatnim razem, gdy się widzieliście) możecie użyć tego sekretu by zweryfikować wzajemnie odciski swoich kluczy.\n\nPodasz podpowiedź lub pytanie dla twojego kontaktu i otrzymasz odpowiedź (wielkość liter ma znaczenie).</string>
     <string name="smp_explain_answer">Twój kontakt chciałby zweryfikować odcisk Twojego klucza poprzez sprawdzenie znajomości wspólnego sekretu. Twój znajomy przedstawił następującą podpowiedź lub pytanie dotyczącego tego sekretu.</string>
@@ -1007,8 +997,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_theme_orange">Pomarańczowy</string>
     <string name="pref_theme_color_options_summary">Wybierz kolor akcentów motywu</string>
     <string name="pref_theme_color_options">Kolor motywu</string>
-    <string name="pref_enable_otr_summary">Włącz szyforwanie OTR, odpowiadające za szyfrowanie wiadomości</string>
-    <string name="pref_enable_otr">Włącz szyfrowanie OTR</string>
     <string name="magic_create_text_on_x">Zostałeś zaproszony do %1$s. Zostaniesz przeprowadzony przez proces zakładania konta.\n Jeśli wybierzesz %1$s jako swój serwer, będziesz w stanie komunikować się z użytkownikami na innych serwerach przez podanie im pełnego adresu XMPP.</string>
     <string name="account_status_regis_invalid_token">Nieprawidłowy token rejestracyjny</string>
     <string name="magic_create_text_fixed">Zostałeś zaproszony do %1$s. Nazwa użytkownika została już dla ciebie wybrana. Zostaniesz przeprowadzony przez proces zakładania konta.\n Będziesz w stanie komunikować się z użytkownikami na innych serwerach przez podanie im pełnego adresu XMPP.</string>
@@ -1066,7 +1054,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="only_one_call_at_a_time">Możesz prowadzić tylko jedno połączenie jednocześnie.</string>
     <string name="missed_call">Nieodebrane połączenie</string>
     <string name="could_not_switch_camera">Nie udało się zmienić kamery</string>
-    <string name="otr_warning">Wsparcie dla szyfrowania OTR zostanie porzucone w czerwcu 2020 roku. Kliknij w \"Przeczytaj więcej\" po więcej informacji, otworzy to stronę w przeglądarce internetowej.</string>
     <string name="readmore">Dowiedz się więcej</string>
     <string name="add_to_favorites">Dodaj do ulubionych</string>
     <string name="remove_from_favorites">Usuń z ulubionych</string>
