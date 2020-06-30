@@ -1049,4 +1049,6 @@
     <string name="could_not_switch_camera">Non è stato possibile cambiare la fotocamera</string>
     <string name="otr_warning">Il supporto alla crittografia OTR terminerà in Giugno 2020. Premi leggi altro per sapere più informazioni. Un collegamento sarà aperto nel browser.</string>
     <string name="readmore">Leggi altro</string>
+    <string name="add_to_favorites">Aggiungi ai preferiti</string>
+    <string name="remove_from_favorites">Rimuovi dai preferiti</string>
 </resources>
