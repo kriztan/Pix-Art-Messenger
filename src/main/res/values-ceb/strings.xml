@@ -67,7 +67,6 @@
     <string name="choose_presence">Pili ug device</string>
     <string name="send_unencrypted_message">Pagpadala ug wala\'y lihok nga mensahe</string>
     <string name="send_message_to_x">Pagpadala ug mensahe adto %s</string>
-    <string name="send_otr_message">Pagpadala ug OTR nga naka-encrypt nga mensahe</string>
     <string name="send_omemo_message">Pagpadala ug OMEMO nga naka-encrypt ang mensahe</string>
     <string name="send_omemo_x509_message">Pagpadala v\\OMEMO nga naka-encrypt nga mensahe</string>
     <string name="send_pgp_message">Pagpadala OpenPGP nga naka-encrypt nga mensahe</string>
@@ -169,11 +168,8 @@
     <string name="last_seen_day">1 ka-adlaw ang nilabay</string>
     <string name="last_seen_days">%d ang mga adlaw nga nilabay</string>
     <string name="install_openkeychain">Naka-encrypt nga mensahe. Palihug i-install ang OpenKeychain aron mag-decrypt.</string>
-    <string name="unknown_otr_fingerprint">Wala mailhi nga fingerprint sa OTR</string>
     <string name="openpgp_messages_found">OpenPGP naka-encrypt nga mga mensahe ang nakita</string>
     <string name="your_fingerprint">Imuhang fingerprint</string>
-    <string name="otr_fingerprint">OTR fingerprint</string>
-    <string name="otr_fingerprint_selected_message">OTR fingerprint sa mensahe</string>
     <string name="openpgp_key_id">OpenPGP Yawe nga ID</string>
     <string name="omemo_fingerprint">OMEMO fingerprint</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO fingerprint</string>
@@ -245,7 +241,6 @@
     <string name="pref_use_send_button_to_indicate_status_summary">Di-kolor pagpadala ug button para pagpasabot sa kontak nga status</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Di-kolor nga pangan sa kontak para pagpahibalo sa kontak status</string>
     <string name="pref_expert_options_other">Uban pa</string>
-    <string name="toast_message_otr_fingerprint">OTR fingerprint gekopya ngadto sa clipboard!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO fingerprint gekopya ngadto sa clipboard!</string>
     <string name="conference_banned">Ikaw ge ban sa kini nga grupo sa chat</string>
     <string name="conference_members_only">Kini nga grupo sa chat kay membro lamang</string>
@@ -263,7 +258,6 @@
     <string name="url_copied_to_clipboard">URL gekopya ngadto sa clipboard</string>
     <string name="show_block_list">Ipakita ang na block nga listahan</string>
     <string name="account_details">Mga detalyi sa account</string>
-    <string name="verify_otr">Tinu-a ang OTR</string>
     <string name="remote_fingerprint">Layo ang Fingerprint</string>
     <string name="shared_secret_hint">Tagnaa o Pangutana</string>
     <string name="shared_secret_secret">Gipa-ambit and sekreto</string>
@@ -276,7 +270,6 @@
     <string name="finish">Humana</string>
     <string name="verified">Tinu-a!</string>
     <string name="smp_requested">Hangyu-a ang kontak ug SMP nga pag-tinu</string>
-    <string name="no_otr_session_found">Walay balido nga OTR nga sesyon nga nakita!</string>
     <string name="choose_file">Pili ug file</string>
     <string name="download_x_file">Pag-download %s</string>
     <string name="delete_x_file">Tangtanga %s</string>
@@ -290,13 +283,11 @@
     <string name="no_application_found_to_open_file">Walay aplikasyun ang nakita para ablihan ang file</string>
     <string name="could_not_verify_fingerprint">Dili ma tino ang fingerprint</string>
     <string name="manually_verify">Tino-a kanunay</string>
-    <string name="are_you_sure_verify_fingerprint">Sigurado ka nga gusto nimu tinuon ang imuhang mga kontak sa OTR fingerprint?</string>
     <string name="pref_show_dynamic_tags">Ipakita ang mga dinamikong tag</string>
     <string name="pref_show_dynamic_tags_summary">Ipakita ang mabasa ra nga mga tag ilawon sa mga kontak</string>
     <string name="no_conference_server_found">Walay grupo nga chat nga serber ang nakita</string>
     <string name="conference_creation_failed">Napakyas ang pagbuhat sa Grupo nga chat!</string>
     <string name="account_image_description">Avatar sa account</string>
-    <string name="copy_otr_clipboard_description">Kopya ang OTR fingerprint adto sa clipboard</string>
     <string name="copy_omemo_clipboard_description">Kopya ang OMEMO fingerprint adto sa clipboard</string>
     <string name="regenerate_omemo_key">Pag-usab sa OMEMO nga yawe</string>
     <string name="clear_other_devices">Klaruha ang mga device</string>
