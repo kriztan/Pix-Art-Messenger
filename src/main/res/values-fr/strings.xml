@@ -77,7 +77,6 @@
     <string name="choose_presence">Choisir un appareil</string>
     <string name="send_unencrypted_message">Envoyer un message en clair</string>
     <string name="send_message_to_x">Envoyer un message à %s</string>
-    <string name="send_otr_message">Envoyer un message chiffré avec OTR</string>
     <string name="send_omemo_message">Envoyer un message chiffré avec OMEMO</string>
     <string name="send_omemo_x509_message">Envoyer un message chiffré avec v\\OMEMO</string>
     <string name="send_pgp_message">Envoyer un message chiffré avec OpenPGP</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">en ligne hier</string>
     <string name="last_seen_days">en ligne il y a %d jours</string>
     <string name="install_openkeychain">Message chiffré. Veuillez installer OpenKeychain pour le déchiffrer.</string>
-    <string name="unknown_otr_fingerprint">Empreinte OTR inconnue.</string>
     <string name="openpgp_messages_found">Messages chiffrés avec OpenPGP détectés.</string>
     <string name="your_fingerprint">Votre empreinte</string>
-    <string name="otr_fingerprint">Empreinte OTR</string>
-    <string name="otr_fingerprint_selected_message">Empreinte OTR du message</string>
     <string name="openpgp_key_id">ID Clef OpenPGP</string>
     <string name="omemo_fingerprint">Empreinte OMEMO</string>
     <string name="omemo_fingerprint_x509">v\\Empreinte OMEMO</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Autres</string>
     <string name="pref_autojoin">Synchroniser les favoris</string>
     <string name="pref_autojoin_summary">Rejoindre et quitter des discussions selon le paramètre Rejoindre automatiquement définit les détails de la discussion.</string>
-    <string name="toast_message_otr_fingerprint">Empreinte OTR copiée dans le presse-papier !</string>
     <string name="toast_message_omemo_fingerprint">Empreinte OMEMO copiée dans le presse-papier !</string>
     <string name="conference_banned">Vous êtes banni de cette conférence</string>
     <string name="conference_members_only">Cette conférence est autorisée aux membres uniquement</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">Afficher le code QR</string>
     <string name="show_block_list">Afficher la liste des contacts bloqués</string>
     <string name="account_details">Détails du compte</string>
-    <string name="verify_otr">Vérifier l’OTR</string>
     <string name="remote_fingerprint">Empreinte distante</string>
     <string name="shared_secret_hint">Indice ou question</string>
     <string name="shared_secret_secret">Secret partagé</string>
@@ -299,7 +293,6 @@
     <string name="finish">Terminé</string>
     <string name="verified">Vérifié !</string>
     <string name="smp_requested">Le contact requiert la vérification du SMP</string>
-    <string name="no_otr_session_found">Aucune session OTR valide n\'a été trouvée !</string>
     <string name="pref_create_backup">Effectuer une sauvegarde</string>
     <string name="pref_create_backup_summary">Faire la sauvegarde dans le dossier %s</string>
     <string name="notification_create_backup_title">Sauvegarde en cours...</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">Aucune application disponible pour ouvrir le fichier</string>
     <string name="could_not_verify_fingerprint">Impossible de vérifier l’empreinte</string>
     <string name="manually_verify">Vérifier manuellement</string>
-    <string name="are_you_sure_verify_fingerprint">Êtes-vous sûr de vouloir vérifier l’empreinte OTR de votre contact ?</string>
     <string name="pref_show_dynamic_tags">Afficher les tags dynamiques</string>
     <string name="pref_show_dynamic_tags_summary">Affiche des tags en lecture seule en dessous des contacts.</string>
     <string name="no_conference_server_found">Aucun serveur de conférences n’a été trouvé</string>
     <string name="conference_creation_failed">Échec de la création de la conférence !</string>
     <string name="account_image_description">Avatar du compte</string>
-    <string name="copy_otr_clipboard_description">Copier l’empreinte OTR dans le presse-papier</string>
     <string name="copy_omemo_clipboard_description">Copier l’empreinte OMEMO dans le presse-papier</string>
     <string name="regenerate_omemo_key">Renouveler la clef OMEMO</string>
     <string name="clear_other_devices">Supprimer les appareils</string>
@@ -340,7 +331,6 @@
     <string name="updating">Mise à jour…</string>
     <string name="password_changed">Mot de passe modifié !</string>
     <string name="could_not_change_password">Impossible de changer le mot de passe</string>
-    <string name="otr_session_not_started">Envoyez un message pour commencer une discussion chiffrée</string>
     <string name="ask_question">Poser une question</string>
     <string name="smp_explain_question">Si vous et votre contact avez en commun un secret que personne d’autre ne connaît (comme une blague ou ce que vous avez mangé lors de votre dernière rencontre), vous pouvez utiliser ce secret pour vérifier vos empreintes respectives.\n\nVous donnez un indice ou posez votre question à votre contact, qui répondra en faisant attention à la casse.</string>
     <string name="smp_explain_answer">Votre contact souhaite confirmer votre identité grâce à un secret partagé. Il vous a envoyé le message/indice suivant concernant ce secret.</string>
@@ -988,8 +978,6 @@
     <string name="pref_theme_orange">Orange</string>
     <string name="pref_theme_color_options_summary">Choisissez la palette de couleurs du thème.</string>
     <string name="pref_theme_color_options">Couleurs du thème</string>
-    <string name="pref_enable_otr_summary">Active le chiffrement avec OTR pour la protection des messages.</string>
-    <string name="pref_enable_otr">Activer le chiffrement avec OTR</string>
     <string name="magic_create_text_on_x">Vous avez été invité chez %1$s. Nous vous guiderons pour créer un compte.\nAvec %1$s pour fournisseur pour pourrez communiquer avec des utilisateurs/trices d\'autres fournisseurs en leur indiquant votre adresse XMPP complète.</string>
     <string name="account_status_regis_invalid_token">Jeton d\'enregistrement invalide</string>
     <string name="magic_create_text_fixed">Vous avez été invité chez %1$s. Un nom d\'utilisateur/trice a déjà été créé pour vous. Nous vous guiderons pour créer un compte.\nVous pourrez communiquer avec des utilisateurs/trices d\'autres fournisseurs en leur indiquant votre adresse XMPP complète.</string>
@@ -1035,6 +1023,7 @@
     <string name="rtp_state_ringing">Appel en cours</string>
     <string name="rtp_state_declined_or_busy">Occupé</string>
     <string name="rtp_state_connectivity_error">Impossible d\'établir l\'appel</string>
+    <string name="rtp_state_connectivity_lost_error">Connexion perdue</string>
     <string name="rtp_state_retracted">Appel refusé</string>
     <string name="rtp_state_application_failure">Erreur de l\'application</string>
     <string name="incoming_call_duration">%s · Appel entrant · %s</string>
@@ -1044,10 +1033,10 @@
     <string name="outgoing_call_time">%s · Appel sortant</string>
     <string name="outgoing_call">Appel sortant</string>
     <string name="disable_tor_to_make_call">Désactiver Tor pour passer des appels</string>
+    <string name="help">Aide</string>
     <string name="only_one_call_at_a_time">Vous ne pouvez avoir qu\'un appel à la fois.</string>
     <string name="missed_call">Appel manqué</string>
     <string name="could_not_switch_camera">Impossible de changer la caméra</string>
-    <string name="otr_warning">L\'utilisation du chiffrement avec OTR sera abandonnée en juin 2020. Pour en savoir plus, cliquer sur Plus d\'informations. Cela ouvrira un lien dans un navigateur.</string>
     <string name="readmore">Plus d\'informations</string>
     <string name="add_to_favorites">Ajouter aux favoris</string>
     <string name="remove_from_favorites">Enlever des favoris</string>
