@@ -76,7 +76,6 @@
     <string name="choose_presence">Seleccionar dispositius</string>
     <string name="send_unencrypted_message">Enviar missatges sense xifrar</string>
     <string name="send_message_to_x">Enviar missatge a %s</string>
-    <string name="send_otr_message">Enviar missatge xifrat amb OTR</string>
     <string name="send_omemo_message">Enviar missatge xifrat amb OMEMO </string>
     <string name="send_omemo_x509_message">Enviar missatge xifrat amb v\\OMEMO</string>
     <string name="send_pgp_message">Enviar missatge xifrat amb OpenPGP</string>
@@ -183,11 +182,8 @@
     <string name="last_seen_day">Fa 1 día</string>
     <string name="last_seen_days">Fa %d díes</string>
     <string name="install_openkeychain">Missatge xifrat. Si us plau instal·la OpenKeychain per a desxifrar.</string>
-    <string name="unknown_otr_fingerprint">Emmpremta digital OTR desconeguda</string>
     <string name="openpgp_messages_found">Trobat missatge xifrat amb OpenPGP</string>
     <string name="your_fingerprint">La teva empremta digital</string>
-    <string name="otr_fingerprint">Empremta digital OTR</string>
-    <string name="otr_fingerprint_selected_message">Empremta digital del missatge OTR</string>
     <string name="openpgp_key_id">ID de clau de OpenPGP</string>
     <string name="omemo_fingerprint">Empremta digital OMEMO</string>
     <string name="omemo_fingerprint_x509">Empremta digital v\\OMEMO</string>
@@ -265,7 +261,6 @@
     <string name="pref_expert_options_other">Altres</string>
     <string name="pref_autojoin">Sincronitzar amb  marcadors</string>
     <string name="pref_autojoin_summary">Uni-rse i abandonar els grups de xat d\'acord amb la configuració d\'unió automàtica als teus marcadors.</string>
-    <string name="toast_message_otr_fingerprint">Empremta digital OTR copiada al portapapers!</string>
     <string name="toast_message_omemo_fingerprint">Empremta digital OMEMO copiada al portapapers!</string>
     <string name="conference_banned">La teva entrada a aquest grup ha sigut prohibida</string>
     <string name="conference_members_only">Aquest grup és només per a integrants</string>
@@ -285,7 +280,6 @@
     <string name="show_qr_code">Mostrar codi QR</string>
     <string name="show_block_list">Mostrar contactes bloquejats</string>
     <string name="account_details">Detalls del compte</string>
-    <string name="verify_otr">Verificar OTR</string>
     <string name="remote_fingerprint">Empremta digital remota</string>
     <string name="shared_secret_hint">Suggeriment o pregunta</string>
     <string name="shared_secret_secret">Secret compartit</string>
@@ -298,7 +292,6 @@
     <string name="finish">Acabar</string>
     <string name="verified">Verificat!</string>
     <string name="smp_requested">El contacte sol·licita verificació SMP</string>
-    <string name="no_otr_session_found">No s\'ha trobat una sessió OTR vàlida!</string>
     <string name="pref_create_backup">Crear còpia de seguretat</string>
     <string name="pref_create_backup_summary">Escriure arxius de còpia de seguretat a %s</string>
     <string name="notification_create_backup_title">Creant còpia de seguretat</string>
@@ -318,13 +311,11 @@
     <string name="no_application_found_to_open_file">No s\'ha trobat cap aplicació per a obrir l\'arxiu</string>
     <string name="could_not_verify_fingerprint">No s\'ha pogut verificar el contacte</string>
     <string name="manually_verify">Verificar manualment</string>
-    <string name="are_you_sure_verify_fingerprint">¿Estàs segur de que vols verificar l\'empremta digital OTR del teu contacte?</string>
     <string name="pref_show_dynamic_tags">Mostrar etiquetes</string>
     <string name="pref_show_dynamic_tags_summary">Mostrar informació en forma d\'etiquetes sota els teus contactes</string>
     <string name="no_conference_server_found">Cap servidor de xat de grup trobat</string>
     <string name="conference_creation_failed">Creació de grupo fallat!</string>
     <string name="account_image_description">Imatge de perfil</string>
-    <string name="copy_otr_clipboard_description">Copiar empremta digital OTR el portapapers</string>
     <string name="copy_omemo_clipboard_description">Copiar empremta digital OMEMO al portapapers</string>
     <string name="regenerate_omemo_key">Regenerar clau OMEMO</string>
     <string name="clear_other_devices"> Netejar dispositius</string>
@@ -338,7 +329,6 @@
     <string name="updating">Actualitzant…</string>
     <string name="password_changed">Contrasenya canviada!</string>
     <string name="could_not_change_password">No es pot canviar la contrasenya</string>
-    <string name="otr_session_not_started">Enviar missatge per a començar una conversa xifrada</string>
     <string name="ask_question">Fes una pregunta</string>
     <string name="smp_explain_question">Si el teu contacte i tu teniu un secret en comú que ningú més coneix (com una broma o simplement el que v pendre per a dinar l\'última vegada que us vau veure) podeu utilitzar aquest secret per a verificar l\'empremta  digital de cada un .\n\nPots utilitzat una suggerencia o pregunta per a que el teu contacte pugui respondre distingint majúscules i minúscules.</string>
     <string name="smp_explain_answer"> El  teu contacte vol verificar la teva empremta digital a través d\'un secret compartit. Et fa la següent suggerencia o pregunta per a aquest secret.</string>
