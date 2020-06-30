@@ -67,7 +67,6 @@
     <string name="choose_presence">Pumili ng device</string>
     <string name="send_unencrypted_message">Magpadala ng hindi naka-encrypt na mensahe</string>
     <string name="send_message_to_x">Magpadala ng mensahe sa %s</string>
-    <string name="send_otr_message">Magpadala ng naka-encrypt na mensahe ng OTR</string>
     <string name="send_omemo_message">Magpadala ng naka-encrypt na mensahe ng OMEMO</string>
     <string name="send_omemo_x509_message">Magpadala ng naka-encrypt na mensahe ng v\\OMEMO</string>
     <string name="send_pgp_message">Magpadala ng naka-encrypt na mensahe ng OpenPGP</string>
