@@ -67,7 +67,6 @@
     <string name="choose_presence">Cihazı seçin</string>
     <string name="send_unencrypted_message">Şifresiz mesaj gönder</string>
     <string name="send_message_to_x">%s kişisine mesaj gönder</string>
-    <string name="send_otr_message">OTR şifrelenmiş mesaj gönder</string>
     <string name="send_omemo_message">OMEMO şifrelenmiş mesaj gönder</string>
     <string name="send_omemo_x509_message">V\\OMEMO şifrelenmiş mesaj gönder</string>
     <string name="send_pgp_message">OpenPGP şifrelenmiş mesaj gönder</string>
@@ -169,11 +168,8 @@
     <string name="last_seen_day">1 gün önce</string>
     <string name="last_seen_days">%d gün önce</string>
     <string name="install_openkeychain">Şifreli mesaj. Şifrenizi çözmek için lütfen OpenKeychain\'i kurun.</string>
-    <string name="unknown_otr_fingerprint">Bilinmeyen OTR parmak izi</string>
     <string name="openpgp_messages_found">OpenPGP şifrelenmiş mesajlar bulundu</string>
     <string name="your_fingerprint">Sizin parmak iziniz</string>
-    <string name="otr_fingerprint">OTR parmak izi</string>
-    <string name="otr_fingerprint_selected_message">OTR mesajın parmak izi</string>
     <string name="openpgp_key_id">OpenPGP Anahtar Kimliği</string>
     <string name="omemo_fingerprint">OMEMO parmak izi</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO parmak izi</string>
@@ -245,7 +241,6 @@
     <string name="pref_use_send_button_to_indicate_status_summary">Kişi durumunu belirtmek için gönder butonunu renklendirin</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Kişi durumunu belirtmek için kişilerin adlarını renklendirin</string>
     <string name="pref_expert_options_other">Diğer</string>
-    <string name="toast_message_otr_fingerprint">OTR parmak izi panoya kopyalandı!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO parmak izi Panoya kopyalandı!</string>
     <string name="conference_banned">Bu sohbet grubundan banlandınız</string>
     <string name="conference_members_only">Bu grup sohbeti yalnızca üyeler arasında</string>
@@ -263,7 +258,6 @@
     <string name="url_copied_to_clipboard">URL panoya kopyalandı</string>
     <string name="show_block_list">Engelli listesini göster</string>
     <string name="account_details">Hesap Detayları</string>
-    <string name="verify_otr">OTR\'yi doğrula</string>
     <string name="remote_fingerprint">Uzaktan Parmak İzi</string>
     <string name="shared_secret_hint">İpucu ya da soru</string>
     <string name="shared_secret_secret">Gizli Paylaşılan</string>
@@ -276,7 +270,6 @@
     <string name="finish">Bitti</string>
     <string name="verified">Doğrulandı!</string>
     <string name="smp_requested">İstenilen SMP doğrulamayla bağlantıyı kurun</string>
-    <string name="no_otr_session_found">Geçerli bir OTR oturumu bulunamadı!</string>
     <string name="choose_file">Dosya seç</string>
     <string name="download_x_file">%s indir</string>
     <string name="delete_x_file">%s sil</string>
@@ -290,13 +283,11 @@
     <string name="no_application_found_to_open_file">Dosyayı açmak için uygun uygulama bulunamadı</string>
     <string name="could_not_verify_fingerprint">Parmak izi doğrulanamıyor</string>
     <string name="manually_verify">Manuel doğrulama</string>
-    <string name="are_you_sure_verify_fingerprint">Kişilerinizin OTR parmak izini doğrulamak istediğinizden emin misiniz?</string>
     <string name="pref_show_dynamic_tags">Dinamik etiketleri göster</string>
     <string name="pref_show_dynamic_tags_summary">Kişilerin altında salt okunur etiketleri göster</string>
     <string name="no_conference_server_found">Hiçbir grup sohbet sunucusu bulunamadı</string>
     <string name="conference_creation_failed">Grup sohbeti oluşturma başarısız!</string>
     <string name="account_image_description">Hesap avatarı</string>
-    <string name="copy_otr_clipboard_description">OTR parmak izini panoya kopyala</string>
     <string name="copy_omemo_clipboard_description">OMEMO parmak izini panoya kopyalayın</string>
     <string name="regenerate_omemo_key">OMEMO anahtarını tekrar oluştur</string>
     <string name="clear_other_devices">Cihazları temizle</string>
@@ -309,7 +300,6 @@
     <string name="updating">Güncelleniyor…</string>
     <string name="password_changed">Şifre değiştirildi!</string>
     <string name="could_not_change_password">Parola değiştirilemedi</string>
-    <string name="otr_session_not_started">Şifrelenmiş sohbeti başlatmak için bir mesaj gönder</string>
     <string name="ask_question">Soru Sor</string>
     <string name="smp_explain_question">Siz ve kontağınız arasında hiç kimsenin bilmediği bir sırrınız varsa (aranızdaki bir şaka veya en son öğle yemeğinde yediğiniz yemek), bu sırrı birbirinizin parmak izlerini doğrulamak için kullanabilirsiniz.\n\nKontağınız için büyük küçük harfle duyarlı bir cevap ile cevaba dair bir ipucu veya soru oluşturabilirsiniz.</string>
     <string name="smp_explain_answer">Bağlantınız, paylaşılan bir şifre ile size kimlik sorarak parmak izinizi doğrulamak istiyor. Kişiniz, bu şifre için aşağıdaki ipucu veya soruyu hazırlamıştır.</string>
