@@ -77,7 +77,6 @@
     <string name="choose_presence">Выбрать устройство</string>
     <string name="send_unencrypted_message">Отправить сообщение без шифрования</string>
     <string name="send_message_to_x">Отправить сообщение %s</string>
-    <string name="send_otr_message">Отправить сообщение, зашифрованное OTR</string>
     <string name="send_omemo_message">Отправить сообщение, зашифрованное OMEMO</string>
     <string name="send_omemo_x509_message">Отправить сообщение, зашифрованное v\\OMEMO</string>
     <string name="send_pgp_message">Отправить сообщение, зашифрованное OpenPGP</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">1 день назад</string>
     <string name="last_seen_days">%d дн. назад</string>
     <string name="install_openkeychain">Зашифрованное сообщение. Пожалуйста, установите OpenKeychain для расшифровки.</string>
-    <string name="unknown_otr_fingerprint">Неизвестный OTR отпечаток</string>
     <string name="openpgp_messages_found">Найдены зашифрованные OpenPGP сообщения</string>
     <string name="your_fingerprint">Ваш отпечаток</string>
-    <string name="otr_fingerprint">OTR отпечаток</string>
-    <string name="otr_fingerprint_selected_message">OTR отпечаток сообщения</string>
     <string name="openpgp_key_id">Идентификатор ключа OpenPGP</string>
     <string name="omemo_fingerprint">OMEMO отпечаток</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO отпечаток</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Другие</string>
     <string name="pref_autojoin">Синхронизировать закладки</string>
     <string name="pref_autojoin_summary">Присоединяться и покидать из групповые чаты в соответствии с флагом автоматического присоединения в закладках.</string>
-    <string name="toast_message_otr_fingerprint">OTR отпечаток был скопирован в буфер обмена!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO отпечаток был скопирован в буфер обмена!</string>
     <string name="conference_banned">Вы заблокированы в этом групповом чате</string>
     <string name="conference_members_only">Этот групповой чат только для его членов</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">Показать QR код</string>
     <string name="show_block_list">Показать чёрный список</string>
     <string name="account_details">Детали аккаунта</string>
-    <string name="verify_otr">Проверка OTR</string>
     <string name="remote_fingerprint">Удалённый отпечаток</string>
     <string name="shared_secret_hint">Подсказка или Вопрос</string>
     <string name="shared_secret_secret">Общий Секрет</string>
@@ -299,7 +293,6 @@
     <string name="finish">Завершить</string>
     <string name="verified">Подтверждён!</string>
     <string name="smp_requested">Контакт запросил проверку SMP</string>
-    <string name="no_otr_session_found">Не найдена действительная OTR сессия!</string>
     <string name="pref_create_backup">Создать резервную копию</string>
     <string name="pref_create_backup_summary">Запись файлов резервного копирования %s</string>
     <string name="notification_create_backup_title">Создание резервной копии</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">Не удалось найти подходящее приложение для открытия файла</string>
     <string name="could_not_verify_fingerprint">Невозможно проверить отпечаток</string>
     <string name="manually_verify">Проверить вручную</string>
-    <string name="are_you_sure_verify_fingerprint">Вы уверены, что хотите проверить OTR-отпечатки ваших контактов?</string>
     <string name="pref_show_dynamic_tags">Показывать динамические теги</string>
     <string name="pref_show_dynamic_tags_summary">Отображать теги под контактами</string>
     <string name="no_conference_server_found">Не найден групповой сервер</string>
     <string name="conference_creation_failed">Создание группы не удалось!</string>
     <string name="account_image_description">Аватар</string>
-    <string name="copy_otr_clipboard_description">Скопировать OTR-отпечаток в буфер обмена</string>
     <string name="copy_omemo_clipboard_description">Скопировать OMEMO-отпечаток в буфер обмена</string>
     <string name="regenerate_omemo_key">Создать заново ключ OMEMO</string>
     <string name="clear_other_devices">Удалить другие устройства</string>
@@ -340,7 +331,6 @@
     <string name="updating">Обновление...</string>
     <string name="password_changed">Пароль изменен!</string>
     <string name="could_not_change_password">Нельзя изменить пароль</string>
-    <string name="otr_session_not_started">Отправьте сообщение для начала защищенной беседы</string>
     <string name="ask_question">Задать вопрос</string>
     <string name="smp_explain_question">Если у вас и вашего контакта есть некий общий секрет, неизвестный больше никому (вроде вашей приватной шутки или блюда, которое вы ели при последней встрече), вы можете использовать этот секрет, чтобы подтвердить отпечатки друг друга.\n\nВы предоставляете подсказку или вопрос, на который ответит ваш контакт. Регистр символов имеет значение.</string>
     <string name="smp_explain_answer">Ваш контакт предлагает проверку отпечатков при помощи ответа на секретный вопрос. Контакт предоставил вам следующую подсказку или вопрос.</string>
@@ -1000,8 +990,6 @@
     <string name="pref_theme_orange">Оранжевый</string>
     <string name="pref_theme_color_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_color_options">Цвет темы</string>
-    <string name="pref_enable_otr_summary">Включить OTR для шифрования сообщений</string>
-    <string name="pref_enable_otr">Включить OTR шифрование</string>
     <string name="magic_create_text_on_x">Вас пригласили в %1$s. Мы проведем вас через процесс создания учетной записи. выбрав %1$s в качестве провайдера, вы сможете общаться с пользователями других провайдеров, предоставляя им свой полный XMPP-адрес.</string>
     <string name="account_status_regis_invalid_token">Неверный токен регистрации</string>
     <string name="magic_create_text_fixed">Вы приглашены в %1$s. имя пользователя уже выбрано для вас. Мы проведем вас через процесс создания учетной записи.\nВы сможете общаться с пользователями других провайдеров, предоставляя им свой полный XMPP адрес.</string>
@@ -1059,6 +1047,5 @@
     <string name="only_one_call_at_a_time">У вас может быть только один звонок за один раз.</string>
     <string name="missed_call">Пропущенный звонок</string>
     <string name="could_not_switch_camera">Не удалось переключить камеру</string>
-    <string name="otr_warning">Поддержка шифрования OTR закончится в июне 2020 года. Нажмите кнопку подробнее, чтобы получить дополнительную информацию. Откроется ссылка в браузере.</string>
     <string name="readmore">Подробнее</string>
 </resources>
