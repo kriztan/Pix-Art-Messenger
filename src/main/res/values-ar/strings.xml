@@ -76,7 +76,6 @@
     <string name="choose_presence">اختر الجهاز</string>
     <string name="send_unencrypted_message">ارسل رسالة غير مشفّرة</string>
     <string name="send_message_to_x">إرسال رسالة إلى %s</string>
-    <string name="send_otr_message">إرسال رسالة مشفّرة بواسطة OTR</string>
     <string name="send_omemo_message">إرسال رسالة مشفّرة بواسطة أوميمو</string>
     <string name="send_omemo_x509_message">إرسال رسالة مشفّرة بواسطة أوميمو</string>
     <string name="send_pgp_message">ارسل رسالة مشفّرة بواسطة OpenPGP</string>
@@ -180,11 +179,8 @@
     <string name="last_seen_day">منذ يوم</string>
     <string name="last_seen_days">منذ %d أيام</string>
     <string name="install_openkeychain">رسالة مشفرة. يرجى تثبيت OpenKeychain لفك التشفير.</string>
-    <string name="unknown_otr_fingerprint">بصمة OTR مجهولة</string>
     <string name="openpgp_messages_found">تم العثور على رسائل OpenPGP المشفرة</string>
     <string name="your_fingerprint">بصمتك</string>
-    <string name="otr_fingerprint">بصمة OTR</string>
-    <string name="otr_fingerprint_selected_message">بصمة OTR للرسالة</string>
     <string name="openpgp_key_id">معرّف مفتاح OpenPGP</string>
     <string name="omemo_fingerprint">بصمة أوميمو OMEMO</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO بصمة</string>
@@ -259,7 +255,6 @@
     <string name="pref_expert_options_other">أخرى</string>
     <string name="pref_autojoin">زامن مع الفواصل المرجعية</string>
     <string name="pref_autojoin_summary">يمكنك الانضمام إلى المحادثات الجماعية وتركها وفقًا لعلامة الانضمام التلقائي في إشاراتك المرجعية.</string>
-    <string name="toast_message_otr_fingerprint">تم نسخ بصمة OTR إلى الحافظة!</string>
     <string name="toast_message_omemo_fingerprint">تم نسخ بصمة OMEMO إلى الحافظة!</string>
     <string name="conference_banned">لقد تم طردك مِن فريق المحادثة هذا</string>
     <string name="conference_members_only">هذه الدردشة الجماعية للأعضاء فقط</string>
@@ -277,7 +272,6 @@
     <string name="show_qr_code">إظهار رمز الكيو آر</string>
     <string name="show_block_list">عرض قائمة الحظر</string>
     <string name="account_details">تفاصيل الحساب</string>
-    <string name="verify_otr">التحقق مِن OTR</string>
     <string name="remote_fingerprint">البصمة البُعدية</string>
     <string name="shared_secret_hint">نصيحة أو سؤال</string>
     <string name="shared_secret_secret">الرمز السري المشترَك</string>
