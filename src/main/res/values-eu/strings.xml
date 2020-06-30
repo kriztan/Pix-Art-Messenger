@@ -67,7 +67,6 @@
     <string name="choose_presence">Gailua aukeratu</string>
     <string name="send_unencrypted_message">Enkriptatu gabeko mezua bidali</string>
     <string name="send_message_to_x">%s(r)i mezua bidali</string>
-    <string name="send_otr_message">OTRz enkriptatutako mezua bidali</string>
     <string name="send_omemo_message">OMEMOz enkriptatutako mezua bidali</string>
     <string name="send_omemo_x509_message">v\\OMEMOz enkriptatutako mezua bidali</string>
     <string name="send_pgp_message">OpenPGPz enkriptatutako mezua bidali</string>
@@ -162,11 +161,8 @@
     <string name="last_seen_day">azkenengoz ikusia egun 1 lehenago</string>
     <string name="last_seen_days">azkenengoz ikusia %d egun lehenago</string>
     <string name="install_openkeychain">Mezu enkriptatua. Mesedez instalatu OpenKeychain desenkriptatzeko.</string>
-    <string name="unknown_otr_fingerprint">OTR hatz-marka ezezaguna</string>
     <string name="openpgp_messages_found">OpenPGPz enkriptatutako mezuak aurkitu dira</string>
     <string name="your_fingerprint">Zure hatz-marka</string>
-    <string name="otr_fingerprint">OTR hatz-marka</string>
-    <string name="otr_fingerprint_selected_message">Mezuaren OTR hatz-marka</string>
     <string name="openpgp_key_id">OpenPGP gakoaren nortasuna</string>
     <string name="omemo_fingerprint">OMEMO hatz-marka</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO hatz-marka</string>
@@ -236,7 +232,6 @@
     <string name="pref_use_indicate_received_summary">Jasotako mezuak marka berde batekin markatuko dira. Baliteke kasu guztietan ez funtzionatzea.</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Bidaltze botoia koloreztatu kontaktu baten egoera adierazteko</string>
     <string name="pref_expert_options_other">Besteak</string>
-    <string name="toast_message_otr_fingerprint">OTR hatz-marka arbelara kopiatu da</string>
     <string name="toast_message_omemo_fingerprint">OMEMO hatz-marka arbelara kopiatu da</string>
     <string name="conference_banned">Talde honetara sartzea debekatuta duzu</string>
     <string name="conference_members_only">Talde hau kideentzat da soilik</string>
@@ -254,7 +249,6 @@
     <string name="url_copied_to_clipboard">URLa arbelera kopiatu da</string>
     <string name="show_block_list">Blokeatutakoen zerrenda ikusi</string>
     <string name="account_details">Kontuaren xehetasunak</string>
-    <string name="verify_otr">OTR egiaztatu</string>
     <string name="remote_fingerprint">Urruneko hatz-marka</string>
     <string name="shared_secret_hint">Iradokizuna edo galdera</string>
     <string name="shared_secret_secret">Partekatutako sekretua</string>
@@ -266,7 +260,6 @@
     <string name="finish">Amaitu</string>
     <string name="verified">Egiaztatuta!</string>
     <string name="smp_requested">Kontaktuak SMP egiaztapena eskatu du</string>
-    <string name="no_otr_session_found">Ez da OTR saio baliodunik aurkitu!</string>
     <string name="choose_file">Fitxategia aukeratu</string>
     <string name="download_x_file">%s deskargatu</string>
     <string name="delete_x_file">Ezabatu %s</string>
@@ -280,13 +273,11 @@
     <string name="no_application_found_to_open_file">Fitxategia ireki dezakeen aplikaziorik ez da aurkitu</string>
     <string name="could_not_verify_fingerprint">Hatz-marka ezin izan da egiaztatu</string>
     <string name="manually_verify">Eskuz egiaztatu</string>
-    <string name="are_you_sure_verify_fingerprint">Ziur al zaude zure kontaktuaren OTR hatz-marka egiaztatu nahi duzulaz?</string>
     <string name="pref_show_dynamic_tags">Etiketa dinamikoak erakutsi</string>
     <string name="pref_show_dynamic_tags_summary">Irakurtzeko soilik diren etiketak erakutsi kontaktuen azpian</string>
     <string name="no_conference_server_found">Ez da talde zerbitzaririk aurkitu</string>
     <string name="conference_creation_failed">Taldea sortzeak huts egin du!</string>
     <string name="account_image_description">Kontuaren profileko argazkia</string>
-    <string name="copy_otr_clipboard_description">OTR hatz-marka arbelera kopiatu</string>
     <string name="copy_omemo_clipboard_description">OMEMO hatz-marka arbelara kopiatu</string>
     <string name="regenerate_omemo_key">OMEMO gakoa birsortu</string>
     <string name="clear_other_devices">Gailuak garbitu</string>
@@ -299,7 +290,6 @@
     <string name="updating">Eguneratzen...</string>
     <string name="password_changed">Pasahitza aldatu da</string>
     <string name="could_not_change_password">Pasahitza ezin izan da aldatu</string>
-    <string name="otr_session_not_started">Mezu bat bidali enkripatutako elkarrizketa hasteko</string>
     <string name="ask_question">Galdetu</string>
     <string name="smp_explain_question">Zu eta zure kontaktua beste inor ezagutzen ez duen elkarren arteko sekreturen bat baduzue (ohiko txantxa edo azkenengo aldian bazkaldu zenutena adibidez) bakoitzaren hatz-markak egiaztatzeko sekretu hori erabili dezakezue.\n\nIradokizun edo galdera bat eman behar duzu zure kontaktuak erantzun dezan, letra larri eta xeheak bereiziz.</string>
     <string name="smp_explain_answer">Zure kontaktuak zure hatz-marka egiaztatu nahi du partekatutako sekretu batekin erronka eginez. Zure kontaktuak hurrengo iradokizuna edo sekretu horren galdera eman du.</string>
