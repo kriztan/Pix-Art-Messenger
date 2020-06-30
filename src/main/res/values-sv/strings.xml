@@ -64,7 +64,6 @@
     <string name="choose_presence">Välj enhet</string>
     <string name="send_unencrypted_message">Skicka okrypterat meddelande</string>
     <string name="send_message_to_x">Skicka meddelande till %s</string>
-    <string name="send_otr_message">Skicka OTR-krypterat meddelande</string>
     <string name="send_omemo_message">Skicka OMEMO-krypterat meddelande</string>
     <string name="send_omemo_x509_message">Skicka v\\OMEMO-krypterat meddelande</string>
     <string name="send_pgp_message">Skicka OpenPGP-krypterat meddelande</string>
@@ -158,11 +157,8 @@
     <string name="last_seen_day">senast sedd 1 dag sedan</string>
     <string name="last_seen_days">senast sedd %d dagar sedan</string>
     <string name="install_openkeychain">Krypterat meddelande. Installera OpenKeychain för att avkryptera.</string>
-    <string name="unknown_otr_fingerprint">Okänt OTR-fingeravtryck</string>
     <string name="openpgp_messages_found">OpenPGP-krypterat meddelande funnet</string>
     <string name="your_fingerprint">Ditt fingeravtryck</string>
-    <string name="otr_fingerprint">OTR-fingeravtryck</string>
-    <string name="otr_fingerprint_selected_message">Meddelandets OTR-fingeravtryck</string>
     <string name="openpgp_key_id">OpenPGP-nyckel-ID</string>
     <string name="omemo_fingerprint">OMEMO-fingeravtryck</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO-fingeravtryck</string>
@@ -229,7 +225,6 @@
     <string name="pref_use_indicate_received_summary">Mottagna meddelanden markeras med en grön bock om det stöds</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Färglägg skickaknappen för att indikera kontaktens status</string>
     <string name="pref_expert_options_other">Annat</string>
-    <string name="toast_message_otr_fingerprint">OTR-fingeravtryck har kopierats till urklipp!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO-fingeravtryck har kopierats till urklipp!</string>
     <string name="using_account">använder konto %s</string>
     <string name="checking_x">Kontrollerar %s på webbserver</string>
@@ -243,7 +238,6 @@
     <string name="url_copied_to_clipboard">URL kopierad till urklipp</string>
     <string name="show_block_list">Visa blockeringslista</string>
     <string name="account_details">Kontodetaljer</string>
-    <string name="verify_otr">Verifiera OTR</string>
     <string name="remote_fingerprint">Fjärr-fingeravtryck</string>
     <string name="shared_secret_hint">Ledtråd eller fråga</string>
     <string name="shared_secret_secret">Delad hemlighet</string>
@@ -255,7 +249,6 @@
     <string name="finish">Klar</string>
     <string name="verified">Verifierad</string>
     <string name="smp_requested">Kontakt begärde SMP-verifikation</string>
-    <string name="no_otr_session_found">Ingen giltig OTR-session kunde hittas!</string>
     <string name="choose_file">Välj fil</string>
     <string name="download_x_file">Ladda ner %s</string>
     <string name="delete_x_file">Ta bort %s</string>
@@ -269,11 +262,9 @@
     <string name="no_application_found_to_open_file">Ingen applikation kunde hittas för att öppna filen</string>
     <string name="could_not_verify_fingerprint">Kunde inte verifiera fingeravtryck</string>
     <string name="manually_verify">Verifiera manuellt</string>
-    <string name="are_you_sure_verify_fingerprint">Är du säker på att du vill verifiera din kontakts OTR-fingeravtryck?</string>
     <string name="pref_show_dynamic_tags">Visa dynamiska taggar</string>
     <string name="pref_show_dynamic_tags_summary">Visa skrivskyddade taggar under kontakter</string>
     <string name="account_image_description">Kontots avatarbild</string>
-    <string name="copy_otr_clipboard_description">Kopiera OTR-fingeravtryck till urklipp</string>
     <string name="copy_omemo_clipboard_description">Kopiera OMEMO-fingeravtryck till urklipp</string>
     <string name="regenerate_omemo_key">Regenerera OMEMO-nyckel</string>
     <string name="clear_other_devices">Rensa enheter</string>
@@ -285,7 +276,6 @@
     <string name="updating">Uppdaterar…</string>
     <string name="password_changed">Lösenord bytt!</string>
     <string name="could_not_change_password">Kunde inte byta lösenord</string>
-    <string name="otr_session_not_started">Skicka meddelande för att påbörja en krypterad chat</string>
     <string name="ask_question">Ställ fråga</string>
     <string name="smp_explain_question">Om du och din kontakt har en delad hemlighet som ingen annan känner till (som ett internt skämt eller vad ni åt till lunch senast ni träffades) så kan ni ange den hemligheten för att verifiera varandras fingeravtryck.\n\nDu ger en ledtråd eller en fråga till din kontakt som ska svara med ett svar som är skiftlägeskänsligt.</string>
     <string name="smp_explain_answer">Din kontakt vill verifiera ditt fingeravtryck genom att utmana dig med en delad hemlighet. Din kontakt gav följande ledtråd eller fråga för hemligheten.</string>
