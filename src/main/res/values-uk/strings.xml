@@ -77,7 +77,6 @@
     <string name="choose_presence">Вибрати пристрій</string>
     <string name="send_unencrypted_message">Незашифроване повідомлення</string>
     <string name="send_message_to_x">Повідомлення до %s</string>
-    <string name="send_otr_message">Надіслати повідомлення, зашифроване OTR</string>
     <string name="send_omemo_message">Повідомлення зашифроване OMEMO</string>
     <string name="send_omemo_x509_message">Повідомлення зашифроване v\\OMEMO</string>
     <string name="send_pgp_message">Повідомлення зашифроване OpenPGP</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">у мережі 1 день тому</string>
     <string name="last_seen_days">у мережі %d днів тому</string>
     <string name="install_openkeychain">Зашифроване повідомлення. Будь ласка, встановіть OpenKeychain, щоб розшифрувати.</string>
-    <string name="unknown_otr_fingerprint">Невідомий цифровий підпис OTR</string>
     <string name="openpgp_messages_found">Знайдено повідомлення, зашифроване OpenPGP</string>
     <string name="your_fingerprint">Ваш цифровий підпис</string>
-    <string name="otr_fingerprint">Цифровий підпис OTR</string>
-    <string name="otr_fingerprint_selected_message">Відбиток OTR повідомлення</string>
     <string name="openpgp_key_id">Ідентифікатор ключа OpenPGP</string>
     <string name="omemo_fingerprint">Цифровий підпис OMEMO</string>
     <string name="omemo_fingerprint_x509">Цифровий підпис v\\OMEMO</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Інше</string>
     <string name="pref_autojoin">Синхронізувати із закладками</string>
     <string name="pref_autojoin_summary">Приєднуватися до груп і полишати їх відповідно до опції автоматичного приєднання, вибраної в закладках.</string>
-    <string name="toast_message_otr_fingerprint">Цифровий підпис OTR скопійовано</string>
     <string name="toast_message_omemo_fingerprint">Цифровий підпис OMEMO скопійовано</string>
     <string name="conference_banned">Вам заборонили доступ до цієї групи</string>
     <string name="conference_members_only">Ця група лише для учасників</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">Показати QR-код</string>
     <string name="show_block_list">Показати список блокування</string>
     <string name="account_details">Деталі облікового запису</string>
-    <string name="verify_otr">Перевірити OTR</string>
     <string name="remote_fingerprint">Віддалений цифровий підпис</string>
     <string name="shared_secret_hint">Підказка чи запитання</string>
     <string name="shared_secret_secret">Секретний ключ</string>
@@ -299,7 +293,6 @@
     <string name="finish">Завершити</string>
     <string name="verified">Перевірено!</string>
     <string name="smp_requested">Контакт надіслав запит на підтвердження за допомогою SMP</string>
-    <string name="no_otr_session_found">Не знайдено дійсну сесію OTR!</string>
     <string name="pref_create_backup">Створити резервну копію</string>
     <string name="pref_create_backup_summary">Резервні копії зберігатимуться до %s</string>
     <string name="notification_create_backup_title">Створення резервних копій</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">Не знайдено програми для відкриття файла</string>
     <string name="could_not_verify_fingerprint">Неможливо перевірити цифровий підпис</string>
     <string name="manually_verify">Перевірити вручну</string>
-    <string name="are_you_sure_verify_fingerprint">Ви дійсно хочете перевірити цифровий підпис OTR ваших контактів?</string>
     <string name="pref_show_dynamic_tags">Динамічні мітки</string>
     <string name="pref_show_dynamic_tags_summary">Показувати мітку \"лише для читання\" під контактами</string>
     <string name="no_conference_server_found">Не знайдено сервер групи</string>
     <string name="conference_creation_failed">Не вдалося створити групу!</string>
     <string name="account_image_description">Іконка облікового запису</string>
-    <string name="copy_otr_clipboard_description">Копіювати цифровий підпис OTR</string>
     <string name="copy_omemo_clipboard_description">Копіювати цифровий підпис OMEMO</string>
     <string name="regenerate_omemo_key">Згенерувати ключ OMEMO</string>
     <string name="clear_other_devices">Стерти пристрої</string>
@@ -340,7 +331,6 @@
     <string name="updating">Оновлюю…</string>
     <string name="password_changed">Пароль змінено!</string>
     <string name="could_not_change_password">Не зміг змінити пароль</string>
-    <string name="otr_session_not_started">Надішліть повідомлення, щоб розпочати зашифрований чат</string>
     <string name="ask_question">Поставити запитання</string>
     <string name="smp_explain_question">Якщо ви чи ваш контакт маєте спільний секрет, який ніхто інший не знає (наприклад, якийсь жарт, про який відомо лише вам, чи що ви їли в обід під час зустрічі), то ви можете його використати для підтвердження цифрових підписів один одного.\n\nЗ вашого боку ви можете надати підказку чи поставити запитання вашому контакту, який має надати відповідь - зверніть увагу, що реєстр має значення.</string>
     <string name="smp_explain_answer">Ваш контакт бажає перевірити ваш цифровий підпис. Для цього він має зазначити ваш спільний секрет. Ви можете отримати відповідну підказку чи дати відповідь на запитання, яке стосується цього секрету.</string>
@@ -1006,8 +996,6 @@
     <string name="pref_theme_orange">Помаранчева</string>
     <string name="pref_theme_color_options_summary">Оберіть палітру кольорів теми</string>
     <string name="pref_theme_color_options">Колір теми</string>
-    <string name="pref_enable_otr_summary">Увімкнути шифрування OTR для повідомлень</string>
-    <string name="pref_enable_otr">Увімкнути шифрування OTR</string>
     <string name="magic_create_text_on_x">Вас запросили до %1$s. Ми допоможемо вам створити обліковий запис.\nПри виборі %1$s в якості провайдера ви матимете змогу спілкуватися з користувачами інших провайдерів. Для цього потрібно буде зазначити вашу повну адресу XMPP.</string>
     <string name="account_status_regis_invalid_token">Неправильний реєстраційний токен</string>
     <string name="magic_create_text_fixed">Вас запросили до %1$s. Для вас уже визначено ім\'я користувача. Ми допоможемо вам створити обліковий запис.\nВи матимете змогу спілкуватися з користувачами інших провайдерів. Для цього потрібно буде надати вашу повну адресу XMPP.</string>
@@ -1065,7 +1053,6 @@
     <string name="only_one_call_at_a_time">Водночас можливо здійснювати лише один виклик.</string>
     <string name="missed_call">Пропущені виклики</string>
     <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
-    <string name="otr_warning">Підтримку шифрування OTR буде припинено у червні 2020 р. Клацніть, щоб перейти за посиланням та дізнатися більше.</string>
     <string name="readmore">Дізнатися більше</string>
     <string name="add_to_favorites">До обраного</string>
     <string name="remove_from_favorites">Вилучити з обраного</string>
