@@ -424,10 +424,10 @@
     <string name="username">Identifiant</string>
     <string name="username_hint">Identifiant</string>
     <string name="invalid_username">Cet identifiant n\'est pas valide</string>
-    <string name="download_failed_server_not_found">Échec du téléchargement : Impossible de trouver le serveur</string>
-    <string name="download_failed_file_not_found">Échec du téléchargement : Impossible de trouver le fichier</string>
-    <string name="download_failed_could_not_connect">Échec du téléchargement : Impossible de se connecter à l’hôte</string>
-    <string name="download_failed_could_not_write_file">Échec du téléchargement : Écriture impossible</string>
+    <string name="download_failed_server_not_found">Échec du téléchargement : impossible de trouver le serveur</string>
+    <string name="download_failed_file_not_found">Échec du téléchargement : impossible de trouver le fichier</string>
+    <string name="download_failed_could_not_connect">Échec du téléchargement : impossible de se connecter à l’hôte</string>
+    <string name="download_failed_could_not_write_file">Échec du téléchargement : écriture impossible</string>
     <string name="action_check_update">Vérifier les mises à jour</string>
     <string name="title_activity_updater">Mise à jour du service</string>
     <string name="update_available">La version %1$s est disponible.\n\nTaille du fichier : %2$s\n\nMettre à jour vers la version %1$s maintenant ?</string>
@@ -535,7 +535,7 @@
     <string name="action_end_conversation_muc">Quitter la conférence</string>
     <string name="leave_conference_warning">Désirez-vous quitter ce groupe de discussion ? Vous ne serez plus notifié de l’arrivée des nouveaux messages jusqu’à ce que vous rejoignez à nouveau la discussion.</string>
     <string name="show_password">Afficher le mot de passe</string>
-    <string name="registration_please_wait">L’enregistrement a échoué : Réessayer plus tard</string>
+    <string name="registration_please_wait">L’enregistrement a échoué : réessayer plus tard</string>
     <string name="registration_password_too_weak">Échec de l’enregistrement : le mot de passe n’est pas assez fort</string>
     <string name="choose_participants">Choisir les participants</string>
     <string name="creating_conference">Création du groupe de discussion…</string>
