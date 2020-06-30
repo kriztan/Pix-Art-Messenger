@@ -77,7 +77,6 @@
     <string name="choose_presence">Seleccionar dispositivo</string>
     <string name="send_unencrypted_message">Enviar mensaje sin cifrar</string>
     <string name="send_message_to_x">Enviar mensaje a %s</string>
-    <string name="send_otr_message">Enviar mensaje cifrado con OTR</string>
     <string name="send_omemo_message">Enviar mensaje cifrado con OMEMO </string>
     <string name="send_omemo_x509_message">Enviar mensaje cifrado v\\OMEMO</string>
     <string name="send_pgp_message">Enviar mensaje cifrado con OpenPGP</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">hace 1 día</string>
     <string name="last_seen_days">hace %d días</string>
     <string name="install_openkeychain">Mensaje cifrado. Por favor instala OpenKeychain para descifrar.</string>
-    <string name="unknown_otr_fingerprint">Huella digital OTR desconocida</string>
     <string name="openpgp_messages_found">Encontrado mensaje cifrado con OpenPGP</string>
     <string name="your_fingerprint">Tu huella digital</string>
-    <string name="otr_fingerprint">Huella digital OTR</string>
-    <string name="otr_fingerprint_selected_message">Huella digital del mensaje OTR</string>
     <string name="openpgp_key_id">ID de clave de OpenPGP</string>
     <string name="omemo_fingerprint">Huella digital OMEMO</string>
     <string name="omemo_fingerprint_x509">Huella digital v\\OMEMO</string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Otros</string>
     <string name="pref_autojoin">Sincronizar con marcadores</string>
     <string name="pref_autojoin_summary">Unirse y abandonar los grupos de chat de acuerdo con la configuración de unión automática en tus marcadores.</string>
-    <string name="toast_message_otr_fingerprint">¡Huella digital OTR copiada al portapapeles!</string>
     <string name="toast_message_omemo_fingerprint">¡Huella digital OMEMO copiada al portapapeles!</string>
     <string name="conference_banned">Tu entrada a este grupo ha sido prohibido</string>
     <string name="conference_members_only">Este grupo es sólo para miembros</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">Mostrar código QR</string>
     <string name="show_block_list">Mostrar contactos bloqueados</string>
     <string name="account_details">Detalles de la cuenta</string>
-    <string name="verify_otr">Verificar OTR</string>
     <string name="remote_fingerprint">Huella digital remota</string>
     <string name="shared_secret_hint">Sugerencia o pregunta</string>
     <string name="shared_secret_secret">Secreto compartido</string>
@@ -299,7 +293,6 @@
     <string name="finish">Terminar</string>
     <string name="verified">¡Verificado!</string>
     <string name="smp_requested">El contacto solicita verificación SMP</string>
-    <string name="no_otr_session_found">¡No se ha encontrado una sesión OTR válida!</string>
     <string name="pref_create_backup">Crear copia de seguridad</string>
     <string name="pref_create_backup_summary">Escribir archivos de copia de seguridad a %s</string>
     <string name="notification_create_backup_title">Creando copia de seguridad</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">No se ha encontrado ninguna aplicación para abrir el archivo</string>
     <string name="could_not_verify_fingerprint">No se puede verificar el contacto</string>
     <string name="manually_verify">Verificar manualmente</string>
-    <string name="are_you_sure_verify_fingerprint">¿Estás seguro de que quieres verificar la huella digital OTR de tu contacto?</string>
     <string name="pref_show_dynamic_tags">Mostrar etiquetas</string>
     <string name="pref_show_dynamic_tags_summary">Mostrar información en forma de etiquetas debajo de los contactos</string>
     <string name="no_conference_server_found">Ningún servidor de chat de grupo encontrado</string>
     <string name="conference_creation_failed">¡Creación de grupo fallado!</string>
     <string name="account_image_description">Imagen de perfil</string>
-    <string name="copy_otr_clipboard_description">Copiar huella digital OTR al portapapeles</string>
     <string name="copy_omemo_clipboard_description">Copiar huella digital OMEMO al portapapeles</string>
     <string name="regenerate_omemo_key">Regenerar clave OMEMO</string>
     <string name="clear_other_devices">Limpiar dispositivos</string>
@@ -340,7 +331,6 @@
     <string name="updating">Actualizando…</string>
     <string name="password_changed">¡Contraseña cambiada!</string>
     <string name="could_not_change_password">No se puede cambiar la contraseña</string>
-    <string name="otr_session_not_started">Enviar mensaje para empezar una conversación cifrada</string>
     <string name="ask_question">Haz una pregunta</string>
     <string name="smp_explain_question">Si tu contacto y tú tenéis un secreto en común que nadie más sabe (como una broma o simplemente lo que tomasteis para comer la última vez que os visteis) podéis usar ese secreto para verificar la huella digital de cada uno.\n\nPuedes usar una sugerencia o pregunta para hacer a tu contacto que deberá responder distinguiendo mayúsculas y minúsculas.</string>
     <string name="smp_explain_answer">Tu contacto quiere verificar tu huella digital a través de un secreto compartido. Te hace la siguiente sugerencia o pregunta para ese secreto.</string>
@@ -988,8 +978,6 @@
     <string name="pref_theme_orange">Naranja</string>
     <string name="pref_theme_color_options_summary">Selecciona la paleta de color del tema</string>
     <string name="pref_theme_color_options">Color del tema</string>
-    <string name="pref_enable_otr_summary">Habilitar OTR para el cifrado de mensajes</string>
-    <string name="pref_enable_otr">Habilitar cifrado OTR</string>
     <string name="magic_create_text_on_x">Has sido invitado a %1$s. Te guiaremos en el proceso de creación de una cuenta.\nCuando escojas %1$s como proveedor, podrás comunicarte con usuarios de otros proveedores proporcionándoles tu dirección XMPP completa.</string>
     <string name="account_status_regis_invalid_token">Referencia de registro inválida</string>
     <string name="magic_create_text_fixed">Has sido invitado a %1$s. Ya se ha seleccionado un nombre de usuario para ti. Te guiaremos en el proceso de creación de cuenta.\nPodrás comunicarte con usuarios de otros proveedores proporcionándoles tu dirección XMPP completa.</string>
@@ -1047,7 +1035,6 @@
     <string name="only_one_call_at_a_time">Solo puedes estar en una llamada a la vez.</string>
     <string name="missed_call">Llamada perdida</string>
     <string name="could_not_switch_camera">No se pudo cambiar cámara</string>
-    <string name="otr_warning">Se dejará de dar soporte a OTR en Junio de 2020. Pulsar en leer más para obtener más información. Se abrirá un enlace en el navegador.</string>
     <string name="readmore">Leer más</string>
     <string name="add_to_favorites">Agregar a favoritos</string>
     <string name="remove_from_favorites">Quitar de favoritos</string>
