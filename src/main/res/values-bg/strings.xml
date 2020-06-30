@@ -76,7 +76,6 @@
     <string name="choose_presence">Избери устройство</string>
     <string name="send_unencrypted_message">Изпрати некриптирано съобщение</string>
     <string name="send_message_to_x">Изпрати съобщение до% s</string>
-    <string name="send_otr_message">Изпрати OTR кодирано съобщение</string>
     <string name="send_omemo_message">Изпрати шифрованото съобщение на OMEMO</string>
     <string name="send_omemo_x509_message">Изпрати v\\OMEO криптирано съобщение</string>
     <string name="send_pgp_message">Изпрати криптирано съобщение OpenPGP</string>
@@ -182,11 +181,8 @@
     <string name="last_seen_day">преди 1 ден</string>
     <string name="last_seen_days">преди %d дни</string>
     <string name="install_openkeychain">Криптирано съобщение. Инсталирайте OpenKeychain, за да декриптирате.</string>
-    <string name="unknown_otr_fingerprint">Непознат OTR пръстов отпечатък</string>
     <string name="openpgp_messages_found">Намерени са криптирани съобщения OpenPGP</string>
     <string name="your_fingerprint">Вашият пръстов отпечатък</string>
-    <string name="otr_fingerprint">OTR пръстов отпечатък</string>
-    <string name="otr_fingerprint_selected_message">OTR отпечатък на съобщение</string>
     <string name="openpgp_key_id">Идентификационен Kлюч на OpenPGP</string>
     <string name="omemo_fingerprint">OMEMO пръстови отпечатъци</string>
     <string name="omemo_fingerprint_x509">v\\Отпечатък на OMEMO</string>
@@ -263,7 +259,6 @@
     <string name="pref_expert_options_other">Друг</string>
     <string name="pref_autojoin">Синхронизирайте с бележника</string>
     <string name="pref_autojoin_summary">Присъединете се и оставете груповите разговори според флага на автоматично присъединяване в бележника си.</string>
-    <string name="toast_message_otr_fingerprint">OTR пръстовият отпечатък се копира в клипборда!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO пръстови отпечатъци, копирани в клипборда!</string>
     <string name="conference_banned">Вие сте забранени от този групов чат</string>
     <string name="conference_members_only">Този групов чат е само за членове</string>
@@ -283,7 +278,6 @@
     <string name="show_qr_code">Покажи QR код</string>
     <string name="show_block_list">Покажи блокиращият лист</string>
     <string name="account_details">Детайли за акаунта</string>
-    <string name="verify_otr">Потвърди OTR</string>
     <string name="remote_fingerprint">Отдалечен Пръстов Отпечатък</string>
     <string name="shared_secret_hint">Съвет или Въпрос</string>
     <string name="shared_secret_secret">Споделена Тайна</string>
@@ -296,7 +290,6 @@
     <string name="finish">Край</string>
     <string name="verified">Потвърдено!</string>
     <string name="smp_requested">Контактът поиска проверка на SMP</string>
-    <string name="no_otr_session_found">Не е намерена валидна OTR сесия!</string>
     <string name="pref_create_backup">Създайте резервно копие</string>
     <string name="pref_create_backup_summary">Напишете резервни файлове в %s</string>
     <string name="notification_create_backup_title">Създаване на архивни файлове</string>
@@ -316,13 +309,11 @@
     <string name="no_application_found_to_open_file">Не е намерено приложение за отваряне на файл</string>
     <string name="could_not_verify_fingerprint">Отпечатъкът не можe да бъде потвърден</string>
     <string name="manually_verify">Ръчно потвърждаване</string>
-    <string name="are_you_sure_verify_fingerprint">Сигурни ли сте, че искате да потвърдите OTR пръстовия отпечатък от контактите си?</string>
     <string name="pref_show_dynamic_tags">Показване на динамични маркери</string>
     <string name="pref_show_dynamic_tags_summary">Показване на маркерите само за четене под контактите</string>
     <string name="no_conference_server_found">Не е намерен сървър за групов чат</string>
     <string name="conference_creation_failed">Създаването на групов чат не бе успешно!</string>
     <string name="account_image_description">Снимка на профила</string>
-    <string name="copy_otr_clipboard_description">Копирайте OTR пръстовия отпечатък в клипборда</string>
     <string name="copy_omemo_clipboard_description">Копирайте OMEMO пръстовия отпечатък в клипборда</string>
     <string name="regenerate_omemo_key">Регенерирайте OMEMO ключ</string>
     <string name="clear_other_devices">Чистене на устройствата</string>
@@ -336,7 +327,6 @@
     <string name="updating">Подновеване…</string>
     <string name="password_changed">Паролата е сменена!</string>
     <string name="could_not_change_password">Паролата не можа да бъде променена</string>
-    <string name="otr_session_not_started">Изпратете съобщение, за да започнете шифрован чат</string>
     <string name="ask_question">Задай въпрос</string>
     <string name="smp_explain_question">Ако вие и вашият контакт имате обща тайна, която никой друг не знае (като вътрешна шега или просто това, което сте имали за обяд последния път, когато се срещнахте), можете да използвате тази тайна, за да проверите взаимните си отпечатъци..\n\nВие предоставяте намек или въпрос за вашия контакт, който ще отговори с чувствителен към регистър отговор.</string>
     <string name="smp_explain_answer">Контактът ви би искал да потвърди пръстовия ви отпечатък, като ви оспори споделена тайна. Вашият контакт предостави следния намек или въпрос за тази тайна.</string>
