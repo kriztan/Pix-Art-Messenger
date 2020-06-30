@@ -77,7 +77,6 @@
     <string name="choose_presence">Ressource des Kontakts auswählen</string>
     <string name="send_unencrypted_message">Normal schreiben…</string>
     <string name="send_message_to_x">Nachricht an %s senden</string>
-    <string name="send_otr_message">OTR-verschlüsselt schreiben…</string>
     <string name="send_omemo_message">OMEMO-verschlüsselt schreiben…</string>
     <string name="send_omemo_x509_message">v\\OMEMO-verschlüsselte Nachricht senden</string>
     <string name="send_pgp_message">OpenPGP-verschlüsselt schreiben…</string>
@@ -184,11 +183,8 @@
     <string name="last_seen_day">zul. online vor 1 Tag</string>
     <string name="last_seen_days">zul. online vor %d Tagen</string>
     <string name="install_openkeychain">Verschlüsselte Nachricht. Bitte installiere OpenKeychain zur Entschlüsselung.</string>
-    <string name="unknown_otr_fingerprint">Unbekannter OTR-Fingerabdruck</string>
     <string name="openpgp_messages_found">Verschlüsselte OpenPGP-Nachricht gefunden</string>
     <string name="your_fingerprint">Dein Fingerabdruck</string>
-    <string name="otr_fingerprint">OTR-Fingerabdruck</string>
-    <string name="otr_fingerprint_selected_message">OTR Fingerabdruck der Nachricht</string>
     <string name="openpgp_key_id">OpenPGP Schlüssel ID</string>
     <string name="omemo_fingerprint">OMEMO-Fingerabdruck</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO-Fingerabdruck </string>
@@ -266,7 +262,6 @@
     <string name="pref_expert_options_other">Sonstiges</string>
     <string name="pref_autojoin">Mit Kontaktliste synchronisieren</string>
     <string name="pref_autojoin_summary">Gruppenchats beitreten oder verlassen gemäß der Kennzeichnung \"Automatisches Beitreten\" in deiner Kontaktliste.</string>
-    <string name="toast_message_otr_fingerprint">OTR-Fingerabdruck in die Zwischenablage kopiert!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO-Fingerabdruck in die Zwischenablage kopiert!</string>
     <string name="conference_banned">Du wurdest von dem Gruppenchat ausgeschlossen</string>
     <string name="conference_members_only">Dieser Gruppenchat ist nur für Mitglieder</string>
@@ -286,7 +281,6 @@
     <string name="show_qr_code">QR-Code anzeigen</string>
     <string name="show_block_list">Sperrliste anzeigen</string>
     <string name="account_details">Mein Profil</string>
-    <string name="verify_otr">OTR prüfen</string>
     <string name="remote_fingerprint">Fingerabdruck der Gegenseite</string>
     <string name="shared_secret_hint">Hinweis oder Frage</string>
     <string name="shared_secret_secret">Gemeinsamer Schlüssel</string>
@@ -299,7 +293,6 @@
     <string name="finish">Fertig</string>
     <string name="verified">Überprüft!</string>
     <string name="smp_requested">Kontakt fordert eine Überprüfung an</string>
-    <string name="no_otr_session_found">Keine gültige OTR-Sitzung gefunden!</string>
     <string name="pref_create_backup">Sicherung erstellen</string>
     <string name="pref_create_backup_summary">Sicherungsdateien schreiben nach %s</string>
     <string name="notification_create_backup_title">Sicherungsdateien werden erstellt</string>
@@ -320,13 +313,11 @@
     <string name="no_application_found_to_open_file">Keine Anwendung zum Öffnen der Datei gefunden</string>
     <string name="could_not_verify_fingerprint">Fingerabdruck konnte nicht überprüft werden</string>
     <string name="manually_verify">Manuell überprüfen</string>
-    <string name="are_you_sure_verify_fingerprint">Bist du sicher, dass du den OTR-Fingerabdruck des Kontakts überprüfen willst?</string>
     <string name="pref_show_dynamic_tags">Dynamische Tags anzeigen</string>
     <string name="pref_show_dynamic_tags_summary">Schreibgeschütze Tags unterhalb der Kontakte anzeigen</string>
     <string name="no_conference_server_found">Es wurde kein Gruppenchat-Server gefunden</string>
     <string name="conference_creation_failed">Gruppenchat konnte nicht erstellt werden!</string>
     <string name="account_image_description">Profilbild</string>
-    <string name="copy_otr_clipboard_description">OTR-Fingerabdruck in Zwischenablage kopieren</string>
     <string name="copy_omemo_clipboard_description">OMEMO-Fingerabdruck in Zwischenablage kopieren</string>
     <string name="regenerate_omemo_key">OMEMO-Fingerabdruck erneuern</string>
     <string name="clear_other_devices">Geräte entfernen</string>
@@ -340,7 +331,6 @@
     <string name="updating">Aktualisieren…</string>
     <string name="password_changed">Passwort geändert.</string>
     <string name="could_not_change_password">Passwort kann nicht geändert werden.</string>
-    <string name="otr_session_not_started">Sende eine Nachricht, um eine verschlüsselte Unterhaltung zu beginnen</string>
     <string name="ask_question">Frage stellen</string>
     <string name="smp_explain_question">Falls du mit deinem Kontakt ein gemeinsames Geheimnis hast (z.B. ein Insider-Witz oder was ihr zuletzt gemeinsam zum Mittag gegessen habt), kann dies zur gegenseitigen Überprüfung des Fingerabdrucks genutzt werden.\n\nDu stellst eine Frage oder gibst einen Hinweis und dein Kontakt gibt eine eindeutige Antwort.</string>
     <string name="smp_explain_answer">Dein Kontakt möchte deinen Fingerabdruck mit Hilfe eines gemeinsamen Geheimnisses überprüfen. Dein Kontakt hat folgende Frage oder Hinweis zu diesem Geheimnis angeboten.</string>
@@ -988,8 +978,6 @@
     <string name="pref_theme_orange">Orange</string>
     <string name="pref_theme_color_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_color_options">Designfarbe</string>
-    <string name="pref_enable_otr_summary">Aktiviere OTR-Verschlüsselung für die Nachrichtenverschlüsselung</string>
-    <string name="pref_enable_otr">OTR-Verschlüsselung aktivieren</string>
     <string name="magic_create_text_on_x">Du wurdest zu %1$s eingeladen. Wir erstellen nun mit dir gemeinsam ein Profil.\nWenn du %1$s als deinen Provider wählst, kannst du mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
     <string name="account_status_regis_invalid_token">Falscher Registrierungsschlüssel</string>
     <string name="magic_create_text_fixed">Du wurdest zu %1$s eingeladen. Ein Nutzername wurde für dich bereits voreingestellt. Wir erstellen nun mit dir gemeinsam ein Profil.\nDu kannst mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
@@ -1035,6 +1023,7 @@
     <string name="rtp_state_ringing">Klingelt</string>
     <string name="rtp_state_declined_or_busy">Besetzt</string>
     <string name="rtp_state_connectivity_error">Anruf kann nicht verbunden werden</string>
+    <string name="rtp_state_connectivity_lost_error">Verbindung verloren</string>
     <string name="rtp_state_retracted">Rückruf</string>
     <string name="rtp_state_application_failure">Anwendungsfehler</string>
     <string name="incoming_call_duration">%s · Eingehender Anruf · %s</string>
@@ -1044,10 +1033,10 @@
     <string name="outgoing_call_time">%s · Ausgehender Anruf</string>
     <string name="outgoing_call">Ausgehender Anruf</string>
     <string name="disable_tor_to_make_call">Deaktiviere Tor, um Anrufe zu tätigen</string>
+    <string name="help">Hilfe</string>
     <string name="only_one_call_at_a_time">Nur ein zeitgleicher Anruf möglich.</string>
     <string name="missed_call">Verpasster Anruf</string>
     <string name="could_not_switch_camera">Kamera konnte nicht gewechselt werden</string>
-    <string name="otr_warning">Die Unterstützung for die OTR Verschlüsselung wird im Juni eingestellt. Klicke auf Mehr erfahren, um weitere Informationen zu erhalten. Ein Link in einem Browser wird geöffnet.</string>
     <string name="readmore">Mehr erfahren</string>
     <string name="add_to_favorites">Zu Favoriten hinzufügen</string>
     <string name="remove_from_favorites">Aus Favoriten entfernen</string>
