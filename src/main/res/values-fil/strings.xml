@@ -67,7 +67,6 @@
     <string name="choose_presence">Pumili ng instrumento</string>
     <string name="send_unencrypted_message">Maghatid ng unencrypted na mensahe</string>
     <string name="send_message_to_x">Maghatid ng mensahi kay %s</string>
-    <string name="send_otr_message">Maghatid ng OTR encrypted message</string>
     <string name="send_omemo_message">Maghatid ng OMEMO encrypted na mensahe</string>
     <string name="send_omemo_x509_message">Maghatid v\\OMEMO encrypted mensahe</string>
     <string name="send_pgp_message">Maghatid OpenPGP encrypted na mensahe</string>
@@ -169,11 +168,8 @@
     <string name="last_seen_day">1 araw na nakalipas</string>
     <string name="last_seen_days">%d araw na nakalipas</string>
     <string name="install_openkeychain">Encrypted na mensahe. Paki install ng OpenKeychain sa decrypt.</string>
-    <string name="unknown_otr_fingerprint">Hindi kilala na tatak ng daliri sa OTR</string>
     <string name="openpgp_messages_found">OpenPGP encrypted na mga mensahe ay hindi na kita</string>
     <string name="your_fingerprint">Iyong fingerprint</string>
-    <string name="otr_fingerprint">Bakas ng daliri para sa OTR</string>
-    <string name="otr_fingerprint_selected_message">Bakas ng dalire sa OTR ng mensahe</string>
     <string name="openpgp_key_id">OpenPGP Key ID</string>
     <string name="omemo_fingerprint">Bakas ng daliri para sa OMEMO</string>
     <string name="omemo_fingerprint_x509">v\\OMEMO bakas ng daliri</string>
@@ -245,7 +241,6 @@
     <string name="pref_use_send_button_to_indicate_status_summary">May color na panghatid na pindutan para magpahiwatig ng estado</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">May color na pangalan sa kontak ay nagpapahiwatig ng estado sa kontak</string>
     <string name="pref_expert_options_other">Iba pa</string>
-    <string name="toast_message_otr_fingerprint">OTR tatak ng daliri ay nakopya sa klipboard!</string>
     <string name="toast_message_omemo_fingerprint">OMEMO tatak ng daliri ay nakopya sa klipboard!</string>
     <string name="conference_banned">Ikaw ay pinagbawalan dito sa grupo ng chat</string>
     <string name="conference_members_only">Ang grupo ng chat na ito ay para sa mga miyembro lamang</string>
@@ -263,7 +258,6 @@
     <string name="url_copied_to_clipboard">URL ay nakopya sa clipboard</string>
     <string name="show_block_list">Ipakita ang block list</string>
     <string name="account_details">Mga detalye sa account</string>
-    <string name="verify_otr">Beripikahin ang OTR</string>
     <string name="remote_fingerprint">Bahagyang bakas ng daliri</string>
     <string name="shared_secret_hint">Pahiwatig o tanong</string>
     <string name="shared_secret_secret">Ibinahaging lihim</string>
@@ -276,7 +270,6 @@
     <string name="finish">Tapusin</string>
     <string name="verified">Napatunayan!</string>
     <string name="smp_requested">Ang kontak hinihiling ang beripikasyon ng SMP</string>
-    <string name="no_otr_session_found">Walang napatunayang OTR na sesyon ang nakita!</string>
     <string name="choose_file">Pumili ng hilira</string>
     <string name="download_x_file">I-download %s</string>
     <string name="delete_x_file">Burahin %s</string>
@@ -290,13 +283,11 @@
     <string name="no_application_found_to_open_file">Walang pag-uukol na nakita para magbukas ng kikil</string>
     <string name="could_not_verify_fingerprint">Hindi maberipikang bakas ng daliri</string>
     <string name="manually_verify">Manu-manong na-verify</string>
-    <string name="are_you_sure_verify_fingerprint">Segurado ka ba na gusto mung beripikahin ang iyong kontak sa OTR ng may bakas ng kamay?</string>
     <string name="pref_show_dynamic_tags">Ipakita ang dinamikong mga tag</string>
     <string name="pref_show_dynamic_tags_summary">Iladlad ang read-only na mga tag sa ilaim ng mga kontak</string>
     <string name="no_conference_server_found">Walang grupo ng chat serber na nakita</string>
     <string name="conference_creation_failed">Ang ginawang grupo ng chat ay nabigo!</string>
     <string name="account_image_description">Awatara ng account</string>
-    <string name="copy_otr_clipboard_description">Kopyahin ang OTR ng bakas ng daliri sa clipboard</string>
     <string name="copy_omemo_clipboard_description">Kopyahin ang OMEMO ng bakas ng daliri sa clipboard</string>
     <string name="regenerate_omemo_key">Muling buuin ang OMEMO key</string>
     <string name="clear_other_devices">Linawin ang mga aparato</string>
@@ -309,7 +300,6 @@
     <string name="updating">Pag-update…</string>
     <string name="password_changed">Kontrasenyas ay nabago na!</string>
     <string name="could_not_change_password">Ang kontrasenyas ay hindi mababago</string>
-    <string name="otr_session_not_started">Magpadala ng mensahe upang makapagsimula ng enkrypted chat</string>
     <string name="ask_question">Magtanong</string>
     <string name="smp_explain_question">Kung kayo ng iyong kontak ay may karaniwang lihim na walang ibang nakakaalam (gaya ng biro o kung ano ang inyong tanghalian noong huling beses kayong nagkita) magamit mo ang lihim na ito upang eperipika ang inyong bakas ng mga daliri.\n\nMakapagbigay ka ng pahiwatig o tanong para sa iyong kontak upang magtugon sa mga sagot ng sensitibong kaso.</string>
     <string name="smp_explain_answer">Ang iyong kontak ay gustong eberipika ang bakas ng iyong daliri sa pamamagitan ng pagsasabi sayo ng sekreto. Ang iyong kontak ang nagbigay ng pahiwatig o katanungan para sa naturang sekreto.</string>
