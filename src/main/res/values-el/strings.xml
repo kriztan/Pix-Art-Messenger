@@ -57,7 +57,6 @@
     <string name="preparing_image">Προετοιμασία εικόνας για μετάδοση</string>
     <string name="action_clear_history">Καθαρισμός ιστορικού</string>
     <string name="clear_conversation_history">Καθαρισμός ιστορικού Συζήτησης</string>
-    <string name="send_otr_message">Αποστολή κρυπτογραφημένου μηνύματος OTR</string>
     <string name="send_pgp_message">Αποστολή κρυπτογραφημένου μηνύματος OpenPGP</string>
     <string name="your_nick_has_been_changed">Το ψευδώνυμό σας έχει αλλάξει</string>
     <string name="send_unencrypted">Αποστολή χωρίς κρυπτογράφηση</string>
@@ -129,10 +128,8 @@
     <string name="last_seen_day">τελευταία σύνδεσ πριν από 1 μέρα</string>
     <string name="last_seen_days">τελευταία σύνδεση πριν από %d μέρες</string>
     <string name="install_openkeychain">Κρυπτογραφημένο μήνυμα. Παρακαλώ εγκαταστήστε το OpenKeychain για αποκρυπτογράφηση</string>
-    <string name="unknown_otr_fingerprint">Άγνωστο αποτύπωμα OTR</string>
     <string name="openpgp_messages_found">Βρέθηκαν μηνύματα κρυπτογραφημένα με OpenPGP</string>
     <string name="your_fingerprint">Το αποτύπωμά σας</string>
-    <string name="otr_fingerprint">Αποτύπωμα OTR</string>
     <string name="verify">Επαλήθευση</string>
     <string name="decrypt">Αποκρυπτογράφηση</string>
     <string name="search">Αναζήτηση</string>
@@ -184,7 +181,6 @@
     <string name="pref_use_indicate_received_summary">Τα ληφθέντα μηνύματα θα σημειώνονται με ένα πράσινο τικ, αν αυτό υποστηρίζεται</string>
     <string name="pref_use_send_button_to_indicate_status_summary">Χρωματισμός του κουμπιού αποστολής ως ένδειξη κατάστασης επαφής</string>
     <string name="pref_expert_options_other">Άλλο</string>
-    <string name="toast_message_otr_fingerprint">Το αποτύπωμα OTR αντιγράφηκε στο πρόχειρο!</string>
     <string name="using_account">χρήση λογαριασμού %s</string>
     <string name="not_connected_try_again">Δεν είστε συνδεμένοι. Δοκιμάστε ξανά αργότερα</string>
     <string name="message_options">Επιλογές μηνυμάτων</string>
@@ -193,7 +189,6 @@
     <string name="url_copied_to_clipboard">Η διεύθυνση URL αντιγράφηκε στο πρόχειρο</string>
     <string name="show_block_list">Εμφάνιση λίστας αποκλεισμένων</string>
     <string name="account_details">Λεπτομέρειες λογαριασμού</string>
-    <string name="verify_otr">Επαλήθευση OTR</string>
     <string name="remote_fingerprint">Απομακρυσμένο αποτύπωμα</string>
     <string name="shared_secret_hint">Υπαινιγμός ή ερώτηση</string>
     <string name="shared_secret_secret">Κοινό μυστικό</string>
@@ -205,7 +200,6 @@
     <string name="finish">Τέλος</string>
     <string name="verified">Επαληθέυτηκε!</string>
     <string name="smp_requested">Η επαφή ζήτησε επαλήθευση SMP</string>
-    <string name="no_otr_session_found">Δεν βρέθηκε έγκυρη συνεδρία OTR!</string>
     <string name="choose_file">Επιλογή αρχείου</string>
     <string name="download_x_file">Μεταφόρτωση του %s</string>
     <string name="file">αρχείο</string>
@@ -221,13 +215,11 @@
     <string name="pref_show_dynamic_tags">Εμφάνιση δυναμικών ετικετών</string>
     <string name="pref_show_dynamic_tags_summary">Εμφάνιση ετικετών μόνο για ανάγνωση κάτω από τις επαφές</string>
     <string name="account_image_description">Εικόνα προφίλ λογαριασμού</string>
-    <string name="copy_otr_clipboard_description">Αντιγραφή αποτυπώματος OTR στο πρόχειρο</string>
     <string name="fetching_history_from_server">Ανάκτηση ιστορικού από τον διακομιστή</string>
     <string name="no_more_history_on_server">Δεν υπάρχει άλλο ιστορικό στον διακομιστή</string>
     <string name="updating">Ενημέρωση...</string>
     <string name="password_changed">Επιτυχής αλλαγή συνθηματικου!</string>
     <string name="could_not_change_password">Δεν ήταν δυνατή η αλλαγή του συνθηματικού</string>
-    <string name="otr_session_not_started">Αποστολή μηνύματος για την έναρξη κρυπτογραφημένης συνομιλίας</string>
     <string name="ask_question">Ερώτηση</string>
     <string name="smp_explain_question">Αν εσείς και η επαφή σας έχετε ένα κοινό μυστικό που κανείς άλλος δεν γνωρίζει (κάτι σαν δικό σας αστείο ή απλώς τι φάγατε την τελευταία φορά που συναντηθήκατε) μπορείτε να χρησιμοποιήσετε αυτό το μυστικό για να επαληθεύσετε τα αποτυπώματά σας.\n\nΠροσφέρετε έναν υπαινιγμό ή μια ερώτηση για την επαφή σας, που θα απαντήσει με μια φράση στην οποία έχουν διαφοροποίηση τα πεζά από τα κεφαλαία.</string>
     <string name="smp_explain_answer">Η επαφή σας θα ήθελε να επαληθεύσει το αποτύπωμά σας χρησιμοποιώντας ένα κοινό μυστικό. Η επαφή σας προμήθευση τον παρακάτω υπαινιγμό ή ερώτηση για το μυστικό αυτό.</string>
