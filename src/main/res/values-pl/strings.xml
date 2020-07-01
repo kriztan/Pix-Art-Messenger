@@ -1042,6 +1042,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="rtp_state_ringing">Dzwoni</string>
     <string name="rtp_state_declined_or_busy">Zajęty</string>
     <string name="rtp_state_connectivity_error">Nie można nawiązać połączenia</string>
+    <string name="rtp_state_connectivity_lost_error">Utracono połączenie</string>
     <string name="rtp_state_retracted">Połączenie odwołane</string>
     <string name="rtp_state_application_failure">Błąd aplikacji</string>
     <string name="incoming_call_duration">%s · Połączenie przychodzące · %s</string>
@@ -1051,6 +1052,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="outgoing_call_time">%s · Połączenie wychodzące</string>
     <string name="outgoing_call">Połączenie wychodzące</string>
     <string name="disable_tor_to_make_call">Wyłącz sieć Tor aby wykonywać połączenia</string>
+    <string name="help">Pomoc</string>
     <string name="only_one_call_at_a_time">Możesz prowadzić tylko jedno połączenie jednocześnie.</string>
     <string name="missed_call">Nieodebrane połączenie</string>
     <string name="could_not_switch_camera">Nie udało się zmienić kamery</string>
