@@ -1056,4 +1056,5 @@
     <string name="readmore">Дізнатися більше</string>
     <string name="add_to_favorites">До обраного</string>
     <string name="remove_from_favorites">Вилучити з обраного</string>
+    <string name="improperly_formatted_provisioning">Неправильний формат коду забезпечення</string>
 </resources>
