@@ -1025,6 +1025,7 @@
     <string name="rtp_state_ringing">Çağırır</string>
     <string name="rtp_state_declined_or_busy">Məşğul</string>
     <string name="rtp_state_connectivity_error">Zəngi bağlamaq olmur</string>
+    <string name="rtp_state_connectivity_lost_error">Bağlantı itdi</string>
     <string name="rtp_state_application_failure">Tətbiq çatışmazlığı</string>
     <string name="incoming_call_duration">%s · входящий вызов · %s</string>
     <string name="incoming_call_time">%s · исходящий вызов</string>
@@ -1033,10 +1034,12 @@
     <string name="outgoing_call_time">%s · Исходящий вызов</string>
     <string name="outgoing_call">Gedən zəng</string>
     <string name="disable_tor_to_make_call">Zəng etmək üçün Toru deaktiv edin</string>
+    <string name="help">Kömək</string>
     <string name="only_one_call_at_a_time">Bir anda yalnız bir zəng edə bilərsiniz.</string>
     <string name="missed_call">Cavabsız zəng</string>
     <string name="could_not_switch_camera">Kameranı dəyişə bilmədi</string>
     <string name="readmore">Ətraflı oxu</string>
     <string name="add_to_favorites">Seçilmişlərə əlavə et</string>
     <string name="remove_from_favorites">Seçilmişlərdən sil</string>
+    <string name="improperly_formatted_provisioning">Səhv formatlaşdırılmış hazırlıq kodu</string>
 </resources>
