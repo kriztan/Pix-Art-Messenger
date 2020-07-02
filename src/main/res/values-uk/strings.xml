@@ -440,7 +440,7 @@
     <string name="pref_treat_vibrate_as_silent">Вважати вібро за безшумний режим</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Додавати \"Не турбувати\" до імені вашого пристрою, коли пристрій в режимі вібрації</string>
     <string name="hostname_example">xmpp.example.com</string>
-    <string name="action_add_account_with_certificate">Додати обліковку з сертифікатом</string>
+    <string name="action_add_account_with_certificate">Застосувати сертифікат</string>
     <string name="unable_to_parse_certificate">Не можу розпізнати сертифікат</string>
     <string name="authenticate_with_certificate">Залиште порожнім, щоб авторизувати без сертифіката</string>
     <string name="mam_prefs">Налаштування збереження</string>
@@ -1041,6 +1041,7 @@
     <string name="rtp_state_ringing">Викликаю</string>
     <string name="rtp_state_declined_or_busy">Зайнято</string>
     <string name="rtp_state_connectivity_error">Неможливо здійснити виклик</string>
+    <string name="rtp_state_connectivity_lost_error">З\'єднання втрачено</string>
     <string name="rtp_state_retracted">Відхилені виклики</string>
     <string name="rtp_state_application_failure">Помилка застосунку</string>
     <string name="incoming_call_duration">%s · Вхідний виклик · %s</string>
@@ -1050,6 +1051,7 @@
     <string name="outgoing_call_time">%s · Вихідний виклик</string>
     <string name="outgoing_call">Вихідний виклик</string>
     <string name="disable_tor_to_make_call">Вимкнути ToR для здійснення викликів</string>
+    <string name="help">Допомога</string>
     <string name="only_one_call_at_a_time">Водночас можливо здійснювати лише один виклик.</string>
     <string name="missed_call">Пропущені виклики</string>
     <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
