@@ -567,7 +567,7 @@
     <string name="message_copied_to_clipboard">Повідомлення скопійовано</string>
     <string name="message">Повідомлення</string>
     <string name="quote">Цитувати</string>
-    <string name="show_error_message">Показати повідомлення про помилку</string>
+    <string name="show_error_message">Повідомлення про помилку</string>
     <string name="error_message">Повідомлення про помилку</string>
     <string name="data_saver_enabled">Задіяно економію передачі данних</string>
     <string name="data_saver_enabled_explained">Ваша операційна система обмежує застосунку Pix-Art доступ до Інтернету, коли він не на екрані. Щоб отримувати сповіщення про нові повідомлення, вам слід дозволити застосунку необмежений доступ, коли активовано заощадження передачі даних.\n\nМесенджер намагатиметься заощаджувати трафік, де це буде можливо.</string>
