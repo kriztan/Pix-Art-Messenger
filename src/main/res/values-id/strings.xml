@@ -328,7 +328,6 @@
     <string name="until_further_notice">Sampai pemberitahuan lebih lanjut</string>
     <string name="pref_input_options">Memasukkan</string>
     <string name="pref_enter_is_send">Masukkan kiriman</string>
-    <string name="pref_enter_is_send_summary">Gunakan tombol enter untuk mengirim pesan</string>
     <string name="pref_display_enter_key">Tampilkan tombol enter</string>
     <string name="pref_display_enter_key_summary">Ubah tombol emoticon menjadi tombol enter</string>
     <string name="audio">suara</string>
