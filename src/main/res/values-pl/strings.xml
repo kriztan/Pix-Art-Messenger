@@ -371,7 +371,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="until_further_notice">Ręcznie</string>
     <string name="pref_input_options">Ustawienia wprowadzania</string>
     <string name="pref_enter_is_send">Enter wysyła</string>
-    <string name="pref_enter_is_send_summary">Używaj klawisza Enter do wysyłania wiadomości</string>
     <string name="pref_display_enter_key">Pokaż klawisz Enter</string>
     <string name="pref_display_enter_key_summary">Zamień klawisz emotikon na klawisz Enter</string>
     <string name="audio">plik audio</string>
