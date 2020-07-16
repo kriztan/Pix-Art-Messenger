@@ -336,7 +336,6 @@
     <string name="until_further_notice">حتى إشعار آخر</string>
     <string name="pref_input_options">ادخال</string>
     <string name="pref_enter_is_send">Enter للارسال</string>
-    <string name="pref_enter_is_send_summary">استخدم مفتاح الإدخال لإرسال رسالة</string>
     <string name="pref_display_enter_key">أظهر زر الإدخال</string>
     <string name="pref_display_enter_key_summary">قم بتغيير مفتاح الرموز إلى مفتاح إدخال</string>
     <string name="audio">صوت</string>
