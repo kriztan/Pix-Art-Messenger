@@ -355,7 +355,6 @@
     <string name="until_further_notice">Până la noi ordine</string>
     <string name="pref_input_options">Opțiuni introducere text</string>
     <string name="pref_enter_is_send">ENTER trimite</string>
-    <string name="pref_enter_is_send_summary">Apasă tasta ENTER pentru a trimite mesajul</string>
     <string name="pref_display_enter_key">Arată tasta ENTER</string>
     <string name="pref_display_enter_key_summary">Preschimbă tasta emoticon în ENTER</string>
     <string name="audio">audio</string>
