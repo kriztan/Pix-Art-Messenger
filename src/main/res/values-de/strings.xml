@@ -370,6 +370,7 @@
     <string name="until_further_notice">Bis auf Weiteres</string>
     <string name="pref_input_options">Eingabe</string>
     <string name="pref_enter_is_send">Eingabe-Taste (Enter) sendet Nachricht</string>
+    <string name="pref_enter_is_send_summary">Nutze die Eingabetaste, um die Nachricht zu senden. Du kannst immer Strg+Eingabe verwenden, um eine Nachricht zu senden, auch wenn diese Option deaktiviert ist.</string>
     <string name="pref_display_enter_key">Zeige Eingabe-Taste (Enter)</string>
     <string name="pref_display_enter_key_summary">Emoji-Taste durch Eingabe-Taste ersetzen</string>
     <string name="audio">Audio</string>
@@ -1033,10 +1034,12 @@
     <string name="outgoing_call">Ausgehender Anruf</string>
     <string name="disable_tor_to_make_call">Deaktiviere Tor, um Anrufe zu tätigen</string>
     <string name="help">Hilfe</string>
+    <string name="switch_to_conversation">Zur Unterhaltung wechseln</string>
     <string name="only_one_call_at_a_time">Nur ein zeitgleicher Anruf möglich.</string>
     <string name="missed_call">Verpasster Anruf</string>
     <string name="could_not_switch_camera">Kamera konnte nicht gewechselt werden</string>
     <string name="readmore">Mehr erfahren</string>
     <string name="add_to_favorites">Zu Favoriten hinzufügen</string>
     <string name="remove_from_favorites">Aus Favoriten entfernen</string>
+    <string name="improperly_formatted_provisioning">Falsch formatierter Bereitstellungscode</string>
 </resources>
