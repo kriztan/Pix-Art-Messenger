@@ -370,7 +370,6 @@
     <string name="until_further_notice">До особого распоряжения</string>
     <string name="pref_input_options">Ввод</string>
     <string name="pref_enter_is_send">Ввод для отправки</string>
-    <string name="pref_enter_is_send_summary">Использовать клавишу Отправить для отправки сообщений</string>
     <string name="pref_display_enter_key">Показывать кнопку ввода</string>
     <string name="pref_display_enter_key_summary">Заменить кнопку смайликов на Enter</string>
     <string name="audio">аудио</string>
