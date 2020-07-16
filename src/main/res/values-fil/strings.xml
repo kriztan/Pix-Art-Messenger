@@ -328,7 +328,6 @@
     <string name="until_further_notice">Hanggang mayroong abiso</string>
     <string name="pref_input_options">Input</string>
     <string name="pref_enter_is_send">Ipasok ay ipapadala</string>
-    <string name="pref_enter_is_send_summary">Gamitin ang pampasok na susi para maghatid ng mensahe</string>
     <string name="pref_display_enter_key">Ibahagi ang papasok na susi</string>
     <string name="pref_display_enter_key_summary">Baguhin ang mga susi ng imotikon para ipasok ang papasok na susi</string>
     <string name="audio">awdiyo</string>
