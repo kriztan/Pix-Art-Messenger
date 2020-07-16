@@ -370,7 +370,6 @@
     <string name="until_further_notice">Hasta nuevo aviso</string>
     <string name="pref_input_options">Entrada</string>
     <string name="pref_enter_is_send">Intro para enviar</string>
-    <string name="pref_enter_is_send_summary">Usar la tecla intro para enviar el mensaje</string>
     <string name="pref_display_enter_key">Mostrar tecla Intro</string>
     <string name="pref_display_enter_key_summary">Cambiar la tecla de emoticonos por la tecla Intro</string>
     <string name="audio">Sonido</string>
