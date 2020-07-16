@@ -328,7 +328,6 @@
     <string name="until_further_notice">Yeni bildiriye kadar</string>
     <string name="pref_input_options">Giriş</string>
     <string name="pref_enter_is_send">Giriş gönder</string>
-    <string name="pref_enter_is_send_summary">Mesaj göndermek için enter tuşunu kullanın</string>
     <string name="pref_display_enter_key">Enter tuşunu göster</string>
     <string name="pref_display_enter_key_summary">İfadeler tuşunu bir giriş tuşu olarak değiştir</string>
     <string name="audio">ses</string>
