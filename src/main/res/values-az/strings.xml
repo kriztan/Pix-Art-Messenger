@@ -372,6 +372,7 @@
     <string name="until_further_notice">Əlavə xəbərdarlığa qədər</string>
     <string name="pref_input_options">Daxiletmə</string>
     <string name="pref_enter_is_send">Enter ilə göndərilir</string>
+    <string name="pref_enter_is_send_summary">Mesaj göndərmək üçün Enter düyməsini istifadə edin. Siz həmişə istifadə edə bilərsiniz Ctrl+Enter bu seçimi aradan hətta mesaj göndərmək üçün.</string>
     <string name="pref_display_enter_key">Enter düyməsini göstər</string>
     <string name="pref_display_enter_key_summary">Smayliklər düyməsini enter düyməsinə dəyişdirin</string>
     <string name="audio">səs</string>
@@ -1034,6 +1035,7 @@
     <string name="outgoing_call">Gedən zəng</string>
     <string name="disable_tor_to_make_call">Zəng etmək üçün Toru deaktiv edin</string>
     <string name="help">Kömək</string>
+    <string name="switch_to_conversation">Söhbətə keçin</string>
     <string name="only_one_call_at_a_time">Bir anda yalnız bir zəng edə bilərsiniz.</string>
     <string name="missed_call">Cavabsız zəng</string>
     <string name="could_not_switch_camera">Kameranı dəyişə bilmədi</string>
