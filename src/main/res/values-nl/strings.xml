@@ -340,7 +340,6 @@
     <string name="until_further_notice">Voor onbepaalde duur</string>
     <string name="pref_input_options">Invoer</string>
     <string name="pref_enter_is_send">Enter is versturen</string>
-    <string name="pref_enter_is_send_summary">Gebruik de enter-toets om berichten te versturen</string>
     <string name="pref_display_enter_key">Toon enter-toets</string>
     <string name="pref_display_enter_key_summary">Verander de emoticon-toets in een enter-toets</string>
     <string name="audio">audio</string>
