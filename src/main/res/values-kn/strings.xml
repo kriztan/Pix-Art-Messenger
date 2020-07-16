@@ -365,7 +365,6 @@
     <string name="until_further_notice">ಮುಂದಿನ ಸೂಚನೆಯವರೆಗೆ</string>
     <string name="pref_input_options">ಬರೆಯುವಿಕೆ</string>
     <string name="pref_enter_is_send">ಎಂಟರ್ ಅಂದರೆ ಕಳುಹಿಸು</string>
-    <string name="pref_enter_is_send_summary">ಸಂದೇಶ ಕಳುಹಿಸಲು ಎಂಟರ್ ಬಟನ್ ಉಪಯೋಗಿಸಿ</string>
     <string name="pref_display_enter_key">ಎಂಟರ್ ಬಟನ್ ತೋರಿಸು</string>
     <string name="pref_display_enter_key_summary">ಎಮೊಜಿ ಬಟನನ್ನು ಎಂಟರ್ ಬಟನ್ಗೆ ಬದಲಾಯಿಸು</string>
     <string name="audio">ಧ್ವನಿ</string>
