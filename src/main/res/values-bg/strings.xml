@@ -365,7 +365,6 @@
     <string name="until_further_notice">До второ нареждане</string>
     <string name="pref_input_options">Вход</string>
     <string name="pref_enter_is_send">Бутон Enter за изпращане</string>
-    <string name="pref_enter_is_send_summary">Използвай клавиша Enter, за да изпратиш съобщение</string>
     <string name="pref_display_enter_key">Покажи клавиша Enter за въвеждане</string>
     <string name="audio">звук</string>
     <string name="video">видео</string>
