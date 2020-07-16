@@ -295,7 +295,6 @@
     <string name="distrust_omemo_key">Dili makasaligan nga device</string>
     <string name="distrust_omemo_key_text">Sigurado ka nga gusto nimu tanggalun ang pag tino sa kini nga device?\n Kini nga device ug mga mensahe nga naggikan sa maong device markahan nga dili matuohan.</string>
     <string name="error_no_keys_to_trust_server_error">Wala ju\'y magamit nga mga yawe nga anaa para sa kini nga kontak.\nPamasol ug bag-o nga mga yawe gekan sa serber kay wala nagmalampuson. Tingali naay bati nga nahitabo sa imung mga kontak nga serber.</string>
-    <string name="pref_enter_is_send_summary">Gamit ug yawe nga pisletunon para maka padala ug mensahe</string>
     <string name="pref_display_enter_key">Ipakita ang pisletunon nga yawe</string>
     <string name="pref_display_enter_key_summary">Ilisi ang mga emotikon nga yawe para pislet sa yawe</string>
     <string name="audio">audio</string>
