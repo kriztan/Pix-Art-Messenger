@@ -372,7 +372,6 @@
     <string name="until_further_notice">Əlavə xəbərdarlığa qədər</string>
     <string name="pref_input_options">Daxiletmə</string>
     <string name="pref_enter_is_send">Enter ilə göndərilir</string>
-    <string name="pref_enter_is_send_summary">Mesaj göndərmək üçün Enter düyməsini istifadə edin</string>
     <string name="pref_display_enter_key">Enter düyməsini göstər</string>
     <string name="pref_display_enter_key_summary">Smayliklər düyməsini enter düyməsinə dəyişdirin</string>
     <string name="audio">səs</string>
