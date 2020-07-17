@@ -371,6 +371,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="until_further_notice">Ręcznie</string>
     <string name="pref_input_options">Ustawienia wprowadzania</string>
     <string name="pref_enter_is_send">Enter wysyła</string>
+    <string name="pref_enter_is_send_summary">Używaj klawisza Enter do wysyłania wiadomości. Kombinacja klawiszy Ctrl+Enter zawsze służy do wysyłania wiadomości, nawet jeśli ta opcja nie jest załączona.</string>
     <string name="pref_display_enter_key">Pokaż klawisz Enter</string>
     <string name="pref_display_enter_key_summary">Zamień klawisz emotikon na klawisz Enter</string>
     <string name="audio">plik audio</string>
@@ -1052,6 +1053,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="outgoing_call">Połączenie wychodzące</string>
     <string name="disable_tor_to_make_call">Wyłącz sieć Tor aby wykonywać połączenia</string>
     <string name="help">Pomoc</string>
+    <string name="switch_to_conversation">Przejdź do konwersacji</string>
     <string name="only_one_call_at_a_time">Możesz prowadzić tylko jedno połączenie jednocześnie.</string>
     <string name="missed_call">Nieodebrane połączenie</string>
     <string name="could_not_switch_camera">Nie udało się zmienić kamery</string>
