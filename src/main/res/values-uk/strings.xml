@@ -296,8 +296,8 @@
     <string name="pref_create_backup">Створити резервну копію</string>
     <string name="pref_create_backup_summary">Резервні копії зберігатимуться до %s</string>
     <string name="notification_create_backup_title">Створення резервних копій</string>
-    <string name="restoring_backup">Відтворення з резервної копії</string>
-    <string name="notification_restored_backup_title">Відтворено з резервної копії</string>
+    <string name="restoring_backup">Відновлення з резервної копії</string>
+    <string name="notification_restored_backup_title">Відновлено з резервної копії</string>
     <string name="notification_restored_backup_subtitle">Не забудьте включити обліковий запис</string>
     <string name="choose_file">Файл</string>
     <string name="receiving_file">Отримано: %1$s</string>
@@ -370,6 +370,7 @@
     <string name="until_further_notice">До наступного повідомлення</string>
     <string name="pref_input_options">Введення</string>
     <string name="pref_enter_is_send">Enter для надсилання</string>
+    <string name="pref_enter_is_send_summary">Використовувати Enter для надсилання повідомлення. Також для надсилання повідомлення можна використовувати Ctrl-Enter, навіть якщо цей параметр вимкнено.</string>
     <string name="pref_display_enter_key">Показувати кнопку Enter</string>
     <string name="pref_display_enter_key_summary">Змінити клавішу емоційок на кнопку Enter</string>
     <string name="audio">аудіо</string>
@@ -472,7 +473,7 @@
     <string name="sync_with_contacts">Синхронізувати контакти</string>
     <string name="sync_with_contacts_long">Програма хоче співставити Ваш перелік контактів з сервера з переліком контактів із книжки контактів на пристрої, щоб показати повні імена та піктограми користувачів.\n\nПрограма лише прочитає Ваші контакти й співставить їх на пристрої й не буде передавати їх на сервер.\n\nЗараз вам буде запропоновано надати застосунку дозвіл на доступ до контактів.</string>
     <string name="notify_on_all_messages">Сповіщати про всі повідомлення</string>
-    <string name="notify_only_when_highlighted">Повідомляти, якщо згадують мене</string>
+    <string name="notify_only_when_highlighted">Сповіщати, якщо згадують про мене</string>
     <string name="notify_never">Сповіщення вимкнено</string>
     <string name="notify_paused">Сповіщення призупинено</string>
     <string name="pref_picture_quality">Якість зображення</string>
@@ -1051,6 +1052,7 @@
     <string name="outgoing_call">Вихідний виклик</string>
     <string name="disable_tor_to_make_call">Вимкнути ToR для здійснення викликів</string>
     <string name="help">Допомога</string>
+    <string name="switch_to_conversation">Перейти до розмови</string>
     <string name="only_one_call_at_a_time">Водночас можливо здійснювати лише один виклик.</string>
     <string name="missed_call">Пропущені виклики</string>
     <string name="could_not_switch_camera">Неможливо перемкнути камеру</string>
