@@ -370,6 +370,7 @@
     <string name="until_further_notice">Hasta nuevo aviso</string>
     <string name="pref_input_options">Entrada</string>
     <string name="pref_enter_is_send">Intro para enviar</string>
+    <string name="pref_enter_is_send_summary">Usa la tecla Intro para enviar mensajes. Siempre puedes usar Ctrl+Intro para enviar mensajes, incluso si esta opción está deshabilitada.</string>
     <string name="pref_display_enter_key">Mostrar tecla Intro</string>
     <string name="pref_display_enter_key_summary">Cambiar la tecla de emoticonos por la tecla Intro</string>
     <string name="audio">Sonido</string>
@@ -1033,6 +1034,7 @@
     <string name="outgoing_call">Llamada en curso</string>
     <string name="disable_tor_to_make_call">Deshabilita Tor para hacer llamadas</string>
     <string name="help">Ayuda</string>
+    <string name="switch_to_conversation">Cambiar a conversación</string>
     <string name="only_one_call_at_a_time">Solo puedes estar en una llamada a la vez.</string>
     <string name="missed_call">Llamada perdida</string>
     <string name="could_not_switch_camera">No se pudo cambiar cámara</string>
