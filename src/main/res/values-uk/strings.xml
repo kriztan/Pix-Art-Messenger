@@ -342,7 +342,7 @@
     <string name="new_password">Новий пароль</string>
     <string name="password_should_not_be_empty">Пароль не може бути порожнім</string>
     <string name="perform_action_with">Здійснити дію з</string>
-    <string name="no_affiliation">Непов\'язаний</string>
+    <string name="no_affiliation">Учасник</string>
     <string name="no_role">Не в мережі</string>
     <string name="outcast">Вигнанець</string>
     <string name="member">Учасник</string>
@@ -352,7 +352,7 @@
     <string name="grant_admin_privileges">Дати права адміністратора</string>
     <string name="remove_admin_privileges">Відкликати права адміністратора</string>
     <string name="kick_from_room">Заборонити доступ до групи</string>
-    <string name="could_not_change_affiliation">Не можу змінити статус приєднання з %s</string>
+    <string name="could_not_change_affiliation">Не можу змінити статус учасника %s</string>
     <string name="ban_from_conference">Заборонити доступ до групи</string>
     <string name="kick_from_conference">Заборонити доступ до групи</string>
     <string name="ban_from_public_conference_message">Ви намагаєтеся остаточно забанити %s у публічному каналі.</string>
