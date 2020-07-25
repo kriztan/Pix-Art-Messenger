@@ -370,6 +370,7 @@
     <string name="until_further_notice">Jusqu’à nouvel ordre</string>
     <string name="pref_input_options">Saisie</string>
     <string name="pref_enter_is_send">Touche Entrée pour envoyer</string>
+    <string name="pref_enter_is_send_summary">Utilisez la touche Entrée pour envoyer le message. Vous pouvez toujours utiliser Ctrl+Entrée pour envoyer un message, même si cette option est désactivée.</string>
     <string name="pref_display_enter_key">Afficher la touche Entrée</string>
     <string name="pref_display_enter_key_summary">Remplace la touche Émoticônes par la touche Entrée.</string>
     <string name="audio">audio</string>
