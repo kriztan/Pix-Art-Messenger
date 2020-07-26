@@ -1034,6 +1034,7 @@
     <string name="outgoing_call">Appel sortant</string>
     <string name="disable_tor_to_make_call">Désactiver Tor pour passer des appels</string>
     <string name="help">Aide</string>
+    <string name="switch_to_conversation">Passer à la conversation</string>
     <string name="only_one_call_at_a_time">Vous ne pouvez avoir qu\'un appel à la fois.</string>
     <string name="missed_call">Appel manqué</string>
     <string name="could_not_switch_camera">Impossible de changer la caméra</string>
