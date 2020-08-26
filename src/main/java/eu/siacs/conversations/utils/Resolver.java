@@ -172,6 +172,7 @@ public class Resolver {
         try {
             final Result result = new Result();
             result.ip = InetAddress.getByName(domain);
+            result.hostname = DNSName.from(domain);
             result.port = port;
             result.authenticated = true;
             return result;
