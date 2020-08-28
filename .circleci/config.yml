@@ -8,7 +8,7 @@ jobs:
       - restore_cache:
           key: gradle-{{ checksum "build.gradle" }}-{{ checksum ".circleci/config.yml" }}
       - run: export GRADLE_USER_HOME=$PWD/.gradle
-      - run: wget -O libs/libwebrtc-m84.aar https://www.pix-art.de/files/libwebrtc-m84.aar
+      - run: wget -O libs/libwebrtc-m86.aar https://www.pix-art.de/files/libwebrtc-m86.aar
       - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
       - run: ./gradlew lintGitDebug
       - save_cache:
@@ -27,7 +27,7 @@ jobs:
       - restore_cache:
           key: android
       - run: export GRADLE_USER_HOME=$PWD/.gradle
-      - run: wget -O libs/libwebrtc-m84.aar https://www.pix-art.de/files/libwebrtc-m84.aar
+      - run: wget -O libs/libwebrtc-m86.aar https://www.pix-art.de/files/libwebrtc-m86.aar
       - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
       # build
       - run: ./gradlew assembleGit
@@ -46,7 +46,7 @@ jobs:
       - restore_cache:
           key: android
       - run: export GRADLE_USER_HOME=$PWD/.gradle
-      - run: wget -O libs/libwebrtc-m84.aar https://www.pix-art.de/files/libwebrtc-m84.aar
+      - run: wget -O libs/libwebrtc-m86.aar https://www.pix-art.de/files/libwebrtc-m86.aar
       - run: echo y | sdkmanager "platforms;android-$(sed -n 's,.*compileSdkVersion\s*\([0-9][0-9]*\).*,\1,p' build.gradle)" > /dev/null
       # workaround for fdroid nightly circleci bug
       - run: sed -i "s/os.getenv('CIRCLE_REPOSITORY_URL')/\"https:\/\/github.com\/kriztan\/Pix-Art-Messenger\"/" /usr/lib/python3/dist-packages/fdroidserver/nightly.py
