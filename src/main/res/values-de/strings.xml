@@ -782,6 +782,7 @@
     <string name="silent_messages_channel_name">Stille Nachrichten</string>
     <string name="silent_messages_channel_description">Diese Benachrichtigungskategorie wird benutzt, um Benachrichtigungen anzuzeigen, die keinen Ton auslösen sollen, z.B. wenn aktiv auf einem anderen Gerät (Schonfrist).</string>
     <string name="pref_more_notification_settings">Benachrichtigungseinstellungen</string>
+    <string name="delivery_failed_channel_name">Fehlgeschlagene Nachrichtenzustellungen</string>
     <string name="pref_more_notification_settings_summary">Wichtigkeit, Töne, Vibration</string>
     <string name="video_compression_channel_name">Video-Komprimierung</string>
     <string name="backup_channel_name">Sicherung &amp; Wiederherstellung</string>
@@ -1042,4 +1043,19 @@
     <string name="add_to_favorites">Zu Favoriten hinzufügen</string>
     <string name="remove_from_favorites">Aus Favoriten entfernen</string>
     <string name="improperly_formatted_provisioning">Falsch formatierter Bereitstellungscode</string>
+    <string name="gpx_track">GPX-Aufzeichnung</string>
+    <string name="could_not_correct_message">Nachricht konnte nicht korrigiert werden</string>
+    <string name="search_all_conversations">Alle Unterhaltungen</string>
+    <string name="search_this_conversation">Diese Unterhaltung</string>
+    <string name="your_avatar">Dein Avatar</string>
+    <string name="avatar_for_x">Avatar für %s</string>
+    <string name="encrypted_with_omemo">Mit OMEMO verschlüsselt</string>
+    <string name="encrypted_with_openpgp">Mit OpenPGP verschlüsselt</string>
+    <string name="not_encrypted">Nicht verschlüsselt</string>
+    <string name="add_contact_or_create_or_join_group_chat">Kontakt hinzufügen, Gruppenchat erstellen oder beitreten oder Channels entdecken</string>
+    <plurals name="some_messages_could_not_be_delivered">
+        <item quantity="one">Eine Nachricht konnte nicht zugestellt werden</item>
+        <item quantity="other">Mehrere Nachrichten konnten nicht zugestellt werden</item>
+    </plurals>
+    <string name="failed_deliveries">Fehlgeschlagene Zustellungen</string>
 </resources>
