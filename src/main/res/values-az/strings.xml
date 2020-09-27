@@ -784,6 +784,7 @@
     <string name="silent_messages_channel_name">Səssiz mesajlar</string>
     <string name="silent_messages_channel_description">Bu bildiriş kateqoriyası heç bir səs çıxarmamalı bildirişləri göstərmək üçün istifadə olunur. Məsələn başqa bir cihazda aktiv olduqda (Güzəşt dövrü).</string>
     <string name="pref_more_notification_settings">Bildiriş Ayarları</string>
+    <string name="delivery_failed_channel_name">Çatdırılma uğursuz oldu</string>
     <string name="pref_more_notification_settings_summary">Əhəmiyyət, Səs, Titrəmə</string>
     <string name="video_compression_channel_name">Video sıxılma</string>
     <string name="backup_channel_name">Ehtiyat nüsxə və bərpa etmək</string>
@@ -1043,4 +1044,20 @@
     <string name="add_to_favorites">Seçilmişlərə əlavə et</string>
     <string name="remove_from_favorites">Seçilmişlərdən sil</string>
     <string name="improperly_formatted_provisioning">Səhv formatlaşdırılmış hazırlıq kodu</string>
+    <string name="gpx_track">GPX yazmaq</string>
+    <string name="could_not_correct_message">Mesaj düzəldilmədi</string>
+    <string name="search_all_conversations">Bütün yazışmalar</string>
+    <string name="search_this_conversation">Bu yazışma</string>
+    <string name="your_avatar">Sizin avatar</string>
+    <string name="avatar_for_x">%s üçün avatar</string>
+    <string name="encrypted_with_omemo">OMEMO ilə şifrələnib</string>
+    <string name="encrypted_with_openpgp">OpenPGP ilə şifrələnib</string>
+    <string name="not_encrypted">Şifrələnməyib</string>
+    <string name="add_contact_or_create_or_join_group_chat">Kontakt əlavə edin, qrup söhbəti yaradın və ya qoşun və ya kanalları açın</string>
+    <string name="failed_deliveries">Çatdırılma uğursuz oldu</string>
+    <string name="missed_calls_channel_name">Cavabsız zənglər</string>
+    <string name="missed_call_from_x">%s şəxsindən cavabsız zəng</string>
+    <string name="n_missed_calls_from_x">%2$s kontaktından %1$d cavabsız zəng</string>
+    <string name="n_missed_calls">%d cavabsız zəng</string>
+    <string name="n_missed_calls_from_m_contacts">%2$s kontaktdan %1$d cavabsız zəng</string>
 </resources>
