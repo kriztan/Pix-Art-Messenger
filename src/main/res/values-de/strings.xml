@@ -1058,4 +1058,9 @@
         <item quantity="other">Mehrere Nachrichten konnten nicht zugestellt werden</item>
     </plurals>
     <string name="failed_deliveries">Fehlgeschlagene Zustellungen</string>
+    <string name="missed_calls_channel_name">Verpasste Anrufe</string>
+    <string name="missed_call_from_x">Verpasster Anruf von %s</string>
+    <string name="n_missed_calls_from_x">%1$d verpasste Anrufe von %2$s</string>
+    <string name="n_missed_calls">%d verpasste Anrufe</string>
+    <string name="n_missed_calls_from_m_contacts">%1$d verpasste Anrufe von %2$d Kontakten</string>
 </resources>
