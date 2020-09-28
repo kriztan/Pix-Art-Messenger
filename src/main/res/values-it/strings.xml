@@ -782,6 +782,7 @@
     <string name="silent_messages_channel_name">Messaggi silenziosi</string>
     <string name="silent_messages_channel_description">Questa categoria di notifiche è utilizzata per mostrare notifiche che non devono riprodurre nessun suono. Per esempio quando si è attivi su un altro dispositivo (Periodo di Grazia).</string>
     <string name="pref_more_notification_settings">Impostazioni delle notifiche</string>
+    <string name="delivery_failed_channel_name">Consegne non riuscite</string>
     <string name="pref_more_notification_settings_summary">Importanza, Suono, Vibrazione</string>
     <string name="video_compression_channel_name">Compressione video</string>
     <string name="backup_channel_name">Backup &amp; Ripristino</string>
@@ -1036,10 +1037,30 @@
     <string name="help">Aiuto</string>
     <string name="switch_to_conversation">Vai alla conversazione</string>
     <string name="only_one_call_at_a_time">È possibile effettuare una sola chiamata alla volta.</string>
-    <string name="missed_call">Chiamata persa</string>
+    <string name="missed_call">Chiamata senza risposta</string>
     <string name="could_not_switch_camera">Non è stato possibile cambiare la fotocamera</string>
     <string name="readmore">Leggi altro</string>
     <string name="add_to_favorites">Aggiungi ai preferiti</string>
     <string name="remove_from_favorites">Rimuovi dai preferiti</string>
     <string name="improperly_formatted_provisioning">Codice di fornitura impropriamente formattato</string>
+    <string name="gpx_track">Traccia GPX</string>
+    <string name="could_not_correct_message">Non è stato possibile correggere il messaggio</string>
+    <string name="search_all_conversations">Tutte le conversazioni</string>
+    <string name="search_this_conversation">Questa conversazione</string>
+    <string name="your_avatar">La tua immagine di profilo</string>
+    <string name="avatar_for_x">Immagine di profilo per %s</string>
+    <string name="encrypted_with_omemo">Criptato con OMEMO</string>
+    <string name="encrypted_with_openpgp">Criptato con OpenPGP</string>
+    <string name="not_encrypted">Non criptato</string>
+    <string name="add_contact_or_create_or_join_group_chat">Aggiungi un contatto, crea o unisciti ad una conversazione di gruppo, o scopri canali</string>
+    <plurals name="some_messages_could_not_be_delivered">
+        <item quantity="one">Non è stato possibile inviare il messaggio</item>
+        <item quantity="other">Non è stato possibile inviare alcuni messaggi</item>
+    </plurals>
+    <string name="failed_deliveries">Consegne non riuscite</string>
+    <string name="missed_calls_channel_name">Chiamate senza risposta</string>
+    <string name="missed_call_from_x">Chiamata senza risposta da %s</string>
+    <string name="n_missed_calls_from_x">%1$d chiamate senza risposta da %2$s</string>
+    <string name="n_missed_calls">%d chiamate senza risposta</string>
+    <string name="n_missed_calls_from_m_contacts">%1$d chiamate senza risposta da %2$d contatti</string>
 </resources>
