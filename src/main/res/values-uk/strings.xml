@@ -798,6 +798,7 @@
     <string name="silent_messages_channel_name">Тихі повідомлення</string>
     <string name="silent_messages_channel_description">Ця група сповіщень показує сповіщення, які не повинні супроводжуватися звуком. Наприклад, у разі активності на іншому пристрої (період очікування).</string>
     <string name="pref_more_notification_settings">Налаштування сповіщень</string>
+    <string name="delivery_failed_channel_name">Недоставлені повідомлення</string>
     <string name="pref_more_notification_settings_summary">Налаштування пріоритетів, звуку та режиму вібрації для сповіщень</string>
     <string name="video_compression_channel_name">Стиснення відео</string>
     <string name="backup_channel_name">Створити або відновити резервну копію</string>
@@ -1060,4 +1061,21 @@
     <string name="add_to_favorites">До обраного</string>
     <string name="remove_from_favorites">Вилучити з обраного</string>
     <string name="improperly_formatted_provisioning">Неправильний формат коду забезпечення</string>
+    <string name="gpx_track">Відстеження GPX</string>
+    <string name="could_not_correct_message">Неможливо відредагувати повідомлення</string>
+    <string name="search_all_conversations">Усі розмови</string>
+    <string name="search_this_conversation">Ця розмова</string>
+    <string name="your_avatar">Ваш аватар</string>
+    <string name="avatar_for_x">Аватар для %s</string>
+    <string name="encrypted_with_omemo">Зашифровано OMEMO</string>
+    <string name="encrypted_with_openpgp">Зашифровано OpenPGP</string>
+    <string name="not_encrypted">Не зашифровано</string>
+    <string name="add_contact_or_create_or_join_group_chat">Додавайте контакти, створюйте або приєднуйтеся до групових чатів або знаходьте канали</string>
+    <plurals name="some_messages_could_not_be_delivered">
+        <item quantity="one">Неможливо доставити повідомлення</item>
+        <item quantity="few">Неможливо доставити повідомлення</item>
+        <item quantity="many">Неможливо доставити повідомлення</item>
+        <item quantity="other">Неможливо доставити повідомлення</item>
+    </plurals>
+    <string name="failed_deliveries">Недоставлені повідомлення</string>
 </resources>
