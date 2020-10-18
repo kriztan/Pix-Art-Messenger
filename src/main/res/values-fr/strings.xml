@@ -1041,4 +1041,15 @@
     <string name="readmore">Plus d\'informations</string>
     <string name="add_to_favorites">Ajouter aux favoris</string>
     <string name="remove_from_favorites">Enlever des favoris</string>
+    <string name="search_all_conversations">Toutes les conversations</string>
+    <string name="search_this_conversation">Cette conversation</string>
+    <string name="your_avatar">Votre avatar</string>
+    <string name="avatar_for_x">Avatar de %s</string>
+    <string name="encrypted_with_omemo">Chiffré avec OMEMO</string>
+    <string name="encrypted_with_openpgp">Chiffré avec OpenPGP</string>
+    <string name="not_encrypted">Pas chiffré</string>
+    <string name="missed_calls_channel_name">Appels manqués</string>
+    <string name="missed_call_from_x">Appel manqué de %s</string>
+    <string name="n_missed_calls">%d appels manqués</string>
+    <string name="n_missed_calls_from_m_contacts">%1$d appel(s) manqué(s) de %2$d contact(s)</string>
 </resources>
