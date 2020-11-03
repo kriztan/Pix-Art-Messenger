@@ -879,7 +879,6 @@
     <string name="password_forgotten_title">Втрачено пароль</string>
     <string name="password_forgotten_text">Чи ви забули пароль до вашої обліковки? Ми спробуємо відкрити сторінку підтримки вашого постачальника.</string>
     <string name="set_settings_intro">Тут ви можете здійснити окремі налаштування приватності. Їх можна буде змінити пізніше.</string>
-    <string name="pref_show_mappreview_inside_summary">Показувати попередній перегляд мапи безпосередньо у вікні чату. Для цього буде встановлено з\'єднання з сервером месенджера.</string>
     <string name="pref_show_mappreview_inside">Попередній перегляд місця розташування</string>
     <string name="pref_use_internal_updater_summary">Дозволити месенджеру щодня шукати оновлення</string>
     <string name="pref_use_internal_updater">Оновлення</string>
