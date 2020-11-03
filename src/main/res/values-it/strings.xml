@@ -861,7 +861,6 @@
     <string name="password_forgotten_title">Password dimenticata</string>
     <string name="password_forgotten_text">Hai dimenticato la password del tuo account? Ora proveremo ad aprire la pagina di supporto del sito del tuo fornitore.</string>
     <string name="set_settings_intro">Qui puoi regolare alcune importanti impostazioni di privacy in base alle tue esigenze. Tutte le impostazioni potranno anche essere modificate in seguito.</string>
-    <string name="pref_show_mappreview_inside_summary">Mostra anteprime mappe direttamente all\'interno delle conversazioni, sarà stabilita una connessione al Pix-Art-Server.</string>
     <string name="pref_show_mappreview_inside">Mostra anteprime delle posizioni nella conversazione</string>
     <string name="pref_use_internal_updater_summary">Permetti all\'app di cercare gli aggiornamenti una volta al giorno</string>
     <string name="pref_use_internal_updater">Cerca aggiornamenti</string>
