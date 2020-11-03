@@ -879,7 +879,6 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="password_forgotten_title">Hasło zapomniane</string>
     <string name="password_forgotten_text">Nie pamiętasz hasła do swojego konta? Spróbujemy teraz otworzyć stronę pomocy technicznej twojego operatora.</string>
     <string name="set_settings_intro">Tutaj możesz ustawić ważne ustawienia prywatności. Wszystkie ustawienia będziesz mógł później zmienić.</string>
-    <string name="pref_show_mappreview_inside_summary">Pokazuj podgląd map (lokalizacji) na czacie, zostanie ustanowione połączenie z serwerem aplikacji Pix-Art.</string>
     <string name="pref_show_mappreview_inside">Pokazuj podgląd lokalizacji na czacie</string>
     <string name="pref_use_internal_updater_summary">Pozwól aplikacji sprawdzać dostępność aktualizacji raz na dzień</string>
     <string name="pref_use_internal_updater">Poszukaj aktualizacji</string>
