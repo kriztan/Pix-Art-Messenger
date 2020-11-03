@@ -889,7 +889,7 @@
     <string name="password_forgotten_title">Contraseña olvidada</string>
     <string name="password_forgotten_text">¿Has olvidado la contraseña de tu cuenta? Ahora intentaremos abrir la web de soporte de tu proveedor.</string>
     <string name="set_settings_intro">Aquí puedes establecer algunas configuraciones de privacidad importantes. Todas las configuraciones pueden ser modificadas más tarde.</string>
-    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizaciones de mapas directamente en la vista de chat, se establecerá una conexión al servidor Pix-Art.</string>
+    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizaciones de mapas directamente en la vista de chat, se establecerá una conexión con servidor blabber.im.</string>
     <string name="pref_show_mappreview_inside">Mostrar previsualizaciones de localizaciones en el chat</string>
     <string name="pref_use_internal_updater_summary">Permitir que la aplicación busque actualizaciones una vez al día</string>
     <string name="pref_use_internal_updater">buscar actualizaciones</string>
@@ -1065,4 +1065,5 @@
     <string name="n_missed_calls_from_m_contacts">%1$d llamadas perdidas de %2$d contactos</string>
     <string name="pref_invidious_host_summary">Usar un servidor invidious personalizado</string>
     <string name="pref_invidious_host">Servidor invidious</string>
+    <string name="updated_to_blabber">Hemos actualizado con éxito Pix-Art Messenger a blabber.im\n\nLa cooperación de los dos proyectos blabber.im y Pix-Art Messenger se amplió en noviembre de 2020. En el futuro, la aplicación de Android Pix-Art Messenger continuará bajo el nombre blabber.im.\n\nLo que puede esperar:\n- El rango de funciones sigue siendo el mismo\n- Las salas de chat de soporte se fusionan\n- Los colores y logotipos se adaptan a blabber.im\n- La aplicación aún está disponible gratis en Google Play Store y F-Droid Store\n\nTu equipo de blabber.im</string>
 </resources>
