@@ -843,7 +843,6 @@
     <string name="password_forgotten_title">Contrasenya oblidada</string>
     <string name="password_forgotten_text">Has oblidat la contrasenya del teu compte? Ara intentarem obrir la web de suport del teu proveïdor.</string>
     <string name="set_settings_intro">Aquí pots establir algunes configuracions de privacitat importants. Totes les configuracions poden èsser modificades més tard.</string>
-    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizacions de mapes directament en la vista de xat, s\'establirà una connexió al servidor Pix-Art.</string>
     <string name="pref_show_mappreview_inside">Mostrar previsualizacions de localizacions en el xat</string>
     <string name="pref_use_internal_updater_summary">Permetre que l\'aplicació busqui actualizacions una vegada al dia</string>
     <string name="pref_use_internal_updater">buscar actualizacions</string>
