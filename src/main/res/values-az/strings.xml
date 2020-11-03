@@ -861,7 +861,6 @@
     <string name="password_forgotten_title">Parol unuduldu</string>
     <string name="password_forgotten_text">Hesab şifrənizi unutmusunuz? İndi provayderinizin dəstək saytını açmağa çalışacağıq.</string>
     <string name="set_settings_intro">Burada bəzi vacib məxfilik parametrlərini ehtiyaclarınıza uyğunlaşdıra bilərsiniz. Bütün parametrlər daha sonra dəyişdirilə bilər.</string>
-    <string name="pref_show_mappreview_inside_summary">Xəritədə görüntüləri birbaşa chat görünüşü içərisində göstərin, Pix-Art-Server ilə əlaqə qurulacaqdır.</string>
     <string name="pref_show_mappreview_inside">Çatda yerlərin əvvəlcədən görünməsini göstərin</string>
     <string name="pref_use_internal_updater_summary">Messengerə gündə bir dəfə yeni tətbiq yeniləmələri axtarmağa icazə verin</string>
     <string name="pref_use_internal_updater">Yeniləməni yoxlayın</string>
