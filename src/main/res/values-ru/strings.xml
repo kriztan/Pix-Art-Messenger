@@ -871,7 +871,6 @@
     <string name="password_forgotten_title">Не помню пароль</string>
     <string name="password_forgotten_text">Забыли пароль от аккаунта? Мы попробуем открыть страницу поддержки вашего провайдера.</string>
     <string name="set_settings_intro">Здесь вы можете установить важные настройки безопасности. Все настройки могут быть изменены позднее.</string>
-    <string name="pref_show_mappreview_inside_summary">Показывать превью карт внутри чата (будет установлено соединение с Pix-Art-Server).</string>
     <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
     <string name="pref_use_internal_updater">Проверять наличие обновлений</string>
