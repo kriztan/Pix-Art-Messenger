@@ -829,7 +829,6 @@
     <string name="password_forgotten_title">Забравена парола</string>
     <string name="password_forgotten_text">Забравили сте паролата за профила си? Сега ще се опитаме да отворим интернет страница \"website\" за поддръжка на вашия доставчик.</string>
     <string name="set_settings_intro">Тук можете да зададете някои важни настройки за поверителност на вашите нужди. Всички настройки също могат да бъдат променяни по-късно.</string>
-    <string name="pref_show_mappreview_inside_summary">Показване на визуализации на картата директно в чат изглед, ще се установи връзка с Pix-Art-сървъра.</string>
     <string name="pref_show_mappreview_inside">Показване на визуализациите на местоположения в чата</string>
     <string name="pref_use_internal_updater_summary">Нека програмата да търси нови подновения на програмата веднъж на ден</string>
     <string name="pref_use_internal_updater">подновеване на програмата</string>
