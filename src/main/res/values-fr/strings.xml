@@ -860,7 +860,6 @@
     <string name="password_forgotten_title">Mot de passe oublié</string>
     <string name="password_forgotten_text">Vous avez oublié le mot de passe de votre compte ? Nous allons maintenant essayer d\'ouvrir le site Web d\'assistance de votre fournisseur.</string>
     <string name="set_settings_intro">Vous pouvez définir ici les paramètres de confidentialité selon vos besoins. Tous les paramètres peuvent aussi être modifiés plus tard.</string>
-    <string name="pref_show_mappreview_inside_summary">Affiche la géolocalisation sous forme d\'une carte directement dans la discussion, une connexion au serveur Pix-Art est nécessaire.</string>
     <string name="pref_show_mappreview_inside">Afficher les aperçus de géolocalisation</string>
     <string name="pref_use_internal_updater_summary">Vérifier les mises à jour de l\'application quotidiennement.</string>
     <string name="pref_use_internal_updater">Vérifier les mises à jour</string>
