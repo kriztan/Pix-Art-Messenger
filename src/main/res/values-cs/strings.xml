@@ -205,7 +205,7 @@
     <string name="pref_allow_message_correction">Povolit opravu zpráv</string>
     <string name="pref_allow_message_correction_summary">Povolí kontaktům zpětné upravování jejich zpráv</string>
     <string name="pref_expert_options">Expertní nastavení</string>
-    <string name="title_activity_about">O aplikaci Pix-Art Messenger</string>
+    <string name="title_activity_about">O</string>
     <string name="pref_about_conversations_summary">Informace o sestavení a licenci</string>
     <string name="title_pref_quiet_hours">Tichý režim</string>
     <string name="title_pref_quiet_hours_start_time">Odkdy</string>
