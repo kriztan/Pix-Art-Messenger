@@ -49,8 +49,6 @@
     <string name="unblock">Engeli kaldır</string>
     <string name="save">Kaydet</string>
     <string name="ok">Tamam</string>
-    <string name="crash_report_title">blabber.im çöktü</string>
-    <string name="crash_report_message">Yığın izlerini göndererek blabber.im\'ın devam eden geliştirilmesine yardımcı oluyorsunuz.\n<b>Uyarı:</b> Bu, yığın izini geliştiriciye göndermek için XMPP hesabınızı kullanacak.</string>
     <string name="send_now">Şimdi Gönder</string>
     <string name="send_never">Bir daha sorma</string>
     <string name="problem_connecting_to_account">Sunucuya bağlanılamıyor</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Şifrelenmemiş olarak gönder</string>
     <string name="decryption_failed">Şifre çözme işlemi başarısız. Belki de uygun özel anahtara sahip değilsiniz.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im ileti şifreleme ile şifre çözme ve genel anahtarlarınzı yönetmek için üçüncü parti <b>OpenKeychain</b> denen bir uygulama kullanır.\n\nOpenKeychain GPLv3 lisansı altındadır ve F-Droid ile Google Play\'de mevcuttur.\n\n<small>(Lürfen blabber.im\'ı daha sonra yeniden başlatın.)</small></string>
     <string name="restart">Yeniden başlat</string>
     <string name="install">Yükle</string>
     <string name="offering">teklif yapılıyor…</string>
     <string name="waiting">Bekleniyor…</string>
     <string name="no_pgp_key">Hiç OpenPGP anahtarı bulunamadı</string>
-    <string name="contact_has_no_pgp_key">blabber.im, mesajlarınızı şifreleyemiyor; çünkü kişi sizin veya onun genel anahtarınızı ilan etmiyor.\n\n<small>Lütfen iletişim bilgilerinizden OpenPGP\'yi kurmasını isteyin.</small></string>
     <string name="no_pgp_keys">OpenPGP anahtarları bulunamadı</string>
     <string name="pref_general">Genel</string>
     <string name="pref_accept_files_wifi">WiFi bağlantılarındaki dosyaları kabul et</string>
@@ -144,7 +140,6 @@
     <string name="mgmt_account_are_you_sure">Emin misiniz?</string>
     <string name="attach_record_voice">Kayıt sesi</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">kullanıcıadı@blabber.im</string>
     <string name="password">Parola</string>
     <string name="invalid_jid">Bu geçerli bir Jabber-ID değil</string>
     <string name="error_out_of_memory">Bellek yetersiz. Görüntü çok büyük</string>
@@ -386,11 +381,9 @@
     <string name="pref_away_when_screen_off">Uzakta ekran kapalıyken</string>
     <string name="pref_away_when_screen_off_summary">Ekran kapalıyken kaynağını uzakta olarak işaretler</string>
     <string name="pref_dnd_on_silent_mode">Sessiz modda \'\'Rahatsız etme\'\'</string>
-    <string name="update_info">blabber.im yeni sürümü otomatik olarak indiriyor ve yükleniliyor. \n\nLütfen bekleyin…</string>
     <string name="pref_dnd_on_silent_mode_summary">Cihaz sessiz moddayken kaynağınızı \"Rahatsız etmeyin\" olarak işaretler</string>
     <string name="pref_treat_vibrate_as_silent">Titreşimsiz mod olarak işlem yap</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Cihaz titrediğinde kaynağı \"Rahatsız etmeyin\" olarak işaretler</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Sertifika ile hesap ekle</string>
     <string name="unable_to_parse_certificate">Sertifika çözümlenemedi</string>
     <string name="authenticate_with_certificate">Sertifikanın kimliğini doğrulamak için boş bırakın</string>
@@ -417,17 +410,13 @@
         <item quantity="other">%d mesajlar</item>
     </plurals>
     <string name="load_more_messages">Daha fazla ileti yükle</string>
-    <string name="no_storage_permission">blabber.im\'ın harici depolama alanına erişim izni gerekiyor</string>
     <string name="sync_with_contacts">Bağlantıyı senkronize et</string>
-    <string name="sync_with_contacts_long">blabber.im, tam adlarını ve avatarlarını göstermek için XMPP listenizi kişilerinizle eşleştirmek istiyor\n\nblabber.im yalnızca kişilerinizi okuyacak ve bunları sunucunuza yüklemeden yerel olarak eşleştirecektir.\n\nKişilerinize erişmek için izin vermeniz istenecektir.</string>
     <string name="notify_on_all_messages">Tüm mesajları bildir</string>
     <string name="notify_only_when_highlighted">Yalnızca bahsedildiğinde bildir</string>
     <string name="notify_never">Bildirimler devre dışı</string>
     <string name="notify_paused">Bildirimler duraklatıldı</string>
     <string name="always">Her zaman</string>
     <string name="battery_optimizations_enabled">Pil optimizasyonları etkin</string>
-    <string name="battery_optimizations_enabled_explained">Cihazınız, blabber.im\'da, bildirimleri gecikmeli hatta mesaj kaybına yol açabilecek bazı ağır pil optimizasyonları yapıyor. \n Bunları devre dışı bırakmanız önerilir.</string>
-    <string name="battery_optimizations_enabled_dialog">Cihazınız, blabber.im\'da, bildirimleri gecikmeli hatta mesaj kaybına yol açabilecek bazı ağır pil optimizasyonları yapıyor. \n\nBu işlemi devre dışı bırakmanız istendi.</string>
     <string name="install_from_unknown_sources_disabled">Bilinmeyen açık kaynaklardan yüklemeleri devre dışı bırak</string>
     <string name="install_from_unknown_sources_disabled_dialog">Cihazınız, Google PlayStore dışında bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeyecek şekilde yapılandırıldı. Bu, uygulama güncelleyicisinde sorunlara neden olur. \n\n Bundan sonra bilinmeyen kaynaklardan uygulama yüklemelerine izin vermeniz istenecektir.</string>
     <string name="disable">Devre dışı</string>
@@ -439,7 +428,6 @@
     <string name="correct_message">Doğru mesaj</string>
     <string name="send_corrected_message">Düzeltilmiş mesaj gönder</string>
     <string name="no_keys_just_confirm">Bu kişiye zaten güvenin. \'tamam\' seçeneğini seçerseniz, yalnızca%s, bu grup sohbetinin bir parçası olduğunu onaylıyorsunuz demektir.</string>
-    <string name="contacts_have_no_pgp_keys">Kişileriniz genel anahtarlarını duyurmadığı için blabber.im mesajlarınızı şifreleyemiyor.\n\n</string>
     <string name="this_account_is_disabled">Bu hesabı devre dışı bıraktınız</string>
     <string name="no_application_to_share_uri">URI\'yi paylaşacak hiçbir uygulama bulunamadı</string>
     <string name="share_uri_with">Ile URI paylaş…</string>
@@ -472,10 +460,6 @@
     <string name="invite_again">Tekrar davet et</string>
     <string name="inviteUser_Subject">sizi davet etti</string>
     <string name="pref_broadcast_last_activity">Son kullanıcı etkileşimlerini yayınla</string>
-    <string name="pref_broadcast_last_activity_summary">blabber.im\'ı kullanırken tüm kişilerinize haber verin</string>
-    <string name="invite_user">blabber.im\'a davet et</string>
-    <string name="request_permissions_message">blabber.im birkaç izin vermenizi isteyecektir. Tüm bu izinlerin bu mesajlaşma aracının tüm özelliklerine sahip olmasına izin vermeniz önemlidir. Bu izinlerden herhangi birini reddederseniz, uygulama kendiliğinden kapanacaktır.</string>
-    <string name="request_permissions_message_again">blabber.im için gerekli bazı veya tüm izinleri reddettiniz. Ayarlara atlamak ve bu izinlere izin vermek ister misiniz? Bu izinlerden herhangi birine siz karar verirseniz, uygulama kendiliğinden kapanacaktır.</string>
     <string name="unable_to_connect_to_keychain">OpenKeyChain\'e bağlanılamıyor</string>
     <string name="this_device_is_no_longer_in_use">Bu cihaz artık kullanılmıyor</string>
     <string name="please_wait">Lütfen bekleyin…</string>
@@ -502,7 +486,6 @@
     <string name="quote">Alıntı</string>
     <string name="show_error_message">Hata mesajını göster</string>
     <string name="data_saver_enabled">Veri kaydedici etkin</string>
-    <string name="device_does_not_support_data_saver">Cihazınız blabber.im\'ın veri koruyucusunu devre dışı bırakmayı desteklemiyor.</string>
     <string name="add_to_contact_list">Bağlantı listesine ekle</string>
     <string name="contact">Bağlantı</string>
     <string name="unable_to_start_recording">Kayıt başlatılamıyor</string>
@@ -570,7 +553,6 @@
     <string name="server_info_partial">kısmi</string>
     <string name="pref_show_foreground_service_summary">Bazı Android cihazlar belirli bir süre sonra bazı uygulamaları kapatacak ve yeni mesajlar alamayacaksınız. Bu tür sorunlarınız varsa, ön plan hizmetini etkinleştirmeyi deneyin. Fakat, bu seçeneği işaretleyerek kalıcı bir bildirimde bulunacağınızı unutmayın.</string>
     <string name="pref_show_foreground_service">Ön plan hizmetini kullan</string>
-    <string name="update_service">blabber.im güncelleme servisi</string>
     <string name="install_update">Güncellemeyi yükle?</string>
     <string name="highlight_in_muc">kullanıcıyı vurgula</string>
     <string name="no_application_found_to_open_link">Link\'i açmak için uyguluma bulunamadı</string>
@@ -587,5 +569,4 @@
     <string name="conference_unknown_error">Artık bu grupta değilsiniz</string>
     <string name="snooze">Ertele</string>
     <string name="huawei_protected_apps">Korunan uygulamalar</string>
-    <string name="huawei_protected_apps_summary">Bildirim almaya devam etmek için, ekran kapalı olduğunda bile, korunan uygulamalar listesine blabber.im\'ı eklemeniz gerekir.</string>
 </resources>
