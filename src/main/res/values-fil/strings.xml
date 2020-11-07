@@ -49,8 +49,6 @@
     <string name="unblock">I-unblock</string>
     <string name="save">I-save</string>
     <string name="ok">Sige</string>
-    <string name="crash_report_title">Pix-Art na mensahe ay bumagsak</string>
-    <string name="crash_report_message">Kapag mag send ng stack traces ikay ay nakatulong sa patuloy na pag-unlad ng blabber.im<b>babala</b> Ito ay gamitan ng XMPP account pra maka send ng stack trace sa developer.</string>
     <string name="send_now">Ipadala ngayon</string>
     <string name="send_never">Huwat magtanong ulit</string>
     <string name="problem_connecting_to_account">Hindi makakonek ta sa account</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Maghatid ng unencrypted</string>
     <string name="decryption_failed">Dekripsyon ay nabigo. Baka wala kang tamang pribadong susi.</string>
     <string name="openkeychain_required">BukasSusikadena</string>
-    <string name="openkeychain_required_long">Ang blabber.im ay gumagamit ng ikatlong partido na aplikasyon kung tawagin ay <b>OpenKeychain</b> para ma encrypt at decrpyt ang mga mensahe at para ma mahala ang pampublikong susi.\n\nOpenkeychain ay lisensyadong GPLv3 at makukuha sa F-Droid at Google Play.\n\n<small> (Paki restart ng blabber.im pagkatapos.)</small></string>
     <string name="restart">Ibalik sa simula</string>
     <string name="install">I-lagay</string>
     <string name="offering">handog…</string>
     <string name="waiting">maghintay…</string>
     <string name="no_pgp_key">Walang OpenPGP Key na natagpuan</string>
-    <string name="contact_has_no_pgp_key">blabber.im ay hindi na encrypt sa iyong mensahe dahil sa iyong kontak na hindi nagpasabi sa public key.\n\n<small>Pakitanong sa iyo\nng kontat na i-setup ang OpenPGP.</small></string>
     <string name="no_pgp_keys">Walang OpenPGP na natagpuan</string>
     <string name="pref_general">Heneral</string>
     <string name="pref_accept_files_wifi">Tanggapin ang mga dokumento sa pamamagitan ng wifi koneksyon</string>
@@ -144,7 +140,6 @@
     <string name="mgmt_account_are_you_sure">Sigurado ka ba?</string>
     <string name="attach_record_voice">I-rekord ang boses</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">username@blabber.im</string>
     <string name="password">Ang password</string>
     <string name="invalid_jid">Hindi ito balido na Jabber-ID</string>
     <string name="error_out_of_memory">Wala ng memorya. Ang imahe ay napakalaki</string>
@@ -386,11 +381,9 @@
     <string name="pref_away_when_screen_off">Lumayo kapag naka-off ang screen</string>
     <string name="pref_away_when_screen_off_summary">Tinitiyak ang iyong mapagkukunan bilang malayo kapag naka-off ang screen</string>
     <string name="pref_dnd_on_silent_mode">\"Huwag abalahin\" sa tahimik na mode</string>
-    <string name="update_info">Ang blabber.im ay awtomatikong nagda-download at nag-install ng bagong bersyon. \n\nMangyari lamang na maghintay…</string>
     <string name="pref_dnd_on_silent_mode_summary">Markahan ang iyong mapagkukunan bilang \"Huwag abalahin\" kapag ang aparato ay nasa tahimik na mode</string>
     <string name="pref_treat_vibrate_as_silent">Tratuhin ang vibrate bilang silent mode</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Binibigyang marka ang iyong mapagkukunan bilang \"Huwag mang-istorbo\" kapag ang aparato ay nasa vibrate</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Magdagdag ng account na may sertipiko</string>
     <string name="unable_to_parse_certificate">Hindi ma-parse ang certificate</string>
     <string name="authenticate_with_certificate">Mag-iwan ng walang laman upang mapatunayan ang w / certificate</string>
@@ -417,17 +410,13 @@
         <item quantity="other">%d mensahe</item>
     </plurals>
     <string name="load_more_messages">Mag-load ng higit pang mga mensahe</string>
-    <string name="no_storage_permission">Kailangan ng blabber.im ng access sa panlabas na imbakan</string>
     <string name="sync_with_contacts">I-synchronize ang mga kontak</string>
-    <string name="sync_with_contacts_long">Nais ng blabber.im na tumugma sa iyong XMPP roster sa iyong mga kontak upang maipakita ang kanilang mga buong pangalan at avatar. \n\nblabber.im ay magbabasa lamang ng iyong mga contact at itugma ang mga ito nang lokal nang hindi na-upload ang mga ito sa iyong server. hihiling na magbigay ng pahintulot na ma-access ang iyong mga contact.</string>
     <string name="notify_on_all_messages">I-notify sa lahat ng mensahe</string>
     <string name="notify_only_when_highlighted">I-notify lamang kapag nabanggit</string>
     <string name="notify_never">Hindi pinagana ang mga notification</string>
     <string name="notify_paused">Ang mga notification ay naka-pause</string>
     <string name="always">Laging</string>
     <string name="battery_optimizations_enabled">Pinagana ang mga pag-optimize ng baterya</string>
-    <string name="battery_optimizations_enabled_explained">Ang iyong aparato ay gumagawa ng ilang mabigat na pag-optimize ng baterya sa blabber.im na maaaring humantong sa mga naantalang abiso o kahit na pagkawala ng mensahe. \nIto ay inirerekomenda upang huwag paganahin ang mga iyon.</string>
-    <string name="battery_optimizations_enabled_dialog">Ang iyong aparato ay gumagawa ng ilang mabigat na mga pag-optimize ng baterya sa blabber.im na maaaring humantong sa mga naantalang abiso o kahit na pagkawala ng mensahe. \n\nMaaari kang hilingin ngayon na huwag paganahin ang mga iyon.</string>
     <string name="install_from_unknown_sources_disabled">I-install mula sa hindi kilalang mga pinagkukunan</string>
     <string name="install_from_unknown_sources_disabled_dialog">Ang iyong aparato ay naka-configure upang hindi payagan ang mga pag-install ng app mula sa hindi kilalang mga mapagkukunan maliban mula sa Google PlayStore. Ito ay magdudulot ng mga problema sa updater sa app.\n\nIkaw ay tatanugin ngayon upang payagan ang mga pag-install ng app mula sa hindi kilalang mga mapagkukunan.</string>
     <string name="disable">Huwag paganahin</string>
@@ -439,7 +428,6 @@
     <string name="correct_message">Tamang mensahe</string>
     <string name="send_corrected_message">Magpadala ng naitama na mensahe</string>
     <string name="no_keys_just_confirm">Na pinagkakatiwalaan mo ang contact na ito. Sa pamamagitan ng pagpili ng \'tapos na\' pinapatunayan mo lang na ang %s s ay bahagi ng grupo ng chat na ito.</string>
-    <string name="contacts_have_no_pgp_keys">Hindi ma-encrypt ng blabber.im ang iyong mga mensahe dahil hindi nagpapahayag ng iyong mga contact ang kanilang mga pampublikong key. \n\n</string>
     <string name="this_account_is_disabled">Pinigilan mo ang account na ito</string>
     <string name="no_application_to_share_uri">Walang nahanap na application upang maibahagi ang URI</string>
     <string name="share_uri_with">Ibahagi ang URI sa…</string>
@@ -472,10 +460,6 @@
     <string name="invite_again">Mag-imbita muli</string>
     <string name="inviteUser_Subject">ay inanyayahan ka sa pamamagitan ng</string>
     <string name="pref_broadcast_last_activity">Broadcast Last User Interaction</string>
-    <string name="pref_broadcast_last_activity_summary">Hayaan ang lahat ng iyong mga contact malaman kapag gumagamit ng blabber.im</string>
-    <string name="invite_user">Mag-imbita sa blabber.im</string>
-    <string name="request_permissions_message">Hinihiling ka ng blabber.im na pahintulutan ang ilang mga pahintulot. Mahalaga na payagan mo ang lahat ng mga pahintulot na gamitin ang lahat ng mga tampok ng sugo na ito. Kung tinatanggihan mo ang alinman sa mga pahintulot na ito ay sarhan ang app mismo.</string>
-    <string name="request_permissions_message_again">Tinanggihan mo ang ilan o lahat ng mga pahintulot na kinakailangan para sa blabber.im. Gusto mo bang tumalon sa mga setting at payagan ang mga pahintulot na ito? Kung tinanggihan mo ang alinman sa mga pahintulot na ito, tutuparin ng app ang sarili nito.</string>
     <string name="unable_to_connect_to_keychain">Hindi makakonekta sa OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Hindi na ginagamit ang aparatong ito</string>
     <string name="please_wait">Mangyaring maghintay…</string>
@@ -502,7 +486,6 @@
     <string name="quote">Banggitin</string>
     <string name="show_error_message">Ipakita ang mensahe ng error</string>
     <string name="data_saver_enabled">Pinagana ang data saver</string>
-    <string name="device_does_not_support_data_saver">Hindi sinusuportahan ng iyong aparato ang hindi pagpapagana ng data saver para sa blabber.im.</string>
     <string name="add_to_contact_list">Idagdag sa listahan ng kontak</string>
     <string name="contact">Kontak</string>
     <string name="unable_to_start_recording">Hindi nagawang magsimulang mag-record</string>
@@ -570,7 +553,6 @@
     <string name="server_info_partial">bahagyang</string>
     <string name="pref_show_foreground_service_summary">Isasara ng ilang mga Android device ang ilang mga app pagkatapos ng isang matagal na panahon at hindi ka makakakuha ng mga bagong mensahe. Kung mayroon kayong mga problema, subukang gawing aktibo ang serbisyo sa harapan. Ngunit tandaan, na magkakaroon ka ng isang permanenteng abiso sa naka-check na opsiyon na ito.</string>
     <string name="pref_show_foreground_service">Gumamit ng serbisyo sa harapan</string>
-    <string name="update_service">Serbisyo sa pag-update ng blabber.im</string>
     <string name="install_update">I-install ang update?</string>
     <string name="highlight_in_muc">i-highlight ang user</string>
     <string name="no_application_found_to_open_link">Walang nakitang application upang buksan ang link</string>
@@ -587,5 +569,4 @@
     <string name="conference_unknown_error">Hindi ka na nasa grupong chat na ito</string>
     <string name="snooze">I-snooze</string>
     <string name="huawei_protected_apps">Mga Protektadong Apps</string>
-    <string name="huawei_protected_apps_summary">Upang patuloy na makatanggap ng mga abiso, kahit na naka-off ang screen, kailangan mong magdagdag ng blabber.im sa listahan ng mga protektadong apps.</string>
 </resources>
