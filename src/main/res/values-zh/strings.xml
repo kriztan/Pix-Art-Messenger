@@ -58,8 +58,6 @@
     <string name="unblock">解封</string>
     <string name="save">保存</string>
     <string name="ok">确定</string>
-    <string name="crash_report_title">Pix-Art聊天 崩溃了</string>
-    <string name="crash_report_message">通过发送堆栈跟踪，您可以帮助Pix-Art聊天的持续开发\n<b>警告：</b>这将使用您的XMPP帐户发送。</string>
     <string name="send_now">现在发送</string>
     <string name="send_never">不再询问</string>
     <string name="problem_connecting_to_account">无法连接到帐户</string>
@@ -83,14 +81,11 @@
     <string name="your_nick_has_been_changed">您的昵称已更改</string>
     <string name="send_unencrypted">未加密发送</string>
     <string name="decryption_failed">解密失败。可能您没有合适的私钥。</string>
-    <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Pix-Art聊天通过名为<b>OpenKeychain</b>的第三方应用，加密、解密消息并管理公钥。\n\nOpenKeychain在GPLv3下发布，可在F-Droid和Google Play上下载。\n\n<small>(之后请重启Pix-Art聊天.)</small></string>
     <string name="restart">重启</string>
     <string name="install">安装</string>
     <string name="offering">正在提供…</string>
     <string name="waiting">正在等待…</string>
     <string name="no_pgp_key">找不到OpenPGP密钥</string>
-    <string name="contact_has_no_pgp_key">因为对方未公布公钥，Pix-Art聊天无法加密您的消息。\n\n<small>请让您的联系人设置OpenPGP。</small></string>
     <string name="no_pgp_keys">未找到OpenPGP密钥</string>
     <string name="pref_general">常规​​​​​</string>
     <string name="pref_accept_files_wifi">在使用WiFi时接受文件</string>
@@ -108,7 +103,6 @@
     <string name="pref_sound">铃声</string>
     <string name="pref_sound_summary">新消息到达时响铃</string>
     <string name="pref_send_crash">发送崩溃报告</string>
-    <string name="pref_send_crash_summary">通过发送堆栈跟踪，您可以帮助Pix-Art聊天的开发。</string>
     <string name="pref_confirm_messages">确认消息</string>
     <string name="pref_confirm_messages_summary">让对方知道您已阅读消息。</string>
     <string name="pref_ui_options">用户界面</string>
@@ -143,9 +137,6 @@
     <string name="account_status_incompatible_server">不兼容的服务器</string>
     <string name="account_status_stream_error">传输错误</string>
     <string name="encryption_choice_unencrypted">未加密</string>
-    <string name="encryption_choice_otr">OTR</string>
-    <string name="encryption_choice_pgp">OpenPGP</string>
-    <string name="encryption_choice_omemo">OMEMO</string>
     <string name="action_account">编辑帐户</string>
     <string name="mgmt_account_delete">删除帐户</string>
     <string name="mgmt_account_publish_avatar">发布头像</string>
@@ -157,7 +148,6 @@
     <string name="mgmt_account_delete_confirm_message">如果您删除了帐户，则本地对话历史记录将丢失。\n\n如果您从服务器删除帐户，则您的帐户也将从服务器中删除，在注册新帐户之前，您将无法登录。</string>
     <string name="attach_record_voice">语音录制</string>
     <string name="account_settings_jabber_id">Jabber用户名</string>
-    <string name="account_settings_example_jabber_id">username@blabber.im</string>
     <string name="password">密码</string>
     <string name="invalid_jid">Jabber用户名无效</string>
     <string name="error_out_of_memory">内存不足。图像太大了</string>
@@ -431,11 +421,9 @@
     <string name="pref_away_when_screen_off">屏幕关闭时修改状态为离开</string>
     <string name="pref_away_when_screen_off_summary">屏幕关闭时将您标记为离开</string>
     <string name="pref_dnd_on_silent_mode">在“请勿打扰”模式下静音</string>
-    <string name="update_info">Pix-Art聊天正在下载并安装新版本。\n\n请稍后…</string>
     <string name="pref_dnd_on_silent_mode_summary">当设备静音时，将您标记为“请勿打扰”状态</string>
     <string name="pref_treat_vibrate_as_silent">将振动看作静音</string>
     <string name="pref_treat_vibrate_as_dnd_summary">当设备处于振动状态时，将您标记为“请勿打扰”</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">用证书添加帐户</string>
     <string name="unable_to_parse_certificate">无法解析证书</string>
     <string name="authenticate_with_certificate">留空以验证w/证书</string>
@@ -461,9 +449,7 @@
         <item quantity="other">%d条消息</item>
     </plurals>
     <string name="load_more_messages">加载更多消息</string>
-    <string name="no_storage_permission">Pix-Art聊天需要访问外部存储</string>
     <string name="sync_with_contacts">同步联系人</string>
-    <string name="sync_with_contacts_long">Pix-Art聊天想将XMPP联系人名单与您手机的联系人相匹配，以显示他们的全名和头像。\n\nPix-Art聊天只读取您的联系人在本地匹配，不会上传到您的服务器。\n\n现在要求您授予访问联系人权限。</string>
     <string name="notify_on_all_messages">通知所有消息</string>
     <string name="notify_only_when_highlighted">仅在提到我时通知</string>
     <string name="notify_never">通知已禁用</string>
@@ -480,8 +466,6 @@
     <string name="always">总是</string>
     <string name="always_off">始终关闭</string>
     <string name="battery_optimizations_enabled">电池优化已启用</string>
-    <string name="battery_optimizations_enabled_explained">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n建议禁用优化。</string>
-    <string name="battery_optimizations_enabled_dialog">您的设备正在对Pix-Art聊天进行电池优化，这可能会导致通知延迟甚至消息丢失。\n\n现在请您禁用优化。</string>
     <string name="install_from_unknown_sources_disabled">禁用未知来源安装</string>
     <string name="install_from_unknown_sources_disabled_dialog">您的设备不允许未知来源应用安装。这将导致应用更新出现问题。\n\n请您允许安装未知来源应用。</string>
     <string name="disable">禁用</string>
@@ -493,7 +477,6 @@
     <string name="correct_message">更正消息</string>
     <string name="send_corrected_message">发送更正的信息</string>
     <string name="no_keys_just_confirm">您已经信任此联系人了。通过选择“完成”来确认%s为群聊成员。</string>
-    <string name="contacts_have_no_pgp_keys">Pix-Art聊天无法加密您的消息，因为对方未公布公钥。\n\n</string>
     <string name="this_account_is_disabled">您已停用此帐户</string>
     <string name="no_application_to_share_uri">找不到共享URI的应用</string>
     <string name="share_uri_with">与…共享URI</string>
@@ -529,12 +512,7 @@
     <string name="import_database">恢复备份</string>
     <string name="invite_again">再次邀请</string>
     <string name="inviteUser_Subject">已邀请您，通过</string>
-    <string name="InviteText">您好，\n\n%s邀请您使用Pix-Art聊天。如果您使用的是Android，请点击以下链接开始...</string>
     <string name="pref_broadcast_last_activity">广播最后一次使用聊天的时间</string>
-    <string name="pref_broadcast_last_activity_summary">当使用Pix-Art聊天时，让所有联系人知道</string>
-    <string name="invite_user">邀请至Pix-Art聊天</string>
-    <string name="request_permissions_message">Pix-Art聊天会请求一些权限。只有获取了这些权限后，应用才能正常运行。如果您拒绝了任何的权限，应用将会自动关闭。</string>
-    <string name="request_permissions_message_again">Pix-Art的权限已被拒绝。是否跳转到设置以允许权限？如拒绝，应用将自动关闭。</string>
     <string name="unable_to_connect_to_keychain">无法连接到OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">对方不再使用该设备</string>
     <string name="please_wait">请稍候…</string>
@@ -561,8 +539,6 @@
     <string name="quote">引用</string>
     <string name="show_error_message">显示错误消息</string>
     <string name="data_saver_enabled">节省流量模式已启用</string>
-    <string name="data_saver_enabled_explained">您的设备禁止此应用在后台时上网。要接收新消息通知，需要在启用节省流量模式时允许Pix-Art聊天的无限制访问。\\n\nPix-Art聊天本仍会努力节省流量。</string>
-    <string name="device_does_not_support_data_saver">您的设备不支持禁用Pix-Art聊天的节省流量模式。</string>
     <string name="add_to_contact_list">添加至联系人列表</string>
     <string name="contact">联系人</string>
     <string name="unable_to_start_recording">无法开启录制</string>
@@ -656,7 +632,6 @@
     <string name="server_info_partial">部分</string>
     <string name="pref_show_foreground_service_summary">一些Android设备会在一段时间后关闭一些应用程序，您将无法接收到新的消息。如果您遇到此类问题，请尝试激活前台服务。但请记住，选中此选项后，您将获得永久通知。</string>
     <string name="pref_show_foreground_service">使用前台服务</string>
-    <string name="update_service">Pix-Art聊天更新服务</string>
     <string name="install_update">安装更新？</string>
     <string name="highlight_in_muc">突出显示用户</string>
     <string name="no_application_found_to_open_link">找不到打开链接的应用程序</string>
@@ -678,7 +653,6 @@
     <string name="no_write_access_in_public_muc">您没有参与此群聊，所以现在不能发消息。\n请点<b>确定</b>，进入群聊详情，然后长按任何一个管理员的名称，发送一条私信请求许可。</string>
     <string name="snooze">稍后再响</string>
     <string name="huawei_protected_apps">受保护的应用</string>
-    <string name="huawei_protected_apps_summary">要持续接收通知，即使屏幕关闭，您也需要将Pix-Art聊天添加到受保护的应用列表中。</string>
     <string name="pref_enable_multi_accounts_title">启用多个帐户</string>
     <string name="pref_enable_multi_accounts_summary">您想使用多个帐户吗？</string>
     <string name="mtm_accept_cert">接受未知证书？</string>
@@ -691,12 +665,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">二维码扫描仪需要访问相机</string>
     <string name="pref_scroll_to_bottom_summary">发送消息后向下滚动</string>
     <string name="pref_scroll_to_bottom">滚动页面至底部</string>
-    <string name="no_camera_permission">Pix-Art聊天需要访问相机</string>
     <string name="edit_status_message_title">编辑状态消息</string>
     <string name="pref_automatically_delete_messages_description">自动删除此设备中比设置的时间框架更早的消息。</string>
     <string name="pref_automatically_delete_messages">自动删除消息</string>
     <string name="disable_encryption">禁用加密</string>
-    <string name="error_trustkey_general">PIX-Art聊天无法向%1$s发送加密消息。这可能是由于您使用无法处理OMEMO的过时服务器或客户端的联系人。</string>
     <string name="error_trustkey_device_list">无法获取设备列表</string>
     <string name="error_trustkey_bundle">无法获取设备包</string>
     <string name="error_trustkey_hint_mutual">提示：在某些情况下，可以通过互相添加联系人列表来解决此问题。</string>
@@ -723,9 +695,7 @@
     <string name="large">大</string>
     <string name="create_shortcut">创建快捷方式</string>
     <string name="not_encrypted_for_this_device">该条消息没有为此设备加密</string>
-    <string name="no_microphone_permission">Pix-Art聊天需要访问麦克风</string>
     <string name="search_messages">搜索消息</string>
-    <string name="gif">GIF</string>
     <string name="view_conversation">查看对话</string>
     <string name="web_address">网址</string>
     <string name="jabber_id_copied_to_clipboard">将Jabber用户名复制到剪贴板</string>
@@ -753,14 +723,12 @@
     <string name="conference_destroyed">这个群聊已被解散</string>
     <string name="no_application_found_to_view_contact">没有发现查看联系人的应用程序</string>
     <string name="welcome_server_info">我们建议您使用blabber.im作为提供商。</string>
-    <string name="no_location_permission">Pix-Art聊天需要访问位置服务</string>
     <string name="pref_show_record_voice_btn_summary">在聊天中显示录制语音按钮作为快速操作</string>
     <string name="pref_show_record_voice_btn">显示录制语音按钮</string>
     <string name="pref_use_quick_share_attachment_choice_summary">如果未键入消息，请将附件选项替换为发送按钮。否则显示快速操作，可以在以下设置中进行设置。</string>
     <string name="pref_quick_share_attachment_choice">附件选择</string>
     <string name="unable_to_save_recording">无法保存录音</string>
     <string name="foreground_service_channel_name">前台服务</string>
-    <string name="foreground_service_channel_description">此通知类别用于显示Pix-Art聊天正在运行的永久通知。</string>
     <string name="notification_group_status_information">状态信息</string>
     <string name="error_channel_name">网络连接出现问题</string>
     <string name="error_channel_description">此通知类别用于在连接到帐户时出现问题时显示通知。</string>
@@ -811,7 +779,6 @@
     <string name="open_with">打开方式…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc 命令-邀请用户</string>
     <string name="choose_account">选择帐户</string>
-    <string name="set_profile_picture">Pix-Art聊天个人资料图片</string>
     <string name="restore_backup">恢复备份</string>
     <string name="restore">恢复</string>
     <string name="enter_password_to_restore">输入帐户%s的密码以恢复备份。</string>
@@ -871,7 +838,6 @@
     <string name="password_forgotten_title">忘记密码</string>
     <string name="password_forgotten_text">忘记密码？现在将尝试打开提供商支持网站。</string>
     <string name="set_settings_intro">在这里，您可以按需修改隐私设置。</string>
-    <string name="pref_show_mappreview_inside_summary">直接在聊天视图中显示地图预览，将建立与Pix-Art服务器的连接。</string>
     <string name="pref_show_mappreview_inside">显示位置预览</string>
     <string name="pref_use_internal_updater_summary">让应用每天查找更新</string>
     <string name="pref_use_internal_updater">查找更新</string>
@@ -885,7 +851,6 @@
     <string name="action_add_existing_account">添加已有帐户</string>
     <string name="use_own_provider">使用自己的提供商</string>
     <string name="this_looks_like_a_domain">这看起来像一个域名地址</string>
-    <string name="add_anyway">仍然添加</string>
     <string name="this_looks_like_channel">这看起来像一个群聊地址</string>
     <string name="no_backup_available">没有可用备份</string>
     <string name="pref_show_own_accounts_summary">在聊天和联系人中显示自己的多个帐户</string>
@@ -897,12 +862,10 @@
     <string name="action_unblock_participant">解封参与者</string>
     <string name="action_block_participant">封禁参与者</string>
     <string name="share_backup_files">共享备份文件</string>
-    <string name="conversations_backup">Pix-Art聊天备份</string>
     <string name="event">事件</string>
     <string name="pref_vibrate_in_chat_summary">当新消息到达打开的聊天时振动</string>
     <string name="pref_vibrate_in_chat">收到公共聊天时震动</string>
     <string name="open_backup">打开备份</string>
-    <string name="not_a_backup_file">您选择的文件不是Pix-Art聊天备份文件</string>
     <string name="account_already_setup">此帐户已设置完毕</string>
     <string name="please_enter_password">请输入此帐户的密码</string>
     <string name="unable_to_perform_this_action">无法执行此操作</string>
@@ -912,8 +875,6 @@
     <string name="pref_use_invidious_summary">Invidious是一个更注重隐私的YouTube替代品</string>
     <string name="this_device">此设备</string>
     <string name="intro_desc_main">了解更多...</string>
-    <string name="welcome_header">欢迎来到\n
-Pix-Arr Messenger</string>
     <string name="intro_required_permissions">所需权限:</string>
     <string name="intro_desc_required_permissions">如果没有必须的储存权限的话，本应用将在向导末尾请求权限。其他权限都是可选。</string>
     <string name="intro_account">您的帐户</string>
@@ -931,9 +892,7 @@ Pix-Arr Messenger</string>
     <string name="show_intro_again">将重新显示入门指南</string>
     <string name="show_intro_again_failed">设置重新显示入门指南时失败。正在重试……</string>
     <string name="intro_desc_whats_xmpp">XMPP，也叫 jabber，是一种去中心化的通讯网络（就像电子邮件一样）。您需要一个被称作 Jabber-ID 的地址，一个密码和一个客户端。之后我们有更多关于此的。</string>
-    <string name="intro_whats_xmpp">XMPP / Jabber / blabber.im 是什么？</string>
     <string name="intro_desc_optional_permissions">读取通讯录的权限用于从您的通讯录中读取 Jabber-ID（如果有）。通讯录的内容不会被分享、上传或复制。</string>
-    <string name="intro_desc_account2">您可以通过自定义或从下拉菜单中选择一个服务器然后输入一个昵称来新建一个一份配置。</string>
     <string name="open_join_dialog">加入公共群聊</string>
     <string name="intro_optional_permissions">可选权限</string>
     <string name="intro_desc_optional_permissions2">如果要分享您的位置，需要获取位置的权限。\n如果要分享语言消息，需要麦克风的权限。</string>
@@ -941,11 +900,9 @@ Pix-Arr Messenger</string>
     <string name="intro_desc_start_chatting2">您可以添加，创建或加入多人聊天（MUCs）。与私密群组和公共群组有所区别的叫作频道。</string>
     <string name="intro_desc_start_chatting3">祝贺！\n我们开始吧，用得开心…</string>
     <string name="intro_privacy">您的隐私\n您作主</string>
-    <string name="intro_desc_privacy">对于您的数据，Pix-Art Messager 既不会贩卖也不会分析，授予哪些权限决定于您。</string>
     <string name="no_results">无结果</string>
     <string name="file_transmission_cancelled">文件传输取消</string>
     <string name="sharing_application_not_grant_permission">分享文件的应用没有授予该文件的权限。</string>
-    <string name="jabber_network">jabber.network</string>
     <string name="local_server">本地服务器</string>
     <string name="pref_channel_discovery_summary">大多数用户会选择“jabber.network”以便从公共 XMPP 生态系统获得更好的建议。</string>
     <string name="pref_channel_discovery">频道发现方法</string>
@@ -957,14 +914,4 @@ Pix-Arr Messenger</string>
     <string name="pref_theme_orange">橙色</string>
     <string name="pref_theme_color_options_summary">选择主题调色板</string>
     <string name="pref_theme_color_options">主题颜色</string>
-    <string name="action_delete">删除</string>
-    <string name="attach_choose_video">选择视频</string>
-    <string name="please_enable_an_account">请启用一个用户</string>
-    <string name="make_call">呼叫</string>
-    <string name="audio_call">语音通话</string>
-    <string name="video_call">视频通话</string>
-    <string name="pref_message_notification_settings">消息通知设置</string>
-    <string name="pref_incoming_call_notification_settings">呼入通话设置</string>
-    <string name="pref_notification_sound_summary">新消息提示声</string>
-    <string name="pref_notification_sound">通知提示音</string>
 </resources>
