@@ -647,7 +647,7 @@
     <string name="error_no_keys_to_trust_presence">Il n’y a aucune clé utilisable disponible pour ce contact.\nAssurez-vous d’avoir un abonnement de présence mutuelle.</string>
     <string name="mark_as_read">Marquer comme lu</string>
     <string name="server_info_partial">partiel</string>
-    <string name="pref_show_foreground_service_summary">Certains appareils Android peuvent fermer des applications (comme Pix-Art Messenger) après un certain temps et vous ne pourrez plus recevoir de nouveaux messages. Si vous rencontrez de tels problèmes, essayez d\'activer le service au premier plan. Mais gardez à l\'esprit que vous aurez une notification permanente avec cette option cochée.</string>
+    <string name="pref_show_foreground_service_summary">Certains appareils Android peuvent fermer des applications (comme blabber.im) après un certain temps et vous ne pourrez plus recevoir de nouveaux messages. Si vous rencontrez de tels problèmes, essayez d\'activer le service au premier plan. Mais gardez à l\'esprit que vous aurez une notification permanente avec cette option cochée.</string>
     <string name="pref_show_foreground_service">Utiliser le service au premier plan</string>
     <string name="install_update">Installer la mise à jour ?</string>
     <string name="highlight_in_muc">Mettre en évidence l’utilisateur/trice</string>
@@ -905,7 +905,7 @@
     <string name="intro_account">Votre compte</string>
     <string name="intro_desc_account">SI vous avez déjà un compte, connectez-vous en utilisant vos identifiant Jabber et mot de passe</string>
     <string name="intro_start_chatting">Commencer à chatter</string>
-    <string name="intro_desc_start_chatting">Si vous avez autorisé l\'accès à vos contacts Android, les contacts Jabber trouvés sont automatiquement affichés dans Pix-Art Messenger. Sinon, vous pouvez ajouter des identifiants Jabber manuellement</string>
+    <string name="intro_desc_start_chatting">Si vous avez autorisé l\'accès à vos contacts Android, les contacts Jabber trouvés sont automatiquement affichés dans blabber.im. Sinon, vous pouvez ajouter des identifiants Jabber manuellement</string>
     <string name="intro_desc_open_chat">Vous pouvez désormais commencer à chatter, partager des lieux, des fichiers, des vidéos et des images ou envoyer des messages vocaux.</string>
     <string name="intro_chat_details">Détails du chat</string>
     <string name="intro_desc_chat_details">Vous voulez voir les détails d\'un chat ? Il vous suffit d\'appuyer sur le nom du chat dans la barre de menu du haut.</string>
