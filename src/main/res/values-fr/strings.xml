@@ -58,8 +58,6 @@
     <string name="unblock">Débloquer</string>
     <string name="save">Enregistrer</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">blabber.im a planté</string>
-    <string name="crash_report_message">En envoyant des logs, vous aidez au développement en cours de blabber.im.\n<b>Attention :</b> Votre compte XMPP sera utilisé pour envoyer les logs aux développeurs.</string>
     <string name="send_now">Envoyer</string>
     <string name="send_never">Ne plus me demander</string>
     <string name="problem_connecting_to_account">Impossible de se connecter au compte.</string>
@@ -84,13 +82,11 @@
     <string name="send_unencrypted">Envoyer en clair</string>
     <string name="decryption_failed">Échec du déchiffrement. Avez-vous la bonne clef privée ?</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im requiert une application tierce nommée <b>OpenKeychain</b> pour chiffrer et déchiffrer les messages.\n\nOpenKeychain est sous licence GPLv3 et est disponible sur F-Droid et Google Play.\n\n<small>(Veuillez redémarrer blabber.im après l’installation de l’app)</small></string>
     <string name="restart">Redémarrer</string>
     <string name="install">Installer</string>
     <string name="offering">Proposition…</string>
     <string name="waiting">Patientez…</string>
     <string name="no_pgp_key">Aucune clef OpenPGP trouvée.</string>
-    <string name="contact_has_no_pgp_key">blabber.im ne peut pas chiffrer vos messages car votre contact n’a pas communiqué sa clef publique.\n\n<small>Demandez-lui de configurer OpenPGP.</small></string>
     <string name="no_pgp_keys">Aucune clef OpenPGP n\'a été trouvée.</string>
     <string name="pref_general">Général</string>
     <string name="pref_accept_files_wifi">Accepter les fichiers en Wi-Fi</string>
@@ -108,7 +104,6 @@
     <string name="pref_sound">Sonnerie</string>
     <string name="pref_sound_summary">Jouer un son lors de la réception d’un nouveau message.</string>
     <string name="pref_send_crash">Envoyer les rapports de plantage</string>
-    <string name="pref_send_crash_summary">Aide au développement en cours de blabber.im en envoyant des informations de débogage.</string>
     <string name="pref_confirm_messages">Confirmation de lecture</string>
     <string name="pref_confirm_messages_summary">Informe vos contacts quand vous avez reçu et lu leurs messages.</string>
     <string name="pref_ui_options">Interface</string>
@@ -157,7 +152,6 @@
     <string name="mgmt_account_delete_confirm_message">Si vous supprimez votre compte, l\'historique complet de vos conversations sera perdu.\n\nSi vous supprimez votre compte sur le serveur, votre compte sera entièrement supprimé du serveur, vous ne pourrez plus vous connecter jusqu\'à ce que vous ayez créé un nouveau compte.</string>
     <string name="attach_record_voice">Enregistrer une voix</string>
     <string name="account_settings_jabber_id">Identifiant</string>
-    <string name="account_settings_example_jabber_id">nom@exemple.com</string>
     <string name="password">Mot de passe</string>
     <string name="invalid_jid">Cet identifiant n\'est pas valide</string>
     <string name="error_out_of_memory">Plus de mémoire disponible. L’image est trop volumineuse</string>
@@ -433,11 +427,9 @@
     <string name="pref_away_when_screen_off">« Absent » lorsque l’écran est éteint</string>
     <string name="pref_away_when_screen_off_summary">Votre statut est « Absent » lorsque votre écran est éteint.</string>
     <string name="pref_dnd_on_silent_mode">Indisponible en mode silencieux</string>
-    <string name="update_info">blabber.im est entrain de télécharger et d’installer la nouvelle version automatiquement.\n\nVeuillez patienter …</string>
     <string name="pref_dnd_on_silent_mode_summary">Votre statut est « Ne pas déranger » lorsque votre appareil est en mode silencieux.</string>
     <string name="pref_treat_vibrate_as_silent">Mode vibreur idem silencieux</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Votre statut est « Ne pas déranger » lorsque votre appareil est en mode vibreur.</string>
-    <string name="hostname_example">xmpp.example.com</string>
     <string name="action_add_account_with_certificate">Compte avec certificat</string>
     <string name="unable_to_parse_certificate">Impossible d’analyser le certificat</string>
     <string name="authenticate_with_certificate">Laisser vide pour s’authentifier avec un certificat</string>
@@ -465,9 +457,7 @@
         <item quantity="other">%d messages</item>
     </plurals>
     <string name="load_more_messages">Charger plus de messages</string>
-    <string name="no_storage_permission">blabber.im a besoin d’accéder au stockage externe</string>
     <string name="sync_with_contacts">Synchroniser avec contacts</string>
-    <string name="sync_with_contacts_long">blabber.im souhaite associer vos contacts XMPP avec les contacts de votre appareil, pour utiliser leur nom complet et leur avatar.\n\nblabber.im va uniquement lire vos contacts et les associer localement, sans les envoyer sur le serveur XMPP.\n\nVotre appareil va maintenant vous demander la permission d’accéder à vos contacts.</string>
     <string name="notify_on_all_messages">Notifier pour tous les messages</string>
     <string name="notify_only_when_highlighted">Notifier seulement en cas de mention</string>
     <string name="notify_never">Ne jamais notifier</string>
@@ -484,8 +474,6 @@
     <string name="always">Toujours</string>
     <string name="always_off">Toujours désactivé</string>
     <string name="battery_optimizations_enabled">Optimisations de batterie activées</string>
-    <string name="battery_optimizations_enabled_explained">Votre appareil applique sur blabber.im des optimisations de batterie très strictes qui pourraient provoquer des retards dans les notifications, voire des pertes de messages.\nNous vous recommandons de les désactiver.</string>
-    <string name="battery_optimizations_enabled_dialog">Votre appareil applique sur blabber.im des optimisations de batterie très strictes qui pourraient provoquer des retards dans les notifications, voire des pertes de messages.\nVous allez maintenant avoir la possibilité de les désactiver.</string>
     <string name="install_from_unknown_sources_disabled">L’nstallation à partir de sources inconnues a été désactivée</string>
     <string name="install_from_unknown_sources_disabled_dialog">Votre appareil est configuré de manière à ne pas autoriser l\'installation d\'applications de sources inconnues autres que Google Play Store. Cela va bloquer la mise à jour automatique de l\'application.\n\nOn va maintenant vous demander d\'autoriser l\'installation d\'applications de sources inconnues.</string>
     <string name="disable">Désactiver</string>
@@ -497,7 +485,6 @@
     <string name="correct_message">Corriger le message</string>
     <string name="send_corrected_message">Envoyer le message corrigé</string>
     <string name="no_keys_just_confirm">Vous faites déjà confiance à ce contact. En sélectionnant « Terminé » vous confirmerez seulement que %s est membre de cette conférence.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im ne peut pas chiffrer vos messages car vos contacts ne communiquent pas leurs clefs publiques.\n\n</string>
     <string name="this_account_is_disabled">Vous avez désactivé ce compte</string>
     <string name="no_application_to_share_uri">Aucune application trouvée pour partager l’URI</string>
     <string name="share_uri_with">Partager l’URI avec …</string>
@@ -533,12 +520,7 @@
     <string name="import_database">Importer une sauvegarde</string>
     <string name="invite_again">Inviter à nouveau</string>
     <string name="inviteUser_Subject">vous a invité via</string>
-    <string name="InviteText">Bonjour,\n\nl’utilisateur/trice %s vous a invité·e sur blabber.im. Si vous utilisez Android, essayez cette application en cliquant sur le lien ci-dessous…</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur/trice</string>
-    <string name="pref_broadcast_last_activity_summary">Informe tous vos contacts lorsque vous utilisez blabber.im.</string>
-    <string name="invite_user">Inviter à blabber.im</string>
-    <string name="request_permissions_message">blabber.im vous demandera quelques permissions. Il est important que vous autorisiez toutes ces permissions afin de pouvoir utiliser toutes les fonctionnalités de ce messager. Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
-    <string name="request_permissions_message_again">Vous avez refusé tout ou partie des permissions requises pour blabber.im. Souhaitez-vous passer aux paramètres et autoriser ces permissions ? Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
     <string name="unable_to_connect_to_keychain">Connection à OpenKeychain impossible</string>
     <string name="this_device_is_no_longer_in_use">Cet appareil n\'est plus utilisé</string>
     <string name="please_wait">Veuillez patienter…</string>
@@ -566,8 +548,6 @@
     <string name="show_error_message">Afficher le message d’erreur</string>
     <string name="error_message">Message d\'erreur</string>
     <string name="data_saver_enabled">Économiseur de données activé</string>
-    <string name="data_saver_enabled_explained">Votre système d’exploitation empêche blabber.im d’accéder à Internet lorsque l’application est en arrière-plan. Pour recevoir les notifications des nouveaux messages, vous devez autoriser blabber.im à accéder au réseau sans restriction quand l’Économiseur de données est activé.\n\nblabber.im tentera de consommer le moins de données possible.</string>
-    <string name="device_does_not_support_data_saver">Votre appareil ne prend pas en charge la désactivation de l’Économiseur de données pour blabber.im.</string>
     <string name="add_to_contact_list">Ajouter aux contacts</string>
     <string name="contact">Contact</string>
     <string name="unable_to_start_recording">Impossible de démarrer l’enregistrement</string>
@@ -669,7 +649,6 @@
     <string name="server_info_partial">partiel</string>
     <string name="pref_show_foreground_service_summary">Certains appareils Android peuvent fermer des applications (comme blabber.im) après un certain temps et vous ne pourrez plus recevoir de nouveaux messages. Si vous rencontrez de tels problèmes, essayez d\'activer le service au premier plan. Mais gardez à l\'esprit que vous aurez une notification permanente avec cette option cochée.</string>
     <string name="pref_show_foreground_service">Utiliser le service au premier plan</string>
-    <string name="update_service">Service de mise à jour de blabber.im</string>
     <string name="install_update">Installer la mise à jour ?</string>
     <string name="highlight_in_muc">Mettre en évidence l’utilisateur/trice</string>
     <string name="no_application_found_to_open_link">Aucune application disponible pour ouvrir le lien</string>
@@ -691,7 +670,6 @@
     <string name="no_write_access_in_public_muc">Vous ne participez à ce groupe de discussion et ne pouvez pas y écrire pour le moment.\nAllez SVP dans les détails du groupe en appuyant sur &lt;b&gt;OK&lt;b&gt; et envoyer un message privé au modérateur, administrateur ou au propriétaire du groupe en appuyant longtemps sur son nom en haut de la liste pour lui demander l\'autorisation d\'écrire.</string>
     <string name="snooze">Silencer</string>
     <string name="huawei_protected_apps">Applications protégées</string>
-    <string name="huawei_protected_apps_summary">Pour continuer à recevoir des notifications, même lorsque l\'écran est éteint, vous devez ajouter blabber.im à la liste des applications protégées.</string>
     <string name="pref_enable_multi_accounts_title">Activer les comptes multiples</string>
     <string name="pref_enable_multi_accounts_summary">Permet l\'utilisation de plusieurs comptes.</string>
     <string name="mtm_accept_cert">Accepter ce certificat inconnu ?</string>
@@ -704,12 +682,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">Le lecteur de code QR a besoin d’accéder à votre appareil photo</string>
     <string name="pref_scroll_to_bottom_summary">Aller en bas de la discussion une fois le message envoyé.</string>
     <string name="pref_scroll_to_bottom">Défiler vers le bas</string>
-    <string name="no_camera_permission">blabber.im a besoin d’accéder à l’appareil photo</string>
     <string name="edit_status_message_title">Modifier votre message de statut</string>
     <string name="pref_automatically_delete_messages_description">Définit la durée de conservation des messages au-delà de laquelle ils seront automatiquement supprimés.</string>
     <string name="pref_automatically_delete_messages">Suppression automatique des messages</string>
     <string name="disable_encryption">Désactiver le chiffrement</string>
-    <string name="error_trustkey_general">blabber.im ne peut envoyer de messages chiffrés à %1$s. Il se peut que votre contact utilise soit un serveur ou un client ancien ne prenant pas en charge le chiffrement avec OMEMO.</string>
     <string name="error_trustkey_device_list">Impossible d’obtenir la liste des appareils</string>
     <string name="error_trustkey_bundle">Impossible d’obtenir la liste des appareils</string>
     <string name="error_trustkey_hint_mutual">Astuce : Dans certains cas ceci peut être résolu en se rajoutant mutuellement dans les listes de contacts.</string>
@@ -736,7 +712,6 @@
     <string name="large">Grande</string>
     <string name="create_shortcut">Créer un raccourci</string>
     <string name="not_encrypted_for_this_device">Le message n’a pas été chiffré pour cet appareil.</string>
-    <string name="no_microphone_permission">blabber.im a besoin d’accéder au microphone</string>
     <string name="search_messages">Rechercher des messages</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Afficher la conversation</string>
@@ -766,14 +741,12 @@
     <string name="conference_destroyed">La conférence a été supprimée</string>
     <string name="no_application_found_to_view_contact">Aucune application permettant d’afficher ce contact n’a été trouvée</string>
     <string name="welcome_server_info">Nous vous recommandons d’utiliser blabber.im en tant que votre fournisseur.</string>
-    <string name="no_location_permission">blabber.im a besoin d’accéder aux services de géolocalisation</string>
     <string name="pref_show_record_voice_btn_summary">Affiche le bouton Enregistrement audio en tant qu’action rapide dans les conversations.</string>
     <string name="pref_show_record_voice_btn">Bouton Enregistrement audio</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Remplacer le bouton Envoyer par le bouton Joindre si aucun texte n\'est tapé. Sinon montrer le bouton d\'action rapide qui peut être configuré.</string>
     <string name="pref_quick_share_attachment_choice">Choix des fichiers joints</string>
     <string name="unable_to_save_recording">Impossible de sauvegarder l’enregistrement</string>
     <string name="foreground_service_channel_name">Service au premier plan</string>
-    <string name="foreground_service_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification permanente indiquant que blabber.im est en cours d\'exécution.</string>
     <string name="notification_group_status_information">Information du statut</string>
     <string name="error_channel_name">Problèmes de connexion</string>
     <string name="error_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification en cas de problème de connexion à un compte.</string>
@@ -824,7 +797,6 @@
     <string name="open_with">Ouvrir avec…</string>
     <string name="server_info_adhoc_invite">XEP-0050 : Commandes ad-hoc : invitation utilisateur/trice</string>
     <string name="choose_account">Sélectionnez un compte</string>
-    <string name="set_profile_picture">Image du profil blabber.im</string>
     <string name="restore_backup">Restaurer une sauvegarde</string>
     <string name="restore">Restaurer</string>
     <string name="enter_password_to_restore">Entrez votre mot de passe pour le compte %s afin de procéder à la restauration de la sauvegarde.</string>
@@ -888,7 +860,6 @@
     <string name="password_forgotten_title">Mot de passe oublié</string>
     <string name="password_forgotten_text">Vous avez oublié le mot de passe de votre compte ? Nous allons maintenant essayer d\'ouvrir le site Web d\'assistance de votre fournisseur.</string>
     <string name="set_settings_intro">Vous pouvez définir ici les paramètres de confidentialité selon vos besoins. Tous les paramètres peuvent aussi être modifiés plus tard.</string>
-    <string name="pref_show_mappreview_inside_summary">Affiche la géolocalisation sous forme d\'une carte directement dans la discussion, une connexion au serveur Pix-Art est nécessaire.</string>
     <string name="pref_show_mappreview_inside">Afficher les aperçus de géolocalisation</string>
     <string name="pref_use_internal_updater_summary">Vérifier les mises à jour de l\'application quotidiennement.</string>
     <string name="pref_use_internal_updater">Vérifier les mises à jour</string>
@@ -914,12 +885,10 @@
     <string name="action_unblock_participant">Débloquer le participant</string>
     <string name="action_block_participant">Bloquer le participant</string>
     <string name="share_backup_files">Partager la sauvegarde</string>
-    <string name="conversations_backup">Sauvegarde de blabber.im</string>
     <string name="event">Événement</string>
     <string name="pref_vibrate_in_chat_summary">Vibrer à l\'arrivée d\'un nouveau message dans une discussion ouverte.</string>
     <string name="pref_vibrate_in_chat">Vibrer dans une discussion ouverte</string>
     <string name="open_backup">Ouvrir une sauvegarde</string>
-    <string name="not_a_backup_file">Le fichier sélectionné n\'est pas une sauvegarde de blabber.im</string>
     <string name="account_already_setup">Ce compte a déjà été configuré</string>
     <string name="please_enter_password">Merci de saisir le mot de passe de ce compte</string>
     <string name="unable_to_perform_this_action">Impossible d\'effectuer cette action</string>
@@ -931,7 +900,6 @@
     <string name="pref_use_invidious_summary">Invidious est une alternative à Youtube et respecte la vie privée.</string>
     <string name="this_device">Cet appareil</string>
     <string name="intro_desc_main">En savoir plus…</string>
-    <string name="welcome_header">Bienvenue dans\nblabber.im</string>
     <string name="intro_required_permissions">Autorisations requises</string>
     <string name="intro_desc_required_permissions">À la fin de cette introduction il vous sera demandé d\'autoriser l\'accès au stockage (indispensable), si vous ne l\'avez pas déjà accordé. D\'autres permissions sont demandées au besoin et sont optionnelles.</string>
     <string name="intro_account">Votre compte</string>
@@ -949,9 +917,7 @@
     <string name="show_intro_again">Les messages d\'introduction seront affichés à nouveau</string>
     <string name="show_intro_again_failed">La réactivation des messages d\'introduction a échoué. Ré-essayez…</string>
     <string name="intro_desc_whats_xmpp">XMPP, également appelé Jabber, est un réseau de communication décentralisé et fonctionne comme le courrier électronique. Vous avez besoin d\'une adresse appelée identifiant Jabber, d\'un mot de passe et d\'un messager. Nous reviendrons plus tard sur ce sujet.</string>
-    <string name="intro_whats_xmpp">Qu\'est-ce que XMPP / Jabber / blabber.im ?</string>
     <string name="intro_desc_optional_permissions">Vous devez autoriser la lecture de votre carnet d\'adresses pour lire les identifiants Jabber de vos contacts (s\'ils en possèdent). Les contacts ne sont jamais partagés, téléchargés ou copiés.</string>
-    <string name="intro_desc_account2">Vous pouvez créer un nouveau profil en sélectionnant un serveur personnalisé ou un serveur dans le menu déroulant et en entrant un surnom.</string>
     <string name="open_join_dialog">Rejoindre un canal public…</string>
     <string name="intro_optional_permissions">Permissions optionnelles</string>
     <string name="intro_desc_optional_permissions2">L\'accès à votre position est nécessaire si vous souhaitez la partager.\nPour envoyer des messages audio il est nécessaire d\'avoir accès à votre micro.</string>
@@ -959,7 +925,6 @@
     <string name="intro_desc_start_chatting2">Vous pouvez également ajouter, créer ou rejoindre des chats multi-utilisateurs/trices - appelés MUC. On distingue les chats de groupe privés et les chats de groupe publics, appelés canaux.</string>
     <string name="intro_desc_start_chatting3">Félicitations !\nC\'est parti et amusez-vous…</string>
     <string name="intro_privacy">Votre confidentialité\nVotre souveraineté</string>
-    <string name="intro_desc_privacy">blabber.im ne vendra ni n\'analysera vos données et c\'est vous qui décidez des autorisations que vous accordez à l\'application.</string>
     <string name="no_results">Aucun résultat</string>
     <string name="file_transmission_cancelled">envoi du fichier annulée</string>
     <string name="sharing_application_not_grant_permission">La demande de partage n\'a pas permis d\'accéder à ce fichier.</string>
@@ -1041,4 +1006,15 @@
     <string name="readmore">Plus d\'informations</string>
     <string name="add_to_favorites">Ajouter aux favoris</string>
     <string name="remove_from_favorites">Enlever des favoris</string>
+    <string name="search_all_conversations">Toutes les conversations</string>
+    <string name="search_this_conversation">Cette conversation</string>
+    <string name="your_avatar">Votre avatar</string>
+    <string name="avatar_for_x">Avatar de %s</string>
+    <string name="encrypted_with_omemo">Chiffré avec OMEMO</string>
+    <string name="encrypted_with_openpgp">Chiffré avec OpenPGP</string>
+    <string name="not_encrypted">Pas chiffré</string>
+    <string name="missed_calls_channel_name">Appels manqués</string>
+    <string name="missed_call_from_x">Appel manqué de %s</string>
+    <string name="n_missed_calls">%d appels manqués</string>
+    <string name="n_missed_calls_from_m_contacts">%1$d appel(s) manqué(s) de %2$d contact(s)</string>
 </resources>
