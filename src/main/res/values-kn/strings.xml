@@ -58,8 +58,6 @@
     <string name="unblock">ಅನಿರ್ಬಂಧಿಸು</string>
     <string name="save">ಉಳಿಸು</string>
     <string name="ok">ಸರಿ</string>
-    <string name="crash_report_title">blabber.im ಅಪ್ಪಳಿಸಿತು</string>
-    <string name="crash_report_message">ಸ್ಯ್ಟಾಕ್ ಕುರುಹುಗಳನ್ನು ಕಳುಹಿಸುವ ಮೂಲಕ ನೀವು ಪಿಕ್ಸ್-ಆರ್ಟ್ ಮೆಸೆಂಜರ್‌ನ ಅಭಿವೃದ್ಧಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೀರಿ\n<b>ಎಚ್ಚರಿಕೆ:</b> ಇದು ನಿಮ್ಮ XMPP ಖಾತೆಯಿಂದ ಡೆವಲಪರ್‌ಗೆ ಸ್ಯ್ಟಾಕ್ ಟ್ರೇಸ್ ಕಳುಹಿಸುತ್ತದೆ.</string>
     <string name="send_now">ಈಗ ಕಳುಹಿಸು</string>
     <string name="send_never">ಎಂದಿಗೂ ಮತ್ತೊಮ್ಮೆ ಕೇಳಬೇಡ</string>
     <string name="problem_connecting_to_account">ಖಾತೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲ</string>
@@ -84,13 +82,11 @@
     <string name="send_unencrypted">ನಿರ್ಬದ್ಧ ಕಳುಹಿಸು</string>
     <string name="decryption_failed">ಡೀಕ್ರಿಪ್ಶನ್ ವಿಫಲವಾಗಿದೆ. ನೀವು ಸರಿಯಾದ ಖಾಸಗಿ ಕೀಲಿಯನ್ನು ಹೊಂದಿಲ್ಲದಿರಬಹುದು.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im ಸಂದೇಶಗಳನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್-ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಮತ್ತು ಸಾರ್ವಜನಿಕ ಕೀಲಿಗಳನ್ನು ನಿರ್ವಹಿಸಲು<b>OpenKeychain</b>ಎಂಬ ಮೂರನೇ ವ್ಯಕ್ತಿಯ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಬಳಸುತ್ತದೆ.\n\nOpenKeychain ಅನ್ನು \"ಸಾರ್ವಜನಿಕ ಲೈಸೆನ್ಸ್ v3\" (GPLv3) ಅಲ್ಲಿ ಬಿಡುಗಡೆ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಇದನ್ನು F-droid ಮತ್ತು Google Playನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು.\n\n<small>(ದಯವಿಟ್ಟು ನಂತರ Pix-Art ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ.)</small></string>
     <string name="restart">ಪುನರಾರಂಭ</string>
     <string name="install">ಸ್ಥಾಪಿಸು</string>
     <string name="offering">ನೀಡುತ್ತದೆ…</string>
     <string name="waiting">ನಿರೀಕ್ಷೆ…</string>
     <string name="no_pgp_key">ಯಾವ OpenPGP ಕೀಲಿ ಸಿಗಲಿಲ್ಲ</string>
-    <string name="contact_has_no_pgp_key">ನಿಮ್ಮ ಸಂಪರ್ಕ ಅವರ ಸಾರ್ವಜನಿಕ ಕೀಲಿಯನ್ನು ಘೋಷಿಸದ ಕಾರಣ Pix-Art ಮೆಸೆಂಜರ್‌ಗೆ ನಿಮ್ಮ ಸಂದೇಶಗಳನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ. \n\n<small>OpenPGP ಹೊಂದಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಕೇಳಿ.</small></string>
     <string name="no_pgp_keys">ಯಾವ OpenPGP ಕೀಲಿ ಸಿಗಲಿಲ್ಲ</string>
     <string name="pref_general">ಸಾಮಾನ್ಯ</string>
     <string name="pref_accept_files_wifi">ಕಡತಗಳನ್ನು ವೈಫೈ ಸಂಪರ್ಕಗಳಲ್ಲಿ ಸ್ವೀಕರಿಸಿ</string>
@@ -108,7 +104,6 @@
     <string name="pref_sound">ರಿಂಗ್‌ಟೋನ್‌</string>
     <string name="pref_sound_summary">ಹೊಸ ಸಂದೆಶ ಬಂದಾಗ ಶಬ್ದ ಮಾಡು</string>
     <string name="pref_send_crash">ಅಪ್ಪಳಿಕೆ ವರದಿಗಳನ್ನು ಕಳುಹಿಸು</string>
-    <string name="pref_send_crash_summary">ಸ್ಟಾಕ್ ಕುರುಹುಗಳನ್ನು ಕಳುಹಿಸುವ ಮೂಲಕ ನೀವು Pix-Art ಮೆಸೆಂಜರ್‌ನ ಅಭಿವೃದ್ಧಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೀರಿ</string>
     <string name="pref_confirm_messages">ಸಂದೇಶಗಳನ್ನು ದೃಢೀಕರಿಸು</string>
     <string name="pref_confirm_messages_summary">ನನಗೆ ನಂದೇಶಗಳು ತಲುಪಿದಾಗ ಮತ್ತು ನಾನು ಓದಿದಾಗ ನನ್ನ ಸಂಪರ್ಕಗಳಿಗೆ ತಿಳಿಸು</string>
     <string name="pref_ui_options">ನೋಟ</string>
@@ -157,7 +152,6 @@
     <string name="mgmt_account_delete_confirm_message">ಖಾತೆಯನ್ನು ಅಳಿಸಿದರೆ, ಈ ಫೋನಲ್ಲಿರೋ ಸಂಭಾಷಣೆಯ ಇತಿಹಾಸವು ಕಳೆದುಹೋಗುತ್ತದೆ.\n\nಖಾತೆಯನ್ನು ಸರ್ವರ್‌ನಿಂದ ಅಳಿಸಿದರೆ, ಸಂಪೂರ್ಣ ಖಾತೆಯನ್ನು ಸರ್ವರ್‌ನಿಂದಲೂ ಅಳಿಸಲಾಗುತ್ತದೆ, ಹೊಸ ಖಾತೆಯನ್ನು ನೋಂದಾಯಿಸುವವರೆಗೆ ಇನ್ನು ಮುಂದೆ ಲಾಗಿನ್ ಆಗಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.</string>
     <string name="attach_record_voice">ಧ್ವನಿ ಮುದ್ರಣ</string>
     <string name="account_settings_jabber_id">XMPP ವಿಳಾಸ</string>
-    <string name="account_settings_example_jabber_id">ಬಳಕೆನಾಮ@ಉದಾಹರಣೆ.com</string>
     <string name="password">ಗುಪ್ತಪದ</string>
     <string name="invalid_jid">ಇದು ಸರಿಯಾದ XMPP ವಿಳಾಸ ಅಲ್ಲ</string>
     <string name="error_out_of_memory">ಮೆಮೊರಿ(RAM) ತುಂಬೊಯ್ತು. ಚಿತ್ರ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ</string>
