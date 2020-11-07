@@ -49,8 +49,6 @@
     <string name="unblock">Tidak diblok</string>
     <string name="save">Simpan</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">blabber.im mengalami kegagalan</string>
-    <string name="crash_report_message">Dengan mengirimkan riwayat anda membantu pengembangan blabber.im yang sedang berlangsung\n<b>Peringatan:</b> Ini akan menggunakan akun XMPP Anda untuk mengirim riwayat ke pengembang.</string>
     <string name="send_now">Kirim Sekarang</string>
     <string name="send_never">Jangan tanya lagi</string>
     <string name="problem_connecting_to_account">Tidak dapat terhubung ke akun</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Kiriman tidak terenkripsi</string>
     <string name="decryption_failed">Dekripsi gagal. Mungkin anda tidak memiliki kunci pribadi yang tepat.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im menggunakan aplikasi pihak ketiga yang disebut <b>OpenKeychain</b> untuk mengenkripsi dan mendekripsi pesan dan mengelola kunci publik anda.\n\nOpenKeychain memiliki lisensi di bawah GPLv3 dan tersedia di F-Droid dan Google Play.\n\n<small>(Silahkan muat ulang blabber.im setelahnya.)</small></string>
     <string name="restart">Muat ulang</string>
     <string name="install">Pasang</string>
     <string name="offering">penawaran…</string>
     <string name="waiting">menunggu…</string>
     <string name="no_pgp_key">Tidak ada kunci OpenPGP yang ditemukan</string>
-    <string name="contact_has_no_pgp_key">blabber.im tidak dapat mengenkripsi pesan anda karena kontak anda tidak menampilkan kunci publik miliknya.\n\n<small>Mintalah kontak anda untuk menyiapkan OpenPGP.</small></string>
     <string name="no_pgp_keys">Tidak ada kunci OpenPGP yang ditemukan</string>
     <string name="pref_general">Umum</string>
     <string name="pref_accept_files_wifi">Menerima berkas di jaringan WiFi</string>
@@ -144,7 +140,6 @@
     <string name="mgmt_account_are_you_sure">Apakah kamu yakin?</string>
     <string name="attach_record_voice">Rekam suara</string>
     <string name="account_settings_jabber_id">Obrolan-Data diri</string>
-    <string name="account_settings_example_jabber_id">nama pengguna@blabber.im</string>
     <string name="password">Kata sandi</string>
     <string name="invalid_jid">Ini bukan ID Jabber yang sah</string>
     <string name="error_out_of_memory">Kehabisan ruang penyimpanan. Gambar terlalu besar</string>
@@ -385,11 +380,9 @@
     <string name="pref_away_when_screen_off">Jauh saat layar mati</string>
     <string name="pref_away_when_screen_off_summary">Tandai sumber daya Anda saat tidak aktif saat layar dimatikan</string>
     <string name="pref_dnd_on_silent_mode">\"Jangan diganggu\" dalam mode diam</string>
-    <string name="update_info">blabber.im sedang di unduh dan memasang versi baru secara otomatis.\n\nHarap tunggu…</string>
     <string name="pref_dnd_on_silent_mode_summary">Tandai sumber Anda sebagai \"Jangan diganggu\" saat perangkat dalam mode senyap</string>
     <string name="pref_treat_vibrate_as_silent">Perlakukan getar sebagai mode senyap</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Tandai sumber Anda sebagai \"Jangan diganggu\" saat perangkat bergetar</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Tambahkan akun dengan sertifikat</string>
     <string name="unable_to_parse_certificate">Tidak bisa mengurai sertifikat</string>
     <string name="authenticate_with_certificate">Biarkan kosong untuk mengotentikasi w / sertifikat</string>
@@ -415,17 +408,13 @@
         <item quantity="other">%d pesan</item>
     </plurals>
     <string name="load_more_messages">Muat lebih banyak pesan</string>
-    <string name="no_storage_permission">blabber.im membutuhkan akses ke penyimpanan eksternal</string>
     <string name="sync_with_contacts">Sesuaikan dengan kontak</string>
-    <string name="sync_with_contacts_long">blabber.im ingin mencocokkan daftar XMPP anda dengan kontak anda untuk menunjukkan nama lengkap dan avatar mereka.\n\nblabber.im hanya akan membaca kontak anda dan mencocokkannya secara lokal tanpa mengunggahnya ke server anda.\n\nAnda sekarang diminta izin untuk mengakses kontak anda.</string>
     <string name="notify_on_all_messages">Hidupkan pemberitahuan untuk semua pesan</string>
     <string name="notify_only_when_highlighted">Pemberitahuan hanya bila disebutkan</string>
     <string name="notify_never">Pemberitahuan tidak diaktifkan</string>
     <string name="notify_paused">Pemberitahuan dijeda</string>
     <string name="always">Selalu</string>
     <string name="battery_optimizations_enabled">Optimalisasi baterai diaktifkan</string>
-    <string name="battery_optimizations_enabled_explained">Perangkat anda melakukan beberapa pengoptimalan baterai pada blabber.im yang mungkin menyebabkan pemberitahuan tertunda atau bahkan kehilangan pesan.\nDianjurkan untuk tidak mengaktifkannya.</string>
-    <string name="battery_optimizations_enabled_dialog">Perangkat anda melakukan beberapa pengoptimalan baterai pada blabber.im yang mungkin menyebabkan pemberitahuan tertunda atau bahkan kehilangan pesan.\n\nAnda sekarang akan diminta untuk tidak mengaktifkannya.</string>
     <string name="install_from_unknown_sources_disabled">Memasang dari sumber yang tidak dikenal dimatikan</string>
     <string name="install_from_unknown_sources_disabled_dialog">Perangkat anda diatur untuk tidak mengizinkan pemasangan aplikasi dari sumber yang tidak dipercaya kecuali dari Google PlayStore. Hal ini akan menyebabkan masalah pada pembaruan aplikasi.\n\nAnda sekarang akan diminta untuk mengizinkan pemasangan aplikasi dari sumber yang tidak dipercaya.</string>
     <string name="disable">Menonaktifkan</string>
@@ -437,7 +426,6 @@
     <string name="correct_message">Memeriksa pesan</string>
     <string name="send_corrected_message">Kirim pesan yang dikoreksi</string>
     <string name="no_keys_just_confirm">Anda sudah mempercayai kontak ini. Dengan memilih \'selesai\' anda telah memastikan bahwa %s anda adalah bagian dari obrolan kelompok ini.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im tidak dapat mengenkripsi pesan anda karena kontak tidak menampilkan kunci publik mereka.\n\n</string>
     <string name="this_account_is_disabled">Anda telah menonaktifkan akun ini</string>
     <string name="no_application_to_share_uri">Tidak ada aplikasi yang ditemukan untuk berbagi URI</string>
     <string name="share_uri_with">Bagikan URI dengan…</string>
@@ -469,10 +457,6 @@
     <string name="invite_again">Undang lagi</string>
     <string name="inviteUser_Subject">telah mengundang Anda melalui</string>
     <string name="pref_broadcast_last_activity">Siaran Interaksi Pengguna Terakhir</string>
-    <string name="pref_broadcast_last_activity_summary">Biarkan semua kontak Anda tahu saat menggunakan blabber.im</string>
-    <string name="invite_user">Mengundang ke blabber.im</string>
-    <string name="request_permissions_message">blabber.im akan meminta Anda mengizinkan beberapa izin. Penting bahwa Anda mengizinkan semua hak akses ini untuk menggunakan semua fitur messenger ini. Jika Anda menolak izin ini, aplikasi akan menutup dengan sendiri.</string>
-    <string name="request_permissions_message_again">Anda telah menolak beberapa atau semua izin yang dibutuhkan untuk blabber.im. Apakah Anda ingin beralih ke pengaturan dan mengizinkan izin ini? Jika Anda menolak semua izin ini, aplikasi akan menutup dengan sendiri.</string>
     <string name="unable_to_connect_to_keychain">Tidak dapat terhubung ke OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Perangkat ini tidak lagi digunakan</string>
     <string name="please_wait">Harap tunggu…</string>
@@ -499,7 +483,6 @@
     <string name="quote">Kutipan</string>
     <string name="show_error_message">Tampilkan pesan kesalahan</string>
     <string name="data_saver_enabled">Penghemat data diaktifkan</string>
-    <string name="device_does_not_support_data_saver">Perangkat Anda tidak mendukung penonaktifan hemat data untuk blabber.im.</string>
     <string name="add_to_contact_list">Tambahkan ke daftar kontak</string>
     <string name="contact">Kontak</string>
     <string name="unable_to_start_recording">Tidak dapat mulai merekam</string>
@@ -566,7 +549,6 @@
     <string name="server_info_partial">sebagian</string>
     <string name="pref_show_foreground_service_summary">Beberapa perangkat Android akan menutup beberapa aplikasi setelah jangka waktu tertentu dan Anda tidak akan dapat menerima pesan baru. Jika Anda memiliki masalah seperti itu, cobalah untuk mengaktifkan layanan latar depan. Namun perlu diingat, bahwa Anda akan memiliki pemberitahuan permanen dengan pilihan ini dicentang.</string>
     <string name="pref_show_foreground_service">Gunakan layanan latar depan</string>
-    <string name="update_service">Layanan memperbarui blabber.im</string>
     <string name="install_update">Memasang pembaharuan?</string>
     <string name="highlight_in_muc">sorot pengguna</string>
     <string name="no_application_found_to_open_link">Tidak ada aplikasi yang ditemukan untuk membuka tautan</string>
@@ -583,5 +565,4 @@
     <string name="conference_unknown_error">Anda tidak lagi di obrolan grup ini</string>
     <string name="snooze">Menunda</string>
     <string name="huawei_protected_apps">Aplikasi yang Dilindungi</string>
-    <string name="huawei_protected_apps_summary">Agar tetap menerima pemberitahuan, bahkan saat layar dimatikan, Anda perlu menambahkan blabber.im ke daftar aplikasi yang dilindungi.</string>
 </resources>
