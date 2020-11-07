@@ -58,7 +58,6 @@
     <string name="unblock">إلغاء الحظر</string>
     <string name="save">حفظ</string>
     <string name="ok">موافق</string>
-    <string name="crash_report_title">لقد تحطم بيكس آرت ماسنجر</string>
     <string name="send_now">ارسل الآن</string>
     <string name="send_never">لا تسأل مجددًا</string>
     <string name="problem_connecting_to_account">لا يمكن الاتصال بالحساب</string>
@@ -83,7 +82,6 @@
     <string name="send_unencrypted">أرسل من دون تشفير</string>
     <string name="decryption_failed">فشل فك التشفير. ربما ليس لديك المفتاح الخاص المناسب.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">يستخدم blabber.im تطبيقًا تابعًا لجهة خارجية يسمى <b>OpenKeychain</b> لتشفير الرسائل وفك تشفيرها ولإدارة المفاتيح العامة. n\n\OpenKeychain مرخص بموجب GPLv3 ومتوفر على F-Droid و Google Play (يرجى إعادة تشغيل Pix- Art Messenger بعد ذلك.)</string>
     <string name="restart">إعادة التشغيل</string>
     <string name="install">تثبيت</string>
     <string name="offering">عرض…</string>
@@ -106,7 +104,6 @@
     <string name="pref_sound">النغمة</string>
     <string name="pref_sound_summary">تشغيل نغمة عند استلام رسالة جديدة</string>
     <string name="pref_send_crash">ارسال تقارير تحطّم التطبيق</string>
-    <string name="pref_send_crash_summary">من خلال إرسال آثار المكدس ، فإنك تساعد في التطوير المستمر لبرنامج blabber.im</string>
     <string name="pref_confirm_messages">تأكيد الرسائل</string>
     <string name="pref_confirm_messages_summary">دع كافة مُراسِليك يعلمون أنك قد تلقيت رسائلهم و قمتَ بقراءتها</string>
     <string name="pref_ui_options">واجهة المستخدم</string>
@@ -153,7 +150,6 @@
     <string name="mgmt_account_delete_confirm_message">إذا قمت بحذف حسابك ، فسيتم فقدان محفوظات المحادثات المحلية بالكامل. \n\nإذا قمت بحذف حسابك من الخادم ، فسيتم حذف حسابك بالكامل من الخادم أيضًا ، فلن تتمكن من تسجيل الدخول بعد الآن حتى تقوم بتسجيل حساب جديد.</string>
     <string name="attach_record_voice">تسجيل مقطع صوتي</string>
     <string name="account_settings_jabber_id">حساب جابر</string>
-    <string name="account_settings_example_jabber_id">username@blabber.im</string>
     <string name="password">الكلمة السرية</string>
     <string name="invalid_jid">هذا ليس هوية جابر صالحة</string>
     <string name="error_out_of_memory">خارج الذاكرة. الصورة كبيرة جدًا</string>
@@ -382,7 +378,6 @@
     <string name="download_started">بدأ التنزيل</string>
     <string name="account_status_tor_unavailable">شبكة تور غير متوفرة</string>
     <string name="pref_presence_settings">التوفر</string>
-    <string name="hostname_example">xmpp.blabber.im</string>
     <string name="action_add_account_with_certificate">إضافة حساب يحوي شهادة</string>
     <string name="unable_to_parse_certificate">لا يمكن تحليل لشهادة</string>
     <string name="mam_prefs">خيارات الأرشفة</string>
@@ -443,7 +438,6 @@
     <string name="import_database">استيراد نسخة احتياطية</string>
     <string name="invite_again">إعادة دعوته مجددا</string>
     <string name="inviteUser_Subject">قام بدعوتك عبر</string>
-    <string name="invite_user">الدعوة إلى بيكس آرت ماسنجر</string>
     <string name="please_wait">يُرجى الانتظار…</string>
     <string name="payment_required">الدفع مطلوب</string>
     <string name="me">أنا</string>
@@ -503,7 +497,6 @@
     <string name="pref_validate_hostname">تأكيد اسم المضيف عبر DNSSEC</string>
     <string name="mark_as_read">اعتبرها مقروءة</string>
     <string name="server_info_partial">جزئيا</string>
-    <string name="update_service">خدمة التحديث لـ blabber.im</string>
     <string name="install_update">تنصيب التحديث؟</string>
     <string name="no_application_found_to_open_link">تعذر العثور على تطبيق يمكنه فتح هذا الرابط</string>
     <string name="pref_warn_unencrypted_chat">التنبيه إن كانت المحادثة غير مشفّرة</string>
