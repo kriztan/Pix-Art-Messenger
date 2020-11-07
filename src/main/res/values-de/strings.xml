@@ -841,15 +841,15 @@
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
-    <string name="join_public_channel">Öffentlichen Channel beitreten</string>
+    <string name="join_public_channel">Öffentlichem Channel beitreten</string>
     <string name="create_private_group_chat">Privaten Gruppenchat erstellen</string>
-    <string name="create_public_channel">Öffentlichen Channel erstellen</string>
+    <string name="create_public_channel">Öffentliches Channel erstellen</string>
     <string name="create_dialog_channel_name">Channel Name</string>
     <string name="xmpp_address">XMPP Adresse</string>
     <string name="please_enter_name">Bitte einen Namen für den Channel eingeben</string>
     <string name="please_enter_xmpp_address">Bitte eine XMPP-Adresse eingeben</string>
     <string name="this_is_an_xmpp_address">Dies ist eine XMPP-Adresse. Bitte einen Namen eingeben.</string>
-    <string name="creating_channel">Öffentlichen Channel erstellen…</string>
+    <string name="creating_channel">Öffentliches Channel erstellen…</string>
     <string name="channel_already_exists">Dieser Channel existiert bereits</string>
     <string name="joined_an_existing_channel">Du bist einem bestehenden Channel beigetreten</string>
     <string name="unable_to_set_channel_configuration">Channel-Einstellung kann nicht geändert werden</string>
@@ -889,7 +889,7 @@
     <string name="password_forgotten_title">Passwort vergessen</string>
     <string name="password_forgotten_text">Du hast dein Passwort vergessen? Wir versuchen, die Support-Website deines Providers zu öffnen.</string>
     <string name="set_settings_intro">Hier kannst du einige wichtige Einstellungen zur Privatsphäre nach deinen Wünschen vornehmen. Alle Änderungen können auch später angepasst werden.</string>
-    <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung zum Pix-Art-Server hergestellt.</string>
+    <string name="pref_show_mappreview_inside_summary">Zeige eine Vorschau von Standorten direkt im Chat, dabei wird eine Verbindung zum blabber.im-Server hergestellt.</string>
     <string name="pref_show_mappreview_inside">Zeige Karten-Vorschau im Chat</string>
     <string name="pref_use_internal_updater_summary">Lasse den Messenger einmal am Tag nach einer neuen Version suchen</string>
     <string name="pref_use_internal_updater">Nach Updates suchen</string>
@@ -1058,4 +1058,14 @@
         <item quantity="other">Mehrere Nachrichten konnten nicht zugestellt werden</item>
     </plurals>
     <string name="failed_deliveries">Fehlgeschlagene Zustellungen</string>
+    <string name="missed_calls_channel_name">Verpasste Anrufe</string>
+    <string name="missed_call_from_x">Verpasster Anruf von %s</string>
+    <string name="n_missed_calls_from_x">%1$d verpasste Anrufe von %2$s</string>
+    <string name="n_missed_calls">%d verpasste Anrufe</string>
+    <string name="n_missed_calls_from_m_contacts">%1$d verpasste Anrufe von %2$d Kontakten</string>
+    <string name="pref_invidious_host_summary">Nutze benutzerdefinierten Invidious Server</string>
+    <string name="pref_invidious_host">Invidious Server</string>
+    <string name="updated_to_blabber">Pix-Art Messenger wurde erfolgreich auf blabber.im aktualisiert\n\nDie Zusammenarbeit der beiden Projekte blabber.im und Pix-Art Messenger wurde im November 2020 weiter ausgebaut. Zukünftig wird die Android App Pix-Art Messenger unter dem Namen blabber.im weitergeführt.\n\nWas euch erwartet:\n- Funktionsumfang bleibt erhalten\n- Support Chaträume werden zusammengelegt\n- Farben und Logos werden an blabber.im angepasst\n- App ist weiterhin kostenlos im Google Play Store und F-Droid Store verfügbar\n\nEuer blabber.im Team</string>
+    <string name="updated_to_blabber_google">Wir müssen uns entschuldigen, dass wir nicht direkt auf blabber.im aktualisieren konnten. Unter dem folgenden Link findest du eine Anleitung, wie alle deine Profile vom Pix-Art Messenger auf blabber.im übertragen werden können.</string>
+    <string name="link">Link</string>
 </resources>
