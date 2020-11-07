@@ -49,8 +49,6 @@
     <string name="unblock">Ayaw i-block</string>
     <string name="save">Luwasa</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">blabber.im kay naguba</string>
-    <string name="crash_report_message">Sa pamaagi nga pagpadala sa stack traces ikaw naktabang sa nagpadayun sa paglambo sa blabber.im\n<b>Pasidaan:</b> Kini mugamit sa imung XMPP nga account para makapadala ug stack trace ngadto sa developer.</string>
     <string name="send_now">Ipadala karun</string>
     <string name="send_never">Ayaw nag pangutana balik</string>
     <string name="problem_connecting_to_account">Dili ka konek sa account</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Ipadala nga wala\'y lihok</string>
     <string name="decryption_failed">Npakyas ang decryption. Basin tungod kay wala kay husto nga pribadong yawe.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Ang blabber.im naggamit sa ikatulong partido nga gitawag <b>OpenKeychain</b> sa pag-encrypt ug wala pag-encrypt sa mga mensahe ug sa pagdumala sa imong mga yawe sa publiko.\n\nOpenKeychain kay\n\n<small> lisensyado ubos sa GPLv3 ug magamit sa F-Droid ug Google Play.(Palihug i-restart ang blabber.im pagkahuman.)</small></string>
     <string name="restart">I-restart</string>
     <string name="install">I-install</string>
     <string name="offering">paghalad…</string>
     <string name="waiting">napa-abot…</string>
     <string name="no_pgp_key">Walay OpenPGP nga yawe nga nakita</string>
-    <string name="contact_has_no_pgp_key">Ang blabber.im dili makahimo sa pag-encrypt sa imong mga mensahe tungod kay ang imong contact wala magpahibalo sa iyang public yawe.\n\n<small>Palihog pangutana sa imung kontak nga e-setup ang OpenPGP.</small></string>
     <string name="no_pgp_keys">Walay OpenPGP nga mga Yawe ang nakita</string>
     <string name="pref_general">General</string>
     <string name="pref_accept_files_wifi">Dawat nga mga file sa WiFi nga mga koneksiyon</string>
@@ -144,7 +140,6 @@
     <string name="mgmt_account_are_you_sure">Sure jud ka?</string>
     <string name="attach_record_voice">Irekord ang tingog</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">username@blabber.im</string>
     <string name="password">Password</string>
     <string name="invalid_jid">Dili kini balido nga Jabber-ID</string>
     <string name="error_out_of_memory">Wala nay memorya. Ang hulagway dako kaayo</string>
@@ -355,11 +350,9 @@
     <string name="pref_away_when_screen_off">Layo kung ang screen kay gepalong</string>
     <string name="pref_away_when_screen_off_summary">Markahe ang imung gepanguhaan ingon nga layo kong ang screen gipalong</string>
     <string name="pref_dnd_on_silent_mode">\"Ayaw ug samoka\" sa hilom nga mode</string>
-    <string name="update_info">Ang blabber.im kay nag-download ug nag-install sa bag-o nga bersiyon awtomatik.\n\nPalihug paabot…</string>
     <string name="pref_dnd_on_silent_mode_summary">Markahi imung gepanguhaan sa \"Ayaw ug Samoka\" kung ang device kay naa sa hilum nga mode</string>
     <string name="pref_treat_vibrate_as_silent">Tratuha ang pag-vibrate ingun nga hilum nga mode</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Markahi ang imung gepanguhaan as \"Ayaw ug samoka\" kung ang device naka vibrate</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Idugang ang account sa sertipiko</string>
     <string name="unable_to_parse_certificate">Dili ma-parse ang certificate</string>
     <string name="authenticate_with_certificate">Biyai ang walay sulod aron pamatud-an ang w / certificate</string>
@@ -390,17 +383,13 @@
 %d mga mensahe</item>
     </plurals>
     <string name="load_more_messages">Pag-load og daghang mga mensahe</string>
-    <string name="no_storage_permission">Ang blabber.im nagkinahanglan og access sa external nga storage</string>
     <string name="sync_with_contacts">Synchronize sa mga kontak</string>
-    <string name="sync_with_contacts_long">Ang blabber.im kay gusto mo pareha sa XMPP roster uban sa imung mga kontak para mapakita ang tubuok nga mga pangan ug mga avatar.\n\nblabber.im kay mubasa ra sa imong mga kontak ug iparehas sila sa lokal bisan walay pag-upload sa imung serber.\n\nIkaw gina pangutana namu nga mu grant ka ug permiso para e-access ang imung mga kontak.</string>
     <string name="notify_on_all_messages">Pahibal-a sa tanang mga mensahe</string>
     <string name="notify_only_when_highlighted">Pahibal-a kung ge-hisgutan</string>
     <string name="notify_never">Mga pahibalo kay baldado</string>
     <string name="notify_paused">Mga pahibalo kay gipa ungot</string>
     <string name="always">Permenti</string>
     <string name="battery_optimizations_enabled">Kinahanglan ang mga optimization sa baterya</string>
-    <string name="battery_optimizations_enabled_explained">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa blabber.im nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\nKani kay ge recomend mga dili na.</string>
-    <string name="battery_optimizations_enabled_dialog">Ang imung device kay nagbuhat ug bug-at nga battery para optimization sa blabber.im nga pwedi sa rason nga maka dugay sa mga pahibalo o bisag mga mensahe nga nawa.\n\nKani kay ge recomend mga dili na.</string>
     <string name="install_from_unknown_sources_disabled">Pag-install gikan sa wala mailhi nga mga tinubdan wala tugoti</string>
     <string name="install_from_unknown_sources_disabled_dialog">Ang imong device gi-configure aron dili sugtan ang mga app i-install gikan sa wala mailhi nga mga tinubdan gawas sa Google PlayStore. Kini maoy hinungdan sa mga problema uban sa updater sa app.\n\nIkaw kay pangutan-on kung mutugot ba sa app nga i-install gekan sa wa mailhing mga tinubdan.</string>
     <string name="disable">Wala gipagana</string>
@@ -412,7 +401,6 @@
     <string name="correct_message">Sakto nga mensahe</string>
     <string name="send_corrected_message">Pagpadala ug insakto nga mensahe</string>
     <string name="no_keys_just_confirm">Nagasalig naka niini nga kontak. Pinaagi sa pagpili sa \'nahuman\' gipamatuod nimo nga kana %s kay parte diri sa grupo nga chat.</string>
-    <string name="contacts_have_no_pgp_keys">Ang blabber.im kay dili makahimo sa pag-encrypt sa imong mga mensahe tungod kay ang imong mga kontak wala magpahibalo sa ilang mga yawe sa publiko.\n\n</string>
     <string name="this_account_is_disabled">Gipugngan nimo ang kini nga account</string>
     <string name="no_application_to_share_uri">Walay aplikasyon nga nakuha aron ipaambit ang URI</string>
     <string name="share_uri_with">Ipaambit ang URI kauban…</string>
@@ -445,10 +433,6 @@
     <string name="invite_again">Pagdapit pag-usab</string>
     <string name="inviteUser_Subject">nagdapit kanimo pinaagi sa</string>
     <string name="pref_broadcast_last_activity">Broadcast Last Interaction sa Gumagamit</string>
-    <string name="pref_broadcast_last_activity_summary">Hibal-i ang tanan nimong contact kung gamiton ang blabber.im</string>
-    <string name="invite_user">Pagdapit sa blabber.im</string>
-    <string name="request_permissions_message">blabber.im mangutana sa imuha kung musugyot ka gayud sa pipila ka mga permiso. Importante nga imong tugotan ang tanan nga mga permiso nga gamiton ang tanang bahin niini nga mensahero. Kung imu ilimod bisag asa niini nga mga permiso ang app musira sa iyang kaugalingon.</string>
-    <string name="request_permissions_message_again">Imuhang gelimod ang uban o tanang permisong kinahanglanun para sa blabber.im. Gusto ka bang moambak sa mga setting ug tugotan kini nga mga permiso? Kung imu ilimod bisag unsa ining mag permiso, ang app mismo musira sa iyang kaugalingun.</string>
     <string name="unable_to_connect_to_keychain">Dili maka konek sa OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Ang kini nga device kay wala na ginagamit</string>
     <string name="please_wait">Palihog paabot…</string>
@@ -475,7 +459,6 @@
     <string name="quote">Quote</string>
     <string name="show_error_message">Ipakita ang error nga mensahe</string>
     <string name="data_saver_enabled">Tigluwas sa Data gipagana</string>
-    <string name="device_does_not_support_data_saver">Ang imong device wala mosuporta sa pagputol sa tigluwas sa data alang sa blabber.im.</string>
     <string name="add_to_contact_list">Ipuno sa lista sa mga kontak</string>
     <string name="contact">Kontak</string>
     <string name="unable_to_start_recording">Dili makasugod sa pagrekord</string>
@@ -536,7 +519,6 @@
     <string name="server_info_partial">parsyal</string>
     <string name="pref_show_foreground_service_summary">Ang ubang mga device sa Android magsarado sa pipila ka mga oras ug dili naka makadawat ug mga bag-o nga mensahe. Kung naa kay ing ana nga problema, suwayi ug pag-aktibo sa foreground nga serbisyo. Pero timan-e, nga maana-a kay permamente nga pagpahibalo kauban niini nga opsiyong gitan-aw.</string>
     <string name="pref_show_foreground_service">Gamit ug serbisyo sa foreground</string>
-    <string name="update_service">blabber.im nabag-o nga serbisyo</string>
     <string name="install_update">I-install ang pagbag-o?</string>
     <string name="highlight_in_muc">ipaklaro ang user</string>
     <string name="no_application_found_to_open_link">Walay aplikasyon nakita para ablihan ang link</string>
@@ -553,5 +535,4 @@
     <string name="conference_unknown_error">Wala nakay labot diri nga grupo sa chat</string>
     <string name="snooze">Snooze</string>
     <string name="huawei_protected_apps">Protektado nga mga App</string>
-    <string name="huawei_protected_apps_summary">Para kanunay nga makadawat ug pagpahibalo, bisag ang screen nimu kay palong, kinahanglan ka adto sa blabber.im para sa lista sa mga protektado nga mga app.</string>
 </resources>
