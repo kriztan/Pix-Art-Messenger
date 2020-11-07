@@ -58,8 +58,6 @@
     <string name="unblock">Əngəldən çıxart</string>
     <string name="save">Saxla</string>
     <string name="ok">Oldu</string>
-    <string name="crash_report_title">blabber.im çökdü</string>
-    <string name="crash_report_message">Yığma izləri göndərməklə blabber.im-in davamlı inkişafına kömək edir\n &lt;b&gt;Xəbərdarlıq:&lt;bb&gt; Bu XMPP hesabınızı yığın izini geliştiriciyə göndərmək üçün istifadə edəcəkdir.</string>
     <string name="send_now">İndi göndər</string>
     <string name="send_never">Bir daha soruşma</string>
     <string name="problem_connecting_to_account">Hesabla bağlantı qurula bilmədi</string>
@@ -84,15 +82,11 @@
     <string name="send_unencrypted">Şifrəsiz göndər</string>
     <string name="decryption_failed">Şifrəni açma uğursuz oldu. Bəlkə də, müvafiq özəl açarınız yoxdur.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im, mesajları şifrələmək və şifrəni açmaq və açıq açarlarınızı idarə etmək üçün &lt;b&gt;OpenKeychain&lt;b&gt; adlı üçüncü bir tətbiqdən istifadə edir.\n\nOpenKeychain GPLv3-lə lisenziyalıdır və F-Droid və Google Play-də mövcuddur.\n\n&lt;small&gt;(blabber.im-i yenidən başladın)&lt;/small&gt;</string>
     <string name="restart">Yenidən başlat</string>
     <string name="install">Quraşdır</string>
     <string name="offering">təklif edilir…</string>
     <string name="waiting">gözləyir…</string>
     <string name="no_pgp_key">OpenPGP Açarı tapılmadı</string>
-    <string name="contact_has_no_pgp_key">blabber.im, mesajlarınızın şifrələməsinə imkan vermir, çünki kontaktınız onun ictimai anonsunu elan etmir. \n
-  \n
-  <small>OpenPGP-in qurulmasına müraciət edin.</small></string>
     <string name="no_pgp_keys">OpenPGP Açarı tapılmadı</string>
     <string name="pref_general">Ümumi</string>
     <string name="pref_accept_files_wifi">WiFi bağlantılarında faylları qəbul et</string>
@@ -110,7 +104,6 @@
     <string name="pref_sound">Zəng səsi</string>
     <string name="pref_sound_summary">Yeni bir mesaj gələndə səs oynat</string>
     <string name="pref_send_crash">Xəta hesabatı göndər</string>
-    <string name="pref_send_crash_summary">Yığma izlər göndərməklə blabber.im-in davamlı inkişafına kömək edir</string>
     <string name="pref_confirm_messages">Mesajları Təsdiqlə</string>
     <string name="pref_confirm_messages_summary">Kontaktlarınızı qəbul etdikdə bildirin və mesajlarını oxuyun</string>
     <string name="pref_ui_options">İstifadәçi İnterfeysi</string>
@@ -159,7 +152,6 @@
     <string name="mgmt_account_delete_confirm_message">Hesabınızı silsəniz, bütün yerli danışıq tarixçəniz itiriləcəkdir.\n\n Hesabınızı serverdən silmisinizsə, bütün hesabınız serverdən də silinəcəkdir, yeni bir hesab qeyd etməyinizə qədər artıq daxil ola bilməyəcəksiniz..</string>
     <string name="attach_record_voice">Səs yazmaq</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">istifadəçininadı@blabber.im</string>
     <string name="password">Şifrə</string>
     <string name="invalid_jid">Bu etibarlı Jabber-ID deyil</string>
     <string name="error_out_of_memory">Yaddaş dolub. Şəkil çox böyükdür</string>
@@ -435,11 +427,9 @@
     <string name="pref_away_when_screen_off">Ekran qapalı olduğu zaman blok edin</string>
     <string name="pref_away_when_screen_off_summary">Ekran söndürüldükdə resursunuzu olmayan kimi qeyd edir</string>
     <string name="pref_dnd_on_silent_mode">\"Narahat etməyin\" səssiz rejimdə</string>
-    <string name="update_info">blabber.im yeni versiyasını avtomatik yükləyir və quraşdırır.\n\nGözləyin…</string>
     <string name="pref_dnd_on_silent_mode_summary">Cihaz səssiz rejimdə olduqda mənbəyinizi \"Narahat etməyin\" kimi qeyd edir</string>
     <string name="pref_treat_vibrate_as_silent">Titrəmə ilə səssiz rejim kimi davranın</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Cihaz vibrasiya rejimdə olduqda mənbəyinizi \"Narahat etməyin\" kimi qeyd edir</string>
-    <string name="hostname_example">xmpp.blabber.im</string>
     <string name="action_add_account_with_certificate">Sertifikatla hesab əlavə edin</string>
     <string name="unable_to_parse_certificate">Sertifikatı təhlil etmək mümkün deyil</string>
     <string name="authenticate_with_certificate">w/ sertifikatı təsdiq etmək üçün boş buraxın</string>
@@ -467,9 +457,7 @@
         <item quantity="other">%d mesaj</item>
     </plurals>
     <string name="load_more_messages">Daha çox mesaj yükləyin</string>
-    <string name="no_storage_permission">blabber.im xarici yaddaşa izn əldə etməlidir</string>
     <string name="sync_with_contacts">Kontaktlarla sinxronizasiya edin</string>
-    <string name="sync_with_contacts_long">blabber.im, adlarınızı və avatarlarınızı göstərmək üçün XMPP siyahısınızı kontaktlarınızla uyğunlaşdırmaq istəyir.\n\nblabber.im serverlərinizə yükləmədən yalnız kontaktlarınızı oxuyacaq və yerli uyğunlaşacaq.\n\nİndi edəcəksiniz əlaqələrinizə daxil olmaq üçün icazə verilməsini istənir.</string>
     <string name="notify_on_all_messages">Bütün mesajlarda bildirin</string>
     <string name="notify_only_when_highlighted">Yalnız qeyd edildikdə bildirin</string>
     <string name="notify_never">Bildirişlər deaktiv edilmişdir</string>
@@ -486,8 +474,6 @@
     <string name="always">Həmişə</string>
     <string name="always_off">Hәmişә deaktiv</string>
     <string name="battery_optimizations_enabled">Batareya optimallaşdırılması aktivdir</string>
-    <string name="battery_optimizations_enabled_explained">Cihazınız, blabber.im-da gecikmiş bildirişlərə və hətta mesaj kaybına səbəb ola biləcək bəzi ağır batareya optimallaşdırır. Onları buraxmaq tövsiyə olunur.</string>
-    <string name="battery_optimizations_enabled_dialog">Cihazınız, blabber.im-da gecikmiş bildirişlərə və hətta mesaj kaybına səbəb ola biləcək bəzi ağır batareya optimallaşdırır. İndi bunları aradan qaldırmaq istəniləcək.</string>
     <string name="install_from_unknown_sources_disabled">Naməlum mənbələrdən quraşdırılma deaktiv olunub</string>
     <string name="install_from_unknown_sources_disabled_dialog">Cihazınız, Google PlayStore-dan başqa tətbiqlərin naməlum mənbələrdən quraşdırılmasına icazə verməmək üçün qurulmuşdur. Bu tətbiq yeniləyicisindəki problemlərə səbəb olacaq.\n\nİndi naməlum mənbələrdən tətbiq yükləmələrinə icazə verilməsini istəyəcək.</string>
     <string name="disable">Qeyri-aktiv</string>
@@ -499,7 +485,6 @@
     <string name="correct_message">Doğru mesaj</string>
     <string name="send_corrected_message">Şifrəsiz mesaj göndər</string>
     <string name="no_keys_just_confirm">Artıq bu kontajta etibar edirsiniz. \"Tamamlandı\" seçərək sadəcə %s qrupunun bir hissəsi olduğunu təsdiqləyirsiniz.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im, əlaqələrinizin ictimai açarlarını açıqlamadığından mesajlarınızı şifrələndirə bilmir.</string>
     <string name="this_account_is_disabled">Bu hesabı deaktiv etdiniz</string>
     <string name="no_application_to_share_uri">URI paylaşmaq üçün heç bir tətbiq tapılmadı</string>
     <string name="share_uri_with">URI paylaş…</string>
@@ -535,12 +520,7 @@
     <string name="import_database">Nüsxəni idxal et</string>
     <string name="invite_again">Yenidən dəvət et</string>
     <string name="inviteUser_Subject">vasitəsilə sizi dəvət etdi</string>
-    <string name="InviteText">Salam,\n\n%s istifadəçi sizi blabber.im-ə dəvət etdi. Android istifadə edirsinizsə, cəhd edin və yenidən başlamaq üçün aşağıdakı linklə qoşulun…</string>
     <string name="pref_broadcast_last_activity">Son istifadəçinin qarşılıqlı əlaqəsi</string>
-    <string name="pref_broadcast_last_activity_summary">blabber.im istifadə edərkən bütün kontaktlarınıza bildirin</string>
-    <string name="invite_user">blabber.im-ə dəvət edin</string>
-    <string name="request_permissions_message">blabber.im bir neçə icazə verməyinizi xahiş edəcəkdir. Bütün bu icazələrin bu mesenjerin bütün xüsusiyyətlərindən istifadə etməsinə icazə verməyiniz vacibdir. Bu icazələrin hər hansı birini inkar etsəniz, tətbiq özünü bağlayacaqdır.</string>
-    <string name="request_permissions_message_again">blabber.im üçün lazım olan bəzi və ya bütün icazələri rədd etmisiniz. Parametrlərə tullanmaq və bu icazələrə icazə vermək istərdinizmi? Bu icazələrin hər hansı birini inkar etsəniz, tətbiq özünü bağlayacaqdır.</string>
     <string name="unable_to_connect_to_keychain">OpenKeychain-ə qoşulmaq olmur</string>
     <string name="this_device_is_no_longer_in_use">Bu cihaz artıq istifadə edilmir</string>
     <string name="please_wait">Zəhmət olmasa gözləyin…</string>
@@ -568,8 +548,6 @@
     <string name="show_error_message">Xəta mesajını göstərin</string>
     <string name="error_message">Xəta mesajı</string>
     <string name="data_saver_enabled">Məlumat serveri aktivdir</string>
-    <string name="data_saver_enabled_explained">Əməliyyat sisteminiz blabber.im-in arxa planda olanda İnternetə girməsini məhdudlaşdırır. Yeni mesajların bildirişlərini almaq üçün Məlumat serveri aktiv olduqda blabber.im-ə məhdudiyyətsiz daxil olmağa icazə verməlisiniz.\n\nblabber.im mümkün olduqda məlumatları qorumaq üçün səy göstərəcəkdir.</string>
-    <string name="device_does_not_support_data_saver">Cihazınız blabber.im üçün məlumat serverini deaktiv edilməsini dəstəkləmir.</string>
     <string name="add_to_contact_list">Kontakt siyahısına əlavə edin</string>
     <string name="contact">Əlaqə</string>
     <string name="unable_to_start_recording">Yazmağa başlamaq olmur</string>
@@ -671,7 +649,6 @@
     <string name="server_info_partial">hissəli</string>
     <string name="pref_show_foreground_service_summary">Bəzi Android cihazları bir müddət sonra bəzi tətbiqləri bağlayacaq və yeni mesajlar ala bilməyəcəksiniz. Bu cür problemləriniz varsa, ön planda olan xidməti aktivləşdirməyə çalışın. Ancaq unutmayın ki, bu seçim yoxlanılaraq daimi bir bildiriş olacaq.</string>
     <string name="pref_show_foreground_service">Ön plan xidmətləri</string>
-    <string name="update_service">blabber.im yeniləmə xidməti</string>
     <string name="install_update">Yeniləmə quraşdırılsın?</string>
     <string name="highlight_in_muc">istifadəçi vurğulamaq</string>
     <string name="no_application_found_to_open_link">Link açmaq üçün heç bir tətbiq tapılmadı</string>
@@ -693,7 +670,6 @@
     <string name="no_write_access_in_public_muc">Bu qrup söhbətində iştirak etmirsiniz və hazırda yazmaq imkanı yoxdur.\nXahiş edirəm &lt;b&gt;OK&lt;b&gt; düyməsini basın və yazma girişini istəmək üçün siyahının yuxarı/ön hissəsindəki üzvlərdən birini tıklayaraq moderator, idarəçi və ya sahibinə şəxsi mesaj göndərin.</string>
     <string name="snooze">Mürgülü</string>
     <string name="huawei_protected_apps">Qorunan Tətbiqlər</string>
-    <string name="huawei_protected_apps_summary">Ekran söndürüldükdə belə bildirişləri qəbul etmək üçün blabber.im-i qorunan tətbiqlər siyahısına əlavə etməlisiniz.</string>
     <string name="pref_enable_multi_accounts_title">Birdən çox hesabı aktivləşdirin</string>
     <string name="pref_enable_multi_accounts_summary">Birdən çox hesab istifadə etmək istəyirsiniz?</string>
     <string name="mtm_accept_cert">Naməlum Sertifikatı qəbul edirsiniz?</string>
@@ -706,12 +682,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">QR kod skanerinin kameraya girişi lazımdır</string>
     <string name="pref_scroll_to_bottom_summary">Bir mesaj göndərdikdən sonra aşağı diyirləyin</string>
     <string name="pref_scroll_to_bottom">Aşağıya doğru gedin</string>
-    <string name="no_camera_permission">blabber.im-in kameraya girişi lazımdır</string>
     <string name="edit_status_message_title">Status Mesajını redaktə edin</string>
     <string name="pref_automatically_delete_messages_description">Konfiqurasiya müddətindən daha köhnə olan bu cihazdakı mesajları avtomatik olaraq silmək.</string>
     <string name="pref_automatically_delete_messages">Avtomatik mesaj silinməsi</string>
     <string name="disable_encryption">Şifrələməni deaktiv edin</string>
-    <string name="error_trustkey_general">blabber.im şifrelenmiş mesaj göndərə bilməz %1$s. Bu kontakt ya bir köhnəlmiş server istifadə edir və ya OMEMO dəstəkləməyən bir proqram istifadə edir.</string>
     <string name="error_trustkey_device_list">Cihaz siyahısını əldə etmək olmur</string>
     <string name="error_trustkey_bundle">Cihaz paketlərini almaq olmur</string>
     <string name="error_trustkey_hint_mutual">Qeyd: Bəzi hallarda bu kontakt siyahılarınızı bir-birinizə əlavə etməklə düzəldilə bilər.</string>
@@ -738,7 +712,6 @@
     <string name="large">Böyük</string>
     <string name="create_shortcut">Qısayol yarat</string>
     <string name="not_encrypted_for_this_device">Mesaj bu cihaz üçün şifrələnmədi.</string>
-    <string name="no_microphone_permission">blabber.im mikrofona girişə ehtiyac duyur</string>
     <string name="search_messages">Mesajları axtarın</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Söhbətə baxın</string>
@@ -768,14 +741,12 @@
     <string name="conference_destroyed">Bu qrup söhbət məhv edilmişdir</string>
     <string name="no_application_found_to_view_contact">Kontaktı görmək üçün heç bir tətbiq tapılmadı</string>
     <string name="welcome_server_info">Blabber.im-in provayderiniz kimi istifadəsini tövsiyə edirik.</string>
-    <string name="no_location_permission">blabber.im məkan xidmətlərinə girişə ehtiyac duyur</string>
     <string name="pref_show_record_voice_btn_summary">Səsli səs düyməsini sürətli hərəkət kimi göstərin</string>
     <string name="pref_show_record_voice_btn">Qeyd səs düyməsini göstər</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Mesaj yığılmış halda Fayl seçimi ilə Göndər düyməsini dəyişdirin. Əks halda, növbəti konfiqurasiyada edilə bilən sürətli hərəkətləri göstərin.</string>
     <string name="pref_quick_share_attachment_choice">Əlavə fayl seçimi</string>
     <string name="unable_to_save_recording">Yazını saxlaya bilmir</string>
     <string name="foreground_service_channel_name">Ön plan xidmətləri</string>
-    <string name="foreground_service_channel_description">Bu bildiriş kateqoriyası blabber.im-in işlədiyini göstərən daimi bildiriş göstərmək üçün istifadə olunur.</string>
     <string name="notification_group_status_information">Status haqqında məlumat</string>
     <string name="error_channel_name">Bağlantı problemləri</string>
     <string name="error_channel_description">Bu bildiriş kateqoriyası hesaba qoşulmaqda problem olduqda bildiriş göstərmək üçün istifadə olunur.</string>
@@ -784,6 +755,7 @@
     <string name="silent_messages_channel_name">Səssiz mesajlar</string>
     <string name="silent_messages_channel_description">Bu bildiriş kateqoriyası heç bir səs çıxarmamalı bildirişləri göstərmək üçün istifadə olunur. Məsələn başqa bir cihazda aktiv olduqda (Güzəşt dövrü).</string>
     <string name="pref_more_notification_settings">Bildiriş Ayarları</string>
+    <string name="delivery_failed_channel_name">Çatdırılma uğursuz oldu</string>
     <string name="pref_more_notification_settings_summary">Əhəmiyyət, Səs, Titrəmə</string>
     <string name="video_compression_channel_name">Video sıxılma</string>
     <string name="backup_channel_name">Ehtiyat nüsxə və bərpa etmək</string>
@@ -826,7 +798,6 @@
     <string name="open_with">Açın…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: user invite</string>
     <string name="choose_account">Hesab seçin</string>
-    <string name="set_profile_picture">blabber.im profil şəkli</string>
     <string name="restore_backup">Ehtiyyat nüsxəni bərpa etmə</string>
     <string name="restore">Bərpa etmə</string>
     <string name="enter_password_to_restore">Nüsxəni bərpa etmək üçün %s hesabı üçün parol daxil edin.</string>
@@ -890,7 +861,6 @@
     <string name="password_forgotten_title">Parol unuduldu</string>
     <string name="password_forgotten_text">Hesab şifrənizi unutmusunuz? İndi provayderinizin dəstək saytını açmağa çalışacağıq.</string>
     <string name="set_settings_intro">Burada bəzi vacib məxfilik parametrlərini ehtiyaclarınıza uyğunlaşdıra bilərsiniz. Bütün parametrlər daha sonra dəyişdirilə bilər.</string>
-    <string name="pref_show_mappreview_inside_summary">Xəritədə görüntüləri birbaşa chat görünüşü içərisində göstərin, Pix-Art-Server ilə əlaqə qurulacaqdır.</string>
     <string name="pref_show_mappreview_inside">Çatda yerlərin əvvəlcədən görünməsini göstərin</string>
     <string name="pref_use_internal_updater_summary">Messengerə gündə bir dəfə yeni tətbiq yeniləmələri axtarmağa icazə verin</string>
     <string name="pref_use_internal_updater">Yeniləməni yoxlayın</string>
@@ -916,12 +886,10 @@
     <string name="action_unblock_participant">Iştirakçını blokdan aç</string>
     <string name="action_block_participant">Iştirakçını bloka sal</string>
     <string name="share_backup_files">Ehtiyat nüsxəsini göndərmək</string>
-    <string name="conversations_backup">blabber.im ehtiyat nüsxəsi</string>
     <string name="event">Hadisə</string>
     <string name="pref_vibrate_in_chat_summary">Açıq çatda yeni bir mesaj gələndə vibrasiya ilə bildiriş</string>
     <string name="pref_vibrate_in_chat">Açıq çatda vibrasiya</string>
     <string name="open_backup">Ehtiyat nüsxəsini açmaq</string>
-    <string name="not_a_backup_file">Seçdiyiniz fayl blabber.im ehtiyat nüsxə faylı deyil</string>
     <string name="account_already_setup">Bu hesab artıq qurulmuşdur</string>
     <string name="please_enter_password">Zəhmət olmasa bu hesab üçün parol daxil edin</string>
     <string name="unable_to_perform_this_action">Bu hərəkəti yerinə yetirmək olmur</string>
@@ -933,7 +901,6 @@
     <string name="pref_use_invidious_summary">Invidious-bu YouTube-un şəxsi və dostsayağı alternativ servisdir</string>
     <string name="this_device">Bu cihaz</string>
     <string name="intro_desc_main">Daha ətraflı…</string>
-    <string name="welcome_header">\nblabber.im-ə xoş gəlmisən</string>
     <string name="intro_required_permissions">Tələb olunan icazələr</string>
     <string name="intro_desc_required_permissions">Girişin sonunda saxlama icazələrini verməyiniz xahiş olunur (məcburi). İcazələrin verilməsi tələb olduqca istənilir.</string>
     <string name="intro_account">Sənin hesabın</string>
@@ -951,9 +918,7 @@
     <string name="show_intro_again">Intro ekranları yenidən göstəriləcək</string>
     <string name="show_intro_again_failed">Intro ekranlarını sıfırlamaq alınmadı. Yenidən cəhd elə…</string>
     <string name="intro_desc_whats_xmpp">XMPP, həmçinin jabber adlanır, mərkəzləşdirilmiş kommunikasiya şəbəkəsidir və e-poçt kimi işləyir. Siz Jabber-ID, parol və messenger adlı bir ünvan lazımdır. Bu barədə daha ətraflı bir qədər sonra.</string>
-    <string name="intro_whats_xmpp">XMPP / Jabber / blabber.im nədir?</string>
     <string name="intro_desc_optional_permissions">Ünvan kitabınızı oxumaq üçün icazələr kontaktlarınızdan Jabber-ID (əgər varsa) oxumaq üçün tələb olunur. Kontaktlar heç vaxt paylaşılmır, yüklənmir və kopyalanmır.</string>
-    <string name="intro_desc_account2">Xüsusi bir server və ya açılan menyudan birini seçib ləqəb daxil edərək yeni bir profil yarada bilərsiniz.</string>
     <string name="open_join_dialog">İctimai kanala qoşulun…</string>
     <string name="intro_optional_permissions">Könüllü icazələr</string>
     <string name="intro_desc_optional_permissions2">Məkanınızı bölüşmək istəsəniz, yeriniz üçün icazələr lazımdır. \nSəsli mesajları paylaşmaq üçün mikrofonunuza giriş əldə etmək tələb olunur.</string>
@@ -961,7 +926,6 @@
     <string name="intro_desc_start_chatting2">Mucs adlanan-siz də əlavə edə, yarada və ya çatlara qoşula bilərsiniz. Onlar xüsusi qrup çatlar və ictimai qrup çatları arasında fərqləndirirlər - başqa sözdə kanallar.</string>
     <string name="intro_desc_start_chatting3">Təbrik edirik! \nƏylənmək vaxtı çatdı…</string>
     <string name="intro_privacy">Məxfiliyiniz\nSuvereniteniz</string>
-    <string name="intro_desc_privacy">blabber.im məlumatlarınızı nə satacaq, nə də təhlil etmir və hansı icazələrin veriləcəyinə siz qərar verirsiniz.</string>
     <string name="no_results">Nəticə yoxdur</string>
     <string name="file_transmission_cancelled">fayl ötürülməsi ləğv edildi</string>
     <string name="sharing_application_not_grant_permission">Paylaşma tətbiqi bu faylı əldə etməyə icazə vermədi.</string>
@@ -1043,4 +1007,22 @@
     <string name="add_to_favorites">Seçilmişlərə əlavə et</string>
     <string name="remove_from_favorites">Seçilmişlərdən sil</string>
     <string name="improperly_formatted_provisioning">Səhv formatlaşdırılmış hazırlıq kodu</string>
+    <string name="gpx_track">GPX yazmaq</string>
+    <string name="could_not_correct_message">Mesaj düzəldilmədi</string>
+    <string name="search_all_conversations">Bütün yazışmalar</string>
+    <string name="search_this_conversation">Bu yazışma</string>
+    <string name="your_avatar">Sizin avatar</string>
+    <string name="avatar_for_x">%s üçün avatar</string>
+    <string name="encrypted_with_omemo">OMEMO ilə şifrələnib</string>
+    <string name="encrypted_with_openpgp">OpenPGP ilə şifrələnib</string>
+    <string name="not_encrypted">Şifrələnməyib</string>
+    <string name="add_contact_or_create_or_join_group_chat">Kontakt əlavə edin, qrup söhbəti yaradın və ya qoşun və ya kanalları açın</string>
+    <string name="failed_deliveries">Çatdırılma uğursuz oldu</string>
+    <string name="missed_calls_channel_name">Cavabsız zənglər</string>
+    <string name="missed_call_from_x">%s şəxsindən cavabsız zəng</string>
+    <string name="n_missed_calls_from_x">%2$s kontaktından %1$d cavabsız zəng</string>
+    <string name="n_missed_calls">%d cavabsız zəng</string>
+    <string name="n_missed_calls_from_m_contacts">%2$s kontaktdan %1$d cavabsız zəng</string>
+    <string name="updated_to_blabber_google">Məlumatı birbaşa blabber.im-ə yeniləyə bilmədiyimiz üçün üzr istəyirik. Aşağıdakı linklə bütün profillərinizi Pıx-Art Messenger-dan blabber.im-ə necə köçürmək barədə təlimatlar alacaqsınız.</string>
+    <string name="link">Link</string>
 </resources>
