@@ -239,7 +239,7 @@
     <string name="pref_allow_message_correction">Correcció del missatge</string>
     <string name="pref_allow_message_correction_summary">Permetre als teus contactes editar missatges prèviament enviats</string>
     <string name="pref_expert_options">Opcions per a experts</string>
-    <string name="title_activity_about">Sobre Pix-Art Messenger</string>
+    <string name="title_activity_about">Sobre</string>
     <string name="pref_about_conversations_summary">Informació de compilació i llicència</string>
     <string name="title_pref_quiet_hours">Horari de silenci</string>
     <string name="title_pref_quiet_hours_start_time">Hora d\'inici</string>
