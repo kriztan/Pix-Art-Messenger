@@ -49,8 +49,6 @@
     <string name="unblock">I-unblock</string>
     <string name="save">I-save</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">Ang blabber.im ay nag-crash</string>
-    <string name="crash_report_message">Sa pamamagitan ng pagpapadala ng mga walang laman na stack na tumutulong sa iyo na ipagpatuloy ang pagpapaunlad ng blabber.im\n<b>Babala:</b> Gagamitin nito ang iyong XMPP account upang maipadala ang stack trace sa developer.</string>
     <string name="send_now">Ipadala ngayon</string>
     <string name="send_never">Wag kang magtanong ulit</string>
     <string name="problem_connecting_to_account">Hindi makakonekta sa iyong account</string>
