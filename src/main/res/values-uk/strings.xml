@@ -58,8 +58,6 @@
     <string name="unblock">Розблокувати</string>
     <string name="save">Зберегти</string>
     <string name="ok">Гаразд</string>
-    <string name="crash_report_title">Відмова в обслуговуванні</string>
-    <string name="crash_report_message">Надсиланням звіту про відмову ви допомагаєте удосконаленню месенджера.\n<b>Увага:</b> Звіти надсилатимуться розробниками з вашого облікового запису XMPP.</string>
     <string name="send_now">Надіслати зараз</string>
     <string name="send_never">Ніколи не питати знову</string>
     <string name="problem_connecting_to_account">Не можу з\'єднатися з обліковим записом</string>
@@ -84,13 +82,11 @@
     <string name="send_unencrypted">Надіслати без шифрування</string>
     <string name="decryption_failed">Не вдалося розшифрувати. Можливо, у вас відсутній потрібний приватний ключ.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Застосунок використовує сторонній застосунок <b>OpenKeychain</b> для шифрування та розшифровування повідомлень й упорядкування ваших публічних ключів.\n\nOpenKeychain ліцензовано під GPLv3 й доступний у F-Droid та Google Play.\n\n<small>Будь ласка, перезапустіть месенджер після встановлення.</small></string>
     <string name="restart">Перезапустити</string>
     <string name="install">Встановити</string>
     <string name="offering">пропоную…</string>
     <string name="waiting">чекаю…</string>
     <string name="no_pgp_key">Не знайдено жодного OpenPGP ключа</string>
-    <string name="contact_has_no_pgp_key">Не вдалося зашифрувати повідомлення, оскільки контакт не повідомляє власний публічний ключ.\n\n<small>Будь ласка, запропонуйте вашому співрозмовникові встановити OpenPGP.</small></string>
     <string name="no_pgp_keys">Не знайдено жодного ключа OpenPGP</string>
     <string name="pref_general">Загальне</string>
     <string name="pref_accept_files_wifi">Отримувати файли у мережах WiFi</string>
@@ -108,7 +104,6 @@
     <string name="pref_sound">Мелодія дзвінка</string>
     <string name="pref_sound_summary">Грати звук, коли надходить нове повідомлення</string>
     <string name="pref_send_crash">Надсилати звіти про відмови</string>
-    <string name="pref_send_crash_summary">Надсиланням звітів про відмову ви допомагаєте у розробці нашого месенджера</string>
     <string name="pref_confirm_messages">Підтвердження отримання повідомлень</string>
     <string name="pref_confirm_messages_summary">Дайте знати вашим контактам, коли ви отримали й прочитали повідомлення</string>
     <string name="pref_ui_options">Інтерфейс користувача</string>
@@ -157,7 +152,6 @@
     <string name="mgmt_account_delete_confirm_message">Якщо ви вилучите ваш обліковий запис, ви втратите усю історію спілкування на пристрої.\n\nЯкщо ви вилучите ваш обліковий запис з сервера, то його буде вилучено також на сервері й ви не матимете змоги виходити, луки не зареєструєте новий обліковий запис.</string>
     <string name="attach_record_voice">Записати голос</string>
     <string name="account_settings_jabber_id">Адреса XMPP</string>
-    <string name="account_settings_example_jabber_id">username@example.com</string>
     <string name="password">Пароль</string>
     <string name="invalid_jid">Це неправильна адреса XMPP</string>
     <string name="error_out_of_memory">Пам\'ять вичерпано. Завелике зображення.</string>
@@ -435,11 +429,9 @@
     <string name="pref_away_when_screen_off">Відійшов, якщо екран вимкнуто</string>
     <string name="pref_away_when_screen_off_summary">Показувати стан як відійшов, якщо екран вимкнуто</string>
     <string name="pref_dnd_on_silent_mode">\"Не турбувати\" в режимі тиші</string>
-    <string name="update_info">Месенджер автоматично звантажить та встановить нову версію застосунку.\n\nБудь ласка, зачекайте…</string>
     <string name="pref_dnd_on_silent_mode_summary">Додавати \"Не турбувати\" до імені вашого пристрою, коли пристрій в режимі тиші</string>
     <string name="pref_treat_vibrate_as_silent">Вважати вібро за безшумний режим</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Додавати \"Не турбувати\" до імені вашого пристрою, коли пристрій в режимі вібрації</string>
-    <string name="hostname_example">xmpp.example.com</string>
     <string name="action_add_account_with_certificate">Застосувати сертифікат</string>
     <string name="unable_to_parse_certificate">Не можу розпізнати сертифікат</string>
     <string name="authenticate_with_certificate">Залиште порожнім, щоб авторизувати без сертифіката</string>
@@ -469,9 +461,7 @@
         <item quantity="other">%d повідомлень</item>
     </plurals>
     <string name="load_more_messages">Завантажити більше повідомлень</string>
-    <string name="no_storage_permission">Програма потребує доступу до зовнішнього сховища даних</string>
     <string name="sync_with_contacts">Синхронізувати контакти</string>
-    <string name="sync_with_contacts_long">Програма хоче співставити Ваш перелік контактів з сервера з переліком контактів із книжки контактів на пристрої, щоб показати повні імена та піктограми користувачів.\n\nПрограма лише прочитає Ваші контакти й співставить їх на пристрої й не буде передавати їх на сервер.\n\nЗараз вам буде запропоновано надати застосунку дозвіл на доступ до контактів.</string>
     <string name="notify_on_all_messages">Сповіщати про всі повідомлення</string>
     <string name="notify_only_when_highlighted">Сповіщати, якщо згадують про мене</string>
     <string name="notify_never">Сповіщення вимкнено</string>
@@ -488,8 +478,6 @@
     <string name="always">Завжди</string>
     <string name="always_off">Завжди вимкнено</string>
     <string name="battery_optimizations_enabled">Оптимізацію батареї задіяно</string>
-    <string name="battery_optimizations_enabled_explained">Ваш пристрій здійснює деяку агресивну оптимізацію Розмов для збереження заряду батареї, яка може призвести до затримки сповіщення або навіть втрати повідомлень.\nРекомендовано відключити цю оптимізацію.</string>
-    <string name="battery_optimizations_enabled_dialog">Ваш пристрій здійснює деяку агресивну оптимізацію Розмов для збереження заряду батареї, яка може призвести до затримки сповіщення або навіть втрати повідомлень.\n\nПросимо Вас зараз відключити цю оптимізацію.</string>
     <string name="install_from_unknown_sources_disabled">Встановлення з невідомого джерела вимкнено</string>
     <string name="install_from_unknown_sources_disabled_dialog">На вашому пристрої заборонено встановлення з невідомих джерел, ви можете встановити застосунок лише з Google Play. Це вплине на роботу сервісу з оновлення застосунку.\n\n\Будь ласка, дозвольте встановлення з невідомих джерел на вашому пристрої.</string>
     <string name="disable">Відключити</string>
@@ -501,7 +489,6 @@
     <string name="correct_message">Редагувати</string>
     <string name="send_corrected_message">Відредаговане повідомлення</string>
     <string name="no_keys_just_confirm">Ви вже довіряєте цій особі. Вибираючи «Готово», ви лише підтверджуєте, що %s — учасник групи.</string>
-    <string name="contacts_have_no_pgp_keys">Не вдалося розшифрувати повідомлення, оскільки контакт не повідомляє свого публічного ключа.\n\n<small>Будь ласка, попросіть контакт налаштувати OpenPGP.</small></string>
     <string name="this_account_is_disabled">Ви вимкнули цей обліковий запис</string>
     <string name="no_application_to_share_uri">Не знайдено програми, щоб поділитися URI</string>
     <string name="share_uri_with">Поділитися URI</string>
@@ -537,12 +524,7 @@
     <string name="import_database">Імпортувати резервну копію</string>
     <string name="invite_again">Запросити знову</string>
     <string name="inviteUser_Subject">запросив вас через</string>
-    <string name="InviteText">Вітаю,\n\nкористувач %s запросив вас почати користуватися нашим месенджером. Якщо ви користуєтеся пристроєм з Android, ви зможете спробувати встановити цей застосунок. Для цього перейдіть за цим посиланням…</string>
     <string name="pref_broadcast_last_activity">Показувати останню активність користувача</string>
-    <string name="pref_broadcast_last_activity_summary">Дозвольте всім вашим контактам знати, коли ви використовуєте месенджер</string>
-    <string name="invite_user">Розповісти про Pix-Art</string>
-    <string name="request_permissions_message">Месенджер запитає надати дозволи. Важливо, щоби ви надали доступ до відповідних дозволів - це дозволить використовувати усі функції месенджера. Якщо ви відмовите у доступі до будь-якого з дозволів, застосунок автоматично припинить роботу.</string>
-    <string name="request_permissions_message_again">Ви не надали доступ до окремого з дозволів або до всіх разом, які запитав месенджер. Чи бажаєте ви перейти до налаштувань та надати доступ до цих дозволів? Якщо ви відмовите у якомусь з дозволів, застосунок закриється.</string>
     <string name="unable_to_connect_to_keychain">Не можу зв\'язатися з OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Цей пристрій більше не використовується</string>
     <string name="please_wait">Прошу зачекайте…</string>
@@ -570,8 +552,6 @@
     <string name="show_error_message">Повідомлення про помилку</string>
     <string name="error_message">Повідомлення про помилку</string>
     <string name="data_saver_enabled">Задіяно економію передачі данних</string>
-    <string name="data_saver_enabled_explained">Ваша операційна система обмежує застосунку Pix-Art доступ до Інтернету, коли він не на екрані. Щоб отримувати сповіщення про нові повідомлення, вам слід дозволити застосунку необмежений доступ, коли активовано заощадження передачі даних.\n\nМесенджер намагатиметься заощаджувати трафік, де це буде можливо.</string>
-    <string name="device_does_not_support_data_saver">Ваш пристрій не дає можливості вимкнути заощадження передачі даних для застосунку Pix-Art.</string>
     <string name="add_to_contact_list">Додати до контактів</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не можу почати запис</string>
@@ -685,7 +665,6 @@
     <string name="server_info_partial">частково</string>
     <string name="pref_show_foreground_service_summary">Окремі пристрої на ОС Android припиняють дію окремих застосункіа через певний час й таким чином ви можете не мати змоги отримувати нові повідомлення. Якщо у вас виникають такі проблеми, спробуйте увімкнути фонові служби. Зверніть увагу, що з такими налаштуваннями система вас постійно сповіщуватиме про це.</string>
     <string name="pref_show_foreground_service">Запускати у фоновому режимі</string>
-    <string name="update_service">Служба оновлення месенджера</string>
     <string name="install_update">Встановити оновлення?</string>
     <string name="highlight_in_muc">підсвітити контакт</string>
     <string name="no_application_found_to_open_link">Не знайдено застосунку для відкриття посилання</string>
@@ -707,7 +686,6 @@
     <string name="no_write_access_in_public_muc">Ви не є учасником цього групового чату та не маєте прав на створення дописів.\nБудь ласка, перейдіть до деталей чату: натисніть на кнопку <b>Гаразд</b> та надішліть приватне повідомлення модераторові, адміністраторові чи власникові. Для цього натисніть на ім\'я учасника нагорі списку й утримайте. Таким чином ви зможете надіслати запит на надання вам прав дописувати у чаті.</string>
     <string name="snooze">Приспати</string>
     <string name="huawei_protected_apps">Захищені програми</string>
-    <string name="huawei_protected_apps_summary">Для отримання сповіщень, навіть коли екран погас, вам потрібно додати застосунок до списку застосунків, до яких не застосовується режим енергозбереження.</string>
     <string name="pref_enable_multi_accounts_title">Увімкнути кілька облікових записів</string>
     <string name="pref_enable_multi_accounts_summary">Дозволити використання кількох облікових записів</string>
     <string name="mtm_accept_cert">Прийняти незнайомий сертифікат?</string>
@@ -720,12 +698,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">Сканер QR-кодів потребує доступу до камери</string>
     <string name="pref_scroll_to_bottom_summary">Прокрутити вниз до кінця після надсилання повідомлення</string>
     <string name="pref_scroll_to_bottom">Прокрутити вниз до кінця</string>
-    <string name="no_camera_permission">Програма потребує доступу до камери</string>
     <string name="edit_status_message_title">Редагувати повідомлення стану</string>
     <string name="pref_automatically_delete_messages_description">Автоматично вилучати повідомлення з цього пристрою, старіші за зазначений проміжок часу.</string>
     <string name="pref_automatically_delete_messages">Автоматичне вилучення повідомлень</string>
     <string name="disable_encryption">Вимкнути шифрування</string>
-    <string name="error_trustkey_general">Месенджер не може надсилати зашифровані повідомлення до %1$s. Можливо, що ваш контакт використовує застарілий сервер або застосунок, який не підтримує OMEMO.</string>
     <string name="error_trustkey_device_list">Неможливо отримати перелік пристроїв</string>
     <string name="error_trustkey_bundle">Неможливо отримати пакети пристроїв</string>
     <string name="error_trustkey_hint_mutual">Підказка: В деяких випадках це можна виправити, якщо додати один до одного у ваших списках контактів.</string>
@@ -752,7 +728,6 @@
     <string name="large">Великий</string>
     <string name="create_shortcut">Створити ярлик</string>
     <string name="not_encrypted_for_this_device">Повідомлення не було зашифровано для цього пристрою</string>
-    <string name="no_microphone_permission">Програма потребує доступу до мікрофона</string>
     <string name="search_messages">Шукати в повідомленнях</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Переглянути розмову</string>
@@ -782,14 +757,12 @@
     <string name="conference_destroyed">Цю групу закрито</string>
     <string name="no_application_found_to_view_contact">Не знайдено програми, щоб переглянути контакт</string>
     <string name="welcome_server_info">Рекомендуємо використовувати blabber.im як постачальника послуг XMPP. </string>
-    <string name="no_location_permission">Месенджер потребує доступу до служб геолокації</string>
     <string name="pref_show_record_voice_btn_summary">Показувати у чаті кнопку запису голосу як швидку дію</string>
     <string name="pref_show_record_voice_btn">Показувати кнопку запису голосу</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Замінювати клавішу надсилання під час набору функцією вибору вкладення. В іншому випадку показувати швидкі дії (можна окремо налаштувати)</string>
     <string name="pref_quick_share_attachment_choice">Надсилання вкладень</string>
     <string name="unable_to_save_recording">Неможливо зберегти запис</string>
     <string name="foreground_service_channel_name">Процес на передньому плані</string>
-    <string name="foreground_service_channel_description">Цей вид сповіщень буде постійно показувати, що застоунок працює.</string>
     <string name="notification_group_status_information">Інформація про стан</string>
     <string name="error_channel_name">Проблеми зі з\'єднанням</string>
     <string name="error_channel_description">Цей вид сповіщень показує проблеми під час з\'єднання з обліковим записом.</string>
@@ -798,6 +771,7 @@
     <string name="silent_messages_channel_name">Тихі повідомлення</string>
     <string name="silent_messages_channel_description">Ця група сповіщень показує сповіщення, які не повинні супроводжуватися звуком. Наприклад, у разі активності на іншому пристрої (період очікування).</string>
     <string name="pref_more_notification_settings">Налаштування сповіщень</string>
+    <string name="delivery_failed_channel_name">Недоставлені повідомлення</string>
     <string name="pref_more_notification_settings_summary">Налаштування пріоритетів, звуку та режиму вібрації для сповіщень</string>
     <string name="video_compression_channel_name">Стиснення відео</string>
     <string name="backup_channel_name">Створити або відновити резервну копію</string>
@@ -840,7 +814,6 @@
     <string name="open_with">Відкрити</string>
     <string name="server_info_adhoc_invite">XEP-0050: Команди ad-hoc: запрошення користувачів</string>
     <string name="choose_account">Виберіть обліковий запис</string>
-    <string name="set_profile_picture">Фото профілю чату</string>
     <string name="restore_backup">Відновити з резервної копії</string>
     <string name="restore">Відновити</string>
     <string name="enter_password_to_restore">Введіть пароль до облікового запису %s, щоб відновити з резервної копії.</string>
@@ -906,7 +879,6 @@
     <string name="password_forgotten_title">Втрачено пароль</string>
     <string name="password_forgotten_text">Чи ви забули пароль до вашої обліковки? Ми спробуємо відкрити сторінку підтримки вашого постачальника.</string>
     <string name="set_settings_intro">Тут ви можете здійснити окремі налаштування приватності. Їх можна буде змінити пізніше.</string>
-    <string name="pref_show_mappreview_inside_summary">Показувати попередній перегляд мапи безпосередньо у вікні чату. Для цього буде встановлено з\'єднання з сервером месенджера.</string>
     <string name="pref_show_mappreview_inside">Попередній перегляд місця розташування</string>
     <string name="pref_use_internal_updater_summary">Дозволити месенджеру щодня шукати оновлення</string>
     <string name="pref_use_internal_updater">Оновлення</string>
@@ -932,12 +904,10 @@
     <string name="action_unblock_participant">Розблокувати учасника</string>
     <string name="action_block_participant">Заблокувати учасника</string>
     <string name="share_backup_files">Поділитися резервними копіями</string>
-    <string name="conversations_backup">Резервна копія</string>
     <string name="event">Подія</string>
     <string name="pref_vibrate_in_chat_summary">Вібрувати при надходженні нового повідомлення у відкритому вікні чату</string>
     <string name="pref_vibrate_in_chat">Вібрувати у відкритому вікні чату</string>
     <string name="open_backup">Відкрити резервну копію</string>
-    <string name="not_a_backup_file">Вибраний файл не є резервною копією</string>
     <string name="account_already_setup">Цей обліковий запис уже створено</string>
     <string name="please_enter_password">Будь ласка, введіть пароль для цього облікового запису</string>
     <string name="unable_to_perform_this_action">Неможливо виконати цю дію</string>
@@ -949,7 +919,6 @@
     <string name="pref_use_invidious_summary">Invidious є альтернативою YouTube, яка чутлива до питань конфіденційності</string>
     <string name="this_device">Цей пристрій</string>
     <string name="intro_desc_main">Дізнатися більше…</string>
-    <string name="welcome_header">Вітаємо у нашому месенджері!</string>
     <string name="intro_required_permissions">Потрібні дозволи</string>
     <string name="intro_desc_required_permissions">Наприкінці заставки вас спитають про доступ до місця зберігання файлів, якщо ви ще не надали його. Вас також можуть запитати про додаткові дозволи.</string>
     <string name="intro_account">Ваш обліковий запис</string>
@@ -967,9 +936,7 @@
     <string name="show_intro_again">Заставку буде показано знову</string>
     <string name="show_intro_again_failed">Не вдалося перевстановити заставку екрану. Спробуйте ще раз…</string>
     <string name="intro_desc_whats_xmpp">XMPP, також відомий як Jabber, є децентралізованою мережею спілкування, яка працює подібно до електронної пошти. Вам потрібно мати адресу XMPP, пароль та застосунок для спілкування. Далі більше.</string>
-    <string name="intro_whats_xmpp">Що таке XMPP?</string>
     <string name="intro_desc_optional_permissions">Щоби зайти контакти, які користуються сервісами XMPP, потрібно надати дозвіл на доступ до вашої адресної книги. Ми ніколи не надаємо доступу до ваших контактів будь-якому, ми не завантажуємо їх або копіюємо на власні чи сторонні сервери.</string>
-    <string name="intro_desc_account2">Ви можете додати новий профіль. Для цього потрібно вибрати власний сервер, або один з активних, у виринаючому списку, а також зазначити ваше ім\'я.</string>
     <string name="open_join_dialog">Приєднатися до відкритого каналу…</string>
     <string name="intro_optional_permissions">Необов\'язкові дозволи</string>
     <string name="intro_desc_optional_permissions2">Для надсилання інформації про ваше місце розташування потрібні дозволи на доступ до вашого місця розташування.\nДля надсилання голосових повідомлень потрібний дозвіл на доступ до мікрофона.</string>
@@ -977,7 +944,6 @@
     <string name="intro_desc_start_chatting2">Також ви можете додавати, створювати або приєднуватися до багатокористувацьких чатів (відомих як MUC). Вони відрізняються від приватних групових чатів та публічних групових чатів - каналів.</string>
     <string name="intro_desc_start_chatting3">Вітання!\nТут ми почнемо нову подоріж…</string>
     <string name="intro_privacy">Ваша приватність\nВаша незалежність</string>
-    <string name="intro_desc_privacy">Наш месенджер ніколи не передаватиме або аналізуватиме ваші дані. Ви самі визначатимете, як ділитися вашою інформацією.</string>
     <string name="no_results">Нічого не знайдено</string>
     <string name="file_transmission_cancelled">скасовано передачу файлу</string>
     <string name="sharing_application_not_grant_permission">Застосунок для спільного доступу не надав дозволу на доступ до цього файлу.</string>
@@ -1060,4 +1026,21 @@
     <string name="add_to_favorites">До обраного</string>
     <string name="remove_from_favorites">Вилучити з обраного</string>
     <string name="improperly_formatted_provisioning">Неправильний формат коду забезпечення</string>
+    <string name="gpx_track">Відстеження GPX</string>
+    <string name="could_not_correct_message">Неможливо відредагувати повідомлення</string>
+    <string name="search_all_conversations">Усі розмови</string>
+    <string name="search_this_conversation">Ця розмова</string>
+    <string name="your_avatar">Ваш аватар</string>
+    <string name="avatar_for_x">Аватар для %s</string>
+    <string name="encrypted_with_omemo">Зашифровано OMEMO</string>
+    <string name="encrypted_with_openpgp">Зашифровано OpenPGP</string>
+    <string name="not_encrypted">Не зашифровано</string>
+    <string name="add_contact_or_create_or_join_group_chat">Додавайте контакти, створюйте або приєднуйтеся до групових чатів або знаходьте канали</string>
+    <plurals name="some_messages_could_not_be_delivered">
+        <item quantity="one">Неможливо доставити повідомлення</item>
+        <item quantity="few">Неможливо доставити повідомлення</item>
+        <item quantity="many">Неможливо доставити повідомлення</item>
+        <item quantity="other">Неможливо доставити повідомлення</item>
+    </plurals>
+    <string name="failed_deliveries">Недоставлені повідомлення</string>
 </resources>
