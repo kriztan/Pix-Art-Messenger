@@ -57,8 +57,6 @@
     <string name="unblock">Desbloquejar</string>
     <string name="save">Guardar</string>
     <string name="ok">Acceptar</string>
-    <string name="crash_report_title">blabber.im s\'ha aturat.</string>
-    <string name="crash_report_message">Si envíes informes d\'errors ajudes al desenvolupament de blabber.im\n<b>Avís:</b> Aixó utilitzarà el teu compte XMPP per enviar els registres d\'errors al desenvolupador.</string>
     <string name="send_now">Enviar ara</string>
     <string name="send_never">No preguntar de nou</string>
     <string name="problem_connecting_to_account">No s\'ha pogut connectar a el compte</string>
@@ -83,13 +81,11 @@
     <string name="send_unencrypted">Enviar sense xifrar</string>
     <string name="decryption_failed">Error en el desxifrar. Pot ser no tinguis la clau privada apropiada.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im utiliza una aplicació de tercers anomenada <b>OpenKeychain</b> per a xifrar i desxifrar missatges i gestionar les teves claus públiques.\n\nOpenKeychain está publicado bajo licencia GPLv3 y disponible on F-Droid y Google Play.\n\n<small>(Por favor, reinicie blabber.im después.)</small></string>
     <string name="restart">Reiniciar</string>
     <string name="install">Instal·lar</string>
     <string name="offering">Oferint…</string>
     <string name="waiting">Esperant…</string>
     <string name="no_pgp_key">Clau OpenPGP no localitzada</string>
-    <string name="contact_has_no_pgp_key">blabber.im no ha pogut xifrar els teus missatges per què el teu contacte no està anunciant la seva clau pública.\n\n<small>Si us plau,  demana als teus contactes que configurin OpenPGP.</small></string>
     <string name="no_pgp_keys">Claus OpenPGP no trobades</string>
     <string name="pref_general">General</string>
     <string name="pref_accept_files_wifi">Acceptar arxius en connexions WiFi</string>
@@ -107,7 +103,6 @@
     <string name="pref_sound">To</string>
     <string name="pref_sound_summary">Reprodueix el sol quant arribi un missatge nou</string>
     <string name="pref_send_crash">Enviar informes d\'errors</string>
-    <string name="pref_send_crash_summary">Enviant informes d\'errors, pots ajudar al desenvolupament continu de blabber.im</string>
     <string name="pref_confirm_messages">Confirmar missatges</string>
     <string name="pref_confirm_messages_summary">Permetre als teus contactes saber quant has rebut i llegit els seus missatges</string>
     <string name="pref_ui_options">Ui</string>
@@ -156,7 +151,6 @@
     <string name="mgmt_account_delete_confirm_message">Si elimines el teu compte, el teu historial local de conversa serà completament eliminat.\n\nSi elimines el teu compte del servidor, serà eliminat del servidor tambè, no podràs entrar mai més fins que no registris un nou compte.</string>
     <string name="attach_record_voice">Gravar àudio</string>
     <string name="account_settings_jabber_id">Identificador Jabber</string>
-    <string name="account_settings_example_jabber_id">usuari@exemple.com</string>
     <string name="password">Contrasenya</string>
     <string name="invalid_jid">L\'identificador jabber- ID no és vàlid</string>
     <string name="error_out_of_memory">Sense memòria. La imatge és massa gran</string>
@@ -245,7 +239,7 @@
     <string name="pref_allow_message_correction">Correcció del missatge</string>
     <string name="pref_allow_message_correction_summary">Permetre als teus contactes editar missatges prèviament enviats</string>
     <string name="pref_expert_options">Opcions per a experts</string>
-    <string name="title_activity_about">Sobre blabber.im</string>
+    <string name="title_activity_about">Sobre</string>
     <string name="pref_about_conversations_summary">Informació de compilació i llicència</string>
     <string name="title_pref_quiet_hours">Horari de silenci</string>
     <string name="title_pref_quiet_hours_start_time">Hora d\'inici</string>
@@ -430,11 +424,9 @@
     <string name="pref_away_when_screen_off">Absent amb pantalla apagada</string>
     <string name="pref_away_when_screen_off_summary">Canviar el teu estat a absent quant la pantalla està apagada</string>
     <string name="pref_dnd_on_silent_mode">\"No molestar\" en mode silenci</string>
-    <string name="update_info">blabber.im està descarregant i instal·lant la nova versió automàticament.\n\nSi us plau, espera…</string>
     <string name="pref_dnd_on_silent_mode_summary">Canvia el teu estat a \"no molestar\"  quant el dispositiu està en mode silenci</string>
     <string name="pref_treat_vibrate_as_silent">Mode vibració como a mode silenci</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Canvia el teu estat a \"no molestar\" quant el dispositiu està en mode vibració</string>
-    <string name="hostname_example">xmpp.exemple.com</string>
     <string name="action_add_account_with_certificate">Afegir compte amb certificat</string>
     <string name="unable_to_parse_certificate">No s\'ha pogut llegir el certificat</string>
     <string name="authenticate_with_certificate">Deixar buit  per a autentificar el  certificat w/ </string>
@@ -461,9 +453,7 @@
         <item quantity="other">%d missatges</item>
     </plurals>
     <string name="load_more_messages">Cargar més missatges</string>
-    <string name="no_storage_permission">blabber.im necessita accedir a l\'emmagatzament extern</string>
     <string name="sync_with_contacts">Sincronitzar contactes</string>
-    <string name="sync_with_contacts_long">blabber.im vol creuar la teva lista de contactes de XMPP amb els teus contactes del mòbil per a mostrar els seus noms complets i les seves fotografies de perfil.\n\nblabber.im només llegirà els teus contactes i els creuarà localment sense puja\'ls al teu servidor.\n\nEl sistema et preguntarà ara per a concedir els permissos d\'accès als teus contactes del mòbil.</string>
     <string name="notify_on_all_messages">Notificar per a tots els missatges</string>
     <string name="notify_only_when_highlighted">Notificar només quants ets anomenat</string>
     <string name="notify_never">Notificacions deshabil·litades</string>
@@ -479,8 +469,6 @@
     <string name="video_original">original (sense comprimir)</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimitzacions d\'ús de batería habil·litades</string>
-    <string name="battery_optimizations_enabled_explained">El teu dispositiu està realizant optimitzacions d\'ús de batería en blabber.im que poden fer que els missatges es retrasin o inclús fer que es perdin.\nEs recomanable deshabil·litar-les.</string>
-    <string name="battery_optimizations_enabled_dialog">El teu dispositiu està realizant optimitzacions d\'ús de batería en blabber.im que poden fer que els missatges es retrasin o inclús fer que es perdin.\n\nEl sistema et preguntarà ara per a deshabil·litar-les.</string>
     <string name="install_from_unknown_sources_disabled">Instal·lació des d\'orígens desconeguts desactivades</string>
     <string name="install_from_unknown_sources_disabled_dialog">El dispositiu està configurat per a no permetre l\'instal·lació d\'aplicacions des d\'orígens desconeguts, excepte des de Google PlayStore.\n\nAra se li demanarà que permiti l\'instal·lació d\'aplicacions des d\'orígens desconeguts.</string>
     <string name="disable">Deshabil·litar</string>
@@ -492,7 +480,6 @@
     <string name="correct_message">Corretgir missatge</string>
     <string name="send_corrected_message">Enviar missatge corregit</string>
     <string name="no_keys_just_confirm">Ja confíes en aquest contacte. Seleccionant \'fet\', estàs confirmat que %s ets part d\'aquest grup.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im no ha pogut xifrar els teus missatges per que els teus contactes no estàn anunciant la seva clau pública.\n\n<small> Si us plau, demana als teus contactes que configuren OpenPGP.</small></string>
     <string name="this_account_is_disabled">Has deshabil·litat aquesta compte</string>
     <string name="no_application_to_share_uri">No s\'ha trobat ninguna aplicació per a compartir la URI</string>
     <string name="share_uri_with">Compartir URI con...</string>
@@ -528,10 +515,6 @@
     <string name="invite_again">Convidar de nou</string>
     <string name="inviteUser_Subject">t\'ha convidat a través de</string>
     <string name="pref_broadcast_last_activity">Informar de la teva última interacció</string>
-    <string name="pref_broadcast_last_activity_summary">Informar als teus contactes quant utilitzes blabber.im</string>
-    <string name="invite_user">Convidar a blabber.im</string>
-    <string name="request_permissions_message">blabber.im li demanarà que concedeix alguns permissos. És important que permetis que tots aquest permissos utilitzen totes les característíques d\'aquest missatger Si vosté nega qualsevol d\'aquests permissos, l\'aplicació es tancarà sola.</string>
-    <string name="request_permissions_message_again">Vosté ha negat un o tots els permissos requerits per a blabber.im. ¿Desitja anar a la configuració per a permetre aquests permissos? Si refuses un d\'aquests permissos, l\'aplicació es tancarà.</string>
     <string name="unable_to_connect_to_keychain">No s\'ha pogut connectar a OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Aquest dispositiu ja no està en ús</string>
     <string name="please_wait">Espera, si us plau…</string>
@@ -558,7 +541,6 @@
     <string name="quote">Citar</string>
     <string name="show_error_message">Mostrar missatge d\'error</string>
     <string name="data_saver_enabled">Optimizació de dades habil·litades</string>
-    <string name="device_does_not_support_data_saver">El teu dispositiu no suporta l\'opció de deshabil·litar l\'optimizació de dades per a blabber.im</string>
     <string name="add_to_contact_list">Afegir a contactes</string>
     <string name="contact">Contacte</string>
     <string name="unable_to_start_recording">No es pot iniciar la gravació</string>
@@ -658,7 +640,6 @@
     <string name="server_info_partial">Parcial</string>
     <string name="pref_show_foreground_service_summary">Alguns dispositius Android tancaràn algunes aplicacions després d\'un temps i no podràs rebre nous missatges. Si tens aquests problemes, intenta activar el servei de primer pla. Però tingues en compte que tindrà una notificació permanent amb aquesta opció marcada.</string>
     <string name="pref_show_foreground_service">Utilitzar servei en primer pla</string>
-    <string name="update_service">Servei d\'actualizació de blabber.im</string>
     <string name="install_update">Instal·lar actualizació?</string>
     <string name="highlight_in_muc">anomena usuari</string>
     <string name="no_application_found_to_open_link">No s\'ha trobat aplicació per a obrir la pàgina web</string>
@@ -680,7 +661,6 @@
     <string name="no_write_access_in_public_muc">De moment no estàs participant en aquest grup i no pots escriure en él\n Si us plau, ves als detalls del grup pressionant <b>OK</b> i envía un missatge privat a un moderador, administrador o propietari fent un click llarg en el nom dels membres en la part superior de la llista per a sol·licitar accès d\'escriptura en el grup.</string>
     <string name="snooze">Dormitar</string>
     <string name="huawei_protected_apps">Aplicacions protegides</string>
-    <string name="huawei_protected_apps_summary">Per a rebre notificacions inclús quant la pantalla està apagada, si us plau afegeix blabber.im a la llista d\'aplicacions protegides.</string>
     <string name="pref_enable_multi_accounts_title">Habil·litar múltiples comptes</string>
     <string name="pref_enable_multi_accounts_summary"> Vols utilitzar comptes múltiples?</string>
     <string name="mtm_accept_cert">Acceptar certificat desconegut?</string>
@@ -693,12 +673,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">El escàner de codi QR necessita accès a la càmara</string>
     <string name="pref_scroll_to_bottom_summary">Desplaçar-se fins abaix després d\'enviar un missatge</string>
     <string name="pref_scroll_to_bottom">Desplaçar-se fins abaix</string>
-    <string name="no_camera_permission">blabber.im necessita accedir a la càmara</string>
     <string name="edit_status_message_title">Editar el missatge d\'estat</string>
     <string name="pref_automatically_delete_messages_description">Eliminar automàticament els missatges del dispositius que siguin anteriors al temps seleccionant.</string>
     <string name="pref_automatically_delete_messages">Borrat automàtico de missatges</string>
     <string name="disable_encryption">Desactivar xifrat</string>
-    <string name="error_trustkey_general">blabber.im no poder enviar missatges xifrats a %1$s. Aquest pot ser deguda a que el teu contacte està utilitzant un servidor o un client desactualizat que no pot manejar les claus OMEMO.</string>
     <string name="error_trustkey_device_list">No es pot obtenir la llista de dispositius</string>
     <string name="error_trustkey_bundle">No s\'han pogut aconseguir les claus del dispositiu</string>
     <string name="error_trustkey_hint_mutual">Consell: En algunes ocasions aixó es pot arreglar al agregar-se cada un a la seva llista de contactes.</string>
@@ -722,7 +700,6 @@
     <string name="large">Gran</string>
     <string name="create_shortcut">Crear  drecera</string>
     <string name="not_encrypted_for_this_device">El missatge no fou xifrat per a aquest dispositiu.</string>
-    <string name="no_microphone_permission">blabber.im necessita accedir al micròfon</string>
     <string name="search_messages">Buscar missatges</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Veure conversa</string>
@@ -752,14 +729,12 @@
     <string name="conference_destroyed">Aquest grup de xat ha de ser destruit</string>
     <string name="no_application_found_to_view_contact">No s\'han trobat ninguna aplicació amb la que poder veure aquest contacte</string>
     <string name="welcome_server_info">Recomanem l\'ús de blabber.im como el teu proveïdor.</string>
-    <string name="no_location_permission">blabber.im necessita accedir als serveis d\'ubicació</string>
     <string name="pref_show_record_voice_btn_summary">Mostrar el botó de gravació de veu en converses com acció ràpida</string>
     <string name="pref_show_record_voice_btn">Mostrar botó de gravació de veu</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Reemplaçar el botó d\'enviar amb selecció d\'adjunt si no s\'està teclejant un missatge. En altre cas mostrar accions ràpides, que poden ser configurades en la següent opció.</string>
     <string name="pref_quick_share_attachment_choice">Seleccionar adjunt</string>
     <string name="unable_to_save_recording">Impossible guardar la gravació</string>
     <string name="foreground_service_channel_name">Servei en primer plan</string>
-    <string name="foreground_service_channel_description">Aquesta categoría s\'utilitza per a mostrar una notificació permanent indicant que blabber.im s\'està executant.</string>
     <string name="notification_group_status_information">Informació d\'estat</string>
     <string name="error_channel_name">Problemes de connectivitat</string>
     <string name="error_channel_description">Aquesta categoría s\'utilitza per a mostrar una notificació en el cas de que existeixi algun problema connectant a una compte.</string>
@@ -810,7 +785,6 @@
     <string name="open_with">Obrir amb…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: invitació d\'usuari</string>
     <string name="choose_account">Escull compte</string>
-    <string name="set_profile_picture">Imatge de perfil de blabber.im</string>
     <string name="restore_backup">Restaurar còpia de seguretat</string>
     <string name="restore">Restaurar</string>
     <string name="enter_password_to_restore">Escriu la teva contrasenya pel compte %s per a restaurar la còpia de seguretat.</string>
@@ -869,7 +843,6 @@
     <string name="password_forgotten_title">Contrasenya oblidada</string>
     <string name="password_forgotten_text">Has oblidat la contrasenya del teu compte? Ara intentarem obrir la web de suport del teu proveïdor.</string>
     <string name="set_settings_intro">Aquí pots establir algunes configuracions de privacitat importants. Totes les configuracions poden èsser modificades més tard.</string>
-    <string name="pref_show_mappreview_inside_summary">Mostrar previsualizacions de mapes directament en la vista de xat, s\'establirà una connexió al servidor Pix-Art.</string>
     <string name="pref_show_mappreview_inside">Mostrar previsualizacions de localizacions en el xat</string>
     <string name="pref_use_internal_updater_summary">Permetre que l\'aplicació busqui actualizacions una vegada al dia</string>
     <string name="pref_use_internal_updater">buscar actualizacions</string>
@@ -890,7 +863,6 @@
     <string name="intro_required_permissions">Permisos necessaris</string>
     <string name="intro_account">El vostre compte</string>
     <string name="intro_chat_details">Detalls del xat</string>
-    <string name="intro_whats_xmpp">Que és XMPP / Jabber / blabber.im?</string>
     <string name="open_join_dialog">Unir-se al canal públic…</string>
     <string name="intro_optional_permissions">Permisos opcionals</string>
 </resources>
