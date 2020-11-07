@@ -208,7 +208,7 @@
     <string name="pref_allow_message_correction">Tillåt korrigeringar av meddelanden</string>
     <string name="pref_allow_message_correction_summary">Tillåt att dina kontakter kan ändra sina meddelanden i efterhand</string>
     <string name="pref_expert_options">Expertinställningar</string>
-    <string name="title_activity_about">Om Pix-Art Messenger</string>
+    <string name="title_activity_about">Om</string>
     <string name="pref_about_conversations_summary">Bygg- och licensinformation</string>
     <string name="title_pref_quiet_hours">Tysta timmar</string>
     <string name="title_pref_quiet_hours_start_time">Starttid</string>
