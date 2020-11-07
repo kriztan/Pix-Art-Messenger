@@ -58,8 +58,6 @@
     <string name="unblock">Разблокировать</string>
     <string name="save">Сохранить</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">blabber.im упал</string>
-    <string name="crash_report_message">Отсылая трассировку стека, вы момогаете текущей разработке blabber.im\n<b>Внимание:</b>Будет использован ваш XMPP аккаунт для отсылки трассировки стека разработчику.</string>
     <string name="send_now">Отправить сейчас</string>
     <string name="send_never">Больше не спрашивать</string>
     <string name="problem_connecting_to_account">Невозможно подключиться к аккаунту</string>
@@ -84,13 +82,11 @@
     <string name="send_unencrypted">Отправить незашифрованным</string>
     <string name="decryption_failed">Расшифровка не удалась. Возможно, у вас нет правильного приватного ключа.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im использует стороннее приложение <b>OpenKeychain</b> для шифрования и расшифровки сообщений, а также для управления вашими публичными ключами.\n\nOpenKeychain лицензирован под GPLv3 и доступен в F-Droid и Google Play.\n\n<small>(Пожалуйста, перезапустите blabber.im впоследствии.)</small></string>
     <string name="restart">Перезапуск</string>
     <string name="install">Установка</string>
     <string name="offering">предложение…</string>
     <string name="waiting">ожидание…</string>
     <string name="no_pgp_key">Не найден ключ OpenPGP</string>
-    <string name="contact_has_no_pgp_key">blabber.im не может зашифровать ваше сообщение, потому что ваш собеседник не анонсировал свой публичный ключ.\n\n<small>Пожалуйста, попросите вашего собеседника установить OpenPGP.</small></string>
     <string name="no_pgp_keys">Не найдены ключи OpenPGP</string>
     <string name="pref_general">Общее</string>
     <string name="pref_accept_files_wifi">Принимать файлы по WiFi</string>
@@ -108,7 +104,6 @@
     <string name="pref_sound">Рингтон</string>
     <string name="pref_sound_summary">Воспроизводить звук, когда получено новое сообщение</string>
     <string name="pref_send_crash">Отправлять отчёты о сбоях</string>
-    <string name="pref_send_crash_summary">Отсылая трассировку стека, вы помогаете текущей разработке blabber.im</string>
     <string name="pref_confirm_messages">Подтвердить получение</string>
     <string name="pref_confirm_messages_summary">Разрешить вашим контактам видеть, когда вы получили и прочитали их сообщения</string>
     <string name="pref_ui_options">Интерфейс</string>
@@ -157,7 +152,6 @@
     <string name="mgmt_account_delete_confirm_message">При удалении аккаунта вся локальная история переписки будет утеряна.\n\nЕсли вы удалите аккаунт с сервера, переписка также удалится и на сервере, вы не сможете залогиниться, пока не зарегистрируете новый аккаунт.</string>
     <string name="attach_record_voice">Записать голосовое сообщение</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">username@blabber.im</string>
     <string name="password">Пароль</string>
     <string name="invalid_jid">Недействительный Jabber-ID</string>
     <string name="error_out_of_memory">Недостаточно памяти. Изображение слишком большое</string>
@@ -434,11 +428,9 @@
     <string name="pref_away_when_screen_off">Статус \"Отошел\", когда экран выключен</string>
     <string name="pref_away_when_screen_off_summary">Статус \"Отошел\" при гашении экрана</string>
     <string name="pref_dnd_on_silent_mode">Статус \"Не беспокоить\" в беззвучном режиме</string>
-    <string name="update_info">blabber.im скачивает и устанавливает новую версию.\n\nПожалуйста, подождите…</string>
     <string name="pref_dnd_on_silent_mode_summary">Статус \"Не беспокоить\", когда устройство в беззвучном режиме</string>
     <string name="pref_treat_vibrate_as_silent">Считать режим вибрации беззвучным режимом</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Статус \"Не беспокоить\", когда устройство в режиме вибрации</string>
-    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Добавить аккаунт с сертификатом</string>
     <string name="unable_to_parse_certificate">Не удается обработать сертификат</string>
     <string name="authenticate_with_certificate">Оставьте пустым для аутентификации с сертификатом</string>
@@ -468,9 +460,7 @@
         <item quantity="other">%d сообщений</item>
     </plurals>
     <string name="load_more_messages">Загрузить больше сообщений</string>
-    <string name="no_storage_permission">blabber.im нужен доступ к внешнему хранилищу</string>
     <string name="sync_with_contacts">Синхронизировать контакты</string>
-    <string name="sync_with_contacts_long">blabber.im пытается найти соответствие вашего XMPP ростера с вашими контактами, чтобы показать их полные имена и аватары.\n\nПрограмма только читает ваши контакты и проверяет их на вашем устройстве, не отправляя на какой-либо сервер.\n\nСейчас вам будет предложено разрешить доступ к вашим контактам.</string>
     <string name="notify_on_all_messages">Уведомлять о всех сообщениях</string>
     <string name="notify_only_when_highlighted">Уведомлять только при упоминаниях</string>
     <string name="notify_never">Уведомления отключены</string>
@@ -487,8 +477,6 @@
     <string name="always">Всегда</string>
     <string name="always_off">Всегда выключен</string>
     <string name="battery_optimizations_enabled">Включена оптимизация энергопотребления</string>
-    <string name="battery_optimizations_enabled_explained">Ваше устройство оптимизирует расход батареи при использовании blabber.im, что может привести к задержкам уведомлений и даже потере сообщений.\n\nРекомендуется отключить эту оптимизацию.</string>
-    <string name="battery_optimizations_enabled_dialog">Ваше устройство оптимизирует расход батареи при использовании blabber.im, что может привести к задержкам уведомлений и даже потере сообщений.\n\n\nСейчас вам будет предложено отключить эту оптимизацию.</string>
     <string name="install_from_unknown_sources_disabled">Отключена установка из неизвестных источников</string>
     <string name="install_from_unknown_sources_disabled_dialog">Ваше устройство не разрешает установку приложений из неизвестных источников. Это приведет к проблемам с обновлением приложения.\n\nСейчас вам будет предложено разрешить установку приложений из неизвестных источников.</string>
     <string name="disable">Отключить</string>
@@ -500,7 +488,6 @@
     <string name="correct_message">Изменить сообщение</string>
     <string name="send_corrected_message">Отправить измененное сообщение</string>
     <string name="no_keys_just_confirm">Вы уже доверяете этому контакту. Нажимая \"Готово\" вы только подтвердите, что %s состоит в групповом чате.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im не может зашифровать ваши сообщения, поскольку ваши контакты не предоставляют своих публичных ключей.\n\n</string>
     <string name="this_account_is_disabled">Вы отключили данный аккаунт</string>
     <string name="no_application_to_share_uri">Не найдено подходящее приложение, чтобы поделиться URI</string>
     <string name="share_uri_with">Поделиться URI с…</string>
@@ -536,12 +523,7 @@
     <string name="import_database">Импортировать резервную копию</string>
     <string name="invite_again">Пригласить снова</string>
     <string name="inviteUser_Subject">приглашает вас присоединиться через</string>
-    <string name="InviteText">Здравствуйте! \n\n Пользователь %s приглашает вас использовать blabber.im. Если вы используете Android - нажмите на ссылку, чтобы попробовать…</string>
     <string name="pref_broadcast_last_activity">Отображать последнюю активность пользователя</string>
-    <string name="pref_broadcast_last_activity_summary">Позволяет вашим контактам видеть, когда вы пользуетесь blabber.im</string>
-    <string name="invite_user">Пригласить в blabber.im</string>
-    <string name="request_permissions_message">blabber.im запросит у вас несколько разрешений. Чтобы пользоваться всеми возможностями этого мессенджера, нужно дать эти разрешения. Если какое-то разрешение не будет получено - приложение будет закрыто.</string>
-    <string name="request_permissions_message_again">Вы не дали некоторых разрешений, нужных для работы blabber.im. Хотите перейти в настройки разрешений сейчас? Если вы не дадите какого-либо из этих разрешений - приложение будет закрыто.</string>
     <string name="unable_to_connect_to_keychain">Не удается подключиться к OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Устройство больше не используется</string>
     <string name="please_wait">Пожалуйста, подождите…</string>
@@ -569,8 +551,6 @@
     <string name="show_error_message">Показать сообщения об ошибках</string>
     <string name="error_message">Сообщение об ошибке</string>
     <string name="data_saver_enabled">Включено сохранение данных</string>
-    <string name="data_saver_enabled_explained">Ваша операционная система запрещает blabber.im доступ в Интернет в фоновом режиме. Чтобы получать уведомления о новых сообщениях, вам нужно разрешить blabber.im неограниченный доступ в Интернет. \n\nblabber.im будет пытаться сохранить данные при появлении возможности.</string>
-    <string name="device_does_not_support_data_saver">Ваше устройство не поддерживает отключение дата сервера для blabber.im.</string>
     <string name="add_to_contact_list">Добавить в контакты</string>
     <string name="contact">Контакт</string>
     <string name="unable_to_start_recording">Не удается начать запись</string>
@@ -684,7 +664,6 @@
     <string name="server_info_partial">частичный</string>
     <string name="pref_show_foreground_service_summary">Некоторые устройства Android закрывают приложения по прошествии некоторого времени, и вы теряете возможность получать новые сообщения. Если вы столкнулись с такой проблемой - попробуйте активировать фоновую службу. Имейте ввиду, что если эта опция включена - значок уведомления будет отображаться постоянно.</string>
     <string name="pref_show_foreground_service">Использовать фоновую службу</string>
-    <string name="update_service">Служба обновления blabber.im</string>
     <string name="install_update">Установить обновление?</string>
     <string name="highlight_in_muc">отметить пользователя</string>
     <string name="no_application_found_to_open_link">Не удалось найти подходящее приложение для открытия ссылки</string>
@@ -706,7 +685,6 @@
     <string name="no_write_access_in_public_muc">Вы не состоите в этом групповом чате и не можете оставлять сообщения в данный момент.\nПожалуйста, зайдите в свойства чата нажатием <b>ОК</b> и отправьте приватное сообщение модератору, администратору или владельцу чата долгим нажатием на их имени в верхней части списка, чтобы получить возможность оставлять сообщения.</string>
     <string name="snooze">Скрыть</string>
     <string name="huawei_protected_apps">Защищенные приложения</string>
-    <string name="huawei_protected_apps_summary">Чтобы продолжить получать уведомления при погашенном экране, вам нужно добавить blabber.im в список исключений.</string>
     <string name="pref_enable_multi_accounts_title">Использовать несколько аккаунтов</string>
     <string name="pref_enable_multi_accounts_summary">Вы хотите использовать несколько аккаунтов?</string>
     <string name="mtm_accept_cert">Принять неизвестный сертификат?</string>
@@ -719,12 +697,10 @@
     <string name="qr_code_scanner_needs_access_to_camera">Сканеру QR-кодов нужен доступ к камере</string>
     <string name="pref_scroll_to_bottom_summary">Прокручивать вниз после отправки сообщения</string>
     <string name="pref_scroll_to_bottom">Прокрутить вниз</string>
-    <string name="no_camera_permission">blabber.im нужен доступ к камере</string>
     <string name="edit_status_message_title">Редактировать статус</string>
     <string name="pref_automatically_delete_messages_description">Автоматически удалять с этого устройства сообщения старше заданного времени.</string>
     <string name="pref_automatically_delete_messages">Автоматическое удаление сообщений</string>
     <string name="disable_encryption">Отключить шифрование</string>
-    <string name="error_trustkey_general">blabber.im не может отправить зашифрованное сообщение %1$s. Возможно, контакт использует устаревший сервер или его клиент не поддерживает OMEMO.</string>
     <string name="error_trustkey_device_list">Не удалось получить список устройств</string>
     <string name="error_trustkey_bundle">Невозможно извлечь пакеты устройств</string>
     <string name="error_trustkey_hint_mutual">Подсказка: Иногда это может быть устранено добавлением друг друга в список контактов.</string>
@@ -751,7 +727,6 @@
     <string name="large">Большой</string>
     <string name="create_shortcut">Создать ярлык</string>
     <string name="not_encrypted_for_this_device">Сообщение не было зашифровано для этого устройства.</string>
-    <string name="no_microphone_permission">blabber.im нужен доступ к микрофону</string>
     <string name="search_messages">Поиск сообщений</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Просмотр беседы</string>
@@ -781,14 +756,12 @@
     <string name="conference_destroyed">Данная группа была закрыта</string>
     <string name="no_application_found_to_view_contact">Не найдено приложений для просмотра контакта</string>
     <string name="welcome_server_info">Мы рекомендуем использовать blabber.im как ваш провайдер.</string>
-    <string name="no_location_permission">blabber.im нужен доступ к сервисам геолокации</string>
     <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
     <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
     <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если нет сообщения. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
     <string name="pref_quick_share_attachment_choice">Выбор вложений</string>
     <string name="unable_to_save_recording">Не удается сохранить запись</string>
     <string name="foreground_service_channel_name">Фоновая служба</string>
-    <string name="foreground_service_channel_description">Эта категория уведомлений используется для отображения постоянного уведомления о том, что blabber.im запущен.</string>
     <string name="notification_group_status_information">Статус</string>
     <string name="error_channel_name">Проблемы с подключением</string>
     <string name="error_channel_description">Эта категория уведомлений используется для отображения уведомления в случае возникновения проблем с подключением к учетной записи.</string>
@@ -839,7 +812,6 @@
     <string name="open_with">Открыть с помощью...</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: user invite</string>
     <string name="choose_account">Выберите аккаунт</string>
-    <string name="set_profile_picture">Изображение профиля blabber.im</string>
     <string name="restore_backup">Восстановить резервную копию</string>
     <string name="restore">Восстановить</string>
     <string name="enter_password_to_restore">Введите пароль от аккаунта %s для восстановления резервной копии.</string>
@@ -899,7 +871,6 @@
     <string name="password_forgotten_title">Не помню пароль</string>
     <string name="password_forgotten_text">Забыли пароль от аккаунта? Мы попробуем открыть страницу поддержки вашего провайдера.</string>
     <string name="set_settings_intro">Здесь вы можете установить важные настройки безопасности. Все настройки могут быть изменены позднее.</string>
-    <string name="pref_show_mappreview_inside_summary">Показывать превью карт внутри чата (будет установлено соединение с Pix-Art-Server).</string>
     <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
     <string name="pref_use_internal_updater">Проверять наличие обновлений</string>
@@ -925,12 +896,10 @@
     <string name="action_unblock_participant">Разблокировать участника</string>
     <string name="action_block_participant">Заблокировать участника</string>
     <string name="share_backup_files">Отправить файл резервной копии</string>
-    <string name="conversations_backup">Резервная копия blabber.im</string>
     <string name="event">Событие</string>
     <string name="pref_vibrate_in_chat_summary">Вибрация при новом сообщении в открытом чате</string>
     <string name="pref_vibrate_in_chat">Вибрация в открытом чате</string>
     <string name="open_backup">Открыть резервную копию</string>
-    <string name="not_a_backup_file">Выбранный вами файл не является резервной копией blabber.im</string>
     <string name="account_already_setup">Этот аккаунт уже настроен</string>
     <string name="please_enter_password">Пожалуйста, введите пароль для этого аккаунта</string>
     <string name="unable_to_perform_this_action">Не удается выполнить это действие</string>
@@ -942,7 +911,6 @@
     <string name="pref_use_invidious_summary">Invidious - это дружественная к конфиденциальности альтернатива YouTube</string>
     <string name="this_device">Это устройство</string>
     <string name="intro_desc_main">Узнать больше…</string>
-    <string name="welcome_header">Добро пожаловать в /nblabber.im</string>
     <string name="intro_required_permissions">Запрашиваемые права</string>
     <string name="intro_desc_required_permissions">В конце вступления вам будет предложено предоставить разрешения на хранение (обязательные), если вы их еще не предоставили. Разрешения на добавление запрашиваются по мере необходимости и являются необязательными.</string>
     <string name="intro_account">Ваш аккаунт</string>
@@ -960,9 +928,7 @@
     <string name="show_intro_again">Интро экраны будут показаны снова</string>
     <string name="show_intro_again_failed">Сброс интро экранов не удался. Попробовать еще раз... </string>
     <string name="intro_desc_whats_xmpp">XMPP, также называемый jabber, является децентрализованной коммуникационной сетью и работает как электронная почта. Вам нужен адрес под названием Jabber-ID, Пароль и посыльный. Подробнее об этом позже.</string>
-    <string name="intro_whats_xmpp">Что такое XMPP / Jabber / blabber.im?</string>
     <string name="intro_desc_optional_permissions">Разрешения на чтение адресной книги требуются для чтения Jabber-ID (если таковые имеются) из ваших контактов. Контакты никогда не делятся, не загружаются и не копируются.</string>
-    <string name="intro_desc_account2">Вы можете создать новый профиль, выбрав пользовательский сервер или один из них в раскрывающемся меню и введя псевдоним.</string>
     <string name="open_join_dialog">Присоединиться к публичному каналу…</string>
     <string name="intro_optional_permissions">Дополнительные разрешения</string>
     <string name="intro_desc_optional_permissions2">Разрешения для вашего местоположения необходимы, если вы хотите поделиться своим местоположением.\nДля обмена голосовыми сообщениями необходимо получить доступ к микрофону.</string>
@@ -970,7 +936,6 @@
     <string name="intro_desc_start_chatting2">Вы также можете добавлять, создавать или присоединяться к многопользовательским чатам - так называемым MUCs. Они различают приватные групповые чаты и публичные групповые чаты - так называемые каналы.</string>
     <string name="intro_desc_start_chatting3">Поздравляю!\nВот мы и идем веселиться…</string>
     <string name="intro_privacy">Ваша конфиденциальностьn\Ваш суверенитет</string>
-    <string name="intro_desc_privacy">blabber.im не будет ни продавать, ни анализировать ваши данные, и вы сами решаете, какие разрешения вы предоставляете.</string>
     <string name="no_results">Нет результата</string>
     <string name="file_transmission_cancelled">передача файла прервана</string>
     <string name="sharing_application_not_grant_permission">Приложение общего доступа не предоставило разрешения на доступ к этому файлу.</string>
