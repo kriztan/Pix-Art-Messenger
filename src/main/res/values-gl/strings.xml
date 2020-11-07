@@ -49,8 +49,6 @@
     <string name="unblock">Desbloquear</string>
     <string name="save">Gardar</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">Conversations deteuse.</string>
-    <string name="crash_report_message">Enviando volcados de pilas axudas ao desenrolo de Conversations\n<b>Aviso:</b> Isto empregará a túa conta XMPP para enviar o volcado de pila ao desenrolador.</string>
     <string name="send_now">Enviar agora</string>
     <string name="send_never">Non preguntar de novo</string>
     <string name="problem_connecting_to_account">Erro na conexión á conta</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Enviar sen cifrar</string>
     <string name="decryption_failed">Fallou o descifrado. Quizábeis non teñas a clave privada apropiada.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Conversations emprega unha aplicación de terceiros chamada <b>OpenKeychain</b> para cifrar e descifrar mensaxes e xestionar as túas claves públicas.\n\nOpenKeychain está publicado baixo licencia GPLv3 e disponible en F-Droid e Google Play.\n\n<small>(Por favor, reinicie Conversations despois.)</small></string>
     <string name="restart">Reiniciar</string>
     <string name="install">Instalar</string>
     <string name="offering">ofrecendo…</string>
     <string name="waiting">agardando...</string>
     <string name="no_pgp_key">Clave OpenPGP non atopada</string>
-    <string name="contact_has_no_pgp_key">Conversations non foi quen de cifrar as túas mensaxes porque o teu contactos non está anunciando a súa clave pública.\n\n<small>Por favor, pídelle ao teu contacto que configure OpenPGP.</small></string>
     <string name="no_pgp_keys">Non se atoparon chaves OpenPGP</string>
     <string name="pref_general">Xeral</string>
     <string name="pref_attachments">Engadidos</string>
@@ -137,7 +133,6 @@
     <string name="mgmt_account_are_you_sure">Seguro?</string>
     <string name="attach_record_voice">Grabar audio</string>
     <string name="account_settings_jabber_id">ID Jabber</string>
-    <string name="account_settings_example_jabber_id">usuaria@exemplo.com</string>
     <string name="password">Contrasinal</string>
     <string name="invalid_jid">O identificador non é un identificador de Jabber válido</string>
     <string name="error_out_of_memory">Exceso de memoria. A imaxe é demasiado grande</string>
@@ -371,7 +366,6 @@
     <string name="pref_dnd_on_silent_mode_summary">Marca o seu recurso como \"Non molestar\" cando o dispositivo está en modo silencioso</string>
     <string name="pref_treat_vibrate_as_silent">Trata a vibración como modo silencioso</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Marca o seu recurso como \"Non molestar\" cando o dispositivo está en modo vibración</string>
-    <string name="hostname_example">xmpp.exemplo.com</string>
     <string name="action_add_account_with_certificate">Engadir conta con certificado</string>
     <string name="unable_to_parse_certificate">Non se puido procesar o certificado</string>
     <string name="authenticate_with_certificate">Deixar baldeiro autenticar con certificado</string>
@@ -397,24 +391,19 @@
         <item quantity="other">%d mensaxes</item>
     </plurals>
     <string name="load_more_messages">Cargar máis mensaxes</string>
-    <string name="no_storage_permission">Conversations precisa acceso ao almacenamento externo</string>
     <string name="sync_with_contacts">Sincronice con todos os contactos</string>
-    <string name="sync_with_contacts_long">Conversations quere comparar a súa lista XMPP cos seus contactos para mostrar os seus nomes completos e avatares.\n\nConversations só fará esta comprobación de xeito local sen subilos ao servidor.\n\nAgora pediráselle conceder permiso para acceder aos seus contactos.</string>
     <string name="notify_on_all_messages">Notificar todas as mensaxes</string>
     <string name="notify_only_when_highlighted">Notificar só cando é mencionada</string>
     <string name="notify_never">Notificacións deshabilitadas</string>
     <string name="notify_paused">Notificacións pausadas</string>
     <string name="always">Sempre</string>
     <string name="battery_optimizations_enabled">Optimizacións de batería habilitadas</string>
-    <string name="battery_optimizations_enabled_explained">O seu dispositivo está a realizar algunhas optimizacións de batería extremas en Conversations que poderían levar a notificacións con retraso o incluso perda dos mesmos.\nÉ recomendado deshabilitadas.</string>
-    <string name="battery_optimizations_enabled_dialog">O seu dispositivo está facendo unhas optimizacións de batería moi fortes en Conversations que poderían facer que se retrasasen algunhas mensaxes ou incluso se perdesen.\n\nAgora pediráselle que se deshabiliten as mismas.</string>
     <string name="disable">Deshabilitar</string>
     <string name="no_accounts">(Contas non activadas)</string>
     <string name="this_field_is_required">Este campo é requerido</string>
     <string name="correct_message">Correxir mensaxe</string>
     <string name="send_corrected_message">Enviar mensaxe correxida</string>
     <string name="no_keys_just_confirm">Xa confia neste contacto. Ao seleccionar \'feito\' só está confirmando que %s é parte deste chat grupal.</string>
-    <string name="contacts_have_no_pgp_keys">Conversations non pode cifrar a súa mensaxe porque os seus contactos no publicaron a súa chave pública.\n\n <small>Por favor solicite aos seus contactos que configuren OpenPGP.</small></string>
     <string name="this_account_is_disabled">Deshabilitou esta conta</string>
     <string name="no_application_to_share_uri">Non se atopou un aplicativo para compartir URI</string>
     <string name="share_uri_with">Compartir URI con...</string>
@@ -438,7 +427,6 @@
     <string name="creating_conference">Creando unha conversa en grupo...</string>
     <string name="invite_again">Invitar de novo</string>
     <string name="pref_broadcast_last_activity">Emitir a última interacción coa usuaria</string>
-    <string name="pref_broadcast_last_activity_summary">Permitirlle aos contactos saber cando está a usar Conversations</string>
     <string name="unable_to_connect_to_keychain">Non se puido conectar con OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Este dispositivo xa non está en uso</string>
     <string name="payment_required">Pagamento requerido</string>
@@ -460,7 +448,6 @@
     <string name="quote">Cita</string>
     <string name="show_error_message">Mostrar mensaxe do fallo</string>
     <string name="data_saver_enabled">Aforrador de datos habilitado</string>
-    <string name="device_does_not_support_data_saver">O seu dispositivo non admite deshabilitar o aforro de datos para Conversations.</string>
     <string name="error_unable_to_create_temporary_file">Non se puido crear o ficheiro temporal</string>
     <string name="this_device_has_been_verified">Este dispositivo foi verificado</string>
     <string name="copy_fingerprint">Copiar pegada dixital</string>
