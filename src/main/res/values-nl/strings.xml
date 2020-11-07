@@ -226,7 +226,7 @@
     <string name="pref_allow_message_correction">Berichtcorrectie toestaan</string>
     <string name="pref_allow_message_correction_summary">Sta je contacten toe hun berichten na het versturen te verbeteren</string>
     <string name="pref_expert_options">Instellingen voor experts</string>
-    <string name="title_activity_about">Over Pix-Art Messenger</string>
+    <string name="title_activity_about">Over</string>
     <string name="pref_about_conversations_summary">Build en licentie-informatie</string>
     <string name="title_pref_quiet_hours">Stille uren</string>
     <string name="title_pref_quiet_hours_start_time">Begintijd</string>
