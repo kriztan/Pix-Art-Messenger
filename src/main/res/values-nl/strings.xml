@@ -56,8 +56,6 @@
     <string name="unblock">Deblokkeren</string>
     <string name="save">Opslaan</string>
     <string name="ok">Oké</string>
-    <string name="crash_report_title">blabber.im is gecrasht</string>
-    <string name="crash_report_message">Door het versturen van crashrapportages help je de ontwikkeling van blabber.im.\n\n<b>Waarschuwing:</b> Deze app zal je XMPP-account gebruiken om de crashrapportages te versturen naar de ontwikkelaars.</string>
     <string name="send_now">Nu versturen</string>
     <string name="send_never">Niet opnieuw vragen</string>
     <string name="problem_connecting_to_account">Verbinding maken met account mislukt</string>
@@ -81,13 +79,11 @@
     <string name="send_unencrypted">Verstuur onversleuteld</string>
     <string name="decryption_failed">Ontsleutelen mislukt. Misschien heb je niet de juiste private sleutel.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im gebruikt een derde partij app genaamd <b>OpenKeychain</b> om berichten te versleutelen en ontsleutelen, en om publieke sleutels te beheren.\n\nOpenKeychain is beschikbaar onder de GPLv3 en beschikbaar op F-Droid en Google Play.\n\n<small>(Herstart blabber.im na installatie.)</small></string>
     <string name="restart">Herstarten</string>
     <string name="install">Installeren</string>
     <string name="offering">bezig met aanbieden…</string>
     <string name="waiting">wachten…</string>
     <string name="no_pgp_key">Geen OpenPGP-sleutel gevonden</string>
-    <string name="contact_has_no_pgp_key">blabber.im kan je berichten niet versleutelen omdat je contact geen publieke sleutel heeft ingesteld.\n\n<small>Vraag je contact om OpenPGP te configureren.</small></string>
     <string name="no_pgp_keys">Geen OpenPGP-sleutels gevonden</string>
     <string name="pref_general">Algemeen</string>
     <string name="pref_attachments">Bijlagen</string>
@@ -144,7 +140,6 @@
     <string name="mgmt_account_are_you_sure">Weet je het zeker?</string>
     <string name="attach_record_voice">Stem opnemen</string>
     <string name="account_settings_jabber_id">Jabber-ID:</string>
-    <string name="account_settings_example_jabber_id">gebruikersnaam@voorbeeld.nl</string>
     <string name="password">Wachtwoord</string>
     <string name="invalid_jid">Dit is geen geldige Jabber-ID</string>
     <string name="error_out_of_memory">Geen geheugen beschikbaar. Afbeelding is te groot</string>
@@ -231,7 +226,7 @@
     <string name="pref_allow_message_correction">Berichtcorrectie toestaan</string>
     <string name="pref_allow_message_correction_summary">Sta je contacten toe hun berichten na het versturen te verbeteren</string>
     <string name="pref_expert_options">Instellingen voor experts</string>
-    <string name="title_activity_about">Over blabber.im</string>
+    <string name="title_activity_about">Over</string>
     <string name="pref_about_conversations_summary">Build en licentie-informatie</string>
     <string name="title_pref_quiet_hours">Stille uren</string>
     <string name="title_pref_quiet_hours_start_time">Begintijd</string>
@@ -398,7 +393,6 @@
     <string name="pref_dnd_on_silent_mode_summary">Stelt je bron in als “Niet storen” wanneer je apparaat in stille modus staat</string>
     <string name="pref_treat_vibrate_as_silent">Trillen behandelen als stille modus</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Stelt je bron in als “Niet storen” wanneer je apparaat in trilmodus staat</string>
-    <string name="hostname_example">xmpp.voorbeeld.be</string>
     <string name="action_add_account_with_certificate">Account met certificaat toevoegen</string>
     <string name="unable_to_parse_certificate">Kan certificaat niet verwerken</string>
     <string name="authenticate_with_certificate">Laat leeg om te authenticeren met certificaat</string>
@@ -424,9 +418,7 @@
         <item quantity="other">%d berichten</item>
     </plurals>
     <string name="load_more_messages">Laad meer berichten</string>
-    <string name="no_storage_permission">blabber.im heeft toegang nodig tot de externe opslag</string>
     <string name="sync_with_contacts">Synchroniseer met contacten</string>
-    <string name="sync_with_contacts_long">blabber.im wil je XMPP-contacten met je systeemcontacten vergelijken om hun volledige namen en avatars te tonen.\n\nblabber.im zal je contacten enkel lokaal lezen en vergelijken zonder ze te uploaden naar je server.\n\nJe zal nu gevraagd worden blabber.im toegang te verlenen tot je contacten.</string>
     <string name="notify_on_all_messages">Melding bij alle berichten</string>
     <string name="notify_only_when_highlighted">Melding enkel wanneer aangesproken</string>
     <string name="notify_never">Meldingen uitgeschakeld</string>
@@ -437,8 +429,6 @@
     <string name="video_original">Origineel (zonder compressie)</string>
     <string name="always">Altijd</string>
     <string name="battery_optimizations_enabled">Batterij-optimalisaties ingeschakeld</string>
-    <string name="battery_optimizations_enabled_explained">Je apparaat voert sterke batterij-optimalisaties uit op blabber.im, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\nHet is aangeraden deze optimalisaties uit te schakelen.</string>
-    <string name="battery_optimizations_enabled_dialog">Je apparaat voert sterke batterij-optimalisaties uit op blabber.im, die kunnen leiden tot vertraagde meldingen of zelfs verlies van berichten.\n\nJe zal nu gevraagd worden deze optimalisaties uit te schakelen.</string>
     <string name="disable">Uitschakelen</string>
     <string name="cancel_update">Update annuleren?</string>
     <string name="yes">Ja</string>
@@ -476,8 +466,6 @@
     <string name="creating_conference">Groepsgesprek aanmaken…</string>
     <string name="invite_again">Opnieuw uitnodigen</string>
     <string name="pref_broadcast_last_activity">Laatste gebruikersinteractie uitzenden</string>
-    <string name="pref_broadcast_last_activity_summary">Laat al je contacten weten wanneer je blabber.im gebruikt</string>
-    <string name="invite_user">Uitnodigen voor blabber.im</string>
     <string name="unable_to_connect_to_keychain">Verbinden met OpenKeychain mislukt</string>
     <string name="this_device_is_no_longer_in_use">Dit apparaat wordt niet meer gebruikt</string>
     <string name="please_wait">Even geduld…</string>
@@ -501,7 +489,6 @@
     <string name="quote">Citeren</string>
     <string name="show_error_message">Toon foutbericht</string>
     <string name="data_saver_enabled">Gegevensbesparing ingeschakeld</string>
-    <string name="device_does_not_support_data_saver">Je apparaat ondersteunt het uitschakelen van gegevensbesparing voor blabber.im niet.</string>
     <string name="add_to_contact_list">Toevoegen aan contactpersonen</string>
     <string name="contact">Contact</string>
     <string name="error_unable_to_create_temporary_file">Kan tijdelijk bestand niet aanmaken</string>
@@ -592,7 +579,6 @@
     <string name="error_no_keys_to_trust_presence">Er zijn geen bruikbare sleutels beschikbaar voor dit contact.\nZorg dat je allebei op elkaars aanwezigheidsupdates bent geabonneerd.</string>
     <string name="mark_as_read">Als gelezen markeren</string>
     <string name="server_info_partial">gedeeltelijk</string>
-    <string name="update_service">blabber.im update dienst</string>
     <string name="no_application_found_to_open_link">Geen applicatie om verwijzing te openen</string>
     <string name="contacts_have_read_up_to_this_point">%s hebben tot hier gelezen</string>
     <string name="contact_has_read_up_to_this_point">%s heeft tot hier gelezen</string>
@@ -604,7 +590,6 @@
     <string name="destroy_room_failed">Kan groepsgesprek niet vernietigen</string>
     <string name="snooze">Sluimeren</string>
     <string name="huawei_protected_apps">Beschermde apps</string>
-    <string name="huawei_protected_apps_summary">Om meldingen te blijven ontvangen, zelfs wanneer het scherm uit staat, moet je blabber.im toevoegen aan de lijst met beschermde apps.</string>
     <string name="mtm_cert_details">Certificaatinformatie:</string>
     <string name="once">Eenmalig</string>
     <string name="pref_scroll_to_bottom">Naar beneden scrollen</string>
@@ -631,7 +616,6 @@
     <string name="everyone_has_read_up_to_this_point">Iedereen heeft tot hier gelezen</string>
     <string name="conference_destroyed">Dit groepsgesprek is verwijderd</string>
     <string name="no_application_found_to_view_contact">Er is geen app gevonden om dit contact te bekijken</string>
-    <string name="foreground_service_channel_description">Deze meldingscategorie wordt gebruikt om een permanente melding weer te geven dat blabber.im wordt uitgevoerd.</string>
     <string name="error_channel_description">Deze meldingscategorie wordt gebruikt om een melding weer te geven ingeval er een probleem is bij het verbinden met een account.</string>
     <string name="silent_messages_channel_description">Deze meldingscategorie wordt gebruikt om meldingen weer te geven die geen geluid mogen maken. Bijvoorbeeld, indien actief op een ander apparaat (uitstelperiode).</string>
     <string name="pref_more_notification_settings">Meldingsinstellingen</string>
