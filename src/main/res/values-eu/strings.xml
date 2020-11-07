@@ -49,8 +49,6 @@
     <string name="unblock">Desblokeatu</string>
     <string name="save">Gorde</string>
     <string name="ok">Ados</string>
-    <string name="crash_report_title">blabber.im gelditu da</string>
-    <string name="crash_report_message">Akats harraskak bidaliz blabber.im en garapenean laguntzen duzu\n<b>Abisua:</b> Honek zure XMPP kontua erabiliko du garatzaileari akats harraska bidaltzeko.</string>
     <string name="send_now">Bidali orain</string>
     <string name="send_never">Ez galdetu berriz</string>
     <string name="problem_connecting_to_account">Ezin izan da kontura konektatu</string>
@@ -74,13 +72,11 @@
     <string name="send_unencrypted">Enkriptatu gabe bidali</string>
     <string name="decryption_failed">Desenkriptazioak huts egin du. Agian ez duzu gako pribatu egokia.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im ek <b>OpenKeychain</b> izeneko hirugarren app bat erabiltzen du mezuak enkriptatu eta desenkriptatzeko eta zure gako publikoak kudeatzeko.\n\nOpenKeychain GPLv3 lizentziapean dago eta F-Droid eta Google Playn eskura daiteke.\n\n<small>(Mesedez ondoren blabber.im berrabiarazi)</small></string>
     <string name="restart">Berrabiarazi</string>
     <string name="install">Instalatu</string>
     <string name="offering">eskeintzen…</string>
     <string name="waiting">itxaroten…</string>
     <string name="no_pgp_key">Ez da OpenPGP gakorik aurkitu</string>
-    <string name="contact_has_no_pgp_key">blabber.im ez da zure mezuak enkriptatzeko gai zure kontaktua bere gako publikoa jakinarazten ez dagoelako.\n\n<small>Mesedez eskatu ezaiozu zure kontaktuari openPGP konfigura dezan.</small></string>
     <string name="no_pgp_keys">Ez da OpenPGP gakorik aurkitu</string>
     <string name="pref_general">Orokorrak</string>
     <string name="pref_attachments">Eranskinak</string>
@@ -137,7 +133,6 @@
     <string name="mgmt_account_are_you_sure">Ziur al zaude?</string>
     <string name="attach_record_voice">Ahotsa grabatu</string>
     <string name="account_settings_jabber_id">Jabber IDa</string>
-    <string name="account_settings_example_jabber_id">erabiltzailea@adibidea.com</string>
     <string name="password">Pasahitza</string>
     <string name="invalid_jid">Hau ez da Jabber ID baliodun bat</string>
     <string name="error_out_of_memory">Memoriarik gabe. Irudia handiegia da</string>
@@ -371,7 +366,6 @@
     <string name="pref_dnd_on_silent_mode_summary">Zure baliabidea \"Ez gogaitu\" bezala markatzen du gailua modu isilean dagoenean</string>
     <string name="pref_treat_vibrate_as_silent">Dardara modu isila bezala tratatu</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Zure baliabidea \"Ez gogaitu\" bezala markatzen du gailua dardara moduan dagoenean</string>
-    <string name="hostname_example">xmpp.adibidea.com</string>
     <string name="action_add_account_with_certificate">Kontua ziurtagiriarekin gehitu</string>
     <string name="unable_to_parse_certificate">Ezin izan da ziurtagiria aztertu</string>
     <string name="authenticate_with_certificate">Utzi hutsik ziurtagiririk gabe autentifikatzeko</string>
@@ -397,24 +391,19 @@
         <item quantity="other">%d mezu</item>
     </plurals>
     <string name="load_more_messages">Mezu gehiago kargatu</string>
-    <string name="no_storage_permission">blabber.im ek kanpoko biltegirako sarbidea behar du</string>
     <string name="sync_with_contacts">Kontaktuekin sinkronizatu</string>
-    <string name="sync_with_contacts_long">blabber.im ek zure XMPP zerrenda eta zure kontaktuak uztartu nahi ditu haien izenak eta argazkiak erakusteko.\n\nblabber.im ek zure kontaktuak modu lokalean soilik irakurri eta uztartuko ditu, zure zerbitzarira kargatu gabe.\n\nJarraian baimenak eskatuko zaizkizu zure kontaktuetara sartu ahal izateko.</string>
     <string name="notify_on_all_messages">Mezu guztiak jakinarazi</string>
     <string name="notify_only_when_highlighted">Jakinarazi aipatua izaterakoan soilik</string>
     <string name="notify_never">Jakinarazpenak ezgaituta</string>
     <string name="notify_paused">Jakinarazpenak gelditu dira</string>
     <string name="always">Beti</string>
     <string name="battery_optimizations_enabled">Bateriaren optimizazioak gaituta</string>
-    <string name="battery_optimizations_enabled_explained">Zure gailua jakinarazpen atzeratuak edota mezuen galera ekar lezaketen bateriaren optimizazio handiak egiten ari da blabber.im en.\nHoriek ezgaitzea gomendatzen da.</string>
-    <string name="battery_optimizations_enabled_dialog">Zure gailua jakinarazpen atzeratuak edota mezuen galera ekar lezaketen bateriaren optimizazio handiak egiten ari da Conversationsen.\nJarraian hauek ezgaitzea eskatuko zaizu.</string>
     <string name="disable">Ezgaitu</string>
     <string name="no_accounts">(Ez dago kontu aktiborik)</string>
     <string name="this_field_is_required">Datu hau beharrezkoa da</string>
     <string name="correct_message">Mezua zuzendu</string>
     <string name="send_corrected_message">Mezu zuzendua bidali</string>
     <string name="no_keys_just_confirm">Kontaktu honetaz fidatzen zara dagoeneko. \'Eginda\' hautatuz %s talde honen kidea dela egiaztatzen duzu besterik gabe.</string>
-    <string name="contacts_have_no_pgp_keys">Conversations ez da zure mezuak enkriptatzeko gai zure kontaktuak haien gako publikoa jakinarazten ez daudelako.\n\n<small>Mesedez eskatu ezaiezu zure kontakuei OpenPGP konfigura dezaten.</small></string>
     <string name="this_account_is_disabled">Kontu hau ezgaitu duzu</string>
     <string name="no_application_to_share_uri">Ez da aplikaziorik aurkitu URIa partekatzeko</string>
     <string name="share_uri_with">URIa honekin partekatu...</string>
@@ -438,7 +427,6 @@
     <string name="creating_conference">Taldea sortzen…</string>
     <string name="invite_again">Berriz gonbidatu</string>
     <string name="pref_broadcast_last_activity">Azken erabiltzaile ekintza igorri</string>
-    <string name="pref_broadcast_last_activity_summary">Zure kontaktu guztiak Conversations noiz erabiltzen duzun jakin dezaten baimendu</string>
     <string name="unable_to_connect_to_keychain">Ezin izan da OpenKeychainekin konektatu</string>
     <string name="this_device_is_no_longer_in_use">Gailu hau ez da gehiago erabiltzen</string>
     <string name="payment_required">Ordainketa beharrezkoa da</string>
@@ -460,7 +448,6 @@
     <string name="quote">Aipatu</string>
     <string name="show_error_message">Akatsaren mezua erakutsi</string>
     <string name="data_saver_enabled">Datuen aurreztailea gaituta</string>
-    <string name="device_does_not_support_data_saver">Zure gailuak ez du Datuen aurreztailea ezgaitzea baimentzen Conversationserako</string>
     <string name="error_unable_to_create_temporary_file">Ezin izan da aldi baterako fitxategia sortu</string>
     <string name="this_device_has_been_verified">Gailu hau egiaztatu da</string>
     <string name="copy_fingerprint">Hatz-marka kopiatu</string>
