@@ -46,8 +46,6 @@
     <string name="unblock">Odblokovat</string>
     <string name="save">Uložit</string>
     <string name="ok">OK</string>
-    <string name="crash_report_title">Aplikace Konverzace přestala reagovat</string>
-    <string name="crash_report_message">Zasláním detailů o důvodu selhání pomůžete dalšímu vývoji aplikace Konverzace\n<b>Varování:</b> Toto použije nastavený XMPP účet pro zaslání detailů vývojářům.</string>
     <string name="send_now">Odeslat teď</string>
     <string name="send_never">Již se neptat</string>
     <string name="problem_connecting_to_account">Připojení k účtu se nezdařilo</string>
@@ -71,13 +69,11 @@
     <string name="send_unencrypted">Poslat nešifrované</string>
     <string name="decryption_failed">Zašifrování se nezdařilo. Možná nemáte správný privátní klíč.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">Konverzace využívá aplikaci třetí strany, <b>OpenKeychain</b>, k šifrování a dešifrování zpráv a ke správě veřejných klíčů.\n\nOpenKeychain je licencován pod GPLv3 a dostupný na F-Droid a Google Play.\n\n<small>(Po instalaci prosím restartujte aplikaci Konverzace.)</small></string>
     <string name="restart">Restartovat</string>
     <string name="install">Instalovat</string>
     <string name="offering">nabízí…</string>
     <string name="waiting">čekám…</string>
     <string name="no_pgp_key">Nebyl nalezen žádný OpenPGP klíč</string>
-    <string name="contact_has_no_pgp_key">Není možné zašifrovat zprávu v aplikaci Konverzace, protože druhá strana neoznamuje svůj veřejný klíč.\n\n<small>Požádejte svůj kontakt ať si nastaví OpenPGP.</small></string>
     <string name="no_pgp_keys">Nebyly nalezeny žádné OpenPGP klíče</string>
     <string name="pref_general">Obecné</string>
     <string name="pref_attachments">Přílohy</string>
@@ -130,7 +126,6 @@
     <string name="mgmt_account_are_you_sure">Jste si jisti?</string>
     <string name="attach_record_voice">Nahrát hlas</string>
     <string name="account_settings_jabber_id">Jabber ID</string>
-    <string name="account_settings_example_jabber_id">jmeno@server.cz</string>
     <string name="password">Heslo</string>
     <string name="invalid_jid">Toto není platné Jabber ID</string>
     <string name="error_out_of_memory">Nedostatek paměti. Obrázek je příliš velký</string>
@@ -210,7 +205,7 @@
     <string name="pref_allow_message_correction">Povolit opravu zpráv</string>
     <string name="pref_allow_message_correction_summary">Povolí kontaktům zpětné upravování jejich zpráv</string>
     <string name="pref_expert_options">Expertní nastavení</string>
-    <string name="title_activity_about">O aplikaci blabber.im</string>
+    <string name="title_activity_about">O</string>
     <string name="pref_about_conversations_summary">Informace o sestavení a licenci</string>
     <string name="title_pref_quiet_hours">Tichý režim</string>
     <string name="title_pref_quiet_hours_start_time">Odkdy</string>
@@ -341,7 +336,6 @@
     <string name="pref_away_when_screen_off">Pryč při vypnuté obrazovce</string>
     <string name="pref_away_when_screen_off_summary">Při vypnuté obrazovce označí váš stav jako pryč</string>
     <string name="pref_treat_vibrate_as_silent">Vibrační mód brát stejně jako tichý</string>
-    <string name="hostname_example">xmpp.server.cz</string>
     <string name="action_add_account_with_certificate">Přidat účet s certifikátem</string>
     <string name="unable_to_parse_certificate">Nelze načíst certifikát</string>
     <string name="authenticate_with_certificate">Nechat prázdné pro ověření s certifikátem</string>
@@ -363,22 +357,17 @@
     <string name="not_valid_hostname">Toto není platné hostname</string>
     <string name="connected_accounts">%1$d z %2$d účtů připojeno</string>
     <string name="load_more_messages">Načíst více zpráv</string>
-    <string name="no_storage_permission">blabber.im vyžaduje přístup k externímu úložišti</string>
     <string name="sync_with_contacts">Synchronizovat s kontakty</string>
-    <string name="sync_with_contacts_long">Aplikace blabber.im by ráda porovnala svůj XMPP seznam s vašimi kontakty, aby mohla zobrazit plná jména a avatary.\n\nblabber.im načte a porovná kontakty pouze lokálně, bez jejich nahrávání na server.\n\nNyní budete dotázáni na udělení práv pro přístup k seznamu kontaktů.</string>
     <string name="notify_on_all_messages">Upozorňovat na všechny zprávy</string>
     <string name="notify_never">Upozornění vypnuta</string>
     <string name="notify_paused">Upozornění pozastavena</string>
     <string name="always">Vždy</string>
     <string name="battery_optimizations_enabled">Povolena optimalizace využití baterie</string>
-    <string name="battery_optimizations_enabled_explained">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci blabber.im. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nJe doporučeno tyto vypnout.</string>
-    <string name="battery_optimizations_enabled_dialog">Tento přístroj provádí agresivní optimalizace využití baterie pro aplikaci blabber.im. Ty mohou způsobit zpoždění upozornění nebo ztrátu zpráv.\nnyní budete vyzváni k jejich vypnutí.</string>
     <string name="disable">Vypnout</string>
     <string name="no_accounts">(Žádné aktivované účty)</string>
     <string name="this_field_is_required">Toto pole je vyžadováno</string>
     <string name="correct_message">Opravit zprávu</string>
     <string name="send_corrected_message">Odeslat opravenou zprávu</string>
-    <string name="contacts_have_no_pgp_keys">Není možné zašifrovat zprávy v aplikaci Konverzace, protože kontakty neoznamují svůj veřejný klíč.\n\n<small>Požádejte své kontakty ať si nastaví OpenPGP.</small></string>
     <string name="this_account_is_disabled">Tento účet byl vypnut</string>
     <string name="no_application_to_share_uri">Nebyla nalezena aplikace pro sdílení URI</string>
     <string name="share_uri_with">Sdílet URI s...</string>
@@ -399,7 +388,6 @@
     <string name="choose_participants">Vybrat účastníky</string>
     <string name="invite_again">Pozvat znovu</string>
     <string name="pref_broadcast_last_activity">Odeslat poslední uživatelskou interakci</string>
-    <string name="pref_broadcast_last_activity_summary">Dát vědět všem kontaktům kdy používáte blabber.im</string>
     <string name="unable_to_connect_to_keychain">Nelze se spojit s OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Tento přístoj již není používán</string>
     <string name="payment_required">Vyžadována platba</string>
@@ -417,7 +405,6 @@
     <string name="error_publish_avatar_offline">Pro zveřejnění svého avatara musíte být online.</string>
     <string name="show_error_message">Zobrazit chybovou zprávu</string>
     <string name="data_saver_enabled">Zapnuta úspora dat</string>
-    <string name="device_does_not_support_data_saver">Tento přístroj nepodporuje vypnutí šetření dat pro aplikaci blabber.im.</string>
     <string name="error_unable_to_create_temporary_file">Nelze vytvořit dočasný soubor</string>
     <string name="this_device_has_been_verified">Tento přístroj byl ověřen</string>
     <string name="copy_fingerprint">Kopírovat identifikátor</string>
