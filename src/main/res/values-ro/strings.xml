@@ -58,8 +58,6 @@
     <string name="unblock">Deblochează</string>
     <string name="save">Salvează</string>
     <string name="ok">BINE</string>
-    <string name="crash_report_title">blabber.im s-a oprit neașteptat</string>
-    <string name="crash_report_message">Trimițând datele despre erori ajutați la continuarea dezvoltării aplicației blabber.im\n<b>Atenție:</b> Se va utiliza contul XMPP pentru a trimite informațiile din jurnal către programatori.</string>
     <string name="send_now">Trimite acum</string>
     <string name="send_never">Nu mă mai întreba</string>
     <string name="problem_connecting_to_account">Nu mă pot conecta la cont</string>
@@ -84,13 +82,11 @@
     <string name="send_unencrypted">Trimite necriptat</string>
     <string name="decryption_failed">Decriptarea a eșuat. Poate nu aveți cheia privată corectă.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im utilizează o aplicație externă <b>OpenKeychain</b> pentru a cripta și decripta mesaje și a administra cheile publice.\n\nOpenKeychain este licențiat sub GPLv3 și se poate instala din F-Droid și Google Play.\n\n<small>(Vă rugăm să reporniți blabber.im după)</small></string>
     <string name="restart">Repornește</string>
     <string name="install">Instalare</string>
     <string name="offering">transmit...</string>
     <string name="waiting">în așteptare...</string>
     <string name="no_pgp_key">Nu am găsit cheia OpenPGP</string>
-    <string name="contact_has_no_pgp_key">blabber.im nu a putut să cripteze mesajele tale deoarece contactul nu își anunță cheia publică.\n\n<small>Rugați contactul să își configureze OpenPGP.</small></string>
     <string name="no_pgp_keys">Nu am găsit chei OpenPGP</string>
     <string name="pref_general">General</string>
     <string name="pref_attachments">Atașamente</string>
@@ -149,7 +145,6 @@
     <string name="mgmt_account_are_you_sure">Sigur doriți asta?</string>
     <string name="attach_record_voice">Înregistrare voce</string>
     <string name="account_settings_jabber_id">Adresă XMPP</string>
-    <string name="account_settings_example_jabber_id">numeutilizator@exemplu.ro</string>
     <string name="password">Parolă</string>
     <string name="invalid_jid">Aceasta nu este o adresă XMPP valabilă</string>
     <string name="error_out_of_memory">Memorie epuizată. Imaginea este prea mare.</string>
@@ -419,7 +414,6 @@
     <string name="pref_dnd_on_silent_mode_summary">Prezintă clientul drept \"Nu deranja\" atunci când dispozitivul este în mod silențios</string>
     <string name="pref_treat_vibrate_as_silent">Tratează modul vibrație ca silențios</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Prezintă clientul drept \"Nu deranja\" atunci când dispozitivul este în mod vibrație</string>
-    <string name="hostname_example">xmpp.exemplu.ro</string>
     <string name="action_add_account_with_certificate">Adaugă un cont cu certificat</string>
     <string name="unable_to_parse_certificate">Nu se poate analiza certificatul</string>
     <string name="authenticate_with_certificate">Lăsați gol pentru a autentifica cu un certificat</string>
@@ -447,9 +441,7 @@
         <item quantity="other">%d mesaje</item>
     </plurals>
     <string name="load_more_messages">Încarcă mai multe mesaje</string>
-    <string name="no_storage_permission">blabber.im are nevoie de acces la stocarea externă</string>
     <string name="sync_with_contacts">Sincronizează cu contactele</string>
-    <string name="sync_with_contacts_long">blabber.im dorește să potrivească lista de contacte de pe server cu cea din dispozitiv pentru a putea afișa numele lor complete și avatarele.\n\nblabber.im doar va citi și potrivi local fără să le încarce pe server.\n\nUrmează să fiți întrebați dacă doriți să permiteți accesul la contacte.</string>
     <string name="notify_on_all_messages">Notifică la toate mesajele</string>
     <string name="notify_only_when_highlighted">Notifică doar atunci când cineva vă menționează numele</string>
     <string name="notify_never">Notificări dezactivate</string>
@@ -466,10 +458,6 @@
     <string name="always">Mereu</string>
     <string name="always_off">Mereu oprit</string>
     <string name="battery_optimizations_enabled">Optimizare baterie activată</string>
-    <string name="battery_optimizations_enabled_explained">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul bateriei pentru blabber.im, asta poate duce la notificări întârziate sau chiar pierderea mesajelor.\nEste recomandat sa dezactivați aceste optimizări.</string>
-    <string name="battery_optimizations_enabled_dialog">Dispozitivul dumneavoastră încearcă să optimizeze agresiv consumul 
-bateriei pentru Conversations, asta poate duce la notificări întârziate 
-sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați aceste optimizări.</string>
     <string name="disable">Dezactivează</string>
     <string name="cancel_update">Anulare actualizare?</string>
     <string name="yes">Da</string>
@@ -479,7 +467,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="correct_message">Corecție mesaj</string>
     <string name="send_corrected_message">Trimite text corectat</string>
     <string name="no_keys_just_confirm">Deja aveți încredere în acest contact. Selectând \'gata\' doar confirmați că %s ia parte la această discuție de grup.</string>
-    <string name="contacts_have_no_pgp_keys">blabber.im nu poate cripta mesajele tale către contactele tale care nu își anunță cheia publică.\n\n</string>
     <string name="this_account_is_disabled">Ați dezactivat acest cont</string>
     <string name="no_application_to_share_uri">Nu s-a găsit nici o aplicație care să partajeze adresa</string>
     <string name="share_uri_with">Partajează adresa cu...</string>
@@ -511,7 +498,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="import_database">Importă o copie de siguranță</string>
     <string name="invite_again">Trimite din nou invitația</string>
     <string name="pref_broadcast_last_activity">Anunță ultima interacțiune</string>
-    <string name="pref_broadcast_last_activity_summary">Contactele vă sunt anunțate atunci când folosiți blabber.im</string>
     <string name="unable_to_connect_to_keychain">Nu s-a putut contacta OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Acest dispozitiv nu mai este in uz</string>
     <string name="please_wait">Vă rugăm să așteptați...</string>
@@ -534,8 +520,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="quote">Citează</string>
     <string name="show_error_message">Arată mesaj de eroare</string>
     <string name="data_saver_enabled">Economizorul de date este activat</string>
-    <string name="data_saver_enabled_explained">Sistemul de operare restricționează accesul la Internet pentru blabber.im atunci când este în fundal. Pentru a primii în continuare notificări pentru mesajele noi trebuie să acordați acces ne restricționat pentru blabber.im atunci când Economizorul de date este activ.\n\nblabber.im totuși face eforturi ca să economisească consumul de date atunci când este posibil.</string>
-    <string name="device_does_not_support_data_saver">Dispozitivul nu suporta dezactivarea Economizorului de date pentru blabber.im.</string>
     <string name="unable_to_start_recording">Nu s-a putut porni înregistrarea</string>
     <string name="error_unable_to_create_temporary_file">Nu se poate crea un fișier temporar</string>
     <string name="this_device_has_been_verified">Acest dispozitiv a fost verificat</string>
@@ -641,7 +625,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="destroy_room_dialog">Doriți distrugerea discuției de grup %s? Această acțiune v-a șterge permanent discuția de grup.</string>
     <string name="snooze">Amânare</string>
     <string name="huawei_protected_apps">Aplicații protejate</string>
-    <string name="huawei_protected_apps_summary">Pentru a continua să primiți notificări, chiar și când ecranul este oprit, trebuie să adăugați blabber.im în lista de aplicații protejate.</string>
     <string name="pref_enable_multi_accounts_title">Activează conturi multiple</string>
     <string name="pref_enable_multi_accounts_summary">Doriți să folosiți conturi multiple?</string>
     <string name="mtm_accept_cert">Acceptați certificatul necunoscut?</string>
@@ -654,12 +637,10 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="qr_code_scanner_needs_access_to_camera">Scanerul de coduri QR are nevoie de acces la camera foto</string>
     <string name="pref_scroll_to_bottom_summary">După trimiterea unui mesaj derulează până la sfârșit</string>
     <string name="pref_scroll_to_bottom">Derulează până jos</string>
-    <string name="no_camera_permission">blabber.im are nevoie de acces la camera foto</string>
     <string name="edit_status_message_title">Editare mesaj de stare</string>
     <string name="pref_automatically_delete_messages_description">De pe acest dispozitiv se vor șterge dacă sunt mai vechi de perioada selectată.</string>
     <string name="pref_automatically_delete_messages">Ștergerea automată a mesajelor</string>
     <string name="disable_encryption">Dezactivează criptarea</string>
-    <string name="error_trustkey_general">blabber.im nu poate trimite mesaje criptate către %1$s. Aceasta se poate întâmpla dacă acest contact folosește un server sau un client învechit ce nu suportă OMEMO.</string>
     <string name="error_trustkey_device_list">Nu s-a putut descărca lista dispozitivelor</string>
     <string name="error_trustkey_bundle">Nu s-a putut descărca pachetul de dispozitive</string>
     <string name="error_trustkey_hint_mutual">Sugestie: În unele cazuri se poate rezolva dacă vă adăugați reciproc în lista de contacte.</string>
@@ -685,7 +666,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="large">Mare</string>
     <string name="create_shortcut">Creează scurtătură</string>
     <string name="not_encrypted_for_this_device">Mesajul nu a fost criptat pentru acest dispozitiv.</string>
-    <string name="no_microphone_permission">blabber.im are nevoie de acces la microfon</string>
     <string name="search_messages">Caută mesaje</string>
     <string name="gif">GIF</string>
     <string name="view_conversation">Arată conversația</string>
@@ -714,10 +694,8 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="delete_message">Șterge mesaj</string>
     <string name="conference_destroyed">Această discuție de grup a fost distrusă</string>
     <string name="no_application_found_to_view_contact">Nu s-a găsit nici o aplicație care să deschidă contactul</string>
-    <string name="no_location_permission">blabber.im are nevoie de acces la serviciile de localizare</string>
     <string name="unable_to_save_recording">Nu s-a putut salva înregistrarea</string>
     <string name="foreground_service_channel_name">Serviciul activ în prim-plan</string>
-    <string name="foreground_service_channel_description">Această categorie de notificări este folosită pentru a arăta o notificare permanentă ce indică rularea blabber.im.</string>
     <string name="notification_group_status_information">Informații de stare</string>
     <string name="error_channel_name">Probleme de conectare</string>
     <string name="error_channel_description">Această categorie de notificări este folosită pentru a arăta o notificare în cazul în care există o problemă la conectarea unui cont.</string>
@@ -760,7 +738,6 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="autojoin_group_chat">Alătură-te automat acestei discuții de grup</string>
     <string name="open_with">Deschide cu…</string>
     <string name="choose_account">Alegeți contul</string>
-    <string name="set_profile_picture">Poză profil blabber.im</string>
     <string name="restore_backup">Restaurează copie de siguranță</string>
     <string name="restore">Restaurează</string>
     <string name="enter_password_to_restore">Introduceți parola contului %s pentru a restaura copia de siguranță.</string>
@@ -822,23 +799,19 @@ sau chiar pierderea mesajelor.\nÎn continuare veți fi rugați să dezactivați
     <string name="action_unblock_participant">Deblochează participant</string>
     <string name="action_block_participant">Blochează participant</string>
     <string name="share_backup_files">Partajează fișierele copiei de siguranță</string>
-    <string name="conversations_backup">Copie de siguranță blabber.im</string>
     <string name="event">Eveniment</string>
     <string name="open_backup">Deschide o copie de siguranță</string>
-    <string name="not_a_backup_file">Fișierul selectat nu este o copie de siguranță blabber.im</string>
     <string name="account_already_setup">Acest cont a fost deja configurat</string>
     <string name="please_enter_password">Va rugăm să introduceți parola pentru acest cont</string>
     <string name="unable_to_perform_this_action">Nu se poate realiza această acțiune</string>
     <string name="your_status">Statusul dumneavoastră</string>
     <string name="this_device">Acest dispozitiv</string>
     <string name="intro_desc_main">Află mai multe…</string>
-    <string name="welcome_header">Bine ați venit la\nblabber.im</string>
     <string name="intro_required_permissions">Permisiunile necesare</string>
     <string name="intro_account">Contul dumneavoastră</string>
     <string name="intro_start_chatting">Începeți să discutați</string>
     <string name="intro_chat_details">Detalii discuții</string>
     <string name="intro_highlight_user">Evidențiere utilizator</string>
-    <string name="intro_whats_xmpp">Ce este XMPP / Jabber / blabber.im?</string>
     <string name="open_join_dialog">Alătură-te unui canal public...</string>
     <string name="intro_optional_permissions">Permisiuni opționale</string>
     <string name="no_results">Nici un rezultat</string>
