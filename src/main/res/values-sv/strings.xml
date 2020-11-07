@@ -46,8 +46,6 @@
     <string name="unblock">Avblockera</string>
     <string name="save">Spara</string>
     <string name="ok">Ok</string>
-    <string name="crash_report_title">blabber.im har kraschat</string>
-    <string name="crash_report_message">Genom att skicka in stack traces hjälper du utvecklarna av blabber.im\n<b>Varning:</b> Detta använder ditt XMPP-konto för att skicka informationen till utvecklarna.</string>
     <string name="send_now">Skicka nu</string>
     <string name="send_never">Fråga aldrig igen</string>
     <string name="problem_connecting_to_account">Kan inte ansluta till konto</string>
@@ -71,13 +69,11 @@
     <string name="send_unencrypted">Skicka okrypterat</string>
     <string name="decryption_failed">Avkryptering misslyckades. Du har kanske kanske inte rätt privat nyckel.</string>
     <string name="openkeychain_required">OpenKeychain</string>
-    <string name="openkeychain_required_long">blabber.im använder en tredjeparts-applikation som heter <b>OpenKeychain</b> för att kryptera och avkryptera meddelanden och hantera dina publika nycklar.\n\nOpenKeychain är licensierad under GPLv3 och tillgänglig på F-Droid och Google Play.\n\n<small>(Starta om blabber.im efter installation.)</small></string>
     <string name="restart">Starta om</string>
     <string name="install">Installera</string>
     <string name="offering">erbjuder…</string>
     <string name="waiting">väntar…</string>
     <string name="no_pgp_key">Ingen OpenPGP-nyckel funnen</string>
-    <string name="contact_has_no_pgp_key">blabber.im kan inte kryptera ditt meddelande eftersom din kontakt inte annonserar sin publika nyckel.\n\n<small>Be din kontakt att sätta upp OpenPGP.</small></string>
     <string name="no_pgp_keys">Inga OpenPGP-nycklar funna</string>
     <string name="pref_general">Generellt</string>
     <string name="pref_attachments">Bifogningar</string>
@@ -133,7 +129,6 @@
     <string name="mgmt_account_are_you_sure">Är du säker?</string>
     <string name="attach_record_voice">Spela in röst</string>
     <string name="account_settings_jabber_id">Jabber-ID</string>
-    <string name="account_settings_example_jabber_id">användarnamn@exempel.se</string>
     <string name="password">Lösenord</string>
     <string name="invalid_jid">Detta är inte ett korrekt Jabber-ID</string>
     <string name="error_out_of_memory">Slut på minne. Bilden är för stor</string>
@@ -213,7 +208,7 @@
     <string name="pref_allow_message_correction">Tillåt korrigeringar av meddelanden</string>
     <string name="pref_allow_message_correction_summary">Tillåt att dina kontakter kan ändra sina meddelanden i efterhand</string>
     <string name="pref_expert_options">Expertinställningar</string>
-    <string name="title_activity_about">Om blabber.im</string>
+    <string name="title_activity_about">Om</string>
     <string name="pref_about_conversations_summary">Bygg- och licensinformation</string>
     <string name="title_pref_quiet_hours">Tysta timmar</string>
     <string name="title_pref_quiet_hours_start_time">Starttid</string>
@@ -351,7 +346,6 @@
     <string name="pref_away_when_screen_off">Status borta när skärmen är av</string>
     <string name="pref_away_when_screen_off_summary">Sätter din tillgänglighet till borta när skrämen är av</string>
     <string name="pref_treat_vibrate_as_silent">Hantera vibrationsläge som tyst läge</string>
-    <string name="hostname_example">xmpp.example.com</string>
     <string name="action_add_account_with_certificate">Lägg till konto med certifikat</string>
     <string name="unable_to_parse_certificate">Kan inte läsa certifikat</string>
     <string name="authenticate_with_certificate">Lämna tom för att för att logga in med certifikat</string>
@@ -377,16 +371,12 @@
         <item quantity="other">%d meddelanden</item>
     </plurals>
     <string name="load_more_messages">Ladda fler meddelanden</string>
-    <string name="no_storage_permission">blabber.im behöver access till extern lagring</string>
     <string name="sync_with_contacts">Synkronisera med kontakter</string>
-    <string name="sync_with_contacts_long">blabber.im vill matcha din XMPP-kontaktlista med dina kontakter för att visa deras namn och profilbild.\n\nblabber.im läser endast dina kontakter för att matcha dem lokalt utan att ladda upp dem till din server.\n\nDu kommer nu få frågan om tillåtelse för att använda kontakterna.</string>
     <string name="notify_on_all_messages">Notifiera för alla meddelanden</string>
     <string name="notify_never">Notifieringar deaktiverade</string>
     <string name="notify_paused">Notifieringar pausade</string>
     <string name="always">Alltid</string>
     <string name="battery_optimizations_enabled">Batterioptimeringar aktiverade</string>
-    <string name="battery_optimizations_enabled_explained">Din enhet har kraftiga batterioptimeringar som påverkar blabber.im på så sätt att inkommande meddelanden kan försenas eller kan till och med gå förlorade.\nDet är rekommenderat att deaktivera batterioptimeringarna.</string>
-    <string name="battery_optimizations_enabled_dialog">Din enhet har kraftiga batterioptimeringar som påverkar blabber.im på så sätt att inkommande meddelanden kan försenas eller kan till och med gå förlorade.\n\nDu kommer nu att bli ombedd att stänga av batterioptimeringarna för blabber.im.</string>
     <string name="disable">Deaktivera</string>
     <string name="no_accounts">(Inget konto aktiverat)</string>
     <string name="this_field_is_required">Detta fält måste fyllas i</string>
@@ -412,7 +402,6 @@
     <string name="choose_participants">Välj deltagare</string>
     <string name="invite_again">Bjud in igen</string>
     <string name="pref_broadcast_last_activity">Meddela din senaste aktivit</string>
-    <string name="pref_broadcast_last_activity_summary">Låt alla dina kontakter veta när du använder blabber.im</string>
     <string name="unable_to_connect_to_keychain">Kan inte ansluta till OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Denna enhet används inte längre</string>
     <string name="payment_required">Betalning krävs</string>
@@ -431,7 +420,6 @@
     <string name="quote">Citera</string>
     <string name="show_error_message">Visa felmeddelande</string>
     <string name="data_saver_enabled">Databesparing</string>
-    <string name="device_does_not_support_data_saver">Din enhet stödjer inte att deaktivera databesparing för blabber.im.</string>
     <string name="error_unable_to_create_temporary_file">Kunde inte skapa tillfällig fil</string>
     <string name="this_device_has_been_verified">Denna enhet har verifierats</string>
     <string name="copy_fingerprint">Kopiera fingeravtryck</string>
