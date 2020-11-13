@@ -977,6 +977,10 @@
     <string name="ask_for_writeaccess">Por favor, pide permiso de escritura</string>
     <string name="pref_theme_blue">Azul</string>
     <string name="pref_theme_orange">Naranja</string>
+    <string name="pref_theme_blabber">blabber.im</string>
+    <string name="pref_theme_grey">Gris</string>
+    <string name="pref_theme_pink">Rosa</string>
+    <string name="pref_theme_black">Negro (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Selecciona la paleta de color del tema</string>
     <string name="pref_theme_color_options">Color del tema</string>
     <string name="magic_create_text_on_x">Has sido invitado a %1$s. Te guiaremos en el proceso de creación de una cuenta.\nCuando escojas %1$s como proveedor, podrás comunicarte con usuarios de otros proveedores proporcionándoles tu dirección XMPP completa.</string>
