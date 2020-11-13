@@ -942,6 +942,10 @@
     <string name="ask_for_writeaccess">Zəhmət olmasa yazmaq üçün müraciət edin</string>
     <string name="pref_theme_blue">Mavi</string>
     <string name="pref_theme_orange">Narıncı</string>
+    <string name="pref_theme_blabber">blabber.im</string>
+    <string name="pref_theme_grey">Boz</string>
+    <string name="pref_theme_pink">Çəhrayı</string>
+    <string name="pref_theme_black">Qara (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Temanın rəng palitrasını seçin</string>
     <string name="pref_theme_color_options">Tema rəngi</string>
     <string name="magic_create_text_on_x">Siz %1$s - yə dəvət olunmusunuz. Bir hesab yaratma müddətində sizə yol göstərəcəyik.\nTayerçi olaraq %1$s seçərkən digər provayderlərin istifadəçiləri ilə tam XMPP ünvanınızı verərək əlaqə qura biləcəksiniz.</string>
