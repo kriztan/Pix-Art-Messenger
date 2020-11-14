@@ -841,15 +841,15 @@
     <string name="group_chat_members">Teilnehmer</string>
     <string name="message_deleted">Nachricht wurde gelöscht</string>
     <string name="channel_details">Channel-Details</string>
-    <string name="join_public_channel">Öffentlichem Channel beitreten</string>
+    <string name="join_public_channel">Öffentlichen Channel beitreten</string>
     <string name="create_private_group_chat">Privaten Gruppenchat erstellen</string>
-    <string name="create_public_channel">Öffentliches Channel erstellen</string>
+    <string name="create_public_channel">Öffentlichen Channel erstellen</string>
     <string name="create_dialog_channel_name">Channel Name</string>
     <string name="xmpp_address">XMPP Adresse</string>
     <string name="please_enter_name">Bitte einen Namen für den Channel eingeben</string>
     <string name="please_enter_xmpp_address">Bitte eine XMPP-Adresse eingeben</string>
     <string name="this_is_an_xmpp_address">Dies ist eine XMPP-Adresse. Bitte einen Namen eingeben.</string>
-    <string name="creating_channel">Öffentliches Channel erstellen…</string>
+    <string name="creating_channel">Öffentlichen Channel erstellen…</string>
     <string name="channel_already_exists">Dieser Channel existiert bereits</string>
     <string name="joined_an_existing_channel">Du bist einem bestehenden Channel beigetreten</string>
     <string name="unable_to_set_channel_configuration">Channel-Einstellung kann nicht geändert werden</string>
@@ -977,6 +977,10 @@
     <string name="ask_for_writeaccess">Frage nach Schreibrechten</string>
     <string name="pref_theme_blue">Blau</string>
     <string name="pref_theme_orange">Orange</string>
+    <string name="pref_theme_blabber">blabber.im</string>
+    <string name="pref_theme_grey">Grau</string>
+    <string name="pref_theme_pink">Rosa</string>
+    <string name="pref_theme_black">Schwarz (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Wähle das Farbschema</string>
     <string name="pref_theme_color_options">Designfarbe</string>
     <string name="magic_create_text_on_x">Du wurdest zu %1$s eingeladen. Wir erstellen nun mit dir gemeinsam ein Profil.\nWenn du %1$s als deinen Provider wählst, kannst du mit Kontakten auf diesem und anderen Servern in Kontakt treten, indem du ihnen deine Jabber-ID gibst.</string>
@@ -1068,4 +1072,5 @@
     <string name="updated_to_blabber">Pix-Art Messenger wurde erfolgreich auf blabber.im aktualisiert\n\nDie Zusammenarbeit der beiden Projekte blabber.im und Pix-Art Messenger wurde im November 2020 weiter ausgebaut. Zukünftig wird die Android App Pix-Art Messenger unter dem Namen blabber.im weitergeführt.\n\nWas euch erwartet:\n- Funktionsumfang bleibt erhalten\n- Support Chaträume werden zusammengelegt\n- Farben und Logos werden an blabber.im angepasst\n- App ist weiterhin kostenlos im Google Play Store und F-Droid Store verfügbar\n\nEuer blabber.im Team</string>
     <string name="updated_to_blabber_google">Wir müssen uns entschuldigen, dass wir nicht direkt auf blabber.im aktualisieren konnten. Unter dem folgenden Link findest du eine Anleitung, wie alle deine Profile vom Pix-Art Messenger auf blabber.im übertragen werden können.</string>
     <string name="link">Link</string>
+    <string name="no_application_found">Keine Anwendung gefunden</string>
 </resources>
