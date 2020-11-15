@@ -58,6 +58,7 @@
     <string name="unblock">Sblocca</string>
     <string name="save">Salva</string>
     <string name="ok">OK</string>
+    <string name="crash_report_title">blabber.im si è chiuso inaspettatamente</string>
     <string name="send_now">Invia adesso</string>
     <string name="send_never">Non chiedere più</string>
     <string name="problem_connecting_to_account">Impossibile collegarsi tramite questo utente</string>
