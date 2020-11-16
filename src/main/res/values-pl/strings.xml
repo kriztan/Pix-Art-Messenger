@@ -29,7 +29,7 @@
     <string name="sending">wysyłanie...</string>
     <string name="message_decrypting">Odszyfrowywanie wiadomości. To zajmie tylko chwilę...</string>
     <string name="pgp_message">Wiadomość zaszyfrowana OpenPGP</string>
-    <string name="nick_in_use">Nazwa jest już w użyciu</string>
+    <string name="nick_in_use">Pseudonim jest już w użyciu</string>
     <string name="admin">Admin</string>
     <string name="owner">Właściciel</string>
     <string name="moderator">Moderator</string>
@@ -58,6 +58,7 @@
     <string name="unblock">Odblokuj</string>
     <string name="save">Zapisz</string>
     <string name="ok">Ok</string>
+    <string name="crash_report_title">blabber.im uległo awarii</string>
     <string name="send_now">Wyślij teraz</string>
     <string name="send_never">Nie pytaj ponownie</string>
     <string name="problem_connecting_to_account">Nie można połączyć się z kontem</string>
@@ -79,7 +80,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="send_omemo_message">Wyślij wiadomość zaszyfrowaną OMEMO</string>
     <string name="send_omemo_x509_message">Wyślij wiadomość zaszyfrowaną v\\OMEMO</string>
     <string name="send_pgp_message">Wyślij zaszyfrowaną wiadomość (OpenPGP)</string>
-    <string name="your_nick_has_been_changed">Twój nick został zmieniony</string>
+    <string name="your_nick_has_been_changed">Twój pseudonim został zmieniony</string>
     <string name="send_unencrypted">Wyślij bez szyfrowania</string>
     <string name="decryption_failed">Nie można odszyfrować. Sprawdź poprawność klucza prywatnego.</string>
     <string name="openkeychain_required">OpenKeychain</string>
@@ -153,6 +154,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="mgmt_account_delete_confirm_message">W przypadku usunięcia konta z urządzenia zostanie usunięta tylko lokalna historia rozmów.\n\nUsunięcie konta z serwera będzie skutkowało brakiem możliwości zalogowania do niego.</string>
     <string name="attach_record_voice">Nagraj głos</string>
     <string name="account_settings_jabber_id">Jabber ID</string>
+    <string name="account_settings_example_jabber_id">nazwaużytkownika@blabber.im</string>
     <string name="password">Hasło</string>
     <string name="invalid_jid">Wprowadzono niepoprawny Jabber ID</string>
     <string name="error_out_of_memory">Brak pamięci, obraz jest za duży</string>
@@ -430,9 +432,11 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_away_when_screen_off">Status \"Oddalony\" gdy wyświetlacz jest wyłączony</string>
     <string name="pref_away_when_screen_off_summary">Oznacza Twój zasób jako \"Oddalony\", gdy wyświetlacz jest wyłączony</string>
     <string name="pref_dnd_on_silent_mode">\"Nie przeszkadzać\" w trybie cichym</string>
+    <string name="update_info">blabber.im automatycznie pobiera i instaluje nową wersję. \n\nPotrwa to chwilkę…</string>
     <string name="pref_dnd_on_silent_mode_summary">Oznacza Twój zasób jako \"Nie przeszkadzać\", gdy urządzenie jest w trybie cichym</string>
     <string name="pref_treat_vibrate_as_silent">Traktuj tryb wibracji jak tryb cichy</string>
     <string name="pref_treat_vibrate_as_dnd_summary">Oznacza Twój zasób jako \"Nie przeszkadzać\", gdy urządzenie jest w trybie wibracji</string>
+    <string name="hostname_example">blabber.im</string>
     <string name="action_add_account_with_certificate">Dodaj konto za pomocą certyfikatu</string>
     <string name="unable_to_parse_certificate">Nie mogę odczytać certyfikatu</string>
     <string name="authenticate_with_certificate">Pozostaw puste by autoryzować za pomocą certyfikatu</string>
@@ -526,6 +530,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="invite_again">Zaproś ponownie</string>
     <string name="inviteUser_Subject">zaprosił/a Cie poprzez</string>
     <string name="pref_broadcast_last_activity">Dziel się ostatnią interakcją.</string>
+    <string name="pref_broadcast_last_activity_summary">Powiadamiaj kontakty, że używasz blabber.im</string>
+    <string name="invite_user">Zaproś do blabber.im</string>
     <string name="unable_to_connect_to_keychain">Nie można połączyć się z OpenKeychain</string>
     <string name="this_device_is_no_longer_in_use">Urządzenie to nie jest już używane</string>
     <string name="please_wait">Proszę czekać…</string>
@@ -553,6 +559,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_error_message">Pokaż komunikaty błędów</string>
     <string name="error_message">Komunikat o błędzie</string>
     <string name="data_saver_enabled">Oszczędzanie danych jest włączone</string>
+    <string name="device_does_not_support_data_saver">Twoje urządzenie nie wspiera wyłączania oszczędzania danych dla blabber.im.</string>
     <string name="add_to_contact_list">Dodaj do listy kontaktów</string>
     <string name="contact">Kontakt</string>
     <string name="unable_to_start_recording">Nie można rozpocząć nagrywania</string>
@@ -666,6 +673,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="server_info_partial">częściowo</string>
     <string name="pref_show_foreground_service_summary">Niektóre z urządzeń działających pod kontrolą systemu Android zamykają aplikacje po upływie pewnego okresu czasu i nie będziesz wtedy w stanie odbierać nowych wiadomości, jeśli dotyka Cię podobny problem spróbuj aktywować usługę działania aplikacji na pierwszym planie. Weź jednak pod uwagę, że spowoduje to trwałe wyświetlanie powiadomienia w pasku powiadomień.</string>
     <string name="pref_show_foreground_service">Usługa na pierwszym planie</string>
+    <string name="update_service">blabber.im usługa aktualizacji</string>
     <string name="install_update">Zainstalować aktualizację?</string>
     <string name="highlight_in_muc">wymień użytkownika</string>
     <string name="no_application_found_to_open_link">Nie odnaleziono aplikacji do otworzenia linku</string>
@@ -699,6 +707,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="qr_code_scanner_needs_access_to_camera">Skaner kodów QR potrzebuje dostępu do kamery urządzenia</string>
     <string name="pref_scroll_to_bottom_summary">Przewiń w dół po wysłaniu wiadomości</string>
     <string name="pref_scroll_to_bottom">Przewiń do dołu</string>
+    <string name="no_camera_permission">blabber.im potrzebuje dostęp do kamery</string>
     <string name="edit_status_message_title">Edytuj info o statusie</string>
     <string name="pref_automatically_delete_messages_description">Automatycznie usuń wiadomości z tego urządzenia, które są starsze niż ustawiona wartość.</string>
     <string name="pref_automatically_delete_messages">Automatyczne usuwanie wiadomości</string>
@@ -814,6 +823,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="open_with">Otwórz za pomocą…</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: zapraszanie użytkowników</string>
     <string name="choose_account">Wybierz konto</string>
+    <string name="set_profile_picture">zdjęcie profilowe blabber.im</string>
     <string name="restore_backup">Przywróć kopię zapasową</string>
     <string name="restore">Przywróć</string>
     <string name="enter_password_to_restore">Wprowadź hasło konta %s, aby przywrócić kopię zapasową.</string>
@@ -919,6 +929,7 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_invidious_summary">Invidious to szanująca twoją prywatność strona wyświetlająca filmy z YouTube\'a</string>
     <string name="this_device">To urządzenie</string>
     <string name="intro_desc_main">Dowiedz się więcej…</string>
+    <string name="welcome_header">Witamy w \nblabber.im</string>
     <string name="intro_required_permissions">Wymagane uprawnienia</string>
     <string name="intro_desc_required_permissions">Pod koniec tego wprowadzenia zostaniesz poproszony o udzielenie tej aplikacji kilku (wymaganych) uprawnień, jeśli już ich nie udzieliłeś. Podczas korzystania z aplikacji możesz zostać poproszony o udzielenie dodatkowych uprawnień, które nie są jednak wymagane.</string>
     <string name="intro_account">Twoje konto</string>
@@ -936,7 +947,9 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="show_intro_again">Ekran powitalny zostanie wyświetlony ponownie</string>
     <string name="show_intro_again_failed">Ponownie wyświetlenie ekranu powitalnego nie powiodło się. Spróbuj ponownie…</string>
     <string name="intro_desc_whats_xmpp">XMPP, nazywane również Jabberem, jest zdecentralizowaną platformą komunikacyjną działającą podobnie do poczty elektronicznej. Aby korzystać z XMPP potrzebujesz adresu zwanego Jabber-ID, hasła i komunikatora. Więcej o tym za chwilę.</string>
+    <string name="intro_whats_xmpp">Czym jest XMPP / Jabber / blabber.im?</string>
     <string name="intro_desc_optional_permissions">Uprawnienie do czytania Twojej listy kontaktów jest wymagane dla dopasowywania ich do istnięjących adresów XMPP (Jabber ID). blabber.im nie dziel się nikim Twoimi kontaktami.</string>
+    <string name="intro_desc_account2">Możesz stworzyć nowy profil na blabber.im, wpisując pseudonim.</string>
     <string name="open_join_dialog">Dołącz do kanału publicznego…</string>
     <string name="intro_optional_permissions">Uprawnienia opcjonalne</string>
     <string name="intro_desc_optional_permissions2">blabber.im potrzebuje uprawnień do uzyskania Twojej lokalizacji w celu udostępniania przez Ciebie lokalizacji.\nW celu wysyłania wiadomości głosowych blabber.im potrzebuje uprawnień do korzystania z mikrofonu.</string>
@@ -960,6 +973,10 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="ask_for_writeaccess">Poproś o możliwość wysyłania wiadomości</string>
     <string name="pref_theme_blue">Niebieski</string>
     <string name="pref_theme_orange">Pomarańczowy</string>
+    <string name="pref_theme_blabber">blabber.im</string>
+    <string name="pref_theme_grey">Szary</string>
+    <string name="pref_theme_pink">Różowy</string>
+    <string name="pref_theme_black">Czarny (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Wybierz kolor akcentów motywu</string>
     <string name="pref_theme_color_options">Kolor motywu</string>
     <string name="magic_create_text_on_x">Zostałeś zaproszony do %1$s. Zostaniesz przeprowadzony przez proces zakładania konta.\n Jeśli wybierzesz %1$s jako swój serwer, będziesz w stanie komunikować się z użytkownikami na innych serwerach przez podanie im pełnego adresu XMPP.</string>
@@ -970,8 +987,8 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="pref_use_unicolored_chatbg">Używaj jednokolorowego tła</string>
     <string name="pref_alternative_voice_settings_summary">Jeśli masz problemy z nagrywaniem dźwięku, użyj tych ustawień aby zmienić kodek.</string>
     <string name="pref_alternative_voice_settings">Alternatywna metoda nagrywania dźwięku</string>
-    <string name="pref_use_colored_muc_names_summary">Koloruj nazwy użytkowników w czatach grupowych lub kanałach podobnie do domyślnych awatarów.</string>
-    <string name="pref_use_colored_muc_names">Używaj kolorowych nazw użytkowników</string>
+    <string name="pref_use_colored_muc_names_summary">Koloruj pseudonim użytkowników w czatach grupowych lub kanałach podobnie do domyślnych awatarów.</string>
+    <string name="pref_use_colored_muc_names">Używaj kolorowych pseudonimów</string>
     <string name="show_videos_images_only">Tylko zdjęcia/filmy</string>
     <string name="show_avatar">Pokaż awatar</string>
     <string name="action_delete">Usuń</string>
@@ -1025,4 +1042,13 @@ Nie spowoduje to usunięcia kopii wiadomości przechowywanych na innych urządze
     <string name="readmore">Dowiedz się więcej</string>
     <string name="add_to_favorites">Dodaj do ulubionych</string>
     <string name="remove_from_favorites">Usuń z ulubionych</string>
+    <string name="search_all_conversations">Wszystkie konwersacje</string>
+    <string name="your_avatar">Awatar konta</string>
+    <string name="avatar_for_x">Avatar dla %s</string>
+    <string name="encrypted_with_omemo">Zaszyfrowane za pomocą OMEMO</string>
+    <string name="encrypted_with_openpgp">Zaszyfrowane za pomocą OpenPGP</string>
+    <string name="not_encrypted">Nieszyfrowane</string>
+    <string name="missed_calls_channel_name">Nieodebrane połączenia</string>
+    <string name="link">Link</string>
+    <string name="no_application_found">Nie znaleziono żadnych aplikacji</string>
 </resources>
