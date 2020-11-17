@@ -1050,6 +1050,5 @@
     <string name="n_missed_calls">%d appels manqués</string>
     <string name="n_missed_calls_from_m_contacts">%1$d appel(s) manqué(s) de %2$d contact(s)</string>
     <string name="updated_to_blabber">Nous avons réussi à mettre à jour Pix-Art Messenger vers blabber.im\n\n\nLa coopération des deux projets blabber.im et Pix-Art Messenger a été étendue en novembre 2020. À l\'avenir, l\'application Android Pix-Art Messenger continuera sous le nom blabber.im\n\nCe à quoi vous pouvez vous attendre:\n- La gamme de fonctions reste la même\n- Les salons de chat de support sont fusionnés\n- Les couleurs et logos sont adaptés à blabber.im\n- L\'application est toujours disponible gratuitement dans le  Play Store Google et le F-Droid Store\n\n\nVotre équipe blabber.im</string>
-    <string name="updated_to_blabber_google">Nous devons nous excuser de ne pouvoir mettre à jour vers blabber.im directement. Avec le lien ci-dessous, vous recevrez des instructions sur la façon de transférer tous vos profils de Pix-Art Messenger à blabber.im.</string>
     <string name="link">Lien</string>
 </resources>
