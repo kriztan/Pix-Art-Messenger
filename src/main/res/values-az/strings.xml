@@ -1027,6 +1027,5 @@
     <string name="n_missed_calls_from_x">%2$s kontaktından %1$d cavabsız zəng</string>
     <string name="n_missed_calls">%d cavabsız zəng</string>
     <string name="n_missed_calls_from_m_contacts">%2$s kontaktdan %1$d cavabsız zəng</string>
-    <string name="updated_to_blabber_google">Məlumatı birbaşa blabber.im-ə yeniləyə bilmədiyimiz üçün üzr istəyirik. Aşağıdakı linklə bütün profillərinizi Pıx-Art Messenger-dan blabber.im-ə necə köçürmək barədə təlimatlar alacaqsınız.</string>
     <string name="link">Link</string>
 </resources>
