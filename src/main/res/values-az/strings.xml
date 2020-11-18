@@ -1027,5 +1027,9 @@
     <string name="n_missed_calls_from_x">%2$s kontaktından %1$d cavabsız zəng</string>
     <string name="n_missed_calls">%d cavabsız zəng</string>
     <string name="n_missed_calls_from_m_contacts">%2$s kontaktdan %1$d cavabsız zəng</string>
+    <string name="updated_to_blabber_google">Birbaşa blabber.im-ə yeniləyə bilmədiyimiz üçün üzr istəməliyik. Aşağıdakı keçid altında bütün profillərinizi Pix-Art Messenger-dən blabber.im-ə köçürmək barədə təlimat alacaqsınız. Hərəkət məlumatlarına tıklayaraq göndərilən və alınan bütün sənədləri Pix-Art Messenger-dən blabber.im-ə köçürməyə çalışırıq. Uğurlu bir köçdən sonra Pix-Art Messenger\'i cihazınızdan silməyi unutmayın.</string>
     <string name="link">Link</string>
+    <string name="move_data">Məlumatı köçürün</string>
+    <string name="error_moving_data">Köhnə məlumatları köçürmə edərkən bir səhv meydana gəldi. Onları əl ilə köçürün.</string>
+    <string name="data_successfully_moved">Sizin məlumatlarınız uğurla köçürüldü.</string>
 </resources>
