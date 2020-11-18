@@ -1070,6 +1070,10 @@
     <string name="pref_invidious_host_summary">Utilizza un server personalizzato di invidious</string>
     <string name="pref_invidious_host">Server invidious</string>
     <string name="updated_to_blabber">Siamo riusciti ad aggiornarti con successo da Pix-Art Messenger a blabber.im\n\nLa cooperazione tra i due progetti blabber.im e Pix-Art Messenger si è ampliata nel Novembre 2020. In futuro, l\'applicazione Android Pix-Art Messenger continuerà sotto il nome di blabber.im.\n\nCosa ti dovrai aspettare:\n- Stesse funzionalità\n- Stanze di supporto saranno unite\n- Colori e logo adattati a blabber.im\n- Applicazione sempre disponibile gratuitamente nel Google Play Store e in F-Droid \n\nIl tuo Team blabber.im</string>
+    <string name="updated_to_blabber_google">Ci scusiamo che non siamo riusciti ad aggiornarti direttamente a blabber.im. Utilizzando il seguente collegamento riceverai istruzioni su come trasferire tutti i tuoi profili da Pix-Art Messenger a blabber.im. Premendo su Trasferisci dati proveremo a spostare tutti i tuoi file inviati e ricevuti da Pix-Art Messenger a blabber.im. Dopo che la migrazione ha avuto successo ricordati di disinstallare Pix-Art Messenger dal tuo dispositivo.</string>
     <string name="link">Collegamento</string>
     <string name="no_application_found">Nessuna applicazione trovata</string>
+    <string name="move_data">Trasferisci dati</string>
+    <string name="error_moving_data">Si è verificato un errore durante il trasferimento dei tuoi vecchi dati. Per favore trasferiscili manualmente.</string>
+    <string name="data_successfully_moved">I tuoi dati sono stati trasferiti correttamente.</string>
 </resources>
