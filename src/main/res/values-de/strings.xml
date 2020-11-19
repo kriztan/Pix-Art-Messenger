@@ -485,7 +485,7 @@
     <string name="always_off">Immer aus</string>
     <string name="battery_optimizations_enabled">Batterieoptimierung aktiv</string>
     <string name="battery_optimizations_enabled_explained">Dein Telefon wendet Batterioptimierungen bei blabber.im an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\nEs ist empfehlenswert diese zu deaktivieren.</string>
-    <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei blabber.im an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können. Es ist empfehlenswert dies zu deaktivieren.</string>
+    <string name="battery_optimizations_enabled_dialog">Dein Telefon wendet Batterioptimierungen bei blabber.im an, welche verspätete Benachrichtigungen oder Nachrichtenverlust verursachen können.\n\nEs ist empfehlenswert dies zu deaktivieren.</string>
     <string name="install_from_unknown_sources_disabled">Installation von unbekannter Quelle ist nicht erlaubt</string>
     <string name="install_from_unknown_sources_disabled_dialog">Dein Gerät erlaubt keine Installationen von Apps aus unbekannten Quellen außer über Google PlayStore. Dies verursacht Probleme mit automatischen Updates des Messengers.\n\nDu wirst nun gefragt, die Installation von Apps aus unbekannten Quellen zu erlauben.</string>
     <string name="disable">Deaktivieren</string>
@@ -1070,6 +1070,10 @@
     <string name="pref_invidious_host_summary">Nutze benutzerdefinierten Invidious Server</string>
     <string name="pref_invidious_host">Invidious Server</string>
     <string name="updated_to_blabber">Pix-Art Messenger wurde erfolgreich auf blabber.im aktualisiert\n\nDie Zusammenarbeit der beiden Projekte blabber.im und Pix-Art Messenger wurde im November 2020 weiter ausgebaut. Zukünftig wird die Android App Pix-Art Messenger unter dem Namen blabber.im weitergeführt.\n\nWas euch erwartet:\n- Funktionsumfang bleibt erhalten\n- Support Chaträume werden zusammengelegt\n- Farben und Logos werden an blabber.im angepasst\n- App ist weiterhin kostenlos im Google Play Store und F-Droid Store verfügbar\n\nEuer blabber.im Team</string>
+    <string name="updated_to_blabber_google">Wir müssen uns entschuldigen, dass wir nicht direkt auf blabber.im aktualisieren konnten. Unter dem folgenden Link erhältst su eine Anleitung, wie du alle deine Profile vom Pix-Art Messenger auf blabber.im übertragen kannst. Mit einem Klick auf Daten verschieben versuchen wir, alle gesendeten und empfangenen Dateien vom Pix-Art Messenger auf blabber.im zu verschieben. Nach einer erfolgreichen Migration solltest du daran denken, Pix-Art Messenger von deinem Gerät zu entfernen.</string>
     <string name="link">Link</string>
     <string name="no_application_found">Keine Anwendung gefunden</string>
+    <string name="move_data">Daten verschieben</string>
+    <string name="error_moving_data">Beim Verschieben deiner alten Daten ist ein Fehler aufgetreten. Bitte verschiebe sie manuell.</string>
+    <string name="data_successfully_moved">Daten wurden erfolgreich verschoben.</string>
 </resources>
