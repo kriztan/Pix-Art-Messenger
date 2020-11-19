@@ -58,6 +58,7 @@
     <string name="unblock">Разблокировать</string>
     <string name="save">Сохранить</string>
     <string name="ok">OK</string>
+    <string name="crash_report_title">blabber.im упал</string>
     <string name="send_now">Отправить сейчас</string>
     <string name="send_never">Больше не спрашивать</string>
     <string name="problem_connecting_to_account">Невозможно подключиться к аккаунту</string>
