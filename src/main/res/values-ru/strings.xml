@@ -2,7 +2,7 @@
 <resources>
     <string name="action_settings">Настройки</string>
     <string name="action_add">Новая беседа</string>
-    <string name="action_accounts">Управление учётными записями</string>
+    <string name="action_accounts">Управление учетными записями</string>
     <string name="action_end_conversation">Закончить эту беседу</string>
     <string name="action_contact_details">Сведения о контакте</string>
     <string name="action_secure">Защищенная беседа</string>
@@ -42,7 +42,7 @@
     <string name="unblock_domain_text">Разблокировать все контакты от %s?</string>
     <string name="contact_blocked">Контакт заблокирован</string>
     <string name="blocked">Заблокирован</string>
-    <string name="remove_bookmark_text">Вы действительно хотите удалить %s из закладок? Разговор, связанный с этой закладкой, не будет удалён.</string>
+    <string name="remove_bookmark_text">Вы действительно хотите удалить %s из закладок? Беседа, связанная с этой закладкой, не будет удалена.</string>
     <string name="register_account">Зарегистрировать новый аккаунт на сервере</string>
     <string name="change_password_on_server">Изменить пароль на сервере</string>
     <string name="share_with">Поделиться с…</string>
@@ -80,7 +80,7 @@
     <string name="send_omemo_message">Отправить сообщение, зашифрованное OMEMO</string>
     <string name="send_omemo_x509_message">Отправить сообщение, зашифрованное v\\OMEMO</string>
     <string name="send_pgp_message">Отправить сообщение, зашифрованное OpenPGP</string>
-    <string name="your_nick_has_been_changed">Ваш ник был изменён</string>
+    <string name="your_nick_has_been_changed">Ваш ник был изменен</string>
     <string name="send_unencrypted">Отправить незашифрованным</string>
     <string name="decryption_failed">Расшифровка не удалась. Возможно, у вас нет правильного приватного ключа.</string>
     <string name="openkeychain_required">OpenKeychain</string>
@@ -107,7 +107,7 @@
     <string name="pref_led_summary">Мигать светодиодом при получении нового сообщения</string>
     <string name="pref_sound">Рингтон</string>
     <string name="pref_sound_summary">Воспроизводить звук, когда получено новое сообщение</string>
-    <string name="pref_send_crash">Отправлять отчёты о сбоях</string>
+    <string name="pref_send_crash">Отправлять отчеты о сбоях</string>
     <string name="pref_send_crash_summary">Отправляя трассировку стека, Вы помогаете разработке blabber.im</string>
     <string name="pref_confirm_messages">Подтвердить получение</string>
     <string name="pref_confirm_messages_summary">Разрешить вашим контактам видеть, когда вы получили и прочитали их сообщения</string>
@@ -253,11 +253,11 @@
     <string name="title_pref_quiet_hours_end_time">Время окончания</string>
     <string name="title_pref_enable_quiet_hours">Включить тихие часы</string>
     <string name="pref_quiet_hours_summary">Уведомления будут приглушены во время тихих часов</string>
-    <string name="pref_use_send_button_to_indicate_status">Кнопка отправить показывает статус</string>
-    <string name="pref_use_colored_names_to_indicate_status">Расцветка имён показывает статус</string>
+    <string name="pref_use_send_button_to_indicate_status">Кнопка отправки показывает статус</string>
+    <string name="pref_use_colored_names_to_indicate_status">Расцветка имен показывает статус</string>
     <string name="pref_use_indicate_received">Уведомления о доставке сообщений</string>
-    <string name="pref_use_indicate_received_summary">Если поддерживается, полученные сообщения будут помечены зелёной галкой</string>
-    <string name="pref_use_send_button_to_indicate_status_summary">Раскрасить кнопку отсылки сообщений для индикации статуса контакта</string>
+    <string name="pref_use_indicate_received_summary">Если поддерживается, полученные сообщения будут помечены зеленой галочкой</string>
+    <string name="pref_use_send_button_to_indicate_status_summary">Раскрасить кнопку отправки сообщений для индикации статуса контакта</string>
     <string name="pref_use_colored_names_to_indicate_status_summary">Раскрасить имена контактов для индикации статуса контакта</string>
     <string name="pref_expert_options_other">Другие</string>
     <string name="pref_autojoin">Синхронизировать закладки</string>
@@ -269,7 +269,7 @@
     <string name="conference_shutdown">Этот групповой чат был закрыт</string>
     <string name="using_account">используется аккаунт %s</string>
     <string name="checking_x">Проверяется %s по HTTP хосту</string>
-    <string name="not_connected_try_again">Вы не подключены. Попробуйте ещё раз позднее</string>
+    <string name="not_connected_try_again">Вы не подключены. Попробуйте позже</string>
     <string name="check_x_filesize">Проверить %s размер</string>
     <string name="check_x_filesize_on_host">Проверить %1$s размер по %2$s</string>
     <string name="message_options">Параметры сообщения</string>
@@ -279,9 +279,9 @@
     <string name="url_copied_to_clipboard">URL скопирован в буфер обмена</string>
     <string name="scan_qr_code">Сканировать QR-код</string>
     <string name="show_qr_code">Показать QR код</string>
-    <string name="show_block_list">Показать чёрный список</string>
+    <string name="show_block_list">Показать черный список</string>
     <string name="account_details">Детали аккаунта</string>
-    <string name="remote_fingerprint">Удалённый отпечаток</string>
+    <string name="remote_fingerprint">Удаленный отпечаток</string>
     <string name="shared_secret_hint">Подсказка или Вопрос</string>
     <string name="shared_secret_secret">Общий Секрет</string>
     <string name="confirm">Подтверждение</string>
@@ -291,7 +291,7 @@
     <string name="secrets_do_not_match">Секреты не совпадают</string>
     <string name="try_again">Попробовать снова</string>
     <string name="finish">Завершить</string>
-    <string name="verified">Подтверждён!</string>
+    <string name="verified">Проверено!</string>
     <string name="smp_requested">Контакт запросил проверку SMP</string>
     <string name="pref_create_backup">Создать резервную копию</string>
     <string name="pref_create_backup_summary">Запись файлов резервного копирования %s</string>
@@ -637,7 +637,7 @@
         <item quantity="other">%d месяцев</item>
     </plurals>
     <string name="today">Сегодня</string>
-    <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и картинок.</string>
+    <string name="pref_use_max_brightness_summary">Установить максимальную яркость при полноэкранном просмотре видео и изображений.</string>
     <string name="pref_use_max_brightness">Максимальная яркость</string>
     <string name="block_jabber_id">Заблокировать Jabber-ID</string>
     <string name="corresponding_conversations_closed">Соответствующие разговоры были закрыты.</string>
@@ -719,7 +719,7 @@
     <string name="once">Один раз</string>
     <string name="qr_code_scanner_needs_access_to_camera">Сканеру QR-кодов нужен доступ к камере</string>
     <string name="pref_scroll_to_bottom_summary">Прокручивать вниз после отправки сообщения</string>
-    <string name="pref_scroll_to_bottom">Прокрутить вниз</string>
+    <string name="pref_scroll_to_bottom">Прокрутка вниз</string>
     <string name="no_camera_permission">blabber.im требуется доступ к камере</string>
     <string name="edit_status_message_title">Редактировать статус</string>
     <string name="pref_automatically_delete_messages_description">Автоматически удалять с этого устройства сообщения старше заданного времени.</string>
@@ -740,12 +740,12 @@
     <string name="default_on">Включено по умолчанию</string>
     <string name="default_off">Выключено по умолчанию</string>
     <string name="pref_theme_light">Светлая</string>
-    <string name="pref_theme_dark">Тёмная</string>
+    <string name="pref_theme_dark">Темная</string>
     <string name="pref_theme_auto">Автоматическая</string>
     <string name="pref_theme_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_options">Тема</string>
     <string name="chooce_account">Выберите аккаунт</string>
-    <string name="pref_font_size">Размер Шрифта</string>
+    <string name="pref_font_size">Размер шрифта</string>
     <string name="pref_font_size_summary">Размер шрифта, используемый в приложении.</string>
     <string name="small">Маленький</string>
     <string name="medium">Средний</string>
@@ -766,7 +766,7 @@
     <string name="show_termsofuse">Пользовательское соглашение</string>
     <string name="p1_s3_filetransfer">Обмен файла HTTP для S3</string>
     <string name="pref_start_search">Прямой поиск</string>
-    <string name="pref_start_search_summary">При начале разговора показать клавиатуру и установить курсор в поле поиска</string>
+    <string name="pref_start_search_summary">Открывать клавиатуру и помещать курсор в поле поиска на экране «Начать беседу»</string>
     <string name="paste_as_quote">Вставить как цитату</string>
     <string name="group_chat_avatar">Аватар группового чата</string>
     <string name="host_does_not_support_group_chat_avatars">Хост не поддерживает аватары</string>
@@ -785,7 +785,7 @@
     <string name="no_location_permission">blabber.im требуется доступ к службам определения местоположения</string>
     <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
     <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
-    <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если нет сообщения. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если не набирается сообщение. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
     <string name="pref_quick_share_attachment_choice">Выбор вложений</string>
     <string name="unable_to_save_recording">Не удается сохранить запись</string>
     <string name="foreground_service_channel_name">Фоновая служба</string>
@@ -811,7 +811,7 @@
     <string name="security_violation_not_attaching_file">Файл пропущен из-за проблем с безопасностью.</string>
     <string name="delete_file_dialog">Удалить файл</string>
     <string name="delete_file_dialog_msg">Вы хотите удалить этот файл?\n\n<b>Внимание:</b>Это не затронет копии этого файла, которые сохранены на других устройствах или серверах.</string>
-    <string name="cancelled">отменён</string>
+    <string name="cancelled">отменен</string>
     <string name="remote_server_timeout">Таймаут удаленного сервера</string>
     <string name="already_drafting_message">Вы уже составляете текст послания.</string>
     <string name="bad_key_for_encryption">Неправильный ключ для шифрования.</string>
@@ -836,8 +836,8 @@
     <string name="autojoin_group_chat">Автоматически присоединяться к групповым чатам</string>
     <string name="pref_show_links_inside">Показывать превью ссылок в чате</string>
     <string name="pref_show_links_inside_summary">Показывать превью ссылок внутри чата. Будет устанавливаться соединение с сервером, указанным в ссылке.</string>
-    <string name="pref_play_gif_inside">Запускать GIF файлы в чате</string>
-    <string name="pref_play_gif_inside_summary">Запускать GIF файлы немедленно при просмотре чата.</string>
+    <string name="pref_play_gif_inside">Воспроизведение GIF в чате</string>
+    <string name="pref_play_gif_inside_summary">Воспроизводить GIF прямо в окне чата.</string>
     <string name="open_with">Открыть с помощью...</string>
     <string name="server_info_adhoc_invite">XEP-0050: Ad-Hoc Commands: user invite</string>
     <string name="choose_account">Выберите аккаунт</string>
@@ -848,8 +848,8 @@
     <string name="restore_warning">Не используйте функцию резервного копирования ни для чего, кроме случаев переноса на другое устройство или утери устройства.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
-    <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP аватар пользователя вместо аватара из вашей адресной книги</string>
-    <string name="pref_prefer_xmpp_avatar">Предпочитаемый XMPP аватар</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP-аватар пользователя вместо аватара из адресной книги</string>
+    <string name="pref_prefer_xmpp_avatar">Предпочитаемый аватар XMPP</string>
     <plurals name="view_users">
         <item quantity="one">Посмотреть %1$d участника</item>
         <item quantity="few">Посмотреть%1$d участников</item>
@@ -906,7 +906,7 @@
     <string name="mgmt_account_password_forgotten">Не помню пароль</string>
     <string name="password_forgotten_title">Не помню пароль</string>
     <string name="password_forgotten_text">Забыли пароль от аккаунта? Мы попробуем открыть страницу поддержки вашего провайдера.</string>
-    <string name="set_settings_intro">Здесь вы можете установить важные настройки безопасности. Все настройки могут быть изменены позднее.</string>
+    <string name="set_settings_intro">Здесь Вы можете установить важные настройки конфиденциальности. Все настройки могут быть изменены позднее.</string>
     <string name="pref_show_mappreview_inside_summary">Предпросмотр карты внутри чата (будет установлено соединение с blabber.im-Server).</string>
     <string name="pref_show_mappreview_inside">Показывать превью геолокаций в чате</string>
     <string name="pref_use_internal_updater_summary">Разрешить мессенджеру проверять обновления раз в день</string>
@@ -924,8 +924,8 @@
     <string name="add_anyway">Добавить в любом случае</string>
     <string name="this_looks_like_channel">Это выглядит как адрес канала</string>
     <string name="no_backup_available">Нет доступных резервных копий</string>
-    <string name="pref_show_own_accounts_summary">Отображать мои аккаунты в чатах и контактах - если у вас несколько аккаунтов.</string>
-    <string name="pref_show_own_accounts">Отображать мои аккаунты</string>
+    <string name="pref_show_own_accounts_summary">Отображать мои учетные записи в чатах и контактах, если используется несколько учетных записей.</string>
+    <string name="pref_show_own_accounts">Отображение учетных записей</string>
     <string name="message_encryption">Шифрование сообщений</string>
     <string name="enable_message_encryption">Этот чат не зашифрован. Из соображений безопасности рекомендуется включить шифрование, предпочтительно OMEMO. Если что-то пойдет не так - вы можете отключить шифрование сообщений нажатием на значок замка.</string>
     <string name="hide_warning">Скрыть предупреждение</string>
@@ -963,10 +963,10 @@
     <string name="intro_highlight_user">Отметить пользователя</string>
     <string name="intro_desc_highlight_user">Если вы хотите выделить пользователя в групповом чате, просто коснитесь аватара пользователя в чате. В качестве альтернативы, особенно если пользователя нет в чате, переключитесь на детали чата и найдите пользователя в списке участников. Долгое нажатие на аватар пользователя отобразит всплывающее меню, в котором вы можете выделить пользователя.</string>
     <string name="intro_desc_open_chat_details">Вы открыли детали чата. Здесь Вы можете просмотреть подробную информацию о чате, изменить уведомления о новых сообщениях, добавить или удалить чат из списка контактов и многое другое.</string>
-    <string name="pref_show_intro_summary">Показать экран вступления еще раз</string>
-    <string name="pref_show_intro">Показать вступление еще раз</string>
-    <string name="show_intro_again">Экран вступления снова будет показан</string>
-    <string name="show_intro_again_failed">Не удалось сбросить вступительный экран. Попробуй еще раз…</string>
+    <string name="pref_show_intro_summary">Показать ознакомительные экраны еще раз</string>
+    <string name="pref_show_intro">Показ ознакомительных экранов</string>
+    <string name="show_intro_again">Ознакомительные экраны будут показаны снова</string>
+    <string name="show_intro_again_failed">Не удалось сбросить ознакомительные экраны. Попробуйте еще раз…</string>
     <string name="intro_desc_whats_xmpp">XMPP, также известный как jabber, является децентрализованной коммуникационной сетью и работает подобно электронной почте. Вам понадобится адрес под названием Jabber-ID, пароль и мессенджер. Подробнее об этом позже.</string>
     <string name="intro_whats_xmpp">Что такое XMPP / Jabber / blabber.im?</string>
     <string name="intro_desc_optional_permissions">Разрешение на чтение Вашей адресной книги необходимо для получения Jabber-ID (если есть) Ваших контактов. Контакты никогда не передаются, не загружаются и не копируются.</string>
@@ -996,20 +996,20 @@
     <string name="pref_theme_blue">Синий</string>
     <string name="pref_theme_orange">Оранжевый</string>
     <string name="pref_theme_blabber">blabber.im</string>
-    <string name="pref_theme_grey">Серая</string>
-    <string name="pref_theme_pink">Розовая</string>
-    <string name="pref_theme_black">Чёрная (AMOLED)</string>
+    <string name="pref_theme_grey">Серый</string>
+    <string name="pref_theme_pink">Розовый</string>
+    <string name="pref_theme_black">Черный (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_color_options">Цвет темы</string>
     <string name="magic_create_text_on_x">Вас пригласили в %1$s. Мы проведем вас через процесс создания учетной записи. выбрав %1$s в качестве провайдера, вы сможете общаться с пользователями других провайдеров, предоставляя им свой полный XMPP-адрес.</string>
     <string name="account_status_regis_invalid_token">Неверный токен регистрации</string>
     <string name="magic_create_text_fixed">Вы приглашены в %1$s. имя пользователя уже выбрано для вас. Мы проведем вас через процесс создания учетной записи.\nВы сможете общаться с пользователями других провайдеров, предоставляя им свой полный XMPP адрес.</string>
     <string name="your_server_invitation">Ваше приглашение на сервер</string>
-    <string name="pref_use_unicolored_chatbg_summary">Используйте одноцветный фон в чатах.</string>
-    <string name="pref_use_unicolored_chatbg">Используйте однотонный фон</string>
+    <string name="pref_use_unicolored_chatbg_summary">Использовать однотонный фон в чатах.</string>
+    <string name="pref_use_unicolored_chatbg">Использование однотонного фона</string>
     <string name="pref_alternative_voice_settings_summary">Если у вас возникли проблемы во время записи голоса, используйте эту настройку для изменения кодека.</string>
     <string name="pref_alternative_voice_settings">Альтернативный способ записи голоса</string>
-    <string name="pref_use_colored_muc_names_summary">Раскрасьте ники в групповых чатах или каналах, как фон аватара по умолчанию.</string>
+    <string name="pref_use_colored_muc_names_summary">Раскрасить ники в групповых чатах или каналах как фон аватара по умолчанию.</string>
     <string name="pref_use_colored_muc_names">Раскрасить ники</string>
     <string name="show_videos_images_only">Только фото/видео</string>
     <string name="show_avatar">Показать аватар</string>
