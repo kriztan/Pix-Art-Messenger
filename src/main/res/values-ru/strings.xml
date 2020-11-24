@@ -49,7 +49,7 @@
     <string name="start_conversation">Начать беседу</string>
     <string name="invite_contact">Пригласить Контакт</string>
     <string name="contacts">Контакты</string>
-    <string name="cancel">Отмена</string>
+    <string name="cancel">Отменить</string>
     <string name="set">Применить</string>
     <string name="add">Добавить</string>
     <string name="edit">Изменить</string>
@@ -71,8 +71,8 @@
     <string name="send_failed">доставка не удалась</string>
     <string name="preparing_image">Подготовка изображения к передаче</string>
     <string name="action_clear_history">Очистить историю</string>
-    <string name="clear_conversation_history">Очистить Историю Разговора</string>
-    <string name="clear_histor_msg">Вы хотите удалить все сообщения в этом разговоре?\n\n<b>Внимание:</b>Это не затронет сообщения, которые сохранены на других устройствах или серверах.</string>
+    <string name="clear_conversation_history">Очистить историю переписки</string>
+    <string name="clear_histor_msg">Вы хотите удалить все сообщения в этой беседе?\n\n<b>Внимание:</b> Это не затронет сообщения, которые сохранены на других устройствах или серверах.</string>
     <string name="also_end_conversation">Потом закончить этот разговор</string>
     <string name="choose_presence">Выбрать устройство</string>
     <string name="send_unencrypted_message">Отправить сообщение без шифрования</string>
@@ -284,7 +284,7 @@
     <string name="remote_fingerprint">Удаленный отпечаток</string>
     <string name="shared_secret_hint">Подсказка или Вопрос</string>
     <string name="shared_secret_secret">Общий Секрет</string>
-    <string name="confirm">Подтверждение</string>
+    <string name="confirm">Подтверждить</string>
     <string name="in_progress">В процессе</string>
     <string name="respond">Ответить</string>
     <string name="failed">С ошибкой</string>
@@ -397,7 +397,7 @@
     <string name="toast_no_trusted_certs">Не использовать подтвержденные вручную сертификаты</string>
     <string name="dialog_manage_certs_title">Удалить сертификаты</string>
     <string name="dialog_manage_certs_positivebutton">Удалить выделение</string>
-    <string name="dialog_manage_certs_negativebutton">Отмена</string>
+    <string name="dialog_manage_certs_negativebutton">Отменить</string>
     <plurals name="toast_delete_certificates">
         <item quantity="one">%d сертификат удален</item>
         <item quantity="few">%d сертификата удалено</item>
@@ -805,7 +805,7 @@
     <string name="app_update_channel_name">Обновление приложения</string>
     <string name="action_group_details">Сведения о групповом чате</string>
     <string name="view_media">Просмотреть медиа</string>
-    <string name="media_browser">Медиа браузер</string>
+    <string name="media_browser">Обзор медиа</string>
     <string name="account_status_stream_opening_error">Ошибка открытия потока</string>
     <string name="action_open">Открыть</string>
     <string name="security_violation_not_attaching_file">Файл пропущен из-за проблем с безопасностью.</string>
