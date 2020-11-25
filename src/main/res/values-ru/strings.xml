@@ -507,7 +507,7 @@
     <string name="share_uri_with">Поделиться URI с…</string>
     <string name="mgmt_account_reconnect">Переподключить</string>
     <string name="welcome_text">...это свободный и безопасный XMPP/Jabber клиент.</string>
-    <string name="magic_create_text">Мы поможем вам создать аккаунт со случайно сгенерированным паролем, который вы сможете сменить на свой собственный на следующей странице.\nЭто позволит вам общаться с другими пользователями этого и других серверов, давая вам Jabber-ID.</string>
+    <string name="magic_create_text">Мы поможем Вам создать учетную запись со случайно сгенерированным паролем, который Вы сможете сменить на свой собственный на следующей странице.\nВы сможете общаться с пользователями этого и других серверов, сообщав им свой полный Jabber-ID.</string>
     <string name="your_full_jid_will_be">Ваш Jabber-ID был: %s</string>
     <string name="create_account">Создать аккаунт</string>
     <string name="welcome_existing_account">У меня есть аккаунт</string>
@@ -692,7 +692,7 @@
     <string name="contacts_have_read_up_to_this_point">%s прочитал до этого момента</string>
     <string name="contact_has_read_up_to_this_point">%s прочитал до этого момента</string>
     <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s и еще %2$d прочитали до этого момента</string>
-    <string name="conversation_unencrypted_hint">Этот чат не зашифрован. Из соображений безопасности вам следует включить шифрование, используя значок замка. Рекомендуемый способ шифрования - OMEMO.</string>
+    <string name="conversation_unencrypted_hint">Этот чат не зашифрован. Из соображений безопасности Вам следует включить шифрование, используя значок замка. Рекомендуемый способ шифрования - OMEMO.</string>
     <string name="pref_warn_unencrypted_chat">Предупреждать если чат не защищен</string>
     <string name="pref_warn_unencrypted_chat_summary">Использовать шифрование, если доступно. Если вы не используете шифрование - отображать предупреждение в чате.</string>
     <string name="pref_use_bundled_emoji">Использовать встроенные эмодзи</string>
@@ -761,7 +761,7 @@
     <string name="copy_jabber_id">Копировать JID</string>
     <string name="copy_link">Копировать веб-адрес</string>
     <string name="server_hint">Выбрать сервер</string>
-    <string name="choose_your_server">Выбрать jabber-сервер</string>
+    <string name="choose_your_server">Выберите jabber-сервер</string>
     <string name="show_privacy">Политика конфиденциальности</string>
     <string name="show_termsofuse">Пользовательское соглашение</string>
     <string name="p1_s3_filetransfer">Обмен файла HTTP для S3</string>
@@ -781,7 +781,7 @@
     <string name="delete_message">Удалить сообщение</string>
     <string name="conference_destroyed">Данная группа была закрыта</string>
     <string name="no_application_found_to_view_contact">Не найдено приложений для просмотра контакта</string>
-    <string name="welcome_server_info">Мы рекомендуем использовать blabber.im как ваш провайдер.</string>
+    <string name="welcome_server_info">Мы рекомендуем использовать сервер blabber.im.</string>
     <string name="no_location_permission">blabber.im требуется доступ к службам определения местоположения</string>
     <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
     <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
