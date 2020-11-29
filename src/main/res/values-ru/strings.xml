@@ -848,7 +848,7 @@
     <string name="restore_warning">Не используйте функцию резервного копирования ни для чего, кроме случаев переноса на другое устройство или утери устройства.</string>
     <string name="unable_to_restore_backup">Невозможно восстановить резервную копию.</string>
     <string name="unable_to_decrypt_backup">Невозможно расшифровать резервную копию. Пароль верный?</string>
-    <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP-аватар пользователя вместо аватара из адресной книги</string>
+    <string name="pref_prefer_xmpp_avatar_summary">Предпочитать XMPP-аватар пользователя аватару из адресной книги</string>
     <string name="pref_prefer_xmpp_avatar">Предпочитаемый аватар XMPP</string>
     <plurals name="view_users">
         <item quantity="one">Посмотреть %1$d участника</item>
@@ -998,7 +998,7 @@
     <string name="pref_theme_blabber">blabber.im</string>
     <string name="pref_theme_grey">Серый</string>
     <string name="pref_theme_pink">Розовый</string>
-    <string name="pref_theme_black">Черный (AMOLED)</string>
+    <string name="pref_theme_black">Чёрная (AMOLED)</string>
     <string name="pref_theme_color_options_summary">Выберите цветовую схему</string>
     <string name="pref_theme_color_options">Цвет темы</string>
     <string name="magic_create_text_on_x">Вас пригласили в %1$s. Мы проведем вас через процесс создания учетной записи. выбрав %1$s в качестве провайдера, вы сможете общаться с пользователями других провайдеров, предоставляя им свой полный XMPP-адрес.</string>
@@ -1014,7 +1014,7 @@
     <string name="show_videos_images_only">Только фото/видео</string>
     <string name="show_avatar">Показать аватар</string>
     <string name="action_delete">Удалить</string>
-    <string name="attach_choose_video">Выбор видео</string>
+    <string name="attach_choose_video">Выбрать видео</string>
     <string name="please_enable_an_account">Пожалуйста, включите учетную запись</string>
     <string name="server_info_external_service_discovery">XEP-0215: Обнаружение Внешних Служб</string>
     <string name="return_to_ongoing_call">Возврат к текущему вызову</string>
