@@ -383,7 +383,7 @@
     <string name="sending_x_file">Отправка %s</string>
     <string name="offering_x_file">Предложение %s</string>
     <string name="hide_offline">Скрыть \"не в сети\"</string>
-    <string name="is_typing">набирает сообщение..</string>
+    <string name="is_typing">печатает…</string>
     <string name="pref_chat_states">Уведомления о наборе текста</string>
     <string name="pref_chat_states_summary">Сообщать Вашим контактам, когда Вы пишете им сообщения</string>
     <string name="send_location">Отправить местоположение</string>
@@ -646,7 +646,7 @@
     <string name="pref_notifications_from_strangers_summary">Уведомлять о сообщениях от незнакомых контактов.</string>
     <string name="received_message_from_stranger">Принимать сообщения от незнакомых контактов</string>
     <string name="contacts_are_typing">%s набирают сообщение...</string>
-    <string name="contact_is_typing">%s набирает сообщение...</string>
+    <string name="contact_is_typing">%s печатает…</string>
     <string name="one_participant">Один участник</string>
     <string name="more_participants">%d участников</string>
     <string name="presence_offline">Не в сети</string>
@@ -689,9 +689,9 @@
     <string name="install_update">Установить обновление?</string>
     <string name="highlight_in_muc">отметить пользователя</string>
     <string name="no_application_found_to_open_link">Не удалось найти подходящее приложение для открытия ссылки</string>
-    <string name="contacts_have_read_up_to_this_point">%s прочитал до этого момента</string>
+    <string name="contacts_have_read_up_to_this_point">%s прочитали до этого момента</string>
     <string name="contact_has_read_up_to_this_point">%s прочитал до этого момента</string>
-    <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s и еще %2$d прочитали до этого момента</string>
+    <string name="contacts_and_n_more_have_read_up_to_this_point">%1$s и %2$d прочитали до этого момента</string>
     <string name="conversation_unencrypted_hint">Этот чат не зашифрован. Из соображений безопасности Вам следует включить шифрование, используя значок замка. Рекомендуемый способ шифрования - OMEMO.</string>
     <string name="pref_warn_unencrypted_chat">Предупреждать если чат не защищен</string>
     <string name="pref_warn_unencrypted_chat_summary">Использовать шифрование, если доступно. Если Вы не используете шифрование - отображать предупреждение в чате.</string>
@@ -785,7 +785,7 @@
     <string name="no_location_permission">blabber.im требуется доступ к службам определения местоположения</string>
     <string name="pref_show_record_voice_btn_summary">Показывать кнопку записи голоса в качестве кнопки быстрого действия</string>
     <string name="pref_show_record_voice_btn">Показывать кнопку записи голоса</string>
-    <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если не набирается сообщение. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
+    <string name="pref_use_quick_share_attachment_choice_summary">Заменять кнопку отправки на кнопку вложений, если не печатается сообщение. Иначе показывать быстрые действия, которые могут быть настроены в следующих пунктах.</string>
     <string name="pref_quick_share_attachment_choice">Выбор вложений</string>
     <string name="unable_to_save_recording">Не удается сохранить запись</string>
     <string name="foreground_service_channel_name">Фоновая служба</string>
