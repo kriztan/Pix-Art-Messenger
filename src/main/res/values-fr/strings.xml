@@ -535,6 +535,8 @@
     <string name="inviteUser_Subject">vous a invité via</string>
     <string name="InviteText">Bonjour,\n\nl\'utilisateur %s vous invite sur blabber.im Cliquer simplement sur le lien suivant…</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur/trice</string>
+    <string name="invite_user">Inviter sur blabber.im</string>
+    <string name="request_permissions_message">blabber.im vous demandera quelques permissions. Il est important que vous autorisiez toutes ces permissions afin de pouvoir utiliser toutes les fonctionnalités. Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
     <string name="unable_to_connect_to_keychain">Connection à OpenKeychain impossible</string>
     <string name="this_device_is_no_longer_in_use">Cet appareil n\'est plus utilisé</string>
     <string name="please_wait">Veuillez patienter…</string>
@@ -1051,4 +1053,5 @@
     <string name="n_missed_calls_from_m_contacts">%1$d appel(s) manqué(s) de %2$d contact(s)</string>
     <string name="updated_to_blabber">Nous avons réussi à mettre à jour Pix-Art Messenger vers blabber.im\n\n\nLa coopération des deux projets blabber.im et Pix-Art Messenger a été étendue en novembre 2020. À l\'avenir, l\'application Android Pix-Art Messenger continuera sous le nom blabber.im\n\nCe à quoi vous pouvez vous attendre:\n- La gamme de fonctions reste la même\n- Les salons de chat de support sont fusionnés\n- Les couleurs et logos sont adaptés à blabber.im\n- L\'application est toujours disponible gratuitement dans le  Play Store Google et le F-Droid Store\n\n\nVotre équipe blabber.im</string>
     <string name="link">Lien</string>
+    <string name="no_application_found">Aucune application trouvée</string>
 </resources>
