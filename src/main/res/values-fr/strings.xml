@@ -535,8 +535,10 @@
     <string name="inviteUser_Subject">vous a invité via</string>
     <string name="InviteText">Bonjour,\n\nl\'utilisateur %s vous invite sur blabber.im Cliquer simplement sur le lien suivant…</string>
     <string name="pref_broadcast_last_activity">Diffuser la dernière action utilisateur/trice</string>
+    <string name="pref_broadcast_last_activity_summary">Informer vos contacts quand vous utilisez blabber.im</string>
     <string name="invite_user">Inviter sur blabber.im</string>
     <string name="request_permissions_message">blabber.im vous demandera quelques permissions. Il est important que vous autorisiez toutes ces permissions afin de pouvoir utiliser toutes les fonctionnalités. Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
+    <string name="request_permissions_message_again">Vous avez refusé tout ou une partie des permissions requises pour blabber.im. Souhaitez-vous passer aux paramètres et autoriser ces permissions ? Si vous refusez l\'une de ces permissions, l\'application se fermera d\'elle-même.</string>
     <string name="unable_to_connect_to_keychain">Connection à OpenKeychain impossible</string>
     <string name="this_device_is_no_longer_in_use">Cet appareil n\'est plus utilisé</string>
     <string name="please_wait">Veuillez patienter…</string>
@@ -564,6 +566,8 @@
     <string name="show_error_message">Afficher le message d’erreur</string>
     <string name="error_message">Message d\'erreur</string>
     <string name="data_saver_enabled">Économiseur de données activé</string>
+    <string name="data_saver_enabled_explained">Votre système d’exploitation empêche blabber.im d’accéder à Internet lorsque l’application est en arrière-plan. Pour recevoir les notifications des nouveaux messages, vous devez autoriser blabber.im à accéder au réseau sans restriction quand l’Économiseur de données est activé.\n\nblabber.im tentera de consommer le moins de données possible.</string>
+    <string name="device_does_not_support_data_saver">Votre appareil ne prend pas en charge la désactivation de l’Économiseur de données pour blabber.im.</string>
     <string name="add_to_contact_list">Ajouter aux contacts</string>
     <string name="contact">Contact</string>
     <string name="unable_to_start_recording">Impossible de démarrer l’enregistrement</string>
@@ -665,6 +669,7 @@
     <string name="server_info_partial">partiel</string>
     <string name="pref_show_foreground_service_summary">Certains appareils Android peuvent fermer des applications (comme blabber.im) après un certain temps et vous ne pourrez plus recevoir de nouveaux messages. Si vous rencontrez de tels problèmes, essayez d\'activer le service au premier plan. Mais gardez à l\'esprit que vous aurez une notification permanente avec cette option cochée.</string>
     <string name="pref_show_foreground_service">Utiliser le service au premier plan</string>
+    <string name="update_service">service de mise à jour de blabber.im</string>
     <string name="install_update">Installer la mise à jour ?</string>
     <string name="highlight_in_muc">Mettre en évidence l’utilisateur/trice</string>
     <string name="no_application_found_to_open_link">Aucune application disponible pour ouvrir le lien</string>
@@ -768,6 +773,7 @@
     <string name="pref_quick_share_attachment_choice">Choix des fichiers joints</string>
     <string name="unable_to_save_recording">Impossible de sauvegarder l’enregistrement</string>
     <string name="foreground_service_channel_name">Service au premier plan</string>
+    <string name="foreground_service_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification permanente indiquant que blabber.im est en cours d\'exécution.</string>
     <string name="notification_group_status_information">Information du statut</string>
     <string name="error_channel_name">Problèmes de connexion</string>
     <string name="error_channel_description">Cette catégorie de notifications est utilisée pour afficher une notification en cas de problème de connexion à un compte.</string>
@@ -776,6 +782,7 @@
     <string name="silent_messages_channel_name">Messages en sourdine</string>
     <string name="silent_messages_channel_description">Cette catégorie de notification est utilisée pour afficher les notifications qui ne doivent pas déclencher de son. Par exemple, lorsque vous êtes actif sur un autre appareil (Délais de grâce).</string>
     <string name="pref_more_notification_settings">Paramètres des notifications</string>
+    <string name="delivery_failed_channel_name">Échec des remises de messages</string>
     <string name="pref_more_notification_settings_summary">Importance, Sonnerie, Vibreur</string>
     <string name="video_compression_channel_name">Compression vidéo</string>
     <string name="backup_channel_name">Sauvegarde et restauration</string>
@@ -1054,4 +1061,7 @@
     <string name="updated_to_blabber">Nous avons réussi à mettre à jour Pix-Art Messenger vers blabber.im\n\n\nLa coopération des deux projets blabber.im et Pix-Art Messenger a été étendue en novembre 2020. À l\'avenir, l\'application Android Pix-Art Messenger continuera sous le nom blabber.im\n\nCe à quoi vous pouvez vous attendre:\n- La gamme de fonctions reste la même\n- Les salons de chat de support sont fusionnés\n- Les couleurs et logos sont adaptés à blabber.im\n- L\'application est toujours disponible gratuitement dans le  Play Store Google et le F-Droid Store\n\n\nVotre équipe blabber.im</string>
     <string name="link">Lien</string>
     <string name="no_application_found">Aucune application trouvée</string>
+    <string name="move_data">Déplacer les données</string>
+    <string name="error_moving_data">Une erreur s\'est produite pendant le déplacement de vos anciennes données. Veuillez les déplacer manuellement.</string>
+    <string name="data_successfully_moved">Vos données ont été déplacées avec succès.</string>
 </resources>
