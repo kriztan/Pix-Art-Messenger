@@ -1076,4 +1076,13 @@
     <string name="move_data">Mover datos</string>
     <string name="error_moving_data">Se ha producido un error moviendo tus antiguos datos. Por favor, muévelos manualmente.</string>
     <string name="data_successfully_moved">Tus datos han sido movidos con éxito.</string>
+    <string name="invite_to_app">Invitar a Conversations</string>
+    <string name="unable_to_parse_invite">Incapaz de analizar la invitación</string>
+    <string name="server_does_not_support_easy_onboarding_invites">El servidor no soporta generación de invitaciones</string>
+    <string name="your_server">Tu proveedor</string>
+    <string name="tap_share_button_send_invite">Toca el botón de compartir para enviar a tu contacto una invitación a %1$s.</string>
+    <string name="invite">Invitar</string>
+    <string name="if_contact_is_nearby_use_qr">Si tu contacto está cerca, también puede escanear el siguiente códigopara aceptar tu invitación.</string>
+    <string name="easy_invite_share_text">Únete a %1$s y conversa conmigo: %2$s</string>
+    <string name="share_invite_with">Compartir invitación con…</string>
 </resources>
