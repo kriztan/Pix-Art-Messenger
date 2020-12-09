@@ -1032,4 +1032,13 @@
     <string name="move_data">Məlumatı köçürün</string>
     <string name="error_moving_data">Köhnə məlumatları köçürmə edərkən bir səhv meydana gəldi. Onları əl ilə köçürün.</string>
     <string name="data_successfully_moved">Sizin məlumatlarınız uğurla köçürüldü.</string>
+    <string name="invite_to_app">Söhbətə dəvət</string>
+    <string name="unable_to_parse_invite">Dəvəti açmaq olmur</string>
+    <string name="server_does_not_support_easy_onboarding_invites">Server dəvət generasiyasını dəstəkləmir</string>
+    <string name="your_server">Sizin provayder</string>
+    <string name="tap_share_button_send_invite">Kontaktınıza dəvəti göndərmək üçün Göndər düyməsini basın.</string>
+    <string name="invite">Dəvət</string>
+    <string name="if_contact_is_nearby_use_qr">Kontaktınız yaxınlıqdakı olduqda, dəvətinizi qəbul etmək üçün aşağıdakı kodu də tarayabilir.</string>
+    <string name="easy_invite_share_text">%1$s-ə qoşulun və mənimlə əlaqə saxlayın: %2$s</string>
+    <string name="share_invite_with">Dəvəti paylaş…</string>
 </resources>
