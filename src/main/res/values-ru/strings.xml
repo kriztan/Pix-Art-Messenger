@@ -1096,4 +1096,13 @@
     <string name="move_data">Перенести данные</string>
     <string name="error_moving_data">Произошла ошибка при переносе Ваших старых данных. Пожалуйста, перенесите их вручную.</string>
     <string name="data_successfully_moved">Ваши данные успешно перенесены.</string>
+    <string name="invite_to_app">Пригласить в blabber.im</string>
+    <string name="unable_to_parse_invite">Не удалось отправить приглашение</string>
+    <string name="server_does_not_support_easy_onboarding_invites">Сервер не поддерживает создание приглашений</string>
+    <string name="your_server">Ваш сервер</string>
+    <string name="tap_share_button_send_invite">Нажмите кнопку \"Поделиться\", чтобы отправить контакту приглашение на %1$s.</string>
+    <string name="invite">Пригласить</string>
+    <string name="if_contact_is_nearby_use_qr">Если Ваш контакт рядом, он может отсканировать код ниже, чтобы принять Ваше приглашение.</string>
+    <string name="easy_invite_share_text">Присоединяйтесь к %1$s и чатьтесь со мной: %2$s</string>
+    <string name="share_invite_with">Поделиться приглашением с…</string>
 </resources>
