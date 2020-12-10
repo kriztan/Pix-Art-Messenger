@@ -1076,4 +1076,12 @@
     <string name="move_data">Trasferisci dati</string>
     <string name="error_moving_data">Si è verificato un errore durante il trasferimento dei tuoi vecchi dati. Per favore trasferiscili manualmente.</string>
     <string name="data_successfully_moved">I tuoi dati sono stati trasferiti correttamente.</string>
+    <string name="invite_to_app">Invita su blabber.im</string>
+    <string name="unable_to_parse_invite">Impossibile analizzare l\'invito</string>
+    <string name="server_does_not_support_easy_onboarding_invites">Il server non supporta la generazione di inviti</string>
+    <string name="your_server">Il tuo fornitore</string>
+    <string name="tap_share_button_send_invite">Premi il pulsante condividi per inviare al tuo contatto un invito per %1$s.</string>
+    <string name="if_contact_is_nearby_use_qr">Se il tuo contatto fosse vicino a te, potrebbe scansionare il codice qui sotto per accettare il tuo invito.</string>
+    <string name="easy_invite_share_text">Unisciti su %1$s e chiacchera con me: %2$s</string>
+    <string name="share_invite_with">Condividi invito con…</string>
 </resources>
