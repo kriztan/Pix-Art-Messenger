@@ -1076,4 +1076,5 @@
     <string name="move_data">Daten verschieben</string>
     <string name="error_moving_data">Beim Verschieben deiner alten Daten ist ein Fehler aufgetreten. Bitte verschiebe sie manuell.</string>
     <string name="data_successfully_moved">Daten wurden erfolgreich verschoben.</string>
+    <string name="invite">Einladen</string>
 </resources>
