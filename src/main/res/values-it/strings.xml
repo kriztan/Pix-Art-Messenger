@@ -960,7 +960,7 @@
     <string name="intro_desc_start_chatting2">Puoi anche aggiungere, creare o unirti a conversazioni di gruppo - anche chiamate MUC. Si dividono in conversazioni di gruppo private e conversazioni di gruppo pubbliche - chiamate anche canali.</string>
     <string name="intro_desc_start_chatting3">Congratulazioni!\nComincia e divertiti…</string>
     <string name="intro_privacy">La tua privacy\nLa tua sovranità</string>
-    <string name="intro_desc_privacy">blabber.im non venderà nè analizzerà i tuoi dati e tu decidi quali permessi vuoi dare.</string>
+    <string name="intro_desc_privacy">blabber.im non venderà né analizzerà i tuoi dati e tu decidi quali permessi vuoi dare.</string>
     <string name="no_results">Nessun risultato</string>
     <string name="file_transmission_cancelled">trasmissione del file annullata</string>
     <string name="sharing_application_not_grant_permission">L\'applicazione che sta condividendo non ha concesso il permesso per accedere a questo file.</string>
@@ -1081,6 +1081,7 @@
     <string name="server_does_not_support_easy_onboarding_invites">Il server non supporta la generazione di inviti</string>
     <string name="your_server">Il tuo fornitore</string>
     <string name="tap_share_button_send_invite">Premi il pulsante condividi per inviare al tuo contatto un invito per %1$s.</string>
+    <string name="invite">Invita</string>
     <string name="if_contact_is_nearby_use_qr">Se il tuo contatto fosse vicino a te, potrebbe scansionare il codice qui sotto per accettare il tuo invito.</string>
     <string name="easy_invite_share_text">Unisciti su %1$s e chiacchera con me: %2$s</string>
     <string name="share_invite_with">Condividi invito con…</string>
