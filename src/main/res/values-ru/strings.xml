@@ -1043,7 +1043,7 @@
     <string name="rtp_state_accepting_call">Прием вызова</string>
     <string name="rtp_state_ending_call">Завершение вызова</string>
     <string name="rtp_state_finding_device">Найденные устройства</string>
-    <string name="rtp_state_ringing">Звонящий</string>
+    <string name="rtp_state_ringing">Вызов</string>
     <string name="rtp_state_declined_or_busy">Занят</string>
     <string name="rtp_state_connectivity_error">Не удается подключиться</string>
     <string name="rtp_state_connectivity_lost_error">Соединение потеряно</string>
