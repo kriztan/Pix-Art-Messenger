@@ -246,7 +246,7 @@
     <string name="pref_allow_message_correction">Permetti correzione del messaggio</string>
     <string name="pref_allow_message_correction_summary">Consenti ai tuoi contatti di modificare retroattivamente i loro messaggi</string>
     <string name="pref_expert_options">Impostazioni avanzate</string>
-    <string name="title_activity_about">Info su Pix-Art Messenger</string>
+    <string name="title_activity_about">Info</string>
     <string name="pref_about_conversations_summary">Informazioni sulla licenza</string>
     <string name="title_pref_quiet_hours">Ore di quiete</string>
     <string name="title_pref_quiet_hours_start_time">Orario inizio</string>
