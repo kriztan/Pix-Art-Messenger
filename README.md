@@ -1,3 +1,5 @@
+🇬🇧🇺🇸… [English Readme version available here](README-en.md)
+
 # Ankündigung:
 
 ## Aus Pix-Art Messenger wird blabber.im
